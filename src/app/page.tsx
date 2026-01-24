@@ -88,38 +88,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Design Work Type Preview */}
-            <div className="mt-4 pt-4 border-t border-[var(--border)]">
-              <div className="grid grid-cols-3 gap-4 text-sm">
-                <div>
-                  <div className="text-[var(--muted)] mb-1">Logic/Behavior</div>
-                  <div className="progress-bar">
-                    <div
-                      className="progress-bar-fill"
-                      style={{ width: `${company.designWorkType.logicBehavior}%` }}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div className="text-[var(--muted)] mb-1">Evaluation</div>
-                  <div className="progress-bar">
-                    <div
-                      className="progress-bar-fill"
-                      style={{ width: `${company.designWorkType.evaluation}%` }}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div className="text-[var(--muted)] mb-1">Interface</div>
-                  <div className="progress-bar">
-                    <div
-                      className="progress-bar-fill"
-                      style={{ width: `${company.designWorkType.interface}%` }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </Link>
         ))}
       </div>
