@@ -1,8 +1,16 @@
 export interface DesignWorkType {
-  logicBehavior: number; // 0-100
-  evaluation: number;
-  interface: number;
-  description: string;
+  logicBehavior: {
+    level: 'high' | 'medium' | 'low';
+    tasks: string[];
+  };
+  evaluation: {
+    level: 'high' | 'medium' | 'low';
+    tasks: string[];
+  };
+  interface: {
+    level: 'high' | 'medium' | 'low';
+    tasks: string[];
+  };
 }
 
 export interface DesignerLink {

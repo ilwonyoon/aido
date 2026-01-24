@@ -81,11 +81,33 @@ export const companies: Company[] = [
       ],
     },
     designWorkType: {
-      logicBehavior: 80,
-      evaluation: 60,
-      interface: 40,
-      description:
-        'Primary work is Logic/Behavior design (character training, edge cases). Heavy evaluation work (quality criteria, feedback loops). Interface is relatively simple.',
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Character training: Claude의 성격/톤/가치관 정의',
+          'Edge case 처리: 거절해야 할 상황, 불확실한 답변 처리',
+          'System prompt 설계: 다양한 use case별 행동 규칙',
+          'Safety 가이드라인: harmful content 대응 로직',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          '응답 품질 기준 정의: "좋은 응답"이란 무엇인가',
+          'Human feedback 시스템 설계',
+          'A/B 테스트 프레임워크',
+          'Red teaming: 모델 한계 발견 및 개선',
+        ],
+      },
+      interface: {
+        level: 'medium',
+        tasks: [
+          '대화형 UI: 메시지, 입력, 컨텍스트 표시',
+          'Claude Code: 에이전트 작업 상태 시각화',
+          '설정/온보딩 플로우',
+          'Enterprise 대시보드',
+        ],
+      },
     },
     productStage: '1→10',
 

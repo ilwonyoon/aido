@@ -28,16 +28,43 @@ function AiLevelBadge({ level }: { level: number }) {
   );
 }
 
-function ProgressBar({ label, value }: { label: string; value: number }) {
+function LevelBadge({ level }: { level: 'high' | 'medium' | 'low' }) {
+  const colors = {
+    high: 'badge-success',
+    medium: 'badge-accent',
+    low: 'badge',
+  };
+  const labels = {
+    high: 'High',
+    medium: 'Medium',
+    low: 'Low',
+  };
+  return <span className={`badge ${colors[level]}`}>{labels[level]}</span>;
+}
+
+function WorkTypeSection({
+  title,
+  level,
+  tasks,
+}: {
+  title: string;
+  level: 'high' | 'medium' | 'low';
+  tasks: string[];
+}) {
   return (
-    <div className="mb-3">
-      <div className="flex justify-between text-sm mb-1">
-        <span className="text-[var(--muted)]">{label}</span>
-        <span className="font-mono">{value}%</span>
+    <div className="mb-6 last:mb-0">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="font-medium">{title}</h3>
+        <LevelBadge level={level} />
       </div>
-      <div className="progress-bar">
-        <div className="progress-bar-fill" style={{ width: `${value}%` }} />
-      </div>
+      <ul className="space-y-2">
+        {tasks.map((task, i) => (
+          <li key={i} className="text-sm text-[var(--muted)] flex gap-2">
+            <span className="text-[var(--accent-light)]">•</span>
+            {task}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -237,12 +264,23 @@ function CompanyDetail({ company }: { company: Company }) {
           {/* Design Work Type */}
           <Section title="Design Work Type">
             <div className="card p-5">
-              <ProgressBar label="Logic / Behavior Design" value={company.designWorkType.logicBehavior} />
-              <ProgressBar label="Evaluation Design" value={company.designWorkType.evaluation} />
-              <ProgressBar label="Interface Design" value={company.designWorkType.interface} />
-              <p className="text-sm text-[var(--muted)] mt-4 pt-4 border-t border-[var(--border)]">
-                {company.designWorkType.description}
-              </p>
+              <WorkTypeSection
+                title="Logic / Behavior Design"
+                level={company.designWorkType.logicBehavior.level}
+                tasks={company.designWorkType.logicBehavior.tasks}
+              />
+              <div className="border-t border-[var(--border)] my-5" />
+              <WorkTypeSection
+                title="Evaluation Design"
+                level={company.designWorkType.evaluation.level}
+                tasks={company.designWorkType.evaluation.tasks}
+              />
+              <div className="border-t border-[var(--border)] my-5" />
+              <WorkTypeSection
+                title="Interface Design"
+                level={company.designWorkType.interface.level}
+                tasks={company.designWorkType.interface.tasks}
+              />
             </div>
           </Section>
         </div>
