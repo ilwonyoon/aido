@@ -4,7 +4,6 @@ export const companies: Company[] = [
   {
     id: 'anthropic',
     name: 'Anthropic',
-    logo: '/logos/anthropic.png',
     description: 'AI safety company building Claude, a helpful, harmless, and honest AI assistant.',
     website: 'https://anthropic.com',
 
@@ -230,7 +229,6 @@ export const companies: Company[] = [
   {
     id: 'leya',
     name: 'Leya',
-    logo: '/logos/leya.png',
     description: 'AI workspace for lawyers. Automates legal research, document review, and drafting.',
     website: 'https://leya.law',
 
@@ -396,7 +394,6 @@ export const companies: Company[] = [
   {
     id: 'granola',
     name: 'Granola',
-    logo: '/logos/granola.png',
     description: 'AI notepad for meetings. Augments your notes instead of replacing your judgment.',
     website: 'https://granola.ai',
 
@@ -569,7 +566,6 @@ export const companies: Company[] = [
   {
     id: 'pika',
     name: 'Pika',
-    logo: '/logos/pika.jpeg',
     description: 'AI video generation and editing platform. Text-to-video, image-to-video.',
     website: 'https://pika.art',
 
@@ -750,7 +746,6 @@ export const companies: Company[] = [
   {
     id: 'elevenlabs',
     name: 'ElevenLabs',
-    logo: '/logos/elevenlabs.png',
     description: 'AI voice platform. Text-to-speech, voice cloning, dubbing.',
     website: 'https://elevenlabs.io',
 
@@ -927,7 +922,6 @@ export const companies: Company[] = [
   {
     id: 'cognition',
     name: 'Cognition',
-    logo: '/logos/cognition.png',
     description: 'AI software engineer. Devin can autonomously complete entire coding projects.',
     website: 'https://cognition.ai',
 
@@ -1107,7 +1101,6 @@ export const companies: Company[] = [
   {
     id: 'mercor',
     name: 'Mercor',
-    logo: '/logos/mercor.png',
     description: 'AI-powered hiring platform. Matches talent with opportunities using AI interviews.',
     website: 'https://mercor.com',
 

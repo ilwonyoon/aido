@@ -205,10 +205,22 @@ STEP 3: MERGE (Claude Code CLI)
 
 ### 유저가 할 일
 
-1. **Claude Code CLI**에 전체 프롬프트 복붙 → SETUP 자동 실행 → TASK A 진행
-2. **Cursor**로 `../project-task-b/` 폴더 열기 → 프롬프트 복붙
+1. **Claude Code CLI**에 프롬프트 복붙 → SETUP + TASK A 진행
+2. **Cursor**에 프롬프트 복붙
 3. **Codex**에 프롬프트 복붙
 4. 모두 "완료" 하면 → Claude Code CLI에 MERGE 프롬프트 복붙
+
+### 중요: 모든 LLM은 CLAUDE.md 준수
+
+각 프롬프트에 아래 내용 포함:
+
+```
+## 필수 준수 사항
+이 프로젝트의 CLAUDE.md를 읽고 준수해야 합니다:
+- 커밋 컨벤션: DD/MM/YY - HH:MM:SS | 변경 요약
+- 디자인 원칙: Vercel 스타일, 17px base
+- 코드 스타일: 기존 패턴 따르기
+```
 
 ---
 
@@ -268,12 +280,14 @@ git add -A && git commit -m "[커밋 메시지]"
 STEP 1-B: TASK B — Cursor
 ═══════════════════════════════════════════════════════════
 
-📂 Cursor로 이 폴더 열기: \`../[project]-task-b/\`
-
-열었으면 아래 프롬프트 복붙:
+아래 프롬프트 복붙:
 
 \`\`\`
 ## TASK B
+
+## 필수: CLAUDE.md 준수
+- 커밋 컨벤션: DD/MM/YY - HH:MM:SS | 변경 요약
+- 기존 코드 패턴 따르기
 
 [TASK B 상세 내용]
 

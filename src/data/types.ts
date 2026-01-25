@@ -60,9 +60,6 @@ export interface Company {
   moat: string[];
   vsGiants?: string; // How they differentiate vs Google/OpenAI/Anthropic
 
-  // Logo
-  logo?: string; // path to logo image (e.g., /logos/company.png)
-
   // AI-Native Level
   aiNativeLevel: 1 | 2 | 3 | 4;
   aiNativeLevelDescription: string;

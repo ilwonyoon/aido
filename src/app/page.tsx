@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { companies } from '@/data/companies';
 
 function AiLevelBadge({ level }: { level: number }) {
@@ -63,17 +62,6 @@ export default function Home() {
             className="card block p-5"
           >
             <div className="flex items-start justify-between gap-4">
-              {company.logo && (
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-white flex items-center justify-center">
-                  <Image
-                    src={company.logo}
-                    alt={`${company.name} logo`}
-                    width={48}
-                    height={48}
-                    className="object-contain"
-                  />
-                </div>
-              )}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-3 mb-2">
                   <h2 className="text-lg font-medium">{company.name}</h2>
