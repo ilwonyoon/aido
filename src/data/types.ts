@@ -37,8 +37,9 @@ export interface OpenRole {
 }
 
 export interface CultureInsight {
-  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'levels.fyi';
+  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi';
   sentiment: 'positive' | 'neutral' | 'negative';
+  rating?: number; // e.g., 4.2 out of 5
   content: string;
   url?: string;
 }

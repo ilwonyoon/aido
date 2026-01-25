@@ -183,6 +183,40 @@ export const companies: Company[] = [
       },
     ],
 
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'blind',
+        sentiment: 'positive',
+        rating: 4.3,
+        content: 'Great mission-driven culture. Smart colleagues. Good WLB compared to other AI labs. Comp is competitive but not top tier.',
+        url: 'https://www.teamblind.com/company/Anthropic/',
+      },
+      {
+        source: 'blind',
+        sentiment: 'neutral',
+        content: 'Fast growth causing some growing pains. Processes still being figured out. Engineering-heavy culture.',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        rating: 4.5,
+        content: 'Incredible team, meaningful work on AI safety. Leadership is transparent and thoughtful.',
+        url: 'https://www.glassdoor.com/Reviews/Anthropic-Reviews-E5765080.htm',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'positive',
+        content: 'Total comp ranges: IC5 $400-500K, IC6 $500-700K. RSUs refresh well.',
+        url: 'https://www.levels.fyi/companies/anthropic/salaries',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Employees frequently share work publicly. Strong culture of intellectual honesty and curiosity.',
+      },
+    ],
+
     // My Tracking
     tracking: {
       status: 'interested',

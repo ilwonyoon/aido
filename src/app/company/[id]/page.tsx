@@ -423,7 +423,8 @@ function CompanyDetail({ company }: { company: Company }) {
                     blind: 'Blind',
                     glassdoor: 'Glassdoor',
                     linkedin: 'LinkedIn',
-                    twitter: 'X/Twitter',
+                    twitter: 'X',
+                    threads: 'Threads',
                     'levels.fyi': 'Levels.fyi',
                   };
                   return (
@@ -431,8 +432,26 @@ function CompanyDetail({ company }: { company: Company }) {
                       key={i}
                       className={`card p-3 border-l-2 ${sentimentColors[insight.sentiment]}`}
                     >
-                      <div className="text-xs text-[var(--muted)] mb-1">
-                        {sourceLabels[insight.source] || insight.source}
+                      <div className="flex items-center justify-between mb-1">
+                        {insight.url ? (
+                          <a
+                            href={insight.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)]"
+                          >
+                            {sourceLabels[insight.source] || insight.source} ↗
+                          </a>
+                        ) : (
+                          <span className="text-xs text-[var(--muted)]">
+                            {sourceLabels[insight.source] || insight.source}
+                          </span>
+                        )}
+                        {insight.rating && (
+                          <span className="text-xs font-medium text-[var(--accent-light)]">
+                            ★ {insight.rating}/5
+                          </span>
+                        )}
                       </div>
                       <p className="text-sm">{insight.content}</p>
                     </div>
