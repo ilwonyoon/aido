@@ -25,6 +25,14 @@ export interface OpenRole {
   title: string;
   location: string;
   url: string;
+  requirements?: string[];
+}
+
+export interface CultureInsight {
+  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'levels.fyi';
+  sentiment: 'positive' | 'neutral' | 'negative';
+  content: string;
+  url?: string;
 }
 
 export interface Company {
@@ -79,6 +87,9 @@ export interface Company {
 
   // Open Roles
   openRoles: OpenRole[];
+
+  // Culture Insights (Blind, Glassdoor, etc.)
+  cultureInsights?: CultureInsight[];
 
   // My Tracking
   tracking: {

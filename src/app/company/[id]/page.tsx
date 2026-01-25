@@ -344,18 +344,29 @@ function CompanyDetail({ company }: { company: Company }) {
           {/* Open Roles */}
           <Section title="Open Design Roles">
             {company.openRoles.length > 0 ? (
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {company.openRoles.map((role, i) => (
-                  <a
-                    key={i}
-                    href={role.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card block p-4 hover:border-[var(--success)]"
-                  >
-                    <div className="font-medium text-sm">{role.title}</div>
-                    <div className="text-xs text-[var(--muted)]">{role.location}</div>
-                  </a>
+                  <div key={i} className="card p-4">
+                    <a
+                      href={role.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-sm hover:text-[var(--accent-light)]"
+                    >
+                      {role.title} ↗
+                    </a>
+                    <div className="text-xs text-[var(--muted)] mb-2">{role.location}</div>
+                    {role.requirements && role.requirements.length > 0 && (
+                      <div className="pt-2 border-t border-[var(--border)]">
+                        <div className="text-xs text-[var(--muted)] mb-1">Requirements:</div>
+                        <ul className="space-y-0.5">
+                          {role.requirements.map((req, j) => (
+                            <li key={j} className="text-xs text-[var(--muted)]">• {req}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             ) : (
@@ -364,6 +375,39 @@ function CompanyDetail({ company }: { company: Company }) {
               </div>
             )}
           </Section>
+
+          {/* Culture Insights */}
+          {company.cultureInsights && company.cultureInsights.length > 0 && (
+            <Section title="Culture Insights">
+              <div className="space-y-2">
+                {company.cultureInsights.map((insight, i) => {
+                  const sentimentColors = {
+                    positive: 'border-l-[var(--success)]',
+                    neutral: 'border-l-[var(--muted)]',
+                    negative: 'border-l-[var(--warning)]',
+                  };
+                  const sourceLabels: Record<string, string> = {
+                    blind: 'Blind',
+                    glassdoor: 'Glassdoor',
+                    linkedin: 'LinkedIn',
+                    twitter: 'X/Twitter',
+                    'levels.fyi': 'Levels.fyi',
+                  };
+                  return (
+                    <div
+                      key={i}
+                      className={`card p-3 border-l-2 ${sentimentColors[insight.sentiment]}`}
+                    >
+                      <div className="text-xs text-[var(--muted)] mb-1">
+                        {sourceLabels[insight.source] || insight.source}
+                      </div>
+                      <p className="text-sm">{insight.content}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </Section>
+          )}
 
           {/* My Tracking */}
           <Section title="My Tracking">
