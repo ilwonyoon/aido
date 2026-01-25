@@ -178,9 +178,15 @@ function CompanyDetail({ company }: { company: Company }) {
             {/* Competition */}
             <div className="card p-5 mt-4">
               <h3 className="font-medium mb-3">Competition</h3>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {company.competitors.map((c) => (
-                  <span key={c} className="badge">{c}</span>
+              <div className="space-y-3 mb-3">
+                {company.competitors.map((c, i) => (
+                  <div key={i} className="p-3 bg-[var(--background)] rounded-lg border border-[var(--border)]">
+                    <div className="font-medium text-sm">{c.name}</div>
+                    <div className="text-xs text-[var(--muted)] mt-1">{c.description}</div>
+                    {c.whyTheyWin && (
+                      <div className="text-xs text-[var(--warning)] mt-1">Why they win: {c.whyTheyWin}</div>
+                    )}
+                  </div>
                 ))}
               </div>
               {company.marketPosition && (
