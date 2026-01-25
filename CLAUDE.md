@@ -40,7 +40,7 @@
 
 ### AI-Native Level 정의
 
-- **Level 4**: AI IS the product (Anthropic, OpenAI)
+- **Level 4**: AI is the product (Anthropic, OpenAI)
 - **Level 3**: AI is core differentiator (Cursor, Perplexity)
 - **Level 2**: AI is major feature (Notion AI, Figma AI)
 - **Level 1**: AI is minor feature

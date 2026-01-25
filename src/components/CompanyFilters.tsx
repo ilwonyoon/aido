@@ -289,7 +289,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             onChange={setAiLevelFilter}
             infoTooltip={
               <div className="text-xs space-y-2">
-                <div><span className="font-medium text-[var(--success)]">L4:</span> AI IS the product (Anthropic, OpenAI)</div>
+                <div><span className="font-medium text-[var(--success)]">L4:</span> AI is the product (Anthropic, OpenAI)</div>
                 <div><span className="font-medium text-[var(--accent-light)]">L3:</span> AI is core differentiator (Cursor, Perplexity)</div>
                 <div><span className="font-medium">L2:</span> AI is major feature (Notion AI, Figma AI)</div>
                 <div><span className="font-medium">L1:</span> AI is minor feature</div>
