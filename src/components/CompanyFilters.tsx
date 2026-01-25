@@ -1,15 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { Company } from '@/data/types';
 
-type SortOption = 'fitScore' | 'name' | 'recentFunding' | 'aiLevel';
-type FilterState = {
-  aiLevel: number | null;
-  hasOpenRoles: boolean | null;
-  remote: string | null;
-};
+type SortOption = 'interest' | 'name' | 'recentFunding' | 'aiLevel';
+type InterestStatus = 'interested' | 'not_interested' | null;
 
 function AiLevelBadge({ level }: { level: number }) {
   const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
@@ -18,48 +14,6 @@ function AiLevelBadge({ level }: { level: number }) {
     <span className={`badge ${colors[level as keyof typeof colors]}`}>
       L{level}: {labels[level as keyof typeof labels]}
     </span>
-  );
-}
-
-function StatusBadge({ status }: { status: string }) {
-  const colors: Record<string, string> = {
-    watching: 'badge',
-    interested: 'badge-accent',
-    researching: 'badge-warning',
-    applied: 'badge-success',
-  };
-  return <span className={`badge ${colors[status] || 'badge'}`}>{status}</span>;
-}
-
-function FitScore({ score }: { score: number }) {
-  return (
-    <div className="flex items-center gap-2">
-      <span className="text-sm text-[var(--muted)]">Fit</span>
-      <span className="font-mono font-medium">{score}/10</span>
-    </div>
-  );
-}
-
-function FilterChip({
-  label,
-  active,
-  onClick,
-}: {
-  label: string;
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`px-3 py-1.5 text-sm rounded-full border transition-all ${
-        active
-          ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-          : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-      }`}
-    >
-      {label}
-    </button>
   );
 }
 
@@ -77,69 +31,129 @@ function isRecentFunding(company: Company): boolean {
   return latestDate >= sixMonthsAgo;
 }
 
+function DropdownFilter({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  options: { value: string; label: string }[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <div className="relative">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="appearance-none bg-[var(--card)] border border-[var(--border)] rounded-full px-4 py-1.5 pr-8 text-sm cursor-pointer focus:outline-none focus:border-[var(--muted)] hover:border-[var(--muted)] transition-colors"
+      >
+        <option value="">{label}</option>
+        {options.map((opt) => (
+          <option key={opt.value} value={opt.value}>
+            {opt.label}
+          </option>
+        ))}
+      </select>
+      <span className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--muted)]">
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </span>
+    </div>
+  );
+}
+
 export function CompanyFilters({ companies }: { companies: Company[] }) {
-  const [sortBy, setSortBy] = useState<SortOption>('fitScore');
-  const [sortAsc, setSortAsc] = useState(false);
-  const [filters, setFilters] = useState<FilterState>({
-    aiLevel: null,
-    hasOpenRoles: null,
-    remote: null,
-  });
+  const [sortBy, setSortBy] = useState<SortOption>('interest');
+  const [aiLevelFilter, setAiLevelFilter] = useState('');
+  const [openRolesFilter, setOpenRolesFilter] = useState('');
+  const [remoteFilter, setRemoteFilter] = useState('');
+  const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
+
+  // Load interest statuses from localStorage
+  useEffect(() => {
+    const statuses: Record<string, InterestStatus> = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('interest_')) {
+        const companyId = key.replace('interest_', '');
+        const value = localStorage.getItem(key);
+        if (value === 'interested' || value === 'not_interested') {
+          statuses[companyId] = value;
+        }
+      }
+    }
+    setInterestStatuses(statuses);
+
+    // Listen for storage changes
+    const handleStorage = () => {
+      const newStatuses: Record<string, InterestStatus> = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key?.startsWith('interest_')) {
+          const companyId = key.replace('interest_', '');
+          const value = localStorage.getItem(key);
+          if (value === 'interested' || value === 'not_interested') {
+            newStatuses[companyId] = value;
+          }
+        }
+      }
+      setInterestStatuses(newStatuses);
+    };
+
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   // Filter companies
   const filteredCompanies = useMemo(() => {
     return companies.filter((company) => {
-      if (filters.aiLevel !== null && company.aiNativeLevel !== filters.aiLevel) return false;
-      if (filters.hasOpenRoles === true && company.openRoles.length === 0) return false;
-      if (filters.remote !== null && company.remote !== filters.remote) return false;
+      if (aiLevelFilter && company.aiNativeLevel !== parseInt(aiLevelFilter)) return false;
+      if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
+      if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
+      if (remoteFilter && company.remote !== remoteFilter) return false;
       return true;
     });
-  }, [companies, filters]);
+  }, [companies, aiLevelFilter, openRolesFilter, remoteFilter]);
 
   // Sort companies
   const sortedCompanies = useMemo(() => {
     const sorted = [...filteredCompanies].sort((a, b) => {
-      let comparison = 0;
       switch (sortBy) {
-        case 'fitScore':
-          comparison = b.tracking.fitScore - a.tracking.fitScore;
-          break;
+        case 'interest':
+          // Interested first, then unmarked, then not interested
+          const statusA = interestStatuses[a.id];
+          const statusB = interestStatuses[b.id];
+          const orderA = statusA === 'interested' ? 0 : statusA === 'not_interested' ? 2 : 1;
+          const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
+          return orderA - orderB;
         case 'name':
-          comparison = a.name.localeCompare(b.name);
-          break;
+          return a.name.localeCompare(b.name);
         case 'aiLevel':
-          comparison = b.aiNativeLevel - a.aiNativeLevel;
-          break;
+          return b.aiNativeLevel - a.aiNativeLevel;
         case 'recentFunding':
           const dateA = getLatestFundingDate(a);
           const dateB = getLatestFundingDate(b);
-          if (!dateA && !dateB) comparison = 0;
-          else if (!dateA) comparison = 1;
-          else if (!dateB) comparison = -1;
-          else comparison = dateB.getTime() - dateA.getTime();
-          break;
+          if (!dateA && !dateB) return 0;
+          if (!dateA) return 1;
+          if (!dateB) return -1;
+          return dateB.getTime() - dateA.getTime();
+        default:
+          return 0;
       }
-      return sortAsc ? -comparison : comparison;
     });
     return sorted;
-  }, [filteredCompanies, sortBy, sortAsc]);
+  }, [filteredCompanies, sortBy, interestStatuses]);
 
-  const toggleFilter = (key: keyof FilterState, value: unknown) => {
-    setFilters((prev) => ({
-      ...prev,
-      [key]: prev[key] === value ? null : value,
-    }));
-  };
+  const hasActiveFilters = aiLevelFilter || openRolesFilter || remoteFilter;
 
   const clearFilters = () => {
-    setFilters({
-      aiLevel: null,
-      hasOpenRoles: null,
-      remote: null,
-    });
+    setAiLevelFilter('');
+    setOpenRolesFilter('');
+    setRemoteFilter('');
   };
-
-  const activeFilterCount = Object.values(filters).filter((v) => v !== null).length;
 
   return (
     <div>
@@ -148,29 +162,55 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
         {/* Left: Filters */}
         <div className="flex items-center gap-2">
           <span className="text-sm text-[var(--muted)]">Filter:</span>
-          {[4, 3, 2, 1].map((level) => (
-            <FilterChip
-              key={level}
-              label={`L${level}`}
-              active={filters.aiLevel === level}
-              onClick={() => toggleFilter('aiLevel', level)}
+          <div className="flex items-center gap-1">
+            <DropdownFilter
+              label="AI Level"
+              value={aiLevelFilter}
+              options={[
+                { value: '4', label: 'L4: AI Native' },
+                { value: '3', label: 'L3: AI Core' },
+                { value: '2', label: 'L2: AI Major' },
+                { value: '1', label: 'L1: AI Feature' },
+              ]}
+              onChange={setAiLevelFilter}
             />
-          ))}
-          <span className="text-[var(--border)] mx-1">|</span>
-          <FilterChip
+            <div className="relative group">
+              <button className="w-5 h-5 rounded-full bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] text-xs flex items-center justify-center hover:border-[var(--muted)]">
+                i
+              </button>
+              <div className="absolute left-0 top-full mt-2 w-64 p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                <div className="text-xs space-y-2">
+                  <div><span className="font-medium text-[var(--success)]">L4:</span> AI IS the product (Anthropic, OpenAI)</div>
+                  <div><span className="font-medium text-[var(--accent-light)]">L3:</span> AI is core differentiator (Cursor, Perplexity)</div>
+                  <div><span className="font-medium">L2:</span> AI is major feature (Notion AI, Figma AI)</div>
+                  <div><span className="font-medium">L1:</span> AI is minor feature</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <DropdownFilter
             label="Open Roles"
-            active={filters.hasOpenRoles === true}
-            onClick={() => toggleFilter('hasOpenRoles', true)}
+            value={openRolesFilter}
+            options={[
+              { value: 'yes', label: 'Has Open Roles' },
+              { value: 'no', label: 'No Open Roles' },
+            ]}
+            onChange={setOpenRolesFilter}
           />
-          <FilterChip
+          <DropdownFilter
             label="Remote"
-            active={filters.remote === 'Yes'}
-            onClick={() => toggleFilter('remote', 'Yes')}
+            value={remoteFilter}
+            options={[
+              { value: 'Yes', label: 'Remote OK' },
+              { value: 'Hybrid', label: 'Hybrid' },
+              { value: 'No', label: 'On-site Only' },
+            ]}
+            onChange={setRemoteFilter}
           />
-          {activeFilterCount > 0 && (
+          {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="ml-2 text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
             >
               Clear
             </button>
@@ -186,14 +226,14 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
               onChange={(e) => setSortBy(e.target.value as SortOption)}
               className="appearance-none bg-transparent text-[var(--foreground)] text-sm pr-5 cursor-pointer focus:outline-none"
             >
-              <option value="fitScore">Fit Score</option>
+              <option value="interest">Interest</option>
               <option value="name">Name</option>
               <option value="aiLevel">AI Level</option>
               <option value="recentFunding">Recent Funding</option>
             </select>
             <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--muted)]">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
           </div>
@@ -202,59 +242,55 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
 
       {/* Company List */}
       <div className="space-y-4">
-        {sortedCompanies.map((company) => (
-          <Link
-            key={company.id}
-            href={`/company/${company.id}`}
-            className="card block p-5"
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <h2 className="text-lg font-medium">{company.name}</h2>
-                  <AiLevelBadge level={company.aiNativeLevel} />
-                  <StatusBadge status={company.tracking.status} />
-                  {isRecentFunding(company) && (
-                    <span className="badge badge-success">New Funding</span>
-                  )}
+        {sortedCompanies.map((company) => {
+          const interest = interestStatuses[company.id];
+          return (
+            <Link
+              key={company.id}
+              href={`/company/${company.id}`}
+              className={`card block p-5 ${interest === 'not_interested' ? 'opacity-50' : ''}`}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-3 mb-2 flex-wrap">
+                    <h2 className="text-lg font-medium">{company.name}</h2>
+                    <AiLevelBadge level={company.aiNativeLevel} />
+                    {interest === 'interested' && (
+                      <span className="badge badge-success">Interested</span>
+                    )}
+                    {isRecentFunding(company) && (
+                      <span className="badge badge-warning">New Funding</span>
+                    )}
+                  </div>
+                  <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
+                    {company.description}
+                  </p>
+                  <div className="flex items-center gap-4 text-sm text-[var(--muted)] flex-wrap">
+                    <span>{company.headquarters}</span>
+                    <span className="text-[var(--border)]">·</span>
+                    <span>{company.stage}</span>
+                    {company.remote === 'Yes' && (
+                      <>
+                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--success)]">Remote OK</span>
+                      </>
+                    )}
+                  </div>
                 </div>
-                <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
-                  {company.description}
-                </p>
-                <div className="flex items-center gap-4 text-sm text-[var(--muted)] flex-wrap">
-                  <span>{company.headquarters}</span>
-                  <span className="text-[var(--border)]">·</span>
-                  <span>{company.stage}</span>
-                  {company.remote === 'Yes' && (
-                    <>
-                      <span className="text-[var(--border)]">·</span>
-                      <span className="text-[var(--success)]">Remote OK</span>
-                    </>
-                  )}
-                </div>
-              </div>
-              <div className="flex-shrink-0 text-right">
-                {/* Open Roles - prominently displayed */}
-                {company.openRoles.length > 0 ? (
-                  <div className="mb-2">
+                <div className="flex-shrink-0 text-right">
+                  {company.openRoles.length > 0 ? (
                     <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--success)] text-black rounded-lg font-medium text-sm">
                       <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
                       {company.openRoles.length} role{company.openRoles.length > 1 ? 's' : ''} open
                     </div>
-                  </div>
-                ) : (
-                  <div className="mb-2">
+                  ) : (
                     <span className="text-sm text-[var(--muted)]">No open roles</span>
-                  </div>
-                )}
-                {/* Fit Score - smaller below */}
-                <div className="text-sm text-[var(--muted)]">
-                  Fit: <span className="font-mono font-medium text-[var(--foreground)]">{company.tracking.fitScore}/10</span>
+                  )}
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
 
       {sortedCompanies.length === 0 && (

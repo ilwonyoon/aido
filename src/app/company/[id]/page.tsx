@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getCompanyById, companies } from '@/data/companies';
 import { Company } from '@/data/types';
+import { InterestToggle } from '@/components/InterestToggle';
 
 export function generateStaticParams() {
   return companies.map((company) => ({
@@ -100,10 +101,7 @@ function CompanyDetail({ company }: { company: Company }) {
             </div>
             <p className="text-[var(--muted)] text-lg">{company.description}</p>
           </div>
-          <div className="text-right">
-            <div className="text-4xl font-mono font-bold">{company.tracking.fitScore}</div>
-            <div className="text-sm text-[var(--muted)]">Fit Score</div>
-          </div>
+          <InterestToggle companyId={company.id} />
         </div>
         <div className="flex items-center gap-4 mt-4 text-sm">
           <a
