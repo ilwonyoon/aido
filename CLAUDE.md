@@ -24,6 +24,44 @@
 - Base font size: 17px
 - 미니멀, 정보 중심
 
+## Design System
+
+### Color usage rules
+- **Accent**: primary actions, key highlights, active states only
+- **Success**: positive status (e.g., roles open, good signal)
+- **Warning**: risks, uncertainty, missing data, cautionary notes
+- **Muted**: secondary text, metadata, timestamps, low-priority info
+
+### Typography scale
+- **Page title**: large, high-contrast heading for top-level pages
+- **Section**: medium-weight section headers for grouping
+- **Body**: default reading size (align with base 17px)
+- **Small**: captions, metadata, timestamps
+
+### Spacing conventions
+- **Section gap**: use consistent vertical spacing between major blocks
+- **Card padding**: standard `p-5` for all cards
+- **List spacing**: tight but readable vertical rhythm for rows
+
+### Component patterns
+- **Card**: standard container for grouped content
+- **Badge**: status + category indicator
+- **Button**: only for actions, not for navigation
+
+## Code Style for UI
+
+- Always use CSS variables, never hardcoded colors
+- Card pattern: `className="card p-5"`
+- Badge pattern: `className="badge badge-{variant}"`
+- Link pattern: `text-[var(--accent-light)] hover:underline`
+- Section titles: use `section-title` class
+
+## Content Language
+
+- All site content must be in English only
+- Comments can be in Korean for internal notes
+- User-facing text: English only
+
 ## 핵심 데이터 구조
 
 ### Company 평가 프레임
