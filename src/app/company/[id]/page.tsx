@@ -321,6 +321,40 @@ function CompanyDetail({ company }: { company: Company }) {
 
         {/* Sidebar */}
         <div className="space-y-6">
+          {/* Open Roles - Priority position */}
+          <Section title="Open Design Roles">
+            {company.openRoles.length > 0 ? (
+              <div className="space-y-3">
+                {company.openRoles.map((role, i) => (
+                  <div key={i} className="card p-4 border-[var(--success)]">
+                    <a
+                      href={role.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-sm hover:text-[var(--accent-light)]"
+                    >
+                      {role.title} ↗
+                    </a>
+                    <div className="text-xs text-[var(--muted)] mb-2">{role.location}</div>
+                    {role.requirements && role.requirements.length > 0 && (
+                      <div className="pt-2 border-t border-[var(--border)]">
+                        <ul className="space-y-0.5">
+                          {role.requirements.map((req, j) => (
+                            <li key={j} className="text-xs text-[var(--muted)]">• {req}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="card p-4 text-sm text-[var(--muted)]">
+                No open design roles
+              </div>
+            )}
+          </Section>
+
           {/* Design Team */}
           <Section title="Design Team">
             <div className="card p-5">
@@ -374,41 +408,6 @@ function CompanyDetail({ company }: { company: Company }) {
               </div>
             </Section>
           )}
-
-          {/* Open Roles */}
-          <Section title="Open Design Roles">
-            {company.openRoles.length > 0 ? (
-              <div className="space-y-3">
-                {company.openRoles.map((role, i) => (
-                  <div key={i} className="card p-4">
-                    <a
-                      href={role.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-sm hover:text-[var(--accent-light)]"
-                    >
-                      {role.title} ↗
-                    </a>
-                    <div className="text-xs text-[var(--muted)] mb-2">{role.location}</div>
-                    {role.requirements && role.requirements.length > 0 && (
-                      <div className="pt-2 border-t border-[var(--border)]">
-                        <div className="text-xs text-[var(--muted)] mb-1">Requirements:</div>
-                        <ul className="space-y-0.5">
-                          {role.requirements.map((req, j) => (
-                            <li key={j} className="text-xs text-[var(--muted)]">• {req}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="card p-4 text-sm text-[var(--muted)]">
-                No open design roles
-              </div>
-            )}
-          </Section>
 
           {/* Culture Insights */}
           {company.cultureInsights && company.cultureInsights.length > 0 && (

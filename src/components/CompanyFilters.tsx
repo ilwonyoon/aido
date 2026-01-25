@@ -156,15 +156,23 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   const [locationFilter, setLocationFilter] = useState('');
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
 
-  // Get unique locations (country/region level)
+  // Get unique locations (city level, prioritize SF Bay Area)
   const locations = useMemo(() => {
     const locs = new Set<string>();
     companies.forEach((c) => {
-      const parts = c.headquarters.split(',');
-      const region = parts[parts.length - 1]?.trim();
-      if (region) locs.add(region);
+      const city = c.headquarters.split(',')[0]?.trim();
+      if (city) locs.add(city);
     });
-    return Array.from(locs).sort();
+    const sorted = Array.from(locs).sort((a, b) => {
+      // Prioritize SF Bay Area cities
+      const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose'];
+      const aIsSF = sfBayArea.some(city => a.includes(city));
+      const bIsSF = sfBayArea.some(city => b.includes(city));
+      if (aIsSF && !bIsSF) return -1;
+      if (!aIsSF && bIsSF) return 1;
+      return a.localeCompare(b);
+    });
+    return sorted;
   }, [companies]);
 
   // Load interest statuses from localStorage
