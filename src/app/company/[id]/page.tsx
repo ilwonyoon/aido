@@ -150,6 +150,36 @@ function CompanyDetail({ company }: { company: Company }) {
               )}
             </div>
 
+            {/* Funding History */}
+            {company.fundingHistory && company.fundingHistory.length > 0 && (
+              <div className="card p-5 mt-4">
+                <h3 className="font-medium mb-4">Funding History</h3>
+                <div className="space-y-3">
+                  {company.fundingHistory.map((round, i) => (
+                    <div key={i} className="flex items-center gap-4 text-sm">
+                      <div className="w-20 font-mono text-[var(--muted)]">{round.date}</div>
+                      <div className="w-20">
+                        <span className="badge">{round.stage}</span>
+                      </div>
+                      <div className="w-20 font-medium text-[var(--success)]">{round.amount}</div>
+                      {round.valuation && (
+                        <div className="text-[var(--muted)]">@ {round.valuation}</div>
+                      )}
+                      {round.leadInvestors && round.leadInvestors.length > 0 && (
+                        <div className="text-xs text-[var(--muted)] truncate">
+                          {round.leadInvestors.join(', ')}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 pt-4 border-t border-[var(--border)] text-sm">
+                  <span className="text-[var(--muted)]">Total Funding: </span>
+                  <span className="font-medium text-[var(--success)]">{company.totalFunding}</span>
+                </div>
+              </div>
+            )}
+
             {/* Moat */}
             <div className="card p-5 mt-4">
               <h3 className="font-medium mb-3">Why They Win (Moat)</h3>

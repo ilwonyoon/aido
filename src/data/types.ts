@@ -1,3 +1,11 @@
+export interface FundingRound {
+  stage: 'Pre-seed' | 'Seed' | 'Series A' | 'Series B' | 'Series C' | 'Series D' | 'Series E' | 'Series F' | 'Unknown';
+  amount: string; // e.g., "$50M"
+  date: string; // e.g., "2024-03"
+  valuation?: string; // post-money valuation if known
+  leadInvestors?: string[];
+}
+
 export interface DesignWorkType {
   logicBehavior: {
     level: 'high' | 'medium' | 'low';
@@ -45,6 +53,7 @@ export interface Company {
   stage: string;
   valuation?: string;
   totalFunding?: string;
+  fundingHistory?: FundingRound[]; // All funding rounds with dates
   revenue?: string;
   growth?: string;
   runway?: string;
