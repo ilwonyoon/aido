@@ -31,6 +31,52 @@ function isRecentFunding(company: Company): boolean {
   return latestDate >= sixMonthsAgo;
 }
 
+function SortDropdown({
+  value,
+  options,
+  onChange,
+}: {
+  value: string;
+  options: { value: string; label: string }[];
+  onChange: (value: string) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const selectedOption = options.find(opt => opt.value === value);
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-1 text-sm text-[var(--foreground)] cursor-pointer"
+      >
+        <span>{selectedOption?.label}</span>
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform text-[var(--muted)] ${isOpen ? 'rotate-180' : ''}`}>
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
+      {isOpen && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+          <div className="absolute right-0 top-full mt-1 min-w-[120px] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+            {options.map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => { onChange(opt.value); setIsOpen(false); }}
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
+                  value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function DropdownFilter({
   label,
   value,
@@ -250,23 +296,16 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
         {/* Right: Sort */}
         <div className="flex items-center gap-2">
           <span className="text-sm text-[var(--muted)]">Sort:</span>
-          <div className="relative">
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="appearance-none bg-transparent text-[var(--foreground)] text-sm pr-5 cursor-pointer focus:outline-none"
-            >
-              <option value="interest">Interest</option>
-              <option value="name">Name</option>
-              <option value="aiLevel">AI Level</option>
-              <option value="recentFunding">Recent Funding</option>
-            </select>
-            <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--muted)]">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
-          </div>
+          <SortDropdown
+            value={sortBy}
+            options={[
+              { value: 'interest', label: 'Interest' },
+              { value: 'name', label: 'Name' },
+              { value: 'aiLevel', label: 'AI Level' },
+              { value: 'recentFunding', label: 'Recent Funding' },
+            ]}
+            onChange={(v) => setSortBy(v as SortOption)}
+          />
         </div>
       </div>
 
