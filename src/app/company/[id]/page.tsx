@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getCompanyById, companies } from '@/data/companies';
 import { Company } from '@/data/types';
 
@@ -93,7 +94,18 @@ function CompanyDetail({ company }: { company: Company }) {
           ← Back to companies
         </Link>
         <div className="flex items-start justify-between gap-4">
-          <div>
+          {company.logo && (
+            <div className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+              <Image
+                src={company.logo}
+                alt={`${company.name} logo`}
+                width={64}
+                height={64}
+                className="object-contain"
+              />
+            </div>
+          )}
+          <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
               <h1 className="text-3xl font-semibold">{company.name}</h1>
               <AiLevelBadge level={company.aiNativeLevel} />

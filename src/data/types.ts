@@ -51,9 +51,17 @@ export interface Company {
   customers?: string;
 
   // Competition
-  competitors: string[];
+  competitors: {
+    name: string;
+    description: string;
+    whyTheyWin?: string;
+  }[];
   marketPosition?: string;
   moat: string[];
+  vsGiants?: string; // How they differentiate vs Google/OpenAI/Anthropic
+
+  // Logo
+  logo?: string; // path to logo image (e.g., /logos/company.png)
 
   // AI-Native Level
   aiNativeLevel: 1 | 2 | 3 | 4;

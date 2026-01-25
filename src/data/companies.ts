@@ -4,6 +4,7 @@ export const companies: Company[] = [
   {
     id: 'anthropic',
     name: 'Anthropic',
+    logo: '/logos/anthropic.png',
     description: 'AI safety company building Claude, a helpful, harmless, and honest AI assistant.',
     website: 'https://anthropic.com',
 
@@ -17,7 +18,23 @@ export const companies: Company[] = [
     customers: '300,000+ B2B customers',
 
     // Competition
-    competitors: ['OpenAI', 'Google DeepMind', 'Meta AI'],
+    competitors: [
+      {
+        name: 'OpenAI',
+        description: 'GPT-4/o1 models, ChatGPT, $11B+ ARR',
+        whyTheyWin: 'First mover advantage, brand recognition, Microsoft partnership ($13B investment)',
+      },
+      {
+        name: 'Google DeepMind',
+        description: 'Gemini models, integrated into Google products',
+        whyTheyWin: 'Unlimited compute resources, distribution through Google products (2B+ users)',
+      },
+      {
+        name: 'Meta AI',
+        description: 'Llama open-source models',
+        whyTheyWin: 'Open-source strategy captures developer mindshare, no API costs',
+      },
+    ],
     marketPosition: '#1 in Enterprise LLM (32% market share)',
     moat: [
       'Developer platform dominance: GitHub Copilot, Cursor, Replit default to Claude',
@@ -25,6 +42,7 @@ export const companies: Company[] = [
       'Claude Code: $500M+ ARR in 3 months, 10x growth',
       '$27B+ funding enables sustained R&D investment',
     ],
+    vsGiants: 'Safety-first positioning attracts enterprises wary of OpenAI/Google data practices. Claude\'s "character" and nuanced reasoning wins developers. Not trying to own distribution — instead powers other platforms (Cursor, Perplexity, etc.)',
 
     // AI-Native Level
     aiNativeLevel: 4,
@@ -212,6 +230,7 @@ export const companies: Company[] = [
   {
     id: 'leya',
     name: 'Leya',
+    logo: '/logos/leya.png',
     description: 'AI workspace for lawyers. Automates legal research, document review, and drafting.',
     website: 'https://leya.law',
 
@@ -223,13 +242,30 @@ export const companies: Company[] = [
     runway: '18+ months',
     customers: '70+ European law firms',
 
-    competitors: ['Harvey', 'Casetext', 'Ironclad'],
+    competitors: [
+      {
+        name: 'Harvey',
+        description: 'Legal AI for law firms, $2B+ valuation, US-focused',
+        whyTheyWin: 'Sequoia/OpenAI backing, elite law firm partnerships (A&O, PwC), US market dominance',
+      },
+      {
+        name: 'Casetext (Thomson Reuters)',
+        description: 'CoCounsel AI, acquired for $650M',
+        whyTheyWin: 'Thomson Reuters distribution, established legal research brand, existing law firm relationships',
+      },
+      {
+        name: 'Ironclad',
+        description: 'Contract lifecycle management with AI',
+        whyTheyWin: 'Strong enterprise CLM product, $3.2B valuation, 1000+ enterprise customers',
+      },
+    ],
     marketPosition: 'Leading in European legal AI market',
     moat: [
       'Deep integration with European legal systems',
       'YC + Benchmark + Redpoint backing',
       'First mover in EU legal AI',
     ],
+    vsGiants: 'European focus avoids direct US competition with Harvey. Multi-jurisdictional expertise (EU, UK, Nordic law) that US players lack. Not dependent on single LLM provider.',
 
     aiNativeLevel: 3,
     aiNativeLevelDescription: 'AI is core differentiator. LLM powers document review, research, drafting.',
@@ -310,19 +346,7 @@ export const companies: Company[] = [
     productStage: '0→1',
 
     designerLinks: [],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'Stockholm, Sweden',
-        url: 'https://leya.law/careers',
-        requirements: [
-          '5+ years product design experience',
-          'B2B SaaS experience preferred',
-          'Complex workflow design',
-          'Figma proficiency',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -372,6 +396,7 @@ export const companies: Company[] = [
   {
     id: 'granola',
     name: 'Granola',
+    logo: '/logos/granola.png',
     description: 'AI notepad for meetings. Augments your notes instead of replacing your judgment.',
     website: 'https://granola.ai',
 
@@ -383,7 +408,23 @@ export const companies: Company[] = [
     runway: '24+ months',
     customers: 'VCs, founders at Vercel, Ramp, Roblox',
 
-    competitors: ['Otter.ai', 'Fireflies', 'Fathom'],
+    competitors: [
+      {
+        name: 'Otter.ai',
+        description: 'AI meeting transcription, $1B+ valuation',
+        whyTheyWin: 'First mover in AI transcription, 25M+ users, strong brand recognition, Zoom/Teams integrations',
+      },
+      {
+        name: 'Fireflies.ai',
+        description: 'AI meeting assistant and CRM integration',
+        whyTheyWin: 'Deep CRM integrations (Salesforce, HubSpot), sales team focus, action item extraction',
+      },
+      {
+        name: 'Fathom',
+        description: 'Free AI meeting notes',
+        whyTheyWin: 'Free tier captures users, simple UX, fast transcription',
+      },
+    ],
     marketPosition: 'Premium positioning — "for people who think their judgment matters"',
     moat: [
       'Unique positioning: augments vs replaces',
@@ -391,6 +432,7 @@ export const companies: Company[] = [
       'Mike Krieger (Instagram) as investor',
       'Product-led growth with viral loop',
     ],
+    vsGiants: 'Philosophical differentiation: "AI should augment your judgment, not replace it." Premium positioning avoids price war with free tools. Not trying to be everything — opinionated product for specific users.',
 
     aiNativeLevel: 3,
     aiNativeLevelDescription: 'AI enhances notes but user judgment remains central.',
@@ -527,6 +569,7 @@ export const companies: Company[] = [
   {
     id: 'pika',
     name: 'Pika',
+    logo: '/logos/pika.jpeg',
     description: 'AI video generation and editing platform. Text-to-video, image-to-video.',
     website: 'https://pika.art',
 
@@ -538,7 +581,23 @@ export const companies: Company[] = [
     runway: '24+ months',
     customers: 'Creators, marketers, casual users',
 
-    competitors: ['Runway', 'OpenAI Sora', 'Kling'],
+    competitors: [
+      {
+        name: 'Runway',
+        description: 'Gen-3 video model, $1.5B+ valuation',
+        whyTheyWin: 'Pro-grade tools, Hollywood partnerships (A24, Paramount), established in creative industry',
+      },
+      {
+        name: 'OpenAI Sora',
+        description: 'Text-to-video from OpenAI',
+        whyTheyWin: 'OpenAI brand, quality benchmark setter, will have ChatGPT distribution',
+      },
+      {
+        name: 'Kling (Kuaishou)',
+        description: 'Chinese AI video model',
+        whyTheyWin: 'Massive compute resources, 700M+ MAU distribution in China',
+      },
+    ],
     marketPosition: 'Consumer-friendly alternative to Runway',
     moat: [
       'Stanford AI Lab pedigree',
@@ -546,6 +605,7 @@ export const companies: Company[] = [
       'Fast iteration on model improvements',
       'Strong creator community',
     ],
+    vsGiants: 'Consumer-first simplicity vs Runway\'s pro-grade complexity. Faster iteration cycle than Sora (which has slow rollout). Not fighting for Hollywood — capturing everyday creators. Model-agnostic approach allows adopting best techniques.',
 
     aiNativeLevel: 4,
     aiNativeLevelDescription: 'AI IS the product. Video generation is 100% AI-powered.',
@@ -632,13 +692,12 @@ export const companies: Company[] = [
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'Palo Alto, CA',
-        url: 'https://pika.art/careers',
+        location: 'Palo Alto HQ (Onsite)',
+        url: 'https://jobs.ashbyhq.com/pika',
         requirements: [
-          'Strong visual design skills',
+          'Full-time onsite at Palo Alto HQ',
           'Consumer product experience',
-          'Motion/video design background helpful',
-          'Portfolio with creative tools',
+          'Creative tools portfolio',
         ],
       },
     ],
@@ -691,6 +750,7 @@ export const companies: Company[] = [
   {
     id: 'elevenlabs',
     name: 'ElevenLabs',
+    logo: '/logos/elevenlabs.png',
     description: 'AI voice platform. Text-to-speech, voice cloning, dubbing.',
     website: 'https://elevenlabs.io',
 
@@ -702,7 +762,23 @@ export const companies: Company[] = [
     runway: 'Strong',
     customers: 'Publishers, game studios, content creators',
 
-    competitors: ['Amazon Polly', 'Google TTS', 'Resemble AI', 'Play.ht'],
+    competitors: [
+      {
+        name: 'Amazon Polly',
+        description: 'AWS text-to-speech service',
+        whyTheyWin: 'AWS distribution, enterprise integrations, pay-as-you-go pricing at scale',
+      },
+      {
+        name: 'Google Cloud TTS',
+        description: 'Google\'s text-to-speech API',
+        whyTheyWin: 'WaveNet quality, 40+ languages, Google Cloud ecosystem',
+      },
+      {
+        name: 'Resemble AI',
+        description: 'Voice cloning and real-time voice conversion',
+        whyTheyWin: 'Real-time voice conversion, gaming/entertainment focus',
+      },
+    ],
     marketPosition: 'Market leader in quality voice synthesis',
     moat: [
       'Best-in-class voice quality',
@@ -710,6 +786,7 @@ export const companies: Company[] = [
       'Strong API adoption',
       'a16z + Sequoia backing',
     ],
+    vsGiants: 'Quality differentiation — ElevenLabs voices are noticeably more natural than AWS/Google. Specialized focus vs generic cloud services. Voice cloning capability that cloud giants avoid due to liability concerns.',
 
     aiNativeLevel: 4,
     aiNativeLevelDescription: 'AI IS the product. Voice generation is 100% AI.',
@@ -795,19 +872,7 @@ export const companies: Company[] = [
         description: 'Product and research updates',
       },
     ],
-    openRoles: [
-      {
-        title: 'Senior Product Designer',
-        location: 'Remote (US/EU)',
-        url: 'https://elevenlabs.io/careers',
-        requirements: [
-          '6+ years product design experience',
-          'Developer tools or creative tools',
-          'Strong systems thinking',
-          'API/platform design experience',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -862,6 +927,7 @@ export const companies: Company[] = [
   {
     id: 'cognition',
     name: 'Cognition',
+    logo: '/logos/cognition.png',
     description: 'AI software engineer. Devin can autonomously complete entire coding projects.',
     website: 'https://cognition.ai',
 
@@ -873,7 +939,23 @@ export const companies: Company[] = [
     runway: 'Strong',
     customers: 'Engineering teams, enterprises',
 
-    competitors: ['GitHub Copilot', 'Cursor', 'Claude Code'],
+    competitors: [
+      {
+        name: 'GitHub Copilot',
+        description: 'AI pair programmer, 1.8M+ paid users',
+        whyTheyWin: 'GitHub distribution (100M+ developers), Microsoft backing, IDE integration',
+      },
+      {
+        name: 'Cursor',
+        description: 'AI-native code editor, $9B valuation',
+        whyTheyWin: 'Best-in-class UX, fast iteration, developer-loved product',
+      },
+      {
+        name: 'Claude Code (Anthropic)',
+        description: 'Agentic coding assistant, $500M+ ARR',
+        whyTheyWin: 'Claude model quality, Anthropic backing, terminal-native workflow',
+      },
+    ],
     marketPosition: 'First "AI software engineer" positioning',
     moat: [
       'First mover in autonomous coding agent',
@@ -881,6 +963,7 @@ export const companies: Company[] = [
       'Full project execution vs suggestions',
       'Founders Fund backing',
     ],
+    vsGiants: 'Full autonomy positioning vs Copilot\'s "assistant" framing. Complete project execution rather than suggestions. IOI champion team gives credibility. Enterprise use case (delegate entire tasks) vs developer productivity.',
 
     aiNativeLevel: 4,
     aiNativeLevelDescription: 'AI IS the product. Autonomous software engineering agent.',
@@ -969,19 +1052,7 @@ export const companies: Company[] = [
         description: 'Product updates and demos',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'San Francisco',
-        url: 'https://cognition.ai/careers',
-        requirements: [
-          'Developer tools experience',
-          'Complex workflow design',
-          'Technical background preferred',
-          'Comfort with ambiguity',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -1036,6 +1107,7 @@ export const companies: Company[] = [
   {
     id: 'mercor',
     name: 'Mercor',
+    logo: '/logos/mercor.png',
     description: 'AI-powered hiring platform. Matches talent with opportunities using AI interviews.',
     website: 'https://mercor.com',
 
@@ -1047,7 +1119,23 @@ export const companies: Company[] = [
     runway: 'Strong',
     customers: 'OpenAI, Anthropic, tech companies',
 
-    competitors: ['LinkedIn', 'Hired', 'Triplebyte'],
+    competitors: [
+      {
+        name: 'LinkedIn',
+        description: 'Professional network, 1B+ members',
+        whyTheyWin: 'Dominant professional network, Microsoft integration, recruiter standard tool',
+      },
+      {
+        name: 'Hired',
+        description: 'Tech talent marketplace',
+        whyTheyWin: 'Curated tech talent pool, salary transparency, established enterprise relationships',
+      },
+      {
+        name: 'Triplebyte (Karat)',
+        description: 'Technical interview platform',
+        whyTheyWin: 'Technical assessment expertise, interview-as-a-service model',
+      },
+    ],
     marketPosition: 'AI-first hiring platform',
     moat: [
       'AI interview technology',
@@ -1055,6 +1143,7 @@ export const companies: Company[] = [
       'Customers include OpenAI, Anthropic',
       'Benchmark + General Catalyst backing',
     ],
+    vsGiants: 'AI-native from day one vs LinkedIn\'s AI add-ons. Focused on talent quality over quantity. OpenAI/Anthropic as customers validates approach. Skills-based vs credential-based matching.',
 
     aiNativeLevel: 3,
     aiNativeLevelDescription: 'AI is core differentiator. AI conducts interviews and matching.',
@@ -1141,13 +1230,12 @@ export const companies: Company[] = [
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'San Francisco',
+        location: 'San Francisco (Onsite)',
         url: 'https://mercor.com/careers',
         requirements: [
-          'Marketplace or two-sided platform experience',
-          'Data visualization skills',
-          'User research experience',
-          'Fast-paced startup experience',
+          '$150K - $250K + Equity',
+          'Full-time onsite',
+          'Marketplace/two-sided platform experience preferred',
         ],
       },
     ],
