@@ -9,8 +9,6 @@ type FilterState = {
   aiLevel: number | null;
   hasOpenRoles: boolean | null;
   remote: string | null;
-  location: string | null;
-  recentFunding: boolean | null;
 };
 
 function AiLevelBadge({ level }: { level: number }) {
@@ -86,25 +84,14 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     aiLevel: null,
     hasOpenRoles: null,
     remote: null,
-    location: null,
-    recentFunding: null,
   });
-
-  // Get unique locations
-  const locations = useMemo(() => {
-    const locs = new Set(companies.map((c) => c.headquarters.split(',')[1]?.trim() || c.headquarters));
-    return Array.from(locs).sort();
-  }, [companies]);
 
   // Filter companies
   const filteredCompanies = useMemo(() => {
     return companies.filter((company) => {
       if (filters.aiLevel !== null && company.aiNativeLevel !== filters.aiLevel) return false;
       if (filters.hasOpenRoles === true && company.openRoles.length === 0) return false;
-      if (filters.hasOpenRoles === false && company.openRoles.length > 0) return false;
       if (filters.remote !== null && company.remote !== filters.remote) return false;
-      if (filters.location !== null && !company.headquarters.includes(filters.location)) return false;
-      if (filters.recentFunding === true && !isRecentFunding(company)) return false;
       return true;
     });
   }, [companies, filters]);
@@ -149,8 +136,6 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       aiLevel: null,
       hasOpenRoles: null,
       remote: null,
-      location: null,
-      recentFunding: null,
     });
   };
 
@@ -159,33 +144,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   return (
     <div>
       {/* Filter & Sort Bar */}
-      <div className="mb-6 space-y-4">
-        {/* Sort */}
-        <div className="flex items-center gap-3 flex-wrap">
-          <span className="text-sm text-[var(--muted)]">Sort:</span>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="bg-[var(--card)] border border-[var(--border)] rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-[var(--accent)]"
-          >
-            <option value="fitScore">Fit Score</option>
-            <option value="name">Name</option>
-            <option value="aiLevel">AI Level</option>
-            <option value="recentFunding">Recent Funding</option>
-          </select>
-          <button
-            onClick={() => setSortAsc(!sortAsc)}
-            className="px-2 py-1.5 text-sm bg-[var(--card)] border border-[var(--border)] rounded-lg hover:border-[var(--muted)]"
-          >
-            {sortAsc ? '↑ Asc' : '↓ Desc'}
-          </button>
-        </div>
-
-        {/* Filters */}
-        <div className="flex items-center gap-2 flex-wrap">
+      <div className="flex items-center justify-between mb-6">
+        {/* Left: Filters */}
+        <div className="flex items-center gap-2">
           <span className="text-sm text-[var(--muted)]">Filter:</span>
-
-          {/* AI Level */}
           {[4, 3, 2, 1].map((level) => (
             <FilterChip
               key={level}
@@ -194,68 +156,48 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
               onClick={() => toggleFilter('aiLevel', level)}
             />
           ))}
-
-          <span className="text-[var(--border)]">|</span>
-
-          {/* Open Roles */}
+          <span className="text-[var(--border)] mx-1">|</span>
           <FilterChip
-            label="Has Open Roles"
+            label="Open Roles"
             active={filters.hasOpenRoles === true}
             onClick={() => toggleFilter('hasOpenRoles', true)}
           />
-
-          {/* Recent Funding */}
           <FilterChip
-            label="Recent Funding"
-            active={filters.recentFunding === true}
-            onClick={() => toggleFilter('recentFunding', true)}
-          />
-
-          <span className="text-[var(--border)]">|</span>
-
-          {/* Remote */}
-          <FilterChip
-            label="Remote OK"
+            label="Remote"
             active={filters.remote === 'Yes'}
             onClick={() => toggleFilter('remote', 'Yes')}
           />
-          <FilterChip
-            label="Hybrid"
-            active={filters.remote === 'Hybrid'}
-            onClick={() => toggleFilter('remote', 'Hybrid')}
-          />
-
-          <span className="text-[var(--border)]">|</span>
-
-          {/* Location dropdown */}
-          <select
-            value={filters.location || ''}
-            onChange={(e) => setFilters((prev) => ({ ...prev, location: e.target.value || null }))}
-            className="bg-[var(--card)] border border-[var(--border)] rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-[var(--accent)]"
-          >
-            <option value="">All Locations</option>
-            {locations.map((loc) => (
-              <option key={loc} value={loc}>
-                {loc}
-              </option>
-            ))}
-          </select>
-
-          {/* Clear */}
           {activeFilterCount > 0 && (
             <button
               onClick={clearFilters}
-              className="px-3 py-1.5 text-sm text-[var(--warning)] hover:underline"
+              className="ml-2 text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
             >
-              Clear ({activeFilterCount})
+              Clear
             </button>
           )}
         </div>
-      </div>
 
-      {/* Results count */}
-      <div className="text-sm text-[var(--muted)] mb-4">
-        {sortedCompanies.length} of {companies.length} companies
+        {/* Right: Sort */}
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-[var(--muted)]">Sort:</span>
+          <div className="relative">
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="appearance-none bg-transparent text-[var(--foreground)] text-sm pr-5 cursor-pointer focus:outline-none"
+            >
+              <option value="fitScore">Fit Score</option>
+              <option value="name">Name</option>
+              <option value="aiLevel">AI Level</option>
+              <option value="recentFunding">Recent Funding</option>
+            </select>
+            <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--muted)]">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Company List */}
