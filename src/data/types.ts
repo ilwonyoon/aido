@@ -49,6 +49,10 @@ export interface Company {
   description: string;
   website: string;
 
+  // Location
+  headquarters: string; // e.g., "San Francisco, CA"
+  remote?: 'Yes' | 'Hybrid' | 'No' | 'Unknown';
+
   // Business
   stage: string;
   valuation?: string;
@@ -116,6 +120,6 @@ export interface Company {
   };
 
   // Meta
-  lastUpdated: string;
+  lastUpdated: string; // ISO format: "2025-01-25T14:30:00" for minute precision
   sources: { title: string; url: string }[];
 }

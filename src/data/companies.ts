@@ -6,6 +6,8 @@ export const companies: Company[] = [
     name: 'Anthropic',
     description: 'AI safety company building Claude, a helpful, harmless, and honest AI assistant.',
     website: 'https://anthropic.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid',
 
     // Business
     stage: 'Series F',
@@ -240,6 +242,8 @@ export const companies: Company[] = [
     name: 'Leya',
     description: 'AI workspace for lawyers. Automates legal research, document review, and drafting.',
     website: 'https://leya.law',
+    headquarters: 'Stockholm, Sweden',
+    remote: 'Hybrid',
 
     stage: 'Series A',
     valuation: '~$100M (estimated)',
@@ -409,6 +413,8 @@ export const companies: Company[] = [
     name: 'Granola',
     description: 'AI notepad for meetings. Augments your notes instead of replacing your judgment.',
     website: 'https://granola.ai',
+    headquarters: 'London, UK',
+    remote: 'Hybrid',
 
     stage: 'Series B',
     valuation: '$250M',
@@ -586,6 +592,8 @@ export const companies: Company[] = [
     name: 'Pika',
     description: 'AI video generation and editing platform. Text-to-video, image-to-video.',
     website: 'https://pika.art',
+    headquarters: 'Palo Alto, CA',
+    remote: 'No',
 
     stage: 'Series B',
     valuation: '$470M',
@@ -771,6 +779,8 @@ export const companies: Company[] = [
     name: 'ElevenLabs',
     description: 'AI voice platform. Text-to-speech, voice cloning, dubbing.',
     website: 'https://elevenlabs.io',
+    headquarters: 'New York, NY',
+    remote: 'Yes',
 
     stage: 'Series C',
     valuation: '$3.3B',
@@ -953,6 +963,8 @@ export const companies: Company[] = [
     name: 'Cognition',
     description: 'AI software engineer. Devin can autonomously complete entire coding projects.',
     website: 'https://cognition.ai',
+    headquarters: 'San Francisco, CA',
+    remote: 'No',
 
     stage: 'Series A',
     valuation: '$2B → $10B (2025)',
@@ -1137,6 +1149,8 @@ export const companies: Company[] = [
     name: 'Mercor',
     description: 'AI-powered hiring platform. Matches talent with opportunities using AI interviews.',
     website: 'https://mercor.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'No',
 
     stage: 'Series A → C (rapid growth)',
     valuation: '$10B (Oct 2025)',
