@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { Company } from '@/data/types';
 
-type SortOption = 'interest' | 'name' | 'recentFunding' | 'aiLevel';
+type SortOption = 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
 type InterestStatus = 'interested' | 'not_interested' | null;
 
 function AiLevelBadge({ level }: { level: number }) {
@@ -221,28 +221,41 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     });
   }, [companies, aiLevelFilter, openRolesFilter, locationFilter]);
 
+  // Parse team size to number for sorting
+  const parseTeamSize = (size?: string): number => {
+    if (!size) return 0;
+    const match = size.match(/\d+/);
+    return match ? parseInt(match[0]) : 0;
+  };
+
+  // Get funding stage order (higher = later stage)
+  const getFundingStageOrder = (stage: string): number => {
+    const stageOrder: Record<string, number> = {
+      'Pre-seed': 1, 'Seed': 2, 'Series A': 3, 'Series B': 4,
+      'Series C': 5, 'Series D': 6, 'Series E': 7, 'Series F': 8,
+    };
+    for (const [key, value] of Object.entries(stageOrder)) {
+      if (stage.includes(key)) return value;
+    }
+    return 0;
+  };
+
   // Sort companies
   const sortedCompanies = useMemo(() => {
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
         case 'interest':
-          // Interested first, then unmarked, then not interested
           const statusA = interestStatuses[a.id];
           const statusB = interestStatuses[b.id];
           const orderA = statusA === 'interested' ? 0 : statusA === 'not_interested' ? 2 : 1;
           const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
           return orderA - orderB;
-        case 'name':
-          return a.name.localeCompare(b.name);
+        case 'teamSize':
+          return parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
+        case 'fundingStage':
+          return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'aiLevel':
           return b.aiNativeLevel - a.aiNativeLevel;
-        case 'recentFunding':
-          const dateA = getLatestFundingDate(a);
-          const dateB = getLatestFundingDate(b);
-          if (!dateA && !dateB) return 0;
-          if (!dateA) return 1;
-          if (!dateB) return -1;
-          return dateB.getTime() - dateA.getTime();
         default:
           return 0;
       }
@@ -315,9 +328,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             value={sortBy}
             options={[
               { value: 'interest', label: 'Interest' },
-              { value: 'name', label: 'Name' },
+              { value: 'teamSize', label: 'Team Size' },
+              { value: 'fundingStage', label: 'Funding Stage' },
               { value: 'aiLevel', label: 'AI Level' },
-              { value: 'recentFunding', label: 'Recent Funding' },
             ]}
             onChange={(v) => setSortBy(v as SortOption)}
           />

@@ -39,7 +39,7 @@ export function InterestToggle({ companyId }: { companyId: string }) {
     <div className="flex items-center gap-3">
       <button
         onClick={() => updateStatus(status === 'interested' ? null : 'interested')}
-        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
           status === 'interested'
             ? 'bg-[var(--success)] text-black'
             : 'bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:border-[var(--success)] hover:text-[var(--success)]'
@@ -49,7 +49,7 @@ export function InterestToggle({ companyId }: { companyId: string }) {
       </button>
       <button
         onClick={() => updateStatus(status === 'not_interested' ? null : 'not_interested')}
-        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
           status === 'not_interested'
             ? 'bg-[var(--muted)] text-black'
             : 'bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)] hover:text-[var(--foreground)]'
