@@ -42,25 +42,51 @@ function DropdownFilter({
   options: { value: string; label: string }[];
   onChange: (value: string) => void;
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const selectedOption = options.find(opt => opt.value === value);
+
   return (
     <div className="relative">
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="appearance-none bg-[var(--card)] border border-[var(--border)] rounded-full px-4 py-1.5 pr-8 text-sm cursor-pointer focus:outline-none focus:border-[var(--muted)] hover:border-[var(--muted)] transition-colors"
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors ${
+          value
+            ? 'border-[var(--accent)] text-[var(--foreground)]'
+            : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+        }`}
       >
-        <option value="">{label}</option>
-        {options.map((opt) => (
-          <option key={opt.value} value={opt.value}>
-            {opt.label}
-          </option>
-        ))}
-      </select>
-      <span className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--muted)]">
-        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+        <span>{selectedOption?.label || label}</span>
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-      </span>
+      </button>
+
+      {isOpen && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+          <div className="absolute left-0 top-full mt-1 min-w-full bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+            <button
+              onClick={() => { onChange(''); setIsOpen(false); }}
+              className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
+                !value ? 'text-[var(--accent-light)]' : 'text-[var(--muted)]'
+              }`}
+            >
+              {label}
+            </button>
+            {options.map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => { onChange(opt.value); setIsOpen(false); }}
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
+                  value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -161,7 +187,6 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       <div className="flex items-center justify-between mb-6">
         {/* Left: Filters */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-[var(--muted)]">Filter:</span>
           <div className="flex items-center gap-1">
             <DropdownFilter
               label="AI Level"
