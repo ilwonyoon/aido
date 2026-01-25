@@ -36,11 +36,13 @@ function DropdownFilter({
   value,
   options,
   onChange,
+  infoTooltip,
 }: {
   label: string;
   value: string;
   options: { value: string; label: string }[];
   onChange: (value: string) => void;
+  infoTooltip?: React.ReactNode;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
@@ -56,6 +58,16 @@ function DropdownFilter({
         }`}
       >
         <span>{selectedOption?.label || label}</span>
+        {infoTooltip && (
+          <div className="relative group/info">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" className="text-[var(--muted)]">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm1 12H7V7h2v5zm0-6H7V4h2v2z"/>
+            </svg>
+            <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg opacity-0 invisible group-hover/info:opacity-100 group-hover/info:visible transition-all z-[60]">
+              {infoTooltip}
+            </div>
+          </div>
+        )}
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
@@ -187,32 +199,25 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       <div className="flex items-center justify-between mb-6">
         {/* Left: Filters */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1">
-            <DropdownFilter
-              label="AI Level"
-              value={aiLevelFilter}
-              options={[
-                { value: '4', label: 'L4: AI Native' },
-                { value: '3', label: 'L3: AI Core' },
-                { value: '2', label: 'L2: AI Major' },
-                { value: '1', label: 'L1: AI Feature' },
-              ]}
-              onChange={setAiLevelFilter}
-            />
-            <div className="relative group">
-              <button className="w-5 h-5 rounded-full bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] text-xs flex items-center justify-center hover:border-[var(--muted)]">
-                i
-              </button>
-              <div className="absolute left-0 top-full mt-2 w-64 p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-                <div className="text-xs space-y-2">
-                  <div><span className="font-medium text-[var(--success)]">L4:</span> AI IS the product (Anthropic, OpenAI)</div>
-                  <div><span className="font-medium text-[var(--accent-light)]">L3:</span> AI is core differentiator (Cursor, Perplexity)</div>
-                  <div><span className="font-medium">L2:</span> AI is major feature (Notion AI, Figma AI)</div>
-                  <div><span className="font-medium">L1:</span> AI is minor feature</div>
-                </div>
+          <DropdownFilter
+            label="AI Level"
+            value={aiLevelFilter}
+            options={[
+              { value: '4', label: 'L4: AI Native' },
+              { value: '3', label: 'L3: AI Core' },
+              { value: '2', label: 'L2: AI Major' },
+              { value: '1', label: 'L1: AI Feature' },
+            ]}
+            onChange={setAiLevelFilter}
+            infoTooltip={
+              <div className="text-xs space-y-2">
+                <div><span className="font-medium text-[var(--success)]">L4:</span> AI IS the product (Anthropic, OpenAI)</div>
+                <div><span className="font-medium text-[var(--accent-light)]">L3:</span> AI is core differentiator (Cursor, Perplexity)</div>
+                <div><span className="font-medium">L2:</span> AI is major feature (Notion AI, Figma AI)</div>
+                <div><span className="font-medium">L1:</span> AI is minor feature</div>
               </div>
-            </div>
-          </div>
+            }
+          />
           <DropdownFilter
             label="Open Roles"
             value={openRolesFilter}
