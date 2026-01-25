@@ -153,8 +153,19 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   const [sortBy, setSortBy] = useState<SortOption>('interest');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
-  const [remoteFilter, setRemoteFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState('');
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
+
+  // Get unique locations (country/region level)
+  const locations = useMemo(() => {
+    const locs = new Set<string>();
+    companies.forEach((c) => {
+      const parts = c.headquarters.split(',');
+      const region = parts[parts.length - 1]?.trim();
+      if (region) locs.add(region);
+    });
+    return Array.from(locs).sort();
+  }, [companies]);
 
   // Load interest statuses from localStorage
   useEffect(() => {
@@ -197,10 +208,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       if (aiLevelFilter && company.aiNativeLevel !== parseInt(aiLevelFilter)) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
-      if (remoteFilter && company.remote !== remoteFilter) return false;
+      if (locationFilter && !company.headquarters.includes(locationFilter)) return false;
       return true;
     });
-  }, [companies, aiLevelFilter, openRolesFilter, remoteFilter]);
+  }, [companies, aiLevelFilter, openRolesFilter, locationFilter]);
 
   // Sort companies
   const sortedCompanies = useMemo(() => {
@@ -231,12 +242,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     return sorted;
   }, [filteredCompanies, sortBy, interestStatuses]);
 
-  const hasActiveFilters = aiLevelFilter || openRolesFilter || remoteFilter;
+  const hasActiveFilters = aiLevelFilter || openRolesFilter || locationFilter;
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setOpenRolesFilter('');
-    setRemoteFilter('');
+    setLocationFilter('');
   };
 
   return (
@@ -274,14 +285,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             onChange={setOpenRolesFilter}
           />
           <DropdownFilter
-            label="Remote"
-            value={remoteFilter}
-            options={[
-              { value: 'Yes', label: 'Remote OK' },
-              { value: 'Hybrid', label: 'Hybrid' },
-              { value: 'No', label: 'On-site Only' },
-            ]}
-            onChange={setRemoteFilter}
+            label="Location"
+            value={locationFilter}
+            options={locations.map(loc => ({ value: loc, label: loc }))}
+            onChange={setLocationFilter}
           />
           {hasActiveFilters && (
             <button
