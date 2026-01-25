@@ -101,6 +101,54 @@ DD/MM/YY - HH:MM:SS | 변경 요약
 Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
 ```
 
+---
+
+## Multi-LLM 작업 환경
+
+이 프로젝트는 여러 LLM을 병렬로 활용하여 작업 효율을 높임.
+
+### 사용 가능한 환경
+
+| 환경 | 모델 | 용도 |
+|------|------|------|
+| **Claude Code CLI** | Opus/Sonnet | 복잡한 로직, 아키텍처, 리서치 |
+| **Cursor** | Claude/GPT-4 | UI, 컴포넌트, 빠른 수정 |
+| **Codex** | Claude | 백그라운드 작업, 테스트, 문서화 |
+
+### TLM Skill (Task-LLM Distribution)
+
+복잡한 태스크를 여러 LLM에 분배할 때 사용:
+
+```
+/tlm [태스크 설명]
+```
+
+**기능:**
+- 태스크를 병렬 작업으로 분할
+- 각 모델에 적합한 태스크 배정
+- Git worktree로 충돌 방지
+- 각 LLM에 복붙할 프롬프트 생성
+- Merge & Test 워크플로우 안내
+
+**스킬 파일:** `.claude/skills/tlm-distribute.md`
+
+### 모델 선택 가이드
+
+| 복잡도 | 추천 모델 | 예시 |
+|--------|----------|------|
+| **High** | Claude Opus (CLI) | 아키텍처, 복잡한 버그, 새 시스템 |
+| **Medium** | Claude Sonnet (Cursor) | 단일 기능, 컴포넌트, API |
+| **Low** | GPT-4 (Cursor) / Codex | 스타일링, 테스트, 문서 |
+
+### 병렬 작업 원칙
+
+1. **파일 충돌 금지**: 각 LLM이 수정하는 파일이 겹치면 안 됨
+2. **의존성 순서**: 타입 정의 → 사용 코드 (순차)
+3. **Git Worktree**: 각 태스크별 독립 브랜치/디렉토리
+4. **DO NOT touch 명시**: 각 프롬프트에 다른 LLM이 작업 중인 파일 명시
+
+---
+
 ## 다음 할 것들
 
 - [ ] 회사 추가: Cursor, Perplexity, Vercel 등
