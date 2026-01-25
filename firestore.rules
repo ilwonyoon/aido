@@ -1,0 +1,22 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Companies collection - public read, admin write
+    match /companies/{companyId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // User tracking - users can only access their own data
+    match /users/{userId}/tracking/{companyId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Macro events - public read, admin write
+    match /macroEvents/{eventId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
