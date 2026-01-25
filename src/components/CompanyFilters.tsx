@@ -222,8 +222,8 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             label="Open Roles"
             value={openRolesFilter}
             options={[
-              { value: 'yes', label: 'Has Open Roles' },
-              { value: 'no', label: 'No Open Roles' },
+              { value: 'yes', label: 'Hiring' },
+              { value: 'no', label: 'Not Hiring' },
             ]}
             onChange={setOpenRolesFilter}
           />
