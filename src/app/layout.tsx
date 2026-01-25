@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,25 +26,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
-          <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-            <Link href="/" className="font-semibold tracking-tight">
-              AIDO
-            </Link>
-            <div className="flex items-center gap-6 text-sm text-[var(--muted)]">
-              <Link href="/" className="hover:text-[var(--foreground)]">
-                Companies
+        <ThemeProvider>
+          <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
+            <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+              <Link href="/" className="font-semibold tracking-tight">
+                AIDO
               </Link>
+              <div className="flex items-center gap-4 text-sm text-[var(--muted)]">
+                <Link href="/" className="hover:text-[var(--foreground)]">
+                  Companies
+                </Link>
+                <ThemeToggle />
+              </div>
             </div>
-          </div>
-        </nav>
-        <main className="max-w-6xl mx-auto px-6 py-8">
-          {children}
-        </main>
+          </nav>
+          <main className="max-w-6xl mx-auto px-6 py-8">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
