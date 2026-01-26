@@ -2943,6 +2943,40 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "~$1B+ ARR (Dec 2025), 10x+ YoY (fastest SaaS ever: $1M→$1B in ~2 years)",
+      userGrowth: "Millions of developers globally, 30,000+ teams",
+      signals: [
+        "$29.3B valuation at Series D (11x from $2.5B in 11 months)",
+        "$1B+ ARR = fastest SaaS ever to $1B",
+        "Millions of developers, default AI coding tool",
+        "Profitable with strong unit economics",
+        "Four 25-year-old MIT billionaire founders still coding daily",
+      ],
+
+      tam: "$100B+ (All software development globally)",
+      marketShare: "~1% = 100x upside",
+      ceiling: "Very early innings: AI coding is nascent. Cursor defining the category. Potential to replace VS Code/IDEs entirely as AI capabilities improve.",
+      tailwinds: [
+        "AI coding wave: every developer will use AI tools",
+        "Tab completion creates switching costs (habit formation)",
+        "Claude partnership = best-in-class model access",
+        "Developer word-of-mouth drives viral growth",
+        "Small team (<50) at $29B = extreme efficiency",
+      ],
+      headwinds: [
+        "GitHub Copilot has Microsoft distribution (bundled with GitHub)",
+        "VS Code could integrate AI features natively",
+        "Replit, Codeium, and others competing for market",
+        "Model providers (Anthropic, OpenAI) could build own editors",
+        "In-person only limits talent pool",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium-Strong: Tab completion and workflow integration create high switching costs (muscle memory, productivity gains). Product quality and ship velocity are defensive. No network effects, but developer brand loyalty building.",
+    },
+
     tracking: {
       status: 'interested',
       fitScore: 9,
@@ -3141,6 +3175,40 @@ export const companies: Company[] = [
         content: 'Product Designer: $100K-$200K+ estimated. Limited public data.',
       },
     ],
+
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "~$200M ARR (2025), 3x YoY ($63M → $200M)",
+      userGrowth: "30M+ monthly active users",
+      signals: [
+        "$20B valuation at Series D (6.7x from $3B in 13 months)",
+        "$200M ARR with strong growth trajectory",
+        "30M+ monthly active users",
+        "Chrome browser 'Comet' launched (distribution play)",
+        "SoftBank + Nvidia backing",
+      ],
+
+      tam: "$300B+ (Global search and information retrieval market)",
+      marketShare: "<0.1% (Google has 90%+ of search)",
+      ceiling: "Very early innings: AI search is nascent, user behavior is changing but Google habits are deeply ingrained. Ceiling depends on capturing next generation of information seekers.",
+      tailwinds: [
+        "Gen Z/millennials prefer direct answers over links",
+        "AI answer quality improving rapidly",
+        "Source citations build trust vs Google AI Overviews",
+        "Comet browser extension deepens distribution",
+        "Pro subscription model validated ($20/month unlimited)",
+      ],
+      headwinds: [
+        "Google has ubiquitous distribution (default browser, mobile)",
+        "ChatGPT brand recognition in conversational AI",
+        "Publishers suing over content usage (legal risk)",
+        "Google ramping up AI Overviews (fighting back)",
+        "Search advertising model TBD (monetization risk)",
+      ],
+
+      moatType: 'brand',
+      moatStrength: "Low-Medium: Product quality and answer accuracy are advantages, but no network effects. Multi-model approach (Claude, GPT-4) provides flexibility. Brand as 'AI search' leader is emerging but fragile against Google.",
+    },
 
     tracking: {
       status: 'watching',
@@ -3362,6 +3430,40 @@ export const companies: Company[] = [
         url: 'https://www.levels.fyi/companies/openai/salaries/product-designer',
       },
     ],
+
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "$20B ARR (2025), 10x+ YoY ($2B → $20B)",
+      userGrowth: "300M+ weekly active users, fastest consumer app to 200M users",
+      signals: [
+        "$300B+ valuation target (restructuring to for-profit)",
+        "$20B ARR = largest AI company by revenue",
+        "300M+ weekly active ChatGPT users",
+        "Microsoft $13B partnership",
+        "Jony Ive team hired (design investment)",
+      ],
+
+      tam: "$500B+ (AI for all knowledge work, automation, creativity)",
+      marketShare: "~4% = 25x upside potential",
+      ceiling: "Mid innings: ChatGPT defined the AI assistant category, but market is rapidly evolving. Ceiling depends on maintaining model quality lead and expanding beyond chat.",
+      tailwinds: [
+        "ChatGPT brand is synonymous with AI (like 'Google' for search)",
+        "Microsoft distribution through Office, Azure, Windows",
+        "Developer platform (GPT Store, API) creates ecosystem",
+        "o1 reasoning model opens new use cases (coding, math, science)",
+        "AGI narrative drives enterprise willingness to pay premium",
+      ],
+      headwinds: [
+        "Anthropic's Claude growing faster in enterprise (32% vs OpenAI's declining share)",
+        "Google has unlimited compute and distribution advantages",
+        "Safety team departures hurt reputation",
+        "Governance drama (Sam Altman firing/rehiring) created uncertainty",
+        "Expensive compute burns $5B+/year, path to profitability unclear",
+      ],
+
+      moatType: 'brand',
+      moatStrength: "Medium: Brand dominance in consumer AI is massive, but models are commoditizing. Developer ecosystem and Microsoft partnership create distribution moat. No strong network effects beyond GPT Store.",
+    },
 
     tracking: {
       status: 'interested',
@@ -3589,6 +3691,40 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$300M+ ARR (estimated 2025), ~2x YoY",
+      userGrowth: "1M+ developers, 3M+ sites deployed",
+      signals: [
+        "$3.25B valuation at Series E",
+        "$700M+ total funding (Accel, GV, a16z)",
+        "1M+ developers, 3M+ sites deployed",
+        "Powers Next.js (most popular React framework)",
+        "v0 launched = AI coding product expansion",
+      ],
+
+      tam: "$30B+ (Cloud deployment, hosting, and dev tools for web developers)",
+      marketShare: "~1% (competing with AWS, Netlify, CloudFlare)",
+      ceiling: "Mid innings: Developer infrastructure market is crowded, but Vercel owns Next.js ecosystem. v0 opens adjacent AI market ($100B+ if successful).",
+      tailwinds: [
+        "Next.js framework adoption growing (React dominance)",
+        "Developer experience bar rising (Vercel sets standard)",
+        "v0 AI coding tool expanding TAM beyond infrastructure",
+        "Vercel aesthetic influences entire industry",
+        "Remote-first = global talent access",
+      ],
+      headwinds: [
+        "AWS has massive market share and ecosystem lock-in",
+        "Netlify, CloudFlare, Railway competing on pricing",
+        "v0 faces Cursor, Replit, GitHub Copilot competition",
+        "Open-source Next.js can be deployed anywhere (reduces lock-in)",
+        "Infrastructure commoditization pressure",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Next.js ecosystem creates switching costs, but framework is open-source. Developer experience and aesthetic brand are defensible. v0 could add AI moat if it wins.",
+    },
+
     tracking: {
       status: 'interested',
       fitScore: 8,
@@ -3722,6 +3858,40 @@ export const companies: Company[] = [
     ],
 
     cultureInsights: [],
+
+    growthMetrics: {
+      stage: 'steady',
+      revenueGrowth: "$300M ARR (estimated 2025), ~1.5x YoY",
+      userGrowth: "20M+ users, strong creative community",
+      signals: [
+        "$300M+ ARR (bootstrapped, no VC funding)",
+        "20M+ registered users",
+        "Profitable since launch",
+        "Small team (~100 people) = extreme efficiency",
+        "Discord-native with 20M+ community members",
+      ],
+
+      tam: "$15B+ (Creative software, design, and content creation)",
+      marketShare: "~2% (leading AI image generation for creators)",
+      ceiling: "Mid-late innings: AI image generation is maturing. Midjourney won the creative/artistic segment, but commercial/enterprise adoption requires different features.",
+      tailwinds: [
+        "Bootstrapped = no VC pressure, sustainable business",
+        "Creative community is loyal and vocal",
+        "Discord distribution creates engagement moat",
+        "Quality leader in artistic/creative generation",
+        "Profitable allows R&D investment without burn pressure",
+      ],
+      headwinds: [
+        "DALL-E 3 integrated into ChatGPT (massive distribution)",
+        "Stable Diffusion open-source allows free self-hosting",
+        "Adobe Firefly targeting commercial users with copyright protection",
+        "Discord UX limits enterprise/professional adoption",
+        "Copyright and legal concerns around training data",
+      ],
+
+      moatType: 'brand',
+      moatStrength: "Medium: Brand as best creative AI image tool is strong among artists. Discord community creates engagement moat. But no network effects, and model quality is replicable.",
+    },
 
     tracking: {
       status: 'watching',
@@ -6774,7 +6944,74 @@ export const companies: Company[] = [
         url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/',
       },
     ],
+  },,
+  {
+    id: 'lovable',
+    name: 'Lovable',
+    description: 'AI-powered no-code platform. Build full-stack apps by describing what you want.',
+    website: 'https://lovable.dev',
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+    stage: 'Series B',
+    valuation: '$1.8B (2024)',
+    totalFunding: '$228M',
+    revenue: '$200M ARR (2025)',
+    growth: '100,000 new products built daily',
+    customers: '8M users (Nov 2025), 50%+ Fortune 500',
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: '$200M ARR in 1 year with 100 employees',
+      userGrowth: '2.3M (July) → 8M users (Nov 2025)',
+      signals: ['Fastest to $200M ARR in history', '$8-15M ARR net new per month', 'Could hit $500M ARR in 2026', '50%+ Fortune 500 using Lovable'],
+      tam: '$100B (no-code + AI coding market)',
+      marketShare: '0.2% = 500x upside potential',
+      ceiling: 'Early innings: Democratizing app creation',
+      tailwinds: ['No-code adoption accelerating', 'Vibe coding entering job descriptions', 'Enterprise AI budgets growing'],
+      headwinds: ['Competition from Bolt, v0, Replit', 'Code quality concerns at scale', 'Retention challenges post-launch'],
+      moatType: 'network-effects',
+      moatStrength: 'Strong: 100K daily products = data flywheel',
+    },
+    competitors: [
+      { name: 'Bolt.new', description: '$40M ARR, fastest growth', whyTheyWin: 'StackBlitz technology, speed' },
+      { name: 'v0 (Vercel)', description: '$9.3B valuation', whyTheyWin: 'Vercel distribution, enterprise' },
+      { name: 'Replit', description: '$9B valuation', whyTheyWin: 'More mature, mobile apps' },
+    ],
+    marketPosition: '#1 in AI no-code by ARR',
+    moat: ['100K daily products = training data', '50%+ Fortune 500 adoption', 'Network effects from templates'],
+    vsGiants: 'Differentiate via no-code simplicity vs GitHub Copilot complexity',
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Describe app → AI builds it.',
+    aiDesignChallenges: ['How to make AI-generated apps high quality', 'Balancing speed with customization', 'Teaching non-developers to prompt effectively', 'Managing expectations vs reality'],
+    founders: [{ name: 'Nikita Bier', role: 'CEO', background: 'Founded tbh (sold to Facebook), Gas (sold to Discord). Serial social app founder.' }],
+    whyBuilding: 'Everyone has app ideas. AI should make building them trivial.',
+    beliefs: ['AI should make coding accessible to everyone', 'Speed of iteration > perfection', 'Product market fit > technology', 'Viral growth > paid acquisition'],
+    designPhilosophy: 'Simple, delightful, fast. Make people feel like wizards.',
+    greenFlags: ['Nikita Bier (repeat successful founder)', '$200M ARR with 100 employees', '$1.8B valuation', '50%+ Fortune 500 adoption'],
+    redFlags: ['Consumer app founder in enterprise space', 'Very small team for scale', 'High competition', 'Retention unknown'],
+    designTeam: { designHead: 'Unknown', teamSize: '~15 designers (15% of 100)' },
+    designWorkType: {
+      logicBehavior: { level: 'high', tasks: ['Design AI prompt interpretation', 'Define how AI makes design decisions', 'Product creation workflows'] },
+      evaluation: { level: 'high', tasks: ['Quality scoring for generated apps', 'User satisfaction metrics', 'AI improvement feedback loops'] },
+      interface: { level: 'high', tasks: ['Conversational app builder UI', 'Visual editor for AI outputs', 'Template and sharing systems'] },
+    },
+    productStage: '10→100',
+    designerLinks: [],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Remote)', url: 'https://lovable.dev/careers', type: 'full-time', aboutRole: 'Design experiences that make app creation feel like magic.', whyInteresting: '$200M ARR, 8M users. Fastest growing AI company ever.' }],
+    cultureInsights: [],
+    tracking: {
+      status: 'interested',
+      fitScore: 9,
+      whyJoin: ['$200M ARR with 100 people = incredible', 'Nikita Bier (proven founder)', '$1.8B valuation', 'AI-native Level 4', '50%+ Fortune 500'],
+      whyNot: ['Very small team = high pressure', 'Consumer founder in B2B', 'Unknown design culture', 'High competition risk'],
+      nextActions: ['Try Lovable product', 'Research Nikita Bier', 'Connect with Lovable designers'],
+    },
+    lastUpdated: '2026-01-26T18:00:00',
+    sources: [
+      { title: 'Lovable $200M ARR', url: 'https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/' },
+      { title: 'Lovable Growth Playbook', url: 'https://thecreatorsai.com/p/lovable-growth-secrets-and-costs' },
+    ],
   },
+
 ];
 
 export function getCompanyById(id: string): Company | undefined {
