@@ -371,7 +371,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                     {company.remote === 'Yes' && (
                       <>
                         <span className="text-[var(--border)]">|</span>
-                        <span className="text-[var(--success)]">Remote OK</span>
+                        <span className="text-[var(--muted)]">Remote OK</span>
                       </>
                     )}
                     {hasRecentFunding && (
