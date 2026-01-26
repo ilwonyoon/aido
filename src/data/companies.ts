@@ -7383,7 +7383,7 @@ export const companies: Company[] = [
         url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/',
       },
     ],
-  },,
+  },
   {
     id: 'lovable',
     name: 'Lovable',
@@ -7450,7 +7450,6 @@ export const companies: Company[] = [
       { title: 'Lovable Growth Playbook', url: 'https://thecreatorsai.com/p/lovable-growth-secrets-and-costs' },
     ],
   },
-,
   {
     id: 'codeium',
     name: 'Codeium',
