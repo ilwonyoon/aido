@@ -4461,6 +4461,505 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    id: 'scale-ai',
+    name: 'Scale AI',
+    description: 'AI data platform powering the most advanced LLMs and AI models with high-quality training data.',
+    website: 'https://scale.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Meta Partnership (49% stake)',
+    valuation: '$29B (Jun 2025, after Meta deal)',
+    totalFunding: '$1B+ (pre-Meta)',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$4.5M', date: '2016-08', leadInvestors: ['Y Combinator'] },
+      { stage: 'Series A', amount: '$18M', date: '2018-08', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series B', amount: '$100M', date: '2019-08', valuation: '$1B', leadInvestors: ['Founders Fund'] },
+      { stage: 'Series C', amount: '$155M', date: '2021-04', valuation: '$3.5B', leadInvestors: ['Tiger Global'] },
+      { stage: 'Series D', amount: '$325M', date: '2021-07', valuation: '$7B', leadInvestors: ['Greenoaks Capital'] },
+      { stage: 'Series E', amount: '$580M', date: '2024-03', valuation: '$13B', leadInvestors: ['Accel'] },
+      { stage: 'Series F', amount: '$1B', date: '2024-05', valuation: '$14B', leadInvestors: ['Accel'] },
+    ],
+    revenue: 'Not disclosed (enterprise contracts)',
+    growth: 'Meta invested $14.3B for 49% stake (Jun 2025)',
+    runway: 'Meta partnership — essentially unlimited',
+    customers: 'OpenAI, Google, Anthropic, Meta, Microsoft, U.S. Government',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Label Your Data',
+        description: 'Data labeling platform for ML teams',
+        whyTheyWin: 'Secure, high-quality, domain-specific annotation without Scale\'s Meta baggage',
+      },
+      {
+        name: 'Labelbox',
+        description: 'Unified annotation platform with managed services',
+        whyTheyWin: 'Better tooling, not tied to Meta, more neutral vendor',
+      },
+      {
+        name: 'V7 Labs',
+        description: 'AI-powered data annotation platform',
+        whyTheyWin: 'Significantly cheaper ($150/mo vs Scale\'s enterprise pricing)',
+      },
+      {
+        name: 'SuperAnnotate',
+        description: 'Annotation tool with AI-assisted labeling',
+        whyTheyWin: 'Strong 2D/3D support, not tied to Meta',
+      },
+      {
+        name: 'Surge AI',
+        description: 'High-quality data labeling with elite annotators',
+        whyTheyWin: 'Elite labelers (mathematicians, etc), customers include Anthropic, Google',
+      },
+    ],
+    marketPosition: 'Was leader, now losing share due to Meta deal',
+    moat: [
+      'Meta partnership: $14B investment, 49% stake',
+      'Government contracts: U.S. military, intelligence',
+      'Proprietary Data Engine for LLM training',
+      'Scale at scale: massive labeling infrastructure',
+      'Founded by Alexandr Wang at age 19 → now world\'s youngest billionaire',
+    ],
+    vsGiants: 'Scale was the data infrastructure for AI leaders. Meta deal changed everything — OpenAI, Google pulled out due to conflict of interest.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator. Scale\'s entire value is enabling AI model training. But it\'s infrastructure, not AI product itself.',
+    aiDesignChallenges: [
+      'Data quality at scale: ensuring high-quality labels across millions of examples',
+      'Tooling for labelers: designing annotation interfaces for complex data types',
+      'Workflow orchestration: managing thousands of labelers',
+      'Quality control: designing review and verification systems',
+      'GenAI integration: how AI assists human labelers',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Alexandr Wang',
+        role: 'Co-founder (now at Meta)',
+        background: 'Founded Scale at age 19. Dropped out of MIT. Youngest self-made billionaire ($3.6B net worth at age 28). Now at Meta after June 2025 deal.',
+      },
+      {
+        name: 'Lucy Guo',
+        role: 'Co-founder (fired 2018)',
+        background: 'Co-founded Scale through Y Combinator. Fired two years later.',
+      },
+    ],
+    whyBuilding: 'Wang realized AI models are only as good as their training data. He saw data labeling as the bottleneck for AI progress and built Scale to solve it.',
+    beliefs: [
+      'Data quality > data quantity',
+      'Human-AI collaboration: AI assists, humans verify',
+      'Infrastructure-first: enable AI leaders, not build consumer apps',
+      'Scale matters: winner-take-most in data infrastructure',
+      'Government partnerships: national security applications',
+    ],
+    designPhilosophy: 'Enterprise-grade data tools. Design for labelers, reviewers, and ML engineers.',
+    greenFlags: [
+      'Meta partnership: $14B investment',
+      'Elite customers: OpenAI, Google, Anthropic (historically)',
+      'Government contracts: stable revenue',
+      'Founder track record: Wang built to $29B by age 28',
+    ],
+    redFlags: [
+      'Meta deal backlash: OpenAI, Google pulled out',
+      'Neutrality concerns: Meta owning 49% = conflict of interest',
+      'Founder left: Wang now at Meta, Jason Droege is CEO',
+      'Competitive pressure: customers moving to Label Your Data, Labelbox',
+      'Unclear product direction post-Meta deal',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: '~50-100 (estimated)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'Designing labeler workflows: how humans annotate complex data',
+          'Building quality control systems',
+          'Defining AI-assisted labeling behaviors',
+          'Creating feedback loops for labeler improvement',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Designing quality metrics for labeled data',
+          'Building review and verification workflows',
+          'Creating inter-rater agreement systems',
+          'Defining gold standard datasets',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Annotation tools for images, video, text, 3D, audio',
+          'Labeler dashboards and task management',
+          'ML engineer interfaces for dataset management',
+          'Quality control interfaces for reviewers',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer, Enterprise',
+        location: 'San Francisco, CA (Hybrid)',
+        url: 'https://scale.com/careers/4623277005',
+        type: 'full-time',
+        aboutRole: 'Build AI-powered applications that redefine enterprise workflows, working on cutting-edge customer-facing AI and internal SaaS products.',
+        responsibilities: [
+          'Design enterprise applications for AI data workflows',
+          'Work on mix of customer-facing AI and internal tools',
+          'Collaborate with ML engineers and product teams',
+          'Build zero-to-one products in fast-paced environment',
+        ],
+        requirements: [
+          'Experience building complex, technical products from zero to one',
+          'Thrives in fast-paced environments',
+          'Strong portfolio of enterprise product design',
+        ],
+        whyInteresting: 'Designing the data infrastructure powering GPT-4, Claude, Gemini. Working on AI training at scale.',
+      },
+      {
+        title: 'Senior Product Designer, GenAI Marketplace',
+        location: 'San Francisco, CA (Hybrid)',
+        url: 'https://scale.com/careers/4490106005',
+        level: 'Senior',
+        type: 'full-time',
+        aboutRole: 'Develop a first-class experience for vetted high-quality GenAI contributors, attracting the best experts across all relevant fields.',
+        responsibilities: [
+          'Design marketplace for AI contributors',
+          'Build contributor onboarding and workflows',
+          'Create quality vetting systems',
+        ],
+        whyInteresting: 'Building a marketplace for AI expertise. Two-sided marketplace design challenge.',
+      },
+      {
+        title: 'Product Designer, Generative AI',
+        location: 'San Francisco, CA (Hybrid)',
+        url: 'https://scale.com/careers/4404072005',
+        type: 'full-time',
+        aboutRole: 'Design generative AI products and features for Scale\'s platform.',
+        whyInteresting: 'Working on Scale\'s GenAI products.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        rating: 3.5,
+        content: 'Fast-paced, demanding culture. Meta deal caused uncertainty. Founder left for Meta.',
+      },
+      {
+        source: 'blind',
+        sentiment: 'negative',
+        content: 'Meta deal controversial internally. Some customers leaving due to conflict of interest.',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 6,
+      whyJoin: [
+        'AI-native Level 3: enabling AI infrastructure',
+        'Multiple Product Designer roles open',
+        'Elite customers (historically): OpenAI, Anthropic, Google',
+        'Massive scale: powering the best AI models',
+      ],
+      whyNot: [
+        'Meta deal baggage: customers leaving, neutrality concerns',
+        'Founder left: Wang now at Meta',
+        'Infrastructure product: less consumer-facing',
+        'Unclear direction post-Meta deal',
+      ],
+      nextActions: [
+        'Research Scale\'s product offerings',
+        'Understand Meta deal implications',
+        'Connect with Scale designers on LinkedIn',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T11:20:00',
+    sources: [
+      {
+        title: 'Scale AI Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Scale_AI',
+      },
+      {
+        title: 'Meta invests $14.3B in Scale AI',
+        url: 'https://www.entrepreneur.com/business-news/who-is-alexandr-wang-the-founder-of-scale-ai-joining-meta/493281',
+      },
+      {
+        title: 'Scale AI competitors after Meta deal',
+        url: 'https://labelyourdata.com/articles/scale-ai-competitors',
+      },
+      {
+        title: 'Alexandr Wang profile',
+        url: 'https://en.wikipedia.org/wiki/Alexandr_Wang',
+      },
+    ],
+  },
+  {
+    id: 'replit',
+    name: 'Replit',
+    description: 'AI-powered software creation platform enabling anyone to build applications using natural language.',
+    website: 'https://replit.com',
+    headquarters: 'Foster City, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series C+',
+    valuation: '$9B (Jan 2026)',
+    totalFunding: '$650M+',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$4.5M', date: '2018-03', leadInvestors: ['Y Combinator'] },
+      { stage: 'Series A', amount: '$20M', date: '2021-03', valuation: '$300M', leadInvestors: ['a16z'] },
+      { stage: 'Series B', amount: '$80M', date: '2022-04', valuation: '$1.16B', leadInvestors: ['Coatue'] },
+      { stage: 'Series C', amount: '$250M', date: '2025-09', valuation: '$3B', leadInvestors: ['Prysm Capital'] },
+      { stage: 'Series C+', amount: '$400M', date: '2026-01', valuation: '$9B', leadInvestors: ['Georgian'] },
+    ],
+    revenue: '$240M (2025), projected $1B (2026)',
+    growth: '300% valuation increase in 4 months ($3B → $9B)',
+    runway: 'Strong — well-capitalized, path to $1B revenue',
+    customers: '150,000+ paying customers',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Cursor',
+        description: 'AI-powered code editor with Composer feature',
+        whyTheyWin: 'Better for existing codebases, stronger IDE, $20/mo Pro tier',
+      },
+      {
+        name: 'Windsurf',
+        description: 'AI code editor with Cascade agentic AI',
+        whyTheyWin: 'Competitive $15/mo pricing, strong code quality, Git workflows',
+      },
+      {
+        name: 'GitHub Copilot',
+        description: 'AI pair programmer by GitHub/OpenAI',
+        whyTheyWin: 'GitHub integration, brand trust, Microsoft distribution',
+      },
+      {
+        name: 'Lovable',
+        description: 'AI app builder',
+        whyTheyWin: 'Hit $100M ARR in 8 months (fastest-growing startup ever?)',
+      },
+      {
+        name: 'Bolt.new',
+        description: 'AI-powered full-stack app builder',
+        whyTheyWin: 'Simpler, faster for prototypes',
+      },
+    ],
+    marketPosition: 'Leader in AI-native coding platforms, Replit Agent is fastest-growing AI product',
+    moat: [
+      'Real-time multiplayer: Google Docs for code',
+      'Replit Agent: natural language → full apps',
+      'Built-in infrastructure: hosting, deployment, databases',
+      'Educational moat: millions learned to code on Replit',
+      'Network effects: community of creators',
+    ],
+    vsGiants: 'Replit is full-stack AI platform vs Cursor/Windsurf (editors). Different use case: build from scratch vs edit existing code.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Replit Agent is 100% AI-powered. Revenue jumped $10M → $100M in 9 months after launching Agent. AI is the entire value prop.',
+    aiDesignChallenges: [
+      'Natural language → code: designing conversational interfaces for building software',
+      'Multi-file editing: AI making changes across entire codebase',
+      'Real-time collaboration: multiplayer coding with AI',
+      'Debugging AI: how users fix AI-generated code',
+      'Context management: keeping AI aware of entire project',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Amjad Masad',
+        role: 'CEO & Co-founder',
+        background: 'Jordanian-American engineer. Worked at Facebook (2013-2016). Built Replit as side project in Jordan, relaunched in 2016.',
+      },
+      {
+        name: 'Haya Odeh',
+        role: 'Co-founder (Design & UX)',
+        background: 'Amjad\'s wife. Handles design and user experience for Replit. Deep understanding of creator workflows.',
+      },
+      {
+        name: 'Faris Masad',
+        role: 'Co-founder (Technical)',
+        background: 'Amjad\'s brother. Co-founded the technical platform.',
+      },
+    ],
+    whyBuilding: 'Masad believes coding should be accessible to everyone, not just CS majors. Replit started as a simple online IDE, evolved into AI-native platform after seeing the power of LLMs.',
+    beliefs: [
+      'Software creation should be as easy as describing what you want',
+      'AI will democratize coding: 1B software creators by 2030',
+      'Real-time collaboration is the future of coding',
+      'Infrastructure should be invisible: focus on creation, not deployment',
+      'Community-driven: empower creators, not gatekeep',
+    ],
+    designPhilosophy: 'Make software creation accessible and collaborative. Design for creators, not just developers.',
+    greenFlags: [
+      'Explosive growth: $3B → $9B in 4 months',
+      'Revenue: $240M (2025), projected $1B (2026)',
+      'Founder-led: Masad and Odeh are deeply product-focused',
+      'AI-native: Replit Agent is a breakout product',
+      'Real-time multiplayer: unique moat',
+    ],
+    redFlags: [
+      'Intense competition: Cursor, Windsurf, Lovable all growing fast',
+      'Lovable hit $100M ARR in 8 months (faster than Replit Agent)',
+      'Price pressure: Windsurf at $15/mo vs Replit\'s higher tiers',
+      'Controversial founder: Masad called "terrorist sympathizer" in media',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      cpo: 'Haya Odeh (Co-founder, Design & UX)',
+      teamSize: '~50-100 (estimated)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Designing AI Agent: natural language → full apps',
+          'Multi-file editing: AI understanding entire codebase',
+          'Real-time collaboration: multiplayer with AI',
+          'Context management: keeping AI aware of project structure',
+          'Debugging flows: how users fix AI-generated code',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Designing confidence indicators for AI-generated code',
+          'Building testing and verification workflows',
+          'Creating feedback loops for AI improvement',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Conversational interface for Replit Agent',
+          'Real-time multiplayer IDE',
+          'Code editor with AI assistance',
+          'Deployment and infrastructure management',
+          'Community and discovery features',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [
+      {
+        name: 'Haya Odeh',
+        role: 'Co-founder (Design & UX)',
+        platform: 'twitter',
+        url: 'https://twitter.com/hayaodeh',
+        description: 'Haya leads design at Replit. Wife of CEO Amjad Masad.',
+      },
+    ],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer, B2B',
+        location: 'Foster City, CA (Hybrid: Mon/Wed/Fri in-office)',
+        url: 'https://jobs.ashbyhq.com/replit/dc5d7a26-29fe-44eb-9378-c1aace110aab',
+        type: 'full-time',
+        aboutRole: 'Help make software creation more accessible for everyone, working on AI features, collaboration tools, and software creation & deployment capabilities.',
+        responsibilities: [
+          'Drive product design from concept to delivery (sketches, user flows, prototypes, final implementation)',
+          'Test and validate ideas through user interviews, prototypes, concept testing',
+          'Design improvements for Replit AI through Chat and other interfaces',
+          'Lead design workshops on AI feature integration across Replit platform',
+          'Contribute to and enhance Replit\'s Design System (Replit UI)',
+        ],
+        requirements: [
+          'Ownership across all design levels—from strategy to UI details',
+          'Experience designing AI-native interfaces',
+          'Strong portfolio of product design work',
+        ],
+        preferred: [
+          'Experience with design systems',
+          'Understanding of developer workflows',
+        ],
+        whyInteresting: 'Designing Replit Agent — one of the fastest-growing AI products. Working with co-founder Haya Odeh on design team. Building the future of AI-native coding.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Founder-led, product-obsessed culture. Amjad is extremely public about product decisions on Twitter.',
+        url: 'https://twitter.com/amasad',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'interested',
+      fitScore: 9,
+      whyJoin: [
+        'AI-native Level 4: AI IS the product (Replit Agent)',
+        'Explosive growth: $3B → $9B in 4 months',
+        'Co-founder leads design: Haya Odeh (amazing signal)',
+        'Product Designer role open',
+        'Real-time collaboration: unique design challenge',
+        'Mission-driven: democratizing software creation',
+      ],
+      whyNot: [
+        'Intense competition: Cursor, Windsurf, Lovable',
+        'Founder controversy: Masad called "terrorist sympathizer"',
+        'In-office 3x/week: Mon/Wed/Fri in Foster City',
+      ],
+      nextActions: [
+        'Use Replit Agent extensively',
+        'Follow Amjad Masad and Haya Odeh on Twitter',
+        'Apply for Product Designer, B2B role',
+        'Research Replit\'s design system (Replit UI)',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T11:40:00',
+    sources: [
+      {
+        title: 'Replit Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Replit',
+      },
+      {
+        title: 'Replit raises $400M at $9B valuation',
+        url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/',
+      },
+      {
+        title: 'Replit founder profile',
+        url: 'https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/',
+      },
+      {
+        title: 'Amjad Masad Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Amjad_Masad',
+      },
+    ],
+  },
 ];
 
 export function getCompanyById(id: string): Company | undefined {
