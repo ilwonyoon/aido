@@ -143,7 +143,13 @@ export const linear: Company = {
         description: 'Product and design updates',
       },
     ],
-    openRoles: [], // No Product Designer roles open (only Web & Brand Designer)
+    openRoles: [
+      {
+        title: 'Senior / Staff Product Designer',
+        location: 'North America',
+        url: 'https://linear.app/careers/a039835d-cde7-42ef-8250-80c3dc0ed9cf',
+      },
+    ],
 
     cultureInsights: [
       {

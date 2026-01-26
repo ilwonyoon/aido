@@ -132,6 +132,13 @@ export interface Company {
   designWorkType: DesignWorkType;
   productStage: '0→1' | '1→10' | '10→100';
 
+  // Product & User Context
+  targetAudiences?: {
+    primary: string; // Primary target user (e.g., "Enterprise sales teams", "Clinical doctors")
+    secondary?: string; // Potential expanded target (e.g., "SMB sales teams", "Nurses and medical staff")
+  };
+  userProblems?: string[]; // Core problems being solved for customers (3-5 items)
+
   // Designer Links
   designerLinks: DesignerLink[];
 

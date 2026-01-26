@@ -148,25 +148,8 @@ export const cursor: Company = {
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'San Francisco / New York (In-person)',
+        location: 'San Francisco or New York City',
         url: 'https://cursor.com/careers/product-designer',
-        team: 'Engineering',
-        level: 'Senior',
-        type: 'full-time',
-        aboutRole: 'Help 10x the product. Design core features that define human-AI collaboration in coding.',
-        responsibilities: [
-          'Design and ship features for AI-first software development',
-          'Own end-to-end design from concept to implementation',
-          'Solve complex UX challenges at intersection of AI and human intent',
-          'Work directly with founding team',
-        ],
-        requirements: [
-          'Strong portfolio of shipped product design',
-          'Experience with developer tools or complex workflows',
-          'Ability to define new UX patterns',
-          'Systems thinking and interaction design',
-        ],
-        whyInteresting: 'Shape the future of how code is written. Tiny team, massive impact. Fastest-growing SaaS ever.',
       },
     ],
 

@@ -134,36 +134,8 @@ export const mercor: Company = {
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'San Francisco (Onsite)',
-        url: 'https://mercor.com/careers',
-        team: 'Core Product',
-        level: 'Mid-Senior',
-        type: 'full-time',
-        compensation: '$150K-$250K + Equity',
-        postedDate: '2025-01',
-        aboutRole: 'Design the AI-powered hiring experience that companies like OpenAI and Anthropic use to find talent. Shape how AI transforms recruiting.',
-        responsibilities: [
-          'Design the AI interview experience for candidates',
-          'Create employer dashboards for talent discovery and matching',
-          'Build trust systems that make AI hiring feel fair and transparent',
-          'Design two-sided marketplace experiences (candidates + employers)',
-          'Own mobile and web experiences end-to-end',
-        ],
-        requirements: [
-          '3+ years of product design experience',
-          'Portfolio showing complex product work',
-          'Ability to work onsite in San Francisco full-time',
-          'Experience with marketplaces or two-sided platforms preferred',
-          'Strong visual and interaction design skills',
-        ],
-        preferred: [
-          'Experience with AI/ML products',
-          'Background in HR tech or recruiting',
-          'Worked at a hypergrowth startup',
-          'Understanding of algorithmic fairness',
-        ],
-        teamInfo: 'Small design team at a $10B company. Direct access to young founders (Thiel Fellows). Move fast culture.',
-        whyInteresting: 'Hypergrowth rocket ship ($250M → $10B in 1 year). AI hiring is ethically complex — interesting design challenges around fairness and transparency.',
+        location: 'San Francisco, CA (Onsite)',
+        url: 'https://www.mercor.com/careers/',
       },
     ],
 

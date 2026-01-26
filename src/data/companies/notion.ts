@@ -134,19 +134,8 @@ export const notion: Company = {
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'San Francisco / New York (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/notion/d177d052-ef57-4900-acf2-d58e9eded620',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$105K-$250K + equity',
-      },
-      {
-        title: 'Product Designer, Growth',
-        location: 'San Francisco / New York (Hybrid)',
-        url: 'https://www.notion.com/careers',
-        level: 'Mid-Senior',
-        type: 'full-time',
-        compensation: '$105K-$260K',
+        location: 'San Francisco, California; New York, New York',
+        url: 'https://job-boards.greenhouse.io/notion/jobs/6325053003',
       },
     ],
 

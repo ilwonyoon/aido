@@ -142,33 +142,14 @@ export const figma: Company = {
     ],
     openRoles: [
       {
-        title: 'Product Designer, AI',
-        location: 'San Francisco / New York / Remote (US/Canada)',
-        url: 'https://boards.greenhouse.io/figma',
-        team: 'AI',
-        level: 'Mid-Senior',
-        type: 'full-time',
-        postedDate: '2025-01',
-        aboutRole: 'Design AI-powered features that help designers work faster and better.',
-        responsibilities: [
-          'Design AI generation and editing experiences',
-          'Define AI interaction patterns for design tools',
-          'Prototype and test AI features',
-          'Collaborate with ML engineers on capabilities',
-        ],
-        requirements: [
-          'Strong product design portfolio',
-          'Experience shipping AI/ML products',
-          'Figma expertise (obviously)',
-          'Prototyping skills',
-        ],
-        preferred: [
-          'Background in design tools',
-          'Understanding of generative AI',
-          'Systems design experience',
-        ],
-        teamInfo: 'Public company. Large design org. Hybrid with remote option in US/Canada.',
-        whyInteresting: 'Shape the future of design tools. AI is transforming creative work — be at the center of it.',
+        title: 'Product Designer - Design, Dev, & AI Tools',
+        location: 'San Francisco, CA • New York, NY • United States',
+        url: 'https://job-boards.greenhouse.io/figma/jobs/5711468004',
+      },
+      {
+        title: 'Product Designer, AI Models',
+        location: 'San Francisco, CA • New York, NY • United States',
+        url: 'https://job-boards.greenhouse.io/figma/jobs/5711913004',
       },
     ],
 

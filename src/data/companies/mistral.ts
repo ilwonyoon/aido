@@ -135,33 +135,9 @@ export const mistral: Company = {
     ],
     openRoles: [
       {
-        title: 'Product Designer',
-        location: 'Paris, France (Remote Europe)',
-        url: 'https://jobs.lever.co/mistral',
-        team: 'Product',
-        level: 'Mid-Senior',
-        type: 'full-time',
-        postedDate: '2025-01',
-        aboutRole: 'Design intuitive and user-friendly product experiences for AI applications from brainstorming to delivery.',
-        responsibilities: [
-          'Design end-to-end user experiences for AI applications',
-          'Prototype and iterate quickly',
-          'Collaborate with teams on consistent design',
-          'Build developer-facing tools and consoles',
-        ],
-        requirements: [
-          'Strong product design portfolio',
-          'Experience with developer tools or APIs',
-          'Based in Europe or Europe-timezone compatible',
-          'English fluency (French a plus)',
-        ],
-        preferred: [
-          'AI/ML product experience',
-          'Technical background',
-          'Startup experience',
-        ],
-        teamInfo: 'Paris-based with remote Europe option. Small design team at a $14B company. Engineering-heavy culture.',
-        whyInteresting: 'L4 AI-native European champion. Ex-DeepMind/Meta founding team. Open-weight philosophy is refreshing.',
+        title: 'Product Designer, Web apps',
+        location: 'Paris, France',
+        url: 'https://jobs.lever.co/mistral/7d41ad25-c536-492d-b06c-5a74ce16c163',
       },
     ],
 

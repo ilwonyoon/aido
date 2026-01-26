@@ -129,40 +129,7 @@ export const pika: Company = {
         description: 'Product updates and demos',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'Palo Alto, CA (Onsite)',
-        url: 'https://jobs.ashbyhq.com/pika',
-        team: 'Core Product',
-        level: 'Mid-Senior',
-        type: 'full-time',
-        postedDate: '2025-01',
-        aboutRole: 'Design the future of AI-powered video creation. You\'ll shape how millions of creators bring their ideas to life through text-to-video and image-to-video generation.',
-        responsibilities: [
-          'Own end-to-end product design for core video creation flows',
-          'Design intuitive prompt input experiences that help users express creative intent',
-          'Create feedback systems for video generation quality and iteration',
-          'Collaborate closely with ML engineers on model capabilities and limitations',
-          'Build design systems that scale across web and mobile platforms',
-        ],
-        requirements: [
-          '4+ years of product design experience',
-          'Strong portfolio showing consumer product work',
-          'Experience with creative tools (video, image, or design software)',
-          'Ability to work onsite at Palo Alto HQ full-time',
-          'Excellent prototyping skills (Figma, Framer, or code)',
-        ],
-        preferred: [
-          'Experience with AI/ML products',
-          'Background in video production or motion design',
-          'Technical understanding of generative AI',
-          'Previously worked at a high-growth startup',
-        ],
-        teamInfo: 'Join a small, tight-knit design team (~5 people) working directly with Stanford AI Lab PhD founders. Fast iteration, high impact.',
-        whyInteresting: 'Level 4 AI-native company. Rare opportunity to define the UX patterns for AI video generation — a completely new product category.',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
