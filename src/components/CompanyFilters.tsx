@@ -3,6 +3,9 @@
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { Company } from '@/data/types';
+import { useAuth } from '@/contexts/AuthContext';
+import { getAllUserTracking } from '@/lib/firebase/tracking';
+import { trackEvent } from '@/lib/firebase/analytics';
 
 type SortOption = 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
 type InterestStatus = 'interested' | 'not_interested' | null;
@@ -234,6 +237,7 @@ function MultiSelectFilter({
 type ViewMode = 'card' | 'table';
 
 export function CompanyFilters({ companies }: { companies: Company[] }) {
+  const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('interest');
   const [viewMode, setViewMode] = useState<ViewMode>('table');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
@@ -260,40 +264,32 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     return sorted;
   }, [companies]);
 
-  // Load interest statuses from localStorage
+  // Load interest statuses from Firestore (per user)
   useEffect(() => {
-    const statuses: Record<string, InterestStatus> = {};
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key?.startsWith('interest_')) {
-        const companyId = key.replace('interest_', '');
-        const value = localStorage.getItem(key);
-        if (value === 'interested' || value === 'not_interested') {
-          statuses[companyId] = value;
-        }
-      }
+    if (loading) return;
+    if (!user) {
+      setInterestStatuses({});
+      return;
     }
-    setInterestStatuses(statuses);
 
-    // Listen for storage changes
-    const handleStorage = () => {
-      const newStatuses: Record<string, InterestStatus> = {};
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key?.startsWith('interest_')) {
-          const companyId = key.replace('interest_', '');
-          const value = localStorage.getItem(key);
-          if (value === 'interested' || value === 'not_interested') {
-            newStatuses[companyId] = value;
-          }
+    let isActive = true;
+    const load = async () => {
+      const tracking = await getAllUserTracking(user.uid);
+      if (!isActive) return;
+      const statuses: Record<string, InterestStatus> = {};
+      tracking.forEach((item) => {
+        if (item.status === 'interested' || item.status === 'not_interested') {
+          statuses[item.companyId] = item.status;
         }
-      }
-      setInterestStatuses(newStatuses);
+      });
+      setInterestStatuses(statuses);
     };
 
-    window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
-  }, []);
+    load();
+    return () => {
+      isActive = false;
+    };
+  }, [user, loading]);
 
   // Filter companies
   const filteredCompanies = useMemo(() => {
@@ -510,7 +506,17 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                       }`}
                     >
                       <td className="py-3 px-4 border-r border-[var(--border)]">
-                        <Link href={`/company/${company.id}`} className="hover:text-[var(--accent-light)]">
+                        <Link
+                          href={`/company/${company.id}`}
+                          className="hover:text-[var(--accent-light)]"
+                          onClick={() => {
+                            void trackEvent('company_detail_click', {
+                              company_id: company.id,
+                              company_name: company.name,
+                              source: 'table',
+                            });
+                          }}
+                        >
                           <div className="flex items-center gap-2">
                             <span className="font-medium text-sm">{company.name}</span>
                             <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
@@ -575,6 +581,13 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                 key={company.id}
                 href={`/company/${company.id}`}
                 className={`card block p-5 ${interest === 'not_interested' ? 'opacity-50' : ''}`}
+                onClick={() => {
+                  void trackEvent('company_detail_click', {
+                    company_id: company.id,
+                    company_name: company.name,
+                    source: 'card',
+                  });
+                }}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1 min-w-0">

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { AuthButton } from "@/components/AuthButton";
+import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <AuthProvider>
+            <AnalyticsTracker />
             <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
               <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
                 <Link href="/" className="font-semibold tracking-tight">

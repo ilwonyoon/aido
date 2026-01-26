@@ -1,0 +1,354 @@
+[
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "description": "Generative AI service that creates images from text prompts, accessed via web and Discord.",
+    "website": "https://www.midjourney.com/",
+    "headquarters": "San Francisco, CA, USA",
+    "remote": "Yes",
+    "stage": "Bootstrapped",
+    "valuation": "Unknown",
+    "totalFunding": "Self-funded (community-funded)",
+    "fundingHistory": [],
+    "revenue": "Unknown",
+    "growth": "Unknown",
+    "aiNativeLevel": 4,
+    "aiNativeLevelDescription": "AI image generation is the core product.",
+    "aiDesignChallenges": [
+      "Designing prompt-to-image creative workflows across web and Discord.",
+      "Building tools that scale creator feedback into product decisions."
+    ],
+    "founders": [
+      {
+        "name": "David Holz",
+        "role": "Founder & CEO",
+        "background": "Co-founder of Leap Motion."
+      }
+    ],
+    "whyBuilding": "A community-backed research group focused on bold bets around the future of the human experience.",
+    "beliefs": [
+      "Build tools that make people dream bigger and more capable.",
+      "Create AI tools that augment people rather than replace them."
+    ],
+    "designPhilosophy": "Unknown",
+    "greenFlags": [],
+    "redFlags": [],
+    "competitors": [
+      {
+        "name": "OpenAI DALL·E",
+        "description": "Text-to-image model.",
+        "whyTheyWin": ""
+      },
+      {
+        "name": "Stable Diffusion",
+        "description": "Text-to-image model ecosystem.",
+        "whyTheyWin": ""
+      }
+    ],
+    "moat": [
+      "Community-backed research and fast iteration with a small team.",
+      "Strong aesthetic quality in image generation tools."
+    ],
+    "designTeam": {
+      "cpo": "Unknown",
+      "designHead": "Unknown",
+      "teamSize": "Unknown"
+    },
+    "productStage": "10→100",
+    "openRoles": [
+      {
+        "title": "Product Designer",
+        "location": "Remote (Bay Area and London preferred)",
+        "url": "https://www.midjourney.com/careers",
+        "team": "Frontend",
+        "level": "",
+        "compensation": "",
+        "aboutRole": "Design the future of creative tools across core web/mobile interfaces and hardware projects.",
+        "responsibilities": [],
+        "requirements": [],
+        "preferred": []
+      }
+    ],
+    "designerLinks": [],
+    "sources": [
+      {
+        "title": "Midjourney Careers",
+        "url": "https://www.midjourney.com/careers"
+      },
+      {
+        "title": "Midjourney About",
+        "url": "https://www.midjourney.com/"
+      },
+      {
+        "title": "Midjourney (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Midjourney"
+      }
+    ]
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "description": "Generative AI company building video and multimedia creation tools.",
+    "website": "https://runwayml.com/",
+    "headquarters": "New York City, NY, USA",
+    "remote": "Yes",
+    "stage": "Series D",
+    "valuation": "Unknown",
+    "totalFunding": "$536.5M (as of Apr 2025)",
+    "fundingHistory": [
+      {
+        "stage": "Series D",
+        "amount": "$308M",
+        "date": "2025-04",
+        "valuation": "",
+        "leadInvestors": ["General Atlantic"]
+      }
+    ],
+    "revenue": "Unknown",
+    "growth": "Unknown",
+    "aiNativeLevel": 4,
+    "aiNativeLevelDescription": "AI-generated video and media tools are the core product.",
+    "aiDesignChallenges": [
+      "Designing creation workflows for text-to-video and multimedia generation.",
+      "Helping users control consistency across scenes and outputs."
+    ],
+    "founders": [
+      {
+        "name": "Cristóbal Valenzuela",
+        "role": "Co-founder & CEO",
+        "background": "Co-founded Runway in 2018."
+      },
+      {
+        "name": "Anastasis Germanidis",
+        "role": "Co-founder & CTO",
+        "background": "Co-founded Runway in 2018."
+      },
+      {
+        "name": "Alejandro Matamala",
+        "role": "Co-founder & CDO",
+        "background": "Co-founded Runway in 2018."
+      }
+    ],
+    "whyBuilding": "Build AI to simulate the world through merging art and science.",
+    "beliefs": [
+      "World simulators are the next media ecosystem.",
+      "AI should expand what creators can produce."
+    ],
+    "designPhilosophy": "Unknown",
+    "greenFlags": [],
+    "redFlags": [],
+    "competitors": [],
+    "moat": [
+      "Focus on world simulators for media generation.",
+      "Runway Studios as an in-house film and animation arm."
+    ],
+    "designTeam": {
+      "cpo": "Unknown",
+      "designHead": "Unknown",
+      "teamSize": "Unknown"
+    },
+    "productStage": "10→100",
+    "openRoles": [],
+    "designerLinks": [],
+    "sources": [
+      {
+        "title": "Runway Careers",
+        "url": "https://runwayml.com/careers"
+      },
+      {
+        "title": "Runway (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Runway_(company)"
+      },
+      {
+        "title": "Runway Series D funding (Runway News)",
+        "url": "https://runwayml.com/news/runway-series-d-funding"
+      },
+      {
+        "title": "Runway Series D funding (General Atlantic)",
+        "url": "https://www.generalatlantic.com/media-article/runway-series-d-funding-towards-a-new-media-ecosystem-with-world-simulators/"
+      },
+      {
+        "title": "Runway Series D funding (TechCrunch)",
+        "url": "https://techcrunch.com/2025/04/03/runway-best-known-for-its-video-generating-models-raises-308m/"
+      }
+    ]
+  },
+  {
+    "id": "stability-ai",
+    "name": "Stability AI",
+    "description": "Generative AI company known for Stable Diffusion and models across image, video, audio, and 3D.",
+    "website": "https://stability.ai/",
+    "headquarters": "London, UK",
+    "remote": "Hybrid",
+    "stage": "Private",
+    "valuation": "Unknown",
+    "totalFunding": "Unknown",
+    "fundingHistory": [
+      {
+        "stage": "Strategic investment",
+        "amount": "Undisclosed",
+        "date": "2025-03",
+        "valuation": "",
+        "leadInvestors": ["WPP"]
+      }
+    ],
+    "revenue": "Unknown",
+    "growth": "Unknown",
+    "aiNativeLevel": 4,
+    "aiNativeLevelDescription": "AI model development is the core product (Stable Diffusion and other media models).",
+    "aiDesignChallenges": [
+      "Designing enterprise-grade creative workflows across multiple media types.",
+      "Balancing open access with responsible use and licensing."
+    ],
+    "founders": [
+      {
+        "name": "Emad Mostaque",
+        "role": "Co-founder",
+        "background": "Co-founded Stability AI in 2019."
+      },
+      {
+        "name": "Cyrus Hodes",
+        "role": "Co-founder",
+        "background": "Co-founded Stability AI in 2019."
+      }
+    ],
+    "whyBuilding": "Unlock the power of open-source generative AI to expand human creativity.",
+    "beliefs": [
+      "Open-source generative AI should empower creators and enterprises.",
+      "Professional-grade creative AI should work across image, video, 3D, and audio."
+    ],
+    "designPhilosophy": "Unknown",
+    "greenFlags": [],
+    "redFlags": [],
+    "competitors": [],
+    "moat": [
+      "Open visual media models spanning image, video, 3D, and audio.",
+      "Enterprise-focused creative production tooling."
+    ],
+    "designTeam": {
+      "cpo": "Unknown",
+      "designHead": "Unknown",
+      "teamSize": "Unknown"
+    },
+    "productStage": "1→10",
+    "openRoles": [],
+    "designerLinks": [],
+    "sources": [
+      {
+        "title": "Stability AI (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stability_AI"
+      },
+      {
+        "title": "Stability AI Careers",
+        "url": "https://stability.ai/careers"
+      },
+      {
+        "title": "Stability AI WPP investment (Stability AI)",
+        "url": "https://stability.ai/news/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production"
+      },
+      {
+        "title": "WPP investment in Stability AI",
+        "url": "https://www.wpp.com/en-us/news/2025/03/wpp-announces-investment-in-stability-ai"
+      }
+    ]
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "description": "Enterprise-focused LLM company building foundation models and AI products for regulated industries.",
+    "website": "https://cohere.com/",
+    "headquarters": "Toronto, ON, Canada",
+    "remote": "Yes",
+    "stage": "Series D",
+    "valuation": "$6.8B (Aug 2025)",
+    "totalFunding": "Nearly $1B (2021–2024) + $500M (Aug 2025)",
+    "fundingHistory": [
+      {
+        "stage": "Late-stage round",
+        "amount": "$500M",
+        "date": "2025-08",
+        "valuation": "$6.8B",
+        "leadInvestors": ["Radical Ventures", "Inovia Capital"]
+      }
+    ],
+    "revenue": "Unknown",
+    "growth": "Unknown",
+    "aiNativeLevel": 4,
+    "aiNativeLevelDescription": "Enterprise-grade LLMs and AI platforms are the core product.",
+    "aiDesignChallenges": [
+      "Designing secure enterprise workflows and admin experiences.",
+      "Building trust, privacy, and governance into AI product UX."
+    ],
+    "founders": [
+      {
+        "name": "Aidan Gomez",
+        "role": "Co-founder & CEO",
+        "background": "Former Google Brain researcher; co-authored the Transformer paper."
+      },
+      {
+        "name": "Ivan Zhang",
+        "role": "Co-founder",
+        "background": "Researcher; co-founded Cohere in 2019."
+      },
+      {
+        "name": "Nick Frosst",
+        "role": "Co-founder",
+        "background": "Former Google Brain researcher; co-founded Cohere in 2019."
+      }
+    ],
+    "whyBuilding": "Scale intelligence to serve humanity by empowering enterprises with practical AI.",
+    "beliefs": [
+      "AI’s highest purpose is to enhance human wellbeing.",
+      "Enterprise AI should drive real-world productivity and impact."
+    ],
+    "designPhilosophy": "Unknown",
+    "greenFlags": [],
+    "redFlags": [],
+    "competitors": [
+      {
+        "name": "OpenAI",
+        "description": "General-purpose LLM platform with enterprise offerings.",
+        "whyTheyWin": ""
+      },
+      {
+        "name": "Anthropic",
+        "description": "Safety-focused foundation model company with enterprise adoption.",
+        "whyTheyWin": ""
+      }
+    ],
+    "moat": [
+      "Enterprise-only focus with secure and private deployments.",
+      "Positioning around regulated industries and data sovereignty."
+    ],
+    "designTeam": {
+      "cpo": "Unknown",
+      "designHead": "Unknown",
+      "teamSize": "Unknown"
+    },
+    "productStage": "10→100",
+    "openRoles": [],
+    "designerLinks": [],
+    "sources": [
+      {
+        "title": "Cohere About",
+        "url": "https://cohere.com/about"
+      },
+      {
+        "title": "Cohere Careers",
+        "url": "https://cohere.com/jobs"
+      },
+      {
+        "title": "Cohere funding round (CNBC)",
+        "url": "https://www.cnbc.com/2025/08/14/ai-startup-cohere-valued-at-6point8-billion-in-latest-fundraise-appoints-new-executives.html"
+      },
+      {
+        "title": "Cohere funding round (Financial Times)",
+        "url": "https://www.ft.com/content/a54fdc4e-dab1-4b50-bcf5-db949c680265"
+      },
+      {
+        "title": "Cohere (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cohere"
+      }
+    ]
+  }
+]

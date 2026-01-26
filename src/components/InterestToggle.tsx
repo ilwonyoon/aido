@@ -1,6 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useAuth } from '@/contexts/AuthContext';
+import { getUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
+import { trackEvent } from '@/lib/firebase/analytics';
 
 type InterestStatus = 'interested' | 'not_interested' | null;
 
@@ -25,32 +28,58 @@ function SyncIndicator({ isSyncing, lastSynced }: { isSyncing: boolean; lastSync
 }
 
 export function useInterestStatus(companyId: string) {
+  const { user, loading } = useAuth();
   const [status, setStatus] = useState<InterestStatus>(null);
   const [loaded, setLoaded] = useState(false);
   const [isSyncing, setIsSyncing] = useState(false);
   const [lastSynced, setLastSynced] = useState<Date | undefined>();
 
   useEffect(() => {
-    const stored = localStorage.getItem(`interest_${companyId}`);
-    if (stored === 'interested' || stored === 'not_interested') {
-      setStatus(stored);
+    if (loading) return;
+    if (!user) {
+      setStatus(null);
+      setLoaded(true);
+      return;
     }
-    setLoaded(true);
-  }, [companyId]);
+
+    let isActive = true;
+    const load = async () => {
+      const tracking = await getUserTracking(user.uid, companyId);
+      if (!isActive) return;
+      if (tracking?.status === 'interested' || tracking?.status === 'not_interested') {
+        setStatus(tracking.status);
+      } else {
+        setStatus(null);
+      }
+      setLoaded(true);
+    };
+
+    load();
+    return () => {
+      isActive = false;
+    };
+  }, [companyId, user, loading]);
 
   const updateStatus = async (newStatus: InterestStatus) => {
+    if (!user) {
+      setStatus(null);
+      return;
+    }
+
     setStatus(newStatus);
     setIsSyncing(true);
     
-    // Simulate API delay
-    await new Promise(resolve => setTimeout(resolve, 800));
-    
     if (newStatus) {
-      localStorage.setItem(`interest_${companyId}`, newStatus);
+      await setUserTracking(user.uid, companyId, { status: newStatus });
     } else {
-      localStorage.removeItem(`interest_${companyId}`);
+      await deleteUserTracking(user.uid, companyId);
     }
-    
+
+    void trackEvent('interest_toggle', {
+      company_id: companyId,
+      status: newStatus ?? 'cleared',
+    });
+
     setIsSyncing(false);
     setLastSynced(new Date());
   };
@@ -92,22 +121,4 @@ export function InterestToggle({ companyId }: { companyId: string }) {
       <SyncIndicator isSyncing={isSyncing} lastSynced={lastSynced} />
     </div>
   );
-}
-
-// Hook to get all interest statuses for sorting
-export function getAllInterestStatuses(): Record<string, InterestStatus> {
-  if (typeof window === 'undefined') return {};
-
-  const statuses: Record<string, InterestStatus> = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith('interest_')) {
-      const companyId = key.replace('interest_', '');
-      const value = localStorage.getItem(key);
-      if (value === 'interested' || value === 'not_interested') {
-        statuses[companyId] = value;
-      }
-    }
-  }
-  return statuses;
 }

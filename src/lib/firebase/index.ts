@@ -3,3 +3,4 @@ export * from './companies';
 export * from './auth';
 export * from './macro';
 export * from './tracking';
+export * from './analytics';
