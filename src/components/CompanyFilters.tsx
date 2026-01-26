@@ -7,12 +7,12 @@ import { Company } from '@/data/types';
 type SortOption = 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
 type InterestStatus = 'interested' | 'not_interested' | null;
 
-function AiLevelBadge({ level }: { level: number }) {
+function AiLevelText({ level }: { level: number }) {
   const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
-  const colors = { 1: 'badge', 2: 'badge', 3: 'badge-accent', 4: 'badge-success' };
+  const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--accent-light)]', 4: 'text-[var(--success)]' };
   return (
-    <span className={`badge ${colors[level as keyof typeof colors]}`}>
-      L{level}: {labels[level as keyof typeof labels]}
+    <span className={`text-sm ${colors[level as keyof typeof colors]}`}>
+      L{level} · {labels[level as keyof typeof labels]}
     </span>
   );
 }
@@ -341,6 +341,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       <div className="space-y-4">
         {sortedCompanies.map((company) => {
           const interest = interestStatuses[company.id];
+          const hasRecentFunding = isRecentFunding(company);
           return (
             <Link
               key={company.id}
@@ -349,27 +350,34 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <div className="flex items-center gap-2 mb-1">
                     <h2 className="text-lg font-medium">{company.name}</h2>
-                    <AiLevelBadge level={company.aiNativeLevel} />
-                    {interest === 'interested' && (
-                      <span className="badge badge-success">Interested</span>
-                    )}
-                    {isRecentFunding(company) && (
-                      <span className="badge badge-warning">New Funding</span>
-                    )}
+                    <span className="text-[var(--border)]">·</span>
+                    <AiLevelText level={company.aiNativeLevel} />
                   </div>
                   <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
                     {company.description}
                   </p>
-                  <div className="flex items-center gap-4 text-sm text-[var(--muted)] flex-wrap">
-                    <span>{company.headquarters}</span>
+                  <div className="flex items-center gap-3 text-sm flex-wrap">
+                    <span className="text-[var(--muted)]">{company.headquarters}</span>
                     <span className="text-[var(--border)]">·</span>
-                    <span>{company.stage}</span>
+                    <span className="text-[var(--muted)]">{company.stage}</span>
                     {company.remote === 'Yes' && (
                       <>
                         <span className="text-[var(--border)]">·</span>
                         <span className="text-[var(--success)]">Remote OK</span>
+                      </>
+                    )}
+                    {interest === 'interested' && (
+                      <>
+                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--accent-light)]">Interested</span>
+                      </>
+                    )}
+                    {hasRecentFunding && (
+                      <>
+                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--warning)]">New Funding</span>
                       </>
                     )}
                   </div>
