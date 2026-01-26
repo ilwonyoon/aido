@@ -56,7 +56,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Without AI, no product exists.',
+    aiNativeLevelDescription: 'AI is the product. Without AI, no product exists.',
     aiDesignChallenges: [
       'Character Design: Designing AI personality/tone (unprecedented domain)',
       'Trust Design: Communicating AI uncertainty and limitations',
@@ -766,7 +766,7 @@ export const companies: Company[] = [
     vsGiants: 'Consumer-first simplicity vs Runway\'s pro-grade complexity. Faster iteration cycle than Sora (which has slow rollout). Not fighting for Hollywood — capturing everyday creators. Model-agnostic approach allows adopting best techniques.',
 
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Video generation is 100% AI-powered.',
+    aiNativeLevelDescription: 'AI is the product. Video generation is 100% AI-powered.',
     aiDesignChallenges: [
       'Prompt engineering for video',
       'Generation preview and iteration',
@@ -991,7 +991,7 @@ export const companies: Company[] = [
     vsGiants: 'Quality differentiation — ElevenLabs voices are noticeably more natural than AWS/Google. Specialized focus vs generic cloud services. Voice cloning capability that cloud giants avoid due to liability concerns.',
 
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Voice generation is 100% AI.',
+    aiNativeLevelDescription: 'AI is the product. Voice generation is 100% AI.',
     aiDesignChallenges: [
       'Voice customization UX',
       'Multi-language support',
@@ -1187,7 +1187,7 @@ export const companies: Company[] = [
     vsGiants: 'Full autonomy positioning vs Copilot\'s "assistant" framing. Complete project execution rather than suggestions. IOI champion team gives credibility. Enterprise use case (delegate entire tasks) vs developer productivity.',
 
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Autonomous software engineering agent.',
+    aiNativeLevelDescription: 'AI is the product. Autonomous software engineering agent.',
     aiDesignChallenges: [
       'Agentic UX: showing AI work in progress',
       'Trust in autonomous code changes',
@@ -2307,7 +2307,7 @@ export const companies: Company[] = [
     ],
 
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Building foundation models.',
+    aiNativeLevelDescription: 'AI is the product. Building foundation models.',
     aiDesignChallenges: [
       'API and developer experience',
       'Model playground and testing tools',
@@ -2479,6 +2479,871 @@ export const companies: Company[] = [
       {
         title: 'Mistral $14B Valuation - TechFundingNews',
         url: 'https://techfundingnews.com/mistral-ai-raises-2-billion-valuation-europe-ai-frontrunner/',
+      },
+    ],
+  },
+  {
+    id: 'cursor',
+    name: 'Cursor',
+    description: 'AI-first code editor that helps developers write code faster with intelligent autocomplete and chat.',
+    website: 'https://cursor.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'No',
+
+    // Business
+    stage: 'Series D',
+    valuation: '$29.3B (Nov 2025)',
+    totalFunding: '$3.6B+',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$8M', date: '2023-03', leadInvestors: ['OpenAI Startup Fund'] },
+      { stage: 'Series A', amount: '$20M', date: '2024-01', valuation: '$400M', leadInvestors: ['Andreessen Horowitz'] },
+      { stage: 'Series B', amount: '$105M', date: '2024-12', valuation: '$2.5B', leadInvestors: ['Thrive Capital', 'a16z'] },
+      { stage: 'Series C', amount: '$900M', date: '2025-06', valuation: '$9.9B', leadInvestors: ['Thrive Capital'] },
+      { stage: 'Series D', amount: '$2.3B', date: '2025-11', valuation: '$29.3B', leadInvestors: ['Accel', 'Coatue'] },
+    ],
+    revenue: '~$1B+ ARR (Dec 2025)',
+    growth: 'Fastest SaaS ever: $1M→$1B ARR in ~2 years',
+    runway: 'Strong — profitable, $2.3B cash',
+    customers: 'Millions of developers globally',
+
+    // Competition
+    competitors: [
+      {
+        name: 'GitHub Copilot',
+        description: 'Microsoft-backed AI coding assistant, integrated in VS Code',
+        whyTheyWin: 'Distribution through GitHub/VS Code, enterprise adoption',
+      },
+      {
+        name: 'Replit',
+        description: 'Browser-based IDE with AI features',
+        whyTheyWin: 'No setup required, strong education market',
+      },
+      {
+        name: 'Codeium',
+        description: 'Free AI code completion',
+        whyTheyWin: 'Free tier, enterprise deployment options',
+      },
+    ],
+    marketPosition: '#1 in AI Code Editors',
+    moat: [
+      'Best-in-class AI coding UX (Composer, multi-file edits)',
+      'Tab completion feels magical — high switching cost',
+      'Model-agnostic: uses Claude, GPT-4, custom models',
+      'Fastest-growing SaaS company ever by ARR',
+    ],
+    vsGiants: 'Outpacing GitHub Copilot in features and UX. Built on VS Code but better AI integration. Pure focus on AI-first development vs Microsoft spreading across many products.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator. Editor exists for AI features.',
+    aiDesignChallenges: [
+      'Composer UX: multi-file AI edits with context awareness',
+      'Tab completion: making AI suggestions feel natural, not intrusive',
+      'Agent mode: designing for autonomous coding tasks',
+      'Trust and transparency: showing what AI changed and why',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Michael Truell',
+        role: 'CEO',
+        background: 'MIT CS, dropped out to build Cursor. Father is tech investor.',
+      },
+      {
+        name: 'Sualeh Asif',
+        role: 'CPO',
+        background: 'MIT Mathematics, competitive programming background',
+      },
+      {
+        name: 'Arvid Lunnemark',
+        role: 'CTO',
+        background: 'MIT CSAIL research, ML infrastructure',
+      },
+      {
+        name: 'Aman Sanger',
+        role: 'Product Lead',
+        background: 'MIT CSAIL research, AI/ML systems',
+      },
+    ],
+    whyBuilding:
+      'Four MIT friends saw that coding would be fundamentally transformed by AI. Left school to build the editor they wanted to use themselves.',
+    beliefs: [
+      'AI will write most code in the future',
+      'Developer experience must be magical, not clunky',
+      'Stay small, move fast, ship constantly',
+      'Product quality over marketing',
+    ],
+    designPhilosophy:
+      'Make AI feel like a brilliant pair programmer, not a chatbot. Every interaction should feel faster than coding alone.',
+    greenFlags: [
+      'Founders are 25-year-old billionaires who still code',
+      'Product-obsessed culture, ship extremely fast',
+      'Small team (< 50) at $29B valuation',
+      'Design roles report to Engineering — integrated',
+    ],
+    redFlags: [
+      'No dedicated design leadership yet',
+      'Hypergrowth may change culture rapidly',
+      'In-person only (SF/NY)',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Small (< 5 designers)',
+      notableMembers: [],
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Composer: defining multi-file edit behavior and constraints',
+          'Tab completion: when to suggest, how aggressive',
+          'Agent mode: autonomous task execution rules',
+          'Context management: what AI sees and uses',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Suggestion acceptance rate optimization',
+          'User satisfaction with AI edits',
+          'Speed vs accuracy tradeoffs',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Code diff visualization for AI changes',
+          'Inline AI suggestions without disruption',
+          'Composer multi-file editing UI',
+          'Settings and model selection',
+        ],
+      },
+    },
+    productStage: '0→1 to 1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'San Francisco / New York (In-person)',
+        url: 'https://cursor.com/careers/product-designer',
+        team: 'Engineering',
+        level: 'Senior',
+        type: 'full-time',
+        aboutRole: 'Help 10x the product. Design core features that define human-AI collaboration in coding.',
+        responsibilities: [
+          'Design and ship features for AI-first software development',
+          'Own end-to-end design from concept to implementation',
+          'Solve complex UX challenges at intersection of AI and human intent',
+          'Work directly with founding team',
+        ],
+        requirements: [
+          'Strong portfolio of shipped product design',
+          'Experience with developer tools or complex workflows',
+          'Ability to define new UX patterns',
+          'Systems thinking and interaction design',
+        ],
+        whyInteresting: 'Shape the future of how code is written. Tiny team, massive impact. Fastest-growing SaaS ever.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Four MIT friends, all 25, now billionaires. Still code daily. Extremely flat organization.',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Ship velocity is legendary. Multiple major features per month. Product quality obsession.',
+      },
+      {
+        source: 'blind',
+        sentiment: 'neutral',
+        content: 'Small team, intense pace. In-person required. Strong equity upside.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'Limited salary data. Strong equity packages given valuation trajectory.',
+      },
+    ],
+
+    tracking: {
+      status: 'interested',
+      fitScore: 9,
+      whyJoin: [
+        'Frontier AI coding UX — defining the future',
+        'Tiny team, massive valuation = huge ownership potential',
+        'Product-obsessed founders who ship fast',
+      ],
+      whyNot: [
+        'No design leadership — you must be self-directed',
+        'In-person only (SF/NY)',
+        'Hypergrowth culture may not suit everyone',
+      ],
+      nextActions: ['Apply to Product Designer role', 'Try Cursor extensively first'],
+      notes: 'Most exciting AI code editor. Design role could shape entire industry.',
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Cursor $29.3B Series D - CNBC',
+        url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html',
+      },
+      {
+        title: 'Cursor Revenue and Stats - Sacra',
+        url: 'https://sacra.com/c/cursor/',
+      },
+    ],
+  },
+  {
+    id: 'perplexity',
+    name: 'Perplexity',
+    description: 'AI-powered answer engine that provides direct answers with sources, challenging Google Search.',
+    website: 'https://perplexity.ai',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series D',
+    valuation: '$20B (Sept 2025)',
+    totalFunding: '$1.5B+',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$5M', date: '2022-08', leadInvestors: ['NEA'] },
+      { stage: 'Series A', amount: '$26M', date: '2023-03', leadInvestors: ['NEA'] },
+      { stage: 'Series B', amount: '$74M', date: '2024-01', valuation: '$520M', leadInvestors: ['IVP', 'Nvidia'] },
+      { stage: 'Series C', amount: '$250M', date: '2024-08', valuation: '$3B', leadInvestors: ['SoftBank'] },
+      { stage: 'Series D', amount: '$200M', date: '2025-09', valuation: '$20B', leadInvestors: ['SoftBank'] },
+    ],
+    revenue: '~$200M ARR (2025)',
+    growth: '3x YoY (2024 $63M → 2025 $200M)',
+    runway: 'Strong — well-funded, growing revenue',
+    customers: '30M+ monthly active users',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Google Search',
+        description: 'Dominant search engine, adding AI overviews',
+        whyTheyWin: 'Ubiquitous distribution, user habit, data moat',
+      },
+      {
+        name: 'ChatGPT',
+        description: 'OpenAI conversational AI with search capabilities',
+        whyTheyWin: 'Brand recognition, GPT model quality',
+      },
+      {
+        name: 'You.com',
+        description: 'AI search engine',
+        whyTheyWin: 'Earlier to market, developer features',
+      },
+    ],
+    marketPosition: '#1 in AI Search Engines',
+    moat: [
+      'Best-in-class answer quality with source citations',
+      'Multi-model approach (uses Claude, GPT-4, own models)',
+      'Pro subscription with unlimited queries',
+      'Chrome browser Comet launched for deeper integration',
+    ],
+    vsGiants: 'Attacking Google where it hurts — information retrieval. Not trying to be everything, just the best answer engine. Sources and transparency build trust vs Google AI Overviews.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI is the product. Answer engine is 100% AI-powered.',
+    aiDesignChallenges: [
+      'Answer presentation: balancing brevity with depth',
+      'Source citation UX: making citations trustworthy and accessible',
+      'Follow-up queries: guiding users to better questions',
+      'Multi-modal answers: images, videos, structured data',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Aravind Srinivas',
+        role: 'CEO',
+        background: 'PhD UC Berkeley, ex-OpenAI, ex-DeepMind, ex-Google Brain',
+      },
+      {
+        name: 'Denis Yarats',
+        role: 'CTO',
+        background: 'Ex-Meta AI Research, ML infrastructure expert',
+      },
+      {
+        name: 'Johnny Ho',
+        role: 'CSO',
+        background: 'Ex-Quora, #1 competitive programmer globally',
+      },
+      {
+        name: 'Andy Konwinski',
+        role: 'Co-founder',
+        background: 'Databricks founding team',
+      },
+    ],
+    whyBuilding:
+      'Aravind saw that search was fundamentally broken — 10 blue links were obsolete. Wanted to give people answers, not websites.',
+    beliefs: [
+      'Search should give answers, not links',
+      'Sources and citations build trust',
+      'Speed matters — answers should be instant',
+      'AI can democratize access to knowledge',
+    ],
+    designPhilosophy:
+      'Clean, fast, trustworthy. Every answer should cite sources. No ads cluttering the experience.',
+    greenFlags: [
+      'World-class AI research team (OpenAI, DeepMind, Google Brain)',
+      'Clear product vision that users love',
+      'Jeff Bezos and Nvidia as investors',
+      'Growing fast in competitive search market',
+    ],
+    redFlags: [
+      'Taking on Google is extremely hard',
+      'Small design team for the challenge',
+      'Legal issues with publishers over content',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Small (< 10)',
+      notableMembers: [],
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Answer generation logic and formatting rules',
+          'Source ranking and citation display logic',
+          'Follow-up question suggestions',
+          'Pro vs Free feature differentiation',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Answer quality metrics and evaluation',
+          'Source accuracy verification UX',
+          'User satisfaction measurement',
+        ],
+      },
+      interface: {
+        level: 'medium',
+        tasks: [
+          'Answer display with inline citations',
+          'Search input and suggestions',
+          'Pro features and settings',
+          'Mobile app experience',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles - NONE CURRENTLY
+    openRoles: [],
+
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Elite AI research team. Founders from top AI labs. Fast-paced startup culture.',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Aravind is highly visible on Twitter, shares product thinking openly. Transparent culture.',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        content: 'Small team, intense environment. High expectations, strong talent density.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'Product Designer: $100K-$200K+ estimated. Limited public data.',
+      },
+    ],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'Attacking Google — ambitious mission',
+        'World-class AI team (OpenAI, DeepMind alumni)',
+        'Clean product with clear value prop',
+      ],
+      whyNot: [
+        'No Product Designer roles open currently',
+        'Small design team may limit growth',
+        'Legal battles with publishers are concerning',
+      ],
+      nextActions: ['Monitor careers page for openings', 'Use Perplexity Pro to understand product deeply'],
+      notes: 'Great product but no design openings. Keep watching.',
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Perplexity $20B Valuation - TechCrunch',
+        url: 'https://techcrunch.com/2025/09/10/perplexity-reportedly-raised-200m-at-20b-valuation/',
+      },
+      {
+        title: 'Perplexity Revenue and Stats - Sacra',
+        url: 'https://sacra.com/c/perplexity/',
+      },
+    ],
+  },
+  {
+    id: 'openai',
+    name: 'OpenAI',
+    description: 'Leading AI research company behind GPT-4, ChatGPT, and DALL-E. Pioneering AGI development.',
+    website: 'https://openai.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'No',
+
+    // Business
+    stage: 'Series F',
+    valuation: '$300B+ (2025)',
+    totalFunding: '$57.9B+',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$1B', date: '2015-12', leadInvestors: ['Elon Musk', 'Sam Altman', 'Reid Hoffman'] },
+      { stage: 'Series A', amount: '$1B', date: '2019-07', valuation: '$10B', leadInvestors: ['Microsoft'] },
+      { stage: 'Series B', amount: '$10B', date: '2023-01', valuation: '$29B', leadInvestors: ['Microsoft'] },
+      { stage: 'Series C', amount: '$300M', date: '2023-04', valuation: '$29B', leadInvestors: ['Sequoia', 'a16z'] },
+      { stage: 'Series D', amount: '$6.6B', date: '2024-10', valuation: '$157B', leadInvestors: ['Thrive Capital'] },
+      { stage: 'Series F', amount: '$40B', date: '2025-03', valuation: '$300B', leadInvestors: ['SoftBank'] },
+    ],
+    revenue: '~$20B+ ARR (Dec 2025)',
+    growth: '3x YoY (2024 $6B → 2025 $20B)',
+    runway: 'Burns $8B/year but well-funded for years',
+    customers: '800M+ weekly users, 1M+ business customers',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Anthropic',
+        description: 'Claude models, safety-focused competitor',
+        whyTheyWin: 'Safety narrative appeals to enterprises, Claude quality competitive',
+      },
+      {
+        name: 'Google DeepMind',
+        description: 'Gemini models integrated into Google',
+        whyTheyWin: 'Unlimited resources, distribution through Google products',
+      },
+      {
+        name: 'Meta AI',
+        description: 'Llama open-source models',
+        whyTheyWin: 'Open-source captures developer mindshare',
+      },
+    ],
+    marketPosition: '#1 in Consumer AI, #1 in mindshare',
+    moat: [
+      'ChatGPT brand recognition is unmatched',
+      'First-mover advantage in consumer AI',
+      'Microsoft partnership ($13B+ investment)',
+      'Best talent density in AI research',
+    ],
+    vsGiants: 'THE giant. Sets the pace for the industry. Brand synonymous with AI. Microsoft partnership provides distribution and resources.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI is the product. Building AGI is the mission.',
+    aiDesignChallenges: [
+      'ChatGPT UX: conversational AI at massive scale',
+      'Multi-modal interactions: voice, vision, code in one product',
+      'Enterprise features: teams, security, customization',
+      'Operator/Agent UX: autonomous AI actions with human oversight',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Sam Altman',
+        role: 'CEO',
+        background: 'Ex-Y Combinator President, serial entrepreneur',
+      },
+      {
+        name: 'Greg Brockman',
+        role: 'President',
+        background: 'Ex-Stripe CTO',
+      },
+    ],
+    whyBuilding:
+      'Founded in 2015 to ensure AGI benefits humanity. Sam Altman returned after brief ousting in 2023.',
+    beliefs: [
+      'AGI will be the most transformative technology in human history',
+      'Safety and capability should advance together',
+      'Broad distribution is better than hoarding AI',
+      'Move fast, ship products to learn',
+    ],
+    designPhilosophy:
+      'Make AI accessible to everyone. ChatGPT should be as easy as texting. Recently hiring top design talent (Jony Ive team).',
+    greenFlags: [
+      'Hired Jony Ive (Apple) and his team members',
+      'Kevin Weil as CPO (ex-Instagram VP)',
+      'Design investment increasing significantly',
+      'Multiple Product Designer roles open',
+    ],
+    redFlags: [
+      'Massive company — bureaucracy risk',
+      'Governance drama (Sam Altman ousting)',
+      'Safety team departures concerning',
+      'In-person only (SF)',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      cpo: 'Kevin Weil (ex-Instagram VP Product)',
+      teamSize: 'Growing (50+)',
+      notableMembers: [
+        { name: 'Tang Tan', role: 'Design (ex-Jony Ive team, Apple)' },
+        { name: 'Evans Hankey', role: 'Design (ex-Apple VP Design)' },
+      ],
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'ChatGPT personality and response patterns',
+          'Multi-modal interaction logic (text, voice, vision)',
+          'Operator/Agent autonomous action rules',
+          'Custom GPT behavior configuration',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Response quality evaluation frameworks',
+          'User satisfaction and engagement metrics',
+          'Safety and alignment testing UX',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'ChatGPT web and mobile experiences',
+          'Voice mode interface',
+          'Enterprise dashboard and admin tools',
+          'Developer platform and API documentation',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'San Francisco (In-person)',
+        url: 'https://openai.com/careers/',
+        team: 'Product Design',
+        level: 'Senior',
+        type: 'full-time',
+        compensation: '$200K-$310K base + equity',
+        aboutRole: 'Design products that push the boundaries of what is possible with AI.',
+        responsibilities: [
+          'Create products that are easy to use, beautiful, and push AI boundaries',
+          'Shape product direction and design culture as early team member',
+          'Work across ChatGPT, API, and new products',
+        ],
+        requirements: [
+          'Strong portfolio of shipped consumer products',
+          'Experience working with engineers and PMs',
+          'Ability to work in ambiguity and move fast',
+        ],
+        whyInteresting: 'Shape how billions interact with AI. Work with Jony Ive team members. Define the future of human-AI interaction.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'blind',
+        sentiment: 'positive',
+        content: 'Top talent density. Competitive comp. Fast-paced. High expectations.',
+      },
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Major design investment — Jony Ive team hires signal design priority.',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        content: 'Intense work environment. Politics exist at senior levels. Great pay and equity.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'positive',
+        content: 'Product Designer: $200K-$310K base. Strong equity. Total comp very competitive.',
+        url: 'https://www.levels.fyi/companies/openai/salaries/product-designer',
+      },
+    ],
+
+    tracking: {
+      status: 'interested',
+      fitScore: 7,
+      whyJoin: [
+        'Define how billions interact with AI',
+        'Working alongside Jony Ive team members',
+        'Top compensation in the industry',
+        'Most influential AI company',
+      ],
+      whyNot: [
+        'Very large company now — not startup feel',
+        'Governance drama and safety team departures',
+        'In-person only (SF)',
+        'May be harder to have outsized impact',
+      ],
+      nextActions: ['Apply to Product Designer role', 'Research which team (ChatGPT, Platform, Growth)'],
+      notes: 'Biggest name in AI. Design investment increasing. Consider which team matters most.',
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'OpenAI $20B ARR - Sherwood News',
+        url: 'https://sherwood.news/business/openais-arr-reached-over-usd20-billion-in-2025-cfo-says/',
+      },
+      {
+        title: 'OpenAI Stats and Funding - Sacra',
+        url: 'https://sacra.com/c/openai/',
+      },
+    ],
+  },
+  {
+    id: 'vercel',
+    name: 'Vercel',
+    description: 'Frontend cloud platform and creator of Next.js. Building the infrastructure for AI-native web.',
+    website: 'https://vercel.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid (Remote OK)',
+
+    // Business
+    stage: 'Series F',
+    valuation: '$9.3B (Sept 2025)',
+    totalFunding: '$863M',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$2.1M', date: '2016-08', leadInvestors: ['CRV'] },
+      { stage: 'Series A', amount: '$21M', date: '2020-04', leadInvestors: ['Accel'] },
+      { stage: 'Series B', amount: '$40M', date: '2020-12', valuation: '$500M', leadInvestors: ['GV'] },
+      { stage: 'Series C', amount: '$102M', date: '2021-06', valuation: '$1.1B', leadInvestors: ['Bedrock'] },
+      { stage: 'Series D', amount: '$150M', date: '2021-11', valuation: '$2.5B', leadInvestors: ['GIC'] },
+      { stage: 'Series E', amount: '$250M', date: '2024-05', valuation: '$3.25B', leadInvestors: ['Accel'] },
+      { stage: 'Series F', amount: '$300M', date: '2025-09', valuation: '$9.3B', leadInvestors: ['Accel', 'GIC'] },
+    ],
+    revenue: '~$200M ARR (May 2025)',
+    growth: '82% YoY',
+    runway: 'Strong — efficient growth, $300M fresh capital',
+    customers: 'Uber, Notion, Zapier, PayPal, Under Armour',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Netlify',
+        description: 'Frontend deployment platform',
+        whyTheyWin: 'Early mover in JAMstack, strong developer community',
+      },
+      {
+        name: 'AWS Amplify',
+        description: 'AWS frontend hosting',
+        whyTheyWin: 'AWS ecosystem integration, enterprise relationships',
+      },
+      {
+        name: 'Cloudflare Pages',
+        description: 'Edge hosting with Cloudflare network',
+        whyTheyWin: 'Global edge network, competitive pricing',
+      },
+    ],
+    marketPosition: '#1 in Frontend-as-a-Service',
+    moat: [
+      'Next.js framework dominance — 500K+ developers',
+      'v0 AI product generating $42M ARR in first year',
+      'AI SDK: 3M downloads/week',
+      'Best DX in deployment — git push and done',
+    ],
+    vsGiants: 'Owns the Next.js ecosystem. v0 positions them for AI-native development. Not trying to be all of AWS — focused on frontend excellence.',
+
+    // AI-Native Level
+    aiNativeLevel: 2,
+    aiNativeLevelDescription: 'AI is major feature. v0 and AI SDK are significant but not core platform.',
+    aiDesignChallenges: [
+      'v0: AI-generated UI component design and iteration',
+      'AI SDK: developer experience for AI integration',
+      'Deployment UX: making complex infrastructure feel simple',
+      'Pricing and packaging: AI credits and usage models',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Guillermo Rauch',
+        role: 'CEO',
+        background: 'Creator of Socket.io, Next.js. Argentinian. Started coding as teen.',
+      },
+    ],
+    whyBuilding:
+      'Guillermo saw that the web was too slow and deployment too hard. Created Next.js and Vercel to make web development magical.',
+    beliefs: [
+      'Developer experience is everything',
+      'The web should be fast by default',
+      'Ship fast, iterate faster',
+      'Open source wins (Next.js)',
+    ],
+    designPhilosophy:
+      'Vercel-style: minimal, fast, dark mode, premium feel. Their aesthetic has become industry standard for developer tools.',
+    greenFlags: [
+      'v0 is the leading AI UI generator',
+      'Remote-friendly culture',
+      'Strong design culture — Vercel aesthetic is iconic',
+      'Multiple Product Designer roles open',
+    ],
+    redFlags: [
+      'Not purely AI — infrastructure company with AI features',
+      'Competition from cloud giants increasing',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Director of Product Design',
+      teamSize: 'Medium (20+)',
+      notableMembers: [],
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'v0: AI component generation rules and constraints',
+          'Deployment automation logic',
+          'Usage limits and pricing tier logic',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'v0 output quality metrics',
+          'Developer satisfaction measurement',
+          'Deployment success rates',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'v0 AI interface and iteration flows',
+          'Vercel dashboard and deployment UX',
+          'Pricing, checkout, and billing flows',
+          'Team and enterprise admin features',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [
+      {
+        name: 'Guillermo Rauch',
+        role: 'CEO',
+        platform: 'twitter',
+        url: 'https://twitter.com/rauchg',
+        description: 'Prolific tweeter about web, design, and AI',
+      },
+      {
+        name: 'Vercel Design',
+        role: 'Company',
+        platform: 'blog',
+        url: 'https://vercel.com/blog?tag=design',
+        description: 'Vercel design blog posts',
+      },
+    ],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Senior Product Designer',
+        location: 'Remote (US) or SF/NY/London/Berlin',
+        url: 'https://vercel.com/careers/senior-product-designer-us-5227493004',
+        team: 'Product Design',
+        level: 'Senior',
+        type: 'full-time',
+        compensation: '$156K-$234K base (SF)',
+        aboutRole: 'Work across entire product solving complex, nuanced web challenges.',
+        responsibilities: [
+          'Design thoughtful, systems-based solutions',
+          'Customer research and requirements gathering',
+          'Deliver visual specs and oversee implementation',
+          'Work on pricing, packaging, checkout flows',
+        ],
+        requirements: [
+          'Strong systems thinking',
+          'Comfort with modern design tools (Figma, v0, Cursor)',
+          'Experience with complex B2B products',
+        ],
+        whyInteresting: 'Shape the tools that shape the web. Remote-friendly. Iconic design culture.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Remote-first, global team. Strong design culture. Guillermo is design-minded CEO.',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Vercel aesthetic is industry benchmark. Team ships fast, high quality bar.',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        content: 'Good work-life balance for startup. Remote flexibility. Competitive comp.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'Senior Product Designer: $156K-$234K base. Equity on top.',
+        url: 'https://www.levels.fyi/companies/vercel/salaries/product-designer',
+      },
+    ],
+
+    tracking: {
+      status: 'interested',
+      fitScore: 8,
+      whyJoin: [
+        'v0 is leading AI UI tool — frontier design work',
+        'Remote-friendly with great culture',
+        'Vercel aesthetic is industry-defining',
+        'Guillermo is design-minded founder',
+      ],
+      whyNot: [
+        'Not purely AI company — infrastructure focus',
+        'May be less cutting-edge AI than pure AI companies',
+      ],
+      nextActions: ['Apply to Senior Product Designer', 'Use v0 extensively to understand product'],
+      notes: 'Best of both worlds: AI features + proven business. Remote OK is huge plus.',
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Vercel Series F - Official Blog',
+        url: 'https://vercel.com/blog/series-f',
+      },
+      {
+        title: 'Vercel Revenue and Stats - Sacra',
+        url: 'https://sacra.com/c/vercel/',
       },
     ],
   },
