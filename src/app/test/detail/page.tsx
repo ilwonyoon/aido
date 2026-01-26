@@ -49,16 +49,9 @@ function WorkTypeSection({
 }
 
 const sections = [
-  { id: 'overview', label: 'Overview', icon: '📋' },
-  { id: 'roles', label: 'Roles', icon: '💼' },
-  { id: 'business', label: 'Business', icon: '🏢' },
-  { id: 'ai-level', label: 'AI Level', icon: '🤖' },
-  { id: 'founders', label: 'Founders', icon: '👥' },
+  { id: 'quick-info', label: 'Quick Info', icon: '⚡' },
+  { id: 'company', label: 'Company', icon: '🏢' },
   { id: 'design', label: 'Design', icon: '🎨' },
-  { id: 'team', label: 'Team', icon: '👨‍💻' },
-  { id: 'culture', label: 'Culture', icon: '💬' },
-  { id: 'tracking', label: 'Tracking', icon: '📊' },
-  { id: 'sources', label: 'Sources', icon: '🔗' },
 ];
 
 export default function TestDetailPage() {
@@ -173,10 +166,14 @@ export default function TestDetailPage() {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 min-w-0 space-y-8">
-          {/* Overview - Summary Card */}
-          <section id="overview" className="scroll-mt-20">
-            <h2 className="section-title">📋 Overview</h2>
+        <div className="flex-1 min-w-0 space-y-12">
+          {/* Quick Info */}
+          <section id="quick-info" className="scroll-mt-20 space-y-8">
+            <h2 className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
+
+            {/* Overview - Summary Card */}
+            <div>
+              <h3 className="section-title">Overview</h3>
             <div className="card p-5">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
                 <div>
@@ -213,95 +210,87 @@ export default function TestDetailPage() {
                 </div>
               </div>
             </div>
-          </section>
+            </div>
 
-          {/* Open Roles - Emphasized */}
-          <section id="roles" className="scroll-mt-20">
-            <h2 className="section-title">💼 Open Design Roles</h2>
+            {/* Open Roles */}
+            <div>
+              <h3 className="section-title">Open Design Roles</h3>
             {company.openRoles.length > 0 ? (
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {company.openRoles.map((role, i) => (
-                  <div key={i} className="card p-6 border-2 border-[var(--success)]">
-                    <div className="mb-4">
+                  <div key={i} className="card p-4 border-2 border-[var(--success)]">
+                    <div className="mb-3">
                       <a
                         href={role.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xl font-semibold hover:text-[var(--accent-light)]"
+                        className="text-base font-semibold hover:text-[var(--accent-light)]"
                       >
                         {role.title} ↗
                       </a>
-                      <div className="flex flex-wrap items-center gap-2 mt-2">
-                        <span className="text-sm text-[var(--muted)]">{role.location}</span>
+                      <div className="flex flex-wrap items-center gap-2 mt-1">
+                        <span className="text-xs text-[var(--muted)]">{role.location}</span>
                         {role.level && <span className="badge text-xs">{role.level}</span>}
                         {role.team && <span className="badge badge-accent text-xs">{role.team}</span>}
+                        {role.compensation && (
+                          <span className="text-xs font-medium text-[var(--success)]">{role.compensation}</span>
+                        )}
                       </div>
-                      {role.compensation && (
-                        <div className="text-sm font-medium text-[var(--success)] mt-2">
-                          {role.compensation}
-                        </div>
-                      )}
                     </div>
 
                     {role.aboutRole && (
-                      <div className="mb-4">
-                        <p className="text-sm">{role.aboutRole}</p>
+                      <div className="mb-2">
+                        <p className="text-xs text-[var(--muted)]">{role.aboutRole}</p>
                       </div>
                     )}
 
                     {role.whyInteresting && (
-                      <div className="mb-4 p-4 bg-[var(--success)]/10 rounded-lg border border-[var(--success)]/30">
-                        <div className="text-xs font-medium text-[var(--success)] uppercase tracking-wide mb-2">
-                          Why This Role is Interesting
+                      <div className="mb-2 p-2 bg-[var(--success)]/10 rounded border border-[var(--success)]/30">
+                        <div className="text-xs font-medium text-[var(--success)] mb-1">
+                          Why Interesting
                         </div>
-                        <p className="text-sm">{role.whyInteresting}</p>
+                        <p className="text-xs">{role.whyInteresting}</p>
                       </div>
                     )}
 
                     {role.responsibilities && role.responsibilities.length > 0 && (
-                      <div className="mb-4">
-                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
+                      <div className="mb-2">
+                        <div className="text-xs font-medium text-[var(--muted)] mb-1">
                           What You'll Do
                         </div>
-                        <ul className="space-y-2">
-                          {role.responsibilities.map((item, j) => (
-                            <li key={j} className="text-sm flex gap-2">
+                        <ul className="space-y-1">
+                          {role.responsibilities.slice(0, 3).map((item, j) => (
+                            <li key={j} className="text-xs text-[var(--muted)] flex gap-1.5">
                               <span className="text-[var(--accent-light)]">→</span>
                               <span>{item}</span>
                             </li>
                           ))}
+                          {role.responsibilities.length > 3 && (
+                            <li className="text-xs text-[var(--muted)] italic">
+                              + {role.responsibilities.length - 3} more...
+                            </li>
+                          )}
                         </ul>
                       </div>
                     )}
 
                     {role.requirements && role.requirements.length > 0 && (
-                      <div className="mb-4">
-                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
+                      <div className="mb-2">
+                        <div className="text-xs font-medium text-[var(--muted)] mb-1">
                           Requirements
                         </div>
-                        <ul className="space-y-1">
-                          {role.requirements.map((req, j) => (
-                            <li key={j} className="text-sm text-[var(--muted)] flex gap-2">
+                        <ul className="space-y-0.5">
+                          {role.requirements.slice(0, 3).map((req, j) => (
+                            <li key={j} className="text-xs text-[var(--muted)] flex gap-1.5">
                               <span>•</span>
                               <span>{req}</span>
                             </li>
                           ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {role.preferred && role.preferred.length > 0 && (
-                      <div className="mb-4">
-                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
-                          Nice to Have
-                        </div>
-                        <ul className="space-y-1">
-                          {role.preferred.map((pref, j) => (
-                            <li key={j} className="text-sm text-[var(--muted)] flex gap-2">
-                              <span className="text-[var(--success)]">+</span>
-                              <span>{pref}</span>
+                          {role.requirements.length > 3 && (
+                            <li className="text-xs text-[var(--muted)] italic">
+                              + {role.requirements.length - 3} more...
                             </li>
-                          ))}
+                          )}
                         </ul>
                       </div>
                     )}
@@ -309,15 +298,21 @@ export default function TestDetailPage() {
                 ))}
               </div>
             ) : (
-              <div className="card p-6 text-center text-[var(--muted)]">
+              <div className="card p-4 text-center text-sm text-[var(--muted)]">
                 No open design roles
               </div>
             )}
+            </div>
           </section>
 
-          {/* Business */}
-          <section id="business" className="scroll-mt-20">
-            <h2 className="section-title">🏢 Business</h2>
+          {/* Company */}
+          <section id="company" className="scroll-mt-20 space-y-8">
+            <h2 className="text-2xl font-semibold mb-6">🏢 Company</h2>
+          </section>
+
+            {/* Business */}
+            <div>
+              <h3 className="section-title">Business</h3>
 
             {/* Funding History */}
             {company.fundingHistory && company.fundingHistory.length > 0 && (
@@ -371,11 +366,11 @@ export default function TestDetailPage() {
                 ))}
               </div>
             </div>
-          </section>
+            </div>
 
-          {/* AI Native Level */}
-          <section id="ai-level" className="scroll-mt-20">
-            <h2 className="section-title">🤖 AI-Native Level</h2>
+            {/* AI Native Level */}
+            <div>
+              <h3 className="section-title">AI-Native Level</h3>
             <div className="card p-5">
               <div className="flex items-center gap-3 mb-4">
                 <div className="text-4xl font-mono font-bold">L{company.aiNativeLevel}</div>
@@ -396,11 +391,11 @@ export default function TestDetailPage() {
                 ))}
               </ul>
             </div>
-          </section>
+            </div>
 
-          {/* Founders & Vision */}
-          <section id="founders" className="scroll-mt-20">
-            <h2 className="section-title">👥 Founders & Vision</h2>
+            {/* Founders & Vision */}
+            <div>
+              <h3 className="section-title">Founders & Vision</h3>
             <div className="card p-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {company.founders.map((f) => (
@@ -457,11 +452,16 @@ export default function TestDetailPage() {
                 </div>
               </div>
             </div>
+            </div>
           </section>
 
-          {/* Design Work Type */}
-          <section id="design" className="scroll-mt-20">
-            <h2 className="section-title">🎨 Design Work Type</h2>
+          {/* Design */}
+          <section id="design" className="scroll-mt-20 space-y-8">
+            <h2 className="text-2xl font-semibold mb-6">🎨 Design</h2>
+
+            {/* Design Work Type */}
+            <div>
+              <h3 className="section-title">Design Work Type</h3>
             <div className="card p-5">
               <WorkTypeSection
                 title="Logic / Behavior Design"
@@ -481,11 +481,11 @@ export default function TestDetailPage() {
                 tasks={company.designWorkType.interface.tasks}
               />
             </div>
-          </section>
+            </div>
 
-          {/* Design Team + Designer Links */}
-          <section id="team" className="scroll-mt-20">
-            <h2 className="section-title">👨‍💻 Design Team</h2>
+            {/* Design Team + Designer Links */}
+            <div>
+              <h3 className="section-title">Design Team</h3>
             <div className="card p-5 mb-4">
               {company.designTeam.cpo && (
                 <div className="mb-3">
@@ -535,12 +535,12 @@ export default function TestDetailPage() {
                 ))}
               </div>
             )}
-          </section>
+            </div>
 
-          {/* Culture Insights */}
-          {company.cultureInsights && company.cultureInsights.length > 0 && (
-            <section id="culture" className="scroll-mt-20">
-              <h2 className="section-title">💬 Culture Insights</h2>
+            {/* Culture Insights */}
+            {company.cultureInsights && company.cultureInsights.length > 0 && (
+            <div>
+              <h3 className="section-title">Culture Insights</h3>
               <div className="space-y-2">
                 {company.cultureInsights.map((insight, i) => {
                   const sentimentColors = {
@@ -566,12 +566,12 @@ export default function TestDetailPage() {
                   );
                 })}
               </div>
-            </section>
-          )}
+            </div>
+            )}
 
-          {/* My Tracking */}
-          <section id="tracking" className="scroll-mt-20">
-            <h2 className="section-title">📊 My Tracking</h2>
+            {/* My Tracking */}
+            <div>
+              <h3 className="section-title">My Tracking</h3>
             <div className="card p-5">
               <div className="flex items-center justify-between mb-4">
                 <span className="badge badge-accent">{company.tracking.status}</span>
@@ -612,11 +612,11 @@ export default function TestDetailPage() {
                 </div>
               </div>
             </div>
-          </section>
+            </div>
 
-          {/* Sources */}
-          <section id="sources" className="scroll-mt-20">
-            <h2 className="section-title">🔗 Sources</h2>
+            {/* Sources */}
+            <div>
+              <h3 className="section-title">Sources</h3>
             <div className="card p-5">
               <div className="space-y-2">
                 {company.sources.map((s, i) => (
@@ -631,6 +631,7 @@ export default function TestDetailPage() {
                   </a>
                 ))}
               </div>
+            </div>
             </div>
           </section>
         </div>
