@@ -48,6 +48,11 @@ import { copyAi } from './copy-ai';
 import { beautifulAi } from './beautiful-ai';
 import { tabnine } from './tabnine';
 import { cohereAi } from './cohere-ai';
+import { harmonic } from './harmonic';
+import { ambienceHealthcare } from './ambience-healthcare';
+import { abridge } from './abridge';
+import { listenLabs } from './listen-labs';
+import { blossom } from './blossom';
 
 export const companies: Company[] = [
   anthropic,
@@ -98,9 +103,14 @@ export const companies: Company[] = [
   beautifulAi,
   tabnine,
   cohereAi,
+  harmonic,
+  ambienceHealthcare,
+  abridge,
+  listenLabs,
+  blossom,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, harveyAi, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, cohereAi };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, harveyAi, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, cohereAi, harmonic, ambienceHealthcare, abridge, listenLabs, blossom };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);

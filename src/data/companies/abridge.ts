@@ -5,7 +5,7 @@ export const abridge: Company = {
     name: 'Abridge',
     description: 'AI platform for medical conversation capture, summarization, and clinical documentation.',
     website: 'https://www.abridge.com',
-    headquarters: 'San Francisco, CA',
+    headquarters: 'Pittsburgh, PA',
     remote: 'Unknown',
 
     // Business
@@ -16,7 +16,7 @@ export const abridge: Company = {
       { stage: 'Series A', amount: '$12.5M', date: '2022-08', leadInvestors: ['Bessemer Venture Partners'] },
       { stage: 'Series B', amount: '$30M', date: '2023-10', leadInvestors: ['Spark Capital'] },
       { stage: 'Series C', amount: '$150M', date: '2024-02', leadInvestors: ['Lightspeed Venture Partners'] },
-      { stage: 'Series D', amount: '$250M', date: '2025-02', valuation: '$2.75B', leadInvestors: ['Elad Gil', 'IVP'] },
+      { stage: 'Series D', amount: '$250M', date: '2025-02', leadInvestors: ['Elad Gil', 'IVP'] },
       { stage: 'Series E', amount: '$300M', date: '2025-06', valuation: '$5.3B', leadInvestors: ['Andreessen Horowitz'] },
     ],
     revenue: '$117M contracted ARR (Q1 2025)',
@@ -176,12 +176,14 @@ export const abridge: Company = {
     lastUpdated: '2026-01-26T20:00:00',
     sources: [
       { title: 'Abridge Series E funding (TechCrunch)', url: 'https://techcrunch.com/2025/06/24/abridge-raises-300m-at-a-5-3b-valuation-to-grow-its-ai-powered-medical-transcription-tool/' },
-      { title: 'Abridge Series D funding (Axios)', url: 'https://www.axios.com/pro/health-tech-deals/2025/02/11/abridge-raising-250-million-2-75-billion-valuation' },
+      { title: 'Abridge Series D (Press release)', url: 'https://www.abridge.com/press/abridge-raises-250-million-series-d-funding-to-fuel-expansion-of-generative-ai-platform-for-clinical-conversations' },
       { title: 'Abridge Series C (Press release)', url: 'https://www.abridge.com/press/abridge-announces-150-million-series-c-funding-to-scale-generative-ai-platform-for-clinical-conversations' },
       { title: 'Abridge Series B (BusinessWire)', url: 'https://www.businesswire.com/news/home/20231004012861/en/Abridge-Raises-%2430M-Series-B-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
       { title: 'Abridge Series A-1 (BusinessWire)', url: 'https://www.businesswire.com/news/home/20220823005269/en/Abridge-Raises-%2412.5M-Series-A-1-Extension-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
       { title: 'Abridge + UPMC partnership (Press release)', url: 'https://www.abridge.com/press/upmc-and-abridge-announce-strategic-partnership-to-expand-generative-ai-clinical-documentation-for-providers-and-patients' },
+      { title: 'Abridge Careers', url: 'https://www.abridge.com/careers' },
       { title: 'Abridge LinkedIn', url: 'https://www.linkedin.com/company/abridge/' },
+      { title: 'Abridge funding total (Crunchbase News)', url: 'https://news.crunchbase.com/ai/abridge-funding-4-75b-valuation-sequoia-ai/' },
       { title: 'Abridge Crunchbase', url: 'https://www.crunchbase.com/organization/abridge-d1a4' },
       { title: 'Clinical documentation improvement market size', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' },
     ],
