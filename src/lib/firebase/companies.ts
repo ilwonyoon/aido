@@ -76,7 +76,7 @@ export async function deleteCompanyFromFirestore(id: string): Promise<void> {
 /**
  * Get companies by AI native level
  */
-export async function getCompaniesByAiLevel(level: number): Promise<Company[]> {
+export async function getCompaniesByAiLevel(level: 'A' | 'B' | 'C' | 'D'): Promise<Company[]> {
   const companiesRef = collection(db, COMPANIES_COLLECTION);
   const q = query(companiesRef, where('aiNativeLevel', '==', level));
   const snapshot = await getDocs(q);

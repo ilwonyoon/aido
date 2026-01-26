@@ -112,6 +112,6 @@ export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
 }
 
-export function getCompaniesByAiLevel(level: number): Company[] {
-  return companies.filter((c) => c.aiNativeLevel >= level);
+export function getCompaniesByAiLevel(level: 'A' | 'B' | 'C' | 'D'): Company[] {
+  return companies.filter((c) => c.aiNativeLevel === level);
 }
