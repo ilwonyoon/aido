@@ -5502,7 +5502,7 @@ export const companies: Company[] = [
     remote: 'Hybrid',
 
     // Business
-    stage: 'Series C+',
+    stage: 'Series D',
     valuation: '$9B (Jan 2026)',
     totalFunding: '$650M+',
     fundingHistory: [
@@ -5510,7 +5510,7 @@ export const companies: Company[] = [
       { stage: 'Series A', amount: '$20M', date: '2021-03', valuation: '$300M', leadInvestors: ['a16z'] },
       { stage: 'Series B', amount: '$80M', date: '2022-04', valuation: '$1.16B', leadInvestors: ['Coatue'] },
       { stage: 'Series C', amount: '$250M', date: '2025-09', valuation: '$3B', leadInvestors: ['Prysm Capital'] },
-      { stage: 'Series C+', amount: '$400M', date: '2026-01', valuation: '$9B', leadInvestors: ['Georgian'] },
+      { stage: 'Series D', amount: '$400M', date: '2026-01', valuation: '$9B', leadInvestors: ['Georgian'] },
     ],
     revenue: '$240M (2025), projected $1B (2026)',
     growth: '300% valuation increase in 4 months ($3B → $9B)',
@@ -5953,6 +5953,20 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$200M+ ARR (estimated 2025), ~2-3x YoY",
+      userGrowth: "1000+ enterprise customers",
+      signals: ["$6.8B valuation", "$1B+ raised", "1000+ enterprise customers", "Transformer co-author CEO", "Enterprise-first positioning"],
+      tam: "$500B+ (Enterprise AI for all business functions)",
+      marketShare: "<0.1%",
+      ceiling: "Early-mid innings: Enterprise AI early, Cohere enterprise-first vs ChatGPT, competing against Anthropic/OpenAI.",
+      tailwinds: ["Enterprise data privacy concerns", "Canadian company = data sovereignty", "Transformer co-author credibility"],
+      headwinds: ["Anthropic's Claude dominant in enterprise", "OpenAI has Microsoft distribution", "Google Workspace AI", "Enterprise sales slow"],
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Enterprise integrations and compliance create switching costs. Canadian positioning helps. No network effects.",
+    },
+
     // My Tracking
     tracking: {
       status: 'interested',
@@ -6005,7 +6019,7 @@ export const companies: Company[] = [
     description: 'AI marketing platform for enterprises, enabling teams to create on-brand content at scale with generative AI.',
     website: 'https://jasper.ai',
     headquarters: 'Austin, TX',
-    remote: 'Remote-first',
+    remote: 'Yes',
 
     // Business
     stage: 'Series A',
@@ -6219,7 +6233,7 @@ export const companies: Company[] = [
         'AI-native Level 3: AI is core differentiator',
         '100,000+ customers',
         'Principal Product Designer role (senior level)',
-        'Remote-first',
+        'Yes',
         'Clear design challenge: simplify overwhelming UI',
       ],
       whyNot: [
@@ -6460,7 +6474,7 @@ export const companies: Company[] = [
         'AI-native Level 3: Cody is core product',
         'Strong technical founders (ex-Palantir)',
         '$2.6B valuation, well-funded',
-        'Remote-first',
+        'Yes',
         'Designing for power users (high craft bar)',
       ],
       whyNot: [
@@ -6587,7 +6601,7 @@ export const companies: Company[] = [
       'Rahul Vohra is product genius (PMF framework)',
       'Obsessive craft and quality',
       'Grammarly acquisition brings resources',
-      'Remote-first',
+      'Yes',
     ],
     redFlags: [
       'Acquired (less autonomy?)',
@@ -7038,7 +7052,7 @@ export const companies: Company[] = [
       '$100M ARR profitably with 52 people',
       '30M+ users, strong growth',
       'Pivoted successfully to AI in 2022',
-      'Remote-first',
+      'Yes',
     ],
     redFlags: [
       'Fierce competition from Canva, Microsoft',
