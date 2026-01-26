@@ -45,9 +45,9 @@ export default function RootLayout({
                   <Link href="/" className="hover:text-[var(--foreground)]">
                     Companies
                   </Link>
-                  <Link href="/macro" className="hover:text-[var(--foreground)]">
+                  {/* <Link href="/macro" className="hover:text-[var(--foreground)]">
                     Macro
-                  </Link>
+                  </Link> */}
                   <ThemeToggle />
                   <AuthButton />
                 </div>

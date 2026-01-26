@@ -631,9 +631,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                             });
                           }}
                         >
-                          <div className="flex items-center gap-2">
-                            <span className="font-medium text-sm">{company.name}</span>
-                            <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
+                          <div className="flex items-center gap-2 flex-nowrap">
+                            <span className="font-medium text-sm whitespace-nowrap">{company.name}</span>
+                            <span className={`text-xs font-medium flex-shrink-0 ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
                               L{company.aiNativeLevel}
                             </span>
                           </div>
