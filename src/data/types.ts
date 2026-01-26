@@ -33,7 +33,18 @@ export interface OpenRole {
   title: string;
   location: string;
   url: string;
-  requirements?: string[];
+  // Enhanced job description fields
+  team?: string; // e.g., "Claude Code Team", "Growth Team"
+  level?: string; // e.g., "Senior", "Staff", "Lead"
+  type?: 'full-time' | 'contract' | 'intern';
+  compensation?: string; // e.g., "$180K-$250K + Equity"
+  postedDate?: string; // e.g., "2025-01"
+  aboutRole?: string; // Brief description of what you'll do
+  responsibilities?: string[]; // Key responsibilities
+  requirements?: string[]; // Required qualifications (keeping for backward compat)
+  preferred?: string[]; // Nice-to-have qualifications
+  teamInfo?: string; // About the team you'll join
+  whyInteresting?: string; // Why this role is interesting for designers
 }
 
 export interface CultureInsight {
