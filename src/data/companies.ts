@@ -3804,6 +3804,663 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    id: 'harvey',
+    name: 'Harvey',
+    description: 'AI copilot for elite law firms, transforming how legal professionals work with AI-powered research, drafting, and analysis.',
+    website: 'https://harvey.ai',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series E',
+    valuation: '$8B (Oct 2025)',
+    totalFunding: '$1.02B',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$5M', date: '2022-11', leadInvestors: ['Sequoia Capital'] },
+      { stage: 'Series A', amount: '$21M', date: '2023-03', valuation: '$150M', leadInvestors: ['Sequoia Capital'] },
+      { stage: 'Series B', amount: '$80M', date: '2023-12', valuation: '$715M', leadInvestors: ['Kleiner Perkins'] },
+      { stage: 'Series C', amount: '$100M', date: '2024-05', valuation: '$1.5B', leadInvestors: ['Kleiner Perkins'] },
+      { stage: 'Series D', amount: '$140M', date: '2024-07', valuation: '$1.5B', leadInvestors: ['Sequoia Capital'] },
+      { stage: 'Series E', amount: '$300M', date: '2025-06', valuation: '$5B', leadInvestors: ['Sequoia Capital'] },
+    ],
+    revenue: '$100M ARR (Aug 2025)',
+    growth: 'Reached $100M ARR in 3 years',
+    runway: 'Strong — highly capitalized',
+    customers: '1,000+ law firms and corporate legal departments, 42% of AmLaw 100 firms',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Thomson Reuters CoCounsel',
+        description: 'Legal AI by Thomson Reuters, integrated with Westlaw',
+        whyTheyWin: 'Deep legal content integration, trusted brand, existing customer base',
+      },
+      {
+        name: 'Casetext',
+        description: 'Legal research platform acquired by Thomson Reuters',
+        whyTheyWin: 'Established legal research reputation, now part of Thomson Reuters ecosystem',
+      },
+      {
+        name: 'Lex Machina',
+        description: 'Legal analytics platform by LexisNexis',
+        whyTheyWin: 'Data advantage from LexisNexis, strong analytics focus',
+      },
+      {
+        name: 'Spellbook',
+        description: 'AI contract drafting and review',
+        whyTheyWin: 'Focused product, easier to adopt for mid-market firms',
+      },
+    ],
+    marketPosition: 'Leader in enterprise legal AI, dominant in AmLaw 100',
+    moat: [
+      'Elite firm partnerships: 42% of AmLaw 100 using Harvey',
+      'Custom legal LLM trained on proprietary legal data',
+      'Deep integration into existing legal workflows',
+      'Strong network effects: more usage = better legal AI',
+      'Sequoia-backed with $1B+ war chest',
+    ],
+    vsGiants: 'Harvey built legal-specific AI vs generic ChatGPT/Claude. Vertical focus = higher quality, compliance, integration.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Harvey is entirely built around AI-powered legal work — research, drafting, analysis. No Harvey without AI.',
+    aiDesignChallenges: [
+      'Trust & verification: lawyers need to verify AI outputs, how to design for confidence?',
+      'Complex legal reasoning: designing interfaces for multi-step legal analysis',
+      'Citation & sources: surfacing sources for AI-generated legal arguments',
+      'Workflow integration: embedding AI into existing legal processes',
+      'Role-based AI: different AI behaviors for partners vs associates',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Gabriel Pereyra',
+        role: 'Co-founder & President',
+        background: 'Research Scientist at Google DeepMind. PhD in ML. Built language models before founding Harvey.',
+      },
+      {
+        name: 'Winston Weinberg',
+        role: 'Co-founder & CEO',
+        background: 'Securities and antitrust litigator at O\'Melveny & Myers. Stanford Law. First-hand legal pain points.',
+      },
+    ],
+    whyBuilding: 'Weinberg experienced legal work inefficiency firsthand as a litigator. Pereyra had the AI expertise. Together they saw legal as the perfect vertical for AI: high-value, knowledge-intensive, massive market ($1T+ legal industry).',
+    beliefs: [
+      'AI will augment lawyers, not replace them (at least for the next decade)',
+      'Legal AI needs to be vertical-specific, not generic',
+      'Trust is everything: lawyers need explainable, verifiable AI',
+      'Enterprise-first: serve elite firms, not consumers',
+      'Build deep partnerships with law firms to understand real workflows',
+    ],
+    designPhilosophy: 'Professional-grade AI for high-stakes work. Design for trust, verification, and integration into existing legal workflows.',
+    greenFlags: [
+      'Founders are roommates turned billionaires — strong partnership',
+      'Elite firm adoption: 42% of AmLaw 100 using Harvey',
+      'Vertical focus: deep understanding of legal workflows',
+      'Strong investor backing: Sequoia, Kleiner Perkins, a16z',
+      'Fast growth: $100M ARR in 3 years',
+    ],
+    redFlags: [
+      'Enterprise-only: might miss mid-market/SMB opportunity',
+      'Legal market slowness: law firms are slow to change',
+      'Liability concerns: AI errors in legal work could be catastrophic',
+      'Competition from incumbents: Thomson Reuters, LexisNexis have distribution',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: '~20-30 (estimated)',
+      notableMembers: [
+        { name: 'Ryan Samii', role: 'Product Lead (joined Dec 2025 from Hebbia)' },
+      ],
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Designing multi-step legal reasoning flows',
+          'Building AI behavior for different legal tasks (research vs drafting vs review)',
+          'Defining role-based AI: different behaviors for partners vs associates',
+          'Creating feedback loops for lawyers to improve AI accuracy',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Designing confidence scores for AI-generated legal arguments',
+          'Building verification workflows: how lawyers check AI outputs',
+          'Creating citation/source tracking systems',
+          'Defining quality metrics for legal AI (accuracy, relevance, completeness)',
+        ],
+      },
+      interface: {
+        level: 'medium',
+        tasks: [
+          'Chat interface for legal Q&A',
+          'Document drafting & review interfaces',
+          'Integration with legal software (Westlaw, LexisNexis, practice management)',
+          'Professional UI for high-stakes legal work',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Staff Product Designer',
+        location: 'San Francisco, CA (Hybrid)',
+        url: 'https://www.harvey.ai/brand/company/careers/24616c39-e293-4bcc-a3dd-e6f33a71c8ee',
+        level: 'Staff',
+        type: 'full-time',
+        aboutRole: 'Lead the design of end-to-end product experiences for Harvey\'s AI-powered legal tools, from concept to polished execution.',
+        responsibilities: [
+          'Manage multiple projects from ideation to launch',
+          'Create high-quality designs, interactions, and prototypes that transform complex problems into intuitive solutions',
+          'Collaborate with engineers, AI researchers, product managers, and lawyers',
+          'Design interfaces that help users understand, trust, and guide AI outputs',
+          'Promote and develop best practices in designing with AI',
+        ],
+        requirements: [
+          '8+ years of experience designing products in a fast-paced environment',
+          'Portfolio demonstrating best work',
+          'Ability to tackle complex challenges and transform them into simple, intuitive experiences',
+          'Deep understanding of design systems and strong sense of visual/interaction design',
+          'Experience conducting user research and applying insights to design decisions',
+        ],
+        whyInteresting: 'Designing AI for high-stakes legal work. Extremely complex problem space with massive impact. Working with elite law firms.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Fast-paced, mission-driven culture. Founders still share an apartment while building an $8B company.',
+        url: 'https://www.linkedin.com/company/harvey-ai',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 8,
+      whyJoin: [
+        'AI-native Level 4: AI IS the product',
+        'Massive design challenge: high-stakes legal AI',
+        'Elite customers: working with top law firms',
+        'Strong founders: Pereyra (DeepMind) + Weinberg (O\'Melveny)',
+        'Well-funded: $1B+ raised, $8B valuation',
+      ],
+      whyNot: [
+        'Enterprise-only: might be less consumer-facing innovation',
+        'Legal domain: need to learn legal workflows',
+        'Liability pressure: errors in legal AI are high-stakes',
+      ],
+      nextActions: [
+        'Research Harvey\'s product in detail',
+        'Follow Gabriel Pereyra and Winston Weinberg on Twitter',
+        'Connect with Harvey designers on LinkedIn',
+        'Apply for Staff Product Designer role',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T10:30:00',
+    sources: [
+      {
+        title: 'Harvey AI Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Harvey_(software)',
+      },
+      {
+        title: 'Harvey raises $300M Series E at $5B valuation',
+        url: 'https://techfundingnews.com/legal-ai-startup-harvey-300m-series-e-funding-5b-valuation/',
+      },
+      {
+        title: 'Harvey founders podcast on LawNext',
+        url: 'https://www.lawnext.com/2026/01/lawnext-from-roommates-to-billionaires-harveys-founders-gabriel-pereyra-and-winston-weinberg-on-building-ai-infrastructure-for-law.html',
+      },
+      {
+        title: 'Inside Harvey: TechCrunch profile',
+        url: 'https://techcrunch.com/2025/11/14/inside-harvey-how-a-first-year-legal-associate-built-one-of-silicon-valleys-hottest-startups/',
+      },
+    ],
+  },
+  {
+    id: 'character-ai',
+    name: 'Character.AI',
+    description: 'Conversational AI platform for creating and chatting with AI characters, enabling personalized AI interactions.',
+    website: 'https://character.ai',
+    headquarters: 'Menlo Park, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series A',
+    valuation: '$5B (Sept 2024, post-Google deal)',
+    totalFunding: '$193M',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$43M', date: '2021-12', leadInvestors: ['a16z'] },
+      { stage: 'Series A', amount: '$150M', date: '2023-03', valuation: '$1B', leadInvestors: ['Andreessen Horowitz'] },
+    ],
+    revenue: 'Not disclosed (consumer monetization)',
+    growth: '208M visits/month, 16M+ chatbots created',
+    runway: 'Strong — Google licensing deal in Aug 2024',
+    customers: '208M monthly visits, avg 120 min/session',
+
+    // Competition
+    competitors: [
+      {
+        name: 'ChatGPT',
+        description: 'General-purpose AI chatbot by OpenAI',
+        whyTheyWin: 'Brand recognition, multi-modal capabilities, broader use cases',
+      },
+      {
+        name: 'Replika',
+        description: 'AI companion chatbot',
+        whyTheyWin: 'Emotional connection focus, established companion AI brand',
+      },
+      {
+        name: 'Janitor AI',
+        description: 'Unrestricted character AI platform',
+        whyTheyWin: 'No content filters, NSFW allowed, appeals to users wanting freedom',
+      },
+      {
+        name: 'Inflection AI (Pi)',
+        description: 'Personal AI assistant focused on emotional intelligence',
+        whyTheyWin: 'Emotional intelligence focus, backed by massive funding',
+      },
+    ],
+    marketPosition: 'Leader in character-based AI chat, #1 in entertainment AI',
+    moat: [
+      '16M+ user-created characters = massive content moat',
+      'Engagement: 120 min/session (vs 15 min for ChatGPT)',
+      'Community-driven content creation',
+      'Google licensing deal: founders now leading Gemini',
+      'Network effects: more characters = more users',
+    ],
+    vsGiants: 'Character.AI focuses on entertainment/roleplay vs ChatGPT\'s productivity. Different use case, different retention.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Character.AI is 100% about AI-powered conversations. No product without AI.',
+    aiDesignChallenges: [
+      'Character consistency: keeping AI characters in-character across conversations',
+      'Emotional engagement: designing for parasocial relationships',
+      'Content moderation: balancing freedom vs safety',
+      'Memory: maintaining context across long conversations',
+      'Discovery: helping users find interesting characters among 16M+',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Noam Shazeer',
+        role: 'Co-founder (now at Google)',
+        background: 'Former Google engineer, lead author on Transformer paper. Built LaMDA at Google.',
+      },
+      {
+        name: 'Daniel De Freitas',
+        role: 'Co-founder (now at Google)',
+        background: 'Lead designer of LaMDA at Google. Deep expertise in conversational AI.',
+      },
+    ],
+    whyBuilding: 'Shazeer and De Freitas left Google because they wanted to build conversational AI that people could actually use, not just research. Character.AI was their vision for AI that\'s fun, creative, and engaging.',
+    beliefs: [
+      'AI should be entertaining, not just productive',
+      'Personalized AI characters > one-size-fits-all chatbot',
+      'Community-created content is the future',
+      'Long-form conversation = true AI understanding',
+    ],
+    designPhilosophy: 'Design for emotional engagement and long-form conversation. Make AI characters feel alive.',
+    greenFlags: [
+      'Founders built LaMDA at Google — deep AI expertise',
+      'Massive engagement: 120 min/session',
+      'Community moat: 16M+ user-created characters',
+      'Google deal: founders now leading Gemini',
+    ],
+    redFlags: [
+      'Founders left for Google (Aug 2024) — leadership transition',
+      'Content moderation challenges: lawsuits over teen suicides',
+      'Monetization unclear: consumer AI is hard to monetize',
+      'Heavy content filters frustrate users → competitors gain share',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      ceo: 'Karandeep Anand (CEO after founders left)',
+      teamSize: '~50-100 (estimated)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Designing character consistency: keeping AI in-character',
+          'Building memory systems: context across long conversations',
+          'Defining character personalities and behaviors',
+          'Creating feedback loops for character quality',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Designing content moderation: balancing safety vs freedom',
+          'Building quality metrics for character interactions',
+          'Creating user feedback systems for character improvement',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Chat interface optimized for long conversations',
+          'Character creation tools for community',
+          'Discovery: finding interesting characters among 16M+',
+          'Emotional engagement: design for parasocial relationships',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Menlo Park, CA (Hybrid)',
+        url: 'https://jobs.ashbyhq.com/character/',
+        type: 'full-time',
+        aboutRole: 'Create user-centered designs for AI entertainment products, crafting interfaces that spark curiosity and offer endless ways to explore.',
+        responsibilities: [
+          'Collaborate with product, engineering, and AI teams',
+          'Design immersive experiences at the intersection of storytelling, gaming, and social connection',
+          'Create interfaces for millions of users',
+          'Build design systems for character-based AI',
+        ],
+        whyInteresting: 'Designing for 208M monthly users. Building the future of AI entertainment. Working on parasocial AI relationships.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        rating: 3.8,
+        content: 'Fast-paced startup culture. Founders left for Google in 2024, causing some uncertainty.',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 6,
+      whyJoin: [
+        'AI-native Level 4: AI IS the product',
+        'Massive scale: 208M monthly visits',
+        'Creative product: entertainment AI vs boring productivity tools',
+        'Community-driven: 16M+ user-created characters',
+      ],
+      whyNot: [
+        'Founders left for Google — leadership uncertainty',
+        'Content moderation challenges: lawsuits, safety concerns',
+        'Consumer monetization is hard',
+        'Heavy filters frustrate users',
+      ],
+      nextActions: [
+        'Use Character.AI extensively to understand product',
+        'Research new CEO Karandeep Anand',
+        'Follow Character.AI designers on LinkedIn',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T10:45:00',
+    sources: [
+      {
+        title: 'Character.AI Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Character.ai',
+      },
+      {
+        title: 'Google hires Character.AI founders',
+        url: 'https://techcrunch.com/2024/08/02/character-ai-ceo-noam-shazeer-returns-to-google/',
+      },
+      {
+        title: 'Character.AI valuation after Google deal',
+        url: 'https://www.oreateai.com/blog/characterais-bold-return-to-google-a-25-billion-acquisition/fa44e864e4e84a728d18224c87276e52',
+      },
+    ],
+  },
+  {
+    id: 'typeface',
+    name: 'Typeface',
+    description: 'Generative AI platform for enterprise marketing content, enabling businesses to create personalized, on-brand content at scale.',
+    website: 'https://typeface.ai',
+    headquarters: 'Palo Alto, CA',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series B',
+    valuation: '$1B (Jun 2023)',
+    totalFunding: '$206M',
+    fundingHistory: [
+      { stage: 'Series A', amount: '$65M', date: '2023-02', leadInvestors: ['Lightspeed Venture Partners', 'GV', 'M12'] },
+      { stage: 'Series B', amount: '$100M', date: '2023-06', valuation: '$1B', leadInvestors: ['Salesforce Ventures'] },
+    ],
+    revenue: 'Not disclosed (enterprise sales)',
+    growth: 'Fortune 500 customers within first year',
+    runway: 'Strong — well-capitalized',
+    customers: 'Fortune 500 companies, enterprise marketing teams',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Jasper',
+        description: 'AI marketing content platform',
+        whyTheyWin: 'First-mover advantage, strong brand in content creation',
+      },
+      {
+        name: 'Copy.ai',
+        description: 'AI copywriting tool',
+        whyTheyWin: 'Simpler product, easier adoption for SMBs',
+      },
+      {
+        name: 'Writesonic',
+        description: 'AI writing assistant',
+        whyTheyWin: 'Lower price point, more accessible',
+      },
+      {
+        name: 'Adobe Firefly',
+        description: 'Adobe\'s generative AI for creative workflows',
+        whyTheyWin: 'Adobe ecosystem, deep integration with Creative Cloud',
+      },
+    ],
+    marketPosition: 'Leader in enterprise generative AI for marketing',
+    moat: [
+      'Enterprise focus: built for Fortune 500 vs SMBs',
+      'Brand personalization: custom AI trained on company brand',
+      'Salesforce/Google/Microsoft partnerships',
+      'Founder credibility: Abhay Parasnis (ex-CTO of Adobe)',
+      'Workflow orchestration: not just content generation',
+    ],
+    vsGiants: 'Typeface focuses on enterprise brand control vs generic AI tools. Adobe Firefly is creative-first, Typeface is marketing-first.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator. Typeface\'s value prop is AI-powered content generation. But could exist as traditional content management without AI (less valuable).',
+    aiDesignChallenges: [
+      'Brand consistency: ensuring AI generates on-brand content',
+      'Workflow integration: embedding AI into existing marketing processes',
+      'Multi-modal content: text, images, video generation',
+      'Personalization at scale: custom AI per enterprise customer',
+      'Quality control: enterprise standards for AI-generated content',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Abhay Parasnis',
+        role: 'CEO & Co-founder',
+        background: 'Former CTO, CPO & EVP of Adobe (2015-2022). Prior GM at Microsoft (2002-2011). Deep enterprise software expertise.',
+      },
+      {
+        name: 'Vishal Sood',
+        role: 'Co-founder',
+        background: 'Enterprise software background.',
+      },
+      {
+        name: 'Tran Anh',
+        role: 'Co-founder',
+        background: 'Enterprise software background.',
+      },
+    ],
+    whyBuilding: 'Parasnis saw the explosion of generative AI while at Adobe. He left to build Typeface because he believed enterprise marketing needed AI-native tools, not retrofitted legacy software.',
+    beliefs: [
+      'Generative AI will transform enterprise marketing',
+      'Brand control is critical: enterprises need personalized AI',
+      'Workflow orchestration > content generation alone',
+      'Enterprise-first: serve Fortune 500, not prosumers',
+      'Partnerships with Salesforce/Google/Microsoft = distribution',
+    ],
+    designPhilosophy: 'Enterprise-grade AI with brand control. Design for marketing teams, not individual creators.',
+    greenFlags: [
+      'Founder pedigree: Parasnis was CTO of Adobe',
+      'Enterprise traction: Fortune 500 within first year',
+      'Strategic partnerships: Salesforce, Google, Microsoft',
+      'Well-funded: $206M raised at $1B valuation',
+      'Timing: caught generative AI wave early',
+    ],
+    redFlags: [
+      'Competitive market: Jasper, Copy.ai, Adobe all competing',
+      'Long enterprise sales cycles',
+      'Adobe integration advantage: Firefly in Creative Cloud',
+      'Unclear differentiation vs Jasper at enterprise level',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: '~30-50 (estimated)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Designing brand personalization: how AI learns company brand',
+          'Building workflow orchestration: multi-step marketing campaigns',
+          'Defining AI behaviors for different content types (social, email, long-form)',
+          'Creating feedback loops for brand consistency',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Designing quality metrics for AI-generated content',
+          'Building approval workflows for enterprise marketing',
+          'Creating brand compliance checks',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Content creation interfaces for marketing teams',
+          'Campaign management dashboards',
+          'Brand asset libraries',
+          'Multi-modal content generation (text, images, video)',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Palo Alto, CA (Hybrid)',
+        url: 'https://job-boards.greenhouse.io/typeface/jobs/4616989007',
+        type: 'full-time',
+        aboutRole: 'Create and execute design solutions for generative AI tools that empower marketing teams to create personalized content at scale.',
+        responsibilities: [
+          'Design user-friendly, visually appealing products',
+          'Work with cross-functional teams to ensure products meet customer needs',
+          'Build design systems for AI-powered marketing tools',
+        ],
+        whyInteresting: 'Designing for Fortune 500 marketing teams. Building enterprise AI tools with massive scale impact.',
+      },
+      {
+        title: 'Staff Product Designer',
+        location: 'Palo Alto, CA (Hybrid)',
+        url: 'https://job-boards.greenhouse.io/typeface/',
+        level: 'Staff',
+        type: 'full-time',
+        aboutRole: 'Lead product design for key areas of Typeface, mentoring junior designers and shaping the design culture.',
+        responsibilities: [
+          'Create user-friendly, visually appealing designs in a collaborative environment',
+          'Mentor junior designers',
+          'Lead design for major product areas',
+        ],
+        whyInteresting: 'Leadership role in enterprise AI design. Working with ex-Adobe CTO.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Strong enterprise culture, ex-Adobe team brings professionalism and rigor.',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'AI-native Level 3: AI is core differentiator',
+        'Founder credibility: Parasnis (ex-CTO Adobe)',
+        'Enterprise focus: Fortune 500 customers',
+        'Well-funded: $206M at $1B valuation',
+        'Multiple Product Designer roles open',
+      ],
+      whyNot: [
+        'Enterprise sales: slower, more conservative',
+        'Competitive: Jasper, Copy.ai, Adobe all competing',
+        'Marketing domain: less exciting than other verticals?',
+      ],
+      nextActions: [
+        'Try Typeface product',
+        'Research Abhay Parasnis background',
+        'Connect with Typeface designers on LinkedIn',
+        'Apply for Product Designer role',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T11:00:00',
+    sources: [
+      {
+        title: 'Typeface raises $100M at $1B valuation',
+        url: 'https://techcrunch.com/2023/06/29/typeface-which-is-building-generative-ai-for-brands-raises-100m-at-a-1b-valuation/',
+      },
+      {
+        title: 'Abhay Parasnis on Typeface',
+        url: 'https://www.linkedin.com/pulse/abhay-parasnis-typeface-1-billion-valuation-brett-stapper-uxake',
+      },
+      {
+        title: 'Typeface company profile',
+        url: 'https://tracxn.com/d/companies/typeface/__9jDBm6q1mJzBb-dsOYViFE4NRwFTNrCwreA895blLoM',
+      },
+    ],
+  },
 ];
 
 export function getCompanyById(id: string): Company | undefined {
