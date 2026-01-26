@@ -230,6 +230,14 @@ export function CompanyDetail({ company }: { company: Company }) {
               </div>
             </div>
 
+            {/* Interest Status */}
+            <div className="card p-5">
+              <div className="flex items-center justify-between">
+                <h3 className="font-medium">Interest Status</h3>
+                <InterestToggle companyId={company.id} />
+              </div>
+            </div>
+
           </section>
 
           {/* Open Roles - Detailed */}
@@ -625,14 +633,6 @@ export function CompanyDetail({ company }: { company: Company }) {
                 </div>
               </div>
             </div>
-            </div>
-
-            {/* Interest Status */}
-            <div className="card p-5">
-              <div className="flex items-center justify-between">
-                <h3 className="font-medium">Interest Status</h3>
-                <InterestToggle companyId={company.id} />
-              </div>
             </div>
           </section>
 
