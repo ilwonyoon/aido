@@ -472,6 +472,37 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "Unknown (early stage, revenue not disclosed)",
+      userGrowth: "70+ European law firms",
+      signals: [
+        "$35.5M funding in 18 months (Seed $10.5M → Series A $25M)",
+        "$100M valuation after Series A",
+        "YC + Benchmark + Redpoint backing",
+        "Leading European legal AI market position",
+      ],
+
+      tam: "$50B+ (Global legal services market addressable by AI)",
+      marketShare: "~0.1% of European legal AI market",
+      ceiling: "Early innings: Most law firms still manual workflows, AI adoption just beginning",
+      tailwinds: [
+        "European legal AI market underserved vs US",
+        "Multi-jurisdictional expertise (EU, UK, Nordic) is barrier to US entrants",
+        "Law firms under pressure to improve efficiency",
+        "Data privacy regulations favor European providers",
+      ],
+      headwinds: [
+        "Harvey dominates US with $2B+ valuation and elite partnerships",
+        "Thomson Reuters acquisition of Casetext signals incumbents entering",
+        "Europe-only focus limits TAM vs global competitors",
+        "Legal accuracy requirements create high bar for AI",
+      ],
+
+      moatType: 'technology',
+      moatStrength: "Medium: Deep European legal system integration creates regional moat, but no network effects. First-mover advantage in EU, but model capabilities are table stakes.",
+    },
+
     tracking: {
       status: 'watching',
       fitScore: 7,
@@ -665,6 +696,39 @@ export const companies: Company[] = [
         content: 'No Product Design data. No salary data for startup size.',
       },
     ],
+
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "Unknown (not disclosed, early monetization)",
+      userGrowth: "10% WoW user growth since launch",
+      signals: [
+        "$67M raised in 15 months (Seed → Series B)",
+        "$250M valuation (2.5x from $100M in 7 months)",
+        "10% week-over-week user growth sustained",
+        "Used by VCs, founders at Vercel, Ramp, Roblox (high-value users)",
+        "Mike Krieger (Instagram) as investor — strong design validation",
+      ],
+
+      tam: "$5B+ (Meeting productivity tools for knowledge workers)",
+      marketShare: "<0.1% (early stage, niche positioning)",
+      ceiling: "Early-mid innings: AI meeting notes rapidly growing, but Granola's 'augment not replace' philosophy targets premium subset (~20% of market)",
+      tailwinds: [
+        "Remote/hybrid work increases meeting volume",
+        "AI meeting notes becoming table stakes for knowledge work",
+        "Premium positioning avoids commoditization race",
+        "Product-led growth with viral loop (meeting attendees see it)",
+        "Strong word-of-mouth in tech/VC community",
+      ],
+      headwinds: [
+        "Otter.ai has 25M+ users and strong brand",
+        "Free alternatives (Fathom, Zoom AI) commoditize basic transcription",
+        "Meeting fatigue may reduce TAM",
+        "Enterprise sales cycle vs prosumer focus",
+      ],
+
+      moatType: 'brand',
+      moatStrength: "Medium: Philosophical differentiation ('augment not replace') and premium brand positioning create moat, but limited network effects. Product quality and opinionated design are defensive.",
+    },
 
     tracking: {
       status: 'interested',
@@ -890,6 +954,39 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "Unknown (freemium model, early monetization)",
+      userGrowth: "500K+ users, millions of videos generated weekly",
+      signals: [
+        "$115M raised in 14 months (Seed → Series B)",
+        "$470M valuation (2.4x from $200M in 7 months)",
+        "500K+ registered users generating millions of videos weekly",
+        "Stanford AI Lab PhD founders (DDIM inventor, youngest Meta AI researcher)",
+        "Lightspeed → Spark Capital tier-1 investors",
+      ],
+
+      tam: "$20B+ (AI video generation for creators, marketers, entertainment)",
+      marketShare: "<1% (very early market, competing for consumer adoption)",
+      ceiling: "Very early innings: AI video generation is nascent, quality improving rapidly. Consumer use cases just emerging beyond experimentation.",
+      tailwinds: [
+        "AI video quality improving exponentially (text→video becoming production-ready)",
+        "Creator economy driving demand for fast, low-cost video production",
+        "Social media pushing video-first content",
+        "Consumer-first simplicity vs Runway's complexity captures broader market",
+      ],
+      headwinds: [
+        "Runway has $1.5B+ valuation and Hollywood partnerships",
+        "OpenAI Sora will have ChatGPT distribution advantage",
+        "Compute costs are extremely high (video generation expensive)",
+        "Quality race requires constant R&D investment",
+        "Monetization challenging in consumer AI (free expectations)",
+      ],
+
+      moatType: 'technology',
+      moatStrength: "Low-Medium: Research talent and model quality are advantages, but AI video is commoditizing. User-friendly UX and creator community provide some defensibility. No network effects yet.",
+    },
+
     tracking: {
       status: 'interested',
       fitScore: 7,
@@ -1086,6 +1183,39 @@ export const companies: Company[] = [
         url: 'https://www.levels.fyi/companies/elevenlabs/',
       },
     ],
+
+    growthMetrics: {
+      stage: 'steady',
+      revenueGrowth: "$80M ARR (2024), targeting $100M+ (2025) = ~1.5x YoY",
+      userGrowth: "1M+ users, 100+ enterprise customers",
+      signals: [
+        "$80M ARR with profitability path",
+        "$1.1B valuation (Series B)",
+        "1M+ registered users across creators, enterprises, publishers",
+        "100+ enterprise customers including publishers, game studios",
+        "Andreessen Horowitz backing",
+      ],
+
+      tam: "$15B+ (Voice AI for audiobooks, gaming, content, accessibility)",
+      marketShare: "~0.5% = 30x upside",
+      ceiling: "Mid-innings: Voice cloning is proven, but enterprise adoption (gaming, audiobooks, ads) is early. Market expanding as quality improves.",
+      tailwinds: [
+        "Audiobook market growing, voice AI reduces production costs 10x",
+        "Gaming industry adopting dynamic voice (NPCs, localization)",
+        "Content creators need multilingual voice at scale",
+        "Accessibility use cases (voice preservation, text-to-speech)",
+        "Remote-first company = global talent",
+      ],
+      headwinds: [
+        "OpenAI/Google adding voice to foundation models",
+        "Voice cloning ethical concerns and regulation risk",
+        "High compute costs for real-time voice synthesis",
+        "Competition from PlayHT, Resemble.ai in specific verticals",
+      ],
+
+      moatType: 'technology',
+      moatStrength: "Medium: Best-in-class voice quality and emotional range creates technical moat. Voice library and cloning tech have some switching costs. No strong network effects, but brand in voice AI is growing.",
+    },
 
     tracking: {
       status: 'interested',
@@ -1287,6 +1417,39 @@ export const companies: Company[] = [
         content: 'No Product Design data. No salary data available.',
       },
     ],
+
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "Unknown (beta stage, limited availability)",
+      userGrowth: "Beta users, waitlist of thousands",
+      signals: [
+        "$2.2B valuation at Series B (fastest AI startup to unicorn: <6 months)",
+        "$104M raised from Founders Fund, Khosla, Peter Thiel",
+        "Viral launch demo (HN #1, Twitter trending)",
+        "Competitive programming pedigree founders (IOI gold medalists)",
+        "Beta access only — building scarcity",
+      ],
+
+      tam: "$100B+ (Software development globally addressable by AI agents)",
+      marketShare: "<0.01% (pre-launch, beta only)",
+      ceiling: "Very early innings: AI software engineers don't exist yet as proven category. Market forming, Devin defining the space.",
+      tailwinds: [
+        "Developer shortage driving AI agent demand",
+        "Cursor proving developers want AI coding tools",
+        "Agentic AI capabilities improving rapidly",
+        "Enterprise willingness to pay for productivity gains",
+      ],
+      headwinds: [
+        "Extremely hyped launch created skepticism after demos",
+        "GitHub Copilot Workspace announced (Microsoft distribution)",
+        "Cursor, Replit, and others iterating toward agent features",
+        "Developer trust: will engineers give up control?",
+        "Code quality and security concerns for autonomous agents",
+      ],
+
+      moatType: 'technology',
+      moatStrength: "Medium: Technical capability lead from competitive programming talent, but agentic coding is early and unproven. First-mover brand in 'AI software engineer' category. No network effects yet.",
+    },
 
     tracking: {
       status: 'interested',
