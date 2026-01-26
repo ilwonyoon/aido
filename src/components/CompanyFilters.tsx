@@ -668,14 +668,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-xs text-[var(--muted)]">—</span>
                         )}
                       </td>
-                      <td className="py-3 px-4">
-                        <div className="flex items-center justify-center">
-                          <InterestCheckbox
-                            companyId={company.id}
-                            currentStatus={interest}
-                            onStatusChange={(status) => updateInterestStatus(company.id, status)}
-                          />
-                        </div>
+                      <td className="py-3 px-4 text-center">
+                        <InterestCheckbox
+                          companyId={company.id}
+                          currentStatus={interest}
+                          onStatusChange={(status) => updateInterestStatus(company.id, status)}
+                        />
                       </td>
                     </tr>
                   );
