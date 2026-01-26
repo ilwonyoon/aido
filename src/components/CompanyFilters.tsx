@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Company } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking } from '@/lib/firebase/tracking';
@@ -237,6 +238,7 @@ function MultiSelectFilter({
 type ViewMode = 'card' | 'table';
 
 export function CompanyFilters({ companies }: { companies: Company[] }) {
+  const router = useRouter();
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('interest');
   const [viewMode, setViewMode] = useState<ViewMode>('table');
@@ -501,7 +503,15 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   return (
                     <tr
                       key={company.id}
-                      className={`border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors ${
+                      onClick={() => {
+                        void trackEvent('company_detail_click', {
+                          company_id: company.id,
+                          company_name: company.name,
+                          source: 'table_row',
+                        });
+                        router.push(`/company/${company.id}`);
+                      }}
+                      className={`border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors cursor-pointer ${
                         interest === 'not_interested' ? 'opacity-50' : ''
                       }`}
                     >
@@ -509,11 +519,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         <Link
                           href={`/company/${company.id}`}
                           className="hover:text-[var(--accent-light)]"
-                          onClick={() => {
+                          onClick={(e) => {
+                            e.stopPropagation();
                             void trackEvent('company_detail_click', {
                               company_id: company.id,
                               company_name: company.name,
-                              source: 'table',
+                              source: 'table_name_link',
                             });
                           }}
                         >
