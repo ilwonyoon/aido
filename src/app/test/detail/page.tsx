@@ -167,7 +167,7 @@ export default function TestDetailPage() {
           </div>
 
           {/* Quick Info */}
-          <section id="quick-info" className="scroll-mt-20 space-y-8">
+          <section id="quick-info" className="scroll-mt-20 space-y-4">
             <h2 className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
@@ -206,100 +206,192 @@ export default function TestDetailPage() {
                   <div className="text-sm font-medium text-[var(--success)]">{company.totalFunding}</div>
                 </div>
               </div>
+
+              {/* AI Level Description */}
+              <div className="pt-4 border-t border-[var(--border)] mt-4">
+                <div className="text-xs text-[var(--muted)] mb-1">AI-Native Level</div>
+                <p className="text-sm">{company.aiNativeLevelDescription}</p>
+              </div>
+
+              {/* Founders Summary */}
+              <div className="pt-4 border-t border-[var(--border)] mt-4">
+                <div className="text-xs text-[var(--muted)] mb-2">Founders</div>
+                <div className="space-y-1">
+                  {company.founders.slice(0, 2).map((f, i) => (
+                    <div key={i} className="text-sm">
+                      <span className="font-medium">{f.name}</span>
+                      <span className="text-[var(--muted)]"> — {f.background}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Why Building */}
+              <div className="pt-4 border-t border-[var(--border)] mt-4">
+                <div className="text-xs text-[var(--muted)] mb-1">Why They're Building This</div>
+                <p className="text-sm">{company.whyBuilding}</p>
+              </div>
+
+              {/* Moat */}
+              <div className="pt-4 border-t border-[var(--border)] mt-4">
+                <div className="text-xs text-[var(--muted)] mb-2">Moat (Top 3)</div>
+                <ul className="space-y-1">
+                  {company.moat.slice(0, 3).map((m, i) => (
+                    <li key={i} className="text-sm text-[var(--muted)] flex gap-2">
+                      <span className="text-[var(--success)]">→</span>
+                      <span>{m}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Why Join / Why Not */}
+              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[var(--border)] mt-4">
+                <div>
+                  <div className="text-xs text-[var(--muted)] mb-2">Why Join (Top 3)</div>
+                  <ul className="space-y-1">
+                    {company.tracking.whyJoin.slice(0, 3).map((w, i) => (
+                      <li key={i} className="text-xs text-[var(--success)]">+ {w}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-xs text-[var(--muted)] mb-2">Why Not (Top 3)</div>
+                  <ul className="space-y-1">
+                    {company.tracking.whyNot.slice(0, 3).map((w, i) => (
+                      <li key={i} className="text-xs text-[var(--warning)]">- {w}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            {/* Open Roles */}
-            <div>
-              <h3 className="section-title">Open Design Roles</h3>
+            {/* Open Roles - Quick List */}
             {company.openRoles.length > 0 ? (
-              <div className="space-y-3">
-                {company.openRoles.map((role, i) => (
-                  <div key={i} className="card p-4 border-2 border-[var(--success)]">
-                    <div className="mb-3">
-                      <a
-                        href={role.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-base font-semibold hover:text-[var(--accent-light)]"
-                      >
-                        {role.title} ↗
-                      </a>
-                      <div className="flex flex-wrap items-center gap-2 mt-1">
-                        <span className="text-xs text-[var(--muted)]">{role.location}</span>
-                        {role.level && <span className="badge text-xs">{role.level}</span>}
-                        {role.team && <span className="badge badge-accent text-xs">{role.team}</span>}
-                        {role.compensation && (
-                          <span className="text-xs font-medium text-[var(--success)]">{role.compensation}</span>
-                        )}
+              <div className="card p-4 border-2 border-[var(--success)]">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-xs text-[var(--muted)]">Open Design Roles</div>
+                  <span className="badge badge-success text-xs">{company.openRoles.length}</span>
+                </div>
+                <div className="space-y-2">
+                  {company.openRoles.map((role, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <span className="text-[var(--success)] text-xs mt-0.5">•</span>
+                      <div className="flex-1">
+                        <a
+                          href={role.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium hover:text-[var(--accent-light)]"
+                        >
+                          {role.title} ↗
+                        </a>
+                        <div className="text-xs text-[var(--muted)]">{role.location}</div>
                       </div>
                     </div>
-
-                    {role.aboutRole && (
-                      <div className="mb-2">
-                        <p className="text-xs text-[var(--muted)]">{role.aboutRole}</p>
-                      </div>
-                    )}
-
-                    {role.whyInteresting && (
-                      <div className="mb-2 p-2 bg-[var(--success)]/10 rounded border border-[var(--success)]/30">
-                        <div className="text-xs font-medium text-[var(--success)] mb-1">
-                          Why Interesting
-                        </div>
-                        <p className="text-xs">{role.whyInteresting}</p>
-                      </div>
-                    )}
-
-                    {role.responsibilities && role.responsibilities.length > 0 && (
-                      <div className="mb-2">
-                        <div className="text-xs font-medium text-[var(--muted)] mb-1">
-                          What You'll Do
-                        </div>
-                        <ul className="space-y-1">
-                          {role.responsibilities.slice(0, 3).map((item, j) => (
-                            <li key={j} className="text-xs text-[var(--muted)] flex gap-1.5">
-                              <span className="text-[var(--accent-light)]">→</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                          {role.responsibilities.length > 3 && (
-                            <li className="text-xs text-[var(--muted)] italic">
-                              + {role.responsibilities.length - 3} more...
-                            </li>
-                          )}
-                        </ul>
-                      </div>
-                    )}
-
-                    {role.requirements && role.requirements.length > 0 && (
-                      <div className="mb-2">
-                        <div className="text-xs font-medium text-[var(--muted)] mb-1">
-                          Requirements
-                        </div>
-                        <ul className="space-y-0.5">
-                          {role.requirements.slice(0, 3).map((req, j) => (
-                            <li key={j} className="text-xs text-[var(--muted)] flex gap-1.5">
-                              <span>•</span>
-                              <span>{req}</span>
-                            </li>
-                          ))}
-                          {role.requirements.length > 3 && (
-                            <li className="text-xs text-[var(--muted)] italic">
-                              + {role.requirements.length - 3} more...
-                            </li>
-                          )}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             ) : (
               <div className="card p-4 text-center text-sm text-[var(--muted)]">
                 No open design roles
               </div>
             )}
-            </div>
           </section>
+
+          {/* Open Roles - Detailed */}
+          {company.openRoles.length > 0 && (
+            <section className="scroll-mt-20">
+              <h2 className="text-2xl font-semibold mb-6">💼 Open Roles Details</h2>
+              <div className="space-y-4">
+                {company.openRoles.map((role, i) => (
+                  <div key={i} className="card p-5">
+                    <div className="mb-4">
+                      <a
+                        href={role.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-semibold hover:text-[var(--accent-light)]"
+                      >
+                        {role.title} ↗
+                      </a>
+                      <div className="flex flex-wrap items-center gap-2 mt-2">
+                        <span className="text-sm text-[var(--muted)]">{role.location}</span>
+                        {role.level && <span className="badge text-xs">{role.level}</span>}
+                        {role.team && <span className="badge badge-accent text-xs">{role.team}</span>}
+                        {role.compensation && (
+                          <span className="text-sm font-medium text-[var(--success)]">{role.compensation}</span>
+                        )}
+                      </div>
+                    </div>
+
+                    {role.aboutRole && (
+                      <div className="mb-3">
+                        <p className="text-sm text-[var(--muted)]">{role.aboutRole}</p>
+                      </div>
+                    )}
+
+                    {role.whyInteresting && (
+                      <div className="mb-3 p-3 bg-[var(--success)]/10 rounded border border-[var(--success)]/30">
+                        <div className="text-xs font-medium text-[var(--success)] uppercase tracking-wide mb-1">
+                          Why Interesting
+                        </div>
+                        <p className="text-sm">{role.whyInteresting}</p>
+                      </div>
+                    )}
+
+                    {role.responsibilities && role.responsibilities.length > 0 && (
+                      <div className="mb-3">
+                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
+                          What You'll Do
+                        </div>
+                        <ul className="space-y-1">
+                          {role.responsibilities.map((item, j) => (
+                            <li key={j} className="text-sm flex gap-2">
+                              <span className="text-[var(--accent-light)]">→</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {role.requirements && role.requirements.length > 0 && (
+                      <div className="mb-3">
+                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
+                          Requirements
+                        </div>
+                        <ul className="space-y-1">
+                          {role.requirements.map((req, j) => (
+                            <li key={j} className="text-sm text-[var(--muted)] flex gap-2">
+                              <span>•</span>
+                              <span>{req}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {role.preferred && role.preferred.length > 0 && (
+                      <div className="mb-3">
+                        <div className="text-xs font-medium text-[var(--muted)] uppercase tracking-wide mb-2">
+                          Nice to Have
+                        </div>
+                        <ul className="space-y-1">
+                          {role.preferred.map((pref, j) => (
+                            <li key={j} className="text-sm text-[var(--muted)] flex gap-2">
+                              <span className="text-[var(--success)]">+</span>
+                              <span>{pref}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Company */}
           <section id="company" className="scroll-mt-20 space-y-8">
