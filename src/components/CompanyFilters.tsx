@@ -9,7 +9,7 @@ type InterestStatus = 'interested' | 'not_interested' | null;
 
 function AiLevelText({ level }: { level: number }) {
   const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
-  const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--muted)]', 4: 'text-[var(--positive)]' };
+  const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--accent-light)]', 4: 'text-[var(--success)]' };
   return (
     <span className={`text-sm ${colors[level as keyof typeof colors]}`}>
       L{level} {labels[level as keyof typeof labels]}
@@ -371,7 +371,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                     {company.remote === 'Yes' && (
                       <>
                         <span className="text-[var(--border)]">|</span>
-                        <span className="text-[var(--positive)]">Remote OK</span>
+                        <span className="text-[var(--success)]">Remote OK</span>
                       </>
                     )}
                     {hasRecentFunding && (
