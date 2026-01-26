@@ -213,13 +213,6 @@ export default function TestDetailPage() {
                 </div>
               </div>
 
-              {/* One-liner */}
-              <div className="pt-4 border-t border-[var(--border)] mt-4">
-                <p className="text-sm text-[var(--muted)] italic">
-                  {company.aiNativeLevel === 4 ? '→ AI is the product' : '→ AI is core differentiator'}
-                </p>
-              </div>
-
               {/* Why Join / Why Not */}
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[var(--border)] mt-4">
                 <div>
