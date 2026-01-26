@@ -128,6 +128,38 @@ src/
 - Product Hunt, G2: 유저 리뷰
 - 기술 블로그: 어떻게 만드는지
 
+## Open Roles 검증 방법
+
+**중요**: WebFetch로 careers 페이지 직접 스크래핑은 JS 렌더링 문제로 신뢰할 수 없음.
+
+### 검증 방법: WebSearch
+
+```
+WebSearch: "Company Name" "Product Designer" job site:company.com/careers
+```
+
+**왜 이 방법이 정확한가:**
+1. 검색 엔진이 이미 JS 렌더링 후 인덱싱함
+2. 실제 job listing URL 직접 반환
+3. LinkedIn, Ashby, Lever 등 여러 소스 동시 확인
+
+### 주의사항
+
+- **Product Designer만**: Design Engineer, Brand Designer, Content Designer 등은 제외
+- **Leadership 제외**: Director, Head of Design, VP Design 등은 별도 트래킹
+- **검증 주기**: 데이터 추가/수정 시 반드시 검증
+
+### 예시
+
+```
+# Good
+WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
+
+# Result: 실제 job listing URL들 반환
+- https://www.anthropic.com/careers/jobs/5025976008 (Product Designer, Claude Code)
+- https://www.anthropic.com/careers/jobs/5055600008 (Product Designer, Enterprise)
+```
+
 ## 커밋 컨벤션
 
 ```
@@ -189,7 +221,8 @@ Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
 
 ## 다음 할 것들
 
-- [ ] 회사 추가: Cursor, Perplexity, Vercel 등
-- [ ] 필터/정렬 기능
+- [x] 회사 추가: Cursor, Perplexity, OpenAI, Vercel
+- [x] 필터/정렬 기능
 - [ ] Notes 편집 기능
 - [ ] 검색
+- [ ] Task B 회사 추가: Midjourney, Runway, Stability AI, Cohere
