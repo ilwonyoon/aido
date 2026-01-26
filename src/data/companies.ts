@@ -112,28 +112,28 @@ export const companies: Company[] = [
       logicBehavior: {
         level: 'high',
         tasks: [
-          'Character training: Claude의 성격/톤/가치관 정의',
-          'Edge case 처리: 거절해야 할 상황, 불확실한 답변 처리',
-          'System prompt 설계: 다양한 use case별 행동 규칙',
-          'Safety 가이드라인: harmful content 대응 로직',
+          'Character training: defining Claude personality, tone, values',
+          'Edge case handling: refusal scenarios, uncertain answer handling',
+          'System prompt design: behavior rules for different use cases',
+          'Safety guidelines: harmful content response logic',
         ],
       },
       evaluation: {
         level: 'high',
         tasks: [
-          '응답 품질 기준 정의: "좋은 응답"이란 무엇인가',
-          'Human feedback 시스템 설계',
-          'A/B 테스트 프레임워크',
-          'Red teaming: 모델 한계 발견 및 개선',
+          'Response quality criteria: defining what makes a good response',
+          'Human feedback system design',
+          'A/B testing framework',
+          'Red teaming: discovering and improving model limitations',
         ],
       },
       interface: {
         level: 'medium',
         tasks: [
-          '대화형 UI: 메시지, 입력, 컨텍스트 표시',
-          'Claude Code: 에이전트 작업 상태 시각화',
-          '설정/온보딩 플로우',
-          'Enterprise 대시보드',
+          'Conversational UI: messages, input, context display',
+          'Claude Code: agent work status visualization',
+          'Settings and onboarding flows',
+          'Enterprise dashboard',
         ],
       },
     },
@@ -279,7 +279,7 @@ export const companies: Company[] = [
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. Software Engineer 기준: L5 $400-500K, L6 $500-700K.',
+        content: 'No Product Design data. Software Engineer benchmark: L5 $400-500K, L6 $500-700K.',
         url: 'https://www.levels.fyi/companies/anthropic/salaries/product-designer',
       },
       {
@@ -473,17 +473,17 @@ export const companies: Company[] = [
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Fast-paced YC startup energy. Small team (~20명), big ambitions.',
+        content: 'Fast-paced YC startup energy. Small team (~20 people), big ambitions.',
       },
       {
         source: 'glassdoor',
         sentiment: 'neutral',
-        content: '리뷰 없음 — 아직 회사 규모가 작아 데이터 부족.',
+        content: 'No reviews yet — company too small for sufficient data.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. 스타트업 규모로 levels.fyi 등록 안 됨.',
+        content: 'No Product Design data. Startup size, not registered on levels.fyi.',
       },
     ],
 
@@ -662,12 +662,12 @@ export const companies: Company[] = [
       {
         source: 'twitter',
         sentiment: 'positive',
-        content: 'Small, tight-knit team (~10명). Strong product opinions. Design-forward culture.',
+        content: 'Small, tight-knit team (~10 people). Strong product opinions. Design-forward culture.',
       },
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Ex-Palantir, ex-Apple 출신 파운더. 런던 기반, 디자인 중시 문화.',
+        content: 'Ex-Palantir, ex-Apple founders. London-based, design-first culture.',
       },
       {
         source: 'glassdoor',
@@ -1561,6 +1561,924 @@ export const companies: Company[] = [
       {
         title: 'Sacra Profile',
         url: 'https://sacra.com/c/mercor/',
+      },
+    ],
+  },
+
+  // ============================================
+  // Linear - Project Management
+  // ============================================
+  {
+    id: 'linear',
+    name: 'Linear',
+    description: 'Issue tracking and project management for high-performance teams. The anti-Jira.',
+    website: 'https://linear.app',
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+
+    stage: 'Series C',
+    valuation: '$1.25B (June 2025)',
+    totalFunding: '$134M',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$4.2M', date: '2019-11', leadInvestors: ['Sequoia'] },
+      { stage: 'Series A', amount: '$13M', date: '2020-12', leadInvestors: ['Sequoia'] },
+      { stage: 'Series B', amount: '$35M', date: '2023-09', leadInvestors: ['Accel'] },
+      { stage: 'Series C', amount: '$82M', date: '2025-06', valuation: '$1.25B', leadInvestors: ['Accel'] },
+    ],
+    revenue: '$100M ARR (June 2025)',
+    growth: '12x in 18 months ($8.4M → $100M)',
+    customers: 'Vercel, Ramp, Watershed, high-growth startups',
+
+    competitors: [
+      {
+        name: 'Jira',
+        description: 'Atlassian\'s dominant project management tool',
+        whyTheyWin: 'Enterprise standard, deep integrations, Atlassian ecosystem',
+      },
+      {
+        name: 'Asana',
+        description: 'Work management platform',
+        whyTheyWin: 'Broader use case beyond engineering, established enterprise presence',
+      },
+      {
+        name: 'Notion',
+        description: 'All-in-one workspace with project features',
+        whyTheyWin: 'Flexibility, docs + projects together, consumer-grade UX',
+      },
+    ],
+    marketPosition: 'Premium choice for fast-moving engineering teams',
+    moat: [
+      'Best-in-class UX — developers love it',
+      'Speed and keyboard-first design',
+      'Finnish design craft DNA',
+      'Word-of-mouth growth from developer advocacy',
+    ],
+
+    aiNativeLevel: 2,
+    aiNativeLevelDescription: 'AI is major feature. AI-powered triage, writing, search.',
+    aiDesignChallenges: [
+      'AI-assisted issue creation and triage',
+      'Smart suggestions without being intrusive',
+      'AI search across projects',
+      'Automated workflow recommendations',
+    ],
+
+    founders: [
+      {
+        name: 'Karri Saarinen',
+        role: 'CEO',
+        background: 'Ex-Airbnb Principal Designer, Ex-Coinbase Head of Design',
+      },
+      {
+        name: 'Jori Lallo',
+        role: 'CPO',
+        background: 'Ex-Coinbase Engineer, YC alum (Kippt)',
+      },
+      {
+        name: 'Tuomas Artman',
+        role: 'CTO',
+        background: 'Ex-Uber Senior Engineer, Ex-Groupon',
+      },
+    ],
+    whyBuilding:
+      'Frustrated with Jira at Airbnb. Built a Chrome extension to simplify it — became so popular they decided to build the tool they wished existed.',
+    beliefs: [
+      'Software should be fast and feel magical',
+      'Design is a competitive advantage',
+      'Keyboard-first, speed matters',
+      'Finnish design: simplicity, function, durability',
+    ],
+    designPhilosophy:
+      'CEO is a designer. Design-led company from founding. Finnish heritage emphasizes craft, simplicity, and attention to detail.',
+    greenFlags: [
+      'CEO is a designer — design matters here',
+      'Remote-first, distributed team',
+      'Profitable mindset — bootstrapped initially',
+      'Strong brand love from developers',
+    ],
+    redFlags: [
+      'Competitive space (Jira, Notion)',
+      'Enterprise sales complexity as they scale',
+    ],
+
+    designTeam: {
+      cpo: 'Jori Lallo (Co-founder)',
+      designHead: 'Karri Saarinen (CEO, ex-designer)',
+      teamSize: '~10-15',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'AI triage logic',
+          'Smart prioritization',
+          'Workflow automation rules',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Team velocity metrics',
+          'AI suggestion accuracy',
+          'User satisfaction tracking',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Keyboard-first interactions',
+          'Speed optimization',
+          'Cross-platform consistency',
+          'Design system maintenance',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    designerLinks: [
+      {
+        name: 'Karri Saarinen',
+        role: 'CEO & Co-founder',
+        platform: 'twitter',
+        url: 'https://twitter.com/karrisaarinen',
+        description: 'Design thoughts, Linear updates',
+      },
+      {
+        name: 'Linear Blog',
+        role: 'Company',
+        platform: 'blog',
+        url: 'https://linear.app/blog',
+        description: 'Product and design updates',
+      },
+    ],
+    openRoles: [
+      {
+        title: 'Senior / Staff Product Designer',
+        location: 'Remote (Global)',
+        url: 'https://linear.app/careers',
+        team: 'Product',
+        level: 'Senior/Staff',
+        type: 'full-time',
+        postedDate: '2025-01',
+        aboutRole: 'Build project management software that empowers high-impact companies. Work in small, autonomous project teams with engineers.',
+        responsibilities: [
+          'Own end-to-end product design for Linear features',
+          'Partner tightly with engineers from ideation to shipping',
+          'Maintain and evolve Linear\'s design system',
+          'Prototype and iterate quickly',
+          'Shape product direction with leadership',
+        ],
+        requirements: [
+          'Robust design skills and sharp product thinking',
+          'Ability to engage in technical discussions',
+          'Experience shipping high-quality products',
+          'Strong systems thinking',
+        ],
+        preferred: [
+          'Developer tools experience',
+          'Design systems expertise',
+          'Remote work experience',
+        ],
+        teamInfo: 'Fully remote team of 178 people. Designer-CEO culture. Small, autonomous project teams.',
+        whyInteresting: 'Designer-led company (CEO is a designer). Remote-first. Building the tool developers love — rare for B2B software.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        rating: 4.8,
+        content: 'Remote-first, async culture. High bar for quality. Finnish work-life balance values.',
+        url: 'https://www.glassdoor.com/Reviews/Linear-Reviews-E3834586.htm',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Developer community loves Linear. Strong brand advocacy. "The anti-Jira" positioning resonates.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'Limited salary data. Remote-first means location-adjusted comp.',
+        url: 'https://www.levels.fyi/companies/linear/',
+      },
+    ],
+
+    tracking: {
+      status: 'interested',
+      fitScore: 9,
+      whyJoin: [
+        'Designer-CEO company',
+        'Remote-first culture',
+        'Product loved by developers',
+        'Finnish design craft',
+        'Profitable, sustainable growth',
+      ],
+      whyNot: [
+        'Not L4 AI-native',
+        'Smaller than Anthropic-scale impact',
+      ],
+      nextActions: [
+        'Use Linear daily to understand product',
+        'Follow Karri Saarinen\'s design thinking',
+        'Apply for Senior/Staff role',
+      ],
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Linear Series C - TechCrunch',
+        url: 'https://techcrunch.com/2025/06/10/atlassian-rival-linear-raises-82m-at-1-25b-valuation/',
+      },
+      {
+        title: 'Linear Blog - Series C Announcement',
+        url: 'https://linear.app/now/building-our-way',
+      },
+      {
+        title: 'Sequoia Spotlight',
+        url: 'https://sequoiacap.com/article/linear-spotlight/',
+      },
+    ],
+  },
+
+  // ============================================
+  // Notion - All-in-one Workspace
+  // ============================================
+  {
+    id: 'notion',
+    name: 'Notion',
+    description: 'All-in-one workspace for notes, docs, wikis, and project management.',
+    website: 'https://notion.so',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid',
+
+    stage: 'Series D (IPO potential)',
+    valuation: '$10B (2021) → $11B tender (2024)',
+    totalFunding: '$352.7M',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$2M', date: '2013-03', leadInvestors: ['First Round'] },
+      { stage: 'Series A', amount: '$10M', date: '2019-04', valuation: '$800M', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series B', amount: '$50M', date: '2020-07', valuation: '$2B', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series C', amount: '$275M', date: '2021-10', valuation: '$10B', leadInvestors: ['Sequoia', 'Coatue'] },
+    ],
+    revenue: '$500M ARR (Sept 2025)',
+    growth: '~50% YoY',
+    customers: '4M+ paying customers, 50% of Fortune 500',
+
+    competitors: [
+      {
+        name: 'Confluence',
+        description: 'Atlassian\'s wiki and documentation tool',
+        whyTheyWin: 'Enterprise standard, Jira integration, established IT relationships',
+      },
+      {
+        name: 'Coda',
+        description: 'Doc-meets-spreadsheet platform',
+        whyTheyWin: 'More powerful formulas, better for structured data, Google Docs alternative',
+      },
+      {
+        name: 'Linear',
+        description: 'Modern project management',
+        whyTheyWin: 'Better for engineering workflows, speed-focused',
+      },
+    ],
+    marketPosition: 'Default workspace for modern teams and individuals',
+    moat: [
+      'Consumer-grade UX in B2B space',
+      'Block-based flexibility',
+      'Strong brand with Gen Z and knowledge workers',
+      'Network effects from templates and sharing',
+    ],
+
+    aiNativeLevel: 2,
+    aiNativeLevelDescription: 'AI is major feature. Notion AI for writing, Q&A, and search.',
+    aiDesignChallenges: [
+      'AI writing assistant integration',
+      'Q&A across workspace knowledge',
+      'AI without disrupting existing workflows',
+      'Balancing AI features with simplicity',
+    ],
+
+    founders: [
+      {
+        name: 'Ivan Zhao',
+        role: 'CEO',
+        background: 'UBC Cognitive Science, designer background, built tools for thinking',
+      },
+      {
+        name: 'Simon Last',
+        role: 'Co-founder',
+        background: 'Technical co-founder, built core architecture',
+      },
+    ],
+    whyBuilding:
+      'Inspired by tools like HyperCard and Smalltalk. Wanted to create a tool that\'s simple enough for anyone but powerful enough for complex work.',
+    beliefs: [
+      'Tools shape how we think',
+      'Software should feel like physical craft',
+      'Simplicity and power can coexist',
+      'Accessible to non-technical users',
+    ],
+    designPhilosophy:
+      'Ivan Zhao comes from design. Focus on timeless, crafted software. Inspired by German cameras, Japanese toys, Coca-Cola mass appeal.',
+    greenFlags: [
+      'Designer-founder CEO',
+      'Strong product-market fit',
+      'Profitable and sustainable',
+      'Iconic brand among knowledge workers',
+    ],
+    redFlags: [
+      'AI features playing catch-up',
+      'Enterprise complexity increasing',
+      'Large company (800+ employees)',
+    ],
+
+    designTeam: {
+      designHead: 'Unknown',
+      teamSize: '~50-60',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'AI writing suggestions',
+          'Knowledge graph for Q&A',
+          'Smart defaults and templates',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'AI answer quality metrics',
+          'User engagement tracking',
+          'Feature adoption analysis',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Block-based editing UX',
+          'Cross-platform consistency',
+          'Design system at scale',
+          'Mobile experience',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    designerLinks: [
+      {
+        name: 'Notion Design Blog',
+        role: 'Company',
+        platform: 'blog',
+        url: 'https://notion.so/blog',
+        description: 'Design and product updates',
+      },
+    ],
+    openRoles: [
+      {
+        title: 'Product Designer, Growth',
+        location: 'New York, NY / San Francisco, CA',
+        url: 'https://notion.com/careers',
+        team: 'Growth',
+        level: 'Mid-Senior',
+        type: 'full-time',
+        compensation: '$105K-$260K',
+        postedDate: '2025-01',
+        aboutRole: 'Design product concepts that balance vision, craft, speed, and business potential. Craft every detail from idea to pixel-perfect execution.',
+        responsibilities: [
+          'Design growth experiments and onboarding flows',
+          'Optimize conversion and activation funnels',
+          'Run projects end-to-end with engineers',
+          'Partner with Customer Experience and Sales teams',
+        ],
+        requirements: [
+          'Strong product design portfolio',
+          'Growth mindset and data-informed approach',
+          'Experience with experimentation',
+          'Pixel-perfect execution skills',
+        ],
+        preferred: [
+          'B2B SaaS experience',
+          'Growth design background',
+          'Experience with AI products',
+        ],
+        teamInfo: 'Hybrid work (Mon/Thu in office). ~800 employees. Offices in SF, NYC, Dublin, Tokyo, Seoul.',
+        whyInteresting: 'Designer-founder company. Iconic product used by millions. Hybrid allows some flexibility.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        rating: 4.3,
+        content: 'Strong design culture. Designer-CEO influence. Good work-life balance for tech.',
+        url: 'https://www.glassdoor.com/Reviews/Notion-Reviews-E1727417.htm',
+      },
+      {
+        source: 'blind',
+        sentiment: 'neutral',
+        content: 'Comp competitive but not top-tier. Culture shifting as company grows. Still good design team.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'positive',
+        rating: 4.2,
+        content: 'Product Designer: $108K base avg. Total comp varies with level.',
+        url: 'https://www.levels.fyi/companies/notion/',
+      },
+    ],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'Designer-founder company',
+        'Iconic, well-loved product',
+        'Large design team — learn from others',
+        'Stable, profitable business',
+      ],
+      whyNot: [
+        'Not AI-native (AI is add-on)',
+        'Large company, less startup energy',
+        'Hybrid required',
+      ],
+      nextActions: [
+        'Monitor AI feature development',
+        'Check if fully remote roles open',
+        'Research design team structure',
+      ],
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Notion $10B Valuation - SaaStr',
+        url: 'https://www.saastr.com/notion-and-growing-into-your-10b-valuation-a-masterclass-in-patience/',
+      },
+      {
+        title: 'Sacra Profile',
+        url: 'https://sacra.com/c/notion/',
+      },
+    ],
+  },
+
+  // ============================================
+  // Figma - Design Platform
+  // ============================================
+  {
+    id: 'figma',
+    name: 'Figma',
+    description: 'Collaborative design platform. The Google Docs of design tools.',
+    website: 'https://figma.com',
+    headquarters: 'San Francisco, CA',
+    remote: 'Hybrid (US/Canada remote)',
+
+    stage: 'Public (NYSE: FIG)',
+    valuation: '$57B market cap (July 2025 IPO)',
+    totalFunding: '$615M pre-IPO',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$3.8M', date: '2013-06', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series A', amount: '$14M', date: '2015-12', leadInvestors: ['Greylock'] },
+      { stage: 'Series B', amount: '$25M', date: '2018-02', leadInvestors: ['Kleiner Perkins'] },
+      { stage: 'Series C', amount: '$40M', date: '2019-04', leadInvestors: ['Sequoia'] },
+      { stage: 'Series D', amount: '$50M', date: '2020-04', valuation: '$2B', leadInvestors: ['a16z'] },
+      { stage: 'Series E', amount: '$200M', date: '2021-06', valuation: '$10B', leadInvestors: ['Various'] },
+      { stage: 'IPO', amount: 'N/A', date: '2025-07', valuation: '$57B', leadInvestors: ['Public'] },
+    ],
+    revenue: '$820M (2025)',
+    growth: 'Strong, IPO validated',
+    customers: 'Designers worldwide, enterprises, startups',
+
+    competitors: [
+      {
+        name: 'Adobe XD',
+        description: 'Adobe\'s design tool (discontinued)',
+        whyTheyWin: 'Was Adobe ecosystem, now Figma won',
+      },
+      {
+        name: 'Sketch',
+        description: 'Mac-native design tool',
+        whyTheyWin: 'Mac-native performance, offline-first, loyal base',
+      },
+      {
+        name: 'Framer',
+        description: 'Design + code publishing',
+        whyTheyWin: 'Design-to-production workflow, website builder',
+      },
+    ],
+    marketPosition: 'Dominant design tool for product teams',
+    moat: [
+      'Real-time collaboration (first mover)',
+      'Browser-based — no install friction',
+      'Network effects from team adoption',
+      'Ecosystem of plugins and community',
+    ],
+
+    aiNativeLevel: 2,
+    aiNativeLevelDescription: 'AI is major feature. Figma AI for design generation and editing.',
+    aiDesignChallenges: [
+      'AI-assisted design generation',
+      'Design-to-code with AI',
+      'Smart component suggestions',
+      'Accessibility checker AI',
+    ],
+
+    founders: [
+      {
+        name: 'Dylan Field',
+        role: 'CEO',
+        background: 'Brown dropout, Thiel Fellow, ex-LinkedIn/Flipboard intern',
+      },
+      {
+        name: 'Evan Wallace',
+        role: 'Co-founder (left 2021)',
+        background: 'Brown CS, built WebGL renderer, ex-Microsoft/Pixar',
+      },
+    ],
+    whyBuilding:
+      'Saw design tools were stuck in desktop era. Believed browser could enable real-time collaboration that would transform how teams design.',
+    beliefs: [
+      'Design should be collaborative',
+      'Browser can match native performance',
+      'Lower barriers to design',
+      'Community and ecosystem matter',
+    ],
+    designPhilosophy:
+      'Design is a team sport. Focus on collaboration, accessibility, and lowering barriers. Make design tools for everyone, not just designers.',
+    greenFlags: [
+      'Market leader in design tools',
+      'Public company — stability',
+      'Strong engineering culture',
+      'Adobe deal showed value ($20B offer)',
+    ],
+    redFlags: [
+      'Public company — less startup energy',
+      'AI features catching up to hype',
+      'Large company bureaucracy',
+    ],
+
+    designTeam: {
+      teamSize: '~100+ (large design org)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'AI generation logic',
+          'Smart selection algorithms',
+          'Design-to-code conversion',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'AI output quality metrics',
+          'User productivity measurement',
+          'Feature adoption tracking',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Core editor experience',
+          'Prototyping tools',
+          'Design system features',
+          'FigJam collaboration',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    designerLinks: [
+      {
+        name: 'Figma Blog',
+        role: 'Company',
+        platform: 'blog',
+        url: 'https://figma.com/blog',
+        description: 'Product updates and design insights',
+      },
+      {
+        name: 'Dylan Field',
+        role: 'CEO',
+        platform: 'twitter',
+        url: 'https://twitter.com/zoink',
+        description: 'Company updates, design industry thoughts',
+      },
+    ],
+    openRoles: [
+      {
+        title: 'Product Designer, AI',
+        location: 'San Francisco / New York / Remote (US/Canada)',
+        url: 'https://boards.greenhouse.io/figma',
+        team: 'AI',
+        level: 'Mid-Senior',
+        type: 'full-time',
+        postedDate: '2025-01',
+        aboutRole: 'Design AI-powered features that help designers work faster and better.',
+        responsibilities: [
+          'Design AI generation and editing experiences',
+          'Define AI interaction patterns for design tools',
+          'Prototype and test AI features',
+          'Collaborate with ML engineers on capabilities',
+        ],
+        requirements: [
+          'Strong product design portfolio',
+          'Experience shipping AI/ML products',
+          'Figma expertise (obviously)',
+          'Prototyping skills',
+        ],
+        preferred: [
+          'Background in design tools',
+          'Understanding of generative AI',
+          'Systems design experience',
+        ],
+        teamInfo: 'Public company. Large design org. Hybrid with remote option in US/Canada.',
+        whyInteresting: 'Shape the future of design tools. AI is transforming creative work — be at the center of it.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        rating: 4.5,
+        content: 'Great culture, strong design team. Compensation competitive. Work-life balance good for tech.',
+        url: 'https://www.glassdoor.com/Reviews/Figma-Reviews-E1537054.htm',
+      },
+      {
+        source: 'blind',
+        sentiment: 'positive',
+        content: 'Good comp, RSUs valuable post-IPO. Culture still startup-ish despite size.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'positive',
+        rating: 4.4,
+        content: 'Product Designer: $150K-200K+ base. Strong equity component.',
+        url: 'https://www.levels.fyi/companies/figma/',
+      },
+    ],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 6,
+      whyJoin: [
+        'Leader in design tools',
+        'Work on tools designers use',
+        'Strong comp and stability (public)',
+        'AI features growing',
+      ],
+      whyNot: [
+        'Not AI-native company',
+        'Large company, less impact per person',
+        'Hybrid required for most roles',
+      ],
+      nextActions: [
+        'Monitor AI team growth',
+        'Check if fully remote opens up',
+        'Research Figma AI roadmap',
+      ],
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Figma IPO - CNBC',
+        url: 'https://www.cnbc.com/2024/05/16/figma-tender-offer-values-company-at-12point5-billion.html',
+      },
+      {
+        title: 'Figma S-1 Filing',
+        url: 'https://getlatka.com/blog/figma-revenue/',
+      },
+    ],
+  },
+
+  // ============================================
+  // Mistral AI - European AI Lab
+  // ============================================
+  {
+    id: 'mistral',
+    name: 'Mistral AI',
+    description: 'European AI lab building open-weight and commercial LLMs. The French challenger to OpenAI.',
+    website: 'https://mistral.ai',
+    headquarters: 'Paris, France',
+    remote: 'Yes (Europe timezone)',
+
+    stage: 'Series C',
+    valuation: '$14B (Sept 2025)',
+    totalFunding: '$3.05B',
+    fundingHistory: [
+      { stage: 'Seed', amount: '€105M', date: '2023-06', leadInvestors: ['Lightspeed'] },
+      { stage: 'Series A', amount: '€385M', date: '2023-12', leadInvestors: ['a16z'] },
+      { stage: 'Series B', amount: '€600M', date: '2024-06', valuation: '$6.2B', leadInvestors: ['General Catalyst'] },
+      { stage: 'Series C', amount: '€1.7B', date: '2025-09', valuation: '$14B', leadInvestors: ['ASML'] },
+    ],
+    revenue: 'Growing (not disclosed)',
+    growth: 'Fastest European AI unicorn — $14B in 29 months',
+    customers: 'Enterprises, developers, European companies',
+
+    competitors: [
+      {
+        name: 'OpenAI',
+        description: 'GPT models, ChatGPT, market leader',
+        whyTheyWin: 'First mover, brand recognition, Microsoft partnership',
+      },
+      {
+        name: 'Anthropic',
+        description: 'Claude, safety-focused AI',
+        whyTheyWin: 'Enterprise trust, Claude quality, safety reputation',
+      },
+      {
+        name: 'Cohere',
+        description: 'Enterprise LLM platform',
+        whyTheyWin: 'Enterprise focus, RAG expertise, data privacy',
+      },
+    ],
+    marketPosition: 'European AI champion, open-weight leader',
+    moat: [
+      'Open-weight models — developer trust',
+      'European data sovereignty positioning',
+      'Ex-DeepMind/Meta AI founding team',
+      'ASML backing — hardware advantage',
+    ],
+
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Building foundation models.',
+    aiDesignChallenges: [
+      'API and developer experience',
+      'Model playground and testing tools',
+      'Enterprise deployment interfaces',
+      'AI safety and control UX',
+    ],
+
+    founders: [
+      {
+        name: 'Arthur Mensch',
+        role: 'CEO',
+        background: 'Ex-DeepMind, École Polytechnique, PhD in ML',
+      },
+      {
+        name: 'Guillaume Lample',
+        role: 'Chief Scientist',
+        background: 'Ex-Meta AI, created LLaMA, Carnegie Mellon',
+      },
+      {
+        name: 'Timothée Lacroix',
+        role: 'CTO',
+        background: 'Ex-Meta AI, École Normale Supérieure, optimization expert',
+      },
+    ],
+    whyBuilding:
+      'Saw opportunity to build European AI champion. Believed open-weight models could compete with closed APIs. Wanted to keep AI development in Europe.',
+    beliefs: [
+      'Open-weight models benefit everyone',
+      'Europe needs AI sovereignty',
+      'Efficiency over brute-force scaling',
+      'Science-first approach to AI',
+    ],
+    greenFlags: [
+      'World-class founding team (DeepMind, Meta AI)',
+      'Open-weight philosophy — developer love',
+      'European funding and support',
+      'ASML partnership — hardware access',
+    ],
+    redFlags: [
+      'Competing with OpenAI/Anthropic',
+      'European talent market smaller',
+      'Less enterprise presence than US competitors',
+    ],
+
+    designTeam: {
+      teamSize: '~5-10 (engineering-heavy)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'Model behavior controls',
+          'Safety guardrails UX',
+          'Fine-tuning interfaces',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Model quality evaluation tools',
+          'Benchmark visualization',
+          'User feedback integration',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'API console and playground',
+          'Documentation experience',
+          'Enterprise deployment dashboard',
+          'Model comparison tools',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    designerLinks: [
+      {
+        name: 'Mistral Blog',
+        role: 'Company',
+        platform: 'blog',
+        url: 'https://mistral.ai/news',
+        description: 'Model releases and research',
+      },
+    ],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Paris, France (Remote Europe)',
+        url: 'https://jobs.lever.co/mistral',
+        team: 'Product',
+        level: 'Mid-Senior',
+        type: 'full-time',
+        postedDate: '2025-01',
+        aboutRole: 'Design intuitive and user-friendly product experiences for AI applications from brainstorming to delivery.',
+        responsibilities: [
+          'Design end-to-end user experiences for AI applications',
+          'Prototype and iterate quickly',
+          'Collaborate with teams on consistent design',
+          'Build developer-facing tools and consoles',
+        ],
+        requirements: [
+          'Strong product design portfolio',
+          'Experience with developer tools or APIs',
+          'Based in Europe or Europe-timezone compatible',
+          'English fluency (French a plus)',
+        ],
+        preferred: [
+          'AI/ML product experience',
+          'Technical background',
+          'Startup experience',
+        ],
+        teamInfo: 'Paris-based with remote Europe option. Small design team at a $14B company. Engineering-heavy culture.',
+        whyInteresting: 'L4 AI-native European champion. Ex-DeepMind/Meta founding team. Open-weight philosophy is refreshing.',
+      },
+    ],
+
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Research-driven culture. French AI talent concentration. Fast-moving despite large funding.',
+      },
+      {
+        source: 'twitter',
+        sentiment: 'positive',
+        content: 'Strong developer community support. Open-weight models earn goodwill.',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        content: 'Limited reviews — young company. European work culture expected.',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'No salary data yet. European comp + equity.',
+      },
+    ],
+
+    tracking: {
+      status: 'interested',
+      fitScore: 8,
+      whyJoin: [
+        'L4 AI-native company',
+        'World-class founding team',
+        'Remote Europe option',
+        'Open-weight philosophy',
+        '$14B but still early-stage feel',
+      ],
+      whyNot: [
+        'Paris-based (timezone)',
+        'Smaller than Anthropic/OpenAI',
+        'Engineering-dominated culture',
+      ],
+      nextActions: [
+        'Research Mistral product roadmap',
+        'Try Mistral API and models',
+        'Check timezone compatibility',
+      ],
+    },
+
+    lastUpdated: '2025-01-25',
+    sources: [
+      {
+        title: 'Mistral Series C - Official',
+        url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai',
+      },
+      {
+        title: 'Mistral $14B Valuation - TechFundingNews',
+        url: 'https://techfundingnews.com/mistral-ai-raises-2-billion-valuation-europe-ai-frontrunner/',
       },
     ],
   },
