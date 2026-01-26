@@ -335,23 +335,30 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
         case 'recommended':
-          // Priority 1: AI Level (L4 > L3 > L2 > L1)
-          if (a.aiNativeLevel !== b.aiNativeLevel) {
-            return b.aiNativeLevel - a.aiNativeLevel;
-          }
-          // Priority 2: SF Bay Area location
-          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
-          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
-          if (aIsSF && !bIsSF) return -1;
-          if (!aIsSF && bIsSF) return 1;
-          // Priority 3: Alphabetical
-          return a.name.localeCompare(b.name);
-        case 'interest':
+          // Priority 1: Interest status (interested first, not_interested last)
           const statusA = interestStatuses[a.id];
           const statusB = interestStatuses[b.id];
           const orderA = statusA === 'interested' ? 0 : statusA === 'not_interested' ? 2 : 1;
           const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
-          return orderA - orderB;
+          if (orderA !== orderB) return orderA - orderB;
+
+          // Priority 2: AI Level (L4 > L3 > L2 > L1)
+          if (a.aiNativeLevel !== b.aiNativeLevel) {
+            return b.aiNativeLevel - a.aiNativeLevel;
+          }
+          // Priority 3: SF Bay Area location
+          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
+          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
+          if (aIsSF && !bIsSF) return -1;
+          if (!aIsSF && bIsSF) return 1;
+          // Priority 4: Alphabetical
+          return a.name.localeCompare(b.name);
+        case 'interest':
+          const statusA2 = interestStatuses[a.id];
+          const statusB2 = interestStatuses[b.id];
+          const orderA2 = statusA2 === 'interested' ? 0 : statusA2 === 'not_interested' ? 2 : 1;
+          const orderB2 = statusB2 === 'interested' ? 0 : statusB2 === 'not_interested' ? 2 : 1;
+          return orderA2 - orderB2;
         case 'teamSize':
           return parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
         case 'fundingStage':
