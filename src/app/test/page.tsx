@@ -187,16 +187,15 @@ export default function TestTablePage() {
                         <div className="line-clamp-2">{company.description}</div>
                       </td>
                       <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
-                        <div className="text-[var(--muted)]">{company.headquarters.split(',')[0]}</div>
-                        <div className="mt-0.5">
-                          {company.remote === 'No' ? (
-                            <span className="text-[var(--warning)]">On-site</span>
-                          ) : company.remote === 'Hybrid' ? (
-                            <span className="text-[var(--muted)]">Hybrid</span>
-                          ) : (
-                            <span className="text-[var(--success)]">Remote</span>
-                          )}
-                        </div>
+                        <span className="text-[var(--muted)]">{company.headquarters.split(',')[0]}</span>
+                        <span className="text-[var(--muted)]">, </span>
+                        {company.remote === 'No' ? (
+                          <span className="text-[var(--warning)]">On-site</span>
+                        ) : company.remote === 'Hybrid' ? (
+                          <span className="text-[var(--muted)]">Hybrid</span>
+                        ) : (
+                          <span className="text-[var(--success)]">Remote</span>
+                        )}
                       </td>
                       <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
                         {company.stage}
