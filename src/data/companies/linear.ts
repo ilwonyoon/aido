@@ -127,6 +127,19 @@ export const linear: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Software engineering teams at fast-moving startups and technology companies',
+        secondary: 'Product managers and designers working closely with engineering teams',
+    },
+    userProblems: [
+        'Jira is slow, clunky, and filled with unnecessary complexity slowing down engineering workflows',
+        'Issue tracking tools lack keyboard shortcuts forcing constant mouse usage',
+        'Project management software designed for general teams does not fit engineering workflows',
+        'Context-switching between tools for planning, development, and communication wastes time',
+        'Legacy tools feel dated and frustrate developers who expect modern, fast software',
+    ],
+
     designerLinks: [
       {
         name: 'Karri Saarinen',

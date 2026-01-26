@@ -130,6 +130,19 @@ export const mercor: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Fast-growing tech companies and AI startups needing to hire quickly',
+        secondary: 'Job seekers wanting skills-based evaluation instead of credential screening',
+    },
+    userProblems: [
+        'Traditional hiring takes months of resume screening and interviews slowing growth',
+        'Credential-based hiring misses talented candidates without traditional backgrounds',
+        'Technical screening requires expensive engineer time pulled from product work',
+        'Remote hiring makes assessing soft skills and culture fit difficult',
+        'High-growth companies need to hire dozens of engineers faster than traditional recruiting allows',
+    ],
+
     designerLinks: [],
     openRoles: [
       {

@@ -90,6 +90,19 @@ export const midjourney: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Digital artists, illustrators, and creative professionals',
+        secondary: 'Marketing teams, content creators, and hobbyists exploring AI art',
+    },
+    userProblems: [
+        'Creating high-quality visual artwork requires advanced illustration skills many lack',
+        'Hiring illustrators or photographers for concept art is expensive and time-consuming',
+        'Rapid iteration and experimentation with visual ideas is limited by manual creation speed',
+        'Stock photo libraries lack unique, specific imagery matching creative vision',
+        'Creatives want to explore artistic styles and concepts beyond their technical skills',
+    ],
+
     // Designer Links
     designerLinks: [],
 

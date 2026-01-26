@@ -131,6 +131,19 @@ export const hebbia: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Investment bankers, consultants, and analysts conducting research and due diligence',
+        secondary: 'Legal teams and compliance professionals reviewing massive document sets',
+    },
+    userProblems: [
+        'Analyzing hundreds of PDFs for due diligence requires weeks of manual review',
+        'Finding specific clauses or data points across thousands of pages is tedious',
+        'Creating investment memos requires synthesizing insights from dozens of sources',
+        'Research teams duplicate effort searching documents colleagues already reviewed',
+        'Complex financial documents require domain expertise AI currently lacks',
+    ],
+
     // Designer Links
     designerLinks: [],
 

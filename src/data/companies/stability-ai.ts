@@ -104,6 +104,19 @@ export const stabilityAi: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Developers and researchers building AI applications with open-source models',
+        secondary: 'Digital artists and designers using AI for image generation',
+    },
+    userProblems: [
+        'Closed-source AI models limit customization and require ongoing API costs',
+        'Running large AI models locally requires expensive GPUs and technical expertise',
+        'Commercial AI image tools restrict usage rights and require subscriptions',
+        'Fine-tuning AI models for specific use cases requires access to base weights',
+        'Reliance on third-party APIs creates dependency risk for production applications',
+    ],
+
     // Designer Links
     designerLinks: [],
 

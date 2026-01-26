@@ -123,6 +123,19 @@ export const granola: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Venture capitalists, founders, and executives taking frequent high-stakes meetings',
+        secondary: 'Sales professionals, consultants, and knowledge workers who value judgment',
+    },
+    userProblems: [
+        'Taking comprehensive meeting notes distracts from active listening and engagement',
+        'Auto-transcription tools produce verbose outputs lacking personal insights and judgment',
+        'Reviewing hour-long transcripts to find key points wastes time after meetings',
+        'Important context and non-verbal cues get lost in pure transcription',
+        'Professionals want to augment their judgment not replace their thinking with AI',
+    ],
+
     designerLinks: [
       {
         name: 'Granola Blog',

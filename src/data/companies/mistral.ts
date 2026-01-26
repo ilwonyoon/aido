@@ -124,6 +124,19 @@ export const mistral: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'European enterprises and developers requiring AI with data sovereignty',
+        secondary: 'AI researchers and developers globally seeking open-weight foundation models',
+    },
+    userProblems: [
+        'Using US-based AI providers creates data sovereignty and regulatory compliance concerns',
+        'Enterprises need to self-host AI models for security and control but lack quality options',
+        'Closed-source AI models limit customization and fine-tuning for specific use cases',
+        'European companies face pressure to keep data processing within EU jurisdiction',
+        'Developers want transparent AI models they can inspect, modify, and deploy anywhere',
+    ],
+
     designerLinks: [
       {
         name: 'Mistral Blog',

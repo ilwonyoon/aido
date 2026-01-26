@@ -122,6 +122,19 @@ export const notion: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Knowledge workers and teams needing flexible docs, wikis, and project management',
+        secondary: 'Individuals using Notion for personal note-taking, journaling, and life organization',
+    },
+    userProblems: [
+        'Teams use disconnected tools for docs, wikis, tasks, and databases creating information silos',
+        'Traditional productivity tools lack flexibility forcing workflows into rigid structures',
+        'Knowledge scattered across Google Docs, Dropbox, and project management tools is hard to find',
+        'Collaborative documentation tools like Confluence feel slow and complex for modern teams',
+        'Personal note-taking apps lack structure for managing complex projects and linked information',
+    ],
+
     designerLinks: [
       {
         name: 'Notion Design Blog',

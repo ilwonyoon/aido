@@ -143,6 +143,19 @@ export const harvey: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Lawyers and legal professionals at elite law firms and corporate legal departments',
+        secondary: 'Compliance teams, contract managers, and legal operations professionals',
+    },
+    userProblems: [
+        'Legal research requires hours of manual search through case law and statutes',
+        'Drafting legal documents from scratch or templates is time-consuming and repetitive',
+        'Junior associates spend billable hours on routine tasks that could be automated',
+        'Reviewing contracts and legal documents for issues requires meticulous manual reading',
+        'Law firms face pressure to reduce costs while maintaining quality and accuracy',
+    ],
+
     // Designer Links
     designerLinks: [],
 

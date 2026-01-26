@@ -148,6 +148,19 @@ export const ambienceHealthcare: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Healthcare systems and hospital networks deploying AI documentation at scale',
+        secondary: 'Emergency department physicians and specialists needing comprehensive AI support',
+    },
+    userProblems: [
+        'Clinical documentation consumes 40-50% of physician time reducing patient capacity',
+        'EHR systems require dozens of clicks and fields slowing down workflows',
+        'Medical coding and billing errors cost healthcare systems millions in lost revenue',
+        'Physician productivity limited by administrative tasks not clinical skill',
+        'Specialty-specific documentation requirements vary widely across medical fields',
+    ],
+
     // Designer Links
     designerLinks: [],
 

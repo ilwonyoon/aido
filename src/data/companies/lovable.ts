@@ -50,6 +50,20 @@ export const lovable: Company = {
       interface: { level: 'high', tasks: ['Conversational app builder UI', 'Visual editor for AI outputs', 'Template and sharing systems'] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Non-technical founders, product managers, and business professionals with app ideas',
+        secondary: 'Developers who want to prototype MVPs rapidly without writing boilerplate code',
+    },
+    userProblems: [
+        'Building custom software requires hiring expensive developers or learning to code',
+        'No-code tools like Webflow lack backend logic for complex business applications',
+        'Prototyping MVPs takes months when you cannot code limiting idea validation speed',
+        'Outsourcing development to agencies costs $50K-$500K+ per project',
+        'Technical debt from rushed MVP code makes future iteration expensive',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Remote)', url: 'https://lovable.dev/careers', type: 'full-time', aboutRole: 'Design experiences that make app creation feel like magic.', whyInteresting: '$200M ARR, 8M users. Fastest growing AI company ever.' }],
     cultureInsights: [],

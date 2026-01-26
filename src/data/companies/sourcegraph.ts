@@ -132,6 +132,19 @@ export const sourcegraph: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Engineering teams at large companies with complex codebases',
+        secondary: 'Engineering managers and platform teams improving developer productivity',
+    },
+    userProblems: [
+        'Finding code across repositories and understanding dependencies wastes hours daily',
+        'Onboarding engineers to massive codebases takes months of ramp-up time',
+        'Code search in GitHub or GitLab returns too many results requiring manual filtering',
+        'Refactoring and deprecation requires finding all usages across dozens of repositories',
+        'Understanding code ownership and architecture requires asking colleagues',
+    ],
+
     // Designer Links
     designerLinks: [],
 

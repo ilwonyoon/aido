@@ -44,6 +44,20 @@ export const intercomFin: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Customer support teams at SaaS and technology companies',
+        secondary: 'Product teams using chat for onboarding and engagement',
+    },
+    userProblems: [
+        'Customer support teams cannot scale to answer repetitive questions without hiring',
+        'Support tickets pile up during nights and weekends when teams are offline',
+        'Finding answers in documentation and past tickets takes support agents minutes per query',
+        'Customers want instant answers not waiting hours for support ticket responses',
+        'Scaling support quality across global teams and timezones is expensive',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.intercom.com/careers', type: 'full-time' }],
     cultureInsights: [],

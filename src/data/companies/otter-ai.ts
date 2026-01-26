@@ -44,6 +44,20 @@ export const otterAi: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Professionals attending meetings and needing transcription and notes',
+        secondary: 'Students, journalists, and researchers transcribing interviews and lectures',
+    },
+    userProblems: [
+        'Taking notes during meetings prevents active listening and engagement',
+        'Manual transcription of recordings takes hours of tedious work',
+        'Finding specific topics or quotes in meeting recordings requires listening to entire audio',
+        'Sharing meeting insights requires summarizing and distributing notes manually',
+        'Accessibility for hearing-impaired participants requires real-time captioning',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://otter.ai/careers', type: 'full-time' }],
     cultureInsights: [],

@@ -44,6 +44,20 @@ export const tabnine: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Enterprise engineering teams requiring secure self-hosted AI code completion',
+        secondary: 'Individual developers using multiple programming languages',
+    },
+    userProblems: [
+        'Cloud-based AI code assistants expose proprietary code to third-party servers',
+        'Enterprise compliance requires code to stay on-premises or in private cloud',
+        'Developers using less common languages lack quality AI completion options',
+        'Training AI on company codebase requires self-hosted infrastructure',
+        'Context-aware suggestions require deep codebase understanding across repositories',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Tel Aviv, Israel (Hybrid)', url: 'https://www.tabnine.com/careers', type: 'full-time' }],
     cultureInsights: [],

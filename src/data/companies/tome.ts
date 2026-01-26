@@ -44,6 +44,20 @@ export const tome: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Sales teams, consultants, and business professionals creating pitch decks',
+        secondary: 'Startups and founders building investor presentations and narratives',
+    },
+    userProblems: [
+        'Creating compelling presentations requires design skills most business people lack',
+        'PowerPoint and Keynote templates look generic and require extensive customization',
+        'Building narrative flow and visual storytelling is difficult without practice',
+        'Collaborating on presentations requires version control and merging changes',
+        'Starting from a blank slide deck wastes time on structure and layout',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://tome.app/careers', type: 'full-time' }],
     cultureInsights: [],

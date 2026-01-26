@@ -44,6 +44,20 @@ export const grammarly: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Professionals and students writing emails, documents, and content daily',
+        secondary: 'Teams and enterprises needing consistent writing quality and tone',
+    },
+    userProblems: [
+        'Grammar and spelling mistakes in professional communication damage credibility',
+        'Non-native English speakers struggle with grammar and natural phrasing',
+        'Reviewing and editing written content is time-consuming and error-prone',
+        'Teams lack consistency in writing tone and style across communications',
+        'Writers miss clarity issues that confuse readers or clients',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.grammarly.com/careers', type: 'full-time' }],
     cultureInsights: [],

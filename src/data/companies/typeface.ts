@@ -140,6 +140,19 @@ export const typeface: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Enterprise marketing teams creating branded content at scale',
+        secondary: 'Brand managers ensuring consistency across campaigns and channels',
+    },
+    userProblems: [
+        'Creating on-brand marketing content requires designers and copywriters limiting speed',
+        'Brand guidelines scattered across documents make consistency hard to enforce',
+        'Agencies charge $5K-$50K+ per campaign limiting content production velocity',
+        'Personalizing content for different segments requires manual recreation',
+        'Marketing teams lack design skills to create professional visual assets',
+    ],
+
     // Designer Links
     designerLinks: [],
 

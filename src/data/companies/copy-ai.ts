@@ -44,6 +44,20 @@ export const copyAi: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Go-to-market teams automating sales and marketing workflows',
+        secondary: 'Revenue operations professionals building scalable outbound processes',
+    },
+    userProblems: [
+        'Personalizing outbound sales emails at scale requires manual research and writing',
+        'Sales development reps spend hours researching prospects instead of selling',
+        'Marketing workflows across email, ads, and content lack coordination',
+        'Lead enrichment and qualification requires manual data entry and research',
+        'Scaling GTM motions from 10 to 1000 accounts requires hiring more SDRs',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Remote (Yes)', url: 'https://www.copy.ai/careers', type: 'full-time' }],
     cultureInsights: [],

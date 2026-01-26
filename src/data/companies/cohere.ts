@@ -143,6 +143,19 @@ export const cohere: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Enterprise developers and AI engineering teams building custom AI applications',
+        secondary: 'Data scientists and ML engineers requiring fine-tunable language models',
+    },
+    userProblems: [
+        'Using public AI APIs exposes sensitive enterprise data to third-party providers',
+        'Pre-trained models need customization for industry-specific use cases and terminology',
+        'Enterprise compliance requires models deployable on-premises or in private cloud',
+        'Retrieval-augmented generation requires deep technical expertise most teams lack',
+        'Balancing model quality with cost and latency constraints in production systems',
+    ],
+
     // Designer Links
     designerLinks: [],
 

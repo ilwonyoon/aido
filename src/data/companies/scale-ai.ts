@@ -146,6 +146,19 @@ export const scaleAi: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'AI companies and researchers training foundation models',
+        secondary: 'Enterprises fine-tuning AI for industry-specific applications',
+    },
+    userProblems: [
+        'Training high-quality AI models requires massive labeled datasets costing millions',
+        'Hiring and managing data labeling teams at scale is complex and expensive',
+        'RLHF (reinforcement learning from human feedback) requires domain expertise at scale',
+        'Evaluating AI model quality requires systematic testing most teams cannot build',
+        'Data quality directly impacts model performance but quality control is manual and slow',
+    ],
+
     // Designer Links
     designerLinks: [],
 

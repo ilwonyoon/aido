@@ -44,6 +44,20 @@ export const descript: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Podcasters, video creators, and content producers editing audio and video',
+        secondary: 'Marketing teams, educators, and remote teams editing recorded content',
+    },
+    userProblems: [
+        'Video and podcast editing in traditional tools requires steep learning curves',
+        'Finding and removing filler words from hours of audio is tedious manual work',
+        'Recording mistakes require re-recording or complex audio editing to fix',
+        'Transcribing audio for subtitles or blog posts costs time or money',
+        'Collaborative editing on video projects requires expensive professional editors',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }],
     cultureInsights: [],

@@ -151,6 +151,19 @@ export const replit: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Non-technical founders, creators, and professionals who want to build software',
+        secondary: 'Students learning to code and developers prototyping ideas quickly',
+    },
+    userProblems: [
+        'Building custom software requires hiring expensive developers or learning to code for years',
+        'Setting up development environments with dependencies and configuration is frustrating',
+        'Prototyping MVP ideas takes months when outsourcing or learning to code',
+        'Collaboration on code projects requires complex git workflows and local setup',
+        'Deploying applications to production requires infrastructure knowledge most non-developers lack',
+    ],
+
     // Designer Links
     designerLinks: [
       {

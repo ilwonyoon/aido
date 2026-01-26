@@ -44,6 +44,20 @@ export const gong: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Sales managers and revenue leaders managing distributed sales teams',
+        secondary: 'Individual sales representatives wanting to improve close rates',
+    },
+    userProblems: [
+        'Sales managers cannot listen to every call limiting coaching to anecdotal feedback',
+        'Best sales techniques stay siloed with top performers instead of shared across team',
+        'Deal risk and pipeline accuracy rely on reps self-reporting which is unreliable',
+        'Onboarding new sales reps requires months of shadowing and mentorship',
+        'Revenue leaders lack visibility into what actually happens in customer conversations',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://gong.io/careers', type: 'full-time' }],
     cultureInsights: [],

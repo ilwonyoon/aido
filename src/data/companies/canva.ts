@@ -44,6 +44,20 @@ export const canva: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Non-designers creating social media graphics, presentations, and marketing materials',
+        secondary: 'Small businesses, educators, and teams needing design at scale',
+    },
+    userProblems: [
+        'Creating professional visual content requires Adobe Creative Suite skills and expensive software',
+        'Hiring designers for social media graphics and basic marketing costs $50-$150+ per hour',
+        'Template-based tools lack flexibility while professional tools have steep learning curves',
+        'Brand consistency across team members creating content is difficult without design systems',
+        'Stock photo and template costs add up for teams creating frequent content',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Sydney, Australia (Hybrid)', url: 'https://www.canva.com/careers', type: 'full-time' }],
     cultureInsights: [],

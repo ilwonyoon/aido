@@ -147,6 +147,19 @@ export const gamma: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Business professionals and teams creating presentations and slide decks',
+        secondary: 'Educators, consultants, and content creators needing visual storytelling',
+    },
+    userProblems: [
+        'Creating professional presentations in PowerPoint or Keynote is time-consuming',
+        'Non-designers struggle to make visually appealing slides matching brand guidelines',
+        'Starting from blank slides or generic templates requires significant design effort',
+        'Collaborative deck editing requires version control and merge conflicts',
+        'Presenting data and insights clearly requires design skills most people lack',
+    ],
+
     // Designer Links
     designerLinks: [],
 

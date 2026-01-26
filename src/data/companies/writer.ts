@@ -44,6 +44,20 @@ export const writer: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Enterprise content teams and brand managers ensuring content quality',
+        secondary: 'Marketing operations and compliance teams enforcing brand standards',
+    },
+    userProblems: [
+        'Maintaining consistent brand voice across hundreds of content creators is impossible manually',
+        'Content compliance and legal review slows down marketing velocity',
+        'Scaling content production while maintaining quality requires expensive editorial teams',
+        'Finding and enforcing terminology and style guidelines across teams is manual',
+        'Content quality varies dramatically across writers and campaigns',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://writer.com/careers', type: 'full-time' }],
     cultureInsights: [],

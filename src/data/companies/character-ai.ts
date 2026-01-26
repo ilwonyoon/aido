@@ -134,6 +134,19 @@ export const characterAi: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Gen Z and millennials seeking AI companionship and entertainment',
+        secondary: 'Writers, roleplayers, and creative storytellers exploring character interactions',
+    },
+    userProblems: [
+        'Loneliness and lack of social connection drive need for always-available conversation',
+        'Traditional entertainment (games, social media) lacks personalized, responsive experiences',
+        'Creative writers need interactive characters for story development and roleplay',
+        'Language learners want conversational practice without judgment or scheduling',
+        'People seek emotional support and non-judgmental conversation partners',
+    ],
+
     // Designer Links
     designerLinks: [],
 
