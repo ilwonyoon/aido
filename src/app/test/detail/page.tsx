@@ -186,9 +186,13 @@ export default function TestDetailPage() {
                   <div className="font-medium text-sm">L{company.aiNativeLevel}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-[var(--muted)]">Work Type</div>
+                  <div className="text-xs text-[var(--muted)]">Open Roles</div>
                   <div className="font-medium text-sm">
-                    {company.remote === 'Yes' ? '🟢 Remote' : company.remote === 'Hybrid' ? '🟡 Hybrid' : '🔴 On-site'}
+                    {company.openRoles.length > 0 ? (
+                      <span className="text-[var(--success)]">{company.openRoles.length} open</span>
+                    ) : (
+                      <span className="text-[var(--muted)]">None</span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -198,8 +202,10 @@ export default function TestDetailPage() {
                   <div className="text-sm">{company.headquarters.split(',')[0]}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-[var(--muted)]">Team Size</div>
-                  <div className="text-sm">{company.designTeam.teamSize || 'Unknown'}</div>
+                  <div className="text-xs text-[var(--muted)]">Work Type</div>
+                  <div className="text-sm">
+                    {company.remote === 'Yes' ? '🟢 Remote' : company.remote === 'Hybrid' ? '🟡 Hybrid' : '🔴 On-site'}
+                  </div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Total Funding</div>
@@ -207,96 +213,34 @@ export default function TestDetailPage() {
                 </div>
               </div>
 
-              {/* AI Level Description */}
+              {/* One-liner */}
               <div className="pt-4 border-t border-[var(--border)] mt-4">
-                <div className="text-xs text-[var(--muted)] mb-1">AI-Native Level</div>
-                <p className="text-sm">{company.aiNativeLevelDescription}</p>
-              </div>
-
-              {/* Founders Summary */}
-              <div className="pt-4 border-t border-[var(--border)] mt-4">
-                <div className="text-xs text-[var(--muted)] mb-2">Founders</div>
-                <div className="space-y-1">
-                  {company.founders.slice(0, 2).map((f, i) => (
-                    <div key={i} className="text-sm">
-                      <span className="font-medium">{f.name}</span>
-                      <span className="text-[var(--muted)]"> — {f.background}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Why Building */}
-              <div className="pt-4 border-t border-[var(--border)] mt-4">
-                <div className="text-xs text-[var(--muted)] mb-1">Why They're Building This</div>
-                <p className="text-sm">{company.whyBuilding}</p>
-              </div>
-
-              {/* Moat */}
-              <div className="pt-4 border-t border-[var(--border)] mt-4">
-                <div className="text-xs text-[var(--muted)] mb-2">Moat (Top 3)</div>
-                <ul className="space-y-1">
-                  {company.moat.slice(0, 3).map((m, i) => (
-                    <li key={i} className="text-sm text-[var(--muted)] flex gap-2">
-                      <span className="text-[var(--success)]">→</span>
-                      <span>{m}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-[var(--muted)] italic">
+                  {company.aiNativeLevel === 4 ? '→ AI is the product' : '→ AI is core differentiator'}
+                </p>
               </div>
 
               {/* Why Join / Why Not */}
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[var(--border)] mt-4">
                 <div>
-                  <div className="text-xs text-[var(--muted)] mb-2">Why Join (Top 3)</div>
-                  <ul className="space-y-1">
+                  <div className="text-xs text-[var(--muted)] mb-2">Why Join</div>
+                  <ul className="space-y-0.5">
                     {company.tracking.whyJoin.slice(0, 3).map((w, i) => (
-                      <li key={i} className="text-xs text-[var(--success)]">+ {w}</li>
+                      <li key={i} className="text-xs text-[var(--muted)]">+ {w}</li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <div className="text-xs text-[var(--muted)] mb-2">Why Not (Top 3)</div>
-                  <ul className="space-y-1">
+                  <div className="text-xs text-[var(--muted)] mb-2">Why Not</div>
+                  <ul className="space-y-0.5">
                     {company.tracking.whyNot.slice(0, 3).map((w, i) => (
-                      <li key={i} className="text-xs text-[var(--warning)]">- {w}</li>
+                      <li key={i} className="text-xs text-[var(--muted)]">- {w}</li>
                     ))}
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* Open Roles - Quick List */}
-            {company.openRoles.length > 0 ? (
-              <div className="card p-4 border-2 border-[var(--success)]">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="text-xs text-[var(--muted)]">Open Design Roles</div>
-                  <span className="badge badge-success text-xs">{company.openRoles.length}</span>
-                </div>
-                <div className="space-y-2">
-                  {company.openRoles.map((role, i) => (
-                    <div key={i} className="flex items-start gap-2">
-                      <span className="text-[var(--success)] text-xs mt-0.5">•</span>
-                      <div className="flex-1">
-                        <a
-                          href={role.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm font-medium hover:text-[var(--accent-light)]"
-                        >
-                          {role.title} ↗
-                        </a>
-                        <div className="text-xs text-[var(--muted)]">{role.location}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <div className="card p-4 text-center text-sm text-[var(--muted)]">
-                No open design roles
-              </div>
-            )}
           </section>
 
           {/* Open Roles - Detailed */}
