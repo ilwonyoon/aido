@@ -160,6 +160,9 @@ export function CompanyDetail({ company }: { company: Company }) {
               </a>
               <span className="text-[var(--muted)]">Updated {company.lastUpdated}</span>
             </div>
+            <div className="mt-4">
+              <InterestToggle companyId={company.id} />
+            </div>
           </div>
 
           {/* Quick Info */}
@@ -227,14 +230,6 @@ export function CompanyDetail({ company }: { company: Company }) {
                     ))}
                   </ul>
                 </div>
-              </div>
-            </div>
-
-            {/* Interest Status */}
-            <div className="card p-5">
-              <div className="flex items-center justify-between">
-                <h3 className="font-medium">Interest Status</h3>
-                <InterestToggle companyId={company.id} />
               </div>
             </div>
 
