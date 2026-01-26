@@ -46,7 +46,7 @@ export function useCompanies() {
  * Hook to fetch a single company by ID
  */
 export function useCompany(id: string) {
-  const [company, setCompany] = useState<Company | null>(getStaticCompanyById(id));
+  const [company, setCompany] = useState<Company | null>(getStaticCompanyById(id) || null);
   const [loading, setLoading] = useState(USE_FIRESTORE);
   const [error, setError] = useState<Error | null>(null);
 
