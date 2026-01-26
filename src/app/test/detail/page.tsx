@@ -171,8 +171,6 @@ export default function TestDetailPage() {
             <h2 className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
-            <div>
-              <h3 className="section-title">Overview</h3>
             <div className="card p-5">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
                 <div>
@@ -208,7 +206,6 @@ export default function TestDetailPage() {
                   <div className="text-sm font-medium text-[var(--success)]">{company.totalFunding}</div>
                 </div>
               </div>
-            </div>
             </div>
 
             {/* Open Roles */}
