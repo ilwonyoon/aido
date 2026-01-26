@@ -4329,7 +4329,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Harvey is entirely built around AI-powered legal work — research, drafting, analysis. No Harvey without AI.',
+    aiNativeLevelDescription: 'AI is the product. Harvey is entirely built around AI-powered legal work — research, drafting, analysis. No Harvey without AI.',
     aiDesignChallenges: [
       'Trust & verification: lawyers need to verify AI outputs, how to design for confidence?',
       'Complex legal reasoning: designing interfaces for multi-step legal analysis',
@@ -4491,7 +4491,7 @@ export const companies: Company[] = [
       status: 'watching',
       fitScore: 8,
       whyJoin: [
-        'AI-native Level 4: AI IS the product',
+        'AI-native Level 4: AI is the product',
         'Massive design challenge: high-stakes legal AI',
         'Elite customers: working with top law firms',
         'Strong founders: Pereyra (DeepMind) + Weinberg (O\'Melveny)',
@@ -4587,7 +4587,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Character.AI is 100% about AI-powered conversations. No product without AI.',
+    aiNativeLevelDescription: 'AI is the product. Character.AI is 100% about AI-powered conversations. No product without AI.',
     aiDesignChallenges: [
       'Character consistency: keeping AI characters in-character across conversations',
       'Emotional engagement: designing for parasocial relationships',
@@ -4735,7 +4735,7 @@ export const companies: Company[] = [
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level 4: AI IS the product',
+        'AI-native Level 4: AI is the product',
         'Massive scale: 208M monthly visits',
         'Creative product: entertainment AI vs boring productivity tools',
         'Community-driven: 16M+ user-created characters',
@@ -5378,7 +5378,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Replit Agent is 100% AI-powered. Revenue jumped $10M → $100M in 9 months after launching Agent. AI is the entire value prop.',
+    aiNativeLevelDescription: 'AI is the product. Replit Agent is 100% AI-powered. Revenue jumped $10M → $100M in 9 months after launching Agent. AI is the entire value prop.',
     aiDesignChallenges: [
       'Natural language → code: designing conversational interfaces for building software',
       'Multi-file editing: AI making changes across entire codebase',
@@ -5553,7 +5553,7 @@ export const companies: Company[] = [
       status: 'interested',
       fitScore: 9,
       whyJoin: [
-        'AI-native Level 4: AI IS the product (Replit Agent)',
+        'AI-native Level 4: AI is the product (Replit Agent)',
         'Explosive growth: $3B → $9B in 4 months',
         'Co-founder leads design: Haya Odeh (amazing signal)',
         'Product Designer role open',
@@ -5653,7 +5653,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Cohere builds LLMs and provides AI infrastructure. No Cohere without AI.',
+    aiNativeLevelDescription: 'AI is the product. Cohere builds LLMs and provides AI infrastructure. No Cohere without AI.',
     aiDesignChallenges: [
       'Enterprise deployment: designing for on-prem, private cloud, multi-cloud',
       'Customization interfaces: fine-tuning workflows for enterprise',
@@ -5793,7 +5793,7 @@ export const companies: Company[] = [
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'AI-native Level 4: AI IS the product',
+        'AI-native Level 4: AI is the product',
         'Founder credibility: Aidan Gomez co-authored Transformer paper',
         'Strong growth: $200M+ ARR heading into 2026',
         'IPO-bound: mid-2026 IPO planned',
@@ -6619,7 +6619,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Matrix enables AI-powered document analysis at unlimited scale.',
+    aiNativeLevelDescription: 'AI is the product. Matrix enables AI-powered document analysis at unlimited scale.',
     aiDesignChallenges: [
       'Designing for unlimited document length',
       'Tabular/spreadsheet output for complex queries',
@@ -6734,7 +6734,7 @@ export const companies: Company[] = [
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level 4: AI IS the product',
+        'AI-native Level 4: AI is the product',
         'George Sivulka is brilliant founder',
         'Profitable and well-funded',
         'Elite customers (BlackRock, KKR)',
@@ -6832,7 +6832,7 @@ export const companies: Company[] = [
 
     // AI-Native Level
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Repositioned around generative AI when ChatGPT launched. Core product is AI generation.',
+    aiNativeLevelDescription: 'AI is the product. Repositioned around generative AI when ChatGPT launched. Core product is AI generation.',
     aiDesignChallenges: [
       'AI-generated layouts and designs',
       'Balance AI speed vs manual control',
@@ -6940,7 +6940,7 @@ export const companies: Company[] = [
       fitScore: 9,
       whyJoin: [
         'Grant Lee is designer CEO (rare!)',
-        'AI-native Level 4: AI IS the product',
+        'AI-native Level 4: AI is the product',
         '$100M ARR, profitable, lean team',
         '30M+ users, strong growth',
         'Interesting design challenges (AI generation)',
@@ -7240,7 +7240,7 @@ export const companies: Company[] = [
     moat: ['100K daily products = training data', '50%+ Fortune 500 adoption', 'Network effects from templates'],
     vsGiants: 'Differentiate via no-code simplicity vs GitHub Copilot complexity',
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Describe app → AI builds it.',
+    aiNativeLevelDescription: 'AI is the product. Describe app → AI builds it.',
     aiDesignChallenges: ['How to make AI-generated apps high quality', 'Balancing speed with customization', 'Teaching non-developers to prompt effectively', 'Managing expectations vs reality'],
     founders: [{ name: 'Nikita Bier', role: 'CEO', background: 'Founded tbh (sold to Facebook), Gas (sold to Discord). Serial social app founder.' }],
     whyBuilding: 'Everyone has app ideas. AI should make building them trivial.',
@@ -7301,7 +7301,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Code completion, chat, and generation.',
+    aiNativeLevelDescription: 'AI is the product. Code completion, chat, and generation.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -7358,7 +7358,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Text → realistic avatar videos.',
+    aiNativeLevelDescription: 'AI is the product. Text → realistic avatar videos.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -7643,7 +7643,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Full-stack generative AI platform for business.',
+    aiNativeLevelDescription: 'AI is the product. Full-stack generative AI platform for business.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -7700,7 +7700,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. AI for legal work.',
+    aiNativeLevelDescription: 'AI is the product. AI for legal work.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -7814,7 +7814,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Prompt → polished presentation.',
+    aiNativeLevelDescription: 'AI is the product. Prompt → polished presentation.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -7985,7 +7985,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Real-time transcription, summaries, action items.',
+    aiNativeLevelDescription: 'AI is the product. Real-time transcription, summaries, action items.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -8042,7 +8042,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. AI-powered copywriting and GTM automation.',
+    aiNativeLevelDescription: 'AI is the product. AI-powered copywriting and GTM automation.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -8156,7 +8156,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. AI code completion and chat.',
+    aiNativeLevelDescription: 'AI is the product. AI code completion and chat.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',
@@ -8182,63 +8182,6 @@ export const companies: Company[] = [
     },
     lastUpdated: '2026-01-26T18:30:00',
     sources: [{'title': 'Tabnine Series B', 'url': 'https://www.tabnine.com/blog/tabnine-series-b/'}, {'title': 'Tabnine Funding', 'url': 'https://www.cbinsights.com/company/tabnine/financials'}],
-  },
-  {
-    id: 'scale-ai',
-    name: 'Scale AI',
-    description: 'AI infrastructure for data labeling, training, and evaluation. Powers AI development.',
-    website: 'https://scale.com',
-    headquarters: 'San Francisco, CA',
-    remote: 'Hybrid',
-    stage: 'Series F',
-    valuation: '$14B (2024), targeting $25B (2026)',
-    totalFunding: '$1.6B',
-    revenue: '$870M (2024), projected $2B (2026)',
-    growth: '130% YoY growth',
-    customers: '400+ enterprise clients',
-    growthMetrics: {
-      stage: 'hypergrowth',
-      revenueGrowth: '$870M (2024) → $2B (2026) = 130% YoY',
-      userGrowth: '400+ enterprise clients',
-      signals: ['Targeting $25B valuation (79% jump)', '$1B Series F (2024)', '130% revenue growth', 'Fastest-growing AI infrastructure'],
-      tam: '$30B (AI infrastructure + data services)',
-      marketShare: '2.9% = 34x upside potential',
-      ceiling: 'Mid-stage: Expanding from data labeling to full AI infrastructure',
-      tailwinds: ['AI training data demand exploding', 'Enterprise AI budgets', 'Foundation model training needs'],
-      headwinds: ['Commoditization of data labeling', 'In-house solutions', 'Economic downturn = AI budget cuts'],
-      moatType: 'data-flywheel',
-      moatStrength: 'Strong: 400+ enterprise clients + data quality = moat',
-    },
-    competitors: [],
-    marketPosition: 'Unknown',
-    moat: [],
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator. Infrastructure for AI development.',
-    aiDesignChallenges: [],
-    founders: [],
-    whyBuilding: 'Unknown',
-    beliefs: [],
-    greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: ['Unknown design culture', 'Competitive market'],
-    designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
-    designWorkType: {
-      logicBehavior: { level: 'high', tasks: [] },
-      evaluation: { level: 'medium', tasks: [] },
-      interface: { level: 'high', tasks: [] },
-    },
-    productStage: '10→100',
-    designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://scale.com/careers', type: 'full-time' }],
-    cultureInsights: [],
-    tracking: {
-      status: 'watching',
-      fitScore: 7,
-      whyJoin: ['AI-native Level 3', '$14B (2024), targeting $25B (2026)'],
-      whyNot: ['Hybrid work policy', 'Unknown design culture'],
-      nextActions: ['Try Scale AI product', 'Research founders'],
-    },
-    lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Scale AI Growth', 'url': 'https://fueler.io/blog/scale-ai-usage-revenue-valuation-growth-statistics'}, {'title': 'Scale AI $25B Target', 'url': 'https://aifundingtracker.com/scale-ai-sales-led-growth-strategy/'}],
   },
   {
     id: 'cohere-ai',
@@ -8270,7 +8213,7 @@ export const companies: Company[] = [
     marketPosition: 'Unknown',
     moat: [],
     aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI IS the product. Foundation models and AI platform.',
+    aiNativeLevelDescription: 'AI is the product. Foundation models and AI platform.',
     aiDesignChallenges: [],
     founders: [],
     whyBuilding: 'Unknown',

@@ -146,7 +146,7 @@ export default function TestTablePage() {
                     Location
                   </th>
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('stage')}>
-                    Stage {sortBy === 'stage' && '↓'}
+                    Stage & Funding {sortBy === 'stage' && '↓'}
                   </th>
                   <th className="text-center py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('openRoles')}>
                     Roles {sortBy === 'openRoles' && '↓'}
@@ -197,8 +197,11 @@ export default function TestTablePage() {
                           <span className="text-[var(--success)]">Remote</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
-                        {company.stage}
+                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
+                        <div className="text-[var(--foreground)]">{company.stage}</div>
+                        {company.totalFunding && (
+                          <div className="text-[var(--muted)] mt-0.5">{company.totalFunding}</div>
+                        )}
                       </td>
                       <td className="py-3 px-4 text-center border-r border-[var(--border)]">
                         {company.openRoles.length > 0 ? (
