@@ -458,30 +458,6 @@ export default function TestDetailPage() {
           <section id="design" className="scroll-mt-20 space-y-8">
             <h2 className="text-2xl font-semibold mb-6">🎨 Design</h2>
 
-            {/* Design Work Type */}
-            <div>
-              <h3 className="section-title">Design Work Type</h3>
-            <div className="card p-5">
-              <WorkTypeSection
-                title="Logic / Behavior Design"
-                level={company.designWorkType.logicBehavior.level}
-                tasks={company.designWorkType.logicBehavior.tasks}
-              />
-              <div className="border-t border-[var(--border)] my-5" />
-              <WorkTypeSection
-                title="Evaluation Design"
-                level={company.designWorkType.evaluation.level}
-                tasks={company.designWorkType.evaluation.tasks}
-              />
-              <div className="border-t border-[var(--border)] my-5" />
-              <WorkTypeSection
-                title="Interface Design"
-                level={company.designWorkType.interface.level}
-                tasks={company.designWorkType.interface.tasks}
-              />
-            </div>
-            </div>
-
             {/* Design Team + Designer Links */}
             <div>
               <h3 className="section-title">Design Team</h3>
@@ -630,6 +606,30 @@ export default function TestDetailPage() {
                   </a>
                 ))}
               </div>
+            </div>
+            </div>
+
+            {/* Design Work Type */}
+            <div>
+              <h3 className="section-title">Design Work Type</h3>
+            <div className="card p-5">
+              <WorkTypeSection
+                title="Logic / Behavior Design"
+                level={company.designWorkType.logicBehavior.level}
+                tasks={company.designWorkType.logicBehavior.tasks}
+              />
+              <div className="border-t border-[var(--border)] my-5" />
+              <WorkTypeSection
+                title="Evaluation Design"
+                level={company.designWorkType.evaluation.level}
+                tasks={company.designWorkType.evaluation.tasks}
+              />
+              <div className="border-t border-[var(--border)] my-5" />
+              <WorkTypeSection
+                title="Interface Design"
+                level={company.designWorkType.interface.level}
+                tasks={company.designWorkType.interface.tasks}
+              />
             </div>
             </div>
           </section>
