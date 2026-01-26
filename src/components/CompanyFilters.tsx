@@ -359,6 +359,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                     {company.description}
                   </p>
                   <div className="flex items-center gap-1.5 text-sm flex-wrap">
+                    {interest === 'interested' && (
+                      <>
+                        <span className="text-[var(--accent-light)]">✨ Interested</span>
+                        <span className="text-[var(--border)]">|</span>
+                      </>
+                    )}
                     <span className="text-[var(--muted)]">{company.headquarters}</span>
                     <span className="text-[var(--border)]">|</span>
                     <span className="text-[var(--muted)]">{company.stage}</span>
@@ -366,12 +372,6 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                       <>
                         <span className="text-[var(--border)]">|</span>
                         <span className="text-[var(--success)]">Remote OK</span>
-                      </>
-                    )}
-                    {interest === 'interested' && (
-                      <>
-                        <span className="text-[var(--border)]">|</span>
-                        <span className="text-[var(--accent-light)]">Interested</span>
                       </>
                     )}
                     {hasRecentFunding && (
