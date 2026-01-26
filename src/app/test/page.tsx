@@ -176,18 +176,18 @@ export default function TestTablePage() {
                       <td className="py-3 px-4 border-r border-[var(--border)]">
                         <Link href={`/company/${company.id}`} className="hover:text-[var(--accent-light)]">
                           <div className="flex items-center gap-2 mb-1">
-                            <span className="font-medium">{company.name}</span>
+                            <span className="font-medium text-sm">{company.name}</span>
                             <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
                               L{company.aiNativeLevel}
                             </span>
                           </div>
-                          <div className="text-xs text-[var(--muted)] line-clamp-1">{company.description}</div>
+                          <div className="text-sm text-[var(--muted)] line-clamp-1">{company.description}</div>
                         </Link>
                       </td>
-                      <td className="py-3 px-4 text-sm text-[var(--muted)] border-r border-[var(--border)]">
+                      <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
                         {company.headquarters.split(',')[0]}
                       </td>
-                      <td className="py-3 px-4 text-sm border-r border-[var(--border)]">
+                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
                         {company.remote === 'No' ? (
                           <span className="text-[var(--warning)]">On-site</span>
                         ) : company.remote === 'Hybrid' ? (
@@ -196,7 +196,7 @@ export default function TestTablePage() {
                           <span className="text-[var(--success)]">Remote</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-sm text-[var(--muted)] border-r border-[var(--border)]">
+                      <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
                         {company.stage}
                       </td>
                       <td className="py-3 px-4 text-center border-r border-[var(--border)]">
