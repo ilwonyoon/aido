@@ -2236,7 +2236,7 @@ export const companies: Company[] = [
     description: 'Collaborative design platform. The Google Docs of design tools.',
     website: 'https://figma.com',
     headquarters: 'San Francisco, CA',
-    remote: 'Hybrid (US/Canada remote)',
+    remote: 'Hybrid',
 
     stage: 'Public (NYSE: FIG)',
     valuation: '$57B market cap (July 2025 IPO)',
@@ -2248,7 +2248,7 @@ export const companies: Company[] = [
       { stage: 'Series C', amount: '$40M', date: '2019-04', leadInvestors: ['Sequoia'] },
       { stage: 'Series D', amount: '$50M', date: '2020-04', valuation: '$2B', leadInvestors: ['a16z'] },
       { stage: 'Series E', amount: '$200M', date: '2021-06', valuation: '$10B', leadInvestors: ['Various'] },
-      { stage: 'IPO', amount: 'N/A', date: '2025-07', valuation: '$57B', leadInvestors: ['Public'] },
+      { stage: 'Series F', amount: 'N/A', date: '2025-07', valuation: '$57B', leadInvestors: ['Public'] },
     ],
     revenue: '$820M (2025)',
     growth: 'Strong, IPO validated',
@@ -2500,7 +2500,7 @@ export const companies: Company[] = [
     description: 'European AI lab building open-weight and commercial LLMs. The French challenger to OpenAI.',
     website: 'https://mistral.ai',
     headquarters: 'Paris, France',
-    remote: 'Yes (Europe timezone)',
+    remote: 'Yes',
 
     stage: 'Series C',
     valuation: '$14B (Sept 2025)',
@@ -2889,7 +2889,7 @@ export const companies: Company[] = [
         ],
       },
     },
-    productStage: '0→1 to 1→10',
+    productStage: '1→10',
 
     // Designer Links
     designerLinks: [],
@@ -3502,7 +3502,7 @@ export const companies: Company[] = [
     description: 'Frontend cloud platform and creator of Next.js. Building the infrastructure for AI-native web.',
     website: 'https://vercel.com',
     headquarters: 'San Francisco, CA',
-    remote: 'Hybrid (Remote OK)',
+    remote: 'Hybrid',
 
     // Business
     stage: 'Series F',
@@ -5118,6 +5118,40 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$50M+ ARR (estimated 2025), ~2x YoY",
+      userGrowth: "Fortune 500 customers, enterprise adoption growing",
+      signals: [
+        "$1B valuation at Series C",
+        "$206M total raised (GV, Salesforce Ventures, M12)",
+        "Fortune 500 customers within first year",
+        "Strategic partnerships: Salesforce, Google, Microsoft",
+        "Ex-Adobe CTO founder (Abhay Parasnis)",
+      ],
+
+      tam: "$30B+ (Enterprise marketing and creative software)",
+      marketShare: "<0.2% (early enterprise AI marketing adoption)",
+      ceiling: "Early-mid innings: Enterprise marketing AI is nascent. Typeface competing against Adobe (incumbent) and Jasper (early mover). Ceiling depends on enterprise adoption speed.",
+      tailwinds: [
+        "CMOs under pressure to create more content with less budget",
+        "Brand control requirements favor enterprise-specific AI",
+        "Salesforce/Google/Microsoft partnerships = distribution",
+        "Marketing budgets are large ($200B+ globally)",
+        "Ex-Adobe founder credibility with enterprise buyers",
+      ],
+      headwinds: [
+        "Adobe owns enterprise creative market and adding AI features",
+        "Jasper had first-mover advantage in AI marketing content",
+        "Copy.ai, Writesonic, and 100+ competitors",
+        "Enterprise sales cycles are 12-18 months",
+        "Generative AI content quality vs brand standards gap",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Enterprise integrations (Salesforce, DAMs) and brand customization create switching costs. But content generation is commoditizing. Partnerships provide distribution moat.",
+    },
+
     // My Tracking
     tracking: {
       status: 'watching',
@@ -5368,6 +5402,39 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$1B+ ARR (2025), ~2x YoY",
+      userGrowth: "1000+ customers historically, losing some after Meta deal",
+      signals: [
+        "$29B valuation at Series F (10x from $2.7B in 3 years)",
+        "$14B Meta investment (49% ownership)",
+        "$1B+ ARR from data labeling and AI infrastructure",
+        "Powers GPT-4, Claude, Gemini training data",
+        "Government contracts (DoD, intelligence agencies)",
+      ],
+
+      tam: "$50B+ (AI training data, evaluation, and infrastructure)",
+      marketShare: "~2% = 25x upside potential",
+      ceiling: "Mid innings: AI training data market growing rapidly, but Meta deal created headwinds. Ceiling depends on retaining neutrality perception.",
+      tailwinds: [
+        "Every AI model requires massive human-labeled data",
+        "Government AI spending increasing (defense, intelligence)",
+        "RLHF (human feedback) becoming critical for AI quality",
+        "Meta partnership = $14B capital + strategic value",
+      ],
+      headwinds: [
+        "OpenAI, Google pulled out after Meta deal (neutrality concerns)",
+        "Meta owning 49% creates conflict of interest perception",
+        "Founder Alexandr Wang left for Meta (leadership transition)",
+        "Labelbox, Label Your Data competing for enterprise",
+        "Open-source labeling tools reducing TAM",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Data pipelines and integrations create switching costs. Government relationships are valuable. But Meta deal damaged neutrality moat. Commoditization pressure increasing.",
+    },
+
     // My Tracking
     tracking: {
       status: 'watching',
@@ -5611,6 +5678,40 @@ export const companies: Company[] = [
         url: 'https://twitter.com/amasad',
       },
     ],
+
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "$300M+ ARR (estimated 2025), 5x+ YoY",
+      userGrowth: "30M+ users, millions of apps deployed",
+      signals: [
+        "$9B valuation (3x from $3B in 4 months after Replit Agent launch)",
+        "$630M Series D funding",
+        "30M+ registered users",
+        "Replit Agent: 1M+ apps created",
+        "Co-founder Haya Odeh leads design (strong design DNA)",
+      ],
+
+      tam: "$100B+ (All software development globally)",
+      marketShare: "<0.5% but growing extremely fast",
+      ceiling: "Early innings: Replit Agent defining AI-native IDE category. Browser-based, no-setup advantage is massive. Ceiling depends on capturing next generation of developers.",
+      tailwinds: [
+        "No-setup friction = massive onboarding advantage",
+        "Browser-based enables instant collaboration",
+        "Education market adoption (K-12, universities use Replit)",
+        "Replit Agent democratizes coding (non-developers can build)",
+        "Real-time multiplayer creates network effects",
+      ],
+      headwinds: [
+        "Cursor raised $29B = well-funded direct competitor",
+        "GitHub Copilot Workspace targeting same space",
+        "Lovable, Windsurf, Bolt all competing in AI IDEs",
+        "Local development (VS Code) still preferred by pros",
+        "Compute costs extremely high (hosting + AI inference)",
+      ],
+
+      moatType: 'network-effects',
+      moatStrength: "Medium: Real-time collaboration and community create network effects. No-setup advantage is defensible. But AI IDE market is extremely competitive and rapidly evolving.",
+    },
 
     // My Tracking
     tracking: {
@@ -6061,6 +6162,40 @@ export const companies: Company[] = [
         content: 'Founders stepped down in 2023. Layoffs. New CEO Timothy Young (ex-Dropbox) brings stability.',
       },
     ],
+
+    growthMetrics: {
+      stage: 'plateau',
+      revenueGrowth: "$88M ARR (2025), <1.5x YoY (slowing from 3x in 2022-2023)",
+      userGrowth: "100,000+ customers, but churn increasing",
+      signals: [
+        "$1.2B valuation (down from $1.5B peak = 20% haircut)",
+        "$88M ARR but slowing growth",
+        "Founders stepped down in Sept 2023",
+        "Layoffs in 2023",
+        "New CEO Timothy Young (ex-Dropbox President) brought in to stabilize",
+      ],
+
+      tam: "$30B+ (Enterprise marketing and creative software)",
+      marketShare: "~0.3% (first-mover advantage fading)",
+      ceiling: "Mid innings but slowing: Jasper caught early AI wave but losing to better-funded, better-positioned competitors. Ceiling limited by UI complexity and competition.",
+      tailwinds: [
+        "100,000+ customers = data and distribution base",
+        "Enterprise pivot (Jasper Studio) targeting bigger deals",
+        "New CEO from Dropbox brings enterprise SaaS expertise",
+        "Remote-first = cost efficiency",
+      ],
+      headwinds: [
+        "Typeface has ex-Adobe CTO and Fortune 500 focus",
+        "Copy.ai, Writesonic winning on simplicity and price",
+        "ChatGPT, Claude can generate marketing copy (free/cheap)",
+        "UI complexity driving churn ('overwhelming' feedback)",
+        "Founders departed = vision/momentum lost",
+        "Valuation down and layoffs signal struggling growth",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Low-Medium: 100K customers create some scale advantages, but content generation is commoditizing. Switching costs are low (AI writing is generic). First-mover advantage eroded.",
+    },
 
     // My Tracking
     tracking: {
@@ -7215,7 +7350,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7272,7 +7407,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7329,7 +7464,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7386,7 +7521,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7443,7 +7578,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7500,7 +7635,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7534,11 +7669,11 @@ export const companies: Company[] = [
     totalFunding: '$326M',
     revenue: 'Unknown',
     growth: 'Unknown',
-    customers: 'Accenture, L'Oreal, Uber',
+    customers: 'Accenture, L\'Oreal, Uber',
     growthMetrics: {
       stage: 'high-growth',
       revenueGrowth: 'Unknown',
-      userGrowth: 'Growing customer base (Accenture, L'Oreal, Uber)',
+      userGrowth: 'Growing customer base (Accenture, L\'Oreal, Uber)',
       signals: ['$200M Series C at $1.9B valuation', 'Adobe Ventures, IBM Ventures, Salesforce Ventures investors', 'Expanding to healthcare, retail, financial services'],
       tam: '$25B (AI writing + content generation)',
       marketShare: 'Unknown',
@@ -7557,7 +7692,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7614,7 +7749,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7671,7 +7806,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7728,7 +7863,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7785,7 +7920,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7842,7 +7977,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7899,7 +8034,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -7956,7 +8091,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -8013,7 +8148,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -8070,7 +8205,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -8127,7 +8262,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
@@ -8184,7 +8319,7 @@ export const companies: Company[] = [
     founders: [],
     whyBuilding: 'Unknown',
     beliefs: [],
-    greenFlags: [],
+    greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: [],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
