@@ -388,6 +388,159 @@ export function CompanyDetail({ company }: { company: Company }) {
             </div>
             </div>
 
+            {/* Company Health & Growth */}
+            {(company.revenue || company.growth || company.runway || company.customers || company.growthMetrics) && (
+              <div>
+                <h3 className="section-title">Company Health & Growth</h3>
+
+                {/* Basic Metrics */}
+                {(company.revenue || company.growth || company.runway || company.customers) && (
+                  <div className="card p-5 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {company.revenue && (
+                        <div>
+                          <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Revenue</div>
+                          <div className="font-medium text-[var(--success)]">{company.revenue}</div>
+                        </div>
+                      )}
+                      {company.growth && (
+                        <div>
+                          <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Growth</div>
+                          <div className="font-medium text-[var(--success)]">{company.growth}</div>
+                        </div>
+                      )}
+                      {company.runway && (
+                        <div>
+                          <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Runway</div>
+                          <div className="font-medium">{company.runway}</div>
+                        </div>
+                      )}
+                      {company.customers && (
+                        <div>
+                          <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Customers</div>
+                          <div className="font-medium">{company.customers}</div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Growth Metrics Details */}
+                {company.growthMetrics && (
+                  <div className="space-y-4">
+                    {/* Current Growth */}
+                    <div className="card p-5">
+                      <h3 className="font-medium mb-3 flex items-center gap-2">
+                        Current Growth
+                        <span className={`badge ${
+                          company.growthMetrics.stage === 'hypergrowth' ? 'badge-success' :
+                          company.growthMetrics.stage === 'high-growth' ? 'badge-accent' :
+                          company.growthMetrics.stage === 'steady' ? 'badge' :
+                          'badge'
+                        }`}>
+                          {company.growthMetrics.stage}
+                        </span>
+                      </h3>
+
+                      <div className="space-y-3">
+                        {company.growthMetrics.revenueGrowth && (
+                          <div>
+                            <div className="text-xs text-[var(--muted)] mb-1">Revenue Growth</div>
+                            <div className="text-sm font-medium text-[var(--success)]">{company.growthMetrics.revenueGrowth}</div>
+                          </div>
+                        )}
+                        {company.growthMetrics.userGrowth && (
+                          <div>
+                            <div className="text-xs text-[var(--muted)] mb-1">User Growth</div>
+                            <div className="text-sm font-medium text-[var(--success)]">{company.growthMetrics.userGrowth}</div>
+                          </div>
+                        )}
+                        {company.growthMetrics.signals && company.growthMetrics.signals.length > 0 && (
+                          <div>
+                            <div className="text-xs text-[var(--muted)] mb-2">Growth Signals</div>
+                            <ul className="space-y-1">
+                              {company.growthMetrics.signals.map((signal, i) => (
+                                <li key={i} className="text-sm flex gap-2">
+                                  <span className="text-[var(--success)]">↗</span>
+                                  <span>{signal}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Market Potential */}
+                    <div className="card p-5">
+                      <h3 className="font-medium mb-3">Market Potential</h3>
+                      <div className="space-y-3">
+                        <div>
+                          <div className="text-xs text-[var(--muted)] mb-1">TAM (Total Addressable Market)</div>
+                          <div className="text-sm font-medium">{company.growthMetrics.tam}</div>
+                        </div>
+                        {company.growthMetrics.marketShare && (
+                          <div>
+                            <div className="text-xs text-[var(--muted)] mb-1">Market Share & Upside</div>
+                            <div className="text-sm">{company.growthMetrics.marketShare}</div>
+                          </div>
+                        )}
+                        <div>
+                          <div className="text-xs text-[var(--muted)] mb-1">Growth Ceiling</div>
+                          <div className="text-sm">{company.growthMetrics.ceiling}</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Tailwinds & Headwinds */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {company.growthMetrics.tailwinds && company.growthMetrics.tailwinds.length > 0 && (
+                        <div className="card p-5">
+                          <h3 className="font-medium mb-3 text-[var(--success)]">Tailwinds</h3>
+                          <ul className="space-y-2">
+                            {company.growthMetrics.tailwinds.map((wind, i) => (
+                              <li key={i} className="text-sm flex gap-2">
+                                <span className="text-[var(--success)]">+</span>
+                                <span>{wind}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {company.growthMetrics.headwinds && company.growthMetrics.headwinds.length > 0 && (
+                        <div className="card p-5">
+                          <h3 className="font-medium mb-3 text-[var(--warning)]">Headwinds</h3>
+                          <ul className="space-y-2">
+                            {company.growthMetrics.headwinds.map((wind, i) => (
+                              <li key={i} className="text-sm flex gap-2">
+                                <span className="text-[var(--warning)]">−</span>
+                                <span>{wind}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Moat Type */}
+                    {company.growthMetrics.moatType && (
+                      <div className="card p-5">
+                        <h3 className="font-medium mb-3">Competitive Moat</h3>
+                        <div className="space-y-2">
+                          <div>
+                            <span className="badge badge-accent mr-2">{company.growthMetrics.moatType}</span>
+                            {company.growthMetrics.moatStrength && (
+                              <span className="text-sm text-[var(--muted)]">{company.growthMetrics.moatStrength}</span>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* AI Native Level */}
             <div>
               <h3 className="section-title">AI-Native Level</h3>
