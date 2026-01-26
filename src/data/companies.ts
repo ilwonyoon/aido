@@ -3258,6 +3258,552 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    id: 'midjourney',
+    name: 'Midjourney',
+    description: 'Generative AI service that creates images from text prompts, accessed via web and Discord.',
+    website: 'https://www.midjourney.com/',
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Bootstrapped',
+    valuation: 'Unknown',
+    totalFunding: 'Self-funded (community-funded)',
+    fundingHistory: [],
+    revenue: 'Unknown',
+    growth: 'Unknown',
+    runway: 'Unknown',
+
+    // Competition
+    competitors: [
+      {
+        name: 'OpenAI DALL·E',
+        description: 'Text-to-image model',
+        whyTheyWin: 'OpenAI brand and ChatGPT integration',
+      },
+      {
+        name: 'Stable Diffusion',
+        description: 'Open-source text-to-image ecosystem',
+        whyTheyWin: 'Open-source, free to use',
+      },
+    ],
+    moat: [
+      'Community-backed research and fast iteration with small team',
+      'Strong aesthetic quality in image generation',
+    ],
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI image generation is the core product.',
+    aiDesignChallenges: [
+      'Designing prompt-to-image creative workflows across web and Discord',
+      'Building tools that scale creator feedback into product decisions',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'David Holz',
+        role: 'Founder & CEO',
+        background: 'Co-founder of Leap Motion',
+      },
+    ],
+    whyBuilding:
+      'A community-backed research group focused on bold bets around the future of the human experience.',
+    beliefs: [
+      'Build tools that make people dream bigger and more capable',
+      'Create AI tools that augment people rather than replace them',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Small team',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Image generation quality control and prompt understanding',
+          'Creative workflow optimization',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Image quality metrics and user satisfaction',
+          'Community feedback loops',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Discord bot UX and web interface',
+          'Prompt building and iteration tools',
+          'Image gallery and organization',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Remote (Bay Area and London preferred)',
+        url: 'https://www.midjourney.com/careers',
+        team: 'Frontend',
+        level: 'Senior',
+        type: 'full-time',
+      },
+    ],
+
+    cultureInsights: [],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 8,
+      whyJoin: [
+        'Bootstrapped — no VC pressure',
+        'Creative AI at its best',
+        'Remote-friendly',
+      ],
+      whyNot: [
+        'Unknown team size and structure',
+        'Discord-first UX may be limiting',
+      ],
+      nextActions: ['Check if Product Designer role is still open', 'Use Midjourney extensively'],
+      notes: 'Bootstrapped creative AI company with strong community.',
+    },
+
+    lastUpdated: '2025-01-26',
+    sources: [
+      {
+        title: 'Midjourney Careers',
+        url: 'https://www.midjourney.com/careers',
+      },
+      {
+        title: 'Midjourney (Wikipedia)',
+        url: 'https://en.wikipedia.org/wiki/Midjourney',
+      },
+    ],
+  },
+  {
+    id: 'runway',
+    name: 'Runway',
+    description: 'Generative AI company building video and multimedia creation tools.',
+    website: 'https://runwayml.com/',
+    headquarters: 'New York City, NY',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Series D',
+    valuation: 'Unknown',
+    totalFunding: '$536.5M (as of Apr 2025)',
+    fundingHistory: [
+      {
+        stage: 'Series D',
+        amount: '$308M',
+        date: '2025-04',
+        leadInvestors: ['General Atlantic'],
+      },
+    ],
+    revenue: 'Unknown',
+    growth: 'Unknown',
+    runway: 'Strong — $308M Series D',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Pika',
+        description: 'Text-to-video generation',
+        whyTheyWin: 'Faster iteration, simpler UX',
+      },
+    ],
+    moat: [
+      'Focus on world simulators for media generation',
+      'Runway Studios as in-house film and animation arm',
+    ],
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI-generated video and media tools are the core product.',
+    aiDesignChallenges: [
+      'Designing creation workflows for text-to-video and multimedia generation',
+      'Helping users control consistency across scenes and outputs',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Cristóbal Valenzuela',
+        role: 'Co-founder & CEO',
+        background: 'Co-founded Runway in 2018',
+      },
+      {
+        name: 'Anastasis Germanidis',
+        role: 'Co-founder & CTO',
+        background: 'Co-founded Runway in 2018',
+      },
+      {
+        name: 'Alejandro Matamala',
+        role: 'Co-founder & CDO',
+        background: 'Co-founded Runway in 2018',
+      },
+    ],
+    whyBuilding:
+      'Build AI to simulate the world through merging art and science.',
+    beliefs: [
+      'World simulators are the next media ecosystem',
+      'AI should expand what creators can produce',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Video generation quality and consistency control',
+          'Scene-to-scene coherence logic',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Video quality metrics',
+          'User creative workflow satisfaction',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Video editing and generation interface',
+          'Multi-modal creation tools',
+          'Asset management and organization',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [],
+
+    cultureInsights: [],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'Cutting-edge video AI',
+        'Strong funding ($536M)',
+        'Creative tooling focus',
+      ],
+      whyNot: [
+        'No Product Designer roles open',
+        'NYC-based may limit remote flexibility',
+      ],
+      nextActions: ['Monitor careers page for openings'],
+      notes: 'Watch for Product Designer openings.',
+    },
+
+    lastUpdated: '2025-01-26',
+    sources: [
+      {
+        title: 'Runway Series D - TechCrunch',
+        url: 'https://techcrunch.com/2025/04/03/runway-best-known-for-its-video-generating-models-raises-308m/',
+      },
+      {
+        title: 'Runway (Wikipedia)',
+        url: 'https://en.wikipedia.org/wiki/Runway_(company)',
+      },
+    ],
+  },
+  {
+    id: 'stability-ai',
+    name: 'Stability AI',
+    description: 'Generative AI company known for Stable Diffusion and models across image, video, audio, and 3D.',
+    website: 'https://stability.ai/',
+    headquarters: 'London, UK',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Private',
+    valuation: 'Unknown',
+    totalFunding: 'Unknown',
+    fundingHistory: [
+      {
+        stage: 'Strategic investment',
+        amount: 'Undisclosed',
+        date: '2025-03',
+        leadInvestors: ['WPP'],
+      },
+    ],
+    revenue: 'Unknown',
+    growth: 'Unknown',
+    runway: 'Unknown',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Midjourney',
+        description: 'Text-to-image with community focus',
+        whyTheyWin: 'Bootstrapped, strong aesthetic',
+      },
+      {
+        name: 'OpenAI DALL·E',
+        description: 'Text-to-image by OpenAI',
+        whyTheyWin: 'OpenAI brand power',
+      },
+    ],
+    moat: [
+      'Open visual media models spanning image, video, 3D, and audio',
+      'Enterprise-focused creative production tooling',
+    ],
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI model development is the core product (Stable Diffusion and other media models).',
+    aiDesignChallenges: [
+      'Designing enterprise-grade creative workflows across multiple media types',
+      'Balancing open access with responsible use and licensing',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Emad Mostaque',
+        role: 'Co-founder',
+        background: 'Co-founded Stability AI in 2019',
+      },
+      {
+        name: 'Cyrus Hodes',
+        role: 'Co-founder',
+        background: 'Co-founded Stability AI in 2019',
+      },
+    ],
+    whyBuilding:
+      'Unlock the power of open-source generative AI to expand human creativity.',
+    beliefs: [
+      'Open-source generative AI should empower creators and enterprises',
+      'Professional-grade creative AI should work across image, video, 3D, and audio',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Multi-modal generation control',
+          'Enterprise workflow automation',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Model quality evaluation',
+          'Enterprise customer satisfaction',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Enterprise creative tooling UI',
+          'Model selection and configuration',
+          'Asset management across media types',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [],
+
+    cultureInsights: [],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 6,
+      whyJoin: [
+        'Open-source AI pioneer',
+        'Multi-modal creative tools',
+      ],
+      whyNot: [
+        'No Product Designer roles open',
+        'Company direction unclear after leadership changes',
+      ],
+      nextActions: ['Monitor for stability and hiring'],
+      notes: 'Open-source focus is interesting but unclear product direction.',
+    },
+
+    lastUpdated: '2025-01-26',
+    sources: [
+      {
+        title: 'Stability AI WPP investment',
+        url: 'https://stability.ai/news/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production',
+      },
+      {
+        title: 'Stability AI (Wikipedia)',
+        url: 'https://en.wikipedia.org/wiki/Stability_AI',
+      },
+    ],
+  },
+  {
+    id: 'cohere',
+    name: 'Cohere',
+    description: 'Enterprise-focused LLM company building foundation models and AI products for regulated industries.',
+    website: 'https://cohere.com/',
+    headquarters: 'Toronto, ON',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Series D',
+    valuation: '$6.8B (Aug 2025)',
+    totalFunding: '~$1.5B',
+    fundingHistory: [
+      {
+        stage: 'Late-stage round',
+        amount: '$500M',
+        date: '2025-08',
+        valuation: '$6.8B',
+        leadInvestors: ['Radical Ventures', 'Inovia Capital'],
+      },
+    ],
+    revenue: 'Unknown',
+    growth: 'Unknown',
+    runway: 'Strong — $500M latest round',
+
+    // Competition
+    competitors: [
+      {
+        name: 'OpenAI',
+        description: 'General-purpose LLM platform with enterprise offerings',
+        whyTheyWin: 'Brand recognition, ChatGPT distribution',
+      },
+      {
+        name: 'Anthropic',
+        description: 'Safety-focused foundation model company',
+        whyTheyWin: 'Enterprise trust, Claude quality',
+      },
+    ],
+    moat: [
+      'Enterprise-only focus with secure and private deployments',
+      'Positioning around regulated industries and data sovereignty',
+    ],
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'Enterprise-grade LLMs and AI platforms are the core product.',
+    aiDesignChallenges: [
+      'Designing secure enterprise workflows and admin experiences',
+      'Building trust, privacy, and governance into AI product UX',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Aidan Gomez',
+        role: 'Co-founder & CEO',
+        background: 'Former Google Brain researcher; co-authored the Transformer paper',
+      },
+      {
+        name: 'Ivan Zhang',
+        role: 'Co-founder',
+        background: 'Researcher; co-founded Cohere in 2019',
+      },
+      {
+        name: 'Nick Frosst',
+        role: 'Co-founder',
+        background: 'Former Google Brain researcher; co-founded Cohere in 2019',
+      },
+    ],
+    whyBuilding:
+      'Scale intelligence to serve humanity by empowering enterprises with practical AI.',
+    beliefs: [
+      "AI's highest purpose is to enhance human wellbeing",
+      'Enterprise AI should drive real-world productivity and impact',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Enterprise LLM behavior and safety controls',
+          'Multi-tenant admin and governance logic',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Enterprise customer satisfaction metrics',
+          'Model performance and reliability dashboards',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Enterprise admin consoles and dashboards',
+          'Developer platform and API documentation',
+          'Security and compliance UX',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [],
+
+    cultureInsights: [],
+
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'Enterprise AI focus',
+        'Strong funding and team (Transformer co-author)',
+        'Remote-friendly',
+      ],
+      whyNot: [
+        'No Product Designer roles open',
+        'Enterprise B2B may be less exciting than consumer',
+      ],
+      nextActions: ['Monitor careers page for openings'],
+      notes: 'Enterprise LLM with strong technical team.',
+    },
+
+    lastUpdated: '2025-01-26',
+    sources: [
+      {
+        title: 'Cohere $6.8B funding - CNBC',
+        url: 'https://www.cnbc.com/2025/08/14/ai-startup-cohere-valued-at-6point8-billion-in-latest-fundraise-appoints-new-executives.html',
+      },
+      {
+        title: 'Cohere (Wikipedia)',
+        url: 'https://en.wikipedia.org/wiki/Cohere',
+      },
+    ],
+  },
 ];
 
 export function getCompanyById(id: string): Company | undefined {
