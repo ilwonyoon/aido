@@ -543,7 +543,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         });
                         router.push(`/company/${company.id}`);
                       }}
-                      className={`border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors cursor-pointer ${
+                      className={`group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors cursor-pointer ${
                         interest === 'not_interested' ? 'opacity-50' : ''
                       }`}
                     >
@@ -568,16 +568,16 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           </div>
                         </Link>
                       </td>
-                      <td className="py-3 px-4 text-sm text-[var(--muted)] border-r border-[var(--border)]">
+                      <td className="py-3 px-4 text-sm text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors border-r border-[var(--border)]">
                         <div className="line-clamp-2">{company.description}</div>
                       </td>
                       <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
-                        <span className="text-[var(--muted)]">{company.headquarters.split(',')[0]}</span>
-                        <span className="text-[var(--muted)]">, </span>
+                        <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">{company.headquarters.split(',')[0]}</span>
+                        <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">, </span>
                         {company.remote === 'No' ? (
                           <span className="text-[var(--warning)]">On-site</span>
                         ) : company.remote === 'Hybrid' ? (
-                          <span className="text-[var(--muted)]">Hybrid</span>
+                          <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">Hybrid</span>
                         ) : (
                           <span className="text-[var(--success)]">Remote</span>
                         )}
@@ -585,7 +585,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                       <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
                         <div className="text-[var(--foreground)]">{company.stage}</div>
                         {company.totalFunding && (
-                          <div className="text-[var(--muted)] mt-0.5">{company.totalFunding}</div>
+                          <div className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors mt-0.5">{company.totalFunding}</div>
                         )}
                       </td>
                       <td className="py-3 px-4 text-center border-r border-[var(--border)]">
