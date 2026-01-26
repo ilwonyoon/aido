@@ -358,7 +358,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
                     {company.description}
                   </p>
-                  <div className="flex items-center gap-3 text-sm flex-wrap">
+                  <div className="flex items-center gap-1.5 text-sm flex-wrap">
                     <span className="text-[var(--muted)]">{company.headquarters}</span>
                     <span className="text-[var(--border)]">|</span>
                     <span className="text-[var(--muted)]">{company.stage}</span>
