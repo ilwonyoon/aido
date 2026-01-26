@@ -32,7 +32,7 @@ export const harmonic: Company = {
         '$100M Series B at $875M valuation (Jul 2025)',
         'Aristotle launch + IMO gold medal-level performance (2025)',
       ],
-      tam: '$52.45B global software testing market (2024)',
+      tam: '$52.79B global testing software market (2023)',
       marketShare: '<0.1% of TAM = 1000x+ upside potential',
       ceiling: 'Early innings: formal verification and math-first AI adoption just beginning',
       tailwinds: [
@@ -183,6 +183,6 @@ export const harmonic: Company = {
       { title: 'Harmonic website', url: 'https://harmonic.fun' },
       { title: 'Harmonic LinkedIn', url: 'https://www.linkedin.com/company/harmonicmath' },
       { title: 'Harmonic Crunchbase', url: 'https://www.crunchbase.com/organization/harmonic-ai-f3d1' },
-      { title: 'Software testing market size (2024)', url: 'https://www.thebusinessresearchcompany.com/market-insights/software-testing-market-insights-2025' },
+      { title: 'Testing software market size (2023)', url: 'https://www.prnewswire.com/news-releases/testing-software-market-overview-estimated-market-size-forecast-growth-rate-and-major-drivers--by-the-business-research-company-301950731.html' },
     ],
   };
