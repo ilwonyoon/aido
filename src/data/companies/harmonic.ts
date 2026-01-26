@@ -147,6 +147,19 @@ export const harmonic: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Field sales representatives selling home improvement and HVAC services door-to-door',
+        secondary: 'Sales managers coaching distributed field sales teams',
+    },
+    userProblems: [
+        'Field sales reps cannot receive real-time coaching during in-person customer interactions',
+        'Sales managers cannot scale 1-on-1 coaching across hundreds of distributed reps',
+        'Best sales techniques stay siloed with top performers instead of shared systematically',
+        'Onboarding new field reps requires weeks of shadowing experienced sellers',
+        'Performance feedback comes days after customer interactions when it is less actionable',
+    ],
+
     // Designer Links
     designerLinks: [],
 

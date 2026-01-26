@@ -44,6 +44,20 @@ export const heygen: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Marketing teams and content creators producing video content at scale',
+        secondary: 'Sales teams, educators, and HR creating personalized video messages',
+    },
+    userProblems: [
+        'Creating video content requires expensive production, cameras, and video editing skills',
+        'Recording the same message in multiple languages requires hiring voice actors',
+        'Personalizing video content for different audiences requires re-recording everything',
+        'Professional-quality talking head videos need studio setup and lighting',
+        'Scaling video production to hundreds of variations is prohibitively expensive',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Los Angeles, CA (Hybrid)', url: 'https://heygen.com/careers', type: 'full-time' }],
     cultureInsights: [],

@@ -145,6 +145,19 @@ export const abridge: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Physicians and clinical staff documenting patient encounters in real-time',
+        secondary: 'Healthcare administrators reducing documentation burden and improving efficiency',
+    },
+    userProblems: [
+        'Doctors spend 2+ hours daily on medical documentation taking time from patient care',
+        'Typing into EHR systems during appointments reduces doctor-patient eye contact',
+        'Medical scribes cost $30-$50K+ per doctor annually',
+        'Physician burnout from administrative burden leads to early retirement',
+        'Accurate clinical documentation is critical but extremely time-consuming',
+    ],
+
     // Designer Links
     designerLinks: [],
 

@@ -44,6 +44,20 @@ export const codeium: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Software developers seeking free AI code completion',
+        secondary: 'Enterprise engineering teams needing self-hosted AI coding tools',
+    },
+    userProblems: [
+        'GitHub Copilot and Cursor charge monthly fees limiting adoption by budget-conscious developers',
+        'Enterprises need self-hosted AI code assistants for security and compliance',
+        'Context-aware code suggestions from AI require deep codebase understanding',
+        'Developers using non-standard languages lack good AI completion options',
+        'Switching between IDE and AI chat for code questions breaks flow',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://codeium.com/careers', type: 'full-time' }],
     cultureInsights: [],

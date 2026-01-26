@@ -141,6 +141,19 @@ export const cursor: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Professional software engineers at technology companies',
+        secondary: 'Individual developers and engineering students learning to code',
+    },
+    userProblems: [
+        'Manual coding is slow compared to thinking speed — developers spend hours typing boilerplate',
+        'Understanding large codebases with thousands of files wastes time navigating and searching',
+        'Context-switching between documentation, Stack Overflow, and IDE breaks flow state',
+        'Repetitive coding tasks consume developer time that could go to solving hard problems',
+        'AI coding assistants produce low-quality suggestions that require extensive editing',
+    ],
+
     // Designer Links
     designerLinks: [],
 

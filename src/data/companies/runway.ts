@@ -104,6 +104,19 @@ export const runway: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Professional filmmakers, VFX artists, and video production studios',
+        secondary: 'Content creators and marketing teams needing high-quality video assets',
+    },
+    userProblems: [
+        'Professional video production requires expensive crews, equipment, and months of post-production',
+        'VFX and CGI work costs $50K-$500K+ per minute for Hollywood-grade quality',
+        'Rapid prototyping and storyboarding for film requires manual illustration skills',
+        'B-roll and background footage requires location shoots or expensive stock libraries',
+        'Exploring creative variations and alternate takes is limited by production budgets',
+    ],
+
     // Designer Links
     designerLinks: [],
 

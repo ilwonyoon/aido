@@ -139,6 +139,19 @@ export const jasper: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Marketing teams and content marketers creating blog posts, ads, and copy',
+        secondary: 'Small business owners and solopreneurs needing content at scale',
+    },
+    userProblems: [
+        'Creating high-quality marketing copy and blog content takes hours per piece',
+        'Hiring freelance writers costs $100-$500+ per article limiting content output',
+        'Maintaining consistent brand voice across multiple writers is difficult',
+        'SEO content production requires volume most teams cannot sustain',
+        'Blank page syndrome slows content creation requiring extensive research and outlining',
+    ],
+
     // Designer Links
     designerLinks: [],
 

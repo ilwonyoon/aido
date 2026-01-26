@@ -44,6 +44,20 @@ export const brex: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Startups and high-growth companies managing corporate spending',
+        secondary: 'Finance teams and controllers at mid-market technology companies',
+    },
+    userProblems: [
+        'Traditional business credit cards require personal guarantees and established credit history',
+        'Expense management requires manual receipt collection and reconciliation',
+        'Corporate card programs lack real-time spend controls and visibility',
+        'Finance teams spend days closing books and reconciling expenses',
+        'Employees waiting for expense reimbursements creates friction and delays',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.brex.com/careers', type: 'full-time' }],
     cultureInsights: [],

@@ -141,6 +141,19 @@ export const perplexity: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Information seekers and researchers who need quick, accurate answers',
+        secondary: 'Professionals doing market research, competitive analysis, and knowledge work',
+    },
+    userProblems: [
+        'Google search returns 10 blue links requiring manual synthesis across multiple sources',
+        'Finding trustworthy information requires fact-checking multiple websites',
+        'Research tasks take hours clicking through search results and aggregating insights',
+        'ChatGPT provides answers but lacks source citations making verification difficult',
+        'Students and professionals need quick answers with credible sources for academic or work use',
+    ],
+
     // Designer Links
     designerLinks: [],
 

@@ -127,6 +127,19 @@ export const vercel: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Frontend developers building web applications with Next.js and React',
+        secondary: 'Full-stack teams at startups and enterprises needing deployment infrastructure',
+    },
+    userProblems: [
+        'Deploying web applications requires complex DevOps knowledge and infrastructure setup',
+        'Website performance optimization for global users requires CDN and edge computing expertise',
+        'Building production-ready UI components from scratch is slow and repetitive',
+        'Managing staging environments, preview deployments, and CI/CD pipelines is time-consuming',
+        'Scaling web applications for traffic spikes requires infrastructure expertise teams lack',
+    ],
+
     // Designer Links
     designerLinks: [
       {

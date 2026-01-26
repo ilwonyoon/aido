@@ -139,6 +139,19 @@ export const ramp: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Finance teams and controllers at mid-market and enterprise companies',
+        secondary: 'Employees needing corporate cards and expense management',
+    },
+    userProblems: [
+        'Traditional corporate cards lack real-time spend visibility and control',
+        'Expense reporting requires manual receipt collection and categorization',
+        'Finance teams cannot enforce spend policies without manual review',
+        'Reconciling expenses across teams takes days of manual accounting work',
+        'Approval workflows for purchases slow down business operations',
+    ],
+
     // Designer Links
     designerLinks: [],
 

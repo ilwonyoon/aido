@@ -44,6 +44,20 @@ export const glean: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Enterprise knowledge workers searching for information across company tools',
+        secondary: 'IT and ops teams managing knowledge access and onboarding at scale',
+    },
+    userProblems: [
+        'Finding information across Slack, Drive, Confluence, and 20+ tools wastes hours daily',
+        'Onboarding new employees requires asking colleagues where information lives',
+        'Tribal knowledge in Slack threads and emails becomes impossible to find',
+        'Search within individual tools returns too many irrelevant results requiring manual filtering',
+        'Teams duplicate work because they cannot find existing docs, code, or past decisions',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'Palo Alto, CA (Hybrid)', url: 'https://www.glean.com/careers', type: 'full-time' }],
     cultureInsights: [],

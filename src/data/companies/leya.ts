@@ -123,6 +123,19 @@ export const leya: Company = {
     },
     productStage: '0→1',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'European law firms and corporate legal departments',
+        secondary: 'Individual lawyers and legal professionals in EU countries',
+    },
+    userProblems: [
+        'Legal research across European jurisdictions requires knowledge of multiple legal systems',
+        'US-based legal AI tools lack European case law and regulatory context',
+        'GDPR compliance requires keeping legal data within EU borders',
+        'Smaller European law firms cannot afford US legal AI pricing',
+        'Language barriers limit access to legal AI trained primarily on English text',
+    ],
+
     designerLinks: [],
     openRoles: [],
 

@@ -123,6 +123,19 @@ export const elevenlabs: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Publishers, audiobook producers, and content creators needing voice-over',
+        secondary: 'Game studios, filmmakers, and developers building voice-enabled applications',
+    },
+    userProblems: [
+        'Professional voice actors cost $100-$500+ per hour limiting audiobook and content production',
+        'Localizing content into multiple languages requires hiring native voice talent',
+        'Game developers need thousands of voice lines for NPCs but lack budget for full cast',
+        'Content creators want consistent narration voice across videos without hiring talent',
+        'Accessibility features like text-to-speech need natural-sounding voices not robotic ones',
+    ],
+
     designerLinks: [
       {
         name: 'ElevenLabs Blog',

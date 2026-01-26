@@ -142,6 +142,19 @@ export const listenLabs: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Call centers and customer service teams analyzing customer conversations',
+        secondary: 'Sales and support managers coaching teams based on conversation data',
+    },
+    userProblems: [
+        'Quality assurance teams cannot manually review thousands of customer calls',
+        'Customer insights and sentiment hidden in unstructured conversation data',
+        'Compliance violations in customer calls go undetected without systematic review',
+        'Training and coaching sales reps requires listening to hours of call recordings',
+        'Finding specific customer issues or complaints requires manual search through calls',
+    ],
+
     // Designer Links
     designerLinks: [],
 

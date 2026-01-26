@@ -137,6 +137,19 @@ export const openai: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'General consumers and knowledge workers seeking AI assistance',
+        secondary: 'Developers building AI applications via API and enterprise teams',
+    },
+    userProblems: [
+        'Knowledge workers spend hours on research, writing, and analysis that could be accelerated',
+        'Learning new topics requires extensive reading and synthesis of information',
+        'Creative tasks like brainstorming and content generation hit productivity limits',
+        'Developers need powerful AI models without building infrastructure from scratch',
+        'Businesses need AI for customer support, automation, and data analysis at scale',
+    ],
+
     // Designer Links
     designerLinks: [],
 

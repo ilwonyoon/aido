@@ -140,6 +140,19 @@ export const blossom: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Healthcare providers and clinical staff documenting patient encounters',
+        secondary: 'Medical practices and health systems reducing administrative burden',
+    },
+    userProblems: [
+        'Doctors spend 2+ hours daily on electronic health record documentation',
+        'Typing clinical notes during patient visits reduces eye contact and engagement',
+        'Medical dictation requires specialized training and expensive transcription services',
+        'Administrative burden contributes to physician burnout and early retirement',
+        'Accurate clinical documentation is critical but time-consuming and error-prone',
+    ],
+
     // Designer Links
     designerLinks: [],
 

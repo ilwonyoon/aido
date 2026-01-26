@@ -124,6 +124,19 @@ export const figma: Company = {
     },
     productStage: '10→100',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Product designers and design teams at technology companies',
+        secondary: 'UX researchers, product managers, and engineers collaborating on product design',
+    },
+    userProblems: [
+        'Design collaboration requires sending files back and forth losing version control',
+        'Designers on distributed teams cannot work together in real-time like developers do with code',
+        'Installing and maintaining desktop design tools creates friction and compatibility issues',
+        'Sharing design work with non-designers for feedback requires exporting static files',
+        'Scaling design systems across teams requires manual component distribution and updates',
+    ],
+
     designerLinks: [
       {
         name: 'Figma Blog',

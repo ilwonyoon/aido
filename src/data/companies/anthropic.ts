@@ -138,6 +138,19 @@ export const anthropic: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Software developers and technical teams building AI products',
+        secondary: 'Enterprise knowledge workers using AI assistants for research, writing, and analysis',
+    },
+    userProblems: [
+        'Building safe, reliable AI systems requires deep ML expertise most teams lack',
+        'Existing LLMs produce hallucinations and unreliable outputs in production',
+        'AI assistants struggle with complex, multi-step reasoning tasks requiring deep analysis',
+        'Developers need AI that follows instructions precisely without constant supervision',
+        'Enterprises need trustworthy AI with strong safety guarantees for regulated industries',
+    ],
+
     // Designer Links
     designerLinks: [
       {

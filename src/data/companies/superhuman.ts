@@ -138,6 +138,19 @@ export const superhuman: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Executives, founders, and professionals managing 100+ emails daily',
+        secondary: 'Sales professionals and customer-facing teams living in email',
+    },
+    userProblems: [
+        'Email overload makes inbox zero impossible leading to missed important messages',
+        'Gmail and Outlook lack keyboard shortcuts slowing down email triage',
+        'Finding past emails and conversations requires slow search and scrolling',
+        'Email takes hours daily pulling professionals away from deep work',
+        'Drafting and sending emails lacks AI assistance for faster responses',
+    ],
+
     // Designer Links
     designerLinks: [],
 

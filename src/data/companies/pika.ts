@@ -120,6 +120,19 @@ export const pika: Company = {
     },
     productStage: '1→10',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Social media content creators and marketing teams',
+        secondary: 'Independent filmmakers, educators, and hobbyists exploring video creation',
+    },
+    userProblems: [
+        'Creating engaging video content for social media requires video editing skills and expensive tools',
+        'Stock video libraries lack specific, unique footage matching creative vision',
+        'Animating still images or product shots requires motion graphics expertise',
+        'Rapid iteration and experimentation with video concepts is time-consuming',
+        'Professional video production is too expensive for small content budgets',
+    ],
+
     designerLinks: [
       {
         name: 'Pika Twitter',

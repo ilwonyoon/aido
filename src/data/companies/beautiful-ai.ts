@@ -44,6 +44,20 @@ export const beautifulAi: Company = {
       interface: { level: 'high', tasks: [] },
     },
     productStage: '10→100',
+
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Business professionals and consultants creating client presentations',
+        secondary: 'Sales teams, educators, and marketers needing professional slide decks',
+    },
+    userProblems: [
+        'Creating beautiful presentations requires design skills most business people lack',
+        'PowerPoint templates look generic and require extensive manual formatting',
+        'Aligning elements and maintaining visual consistency is tedious and time-consuming',
+        'Collaborating on presentations requires sending files and merging changes manually',
+        'Starting from a blank slide deck wastes time on layout and structure',
+    ],
+
     designerLinks: [],
     openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.beautiful.ai/careers', type: 'full-time' }],
     cultureInsights: [],

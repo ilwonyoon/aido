@@ -125,6 +125,19 @@ export const cognition: Company = {
     },
     productStage: '0→1',
 
+    // Product & User Context
+    targetAudiences: {
+        primary: 'Software engineering managers and tech leads managing development teams',
+        secondary: 'Enterprise engineering teams needing to scale output without hiring',
+    },
+    userProblems: [
+        'Hiring senior engineers costs $150K-$300K+ per year limiting team growth',
+        'Junior engineers require extensive mentorship and produce slower output',
+        'Engineering backlogs grow faster than teams can hire and onboard talent',
+        'Routine coding tasks consume developer time that could go to architecture and innovation',
+        'Remote teams across timezones struggle with synchronous pair programming',
+    ],
+
     designerLinks: [
       {
         name: 'Cognition Blog',
