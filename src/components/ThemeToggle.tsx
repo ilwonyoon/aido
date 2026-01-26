@@ -43,19 +43,18 @@ export function ThemeToggle() {
         aria-label={`Current theme: ${currentTheme.label}`}
       >
         <span>{currentTheme.icon}</span>
-        <span>{currentTheme.label}</span>
-        <svg 
-          width="10" 
-          height="10" 
-          viewBox="0 0 12 12" 
-          fill="none" 
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 12 12"
+          fill="none"
           className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}
         >
-          <path 
-            d="M3 4.5L6 7.5L9 4.5" 
-            stroke="currentColor" 
-            strokeWidth="1.5" 
-            strokeLinecap="round" 
+          <path
+            d="M3 4.5L6 7.5L9 4.5"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
             strokeLinejoin="round"
           />
         </svg>
