@@ -1711,38 +1711,7 @@ export const companies: Company[] = [
         description: 'Product and design updates',
       },
     ],
-    openRoles: [
-      {
-        title: 'Senior / Staff Product Designer',
-        location: 'Remote (Global)',
-        url: 'https://linear.app/careers',
-        team: 'Product',
-        level: 'Senior/Staff',
-        type: 'full-time',
-        postedDate: '2025-01',
-        aboutRole: 'Build project management software that empowers high-impact companies. Work in small, autonomous project teams with engineers.',
-        responsibilities: [
-          'Own end-to-end product design for Linear features',
-          'Partner tightly with engineers from ideation to shipping',
-          'Maintain and evolve Linear\'s design system',
-          'Prototype and iterate quickly',
-          'Shape product direction with leadership',
-        ],
-        requirements: [
-          'Robust design skills and sharp product thinking',
-          'Ability to engage in technical discussions',
-          'Experience shipping high-quality products',
-          'Strong systems thinking',
-        ],
-        preferred: [
-          'Developer tools experience',
-          'Design systems expertise',
-          'Remote work experience',
-        ],
-        teamInfo: 'Fully remote team of 178 people. Designer-CEO culture. Small, autonomous project teams.',
-        whyInteresting: 'Designer-led company (CEO is a designer). Remote-first. Building the tool developers love — rare for B2B software.',
-      },
-    ],
+    openRoles: [], // No Product Designer roles open (only Web & Brand Designer)
 
     cultureInsights: [
       {
