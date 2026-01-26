@@ -149,11 +149,93 @@ function DropdownFilter({
   );
 }
 
+function MultiSelectFilter({
+  label,
+  values,
+  options,
+  onChange,
+}: {
+  label: string;
+  values: string[];
+  options: { value: string; label: string }[];
+  onChange: (values: string[]) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
+
+  const toggleValue = (value: string) => {
+    if (values.includes(value)) {
+      onChange(values.filter((v) => v !== value));
+    } else {
+      onChange([...values, value]);
+    }
+  };
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors ${
+          values.length > 0
+            ? 'border-[var(--accent)] text-[var(--foreground)]'
+            : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+        }`}
+      >
+        <span>{displayLabel}</span>
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
+      {isOpen && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+          <div className="absolute left-0 top-full mt-1 min-w-full bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+            {values.length > 0 && (
+              <button
+                onClick={() => onChange([])}
+                className="w-full text-left px-4 py-2 text-sm text-[var(--muted)] hover:bg-[var(--card-hover)] transition-colors border-b border-[var(--border)]"
+              >
+                Clear all
+              </button>
+            )}
+            {options.map((opt) => {
+              const isSelected = values.includes(opt.value);
+              return (
+                <button
+                  key={opt.value}
+                  onClick={() => toggleValue(opt.value)}
+                  className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${
+                    isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
+                  }`}
+                >
+                  <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${
+                    isSelected
+                      ? 'bg-[var(--accent)] border-[var(--accent)]'
+                      : 'border-[var(--border)]'
+                  }`}>
+                    {isSelected && (
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="white">
+                        <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
+                      </svg>
+                    )}
+                  </span>
+                  {opt.label}
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 export function CompanyFilters({ companies }: { companies: Company[] }) {
   const [sortBy, setSortBy] = useState<SortOption>('interest');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
-  const [locationFilter, setLocationFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
 
   // Get unique locations (city level, prioritize SF Bay Area)
@@ -216,7 +298,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       if (aiLevelFilter && company.aiNativeLevel !== parseInt(aiLevelFilter)) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
-      if (locationFilter && !company.headquarters.includes(locationFilter)) return false;
+      if (
+        locationFilter.length > 0 &&
+        !locationFilter.some((loc) => company.headquarters.includes(loc))
+      ) {
+        return false;
+      }
       return true;
     });
   }, [companies, aiLevelFilter, openRolesFilter, locationFilter]);
@@ -263,12 +350,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     return sorted;
   }, [filteredCompanies, sortBy, interestStatuses]);
 
-  const hasActiveFilters = aiLevelFilter || openRolesFilter || locationFilter;
+  const hasActiveFilters = aiLevelFilter || openRolesFilter || locationFilter.length > 0;
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setOpenRolesFilter('');
-    setLocationFilter('');
+    setLocationFilter([]);
   };
 
   return (
@@ -305,9 +392,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             ]}
             onChange={setOpenRolesFilter}
           />
-          <DropdownFilter
+          <MultiSelectFilter
             label="Location"
-            value={locationFilter}
+            values={locationFilter}
             options={locations.map(loc => ({ value: loc, label: loc }))}
             onChange={setLocationFilter}
           />
