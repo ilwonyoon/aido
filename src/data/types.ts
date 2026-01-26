@@ -75,6 +75,26 @@ export interface Company {
   runway?: string;
   customers?: string;
 
+  // Growth & Potential
+  growthMetrics?: {
+    // Current growth trajectory
+    stage: 'hypergrowth' | 'high-growth' | 'steady' | 'plateau' | 'declining' | 'unknown';
+    revenueGrowth?: string; // "3x YoY ($50M → $150M)" or "Unknown"
+    userGrowth?: string; // "10M → 50M users (5x in 1 year)" or "Unknown"
+    signals: string[]; // ["Hiring 200+ this year", "Expanding to EU/APAC", "Series D at 3x valuation"]
+
+    // Market potential
+    tam: string; // "$100B market (AI coding tools)"
+    marketShare?: string; // "0.5% of TAM = 200x upside potential"
+    ceiling: string; // "Early innings: Replacing all legacy dev tools" or "Approaching saturation"
+    tailwinds: string[]; // ["AI adoption accelerating", "Developer productivity = must-have"]
+    headwinds: string[]; // ["GitHub Copilot competition", "Commoditization risk"]
+
+    // Competitive moat
+    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'none';
+    moatStrength?: string; // "Strong: 10M+ users generate training data"
+  };
+
   // Competition
   competitors: {
     name: string;
