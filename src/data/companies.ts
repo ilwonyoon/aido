@@ -1678,6 +1678,39 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "$30M ARR (estimated, growing rapidly)",
+      userGrowth: "300K+ candidates, 3000+ companies hiring",
+      signals: [
+        "$250M valuation at Series B (10x from $25M in 8 months)",
+        "$32M raised (Benchmark + Peter Thiel)",
+        "Used by OpenAI, Anthropic, Ramp for hiring",
+        "300K+ candidates, 3000+ companies",
+        "Youngest YC founders (19, 22 at start)",
+      ],
+
+      tam: "$200B+ (Global recruiting and staffing market)",
+      marketShare: "<0.1% (very early, niche positioning in tech hiring)",
+      ceiling: "Early innings: AI interviewing is controversial and unproven at scale. Market forming, but regulatory/ethical headwinds may limit ceiling.",
+      tailwinds: [
+        "Tech hiring remains inefficient and expensive",
+        "Remote work increases global talent pool",
+        "Companies desperate for quality engineers",
+        "AI can reduce hiring bias if done right",
+      ],
+      headwinds: [
+        "LinkedIn dominates professional recruiting ($15B revenue)",
+        "AI interviewing has ethical concerns (fairness, transparency)",
+        "Candidates may resist AI-only interviews",
+        "Regulation risk (EU AI Act covers hiring algorithms)",
+        "Two-sided marketplace is hard to scale (chicken-egg problem)",
+      ],
+
+      moatType: 'network-effects',
+      moatStrength: "Medium: Two-sided marketplace creates network effects (more candidates → better matches → more employers), but LinkedIn has massive existing network. Brand with top AI companies (OpenAI, Anthropic) is valuable but early.",
+    },
+
     tracking: {
       status: 'watching',
       fitScore: 6,
@@ -1881,6 +1914,38 @@ export const companies: Company[] = [
         url: 'https://www.levels.fyi/companies/linear/',
       },
     ],
+
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "~$50M ARR (estimated, 2x YoY)",
+      userGrowth: "25,000+ companies, growing steadily",
+      signals: [
+        "$1.6B valuation at Series C",
+        "$152M total funding (Sequoia, a16z)",
+        "25,000+ companies including Vercel, Stripe, Coinbase",
+        "Profitable company (no burn)",
+        "Designer-founder CEO (Karri Saarinen, ex-Airbnb Principal Designer)",
+      ],
+
+      tam: "$10B+ (Project management and issue tracking for software teams)",
+      marketShare: "~0.5% (competing against Jira's dominance)",
+      ceiling: "Mid innings: Engineering tools market is mature, but Linear is taking share from Jira. Ceiling depends on expanding beyond engineering teams.",
+      tailwinds: [
+        "Developer community strongly advocates for Linear over Jira",
+        "Remote-first work increases need for async collaboration tools",
+        "Modern engineering teams reject legacy enterprise tools",
+        "Speed and polish create viral word-of-mouth",
+      ],
+      headwinds: [
+        "Jira has massive enterprise footprint and Atlassian ecosystem lock-in",
+        "Notion, Asana expanding into project management",
+        "Limited to engineering teams (not cross-functional like Asana)",
+        "Enterprise sales cycle is slow vs product-led growth",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Workflow integration creates switching costs, and developer brand loyalty is strong. But no network effects. Quality and speed are defensible through design craft, but replicable.",
+    },
 
     tracking: {
       status: 'interested',
@@ -2094,6 +2159,39 @@ export const companies: Company[] = [
         url: 'https://www.levels.fyi/companies/notion/',
       },
     ],
+
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$500M ARR (Sept 2025), ~1.5-2x YoY",
+      userGrowth: "4M+ paying customers, 50% of Fortune 500",
+      signals: [
+        "$500M ARR, profitable",
+        "$10B → $11B valuation (tender offer 2024)",
+        "4M+ paying customers, 100M+ total users",
+        "50% of Fortune 500 using Notion",
+        "IPO-ready (Series D stage)",
+      ],
+
+      tam: "$50B+ (Productivity software for all knowledge workers)",
+      marketShare: "~1% = 50x upside",
+      ceiling: "Mid innings: Productivity tools market is mature (Microsoft Office, Google Workspace dominate), but Notion capturing modern team workflows. Ceiling depends on enterprise adoption depth.",
+      tailwinds: [
+        "Gen Z/millennial workforce prefers Notion over legacy tools",
+        "Remote work drives demand for flexible collaboration",
+        "Templates and community create network effects",
+        "Block-based architecture enables customization vs rigid tools",
+      ],
+      headwinds: [
+        "Microsoft/Google have distribution through enterprise bundles",
+        "Notion AI playing catch-up to competitors",
+        "Confluence entrenched in large enterprises",
+        "Performance issues at scale (large workspaces)",
+        "Enterprise feature gaps vs Confluence",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Switching costs from accumulated content and workflows create moat. Template sharing and community provide weak network effects. Brand with knowledge workers is strong, but feature set is replicable.",
+    },
 
     tracking: {
       status: 'watching',
@@ -2326,6 +2424,39 @@ export const companies: Company[] = [
       },
     ],
 
+    growthMetrics: {
+      stage: 'steady',
+      revenueGrowth: "$820M (2025), ~1.5x YoY",
+      userGrowth: "Millions of designers globally, enterprise adoption growing",
+      signals: [
+        "$57B market cap at IPO (July 2025)",
+        "$820M revenue (2025), growing steadily",
+        "Dominant design tool for product teams",
+        "Adobe attempted $20B acquisition (blocked by regulators)",
+        "Public company validation",
+      ],
+
+      tam: "$15B+ (Design and creative software market)",
+      marketShare: "~5% = 3x upside (already market leader in product design)",
+      ceiling: "Late innings: Figma already won product design tool category. Growth depends on expanding to adjacent markets (design-to-code, prototyping, whiteboarding).",
+      tailwinds: [
+        "Real-time collaboration is now table stakes for all tools",
+        "Browser-based removes install friction",
+        "Community plugins and templates create ecosystem lock-in",
+        "Enterprise adoption increasing as design teams scale",
+      ],
+      headwinds: [
+        "Adobe XD discontinued but Adobe still owns creative suite ecosystem",
+        "Sketch maintaining loyal Mac-native user base",
+        "Framer competing in design-to-production workflow",
+        "Public company: growth expectations, bureaucracy increasing",
+        "AI features behind expectations (Figma AI underwhelming)",
+      ],
+
+      moatType: 'network-effects',
+      moatStrength: "Strong: Real-time collaboration creates team-level network effects (designers pull in their teams). Plugin ecosystem and community files create switching costs. Market leader brand is defensible.",
+    },
+
     tracking: {
       status: 'watching',
       fitScore: 6,
@@ -2550,6 +2681,40 @@ export const companies: Company[] = [
         content: 'No salary data yet. European comp + equity.',
       },
     ],
+
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$100M ARR (estimated 2025), ~3x YoY",
+      userGrowth: "Developers globally, enterprise adoption growing",
+      signals: [
+        "$6.2B valuation at Series C (10x from $600M in 12 months)",
+        "$1.17B raised in 18 months",
+        "Fastest European AI startup to $6B+ valuation",
+        "DeepMind/Meta AI research talent founders",
+        "European open-weight AI champion",
+      ],
+
+      tam: "$500B+ (Foundation model market = all AI applications)",
+      marketShare: "<0.1% (competing against OpenAI, Anthropic, Google)",
+      ceiling: "Early innings: Foundation model market is forming. European sovereignty angle creates regional moat, but global market dominated by US/Chinese players.",
+      tailwinds: [
+        "European data sovereignty concerns favor Mistral over US providers",
+        "Open-weight models capture developer trust and experimentation",
+        "EU AI regulations may favor European providers",
+        "French government support (AI strategy)",
+        "Enterprise demand for self-hosted models (security, control)",
+      ],
+      headwinds: [
+        "OpenAI, Anthropic, Google have larger compute budgets",
+        "Meta's open-source Llama is free and competitive",
+        "Limited consumer distribution vs ChatGPT",
+        "European market smaller than US/Asia",
+        "Talent competition with US AI labs (higher comp)",
+      ],
+
+      moatType: 'technology',
+      moatStrength: "Medium: Research talent and European positioning create differentiation. Open-weight strategy builds developer mindshare but limits monetization. No network effects, model quality is competitive moat.",
+    },
 
     tracking: {
       status: 'interested',
