@@ -4960,6 +4960,455 @@ export const companies: Company[] = [
       },
     ],
   },
+  {
+    id: 'cohere',
+    name: 'Cohere',
+    description: 'Enterprise AI platform providing secure, customizable language models for businesses to build AI applications.',
+    website: 'https://cohere.com',
+    headquarters: 'Toronto, Canada',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series D',
+    valuation: '$7B (Sept 2025)',
+    totalFunding: '$1.54B',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$10M', date: '2020-06', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series A', amount: '$40M', date: '2021-11', leadInvestors: ['Index Ventures'] },
+      { stage: 'Series B', amount: '$125M', date: '2022-02', valuation: '$1.1B', leadInvestors: ['Tiger Global'] },
+      { stage: 'Series C', amount: '$270M', date: '2023-06', valuation: '$2.1B', leadInvestors: ['Inovia Capital', 'Index Ventures'] },
+      { stage: 'Series D', amount: '$500M', date: '2025-01', valuation: '$5.5B', leadInvestors: ['NVIDIA', 'Oracle'] },
+    ],
+    revenue: '$150M ARR (Oct 2025), projected $200M+ (2026)',
+    growth: 'Doubled ARR in first half of 2025',
+    runway: 'Strong — preparing for IPO mid-2026',
+    customers: '316+ enterprise customers globally',
+
+    // Competition
+    competitors: [
+      {
+        name: 'OpenAI',
+        description: 'GPT-4 models with enterprise API',
+        whyTheyWin: 'Brand recognition, best models, massive scale',
+      },
+      {
+        name: 'Anthropic',
+        description: 'Claude models for enterprise',
+        whyTheyWin: '#1 in enterprise (32% market share), developer favorite',
+      },
+      {
+        name: 'Google Vertex AI',
+        description: 'Google\'s enterprise AI platform',
+        whyTheyWin: 'Google Cloud distribution, Gemini models',
+      },
+      {
+        name: 'Microsoft Azure OpenAI',
+        description: 'OpenAI models via Azure',
+        whyTheyWin: 'Microsoft enterprise relationships, Azure integration',
+      },
+    ],
+    marketPosition: 'Top 5 enterprise LLM provider, 0.13% market share',
+    moat: [
+      'Data sovereignty: on-prem deployment for regulated industries',
+      'Customization: fine-tuning for enterprise use cases',
+      'Aidan Gomez = Transformer co-author (credibility)',
+      'Strategic partnerships: Oracle, NVIDIA',
+      'Canadian base: alternative to US AI giants for international customers',
+    ],
+    vsGiants: 'Cohere focuses on enterprise deployment flexibility (on-prem, private cloud) vs OpenAI/Anthropic\'s API-first approach.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Cohere builds LLMs and provides AI infrastructure. No Cohere without AI.',
+    aiDesignChallenges: [
+      'Enterprise deployment: designing for on-prem, private cloud, multi-cloud',
+      'Customization interfaces: fine-tuning workflows for enterprise',
+      'Security-first design: building for regulated industries',
+      'Developer experience: API design, SDKs, documentation',
+      'Agentic AI: designing multi-step workflows with North platform',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Aidan Gomez',
+        role: 'CEO & Co-founder',
+        background: 'Co-author of "Attention Is All You Need" (Transformer paper). Former Google Brain researcher at age 20. Built the architecture powering modern AI.',
+      },
+      {
+        name: 'Ivan Zhang',
+        role: 'Co-founder',
+        background: 'Engineer with deep ML expertise.',
+      },
+      {
+        name: 'Nick Frosst',
+        role: 'Co-founder',
+        background: 'Former Google Brain researcher.',
+      },
+    ],
+    whyBuilding: 'Gomez co-invented the Transformer at Google but saw enterprises struggling to adopt AI. Cohere was built to give businesses control, security, and customization vs generic API wrappers.',
+    beliefs: [
+      'Enterprises need data sovereignty: on-prem deployment matters',
+      'Customization > one-size-fits-all: every company needs tailored AI',
+      'Security-first: regulated industries (finance, healthcare) need control',
+      'Agentic AI is the future: North platform for AI workspaces',
+      'Canadian AI leadership: alternative to US tech giants',
+    ],
+    designPhilosophy: 'Enterprise-grade AI with security and customization. Design for developers and enterprise buyers.',
+    greenFlags: [
+      'Founder credibility: Gomez co-authored Transformer paper',
+      'Strong growth: doubled ARR in 2025, heading to $200M+',
+      'IPO-ready: planning mid-2026 IPO',
+      'Strategic investors: NVIDIA, Oracle',
+      'North platform: competing with Microsoft Copilot, Google Vertex AI',
+    ],
+    redFlags: [
+      'Small market share: 0.13% vs OpenAI/Anthropic dominance',
+      'Intense competition: OpenAI ($500B), Anthropic ($183B)',
+      'Canadian base: US customers may prefer US vendors',
+      'Late to agentic AI: North launched Jan 2025',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      teamSize: '~30-50 (estimated)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Designing agentic workflows: North platform for multi-step AI tasks',
+          'Building fine-tuning interfaces for enterprise customization',
+          'Defining deployment workflows: on-prem, private cloud, multi-cloud',
+          'Creating developer tools: API design, SDKs',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Designing model performance metrics for enterprises',
+          'Building evaluation frameworks for custom models',
+          'Creating security and compliance dashboards',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'North workspace platform design',
+          'Developer documentation and onboarding',
+          'Enterprise dashboards and admin tools',
+          'API testing and debugging interfaces',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Senior Product Designer',
+        location: 'Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)',
+        url: 'https://jobs.ashbyhq.com/cohere',
+        level: 'Senior',
+        type: 'full-time',
+        aboutRole: 'Lead the design process for AI-powered user experiences, conducting research, collaborating with teams, and ensuring high-quality design across platforms.',
+        responsibilities: [
+          'Design AI-powered user experiences',
+          'Conduct user research and usability testing',
+          'Collaborate with product, engineering, and research teams',
+          'Ensure high-quality design across all platforms',
+          'Build design systems for enterprise AI products',
+        ],
+        requirements: [
+          'Experience designing enterprise products',
+          'Strong portfolio of product design work',
+          'Understanding of AI/ML products',
+        ],
+        whyInteresting: 'Designing with Transformer co-author. Building enterprise AI for regulated industries. IPO-bound company.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Research-driven culture. Gomez brings deep technical credibility. Toronto HQ offers Canadian tech scene.',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'interested',
+      fitScore: 8,
+      whyJoin: [
+        'AI-native Level 4: AI IS the product',
+        'Founder credibility: Aidan Gomez co-authored Transformer paper',
+        'Strong growth: $200M+ ARR heading into 2026',
+        'IPO-bound: mid-2026 IPO planned',
+        'Senior Product Designer role open',
+        'Enterprise focus: designing for regulated industries',
+      ],
+      whyNot: [
+        'Toronto HQ: Canadian location (but SF/NY offices available)',
+        'Smaller than OpenAI/Anthropic',
+        'Market share: 0.13% vs giants',
+      ],
+      nextActions: [
+        'Research Aidan Gomez and Transformer paper',
+        'Try Cohere API and North platform',
+        'Connect with Cohere designers on LinkedIn',
+        'Apply for Senior Product Designer role',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T12:10:00',
+    sources: [
+      {
+        title: 'Cohere Wikipedia',
+        url: 'https://en.wikipedia.org/wiki/Cohere',
+      },
+      {
+        title: 'Aidan Gomez profile',
+        url: 'https://en.wikipedia.org/wiki/Aidan_Gomez',
+      },
+      {
+        title: 'Cohere raises $500M at $7B valuation',
+        url: 'https://tracxn.com/d/companies/cohere/__o4xfwmr3XwgsGEyH41XvwBm6Xd-SjsMlSld3d4ci6G0',
+      },
+      {
+        title: 'Cohere IPO plans 2026',
+        url: 'https://startupwired.com/2025/10/22/cohere-prepares-for-ipo-as-it-redefines-the-global-ai-landscape/',
+      },
+    ],
+  },
+  {
+    id: 'jasper',
+    name: 'Jasper',
+    description: 'AI marketing platform for enterprises, enabling teams to create on-brand content at scale with generative AI.',
+    website: 'https://jasper.ai',
+    headquarters: 'Austin, TX',
+    remote: 'Remote-first',
+
+    // Business
+    stage: 'Series A',
+    valuation: '$1.2B (2024, post-layoffs)',
+    totalFunding: '$131M',
+    fundingHistory: [
+      { stage: 'Seed', amount: '$6M', date: '2021-10', leadInvestors: ['Foundation Capital'] },
+      { stage: 'Series A', amount: '$125M', date: '2022-10', valuation: '$1.5B', leadInvestors: ['Insight Partners'] },
+    ],
+    revenue: '$88M ARR (2025)',
+    growth: 'Slowed after 2023 peak, layoffs in Sept 2023',
+    runway: 'Moderate — $125M Series A funds, but slower growth',
+    customers: '100,000+ customers',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Copy.ai',
+        description: 'AI-native GTM strategy platform',
+        whyTheyWin: 'Simpler product, GTM focus, less overwhelming UI',
+      },
+      {
+        name: 'Writesonic',
+        description: 'AI-powered content generation with SEO focus',
+        whyTheyWin: 'SEO features, cheaper pricing',
+      },
+      {
+        name: 'Typeface',
+        description: 'Enterprise generative AI for marketing',
+        whyTheyWin: 'Ex-Adobe CTO founder, Fortune 500 focus',
+      },
+      {
+        name: 'Writer.com',
+        description: 'Enterprise AI writing platform',
+        whyTheyWin: 'Proprietary Palmyra LLM, brand voice consistency',
+      },
+    ],
+    marketPosition: 'Early leader in AI content, now facing strong competition',
+    moat: [
+      'First-mover advantage: launched early in AI content wave',
+      '100,000+ customers = data flywheel',
+      'Brand recognition in AI marketing',
+      'Enterprise pivot: moving upmarket',
+    ],
+    vsGiants: 'Jasper was first to market but now faces competition from Typeface (ex-Adobe), Writer.com, and simpler tools like Copy.ai.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator. Jasper\'s value is AI-powered content generation. But product could exist as content management tool without AI (less valuable).',
+    aiDesignChallenges: [
+      'Brand voice consistency: AI generating on-brand content',
+      'Template vs freeform: balancing structure with flexibility',
+      'Workflow integration: embedding AI into marketing processes',
+      'Quality control: enterprise standards for AI content',
+      'Overwhelming UI: simplifying complex AI features',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Dave Rogenmoser',
+        role: 'Co-founder (stepped down 2023)',
+        background: 'Serial entrepreneur. Founded Jasper (formerly Jarvis) in early 2021. Stepped down as CEO in Sept 2023, now Chairman.',
+      },
+      {
+        name: 'Chris Hull',
+        role: 'Co-founder',
+        background: 'Technical co-founder.',
+      },
+      {
+        name: 'John Philip Morgan',
+        role: 'Co-founder',
+        background: 'Co-founder who stepped down with Rogenmoser in 2023.',
+      },
+    ],
+    whyBuilding: 'Rogenmoser saw the explosion of GPT-3 and realized content marketers needed AI tools. Jasper was one of the first to market with AI writing, catching the wave early.',
+    beliefs: [
+      'AI will transform marketing workflows (original vision)',
+      'Enterprise-first: serve marketing teams, not individual creators',
+      'Brand consistency: AI needs to understand company voice',
+      'Workflow orchestration: content creation is multi-step',
+    ],
+    designPhilosophy: 'Enterprise marketing AI with brand control. Simplify complex AI for marketers.',
+    greenFlags: [
+      'First-mover: early in AI content wave',
+      '100,000+ customers',
+      'Enterprise pivot: Jasper Studio for custom AI apps',
+      'New CEO: Timothy Young (ex-Dropbox President)',
+    ],
+    redFlags: [
+      'Founders stepped down (Sept 2023) — leadership uncertainty',
+      'Valuation down: $1.5B → $1.2B (20% haircut)',
+      'Layoffs in 2023',
+      'Overwhelming UI: users complain about complexity',
+      'Strong competition: Typeface, Copy.ai, Writer.com',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      ceo: 'Timothy Young (joined Sept 2023, ex-Dropbox President)',
+      teamSize: '~50-100 (estimated, post-layoffs)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'medium',
+        tasks: [
+          'Designing brand voice: AI understanding company style',
+          'Building workflow orchestration for marketing campaigns',
+          'Defining AI behaviors for different content types',
+          'Creating feedback loops for brand consistency',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Designing quality metrics for AI content',
+          'Building approval workflows for enterprise',
+          'Creating brand compliance checks',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Simplifying overwhelming UI (current pain point)',
+          'Content creation interfaces for marketers',
+          'Jasper Studio: no-code AI app builder',
+          'Campaign management dashboards',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Principal Product Designer',
+        location: 'Austin, TX / Remote',
+        url: 'https://jobs.ashbyhq.com/Jasper%20AI',
+        level: 'Principal',
+        type: 'full-time',
+        aboutRole: 'Shape Jasper\'s AI tools\' user experience, mentor designers, and prototype workflows, collaborating closely with PMs and engineers.',
+        responsibilities: [
+          'Lead design of AI-powered marketing tools',
+          'Mentor junior designers',
+          'Prototype workflows for AI content creation',
+          'Collaborate with PMs, engineers, and marketers',
+          'Simplify complex AI features',
+        ],
+        requirements: [
+          'Principal-level experience (10+ years)',
+          'Experience designing AI/ML products',
+          'Strong portfolio of enterprise design',
+          'Understanding of marketing workflows',
+        ],
+        whyInteresting: 'Fixing Jasper\'s overwhelming UI problem. Designing for 100,000+ customers. Working with new CEO from Dropbox.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        rating: 3.7,
+        content: 'Founders stepped down in 2023. Layoffs. New CEO Timothy Young (ex-Dropbox) brings stability.',
+      },
+    ],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 6,
+      whyJoin: [
+        'AI-native Level 3: AI is core differentiator',
+        '100,000+ customers',
+        'Principal Product Designer role (senior level)',
+        'Remote-first',
+        'Clear design challenge: simplify overwhelming UI',
+      ],
+      whyNot: [
+        'Founders left (Sept 2023) — leadership uncertainty',
+        'Valuation down, layoffs',
+        'Strong competition: Typeface, Copy.ai, Writer.com',
+        'Slower growth post-2023',
+      ],
+      nextActions: [
+        'Try Jasper product extensively',
+        'Research Timothy Young (new CEO)',
+        'Connect with Jasper designers on LinkedIn',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T12:25:00',
+    sources: [
+      {
+        title: 'Jasper raises $125M at $1.5B valuation',
+        url: 'https://www.jasper.ai/blog/jasper-announces-125m-series-a-funding',
+      },
+      {
+        title: 'Jasper revenue and growth',
+        url: 'https://getlatka.com/companies/jasper.ai',
+      },
+      {
+        title: 'Timothy Young becomes CEO',
+        url: 'https://www.jasper.ai/blog/jasper-new-ceo',
+      },
+      {
+        title: 'Jasper AI statistics 2026',
+        url: 'https://sqmagazine.co.uk/jasper-ai-statistics/',
+      },
+    ],
+  },
 ];
 
 export function getCompanyById(id: string): Company | undefined {
