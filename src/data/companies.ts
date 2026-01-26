@@ -3811,6 +3811,8 @@ export const companies: Company[] = [
       'Build tools that make people dream bigger and more capable',
       'Create AI tools that augment people rather than replace them',
     ],
+    greenFlags: ['AI-native company', 'Growth potential', 'Strong community', 'Self-funded success'],
+    redFlags: ['Unknown design culture', 'Competitive market', 'Discord-first may limit reach'],
 
     // Design Opportunity
     designTeam: {
@@ -3991,6 +3993,10 @@ export const companies: Company[] = [
       'AI should expand what creators can produce',
     ],
 
+    greenFlags: ['AI-native company', 'Growth potential'],
+
+    redFlags: ['Unknown design culture', 'Competitive market'],
+
     // Design Opportunity
     designTeam: {
       teamSize: 'Unknown',
@@ -4105,7 +4111,7 @@ export const companies: Company[] = [
     totalFunding: 'Unknown',
     fundingHistory: [
       {
-        stage: 'Strategic investment',
+        stage: 'Unknown',
         amount: 'Undisclosed',
         date: '2025-03',
         leadInvestors: ['WPP'],
@@ -4160,6 +4166,10 @@ export const companies: Company[] = [
       'Open-source generative AI should empower creators and enterprises',
       'Professional-grade creative AI should work across image, video, 3D, and audio',
     ],
+
+    greenFlags: ['AI-native company', 'Growth potential'],
+
+    redFlags: ['Unknown design culture', 'Competitive market'],
 
     // Design Opportunity
     designTeam: {
@@ -4334,6 +4344,10 @@ export const companies: Company[] = [
       "AI's highest purpose is to enhance human wellbeing",
       'Enterprise AI should drive real-world productivity and impact',
     ],
+
+    greenFlags: ['AI-native company', 'Growth potential'],
+
+    redFlags: ['Unknown design culture', 'Competitive market'],
 
     // Design Opportunity
     designTeam: {
@@ -6405,6 +6419,39 @@ export const companies: Company[] = [
     // Culture Insights
     cultureInsights: [],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$100M+ ARR (estimated 2025), ~2x YoY",
+      userGrowth: "1.3M+ developers using code search, Cody AI growing fast",
+      signals: [
+        "$2.6B valuation at Series D",
+        "$230M total raised (a16z, Sequoia)",
+        "1.3M+ developers using Sourcegraph",
+        "Ex-Palantir founders (Quinn Slack, Beyang Liu)",
+        "Cody AI pivot = growth acceleration",
+      ],
+
+      tam: "$100B+ (Developer tools and AI coding assistance)",
+      marketShare: "~0.1% (code search leader, AI coding growing)",
+      ceiling: "Mid innings: Code search is mature product, but Cody AI is new battleground. Ceiling depends on Cody adoption vs Cursor/Copilot.",
+      tailwinds: [
+        "Code search moat: 1.3M+ developers using core product",
+        "Enterprise relationships (Uber, Lyft, Dropbox)",
+        "AI coding market exploding (Cody positioned to ride wave)",
+        "Ex-Palantir founders understand enterprise sales",
+      ],
+      headwinds: [
+        "Cursor dominant in AI coding ($29B valuation, better UX)",
+        "GitHub Copilot has Microsoft distribution advantage",
+        "Discontinued free plans alienated community",
+        "Code search commoditizing (GitHub, GitLab adding features)",
+        "Must be in SF (limits talent pool)",
+      ],
+
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Code search integrations and enterprise contracts create switching costs. But AI coding is new territory with no moat yet. Brand with developers is moderate.",
+    },
+
     // My Tracking
     tracking: {
       status: 'watching',
@@ -6606,6 +6653,39 @@ export const companies: Company[] = [
 
     // Culture Insights
     cultureInsights: [],
+
+    growthMetrics: {
+      stage: 'steady',
+      revenueGrowth: "$50M+ ARR (estimated 2024 before acquisition)",
+      userGrowth: "Unknown (premium product, selective growth)",
+      signals: [
+        "Acquired by Grammarly in 2024",
+        "~$50M ARR pre-acquisition",
+        "$125M total raised (a16z, IVP)",
+        "Product visionary founder (Rahul Vohra)",
+        "Cult following among power users",
+      ],
+
+      tam: "$10B+ (Email productivity for professionals)",
+      marketShare: "~0.5% (premium positioning)",
+      ceiling: "Mid-late innings: Superhuman defined premium email category but growth limited by $30/month price. Acquisition by Grammarly suggests ceiling reached.",
+      tailwinds: [
+        "Grammarly acquisition = distribution boost (30M+ users)",
+        "Premium brand and obsessive quality culture",
+        "Keyboard-first UX creates switching costs",
+        "AI features expanding use cases",
+      ],
+      headwinds: [
+        "Gmail/Outlook free and 'good enough' for most",
+        "$30/month price limits TAM significantly",
+        "Acquired = exit rather than growth story",
+        "Slow feature velocity historically",
+        "Email clients mature market",
+      ],
+
+      moatType: 'brand',
+      moatStrength: "Medium: Cult brand among power users and keyboard-driven UX create loyalty. But limited scale (premium pricing). Acquisition suggests moat insufficient for standalone growth.",
+    },
 
     // My Tracking
     tracking: {
@@ -7351,7 +7431,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7408,7 +7488,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7465,7 +7545,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7522,7 +7602,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7579,7 +7659,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7636,7 +7716,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7693,7 +7773,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7750,7 +7830,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7807,7 +7887,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7864,7 +7944,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7921,7 +8001,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -7978,7 +8058,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8035,7 +8115,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8092,7 +8172,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8149,7 +8229,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8206,7 +8286,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8263,7 +8343,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
@@ -8320,7 +8400,7 @@ export const companies: Company[] = [
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
-    redFlags: [],
+    redFlags: ['Unknown design culture', 'Competitive market'],
     designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
