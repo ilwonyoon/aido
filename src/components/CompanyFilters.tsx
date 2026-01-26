@@ -12,7 +12,7 @@ function AiLevelText({ level }: { level: number }) {
   const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--accent-light)]', 4: 'text-[var(--success)]' };
   return (
     <span className={`text-sm ${colors[level as keyof typeof colors]}`}>
-      L{level} · {labels[level as keyof typeof labels]}
+      L{level} | {labels[level as keyof typeof labels]}
     </span>
   );
 }
@@ -352,7 +352,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <h2 className="text-lg font-medium">{company.name}</h2>
-                    <span className="text-[var(--border)]">·</span>
+                    <span className="text-[var(--border)]">|</span>
                     <AiLevelText level={company.aiNativeLevel} />
                   </div>
                   <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
@@ -360,23 +360,23 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   </p>
                   <div className="flex items-center gap-3 text-sm flex-wrap">
                     <span className="text-[var(--muted)]">{company.headquarters}</span>
-                    <span className="text-[var(--border)]">·</span>
+                    <span className="text-[var(--border)]">|</span>
                     <span className="text-[var(--muted)]">{company.stage}</span>
                     {company.remote === 'Yes' && (
                       <>
-                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--border)]">|</span>
                         <span className="text-[var(--success)]">Remote OK</span>
                       </>
                     )}
                     {interest === 'interested' && (
                       <>
-                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--border)]">|</span>
                         <span className="text-[var(--accent-light)]">Interested</span>
                       </>
                     )}
                     {hasRecentFunding && (
                       <>
-                        <span className="text-[var(--border)]">·</span>
+                        <span className="text-[var(--border)]">|</span>
                         <span className="text-[var(--warning)]">New Funding</span>
                       </>
                     )}
