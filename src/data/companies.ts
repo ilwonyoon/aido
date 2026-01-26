@@ -672,12 +672,12 @@ export const companies: Company[] = [
       {
         source: 'glassdoor',
         sentiment: 'neutral',
-        content: '리뷰 없음 — Seed 단계 스타트업으로 데이터 부족.',
+        content: 'No reviews — Seed stage startup with limited data.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. 스타트업 규모로 연봉 데이터 없음.',
+        content: 'No Product Design data. No salary data for startup size.',
       },
     ],
 
@@ -886,22 +886,22 @@ export const companies: Company[] = [
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Research-driven culture. Stanford AI PhD 파운더들. Fast-paced, small team (~30명).',
+        content: 'Research-driven culture. Stanford AI PhD founders. Fast-paced, small team (~30 people).',
       },
       {
         source: 'twitter',
         sentiment: 'positive',
-        content: 'Creative 커뮤니티와 적극 소통. 유저 피드백 빠르게 반영하는 문화.',
+        content: 'Actively engages with creative community. Culture of rapid iteration on user feedback.',
       },
       {
         source: 'glassdoor',
         sentiment: 'neutral',
-        content: '리뷰 없음 — Series B 스타트업이지만 아직 데이터 부족.',
+        content: 'No reviews — Series B startup but limited data available.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. 아직 levels.fyi에 연봉 데이터 없음.',
+        content: 'No Product Design data. No salary data on levels.fyi yet.',
       },
     ],
 
@@ -1087,17 +1087,17 @@ export const companies: Company[] = [
       {
         source: 'blind',
         sentiment: 'neutral',
-        content: 'Scaling pains as company grows (~100명). Good comp, high expectations. 아직 디자인 팀 문화 정보 적음.',
+        content: 'Scaling pains as company grows (~100 people). Good comp, high expectations. Limited design team culture info.',
       },
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'European distributed team (Poland, UK, US). 엔지니어링 중심 문화.',
+        content: 'European distributed team (Poland, UK, US). Engineering-centric culture.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. SWE 기준: Senior $200-300K 추정 (Remote).',
+        content: 'No Product Design data. SWE reference: Senior $200-300K estimated (Remote).',
         url: 'https://www.levels.fyi/companies/elevenlabs/',
       },
     ],
@@ -1279,27 +1279,27 @@ export const companies: Company[] = [
       {
         source: 'twitter',
         sentiment: 'positive',
-        content: 'Extremely technical culture. Small, elite team (~20명). IOI/ICPC 출신 엔지니어들.',
+        content: 'Extremely technical culture. Small, elite team (~20 people). Engineers from IOI/ICPC backgrounds.',
       },
       {
         source: 'blind',
         sentiment: 'neutral',
-        content: 'Competitive programming culture. 디자이너 문화 정보 없음 — 엔지니어 중심 팀.',
+        content: 'Competitive programming culture. No designer culture info — engineer-centric team.',
       },
       {
         source: 'linkedin',
         sentiment: 'neutral',
-        content: 'SF 기반. 디자인 리더십 정보 없음 — first design hire 가능성.',
+        content: 'SF-based. No design leadership info — potential first design hire opportunity.',
       },
       {
         source: 'glassdoor',
         sentiment: 'neutral',
-        content: '리뷰 없음 — Series B지만 팀 규모 작아 데이터 부족.',
+        content: 'No reviews — Series B but small team size, limited data.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design 데이터 없음. 연봉 데이터 없음.',
+        content: 'No Product Design data. No salary data available.',
       },
     ],
 
@@ -1511,22 +1511,22 @@ export const companies: Company[] = [
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Young, ambitious team (~50명). Harvard 중퇴 파운더. Move fast culture.',
+        content: 'Young, ambitious team (~50 people). Harvard dropout founder. Move fast culture.',
       },
       {
         source: 'twitter',
         sentiment: 'positive',
-        content: 'Hypergrowth mode. OpenAI/Anthropic를 고객으로 둔 검증된 제품.',
+        content: 'Hypergrowth mode. Validated product with OpenAI/Anthropic as customers.',
       },
       {
         source: 'glassdoor',
         sentiment: 'neutral',
-        content: '리뷰 적음 — 빠르게 성장 중이지만 아직 데이터 부족.',
+        content: 'Few reviews — growing rapidly but limited data available.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Product Design: $150K-250K + Equity (job posting 기준). Levels.fyi 데이터 없음.',
+        content: 'Product Design: $150K-250K + Equity (per job postings). No levels.fyi data.',
       },
     ],
 
