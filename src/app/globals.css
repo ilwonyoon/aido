@@ -8,7 +8,9 @@
   --border: #333333;
   --accent: #0070f3;
   --accent-light: #3291ff;
+  --primary: #50e3c2; /* Bianchi Celeste - use sparingly for most important info */
   --success: #50e3c2;
+  --positive: #6b9e8f; /* Muted green for less important positive indicators */
   --warning: #f5a623;
   --error: #e00;
   --card: #111111;
@@ -23,7 +25,9 @@
   --border: #e5e5e5;
   --accent: #0070f3;
   --accent-light: #0061d5;
+  --primary: #0d9488;
   --success: #0d9488;
+  --positive: #5a8a80;
   --warning: #d97706;
   --error: #dc2626;
   --card: #fafafa;
@@ -39,7 +43,9 @@
     --border: #e5e5e5;
     --accent: #0070f3;
     --accent-light: #0061d5;
+    --primary: #0d9488;
     --success: #0d9488;
+    --positive: #5a8a80;
     --warning: #d97706;
     --error: #dc2626;
     --card: #fafafa;
@@ -55,7 +61,9 @@
     --border: #333333;
     --accent: #0070f3;
     --accent-light: #3291ff;
+    --primary: #50e3c2;
     --success: #50e3c2;
+    --positive: #6b9e8f;
     --warning: #f5a623;
     --error: #e00;
     --card: #111111;
@@ -70,7 +78,9 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
+  --color-primary: var(--primary);
   --color-success: var(--success);
+  --color-positive: var(--positive);
   --color-warning: var(--warning);
   --color-error: var(--error);
   --color-card: var(--card);
