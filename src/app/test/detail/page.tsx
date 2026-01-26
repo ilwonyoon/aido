@@ -90,35 +90,14 @@ export default function TestDetailPage() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Header */}
+      {/* Back Link */}
       <div className="mb-8">
         <Link
           href="/test"
-          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] mb-4 inline-block"
+          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] inline-block"
         >
           ← Back to test page
         </Link>
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex-1">
-            <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl font-semibold">{company.name}</h1>
-              <AiLevelBadge level={company.aiNativeLevel} />
-            </div>
-            <p className="text-[var(--muted)] text-lg">{company.description}</p>
-          </div>
-          <InterestToggle companyId={company.id} />
-        </div>
-        <div className="flex items-center gap-4 mt-4 text-sm">
-          <a
-            href={company.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-light)] hover:underline"
-          >
-            {company.website} ↗
-          </a>
-          <span className="text-[var(--muted)]">Updated {company.lastUpdated}</span>
-        </div>
       </div>
 
       {/* Main Layout: Index Nav + Content */}
@@ -167,6 +146,26 @@ export default function TestDetailPage() {
 
         {/* Main Content */}
         <div className="flex-1 min-w-0 space-y-12">
+          {/* Header Info */}
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-2">
+              <h1 className="text-3xl font-semibold">{company.name}</h1>
+              <AiLevelBadge level={company.aiNativeLevel} />
+            </div>
+            <p className="text-[var(--muted)] text-lg">{company.description}</p>
+            <div className="flex items-center gap-4 mt-4 text-sm">
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent-light)] hover:underline"
+              >
+                {company.website} ↗
+              </a>
+              <span className="text-[var(--muted)]">Updated {company.lastUpdated}</span>
+            </div>
+          </div>
+
           {/* Quick Info */}
           <section id="quick-info" className="scroll-mt-20 space-y-8">
             <h2 className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
@@ -451,6 +450,14 @@ export default function TestDetailPage() {
                 </div>
               </div>
             </div>
+            </div>
+
+            {/* Interest Status */}
+            <div className="card p-5">
+              <div className="flex items-center justify-between">
+                <h3 className="font-medium">Interest Status</h3>
+                <InterestToggle companyId={company.id} />
+              </div>
             </div>
           </section>
 
