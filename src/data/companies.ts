@@ -5409,6 +5409,1012 @@ export const companies: Company[] = [
       },
     ],
   },
+
+  // Sourcegraph (Cody)
+  {
+    id: 'sourcegraph',
+    name: 'Sourcegraph',
+    description: 'Universal code search and AI coding assistant. Cody helps developers understand, write, and fix code faster across any codebase.',
+    website: 'https://sourcegraph.com',
+
+    // Location
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Series D',
+    valuation: '$2.6B',
+    totalFunding: '$223M',
+    fundingHistory: [
+      {
+        stage: 'Series D',
+        amount: '$125M',
+        date: '2021-07',
+        valuation: '$2.625B',
+        leadInvestors: ['Andreessen Horowitz'],
+      },
+    ],
+    revenue: 'Unknown',
+    growth: '800,000 developers using product (12 months)',
+    runway: 'Unknown',
+    customers: '54B+ lines of code indexed',
+
+    // Competition
+    competitors: [
+      {
+        name: 'GitHub Copilot',
+        description: 'AI pair programmer by GitHub/Microsoft',
+        whyTheyWin: 'Native GitHub integration, massive user base',
+      },
+      {
+        name: 'Cursor',
+        description: 'AI-first code editor',
+        whyTheyWin: 'Better UX, focused product, faster iteration',
+      },
+      {
+        name: 'Codeium',
+        description: 'Free AI code completion',
+        whyTheyWin: 'Free tier, aggressive pricing',
+      },
+    ],
+    marketPosition: 'Strong in enterprise code search, pivoting to AI coding with Cody',
+    moat: [
+      'Universal code search across 54B+ lines of code',
+      'Enterprise-grade security and compliance',
+      'Deep codebase understanding from search tech',
+      'Strong investor backing (a16z, Sequoia)',
+    ],
+    vsGiants: 'More comprehensive code search vs GitHub. Better context awareness vs Copilot.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'Cody AI assistant is now core product differentiator. Launched Amp coding agent in 2025.',
+    aiDesignChallenges: [
+      'Designing AI interactions for complex codebases',
+      'Making code search + AI feel seamless',
+      'Enterprise admin UX for AI features',
+      'Context window visualization and control',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Quinn Slack',
+        role: 'CEO & Co-Founder',
+        background: 'Previously at Palantir. Stanford CS. Deep belief in developer productivity.',
+      },
+      {
+        name: 'Beyang Liu',
+        role: 'CTO & Co-Founder',
+        background: 'Previously at Palantir. Stanford CS. Code search evangelist.',
+      },
+    ],
+    whyBuilding: 'Every developer should be able to search and understand all code, everywhere. AI makes this possible at scale.',
+    beliefs: [
+      'Code search is fundamental to developer productivity',
+      'AI should augment, not replace developers',
+      'Universal access to code knowledge',
+      'Enterprise-grade reliability matters',
+    ],
+    designPhilosophy: 'Design for power users. Fast, keyboard-driven, information-dense.',
+    greenFlags: [
+      'Strong technical founders with vision',
+      '$2.6B valuation with solid investor backing',
+      'Pivoted successfully from search to AI',
+      'Remote-first culture',
+    ],
+    redFlags: [
+      'Facing fierce competition from Cursor, GitHub Copilot',
+      'Discontinued free Cody plans in 2025',
+      'Revenue/growth metrics not public',
+      'Product pivot risk (search → AI)',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Unknown',
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Design AI agent behaviors for code understanding',
+          'Define context gathering strategies',
+          'Design autocomplete vs chat vs agent modes',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Design feedback loops for code suggestions',
+          'Define quality metrics for AI responses',
+          'User research on AI effectiveness',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'IDE-like interfaces for code search + AI',
+          'Enterprise admin dashboards',
+          'Web app and VS Code extension design',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer [IC4]',
+        location: 'San Francisco, CA (Required)',
+        url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
+        level: 'IC4',
+        type: 'full-time',
+        aboutRole: 'Design features for Cody and search teams, crafting solutions that make developers more productive with AI-powered tools.',
+        responsibilities: [
+          'Collaborate with teammates to define the future of AI in developer tools',
+          'Design for complex developer tools and IDE-like applications',
+          'Conduct user research and lead customer calls',
+        ],
+        requirements: [
+          '8+ years designing complex B2B or B2C web applications',
+          'Experience with user research and usability testing',
+          '3+ years writing and shipping JavaScript, TypeScript, or Python code',
+        ],
+        whyInteresting: 'Work on cutting-edge AI coding tools. Shape the future of developer productivity. Strong technical founders.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'AI-native Level 3: Cody is core product',
+        'Strong technical founders (ex-Palantir)',
+        '$2.6B valuation, well-funded',
+        'Remote-first',
+        'Designing for power users (high craft bar)',
+      ],
+      whyNot: [
+        'Must be in San Francisco (not fully remote)',
+        'Fierce competition from Cursor, GitHub',
+        'Discontinued free plans (pricing pressure)',
+        'Revenue growth unclear',
+      ],
+      nextActions: [
+        'Try Cody extensively vs Cursor/Copilot',
+        'Research Quinn Slack and Beyang Liu',
+        'Connect with Sourcegraph designers on LinkedIn',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T14:00:00',
+    sources: [
+      {
+        title: 'Sourcegraph Series D $125M',
+        url: 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/',
+      },
+      {
+        title: 'Product Designer IC4 job posting',
+        url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
+      },
+    ],
+  },
+
+  // Superhuman (now part of Grammarly)
+  {
+    id: 'superhuman',
+    name: 'Superhuman',
+    description: 'The fastest email experience ever made. Now part of Grammarly, building AI productivity suite with agents that work wherever people work.',
+    website: 'https://superhuman.com',
+
+    // Location
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Acquired (Grammarly, 2025)',
+    valuation: '$825M (last known, Aug 2021)',
+    totalFunding: '$118M',
+    fundingHistory: [
+      {
+        stage: 'Series C',
+        amount: '$33M',
+        date: '2019-06',
+        valuation: '$260M',
+        leadInvestors: ['Andreessen Horowitz'],
+      },
+    ],
+    revenue: '$20M ARR (estimated before acquisition)',
+    growth: 'Unknown',
+    runway: 'N/A (acquired)',
+    customers: 'Undisclosed',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Shortwave',
+        description: 'AI email client',
+        whyTheyWin: 'More AI features, faster feature velocity',
+      },
+      {
+        name: 'Spark Mail',
+        description: 'Smart email client',
+        whyTheyWin: 'Cross-platform, team collaboration',
+      },
+      {
+        name: 'Gmail',
+        description: 'Google\'s email',
+        whyTheyWin: 'Free, massive ecosystem, AI features',
+      },
+    ],
+    marketPosition: 'Premium email client for power users. Now part of Grammarly productivity suite.',
+    moat: [
+      'Obsessive focus on speed and craft',
+      'High NPS (Net Promoter Score)',
+      'Strong brand among tech elite',
+      'Now backed by Grammarly resources',
+    ],
+    vsGiants: 'Premium UX vs Gmail. Speed-obsessed vs Outlook. Now integrating with Grammarly AI.',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator post-Grammarly acquisition. Building AI agents across communication tools.',
+    aiDesignChallenges: [
+      'Integrating AI without sacrificing speed',
+      'Designing AI agents for email workflows',
+      'Cross-product AI (email + writing + docs)',
+      'Maintaining "fastest email" while adding AI',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Rahul Vohra',
+        role: 'CEO & Co-Founder',
+        background: 'Founded Rapportive (sold to LinkedIn). Obsessed with product-market fit. Game designer mindset.',
+      },
+      {
+        name: 'Vivek Sodera',
+        role: 'Co-Founder',
+        background: 'Engineering leader. Previously at Rapportive.',
+      },
+      {
+        name: 'Conrad Irwin',
+        role: 'Co-Founder',
+        background: 'Engineering. Previously at Rapportive.',
+      },
+    ],
+    whyBuilding: 'Email is broken. People waste hours daily. We can make them feel superhuman with speed + AI.',
+    beliefs: [
+      'Speed is the most important feature',
+      'Obsess over every detail',
+      'Manual onboarding for every user',
+      'Ignore most customer feedback (focus on product vision)',
+      'Position around a single attribute',
+    ],
+    designPhilosophy: 'Speed above all. Every interaction should feel instant. Design for power users.',
+    greenFlags: [
+      'Rahul Vohra is product genius (PMF framework)',
+      'Obsessive craft and quality',
+      'Grammarly acquisition brings resources',
+      'Remote-first',
+    ],
+    redFlags: [
+      'Acquired (less autonomy?)',
+      'Premium pricing ($30/mo) limits growth',
+      'Email-only product (before acquisition)',
+      'Slow feature velocity historically',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Unknown',
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Design AI agent behaviors for email',
+          'Define automation vs manual control',
+          'Design cross-product AI interactions (email + Grammarly)',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Speed metrics and monitoring',
+          'AI suggestion quality evaluation',
+          'User research on AI effectiveness',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Desktop email client design',
+          'Keyboard-driven interactions',
+          'Enterprise admin experiences',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Senior Product Designer',
+        location: 'Remote, North America',
+        url: 'https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc',
+        level: 'Senior',
+        type: 'full-time',
+        compensation: '$155,000 – $240,000/year (USD)',
+        aboutRole: 'Partner with product managers to set vision and build roadmap. Elevate design culture at Superhuman.',
+        requirements: [
+          '5+ years of relevant product design experience',
+          'Mastery of prototyping, visual and interaction design, typography, layout',
+          'Strong portfolio',
+        ],
+        whyInteresting: 'Work with Rahul Vohra. Obsessive craft culture. Now part of Grammarly AI suite.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 8,
+      whyJoin: [
+        'Rahul Vohra is product visionary',
+        'Obsessive craft and quality culture',
+        'Now part of Grammarly (more resources)',
+        'Remote-first, good comp',
+        'Speed-obsessed design philosophy',
+      ],
+      whyNot: [
+        'Acquired (less autonomy post-Grammarly)',
+        'Slow feature velocity historically',
+        'Email-only (before acquisition)',
+        'Premium pricing limits TAM',
+      ],
+      nextActions: [
+        'Use Superhuman for 2 weeks',
+        'Read Rahul Vohra on Lenny\'s Podcast',
+        'Understand Grammarly integration plan',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T14:10:00',
+    sources: [
+      {
+        title: 'Grammarly acquires Superhuman',
+        url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/',
+      },
+      {
+        title: 'Rahul Vohra on Lenny\'s Podcast',
+        url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra',
+      },
+    ],
+  },
+
+  // Hebbia
+  {
+    id: 'hebbia',
+    name: 'Hebbia',
+    description: 'AI platform for knowledge work. Enables professionals to search, analyze, and synthesize information across unlimited documents.',
+    website: 'https://www.hebbia.ai',
+
+    // Location
+    headquarters: 'New York, NY',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series B',
+    valuation: '$700M',
+    totalFunding: '$130M',
+    fundingHistory: [
+      {
+        stage: 'Series B',
+        amount: '$130M',
+        date: '2024-07',
+        valuation: '$700M',
+        leadInvestors: ['Andreessen Horowitz', 'Index Ventures', 'GV', 'Peter Thiel'],
+      },
+    ],
+    revenue: '$13M ARR (at Series B, profitable)',
+    growth: 'Profitable. 30% of top 50 asset managers use Hebbia',
+    runway: 'Strong (just raised $130M)',
+    customers: 'BlackRock, KKR, Carlyle, Centerview, 40% of world\'s largest asset managers',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Glean',
+        description: 'AI workplace search',
+        whyTheyWin: 'Broader enterprise use case, $7.2B valuation',
+      },
+      {
+        name: 'Perplexity',
+        description: 'AI search engine',
+        whyTheyWin: 'Consumer-friendly, web-scale search',
+      },
+      {
+        name: 'ChatGPT Enterprise',
+        description: 'OpenAI for business',
+        whyTheyWin: 'Brand, GPT-4, broader use cases',
+      },
+    ],
+    marketPosition: 'Leader in AI for finance and legal research. Deep penetration in asset management.',
+    moat: [
+      'Financial services expertise and relationships',
+      'Can process unlimited document length',
+      'Tabular output format (spreadsheet-like)',
+      'Profitable at $13M ARR (54x valuation multiple)',
+      'Backed by a16z, Peter Thiel, Index',
+    ],
+    vsGiants: 'Domain-specific vs generic ChatGPT. Structured output vs freeform. Built for finance/legal.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Matrix enables AI-powered document analysis at unlimited scale.',
+    aiDesignChallenges: [
+      'Designing for unlimited document length',
+      'Tabular/spreadsheet output for complex queries',
+      'Financial analyst workflows',
+      'Multi-document comparison and synthesis',
+      'Enterprise security and compliance UX',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'George Sivulka',
+        role: 'CEO & Founder',
+        background: 'Stanford PhD (electrical engineering). Worked at NASA as teenager. Graduated Stanford BS in math in 2.5 years. Wunderkind.',
+      },
+    ],
+    whyBuilding: 'Knowledge work is broken. Professionals waste hours searching documents. AI can make them 10x faster.',
+    beliefs: [
+      'AI should handle unlimited document length',
+      'Structured output > freeform chat',
+      'Vertical AI > horizontal AI',
+      'Finance and legal are killer use cases',
+      'Profitability matters (profitable at $13M ARR)',
+    ],
+    designPhilosophy: 'Not a chatbot. Design for structured analysis. Spreadsheet-like outputs for finance professionals.',
+    greenFlags: [
+      'George Sivulka is brilliant (NASA, Stanford PhD)',
+      'Profitable at $13M ARR',
+      '30% of top 50 asset managers as customers',
+      'Strong investors (a16z, Peter Thiel)',
+      'Acquired FlashDocs (slide deck AI) in 2025',
+    ],
+    redFlags: [
+      'New York location (hybrid, not remote)',
+      'Finance-heavy (might not fit design interests)',
+      'Young company (founded 2020)',
+      'Limited public info on design team',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Unknown',
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Design AI behaviors for document analysis',
+          'Define query → table output logic',
+          'Multi-document synthesis workflows',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Quality metrics for AI analysis',
+          'Accuracy evaluation for financial data',
+          'User research with asset managers',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Spreadsheet-like interfaces for AI output',
+          'Document upload and management',
+          'Enterprise security dashboards',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'New York, NY',
+        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
+        type: 'full-time',
+        aboutRole: 'Create innovative AI interaction designs for finance-focused SaaS platform. Lead end-to-end user experience.',
+        responsibilities: [
+          'Lead design of product features and UX',
+          'Ensure product is intuitive and visually appealing',
+          'Collaborate with cross-functional teams',
+        ],
+        whyInteresting: 'Work with genius founder. Profitable startup. 40% of largest asset managers use your product.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'AI-native Level 4: AI IS the product',
+        'George Sivulka is brilliant founder',
+        'Profitable and well-funded',
+        'Elite customers (BlackRock, KKR)',
+        'Unique design challenge (structured AI output)',
+      ],
+      whyNot: [
+        'New York location (hybrid, not remote)',
+        'Finance-heavy domain (might be dry)',
+        'Small team, early stage',
+        'Unknown design culture',
+      ],
+      nextActions: [
+        'Try Hebbia demo',
+        'Research George Sivulka',
+        'Understand finance analyst workflows',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T14:20:00',
+    sources: [
+      {
+        title: 'Hebbia Series B $130M at $700M valuation',
+        url: 'https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/',
+      },
+      {
+        title: 'Hebbia Product Designer job',
+        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
+      },
+    ],
+  },
+
+  // Gamma
+  {
+    id: 'gamma',
+    name: 'Gamma',
+    description: 'AI-powered presentation and document creation. Create beautiful, interactive content with AI in seconds—no slides required.',
+    website: 'https://gamma.app',
+
+    // Location
+    headquarters: 'San Francisco, CA',
+    remote: 'Yes',
+
+    // Business
+    stage: 'Series B',
+    valuation: '$2.1B',
+    totalFunding: '$87M',
+    fundingHistory: [
+      {
+        stage: 'Series B',
+        amount: '$68M',
+        date: '2025-11',
+        valuation: '$2.1B',
+        leadInvestors: ['Andreessen Horowitz'],
+      },
+      {
+        stage: 'Series A',
+        amount: '$12M',
+        date: '2023',
+        leadInvestors: ['Accel'],
+      },
+    ],
+    revenue: '$100M ARR (profitable)',
+    growth: 'Crossed $100M ARR profitably with 52 employees',
+    runway: 'Strong (just raised $68M)',
+    customers: '30M+ users',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Canva',
+        description: 'Design platform with AI',
+        whyTheyWin: 'Massive user base, broader design tools, brand',
+      },
+      {
+        name: 'Beautiful.ai',
+        description: 'AI presentation tool',
+        whyTheyWin: 'Earlier mover, focused on presentations',
+      },
+      {
+        name: 'PowerPoint + Copilot',
+        description: 'Microsoft with AI',
+        whyTheyWin: 'Enterprise distribution, Office ecosystem',
+      },
+    ],
+    marketPosition: 'AI-first presentation tool. "PowerPoint killer." Lean team, high efficiency.',
+    moat: [
+      'First to market with generative AI presentations (2022)',
+      '30M+ users, $100M ARR',
+      'Profitable with only 52 employees',
+      'Strong product velocity',
+      'Backed by a16z and Accel',
+    ],
+    vsGiants: 'AI-native vs PowerPoint. Faster creation vs Canva. No slides, interactive documents.',
+
+    // AI-Native Level
+    aiNativeLevel: 4,
+    aiNativeLevelDescription: 'AI IS the product. Repositioned around generative AI when ChatGPT launched. Core product is AI generation.',
+    aiDesignChallenges: [
+      'AI-generated layouts and designs',
+      'Balance AI speed vs manual control',
+      'Template selection and customization',
+      'Real-time collaboration with AI',
+      'Enterprise features (branding, templates)',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Grant Lee',
+        role: 'CEO & Co-Founder',
+        background: 'Product designer. Previously at Dropbox, Optimizely. Design-led founder.',
+      },
+      {
+        name: 'Jon Noronha',
+        role: 'CPO & Co-Founder',
+        background: 'Product leader. Previously at Optimizely.',
+      },
+      {
+        name: 'James Fox',
+        role: 'Co-Founder',
+        background: 'Engineering leader.',
+      },
+    ],
+    whyBuilding: 'Slides are dead. People waste hours making presentations. AI can create beautiful content in seconds.',
+    beliefs: [
+      'AI should do the heavy lifting',
+      'Focus on content, not formatting',
+      'Interactive documents > static slides',
+      'Lean team, high efficiency (52 people at $100M ARR)',
+      'Profitability matters',
+    ],
+    designPhilosophy: 'AI-generated beauty. Users focus on content, AI handles design. Fast and intuitive.',
+    greenFlags: [
+      'Grant Lee is designer CEO (rare!)',
+      '$100M ARR profitably with 52 people',
+      '30M+ users, strong growth',
+      'Pivoted successfully to AI in 2022',
+      'Remote-first',
+    ],
+    redFlags: [
+      'Fierce competition from Canva, Microsoft',
+      'AI presentation space is crowded',
+      'Lean team = high expectations',
+      'Design team size unknown',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Grant Lee (CEO, designer background)',
+      teamSize: 'Small (company is 52 people total)',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Design AI generation behaviors',
+          'Define user control vs AI automation',
+          'Template and style selection logic',
+        ],
+      },
+      evaluation: {
+        level: 'high',
+        tasks: [
+          'Quality metrics for AI-generated designs',
+          'User research on AI vs manual creation',
+          'A/B testing on generation flows',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Editor interface design',
+          'AI generation UI/UX',
+          'Template gallery and customization',
+        ],
+      },
+    },
+    productStage: '1→10',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Staff Product Designer',
+        location: 'San Francisco, CA (Remote-friendly)',
+        url: 'https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer',
+        level: 'Staff',
+        type: 'full-time',
+        aboutRole: 'Join a lean team transforming presentations with AI. Design for 30M+ users.',
+        whyInteresting: 'Designer CEO. $100M ARR with 52 people. Profitable. AI-first product. High craft bar.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [],
+
+    // My Tracking
+    tracking: {
+      status: 'interested',
+      fitScore: 9,
+      whyJoin: [
+        'Grant Lee is designer CEO (rare!)',
+        'AI-native Level 4: AI IS the product',
+        '$100M ARR, profitable, lean team',
+        '30M+ users, strong growth',
+        'Interesting design challenges (AI generation)',
+        'Remote-friendly',
+      ],
+      whyNot: [
+        'Small team (52 people total)',
+        'Design team size unknown',
+        'Fierce competition from Canva, Microsoft',
+      ],
+      nextActions: [
+        'Use Gamma extensively',
+        'Research Grant Lee (designer CEO)',
+        'Read "Dumbest idea" to $100M ARR on Lenny\'s',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T14:30:00',
+    sources: [
+      {
+        title: 'Gamma $2.1B valuation, $100M ARR',
+        url: 'https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/',
+      },
+      {
+        title: 'Grant Lee on Lenny\'s Podcast',
+        url: 'https://www.lennysnewsletter.com/p/how-50-people-built-a-profitable-ai-unicorn',
+      },
+    ],
+  },
+
+  // Ramp
+  {
+    id: 'ramp',
+    name: 'Ramp',
+    description: 'AI-powered finance automation platform. Corporate cards, expense management, and bill payments—designed to save companies time and money.',
+    website: 'https://ramp.com',
+
+    // Location
+    headquarters: 'New York, NY',
+    remote: 'Hybrid',
+
+    // Business
+    stage: 'Series D+',
+    valuation: '$32B',
+    totalFunding: '$750M+',
+    fundingHistory: [
+      {
+        stage: 'Series D',
+        amount: '$300M',
+        date: '2025-11',
+        valuation: '$32B',
+        leadInvestors: ['Founders Fund', 'Thrive Capital'],
+      },
+    ],
+    revenue: '$1B ARR (100% YoY growth)',
+    growth: '100% YoY. Crossed $1B ARR in Nov 2025',
+    runway: 'Strong (just raised $300M)',
+    customers: '50,000+ businesses',
+
+    // Competition
+    competitors: [
+      {
+        name: 'Brex',
+        description: 'Corporate cards and spend management',
+        whyTheyWin: 'Earlier mover, international expansion',
+      },
+      {
+        name: 'Navan (formerly TripActions)',
+        description: 'Corporate cards + travel',
+        whyTheyWin: 'Travel integration, international',
+      },
+      {
+        name: 'American Express',
+        description: 'Traditional corporate cards',
+        whyTheyWin: 'Brand, rewards, enterprise relationships',
+      },
+    ],
+    marketPosition: 'Fastest-growing finance automation platform. AI-first approach. "Autonomous finance."',
+    moat: [
+      'AI-powered automation and insights',
+      '$1B ARR, 100% growth',
+      'Network effects (spend data)',
+      'Eric Glyman and Karim Atiyeh (repeat founders)',
+      'Strong investors (Founders Fund, Thrive)',
+    ],
+    vsGiants: 'AI-first vs traditional Amex. Faster product velocity vs Brex. "Autonomous finance."',
+
+    // AI-Native Level
+    aiNativeLevel: 3,
+    aiNativeLevelDescription: 'AI is core differentiator. "Autonomous finance" vision. AI-powered categorization, approvals, and insights.',
+    aiDesignChallenges: [
+      'AI-powered expense categorization',
+      'Automated approval workflows',
+      'Anomaly detection and alerts',
+      'Finance insights and recommendations',
+      'Enterprise admin and controls',
+    ],
+
+    // Founders & Vision
+    founders: [
+      {
+        name: 'Eric Glyman',
+        role: 'CEO & Co-Founder',
+        background: 'Founded Paribus (sold to Capital One). Harvard. Obsessed with saving customers money.',
+      },
+      {
+        name: 'Karim Atiyeh',
+        role: 'CTO & Co-Founder',
+        background: 'Co-founded Paribus. Harvard. Engineering leader.',
+      },
+      {
+        name: 'Gene Lee',
+        role: 'Co-Founder',
+        background: 'Engineering.',
+      },
+    ],
+    whyBuilding: 'Companies waste money on bad spend decisions. AI can help them spend less and move faster.',
+    beliefs: [
+      'Help companies spend less (not more)',
+      'AI should automate finance workflows',
+      'Speed and efficiency over features',
+      'Asymmetric bets and bold moves',
+    ],
+    designPhilosophy: 'Simple, fast, intelligent. AI should be invisible but powerful.',
+    greenFlags: [
+      'Eric Glyman and Karim Atiyeh (repeat founders)',
+      '$32B valuation, $1B ARR',
+      '100% YoY growth (rare at scale)',
+      'Strong AI vision',
+    ],
+    redFlags: [
+      'New York hybrid (not remote)',
+      'Fintech can be dry for designers',
+      'Fierce competition from Brex, Amex',
+      'High-pressure, high-growth culture',
+    ],
+
+    // Design Opportunity
+    designTeam: {
+      designHead: 'Unknown',
+      teamSize: 'Unknown',
+    },
+    designWorkType: {
+      logicBehavior: {
+        level: 'high',
+        tasks: [
+          'Design AI categorization behaviors',
+          'Define automated approval workflows',
+          'Anomaly detection and alert logic',
+        ],
+      },
+      evaluation: {
+        level: 'medium',
+        tasks: [
+          'Accuracy metrics for AI categorization',
+          'User research on finance workflows',
+          'A/B testing on automation features',
+        ],
+      },
+      interface: {
+        level: 'high',
+        tasks: [
+          'Finance dashboards and insights',
+          'Mobile expense capture',
+          'Enterprise admin controls',
+        ],
+      },
+    },
+    productStage: '10→100',
+
+    // Designer Links
+    designerLinks: [],
+
+    // Open Roles
+    openRoles: [
+      {
+        title: 'Principal Product Designer',
+        location: 'New York, NY',
+        url: 'https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf',
+        level: 'Principal',
+        type: 'full-time',
+        aboutRole: 'Lead design for AI-powered finance automation. Design for 50,000+ businesses.',
+        whyInteresting: 'Work with repeat founders. $1B ARR, 100% growth. Autonomous finance vision.',
+      },
+      {
+        title: 'Staff Product Designer',
+        location: 'New York, NY',
+        url: 'https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5',
+        level: 'Staff',
+        type: 'full-time',
+        aboutRole: 'Design for AI-powered finance platform. High-growth, high-impact role.',
+        whyInteresting: '$32B valuation. Fastest-growing fintech. AI-first approach.',
+      },
+    ],
+
+    // Culture Insights
+    cultureInsights: [],
+
+    // My Tracking
+    tracking: {
+      status: 'watching',
+      fitScore: 7,
+      whyJoin: [
+        'Eric Glyman and Karim Atiyeh (repeat founders)',
+        '$32B valuation, $1B ARR',
+        '100% YoY growth (rare at scale)',
+        'AI-native Level 3: AI is core',
+        'Multiple senior roles (Principal, Staff)',
+      ],
+      whyNot: [
+        'New York hybrid (not remote)',
+        'Fintech domain might be dry',
+        'High-pressure culture',
+        'Unknown design team culture',
+      ],
+      nextActions: [
+        'Research Eric Glyman (CEO)',
+        'Try Ramp product',
+        'Connect with Ramp designers on LinkedIn',
+      ],
+    },
+
+    // Meta
+    lastUpdated: '2026-01-26T14:40:00',
+    sources: [
+      {
+        title: 'Ramp $32B valuation, $1B ARR',
+        url: 'https://techstartups.com/2025/11/17/ramp-hits-32b-valuation-with-new-300m-funding-round-as-investors-double-down-on-autonomous-finance/',
+      },
+      {
+        title: 'Eric Glyman on SaaStr',
+        url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/',
+      },
+    ],
+  },
 ];
 
 export function getCompanyById(id: string): Company | undefined {
