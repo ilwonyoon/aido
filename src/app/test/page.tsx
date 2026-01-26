@@ -140,10 +140,10 @@ export default function TestTablePage() {
                     Company {sortBy === 'name' && '↓'}
                   </th>
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Location
+                    Description
                   </th>
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Work Type
+                    Location
                   </th>
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('stage')}>
                     Stage {sortBy === 'stage' && '↓'}
@@ -152,7 +152,7 @@ export default function TestTablePage() {
                     Roles {sortBy === 'openRoles' && '↓'}
                   </th>
                   <th className="text-center py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('interest')}>
-                    Interest {sortBy === 'interest' && '↓'}
+                    Interest
                   </th>
                 </tr>
               </thead>
@@ -175,26 +175,28 @@ export default function TestTablePage() {
                     >
                       <td className="py-3 px-4 border-r border-[var(--border)]">
                         <Link href={`/company/${company.id}`} className="hover:text-[var(--accent-light)]">
-                          <div className="flex items-center gap-2 mb-1">
+                          <div className="flex items-center gap-2">
                             <span className="font-medium text-sm">{company.name}</span>
                             <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
                               L{company.aiNativeLevel}
                             </span>
                           </div>
-                          <div className="text-sm text-[var(--muted)] line-clamp-1">{company.description}</div>
                         </Link>
                       </td>
-                      <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
-                        {company.headquarters.split(',')[0]}
+                      <td className="py-3 px-4 text-sm text-[var(--muted)] border-r border-[var(--border)]">
+                        <div className="line-clamp-2">{company.description}</div>
                       </td>
                       <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
-                        {company.remote === 'No' ? (
-                          <span className="text-[var(--warning)]">On-site</span>
-                        ) : company.remote === 'Hybrid' ? (
-                          <span className="text-[var(--muted)]">Hybrid</span>
-                        ) : (
-                          <span className="text-[var(--success)]">Remote</span>
-                        )}
+                        <div className="text-[var(--muted)]">{company.headquarters.split(',')[0]}</div>
+                        <div className="mt-0.5">
+                          {company.remote === 'No' ? (
+                            <span className="text-[var(--warning)]">On-site</span>
+                          ) : company.remote === 'Hybrid' ? (
+                            <span className="text-[var(--muted)]">Hybrid</span>
+                          ) : (
+                            <span className="text-[var(--success)]">Remote</span>
+                          )}
+                        </div>
                       </td>
                       <td className="py-3 px-4 text-xs text-[var(--muted)] border-r border-[var(--border)]">
                         {company.stage}
