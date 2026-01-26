@@ -4283,7 +4283,7 @@ export const companies: Company[] = [
     totalFunding: '~$1.5B',
     fundingHistory: [
       {
-        stage: 'Late-stage round',
+        stage: 'Series F',
         amount: '$500M',
         date: '2025-08',
         valuation: '$6.8B',
@@ -4811,7 +4811,7 @@ export const companies: Company[] = [
 
     // Design Opportunity
     designTeam: {
-      ceo: 'Karandeep Anand (CEO after founders left)',
+      designHead: 'Karandeep Anand (CEO after founders left)',
       teamSize: '~50-100 (estimated)',
     },
     designWorkType: {
@@ -6105,7 +6105,7 @@ export const companies: Company[] = [
 
     // Design Opportunity
     designTeam: {
-      ceo: 'Timothy Young (joined Sept 2023, ex-Dropbox President)',
+      designHead: 'Timothy Young (joined Sept 2023, ex-Dropbox President)',
       teamSize: '~50-100 (estimated, post-layoffs)',
     },
     designWorkType: {
@@ -6880,6 +6880,20 @@ export const companies: Company[] = [
     // Culture Insights
     cultureInsights: [],
 
+    growthMetrics: {
+      stage: 'high-growth',
+      revenueGrowth: "$13M ARR (2024), profitable, ~3x YoY",
+      userGrowth: "Elite financial institutions (BlackRock, KKR, Apollo)",
+      signals: ["$700M valuation at Series B", "$143M raised (Index, a16z, Thiel)", "Profitable on $13M ARR", "George Sivulka (Stanford)", "BlackRock, KKR as customers"],
+      tam: "$50B+ (Financial services research)",
+      marketShare: "<0.1%",
+      ceiling: "Early innings: Financial analyst workflows huge TAM, targeting elite buy-side first.",
+      tailwinds: ["Finance pays premium", "Structured data extraction defensible", "Elite customer logos"],
+      headwinds: ["Finance vertical limits TAM", "Bloomberg entrenched", "AlphaSense competing"],
+      moatType: 'technology',
+      moatStrength: "Medium: Structured data extraction and financial domain expertise. Elite customer relationships.",
+    },
+
     // My Tracking
     tracking: {
       status: 'watching',
@@ -7109,6 +7123,20 @@ export const companies: Company[] = [
       ],
     },
 
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "$100M ARR (2025), 10x+ YoY",
+      userGrowth: "30M+ users",
+      signals: ["$2.1B valuation", "$100M ARR with 52-person team", "Designer CEO (Grant Lee)", "30M+ users"],
+      tam: "$20B+ (Presentation and creative software)",
+      marketShare: "~0.5%",
+      ceiling: "Mid innings: AI presentation generation growing fast but Canva ($40B) and Microsoft (PowerPoint) dominate.",
+      tailwinds: ["AI generation democratizes design", "Designer CEO", "52 people = extreme efficiency", "Remote-friendly"],
+      headwinds: ["Canva $40B adding AI features", "PowerPoint/Google Slides free", "Beautiful.ai competing"],
+      moatType: 'technology',
+      moatStrength: "Low-Medium: AI generation quality defensible short-term but Canva catching up. Small team efficiency impressive.",
+    },
+
     // Meta
     lastUpdated: '2026-01-26T14:30:00',
     sources: [
@@ -7290,6 +7318,20 @@ export const companies: Company[] = [
 
     // Culture Insights
     cultureInsights: [],
+
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "$1B ARR (2025), 100% YoY (rare at scale)",
+      userGrowth: "50,000+ businesses",
+      signals: ["$32B valuation", "$1B ARR with 100% growth", "Repeat founders (Eric Glyman, Karim Atiyeh)", "50K+ businesses"],
+      tam: "$200B+ (Corporate spend management)",
+      marketShare: "~0.5% = 400x upside",
+      ceiling: "Mid innings: Corporate cards growing but competitors (Brex, Navan) strong. AI automation differentiator.",
+      tailwinds: ["AI-powered finance automation", "100% YoY growth at $1B scale", "Repeat founders", "Fintech consolidation trend"],
+      headwinds: ["Brex, Navan competing", "Banks offering corporate cards", "Fintech margins compress", "NY hybrid limits talent"],
+      moatType: 'switching-costs',
+      moatStrength: "Medium: Finance workflows create switching costs. AI automation defensible. But corporate cards commoditizing.",
+    },
 
     // My Tracking
     tracking: {
