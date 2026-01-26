@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Company } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
-import { getAllUserTracking } from '@/lib/firebase/tracking';
+import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 
 type SortOption = 'recommended' | 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
@@ -33,6 +33,50 @@ function isRecentFunding(company: Company): boolean {
   const sixMonthsAgo = new Date();
   sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
   return latestDate >= sixMonthsAgo;
+}
+
+function InterestCheckbox({
+  companyId,
+  currentStatus,
+  onStatusChange,
+}: {
+  companyId: string;
+  currentStatus: InterestStatus;
+  onStatusChange: (status: InterestStatus) => void;
+}) {
+  const handleClick = async (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent row click
+    const newStatus = currentStatus === 'interested' ? null : 'interested';
+    onStatusChange(newStatus);
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className="group/checkbox relative flex items-center justify-center w-6 h-6"
+      title={currentStatus === 'interested' ? 'Remove from interested' : 'Mark as interested'}
+    >
+      <div
+        className={`w-4 h-4 rounded border-2 transition-all flex items-center justify-center ${
+          currentStatus === 'interested'
+            ? 'bg-[var(--success)] border-[var(--success)]'
+            : 'border-[var(--border)] group-hover/checkbox:border-[var(--success)]'
+        }`}
+      >
+        {currentStatus === 'interested' && (
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path
+              d="M2 6L5 9L10 3"
+              stroke="black"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        )}
+      </div>
+    </button>
+  );
 }
 
 function SortDropdown({
@@ -292,6 +336,33 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       isActive = false;
     };
   }, [user, loading]);
+
+  // Update interest status
+  const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
+    if (!user) return;
+
+    // Optimistic update
+    setInterestStatuses((prev) => {
+      if (newStatus === null) {
+        const { [companyId]: _, ...rest } = prev;
+        return rest;
+      }
+      return { ...prev, [companyId]: newStatus };
+    });
+
+    // Persist to Firestore
+    if (newStatus) {
+      await setUserTracking(user.uid, companyId, { status: newStatus });
+    } else {
+      await deleteUserTracking(user.uid, companyId);
+    }
+
+    void trackEvent('interest_toggle', {
+      company_id: companyId,
+      status: newStatus ?? 'cleared',
+      source: 'list_checkbox',
+    });
+  };
 
   // Filter companies
   const filteredCompanies = useMemo(() => {
@@ -598,13 +669,11 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         )}
                       </td>
                       <td className="py-3 px-4 text-center">
-                        {interest === 'interested' ? (
-                          <span className="text-[var(--primary)]">✨</span>
-                        ) : interest === 'not_interested' ? (
-                          <span className="text-[var(--muted)]">—</span>
-                        ) : (
-                          <span className="text-[var(--muted)]">·</span>
-                        )}
+                        <InterestCheckbox
+                          companyId={company.id}
+                          currentStatus={interest}
+                          onStatusChange={(status) => updateInterestStatus(company.id, status)}
+                        />
                       </td>
                     </tr>
                   );
