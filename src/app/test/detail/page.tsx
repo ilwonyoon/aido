@@ -308,7 +308,6 @@ export default function TestDetailPage() {
           {/* Company */}
           <section id="company" className="scroll-mt-20 space-y-8">
             <h2 className="text-2xl font-semibold mb-6">🏢 Company</h2>
-          </section>
 
             {/* Business */}
             <div>
