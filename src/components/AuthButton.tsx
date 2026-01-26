@@ -32,17 +32,20 @@ export function AuthButton() {
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center focus:outline-none"
         >
-          {user.photoURL ? (
-            <img
-              src={user.photoURL}
-              alt={user.displayName || 'User'}
-              className="w-8 h-8 rounded-full border-2 border-transparent hover:border-[var(--accent)] transition-colors"
-            />
-          ) : (
-            <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-white text-sm font-medium hover:opacity-90 transition-opacity">
-              {user.displayName?.charAt(0) || user.email?.charAt(0) || 'U'}
-            </div>
-          )}
+          <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 border-2 border-transparent hover:border-[var(--accent)] transition-colors">
+            {user.photoURL ? (
+              <img
+                src={user.photoURL}
+                alt={user.displayName || 'User'}
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <div className="w-full h-full bg-[var(--accent)] flex items-center justify-center text-white text-sm font-medium">
+                {user.displayName?.charAt(0) || user.email?.charAt(0) || 'U'}
+              </div>
+            )}
+          </div>
         </button>
 
         {isOpen && (
