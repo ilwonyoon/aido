@@ -139,9 +139,6 @@ export default function TestTablePage() {
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('name')}>
                     Company {sortBy === 'name' && '↓'}
                   </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)] cursor-pointer hover:text-[var(--foreground)]" onClick={() => setSortBy('aiLevel')}>
-                    AI Level {sortBy === 'aiLevel' && '↓'}
-                  </th>
                   <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
                     Location
                   </th>
@@ -178,14 +175,14 @@ export default function TestTablePage() {
                     >
                       <td className="py-3 px-4 border-r border-[var(--border)]">
                         <Link href={`/company/${company.id}`} className="hover:text-[var(--accent-light)]">
-                          <div className="font-medium">{company.name}</div>
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="font-medium">{company.name}</span>
+                            <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
+                              L{company.aiNativeLevel}
+                            </span>
+                          </div>
                           <div className="text-xs text-[var(--muted)] line-clamp-1">{company.description}</div>
                         </Link>
-                      </td>
-                      <td className="py-3 px-4 border-r border-[var(--border)]">
-                        <span className={`text-sm font-medium ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
-                          L{company.aiNativeLevel}
-                        </span>
                       </td>
                       <td className="py-3 px-4 text-sm text-[var(--muted)] border-r border-[var(--border)]">
                         {company.headquarters.split(',')[0]}
