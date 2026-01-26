@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { AuthProvider } from "@/contexts/AuthContext";
-import { AuthButton } from "@/components/AuthButton";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
+import { Navigation } from "@/components/Navigation";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,26 +34,7 @@ export default function RootLayout({
         <ThemeProvider>
           <AuthProvider>
             <AnalyticsTracker />
-            <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
-              <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-                <Link href="/" className="font-semibold tracking-tight">
-                  AIDO
-                </Link>
-                <div className="flex items-center gap-4 text-sm text-[var(--muted)]">
-                  <Link href="/" className="hover:text-[var(--foreground)]">
-                    Companies
-                  </Link>
-                  <Link href="/ai-levels" className="hover:text-[var(--foreground)]">
-                    AI Levels
-                  </Link>
-                  {/* <Link href="/macro" className="hover:text-[var(--foreground)]">
-                    Macro
-                  </Link> */}
-                  <ThemeToggle />
-                  <AuthButton />
-                </div>
-              </div>
-            </nav>
+            <Navigation />
             <main className="max-w-6xl mx-auto px-6 py-8">
               {children}
             </main>
