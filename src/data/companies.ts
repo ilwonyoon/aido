@@ -242,6 +242,38 @@ export const companies: Company[] = [
       },
     ],
 
+    // Growth & Potential
+    growthMetrics: {
+      stage: 'hypergrowth',
+      revenueGrowth: "7x YoY ($1B ARR → $7B ARR)",
+      userGrowth: "300,000+ B2B customers, Claude Code 10x growth in 3 months",
+      signals: [
+        "$183B valuation (10x from $18B in 18 months)",
+        "$7B ARR (Oct 2025), targeting breakeven 2027",
+        "#1 Enterprise LLM market share (32%)",
+        "Claude Code: $500M+ ARR in first 3 months",
+      ],
+
+      tam: "$500B+ (AI for all knowledge work + software development)",
+      marketShare: "~1.4% of TAM = 70x+ upside potential",
+      ceiling: "Early innings: AI assistant market just forming, most companies haven't adopted AI workflows yet",
+      tailwinds: [
+        "AI coding explosion driving Claude Code adoption",
+        "Enterprise safety concerns favor Anthropic over OpenAI",
+        "Developer platform wins (Cursor, Replit default to Claude)",
+        "Governments adopting Claude for secure AI",
+      ],
+      headwinds: [
+        "OpenAI's ChatGPT brand dominance in consumer",
+        "Google's unlimited compute and distribution",
+        "Meta's open-source Llama capturing developer mindshare",
+        "Commoditization risk as models become similar",
+      ],
+
+      moatType: 'data-flywheel',
+      moatStrength: "Strong: 300K+ enterprises + developer platform adoption = continuous training data + distribution moat. Safety-first brand attracts regulated industries.",
+    },
+
     // My Tracking
     tracking: {
       status: 'interested',
