@@ -364,7 +364,17 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       {/* Filter & Sort Bar */}
       <div className="flex items-center justify-between mb-6">
         {/* Left: Filters */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-medium text-[var(--foreground)]">
+            {sortedCompanies.length === companies.length ? (
+              <>{companies.length} companies</>
+            ) : (
+              <>
+                {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
+              </>
+            )}
+          </span>
+          <div className="w-px h-4 bg-[var(--border)]" />
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
