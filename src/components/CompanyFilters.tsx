@@ -11,12 +11,12 @@ import { trackEvent } from '@/lib/firebase/analytics';
 type SortOption = 'recommended' | 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
 type InterestStatus = 'interested' | 'not_interested' | null;
 
-function AiLevelText({ level }: { level: number }) {
-  const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
-  const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--accent-light)]', 4: 'text-[var(--success)]' };
+function AiLevelText({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
+  const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
+  const colors = { D: 'text-[var(--muted)]', C: 'text-[var(--muted)]', B: 'text-[var(--accent-light)]', A: 'text-[var(--success)]' };
   return (
-    <span className={`text-sm ${colors[level as keyof typeof colors]}`}>
-      L{level} {labels[level as keyof typeof labels]}
+    <span className={`text-sm ${colors[level]}`}>
+      Level {level} {labels[level]}
     </span>
   );
 }
@@ -367,7 +367,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   // Filter companies
   const filteredCompanies = useMemo(() => {
     return companies.filter((company) => {
-      if (aiLevelFilter && company.aiNativeLevel !== parseInt(aiLevelFilter)) return false;
+      if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
       if (
@@ -413,9 +413,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
           const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
           if (orderA !== orderB) return orderA - orderB;
 
-          // Priority 2: AI Level (L4 > L3 > L2 > L1)
+          // Priority 2: AI Level (A > B > C > D)
+          const levelOrder = { A: 0, B: 1, C: 2, D: 3 };
           if (a.aiNativeLevel !== b.aiNativeLevel) {
-            return b.aiNativeLevel - a.aiNativeLevel;
+            return levelOrder[a.aiNativeLevel] - levelOrder[b.aiNativeLevel];
           }
           // Priority 3: SF Bay Area location
           const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
@@ -435,7 +436,8 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
         case 'fundingStage':
           return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'aiLevel':
-          return b.aiNativeLevel - a.aiNativeLevel;
+          const levelOrder3 = { A: 0, B: 1, C: 2, D: 3 };
+          return levelOrder3[a.aiNativeLevel] - levelOrder3[b.aiNativeLevel];
         default:
           return 0;
       }
@@ -471,18 +473,18 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             label="AI Level"
             value={aiLevelFilter}
             options={[
-              { value: '4', label: 'L4: AI Native' },
-              { value: '3', label: 'L3: AI Core' },
-              { value: '2', label: 'L2: AI Major' },
-              { value: '1', label: 'L1: AI Feature' },
+              { value: 'A', label: 'Level A: AI-Native' },
+              { value: 'B', label: 'Level B: AI-Core' },
+              { value: 'C', label: 'Level C: AI Feature' },
+              { value: 'D', label: 'Level D: AI-Assisted' },
             ]}
             onChange={setAiLevelFilter}
             infoTooltip={
               <div className="text-xs space-y-2">
-                <div><span className="font-medium text-[var(--success)]">L4:</span> AI is the product (Anthropic, OpenAI)</div>
-                <div><span className="font-medium text-[var(--accent-light)]">L3:</span> AI is core differentiator (Cursor, Perplexity)</div>
-                <div><span className="font-medium">L2:</span> AI is major feature (Notion AI, Figma AI)</div>
-                <div><span className="font-medium">L1:</span> AI is minor feature</div>
+                <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
+                <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
+                <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
+                <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
               </div>
             }
           />
@@ -597,10 +599,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                 {sortedCompanies.map((company) => {
                   const interest = interestStatuses[company.id];
                   const aiLevelColors = {
-                    1: 'text-[var(--muted)]',
-                    2: 'text-[var(--muted)]',
-                    3: 'text-[var(--accent-light)]',
-                    4: 'text-[var(--success)]',
+                    D: 'text-[var(--muted)]',
+                    C: 'text-[var(--muted)]',
+                    B: 'text-[var(--accent-light)]',
+                    A: 'text-[var(--success)]',
                   };
 
                   return (
@@ -633,8 +635,8 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         >
                           <div className="flex items-center gap-2 flex-nowrap">
                             <span className="font-medium text-sm whitespace-nowrap">{company.name}</span>
-                            <span className={`text-xs font-medium flex-shrink-0 ${aiLevelColors[company.aiNativeLevel as keyof typeof aiLevelColors]}`}>
-                              L{company.aiNativeLevel}
+                            <span className={`text-xs font-medium flex-shrink-0 ${aiLevelColors[company.aiNativeLevel]}`}>
+                              {company.aiNativeLevel}
                             </span>
                           </div>
                         </Link>

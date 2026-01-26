@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { Company } from '@/data/types';
 import { InterestToggle } from '@/components/InterestToggle';
 
-function AiLevelBadge({ level }: { level: number }) {
-  const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
-  const colors = { 1: 'badge', 2: 'badge', 3: 'badge-accent', 4: 'badge-success' };
+function AiLevelBadge({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
+  const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
+  const colors = { D: 'badge', C: 'badge', B: 'badge-accent', A: 'badge-success' };
   return (
-    <span className={`badge ${colors[level as keyof typeof colors]}`}>
-      L{level}: {labels[level as keyof typeof labels]}
+    <span className={`badge ${colors[level]}`}>
+      Level {level}: {labels[level]}
     </span>
   );
 }
@@ -182,7 +182,7 @@ export function CompanyDetail({ company }: { company: Company }) {
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">AI Level</div>
-                  <div className="font-medium text-sm">L{company.aiNativeLevel}</div>
+                  <div className="font-medium text-sm">Level {company.aiNativeLevel}</div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Open Roles</div>
@@ -549,7 +549,7 @@ export function CompanyDetail({ company }: { company: Company }) {
               <h3 className="section-title">AI-Native Level</h3>
             <div className="card p-5">
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-4xl font-mono font-bold">L{company.aiNativeLevel}</div>
+                <div className="text-4xl font-mono font-bold">Level {company.aiNativeLevel}</div>
                 <div>
                   <AiLevelBadge level={company.aiNativeLevel} />
                   <p className="text-sm text-[var(--muted)] mt-1">

@@ -106,7 +106,7 @@ export interface Company {
   vsGiants?: string; // How they differentiate vs Google/OpenAI/Anthropic
 
   // AI-Native Level
-  aiNativeLevel: 1 | 2 | 3 | 4;
+  aiNativeLevel: 'A' | 'B' | 'C' | 'D';
   aiNativeLevelDescription: string;
   aiDesignChallenges: string[];
 
