@@ -38,7 +38,6 @@ import { intercomFin } from './intercom-fin';
 import { descript } from './descript';
 import { glean } from './glean';
 import { writer } from './writer';
-import { harveyAi } from './harvey-ai';
 import { brex } from './brex';
 import { tome } from './tome';
 import { grammarly } from './grammarly';
@@ -47,7 +46,6 @@ import { otterAi } from './otter-ai';
 import { copyAi } from './copy-ai';
 import { beautifulAi } from './beautiful-ai';
 import { tabnine } from './tabnine';
-import { cohereAi } from './cohere-ai';
 import { harmonic } from './harmonic';
 import { ambienceHealthcare } from './ambience-healthcare';
 import { abridge } from './abridge';
@@ -93,7 +91,6 @@ export const companies: Company[] = [
   descript,
   glean,
   writer,
-  harveyAi,
   brex,
   tome,
   grammarly,
@@ -102,7 +99,6 @@ export const companies: Company[] = [
   copyAi,
   beautifulAi,
   tabnine,
-  cohereAi,
   harmonic,
   ambienceHealthcare,
   abridge,
@@ -110,7 +106,7 @@ export const companies: Company[] = [
   blossom,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, harveyAi, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, cohereAi, harmonic, ambienceHealthcare, abridge, listenLabs, blossom };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
