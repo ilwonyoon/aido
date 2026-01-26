@@ -99,9 +99,6 @@ export const midjourney: Company = {
         title: 'Product Designer',
         location: 'Remote (Bay Area and London preferred)',
         url: 'https://www.midjourney.com/careers',
-        team: 'Frontend',
-        level: 'Senior',
-        type: 'full-time',
       },
     ],
 

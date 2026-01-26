@@ -144,27 +144,13 @@ export const openai: Company = {
     openRoles: [
       {
         title: 'Product Designer, ChatGPT',
-        location: 'San Francisco (In-person)',
+        location: 'San Francisco, CA',
         url: 'https://openai.com/careers/product-designer-chatgpt-san-francisco/',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$200K-$310K + equity',
       },
       {
         title: 'Product Designer, Platform & Tools',
-        location: 'San Francisco / New York',
+        location: 'San Francisco, CA',
         url: 'https://openai.com/careers/product-designer-platform-and-tools-san-francisco/',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$200K-$310K + equity',
-      },
-      {
-        title: 'Product Designer, Growth',
-        location: 'San Francisco',
-        url: 'https://openai.com/careers/product-designer-growth-san-francisco/',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$200K-$310K + equity',
       },
     ],
 

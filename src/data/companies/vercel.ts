@@ -149,25 +149,8 @@ export const vercel: Company = {
     openRoles: [
       {
         title: 'Senior Product Designer',
-        location: 'Remote (US) or SF/NY/London/Berlin',
-        url: 'https://vercel.com/careers/senior-product-designer-us-5227493004',
-        team: 'Product Design',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$156K-$234K base (SF)',
-        aboutRole: 'Work across entire product solving complex, nuanced web challenges.',
-        responsibilities: [
-          'Design thoughtful, systems-based solutions',
-          'Customer research and requirements gathering',
-          'Deliver visual specs and oversee implementation',
-          'Work on pricing, packaging, checkout flows',
-        ],
-        requirements: [
-          'Strong systems thinking',
-          'Comfort with modern design tools (Figma, v0, Cursor)',
-          'Experience with complex B2B products',
-        ],
-        whyInteresting: 'Shape the tools that shape the web. Remote-friendly. Iconic design culture.',
+        location: 'Remote (US)',
+        url: 'https://vercel.com/careers/senior-product-designer-us-5735407004',
       },
     ],
 
