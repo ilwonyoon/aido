@@ -8,7 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 
-type SortOption = 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
+type SortOption = 'recommended' | 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
 type InterestStatus = 'interested' | 'not_interested' | null;
 
 function AiLevelText({ level }: { level: number }) {
@@ -240,7 +240,7 @@ type ViewMode = 'card' | 'table';
 export function CompanyFilters({ companies }: { companies: Company[] }) {
   const router = useRouter();
   const { user, loading } = useAuth();
-  const [sortBy, setSortBy] = useState<SortOption>('interest');
+  const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('table');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
@@ -330,8 +330,22 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
 
   // Sort companies
   const sortedCompanies = useMemo(() => {
+    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
+        case 'recommended':
+          // Priority 1: AI Level (L4 > L3 > L2 > L1)
+          if (a.aiNativeLevel !== b.aiNativeLevel) {
+            return b.aiNativeLevel - a.aiNativeLevel;
+          }
+          // Priority 2: SF Bay Area location
+          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
+          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
+          if (aIsSF && !bIsSF) return -1;
+          if (!aIsSF && bIsSF) return 1;
+          // Priority 3: Alphabetical
+          return a.name.localeCompare(b.name);
         case 'interest':
           const statusA = interestStatuses[a.id];
           const statusB = interestStatuses[b.id];
@@ -426,6 +440,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             <SortDropdown
               value={sortBy}
               options={[
+                { value: 'recommended', label: 'Recommended' },
                 { value: 'interest', label: 'Interest' },
                 { value: 'teamSize', label: 'Team Size' },
                 { value: 'fundingStage', label: 'Funding Stage' },
