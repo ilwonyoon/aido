@@ -1,9 +1,23 @@
 'use client';
 
+import { useState, useRef, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 
 export function AuthButton() {
   const { user, loading, signIn, signOut } = useAuth();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   if (loading) {
     return (
@@ -13,27 +27,41 @@ export function AuthButton() {
 
   if (user) {
     return (
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2">
+      <div className="relative" ref={dropdownRef}>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center focus:outline-none"
+        >
           {user.photoURL ? (
             <img
               src={user.photoURL}
               alt={user.displayName || 'User'}
-              className="w-7 h-7 rounded-full"
+              className="w-8 h-8 rounded-full border-2 border-transparent hover:border-[var(--accent)] transition-colors"
             />
           ) : (
-            <div className="w-7 h-7 rounded-full bg-[var(--accent)] flex items-center justify-center text-white text-xs font-medium">
+            <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-white text-sm font-medium hover:opacity-90 transition-opacity">
               {user.displayName?.charAt(0) || user.email?.charAt(0) || 'U'}
             </div>
           )}
-          <span className="text-sm hidden sm:inline">{user.displayName?.split(' ')[0]}</span>
-        </div>
-        <button
-          onClick={signOut}
-          className="text-xs text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-        >
-          Sign out
         </button>
+
+        {isOpen && (
+          <div className="absolute right-0 mt-2 w-48 py-1 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50">
+            <div className="px-4 py-2 border-b border-[var(--border)]">
+              <div className="text-sm font-medium truncate">{user.displayName}</div>
+              <div className="text-xs text-[var(--muted)] truncate">{user.email}</div>
+            </div>
+            <button
+              onClick={() => {
+                signOut();
+                setIsOpen(false);
+              }}
+              className="w-full px-4 py-2 text-left text-sm text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--background)] transition-colors"
+            >
+              Sign out
+            </button>
+          </div>
+        )}
       </div>
     );
   }
