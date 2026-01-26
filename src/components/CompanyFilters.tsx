@@ -12,7 +12,7 @@ function AiLevelText({ level }: { level: number }) {
   const colors = { 1: 'text-[var(--muted)]', 2: 'text-[var(--muted)]', 3: 'text-[var(--accent-light)]', 4: 'text-[var(--success)]' };
   return (
     <span className={`text-sm ${colors[level as keyof typeof colors]}`}>
-      L{level} | {labels[level as keyof typeof labels]}
+      L{level} {labels[level as keyof typeof labels]}
     </span>
   );
 }
