@@ -47,8 +47,8 @@ export const granola: Company = {
     ],
     vsGiants: 'Philosophical differentiation: "AI should augment your judgment, not replace it." Premium positioning avoids price war with free tools. Not trying to be everything — opinionated product for specific users.',
 
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI enhances notes but user judgment remains central.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for meeting notes. Proven note-taking workflow enhanced by AI automation.',
     aiDesignChallenges: [
       'Balance AI assistance vs user control',
       'Real-time transcription UX',

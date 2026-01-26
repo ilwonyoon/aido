@@ -47,8 +47,8 @@ export const pika: Company = {
     ],
     vsGiants: 'Consumer-first simplicity vs Runway\'s pro-grade complexity. Faster iteration cycle than Sora (which has slow rollout). Not fighting for Hollywood — capturing everyday creators. Model-agnostic approach allows adopting best techniques.',
 
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Video generation is 100% AI-powered.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Creating consumer-first AI video generation category. Zero-to-one in accessible video creation.',
     aiDesignChallenges: [
       'Prompt engineering for video',
       'Generation preview and iteration',

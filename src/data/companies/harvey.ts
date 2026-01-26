@@ -59,8 +59,8 @@ export const harvey: Company = {
     vsGiants: 'Harvey built legal-specific AI vs generic ChatGPT/Claude. Vertical focus = higher quality, compliance, integration.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Harvey is entirely built around AI-powered legal work — research, drafting, analysis. No Harvey without AI.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator applied to established legal research market. Balances risk and reward on proven workflow.',
     aiDesignChallenges: [
       'Trust & verification: lawyers need to verify AI outputs, how to design for confidence?',
       'Complex legal reasoning: designing interfaces for multi-step legal analysis',

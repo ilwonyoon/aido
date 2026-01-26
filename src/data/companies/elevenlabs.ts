@@ -48,8 +48,8 @@ export const elevenlabs: Company = {
     ],
     vsGiants: 'Quality differentiation — ElevenLabs voices are noticeably more natural than AWS/Google. Specialized focus vs generic cloud services. Voice cloning capability that cloud giants avoid due to liability concerns.',
 
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Voice generation is 100% AI.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Creating human-quality AI voice synthesis from scratch. Defining voice AI category.',
     aiDesignChallenges: [
       'Voice customization UX',
       'Multi-language support',

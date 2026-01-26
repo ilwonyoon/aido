@@ -49,8 +49,8 @@ export const figma: Company = {
       'Ecosystem of plugins and community',
     ],
 
-    aiNativeLevel: 2,
-    aiNativeLevelDescription: 'AI is major feature. Figma AI for design generation and editing.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Industry-leading design tool adding AI features. Stable, successful business with AI enhancement.',
     aiDesignChallenges: [
       'AI-assisted design generation',
       'Design-to-code with AI',

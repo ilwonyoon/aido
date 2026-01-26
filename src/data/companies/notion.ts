@@ -46,8 +46,8 @@ export const notion: Company = {
       'Network effects from templates and sharing',
     ],
 
-    aiNativeLevel: 2,
-    aiNativeLevelDescription: 'AI is major feature. Notion AI for writing, Q&A, and search.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Established workspace product with AI as major enhancement. Stable business adding AI capabilities to proven platform.',
     aiDesignChallenges: [
       'AI writing assistant integration',
       'Q&A across workspace knowledge',

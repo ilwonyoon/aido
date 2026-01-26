@@ -47,8 +47,8 @@ export const cognition: Company = {
     ],
     vsGiants: 'Full autonomy positioning vs Copilot\'s "assistant" framing. Complete project execution rather than suggestions. IOI champion team gives credibility. Enterprise use case (delegate entire tasks) vs developer productivity.',
 
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Autonomous software engineering agent.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building autonomous AI software engineer (Devin). Zero-to-one in AI agents for coding.',
     aiDesignChallenges: [
       'Agentic UX: showing AI work in progress',
       'Trust in autonomous code changes',

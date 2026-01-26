@@ -58,8 +58,8 @@ export const cohere: Company = {
     vsGiants: 'Cohere focuses on enterprise deployment flexibility (on-prem, private cloud) vs OpenAI/Anthropic\'s API-first approach.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Cohere builds LLMs and provides AI infrastructure. No Cohere without AI.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building enterprise LLM platform from scratch with Transformer co-author. Defining enterprise AI deployment standards.',
     aiDesignChallenges: [
       'Enterprise deployment: designing for on-prem, private cloud, multi-cloud',
       'Customization interfaces: fine-tuning workflows for enterprise',

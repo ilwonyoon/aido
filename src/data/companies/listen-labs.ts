@@ -75,8 +75,8 @@ export const listenLabs: Company = {
     vsGiants: 'AI-first automated interviews vs traditional research platforms.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product; interviews and analysis are automated by AI.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Audio-based note-taking with AI features. Building on proven note-taking needs.',
     aiDesignChallenges: [
       'Conversation design for AI interviewers',
       'Ensuring research rigor and validity in AI-led studies',

@@ -46,8 +46,8 @@ export const linear: Company = {
       'Word-of-mouth growth from developer advocacy',
     ],
 
-    aiNativeLevel: 2,
-    aiNativeLevelDescription: 'AI is major feature. AI-powered triage, writing, search.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Successful project management tool with AI features added. Stable product with AI enhancement.',
     aiDesignChallenges: [
       'AI-assisted issue creation and triage',
       'Smart suggestions without being intrusive',

@@ -56,8 +56,8 @@ export const superhuman: Company = {
     vsGiants: 'Premium UX vs Gmail. Speed-obsessed vs Outlook. Now integrating with Grammarly AI.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator post-Grammarly acquisition. Building AI agents across communication tools.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Established email client adding AI writing and triage. Proven product with AI augmentation.',
     aiDesignChallenges: [
       'Integrating AI without sacrificing speed',
       'Designing AI agents for email workflows',

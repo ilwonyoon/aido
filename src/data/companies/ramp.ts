@@ -57,8 +57,8 @@ export const ramp: Company = {
     vsGiants: 'AI-first vs traditional Amex. Faster product velocity vs Brex. "Autonomous finance."',
 
     // AI-Native Level
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator. "Autonomous finance" vision. AI-powered categorization, approvals, and insights.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Finance platform adding AI for spend intelligence. Proven fintech product with AI features.',
     aiDesignChallenges: [
       'AI-powered expense categorization',
       'Automated approval workflows',

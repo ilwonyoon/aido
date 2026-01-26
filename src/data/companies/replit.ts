@@ -63,8 +63,8 @@ export const replit: Company = {
     vsGiants: 'Replit is full-stack AI platform vs Cursor/Windsurf (editors). Different use case: build from scratch vs edit existing code.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Replit Agent is 100% AI-powered. Revenue jumped $10M → $100M in 9 months after launching Agent. AI is the entire value prop.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product (Ghostwriter). Building browser-based AI coding platform from zero. Creating accessible development environment.',
     aiDesignChallenges: [
       'Natural language → code: designing conversational interfaces for building software',
       'Multi-file editing: AI making changes across entire codebase',

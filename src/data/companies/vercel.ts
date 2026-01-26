@@ -54,8 +54,8 @@ export const vercel: Company = {
     vsGiants: 'Owns the Next.js ecosystem. v0 positions them for AI-native development. Not trying to be all of AWS — focused on frontend excellence.',
 
     // AI-Native Level
-    aiNativeLevel: 2,
-    aiNativeLevelDescription: 'AI is major feature. v0 and AI SDK are significant but not core platform.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Web development platform adding AI features (v0). Established platform with AI capabilities.',
     aiDesignChallenges: [
       'v0: AI-generated UI component design and iteration',
       'AI SDK: developer experience for AI integration',

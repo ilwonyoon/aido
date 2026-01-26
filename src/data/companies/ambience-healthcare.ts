@@ -76,8 +76,8 @@ export const ambienceHealthcare: Company = {
     vsGiants: 'Focused clinical documentation + coding workflows vs general AI assistants.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product; ambient clinical AI drives core workflows.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for clinical documentation. Proven medical workflow enhanced by AI scribes.',
     aiDesignChallenges: [
       'Multi-stakeholder UX across clinicians, admins, and coders',
       'Error-proofing AI documentation with high clinical risk',

@@ -38,8 +38,8 @@ export const runway: Company = {
     ],
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI-generated video and media tools are the core product.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Defining professional AI video creation tools. Zero-to-one in creative AI for Hollywood and professionals.',
     aiDesignChallenges: [
       'Designing creation workflows for text-to-video and multimedia generation',
       'Helping users control consistency across scenes and outputs',

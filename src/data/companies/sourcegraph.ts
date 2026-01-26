@@ -56,8 +56,8 @@ export const sourcegraph: Company = {
     vsGiants: 'More comprehensive code search vs GitHub. Better context awareness vs Copilot.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'Cody AI assistant is now core product differentiator. Launched Amp coding agent in 2025.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for code search and intelligence. Proven developer workflow enhanced by AI.',
     aiDesignChallenges: [
       'Designing AI interactions for complex codebases',
       'Making code search + AI feel seamless',

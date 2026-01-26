@@ -65,7 +65,7 @@ export const scaleAi: Company = {
     vsGiants: 'Scale was the data infrastructure for AI leaders. Meta deal changed everything — OpenAI, Google pulled out due to conflict of interest.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
+    aiNativeLevel: 'B',
     aiNativeLevelDescription: 'AI is core differentiator. Scale\'s entire value is enabling AI model training. But it\'s infrastructure, not AI product itself.',
     aiDesignChallenges: [
       'Data quality at scale: ensuring high-quality labels across millions of examples',

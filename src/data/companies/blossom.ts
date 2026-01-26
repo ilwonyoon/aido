@@ -73,8 +73,8 @@ export const blossom: Company = {
     vsGiants: 'Vertical focus on psychiatry vs horizontal telehealth platforms.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI copilots are core to the care workflow and product value.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Therapy and mental health platform with AI features. Proven healthcare workflow with AI augmentation.',
     aiDesignChallenges: [
       'Empathetic UX for sensitive mental health contexts',
       'Safety and escalation design for high-risk cases',

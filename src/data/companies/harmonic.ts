@@ -75,8 +75,8 @@ export const harmonic: Company = {
     vsGiants: 'Math-first MSI approach vs probabilistic LLM reasoning.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. MSI is core to all value delivered.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for customer support. Proven support workflow enhanced by AI agents.',
     aiDesignChallenges: [
       'Designing proof-first workflows (specify, prove, verify)',
       'Communicating correctness guarantees and limits to users',

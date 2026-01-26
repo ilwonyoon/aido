@@ -63,8 +63,8 @@ export const gamma: Company = {
     vsGiants: 'AI-native vs PowerPoint. Faster creation vs Canva. No slides, interactive documents.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Repositioned around generative AI when ChatGPT launched. Core product is AI generation.',
+    aiNativeLevel: 'C',
+    aiNativeLevelDescription: 'AI as Major Feature: Presentation tool with strong AI capabilities but built on proven presentation workflow. AI enhances established product.',
     aiDesignChallenges: [
       'AI-generated layouts and designs',
       'Balance AI speed vs manual control',

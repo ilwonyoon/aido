@@ -53,8 +53,8 @@ export const openai: Company = {
     vsGiants: 'THE giant. Sets the pace for the industry. Brand synonymous with AI. Microsoft partnership provides distribution and resources.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Building AGI is the mission.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building AGI is the mission. Creating foundational models that define the AI era. High risk, extreme upside potential.',
     aiDesignChallenges: [
       'ChatGPT UX: conversational AI at massive scale',
       'Multi-modal interactions: voice, vision, code in one product',

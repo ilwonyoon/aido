@@ -57,8 +57,8 @@ export const hebbia: Company = {
     vsGiants: 'Domain-specific vs generic ChatGPT. Structured output vs freeform. Built for finance/legal.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Matrix enables AI-powered document analysis at unlimited scale.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for knowledge work and research. Proven enterprise research workflow enhanced by AI.',
     aiDesignChallenges: [
       'Designing for unlimited document length',
       'Tabular/spreadsheet output for complex queries',

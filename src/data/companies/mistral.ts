@@ -46,8 +46,8 @@ export const mistral: Company = {
       'ASML backing — hardware advantage',
     ],
 
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Building foundation models.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building open-weight foundation models from scratch. Creating European AI sovereignty. Zero-to-one in regional AI leadership.',
     aiDesignChallenges: [
       'API and developer experience',
       'Model playground and testing tools',

@@ -52,8 +52,8 @@ export const cursor: Company = {
     vsGiants: 'Outpacing GitHub Copilot in features and UX. Built on VS Code but better AI integration. Pure focus on AI-first development vs Microsoft spreading across many products.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator. Editor exists for AI features.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building AI-first code editor from zero. Creating new category of AI-native development tools. High risk, high upside.',
     aiDesignChallenges: [
       'Composer UX: multi-file AI edits with context awareness',
       'Tab completion: making AI suggestions feel natural, not intrusive',

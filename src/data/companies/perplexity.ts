@@ -52,8 +52,8 @@ export const perplexity: Company = {
     vsGiants: 'Attacking Google where it hurts — information retrieval. Not trying to be everything, just the best answer engine. Sources and transparency build trust vs Google AI Overviews.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Answer engine is 100% AI-powered.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Reimagining search as AI-native conversation. Zero-to-one in answer engine category.',
     aiDesignChallenges: [
       'Answer presentation: balancing brevity with depth',
       'Source citation UX: making citations trustworthy and accessible',

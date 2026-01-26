@@ -43,8 +43,8 @@ export const stabilityAi: Company = {
     ],
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI model development is the core product (Stable Diffusion and other media models).',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Open-source AI models (Stable Diffusion) created new category. Building from zero with community-driven approach.',
     aiDesignChallenges: [
       'Designing enterprise-grade creative workflows across multiple media types',
       'Balancing open access with responsible use and licensing',

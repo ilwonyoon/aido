@@ -45,8 +45,8 @@ export const leya: Company = {
     ],
     vsGiants: 'European focus avoids direct US competition with Harvey. Multi-jurisdictional expertise (EU, UK, Nordic law) that US players lack. Not dependent on single LLM provider.',
 
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator. LLM powers document review, research, drafting.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for legal work. Building on proven legal workflow with AI enhancement.',
     aiDesignChallenges: [
       'Trust in legal context: lawyers need 100% accuracy',
       'Citation & source verification UX',

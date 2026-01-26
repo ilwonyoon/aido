@@ -55,7 +55,7 @@ export const typeface: Company = {
     vsGiants: 'Typeface focuses on enterprise brand control vs generic AI tools. Adobe Firefly is creative-first, Typeface is marketing-first.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
+    aiNativeLevel: 'B',
     aiNativeLevelDescription: 'AI is core differentiator. Typeface\'s value prop is AI-powered content generation. But could exist as traditional content management without AI (less valuable).',
     aiDesignChallenges: [
       'Brand consistency: ensuring AI generates on-brand content',

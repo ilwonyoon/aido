@@ -49,8 +49,8 @@ export const mercor: Company = {
     ],
     vsGiants: 'AI-native from day one vs LinkedIn\'s AI add-ons. Focused on talent quality over quantity. OpenAI/Anthropic as customers validates approach. Skills-based vs credential-based matching.',
 
-    aiNativeLevel: 3,
-    aiNativeLevelDescription: 'AI is core differentiator. AI conducts interviews and matching.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for recruiting. Proven hiring workflow enhanced by AI matching.',
     aiDesignChallenges: [
       'AI interview experience design',
       'Candidate fairness and bias',

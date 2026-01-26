@@ -55,8 +55,8 @@ export const characterAi: Company = {
     vsGiants: 'Character.AI focuses on entertainment/roleplay vs ChatGPT\'s productivity. Different use case, different retention.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Character.AI is 100% about AI-powered conversations. No product without AI.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Creating AI companions and characters from scratch. Zero-to-one in conversational AI entertainment.',
     aiDesignChallenges: [
       'Character consistency: keeping AI characters in-character across conversations',
       'Emotional engagement: designing for parasocial relationships',

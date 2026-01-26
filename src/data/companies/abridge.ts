@@ -78,8 +78,8 @@ export const abridge: Company = {
     vsGiants: 'Focused on clinical conversations and documentation rather than general AI assistants.',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product; transcription and summarization drive value.',
+    aiNativeLevel: 'B',
+    aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for medical conversations. Building on proven clinical documentation needs.',
     aiDesignChallenges: [
       'Designing audio + transcript + note workflows',
       'High-accuracy editing and review UX for clinicians',

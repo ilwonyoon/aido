@@ -36,8 +36,8 @@ export const midjourney: Company = {
     ],
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI image generation is the core product.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Created new category of AI-generated imagery for creatives. Building from zero with bootstrapped model.',
     aiDesignChallenges: [
       'Designing prompt-to-image creative workflows across web and Discord',
       'Building tools that scale creator feedback into product decisions',

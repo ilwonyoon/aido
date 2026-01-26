@@ -54,7 +54,7 @@ export const jasper: Company = {
     vsGiants: 'Jasper was first to market but now faces competition from Typeface (ex-Adobe), Writer.com, and simpler tools like Copy.ai.',
 
     // AI-Native Level
-    aiNativeLevel: 3,
+    aiNativeLevel: 'B',
     aiNativeLevelDescription: 'AI is core differentiator. Jasper\'s value is AI-powered content generation. But product could exist as content management tool without AI (less valuable).',
     aiDesignChallenges: [
       'Brand voice consistency: AI generating on-brand content',

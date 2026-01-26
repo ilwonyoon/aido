@@ -54,8 +54,8 @@ export const anthropic: Company = {
     vsGiants: 'Safety-first positioning attracts enterprises wary of OpenAI/Google data practices. Claude\'s "character" and nuanced reasoning wins developers. Not trying to own distribution — instead powers other platforms (Cursor, Perplexity, etc.)',
 
     // AI-Native Level
-    aiNativeLevel: 4,
-    aiNativeLevelDescription: 'AI is the product. Without AI, no product exists.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Building foundational models and defining new category of AI assistants. High risk, high upside, transforming human-computer interaction.',
     aiDesignChallenges: [
       'Character Design: Designing AI personality/tone (unprecedented domain)',
       'Trust Design: Communicating AI uncertainty and limitations',
