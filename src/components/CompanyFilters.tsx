@@ -715,48 +715,55 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   });
                 }}
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <h2 className="text-lg font-medium">{company.name}</h2>
-                      <span className="text-[var(--border)]">|</span>
-                      <AiLevelText level={company.aiNativeLevel} />
+                <div className="space-y-3">
+                  {/* Top Row: Company Name + Open Roles */}
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-center gap-2 flex-1 min-w-0">
+                      <h2 className="text-lg font-medium truncate">{company.name}</h2>
+                      <span className="text-[var(--border)] flex-shrink-0">|</span>
+                      <div className="flex-shrink-0">
+                        <AiLevelText level={company.aiNativeLevel} />
+                      </div>
                     </div>
-                    <p className="text-[var(--muted)] text-sm mb-3 line-clamp-2">
-                      {company.description}
-                    </p>
-                    <div className="flex items-center gap-1.5 text-sm flex-wrap">
-                      {interest === 'interested' && (
-                        <>
-                          <span className="text-[var(--primary)]">✨ Interested</span>
-                          <span className="text-[var(--border)]">|</span>
-                        </>
-                      )}
-                      <span className="text-[var(--muted)]">{company.headquarters}</span>
-                      <span className="text-[var(--border)]">|</span>
-                      <span className="text-[var(--muted)]">{company.stage}</span>
-                      {company.remote === 'Yes' && (
-                        <>
-                          <span className="text-[var(--border)]">|</span>
-                          <span className="text-[var(--muted)]">Remote OK</span>
-                        </>
-                      )}
-                      {hasRecentFunding && (
-                        <>
-                          <span className="text-[var(--border)]">|</span>
-                          <span className="text-[var(--warning)]">New Funding</span>
-                        </>
+                    <div className="flex-shrink-0">
+                      {company.openRoles.length > 0 ? (
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--success)] text-black rounded-lg font-medium text-sm whitespace-nowrap">
+                          <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
+                          {company.openRoles.length} role{company.openRoles.length > 1 ? 's' : ''} open
+                        </div>
+                      ) : (
+                        <span className="text-sm text-[var(--muted)] whitespace-nowrap">No open roles</span>
                       )}
                     </div>
                   </div>
-                  <div className="flex-shrink-0 text-right">
-                    {company.openRoles.length > 0 ? (
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--success)] text-black rounded-lg font-medium text-sm">
-                        <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
-                        {company.openRoles.length} role{company.openRoles.length > 1 ? 's' : ''} open
-                      </div>
-                    ) : (
-                      <span className="text-sm text-[var(--muted)]">No open roles</span>
+
+                  {/* Full Width: Description */}
+                  <p className="text-[var(--muted)] text-sm line-clamp-2">
+                    {company.description}
+                  </p>
+
+                  {/* Full Width: Metadata */}
+                  <div className="flex items-center gap-1.5 text-sm flex-wrap">
+                    {interest === 'interested' && (
+                      <>
+                        <span className="text-[var(--primary)]">✨ Interested</span>
+                        <span className="text-[var(--border)]">|</span>
+                      </>
+                    )}
+                    <span className="text-[var(--muted)]">{company.headquarters}</span>
+                    <span className="text-[var(--border)]">|</span>
+                    <span className="text-[var(--muted)]">{company.stage}</span>
+                    {company.remote === 'Yes' && (
+                      <>
+                        <span className="text-[var(--border)]">|</span>
+                        <span className="text-[var(--muted)]">Remote OK</span>
+                      </>
+                    )}
+                    {hasRecentFunding && (
+                      <>
+                        <span className="text-[var(--border)]">|</span>
+                        <span className="text-[var(--warning)]">New Funding</span>
+                      </>
                     )}
                   </div>
                 </div>

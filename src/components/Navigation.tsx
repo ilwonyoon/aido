@@ -108,7 +108,7 @@ export function Navigation() {
             className="fixed inset-0 bg-black/50 z-40 lg:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="fixed right-0 top-0 bottom-0 w-64 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6">
+          <div className="fixed left-12 right-0 top-0 bottom-0 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6">
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="absolute top-4 right-4 p-2"
