@@ -129,6 +129,16 @@ function TestPageContent() {
         <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
       </div>
 
+      {/* Debug info */}
+      {console.log('Render check - selectedCompanyId:', selectedCompanyId, 'selectedCompany:', selectedCompany)}
+
+      {/* Debug display */}
+      {selectedCompanyId && !selectedCompany && (
+        <div className="fixed top-20 right-4 bg-red-500 text-white p-4 rounded z-50">
+          <p>ERROR: Company ID = {selectedCompanyId} but company not found!</p>
+        </div>
+      )}
+
       {/* Side Panel - Overlay on top */}
       {selectedCompanyId && selectedCompany && (
         <div
