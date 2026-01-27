@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Company } from '@/data/types';
@@ -140,10 +140,23 @@ function DropdownFilter({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+
+  useEffect(() => {
+    if (isOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      setDropdownStyle({
+        top: rect.bottom + 4,
+        left: rect.left,
+      });
+    }
+  }, [isOpen]);
 
   return (
     <div className="relative">
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
           value
@@ -167,10 +180,13 @@ function DropdownFilter({
         </svg>
       </button>
 
-      {isOpen && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute left-0 top-full mt-1 min-w-full max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div
+            className="fixed min-w-[200px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
+          >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
@@ -209,7 +225,19 @@ function MultiSelectFilter({
   onChange: (values: string[]) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
   const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
+
+  useEffect(() => {
+    if (isOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      setDropdownStyle({
+        top: rect.bottom + 4,
+        left: rect.left,
+      });
+    }
+  }, [isOpen]);
 
   const toggleValue = (value: string) => {
     if (values.includes(value)) {
@@ -222,6 +250,7 @@ function MultiSelectFilter({
   return (
     <div className="relative">
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
           values.length > 0
@@ -235,10 +264,13 @@ function MultiSelectFilter({
         </svg>
       </button>
 
-      {isOpen && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute left-0 top-full mt-1 min-w-full max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div
+            className="fixed min-w-[200px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
+          >
             {values.length > 0 && (
               <button
                 onClick={() => onChange([])}
@@ -468,7 +500,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       {/* Filter & Sort Bar */}
       <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
+        <div className="flex items-center gap-2 overflow-x-auto overflow-y-visible scrollbar-hide" style={{ overflowY: 'visible' }}>
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
