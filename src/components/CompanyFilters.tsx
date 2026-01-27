@@ -237,9 +237,15 @@ function MultiSelectFilter({
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
+      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 180);
+      const spaceOnRight = window.innerWidth - rect.left;
+
+      // If dropdown would overflow on right, align to button's right edge
+      const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
+
       setDropdownStyle({
         top: rect.bottom + 4,
-        left: rect.left,
+        left: Math.max(16, left), // Ensure at least 16px from left edge
       });
     }
   }, [isOpen]);
