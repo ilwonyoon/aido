@@ -145,7 +145,7 @@ function DropdownFilter({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors ${
+        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
           value
             ? 'border-[var(--accent)] text-[var(--foreground)]'
             : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
@@ -223,7 +223,7 @@ function MultiSelectFilter({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors ${
+        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
           values.length > 0
             ? 'border-[var(--accent)] text-[var(--foreground)]'
             : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
@@ -468,7 +468,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       {/* Filter & Sort Bar */}
       <div className="space-y-3 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-1">
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide -mb-px">
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
