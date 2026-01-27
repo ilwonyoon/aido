@@ -65,7 +65,37 @@ export const lovable: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Remote)', url: 'https://lovable.dev/careers', type: 'full-time', aboutRole: 'Design experiences that make app creation feel like magic.', whyInteresting: '$200M ARR, 8M users. Fastest growing AI company ever.' }],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Stockholm, Sweden',
+        type: 'full-time',
+        url: 'https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543',
+        aboutRole: 'Shape AI-powered software creation platform. Lead design projects end-to-end collaborating with engineering.',
+        responsibilities: [
+          'Create detailed user flows and high-fidelity mockups for new features',
+          'Own design projects from conception through delivery',
+          'Establish scalable design processes maintaining quality standards',
+          'Champion quick wins and impactful improvements',
+          'Contribute to improving design quality of AI capabilities',
+          'Help set design quality standards and culture',
+        ],
+        requirements: [
+          'Track record in high-performing, fast-paced startup environments',
+          'Portfolio demonstrating user-loved products from high-velocity teams',
+          'Simplify complex user journeys into intuitive experiences',
+          'Strong prototyping skills with visual communication emphasis',
+          'Fluency with design systems and technical implementations',
+          'Outstanding visual design, UI patterns, interaction principles',
+          'High aptitude for shipping quickly and learning rapidly',
+        ],
+        preferred: [
+          'Experience shipping to production with AI assistance',
+          'Background designing AI products',
+        ],
+        whyInteresting: 'On-site in Stockholm. $200M ARR, 8M users (2M+ across 200+ countries). Fastest growing AI company ever. Extreme ownership, high velocity, low-ego collaboration culture. Hiring process: form → call → take-home → interviews → 1-2 day trial.',
+      },
+    ],
     cultureInsights: [],
     tracking: {
       status: 'interested',
