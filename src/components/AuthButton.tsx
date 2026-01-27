@@ -8,6 +8,10 @@ export function AuthButton() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    console.log('[AuthButton] State:', { user: !!user, loading });
+  }, [user, loading]);
+
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -21,7 +25,10 @@ export function AuthButton() {
 
   if (loading) {
     return (
-      <div className="w-8 h-8 rounded-full bg-[var(--border)] animate-pulse" />
+      <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-[var(--card)] border border-[var(--border)]">
+        <div className="w-4 h-4 rounded-full bg-[var(--border)] animate-pulse" />
+        <span className="text-sm text-[var(--muted)]">Loading...</span>
+      </div>
     );
   }
 
