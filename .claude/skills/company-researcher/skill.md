@@ -16,13 +16,29 @@ AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함�
 
 ## 워크플로우
 
-### Phase 0: Job Scraper 먼저 실행 (필수)
+### Phase 0: Job Scraper 자동 실행 (필수)
 
-```
-/job-scraper [company name]
-```
+**이 스킬은 Job Scraper를 자동으로 호출합니다.**
 
-**이유**: Open roles 정보를 먼저 수집해야 나머지 데이터와 함께 완전한 프로필 생성 가능.
+실행 시:
+1. Job Scraper 스킬 먼저 실행
+2. Job scraper 결과를 받아옴
+3. 나머지 company 데이터 수집
+4. 모든 정보를 통합하여 완전한 Company 객체 생성
+
+**사용자는 `/company-researcher [company name]` 만 실행하면 됩니다.**
+
+내부적으로:
+```typescript
+// 1. Job Scraper 먼저 실행
+const jobResults = await executeSkill('job-scraper', companyName);
+
+// 2. Company 데이터 수집
+const companyData = await collectCompanyData(companyName);
+
+// 3. 통합
+const finalCompany = { ...companyData, openRoles: jobResults.openRoles };
+```
 
 ---
 
@@ -437,53 +453,101 @@ tracking: {
 
 ## Reference Examples
 
+스킬과 함께 제공되는 레퍼런스 파일들을 참고하세요.
+
 ### Example 1: Rich Data (Anthropic)
 
-[See full file: `src/data/companies/anthropic.ts`]
+**File**: `.claude/skills/company-researcher/references/anthropic-rich-example.ts`
 
 **Highlights:**
-- Complete funding history (7 rounds)
-- Detailed founders background
-- Rich growth metrics with TAM/ceiling analysis
-- Comprehensive design work type examples
-- Multiple culture insights from different sources
-- Clear moat and competitive positioning
+- Complete funding history (7 rounds with dates, amounts, valuations, lead investors)
+- Detailed founders background (Dario & Daniela Amodei from OpenAI)
+- Rich growth metrics with TAM ($500B+), market share (32%), ceiling analysis
+- Comprehensive design work type with specific task examples
+- Multiple culture insights from Glassdoor, Blind, levels.fyi, LinkedIn, Twitter
+- Clear moat (4 items) and competitive positioning vs OpenAI/Google/Meta
+- 3 open roles with full details (compensation, responsibilities, requirements)
+- Designer links (3 sources: Joel Lewenstein podcast, Amanda Askell Twitter, research blog)
+- Growth metrics: hypergrowth stage, 7x YoY revenue growth, detailed signals
 
 **Data Completeness: ~95%**
 
+**Use this as the gold standard when researching new companies.**
+
 ---
 
-### Example 2: Medium Data (Harmonic or Runway)
+### Example 2: Medium Data (Harmonic)
 
-[See full file: `src/data/companies/harmonic.ts`]
+**File**: `.claude/skills/company-researcher/references/harmonic-medium-example.ts`
 
 **Highlights:**
-- Basic funding history (3-4 rounds)
+- Basic funding history (3-4 rounds with essential details)
 - Founders with brief background
-- Some growth metrics
-- Design work type with tasks
-- Few culture insights
-- Basic moat description
+- Some growth metrics (stage, basic signals)
+- Design work type with 2-3 task examples per category
+- 1-2 culture insights
+- Basic moat description (3 items)
+- Open roles with core information (title, location, compensation)
+- Minimal designer links (1-2)
 
 **Data Completeness: ~60-70%**
+
+**Use this level for smaller/private companies with limited public information.**
 
 ---
 
 ### Example 3: Low Data (Canva - needs filling)
 
-[See full file: `src/data/companies/canva.ts`]
+**File**: `.claude/skills/company-researcher/references/canva-low-example.ts`
 
 **Current State:**
-- Basic info only
-- No funding history details
+- Basic info only (name, description, website, headquarters)
+- No funding history details (only total funding)
 - Founders missing
-- "Unknown" for many fields
-- Empty arrays for competitors, designer links
+- "Unknown" for revenue, growth, customers
+- Empty arrays for competitors, designer links, culture insights
+- Generic moat/beliefs placeholders
+- Minimal design work type (only levels, no task examples)
 
 **Data Completeness: ~30%**
 
+**What's missing:**
+- Funding history with dates/investors
+- Founder backgrounds and vision
+- Competitor analysis
+- Designer links
+- Culture insights
+- Specific design challenges
+- Open roles details
+
 **Action Needed:**
 Run `/company-researcher canva` to fill gaps.
+
+**Don't use this as a reference - use Anthropic or Harmonic instead.**
+
+---
+
+### How to Use References
+
+1. **Starting a new company research:**
+   ```bash
+   # Look at the rich example first
+   cat .claude/skills/company-researcher/references/anthropic-rich-example.ts
+
+   # Then run company researcher
+   /company-researcher [new-company]
+   ```
+
+2. **Checking data completeness:**
+   ```bash
+   # Compare your output against Anthropic example
+   # Aim for 70%+ completeness
+   ```
+
+3. **Understanding each field:**
+   - Each reference file shows how to fill every field
+   - Anthropic example has detailed comments and examples
+   - Copy the structure, adapt the content
 
 ---
 
