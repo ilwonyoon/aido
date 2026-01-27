@@ -742,11 +742,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         className="py-3 px-4 text-center border-r border-[var(--border)] cursor-pointer"
                       >
                         {company.openRoles.length > 0 ? (
-                          <span className="inline-flex items-center gap-1 px-2 py-1 bg-[var(--success)] text-black rounded text-xs font-medium">
-                            {company.openRoles.length}
-                          </span>
+                          <span className="text-[var(--success)] text-lg">✓</span>
                         ) : (
-                          <span className="text-xs text-[var(--muted)]">—</span>
+                          <span className="text-[var(--muted)]">-</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-center">
@@ -786,14 +784,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   {/* Top Row: Company Name + Open Roles Only */}
                   <div className="flex items-start justify-between gap-4">
                     <h2 className="text-lg font-medium flex-1 min-w-0">{company.name}</h2>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 text-sm text-[var(--muted)]">
+                      <span className="inline-block mr-1">Open Roles:</span>
                       {company.openRoles.length > 0 ? (
-                        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--success)] text-black rounded-lg font-medium text-sm whitespace-nowrap">
-                          <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
-                          {company.openRoles.length} role{company.openRoles.length > 1 ? 's' : ''} open
-                        </div>
+                        <span className="text-[var(--success)] text-lg">✓</span>
                       ) : (
-                        <span className="text-sm text-[var(--muted)] whitespace-nowrap">No open roles</span>
+                        <span>-</span>
                       )}
                     </div>
                   </div>
