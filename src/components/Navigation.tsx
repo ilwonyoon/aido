@@ -67,6 +67,16 @@ export function Navigation() {
             Companies
           </Link>
           <Link
+            href="/jobs"
+            className={
+              isActive('/jobs')
+                ? 'text-[var(--foreground)]'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+            }
+          >
+            Jobs
+          </Link>
+          <Link
             href="/ai-levels"
             className={
               isActive('/ai-levels')
@@ -139,6 +149,17 @@ export function Navigation() {
                 }`}
               >
                 Companies
+              </Link>
+              <Link
+                href="/jobs"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/jobs')
+                    ? 'bg-[var(--card)] text-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                }`}
+              >
+                Jobs
               </Link>
               <Link
                 href="/ai-levels"

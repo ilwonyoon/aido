@@ -56,6 +56,15 @@ import { toma } from './toma';
 import { shopify } from './shopify';
 import { base44 } from './base44';
 import { xai } from './xai';
+import { suno } from './suno';
+import { higgsfield } from './higgsfield';
+import { inferact } from './inferact';
+import { humansand } from './humansand';
+import { subtleComputing } from './subtle-computing';
+import { deepgram } from './deepgram';
+import { letta } from './letta';
+import { llmarena } from './llmarena';
+import { mem0 } from './mem0';
 
 export const companies: Company[] = [
   anthropic,
@@ -114,9 +123,18 @@ export const companies: Company[] = [
   shopify,
   base44,
   xai,
+  suno,
+  higgsfield,
+  inferact,
+  humansand,
+  subtleComputing,
+  deepgram,
+  letta,
+  llmarena,
+  mem0,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0 };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);

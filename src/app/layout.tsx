@@ -17,8 +17,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AIDO — AI Design Opportunities",
-  description: "Personal intelligence system for navigating the AI tech scene",
+  title: {
+    default: 'AIDO - AI Product Designer Jobs | Curated AI Company Listings',
+    template: '%s | AIDO',
+  },
+  description: 'Curated AI companies with product design roles. Filter by AI-native level, funding stage, and location. Updated daily with 120+ open positions at 57 companies.',
+  keywords: [
+    'AI product designer jobs',
+    'AI design jobs',
+    'product designer AI companies',
+    'AI startup designer jobs',
+    'Level A AI company jobs',
+    'AI-native product designer',
+  ],
+  authors: [{ name: 'AIDO' }],
+  creator: 'AIDO',
+  publisher: 'AIDO',
+  metadataBase: new URL('https://aido-d2cc0.web.app'),
+  openGraph: {
+    title: 'AIDO - AI Product Designer Jobs',
+    description: 'Curated AI companies with 120+ product design roles. Updated daily.',
+    url: 'https://aido-d2cc0.web.app',
+    siteName: 'AIDO',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AIDO - AI Product Designer Jobs',
+    description: 'Curated AI companies with 120+ product design roles',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export const viewport = {
