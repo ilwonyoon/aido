@@ -180,12 +180,16 @@ function DropdownFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && (
+      {isOpen && dropdownStyle && buttonRef.current && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed min-w-[120px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
+            className="fixed max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            style={{
+              top: `${dropdownStyle.top}px`,
+              left: `${dropdownStyle.left}px`,
+              minWidth: `${buttonRef.current.offsetWidth}px`
+            }}
           >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
@@ -264,12 +268,16 @@ function MultiSelectFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && (
+      {isOpen && dropdownStyle && buttonRef.current && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed min-w-[120px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
+            className="fixed max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            style={{
+              top: `${dropdownStyle.top}px`,
+              left: `${dropdownStyle.left}px`,
+              minWidth: `${Math.max(buttonRef.current.offsetWidth, 180)}px`
+            }}
           >
             {values.length > 0 && (
               <button
