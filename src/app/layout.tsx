@@ -21,6 +21,12 @@ export const metadata: Metadata = {
   description: "Personal intelligence system for navigating the AI tech scene",
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
