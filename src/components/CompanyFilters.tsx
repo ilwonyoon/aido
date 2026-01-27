@@ -342,6 +342,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('table');
   const [isMobile, setIsMobile] = useState(false);
+  const [reviewStatusFilter, setReviewStatusFilter] = useState('not_yet_reviewed');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
@@ -437,6 +438,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // Filter companies
   const filteredCompanies = useMemo(() => {
     return companies.filter((company) => {
+      // Review Status Filter
+      const status = interestStatuses[company.id];
+      if (reviewStatusFilter === 'not_yet_reviewed' && status) return false;
+      if (reviewStatusFilter === 'interested' && status !== 'interested') return false;
+      if (reviewStatusFilter === 'not_interested' && status !== 'not_interested') return false;
+
       if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
@@ -448,7 +455,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       }
       return true;
     });
-  }, [companies, aiLevelFilter, openRolesFilter, locationFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -517,9 +524,15 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return sorted;
   }, [filteredCompanies, sortBy, initialInterestStatuses]);
 
-  const hasActiveFilters = aiLevelFilter || openRolesFilter || locationFilter.length > 0;
+  // Count not reviewed companies
+  const notReviewedCount = useMemo(() => {
+    return companies.filter(c => !interestStatuses[c.id]).length;
+  }, [companies, interestStatuses]);
+
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0;
 
   const clearFilters = () => {
+    setReviewStatusFilter('not_yet_reviewed');
     setAiLevelFilter('');
     setOpenRolesFilter('');
     setLocationFilter([]);
@@ -531,6 +544,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
+          <DropdownFilter
+            label="Review Status"
+            value={reviewStatusFilter}
+            options={[
+              { value: 'not_yet_reviewed', label: 'Not Yet Reviewed' },
+              { value: 'interested', label: 'Interested' },
+              { value: 'not_interested', label: 'Not Interested' },
+              { value: 'all', label: 'All' },
+            ]}
+            onChange={setReviewStatusFilter}
+          />
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
@@ -580,7 +604,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           {/* Left: Company count */}
           <div className="text-sm font-medium text-[var(--foreground)]">
             {sortedCompanies.length === companies.length ? (
-              <>{companies.length} companies</>
+              <>
+                {companies.length} companies
+                {notReviewedCount > 0 && (
+                  <span className="text-[var(--muted)] ml-2">({notReviewedCount} not reviewed)</span>
+                )}
+              </>
             ) : (
               <>
                 {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
