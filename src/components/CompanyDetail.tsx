@@ -176,22 +176,22 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* Overview - Summary Card */}
             <div className="card p-5">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
                 <div>
                   <div className="text-xs text-[var(--muted)]">Stage</div>
-                  <div className="font-medium text-sm">{company.stage}</div>
+                  <div className="font-medium text-sm truncate">{company.stage}</div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Valuation</div>
-                  <div className="font-medium text-sm">{company.valuation || 'N/A'}</div>
+                  <div className="font-medium text-sm truncate" title={company.valuation}>{company.valuation || 'N/A'}</div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">AI Level</div>
-                  <div className="font-medium text-sm">Level {company.aiNativeLevel}</div>
+                  <div className="font-medium text-sm truncate">Level {company.aiNativeLevel}</div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Open Roles</div>
-                  <div className="font-medium text-sm">
+                  <div className="font-medium text-sm truncate">
                     {company.openRoles.length > 0 ? (
                       <span className="text-[var(--success)]">{company.openRoles.length} open</span>
                     ) : (
@@ -200,20 +200,20 @@ export function CompanyDetail({ company }: { company: Company }) {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-[var(--border)]">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[var(--border)]">
                 <div>
                   <div className="text-xs text-[var(--muted)]">HQ</div>
-                  <div className="text-sm">{company.headquarters.split(',')[0]}</div>
+                  <div className="text-sm truncate">{company.headquarters.split(',')[0]}</div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Work Type</div>
-                  <div className="text-sm">
+                  <div className="text-sm truncate">
                     {company.remote === 'Yes' ? '🟢 Remote' : company.remote === 'Hybrid' ? '🟡 Hybrid' : '🔴 On-site'}
                   </div>
                 </div>
                 <div>
                   <div className="text-xs text-[var(--muted)]">Total Funding</div>
-                  <div className="text-sm font-medium text-[var(--success)]">{company.totalFunding}</div>
+                  <div className="text-sm font-medium text-[var(--success)] truncate">{company.totalFunding}</div>
                 </div>
               </div>
 

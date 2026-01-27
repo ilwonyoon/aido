@@ -140,9 +140,10 @@ export const letta: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T12:00:00',
+    lastUpdated: '2026-01-27T10:58:34',
     sources: [
       { title: 'Letta (startups.gallery)', url: 'https://startups.gallery/companies/letta' },
       { title: 'Letta founders (SaaS News)', url: 'https://www.thesaasnews.com/news/letta-raises-10-million-in-seed-round' },
+      { title: 'Letta Jobs (Ashby)', url: 'https://jobs.ashbyhq.com/letta' },
     ],
   };

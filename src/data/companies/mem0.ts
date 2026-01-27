@@ -141,10 +141,11 @@ export const mem0: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T12:00:00',
+    lastUpdated: '2026-01-27T10:58:34',
     sources: [
       { title: 'Mem0 (startups.gallery)', url: 'https://startups.gallery/companies/mem0' },
       { title: 'Mem0 (Y Combinator)', url: 'https://www.ycombinator.com/companies/mem0' },
       { title: 'Mem0 Series A (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-the-memory-layer-for-ai-302466162.html' },
+      { title: 'Mem0 Careers', url: 'https://mem0.ai/careers' },
     ],
   };

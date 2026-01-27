@@ -146,10 +146,11 @@ export const llmarena: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T12:00:00',
+    lastUpdated: '2026-01-27T10:58:34',
     sources: [
       { title: 'LLMArena (startups.gallery)', url: 'https://startups.gallery/companies/llmarena' },
       { title: 'LLMArena funding (TechCrunch)', url: 'https://techcrunch.com/2026/01/07/llm-arena-raises-150m-series-a-at-1-7b-valuation/' },
       { title: 'LLMArena founders (Contrary Research)', url: 'https://research.contrary.com/company/lmarena' },
+      { title: 'LMArena', url: 'https://lmarena.ai/' },
     ],
   };

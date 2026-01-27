@@ -273,6 +273,11 @@ a:hover {
 }
 
 /* Hide header info (h1, description) in panel view - already in panel header */
-.panel-view .flex-1 > div:first-child {
+.panel-view .flex-1 > div.mb-8 {
+  display: none;
+}
+
+/* Hide section titles in panel view (chips nav replaces them) */
+.panel-view section > h2 {
   display: none;
 }
