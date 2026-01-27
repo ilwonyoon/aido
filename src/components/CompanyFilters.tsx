@@ -8,7 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 
-type SortOption = 'recommended' | 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
+type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'aiLevel';
 
 function AiLevelText({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
   const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
@@ -528,7 +528,16 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
         case 'recommended':
-          // Priority 1: Tier status (tier_0 > tier_1 > not_reviewed > not_interested)
+          // Priority 1: SF Bay Area + Open Positions
+          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
+          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
+          const aHasRoles = a.openRoles.length > 0;
+          const bHasRoles = b.openRoles.length > 0;
+          const aScore = (aIsSF ? 2 : 0) + (aHasRoles ? 1 : 0);
+          const bScore = (bIsSF ? 2 : 0) + (bHasRoles ? 1 : 0);
+          if (aScore !== bScore) return bScore - aScore;
+
+          // Priority 2: Tier status (tier_0 > tier_1 > not_reviewed > not_interested)
           // Use initialInterestStatuses so sort order doesn't change until page reload
           const statusA = initialInterestStatuses[a.id];
           const statusB = initialInterestStatuses[b.id];
@@ -536,32 +545,27 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           const orderB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
           if (orderA !== orderB) return orderA - orderB;
 
-          // Priority 2: AI Level (A > B > C > D)
+          // Priority 3: AI Level (A > B > C > D)
           const levelOrder = { A: 0, B: 1, C: 2, D: 3 };
           if (a.aiNativeLevel !== b.aiNativeLevel) {
             return levelOrder[a.aiNativeLevel] - levelOrder[b.aiNativeLevel];
           }
-          // Priority 3: SF Bay Area location
-          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
-          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
-          if (aIsSF && !bIsSF) return -1;
-          if (!aIsSF && bIsSF) return 1;
+
           // Priority 4: Alphabetical
           return a.name.localeCompare(b.name);
-        case 'interest':
-          // Use initialInterestStatuses so sort order doesn't change until page reload
-          const statusA2 = initialInterestStatuses[a.id];
-          const statusB2 = initialInterestStatuses[b.id];
-          const orderA2 = statusA2 === 'tier_0' ? 0 : statusA2 === 'tier_1' ? 1 : statusA2 === 'not_interested' ? 3 : 2;
-          const orderB2 = statusB2 === 'tier_0' ? 0 : statusB2 === 'tier_1' ? 1 : statusB2 === 'not_interested' ? 3 : 2;
-          return orderA2 - orderB2;
         case 'teamSize':
-          return parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
+          const teamSizeDiff = parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
+          if (teamSizeDiff !== 0) return teamSizeDiff;
+          // Secondary: Funding stage
+          return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'fundingStage':
           return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'aiLevel':
           const levelOrder3 = { A: 0, B: 1, C: 2, D: 3 };
-          return levelOrder3[a.aiNativeLevel] - levelOrder3[b.aiNativeLevel];
+          const aiLevelDiff = levelOrder3[a.aiNativeLevel] - levelOrder3[b.aiNativeLevel];
+          if (aiLevelDiff !== 0) return aiLevelDiff;
+          // Secondary: Funding stage
+          return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         default:
           return 0;
       }
@@ -671,7 +675,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                 value={sortBy}
                 options={[
                   { value: 'recommended', label: 'Recommended' },
-                  { value: 'interest', label: 'Interest' },
                   { value: 'teamSize', label: 'Team Size' },
                   { value: 'fundingStage', label: 'Funding Stage' },
                   { value: 'aiLevel', label: 'AI Level' },
@@ -742,9 +745,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                   </th>
                   <th className="text-center py-3 px-4 text-sm font-medium text-[var(--muted)]">
                     Roles
-                  </th>
-                  <th className="text-center py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Interest
                   </th>
                 </tr>
               </thead>
@@ -837,20 +837,13 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                       </td>
                       <td
                         onClick={handleNavigate}
-                        className="py-3 px-4 text-center border-r border-[var(--border)] cursor-pointer"
+                        className="py-3 px-4 text-center cursor-pointer"
                       >
                         {company.openRoles.length > 0 ? (
                           <span className="text-[var(--success)] text-lg">✓</span>
                         ) : (
                           <span className="text-[var(--muted)]">-</span>
                         )}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        <InterestCheckbox
-                          companyId={company.id}
-                          currentStatus={interest}
-                          onStatusChange={(status) => updateInterestStatus(company.id, status)}
-                        />
                       </td>
                     </tr>
                   );
