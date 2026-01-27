@@ -49,7 +49,7 @@ export function AuthButton() {
         </button>
 
         {isOpen && (
-          <div className="absolute right-0 mt-2 w-48 py-1 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50">
+          <div className="absolute right-0 mt-2 w-48 max-w-[calc(100vw-2rem)] py-1 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50">
             <div className="px-4 py-2 border-b border-[var(--border)]">
               <div className="text-sm font-medium truncate">{user.displayName}</div>
               <div className="text-xs text-[var(--muted)] truncate">{user.email}</div>

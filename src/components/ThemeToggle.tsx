@@ -63,7 +63,7 @@ export function ThemeToggle() {
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute right-0 top-full mt-2 min-w-[140px] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div className="absolute right-0 top-full mt-2 min-w-[140px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
             {themeOptions.map((option) => (
               <button
                 key={option.value}

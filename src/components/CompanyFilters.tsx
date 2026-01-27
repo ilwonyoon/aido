@@ -106,7 +106,7 @@ function SortDropdown({
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute right-0 top-full mt-1 min-w-[120px] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div className="absolute right-0 top-full mt-1 min-w-[120px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
             {options.map((opt) => (
               <button
                 key={opt.value}
@@ -170,7 +170,7 @@ function DropdownFilter({
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute left-0 top-full mt-1 min-w-full bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div className="absolute left-0 top-full mt-1 min-w-full max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
@@ -238,7 +238,7 @@ function MultiSelectFilter({
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute left-0 top-full mt-1 min-w-full bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
+          <div className="absolute left-0 top-full mt-1 min-w-full max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden">
             {values.length > 0 && (
               <button
                 onClick={() => onChange([])}
@@ -286,10 +286,20 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('table');
+  const [isMobile, setIsMobile] = useState(false);
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const effectiveViewMode = isMobile ? 'card' : viewMode;
 
   // Get unique locations (city level, prioritize SF Bay Area)
   const locations = useMemo(() => {
@@ -530,45 +540,47 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             />
           </div>
 
-          {/* View toggle */}
-          <div className="flex items-center gap-1">
-            <button
-              onClick={() => setViewMode('card')}
-              className={`p-1.5 rounded border transition-colors ${
-                viewMode === 'card'
-                  ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                  : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-              }`}
-              title="Card view"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="3" y="3" width="7" height="7" rx="1"/>
-                <rect x="14" y="3" width="7" height="7" rx="1"/>
-                <rect x="3" y="14" width="7" height="7" rx="1"/>
-                <rect x="14" y="14" width="7" height="7" rx="1"/>
-              </svg>
-            </button>
-            <button
-              onClick={() => setViewMode('table')}
-              className={`p-1.5 rounded border transition-colors ${
-                viewMode === 'table'
-                  ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                  : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-              }`}
-              title="Table view"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
-                <line x1="3" y1="18" x2="21" y2="18"/>
-              </svg>
-            </button>
-          </div>
+          {/* View toggle - Hide on mobile */}
+          {!isMobile && (
+            <div className="flex items-center gap-1">
+              <button
+                onClick={() => setViewMode('card')}
+                className={`p-1.5 rounded border transition-colors ${
+                  viewMode === 'card'
+                    ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
+                    : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+                }`}
+                title="Card view"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="7" height="7" rx="1"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1"/>
+                  <rect x="14" y="14" width="7" height="7" rx="1"/>
+                </svg>
+              </button>
+              <button
+                onClick={() => setViewMode('table')}
+                className={`p-1.5 rounded border transition-colors ${
+                  viewMode === 'table'
+                    ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
+                    : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+                }`}
+                title="Table view"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <line x1="3" y1="12" x2="21" y2="12"/>
+                  <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Company List */}
-      {viewMode === 'table' ? (
+      {effectiveViewMode === 'table' ? (
         /* Table View - Google Sheets style */
         <div className="border border-[var(--border)] rounded-lg overflow-hidden bg-[var(--card)]">
           <div className="overflow-x-auto">
