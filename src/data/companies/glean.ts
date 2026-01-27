@@ -59,38 +59,7 @@ export const glean: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'San Francisco Bay Area (Palo Alto or San Francisco)',
-        type: 'full-time',
-        url: 'https://job-boards.greenhouse.io/gleanwork/jobs/4577381005',
-        compensation: '$150K-$200K annually',
-        aboutRole: 'Own major features from concept to launch, focusing on complex B2B workflows including data management, permissions, integrations, and enterprise setup.',
-        responsibilities: [
-          'Own features from concept to launch with user research',
-          'Rapidly prototype and design detailed interaction flows',
-          'Produce design specs, wireframes, mockups, and interactive prototypes',
-          'Tackle complex B2B workflows (data, permissions, integrations, enterprise setup)',
-          'Contribute to design system and component library',
-          'Influence product roadmaps using data and research',
-        ],
-        requirements: [
-          '5+ years product design experience shipping software',
-          'Enterprise product design background with complex workflows',
-          'Proficiency in Figma (high-fidelity mockups and prototypes)',
-          'Systems thinking and ability to balance tradeoffs',
-          'Strong communication and storytelling',
-          'Ownership mindset, comfortable with ambiguity',
-        ],
-        preferred: [
-          'Technical fluency with AI systems, APIs, databases',
-          'Coding experience',
-        ],
-        teamInfo: 'Design team within product org, collaborating with PMs, engineers, and cross-functional partners.',
-        whyInteresting: 'Hybrid 4 days/week on-site. $7.2B valuation Series F. Fast Company Top 10 Most Innovative 2025. Enterprise AI search (complex B2B workflows). Benefits: medical, generous PTO, 401k, home office stipend, education/wellness stipends, daily lunches.',
-      },
-    ],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
