@@ -168,7 +168,7 @@ function TestPageContent() {
             </button>
             <button
               onClick={() => window.open(`/company/${selectedCompany.id}`, '_blank')}
-              className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
+              className="hidden md:block text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
               title="Open in full page"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
