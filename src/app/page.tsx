@@ -25,6 +25,7 @@ function HomePageContent() {
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
+  const [isFullWidth, setIsFullWidth] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
@@ -40,6 +41,7 @@ function HomePageContent() {
       const params = new URLSearchParams(window.location.search);
       const companyId = params.get('company');
       setSelectedCompanyId(companyId);
+      setIsFullWidth(false);
 
       if (panelRef.current) {
         panelRef.current.scrollTop = 0;
@@ -53,17 +55,23 @@ function HomePageContent() {
   const closePanel = useCallback(() => {
     window.history.pushState({}, '', '/');
     setSelectedCompanyId(null);
+    setIsFullWidth(false);
   }, []);
 
   const handleCompanyClick = useCallback((companyId: string) => {
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
     setSelectedCompanyId(companyId);
+    setIsFullWidth(false);
 
     // Reset panel scroll
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
+  }, []);
+
+  const toggleFullWidth = useCallback(() => {
+    setIsFullWidth(prev => !prev);
   }, []);
 
   useEffect(() => {
@@ -76,19 +84,6 @@ function HomePageContent() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCompanyId, closePanel]);
-
-  // Prevent body scroll when panel is open
-  useEffect(() => {
-    if (selectedCompanyId) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [selectedCompanyId]);
 
   // Observer for company name in content to show/hide in header
   useEffect(() => {
@@ -173,12 +168,13 @@ function HomePageContent() {
           className={`
             fixed
             right-0 top-0 bottom-0
-            w-full md:w-[60%] lg:w-1/2
+            ${isFullWidth ? 'w-full' : 'w-full md:w-[60%] lg:w-1/2'}
             bg-[var(--background)]
             border-l border-[var(--border)]
             z-50
             overflow-y-auto
             animate-slideInRight
+            transition-all duration-300
           `}
         >
           {/* Header - Sticky */}
@@ -194,16 +190,25 @@ function HomePageContent() {
               </svg>
             </button>
             <button
-              onClick={() => window.open(`/company/${selectedCompany.id}`, '_blank')}
+              onClick={toggleFullWidth}
               className="hidden md:block text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
-              title="Open in full page"
+              title={isFullWidth ? "Exit full width" : "Expand to full width"}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
+              {isFullWidth ? (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="4 14 10 14 10 20" />
+                  <polyline points="20 10 14 10 14 4" />
+                  <line x1="14" y1="10" x2="21" y2="3" />
+                  <line x1="3" y1="21" x2="10" y2="14" />
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="15 3 21 3 21 9" />
+                  <polyline points="9 21 3 21 3 15" />
+                  <line x1="21" y1="3" x2="14" y2="10" />
+                  <line x1="3" y1="21" x2="10" y2="14" />
+                </svg>
+              )}
             </button>
             <div className="flex-1 min-w-0">
               <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
