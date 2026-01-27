@@ -24,7 +24,9 @@ function TestPageContent() {
   const searchParams = useSearchParams();
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+  const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
+  const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     // Initial load from URL
@@ -76,6 +78,42 @@ function TestPageContent() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCompanyId, closePanel]);
+
+  // Observer for company name in content to show/hide in header
+  useEffect(() => {
+    if (!selectedCompanyId) {
+      setShowCompanyNameInHeader(false);
+      return;
+    }
+
+    // Wait for DOM to be ready
+    const timer = setTimeout(() => {
+      const companyNameElement = panelRef.current?.querySelector('h1');
+
+      if (companyNameElement) {
+        companyNameObserverRef.current = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              // Show name in header when main title is NOT visible
+              setShowCompanyNameInHeader(!entry.isIntersecting);
+            });
+          },
+          {
+            root: panelRef.current,
+            threshold: 0,
+            rootMargin: '-56px 0px 0px 0px' // Account for sticky header
+          }
+        );
+
+        companyNameObserverRef.current.observe(companyNameElement);
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+      companyNameObserverRef.current?.disconnect();
+    };
+  }, [selectedCompanyId]);
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
 
@@ -179,7 +217,11 @@ function TestPageContent() {
               </svg>
             </button>
             <div className="flex-1 min-w-0">
-              <h2 className="text-sm font-semibold truncate">{selectedCompany.name}</h2>
+              <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
+                showCompanyNameInHeader ? 'opacity-100' : 'opacity-0'
+              }`}>
+                {selectedCompany.name}
+              </h2>
             </div>
           </div>
 
