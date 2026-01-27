@@ -253,9 +253,6 @@ a:hover {
 }
 
 /* Panel view styles - for side panel company detail */
-.panel-view .max-w-7xl {
-  max-width: none;
-}
 
 /* Hide desktop sticky nav in panel view */
 .panel-view nav.hidden.lg\:block {
@@ -269,15 +266,5 @@ a:hover {
 
 /* Hide back link in panel view */
 .panel-view > div > div:first-child {
-  display: none;
-}
-
-/* Hide header info (h1, description) in panel view - already in panel header */
-.panel-view .flex-1 > div.mb-8 {
-  display: none;
-}
-
-/* Hide section titles in panel view (chips nav replaces them) */
-.panel-view section > h2 {
   display: none;
 }
