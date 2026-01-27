@@ -87,7 +87,7 @@ export function CompanyDetail({ company }: { company: Company }) {
   return (
     <div className="max-w-7xl mx-auto">
       {/* Back Link */}
-      <div className="mb-8">
+      <div className="mb-4">
         <Link
           href="/"
           className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] inline-block"
