@@ -167,11 +167,11 @@ export const terradot: Company = {
   openRoles: [
     {
       title: 'Product Designer',
-      location: 'São Paulo (On-site)',
+      location: 'Sao Paulo (On-site)',
       url: 'https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0',
       type: 'full-time',
       aboutRole:
-        'Own end-to-end design of Terradot’s ERW execution platform across planning, operations, and MRV workflows.',
+        "Own end-to-end design of Terradot's ERW execution platform across planning, operations, and MRV workflows.",
       responsibilities: [
         'Lead end-to-end product design from research to iteration',
         'Partner with product and engineering to refine solutions',
@@ -192,13 +192,13 @@ export const terradot: Company = {
     },
     {
       title: 'Senior Product Designer',
-      location: 'São Paulo (On-site)',
+      location: 'Sao Paulo (On-site)',
       url: 'https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc',
       type: 'full-time',
       aboutRole:
-        'Lead design of Terradot’s ERW software platform with significant ownership over workflows and UX quality.',
+        "Lead design of Terradot's ERW software platform with significant ownership over workflows and UX quality.",
       responsibilities: [
-        'Own end-to-end design across Terradot’s platform',
+        "Own end-to-end design across Terradot's platform",
         'Collaborate with product and engineering leads',
         'Translate operational complexity into intuitive workflows',
         'Run research sessions and design workshops',

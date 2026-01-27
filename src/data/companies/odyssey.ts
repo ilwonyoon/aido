@@ -80,7 +80,7 @@ export const odyssey: Company = {
   // AI-Native Level
   aiNativeLevel: 'A',
   aiNativeLevelDescription:
-    'AI-Native: Odyssey’s product is AI world models for interactive video.',
+    "AI-Native: Odyssey's product is AI world models for interactive video.",
   aiDesignChallenges: [
     'Explaining model constraints and uncertainty to users',
     'Designing controls for real-time video exploration',

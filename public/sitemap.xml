@@ -510,4 +510,40 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/blacksmith</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/terradot</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/odyssey</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/mytra</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/corgi</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/glide</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

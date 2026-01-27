@@ -81,6 +81,12 @@ import { baseten } from './baseten';
 import { artie } from './artie';
 import { chaiDiscovery } from './chai-discovery';
 import { item } from './item';
+import { blacksmith } from './blacksmith';
+import { terradot } from './terradot';
+import { odyssey } from './odyssey';
+import { mytra } from './mytra';
+import { corgi } from './corgi';
+import { glide } from './glide';
 
 export const companies: Company[] = [
   anthropic,
@@ -164,9 +170,15 @@ export const companies: Company[] = [
   artie,
   chaiDiscovery,
   item,
+  blacksmith,
+  terradot,
+  odyssey,
+  mytra,
+  corgi,
+  glide,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, livekit, railway, baseten, artie, chaiDiscovery, item };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, livekit, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
