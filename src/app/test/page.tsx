@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
@@ -12,10 +12,16 @@ function TestPageContent() {
   const searchParams = useSearchParams();
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const companyId = searchParams.get('company');
     setSelectedCompanyId(companyId);
+
+    // Reset scroll to top when company changes
+    if (panelRef.current) {
+      panelRef.current.scrollTop = 0;
+    }
   }, [searchParams]);
 
   useEffect(() => {
@@ -85,6 +91,7 @@ function TestPageContent() {
       {/* Side Panel - Overlay on top */}
       {selectedCompanyId && selectedCompany && (
         <div
+          ref={panelRef}
           className={`
             fixed
             right-0 top-0 bottom-0
