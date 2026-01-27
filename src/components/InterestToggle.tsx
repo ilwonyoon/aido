@@ -64,8 +64,10 @@ export function useInterestStatus(companyId: string) {
     console.log('[InterestToggle] updateStatus called:', { newStatus, user: !!user });
 
     if (!user) {
-      console.log('[InterestToggle] No user, returning');
-      setStatus(null);
+      console.log('[InterestToggle] No user - showing local feedback only');
+      // Show visual feedback even without login
+      setStatus(newStatus);
+      // TODO: Could show a toast: "Sign in to save your preferences"
       return;
     }
 
