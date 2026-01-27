@@ -97,7 +97,7 @@ export function CompanyDetail({ company }: { company: Company }) {
       </div>
 
       {/* Main Layout: Index Nav + Content */}
-      <div className="flex gap-8">
+      <div className="block lg:flex lg:gap-8">
         {/* Sticky Index Nav */}
         <nav className="hidden lg:block w-48 flex-shrink-0">
           <div className="sticky top-8 space-y-1">
@@ -145,10 +145,10 @@ export function CompanyDetail({ company }: { company: Company }) {
           {/* Header Info */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-3xl font-semibold">{company.name}</h1>
+              <h1 className="text-2xl sm:text-3xl font-semibold">{company.name}</h1>
               <AiLevelBadge level={company.aiNativeLevel} />
             </div>
-            <p className="text-[var(--muted)] text-lg">{company.description}</p>
+            <p className="text-[var(--muted)] text-base sm:text-lg">{company.description}</p>
             <div className="flex items-center gap-4 mt-4 text-sm">
               <a
                 href={company.website}
