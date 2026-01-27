@@ -12,6 +12,7 @@ export function Navigation() {
   const pathname = usePathname();
   const { user } = useAuth();
   const [activeVisitors, setActiveVisitors] = useState<number>(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isAdmin = user?.email === 'ilwonyoon@gmail.com';
 
@@ -39,11 +40,22 @@ export function Navigation() {
 
   return (
     <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-semibold tracking-tight">
           AIDO
         </Link>
-        <div className="flex items-center gap-4 text-sm">
+        <button
+          className="lg:hidden p-2"
+          onClick={() => setIsMobileMenuOpen(true)}
+          aria-label="Open menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <div className="hidden lg:flex items-center gap-4 text-sm">
           <Link
             href="/"
             className={
@@ -89,6 +101,79 @@ export function Navigation() {
           <AuthButton />
         </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          <div className="fixed right-0 top-0 bottom-0 w-64 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6">
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="absolute top-4 right-4 p-2"
+              aria-label="Close menu"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+            <div className="font-semibold tracking-tight text-lg">AIDO</div>
+
+            <nav className="space-y-1">
+              <Link
+                href="/"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/')
+                    ? 'bg-[var(--card)] text-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                }`}
+              >
+                Companies
+              </Link>
+              <Link
+                href="/ai-levels"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/ai-levels')
+                    ? 'bg-[var(--card)] text-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                }`}
+              >
+                AI Levels
+              </Link>
+
+              {isAdmin && (
+                <>
+                  <div className="flex items-center gap-2 py-3 px-4 text-[var(--muted)] text-sm">
+                    <span>🌍</span>
+                    <span className="font-mono">{activeVisitors}</span>
+                  </div>
+                  <Link
+                    href="/analytics"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block py-3 px-4 rounded-lg ${
+                      isActive('/analytics')
+                        ? 'bg-[var(--card)] text-[var(--foreground)]'
+                        : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                    }`}
+                  >
+                    Analytics
+                  </Link>
+                </>
+              )}
+            </nav>
+
+            <div className="space-y-3 pt-6 border-t border-[var(--border)]">
+              <ThemeToggle />
+              <AuthButton />
+            </div>
+          </div>
+        </>
+      )}
     </nav>
   );
 }
