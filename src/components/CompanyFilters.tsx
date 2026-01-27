@@ -53,8 +53,9 @@ function InterestCheckbox({
   return (
     <button
       onClick={handleClick}
-      className="group/checkbox relative z-10 flex items-center justify-center w-10 h-10"
+      className="group/checkbox relative z-10 flex items-center justify-center w-10 h-10 cursor-pointer"
       title={currentStatus === 'interested' ? 'Remove from interested' : 'Mark as interested'}
+      type="button"
     >
       <div
         className={`w-4 h-4 rounded border-2 transition-all flex items-center justify-center ${
@@ -734,12 +735,14 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-xs text-[var(--muted)]">—</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-center" onClick={(e) => e.stopPropagation()}>
-                        <InterestCheckbox
-                          companyId={company.id}
-                          currentStatus={interest}
-                          onStatusChange={(status) => updateInterestStatus(company.id, status)}
-                        />
+                      <td className="py-3 px-4 text-center relative z-20" onClick={(e) => e.stopPropagation()}>
+                        <div className="flex items-center justify-center">
+                          <InterestCheckbox
+                            companyId={company.id}
+                            currentStatus={interest}
+                            onStatusChange={(status) => updateInterestStatus(company.id, status)}
+                          />
+                        </div>
                       </td>
                     </tr>
                   );
