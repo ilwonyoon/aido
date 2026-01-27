@@ -44,8 +44,7 @@ function InterestCheckbox({
   currentStatus: InterestStatus;
   onStatusChange: (status: InterestStatus) => void;
 }) {
-  const handleClick = async (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent row click
+  const handleClick = async () => {
     const newStatus = currentStatus === 'interested' ? null : 'interested';
     onStatusChange(newStatus);
   };
@@ -53,7 +52,7 @@ function InterestCheckbox({
   return (
     <button
       onClick={handleClick}
-      className="group/checkbox relative z-10 flex items-center justify-center w-10 h-10 cursor-pointer"
+      className="group/checkbox flex items-center justify-center w-11 h-11"
       title={currentStatus === 'interested' ? 'Remove from interested' : 'Mark as interested'}
       type="button"
     >
@@ -670,31 +669,30 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                     A: 'text-[var(--success)]',
                   };
 
+                  const handleNavigate = () => {
+                    void trackEvent('company_detail_click', {
+                      company_id: company.id,
+                      company_name: company.name,
+                      source: 'table_row',
+                    });
+                    router.push(`/company/${company.id}`);
+                  };
+
                   return (
                     <tr
                       key={company.id}
-                      onClick={(e) => {
-                        // Don't navigate if clicking on Interest column
-                        if ((e.target as HTMLElement).closest('[data-interest-cell]')) {
-                          return;
-                        }
-                        void trackEvent('company_detail_click', {
-                          company_id: company.id,
-                          company_name: company.name,
-                          source: 'table_row',
-                        });
-                        router.push(`/company/${company.id}`);
-                      }}
-                      className={`group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors cursor-pointer ${
+                      className={`group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors ${
                         interest === 'not_interested' ? 'opacity-50' : ''
                       }`}
                     >
-                      <td className="py-3 px-4 border-r border-[var(--border)]">
+                      <td
+                        onClick={handleNavigate}
+                        className="py-3 px-4 border-r border-[var(--border)] cursor-pointer"
+                      >
                         <Link
                           href={`/company/${company.id}`}
                           className="hover:text-[var(--accent-light)]"
                           onClick={(e) => {
-                            e.stopPropagation();
                             void trackEvent('company_detail_click', {
                               company_id: company.id,
                               company_name: company.name,
@@ -710,10 +708,16 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           </div>
                         </Link>
                       </td>
-                      <td className="py-3 px-4 text-sm text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors border-r border-[var(--border)]">
+                      <td
+                        onClick={handleNavigate}
+                        className="py-3 px-4 text-sm text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors border-r border-[var(--border)] cursor-pointer"
+                      >
                         <div className="line-clamp-2">{company.description}</div>
                       </td>
-                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
+                      <td
+                        onClick={handleNavigate}
+                        className="py-3 px-4 text-xs border-r border-[var(--border)] cursor-pointer"
+                      >
                         <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">{company.headquarters.split(',')[0]}</span>
                         <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">, </span>
                         {company.remote === 'No' ? (
@@ -724,13 +728,19 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-[var(--success)]">Remote</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
+                      <td
+                        onClick={handleNavigate}
+                        className="py-3 px-4 text-xs border-r border-[var(--border)] cursor-pointer"
+                      >
                         <div className="text-[var(--foreground)]">{company.stage}</div>
                         {company.totalFunding && (
                           <div className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors mt-0.5">{company.totalFunding}</div>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-center border-r border-[var(--border)]">
+                      <td
+                        onClick={handleNavigate}
+                        className="py-3 px-4 text-center border-r border-[var(--border)] cursor-pointer"
+                      >
                         {company.openRoles.length > 0 ? (
                           <span className="inline-flex items-center gap-1 px-2 py-1 bg-[var(--success)] text-black rounded text-xs font-medium">
                             {company.openRoles.length}
@@ -739,19 +749,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-xs text-[var(--muted)]">—</span>
                         )}
                       </td>
-                      <td
-                        className="py-3 px-4 text-center relative z-20"
-                        data-interest-cell
-                        onClick={(e) => e.stopPropagation()}
-                        onMouseDown={(e) => e.stopPropagation()}
-                      >
-                        <div className="flex items-center justify-center">
-                          <InterestCheckbox
-                            companyId={company.id}
-                            currentStatus={interest}
-                            onStatusChange={(status) => updateInterestStatus(company.id, status)}
-                          />
-                        </div>
+                      <td className="py-3 px-4 text-center">
+                        <InterestCheckbox
+                          companyId={company.id}
+                          currentStatus={interest}
+                          onStatusChange={(status) => updateInterestStatus(company.id, status)}
+                        />
                       </td>
                     </tr>
                   );
