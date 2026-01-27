@@ -1,11 +1,23 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react';
+import { useState, useEffect, useRef, useCallback, memo, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
 import { getCompanyById } from '@/data/companies';
+import { Company } from '@/data/types';
+
+// Memoized company list to prevent re-render
+const MemoizedCompanyList = memo(function MemoizedCompanyList({
+  companies,
+  onCompanyClick
+}: {
+  companies: Company[];
+  onCompanyClick: (id: string) => void;
+}) {
+  return <CompanyFilters companies={companies} onCompanyClick={onCompanyClick} />;
+});
 
 function TestPageContent() {
   const router = useRouter();
@@ -45,14 +57,6 @@ function TestPageContent() {
   };
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
-
-  // Memoize CompanyFilters to prevent re-render when panel changes
-  const companyListView = useMemo(() => (
-    <CompanyFilters
-      companies={companies}
-      onCompanyClick={handleCompanyClick}
-    />
-  ), [companies, handleCompanyClick]);
 
   if (loading) {
     return (
@@ -94,7 +98,7 @@ function TestPageContent() {
 
       {/* Company List - Full Width */}
       <div className="w-full">
-        {companyListView}
+        <MemoizedCompanyList companies={companies} onCompanyClick={handleCompanyClick} />
       </div>
 
       {/* Side Panel - Overlay on top */}
