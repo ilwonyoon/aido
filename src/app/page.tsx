@@ -77,6 +77,19 @@ function HomePageContent() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCompanyId, closePanel]);
 
+  // Prevent body scroll when panel is open
+  useEffect(() => {
+    if (selectedCompanyId) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedCompanyId]);
+
   // Observer for company name in content to show/hide in header
   useEffect(() => {
     if (!selectedCompanyId) {
