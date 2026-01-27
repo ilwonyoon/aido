@@ -88,13 +88,14 @@ export default function AiLevelsPage() {
       {/* Level A */}
       <section className="mb-16">
         <div className="card p-6 border-l-4 border-[var(--success)]">
-          <h2 className="text-2xl font-semibold mb-2 flex items-baseline gap-3">
+          <div className="mb-6">
             <LevelBadge level="A" />
-            <span>AI-Native (Zero-to-One)</span>
-          </h2>
-          <p className="text-[var(--muted)] italic mb-6">
-            AI model capability itself defines the product and its UX.
-          </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold mt-3 mb-2">Level A</h2>
+            <p className="text-lg font-medium mb-2">AI-Native (Zero-to-One)</p>
+            <p className="text-[var(--muted)] italic">
+              AI model capability itself defines the product and its UX.
+            </p>
+          </div>
 
           <div className="space-y-6 text-sm">
             <div>
@@ -140,13 +141,14 @@ export default function AiLevelsPage() {
       {/* Level B */}
       <section className="mb-16">
         <div className="card p-6 border-l-4 border-[var(--accent)]">
-          <h2 className="text-2xl font-semibold mb-2 flex items-baseline gap-3">
+          <div className="mb-6">
             <LevelBadge level="B" />
-            <span>AI-Core (Proven Workflow)</span>
-          </h2>
-          <p className="text-[var(--muted)] italic mb-6">
-            AI reshapes a proven workflow rather than inventing a new one.
-          </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold mt-3 mb-2">Level B</h2>
+            <p className="text-lg font-medium mb-2">AI-Core (Proven Workflow)</p>
+            <p className="text-[var(--muted)] italic">
+              AI reshapes a proven workflow rather than inventing a new one.
+            </p>
+          </div>
 
           <div className="space-y-6 text-sm">
             <div>
@@ -192,13 +194,14 @@ export default function AiLevelsPage() {
       {/* Level C */}
       <section className="mb-16">
         <div className="card p-6 border-l-4 border-[var(--border)]">
-          <h2 className="text-2xl font-semibold mb-2 flex items-baseline gap-3">
+          <div className="mb-6">
             <LevelBadge level="C" />
-            <span>AI as a Feature</span>
-          </h2>
-          <p className="text-[var(--muted)] italic mb-6">
-            AI enhances an already mature product as a feature.
-          </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold mt-3 mb-2">Level C</h2>
+            <p className="text-lg font-medium mb-2">AI as a Feature</p>
+            <p className="text-[var(--muted)] italic">
+              AI enhances an already mature product as a feature.
+            </p>
+          </div>
 
           <div className="space-y-6 text-sm">
             <div>
@@ -244,13 +247,14 @@ export default function AiLevelsPage() {
       {/* Level D */}
       <section className="mb-16">
         <div className="card p-6 border-l-4 border-[var(--border)]">
-          <h2 className="text-2xl font-semibold mb-2 flex items-baseline gap-3">
+          <div className="mb-6">
             <LevelBadge level="D" />
-            <span>AI-Adjacent / Assisted</span>
-          </h2>
-          <p className="text-[var(--muted)] italic mb-6">
-            AI is present, but designers influence it indirectly through systems and tools.
-          </p>
+            <h2 className="text-3xl sm:text-4xl font-semibold mt-3 mb-2">Level D</h2>
+            <p className="text-lg font-medium mb-2">AI-Adjacent / Assisted</p>
+            <p className="text-[var(--muted)] italic">
+              AI is present, but designers influence it indirectly through systems and tools.
+            </p>
+          </div>
 
           <div className="space-y-6 text-sm">
             <div>

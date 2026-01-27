@@ -241,3 +241,13 @@ a:hover {
 .animate-fadeIn {
   animation: fadeIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Hide scrollbar but maintain scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
