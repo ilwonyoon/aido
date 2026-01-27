@@ -467,55 +467,55 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     <div>
       {/* Filter & Sort Bar */}
       <div className="space-y-3 mb-6">
-        {/* Row 1: Filter chips + Sort & View */}
-        <div className="flex items-center justify-between">
-          {/* Left: Filter chips */}
-          <div className="flex items-center gap-3 flex-wrap">
-            <DropdownFilter
-              label="AI Level"
-              value={aiLevelFilter}
-              options={[
-                { value: 'A', label: 'Level A: AI-Native' },
-                { value: 'B', label: 'Level B: AI-Core' },
-                { value: 'C', label: 'Level C: AI Feature' },
-                { value: 'D', label: 'Level D: AI-Assisted' },
-              ]}
-              onChange={setAiLevelFilter}
-              infoTooltip={
-                <div className="text-xs space-y-2">
-                  <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
-                  <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
-                  <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
-                  <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
-                </div>
-              }
-            />
-            <DropdownFilter
-              label="Open Roles"
-              value={openRolesFilter}
-              options={[
-                { value: 'yes', label: 'Hiring' },
-                { value: 'no', label: 'Not Hiring' },
-              ]}
-              onChange={setOpenRolesFilter}
-            />
-            <MultiSelectFilter
-              label="Location"
-              values={locationFilter}
-              options={locations.map(loc => ({ value: loc, label: loc }))}
-              onChange={setLocationFilter}
-            />
-            {hasActiveFilters && (
-              <button
-                onClick={clearFilters}
-                className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
-              >
-                Clear
-              </button>
-            )}
-          </div>
+        {/* Row 1: Filter chips only */}
+        <div className="flex items-center gap-3 flex-wrap">
+          <DropdownFilter
+            label="AI Level"
+            value={aiLevelFilter}
+            options={[
+              { value: 'A', label: 'Level A: AI-Native' },
+              { value: 'B', label: 'Level B: AI-Core' },
+              { value: 'C', label: 'Level C: AI Feature' },
+              { value: 'D', label: 'Level D: AI-Assisted' },
+            ]}
+            onChange={setAiLevelFilter}
+            infoTooltip={
+              <div className="text-xs space-y-2">
+                <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
+                <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
+                <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
+                <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
+              </div>
+            }
+          />
+          <DropdownFilter
+            label="Open Roles"
+            value={openRolesFilter}
+            options={[
+              { value: 'yes', label: 'Hiring' },
+              { value: 'no', label: 'Not Hiring' },
+            ]}
+            onChange={setOpenRolesFilter}
+          />
+          <MultiSelectFilter
+            label="Location"
+            values={locationFilter}
+            options={locations.map(loc => ({ value: loc, label: loc }))}
+            onChange={setLocationFilter}
+          />
+          {hasActiveFilters && (
+            <button
+              onClick={clearFilters}
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
+            >
+              Clear
+            </button>
+          )}
+        </div>
 
-          {/* Right: Sort & View Toggle */}
+        {/* Row 2: Sort + View Toggle + Company count */}
+        <div className="flex items-center justify-between">
+          {/* Left: Sort & View Toggle */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-sm text-[var(--muted)]">Sort:</span>
@@ -569,17 +569,17 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
               </div>
             )}
           </div>
-        </div>
 
-        {/* Row 2: Company count */}
-        <div className="text-sm font-medium text-[var(--foreground)]">
-          {sortedCompanies.length === companies.length ? (
-            <>{companies.length} companies</>
-          ) : (
-            <>
-              {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
-            </>
-          )}
+          {/* Right: Company count */}
+          <div className="text-sm font-medium text-[var(--foreground)]">
+            {sortedCompanies.length === companies.length ? (
+              <>{companies.length} companies</>
+            ) : (
+              <>
+                {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
