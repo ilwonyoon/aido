@@ -716,15 +716,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                 }}
               >
                 <div className="space-y-3">
-                  {/* Top Row: Company Name + Open Roles */}
+                  {/* Top Row: Company Name + Open Roles Only */}
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex items-center gap-2 flex-1 min-w-0">
-                      <h2 className="text-lg font-medium truncate">{company.name}</h2>
-                      <span className="text-[var(--border)] flex-shrink-0">|</span>
-                      <div className="flex-shrink-0">
-                        <AiLevelText level={company.aiNativeLevel} />
-                      </div>
-                    </div>
+                    <h2 className="text-lg font-medium flex-1 min-w-0">{company.name}</h2>
                     <div className="flex-shrink-0">
                       {company.openRoles.length > 0 ? (
                         <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--success)] text-black rounded-lg font-medium text-sm whitespace-nowrap">
@@ -742,8 +736,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                     {company.description}
                   </p>
 
-                  {/* Full Width: Metadata */}
+                  {/* Full Width: AI Level + Metadata */}
                   <div className="flex items-center gap-1.5 text-sm flex-wrap">
+                    <AiLevelText level={company.aiNativeLevel} />
+                    <span className="text-[var(--border)]">|</span>
                     {interest === 'interested' && (
                       <>
                         <span className="text-[var(--primary)]">✨ Interested</span>
