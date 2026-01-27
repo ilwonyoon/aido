@@ -105,10 +105,10 @@ export function Navigation() {
       {isMobileMenuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+            className="fixed inset-0 bg-black/50 z-40 lg:hidden animate-fadeIn"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="fixed left-12 right-0 top-0 bottom-0 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6">
+          <div className="fixed left-12 right-0 top-0 bottom-0 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6 animate-slideInRight">
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="absolute top-4 right-4 p-2"

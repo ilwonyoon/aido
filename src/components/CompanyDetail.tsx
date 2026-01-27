@@ -341,17 +341,21 @@ export function CompanyDetail({ company }: { company: Company }) {
             {company.fundingHistory && company.fundingHistory.length > 0 && (
               <div className="card p-5 mb-4">
                 <h3 className="font-medium mb-4">Funding History</h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {company.fundingHistory.map((round, i) => (
-                    <div key={i} className="flex items-center gap-4 text-sm">
-                      <div className="w-20 font-mono text-[var(--muted)]">{round.date}</div>
-                      <div className="w-20"><span className="badge">{round.stage}</span></div>
-                      <div className="w-24 font-medium text-[var(--success)]">{round.amount}</div>
-                      {round.valuation && (
-                        <div className="text-[var(--muted)]">@ {round.valuation}</div>
-                      )}
+                    <div key={i} className="space-y-2">
+                      {/* Mobile: Vertical layout, Desktop: Horizontal */}
+                      <div className="flex items-center gap-3 text-sm flex-wrap lg:flex-nowrap">
+                        <div className="w-16 font-mono text-[var(--muted)] flex-shrink-0">{round.date}</div>
+                        <span className="badge flex-shrink-0">{round.stage}</span>
+                        <div className="font-medium text-[var(--success)] flex-shrink-0">{round.amount}</div>
+                        {round.valuation && (
+                          <div className="text-[var(--muted)] flex-shrink-0">@ {round.valuation}</div>
+                        )}
+                      </div>
+                      {/* Investors - Full width on mobile */}
                       {round.leadInvestors && round.leadInvestors.length > 0 && (
-                        <div className="text-xs text-[var(--muted)] truncate">
+                        <div className="text-xs text-[var(--muted)] lg:ml-[100px]">
                           {round.leadInvestors.join(', ')}
                         </div>
                       )}
