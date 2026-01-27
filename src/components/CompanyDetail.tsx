@@ -395,6 +395,45 @@ export function CompanyDetail({ company }: { company: Company }) {
             </div>
             </div>
 
+            {/* Product & User Context */}
+            {(company.targetAudiences || company.userProblems) && (
+            <div>
+              <h3 className="section-title">Product & User Context</h3>
+              <div className="card p-5">
+                {company.targetAudiences && (
+                  <div className="mb-6">
+                    <h4 className="font-medium mb-3">Target Users</h4>
+                    <div className="space-y-3">
+                      <div>
+                        <span className="text-xs text-[var(--muted)] uppercase tracking-wide">Primary</span>
+                        <p className="text-sm mt-1">{company.targetAudiences.primary}</p>
+                      </div>
+                      {company.targetAudiences.secondary && (
+                        <div>
+                          <span className="text-xs text-[var(--muted)] uppercase tracking-wide">Secondary</span>
+                          <p className="text-sm mt-1">{company.targetAudiences.secondary}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+                {company.userProblems && company.userProblems.length > 0 && (
+                  <div className={company.targetAudiences ? 'pt-6 border-t border-[var(--border)]' : ''}>
+                    <h4 className="font-medium mb-3">Problems They're Solving</h4>
+                    <ul className="space-y-2">
+                      {company.userProblems.map((problem, i) => (
+                        <li key={i} className="text-sm text-[var(--muted)] flex gap-2">
+                          <span className="text-[var(--accent-light)]">•</span>
+                          {problem}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+            )}
+
             {/* Company Health & Growth */}
             {(company.revenue || company.growth || company.runway || company.customers || company.growthMetrics) && (
               <div>
