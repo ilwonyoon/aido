@@ -108,21 +108,27 @@ export function Navigation() {
             className="fixed inset-0 bg-black/50 z-40 lg:hidden animate-fadeIn"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="fixed left-12 right-0 top-0 bottom-0 bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden p-6 space-y-6 animate-slideInRight">
-            <button
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="absolute top-4 right-4 p-2"
-              aria-label="Close menu"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
+          <div className="fixed right-0 top-0 bottom-0 w-[68%] bg-[var(--background)] border-l border-[var(--border)] z-50 lg:hidden flex flex-col animate-slideInRight">
+            {/* Header: AIDO + Theme Toggle + Close */}
+            <div className="flex items-center justify-between p-6 pb-4">
+              <div className="font-semibold tracking-tight text-lg">AIDO</div>
+              <div className="flex items-center gap-2">
+                <ThemeToggle />
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2"
+                  aria-label="Close menu"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-            <div className="font-semibold tracking-tight text-lg">AIDO</div>
-
-            <nav className="space-y-1">
+            {/* Navigation Links */}
+            <nav className="flex-1 px-6 space-y-1">
               <Link
                 href="/"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -167,8 +173,8 @@ export function Navigation() {
               )}
             </nav>
 
-            <div className="space-y-3 pt-6 border-t border-[var(--border)]">
-              <ThemeToggle />
+            {/* Sign in - Full width at bottom */}
+            <div className="p-6 pt-4 border-t border-[var(--border)]">
               <AuthButton />
             </div>
           </div>

@@ -552,14 +552,12 @@ export function CompanyDetail({ company }: { company: Company }) {
             <div>
               <h3 className="section-title">AI-Native Level</h3>
             <div className="card p-5">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="text-4xl font-mono font-bold">Level {company.aiNativeLevel}</div>
-                <div>
-                  <AiLevelBadge level={company.aiNativeLevel} />
-                  <p className="text-sm text-[var(--muted)] mt-1">
-                    {company.aiNativeLevelDescription}
-                  </p>
-                </div>
+              <div className="mb-6">
+                <AiLevelBadge level={company.aiNativeLevel} />
+                <div className="text-5xl sm:text-6xl font-mono font-bold mt-4 mb-4">Level {company.aiNativeLevel}</div>
+                <p className="text-sm text-[var(--muted)]">
+                  {company.aiNativeLevelDescription}
+                </p>
               </div>
               <h3 className="font-medium mb-3">AI Design Challenges</h3>
               <ul className="space-y-2">

@@ -466,115 +466,119 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   return (
     <div>
       {/* Filter & Sort Bar */}
-      <div className="flex items-center justify-between mb-6">
-        {/* Left: Filters */}
-        <div className="flex items-center gap-3">
-          <span className="text-sm font-medium text-[var(--foreground)]">
-            {sortedCompanies.length === companies.length ? (
-              <>{companies.length} companies</>
-            ) : (
-              <>
-                {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
-              </>
-            )}
-          </span>
-          <div className="w-px h-4 bg-[var(--border)]" />
-          <DropdownFilter
-            label="AI Level"
-            value={aiLevelFilter}
-            options={[
-              { value: 'A', label: 'Level A: AI-Native' },
-              { value: 'B', label: 'Level B: AI-Core' },
-              { value: 'C', label: 'Level C: AI Feature' },
-              { value: 'D', label: 'Level D: AI-Assisted' },
-            ]}
-            onChange={setAiLevelFilter}
-            infoTooltip={
-              <div className="text-xs space-y-2">
-                <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
-                <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
-                <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
-                <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
-              </div>
-            }
-          />
-          <DropdownFilter
-            label="Open Roles"
-            value={openRolesFilter}
-            options={[
-              { value: 'yes', label: 'Hiring' },
-              { value: 'no', label: 'Not Hiring' },
-            ]}
-            onChange={setOpenRolesFilter}
-          />
-          <MultiSelectFilter
-            label="Location"
-            values={locationFilter}
-            options={locations.map(loc => ({ value: loc, label: loc }))}
-            onChange={setLocationFilter}
-          />
-          {hasActiveFilters && (
-            <button
-              onClick={clearFilters}
-              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
-            >
-              Clear
-            </button>
-          )}
-        </div>
-
-        {/* Right: Sort & View Toggle */}
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-[var(--muted)]">Sort:</span>
-            <SortDropdown
-              value={sortBy}
+      <div className="space-y-3 mb-6">
+        {/* Row 1: Filter chips + Sort & View */}
+        <div className="flex items-center justify-between">
+          {/* Left: Filter chips */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <DropdownFilter
+              label="AI Level"
+              value={aiLevelFilter}
               options={[
-                { value: 'recommended', label: 'Recommended' },
-                { value: 'interest', label: 'Interest' },
-                { value: 'teamSize', label: 'Team Size' },
-                { value: 'fundingStage', label: 'Funding Stage' },
-                { value: 'aiLevel', label: 'AI Level' },
+                { value: 'A', label: 'Level A: AI-Native' },
+                { value: 'B', label: 'Level B: AI-Core' },
+                { value: 'C', label: 'Level C: AI Feature' },
+                { value: 'D', label: 'Level D: AI-Assisted' },
               ]}
-              onChange={(v) => setSortBy(v as SortOption)}
+              onChange={setAiLevelFilter}
+              infoTooltip={
+                <div className="text-xs space-y-2">
+                  <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
+                  <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
+                  <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
+                  <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
+                </div>
+              }
             />
+            <DropdownFilter
+              label="Open Roles"
+              value={openRolesFilter}
+              options={[
+                { value: 'yes', label: 'Hiring' },
+                { value: 'no', label: 'Not Hiring' },
+              ]}
+              onChange={setOpenRolesFilter}
+            />
+            <MultiSelectFilter
+              label="Location"
+              values={locationFilter}
+              options={locations.map(loc => ({ value: loc, label: loc }))}
+              onChange={setLocationFilter}
+            />
+            {hasActiveFilters && (
+              <button
+                onClick={clearFilters}
+                className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
+              >
+                Clear
+              </button>
+            )}
           </div>
 
-          {/* View toggle - Hide on mobile */}
-          {!isMobile && (
-            <div className="flex items-center gap-1">
-              <button
-                onClick={() => setViewMode('card')}
-                className={`p-1.5 rounded border transition-colors ${
-                  viewMode === 'card'
-                    ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                    : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-                }`}
-                title="Card view"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="3" y="3" width="7" height="7" rx="1"/>
-                  <rect x="14" y="3" width="7" height="7" rx="1"/>
-                  <rect x="3" y="14" width="7" height="7" rx="1"/>
-                  <rect x="14" y="14" width="7" height="7" rx="1"/>
-                </svg>
-              </button>
-              <button
-                onClick={() => setViewMode('table')}
-                className={`p-1.5 rounded border transition-colors ${
-                  viewMode === 'table'
-                    ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                    : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-                }`}
-                title="Table view"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <line x1="3" y1="6" x2="21" y2="6"/>
-                  <line x1="3" y1="12" x2="21" y2="12"/>
-                  <line x1="3" y1="18" x2="21" y2="18"/>
-                </svg>
-              </button>
+          {/* Right: Sort & View Toggle */}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-[var(--muted)]">Sort:</span>
+              <SortDropdown
+                value={sortBy}
+                options={[
+                  { value: 'recommended', label: 'Recommended' },
+                  { value: 'interest', label: 'Interest' },
+                  { value: 'teamSize', label: 'Team Size' },
+                  { value: 'fundingStage', label: 'Funding Stage' },
+                  { value: 'aiLevel', label: 'AI Level' },
+                ]}
+                onChange={(v) => setSortBy(v as SortOption)}
+              />
             </div>
+
+            {/* View toggle - Hide on mobile */}
+            {!isMobile && (
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={() => setViewMode('card')}
+                  className={`p-1.5 rounded border transition-colors ${
+                    viewMode === 'card'
+                      ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
+                      : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+                  }`}
+                  title="Card view"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1"/>
+                  </svg>
+                </button>
+                <button
+                  onClick={() => setViewMode('table')}
+                  className={`p-1.5 rounded border transition-colors ${
+                    viewMode === 'table'
+                      ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
+                      : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+                  }`}
+                  title="Table view"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                  </svg>
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Row 2: Company count */}
+        <div className="text-sm font-medium text-[var(--foreground)]">
+          {sortedCompanies.length === companies.length ? (
+            <>{companies.length} companies</>
+          ) : (
+            <>
+              {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
+            </>
           )}
         </div>
       </div>
