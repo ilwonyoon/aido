@@ -34,6 +34,7 @@ export interface DailyStats {
   pageViews: number;
   topPages: { path: string; views: number }[];
   countries: Record<string, number>;
+  visitorSessions?: string[]; // Session IDs for tracking unique visitors
 }
 
 /**
@@ -147,6 +148,7 @@ async function updateDailyStats(
     if (dailySnap.exists()) {
       const data = dailySnap.data();
       const topPages = data.topPages || [];
+      const visitorSessions = data.visitorSessions || [];
       const existingPage = topPages.find((p: { path: string }) => p.path === path);
 
       const updatedPages = existingPage
@@ -155,11 +157,17 @@ async function updateDailyStats(
           )
         : [...topPages, { path, views: 1 }];
 
+      // Track unique visitors by session ID
+      const isNewVisitor = !visitorSessions.includes(sessionId);
+      const updatedSessions = isNewVisitor ? [...visitorSessions, sessionId] : visitorSessions;
+
       await setDoc(
         dailyRef,
         {
+          uniqueVisitors: updatedSessions.length,
           pageViews: increment(1),
           topPages: updatedPages.sort((a: { views: number }, b: { views: number }) => b.views - a.views).slice(0, 10),
+          visitorSessions: updatedSessions,
         },
         { merge: true }
       );
@@ -170,6 +178,7 @@ async function updateDailyStats(
         pageViews: 1,
         topPages: [{ path, views: 1 }],
         countries: {},
+        visitorSessions: [sessionId],
       });
     }
   } catch (error) {

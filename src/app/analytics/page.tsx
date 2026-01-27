@@ -68,7 +68,14 @@ export default function AnalyticsPage() {
   }
 
   // Calculate totals
-  const totalVisitors = dailyStats.reduce((sum, day) => sum + (day.uniqueVisitors || 0), 0);
+  // For unique visitors, count distinct sessions across all days (not sum of daily visitors)
+  const allSessions = new Set<string>();
+  dailyStats.forEach(day => {
+    if (day.visitorSessions) {
+      (day.visitorSessions as string[]).forEach(session => allSessions.add(session));
+    }
+  });
+  const totalVisitors = allSessions.size || dailyStats.reduce((sum, day) => sum + (day.uniqueVisitors || 0), 0);
   const totalPageViews = dailyStats.reduce((sum, day) => sum + (day.pageViews || 0), 0);
   const todayStats = dailyStats.find(d => d.date === new Date().toISOString().split('T')[0]);
 
