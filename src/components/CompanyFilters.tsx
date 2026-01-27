@@ -184,7 +184,7 @@ function DropdownFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed min-w-[200px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed min-w-[120px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
             style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
           >
             <button
@@ -268,7 +268,7 @@ function MultiSelectFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed min-w-[200px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed min-w-[120px] max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
             style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px` }}
           >
             {values.length > 0 && (
@@ -500,15 +500,15 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       {/* Filter & Sort Bar */}
       <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-2 overflow-x-auto overflow-y-visible scrollbar-hide" style={{ overflowY: 'visible' }}>
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
             options={[
-              { value: 'A', label: 'Level A: AI-Native' },
-              { value: 'B', label: 'Level B: AI-Core' },
-              { value: 'C', label: 'Level C: AI Feature' },
-              { value: 'D', label: 'Level D: AI-Assisted' },
+              { value: 'A', label: 'Level A' },
+              { value: 'B', label: 'Level B' },
+              { value: 'C', label: 'Level C' },
+              { value: 'D', label: 'Level D' },
             ]}
             onChange={setAiLevelFilter}
             infoTooltip={
