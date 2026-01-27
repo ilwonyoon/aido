@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, Suspense } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
@@ -24,6 +24,10 @@ function TestPageContent() {
     }
   }, [searchParams]);
 
+  const handleCompanyClick = useCallback((companyId: string) => {
+    router.push(`/test?company=${companyId}`);
+  }, [router]);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && selectedCompanyId) {
@@ -41,6 +45,14 @@ function TestPageContent() {
   };
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+
+  // Memoize CompanyFilters to prevent re-render when panel changes
+  const companyListView = useMemo(() => (
+    <CompanyFilters
+      companies={companies}
+      onCompanyClick={handleCompanyClick}
+    />
+  ), [companies, handleCompanyClick]);
 
   if (loading) {
     return (
@@ -82,10 +94,7 @@ function TestPageContent() {
 
       {/* Company List - Full Width */}
       <div className="w-full">
-        <CompanyFilters
-          companies={companies}
-          onCompanyClick={(companyId) => router.push(`/test?company=${companyId}`)}
-        />
+        {companyListView}
       </div>
 
       {/* Side Panel - Overlay on top */}
