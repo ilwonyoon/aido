@@ -339,6 +339,8 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
+  // Store initial interest statuses for sorting (doesn't change until page reload)
+  const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -373,6 +375,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     if (loading) return;
     if (!user) {
       setInterestStatuses({});
+      setInitialInterestStatuses({});
       return;
     }
 
@@ -387,6 +390,8 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
         }
       });
       setInterestStatuses(statuses);
+      // Store initial statuses for sorting (only set once on load)
+      setInitialInterestStatuses(statuses);
     };
 
     load();
@@ -457,7 +462,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
     return 0;
   };
 
-  // Sort companies
+  // Sort companies (uses initial interest statuses so sorting doesn't change when toggling interest)
   const sortedCompanies = useMemo(() => {
     const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
 
@@ -465,8 +470,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       switch (sortBy) {
         case 'recommended':
           // Priority 1: Interest status (interested first, not_interested last)
-          const statusA = interestStatuses[a.id];
-          const statusB = interestStatuses[b.id];
+          // Use initialInterestStatuses so sort order doesn't change until page reload
+          const statusA = initialInterestStatuses[a.id];
+          const statusB = initialInterestStatuses[b.id];
           const orderA = statusA === 'interested' ? 0 : statusA === 'not_interested' ? 2 : 1;
           const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
           if (orderA !== orderB) return orderA - orderB;
@@ -484,8 +490,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
           // Priority 4: Alphabetical
           return a.name.localeCompare(b.name);
         case 'interest':
-          const statusA2 = interestStatuses[a.id];
-          const statusB2 = interestStatuses[b.id];
+          // Use initialInterestStatuses so sort order doesn't change until page reload
+          const statusA2 = initialInterestStatuses[a.id];
+          const statusB2 = initialInterestStatuses[b.id];
           const orderA2 = statusA2 === 'interested' ? 0 : statusA2 === 'not_interested' ? 2 : 1;
           const orderB2 = statusB2 === 'interested' ? 0 : statusB2 === 'not_interested' ? 2 : 1;
           return orderA2 - orderB2;
@@ -501,7 +508,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       }
     });
     return sorted;
-  }, [filteredCompanies, sortBy, interestStatuses]);
+  }, [filteredCompanies, sortBy, initialInterestStatuses]);
 
   const hasActiveFilters = aiLevelFilter || openRolesFilter || locationFilter.length > 0;
 
