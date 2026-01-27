@@ -3,13 +3,12 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company } from '@/data/types';
+import { Company, InterestStatus } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 
 type SortOption = 'recommended' | 'interest' | 'teamSize' | 'fundingStage' | 'aiLevel';
-type InterestStatus = 'interested' | 'not_interested' | null;
 
 function AiLevelText({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
   const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
@@ -361,12 +360,13 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const effectiveViewMode = isMobile ? 'card' : viewMode;
 
   // SF Bay Area cities to consolidate
-  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
 
-  // Get unique locations (consolidate SF Bay Area)
+  // Get unique locations (consolidate SF Bay Area and New York)
   const locations = useMemo(() => {
     const locs = new Set<string>();
     let hasSFBayArea = false;
+    let hasNewYork = false;
 
     companies.forEach((c) => {
       const city = c.headquarters.split(',')[0]?.trim();
@@ -374,6 +374,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         // Check if it's a SF Bay Area city
         if (sfBayAreaCities.some(sfCity => city.includes(sfCity))) {
           hasSFBayArea = true;
+        } else if (city.includes('New York')) {
+          hasNewYork = true;
         } else {
           locs.add(city);
         }
@@ -382,7 +384,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
     const sorted = Array.from(locs).sort((a, b) => a.localeCompare(b));
 
-    // Add SF Bay Area at the top if any companies are there
+    // Add consolidated locations at the top
+    if (hasNewYork) {
+      sorted.unshift('New York');
+    }
     if (hasSFBayArea) {
       sorted.unshift('SF Bay Area');
     }
@@ -453,19 +458,24 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       // Review Status Filter
       const status = interestStatuses[company.id];
       if (reviewStatusFilter === 'not_yet_reviewed' && status) return false;
-      if (reviewStatusFilter === 'interested' && status !== 'interested') return false;
+      if (reviewStatusFilter === 'tier_0' && status !== 'tier_0') return false;
+      if (reviewStatusFilter === 'tier_1' && status !== 'tier_1') return false;
       if (reviewStatusFilter === 'not_interested' && status !== 'not_interested') return false;
 
       if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
 
-      // Location Filter with SF Bay Area handling
+      // Location Filter with SF Bay Area and New York handling
       if (locationFilter.length > 0) {
         const hasMatch = locationFilter.some((loc) => {
           if (loc === 'SF Bay Area') {
             // Check if company is in any SF Bay Area city
             return sfBayAreaCities.some(sfCity => company.headquarters.includes(sfCity));
+          }
+          if (loc === 'New York') {
+            // Check if company is in New York (any variant)
+            return company.headquarters.includes('New York');
           }
           return company.headquarters.includes(loc);
         });
@@ -568,7 +578,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             value={reviewStatusFilter}
             options={[
               { value: 'not_yet_reviewed', label: 'Not Yet Reviewed' },
-              { value: 'interested', label: 'Interested' },
+              { value: 'tier_0', label: '🥇 Tier 0' },
+              { value: 'tier_1', label: '🥈 Tier 1' },
               { value: 'not_interested', label: 'Not Interested' },
               { value: 'all', label: 'All' },
             ]}

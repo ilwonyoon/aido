@@ -1,3 +1,5 @@
+export type InterestStatus = 'tier_0' | 'tier_1' | 'not_interested' | null;
+
 export interface FundingRound {
   stage: 'Pre-seed' | 'Seed' | 'Series A' | 'Series B' | 'Series C' | 'Series D' | 'Series E' | 'Series F' | 'Unknown';
   amount: string; // e.g., "$50M"

@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { getUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
-
-type InterestStatus = 'interested' | 'not_interested' | null;
+import { InterestStatus } from '@/data/types';
 
 function SyncIndicator({ isSyncing, lastSynced }: { isSyncing: boolean; lastSynced?: Date }) {
   if (isSyncing) {
@@ -46,7 +45,7 @@ export function useInterestStatus(companyId: string) {
     const load = async () => {
       const tracking = await getUserTracking(user.uid, companyId);
       if (!isActive) return;
-      if (tracking?.status === 'interested' || tracking?.status === 'not_interested') {
+      if (tracking?.status === 'tier_0' || tracking?.status === 'tier_1' || tracking?.status === 'not_interested') {
         setStatus(tracking.status);
       } else {
         setStatus(null);
@@ -104,14 +103,24 @@ export function InterestToggle({ companyId }: { companyId: string }) {
     <div className="flex flex-col items-start gap-2">
       <div className="flex items-center gap-3">
         <button
-          onClick={() => updateStatus(status === 'interested' ? null : 'interested')}
+          onClick={() => updateStatus(status === 'tier_0' ? null : 'tier_0')}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
-            status === 'interested'
+            status === 'tier_0'
               ? 'bg-[var(--success)] text-black'
               : 'bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:border-[var(--success)] hover:text-[var(--success)]'
           }`}
         >
-          Interested
+          🥇 Tier 0
+        </button>
+        <button
+          onClick={() => updateStatus(status === 'tier_1' ? null : 'tier_1')}
+          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+            status === 'tier_1'
+              ? 'bg-[var(--accent)] text-black'
+              : 'bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--accent)]'
+          }`}
+        >
+          🥈 Tier 1
         </button>
         <button
           onClick={() => updateStatus(status === 'not_interested' ? null : 'not_interested')}
