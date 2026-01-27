@@ -1,7 +1,8 @@
 import type { Timestamp } from 'firebase/firestore';
 
 export type TrackingStatus =
-  | 'interested'
+  | 'tier_0'
+  | 'tier_1'
   | 'not_interested'
   | 'applied'
   | 'interviewing'

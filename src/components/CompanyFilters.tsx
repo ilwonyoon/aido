@@ -46,35 +46,51 @@ function InterestCheckbox({
   const handleClick = async (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent row click
     e.preventDefault();
-    const newStatus = currentStatus === 'interested' ? null : 'interested';
+
+    // Cycle through tiers: null -> tier_0 -> tier_1 -> not_interested -> null
+    let newStatus: InterestStatus = null;
+    if (currentStatus === null) {
+      newStatus = 'tier_0';
+    } else if (currentStatus === 'tier_0') {
+      newStatus = 'tier_1';
+    } else if (currentStatus === 'tier_1') {
+      newStatus = 'not_interested';
+    } else {
+      newStatus = null;
+    }
+
     onStatusChange(newStatus);
   };
+
+  const getStatusDisplay = () => {
+    if (currentStatus === 'tier_0') return { text: '🥇', color: 'bg-[var(--success)]' };
+    if (currentStatus === 'tier_1') return { text: '🥈', color: 'bg-[var(--accent)]' };
+    if (currentStatus === 'not_interested') return { text: '—', color: 'bg-[var(--muted)]' };
+    return { text: '', color: 'border-[var(--border)]' };
+  };
+
+  const status = getStatusDisplay();
 
   return (
     <button
       onClick={handleClick}
       className="group/checkbox flex items-center justify-center w-11 h-11"
-      title={currentStatus === 'interested' ? 'Remove from interested' : 'Mark as interested'}
+      title={
+        currentStatus === 'tier_0' ? 'Tier 0 (Top Priority)' :
+        currentStatus === 'tier_1' ? 'Tier 1 (Good to Apply)' :
+        currentStatus === 'not_interested' ? 'Not Interested' :
+        'Click to set tier'
+      }
       type="button"
     >
       <div
-        className={`w-4 h-4 rounded border-2 transition-all flex items-center justify-center ${
-          currentStatus === 'interested'
-            ? 'bg-[var(--success)] border-[var(--success)]'
-            : 'border-[var(--border)] group-hover/checkbox:border-[var(--success)]'
+        className={`w-6 h-6 rounded flex items-center justify-center text-xs transition-all ${
+          currentStatus
+            ? `${status.color} text-black`
+            : 'border-2 border-[var(--border)] group-hover/checkbox:border-[var(--accent)]'
         }`}
       >
-        {currentStatus === 'interested' && (
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path
-              d="M2 6L5 9L10 3"
-              stroke="black"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        )}
+        {status.text}
       </div>
     </button>
   );
@@ -410,7 +426,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       if (!isActive) return;
       const statuses: Record<string, InterestStatus> = {};
       tracking.forEach((item) => {
-        if (item.status === 'interested' || item.status === 'not_interested') {
+        if (item.status === 'tier_0' || item.status === 'tier_1' || item.status === 'not_interested') {
           statuses[item.companyId] = item.status;
         }
       });
@@ -512,12 +528,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
         case 'recommended':
-          // Priority 1: Interest status (interested first, not_interested last)
+          // Priority 1: Tier status (tier_0 > tier_1 > not_reviewed > not_interested)
           // Use initialInterestStatuses so sort order doesn't change until page reload
           const statusA = initialInterestStatuses[a.id];
           const statusB = initialInterestStatuses[b.id];
-          const orderA = statusA === 'interested' ? 0 : statusA === 'not_interested' ? 2 : 1;
-          const orderB = statusB === 'interested' ? 0 : statusB === 'not_interested' ? 2 : 1;
+          const orderA = statusA === 'tier_0' ? 0 : statusA === 'tier_1' ? 1 : statusA === 'not_interested' ? 3 : 2;
+          const orderB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
           if (orderA !== orderB) return orderA - orderB;
 
           // Priority 2: AI Level (A > B > C > D)
@@ -536,8 +552,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           // Use initialInterestStatuses so sort order doesn't change until page reload
           const statusA2 = initialInterestStatuses[a.id];
           const statusB2 = initialInterestStatuses[b.id];
-          const orderA2 = statusA2 === 'interested' ? 0 : statusA2 === 'not_interested' ? 2 : 1;
-          const orderB2 = statusB2 === 'interested' ? 0 : statusB2 === 'not_interested' ? 2 : 1;
+          const orderA2 = statusA2 === 'tier_0' ? 0 : statusA2 === 'tier_1' ? 1 : statusA2 === 'not_interested' ? 3 : 2;
+          const orderB2 = statusB2 === 'tier_0' ? 0 : statusB2 === 'tier_1' ? 1 : statusB2 === 'not_interested' ? 3 : 2;
           return orderA2 - orderB2;
         case 'teamSize':
           return parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
@@ -890,9 +906,15 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                   <div className="flex items-center gap-1.5 text-sm flex-wrap">
                     <AiLevelText level={company.aiNativeLevel} />
                     <span className="text-[var(--border)]">|</span>
-                    {interest === 'interested' && (
+                    {interest === 'tier_0' && (
                       <>
-                        <span className="text-[var(--primary)]">✨ Interested</span>
+                        <span className="text-[var(--success)]">🥇 Tier 0</span>
+                        <span className="text-[var(--border)]">|</span>
+                      </>
+                    )}
+                    {interest === 'tier_1' && (
+                      <>
+                        <span className="text-[var(--accent)]">🥈 Tier 1</span>
                         <span className="text-[var(--border)]">|</span>
                       </>
                     )}
