@@ -175,7 +175,9 @@ export function Navigation() {
 
             {/* Sign in - Full width at bottom */}
             <div className="p-6 pt-4 border-t border-[var(--border)]">
-              <AuthButton />
+              <div className="[&>*]:w-full [&_button]:w-full">
+                <AuthButton />
+              </div>
             </div>
           </div>
         </>

@@ -122,8 +122,8 @@ export function CompanyDetail({ company }: { company: Company }) {
         </nav>
 
         {/* Mobile horizontal nav */}
-        <div className="lg:hidden sticky top-14 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 py-4 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6">
-          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+        <div className="lg:hidden sticky top-14 z-40 py-4 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6 -mx-4 sm:-mx-6">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide px-4 sm:px-6">
             {sections.map((section) => (
               <button
                 key={section.id}
@@ -708,15 +708,15 @@ export function CompanyDetail({ company }: { company: Company }) {
                         key={i}
                         className={`pl-4 border-l-2 ${sentimentColors[insight.sentiment]}`}
                       >
-                        <div className="flex items-center justify-between mb-1">
-                          <span className="text-xs text-[var(--muted)]">{insight.source}</span>
+                        <div className="flex items-center justify-between mb-2">
+                          <p className="text-sm flex-1">{insight.content}</p>
                           {insight.rating && (
-                            <span className="text-xs font-medium text-[var(--accent-light)]">
+                            <span className="text-xs font-medium text-[var(--accent-light)] ml-2 flex-shrink-0">
                               ★ {insight.rating}/5
                             </span>
                           )}
                         </div>
-                        <p className="text-sm">{insight.content}</p>
+                        <span className="text-xs text-[var(--muted)]">{insight.source}</span>
                       </div>
                     );
                   })}
@@ -770,26 +770,6 @@ export function CompanyDetail({ company }: { company: Company }) {
             </div>
             </div>
 
-            {/* Sources */}
-            <div>
-              <h3 className="section-title">Sources</h3>
-            <div className="card p-5">
-              <div className="space-y-2">
-                {company.sources.map((s, i) => (
-                  <a
-                    key={i}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-sm text-[var(--accent-light)] hover:underline"
-                  >
-                    {s.title} ↗
-                  </a>
-                ))}
-              </div>
-            </div>
-            </div>
-
             {/* Design Work Type */}
             <div>
               <h3 className="section-title">Design Work Type</h3>
@@ -812,6 +792,24 @@ export function CompanyDetail({ company }: { company: Company }) {
                 tasks={company.designWorkType.interface.tasks}
               />
             </div>
+            </div>
+
+            {/* Sources */}
+            <div>
+              <h3 className="section-title">Sources</h3>
+              <div className="space-y-2">
+                {company.sources.map((s, i) => (
+                  <a
+                    key={i}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm text-[var(--accent-light)] hover:underline"
+                  >
+                    {s.title} ↗
+                  </a>
+                ))}
+              </div>
             </div>
           </section>
         </div>
