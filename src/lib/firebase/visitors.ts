@@ -92,29 +92,35 @@ export async function trackVisit(
       const sessionData = sessionSnap.data() as VisitorSession;
       const pages = sessionData.pages || [];
 
-      await setDoc(
-        sessionRef,
-        {
-          lastActivity: now,
-          pages: pages.includes(path) ? pages : [...pages, path],
-          userId: userId || sessionData.userId,
-          isActive,
-        },
-        { merge: true }
-      );
+      const updateData: Record<string, unknown> = {
+        lastActivity: now,
+        pages: pages.includes(path) ? pages : [...pages, path],
+        isActive,
+      };
+
+      if (userId) {
+        updateData.userId = userId;
+      }
+
+      await setDoc(sessionRef, updateData, { merge: true });
     } else {
       // Create new session
       const location = await getVisitorLocation();
 
-      await setDoc(sessionRef, {
+      const sessionData: Record<string, unknown> = {
         sessionId,
         firstVisit: now,
         lastActivity: now,
         location,
         pages: [path],
-        userId,
         isActive,
-      });
+      };
+
+      if (userId) {
+        sessionData.userId = userId;
+      }
+
+      await setDoc(sessionRef, sessionData);
     }
 
     // Update daily stats
