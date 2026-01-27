@@ -673,7 +673,11 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   return (
                     <tr
                       key={company.id}
-                      onClick={() => {
+                      onClick={(e) => {
+                        // Don't navigate if clicking on Interest column
+                        if ((e.target as HTMLElement).closest('[data-interest-cell]')) {
+                          return;
+                        }
                         void trackEvent('company_detail_click', {
                           company_id: company.id,
                           company_name: company.name,
@@ -735,7 +739,12 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-xs text-[var(--muted)]">—</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-center relative z-20" onClick={(e) => e.stopPropagation()}>
+                      <td
+                        className="py-3 px-4 text-center relative z-20"
+                        data-interest-cell
+                        onClick={(e) => e.stopPropagation()}
+                        onMouseDown={(e) => e.stopPropagation()}
+                      >
                         <div className="flex items-center justify-center">
                           <InterestCheckbox
                             companyId={company.id}
