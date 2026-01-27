@@ -74,65 +74,69 @@ function TestPageContent() {
         </p>
       </div>
 
-      {/* Split Layout */}
-      <div className="flex gap-6">
-        {/* Company List - Left Side */}
-        <div className={`${selectedCompanyId ? 'hidden md:block md:w-[40%] lg:w-1/2' : 'w-full'} flex-shrink-0 transition-all duration-300`}>
-          <CompanyFilters
-            companies={companies}
-            onCompanyClick={(companyId) => router.push(`/test?company=${companyId}`)}
-          />
-        </div>
-
-        {/* Side Panel - Right Side */}
-        {selectedCompanyId && selectedCompany && (
-          <>
-            {/* Overlay - Mobile/Tablet only */}
-            <div
-              className="md:hidden fixed inset-0 bg-black/50 z-40 animate-fadeIn"
-              onClick={closePanel}
-            />
-
-            {/* Panel */}
-            <div
-              className={`
-                fixed md:sticky md:top-0
-                right-0 top-0 bottom-0
-                w-full md:w-[60%] lg:w-1/2
-                bg-[var(--background)]
-                border-l border-[var(--border)]
-                z-50
-                overflow-y-auto
-                animate-slideInRight
-              `}
-            >
-              {/* Close Button */}
-              <div className="sticky top-0 z-10 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] p-4">
-                <button
-                  onClick={closePanel}
-                  className="flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                  <span>Close</span>
-                  <span className="ml-auto text-xs bg-[var(--card)] border border-[var(--border)] rounded px-2 py-0.5">
-                    ESC
-                  </span>
-                </button>
-              </div>
-
-              {/* Company Detail Content */}
-              <div className="p-6">
-                <div className="[&_.max-w-7xl]:max-w-none [&_>div>div:first-child]:hidden">
-                  <CompanyDetail company={selectedCompany} />
-                </div>
-              </div>
-            </div>
-          </>
-        )}
+      {/* Company List - Full Width */}
+      <div className="w-full">
+        <CompanyFilters
+          companies={companies}
+          onCompanyClick={(companyId) => router.push(`/test?company=${companyId}`)}
+        />
       </div>
+
+      {/* Side Panel - Overlay on top */}
+      {selectedCompanyId && selectedCompany && (
+        <>
+          {/* Overlay */}
+          <div
+            className="fixed inset-0 bg-black/50 z-40 animate-fadeIn"
+            onClick={closePanel}
+          />
+
+          {/* Panel */}
+          <div
+            className={`
+              fixed
+              right-0 top-0 bottom-0
+              w-full md:w-[60%] lg:w-1/2
+              bg-[var(--background)]
+              border-l border-[var(--border)]
+              z-50
+              overflow-y-auto
+              animate-slideInRight
+            `}
+          >
+            {/* Action Buttons - Left Top */}
+            <div className="absolute left-0 top-0 z-10 flex gap-1 p-4">
+              <button
+                onClick={closePanel}
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card-hover)] transition-colors"
+                title="Close (ESC)"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+              <button
+                onClick={() => window.open(`/company/${selectedCompany.id}`, '_blank')}
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card-hover)] transition-colors"
+                title="Open in full page"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="15 3 21 3 21 9" />
+                  <polyline points="9 21 3 21 3 15" />
+                  <line x1="21" y1="3" x2="14" y2="10" />
+                  <line x1="3" y1="21" x2="10" y2="14" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Company Detail Content */}
+            <div className="pt-16 px-6 pb-6 panel-view">
+              <CompanyDetail company={selectedCompany} />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

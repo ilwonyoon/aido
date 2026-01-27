@@ -124,81 +124,8 @@ export const llmarena: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles
-    openRoles: [
-      {
-        title: 'Enterprise IT Engineer',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/3bcc68c5-9bf7-4568-ab1e-05e166a0d02e',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Technical Recruiter',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/44726c2d-4a54-43da-9e32-73bcb7522c38',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Senior Software Engineer, ML Infrastructure',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/8a52db07-5ba9-4d64-a08f-1b1f6cd88c5a',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Senior Software Engineer, Full Stack',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/7354e079-fd69-4c1a-b9ce-ce99dcf30482',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Senior Software Engineer, Data Infrastructure',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/0f4ce213-8537-4a9b-af4f-25139df1b705',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Senior Product Security Engineer',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/d1c71ccd-8fbf-42cb-82b5-06694e1b79f3',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Senior Infrastructure Engineer',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/c589d52f-35f6-49bc-9241-b791b9f466ab',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Data Scientist',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/81faa42c-c9a3-433e-b6bc-9ad7eefb88af',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Machine Learning Scientist - Open Source Lead',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/62014e2d-6225-4310-96d3-c0a2c3df27f0',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Machine Learning Scientist',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/38c21c97-1852-4cd1-b618-2f5fe0492202',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Machine Learning Engineer',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/eaeb1f28-cca9-468d-abcf-5ff412ad75de',
-        postedDate: '2025-12',
-      },
-      {
-        title: 'Engineering Manager',
-        location: 'Bay Area',
-        url: 'https://jobs.ashbyhq.com/lmarena/d6d5fc50-6b38-4df5-b2e9-cfb2b798a10e',
-        postedDate: '2025-12',
-      },
-    ],
+    // Open Roles (Product Design only)
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -219,10 +146,10 @@ export const llmarena: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T00:00:00',
+    lastUpdated: '2026-01-27T12:00:00',
     sources: [
       { title: 'LLMArena (startups.gallery)', url: 'https://startups.gallery/companies/llmarena' },
       { title: 'LLMArena funding (TechCrunch)', url: 'https://techcrunch.com/2026/01/07/llm-arena-raises-150m-series-a-at-1-7b-valuation/' },
-      { title: 'LLMArena founders (EveryDev.ai)', url: 'https://everydev.ai/company/lmarena' },
+      { title: 'LLMArena founders (Contrary Research)', url: 'https://research.contrary.com/company/lmarena' },
     ],
   };

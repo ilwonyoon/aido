@@ -139,39 +139,8 @@ export const inferact: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles
-    openRoles: [
-      {
-        title: 'Member of Technical Staff, Exceptional Generalist (Remote)',
-        location: 'Remote',
-        url: 'https://jobs.ashbyhq.com/inferact/f0d2619d-28e0-4b25-8d30-3ac555071abb',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Member of Technical Staff, Cloud Orchestration',
-        location: 'San Francisco',
-        url: 'https://jobs.ashbyhq.com/inferact/3fc0dd9b-14d5-4068-b597-7ec2014e07c1',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Member of Technical Staff, Kernel Engineering',
-        location: 'San Francisco',
-        url: 'https://jobs.ashbyhq.com/inferact/384d9db8-c712-4caa-8091-444b4189e161',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Member of Technical Staff, Performance and Scale',
-        location: 'San Francisco',
-        url: 'https://jobs.ashbyhq.com/inferact/7f934a1b-1845-4f25-8fe4-1def2b039f60',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Member of Technical Staff, Inference',
-        location: 'San Francisco',
-        url: 'https://jobs.ashbyhq.com/inferact/9470565b-c62d-4de9-8b87-26d525ecec49',
-        postedDate: '2026-01',
-      },
-    ],
+    // Open Roles (Product Design only)
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -192,7 +161,7 @@ export const inferact: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T00:00:00',
+    lastUpdated: '2026-01-27T12:00:00',
     sources: [
       { title: 'Inferact (startups.gallery)', url: 'https://startups.gallery/companies/inferact' },
       { title: 'Inferact funding + founders (FinSMEs)', url: 'https://www.finsmes.com/2026/01/inferact-raises-150m-in-seed-funding.html' },

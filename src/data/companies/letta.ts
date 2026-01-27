@@ -118,39 +118,8 @@ export const letta: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles
-    openRoles: [
-      {
-        title: 'Research Engineer / Scientist, Memory',
-        location: 'San Francisco Office',
-        url: 'https://jobs.ashbyhq.com/letta/fc0ae0d3-bc03-4afd-ab79-299444885e88',
-        postedDate: '2025-09',
-      },
-      {
-        title: 'Research Engineer / Scientist, Self-Improvement',
-        location: 'San Francisco Office',
-        url: 'https://jobs.ashbyhq.com/letta/d95271e3-f1ae-4317-8ecd-f25a79a0165c',
-        postedDate: '2025-08',
-      },
-      {
-        title: 'Research Engineer / Scientist, Post-Training',
-        location: 'San Francisco Office',
-        url: 'https://jobs.ashbyhq.com/letta/57165f1b-e99e-4f9e-bda2-8f220ba68af7',
-        postedDate: '2025-02',
-      },
-      {
-        title: 'Product Engineer, Agent Development Environment',
-        location: 'San Francisco Office',
-        url: 'https://jobs.ashbyhq.com/letta/8433f17d-e271-490e-967a-a628e727ff34',
-        postedDate: '2024-11',
-      },
-      {
-        title: 'Software Engineer, Agent Platform',
-        location: 'San Francisco Office',
-        url: 'https://jobs.ashbyhq.com/letta/5375a3dc-c886-41c0-a2de-08d0412204d8',
-        postedDate: '2024-09',
-      },
-    ],
+    // Open Roles (Product Design only)
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -171,7 +140,7 @@ export const letta: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T00:00:00',
+    lastUpdated: '2026-01-27T12:00:00',
     sources: [
       { title: 'Letta (startups.gallery)', url: 'https://startups.gallery/companies/letta' },
       { title: 'Letta founders (SaaS News)', url: 'https://www.thesaasnews.com/news/letta-raises-10-million-in-seed-round' },

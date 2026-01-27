@@ -124,81 +124,8 @@ export const deepgram: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles
-    openRoles: [
-      {
-        title: 'IT Manager',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/ec905711-d399-4f70-911b-6fdb6f5a4413',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Marketing Lead, Deepgram for Restaurants',
-        location: 'San Francisco, CA',
-        url: 'https://jobs.ashbyhq.com/Deepgram/d171e8e0-4d26-4265-8523-48bc4288566e',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Staff Product Analyst',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/790579d8-6474-42ca-9104-9a4bafcf13e9',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Research Staff, LLMs',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/39c2b79b-0269-4711-9354-be5ccf747a98',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Research Staff, Voice AI Foundations',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/7cf277bc-a192-4007-a77a-fafbf8276a5e',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Strategic Account Executive',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/7fe7bd7d-b337-4337-b459-a892be80789e',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Enterprise AI Strategist, Deepgram for Restaurants',
-        location: 'San Francisco, CA',
-        url: 'https://jobs.ashbyhq.com/Deepgram/8fd3acd1-31c0-4dad-a249-a8d3d5d79cc9',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Software Engineer - Deepgram for Restaurants',
-        location: 'San Francisco, CA',
-        url: 'https://jobs.ashbyhq.com/Deepgram/68372d7d-b7a9-439e-a0a7-76690576aba4',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Senior Human Resources Business Partner',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/b60a0ffc-03c2-4c1f-baf4-f9246de62a9a',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Senior Website Manager',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/71077acf-7427-44e5-a84f-4e64b61cb8cf',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Senior Marketing Operations Manager',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/8dfd7b16-a0ff-4def-a0ba-47448f1b49f9',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Product Marketing Manager, Enterprise & Partnerships',
-        location: 'USA | Remote',
-        url: 'https://jobs.ashbyhq.com/Deepgram/7ecf7810-4932-432e-a7ef-34cc20686125',
-        postedDate: '2026-01',
-      },
-    ],
+    // Open Roles (Product Design only)
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -219,7 +146,7 @@ export const deepgram: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T00:00:00',
+    lastUpdated: '2026-01-27T12:00:00',
     sources: [
       { title: 'Deepgram (startups.gallery)', url: 'https://startups.gallery/companies/deepgram' },
       { title: 'Deepgram (Y Combinator)', url: 'https://www.ycombinator.com/companies/deepgram' },

@@ -137,7 +137,7 @@ export const higgsfield: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T00:00:00',
+    lastUpdated: '2026-01-27T12:00:00',
     sources: [
       { title: 'Higgsfield (startups.gallery)', url: 'https://startups.gallery/companies/higgsfield' },
       { title: 'Higgsfield funding + run rate (FinSMEs)', url: 'https://www.finsmes.com/2026/01/higgsfield-raises-80m-in-series-a-extension-funding.html' },

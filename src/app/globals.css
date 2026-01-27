@@ -251,3 +251,18 @@ a:hover {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Chrome, Safari, Opera */
 }
+
+/* Panel view styles - for side panel company detail */
+.panel-view .max-w-7xl {
+  max-width: none;
+}
+
+/* Hide desktop sticky nav in panel view */
+.panel-view nav.hidden.lg\:block {
+  display: none !important;
+}
+
+/* Hide back link in panel view */
+.panel-view > div > div:first-child {
+  display: none;
+}
