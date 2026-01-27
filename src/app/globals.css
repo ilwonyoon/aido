@@ -259,11 +259,9 @@ a:hover {
   display: none !important;
 }
 
-/* Show mobile chips nav in panel view only on mobile/tablet (override lg:hidden) */
-@media (max-width: 1023px) {
-  .panel-view .lg\:hidden.sticky {
-    display: flex !important;
-  }
+/* Show mobile chips nav in panel view (override lg:hidden) */
+.panel-view .lg\:hidden.sticky {
+  display: flex !important;
 }
 
 /* Hide back link in panel view */

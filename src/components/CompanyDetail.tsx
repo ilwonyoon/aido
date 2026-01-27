@@ -83,17 +83,25 @@ export function CompanyDetail({ company }: { company: Company }) {
 
   // Observer for Quick Info header to show/hide mobile nav
   useEffect(() => {
+    // Find the scroll container (panel or window)
+    const scrollContainer = document.querySelector('.panel-view')?.parentElement;
+
     headerObserverRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           // Show mobile nav when header is NOT visible
+          console.log('Quick Info header intersecting:', entry.isIntersecting);
           setShowMobileNav(!entry.isIntersecting);
         });
       },
-      { threshold: 0 }
+      {
+        threshold: 0,
+        rootMargin: '-56px 0px 0px 0px' // Account for sticky header height
+      }
     );
 
     const header = document.getElementById('quick-info-header');
+    console.log('Quick Info header element found:', !!header);
     if (header) {
       headerObserverRef.current.observe(header);
     }
