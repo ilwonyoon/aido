@@ -95,7 +95,7 @@ export function InterestToggle({ companyId }: { companyId: string }) {
   }
 
   return (
-    <div className="flex flex-col items-end gap-2">
+    <div className="flex flex-col items-start gap-2">
       <div className="flex items-center gap-3">
         <button
           onClick={() => updateStatus(status === 'interested' ? null : 'interested')}
