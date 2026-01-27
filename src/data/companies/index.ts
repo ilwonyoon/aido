@@ -69,6 +69,9 @@ import { humeAi } from './hume-ai';
 import { ivo } from './ivo';
 import { surgeAi } from './surge-ai';
 import { factory } from './factory';
+import { axiomMath } from './axiom-math';
+import { extropic } from './extropic';
+import { yutori } from './yutori';
 
 export const companies: Company[] = [
   anthropic,
@@ -140,9 +143,12 @@ export const companies: Company[] = [
   ivo,
   surgeAi,
   factory,
+  axiomMath,
+  extropic,
+  yutori,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
