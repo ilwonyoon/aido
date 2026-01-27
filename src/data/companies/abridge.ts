@@ -90,19 +90,38 @@ export const abridge: Company = {
     // Founders & Vision
     founders: [
       {
-        name: 'Shiv Rao, MD',
+        name: 'Shivdev (Shiv) Rao, MD',
         role: 'Co-founder & CEO',
-        background: 'Physician and entrepreneur focused on reducing clinician burden',
+        background: 'Cardiologist and faculty at UPMC Heart and Vascular Institute. Previously EVP at UPMC Enterprises. Undergraduate at Carnegie Mellon, residency at University of Michigan. High school skateboarder and outsider music fan (Fugazi, Minor Threat). Practices medicine one weekend/month.',
+      },
+      {
+        name: 'Zachary Lipton, PhD',
+        role: 'Co-founder & CTO',
+        background: 'Machine learning professor at Carnegie Mellon. Former professional jazz saxophonist. Leads AI research and model development at Abridge.',
+      },
+      {
+        name: 'Sandeep Konam',
+        role: 'Co-founder',
+        background: 'Co-founded Abridge in 2018. Technical co-founder focused on product engineering.',
+      },
+      {
+        name: 'Florian Metze',
+        role: 'Co-founder (former)',
+        background: 'Former co-founder, no longer with company. Speech recognition and NLP expert.',
       },
     ],
     whyBuilding:
-      'Reduce administrative load and improve clinical documentation by capturing and summarizing medical conversations.',
+      'Healthcare is about people having conversations upstream of all diagnostics and therapeutics. Technology should bring providers and patients closer together, not add to clinician workload. Rao built Abridge as a tool he wants to use himself as a practicing physician.',
     beliefs: [
+      'Healthcare is about people—technology should bring them closer together',
       'Clinicians should spend more time with patients, less on documentation',
-      'AI must be trustworthy and auditable in healthcare',
+      'AI must be trustworthy and auditable in healthcare: "Precision, accuracy, trust—these aren\'t just features. They\'re existential."',
       'Medical language requires specialty-specific understanding',
+      'Physician-driven, patient-centered, AI-powered: key triad for clinician-facing AI',
+      'Taste, empathy, and curiosity are the real moats in healthcare AI',
+      'Don\'t overpromise—only tout features that are built and thoroughly tested',
     ],
-    designPhilosophy: 'Unknown',
+    designPhilosophy: 'Build tools that actively lighten clinician workload, not add to it. Focus on patient benefit above all else. Design for trust and auditability—precision is existential in healthcare.',
     greenFlags: [
       'Large enterprise adoption (200+ health systems)',
       'Strong funding momentum and valuation growth',
@@ -159,13 +178,28 @@ export const abridge: Company = {
     ],
 
     // Designer Links
-    designerLinks: [],
+    designerLinks: [
+      {
+        name: 'Rez Khan',
+        role: 'VP of Product (Series A to Series C)',
+        platform: 'linkedin',
+        url: 'https://www.linkedin.com/in/rezk/',
+        description: 'Led product management and design team during rapid growth. Expanded from 1 PM to 9 PMs and Designers.',
+      },
+    ],
 
     // Open Roles
     openRoles: [],
 
     // Culture Insights
-    cultureInsights: [],
+    cultureInsights: [
+      {
+        source: 'linkedin',
+        sentiment: 'positive',
+        content: 'Physician-driven culture. CEO Shiv Rao remains practicing doctor. Product team expanded from 1 to 9 PMs and designers from Series A to Series C. Strong focus on clinical empathy and user research.',
+        url: 'https://www.linkedin.com/in/rezk/',
+      },
+    ],
 
     // My Tracking
     tracking: {
