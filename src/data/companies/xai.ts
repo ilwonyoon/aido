@@ -246,37 +246,6 @@ export const xai: Company = {
         teamInfo: 'Reports directly to founding team. Flat structure where leadership is earned through initiative and excellence.',
         whyInteresting: 'On-site 5 days/week. DoD integration just announced. Designing first AI for classified government environments. $230B valuation. Equity + comprehensive benefits. Interview process completes within 1 week.',
       },
-      {
-        title: 'Frontend Engineer / Design Engineer - US Government',
-        location: 'Palo Alto, CA; San Francisco, CA',
-        type: 'full-time',
-        url: 'https://job-boards.greenhouse.io/xai/jobs/4940191007',
-        compensation: '$180K-$440K',
-        aboutRole: 'Design and build mission-critical AI products for federal and enterprise partners, combining frontend engineering with design responsibilities.',
-        responsibilities: [
-          'Translate government requirements into product directions ensuring regulatory compliance',
-          'Create and prototype secure interfaces for government/enterprise platforms',
-          'Evaluate model behavior and benchmark designs for performance, security, auditability',
-          'Build internal design tools for secure environments',
-          'Develop design guidelines based on government stakeholder feedback',
-        ],
-        requirements: [
-          'Active U.S. security clearance (Top Secret/Top Secret SCI preferred)',
-          '6+ years design experience in high-reliability or security environments',
-          'Demonstrated experience with government agencies, DoD, or federal contractors',
-          'Strong English communication with design documentation expertise',
-          'Experience implementing AI/ML interfaces with APIs and backend systems',
-          'Background in Interaction Design, UX Design, Computer Science, or related fields',
-        ],
-        preferred: [
-          'Experience building evaluation frameworks for AI-driven designs',
-          'Deep machine learning fundamentals knowledge',
-          'History deploying AI designs to production in secure government environments',
-          'Performance optimization and high-throughput workflow scaling ability',
-          'Portfolio demonstrating work across web and mobile platforms',
-        ],
-        whyInteresting: 'Hybrid role combining design and engineering. Government-focused AI product. Fast interview process (1 week). Equity + comprehensive benefits.',
-      },
     ],
 
     // Culture Insights
@@ -390,10 +359,6 @@ export const xai: Company = {
       {
         title: 'Product Designer - Government Job Posting',
         url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007',
-      },
-      {
-        title: 'Frontend/Design Engineer - Government Job Posting',
-        url: 'https://job-boards.greenhouse.io/xai/jobs/4940191007',
       },
     ],
   };
