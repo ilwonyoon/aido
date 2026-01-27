@@ -147,8 +147,13 @@ export const mercor: Company = {
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'San Francisco, CA (Onsite)',
-        url: 'https://www.mercor.com/careers/',
+        location: 'San Francisco, CA',
+        type: 'full-time',
+        url: 'https://jobs.ashbyhq.com/mercor/f8f1ef53-1f58-4fda-a208-1d4a1c5b7e2a',
+        compensation: '$150K-$250K + Equity',
+        team: 'Engineering',
+        aboutRole: 'Design talent platform and applied AI initiatives. Close collaboration with product and engineering teams.',
+        whyInteresting: 'On-site 5 days/week. $10B valuation (Series C). Hypergrowth (fastest rising valuation). Customers: OpenAI, Anthropic. Young founders (Thiel Fellows). Benefits: $20K relocation bonus, $10K housing bonus (within 0.5mi), $1K monthly meals, free Equinox.',
       },
     ],
 

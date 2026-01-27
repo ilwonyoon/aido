@@ -48,8 +48,8 @@ export const tavus: Company = {
     ],
     vsGiants: 'API-first vs Synthesia\'s UI-first approach. Focus on real-time conversational video (600ms latency) vs batch generation. Developer platform play enables embedding in existing workflows. Personalization at scale vs generic template approach.',
 
-    aiNativeLevel: 'B',
-    aiNativeLevelDescription: 'AI-Core: AI video generation is core differentiator, built on proven video generation workflows but adding personalization layer.',
+    aiNativeLevel: 'A',
+    aiNativeLevelDescription: 'AI-Native/Zero-to-One: AI IS the product. Personalized video generation at scale is a category created by AI. Phoenix/Hummingbird models, real-time conversational video (600ms), API-first platform all zero-to-one innovations.',
     aiDesignChallenges: [
       'Avatar realism and uncanny valley avoidance',
       'Real-time conversation design (600ms latency)',
