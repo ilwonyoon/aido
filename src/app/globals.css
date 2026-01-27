@@ -268,3 +268,14 @@ a:hover {
 .panel-view > div > div:first-child {
   display: none;
 }
+
+/* Force mobile/tablet grid layout in panel view (prevent 4-column layout) */
+.panel-view .grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+@media (min-width: 640px) {
+  .panel-view .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
