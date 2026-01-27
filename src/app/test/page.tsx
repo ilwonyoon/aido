@@ -27,18 +27,42 @@ function TestPageContent() {
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Initial load from URL
     const companyId = searchParams.get('company');
     setSelectedCompanyId(companyId);
+  }, [searchParams]);
 
-    // Reset scroll to top when company changes
+  useEffect(() => {
+    // Handle browser back/forward buttons
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const companyId = params.get('company');
+      setSelectedCompanyId(companyId);
+
+      if (panelRef.current) {
+        panelRef.current.scrollTop = 0;
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const closePanel = useCallback(() => {
+    window.history.pushState({}, '', '/test');
+    setSelectedCompanyId(null);
+  }, []);
+
+  const handleCompanyClick = useCallback((companyId: string) => {
+    // Use window.history to avoid router re-render
+    window.history.pushState({}, '', `/test?company=${companyId}`);
+    setSelectedCompanyId(companyId);
+
+    // Reset panel scroll
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
-  }, [searchParams]);
-
-  const handleCompanyClick = useCallback((companyId: string) => {
-    router.push(`/test?company=${companyId}`);
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -49,12 +73,7 @@ function TestPageContent() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedCompanyId]);
-
-  const closePanel = () => {
-    router.push('/test');
-    setSelectedCompanyId(null);
-  };
+  }, [selectedCompanyId, closePanel]);
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
 
@@ -98,7 +117,7 @@ function TestPageContent() {
 
       {/* Company List - Full Width */}
       <div className="w-full">
-        <MemoizedCompanyList companies={companies} onCompanyClick={handleCompanyClick} />
+        <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
       </div>
 
       {/* Side Panel - Overlay on top */}
