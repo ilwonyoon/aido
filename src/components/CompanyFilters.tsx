@@ -466,9 +466,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   return (
     <div>
       {/* Filter & Sort Bar */}
-      <div className="space-y-3 mb-6">
+      <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide -mb-px">
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
@@ -514,7 +514,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
         </div>
 
         {/* Row 2: Sort + View Toggle + Company count */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between pl-3 pr-3">
           {/* Left: Sort & View Toggle */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
