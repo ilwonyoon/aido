@@ -281,12 +281,13 @@ function MultiSelectFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
               width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`,
-              maxWidth: 'calc(100vw - 2rem)'
+              maxWidth: 'calc(100vw - 2rem)',
+              maxHeight: '320px'
             }}
           >
             {values.length > 0 && (
@@ -359,22 +360,33 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
   const effectiveViewMode = isMobile ? 'card' : viewMode;
 
-  // Get unique locations (city level, prioritize SF Bay Area)
+  // SF Bay Area cities to consolidate
+  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+
+  // Get unique locations (consolidate SF Bay Area)
   const locations = useMemo(() => {
     const locs = new Set<string>();
+    let hasSFBayArea = false;
+
     companies.forEach((c) => {
       const city = c.headquarters.split(',')[0]?.trim();
-      if (city) locs.add(city);
+      if (city) {
+        // Check if it's a SF Bay Area city
+        if (sfBayAreaCities.some(sfCity => city.includes(sfCity))) {
+          hasSFBayArea = true;
+        } else {
+          locs.add(city);
+        }
+      }
     });
-    const sorted = Array.from(locs).sort((a, b) => {
-      // Prioritize SF Bay Area cities
-      const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose'];
-      const aIsSF = sfBayArea.some(city => a.includes(city));
-      const bIsSF = sfBayArea.some(city => b.includes(city));
-      if (aIsSF && !bIsSF) return -1;
-      if (!aIsSF && bIsSF) return 1;
-      return a.localeCompare(b);
-    });
+
+    const sorted = Array.from(locs).sort((a, b) => a.localeCompare(b));
+
+    // Add SF Bay Area at the top if any companies are there
+    if (hasSFBayArea) {
+      sorted.unshift('SF Bay Area');
+    }
+
     return sorted;
   }, [companies]);
 
@@ -447,12 +459,19 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
       if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
       if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
-      if (
-        locationFilter.length > 0 &&
-        !locationFilter.some((loc) => company.headquarters.includes(loc))
-      ) {
-        return false;
+
+      // Location Filter with SF Bay Area handling
+      if (locationFilter.length > 0) {
+        const hasMatch = locationFilter.some((loc) => {
+          if (loc === 'SF Bay Area') {
+            // Check if company is in any SF Bay Area city
+            return sfBayAreaCities.some(sfCity => company.headquarters.includes(sfCity));
+          }
+          return company.headquarters.includes(loc);
+        });
+        if (!hasMatch) return false;
       }
+
       return true;
     });
   }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter]);
@@ -543,7 +562,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       {/* Filter & Sort Bar */}
       <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
+        <div className="flex items-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide">
           <DropdownFilter
             label="Review Status"
             value={reviewStatusFilter}
