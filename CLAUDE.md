@@ -100,43 +100,80 @@ src/
 
 ## 회사 추가 방법
 
-1. `src/data/companies.ts`에 Company 객체 추가
-2. 필수 필드: id, name, description, aiNativeLevel, founders, designWorkType, tracking
-3. designerLinks에 해당 회사 디자이너들의 소셜/블로그 추가
+**필수 첫 단계: Job Scraper 스킬 실행**
+
+```
+/job-scraper [company name or website]
+```
+
+이 스킬이 자동으로:
+- Company career page에서 모든 Product Design 역할 찾기
+- Job detail 페이지까지 방문하여 상세 정보 수집
+- LinkedIn, Greenhouse 등에서 교차 검증
+- Playwright로 JS 렌더링 페이지 처리
+- 정확한 openRoles TypeScript object 생성
+
+**그 다음:**
+
+1. Job scraper 결과를 바탕으로 `openRoles` 필드 정확히 채우기
+2. `src/data/companies/[company-id].ts`에 Company 객체 생성
+3. 필수 필드: id, name, description, aiNativeLevel, founders, designWorkType, tracking, openRoles
+4. designerLinks에 해당 회사 디자이너들의 소셜/블로그 추가
+5. Commit
+
+**⚠️ 중요**: Job scraper 없이 수동으로 openRoles 채우지 말 것. 누락 및 오류 발생 위험.
 
 ## 회사 분석 시 리서치 항목
 
 새 회사 분석할 때 조사할 것들:
 
-### Business
+### 1. Open Roles (최우선)
+```
+/job-scraper [company name]
+```
+- Product Designer, Senior/Staff Product Designer
+- Design leadership (Manager, Director, Head of Design)
+- 제외: Visual, Brand, Content Designer, Design Engineer
+
+### 2. Business
 - Crunchbase/PitchBook: funding, valuation
 - 회사 블로그/뉴스: revenue, growth
 - 경쟁사 분석
 
-### Founders
+### 3. Founders
 - LinkedIn: 배경
 - Twitter/X: 철학, 생각
 - 팟캐스트/인터뷰: 왜 이걸 만드는지
 
-### Design
-- careers page: 채용 중인 롤
+### 4. Design
 - LinkedIn: 디자인팀 규모, 리더
 - 디자이너들 소셜: 어떤 작업 하는지
+- designerLinks 수집
 
-### Product
+### 5. Product
 - 직접 사용해보기
 - Product Hunt, G2: 유저 리뷰
 - 기술 블로그: 어떻게 만드는지
 
 ## Open Roles 검증 방법
 
-**중요**: WebFetch로 careers 페이지 직접 스크래핑은 JS 렌더링 문제로 신뢰할 수 없음.
-
-### 검증 방법: WebSearch
+**✅ 권장: Job Scraper 스킬 사용**
 
 ```
-WebSearch: "Company Name" "Product Designer" job site:company.com/careers
+/job-scraper [company name]
 ```
+
+이 스킬이 자동으로:
+- Career page department 필터 사용
+- Cmd+F로 "product design" 검색
+- Job detail 페이지까지 접속
+- LinkedIn, Greenhouse, Ashby 교차 검증
+- Playwright로 JS 렌더링 페이지 처리
+- 최신성 확인 (60일 이내)
+
+**❌ 비권장: 수동 WebFetch**
+
+WebFetch는 JS 렌더링 문제로 신뢰할 수 없음. Job scraper 스킬이 Playwright를 사용하여 이 문제 해결.
 
 **왜 이 방법이 정확한가:**
 1. 검색 엔진이 이미 JS 렌더링 후 인덱싱함
