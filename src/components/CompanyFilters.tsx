@@ -53,7 +53,7 @@ function InterestCheckbox({
   return (
     <button
       onClick={handleClick}
-      className="group/checkbox relative flex items-center justify-center w-6 h-6"
+      className="group/checkbox relative z-10 flex items-center justify-center w-10 h-10"
       title={currentStatus === 'interested' ? 'Remove from interested' : 'Mark as interested'}
     >
       <div
@@ -734,7 +734,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                           <span className="text-xs text-[var(--muted)]">—</span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-center">
+                      <td className="py-3 px-4 text-center" onClick={(e) => e.stopPropagation()}>
                         <InterestCheckbox
                           companyId={company.id}
                           currentStatus={interest}
