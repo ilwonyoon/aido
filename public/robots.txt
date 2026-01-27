@@ -1,0 +1,7 @@
+# robots.txt for AIDO
+User-agent: *
+Allow: /
+Disallow: /analytics
+Disallow: /api/
+
+Sitemap: https://aido-d2cc0.web.app/sitemap.xml
