@@ -23,14 +23,14 @@ export const higgsfield: Company = {
     // Competition
     competitors: [
       {
-        name: 'Synthesia',
-        description: 'AI-generated video platform focused on synthetic video creation.',
-        whyTheyWin: 'Strong positioning in AI video generation for business use cases.',
+        name: 'Runway',
+        description: 'AI video generation and creative tools platform.',
+        whyTheyWin: 'Strong brand and creator adoption in AI video workflows.',
       },
       {
-        name: 'Deepgram',
-        description: 'Voice AI platform; adjacent in AI media infrastructure and tooling.',
-        whyTheyWin: 'Established platform and developer adoption for media AI workflows.',
+        name: 'Synthesia',
+        description: 'AI video platform focused on synthetic video creation.',
+        whyTheyWin: 'Enterprise adoption and polished product experience.',
       },
     ],
     marketPosition: 'Cinematic, pro-focused AI video creation with camera-motion control.',
@@ -53,8 +53,8 @@ export const higgsfield: Company = {
     founders: [
       {
         name: 'Alex Mashrabov',
-        role: 'Founder',
-        background: 'Former head of Generative AI at Snap; previously co-founded AI Factory.',
+        role: 'Founder & CEO',
+        background: 'Former Snap executive; founder of Higgsfield.',
       },
     ],
     whyBuilding: 'Make AI video creation accessible and high-quality for creative professionals.',
@@ -114,39 +114,8 @@ export const higgsfield: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles
-    openRoles: [
-      {
-        title: 'GTM Engineer',
-        location: 'San Francisco Bay Area',
-        url: 'https://jobs.ashbyhq.com/higgsfieldai/c6ab1b04-6ec6-411e-afe0-6f97040925a9',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'HR Operations',
-        location: 'San Francisco / Los Angeles',
-        url: 'https://jobs.ashbyhq.com/higgsfieldai/a3a55d98-4a59-45cb-a57d-0d132e83bc93',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'Financial Controller',
-        location: 'San Francisco Bay Area',
-        url: 'https://jobs.ashbyhq.com/higgsfieldai/3dc7610f-2328-47e4-9511-64a0ffc92438',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'AI educator - Enterprise',
-        location: 'San Francisco / Los Angeles',
-        url: 'https://jobs.ashbyhq.com/higgsfieldai/381bdce4-7aa1-4db5-b6ae-4411af8ee793',
-        postedDate: '2026-01',
-      },
-      {
-        title: 'GTM - Enterprise',
-        location: 'San Francisco Bay Area',
-        url: 'https://jobs.ashbyhq.com/higgsfieldai/211e40d3-6d66-4abe-b09d-0e679f12293d',
-        postedDate: '2026-01',
-      },
-    ],
+    // Open Roles (Product Design only)
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -163,7 +132,7 @@ export const higgsfield: Company = {
         'Crowded AI video market',
       ],
       nextActions: [
-        'Monitor design openings',
+        'Monitor product design openings',
       ],
     },
 
@@ -171,7 +140,9 @@ export const higgsfield: Company = {
     lastUpdated: '2026-01-27T00:00:00',
     sources: [
       { title: 'Higgsfield (startups.gallery)', url: 'https://startups.gallery/companies/higgsfield' },
-      { title: 'Higgsfield Series A + Run Rate (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/higgsfield-announces-130m-series-a-and-reports-200m-annual-run-rate-302661805.html' },
-      { title: 'Higgsfield valuation + founder (TechCrunch)', url: 'https://techcrunch.com/2026/01/15/ai-video-startup-higgsfield-founded-by-ex-snap-exec-lands-1-3b-valuation/' },
+      { title: 'Higgsfield funding + run rate (FinSMEs)', url: 'https://www.finsmes.com/2026/01/higgsfield-raises-80m-in-series-a-extension-funding.html' },
+      { title: 'Higgsfield valuation + revenue (Reuters via Investing.com)', url: 'https://www.investing.com/news/stock-market-news/ai-video-startup-higgsfield-hits-13-billion-valuation-with-latest-funding-4449312' },
+      { title: 'Runway', url: 'https://runwayml.com/' },
+      { title: 'Synthesia', url: 'https://www.synthesia.io/' },
     ],
   };

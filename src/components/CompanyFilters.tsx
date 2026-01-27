@@ -329,7 +329,12 @@ function MultiSelectFilter({
 
 type ViewMode = 'card' | 'table';
 
-export function CompanyFilters({ companies }: { companies: Company[] }) {
+interface CompanyFiltersProps {
+  companies: Company[];
+  onCompanyClick?: (companyId: string) => void;
+}
+
+export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProps) {
   const router = useRouter();
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
@@ -682,7 +687,11 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                       company_name: company.name,
                       source: 'table_row',
                     });
-                    router.push(`/company/${company.id}`);
+                    if (onCompanyClick) {
+                      onCompanyClick(company.id);
+                    } else {
+                      router.push(`/company/${company.id}`);
+                    }
                   };
 
                   return (
@@ -697,7 +706,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                         className="py-3 px-4 border-r border-[var(--border)] cursor-pointer"
                       >
                         <Link
-                          href={`/company/${company.id}`}
+                          href={onCompanyClick ? '#' : `/company/${company.id}`}
                           className="hover:text-[var(--accent-light)]"
                           onClick={(e) => {
                             void trackEvent('company_detail_click', {
@@ -705,6 +714,10 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                               company_name: company.name,
                               source: 'table_name_link',
                             });
+                            if (onCompanyClick) {
+                              e.preventDefault();
+                              onCompanyClick(company.id);
+                            }
                           }}
                         >
                           <div className="flex items-center gap-2 flex-nowrap">
@@ -777,14 +790,18 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
             return (
               <Link
                 key={company.id}
-                href={`/company/${company.id}`}
+                href={onCompanyClick ? '#' : `/company/${company.id}`}
                 className={`card block p-5 ${interest === 'not_interested' ? 'opacity-50' : ''}`}
-                onClick={() => {
+                onClick={(e) => {
                   void trackEvent('company_detail_click', {
                     company_id: company.id,
                     company_name: company.name,
                     source: 'card',
                   });
+                  if (onCompanyClick) {
+                    e.preventDefault();
+                    onCompanyClick(company.id);
+                  }
                 }}
               >
                 <div className="space-y-3">
