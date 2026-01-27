@@ -122,8 +122,8 @@ export function CompanyDetail({ company }: { company: Company }) {
         </nav>
 
         {/* Mobile horizontal nav */}
-        <div className="lg:hidden sticky top-14 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6">
-          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+        <div className="lg:hidden sticky top-14 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 py-4 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
             {sections.map((section) => (
               <button
                 key={section.id}
@@ -554,7 +554,7 @@ export function CompanyDetail({ company }: { company: Company }) {
             <div className="card p-5">
               <div className="mb-6">
                 <AiLevelBadge level={company.aiNativeLevel} />
-                <div className="text-5xl sm:text-6xl font-mono font-bold mt-4 mb-4">Level {company.aiNativeLevel}</div>
+                <div className="text-3xl sm:text-4xl font-semibold mt-4 mb-4">Level {company.aiNativeLevel}</div>
                 <p className="text-sm text-[var(--muted)]">
                   {company.aiNativeLevelDescription}
                 </p>
@@ -695,30 +695,32 @@ export function CompanyDetail({ company }: { company: Company }) {
             {company.cultureInsights && company.cultureInsights.length > 0 && (
             <div>
               <h3 className="section-title">Culture Insights</h3>
-              <div className="space-y-2">
-                {company.cultureInsights.map((insight, i) => {
-                  const sentimentColors = {
-                    positive: 'border-l-[var(--success)]',
-                    neutral: 'border-l-[var(--muted)]',
-                    negative: 'border-l-[var(--warning)]',
-                  };
-                  return (
-                    <div
-                      key={i}
-                      className={`card p-4 border-l-2 ${sentimentColors[insight.sentiment]}`}
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-xs text-[var(--muted)]">{insight.source}</span>
-                        {insight.rating && (
-                          <span className="text-xs font-medium text-[var(--accent-light)]">
-                            ★ {insight.rating}/5
-                          </span>
-                        )}
+              <div className="card p-5">
+                <div className="space-y-4">
+                  {company.cultureInsights.map((insight, i) => {
+                    const sentimentColors = {
+                      positive: 'border-l-[var(--success)]',
+                      neutral: 'border-l-[var(--muted)]',
+                      negative: 'border-l-[var(--warning)]',
+                    };
+                    return (
+                      <div
+                        key={i}
+                        className={`pl-4 border-l-2 ${sentimentColors[insight.sentiment]}`}
+                      >
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-xs text-[var(--muted)]">{insight.source}</span>
+                          {insight.rating && (
+                            <span className="text-xs font-medium text-[var(--accent-light)]">
+                              ★ {insight.rating}/5
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-sm">{insight.content}</p>
                       </div>
-                      <p className="text-sm">{insight.content}</p>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
             )}
