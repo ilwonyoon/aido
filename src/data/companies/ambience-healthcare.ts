@@ -89,23 +89,25 @@ export const ambienceHealthcare: Company = {
     founders: [
       {
         name: 'Mike Ng',
-        role: 'Co-founder & CEO',
-        background: 'Co-founded Ambience Healthcare in 2020',
+        role: 'Co-founder, President & Chairman (formerly CEO)',
+        background: 'MIT Sloan MBA \'16. Fractured his back in 2012, was misdiagnosed, and learned about U.S. healthcare system through this experience. Discovered how clinicians spend most of their time on documentation. Met Buduma at MIT in 2014. Co-founded Remedy Health (2016) before Ambience (2020). Transitioned from CEO to President & Chairman in Sept 2025.',
       },
       {
         name: 'Nikhil Buduma',
-        role: 'Co-founder & Chief Scientist',
-        background: 'Co-founded Ambience Healthcare in 2020',
+        role: 'Co-founder & CEO (formerly Chief Scientist)',
+        background: 'MIT \'17. Deep learning pioneer, authored "Fundamentals of Deep Learning" (O\'Reilly), the first widely adopted textbook on modern AI. At age 16, managed drug discovery lab at San Jose State University. Two-time gold medalist at International Biology Olympiad. Promoted from Chief Scientist to CEO in Sept 2025.',
       },
     ],
     whyBuilding:
-      'Reduce administrative burden and improve clinical documentation quality with ambient AI that fits inside real healthcare workflows.',
+      'Free clinicians from the administrative burden of the EHR. After experiencing healthcare system firsthand, Ng and Buduma co-founded Ambience to reduce documentation time and let doctors focus on patient care.',
     beliefs: [
-      'Clinical AI must be accurate and auditable',
+      'Clinicians spend too much time on documentation—AI should free them',
+      'Clinical AI must be accurate and auditable—patient safety is paramount',
       'AI should reduce clinician burnout, not add complexity',
-      'Healthcare workflows require deep EHR integration',
+      'Healthcare workflows require deep EHR integration to be adopted',
+      'Ambient AI should work inside existing clinical workflows, not replace them',
     ],
-    designPhilosophy: 'Unknown',
+    designPhilosophy: 'Build AI that fits inside real healthcare workflows. Prioritize clinical accuracy and auditability. Design for both clinicians and administrators.',
     greenFlags: [
       'Series C $243M from top-tier healthcare investors',
       'Adoption across large, brand-name health systems',

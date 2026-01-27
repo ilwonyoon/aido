@@ -86,18 +86,25 @@ export const blossom: Company = {
     founders: [
       {
         name: 'John Zhao',
-        role: 'Founder & CEO',
-        background: 'Built Blossom as a care + technology platform for psychiatry',
+        role: 'Co-Founder & CEO',
+        background: 'BS in Economics & Philosophy from Duke University. Previously founded, scaled, and exited multi-$B startups: Athelas, Elemy, EverQuote. Backed by YCombinator, Sequoia, General Catalyst, Founders Fund. Built Blossom as care + technology platform for psychiatry.',
+      },
+      {
+        name: 'Yury Yakubchyk',
+        role: 'Co-Founder',
+        background: 'Co-founded Blossom with John Zhao. Previously worked on multi-$B healthcare startups. Technical and operational expertise.',
       },
     ],
     whyBuilding:
-      'Expand access to high-quality psychiatry by combining AI copilots with care delivery operations.',
+      'Expand access to high-quality psychiatry by combining AI copilots with care delivery operations. Raise what the standard of care looks like in psychiatry through technology and AI.',
     beliefs: [
       'Mental health care should be accessible and in-network',
       'AI can reduce clinician administrative load',
       'Care quality depends on both clinical rigor and patient trust',
+      'AI copilots and tools together can raise the standard of care in psychiatry',
+      'Technology should enable clinicians, not replace them',
     ],
-    designPhilosophy: 'Unknown',
+    designPhilosophy: 'Design for both clinicians and patients. Prioritize empathy, safety, and clinical outcomes. Build AI copilots that fit into psychiatric care workflows.',
     greenFlags: [
       'Series A funding to scale operations',
       'Clear vertical focus on psychiatry',
@@ -142,15 +149,15 @@ export const blossom: Company = {
 
     // Product & User Context
     targetAudiences: {
-        primary: 'Healthcare providers and clinical staff documenting patient encounters',
-        secondary: 'Medical practices and health systems reducing administrative burden',
+        primary: 'Psychiatrists and mental health clinicians in virtual practice settings',
+        secondary: 'Patients seeking accessible, in-network mental health care',
     },
     userProblems: [
-        'Doctors spend 2+ hours daily on electronic health record documentation',
-        'Typing clinical notes during patient visits reduces eye contact and engagement',
-        'Medical dictation requires specialized training and expensive transcription services',
-        'Administrative burden contributes to physician burnout and early retirement',
-        'Accurate clinical documentation is critical but time-consuming and error-prone',
+        'Psychiatrists are in severe shortage with months-long wait times for appointments',
+        'Most psychiatrists don\'t accept insurance forcing patients to pay $200-400+ per session',
+        'Clinical documentation and administrative tasks consume 40% of psychiatrist time',
+        'Telehealth platforms lack psychiatry-specific workflow tools and AI support',
+        'Mental health care quality varies widely with limited standardization',
     ],
 
     // Designer Links
@@ -181,7 +188,7 @@ export const blossom: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T20:00:00',
+    lastUpdated: '2026-01-26T23:55:00',
     sources: [
       { title: 'Blossom Health website', url: 'https://www.joinblossomhealth.com' },
       { title: 'Blossom Health LinkedIn', url: 'https://www.linkedin.com/company/join-blossom-health/' },
@@ -189,5 +196,7 @@ export const blossom: Company = {
       { title: 'Blossom funding and investors (job listing)', url: 'https://www.simplyhired.com/job/N8PM9y9hg0AQ2VSbU2wxf1uEl1O0TQ0bAlPK5S1Y7zzTH4e_1d8Y8g' },
       { title: 'Blossom Health Crunchbase', url: 'https://www.crunchbase.com/organization/blossom-health-32b4' },
       { title: 'U.S. behavioral health market size (2024)', url: 'https://www.precedenceresearch.com/us-behavioral-health-market' },
+      { title: 'John Zhao LinkedIn', url: 'https://www.linkedin.com/in/zhao-john/' },
+      { title: 'Blossom Health People', url: 'https://wellfound.com/company/join-blossom-health/people' },
     ],
   };
