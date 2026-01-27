@@ -150,7 +150,7 @@ export const tavus: Company = {
       {
         title: 'Product Designer',
         location: 'San Francisco, CA',
-        type: 'Full-time',
+        type: 'full-time',
         url: 'https://jobs.ashbyhq.com/tavus',
         requirements: [
           '3+ years product design experience',

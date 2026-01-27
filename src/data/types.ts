@@ -24,7 +24,7 @@ export interface DesignWorkType {
 export interface DesignerLink {
   name: string;
   role: string;
-  platform: 'twitter' | 'threads' | 'substack' | 'blog' | 'linkedin' | 'podcast';
+  platform: 'twitter' | 'threads' | 'substack' | 'blog' | 'linkedin' | 'podcast' | 'careers';
   url: string;
   description?: string;
 }
@@ -48,7 +48,7 @@ export interface OpenRole {
 }
 
 export interface CultureInsight {
-  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi';
+  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi' | 'careers' | 'inc.com' | 'ycombinator' | 'techcrunch';
   sentiment: 'positive' | 'neutral' | 'negative';
   rating?: number; // e.g., 4.2 out of 5
   content: string;
@@ -78,7 +78,7 @@ export interface Company {
   // Growth & Potential
   growthMetrics?: {
     // Current growth trajectory
-    stage: 'hypergrowth' | 'high-growth' | 'steady' | 'plateau' | 'declining' | 'unknown';
+    stage: 'hypergrowth' | 'high-growth' | 'early-growth' | 'mature-growth' | 'steady' | 'plateau' | 'declining' | 'unknown';
     revenueGrowth?: string; // "3x YoY ($50M → $150M)" or "Unknown"
     userGrowth?: string; // "10M → 50M users (5x in 1 year)" or "Unknown"
     signals: string[]; // ["Hiring 200+ this year", "Expanding to EU/APAC", "Series D at 3x valuation"]
@@ -91,7 +91,7 @@ export interface Company {
     headwinds: string[]; // ["GitHub Copilot competition", "Commoditization risk"]
 
     // Competitive moat
-    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'none';
+    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'platform-ecosystem' | 'vertical-specialization' | 'none';
     moatStrength?: string; // "Strong: 10M+ users generate training data"
   };
 

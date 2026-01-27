@@ -6,7 +6,7 @@ export const shopify: Company = {
     description: 'E-commerce platform with AI-powered tools (Sidekick, Magic) for merchants. Enables anyone to build and run an online store.',
     website: 'https://www.shopify.com',
     headquarters: 'Ottawa, Canada',
-    remote: 'Hybrid (remote-friendly with offices in Ottawa, Toronto, Montreal, NYC, Bellevue)',
+    remote: 'Hybrid',
 
     stage: 'Public (IPO 2015)',
     valuation: '$218B market cap',
@@ -155,7 +155,7 @@ export const shopify: Company = {
       {
         title: 'Design Apprentice, Product Design',
         location: 'Remote (offices in Ottawa, Toronto, Montreal, NYC, Bellevue)',
-        type: 'Full-time (12-month program)',
+        type: 'full-time',
         url: 'https://www.shopify.com/careers',
         requirements: [
           'Early career design talent',
@@ -166,7 +166,7 @@ export const shopify: Company = {
       {
         title: 'Staff Product Designer',
         location: 'Remote (global)',
-        type: 'Full-time',
+        type: 'full-time',
         url: 'https://www.shopify.com/careers',
         requirements: [
           'Lead design projects of significant scope and complexity',

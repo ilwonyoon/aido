@@ -6,7 +6,7 @@ export const toma: Company = {
     description: 'AI voice agents for automotive industry. Handles phone calls, scheduling, and customer service for car dealerships.',
     website: 'https://www.toma.com',
     headquarters: 'San Francisco, CA',
-    remote: 'No (5 days in-office)',
+    remote: 'No',
 
     stage: 'Series A',
     valuation: 'N/A',
@@ -157,7 +157,7 @@ export const toma: Company = {
       {
         title: 'Designer of Everything',
         location: 'San Francisco, CA',
-        type: 'Full-time (5 days in-office)',
+        type: 'full-time',
         url: 'https://www.toma.com/jobs',
         requirements: [
           '3+ years digital product design',
