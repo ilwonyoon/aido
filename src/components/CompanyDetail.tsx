@@ -2,8 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Company } from '@/data/types';
-import { InterestToggle } from '@/components/InterestToggle';
+
+const InterestToggle = dynamic(
+  () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
+  { ssr: false }
+);
 
 function AiLevelBadge({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
   const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };

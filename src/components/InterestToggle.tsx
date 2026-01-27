@@ -61,14 +61,17 @@ export function useInterestStatus(companyId: string) {
   }, [companyId, user, loading]);
 
   const updateStatus = async (newStatus: InterestStatus) => {
+    console.log('[InterestToggle] updateStatus called:', { newStatus, user: !!user });
+
     if (!user) {
+      console.log('[InterestToggle] No user, returning');
       setStatus(null);
       return;
     }
 
     setStatus(newStatus);
     setIsSyncing(true);
-    
+
     if (newStatus) {
       await setUserTracking(user.uid, companyId, { status: newStatus });
     } else {
@@ -82,6 +85,7 @@ export function useInterestStatus(companyId: string) {
 
     setIsSyncing(false);
     setLastSynced(new Date());
+    console.log('[InterestToggle] Status updated successfully');
   };
 
   return { status, updateStatus, loaded, isSyncing, lastSynced };
