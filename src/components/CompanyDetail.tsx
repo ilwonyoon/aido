@@ -122,7 +122,7 @@ export function CompanyDetail({ company }: { company: Company }) {
         </nav>
 
         {/* Mobile horizontal nav */}
-        <div className="lg:hidden sticky top-0 z-10 -mx-6 px-6 py-3 bg-[var(--background)] border-b border-[var(--border)] mb-6">
+        <div className="lg:hidden sticky top-14 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6">
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
             {sections.map((section) => (
               <button
