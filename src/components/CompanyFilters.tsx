@@ -205,13 +205,13 @@ function DropdownFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              width: `${buttonRef.current.offsetWidth}px`,
+              minWidth: `${buttonRef.current.offsetWidth}px`,
               maxWidth: 'calc(100vw - 2rem)'
             }}
           >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
-              className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
+              className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
                 !value ? 'text-[var(--accent-light)]' : 'text-[var(--muted)]'
               }`}
             >
@@ -221,7 +221,7 @@ function DropdownFilter({
               <button
                 key={opt.value}
                 onClick={() => { onChange(opt.value); setIsOpen(false); }}
-                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
                   value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
                 }`}
               >
@@ -436,8 +436,19 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     };
 
     load();
+
+    // Reload when page becomes visible (e.g., returning from company detail)
+    const handleVisibilityChange = () => {
+      if (!document.hidden && user) {
+        load();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     return () => {
       isActive = false;
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [user, loading]);
 
@@ -724,7 +735,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       </div>
 
       {/* Company List */}
-      {effectiveViewMode === 'table' ? (
+      {sortedCompanies.length === 0 ? (
+        <div className="card p-8 text-center text-[var(--muted)]">
+          No companies match your filters.
+        </div>
+      ) : effectiveViewMode === 'table' ? (
         /* Table View - Google Sheets style */
         <div className="border border-[var(--border)] rounded-lg overflow-hidden bg-[var(--card)]">
           <div className="overflow-x-auto">
@@ -931,12 +946,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
               </Link>
             );
           })}
-        </div>
-      )}
-
-      {sortedCompanies.length === 0 && (
-        <div className="card p-8 text-center text-[var(--muted)]">
-          No companies match your filters.
         </div>
       )}
     </div>
