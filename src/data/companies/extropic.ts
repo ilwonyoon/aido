@@ -82,7 +82,7 @@ export const extropic: Company = {
     {
       name: 'Guillaume Verdon',
       role: 'Founder & CEO',
-      background: 'Physicist and AI researcher; previously at Google and deep learning research.',
+      background: 'Physicist and AI researcher; leads Extropic.',
     },
     {
       name: 'Trevor McCourt',

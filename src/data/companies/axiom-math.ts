@@ -90,12 +90,12 @@ export const axiomMath: Company = {
     {
       name: 'Carina Hong',
       role: 'Founder & CEO',
-      background: 'Rhodes Scholar; founded Axiom Math to build an AI mathematician.',
+      background: 'Co-founded Axiom Math to build an AI mathematician.',
     },
     {
       name: 'Shubho Sengupta',
       role: 'CTO',
-      background: 'Early hire and CTO; previously at Meta AI research.',
+      background: 'Co-founded Axiom Math and leads technical development.',
     },
   ],
   whyBuilding:
@@ -117,7 +117,7 @@ export const axiomMath: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown (company size 11-50)',
+    teamSize: 'Unknown',
   },
   designWorkType: {
     logicBehavior: {

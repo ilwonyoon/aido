@@ -90,17 +90,17 @@ export const yutori: Company = {
     {
       name: 'Abhishek Das',
       role: 'Co-founder & Co-CEO',
-      background: 'Former Meta AI research scientist focused on agents and multimodal AI.',
+      background: 'Co-founded Yutori to build AI agents.',
     },
     {
       name: 'Devi Parikh',
       role: 'Co-founder & Chief Scientist',
-      background: 'Leading AI researcher; previously at Meta AI and Georgia Tech.',
+      background: 'AI researcher and co-founder of Yutori.',
     },
     {
       name: 'Dhruv Batra',
       role: 'Co-founder & Co-CEO',
-      background: 'AI researcher and professor; previously at Meta AI and Georgia Tech.',
+      background: 'AI researcher and co-founder of Yutori.',
     },
   ],
   whyBuilding:
