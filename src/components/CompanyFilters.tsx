@@ -184,11 +184,12 @@ function DropdownFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${buttonRef.current.offsetWidth}px`
+              width: `${buttonRef.current.offsetWidth}px`,
+              maxWidth: 'calc(100vw - 2rem)'
             }}
           >
             <button
@@ -203,7 +204,7 @@ function DropdownFilter({
               <button
                 key={opt.value}
                 onClick={() => { onChange(opt.value); setIsOpen(false); }}
-                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors ${
                   value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
                 }`}
               >
@@ -272,11 +273,12 @@ function MultiSelectFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed max-w-[calc(100vw-2rem)] bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${Math.max(buttonRef.current.offsetWidth, 180)}px`
+              width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`,
+              maxWidth: 'calc(100vw - 2rem)'
             }}
           >
             {values.length > 0 && (
