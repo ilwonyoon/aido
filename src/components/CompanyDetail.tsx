@@ -57,9 +57,7 @@ const sections = [
 
 export function CompanyDetail({ company }: { company: Company }) {
   const [activeSection, setActiveSection] = useState('quick-info');
-  const [showMobileNav, setShowMobileNav] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
-  const headerObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -79,34 +77,6 @@ export function CompanyDetail({ company }: { company: Company }) {
     });
 
     return () => observerRef.current?.disconnect();
-  }, []);
-
-  // Observer for Quick Info header to show/hide mobile nav
-  useEffect(() => {
-    // Find the scroll container (panel or window)
-    const scrollContainer = document.querySelector('.panel-view')?.parentElement;
-
-    headerObserverRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Show mobile nav when header is NOT visible
-          console.log('Quick Info header intersecting:', entry.isIntersecting);
-          setShowMobileNav(!entry.isIntersecting);
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: '-56px 0px 0px 0px' // Account for sticky header height
-      }
-    );
-
-    const header = document.getElementById('quick-info-header');
-    console.log('Quick Info header element found:', !!header);
-    if (header) {
-      headerObserverRef.current.observe(header);
-    }
-
-    return () => headerObserverRef.current?.disconnect();
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -156,26 +126,24 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
         </nav>
 
-        {/* Mobile horizontal nav - only show when Quick Info header scrolls out */}
-        {showMobileNav && (
-          <div className="lg:hidden sticky top-14 z-40 py-4 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6 -mx-4 sm:-mx-6 pointer-events-none">
-            <div className="flex gap-2 overflow-x-auto scrollbar-hide px-4 sm:px-6 pointer-events-auto">
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs transition-colors ${
-                    activeSection === section.id
-                      ? 'bg-[var(--accent)] text-white'
-                      : 'bg-[var(--card)] text-[var(--muted)]'
-                  }`}
-                >
-                  {section.icon} {section.label}
-                </button>
-              ))}
-            </div>
+        {/* Mobile horizontal nav - sticks below header when scrolling */}
+        <div className="lg:hidden sticky top-14 z-40 py-4 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] mb-6 -mx-4 sm:-mx-6 pointer-events-none">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide px-4 sm:px-6 pointer-events-auto">
+            {sections.map((section) => (
+              <button
+                key={section.id}
+                onClick={() => scrollToSection(section.id)}
+                className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs transition-colors ${
+                  activeSection === section.id
+                    ? 'bg-[var(--accent)] text-white'
+                    : 'bg-[var(--card)] text-[var(--muted)]'
+                }`}
+              >
+                {section.icon} {section.label}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
 
         {/* Main Content */}
         <div className="flex-1 min-w-0 space-y-12">
@@ -204,7 +172,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
           {/* Quick Info */}
           <section id="quick-info" className="scroll-mt-20 space-y-4">
-            <h2 id="quick-info-header" className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
+            <h2 className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
             <div className="card p-5">
