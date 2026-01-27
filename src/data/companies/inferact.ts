@@ -161,10 +161,11 @@ export const inferact: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27T12:00:00',
+    lastUpdated: '2026-01-27T10:58:34',
     sources: [
       { title: 'Inferact (startups.gallery)', url: 'https://startups.gallery/companies/inferact' },
       { title: 'Inferact funding + founders (FinSMEs)', url: 'https://www.finsmes.com/2026/01/inferact-raises-150m-in-seed-funding.html' },
       { title: 'Inferact announcement', url: 'https://inferact.ai/announcing' },
+      { title: 'Inferact Jobs (Ashby)', url: 'https://jobs.ashbyhq.com/Inferact' },
     ],
   };

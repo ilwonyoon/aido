@@ -136,10 +136,10 @@ function TestPageContent() {
           `}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] flex items-center px-4 gap-2">
+          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
-              className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
+              className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
               title="Close (ESC)"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -159,10 +159,13 @@ function TestPageContent() {
                 <line x1="3" y1="21" x2="10" y2="14" />
               </svg>
             </button>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-sm font-semibold truncate">{selectedCompany.name}</h2>
+            </div>
           </div>
 
           {/* Company Detail Content */}
-          <div className="px-6 pb-6 panel-view">
+          <div className="pt-4 px-4 sm:px-6 pb-6 panel-view">
             <CompanyDetail company={selectedCompany} />
           </div>
         </div>

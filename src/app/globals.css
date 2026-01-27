@@ -271,3 +271,8 @@ a:hover {
 .panel-view > div > div:first-child {
   display: none;
 }
+
+/* Hide header info (h1, description) in panel view - already in panel header */
+.panel-view .flex-1 > div:first-child {
+  display: none;
+}
