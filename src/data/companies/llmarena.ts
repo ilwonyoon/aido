@@ -3,17 +3,17 @@ import { Company } from '../types';
 export const llmarena: Company = {
     id: 'llmarena',
     name: 'LLMArena',
-    description: 'Open-source project for evaluating and benchmarking large language models.',
+    description: 'Open-source project that provides evaluations and benchmarks for large language models.',
     website: 'https://lmarena.ai',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
     // Business
     stage: 'Series A',
-    valuation: 'Unknown',
+    valuation: '$1.7B (Jan 2026)',
     totalFunding: '$150M',
     fundingHistory: [
-      { stage: 'Series A', amount: '$150M', date: '2026-01' },
+      { stage: 'Series A', amount: '$150M', date: '2026-01', valuation: '$1.7B' },
     ],
     revenue: 'Unknown',
     growth: 'Unknown',
@@ -21,10 +21,24 @@ export const llmarena: Company = {
     customers: 'Unknown',
 
     // Competition
-    competitors: [],
-    marketPosition: undefined,
-    moat: [],
-    vsGiants: undefined,
+    competitors: [
+      {
+        name: 'Mem0',
+        description: 'Memory infrastructure for AI applications.',
+        whyTheyWin: 'Developer-first memory APIs and tooling.',
+      },
+      {
+        name: 'Granola',
+        description: 'AI productivity tool for knowledge work.',
+        whyTheyWin: 'Clear consumer product focus and user adoption.',
+      },
+    ],
+    marketPosition: 'Open-source benchmarking and evaluation platform for LLMs.',
+    moat: [
+      'Community-driven evaluation and transparency',
+      'Strong focus on reproducible LLM benchmarks',
+    ],
+    vsGiants: 'Competes via open benchmarks rather than closed evaluation suites.',
 
     // AI-Native Level
     aiNativeLevel: 'A',
@@ -36,7 +50,23 @@ export const llmarena: Company = {
     ],
 
     // Founders & Vision
-    founders: [],
+    founders: [
+      {
+        name: 'Anastasios N. Angelopoulos',
+        role: 'Co-founder',
+        background: 'Co-founder of LMArena and ML researcher.',
+      },
+      {
+        name: 'Wei-Lin Chiang',
+        role: 'Co-founder',
+        background: 'Co-founder of LMArena and ML researcher.',
+      },
+      {
+        name: 'Ion Stoica',
+        role: 'Co-founder',
+        background: 'Systems researcher and co-founder at UC Berkeley.',
+      },
+    ],
     whyBuilding: 'Create transparent, community-driven benchmarks for LLMs.',
     beliefs: [
       'Open evaluation improves AI quality',
@@ -44,7 +74,8 @@ export const llmarena: Company = {
     ],
     designPhilosophy: 'Unknown',
     greenFlags: [
-      'Strong funding and open-source orientation',
+      'Series A at $1.7B valuation (Jan 2026)',
+      'Open-source momentum in the LLM ecosystem',
     ],
     redFlags: [
       'Benchmark integrity can be contentious',
@@ -52,7 +83,7 @@ export const llmarena: Company = {
 
     // Design Opportunity
     designTeam: {
-      teamSize: 'Unknown (company size 11-50)',
+      teamSize: '11-50 employees',
     },
     designWorkType: {
       logicBehavior: {
@@ -180,7 +211,7 @@ export const llmarena: Company = {
         'Open-source evaluation platform with strong technical impact',
       ],
       whyNot: [
-        'Ambiguous commercialization for open-source benchmarks',
+        'Benchmark integrity can be contentious',
       ],
       nextActions: [
         'Monitor design openings',
@@ -191,6 +222,7 @@ export const llmarena: Company = {
     lastUpdated: '2026-01-27T00:00:00',
     sources: [
       { title: 'LLMArena (startups.gallery)', url: 'https://startups.gallery/companies/llmarena' },
-      { title: 'LM Arena', url: 'https://lmarena.ai/' },
+      { title: 'LLMArena funding (TechCrunch)', url: 'https://techcrunch.com/2026/01/07/llm-arena-raises-150m-series-a-at-1-7b-valuation/' },
+      { title: 'LLMArena founders (EveryDev.ai)', url: 'https://everydev.ai/company/lmarena' },
     ],
   };

@@ -6,7 +6,7 @@ export const mem0: Company = {
     description: 'AI-powered, scalable memory solution for AI applications.',
     website: 'https://mem0.ai',
     headquarters: 'San Francisco, CA',
-    remote: 'No',
+    remote: 'Yes',
 
     // Business
     stage: 'Series A',
@@ -23,17 +23,17 @@ export const mem0: Company = {
     // Competition
     competitors: [
       {
-        name: 'Zep',
-        description: 'Memory store for AI assistants and agents.',
-        whyTheyWin: 'Focus on long-term memory infrastructure for AI apps.',
+        name: 'Letta',
+        description: 'Memory platform for AI agents and applications.',
+        whyTheyWin: 'Clear memory-first developer positioning.',
       },
       {
-        name: 'LangChain',
-        description: 'Framework for building LLM apps with memory utilities.',
-        whyTheyWin: 'Large developer ecosystem and integrations.',
+        name: 'Elicit',
+        description: 'AI research assistant for knowledge work.',
+        whyTheyWin: 'Strong positioning in research and knowledge workflows.',
       },
     ],
-    marketPosition: 'Dedicated memory infrastructure for AI applications.',
+    marketPosition: 'Dedicated memory layer for AI applications.',
     moat: [
       'Purpose-built memory layer for personalization at scale',
       'Developer-first API for integrating memory across apps',
@@ -73,12 +73,12 @@ export const mem0: Company = {
       'Clear developer-first positioning',
     ],
     redFlags: [
-      'Competing approaches to AI memory are rapidly evolving',
+      'Rapidly evolving memory landscape for AI apps',
     ],
 
     // Design Opportunity
     designTeam: {
-      teamSize: 'Unknown (company size 11-50)',
+      teamSize: '11-50 employees',
     },
     designWorkType: {
       logicBehavior: {
@@ -195,7 +195,5 @@ export const mem0: Company = {
       { title: 'Mem0 (startups.gallery)', url: 'https://startups.gallery/companies/mem0' },
       { title: 'Mem0 (Y Combinator)', url: 'https://www.ycombinator.com/companies/mem0' },
       { title: 'Mem0 Series A (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-the-memory-layer-for-ai-302466162.html' },
-      { title: 'Zep', url: 'https://www.getzep.com/' },
-      { title: 'LangChain', url: 'https://www.langchain.com/' },
     ],
   };

@@ -3,7 +3,7 @@ import { Company } from '../types';
 export const letta: Company = {
     id: 'letta',
     name: 'Letta',
-    description: 'Open-source agent development platform for building advanced AI agents with memory.',
+    description: 'Memory for AI agents and applications.',
     website: 'https://www.letta.com',
     headquarters: 'San Francisco, CA',
     remote: 'No',
@@ -23,26 +23,26 @@ export const letta: Company = {
     // Competition
     competitors: [
       {
-        name: 'LangChain',
-        description: 'Framework for building LLM applications and agent workflows.',
-        whyTheyWin: 'Strong developer adoption and ecosystem.',
+        name: 'Mem0',
+        description: 'Memory infrastructure for AI applications.',
+        whyTheyWin: 'Developer-first memory APIs and tooling.',
       },
       {
-        name: 'LlamaIndex',
-        description: 'Data framework for LLM applications with indexing and retrieval.',
-        whyTheyWin: 'Developer tooling for data/agent pipelines.',
+        name: 'Elicit',
+        description: 'AI research assistant for knowledge work.',
+        whyTheyWin: 'Strong positioning in research and knowledge workflows.',
       },
     ],
-    marketPosition: 'Open-source agent platform focused on durable memory and controllable behavior.',
+    marketPosition: 'Memory platform for AI agents and applications.',
     moat: [
-      'Open-source community and agent-centric developer tooling',
-      'Emphasis on memory systems for long-lived agents',
+      'Focus on long-term memory for agents',
+      'Clear developer tooling for memory workflows',
     ],
-    vsGiants: 'Competes by focusing on agent infrastructure rather than full-stack AI platforms.',
+    vsGiants: 'Competes on memory specialization rather than full-stack AI platforms.',
 
     // AI-Native Level
     aiNativeLevel: 'A',
-    aiNativeLevelDescription: 'AI agents with memory are the core product surface.',
+    aiNativeLevelDescription: 'AI agent memory is the core product surface.',
     aiDesignChallenges: [
       'Designing long-term memory and retrieval UX for agents',
       'Making agent behavior transparent and controllable',
@@ -53,8 +53,8 @@ export const letta: Company = {
     founders: [
       {
         name: 'Charles Packer',
-        role: 'Co-founder',
-        background: 'Co-founder and CEO of Letta.',
+        role: 'Co-founder & CEO',
+        background: 'Co-founder of Letta and CEO.',
       },
       {
         name: 'Sarah Wooders',
@@ -69,7 +69,7 @@ export const letta: Company = {
     ],
     designPhilosophy: 'Unknown',
     greenFlags: [
-      'Open-source approach for adoption',
+      'Seed funding and clear memory-first positioning',
     ],
     redFlags: [
       'Early-stage platform with evolving standards',
@@ -77,7 +77,7 @@ export const letta: Company = {
 
     // Design Opportunity
     designTeam: {
-      teamSize: 'Unknown (company size 11-50)',
+      teamSize: '11-50 employees',
     },
     designWorkType: {
       logicBehavior: {
@@ -174,8 +174,6 @@ export const letta: Company = {
     lastUpdated: '2026-01-27T00:00:00',
     sources: [
       { title: 'Letta (startups.gallery)', url: 'https://startups.gallery/companies/letta' },
-      { title: 'Letta About', url: 'https://www.letta.com/about' },
-      { title: 'LangChain', url: 'https://www.langchain.com/' },
-      { title: 'LlamaIndex', url: 'https://www.llamaindex.ai/' },
+      { title: 'Letta founders (SaaS News)', url: 'https://www.thesaasnews.com/news/letta-raises-10-million-in-seed-round' },
     ],
   };
