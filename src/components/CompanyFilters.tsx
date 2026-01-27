@@ -44,7 +44,9 @@ function InterestCheckbox({
   currentStatus: InterestStatus;
   onStatusChange: (status: InterestStatus) => void;
 }) {
-  const handleClick = async () => {
+  const handleClick = async (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent row click
+    e.preventDefault();
     const newStatus = currentStatus === 'interested' ? null : 'interested';
     onStatusChange(newStatus);
   };
@@ -709,6 +711,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                           href={onCompanyClick ? '#' : `/company/${company.id}`}
                           className="hover:text-[var(--accent-light)]"
                           onClick={(e) => {
+                            e.stopPropagation(); // Prevent td onClick from firing
                             void trackEvent('company_detail_click', {
                               company_id: company.id,
                               company_name: company.name,
@@ -800,6 +803,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                   });
                   if (onCompanyClick) {
                     e.preventDefault();
+                    e.stopPropagation();
                     onCompanyClick(company.id);
                   }
                 }}
