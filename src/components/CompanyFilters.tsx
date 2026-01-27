@@ -466,10 +466,9 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
   return (
     <div>
       {/* Filter & Sort Bar */}
-      <div className="space-y-2 mb-6">
+      <div className="space-y-2 mb-6 min-h-[200px]">
         {/* Row 1: Filter chips only */}
-        <div className="relative pb-48 -mb-48">
-          <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
@@ -512,12 +511,22 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
               Clear
             </button>
           )}
-          </div>
         </div>
 
-        {/* Row 2: Sort + View Toggle + Company count */}
+        {/* Row 2: Company count + Sort + View Toggle */}
         <div className="flex items-center justify-between pl-3 pr-3">
-          {/* Left: Sort & View Toggle */}
+          {/* Left: Company count */}
+          <div className="text-sm font-medium text-[var(--foreground)]">
+            {sortedCompanies.length === companies.length ? (
+              <>{companies.length} companies</>
+            ) : (
+              <>
+                {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
+              </>
+            )}
+          </div>
+
+          {/* Right: Sort & View Toggle */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-sm text-[var(--muted)]">Sort:</span>
@@ -569,17 +578,6 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
                   </svg>
                 </button>
               </div>
-            )}
-          </div>
-
-          {/* Right: Company count */}
-          <div className="text-sm font-medium text-[var(--foreground)]">
-            {sortedCompanies.length === companies.length ? (
-              <>{companies.length} companies</>
-            ) : (
-              <>
-                {sortedCompanies.length} <span className="text-[var(--muted)]">of {companies.length}</span>
-              </>
             )}
           </div>
         </div>
