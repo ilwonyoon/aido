@@ -197,16 +197,69 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - https://www.anthropic.com/careers/jobs/5055600008 (Product Designer, Enterprise)
 ```
 
-## 커밋 컨벤션
+## Git 버전 관리 프로세스
 
-```
-DD/MM/YY - HH:MM:SS | 변경 요약
+### 작업 완료 시 반드시 수행
 
-- 상세 내용
-- 상세 내용
+1. **Git add & commit**
+   ```bash
+   git add [수정된 파일들]
+   git commit -m "$(cat <<'EOF'
+   DD/MM/YY - HH:MM:SS | 변경 요약
 
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
-```
+   - 상세 내용
+   - 상세 내용
+
+   Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+   EOF
+   )"
+   ```
+
+2. **Push to GitHub**
+   ```bash
+   git push
+   ```
+
+3. **Build & Deploy to Firebase**
+   ```bash
+   npm run build
+   firebase deploy --only hosting
+   ```
+
+4. **Pull Request 생성 (필요 시)**
+   - Feature branch에서 작업 시
+   - Major changes (새 기능, 대규모 리팩토링)
+   - Review 필요한 변경사항
+
+   ```bash
+   # Feature branch 생성
+   git checkout -b feature/[feature-name]
+
+   # 작업 후 push
+   git push -u origin feature/[feature-name]
+
+   # GitHub에서 PR 생성 (gh CLI 사용)
+   gh pr create --title "[Title]" --body "[Description]"
+   ```
+
+### 커밋 타이밍
+
+- **단일 기능 완료**: 즉시 commit
+- **관련된 여러 파일**: 한 번에 commit
+- **작업 중단 전**: 반드시 commit (작업 보존)
+- **실험적 변경**: Branch에서 commit
+
+### Branch 전략
+
+- `main`: Production (항상 deploy 가능 상태)
+- `feature/[name]`: 새 기능 개발
+- `fix/[name]`: 버그 수정
+- `refactor/[name]`: 리팩토링
+
+**규칙:**
+- Main branch에 직접 push OK (개인 프로젝트)
+- 큰 변경사항은 feature branch + PR
+- Merge 후 feature branch 삭제
 
 ---
 
@@ -256,10 +309,81 @@ Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
 
 ---
 
+## SEO & AEO 최적화
+
+### 목표
+
+**"AI product designer jobs" 검색 시 상위 노출 + AI 검색 엔진(Perplexity, ChatGPT)에서 자동 추천**
+
+### 자동 SEO 반영
+
+회사 데이터 추가 시 다음이 **자동으로** SEO에 반영됨:
+
+1. **Sitemap 업데이트** (`app/sitemap.ts`)
+   - 새 회사 페이지 자동 등록
+   - `lastModified`: company.lastUpdated 사용
+   - Next.js build 시 자동 생성
+
+2. **JobPosting Schema** (`company/[id]/page.tsx`)
+   - 각 openRole이 Google Jobs에 자동 등록
+   - Rich snippet 표시
+   - 자동 갱신
+
+3. **Meta Tags** (`company/[id]/page.tsx`)
+   - Dynamic metadata generation
+   - OG image: `/logos/[company-id].png`
+   - Description: company.description
+
+### 회사 추가 시 SEO 체크리스트
+
+**필수:**
+- [x] `openRoles` 정확히 채우기 (JobPosting schema용)
+- [x] `description` 명확하게 (meta description용)
+- [x] `lastUpdated` 업데이트 (sitemap용)
+- [ ] Logo 이미지 추가: `public/logos/[company-id].png` (OG image용)
+
+**선택:**
+- [ ] `designerLinks` 추가 (외부 링크 = backlink 기회)
+- [ ] `sources` 추가 (신뢰도 향상)
+
+### SEO 주요 파일
+
+- `app/sitemap.ts`: 자동 sitemap 생성
+- `app/robots.ts`: 크롤러 규칙
+- `app/jobs/page.tsx`: 집계 job listing (메인 SEO 페이지)
+- `app/company/[id]/page.tsx`: Dynamic metadata
+- `SEO_AEO_PLAN.md`: 전체 SEO 전략
+
+### Cron 자동화 (향후)
+
+**Daily 6am PST:**
+- SF Bay Area 신규 회사 발견 (startups.gallery)
+- Company researcher skill 실행
+- Job postings 업데이트
+- Git commit + Firebase deploy
+
+**Weekly Sunday 3am:**
+- Funding/valuation 데이터 갱신
+- Job postings 유효성 검증
+- Analytics 리포트 생성
+
+---
+
 ## 다음 할 것들
 
-- [x] 회사 추가: Cursor, Perplexity, OpenAI, Vercel
-- [x] 필터/정렬 기능
+### SEO 구축 (진행 중)
+- [ ] Meta tags + OG images
+- [ ] `/jobs` 집계 페이지
+- [ ] JobPosting schema
+- [ ] FAQ 페이지
+
+### Automation
+- [ ] Firebase Functions + Cron setup
+- [ ] Company discovery (startups.gallery)
+- [ ] Daily job scraper
+
+### Content
+- [ ] 회사 추가: 100+ 목표 (현재 57)
+- [ ] SF Bay Area 집중
 - [ ] Notes 편집 기능
-- [ ] 검색
-- [ ] Task B 회사 추가: Midjourney, Runway, Stability AI, Cohere
+- [ ] 검색 기능
