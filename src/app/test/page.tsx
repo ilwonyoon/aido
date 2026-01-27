@@ -54,9 +54,11 @@ function TestPageContent() {
   }, []);
 
   const handleCompanyClick = useCallback((companyId: string) => {
+    console.log('Company clicked:', companyId);
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/test?company=${companyId}`);
     setSelectedCompanyId(companyId);
+    console.log('Selected company ID set to:', companyId);
 
     // Reset panel scroll
     if (panelRef.current) {
@@ -76,6 +78,13 @@ function TestPageContent() {
   }, [selectedCompanyId, closePanel]);
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+
+  useEffect(() => {
+    if (selectedCompanyId) {
+      console.log('Selected company ID:', selectedCompanyId);
+      console.log('Selected company object:', selectedCompany);
+    }
+  }, [selectedCompanyId, selectedCompany]);
 
   if (loading) {
     return (
