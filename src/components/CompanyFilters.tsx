@@ -468,7 +468,7 @@ export function CompanyFilters({ companies }: { companies: Company[] }) {
       {/* Filter & Sort Bar */}
       <div className="space-y-3 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-3 flex-wrap">
+        <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-1">
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
