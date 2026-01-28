@@ -88,37 +88,19 @@ function HomePageContent() {
 
   // Prevent background scroll when panel is open
   useEffect(() => {
+    const html = document.documentElement;
+
     if (selectedCompanyId) {
-      // Save current scroll position
-      const scrollY = window.scrollY;
-
-      // Lock scroll position
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.width = '100%';
-      document.body.style.overflow = 'hidden';
-
-      // Prevent wheel/touch scroll events on body
-      const preventScroll = (e: WheelEvent | TouchEvent) => {
-        if (e.target instanceof Element && !panelRef.current?.contains(e.target)) {
-          e.preventDefault();
-        }
-      };
-
-      document.addEventListener('wheel', preventScroll, { passive: false });
-      document.addEventListener('touchmove', preventScroll, { passive: false });
-
-      return () => {
-        // Restore scroll position
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        document.body.style.overflow = '';
-        document.removeEventListener('wheel', preventScroll);
-        document.removeEventListener('touchmove', preventScroll);
-        window.scrollTo(0, scrollY);
-      };
+      // Add class to html element to prevent scroll
+      html.classList.add('panel-open');
+    } else {
+      // Remove class when panel closes
+      html.classList.remove('panel-open');
     }
+
+    return () => {
+      html.classList.remove('panel-open');
+    };
   }, [selectedCompanyId]);
 
   // Observer for company name in content to show/hide in header
