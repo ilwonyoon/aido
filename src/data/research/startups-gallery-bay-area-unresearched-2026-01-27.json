@@ -12,12 +12,6 @@
           "rawText": "Town Software for everyone. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
         },
         {
-          "slug": "motif",
-          "name": "Motif",
-          "href": "../../../companies/motif",
-          "rawText": "Motif Where tomorrow\u00e2\u0080\u0099s buildings take shape. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
           "slug": "baseten",
           "name": "Baseten",
           "href": "../../../companies/baseten",
@@ -52,96 +46,6 @@
           "name": "Item App",
           "href": "../../../companies/item-app",
           "rawText": "Item Autonomous CRM for modern teams. Productivity \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "tigereye",
-          "name": "Tigereye",
-          "href": "../../../companies/tigereye",
-          "rawText": "TigerEye (Acquired by Lennar) Modern BI for go-to-market. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "macroscope",
-          "name": "Macroscope",
-          "href": "../../../companies/macroscope",
-          "rawText": "Macroscope An understanding engine for development. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "trm-labs",
-          "name": "Trm Labs",
-          "href": "../../../companies/trm-labs",
-          "rawText": "TRM Labs Helping companies manage financial crime risk. Web3 \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "hightouch",
-          "name": "Hightouch",
-          "href": "../../../companies/hightouch",
-          "rawText": "Hightouch Composable customer data platform. Analytics \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "remofirst",
-          "name": "Remofirst",
-          "href": "../../../companies/remofirst",
-          "rawText": "RemoFirst Hiring platform for remote workers. HR & Recruiting \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "loop",
-          "name": "Loop",
-          "href": "../../../companies/loop",
-          "rawText": "Loop Freight payments made simple. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "perle-ai",
-          "name": "Perle AI",
-          "href": "../../../companies/perle-ai",
-          "rawText": "Perle Perle brings wisdom to data. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "flint",
-          "name": "Flint",
-          "href": "../../../companies/flint",
-          "rawText": "Flint The autonomous website platform. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "overlap-ai",
-          "name": "Overlap AI",
-          "href": "../../../companies/overlap-ai",
-          "rawText": "Overlap Create viral clips with AI. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "pacific-fusion",
-          "name": "Pacific Fusion",
-          "href": "../../../companies/pacific-fusion",
-          "rawText": "Pacific Fusion Nuclear fusion-based energy. Energy \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "ditto",
-          "name": "Ditto",
-          "href": "../../../companies/ditto",
-          "rawText": "Ditto (Words) Manage product text from draft to deploy. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "truffle-security",
-          "name": "Truffle Security",
-          "href": "../../../companies/truffle-security",
-          "rawText": "Truffle Security Unearth your secrets. Cybersecurity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "lightpage",
-          "name": "Lightpage",
-          "href": "../../../companies/lightpage",
-          "rawText": "Lightpage A personal notebook that writes back. Consumer \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "conductor",
-          "name": "Conductor",
-          "href": "../../../companies/conductor",
-          "rawText": "Conductor Run a team of coding agents on your Mac. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "arcade-dev",
-          "name": "Arcade Dev",
-          "href": "../../../companies/arcade-dev",
-          "rawText": "Arcade AI AI tool-calling platform. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
         },
         {
           "slug": "layer-financial",

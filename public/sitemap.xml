@@ -2,547 +2,643 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aido-d2cc0.web.app/</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/jobs</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/ai-levels</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/macro</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/anthropic</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/leya</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/granola</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/pika</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/elevenlabs</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/cognition</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/mercor</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/linear</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/notion</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/figma</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/mistral</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/cursor</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/perplexity</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/openai</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/vercel</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/midjourney</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/runway</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/stabilityAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/harvey</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/characterAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/typeface</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/scaleAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/replit</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/cohere</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/jasper</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/sourcegraph</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/superhuman</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/hebbia</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/gamma</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/ramp</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/lovable</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/codeium</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/heygen</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/gong</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/intercomFin</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/descript</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/glean</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/writer</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/brex</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/tome</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/grammarly</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/canva</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/otterAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/copyAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/beautifulAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/tabnine</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/harmonic</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/ambienceHealthcare</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/abridge</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/listenLabs</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/blossom</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/tavus</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/toma</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/shopify</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/base44</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/xai</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/suno</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/higgsfield</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/inferact</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/humansand</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/subtleComputing</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/deepgram</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/letta</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/llmarena</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/mem0</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/humeAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/ivo</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/surgeAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/factory</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/axiomMath</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/extropic</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/yutori</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/resolveAi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/parahelp</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/exa</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/livekit</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/railway</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/baseten</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/artie</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/chaiDiscovery</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/item</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/blacksmith</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/terradot</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/odyssey</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/mytra</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/corgi</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aido-d2cc0.web.app/company/glide</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/motif</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/tigereye</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/macroscope</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/trmLabs</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/hightouch</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/remofirst</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/loop</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/perleAi</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/flint</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/overlapAi</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/pacificFusion</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/ditto</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/truffleSecurity</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/lightpage</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/conductor</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/arcadeDev</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
