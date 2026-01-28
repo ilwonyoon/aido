@@ -6,66 +6,6 @@
       "sourceUrl": "https://startups.gallery/categories/locations/cities/san-francisco",
       "companies": [
         {
-          "slug": "bindwell",
-          "name": "Bindwell",
-          "href": "../../../companies/bindwell",
-          "rawText": "Bindwell Building better pesticides with AI. Biotech Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "firecrawl",
-          "name": "Firecrawl",
-          "href": "../../../companies/firecrawl",
-          "rawText": "Firecrawl Web data API for AI. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
-        },
-        {
-          "slug": "nuraline",
-          "name": "Nuraline",
-          "href": "../../../companies/nuraline",
-          "rawText": "Nuraline Enabling AI systems to self-improve. AI Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "collective",
-          "name": "Collective",
-          "href": "../../../companies/collective",
-          "rawText": "Collective All-in-one financial platform for solopreneurs. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "response",
-          "name": "Response",
-          "href": "../../../companies/response",
-          "rawText": "Response Centralize orders, control spend. Logistics Â· Seed Â· Remote Â· Based in San Francisco"
-        },
-        {
-          "slug": "spiral-db",
-          "name": "Spiral Db",
-          "href": "../../../companies/spiral-db",
-          "rawText": "Spiral Multimodal warehousing. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "vapi",
-          "name": "Vapi",
-          "href": "../../../companies/vapi",
-          "rawText": "Vapi Enterprise-ready Voice AI agents. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "watershed",
-          "name": "Watershed",
-          "href": "../../../companies/watershed",
-          "rawText": "Watershed The enterprise sustainability platform. Climate Â· Series C Â· Remote Â· Based in San Francisco"
-        },
-        {
-          "slug": "onton",
-          "name": "Onton",
-          "href": "../../../companies/onton",
-          "rawText": "Onton Find the perfect product. Consumer Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "goodfire",
-          "name": "Goodfire",
-          "href": "../../../companies/goodfire",
-          "rawText": "Goodfire Advancing AI interpretability research. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
           "slug": "alloy",
           "name": "Alloy",
           "href": "../../../companies/alloy",
