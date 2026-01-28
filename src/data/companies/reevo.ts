@@ -10,7 +10,7 @@ export const reevo: Company = {
   remote: 'Unknown',
 
   // Business
-  stage: 'Undisclosed',
+  stage: 'Unknown',
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [

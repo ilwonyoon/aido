@@ -15,7 +15,7 @@ export const collective: Company = {
   totalFunding: '$50M (announced)',
   fundingHistory: [
     {
-      stage: 'Undisclosed',
+      stage: 'Unknown',
       amount: '$50M',
       date: '2023-07',
       leadInvestors: ['CapitalG'],
