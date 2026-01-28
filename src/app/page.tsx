@@ -27,6 +27,7 @@ function HomePageContent() {
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const [isFullWidth, setIsFullWidth] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
+  const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -183,17 +184,24 @@ function HomePageContent() {
 
   return (
     <div>
-      {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-2xl font-semibold mb-2">Product Designer take on finding companies worth joining</h1>
-        <p className="text-[var(--muted)] text-sm">
-          Collecting various information about user problems, companies, and opportunities in the AI-native space
-        </p>
-      </div>
+      {/* Main Content - Disable when panel is open */}
+      <div
+        ref={mainContentRef}
+        className={selectedCompanyId ? 'pointer-events-none select-none' : ''}
+        style={selectedCompanyId ? { filter: 'blur(0px)' } : undefined}
+      >
+        {/* Header */}
+        <div className="mb-6">
+          <h1 className="text-2xl font-semibold mb-2">Product Designer take on finding companies worth joining</h1>
+          <p className="text-[var(--muted)] text-sm">
+            Collecting various information about user problems, companies, and opportunities in the AI-native space
+          </p>
+        </div>
 
-      {/* Company List - Full Width */}
-      <div className="w-full">
-        <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
+        {/* Company List - Full Width */}
+        <div className="w-full">
+          <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
+        </div>
       </div>
 
       {/* Side Panel - Overlay on top */}
