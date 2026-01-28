@@ -6,66 +6,6 @@
       "sourceUrl": "https://startups.gallery/categories/locations/cities/san-francisco",
       "companies": [
         {
-          "slug": "heirloom",
-          "name": "Heirloom",
-          "href": "../../../companies/heirloom",
-          "rawText": "Heirloom Direct air capture platform for carbon emissions. Climate Â· Series B Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "happyrobot",
-          "name": "Happyrobot",
-          "href": "../../../companies/happyrobot",
-          "rawText": "HappyRobot AI-native OS for supply chain enterprises. Logistics Â· Series B Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "quanta",
-          "name": "Quanta",
-          "href": "../../../companies/quanta",
-          "rawText": "Quanta Bookkeeping built for software companies. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "raindrop-ai",
-          "name": "Raindrop AI",
-          "href": "../../../companies/raindrop-ai",
-          "rawText": "Raindrop Sentry for AI products. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "micro1",
-          "name": "Micro1",
-          "href": "../../../companies/micro1",
-          "rawText": "Micro1 The AI platform for human intelligence. HR & Recruiting Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "unlimited-industries",
-          "name": "Unlimited Industries",
-          "href": "../../../companies/unlimited-industries",
-          "rawText": "Unlimited Industries AI-powered construction. Construction Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "metronome",
-          "name": "Metronome",
-          "href": "../../../companies/metronome",
-          "rawText": "Metronome (Acquired by Stripe) The usage-based billing platform. Fintech Â· Series C Â· Remote Â· Based in San Francisco"
-        },
-        {
-          "slug": "doss",
-          "name": "Doss",
-          "href": "../../../companies/doss",
-          "rawText": "Doss Adaptive ERP and data platform. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "dev-agents",
-          "name": "Dev Agents",
-          "href": "../../../companies/dev-agents",
-          "rawText": "/dev/agents Next-gen operating system for AI agents. AI Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "index",
-          "name": "Index",
-          "href": "../../../companies/index",
-          "rawText": "Index Collaborative platform for business analytics. Analytics Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
           "slug": "bindwell",
           "name": "Bindwell",
           "href": "../../../companies/bindwell",
