@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T12:02",
+  "generatedAt": "2026-01-28T12:10",
   "source": "https://startups.gallery/categories/locations/countries/united-states",
   "cities": {
     "San Francisco": {
@@ -10,66 +10,6 @@
           "name": "Reevo",
           "href": "../../../companies/reevo",
           "rawText": "Reevo A modern B2B revenue stack. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "shortwave",
-          "name": "Shortwave",
-          "href": "../../../companies/shortwave",
-          "rawText": "Shortwave AI-native email for business. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "highscore",
-          "name": "Highscore",
-          "href": "../../../companies/highscore",
-          "rawText": "Highscore Play any PC game on any device. Gaming \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "tera-ai",
-          "name": "Tera AI",
-          "href": "../../../companies/tera-ai",
-          "rawText": "Tera AI Superhuman\u00e2\u0080\u008d spatial reasoning for autonomy. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "cocoon",
-          "name": "Cocoon",
-          "href": "../../../companies/cocoon",
-          "rawText": "Cocoon Employee leave software for the modern era. HR & Recruiting \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "miter",
-          "name": "Miter",
-          "href": "../../../companies/miter",
-          "rawText": "Miter The connected construction platform. Construction \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "blaze-ai",
-          "name": "Blaze AI",
-          "href": "../../../companies/blaze-ai",
-          "rawText": "Blaze Agentic AI marketer. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "chroma",
-          "name": "Chroma",
-          "href": "../../../companies/chroma",
-          "rawText": "Chroma Retrieval for AI. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "legend-xyz",
-          "name": "Legend Xyz",
-          "href": "../../../companies/legend-xyz",
-          "rawText": "Legend Your gateway to decentralized finance. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "wabi",
-          "name": "Wabi",
-          "href": "../../../companies/wabi",
-          "rawText": "Wabi The first personal software platform. Consumer \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "welltheory",
-          "name": "Welltheory",
-          "href": "../../../companies/welltheory",
-          "rawText": "WellTheory Reversing the autoimmune epidemic. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
         },
         {
           "slug": "impulse-labs",

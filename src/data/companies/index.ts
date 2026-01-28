@@ -105,6 +105,16 @@ import { quo } from './quo';
 import { scribe } from './scribe';
 import { ando } from './ando';
 import { fastino } from './fastino';
+import { shortwave } from './shortwave';
+import { highscore } from './highscore';
+import { teraAi } from './tera-ai';
+import { cocoon } from './cocoon';
+import { miter } from './miter';
+import { blazeAi } from './blaze-ai';
+import { chroma } from './chroma';
+import { legendXyz } from './legend-xyz';
+import { wabi } from './wabi';
+import { welltheory } from './welltheory';
 import { livekit } from './livekit';
 import { railway } from './railway';
 import { baseten } from './baseten';
@@ -302,6 +312,16 @@ export const companies: Company[] = [
   scribe,
   ando,
   fastino,
+  shortwave,
+  highscore,
+  teraAi,
+  cocoon,
+  miter,
+  blazeAi,
+  chroma,
+  legendXyz,
+  wabi,
+  welltheory,
   livekit,
   railway,
   baseten,
@@ -394,7 +414,7 @@ export const companies: Company[] = [
   physicalIntelligence,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, livekit, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, livekit, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
