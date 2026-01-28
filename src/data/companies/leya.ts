@@ -8,6 +8,12 @@ export const leya: Company = {
     headquarters: 'Stockholm, Sweden',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['productivity', 'legal'],
+
     stage: 'Series A',
     valuation: '~$100M (estimated)',
     totalFunding: '$35.5M',

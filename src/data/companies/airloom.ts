@@ -8,6 +8,12 @@ export const airloom: Company = {
   headquarters: 'Laramie, WY',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

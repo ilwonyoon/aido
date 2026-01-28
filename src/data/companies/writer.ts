@@ -7,6 +7,12 @@ export const writer: Company = {
     website: 'https://writer.com',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant', 'automation'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['infrastructure'],
+
     stage: 'Series C',
     valuation: '$1.9B (2024)',
     totalFunding: '$326M',

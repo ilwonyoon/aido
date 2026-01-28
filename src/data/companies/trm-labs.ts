@@ -9,6 +9,12 @@ export const trmLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'fintech'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

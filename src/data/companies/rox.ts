@@ -9,6 +9,12 @@ export const rox: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'fintech'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

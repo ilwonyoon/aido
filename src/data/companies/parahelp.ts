@@ -9,6 +9,12 @@ export const parahelp: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'sales-marketing'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

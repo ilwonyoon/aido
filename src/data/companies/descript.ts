@@ -7,6 +7,12 @@ export const descript: Company = {
     website: 'https://www.descript.com',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
     stage: 'Series C',
     valuation: 'Unknown',
     totalFunding: '$100M+',

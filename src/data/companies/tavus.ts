@@ -8,6 +8,12 @@ export const tavus: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['ai-infrastructure', 'video-generation', 'audio-generation'],
+  markets: ['b2c'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Series B',
     valuation: '$80M',
     totalFunding: '$64.2M',

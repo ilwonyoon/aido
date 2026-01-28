@@ -7,6 +7,12 @@ export const heygen: Company = {
     website: 'https://heygen.com',
     headquarters: 'Los Angeles, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['video-generation', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Series A',
     valuation: '$500M (2024)',
     totalFunding: '$60M',

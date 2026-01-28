@@ -7,6 +7,12 @@ export const grammarly: Company = {
     website: 'https://www.grammarly.com',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['prosumer'],
+  industries: ['other'],
+
     stage: 'Private',
     valuation: '$13B (2021)',
     totalFunding: '$1.2B (non-dilutive)',

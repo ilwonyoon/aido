@@ -8,6 +8,12 @@ export const inferact: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'conversation-ai'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'sales-marketing'],
+
     // Business
     stage: 'Seed',
     valuation: '$800M (Jan 2026)',

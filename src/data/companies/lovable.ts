@@ -7,6 +7,12 @@ export const lovable: Company = {
     website: 'https://lovable.dev',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Series B',
     valuation: '$1.8B (2024)',
     totalFunding: '$228M',

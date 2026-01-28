@@ -8,6 +8,12 @@ export const midjourney: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['image-generation'],
+  markets: ['b2b'],
+  industries: ['creative-media'],
+
     // Business
     stage: 'Bootstrapped',
     valuation: 'Unknown',

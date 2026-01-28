@@ -9,6 +9,12 @@ export const pacificFusion: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

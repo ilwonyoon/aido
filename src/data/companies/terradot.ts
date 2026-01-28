@@ -9,6 +9,12 @@ export const terradot: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['healthcare'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

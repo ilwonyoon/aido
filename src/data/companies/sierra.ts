@@ -9,6 +9,12 @@ export const sierra: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['enterprise'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

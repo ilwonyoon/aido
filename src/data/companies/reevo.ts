@@ -9,6 +9,12 @@ export const reevo: Company = {
   headquarters: 'Santa Clara, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

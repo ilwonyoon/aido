@@ -8,6 +8,12 @@ export const elevenlabs: Company = {
     headquarters: 'New York, NY',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
     stage: 'Series C',
     valuation: '$3.3B',
     totalFunding: '$281M',

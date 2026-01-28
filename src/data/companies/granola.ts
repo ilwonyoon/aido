@@ -8,6 +8,12 @@ export const granola: Company = {
     headquarters: 'London, UK',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2b'],
+  industries: ['productivity'],
+
     stage: 'Series B',
     valuation: '$250M',
     totalFunding: '$67M',

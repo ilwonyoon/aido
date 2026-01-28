@@ -8,6 +8,12 @@ export const linear: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['productivity'],
+
     stage: 'Series C',
     valuation: '$1.25B (June 2025)',
     totalFunding: '$134M',

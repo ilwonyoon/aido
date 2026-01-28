@@ -8,6 +8,12 @@ export const vercel: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['prosumer'],
+  industries: ['infrastructure'],
+
     // Business
     stage: 'Series F',
     valuation: '$9.3B (Sept 2025)',

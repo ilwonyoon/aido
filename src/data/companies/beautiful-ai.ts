@@ -7,6 +7,12 @@ export const beautifulAi: Company = {
     website: 'https://www.beautiful.ai',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
     stage: 'Series B',
     valuation: 'Unknown',
     totalFunding: '$17M',

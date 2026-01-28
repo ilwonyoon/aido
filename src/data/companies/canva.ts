@@ -7,6 +7,12 @@ export const canva: Company = {
     website: 'https://www.canva.com',
     headquarters: 'Sydney, Australia',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Private',
     valuation: '$42B (2024)',
     totalFunding: '$572M',

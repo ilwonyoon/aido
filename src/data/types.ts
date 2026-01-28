@@ -1,5 +1,77 @@
 export type InterestStatus = 'tier_0' | 'tier_1' | 'not_interested' | null;
 
+// Multi-dimensional tagging system
+export type AIType =
+  | 'foundation-model'    // Anthropic, OpenAI, Mistral (LLM 직접 개발)
+  | 'model-platform'      // Together AI, Replicate (모델 호스팅/커스터마이징)
+  | 'ai-infrastructure'   // Weights & Biases, LangChain (AI 개발 도구/MLOps)
+  | 'image-generation'    // Midjourney, Stable Diffusion
+  | 'video-generation'    // Runway, Pika, HeyGen
+  | 'audio-generation'    // Suno, ElevenLabs
+  | 'code-assistant'      // Cursor, Replit, Codeium
+  | 'text-assistant'      // Jasper, Copy.ai
+  | 'search-retrieval'    // Perplexity, Glean
+  | 'conversation-ai'     // Intercom, Gong
+  | 'data-analysis'       // Hightouch
+  | 'automation';         // Zapier AI
+
+export type Market =
+  | 'b2c'          // 개인 소비자
+  | 'prosumer'     // 크리에이터, 프리랜서
+  | 'smb'          // 중소기업
+  | 'b2b'          // 기업
+  | 'enterprise';  // 대기업
+
+export type Industry =
+  | 'infrastructure'     // AI 인프라
+  | 'developer-tools'    // 개발자 도구
+  | 'creative-media'     // 크리에이티브/미디어
+  | 'productivity'       // 생산성
+  | 'sales-marketing'    // 영업/마케팅
+  | 'healthcare'         // 헬스케어
+  | 'fintech'            // 금융
+  | 'legal'              // 법률
+  | 'security'           // 보안
+  | 'education'          // 교육
+  | 'other';             // 기타
+
+export const AI_TYPE_LABELS: Record<AIType, string> = {
+  'foundation-model': 'Foundation Model',
+  'model-platform': 'Model Platform',
+  'ai-infrastructure': 'AI Infrastructure',
+  'image-generation': 'Image Generation',
+  'video-generation': 'Video Generation',
+  'audio-generation': 'Audio Generation',
+  'code-assistant': 'Code Assistant',
+  'text-assistant': 'Text Assistant',
+  'search-retrieval': 'Search & Retrieval',
+  'conversation-ai': 'Conversation AI',
+  'data-analysis': 'Data Analysis',
+  'automation': 'Automation',
+};
+
+export const MARKET_LABELS: Record<Market, string> = {
+  'b2c': 'B2C',
+  'prosumer': 'Prosumer',
+  'smb': 'SMB',
+  'b2b': 'B2B',
+  'enterprise': 'Enterprise',
+};
+
+export const INDUSTRY_LABELS: Record<Industry, string> = {
+  'infrastructure': 'Infrastructure',
+  'developer-tools': 'Developer Tools',
+  'creative-media': 'Creative & Media',
+  'productivity': 'Productivity',
+  'sales-marketing': 'Sales & Marketing',
+  'healthcare': 'Healthcare',
+  'fintech': 'Fintech',
+  'legal': 'Legal',
+  'security': 'Security',
+  'education': 'Education',
+  'other': 'Other',
+};
+
 export interface FundingRound {
   stage: 'Pre-seed' | 'Seed' | 'Series A' | 'Series B' | 'Series C' | 'Series D' | 'Series E' | 'Series F' | 'Unknown';
   amount: string; // e.g., "$50M"
@@ -66,6 +138,11 @@ export interface Company {
   // Location
   headquarters: string; // e.g., "San Francisco, CA"
   remote?: 'Yes' | 'Hybrid' | 'No' | 'Unknown';
+
+  // Multi-dimensional Tags
+  aiTypes: AIType[];      // 1-3개, 주요 유형 먼저
+  markets: Market[];      // 1-3개
+  industries: Industry[]; // 1-2개
 
   // Business
   stage: string;

@@ -9,6 +9,12 @@ export const lgnd: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'legal'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

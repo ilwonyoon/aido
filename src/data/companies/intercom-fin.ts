@@ -7,6 +7,12 @@ export const intercomFin: Company = {
     website: 'https://www.intercom.com',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
     stage: 'Private',
     valuation: 'Unknown',
     totalFunding: '$250M',

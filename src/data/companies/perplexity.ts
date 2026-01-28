@@ -8,6 +8,12 @@ export const perplexity: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
     // Business
     stage: 'Series D',
     valuation: '$20B (Sept 2025)',

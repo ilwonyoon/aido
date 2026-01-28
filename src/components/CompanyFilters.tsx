@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus } from '@/data/types';
+import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
@@ -362,6 +362,9 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
+  const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
+  const [marketFilter, setMarketFilter] = useState<Market[]>([]);
+  const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -409,6 +412,45 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     }
 
     return sorted;
+  }, [companies]);
+
+  // Get AI Type options with counts
+  const aiTypeOptions = useMemo(() => {
+    const counts: Record<AIType, number> = {} as Record<AIType, number>;
+    companies.forEach(c => {
+      c.aiTypes?.forEach(t => {
+        counts[t] = (counts[t] || 0) + 1;
+      });
+    });
+    return (Object.keys(AI_TYPE_LABELS) as AIType[])
+      .filter(t => counts[t] > 0)
+      .map(t => ({ value: t, label: `${AI_TYPE_LABELS[t]} (${counts[t]})` }));
+  }, [companies]);
+
+  // Get Market options with counts
+  const marketOptions = useMemo(() => {
+    const counts: Record<Market, number> = {} as Record<Market, number>;
+    companies.forEach(c => {
+      c.markets?.forEach(m => {
+        counts[m] = (counts[m] || 0) + 1;
+      });
+    });
+    return (Object.keys(MARKET_LABELS) as Market[])
+      .filter(m => counts[m] > 0)
+      .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${counts[m]})` }));
+  }, [companies]);
+
+  // Get Industry options with counts
+  const industryOptions = useMemo(() => {
+    const counts: Record<Industry, number> = {} as Record<Industry, number>;
+    companies.forEach(c => {
+      c.industries?.forEach(i => {
+        counts[i] = (counts[i] || 0) + 1;
+      });
+    });
+    return (Object.keys(INDUSTRY_LABELS) as Industry[])
+      .filter(i => counts[i] > 0)
+      .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${counts[i]})` }));
   }, [companies]);
 
   // Load interest statuses from Firestore (per user)
@@ -509,9 +551,27 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!hasMatch) return false;
       }
 
+      // AI Type Filter
+      if (aiTypeFilter.length > 0) {
+        const hasMatch = aiTypeFilter.some(t => company.aiTypes?.includes(t));
+        if (!hasMatch) return false;
+      }
+
+      // Market Filter
+      if (marketFilter.length > 0) {
+        const hasMatch = marketFilter.some(m => company.markets?.includes(m));
+        if (!hasMatch) return false;
+      }
+
+      // Industry Filter
+      if (industryFilter.length > 0) {
+        const hasMatch = industryFilter.some(i => company.industries?.includes(i));
+        if (!hasMatch) return false;
+      }
+
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -589,13 +649,16 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
     setAiLevelFilter('');
     setOpenRolesFilter('');
     setLocationFilter([]);
+    setAiTypeFilter([]);
+    setMarketFilter([]);
+    setIndustryFilter([]);
   };
 
   return (
@@ -649,6 +712,24 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             values={locationFilter}
             options={locations.map(loc => ({ value: loc, label: loc }))}
             onChange={setLocationFilter}
+          />
+          <MultiSelectFilter
+            label="AI Type"
+            values={aiTypeFilter}
+            options={aiTypeOptions}
+            onChange={(vals) => setAiTypeFilter(vals as AIType[])}
+          />
+          <MultiSelectFilter
+            label="Market"
+            values={marketFilter}
+            options={marketOptions}
+            onChange={(vals) => setMarketFilter(vals as Market[])}
+          />
+          <MultiSelectFilter
+            label="Industry"
+            values={industryFilter}
+            options={industryOptions}
+            onChange={(vals) => setIndustryFilter(vals as Industry[])}
           />
           {hasActiveFilters && (
             <button

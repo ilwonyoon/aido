@@ -9,6 +9,12 @@ export const spiralDb: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['ai-infrastructure', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

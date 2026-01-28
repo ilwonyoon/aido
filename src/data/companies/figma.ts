@@ -8,6 +8,12 @@ export const figma: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
     stage: 'Public (NYSE: FIG)',
     valuation: '$57B market cap (July 2025 IPO)',
     totalFunding: '$615M pre-IPO',

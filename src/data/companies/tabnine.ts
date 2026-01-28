@@ -7,6 +7,12 @@ export const tabnine: Company = {
     website: 'https://www.tabnine.com',
     headquarters: 'Tel Aviv, Israel',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['enterprise'],
+  industries: ['developer-tools'],
+
     stage: 'Series B',
     valuation: 'Unknown',
     totalFunding: '$67M',

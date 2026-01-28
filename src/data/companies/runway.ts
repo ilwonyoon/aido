@@ -8,6 +8,12 @@ export const runway: Company = {
     headquarters: 'New York City, NY',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
     // Business
     stage: 'Series D',
     valuation: 'Unknown',

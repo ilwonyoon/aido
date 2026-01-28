@@ -8,6 +8,12 @@ export const pika: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['video-generation', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Series B',
     valuation: '$470M',
     totalFunding: '$115M',

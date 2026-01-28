@@ -53,7 +53,75 @@ const finalCompany = { ...companyData, openRoles: jobResults.openRoles };
   website: string,         // 공식 웹사이트
   headquarters: string,    // 'San Francisco, CA' 형식
   remote: 'Yes' | 'Hybrid' | 'No' | 'Unknown',
+
+  // Multi-dimensional Tags (필수)
+  aiTypes: AIType[],       // 1-3개, 주요 유형 먼저
+  markets: Market[],       // 1-3개
+  industries: Industry[],  // 1-2개
 }
+```
+
+#### 1.2 Multi-dimensional Tag Classification (필수)
+
+회사의 description과 제품을 분석하여 다차원 태그 분류:
+
+**AI Type (AI 기능 유형):**
+| Type | 설명 | 예시 |
+|------|------|------|
+| `foundation-model` | LLM/기반 모델 직접 개발 | Anthropic, OpenAI, Mistral |
+| `model-platform` | 모델 호스팅/커스터마이징 | Together AI, Replicate |
+| `ai-infrastructure` | AI 개발 도구/MLOps | Weights & Biases, LangChain |
+| `image-generation` | 이미지 생성 | Midjourney, Stable Diffusion |
+| `video-generation` | 비디오 생성 | Runway, Pika, HeyGen |
+| `audio-generation` | 오디오/음성 생성 | Suno, ElevenLabs |
+| `code-assistant` | 코드 어시스턴트 | Cursor, Replit, Codeium |
+| `text-assistant` | 텍스트 어시스턴트 | Jasper, Copy.ai |
+| `search-retrieval` | 검색/RAG | Perplexity, Glean |
+| `conversation-ai` | 대화/미팅 AI | Intercom, Gong |
+| `data-analysis` | 데이터 분석 | Hightouch |
+| `automation` | 자동화 | Zapier AI |
+
+**Market (타겟 시장):**
+- `b2c`: 개인 소비자
+- `prosumer`: 크리에이터, 프리랜서
+- `smb`: 중소기업
+- `b2b`: 기업
+- `enterprise`: 대기업
+
+**Industry (산업 도메인):**
+- `infrastructure`: AI 인프라
+- `developer-tools`: 개발자 도구
+- `creative-media`: 크리에이티브/미디어
+- `productivity`: 생산성
+- `sales-marketing`: 영업/마케팅
+- `healthcare`: 헬스케어
+- `fintech`: 금융
+- `legal`: 법률
+- `security`: 보안
+- `education`: 교육
+- `other`: 기타
+
+**분류 예시:**
+```typescript
+// Anthropic
+aiTypes: ['foundation-model'],
+markets: ['enterprise', 'b2b'],
+industries: ['infrastructure'],
+
+// Cursor
+aiTypes: ['code-assistant'],
+markets: ['prosumer', 'b2b'],
+industries: ['developer-tools'],
+
+// Midjourney
+aiTypes: ['image-generation'],
+markets: ['prosumer', 'b2c'],
+industries: ['creative-media'],
+
+// Abridge
+aiTypes: ['conversation-ai', 'text-assistant'],
+markets: ['enterprise'],
+industries: ['healthcare'],
 ```
 
 **Sources:**

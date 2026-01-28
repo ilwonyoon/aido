@@ -7,6 +7,12 @@ export const copyAi: Company = {
     website: 'https://www.copy.ai',
     headquarters: 'Remote',
     remote: 'Yes',
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
     stage: 'Series A',
     valuation: 'Unknown',
     totalFunding: '$14M',

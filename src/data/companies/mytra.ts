@@ -9,6 +9,12 @@ export const mytra: Company = {
   headquarters: 'Brisbane, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series C',
   valuation: 'Unknown',

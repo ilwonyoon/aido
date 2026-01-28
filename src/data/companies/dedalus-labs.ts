@@ -8,6 +8,12 @@ export const dedalusLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['creative-media'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

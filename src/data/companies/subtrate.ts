@@ -9,6 +9,12 @@ export const subtrate: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['ai-infrastructure'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

@@ -7,6 +7,12 @@ export const codeium: Company = {
     website: 'https://codeium.com',
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['enterprise'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Series C',
     valuation: '$2.9B (Feb 2025, in talks)',
     totalFunding: '$215M',

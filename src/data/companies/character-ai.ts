@@ -8,6 +8,12 @@ export const characterAi: Company = {
     headquarters: 'Menlo Park, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2c'],
+  industries: ['infrastructure'],
+
     // Business
     stage: 'Series A',
     valuation: '$5B (Sept 2024, post-Google deal)',

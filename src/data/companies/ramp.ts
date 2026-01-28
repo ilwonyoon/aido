@@ -10,6 +10,12 @@ export const ramp: Company = {
     headquarters: 'New York, NY',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
     // Business
     stage: 'Series D+',
     valuation: '$32B',

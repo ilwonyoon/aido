@@ -8,6 +8,12 @@ export const fastino: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'automation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

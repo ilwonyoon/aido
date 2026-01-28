@@ -9,6 +9,12 @@ export const anythingAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

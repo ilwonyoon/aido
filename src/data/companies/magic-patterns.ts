@@ -8,6 +8,12 @@ export const magicPatterns: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

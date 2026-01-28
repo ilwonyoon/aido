@@ -9,6 +9,12 @@ export const clickhouse: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['data-analysis'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series D',
   valuation: 'Unknown',

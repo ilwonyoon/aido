@@ -9,6 +9,12 @@ export const corgi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['smb'],
+  industries: ['creative-media'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const pallet: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

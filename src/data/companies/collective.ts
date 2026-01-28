@@ -9,6 +9,12 @@ export const collective: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['prosumer'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

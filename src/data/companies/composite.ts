@@ -9,6 +9,12 @@ export const composite: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

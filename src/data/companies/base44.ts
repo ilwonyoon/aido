@@ -8,6 +8,12 @@ export const base44: Company = {
     headquarters: 'Tel Aviv, Israel',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'automation'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
     // Business
     stage: 'Acquired',
     valuation: '$80M (acquisition by Wix, Jun 2025)',

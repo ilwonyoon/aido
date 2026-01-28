@@ -8,6 +8,12 @@ export const shopify: Company = {
     headquarters: 'Ottawa, Canada',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     stage: 'Public (IPO 2015)',
     valuation: '$218B market cap',
     totalFunding: '$122M (pre-IPO)',

@@ -9,6 +9,12 @@ export const humbleOps: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Pre-seed',
   valuation: 'Unknown',

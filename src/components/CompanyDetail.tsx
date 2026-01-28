@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { Company } from '@/data/types';
+import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
@@ -183,6 +183,18 @@ export function CompanyDetail({ company }: { company: Company }) {
               <AiLevelBadge level={company.aiNativeLevel} />
             </div>
             <p className="text-[var(--muted)] text-base sm:text-lg">{company.description}</p>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mt-3">
+              {company.aiTypes?.map(t => (
+                <span key={t} className="badge text-xs">{AI_TYPE_LABELS[t]}</span>
+              ))}
+              {company.markets?.map(m => (
+                <span key={m} className="badge badge-accent text-xs">{MARKET_LABELS[m]}</span>
+              ))}
+              {company.industries?.map(i => (
+                <span key={i} className="badge text-xs bg-[var(--card-hover)]">{INDUSTRY_LABELS[i]}</span>
+              ))}
+            </div>
             <div className="flex items-center gap-4 mt-4 text-sm">
               <a
                 href={company.website}

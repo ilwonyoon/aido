@@ -8,6 +8,12 @@ export const eventual: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['prosumer'],
+  industries: ['developer-tools'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

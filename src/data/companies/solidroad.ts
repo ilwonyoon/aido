@@ -9,6 +9,12 @@ export const solidroad: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

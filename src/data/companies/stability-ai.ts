@@ -8,6 +8,12 @@ export const stabilityAi: Company = {
     headquarters: 'London, UK',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['image-generation', 'audio-generation', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
     // Business
     stage: 'Private',
     valuation: 'Unknown',

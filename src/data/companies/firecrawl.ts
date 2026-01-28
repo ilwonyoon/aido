@@ -9,6 +9,12 @@ export const firecrawl: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

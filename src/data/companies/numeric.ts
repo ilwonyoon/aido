@@ -8,6 +8,12 @@ export const numeric: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['data-analysis', 'automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'fintech'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

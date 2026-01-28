@@ -7,6 +7,12 @@ export const gong: Company = {
     website: 'https://gong.io',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
     stage: 'Series E',
     valuation: '$7.25B (2021)',
     totalFunding: '$583M',

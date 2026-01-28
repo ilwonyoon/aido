@@ -8,6 +8,12 @@ export const xai: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     // Business
     stage: 'Series E',
     valuation: '$230B (Jan 2026)',

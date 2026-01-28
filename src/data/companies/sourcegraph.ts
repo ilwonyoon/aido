@@ -10,6 +10,12 @@ export const sourcegraph: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
     // Business
     stage: 'Series D',
     valuation: '$2.6B',

@@ -8,6 +8,12 @@ export const cohere: Company = {
     headquarters: 'Toronto, Canada',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['infrastructure'],
+
     // Business
     stage: 'Series D',
     valuation: '$7B (Sept 2025)',

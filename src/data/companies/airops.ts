@@ -8,6 +8,12 @@ export const airops: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['search-retrieval', 'automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

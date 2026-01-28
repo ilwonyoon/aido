@@ -9,6 +9,12 @@ export const ivo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['enterprise'],
+  industries: ['infrastructure', 'legal'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

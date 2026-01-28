@@ -9,6 +9,12 @@ export const raindropAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['creative-media'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

@@ -9,6 +9,12 @@ export const anrok: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
