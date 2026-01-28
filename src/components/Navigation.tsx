@@ -60,14 +60,14 @@ export function Navigation() {
             Jobs
           </Link>
           <Link
-            href="/ai-levels"
+            href="/about"
             className={
-              isActive('/ai-levels')
+              isActive('/about')
                 ? 'text-[var(--foreground)]'
                 : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
-            AI Levels
+            About
           </Link>
 
           {/* Analytics - Admin only */}
@@ -139,15 +139,15 @@ export function Navigation() {
                 Jobs
               </Link>
               <Link
-                href="/ai-levels"
+                href="/about"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-3 px-4 rounded-lg ${
-                  isActive('/ai-levels')
+                  isActive('/about')
                     ? 'bg-[var(--card)] text-[var(--foreground)]'
                     : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
                 }`}
               >
-                AI Levels
+                About
               </Link>
 
               {isAdmin && (
