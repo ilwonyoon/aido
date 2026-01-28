@@ -263,6 +263,84 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 
 ---
 
+## Available Tools & Skills
+
+이 프로젝트에서 사용 가능한 글로벌 Claude Code 도구들.
+
+### Global Skills
+
+프로젝트 전반에서 사용할 수 있는 스킬들:
+
+**coding-standards**
+- 위치: `~/.claude/skills/coding-standards/`
+- TypeScript, JavaScript, React, Node.js 개발을 위한 범용 코딩 표준, 모범 사례 및 패턴
+
+**continuous-learning-v2**
+- 위치: `~/.claude/skills/continuous-learning-v2/`
+- 세션을 관찰하고 원자적 인스팅크를 생성하는 인스팅크 기반 학습 시스템
+- 스킬, 커맨드, 에이전트로 발전 가능
+- Confidence scoring 포함
+
+**design-system-builder** ⭐
+- 위치: `~/.claude/skills/design-system-builder/`
+- 사용법: 프로젝트에서 디자인 시스템을 구축할 때 사용
+- 인터랙티브 React 아티팩트를 통한 일관되고 고품질의 디자인 시스템 구축
+- 토큰 시스템, 타이포그래피 규칙, 컴포넌트 라이브러리 생성
+- 워크플로우:
+  1. Discovery (5 questions: tone, density, brand color, icons, platform)
+  2. Tokens Preview Artifact (color palette, typography, spacing, radius, icons)
+  3. Component Showcase Artifact (interactive demos with variant/size/state controls)
+  4. Export (on request: tokens.json, CSS variables, component code)
+
+### Project Skills
+
+프로젝트 로컬 스킬들:
+
+**job-scraper**
+- 위치: `.claude/skills/job-scraper/`
+- 사용법: `/job-scraper [company name or website]`
+- Company career page에서 Product Design 역할 자동 수집
+- Playwright 기반 JS 렌더링 지원
+- LinkedIn, Greenhouse, Ashby 교차 검증
+
+**company-researcher**
+- 위치: `.claude/skills/company-researcher/`
+- 새로운 AI-native 회사 리서치 및 데이터 수집
+- Business, Founders, Design team, Product 정보 수집
+
+### Available Commands
+
+글로벌 커맨드들 (모든 프로젝트에서 사용 가능):
+
+| Command | 설명 |
+|---------|------|
+| `/approvals` | Permission 모드 전환 (bypass, accept edits, plan) |
+| `/checkpoint` | 현재 작업 상태를 체크포인트로 저장 |
+| `/code-review` | 코드 리뷰 실행 (엔지니어링 품질과 개발 속도의 균형) |
+| `/design-review` | 프론트엔드 PR이나 UI 변경사항의 디자인 리뷰 |
+| `/learn` | 재사용 가능한 패턴 추출 및 학습 |
+| `/plan` | 요구사항 재확인, 리스크 평가, 단계별 구현 계획 생성 |
+| `/refactor-clean` | 코드 리팩토링 및 정리 |
+| `/security-review` | 현재 브랜치의 pending changes에 대한 보안 리뷰 |
+| `/skill-create` | 로컬 git 히스토리 분석하여 SKILL.md 파일 생성 |
+| `/thread-creator` | 스레드 생성 |
+| `/tlm-distribute` | Task-LLM Distribution - 복잡한 작업을 여러 LLM에 분배 |
+
+### Available Agents
+
+백그라운드에서 실행 가능한 전문 에이전트들:
+
+| Agent | 설명 |
+|-------|------|
+| `architect` | 소프트웨어 아키텍처 설계 및 기술 의사결정 |
+| `code-reviewer` | 코드 품질 검토 및 개선 제안 |
+| `design-reviewer` | UI/UX 디자인 검토 및 일관성 검증 |
+| `doc-updater` | 문서 자동 업데이트 및 동기화 |
+| `planner` | 구현 계획 설계 및 단계별 작업 분해 |
+| `refactor-cleaner` | 코드베이스 리팩토링 및 최적화 |
+
+---
+
 ## Multi-LLM 작업 환경
 
 이 프로젝트는 여러 LLM을 병렬로 활용하여 작업 효율을 높임.
