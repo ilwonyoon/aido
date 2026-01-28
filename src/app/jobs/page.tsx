@@ -1,20 +1,10 @@
+'use client';
+
+import { useState, useMemo } from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { Company } from '@/data/types';
-
-export const metadata: Metadata = {
-  title: 'Product Designer Jobs at AI Companies | AIDO',
-  description: `Browse ${companies.reduce((sum, c) => sum + c.openRoles.length, 0)} product design jobs at ${companies.length} AI companies. Filter by AI-native level, compensation, location. Updated daily.`,
-  keywords: ['AI product designer jobs', 'AI design jobs', 'product designer AI companies', 'AI startup designer jobs', 'Level A AI company jobs'],
-  openGraph: {
-    title: 'Product Designer Jobs at AI Companies | AIDO',
-    description: `${companies.reduce((sum, c) => sum + c.openRoles.length, 0)} curated product design roles at AI-native companies`,
-    url: 'https://aido-d2cc0.web.app/jobs',
-    siteName: 'AIDO',
-    type: 'website',
-  },
-};
 
 interface JobWithCompany {
   company: Company;
@@ -22,186 +12,217 @@ interface JobWithCompany {
 }
 
 export default function JobsPage() {
+  const [aiLevelFilter, setAiLevelFilter] = useState<string>('');
+  const [locationFilter, setLocationFilter] = useState<string[]>([]);
+  const [viewMode, setViewMode] = useState<'list' | 'card'>('list');
+
   // Collect all jobs with company context
   const allJobs: JobWithCompany[] = companies.flatMap((company) =>
     company.openRoles.map((role) => ({ company, role }))
   );
 
-  // Sort by most recent (use company lastUpdated as proxy)
-  const sortedJobs = allJobs.sort((a, b) => {
-    const dateA = new Date(a.company.lastUpdated || 0);
-    const dateB = new Date(b.company.lastUpdated || 0);
-    return dateB.getTime() - dateA.getTime();
-  });
+  // Get unique locations
+  const locations = useMemo(() => {
+    const locs = new Set<string>();
+    allJobs.forEach(({ role }) => {
+      const loc = role.location.split(',')[0].trim();
+      locs.add(loc);
+    });
+    return Array.from(locs).sort();
+  }, [allJobs]);
+
+  // Filter jobs
+  const filteredJobs = useMemo(() => {
+    return allJobs.filter(({ company, role }) => {
+      // AI Level filter
+      if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
+
+      // Location filter
+      if (locationFilter.length > 0) {
+        const jobLoc = role.location.split(',')[0].trim();
+        if (!locationFilter.includes(jobLoc)) return false;
+      }
+
+      return true;
+    });
+  }, [allJobs, aiLevelFilter, locationFilter]);
+
+  // Sort by most recent
+  const sortedJobs = useMemo(() => {
+    return [...filteredJobs].sort((a, b) => {
+      const dateA = new Date(a.company.lastUpdated || 0);
+      const dateB = new Date(b.company.lastUpdated || 0);
+      return dateB.getTime() - dateA.getTime();
+    });
+  }, [filteredJobs]);
 
   const totalJobs = allJobs.length;
   const companiesWithJobs = companies.filter(c => c.openRoles.length > 0).length;
 
+  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0;
+
+  const clearFilters = () => {
+    setAiLevelFilter('');
+    setLocationFilter([]);
+  };
+
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="mb-8">
-        <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
-          ← Back to companies
-        </Link>
-      </div>
-
-      <div className="mb-8">
-        <h1 className="text-4xl font-semibold mb-4">Product Designer Jobs at AI Companies</h1>
-        <p className="text-lg text-[var(--muted)]">
-          {totalJobs} open product design roles at {companiesWithJobs} AI-native companies. Updated daily.
+    <div>
+      {/* Header */}
+      <div className="mb-6">
+        <h1 className="text-2xl font-semibold mb-2">AI design opportunities for Product Design</h1>
+        <p className="text-[var(--muted)] text-sm">
+          {totalJobs} open roles at {companiesWithJobs} AI-native companies
         </p>
       </div>
 
-      {/* Job Listings */}
-      <div className="space-y-4">
-        {sortedJobs.map(({ company, role }, idx) => (
-          <Link
-            key={`${company.id}-${idx}`}
-            href={`/company/${company.id}`}
-            className="card p-6 block hover:border-[var(--accent)] transition-colors"
+      {/* Filter & Sort Bar */}
+      <div className="space-y-2 mb-6">
+        {/* Row 1: Filter chips only */}
+        <div className="flex items-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide">
+          {/* AI Level Filter */}
+          <select
+            value={aiLevelFilter}
+            onChange={(e) => setAiLevelFilter(e.target.value)}
+            className="flex items-center gap-2 bg-[var(--card)] border rounded-md px-4 py-1.5 text-sm cursor-pointer transition-colors border-[var(--border)] text-[var(--foreground)] hover:border-[var(--muted)]"
           >
-            {/* Header */}
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <div className="flex-1">
-                <h2 className="text-xl font-semibold mb-2">{role.title}</h2>
-                <div className="flex items-center gap-3 text-sm text-[var(--muted)]">
-                  <span className="font-medium text-[var(--foreground)]">{company.name}</span>
-                  <span>•</span>
-                  <span>{role.location}</span>
-                  {role.compensation && (
-                    <>
-                      <span>•</span>
-                      <span className="text-[var(--success)]">{role.compensation}</span>
-                    </>
-                  )}
-                </div>
-              </div>
+            <option value="">All Levels</option>
+            <option value="A">Level A</option>
+            <option value="B">Level B</option>
+            <option value="C">Level C</option>
+            <option value="D">Level D</option>
+          </select>
 
-              {/* AI Level Badge */}
-              <div className="flex-shrink-0">
-                <span
-                  className={`badge ${
-                    company.aiNativeLevel === 'A'
-                      ? 'badge-success'
-                      : company.aiNativeLevel === 'B'
-                      ? 'badge-accent'
-                      : 'badge-default'
-                  }`}
-                >
-                  Level {company.aiNativeLevel}
-                </span>
-              </div>
-            </div>
+          {/* Location Filter */}
+          <select
+            multiple
+            value={locationFilter}
+            onChange={(e) => {
+              const selected = Array.from(e.target.selectedOptions, option => option.value);
+              setLocationFilter(selected);
+            }}
+            className="flex items-center gap-2 bg-[var(--card)] border rounded-md px-4 py-1.5 text-sm cursor-pointer transition-colors border-[var(--border)] text-[var(--foreground)] hover:border-[var(--muted)]"
+            size={1}
+          >
+            <option value="">All Locations</option>
+            {locations.map(loc => (
+              <option key={loc} value={loc}>{loc}</option>
+            ))}
+          </select>
 
-            {/* About Role */}
-            {role.aboutRole && (
-              <p className="text-sm text-[var(--muted)] mb-4 line-clamp-2">
-                {role.aboutRole}
-              </p>
+          {hasActiveFilters && (
+            <button
+              onClick={clearFilters}
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
+            >
+              Clear
+            </button>
+          )}
+        </div>
+
+        {/* Row 2: Job count */}
+        <div className="flex items-center justify-between pl-3 pr-3">
+          <div className="text-sm font-medium text-[var(--foreground)]">
+            {sortedJobs.length === totalJobs ? (
+              `${totalJobs} jobs`
+            ) : (
+              <>
+                {sortedJobs.length} <span className="text-[var(--muted)]">of {totalJobs}</span>
+              </>
             )}
-
-            {/* Tags */}
-            <div className="flex flex-wrap gap-2">
-              <span className="text-xs px-2 py-1 rounded bg-[var(--card-hover)] text-[var(--muted)]">
-                {role.type === 'full-time' ? 'Full-time' : role.type === 'contract' ? 'Contract' : 'Intern'}
-              </span>
-              {role.level && (
-                <span className="text-xs px-2 py-1 rounded bg-[var(--card-hover)] text-[var(--muted)]">
-                  {role.level}
-                </span>
-              )}
-              {company.remote && (
-                <span className="text-xs px-2 py-1 rounded bg-[var(--card-hover)] text-[var(--muted)]">
-                  {company.remote}
-                </span>
-              )}
-            </div>
-
-            {/* JobPosting Schema */}
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  '@context': 'https://schema.org',
-                  '@type': 'JobPosting',
-                  title: role.title,
-                  description: role.aboutRole || company.description,
-                  datePosted: company.lastUpdated,
-                  validThrough: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString(),
-                  employmentType: role.type === 'full-time' ? 'FULL_TIME' : role.type === 'contract' ? 'CONTRACTOR' : 'INTERN',
-                  hiringOrganization: {
-                    '@type': 'Organization',
-                    name: company.name,
-                    sameAs: company.website,
-                  },
-                  jobLocation: {
-                    '@type': 'Place',
-                    address: {
-                      '@type': 'PostalAddress',
-                      addressLocality: role.location.split(',')[0],
-                      addressCountry: 'US',
-                    },
-                  },
-                  baseSalary: role.compensation
-                    ? {
-                        '@type': 'MonetaryAmount',
-                        currency: 'USD',
-                        value: {
-                          '@type': 'QuantitativeValue',
-                          minValue: parseInt(role.compensation.match(/\$(\d+)/)?.[1] || '0') * 1000,
-                          maxValue: parseInt(role.compensation.match(/\$\d+[Kk]?-?\$?(\d+)/)?.[1] || '0') * 1000,
-                          unitText: 'YEAR',
-                        },
-                      }
-                    : undefined,
-                  applicationContact: {
-                    '@type': 'ContactPoint',
-                    contactType: 'recruitment',
-                    url: role.url,
-                  },
-                }),
-              }}
-            />
-          </Link>
-        ))}
-
-        {totalJobs === 0 && (
-          <div className="card p-12 text-center">
-            <p className="text-[var(--muted)]">No open product design roles at the moment.</p>
           </div>
-        )}
+        </div>
       </div>
 
-      {/* SEO Content */}
-      <section className="mt-16 prose prose-invert max-w-none">
-        <h2 className="text-2xl font-semibold mb-4">About AI Product Designer Jobs</h2>
-        <p className="text-[var(--muted)] mb-6">
-          AIDO curates product design opportunities at AI-native companies. We focus on Level A and B companies
-          where AI is the core product or primary differentiator, offering unique design challenges in areas like
-          AI behavior design, evaluation frameworks, and conversational interfaces.
-        </p>
+      {/* Job Listings - List Style */}
+      {sortedJobs.length === 0 ? (
+        <div className="card p-8 text-center text-[var(--muted)]">
+          No jobs match your filters.
+        </div>
+      ) : (
+        <div className="border border-[var(--border)] rounded-lg overflow-hidden bg-[var(--card)]">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-[var(--background)] border-b border-[var(--border)]">
+                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
+                    Role
+                  </th>
+                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
+                    Company
+                  </th>
+                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
+                    Location
+                  </th>
+                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
+                    Level
+                  </th>
+                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
+                    Compensation
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {sortedJobs.map(({ company, role }, idx) => {
+                  const aiLevelColors = {
+                    D: 'text-[var(--muted)]',
+                    C: 'text-[var(--muted)]',
+                    B: 'text-[var(--accent-light)]',
+                    A: 'text-[var(--success)]',
+                  };
 
-        <h3 className="text-xl font-semibold mb-3">Why Join an AI-Native Company as a Product Designer?</h3>
-        <ul className="text-[var(--muted)] space-y-2 mb-6">
-          <li>Work on unprecedented design challenges (character training, trust design, AI UX patterns)</li>
-          <li>Shape the future of human-AI interaction</li>
-          <li>Join hypergrowth companies with strong funding and technical teams</li>
-          <li>High compensation ($150K-$440K based on level and company)</li>
-          <li>Be part of defining new design disciplines</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold mb-3">What Makes a Good AI Product Designer?</h3>
-        <p className="text-[var(--muted)] mb-4">
-          AI product designers need traditional product design skills plus:
-        </p>
-        <ul className="text-[var(--muted)] space-y-2">
-          <li>Understanding of AI capabilities and limitations</li>
-          <li>Ability to design for uncertainty and probabilistic outputs</li>
-          <li>Experience with conversation design and natural language interfaces</li>
-          <li>Strong systems thinking for designing AI behavior and evaluation frameworks</li>
-          <li>Comfort with rapid iteration and experimentation</li>
-        </ul>
-      </section>
+                  return (
+                    <tr
+                      key={`${company.id}-${idx}`}
+                      className="group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors"
+                    >
+                      <td className="py-3 px-4 border-r border-[var(--border)]">
+                        <Link
+                          href={role.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[var(--accent-light)]"
+                        >
+                          <div className="font-medium text-sm">{role.title}</div>
+                          {role.level && (
+                            <div className="text-xs text-[var(--muted)] mt-0.5">{role.level}</div>
+                          )}
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-sm border-r border-[var(--border)]">
+                        <Link
+                          href={`/company/${company.id}`}
+                          className="hover:text-[var(--accent-light)]"
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="font-medium">{company.name}</span>
+                            <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel]}`}>
+                              {company.aiNativeLevel}
+                            </span>
+                          </div>
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
+                        <span className="text-[var(--muted)]">{role.location}</span>
+                      </td>
+                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
+                        <span className="text-[var(--muted)]">{role.type || 'Full-time'}</span>
+                      </td>
+                      <td className="py-3 px-4 text-xs">
+                        {role.compensation ? (
+                          <span className="text-[var(--success)]">{role.compensation}</span>
+                        ) : (
+                          <span className="text-[var(--muted)]">-</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

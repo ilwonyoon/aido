@@ -174,7 +174,7 @@ function HomePageContent() {
       >
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-2xl font-semibold mb-2">Product Designer take on finding companies worth joining</h1>
+          <h1 className="text-2xl font-semibold mb-2">AI design opportunities for Product Design</h1>
           <p className="text-[var(--muted)] text-sm">
             Collecting various information about user problems, companies, and opportunities in the AI-native space
           </p>
