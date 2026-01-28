@@ -154,12 +154,12 @@ export function CompanyDetail({ company }: { company: Company }) {
         {/* Mobile horizontal nav - only show when Quick Info header scrolls out */}
         {showMobileNav && (
           <div className="lg:hidden sticky top-14 z-40 py-3 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] -mx-4 sm:-mx-6">
-            <div className="flex gap-2 overflow-x-auto scrollbar-hide px-4 sm:px-6">
+            <div className="flex flex-nowrap gap-2 overflow-x-auto scrollbar-hide px-4 sm:px-6">
               {sections.map((section) => (
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className={`flex-shrink-0 px-3 py-1.5 rounded-md text-sm transition-colors ${
+                  className={`flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-md text-sm transition-colors ${
                     activeSection === section.id
                       ? 'bg-[var(--accent)] text-white'
                       : 'bg-[var(--card)] text-[var(--foreground)] hover:bg-[var(--card-hover)]'

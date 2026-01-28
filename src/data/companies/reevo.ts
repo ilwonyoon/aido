@@ -15,7 +15,7 @@ export const reevo: Company = {
   totalFunding: '$80M',
   fundingHistory: [
     {
-      stage: 'Undisclosed',
+      stage: 'Unknown',
       amount: '$80M',
       date: '2025-11',
       leadInvestors: ['Khosla Ventures', 'Kleiner Perkins', 'Zhu Ventures'],
