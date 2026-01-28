@@ -6,66 +6,6 @@
       "sourceUrl": "https://startups.gallery/categories/locations/cities/san-francisco",
       "companies": [
         {
-          "slug": "alloy",
-          "name": "Alloy",
-          "href": "../../../companies/alloy",
-          "rawText": "Alloy Data platform for robotics. Robotics Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "momentic",
-          "name": "Momentic",
-          "href": "../../../companies/momentic",
-          "rawText": "Momentic Ship fast with AI testing. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "variant",
-          "name": "Variant",
-          "href": "../../../companies/variant",
-          "rawText": "Variant Code generation with taste. Design Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "lgnd",
-          "name": "Lgnd",
-          "href": "../../../companies/lgnd",
-          "rawText": "LGND ChatGPT for the Earth. AI Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "composite",
-          "name": "Composite",
-          "href": "../../../companies/composite",
-          "rawText": "Composite Autopilot for your browser. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "sonatic",
-          "name": "Sonatic",
-          "href": "../../../companies/sonatic",
-          "rawText": "Sonatic Promptless agentic actions. AI Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "subtrate",
-          "name": "Subtrate",
-          "href": "../../../companies/subtrate",
-          "rawText": "Subtrate America's next-gen semiconductor foundry. AI Â· Seed Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "sierra",
-          "name": "Sierra",
-          "href": "../../../companies/sierra",
-          "rawText": "Sierra Conversational AI platform for businesses. AI Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
-          "slug": "tailor",
-          "name": "Tailor",
-          "href": "../../../companies/tailor",
-          "rawText": "Tailor Composable headless ERP. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
-        },
-        {
-          "slug": "physical-intelligence",
-          "name": "Physical Intelligence",
-          "href": "../../../companies/physical-intelligence",
-          "rawText": "Physical Intelligence Machine learning for robots. AI Â· Series A Â· Onsite Â· Based in San Francisco"
-        },
-        {
           "slug": "alphaxiv",
           "name": "Alphaxiv",
           "href": "../../../companies/alphaxiv",
