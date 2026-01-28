@@ -9,6 +9,12 @@ export const casca: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant', 'automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

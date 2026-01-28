@@ -9,6 +9,12 @@ export const macroscope: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

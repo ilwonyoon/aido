@@ -9,6 +9,12 @@ export const vapi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

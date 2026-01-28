@@ -8,6 +8,12 @@ export const doppel: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'security'],
+
   // Business
   stage: 'Series C',
   valuation: 'Unknown',

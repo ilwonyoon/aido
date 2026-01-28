@@ -9,6 +9,12 @@ export const perleAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

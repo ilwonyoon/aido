@@ -7,6 +7,12 @@ export const tome: Company = {
     website: 'https://tome.app',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
     stage: 'Series B',
     valuation: '$300M',
     totalFunding: '$81M',

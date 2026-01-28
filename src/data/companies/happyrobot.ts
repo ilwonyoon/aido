@@ -9,6 +9,12 @@ export const happyrobot: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const openai: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'image-generation', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
     // Business
     stage: 'Series F',
     valuation: '$300B+ (2025)',

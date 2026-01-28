@@ -8,6 +8,12 @@ export const toma: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
     stage: 'Series A',
     valuation: 'N/A',
     totalFunding: '$17M',

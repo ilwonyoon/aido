@@ -9,6 +9,12 @@ export const hightouch: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2c', 'b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Series C',
   valuation: '$1.2B (Feb 2025)',

@@ -9,6 +9,12 @@ export const sauronSystems: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'data-analysis'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'security'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

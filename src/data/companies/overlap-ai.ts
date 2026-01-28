@@ -9,6 +9,12 @@ export const overlapAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const humeAi: Company = {
   headquarters: 'New York, NY',
   remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

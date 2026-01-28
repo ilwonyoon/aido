@@ -8,6 +8,12 @@ export const mercor: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
     stage: 'Series A → C (rapid growth)',
     valuation: '$10B (Oct 2025)',
     totalFunding: '$480M+',

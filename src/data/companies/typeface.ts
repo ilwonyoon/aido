@@ -8,6 +8,12 @@ export const typeface: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2c', 'b2b', 'enterprise'],
+  industries: ['infrastructure', 'creative-media'],
+
     // Business
     stage: 'Series B',
     valuation: '$1B (Jun 2023)',

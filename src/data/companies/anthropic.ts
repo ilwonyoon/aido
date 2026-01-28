@@ -8,6 +8,12 @@ export const anthropic: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     // Business
     stage: 'Series F',
     valuation: '$183B (Sept 2025)',

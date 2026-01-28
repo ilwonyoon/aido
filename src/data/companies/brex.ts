@@ -7,6 +7,12 @@ export const brex: Company = {
     website: 'https://www.brex.com',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'fintech'],
+
     stage: 'Series E+',
     valuation: '$12.3B',
     totalFunding: '$1.2B',

@@ -9,6 +9,12 @@ export const conductor: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'automation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

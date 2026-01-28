@@ -9,6 +9,12 @@ export const layerFinancial: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['smb'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

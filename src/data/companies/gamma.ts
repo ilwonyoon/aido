@@ -10,6 +10,12 @@ export const gamma: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'text-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools', 'creative-media'],
+
     // Business
     stage: 'Series B',
     valuation: '$2.1B',

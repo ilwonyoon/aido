@@ -9,6 +9,12 @@ export const internetBackyard: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2c'],
+  industries: ['productivity'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

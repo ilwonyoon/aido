@@ -9,6 +9,12 @@ export const momentic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'sales-marketing'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const blossom: Company = {
     headquarters: 'New York, NY',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['healthcare'],
+
     // Business
     stage: 'Series A',
     valuation: 'Unknown',

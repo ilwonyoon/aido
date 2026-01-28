@@ -9,6 +9,12 @@ export const yutori: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2c'],
+  industries: ['developer-tools'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

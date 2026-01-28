@@ -9,6 +9,12 @@ export const mutiny: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'automation'],
+  markets: ['b2c'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

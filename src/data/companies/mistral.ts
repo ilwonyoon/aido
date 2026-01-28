@@ -8,6 +8,12 @@ export const mistral: Company = {
     headquarters: 'Paris, France',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     stage: 'Series C',
     valuation: '$14B (Sept 2025)',
     totalFunding: '$3.05B',

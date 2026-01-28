@@ -8,6 +8,12 @@ export const suno: Company = {
     headquarters: 'Cambridge, MA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     // Business
     stage: 'Series C',
     valuation: '$2.45B (Nov 2025)',

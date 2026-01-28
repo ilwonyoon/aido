@@ -7,6 +7,12 @@ export const glean: Company = {
     website: 'https://www.glean.com',
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['search-retrieval'],
+  markets: ['enterprise'],
+  industries: ['other'],
+
     stage: 'Series F',
     valuation: '$7.2B (2025)',
     totalFunding: '$410M',

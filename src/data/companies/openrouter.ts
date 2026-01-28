@@ -9,6 +9,12 @@ export const openrouter: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Unknown',
   valuation: 'Unknown',

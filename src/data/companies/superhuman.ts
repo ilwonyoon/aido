@@ -10,6 +10,12 @@ export const superhuman: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2c'],
+  industries: ['creative-media', 'productivity'],
+
     // Business
     stage: 'Acquired (Grammarly, 2025)',
     valuation: '$825M (last known, Aug 2021)',

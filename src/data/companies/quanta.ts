@@ -9,6 +9,12 @@ export const quanta: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

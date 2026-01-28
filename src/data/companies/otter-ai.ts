@@ -7,6 +7,12 @@ export const otterAi: Company = {
     website: 'https://otter.ai',
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
+
+  // Multi-dimensional Tags
+  aiTypes: ['conversation-ai', 'automation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     stage: 'Series B+',
     valuation: 'Unknown',
     totalFunding: '$63M',

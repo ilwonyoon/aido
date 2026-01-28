@@ -8,6 +8,12 @@ export const notion: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['productivity'],
+
     stage: 'Series D (IPO potential)',
     valuation: '$10B (2021) → $11B tender (2024)',
     totalFunding: '$352.7M',

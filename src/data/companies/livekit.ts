@@ -9,6 +9,12 @@ export const livekit: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series C',
   valuation: '$1B (Jan 2026)',

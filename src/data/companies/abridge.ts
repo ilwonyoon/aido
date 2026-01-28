@@ -8,6 +8,12 @@ export const abridge: Company = {
     headquarters: 'Pittsburgh, PA',
     remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant', 'conversation-ai'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'productivity'],
+
     // Business
     stage: 'Series E',
     valuation: '$5.3B (Jun 2025)',

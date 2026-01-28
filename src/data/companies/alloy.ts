@@ -9,6 +9,12 @@ export const alloy: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series C',
   valuation: 'Unknown',

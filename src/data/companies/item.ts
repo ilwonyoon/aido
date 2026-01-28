@@ -9,6 +9,12 @@ export const item: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
   // Business
   stage: 'Pre-seed',
   valuation: 'Unknown',

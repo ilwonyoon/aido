@@ -9,6 +9,12 @@ export const devAgents: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

@@ -9,6 +9,12 @@ export const heirloom: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

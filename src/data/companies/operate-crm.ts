@@ -9,6 +9,12 @@ export const operateCrm: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

@@ -9,6 +9,12 @@ export const gcAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['infrastructure', 'legal'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

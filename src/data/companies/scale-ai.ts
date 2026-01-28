@@ -8,6 +8,12 @@ export const scaleAi: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'ai-infrastructure'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
     // Business
     stage: 'Meta Partnership (49% stake)',
     valuation: '$29B (Jun 2025, after Meta deal)',

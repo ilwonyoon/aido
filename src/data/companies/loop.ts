@@ -9,6 +9,12 @@ export const loop: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['smb', 'b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Series B',
   valuation: 'Unknown',

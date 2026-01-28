@@ -8,6 +8,12 @@ export const cursor: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'conversation-ai'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
     // Business
     stage: 'Series D',
     valuation: '$29.3B (Nov 2025)',

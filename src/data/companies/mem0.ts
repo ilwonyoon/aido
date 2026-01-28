@@ -8,6 +8,12 @@ export const mem0: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     // Business
     stage: 'Series A',
     valuation: 'Unknown',

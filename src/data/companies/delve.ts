@@ -9,6 +9,12 @@ export const delve: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['legal', 'security'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

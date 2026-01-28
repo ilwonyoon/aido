@@ -9,6 +9,12 @@ export const motif: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

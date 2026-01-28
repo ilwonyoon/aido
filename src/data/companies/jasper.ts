@@ -8,6 +8,12 @@ export const jasper: Company = {
     headquarters: 'Austin, TX',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['infrastructure', 'creative-media'],
+
     // Business
     stage: 'Series A',
     valuation: '$1.2B (2024, post-layoffs)',

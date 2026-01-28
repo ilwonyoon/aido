@@ -9,6 +9,12 @@ export const baseten: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Series E',
   valuation: '$5B (Jan 2026)',

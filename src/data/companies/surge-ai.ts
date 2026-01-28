@@ -9,6 +9,12 @@ export const surgeAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['ai-infrastructure'],
+  markets: ['b2b'],
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Bootstrapped',
   valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const listenLabs: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['search-retrieval'],
+  markets: ['b2b'],
+  industries: ['sales-marketing'],
+
     // Business
     stage: 'Series B',
     valuation: 'Unknown',

@@ -8,6 +8,12 @@ export const llmarena: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model', 'code-assistant'],
+  markets: ['b2b'],
+  industries: ['developer-tools'],
+
     // Business
     stage: 'Series A',
     valuation: '$1.7B (Jan 2026)',

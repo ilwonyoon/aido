@@ -9,6 +9,12 @@ export const remofirst: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'legal'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

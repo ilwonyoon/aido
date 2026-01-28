@@ -9,6 +9,12 @@ export const doss: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

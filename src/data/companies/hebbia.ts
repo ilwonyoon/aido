@@ -10,6 +10,12 @@ export const hebbia: Company = {
     headquarters: 'New York, NY',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant', 'search-retrieval'],
+  markets: ['prosumer'],
+  industries: ['infrastructure', 'productivity'],
+
     // Business
     stage: 'Series B',
     valuation: '$700M',

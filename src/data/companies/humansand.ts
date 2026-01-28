@@ -8,6 +8,12 @@ export const humansand: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     // Business
     stage: 'Seed',
     valuation: '$4.48B (Jan 2026)',

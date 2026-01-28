@@ -8,6 +8,12 @@ export const sphere: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'fintech'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

@@ -9,6 +9,12 @@ export const lightpage: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['productivity'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

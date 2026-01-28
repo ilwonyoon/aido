@@ -9,6 +9,12 @@ export const resolveAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series A',
   valuation: '$1B headline (Dec 2025; blended valuation lower)',

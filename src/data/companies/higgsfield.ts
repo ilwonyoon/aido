@@ -8,6 +8,12 @@ export const higgsfield: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant'],
+  markets: ['prosumer'],
+  industries: ['infrastructure', 'developer-tools'],
+
     // Business
     stage: 'Series A',
     valuation: '$1.3B+ (Jan 2026)',

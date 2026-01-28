@@ -8,6 +8,12 @@ export const cogentSecurity: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['creative-media', 'security'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

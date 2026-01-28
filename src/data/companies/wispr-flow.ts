@@ -8,6 +8,12 @@ export const wisprFlow: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['audio-generation'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

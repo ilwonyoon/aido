@@ -9,6 +9,12 @@ export const exa: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'search-retrieval'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Series B',
   valuation: '$700M (Sept 2025)',

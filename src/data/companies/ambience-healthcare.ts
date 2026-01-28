@@ -8,6 +8,12 @@ export const ambienceHealthcare: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['code-assistant', 'text-assistant', 'automation'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'productivity'],
+
     // Business
     stage: 'Series C',
     valuation: '$1B (Jul 2025, estimated)',

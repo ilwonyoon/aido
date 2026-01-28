@@ -8,6 +8,12 @@ export const replit: Company = {
     headquarters: 'Foster City, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'developer-tools'],
+
     // Business
     stage: 'Series D',
     valuation: '$9B (Jan 2026)',

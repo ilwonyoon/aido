@@ -9,6 +9,12 @@ export const redQueenBio: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'security'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

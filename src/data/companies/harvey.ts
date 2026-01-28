@@ -8,6 +8,12 @@ export const harvey: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['search-retrieval'],
+  markets: ['prosumer'],
+  industries: ['legal'],
+
     // Business
     stage: 'Series E',
     valuation: '$8B (Oct 2025)',

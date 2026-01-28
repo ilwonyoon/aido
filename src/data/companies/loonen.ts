@@ -9,6 +9,12 @@ export const loonen: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

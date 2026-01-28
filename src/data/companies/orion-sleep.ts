@@ -8,6 +8,12 @@ export const orionSleep: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['creative-media'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

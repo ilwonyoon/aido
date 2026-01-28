@@ -8,6 +8,12 @@ export const harmonic: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: ['text-assistant'],
+  markets: ['b2b'],
+  industries: ['other'],
+
     // Business
     stage: 'Series C',
     valuation: '$1.45B (Nov 2025)',

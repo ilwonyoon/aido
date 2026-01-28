@@ -9,6 +9,12 @@ export const truemed: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'healthcare'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

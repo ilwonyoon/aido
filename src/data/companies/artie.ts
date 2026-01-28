@@ -9,6 +9,12 @@ export const artie: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2b'],
+  industries: ['infrastructure', 'creative-media'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

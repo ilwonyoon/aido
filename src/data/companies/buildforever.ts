@@ -8,6 +8,12 @@ export const buildForever: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+
+  // Multi-dimensional Tags
+  aiTypes: [],
+  markets: ['b2c'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
