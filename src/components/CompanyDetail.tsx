@@ -183,17 +183,13 @@ export function CompanyDetail({ company }: { company: Company }) {
               <AiLevelBadge level={company.aiNativeLevel} />
             </div>
             <p className="text-[var(--muted)] text-base sm:text-lg">{company.description}</p>
-            {/* Tags */}
-            <div className="flex flex-wrap gap-2 mt-3">
-              {company.aiTypes?.map(t => (
-                <span key={t} className="badge text-xs">{AI_TYPE_LABELS[t]}</span>
-              ))}
-              {company.markets?.map(m => (
-                <span key={m} className="badge badge-accent text-xs">{MARKET_LABELS[m]}</span>
-              ))}
-              {company.industries?.map(i => (
-                <span key={i} className="badge text-xs bg-[var(--card-hover)]">{INDUSTRY_LABELS[i]}</span>
-              ))}
+            {/* Tags - text style */}
+            <div className="text-sm text-[var(--muted)] mt-2">
+              {[
+                company.aiTypes?.map(t => AI_TYPE_LABELS[t]).join(', '),
+                company.markets?.map(m => MARKET_LABELS[m]).join(', '),
+                company.industries?.map(i => INDUSTRY_LABELS[i]).join(', ')
+              ].filter(Boolean).join(' · ')}
             </div>
             <div className="flex items-center gap-4 mt-4 text-sm">
               <a

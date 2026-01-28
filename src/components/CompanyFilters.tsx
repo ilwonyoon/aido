@@ -300,7 +300,7 @@ function MultiSelectFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`,
+              minWidth: `${Math.max(buttonRef.current.offsetWidth, 200)}px`,
               maxWidth: 'calc(100vw - 2rem)',
               maxHeight: '320px'
             }}
@@ -666,7 +666,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       {/* Filter & Sort Bar */}
       <div className="space-y-2 mb-6">
         {/* Row 1: Filter chips only */}
-        <div className="flex items-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide">
+        <div className="flex items-center gap-1 overflow-x-auto overflow-y-hidden scrollbar-hide">
           <DropdownFilter
             label="Review Status"
             value={reviewStatusFilter}
