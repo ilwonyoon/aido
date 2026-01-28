@@ -8,6 +8,11 @@ export const thinkingMachinesLab: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Multi-dimensional Tags
+  aiTypes: ['foundation-model'],
+  markets: ['b2b', 'enterprise'],
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: '$12B (Jul 2025)',
