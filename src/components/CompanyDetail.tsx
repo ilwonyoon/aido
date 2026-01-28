@@ -127,7 +127,7 @@ export function CompanyDetail({ company }: { company: Company }) {
       </div>
 
       {/* Main Layout: Index Nav + Content */}
-      <div className="block lg:flex lg:gap-8">
+      <div className="lg:flex lg:gap-8">
         {/* Sticky Index Nav */}
         <nav className="hidden lg:block w-48 flex-shrink-0">
           <div className="sticky top-8 space-y-1">
