@@ -1,135 +1,15 @@
 {
-  "generatedAt": "2026-01-28T11:38",
+  "generatedAt": "2026-01-28T12:02",
   "source": "https://startups.gallery/categories/locations/countries/united-states",
   "cities": {
     "San Francisco": {
       "sourceUrl": "https://startups.gallery/categories/locations/cities/san-francisco",
       "companies": [
         {
-          "slug": "span",
-          "name": "Span",
-          "href": "../../../companies/span",
-          "rawText": "Span Developer intelligence platform. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "safetykit",
-          "name": "Safetykit",
-          "href": "../../../companies/safetykit",
-          "rawText": "SafetyKit Protect your platform with AI agents. Cybersecurity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "eventual",
-          "name": "Eventual",
-          "href": "../../../companies/eventual",
-          "rawText": "Eventual Creators of Daft. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "dedalus-labs",
-          "name": "Dedalus Labs",
-          "href": "../../../companies/dedalus-labs",
-          "rawText": "Dedalus Labs Multi-modal, multi-tool agents in minutes. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "clerk",
-          "name": "Clerk",
-          "href": "../../../companies/clerk",
-          "rawText": "Clerk Full-stack auth and user management. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "gigaml",
-          "name": "Gigaml",
-          "href": "../../../companies/gigaml",
-          "rawText": "GigaML Voice AI agents for B2C companies. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
           "slug": "reevo",
           "name": "Reevo",
           "href": "../../../companies/reevo",
           "rawText": "Reevo A modern B2B revenue stack. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "world-labs",
-          "name": "World Labs",
-          "href": "../../../companies/world-labs",
-          "rawText": "World Labs 3D worlds without limits. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "airloom",
-          "name": "Airloom",
-          "href": "../../../companies/airloom",
-          "rawText": "Airloom The next era of wind power. Energy \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "console",
-          "name": "Console",
-          "href": "../../../companies/console",
-          "rawText": "Console AI coworker for IT. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "lightfield",
-          "name": "Lightfield",
-          "href": "../../../companies/lightfield",
-          "rawText": "Lightfield A new kind of CRM. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "assort-health",
-          "name": "Assort Health",
-          "href": "../../../companies/assort-health",
-          "rawText": "Assort Health AI agents for healthcare call centers. Healthcare \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "netic",
-          "name": "Netic",
-          "href": "../../../companies/netic",
-          "rawText": "Netic The AI revenue engine for SMBs. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "numeral",
-          "name": "Numeral",
-          "href": "../../../companies/numeral",
-          "rawText": "Numeral Ecommerce sales tax on autopilot. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "gigs",
-          "name": "Gigs",
-          "href": "../../../companies/gigs",
-          "rawText": "Gigs Launch a mobile service that runs itself. Infrastructure \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "magic-patterns",
-          "name": "Magic Patterns",
-          "href": "../../../companies/magic-patterns",
-          "rawText": "Magic Patterns From idea to production, fast. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "airops",
-          "name": "Airops",
-          "href": "../../../companies/airops",
-          "rawText": "Airops Helping brands win AI search. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "quo",
-          "name": "Quo",
-          "href": "../../../companies/quo",
-          "rawText": "Quo The new kind of business phone. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "scribe",
-          "name": "Scribe",
-          "href": "../../../companies/scribe",
-          "rawText": "Scribe Turn any process into step-by-step guides. Productivity \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "ando",
-          "name": "Ando",
-          "href": "../../../companies/ando",
-          "rawText": "Ando Work messaging reimagined. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "fastino",
-          "name": "Fastino",
-          "href": "../../../companies/fastino",
-          "rawText": "Fastino Task-specific Language Models. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
         },
         {
           "slug": "shortwave",
