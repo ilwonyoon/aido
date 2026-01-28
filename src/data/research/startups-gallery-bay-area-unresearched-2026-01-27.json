@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T12:48",
+  "generatedAt": "2026-01-28T16:10",
   "source": "https://startups.gallery/categories/locations/countries/united-states",
   "cities": {
     "San Francisco": {
@@ -9,1993 +9,1939 @@
           "slug": "reevo",
           "name": "Reevo",
           "href": "../../../companies/reevo",
-          "rawText": "Reevo A modern B2B revenue stack. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "cartesia",
-          "name": "Cartesia",
-          "href": "../../../companies/cartesia",
-          "rawText": "Cartesia Ultra-realistic voice AI platform. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "generation-lab",
-          "name": "Generation Lab",
-          "href": "../../../companies/generation-lab",
-          "rawText": "Generation Lab Reversing human biological age. Health & Wellness \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "tensormesh",
-          "name": "Tensormesh",
-          "href": "../../../companies/tensormesh",
-          "rawText": "Tensormesh The caching layer built for LLM inference. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "unstructured",
-          "name": "Unstructured",
-          "href": "../../../companies/unstructured",
-          "rawText": "Unstructured Fully automated ETL tools for LLMs. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "alex-ai",
-          "name": "Alex AI",
-          "href": "../../../companies/alex-ai",
-          "rawText": "Alex Autonomous AI recruiter. HR & Recruiting \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "contra",
-          "name": "Contra",
-          "href": "../../../companies/contra",
-          "rawText": "Contra The commission-free creative network. Design \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "mandolin",
-          "name": "Mandolin",
-          "href": "../../../companies/mandolin",
-          "rawText": "Mandolin Precision automation for specialty drugs. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "further-ai",
-          "name": "Further AI",
-          "href": "../../../companies/further-ai",
-          "rawText": "FurtherAI Domain-specific AI for insurance. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
-        },
-        {
-          "slug": "seneca-systems",
-          "name": "Seneca Systems",
-          "href": "../../../companies/seneca-systems",
-          "rawText": "Seneca Firefighting drones. Hardware \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Reevo A modern B2B revenue stack. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "infisical",
           "name": "Infisical",
           "href": "../../../companies/infisical",
-          "rawText": "Infisical Secrets management on autopilot. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Infisical Secrets management on autopilot. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "natural",
           "name": "Natural",
           "href": "../../../companies/natural",
-          "rawText": "Natural Payments for AI agents. Fintech \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Natural Payments for AI agents. Fintech Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "claritycare",
           "name": "Claritycare",
           "href": "../../../companies/claritycare",
-          "rawText": "ClarityCare AI-powered prior authorization. Healthcare \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "ClarityCare AI-powered prior authorization. Healthcare Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "agora",
           "name": "Agora",
           "href": "../../../companies/agora",
-          "rawText": "Agora The home of onchain governance Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Agora The home of onchain governance Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "nooks",
           "name": "Nooks",
           "href": "../../../companies/nooks",
-          "rawText": "Nooks AI sales assistant platform. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nooks AI sales assistant platform. Productivity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "sesameai",
           "name": "Sesameai",
           "href": "../../../companies/sesameai",
-          "rawText": "Sesame AI AI voice assistant. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sesame AI AI voice assistant. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "langchain",
           "name": "Langchain",
           "href": "../../../companies/langchain",
-          "rawText": "LangChain Easily integrate LLMs into your apps. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "LangChain Easily integrate LLMs into your apps. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "replicate",
           "name": "Replicate",
           "href": "../../../companies/replicate",
-          "rawText": "Replicate Run AI with an API. AI \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Replicate Run AI with an API. AI Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "tempo",
           "name": "Tempo",
           "href": "../../../companies/tempo",
-          "rawText": "Tempo The blockchain designed for payments. Web3 \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tempo The blockchain designed for payments. Web3 Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "comulate",
           "name": "Comulate",
           "href": "../../../companies/comulate",
-          "rawText": "Comulate Transforming insurance with AI. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Comulate Transforming insurance with AI. Fintech Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "pulley",
           "name": "Pulley",
           "href": "../../../companies/pulley",
-          "rawText": "Pulley Equity management for high growth startups. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pulley Equity management for high growth startups. Fintech Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "lighthouse",
           "name": "Lighthouse",
           "href": "../../../companies/lighthouse",
-          "rawText": "Lighthouse Get a U.S. work visa with ease. HR & Recruiting \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Lighthouse Get a U.S. work visa with ease. HR & Recruiting Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "osmosis",
           "name": "Osmosis",
           "href": "../../../companies/osmosis",
-          "rawText": "Osmosis Create task-specific models that beat foundation models. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Osmosis Create task-specific models that beat foundation models. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "zed-dev",
           "name": "Zed Dev",
           "href": "../../../companies/zed-dev",
-          "rawText": "Zed Multiplayer code editor. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Zed Multiplayer code editor. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "warmer",
           "name": "Warmer",
           "href": "../../../companies/warmer",
-          "rawText": "Warmer A new kind of advice. Health & Wellness \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Warmer A new kind of advice. Health & Wellness Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "campfire",
           "name": "Campfire",
           "href": "../../../companies/campfire",
-          "rawText": "Campfire AI-first ERP for finance. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Campfire AI-first ERP for finance. Fintech Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "causal-labs",
           "name": "Causal Labs",
           "href": "../../../companies/causal-labs",
-          "rawText": "Causal Labs AI physics models to predict and control the weather. Climate \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Causal Labs AI physics models to predict and control the weather. Climate Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "trunk",
           "name": "Trunk",
           "href": "../../../companies/trunk",
-          "rawText": "Trunk Redefining writing software at scale. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Trunk Redefining writing software at scale. DevTools Â· Series A Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "sentient-labs",
           "name": "Sentient Labs",
           "href": "../../../companies/sentient-labs",
-          "rawText": "Sentient Ensuring AGI is open source. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sentient Ensuring AGI is open source. Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "inference-net",
           "name": "Inference Net",
           "href": "../../../companies/inference-net",
-          "rawText": "Inference Affordable, scalable LLM inference API. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Inference Affordable, scalable LLM inference API. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "flow-engineering",
           "name": "Flow Engineering",
           "href": "../../../companies/flow-engineering",
-          "rawText": "Flow The Agile Requirements Management Platform. Hardware \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Flow The Agile Requirements Management Platform. Hardware Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "reducto",
           "name": "Reducto",
           "href": "../../../companies/reducto",
-          "rawText": "Reducto Document ingestion API. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Reducto Document ingestion API. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mintlify",
           "name": "Mintlify",
           "href": "../../../companies/mintlify",
-          "rawText": "Mintlify The documentation platform of tomorrow. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mintlify The documentation platform of tomorrow. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "zeroentropy",
           "name": "Zeroentropy",
           "href": "../../../companies/zeroentropy",
-          "rawText": "ZeroEntropy World-class agentic retrieval on autopilot. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "ZeroEntropy World-class agentic retrieval on autopilot. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "found",
           "name": "Found",
           "href": "../../../companies/found",
-          "rawText": "Found Banking for the self-employed. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Found Banking for the self-employed. Fintech Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "owner",
           "name": "Owner",
           "href": "../../../companies/owner",
-          "rawText": "Owner Online ordering and restaurant marketing system. Food \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Owner Online ordering and restaurant marketing system. Food Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "clockwise",
           "name": "Clockwise",
           "href": "../../../companies/clockwise",
-          "rawText": "Clockwise AI-powered scheduling for a better workday. Productivity \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Clockwise AI-powered scheduling for a better workday. Productivity Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mainstay",
           "name": "Mainstay",
           "href": "../../../companies/mainstay",
-          "rawText": "Mainstay Market intelligence platform for real estate. Real Estate \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mainstay Market intelligence platform for real estate. Real Estate Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "anara",
           "name": "Anara",
           "href": "../../../companies/anara",
-          "rawText": "Anara AI for researchers. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Anara AI for researchers. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "kernel",
           "name": "Kernel",
           "href": "../../../companies/kernel",
-          "rawText": "Kernel Browser infrastructure for web agents and automations. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Kernel Browser infrastructure for web agents and automations. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mastra",
           "name": "Mastra",
           "href": "../../../companies/mastra",
-          "rawText": "Mastra The Typescript agent framework. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mastra The Typescript agent framework. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "datacurve",
           "name": "Datacurve",
           "href": "../../../companies/datacurve",
-          "rawText": "Datacurve Frontier code data for foundation models. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Datacurve Frontier code data for foundation models. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "david-ai",
           "name": "David AI",
           "href": "../../../companies/david-ai",
-          "rawText": "David AI The data layer for audio AI. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "David AI The data layer for audio AI. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "unify",
           "name": "Unify",
           "href": "../../../companies/unify",
-          "rawText": "Unify Transform growth into a science. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Unify Transform growth into a science. Productivity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "seso",
           "name": "Seso",
           "href": "../../../companies/seso",
-          "rawText": "Seso Employee management built for ag. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Seso Employee management built for ag. Productivity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "supermemory",
           "name": "Supermemory",
           "href": "../../../companies/supermemory",
-          "rawText": "Supermemory Universal memory API for AI apps. DevTools \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Supermemory Universal memory API for AI apps. DevTools Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "convoke-bio",
           "name": "Convoke Bio",
           "href": "../../../companies/convoke-bio",
-          "rawText": "Convoke AI-native OS for drug development. Biotech \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Convoke AI-native OS for drug development. Biotech Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "paper",
           "name": "Paper",
           "href": "../../../companies/paper",
-          "rawText": "Paper The new home for designers. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Paper The new home for designers. Design Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "mem",
           "name": "Mem",
           "href": "../../../companies/mem",
-          "rawText": "Mem Your AI knowledge assistant. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mem Your AI knowledge assistant. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "cal-com",
           "name": "Cal Com",
           "href": "../../../companies/cal-com",
-          "rawText": "Cal.com Open scheduling infrastructure. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cal.com Open scheduling infrastructure. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "osmind",
           "name": "Osmind",
           "href": "../../../companies/osmind",
-          "rawText": "Osmind Tech for breakthrough mental health research. Healthcare \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Osmind Tech for breakthrough mental health research. Healthcare Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "collate",
           "name": "Collate",
           "href": "../../../companies/collate",
-          "rawText": "Collate Empowering life sciences development. Healthcare \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Collate Empowering life sciences development. Healthcare Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "prime-intellect",
           "name": "Prime Intellect",
           "href": "../../../companies/prime-intellect",
-          "rawText": "Prime Intellect Commoditizing compute and intelligence. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Prime Intellect Commoditizing compute and intelligence. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "pierre",
           "name": "Pierre",
           "href": "../../../companies/pierre",
-          "rawText": "Pierre Joyful code review. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pierre Joyful code review. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "supabase",
           "name": "Supabase",
           "href": "../../../companies/supabase",
-          "rawText": "Supabase Open-source Firebase alternative. DevTools \u00c2\u00b7 Series E \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Supabase Open-source Firebase alternative. DevTools Â· Series E Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "thinking-machines",
           "name": "Thinking Machines",
           "href": "../../../companies/thinking-machines",
-          "rawText": "Thinking Machines Building Tinker. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Thinking Machines Building Tinker. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "promise-pay",
           "name": "Promise Pay",
           "href": "../../../companies/promise-pay",
-          "rawText": "Promise Streamlining government payments and benefits. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Promise Streamlining government payments and benefits. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "moonlake-ai",
           "name": "Moonlake AI",
           "href": "../../../companies/moonlake-ai",
-          "rawText": "Moonlake Vibe coding interactive worlds. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Moonlake Vibe coding interactive worlds. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "blackbird-labs",
           "name": "Blackbird Labs",
           "href": "../../../companies/blackbird-labs",
-          "rawText": "Blackbird Crypto restaurant rewards app. Web3 \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Blackbird Crypto restaurant rewards app. Web3 Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "framework",
           "name": "Framework",
           "href": "../../../companies/framework",
-          "rawText": "Framework Consumer electronics to respect people and the planet. Hardware \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Framework Consumer electronics to respect people and the planet. Hardware Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "posthog",
           "name": "Posthog",
           "href": "../../../companies/posthog",
-          "rawText": "PostHog How developers build successful products. DevTools \u00c2\u00b7 Series E \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "PostHog How developers build successful products. DevTools Â· Series E Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "nexhealth",
           "name": "Nexhealth",
           "href": "../../../companies/nexhealth",
-          "rawText": "NexHealth Real-time patient booking platform. Healthcare \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "NexHealth Real-time patient booking platform. Healthcare Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "fermat",
           "name": "Fermat",
           "href": "../../../companies/fermat",
-          "rawText": "FERM\u00c3\u0080T Tailor every touchpoint. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "FERMÃT Tailor every touchpoint. Productivity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "patch",
           "name": "Patch",
           "href": "../../../companies/patch",
-          "rawText": "Patch Rebalance the planet. Climate \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Patch Rebalance the planet. Climate Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "newlimit",
           "name": "Newlimit",
           "href": "../../../companies/newlimit",
-          "rawText": "NewLimit Extending human healthspan. Biotech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "NewLimit Extending human healthspan. Biotech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "polycam",
           "name": "Polycam",
           "href": "../../../companies/polycam",
-          "rawText": "Polycam Truly cross-platform 3D capture. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Polycam Truly cross-platform 3D capture. Design Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "slash",
           "name": "Slash",
           "href": "../../../companies/slash",
-          "rawText": "Slash Business banking for internet entrepreneurs. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Slash Business banking for internet entrepreneurs. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "hyperbolic",
           "name": "Hyperbolic",
           "href": "../../../companies/hyperbolic",
-          "rawText": "Hyperbolic Building the open-access AI cloud. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Hyperbolic Building the open-access AI cloud. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "podqi",
           "name": "Podqi",
           "href": "../../../companies/podqi",
-          "rawText": "Podqi AI-Powered IP protection. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Podqi AI-Powered IP protection. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "parabola",
           "name": "Parabola",
           "href": "../../../companies/parabola",
-          "rawText": "Parabola Turn messy data into AI workflows. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Parabola Turn messy data into AI workflows. DevTools Â· Series B Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "modular",
           "name": "Modular",
           "href": "../../../companies/modular",
-          "rawText": "Modular VMware for the AI era. AI \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Modular VMware for the AI era. AI Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "imbue-ai",
           "name": "Imbue AI",
           "href": "../../../companies/imbue-ai",
-          "rawText": "Imbue Rekindling the dream of personal computing. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Imbue Rekindling the dream of personal computing. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "edia",
           "name": "Edia",
           "href": "../../../companies/edia",
-          "rawText": "Edia The AI platform for K-12. Education \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Edia The AI platform for K-12. Education Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "divine-research",
           "name": "Divine Research",
           "href": "../../../companies/divine-research",
-          "rawText": "Divine Undercollateralized lending system. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Divine Undercollateralized lending system. Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "juicebox",
           "name": "Juicebox",
           "href": "../../../companies/juicebox",
-          "rawText": "Juicebox AI-powered recruiting platform. HR & Recruiting \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Juicebox AI-powered recruiting platform. HR & Recruiting Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "nudge",
           "name": "Nudge",
           "href": "../../../companies/nudge",
-          "rawText": "Nudge Whole-brain interfaces for everyday life. Biotech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nudge Whole-brain interfaces for everyday life. Biotech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "manifest",
           "name": "Manifest",
           "href": "../../../companies/manifest",
-          "rawText": "Manifest How small business dreams big. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Manifest How small business dreams big. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "neon-pay",
           "name": "Neon Pay",
           "href": "../../../companies/neon-pay",
-          "rawText": "Neon Pay Commerce and payment tools for games. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Neon Pay Commerce and payment tools for games. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "tolans",
           "name": "Tolans",
           "href": "../../../companies/tolans",
-          "rawText": "Tolans An embodied companion. Consumer \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tolans An embodied companion. Consumer Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "succint",
           "name": "Succint",
           "href": "../../../companies/succint",
-          "rawText": "Succinct Making cryptography easier. Web3 \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Succinct Making cryptography easier. Web3 Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "seed-health",
           "name": "Seed Health",
           "href": "../../../companies/seed-health",
-          "rawText": "Seed Microbes for human and planetary health Health & Wellness \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Seed Microbes for human and planetary health Health & Wellness Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "martian",
           "name": "Martian",
           "href": "../../../companies/martian",
-          "rawText": "Martian AI interpretability tooling. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Martian AI interpretability tooling. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "coderabbit",
           "name": "Coderabbit",
           "href": "../../../companies/coderabbit",
-          "rawText": "CodeRabbit AI code reviews. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "CodeRabbit AI code reviews. DevTools Â· Series B Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "cube",
           "name": "Cube",
           "href": "../../../companies/cube",
-          "rawText": "Cube The semantic layer for every data app. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cube The semantic layer for every data app. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "greptile",
           "name": "Greptile",
           "href": "../../../companies/greptile",
-          "rawText": "Greptile Using AI to catch bugs. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Greptile Using AI to catch bugs. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "kaedim",
           "name": "Kaedim",
           "href": "../../../companies/kaedim",
-          "rawText": "Kaedim Production ready on-demand 3D models. Design \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Kaedim Production ready on-demand 3D models. Design Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "cardless",
           "name": "Cardless",
           "href": "../../../companies/cardless",
-          "rawText": "Cardless Embedded credit card platform. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cardless Embedded credit card platform. Fintech Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "radiantgraph",
           "name": "Radiantgraph",
           "href": "../../../companies/radiantgraph",
-          "rawText": "RadiantGraph Intelligent personalization for healthcare. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "RadiantGraph Intelligent personalization for healthcare. Healthcare Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "until-labs",
           "name": "Until Labs",
           "href": "../../../companies/until-labs",
-          "rawText": "Until Developing reversible cryopreservation. Biotech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Until Developing reversible cryopreservation. Biotech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "axiom",
           "name": "Axiom",
           "href": "../../../companies/axiom",
-          "rawText": "Axiom Logging, re-invented. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Axiom Logging, re-invented. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "e2b",
           "name": "E2b",
           "href": "../../../companies/e2b",
-          "rawText": "E2B Open-source cloud for AI agents. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "E2B Open-source cloud for AI agents. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "loyal-dogs",
           "name": "Loyal Dogs",
           "href": "../../../companies/loyal-dogs",
-          "rawText": "Loyal Extending the lifespan of dogs. Biotech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Loyal Extending the lifespan of dogs. Biotech Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "anon",
           "name": "Anon",
           "href": "../../../companies/anon",
-          "rawText": "Anon The integration platform for the AI internet. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Anon The integration platform for the AI internet. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "arcade-ai",
           "name": "Arcade AI",
           "href": "../../../companies/arcade-ai",
-          "rawText": "Arcade AI product creation platform. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Arcade AI product creation platform. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "bem",
           "name": "Bem",
           "href": "../../../companies/bem",
-          "rawText": "bem The AI data interface. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "bem The AI data interface. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "bedrock-robotics",
           "name": "Bedrock Robotics",
           "href": "../../../companies/bedrock-robotics",
-          "rawText": "Bedrock Robotics Advanced autonomy for the built world. Robotics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bedrock Robotics Advanced autonomy for the built world. Robotics Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "tandem",
           "name": "Tandem",
           "href": "../../../companies/tandem",
-          "rawText": "Tandem Accelerate access to medicine. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tandem Accelerate access to medicine. Healthcare Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "stable",
           "name": "Stable",
           "href": "../../../companies/stable",
-          "rawText": "Stable Virtual address + mailroom for startups. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Stable Virtual address + mailroom for startups. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "midday",
           "name": "Midday",
           "href": "../../../companies/midday",
-          "rawText": "Midday Run your business smarter. Fintech \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Midday Run your business smarter. Fintech Â· Pre-Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "sonder",
           "name": "Sonder",
           "href": "../../../companies/sonder",
-          "rawText": "Sonder Interfaces for human intimacy. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sonder Interfaces for human intimacy. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "subframe",
           "name": "Subframe",
           "href": "../../../companies/subframe",
-          "rawText": "Subframe The UI design tool for the AI era. Design \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Subframe The UI design tool for the AI era. Design Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "column",
           "name": "Column",
           "href": "../../../companies/column",
-          "rawText": "Column The developer infrastructure bank. Fintech \u00c2\u00b7 Private \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Column The developer infrastructure bank. Fintech Â· Private Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "openpay",
           "name": "Openpay",
           "href": "../../../companies/openpay",
-          "rawText": "OpenPay Scale and optimize your subscription business. Fintech \u00c2\u00b7 Private \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "OpenPay Scale and optimize your subscription business. Fintech Â· Private Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "langbase",
           "name": "Langbase",
           "href": "../../../companies/langbase",
-          "rawText": "Langbase Serverless AI developer platform. DevTools \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Langbase Serverless AI developer platform. DevTools Â· Pre-Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "adaline-ai",
           "name": "Adaline AI",
           "href": "../../../companies/adaline-ai",
-          "rawText": "Adaline Iterate, evaluate, deploy, and monitor LLMs. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Adaline Iterate, evaluate, deploy, and monitor LLMs. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "aqua-voice",
           "name": "Aqua Voice",
           "href": "../../../companies/aqua-voice",
-          "rawText": "Aqua Voice Talk into any text box. Productivity \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Aqua Voice Talk into any text box. Productivity Â· Pre-Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "common-knowledge",
           "name": "Common Knowledge",
           "href": "../../../companies/common-knowledge",
-          "rawText": "Common Knowledge Reinventing the document in the age of AI. Design \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Common Knowledge Reinventing the document in the age of AI. Design Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "rec-technologies",
           "name": "Rec Technologies",
           "href": "../../../companies/rec-technologies",
-          "rawText": "Rec Tech to power the future of recreation. Health & Wellness \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Rec Tech to power the future of recreation. Health & Wellness Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
-          "slug": "apoth\u00c3\u00a9kary",
-          "name": "Apoth\u00e3\u00a9kary",
-          "href": "../../../companies/apoth\u00c3\u00a9kary",
-          "rawText": "Apoth\u00c3\u00a9kary Mother Nature's farmacy. Health & Wellness \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "slug": "apothÃ©kary",
+          "name": "Apothã©kary",
+          "href": "../../../companies/apothÃ©kary",
+          "rawText": "ApothÃ©kary Mother Nature's farmacy. Health & Wellness Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "hyperbound",
           "name": "Hyperbound",
           "href": "../../../companies/hyperbound",
-          "rawText": "Hyperbound AI sales coach. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Hyperbound AI sales coach. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "sway",
           "name": "Sway",
           "href": "../../../companies/sway",
-          "rawText": "Sway Seaweed as replacement for plastic. Biotech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sway Seaweed as replacement for plastic. Biotech Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "arc",
           "name": "Arc",
           "href": "../../../companies/arc",
-          "rawText": "Arc Intelligent cash management. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Arc Intelligent cash management. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "orchids",
           "name": "Orchids",
           "href": "../../../companies/orchids",
-          "rawText": "Orchids Prompt a beautiful website in seconds. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Orchids Prompt a beautiful website in seconds. Design Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "comfy-ui",
           "name": "Comfy Ui",
           "href": "../../../companies/comfy-ui",
-          "rawText": "Comfy Building ComfyUI. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Comfy Building ComfyUI. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "willow",
           "name": "Willow",
           "href": "../../../companies/willow",
-          "rawText": "Willow Write 4X faster with voice dictation. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Willow Write 4X faster with voice dictation. Productivity Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "the-interaction-company-of-california",
           "name": "The Interaction Company Of California",
           "href": "../../../companies/the-interaction-company-of-california",
-          "rawText": "The Interaction Company of California Building Poke. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "The Interaction Company of California Building Poke. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "central-hq",
           "name": "Central Hq",
           "href": "../../../companies/central-hq",
-          "rawText": "Central Payroll, benefits and gov compliance for startups. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Central Payroll, benefits and gov compliance for startups. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "meter",
           "name": "Meter",
           "href": "../../../companies/meter",
-          "rawText": "Meter Internet infrastructure for the enterprise. Hardware \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Meter Internet infrastructure for the enterprise. Hardware Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "openmind",
           "name": "Openmind",
           "href": "../../../companies/openmind",
-          "rawText": "OpenMind Building Android for robots. Robotics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "OpenMind Building Android for robots. Robotics Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "stackai",
           "name": "Stackai",
           "href": "../../../companies/stackai",
-          "rawText": "StackAI No-code platform to build AI agents. AI \u00c2\u00b7 Series A \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "StackAI No-code platform to build AI agents. AI Â· Series A Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "hedra-ai",
           "name": "Hedra AI",
           "href": "../../../companies/hedra-ai",
-          "rawText": "Hedra The generative media creation platform. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Hedra The generative media creation platform. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "greenlite",
           "name": "Greenlite",
           "href": "../../../companies/greenlite",
-          "rawText": "Greenlite AI Trusted AI agents for financial crime. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Greenlite AI Trusted AI agents for financial crime. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "aegisai",
           "name": "Aegisai",
           "href": "../../../companies/aegisai",
-          "rawText": "Aegis AI AI native email security. Cybersecurity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Aegis AI AI native email security. Cybersecurity Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "dimension-labs",
           "name": "Dimension Labs",
           "href": "../../../companies/dimension-labs",
-          "rawText": "Dimension Labs Unstructured conversation analytics platform. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Dimension Labs Unstructured conversation analytics platform. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "symbiotic",
           "name": "Symbiotic",
           "href": "../../../companies/symbiotic",
-          "rawText": "Symbiotic Universal staking platform. Web3 \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Symbiotic Universal staking platform. Web3 Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "farel",
           "name": "Farel",
           "href": "../../../companies/farel",
-          "rawText": "Farel Airline on autopilot. Travel \u00c2\u00b7 Seed \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Farel Airline on autopilot. Travel Â· Seed Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "kite-ai",
           "name": "Kite AI",
           "href": "../../../companies/kite-ai",
-          "rawText": "Kite The base layer for the agentic web. Web3 \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Kite The base layer for the agentic web. Web3 Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "human-behavior",
           "name": "Human Behavior",
           "href": "../../../companies/human-behavior",
-          "rawText": "Human Behavior Behavioral analytics platform. Analytics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Human Behavior Behavioral analytics platform. Analytics Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "cognition-ai",
           "name": "Cognition AI",
           "href": "../../../companies/cognition-ai",
-          "rawText": "Cognition The first software engineer. AI \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cognition The first software engineer. AI Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "11x",
           "name": "11x",
           "href": "../../../companies/11x",
-          "rawText": "11x AI digital workers platform. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "11x AI digital workers platform. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "tako",
           "name": "Tako",
           "href": "../../../companies/tako",
-          "rawText": "Tako AI search engine to visualize knowledge. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tako AI search engine to visualize knowledge. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "superpower",
           "name": "Superpower",
           "href": "../../../companies/superpower",
-          "rawText": "Superpower The most advanced platform to optimize your health. Health & Wellness \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Superpower The most advanced platform to optimize your health. Health & Wellness Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mural",
           "name": "Mural",
           "href": "../../../companies/mural",
-          "rawText": "Mural FigJam for enterprises. Productivity \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mural FigJam for enterprises. Productivity Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "inkeep",
           "name": "Inkeep",
           "href": "../../../companies/inkeep",
-          "rawText": "Inkeep AI support you can trust. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Inkeep AI support you can trust. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "cambium",
           "name": "Cambium",
           "href": "../../../companies/cambium",
-          "rawText": "Cambium Where timber meets tech. Construction \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cambium Where timber meets tech. Construction Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "sola-security",
           "name": "Sola Security",
           "href": "../../../companies/sola-security",
-          "rawText": "Sola Security The no-BS security app studio. Cybersecurity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sola Security The no-BS security app studio. Cybersecurity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "augment",
           "name": "Augment",
           "href": "../../../companies/augment",
-          "rawText": "Augment AI teammate for logistics. Logistics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Augment AI teammate for logistics. Logistics Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "recall-ai",
           "name": "Recall AI",
           "href": "../../../companies/recall-ai",
-          "rawText": "Recall.ai Universal API for real-time meeting data. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Recall.ai Universal API for real-time meeting data. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "aetherflux",
           "name": "Aetherflux",
           "href": "../../../companies/aetherflux",
-          "rawText": "Aetherflux Space solar power. Aerospace \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Aetherflux Space solar power. Aerospace Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "ranger",
           "name": "Ranger",
           "href": "../../../companies/ranger",
-          "rawText": "Ranger Fast, reliable QA testing. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Ranger Fast, reliable QA testing. DevTools Â· Seed Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "interfere",
           "name": "Interfere",
           "href": "../../../companies/interfere",
-          "rawText": "Interfere Build software that can fix itself. DevTools \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Interfere Build software that can fix itself. DevTools Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "sfcompute",
           "name": "Sfcompute",
           "href": "../../../companies/sfcompute",
-          "rawText": "San Francisco Compute Company Rentable, large, low-cost pre-training clusters. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "San Francisco Compute Company Rentable, large, low-cost pre-training clusters. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "astromech",
           "name": "Astromech",
           "href": "../../../companies/astromech",
-          "rawText": "Astromech Navigating the code of life. Biotech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Astromech Navigating the code of life. Biotech Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "aurasell",
           "name": "Aurasell",
           "href": "../../../companies/aurasell",
-          "rawText": "Aurasell AI-native CRM. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Aurasell AI-native CRM. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "hanomi",
           "name": "Hanomi",
           "href": "../../../companies/hanomi",
-          "rawText": "Hanomi Reimagining hardware design. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Hanomi Reimagining hardware design. Design Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "things",
           "name": "Things",
           "href": "../../../companies/things",
-          "rawText": "Things 3D spaces creation platform. Consumer \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Things 3D spaces creation platform. Consumer Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "medallion",
           "name": "Medallion",
           "href": "../../../companies/medallion",
-          "rawText": "Medallion Provider operations platform. Healthcare \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Medallion Provider operations platform. Healthcare Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "dagster",
           "name": "Dagster",
           "href": "../../../companies/dagster",
-          "rawText": "Dagster Ship data pipelines with extraordinary velocity. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Dagster Ship data pipelines with extraordinary velocity. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "browserbase",
           "name": "Browserbase",
           "href": "../../../companies/browserbase",
-          "rawText": "Browserbase A web browser for your AI. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Browserbase A web browser for your AI. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "freed",
           "name": "Freed",
           "href": "../../../companies/freed",
-          "rawText": "Freed AI Scribe for happier clinicians. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Freed AI Scribe for happier clinicians. Healthcare Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "two-dots",
           "name": "Two Dots",
           "href": "../../../companies/two-dots",
-          "rawText": "Two Dots Consumer underwriting agent. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Two Dots Consumer underwriting agent. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "invert-bio",
           "name": "Invert Bio",
           "href": "../../../companies/invert-bio",
-          "rawText": "Invert Modern software for bioprocess data. Biotech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Invert Modern software for bioprocess data. Biotech Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "upwind",
           "name": "Upwind",
           "href": "../../../companies/upwind",
-          "rawText": "Upwind Cloud security happens at runtime. Cybersecurity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Upwind Cloud security happens at runtime. Cybersecurity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "oway",
           "name": "Oway",
           "href": "../../../companies/oway",
-          "rawText": "Oway Uber for freight. Transportation \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Oway Uber for freight. Transportation Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "conversion",
           "name": "Conversion",
           "href": "../../../companies/conversion",
-          "rawText": "Conversion AI-native marketing automation. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Conversion AI-native marketing automation. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "coframe",
           "name": "Coframe",
           "href": "../../../companies/coframe",
-          "rawText": "Coframe Bringing user experiences to life. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Coframe Bringing user experiences to life. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "playbook",
           "name": "Playbook",
           "href": "../../../companies/playbook",
-          "rawText": "Playbook Cloud storage for creatives. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Playbook Cloud storage for creatives. Design Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "mage",
           "name": "Mage",
           "href": "../../../companies/mage",
-          "rawText": "Mage Open-source data pipeline tool. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mage Open-source data pipeline tool. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "walrus",
           "name": "Walrus",
           "href": "../../../companies/walrus",
-          "rawText": "Walrus Scalable, onchain storage. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Walrus Scalable, onchain storage. Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "stride-health",
           "name": "Stride Health",
           "href": "../../../companies/stride-health",
-          "rawText": "Stride Portable benefits for small business. Healthcare \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Stride Portable benefits for small business. Healthcare Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "merge",
           "name": "Merge",
           "href": "../../../companies/merge",
-          "rawText": "Merge One API to 100s of integrations. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Merge One API to 100s of integrations. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "instant",
           "name": "Instant",
           "href": "../../../companies/instant",
-          "rawText": "Instant A modern Firebase. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Instant A modern Firebase. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "wordware",
           "name": "Wordware",
           "href": "../../../companies/wordware",
-          "rawText": "Wordware AI Agent orchestration platform. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Wordware AI Agent orchestration platform. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "roboflow",
           "name": "Roboflow",
           "href": "../../../companies/roboflow",
-          "rawText": "Roboflow Computer vision tools for developers and enterprises. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Roboflow Computer vision tools for developers and enterprises. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "dub-co",
           "name": "Dub Co",
           "href": "../../../companies/dub-co",
-          "rawText": "Dub The modern link attribution platform. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Dub The modern link attribution platform. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "mail0",
           "name": "Mail0",
           "href": "../../../companies/mail0",
-          "rawText": "Mail0 AI native email client. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mail0 AI native email client. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "middesk",
           "name": "Middesk",
           "href": "../../../companies/middesk",
-          "rawText": "Middesk Business identity platform. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Middesk Business identity platform. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "thatch",
           "name": "Thatch",
           "href": "../../../companies/thatch",
-          "rawText": "Thatch Modern health benefits platform. Healthcare \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Thatch Modern health benefits platform. Healthcare Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "onyx",
           "name": "Onyx",
           "href": "../../../companies/onyx",
-          "rawText": "Onyx Open source AI connected to your work. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Onyx Open source AI connected to your work. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "pylon",
           "name": "Pylon",
           "href": "../../../companies/pylon",
-          "rawText": "Pylon The support platform built for B2B. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pylon The support platform built for B2B. Productivity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "nuvo",
           "name": "Nuvo",
           "href": "../../../companies/nuvo",
-          "rawText": "Nuvo Make trade credit your competitive advantage. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nuvo Make trade credit your competitive advantage. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "paradigm",
           "name": "Paradigm",
           "href": "../../../companies/paradigm",
-          "rawText": "Paradigm Agentic spreadsheets. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Paradigm Agentic spreadsheets. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "footprint",
           "name": "Footprint",
           "href": "../../../companies/footprint",
-          "rawText": "Footprint Frictionless KYC + KYB. Cybersecurity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Footprint Frictionless KYC + KYB. Cybersecurity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "incident-io",
           "name": "Incident Io",
           "href": "../../../companies/incident-io",
-          "rawText": "incident.io Incident management platform. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "incident.io Incident management platform. Productivity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "workos",
           "name": "Workos",
           "href": "../../../companies/workos",
-          "rawText": "WorkOS Dev platform to implement enterprise-grade features. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "WorkOS Dev platform to implement enterprise-grade features. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "chronicle",
           "name": "Chronicle",
           "href": "../../../companies/chronicle",
-          "rawText": "Chronicle Cursor for slides. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Chronicle Cursor for slides. Design Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "cline",
           "name": "Cline",
           "href": "../../../companies/cline",
-          "rawText": "Cline Open source AI coding. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cline Open source AI coding. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "nowadays",
           "name": "Nowadays",
           "href": "../../../companies/nowadays",
-          "rawText": "Nowadays AI for corporate events. Travel \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nowadays AI for corporate events. Travel Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "alix",
           "name": "Alix",
           "href": "../../../companies/alix",
-          "rawText": "Alix Wealth transfer platform. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Alix Wealth transfer platform. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "stytch",
           "name": "Stytch",
           "href": "../../../companies/stytch",
-          "rawText": "Stytch Authentication infrastructure for developers. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Stytch Authentication infrastructure for developers. DevTools Â· Series B Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "julius-ai",
           "name": "Julius AI",
           "href": "../../../companies/julius-ai",
-          "rawText": "Julius AI data scientist. Analytics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Julius AI data scientist. Analytics Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "eternal",
           "name": "Eternal",
           "href": "../../../companies/eternal",
-          "rawText": "Eternal Longevity care for athletes. Healthcare \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Eternal Longevity care for athletes. Healthcare Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "composio",
           "name": "Composio",
           "href": "../../../companies/composio",
-          "rawText": "Composio The skill layer of AI. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Composio The skill layer of AI. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "blok",
           "name": "Blok",
           "href": "../../../companies/blok",
-          "rawText": "Blok Make better product decisions. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Blok Make better product decisions. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "delphi",
           "name": "Delphi",
           "href": "../../../companies/delphi",
-          "rawText": "Delphi A digital you. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Delphi A digital you. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "paraform",
           "name": "Paraform",
           "href": "../../../companies/paraform",
-          "rawText": "Paraform Recruiting, made easy. HR & Recruiting \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Paraform Recruiting, made easy. HR & Recruiting Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "lindy",
           "name": "Lindy",
           "href": "../../../companies/lindy",
-          "rawText": "Lindy Building AI employees without hype. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Lindy Building AI employees without hype. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "nexad",
           "name": "Nexad",
           "href": "../../../companies/nexad",
-          "rawText": "Nexad Native ads system for the AI era. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nexad Native ads system for the AI era. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "roadway",
           "name": "Roadway",
           "href": "../../../companies/roadway",
-          "rawText": "Roadway End-to-end attribution. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Roadway End-to-end attribution. Productivity Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "lightsource",
           "name": "Lightsource",
           "href": "../../../companies/lightsource",
-          "rawText": "Lightsource Supply chain management platform. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Lightsource Supply chain management platform. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "backflip-ai",
           "name": "Backflip AI",
           "href": "../../../companies/backflip-ai",
-          "rawText": "Backflip AI 3D AI for the physical world. Design \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Backflip AI 3D AI for the physical world. Design Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "oxide-computer-company",
           "name": "Oxide Computer Company",
           "href": "../../../companies/oxide-computer-company",
-          "rawText": "Oxide Computer Company On prem cloud computer. Hardware \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Oxide Computer Company On prem cloud computer. Hardware Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "ashby",
           "name": "Ashby",
           "href": "../../../companies/ashby",
-          "rawText": "Ashby Recruitment software platform. HR & Recruiting \u00c2\u00b7 Series D \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Ashby Recruitment software platform. HR & Recruiting Â· Series D Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "power",
           "name": "Power",
           "href": "../../../companies/power",
-          "rawText": "Power Connecting patients with clinical trials. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Power Connecting patients with clinical trials. Healthcare Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "salient",
           "name": "Salient",
           "href": "../../../companies/salient",
-          "rawText": "Salient AI servicing for auto lenders. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Salient AI servicing for auto lenders. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "arcade",
           "name": "Arcade",
           "href": "../../../companies/arcade",
-          "rawText": "Arcade Create effortlessly beautiful demos, in minutes. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Arcade Create effortlessly beautiful demos, in minutes. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "atob",
           "name": "Atob",
           "href": "../../../companies/atob",
-          "rawText": "AtoB Rebuilding global transportation payments. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "AtoB Rebuilding global transportation payments. Fintech Â· Series C Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "pocus",
           "name": "Pocus",
           "href": "../../../companies/pocus",
-          "rawText": "Pocus 10x your sales team with AI. Analytics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pocus 10x your sales team with AI. Analytics Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "endeavor",
           "name": "Endeavor",
           "href": "../../../companies/endeavor",
-          "rawText": "Endeavor Smart manafacturing with AI. Construction \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Endeavor Smart manafacturing with AI. Construction Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "armada",
           "name": "Armada",
           "href": "../../../companies/armada",
-          "rawText": "Armada Full-stack edge computing platform. AI \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Armada Full-stack edge computing platform. AI Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "vanta",
           "name": "Vanta",
           "href": "../../../companies/vanta",
-          "rawText": "Vanta Security monitoring platform. Cybersecurity \u00c2\u00b7 Series D \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Vanta Security monitoring platform. Cybersecurity Â· Series D Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "density",
           "name": "Density",
           "href": "../../../companies/density",
-          "rawText": "Density Analytics platform for physical workspaces. Construction \u00c2\u00b7 Series D \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Density Analytics platform for physical workspaces. Construction Â· Series D Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "momentum",
           "name": "Momentum",
           "href": "../../../companies/momentum",
-          "rawText": "Momentum Sales insights platform for GTM teams. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Momentum Sales insights platform for GTM teams. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "deepnote",
           "name": "Deepnote",
           "href": "../../../companies/deepnote",
-          "rawText": "Deepnote The AI-powered data workspace. Analytics \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Deepnote The AI-powered data workspace. Analytics Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "fireflies",
           "name": "Fireflies",
           "href": "../../../companies/fireflies",
-          "rawText": "Fireflies ChatGPT for meetings. AI \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Fireflies ChatGPT for meetings. AI Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "hex",
           "name": "Hex",
           "href": "../../../companies/hex",
-          "rawText": "Hex Go deeper than dashboards. Analytics \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Hex Go deeper than dashboards. Analytics Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "dakota",
           "name": "Dakota",
           "href": "../../../companies/dakota",
-          "rawText": "Dakota Business banking powered by stablecoins. Web3 \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Dakota Business banking powered by stablecoins. Web3 Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "shepherd",
           "name": "Shepherd",
           "href": "../../../companies/shepherd",
-          "rawText": "Shepherd Insurance for commerical construction. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Shepherd Insurance for commerical construction. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "bland",
           "name": "Bland",
           "href": "../../../companies/bland",
-          "rawText": "Bland The enterprise platform for AI phone calls. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bland The enterprise platform for AI phone calls. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "orchid",
           "name": "Orchid",
           "href": "../../../companies/orchid",
-          "rawText": "Orchid Helping couples have healthy babies. Healthcare \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Orchid Helping couples have healthy babies. Healthcare Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "magic",
           "name": "Magic",
           "href": "../../../companies/magic",
-          "rawText": "Magic Building an AI software engineer. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Magic Building an AI software engineer. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "jam",
           "name": "Jam",
           "href": "../../../companies/jam",
-          "rawText": "Jam 1-click bug reports devs love. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Jam 1-click bug reports devs love. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "olipop",
           "name": "Olipop",
           "href": "../../../companies/olipop",
-          "rawText": "Olipop Healthier, prebiotic soda. Food \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Olipop Healthier, prebiotic soda. Food Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "dotwork",
           "name": "Dotwork",
           "href": "../../../companies/dotwork",
-          "rawText": "Dotwork Next-gen ops platform for the AI era. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Dotwork Next-gen ops platform for the AI era. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "stable-sea",
           "name": "Stable Sea",
           "href": "../../../companies/stable-sea",
-          "rawText": "Stable Sea Global stablecoin offramps for businesses. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Stable Sea Global stablecoin offramps for businesses. Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "laurel",
           "name": "Laurel",
           "href": "../../../companies/laurel",
-          "rawText": "Laurel AI that tracks time for you. Productivity \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Laurel AI that tracks time for you. Productivity Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "krea-ai",
           "name": "Krea AI",
           "href": "../../../companies/krea-ai",
-          "rawText": "Krea Next-gen creative suite. Design \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Krea Next-gen creative suite. Design Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "prismax",
           "name": "Prismax",
           "href": "../../../companies/prismax",
-          "rawText": "PrismaX Decentralized robot AI platform. Robotics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "PrismaX Decentralized robot AI platform. Robotics Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "nile",
           "name": "Nile",
           "href": "../../../companies/nile",
-          "rawText": "Nile PostgreSQL reengineered for multi-tenant apps. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Nile PostgreSQL reengineered for multi-tenant apps. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "finix",
           "name": "Finix",
           "href": "../../../companies/finix",
-          "rawText": "Finix Payments infrastructure platform. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Finix Payments infrastructure platform. Fintech Â· Series C Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "resend",
           "name": "Resend",
           "href": "../../../companies/resend",
-          "rawText": "Resend Email for developers. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Resend Email for developers. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "genesis-ai",
           "name": "Genesis AI",
           "href": "../../../companies/genesis-ai",
-          "rawText": "Genesis AI A generalist robotics company. Robotics \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Genesis AI A generalist robotics company. Robotics Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "palmstreet",
           "name": "Palmstreet",
           "href": "../../../companies/palmstreet",
-          "rawText": "Palmstreet Live shopping for rare plants. Consumer \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Palmstreet Live shopping for rare plants. Consumer Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "pally",
           "name": "Pally",
           "href": "../../../companies/pally",
-          "rawText": "pally AI relationship managment. Productivity \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "pally AI relationship managment. Productivity Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "superlinked",
           "name": "Superlinked",
           "href": "../../../companies/superlinked",
-          "rawText": "Superlinked Turn complex data into vector embeddings. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Superlinked Turn complex data into vector embeddings. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "leen",
           "name": "Leen",
           "href": "../../../companies/leen",
-          "rawText": "Leen Unified API for security tools and data. Cybersecurity \u00c2\u00b7 Pre-Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Leen Unified API for security tools and data. Cybersecurity Â· Pre-Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "better-auth",
           "name": "Better Auth",
           "href": "../../../companies/better-auth",
-          "rawText": "Better Auth Authentication library for TypeScript. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Better Auth Authentication library for TypeScript. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "day-ai",
           "name": "Day AI",
           "href": "../../../companies/day-ai",
-          "rawText": "Day.ai Reimagining CRM for the AI age. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Day.ai Reimagining CRM for the AI age. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "decagon",
           "name": "Decagon",
           "href": "../../../companies/decagon",
-          "rawText": "Decagon The 10x customer service agent. AI \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Decagon The 10x customer service agent. AI Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "lumos",
           "name": "Lumos",
           "href": "../../../companies/lumos",
-          "rawText": "Lumos The Autonomous Identity Platform. Cybersecurity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Lumos The Autonomous Identity Platform. Cybersecurity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "seriesai",
           "name": "Seriesai",
           "href": "../../../companies/seriesai",
-          "rawText": "SeriesAI GenAI video game engine. Gaming \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "SeriesAI GenAI video game engine. Gaming Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "kindred",
           "name": "Kindred",
           "href": "../../../companies/kindred",
-          "rawText": "Kindred Members-only network for house sharing. Travel \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Kindred Members-only network for house sharing. Travel Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "slope",
           "name": "Slope",
           "href": "../../../companies/slope",
-          "rawText": "Slope B2B payments platform. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Slope B2B payments platform. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "assembled",
           "name": "Assembled",
           "href": "../../../companies/assembled",
-          "rawText": "Assembled The support operations platform. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Assembled The support operations platform. Productivity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "assemblyai",
           "name": "Assemblyai",
           "href": "../../../companies/assemblyai",
-          "rawText": "AssemblyAI AI models to transcribe and understand speech. AI \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "AssemblyAI AI models to transcribe and understand speech. AI Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "beacons",
           "name": "Beacons",
           "href": "../../../companies/beacons",
-          "rawText": "Beacons All-in-one business platform for creators. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Beacons All-in-one business platform for creators. Productivity Â· Seed Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "mainframe",
           "name": "Mainframe",
           "href": "../../../companies/mainframe",
-          "rawText": "Mainframe Generative computing. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mainframe Generative computing. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "bezi",
           "name": "Bezi",
           "href": "../../../companies/bezi",
-          "rawText": "Bezi Build games with contextual AI. Gaming \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bezi Build games with contextual AI. Gaming Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "new-generation",
           "name": "New Generation",
           "href": "../../../companies/new-generation",
-          "rawText": "New Generation A new kind of AI for commerce. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "New Generation A new kind of AI for commerce. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "vesta",
           "name": "Vesta",
           "href": "../../../companies/vesta",
-          "rawText": "Vesta The future of mortgage infrastructure. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Vesta The future of mortgage infrastructure. Fintech Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "retool",
           "name": "Retool",
           "href": "../../../companies/retool",
-          "rawText": "Retool Build internal software better, with AI. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Retool Build internal software better, with AI. DevTools Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "chalk-ai",
           "name": "Chalk AI",
           "href": "../../../companies/chalk-ai",
-          "rawText": "Chalk The data platform for inference DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Chalk The data platform for inference DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "catena-labs",
           "name": "Catena Labs",
           "href": "../../../companies/catena-labs",
-          "rawText": "Catena Labs Building an AI-native bank. Fintech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Catena Labs Building an AI-native bank. Fintech Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "braintrust",
           "name": "Braintrust",
           "href": "../../../companies/braintrust",
-          "rawText": "Braintrust End-to-end platform for building AI applications. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Braintrust End-to-end platform for building AI applications. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "marqo",
           "name": "Marqo",
           "href": "../../../companies/marqo",
-          "rawText": "Marqo Smarter search, higher conversion. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Marqo Smarter search, higher conversion. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "story",
           "name": "Story",
           "href": "../../../companies/story",
-          "rawText": "Story World's IP blockchain. Web3 \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Story World's IP blockchain. Web3 Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "particle",
           "name": "Particle",
           "href": "../../../companies/particle",
-          "rawText": "Particle AI-based news reader. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Particle AI-based news reader. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "persona",
           "name": "Persona",
           "href": "../../../companies/persona",
-          "rawText": "Persona Identiy infrastructure for the AI age. DevTools \u00c2\u00b7 Series D \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Persona Identiy infrastructure for the AI age. DevTools Â· Series D Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "atlas-data-storage",
           "name": "Atlas Data Storage",
           "href": "../../../companies/atlas-data-storage",
-          "rawText": "Atlas Data Storage Permanent data storage system enabled by DNA Infrastructure \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Atlas Data Storage Permanent data storage system enabled by DNA Infrastructure Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "render",
           "name": "Render",
           "href": "../../../companies/render",
-          "rawText": "Render Cloud application hosting for developers. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Render Cloud application hosting for developers. DevTools Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "plenful",
           "name": "Plenful",
           "href": "../../../companies/plenful",
-          "rawText": "Plenful AI workflow platform for healthcare. Healthcare \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Plenful AI workflow platform for healthcare. Healthcare Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "parafin",
           "name": "Parafin",
           "href": "../../../companies/parafin",
-          "rawText": "Parafin Embedded finance infrastructure for SMBs. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Parafin Embedded finance infrastructure for SMBs. Fintech Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "twelvelabs",
           "name": "Twelvelabs",
           "href": "../../../companies/twelvelabs",
-          "rawText": "TwelveLabs Multimodal foundation models for video understanding. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "TwelveLabs Multimodal foundation models for video understanding. AI Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "buster",
           "name": "Buster",
           "href": "../../../companies/buster",
-          "rawText": "Buster The open-source AI data analyst. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Buster The open-source AI data analyst. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "adaptive-computer",
           "name": "Adaptive Computer",
           "href": "../../../companies/adaptive-computer",
-          "rawText": "Adaptive Computer Building a computer that's actually personal. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Adaptive Computer Building a computer that's actually personal. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "tella",
           "name": "Tella",
           "href": "../../../companies/tella",
-          "rawText": "Tella Screen recording for entrepreneurs. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tella Screen recording for entrepreneurs. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "artisan-ai",
           "name": "Artisan AI",
           "href": "../../../companies/artisan-ai",
-          "rawText": "Artisan AI Artisan AI develops digital workers. AI \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Artisan AI Artisan AI develops digital workers. AI Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "every",
           "name": "Every",
           "href": "../../../companies/every",
-          "rawText": "Every All-in-one back office built for founders. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Every All-in-one back office built for founders. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "riza",
           "name": "Riza",
           "href": "../../../companies/riza",
-          "rawText": "Riza AI writes code. Riza runs it. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Riza AI writes code. Riza runs it. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "pythagora",
           "name": "Pythagora",
           "href": "../../../companies/pythagora",
-          "rawText": "Pythagora Build internal tools with AI. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pythagora Build internal tools with AI. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "withroam",
           "name": "Withroam",
           "href": "../../../companies/withroam",
-          "rawText": "Roam Making home ownership 2x more affordable. Real Estate \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Roam Making home ownership 2x more affordable. Real Estate Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "eco-inc",
           "name": "Eco Inc",
           "href": "../../../companies/eco-inc",
-          "rawText": "Eco Onchain actions to one-click stablesends. Web3 \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Eco Onchain actions to one-click stablesends. Web3 Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "atlas-card",
           "name": "Atlas Card",
           "href": "../../../companies/atlas-card",
-          "rawText": "Atlas Card Modern concierge and spend management platform. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Atlas Card Modern concierge and spend management platform. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "courier",
           "name": "Courier",
           "href": "../../../companies/courier",
-          "rawText": "Courier Plug-and-play notification platform. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Courier Plug-and-play notification platform. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mercury",
           "name": "Mercury",
           "href": "../../../companies/mercury",
-          "rawText": "Mercury Online busines banking for startups. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mercury Online busines banking for startups. Fintech Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "browser-use",
           "name": "Browser Use",
           "href": "../../../companies/browser-use",
-          "rawText": "Browser Use Open-source web agents. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Browser Use Open-source web agents. AI Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "playground",
           "name": "Playground",
           "href": "../../../companies/playground",
-          "rawText": "Playground A superhuman AI graphic designer. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Playground A superhuman AI graphic designer. Design Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "butlr",
           "name": "Butlr",
           "href": "../../../companies/butlr",
-          "rawText": "Butlr Privacy-first ambient sensing platform. Analytics \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Butlr Privacy-first ambient sensing platform. Analytics Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "semgrep",
           "name": "Semgrep",
           "href": "../../../companies/semgrep",
-          "rawText": "Semgrep Fast and lightweight static analysis tool. DevTools \u00c2\u00b7 Series D \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Semgrep Fast and lightweight static analysis tool. DevTools Â· Series D Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "phantom",
           "name": "Phantom",
           "href": "../../../companies/phantom",
-          "rawText": "Phantom Crypto and NFT wallet. Web3 \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Phantom Crypto and NFT wallet. Web3 Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "neon",
           "name": "Neon",
           "href": "../../../companies/neon",
-          "rawText": "Neon Serverless Postgres in the cloud. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Neon Serverless Postgres in the cloud. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "pulse",
           "name": "Pulse",
           "href": "../../../companies/pulse",
-          "rawText": "Pulse Production-grade unstructured document extraction. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pulse Production-grade unstructured document extraction. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "1money",
           "name": "1money",
           "href": "../../../companies/1money",
-          "rawText": "1Money Layer 1 protocol for stablecoin payments. Web3 \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "1Money Layer 1 protocol for stablecoin payments. Web3 Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "sydecar",
           "name": "Sydecar",
           "href": "../../../companies/sydecar",
-          "rawText": "Sydecar Start and run your own fund or SPV. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sydecar Start and run your own fund or SPV. Fintech Â· Series A Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "third-dimension-ai",
           "name": "Third Dimension AI",
           "href": "../../../companies/third-dimension-ai",
-          "rawText": "Third Dimension AI 3D generative AI platform. Design \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Third Dimension AI 3D generative AI platform. Design Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "zip",
           "name": "Zip",
           "href": "../../../companies/zip",
-          "rawText": "Zip Modern procurement platform. Fintech \u00c2\u00b7 Series D \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Zip Modern procurement platform. Fintech Â· Series D Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "anomalo",
           "name": "Anomalo",
           "href": "../../../companies/anomalo",
-          "rawText": "Anomalo Enterprise data quality monitoring. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Anomalo Enterprise data quality monitoring. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "convex",
           "name": "Convex",
           "href": "../../../companies/convex",
-          "rawText": "Convex Backend-as-a-service platform. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Convex Backend-as-a-service platform. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "gym-class",
           "name": "Gym Class",
           "href": "../../../companies/gym-class",
-          "rawText": "Gym Class Play basketball in VR. Gaming \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Gym Class Play basketball in VR. Gaming Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "bureau",
           "name": "Bureau",
           "href": "../../../companies/bureau",
-          "rawText": "Bureau No-code identity decisioning platform. Cybersecurity \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bureau No-code identity decisioning platform. Cybersecurity Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "anyscale",
           "name": "Anyscale",
           "href": "../../../companies/anyscale",
-          "rawText": "Anyscale Scalable compute for AI and Python. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Anyscale Scalable compute for AI and Python. DevTools Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "new-lantern",
           "name": "New Lantern",
           "href": "../../../companies/new-lantern",
-          "rawText": "New Lantern Automation radiolog-related tasks with AI. Healthcare \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "New Lantern Automation radiolog-related tasks with AI. Healthcare Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "alloy-automation",
           "name": "Alloy Automation",
           "href": "../../../companies/alloy-automation",
-          "rawText": "Alloy Automation Embedded iPaaS platform for product teams. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Alloy Automation Embedded iPaaS platform for product teams. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "anvil",
           "name": "Anvil",
           "href": "../../../companies/anvil",
-          "rawText": "Anvil Document SDK for product teams. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Anvil Document SDK for product teams. DevTools Â· Series A Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "adept-ai",
           "name": "Adept AI",
           "href": "../../../companies/adept-ai",
-          "rawText": "Adept AI Useful general intelligence. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Adept AI Useful general intelligence. AI Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "cortex",
           "name": "Cortex",
           "href": "../../../companies/cortex",
-          "rawText": "Cortex Internal developer portal. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Cortex Internal developer portal. DevTools Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "transcend",
           "name": "Transcend",
           "href": "../../../companies/transcend",
-          "rawText": "Transcend Enterprise-grade data privacy infrastructure. Cybersecurity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Transcend Enterprise-grade data privacy infrastructure. Cybersecurity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "zeal",
           "name": "Zeal",
           "href": "../../../companies/zeal",
-          "rawText": "Zeal Modern payroll platform. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Zeal Modern payroll platform. Fintech Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "luma",
           "name": "Luma",
           "href": "../../../companies/luma",
-          "rawText": "Luma Host delightful events online. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Luma Host delightful events online. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "brm",
           "name": "Brm",
           "href": "../../../companies/brm",
-          "rawText": "BRM AI-powered vendor management platform. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "BRM AI-powered vendor management platform. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "encord",
           "name": "Encord",
           "href": "../../../companies/encord",
-          "rawText": "Encord The data development platform for AI. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Encord The data development platform for AI. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "reworkd",
           "name": "Reworkd",
           "href": "../../../companies/reworkd",
-          "rawText": "Reworkd Web-scraping AI agents. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Reworkd Web-scraping AI agents. AI Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "orb",
           "name": "Orb",
           "href": "../../../companies/orb",
-          "rawText": "Orb Modern pricing platform for software companies. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Orb Modern pricing platform for software companies. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "sequel-io",
           "name": "Sequel Io",
           "href": "../../../companies/sequel-io",
-          "rawText": "Sequel.io Host webinars right on your website. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sequel.io Host webinars right on your website. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "stackblitz",
           "name": "Stackblitz",
           "href": "../../../companies/stackblitz",
-          "rawText": "StackBlitz Creators of Bolt. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "StackBlitz Creators of Bolt. DevTools Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "bardeen",
           "name": "Bardeen",
           "href": "../../../companies/bardeen",
-          "rawText": "Bardeen AI agents for workflow automation. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bardeen AI agents for workflow automation. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "era",
           "name": "Era",
           "href": "../../../companies/era",
-          "rawText": "Era Building AI for your money. Fintech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Era Building AI for your money. Fintech Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "candid-health",
           "name": "Candid Health",
           "href": "../../../companies/candid-health",
-          "rawText": "Candid Health Easy, automated medical billing. Biotech \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Candid Health Easy, automated medical billing. Biotech Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "tofu",
           "name": "Tofu",
           "href": "../../../companies/tofu",
-          "rawText": "Tofu B2B marketing on autopilot. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tofu B2B marketing on autopilot. Productivity Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "together-ai",
           "name": "Together AI",
           "href": "../../../companies/together-ai",
-          "rawText": "Together AI The future of AI is open-source. AI \u00c2\u00b7 Series B \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Together AI The future of AI is open-source. AI Â· Series B Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "rootly",
           "name": "Rootly",
           "href": "../../../companies/rootly",
-          "rawText": "Rootly The only multi-cloud on-call solution. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Rootly The only multi-cloud on-call solution. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "llamaindex",
           "name": "Llamaindex",
           "href": "../../../companies/llamaindex",
-          "rawText": "LlamaIndex Unleash LLMs over your data. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "LlamaIndex Unleash LLMs over your data. DevTools Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "default",
           "name": "Default",
           "href": "../../../companies/default",
-          "rawText": "Default Inbound orchestration platform. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Default Inbound orchestration platform. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "omni",
           "name": "Omni",
           "href": "../../../companies/omni",
-          "rawText": "Omni Flexible business intelligence platform. Analytics \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Omni Flexible business intelligence platform. Analytics Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "convictional",
           "name": "Convictional",
           "href": "../../../companies/convictional",
-          "rawText": "Convictional Reinventing business operations. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Convictional Reinventing business operations. Productivity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "puzzle",
           "name": "Puzzle",
           "href": "../../../companies/puzzle",
-          "rawText": "Puzzle Modern accounting software. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Puzzle Modern accounting software. Fintech Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "sentry",
           "name": "Sentry",
           "href": "../../../companies/sentry",
-          "rawText": "Sentry App monitoring software. DevTools \u00c2\u00b7 Series E \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Sentry App monitoring software. DevTools Â· Series E Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "kula",
           "name": "Kula",
           "href": "../../../companies/kula",
-          "rawText": "Kula Modern all-in-one ATS with native AI. HR & Recruiting \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Kula Modern all-in-one ATS with native AI. HR & Recruiting Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "boardy",
           "name": "Boardy",
           "href": "../../../companies/boardy",
-          "rawText": "Boardy AI super connector. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Boardy AI super connector. Productivity Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "fay",
           "name": "Fay",
           "href": "../../../companies/fay",
-          "rawText": "Fay Find dietitians & nutritionists. Healthcare \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Fay Find dietitians & nutritionists. Healthcare Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "warmly",
           "name": "Warmly",
           "href": "../../../companies/warmly",
-          "rawText": "Warmly Warm leads platform for sales teams. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Warmly Warm leads platform for sales teams. Productivity Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "fractional",
           "name": "Fractional",
           "href": "../../../companies/fractional",
-          "rawText": "Fractional Fractional home co-ownership platform. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Fractional Fractional home co-ownership platform. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "oven",
           "name": "Oven",
           "href": "../../../companies/oven",
-          "rawText": "Bun All-in-one JavaScript runtime & toolkit DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bun All-in-one JavaScript runtime & toolkit DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "daffy",
           "name": "Daffy",
           "href": "../../../companies/daffy",
-          "rawText": "Daffy A smarter way to give. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Daffy A smarter way to give. Fintech Â· Series A Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "census",
           "name": "Census",
           "href": "../../../companies/census",
-          "rawText": "Census Data Activation and Reverse ETL platform. DevTools \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Census Data Activation and Reverse ETL platform. DevTools Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "outerbase",
           "name": "Outerbase",
           "href": "../../../companies/outerbase",
-          "rawText": "Outerbase The interface for your database. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Outerbase The interface for your database. DevTools Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "finch",
           "name": "Finch",
           "href": "../../../companies/finch",
-          "rawText": "Finch The unified API for employment systems. Fintech \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Finch The unified API for employment systems. Fintech Â· Series B Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "pave",
           "name": "Pave",
           "href": "../../../companies/pave",
-          "rawText": "Pave Real-time compensation platform. HR & Recruiting \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Pave Real-time compensation platform. HR & Recruiting Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "bridge",
           "name": "Bridge",
           "href": "../../../companies/bridge",
-          "rawText": "Bridge Stablecoin API for developers Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Hybrid \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Bridge Stablecoin API for developers Fintech Â· Series A Â· Hybrid Â· Based in San Francisco"
         },
         {
           "slug": "orum",
           "name": "Orum",
           "href": "../../../companies/orum",
-          "rawText": "Orum Live customer convo platform. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Orum Live customer convo platform. Productivity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "digits",
           "name": "Digits",
           "href": "../../../companies/digits",
-          "rawText": "Digits Automating accounting for startups. Fintech \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Digits Automating accounting for startups. Fintech Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "tempest",
           "name": "Tempest",
           "href": "../../../companies/tempest",
-          "rawText": "Tempest Enterprise-grade developer platform. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Tempest Enterprise-grade developer platform. DevTools Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "speak",
           "name": "Speak",
           "href": "../../../companies/speak",
-          "rawText": "Speak AI-powered language tutor. Education \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Speak AI-powered language tutor. Education Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "wand",
           "name": "Wand",
           "href": "../../../companies/wand",
-          "rawText": "Wand AI-powered creative canvas. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Wand AI-powered creative canvas. Design Â· Seed Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "parrot-finance",
           "name": "Parrot Finance",
           "href": "../../../companies/parrot-finance",
-          "rawText": "Parrot Finance Social investing platform for Gen Z. Fintech \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Parrot Finance Social investing platform for Gen Z. Fintech Â· Seed Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "socket",
           "name": "Socket",
           "href": "../../../companies/socket",
-          "rawText": "Socket Developer-first security platform. Cybersecurity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Socket Developer-first security platform. Cybersecurity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "miro",
           "name": "Miro",
           "href": "../../../companies/miro",
-          "rawText": "Miro Visual collaboration platform. Design \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Miro Visual collaboration platform. Design Â· Series C Â· Onsite Â· Based in San Francisco"
         },
         {
           "slug": "mixpanel",
           "name": "Mixpanel",
           "href": "../../../companies/mixpanel",
-          "rawText": "Mixpanel Product analytics for software teams. Analytics \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Mixpanel Product analytics for software teams. Analytics Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "remote",
           "name": "Remote",
           "href": "../../../companies/remote",
-          "rawText": "Remote Global HR and employment tools for distributed teams. HR & Recruiting \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Remote Global HR and employment tools for distributed teams. HR & Recruiting Â· Series C Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "chili-piper",
           "name": "Chili Piper",
           "href": "../../../companies/chili-piper",
-          "rawText": "Chili Piper Meeting automation platform. Productivity \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Chili Piper Meeting automation platform. Productivity Â· Series B Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "ngrok",
           "name": "Ngrok",
           "href": "../../../companies/ngrok",
-          "rawText": "Ngrok Unified ingress platform for developers. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Ngrok Unified ingress platform for developers. DevTools Â· Series A Â· Remote Â· Based in San Francisco"
         },
         {
           "slug": "eraser",
           "name": "Eraser",
           "href": "../../../companies/eraser",
-          "rawText": "Eraser AI co-pilot \u00e2\u0080\u008dfor technical design. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in San Francisco"
+          "rawText": "Eraser AI co-pilot âfor technical design. Design Â· Seed Â· Remote Â· Based in San Francisco"
         }
       ]
     },
@@ -2006,187 +1952,187 @@
           "slug": "ricursive-intelligence",
           "name": "Ricursive Intelligence",
           "href": "../../../companies/ricursive-intelligence",
-          "rawText": "Ricursive Intelligence Superintelligence through Silicon AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Ricursive Intelligence Superintelligence through Silicon AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "1x",
           "name": "1x",
           "href": "../../../companies/1x",
-          "rawText": "1X Humanoid robots for the home. Robotics \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "1X Humanoid robots for the home. Robotics Â· Series B Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "array-labs",
           "name": "Array Labs",
           "href": "../../../companies/array-labs",
-          "rawText": "Array Labs Developing advanced space based radar. Aerospace \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Array Labs Developing advanced space based radar. Aerospace Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "tinyfish",
           "name": "Tinyfish",
           "href": "../../../companies/tinyfish",
-          "rawText": "TinyFish World\u00e2\u0080\u0099s most deployed enterprise web agent. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "TinyFish Worldâs most deployed enterprise web agent. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "tilde",
           "name": "Tilde",
           "href": "../../../companies/tilde",
-          "rawText": "Tilde Interpreter models to optimize AI deployments. DevTools \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Tilde Interpreter models to optimize AI deployments. DevTools Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "foundry",
           "name": "Foundry",
           "href": "../../../companies/foundry",
-          "rawText": "Mithril The AI omnicloud. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Mithril The AI omnicloud. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "unconventional-ai",
           "name": "Unconventional AI",
           "href": "../../../companies/unconventional-ai",
-          "rawText": "Unconventional AI Building the most efficient substrate for intelligence. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Unconventional AI Building the most efficient substrate for intelligence. AI Â· Seed Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "simular",
           "name": "Simular",
           "href": "../../../companies/simular",
-          "rawText": "Simular AI agents for Mac OS and Windows. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Simular AI agents for Mac OS and Windows. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "harmonic-ai",
           "name": "Harmonic AI",
           "href": "../../../companies/harmonic-ai",
-          "rawText": "Harmonic Building mathematical superintelligence. AI \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Harmonic Building mathematical superintelligence. AI Â· Series C Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "archetype-ai",
           "name": "Archetype AI",
           "href": "../../../companies/archetype-ai",
-          "rawText": "Archetype Encoding the physical world. AI \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Archetype Encoding the physical world. AI Â· Series A Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "luma-ai",
           "name": "Luma AI",
           "href": "../../../companies/luma-ai",
-          "rawText": "Luma AI Share your dreams with the world. AI \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Luma AI Share your dreams with the world. AI Â· Series C Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "sundial",
           "name": "Sundial",
           "href": "../../../companies/sundial",
-          "rawText": "Sundial Modern analytics stack. Analytics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Sundial Modern analytics stack. Analytics Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "parallel",
           "name": "Parallel",
           "href": "../../../companies/parallel",
-          "rawText": "Parallel A parallel web, for AIs. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Parallel A parallel web, for AIs. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "inception",
           "name": "Inception",
           "href": "../../../companies/inception",
-          "rawText": "Inception Pioneering a new generation of LLMs. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Inception Pioneering a new generation of LLMs. AI Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "hippocratic-ai",
           "name": "Hippocratic AI",
           "href": "../../../companies/hippocratic-ai",
-          "rawText": "Hippocratic AI Generative AI for healthcare. Healthcare \u00c2\u00b7 Series C \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Hippocratic AI Generative AI for healthcare. Healthcare Â· Series C Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "kick",
           "name": "Kick",
           "href": "../../../companies/kick",
-          "rawText": "Kick Modern accounting platform for startups. Fintech \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Kick Modern accounting platform for startups. Fintech Â· Seed Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "sanas",
           "name": "Sanas",
           "href": "../../../companies/sanas",
-          "rawText": "Sanas Real-time speech understanding platform. AI \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Sanas Real-time speech understanding platform. AI Â· Series B Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "lumana-ai",
           "name": "Lumana AI",
           "href": "../../../companies/lumana-ai",
-          "rawText": "Lumana AI-powered video security. Hardware \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Lumana AI-powered video security. Hardware Â· Series A Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "also",
           "name": "Also",
           "href": "../../../companies/also",
-          "rawText": "Also Building small EVs. Transportation \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Also Building small EVs. Transportation Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "eudia",
           "name": "Eudia",
           "href": "../../../companies/eudia",
-          "rawText": "Eudia Augment your legal team with AI. AI \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Eudia Augment your legal team with AI. AI Â· Series A Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "inflection-ai",
           "name": "Inflection AI",
           "href": "../../../companies/inflection-ai",
-          "rawText": "Inflection AI Enterprise AI that works for you. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Inflection AI Enterprise AI that works for you. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "you",
           "name": "You",
           "href": "../../../companies/you",
-          "rawText": "You AI for productivity. AI \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "You AI for productivity. AI Â· Series C Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "rune",
           "name": "Rune",
           "href": "../../../companies/rune",
-          "rawText": "Rune DC data center for solar and wind. Hardware \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Rune DC data center for solar and wind. Hardware Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "nace-ai",
           "name": "Nace AI",
           "href": "../../../companies/nace-ai",
-          "rawText": "Nace AI Building metamodels for real-time LLM customization. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Nace AI Building metamodels for real-time LLM customization. AI Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "caro",
           "name": "Caro",
           "href": "../../../companies/caro",
-          "rawText": "Caro Collaborative headcount and workforce planning. Productivity \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Caro Collaborative headcount and workforce planning. Productivity Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "cove",
           "name": "Cove",
           "href": "../../../companies/cove",
-          "rawText": "Cove A visual workspace for thinking together with AI. AI \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Cove A visual workspace for thinking together with AI. AI Â· Seed Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "augement-code",
           "name": "Augement Code",
           "href": "../../../companies/augement-code",
-          "rawText": "Augment Code AI coding platform for real software. AI \u00c2\u00b7 Series B \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Augment Code AI coding platform for real software. AI Â· Series B Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "yellow3d",
           "name": "Yellow3d",
           "href": "../../../companies/yellow3d",
-          "rawText": "Yellow 3D modeling platform. Design \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Yellow 3D modeling platform. Design Â· Seed Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "please-ai",
           "name": "Please AI",
           "href": "../../../companies/please-ai",
-          "rawText": "Please AI-powered personal assistants. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Please AI-powered personal assistants. AI Â· Series A Â· Onsite Â· Based in Palo Alto"
         },
         {
           "slug": "vectara",
           "name": "Vectara",
           "href": "../../../companies/vectara",
-          "rawText": "Vectara GenAI platform for enterprises. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Vectara GenAI platform for enterprises. DevTools Â· Series A Â· Remote Â· Based in Palo Alto"
         },
         {
           "slug": "rive",
           "name": "Rive",
           "href": "../../../companies/rive",
-          "rawText": "Rive Create real-time interactive animations. Design \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Palo Alto"
+          "rawText": "Rive Create real-time interactive animations. Design Â· Series A Â· Remote Â· Based in Palo Alto"
         }
       ]
     },
@@ -2197,67 +2143,67 @@
           "slug": "sunday",
           "name": "Sunday",
           "href": "../../../companies/sunday",
-          "rawText": "Sunday The helpful robotics company\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008d\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00e2\u0080\u008b\u00ef\u00bb\u00bf\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008c\u00e2\u0080\u008d\u00e2\u0080\u008c\u00e2\u0080\u008b\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008b\u00e2\u0080\u008d\u00e2\u0080\u008c\u00ef\u00bb\u00bf\u00ef\u00bb\u00bf\u00e2\u0080\u008c. Robotics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Sunday The helpful robotics companyâââââï»¿âï»¿ââââââï»¿ï»¿âï»¿âââââââââï»¿ââââââï»¿ââââââï»¿âââââââï»¿âï»¿ââââââï»¿ââââââï»¿âââï»¿ââââï»¿âââââââï»¿ï»¿ââââââï»¿ââââââââââï»¿âââââââââââââââï»¿ââââââââï»¿ï»¿âï»¿âï»¿âï»¿âââï»¿ââââââââââââï»¿ï»¿ââï»¿ï»¿ââââââï»¿ââï»¿ââââââââï»¿ââï»¿ââââï»¿ï»¿âââââââââââââï»¿ââââï»¿ï»¿ââï»¿âââï»¿ï»¿âââââââââï»¿ï»¿ââï»¿âââï»¿âââââââï»¿âï»¿ââââââï»¿ââï»¿âââââââï»¿ââââââââï»¿ï»¿ââï»¿ââï»¿âï»¿âââââââââï»¿ï»¿ââââââââââï»¿âï»¿âï»¿âââââââï»¿âââï»¿ââââââââï»¿ââââââï»¿âââï»¿âââï»¿ââââï»¿ââï»¿âââï»¿âââï»¿âââï»¿ââââï»¿ââï»¿âââââââï»¿âââï»¿ââââï»¿ââââââï»¿âââï»¿âââï»¿âââï»¿âââââââï»¿âââââââââï»¿âï»¿âââï»¿âï»¿âââââï»¿âï»¿âï»¿âââï»¿âââï»¿âââââââï»¿ï»¿ââï»¿âââââââââï»¿âââââï»¿âï»¿âï»¿âââââââï»¿âââââââï»¿ï»¿ââï»¿âï»¿âï»¿âââââââï»¿âââââââï»¿ââââï»¿ââââââï»¿ï»¿ï»¿âââââââââï»¿âï»¿âââââââââï»¿ââââï»¿ââï»¿ï»¿ââââââï»¿âââââââï»¿âï»¿âï»¿âââï»¿ââââââââââââï»¿ï»¿âââââââââââââï»¿ï»¿ââââââââââï»¿âï»¿âï»¿âââââââï»¿âââï»¿ââââââââï»¿ââââââï»¿âââï»¿âââï»¿ââââï»¿ââï»¿âââï»¿âââï»¿âââï»¿ââââï»¿ââï»¿âââââââï»¿âââï»¿ââââï»¿ââââââï»¿âââï»¿âââï»¿âââï»¿âââââââï»¿âââââââââï»¿âï»¿âââï»¿âï»¿âââââââââï»¿âââï»¿âââï»¿âââââââï»¿ï»¿ââï»¿âââââââââï»¿âââââââââï»¿âââââââï»¿âââââââï»¿ï»¿ââï»¿âï»¿âï»¿âââââââï»¿âââââââï»¿ââââï»¿ââââââââââï»¿âââââââï»¿âââï»¿âï»¿âï»¿âââââââââï»¿âï»¿âââââââï»¿âââââââï»¿ï»¿ââï»¿âââï»¿ââââââââï»¿ââââââï»¿âï»¿âââââââââââââââââï»¿ï»¿â. Robotics Â· Seed Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "haus",
           "name": "Haus",
           "href": "../../../companies/haus",
-          "rawText": "Haus Measure marketing incrementality. Analytics \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Haus Measure marketing incrementality. Analytics Â· Series B Â· Remote Â· Based in Mountain View"
         },
         {
           "slug": "contextual-ai",
           "name": "Contextual AI",
           "href": "../../../companies/contextual-ai",
-          "rawText": "Contextual AI Build specialized RAG agents. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Contextual AI Build specialized RAG agents. AI Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "matic",
           "name": "Matic",
           "href": "../../../companies/matic",
-          "rawText": "Matic The world's most advanced floor cleaner. Robotics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Matic The world's most advanced floor cleaner. Robotics Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "arta",
           "name": "Arta",
           "href": "../../../companies/arta",
-          "rawText": "Arta Digital family office. Fintech \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Arta Digital family office. Fintech Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "ceramic",
           "name": "Ceramic",
           "href": "../../../companies/ceramic",
-          "rawText": "Ceramic Redefining AI infrastructure. AI \u00c2\u00b7 Seed \u00c2\u00b7 Remote \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Ceramic Redefining AI infrastructure. AI Â· Seed Â· Remote Â· Based in Mountain View"
         },
         {
           "slug": "activeloop",
           "name": "Activeloop",
           "href": "../../../companies/activeloop",
-          "rawText": "Activeloop Enterprise AI search. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Activeloop Enterprise AI search. DevTools Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "sybill",
           "name": "Sybill",
           "href": "../../../companies/sybill",
-          "rawText": "Sybill AI-powered GTM workflow assistant. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Sybill AI-powered GTM workflow assistant. Productivity Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "flutterflow",
           "name": "Flutterflow",
           "href": "../../../companies/flutterflow",
-          "rawText": "FlutterFlow Build beautiful applications with ease. Productivity \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Mountain View"
+          "rawText": "FlutterFlow Build beautiful applications with ease. Productivity Â· Series A Â· Remote Â· Based in Mountain View"
         },
         {
           "slug": "ema",
           "name": "Ema",
           "href": "../../../companies/ema",
-          "rawText": "Ema Building a universal AI employee. AI \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Mountain View"
+          "rawText": "Ema Building a universal AI employee. AI Â· Series A Â· Onsite Â· Based in Mountain View"
         },
         {
           "slug": "planetscale",
           "name": "Planetscale",
           "href": "../../../companies/planetscale",
-          "rawText": "PlanetScale MySQL-compatible database platform. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in Mountain View"
+          "rawText": "PlanetScale MySQL-compatible database platform. DevTools Â· Series C Â· Remote Â· Based in Mountain View"
         }
       ]
     },
@@ -2268,25 +2214,25 @@
           "slug": "distributional",
           "name": "Distributional",
           "href": "../../../companies/distributional",
-          "rawText": "Distributional Deploy AI with confidence. DevTools \u00c2\u00b7 Series A \u00c2\u00b7 Remote \u00c2\u00b7 Based in Berkeley"
+          "rawText": "Distributional Deploy AI with confidence. DevTools Â· Series A Â· Remote Â· Based in Berkeley"
         },
         {
           "slug": "terranova",
           "name": "Terranova",
           "href": "../../../companies/terranova",
-          "rawText": "Terranova Terraforming robots. Robotics \u00c2\u00b7 Seed \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Berkeley"
+          "rawText": "Terranova Terraforming robots. Robotics Â· Seed Â· Onsite Â· Based in Berkeley"
         },
         {
           "slug": "copper",
           "name": "Copper",
           "href": "../../../companies/copper",
-          "rawText": "Copper The Tesla of induction stoves. Food \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Berkeley"
+          "rawText": "Copper The Tesla of induction stoves. Food Â· Series A Â· Onsite Â· Based in Berkeley"
         },
         {
           "slug": "arize",
           "name": "Arize",
           "href": "../../../companies/arize",
-          "rawText": "Arize AI observability & LLM evaluation. DevTools \u00c2\u00b7 Series C \u00c2\u00b7 Remote \u00c2\u00b7 Based in Berkeley"
+          "rawText": "Arize AI observability & LLM evaluation. DevTools Â· Series C Â· Remote Â· Based in Berkeley"
         }
       ]
     },
@@ -2297,25 +2243,25 @@
           "slug": "quilt-home",
           "name": "Quilt Home",
           "href": "../../../companies/quilt-home",
-          "rawText": "Quilt A smarter way to heat/cool a home. Climate \u00c2\u00b7 Series B \u00c2\u00b7 Remote \u00c2\u00b7 Based in Redwood City"
+          "rawText": "Quilt A smarter way to heat/cool a home. Climate Â· Series B Â· Remote Â· Based in Redwood City"
         },
         {
           "slug": "dyna-robotics",
           "name": "Dyna Robotics",
           "href": "../../../companies/dyna-robotics",
-          "rawText": "Dyna Robotics High performance general-purpose robots. Robotics \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Redwood City"
+          "rawText": "Dyna Robotics High performance general-purpose robots. Robotics Â· Series A Â· Onsite Â· Based in Redwood City"
         },
         {
           "slug": "snorkel-ai",
           "name": "Snorkel AI",
           "href": "../../../companies/snorkel-ai",
-          "rawText": "Snorkel AI Data-centric AI platform. AI \u00c2\u00b7 Series D \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Redwood City"
+          "rawText": "Snorkel AI Data-centric AI platform. AI Â· Series D Â· Onsite Â· Based in Redwood City"
         },
         {
           "slug": "iyo",
           "name": "Iyo",
           "href": "../../../companies/iyo",
-          "rawText": "iyo Building AI audio computers. Hardware \u00c2\u00b7 Series A \u00c2\u00b7 Onsite \u00c2\u00b7 Based in Redwood City"
+          "rawText": "iyo Building AI audio computers. Hardware Â· Series A Â· Onsite Â· Based in Redwood City"
         }
       ]
     }
