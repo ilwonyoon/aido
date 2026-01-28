@@ -95,12 +95,26 @@ function HomePageContent() {
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollY}px`;
       document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+
+      // Prevent wheel/touch scroll events on body
+      const preventScroll = (e: WheelEvent | TouchEvent) => {
+        if (e.target instanceof Element && !panelRef.current?.contains(e.target)) {
+          e.preventDefault();
+        }
+      };
+
+      document.addEventListener('wheel', preventScroll, { passive: false });
+      document.addEventListener('touchmove', preventScroll, { passive: false });
 
       return () => {
         // Restore scroll position
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
+        document.body.style.overflow = '';
+        document.removeEventListener('wheel', preventScroll);
+        document.removeEventListener('touchmove', preventScroll);
         window.scrollTo(0, scrollY);
       };
     }
