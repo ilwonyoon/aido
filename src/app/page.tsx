@@ -88,14 +88,22 @@ function HomePageContent() {
   // Prevent background scroll when panel is open
   useEffect(() => {
     if (selectedCompanyId) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+      // Save current scroll position
+      const scrollY = window.scrollY;
 
-    return () => {
-      document.body.style.overflow = '';
-    };
+      // Lock scroll position
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+
+      return () => {
+        // Restore scroll position
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, scrollY);
+      };
+    }
   }, [selectedCompanyId]);
 
   // Observer for company name in content to show/hide in header
