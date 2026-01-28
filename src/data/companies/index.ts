@@ -103,6 +103,26 @@ import { truffleSecurity } from './truffle-security';
 import { lightpage } from './lightpage';
 import { conductor } from './conductor';
 import { arcadeDev } from './arcade-dev';
+import { layerFinancial } from './layer-financial';
+import { sauronSystems } from './sauron-systems';
+import { hummingbird } from './hummingbird';
+import { redQueenBio } from './red-queen-bio';
+import { nexus } from './nexus';
+import { casca } from './casca';
+import { twoTwoTwo } from './two-two-two';
+import { truemed } from './truemed';
+import { dittoLive } from './ditto-live';
+import { edisonScientific } from './edison-scientific';
+import { loonen } from './loonen';
+import { inngest } from './inngest';
+import { suger } from './suger';
+import { nokken } from './nokken';
+import { gcAi } from './gc-ai';
+import { anythingAi } from './anything-ai';
+import { medra } from './medra';
+import { serval } from './serval';
+import { anrok } from './anrok';
+import { fal } from './fal';
 
 export const companies: Company[] = [
   anthropic,
@@ -208,9 +228,29 @@ export const companies: Company[] = [
   lightpage,
   conductor,
   arcadeDev,
+  layerFinancial,
+  sauronSystems,
+  hummingbird,
+  redQueenBio,
+  nexus,
+  casca,
+  twoTwoTwo,
+  truemed,
+  dittoLive,
+  edisonScientific,
+  loonen,
+  inngest,
+  suger,
+  nokken,
+  gcAi,
+  anythingAi,
+  medra,
+  serval,
+  anrok,
+  fal,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, livekit, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev };
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, livekit, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);
