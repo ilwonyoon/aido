@@ -115,7 +115,7 @@ export function CompanyDetail({ company }: { company: Company }) {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="w-full">
       {/* Back Link */}
       <div className="mb-2">
         <Link
@@ -127,7 +127,7 @@ export function CompanyDetail({ company }: { company: Company }) {
       </div>
 
       {/* Main Layout: Index Nav + Content */}
-      <div className="lg:flex lg:gap-8">
+      <div className="flex flex-col lg:flex-row lg:gap-8">
         {/* Sticky Index Nav */}
         <nav className="hidden lg:block w-48 flex-shrink-0">
           <div className="sticky top-8 space-y-1">
@@ -175,7 +175,7 @@ export function CompanyDetail({ company }: { company: Company }) {
         )}
 
         {/* Main Content */}
-        <div className="flex-1 min-w-0 space-y-12">
+        <div className="w-full lg:flex-1 min-w-0 space-y-12">
           {/* Header Info */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
