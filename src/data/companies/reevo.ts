@@ -10,7 +10,7 @@ export const reevo: Company = {
   remote: 'Unknown',
 
   // Business
-  stage: 'Unknown',
+  stage: 'Undisclosed',
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [
@@ -24,7 +24,7 @@ export const reevo: Company = {
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'GTM teams at B2B companies; early-access customer: Casca.',
+  customers: 'B2B GTM teams; early-access customer: Casca.',
 
   // Growth & Potential
   growthMetrics: {
@@ -32,7 +32,7 @@ export const reevo: Company = {
     revenueGrowth: 'Unknown',
     signals: [
       'Launched with $80M in funding co-led by Khosla Ventures and Kleiner Perkins',
-      'Team scaled to 90 employees',
+      'Team scaled to 90 employees since founding in 2024',
     ],
     tam: 'Unknown',
     marketShare: 'Unknown',
@@ -92,22 +92,22 @@ export const reevo: Company = {
     {
       name: 'David Zhu',
       role: 'Co-Founder & CEO',
-      background: 'Co-founded Reevo in 2024.',
+      background: 'Previously Head of Engineering at DoorDash for New Verticals, Platform, Money, and Enterprise.',
     },
     {
       name: 'Cindy Hao',
       role: 'Co-Founder',
-      background: 'Co-founded Reevo in 2024.',
-    },
-    {
-      name: 'Curtis Tan',
-      role: 'Co-Founder',
-      background: 'Co-founded Reevo in 2024.',
+      background: 'Previously incubated startups at Atomic and led Growth at OpenStore.',
     },
     {
       name: 'Clement Fang',
       role: 'Co-Founder',
-      background: 'Co-founded Reevo in 2024.',
+      background: 'Helped rebuild the DoorDash platform and now leads engineering at Reevo.',
+    },
+    {
+      name: 'Curtis Tan',
+      role: 'Co-Founder',
+      background: 'Former GM of New Ventures at DoorDash; previously Head of Sales Finance at Square.',
     },
   ],
   whyBuilding:
@@ -178,7 +178,7 @@ export const reevo: Company = {
   openRoles: [
     {
       title: 'Builder - Product Designer',
-      location: 'Santa Clara, CA',
+      location: 'Unknown',
       type: 'full-time',
       url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376',
     },
@@ -206,11 +206,10 @@ export const reevo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:45:00',
+  lastUpdated: '2026-01-28T12:55:00',
   sources: [
     { title: 'Reevo website', url: 'https://reevo.ai/' },
     { title: 'Reevo about', url: 'https://reevo.ai/about' },
-    { title: 'Reevo funding post', url: 'https://reevo.ai/blog/redefining-how-companies-go-to-market' },
     { title: 'Reevo funding press release (Business Wire)', url: 'https://www.businesswire.com/news/home/20251105759977/en/Reevo-Debuts-with-%2480-Million-in-Funding-as-the-Only-AI-Native-GTM-Platform-Spanning-Marketing-Sales-and-Customer-Success' },
     { title: 'Reevo careers', url: 'https://reevo.ai/careers' },
     { title: 'Reevo Product Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376' },

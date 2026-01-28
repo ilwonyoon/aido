@@ -159,7 +159,7 @@ export function CompanyDetail({ company }: { company: Company }) {
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className={`flex-shrink-0 px-3 py-1.5 rounded-md text-sm transition-colors whitespace-nowrap ${
+                  className={`flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-md text-sm transition-colors ${
                     activeSection === section.id
                       ? 'bg-[var(--accent)] text-white'
                       : 'bg-[var(--card)] text-[var(--foreground)] hover:bg-[var(--card-hover)]'
