@@ -3,7 +3,7 @@ import { Company } from '../types';
 export const thinkingMachinesLab: Company = {
   id: 'thinking-machines-lab',
   name: 'Thinking Machines Lab',
-  description: 'AI research and product company focused on making AI systems more widely understood, customizable, and generally capable.',
+  description: 'AI research and product company building tools so more people can make AI work for their unique needs and goals.',
   website: 'https://thinkingmachines.ai',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
@@ -43,7 +43,7 @@ export const thinkingMachinesLab: Company = {
       whyTheyWin: 'Research depth and infrastructure scale.',
     },
   ],
-  marketPosition: 'Frontier AI lab focused on collaboration, customization, and shared research.',
+  marketPosition: 'Frontier AI research and product company focused on collaboration, customization, and shared science.',
   moat: [
     'Research and product co-design ethos',
     'Talent density from leading AI labs',
@@ -67,27 +67,13 @@ export const thinkingMachinesLab: Company = {
       role: 'Founder & CEO',
       background: 'Founded Thinking Machines Lab after leading product and research efforts at OpenAI.',
     },
-    {
-      name: 'John Schulman',
-      role: 'Co-founder & Chief Scientist',
-      background: 'Co-founded Thinking Machines Lab.',
-    },
-    {
-      name: 'Barret Zoph',
-      role: 'Co-founder (former CTO)',
-      background: 'Co-founded Thinking Machines Lab.',
-    },
-    {
-      name: 'Luke Metz',
-      role: 'Co-founder',
-      background: 'Co-founded Thinking Machines Lab.',
-    },
   ],
   whyBuilding: 'Make AI systems more widely understood, customizable, and generally capable.',
   beliefs: [
     'Science advances faster when shared',
     'Human-AI collaboration should be a core design goal',
-    'AI should be easier to adapt to specific needs and values',
+    'AI should be adaptable to people and organizations',
+    'Solid foundations and infrastructure are essential',
   ],
   designPhilosophy: 'Research and product co-design to stay grounded in real-world impact.',
   greenFlags: [
@@ -173,6 +159,5 @@ export const thinkingMachinesLab: Company = {
     { title: 'Thinking Machines Lab Jobs (Greenhouse)', url: 'https://job-boards.greenhouse.io/thinkingmachines' },
     { title: 'Thinking Machines Lab launch (TechCrunch)', url: 'https://techcrunch.com/2025/02/18/thinking-machines-lab-is-ex-openai-cto-mira-muratis-new-startup/' },
     { title: 'Thinking Machines Lab seed round (TechCrunch)', url: 'https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/' },
-    { title: 'Thinking Machines Lab team update (TechCrunch)', url: 'https://techcrunch.com/2026/01/14/thinking-machines-lab-co-founder-and-cto-barret-zoph-is-leaving/' },
   ],
 };
