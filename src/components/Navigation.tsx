@@ -1,17 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
-import { getActiveVisitorsCount } from '@/lib/firebase/visitors';
 import { ThemeToggle } from './ThemeToggle';
 import { AuthButton } from './AuthButton';
 
 export function Navigation() {
   const pathname = usePathname();
   const { user } = useAuth();
-  const [activeVisitors, setActiveVisitors] = useState<number>(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isAdmin = user?.email === 'ilwonyoon@gmail.com';
@@ -22,21 +20,6 @@ export function Navigation() {
     }
     return pathname.startsWith(path);
   };
-
-  // Update active visitors count every 30 seconds (only for admin)
-  useEffect(() => {
-    if (!isAdmin) return;
-
-    const updateCount = async () => {
-      const count = await getActiveVisitorsCount();
-      setActiveVisitors(count);
-    };
-
-    updateCount();
-    const interval = setInterval(updateCount, 30 * 1000);
-
-    return () => clearInterval(interval);
-  }, [isAdmin]);
 
   return (
     <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
@@ -89,22 +72,16 @@ export function Navigation() {
 
           {/* Analytics - Admin only */}
           {isAdmin && (
-            <>
-              <div className="flex items-center gap-1.5 text-[var(--muted)]">
-                <span>🌍</span>
-                <span className="font-mono text-xs">{activeVisitors}</span>
-              </div>
-              <Link
-                href="/analytics"
-                className={
-                  isActive('/analytics')
-                    ? 'text-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)]'
-                }
-              >
-                Analytics
-              </Link>
-            </>
+            <Link
+              href="/analytics"
+              className={
+                isActive('/analytics')
+                  ? 'text-[var(--foreground)]'
+                  : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+              }
+            >
+              Analytics
+            </Link>
           )}
 
           <ThemeToggle />
@@ -174,23 +151,17 @@ export function Navigation() {
               </Link>
 
               {isAdmin && (
-                <>
-                  <div className="flex items-center gap-2 py-3 px-4 text-[var(--muted)] text-sm">
-                    <span>🌍</span>
-                    <span className="font-mono">{activeVisitors}</span>
-                  </div>
-                  <Link
-                    href="/analytics"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`block py-3 px-4 rounded-lg ${
-                      isActive('/analytics')
-                        ? 'bg-[var(--card)] text-[var(--foreground)]'
-                        : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
-                    }`}
-                  >
-                    Analytics
-                  </Link>
-                </>
+                <Link
+                  href="/analytics"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block py-3 px-4 rounded-lg ${
+                    isActive('/analytics')
+                      ? 'bg-[var(--card)] text-[var(--foreground)]'
+                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                  }`}
+                >
+                  Analytics
+                </Link>
               )}
             </nav>
 
