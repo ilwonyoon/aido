@@ -268,9 +268,23 @@ a:hover {
   display: none !important;
 }
 
+/* Force column layout in panel view (override lg:flex-row) */
+.panel-view .flex.flex-col.lg\:flex-row {
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+/* Force all flex children to full width in panel view */
+.panel-view .flex.flex-col.lg\:flex-row > * {
+  width: 100% !important;
+  flex-shrink: 0 !important;
+}
+
 /* Show mobile chips nav in panel view (override lg:hidden) */
 .panel-view .lg\:hidden.sticky {
-  display: flex !important;
+  display: block !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* Hide back link in panel view */
