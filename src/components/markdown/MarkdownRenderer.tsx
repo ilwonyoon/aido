@@ -17,64 +17,70 @@ export function MarkdownRenderer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-        // Customize heading styles with generous spacing for blog readability
+        // Proximity Principle: heading CLOSE to content, FAR from previous section
         h1: ({ node, ...props }) => (
-          <h1 className="!text-4xl !font-semibold !mb-8 !mt-24 first:!mt-0" {...props} />
+          <h1 className="!text-4xl !font-semibold !mb-3 !mt-16 first:!mt-0" {...props} />
         ),
         h2: ({ node, ...props }) => (
-          <h2 className="!text-3xl !font-semibold !mb-7 !mt-20 first:!mt-0 !border-t !border-[var(--border)] !pt-12 first:!border-0 first:!pt-0" {...props} />
+          <h2 className="!text-3xl !font-semibold !mb-3 !mt-16 first:!mt-0 !border-t !border-[var(--border)] !pt-8 first:!border-0 first:!pt-0" {...props} />
         ),
         h3: ({ node, ...props }) => (
-          <h3 className="!text-2xl !font-semibold !mb-5 !mt-14" {...props} />
+          <h3 className="!text-2xl !font-semibold !mb-2 !mt-12" {...props} />
         ),
         h4: ({ node, ...props }) => (
-          <h4 className="!text-xl !font-semibold !mb-4 !mt-10" {...props} />
+          <h4 className="!text-xl !font-semibold !mb-2 !mt-8" {...props} />
         ),
 
         // Links - let CSS handle styling
         a: ({ node, ...props }) => <a {...props} />,
 
-        // Lists with proper styling - FORCE BULLETS
+        // Lists - Proximity Principle: CLOSE to heading, FAR from next section
         ul: ({ node, ...props }) => (
           <ul
-            className="!list-disc !list-outside !my-3"
             style={{
               listStyleType: 'disc',
               listStylePosition: 'outside',
               paddingLeft: '1.25rem',
-              marginTop: '0.75rem',
-              marginBottom: '1rem'
+              marginTop: '0.5rem',  /* CLOSE to heading */
+              marginBottom: '1.5rem' /* FAR from next section */
             }}
             {...props}
           />
         ),
         ol: ({ node, ...props }) => (
           <ol
-            className="!list-decimal !list-outside !my-3"
             style={{
               listStyleType: 'decimal',
               listStylePosition: 'outside',
               paddingLeft: '1.25rem',
-              marginTop: '0.75rem',
-              marginBottom: '1rem'
+              marginTop: '0.5rem',
+              marginBottom: '1.5rem'
             }}
             {...props}
           />
         ),
         li: ({ node, ...props }) => (
           <li
-            className="!mb-2 leading-relaxed"
             style={{
               display: 'list-item',
-              marginBottom: '0.5rem',
-              paddingLeft: '0.25rem'
+              marginBottom: '0.25rem', /* Tight grouping */
+              paddingLeft: '0.25rem',
+              lineHeight: '1.6'
             }}
             {...props}
           />
         ),
 
-        // Paragraph with better spacing
-        p: ({ node, ...props }) => <p className="mb-4 leading-relaxed" {...props} />,
+        // Paragraph with optimal spacing
+        p: ({ node, ...props }) => (
+          <p
+            style={{
+              marginBottom: '1rem',
+              lineHeight: '1.6'
+            }}
+            {...props}
+          />
+        ),
 
         // Blockquote with visual styling
         blockquote: ({ node, ...props }) => (

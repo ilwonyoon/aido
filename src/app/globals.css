@@ -179,12 +179,22 @@ a.card {
   line-height: 1.75;
 }
 
+/* Blog Typography System - Proximity Principle
+ *
+ * Spacing Ratios (based on research):
+ * - Heading → Content: 0.5rem (8px) - CLOSE grouping
+ * - Content → Content: 0.25-1rem (4-16px) - Related items
+ * - Section → Section: 3-4rem (48-64px) - Clear separation
+ *
+ * Key: Elements that belong together should be CLOSER than unrelated elements
+ */
+
 .article-content h1 {
   color: var(--foreground);
   font-weight: 600;
   font-size: 2.25rem;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 0.75rem; /* CLOSE to content below */
   letter-spacing: -0.025em;
   line-height: 1.2;
 }
@@ -197,12 +207,12 @@ a.card {
   color: var(--foreground);
   font-weight: 600;
   font-size: 1.875rem;
-  margin-top: 5rem;
-  margin-bottom: 1.75rem;
+  margin-top: 4rem; /* FAR from previous section */
+  margin-bottom: 0.75rem; /* CLOSE to content below */
   letter-spacing: -0.02em;
   line-height: 1.3;
   border-top: 1px solid var(--border);
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .article-content h2:first-child {
@@ -215,8 +225,8 @@ a.card {
   color: var(--foreground);
   font-weight: 600;
   font-size: 1.5rem;
-  margin-top: 3.5rem;
-  margin-bottom: 1.25rem;
+  margin-top: 3rem; /* FAR from previous section */
+  margin-bottom: 0.5rem; /* CLOSE to content below */
   letter-spacing: -0.015em;
   line-height: 1.4;
 }
@@ -225,15 +235,15 @@ a.card {
   color: var(--foreground);
   font-weight: 600;
   font-size: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem; /* FAR from previous section */
+  margin-bottom: 0.5rem; /* CLOSE to content below */
   line-height: 1.5;
 }
 
 .article-content p {
   color: rgba(237, 237, 237, 0.9);
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  line-height: 1.6; /* Reduced from 1.8 for better readability */
+  margin-bottom: 1rem; /* Reduced from 1.5rem */
 }
 
 [data-theme="light"] .article-content p {
@@ -245,12 +255,12 @@ a.card {
   font-weight: 600;
 }
 
-/* Lists with proper bullets and indentation - CRITICAL STYLES */
+/* Lists with proper bullets and indentation - Proximity Principle */
 .article-content ul,
 .article-content ol {
   color: rgba(237, 237, 237, 0.9);
-  margin-bottom: 1rem !important;
-  margin-top: 0.75rem !important;
+  margin-top: 0.5rem !important; /* CLOSE to heading above */
+  margin-bottom: 1.5rem !important; /* FAR from next section */
   padding-left: 1.25rem !important;
   list-style-position: outside !important;
 }
@@ -271,9 +281,9 @@ a.card {
 }
 
 .article-content li {
-  margin-bottom: 0.5rem !important;
-  line-height: 1.7 !important;
-  padding-left: 0.5rem !important;
+  margin-bottom: 0.25rem !important; /* Tighter grouping within lists */
+  line-height: 1.6 !important; /* Reduced from 1.7 */
+  padding-left: 0.25rem !important; /* Reduced from 0.5rem */
   display: list-item !important;
 }
 
