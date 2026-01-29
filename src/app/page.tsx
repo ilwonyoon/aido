@@ -58,9 +58,12 @@ function HomePageContent() {
 
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+    console.log('[CLOSE] Starting close animation', { selectedCompanyId, currentCompany });
     setClosingCompany(currentCompany);
     setIsClosing(true);
+    console.log('[CLOSE] State set: isClosing=true, closingCompany=', currentCompany?.name);
     setTimeout(() => {
+      console.log('[CLOSE] Animation complete, cleaning up state');
       window.history.pushState({}, '', '/');
       setSelectedCompanyId(null);
       setIsFullWidth(false);
@@ -220,6 +223,8 @@ function HomePageContent() {
         const displayCompany = closingCompany || selectedCompany;
         if (!displayCompany) return null;
 
+        console.log('[PANEL] Rendering panel', { isClosing, displayCompany: displayCompany.name, animationClass: isClosing ? 'slideOutRight' : 'slideInRight' });
+
         return (
         <div
           ref={panelRef}
@@ -232,9 +237,11 @@ function HomePageContent() {
             z-[100]
             overflow-y-auto
             ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
-            transition-[width] duration-300
           `}
-          style={{ overscrollBehavior: 'contain' }}
+          style={{
+            overscrollBehavior: 'contain',
+            transition: isClosing ? 'none' : 'width 0.3s ease'
+          }}
         >
           {/* Header - Sticky */}
           <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
