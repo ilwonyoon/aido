@@ -34,14 +34,44 @@ export function MarkdownRenderer({
         // Links - let CSS handle styling
         a: ({ node, ...props }) => <a {...props} />,
 
-        // Lists with proper styling
+        // Lists with proper styling - FORCE BULLETS
         ul: ({ node, ...props }) => (
-          <ul className="list-disc list-outside ml-6 space-y-2 my-4" {...props} />
+          <ul
+            className="!list-disc !list-outside !ml-8 !my-3"
+            style={{
+              listStyleType: 'disc',
+              listStylePosition: 'outside',
+              paddingLeft: '2rem',
+              marginTop: '0.75rem',
+              marginBottom: '1rem'
+            }}
+            {...props}
+          />
         ),
         ol: ({ node, ...props }) => (
-          <ol className="list-decimal list-outside ml-6 space-y-2 my-4" {...props} />
+          <ol
+            className="!list-decimal !list-outside !ml-8 !my-3"
+            style={{
+              listStyleType: 'decimal',
+              listStylePosition: 'outside',
+              paddingLeft: '2rem',
+              marginTop: '0.75rem',
+              marginBottom: '1rem'
+            }}
+            {...props}
+          />
         ),
-        li: ({ node, ...props }) => <li className="leading-relaxed" {...props} />,
+        li: ({ node, ...props }) => (
+          <li
+            className="!mb-2 leading-relaxed"
+            style={{
+              display: 'list-item',
+              marginBottom: '0.5rem',
+              paddingLeft: '0.5rem'
+            }}
+            {...props}
+          />
+        ),
 
         // Paragraph with better spacing
         p: ({ node, ...props }) => <p className="mb-4 leading-relaxed" {...props} />,
