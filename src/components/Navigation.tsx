@@ -76,8 +76,8 @@ export function Navigation() {
               href="/analytics"
               className={
                 isActive('/analytics')
-                  ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
-                  : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+                  ? 'text-[var(--foreground)] font-medium'
+                  : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
               }
             >
               Analytics
