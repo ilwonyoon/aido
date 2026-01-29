@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 
@@ -56,6 +57,7 @@ const sections = [
 ];
 
 export function CompanyDetail({ company }: { company: Company }) {
+  const router = useRouter();
   const [activeSection, setActiveSection] = useState('quick-info');
   const [showMobileNav, setShowMobileNav] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -118,12 +120,12 @@ export function CompanyDetail({ company }: { company: Company }) {
     <div className="w-full">
       {/* Back Link */}
       <div className="mb-2">
-        <Link
-          href="/"
-          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] inline-block"
+        <button
+          onClick={() => router.back()}
+          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] inline-block cursor-pointer"
         >
-          ← Back to companies
-        </Link>
+          ← Back
+        </button>
       </div>
 
       {/* Main Layout: Index Nav + Content */}
