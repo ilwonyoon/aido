@@ -7,15 +7,15 @@ import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARK
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
+import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'aiLevel';
 
-function AiLevelText({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
-  const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
-  const colors = { D: 'text-[var(--muted)]', C: 'text-[var(--muted)]', B: 'text-[var(--accent-light)]', A: 'text-[var(--success)]' };
+function AiLevelText({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
   return (
-    <span className={`text-sm ${colors[level]}`}>
-      Level {level} {labels[level]}
+    <span className={`text-sm ${config.textClass}`}>
+      Level {level} {config.label}
     </span>
   );
 }

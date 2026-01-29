@@ -1,22 +1,16 @@
 import Link from 'next/link';
 import { companies } from '@/data/companies';
+import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 
 export const metadata = {
   title: 'AI Levels Framework — AIDO',
   description: 'How we classify AI companies by the role AI plays in their products',
 };
 
-function LevelBadge({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
-  const colors = {
-    A: 'text-[var(--success)]',
-    B: 'text-[var(--accent-light)]',
-    C: 'text-[var(--foreground)]',
-    D: 'text-[var(--muted)]',
-  };
-  const labels = { A: 'AI-Native', B: 'AI-Core', C: 'AI Feature', D: 'AI-Adjacent' };
-
+function LevelBadge({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
   return (
-    <span className={`font-mono font-semibold ${colors[level]}`}>
+    <span className={`font-mono font-semibold ${config.textClass}`}>
       Level {level}
     </span>
   );

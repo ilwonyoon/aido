@@ -5,18 +5,18 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
+import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
   { ssr: false }
 );
 
-function AiLevelBadge({ level }: { level: 'A' | 'B' | 'C' | 'D' }) {
-  const labels = { D: 'AI-Assisted', C: 'AI Feature', B: 'AI-Core', A: 'AI-Native' };
-  const colors = { D: 'badge', C: 'badge', B: 'badge-accent', A: 'badge-success' };
+function AiLevelBadge({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
   return (
-    <span className={`badge ${colors[level]}`}>
-      Level {level}: {labels[level]}
+    <span className={`badge ${config.badgeClass}`}>
+      Level {level}: {config.label}
     </span>
   );
 }

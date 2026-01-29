@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { companies, getCompanyById } from '@/data/companies';
 import { CompanyDetail } from '@/components/CompanyDetail';
+import { aiLevels } from '@/design/tokens';
 
 export function generateStaticParams() {
   return companies.map((company) => ({
@@ -25,16 +26,11 @@ export async function generateMetadata({
   }
 
   const jobCount = company.openRoles.length;
-  const aiLevelLabels = {
-    A: 'AI-Native',
-    B: 'AI-Core',
-    C: 'AI Feature',
-    D: 'AI-Assisted',
-  };
+  const levelConfig = aiLevels[company.aiNativeLevel];
 
   return {
     title: `${company.name} Product Designer Jobs`,
-    description: `${jobCount} open product design role${jobCount === 1 ? '' : 's'} at ${company.name}. ${company.description} Level ${company.aiNativeLevel} ${aiLevelLabels[company.aiNativeLevel]} company.`,
+    description: `${jobCount} open product design role${jobCount === 1 ? '' : 's'} at ${company.name}. ${company.description} Level ${company.aiNativeLevel} ${levelConfig.label} company.`,
     keywords: [
       `${company.name} product designer`,
       `${company.name} design jobs`,

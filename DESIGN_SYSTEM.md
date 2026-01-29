@@ -304,19 +304,48 @@ Company list uses a side panel pattern:
 
 Each AI level has specific color coding:
 
-| Level | Label | Color | Usage |
-|-------|-------|-------|-------|
-| A | AI-Native | Success (teal) | Highest emphasis |
-| B | AI-Core | Accent (blue) | Medium-high emphasis |
-| C | AI Feature | Foreground (gray) | Neutral |
-| D | AI-Assisted | Muted (light gray) | Low emphasis |
+| Level | Label | Color | Badge Class | Text Class |
+|-------|-------|-------|-------------|------------|
+| A | AI-Native | Success (teal) | `badge-success` | `text-[var(--success)]` |
+| B | AI-Core | Accent (blue) | `badge-accent` | `text-[var(--accent-light)]` |
+| C | AI Feature | Foreground (gray) | `badge` | `text-[var(--foreground)]` |
+| D | AI-Assisted | Muted (light gray) | `badge` | `text-[var(--muted)]` |
 
 **Helper function:**
 ```typescript
-import { getAiLevelConfig } from '@/design/tokens';
+import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 
+// Get full configuration for an AI level
 const config = getAiLevelConfig('A');
-// { label: 'AI-Native', color: 'var(--success)', badgeClass: 'badge-success' }
+// Returns: { label: 'AI-Native', color: 'var(--success)', badgeClass: 'badge-success', textClass: 'text-[var(--success)]' }
+
+// Use in components
+function AiLevelBadge({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
+  return (
+    <span className={`badge ${config.badgeClass}`}>
+      Level {level}: {config.label}
+    </span>
+  );
+}
+
+// For text-only display
+function AiLevelText({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
+  return (
+    <span className={`text-sm ${config.textClass}`}>
+      Level {level} {config.label}
+    </span>
+  );
+}
+```
+
+**Direct access to all levels:**
+```typescript
+import { aiLevels } from '@/design/tokens';
+
+// Access specific level config
+const levelA = aiLevels.A; // { label, color, badgeClass, textClass }
 ```
 
 ## Responsive Design
@@ -509,4 +538,4 @@ import { typography, spacing, colors } from '@/design/tokens';
 ---
 
 **Last Updated:** 2026-01-28
-**Version:** 1.0.0
+**Version:** 1.1.0 - AI Level tokens fully integrated

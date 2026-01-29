@@ -1,6 +1,7 @@
 import React from 'react';
+import { getAiLevelConfig, components, type AiLevel } from '@/design/tokens';
 
-export type BadgeVariant = 'default' | 'accent' | 'success' | 'warning';
+export type BadgeVariant = keyof typeof components.badge.variants;
 
 export interface BadgeProps {
   variant?: BadgeVariant;
@@ -9,26 +10,24 @@ export interface BadgeProps {
 }
 
 export function Badge({ variant = 'default', children, className = '' }: BadgeProps) {
-  const variantClass = variant !== 'default' ? `badge-${variant}` : '';
+  const variantClass = components.badge.variants[variant];
   return (
-    <span className={`badge ${variantClass} ${className}`.trim()}>
+    <span className={`${variantClass} ${className}`.trim()}>
       {children}
     </span>
   );
 }
 
 export interface AiLevelBadgeProps {
-  level: number;
+  level: AiLevel;
 }
 
 export function AiLevelBadge({ level }: AiLevelBadgeProps) {
-  const labels = { 1: 'AI Feature', 2: 'AI Major', 3: 'AI Core', 4: 'AI Native' };
-  const variants: Record<number, BadgeVariant> = { 1: 'default', 2: 'default', 3: 'accent', 4: 'success' };
-  
+  const config = getAiLevelConfig(level);
   return (
-    <Badge variant={variants[level as keyof typeof variants]}>
-      L{level}: {labels[level as keyof typeof labels]}
-    </Badge>
+    <span className={`badge ${config.badgeClass}`}>
+      Level {level}: {config.label}
+    </span>
   );
 }
 
