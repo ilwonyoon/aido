@@ -20,7 +20,7 @@ interface CompanyLogoProps {
 export function CompanyLogo({ website, name, size = 32 }: CompanyLogoProps) {
   const [failed, setFailed] = useState(false);
   const domain = getDomain(website);
-  const token = process.env.NEXT_PUBLIC_LOGODEV_TOKEN;
+  const token = 'pk_ZjMwtG5fQ_-Dt-Km4EjHHg'; // Same token as CompanyCardLayouts
 
   if (failed || !token) {
     return (
