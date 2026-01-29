@@ -660,7 +660,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     setAiTypeFilter([]);
     setMarketFilter([]);
     setIndustryFilter([]);
-    setDesignFocusFilter('');
   };
 
   return (
