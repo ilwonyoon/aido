@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "deploy": "npm run build && firebase deploy --only hosting",
-    "deploy:preview": "npm run build && firebase hosting:channel:deploy preview"
+    "deploy:preview": "npm run build && firebase hosting:channel:deploy preview",
+    "fetch-og-images": "node scripts/fetch-og-images.mjs"
   },
   "dependencies": {
     "firebase": "^12.8.0",
@@ -26,9 +27,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/sharp": "^0.31.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.4",
     "playwright": "^1.58.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -1,0 +1,23 @@
+[
+  {
+    "companyId": "abridge",
+    "name": "Abridge",
+    "website": "https://www.abridge.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/abridge-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/abridge-screenshot.webp"
+  },
+  {
+    "companyId": "airloom",
+    "name": "Airloom",
+    "website": "https://www.airloom.energy",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airloom-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airloom-screenshot.webp"
+  },
+  {
+    "companyId": "airops",
+    "name": "Airops",
+    "website": "https://www.airops.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airops-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airops-screenshot.webp"
+  }
+]
