@@ -25,8 +25,8 @@ export default function AiLevelsPage() {
   return (
     <div className="max-w-3xl mx-auto">
       <div className="mb-8">
-        <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
-          ← Back to companies
+        <Link href="/about" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
+          &larr; Back to about
         </Link>
       </div>
 
