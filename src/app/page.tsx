@@ -232,7 +232,7 @@ function HomePageContent() {
             z-[100]
             overflow-y-auto
             ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
-            transition-all duration-300
+            transition-[width] duration-300
           `}
           style={{ overscrollBehavior: 'contain' }}
         >
