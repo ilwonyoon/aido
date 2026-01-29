@@ -28,6 +28,7 @@ function HomePageContent() {
   const [isFullWidth, setIsFullWidth] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
@@ -56,14 +57,17 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
+    const currentCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+    setClosingCompany(currentCompany);
     setIsClosing(true);
     setTimeout(() => {
       window.history.pushState({}, '', '/');
       setSelectedCompanyId(null);
       setIsFullWidth(false);
       setIsClosing(false);
+      setClosingCompany(null);
     }, 300); // Match animation duration
-  }, []);
+  }, [selectedCompanyId]);
 
   const handleCompanyClick = useCallback((companyId: string) => {
     // Use window.history to avoid router re-render
@@ -212,7 +216,11 @@ function HomePageContent() {
       </div>
 
       {/* Side Panel - Overlay on top */}
-      {(selectedCompanyId || isClosing) && selectedCompany && (
+      {(selectedCompanyId || isClosing) && (closingCompany || selectedCompany) && (() => {
+        const displayCompany = closingCompany || selectedCompany;
+        if (!displayCompany) return null;
+
+        return (
         <div
           ref={panelRef}
           className={`
@@ -226,6 +234,7 @@ function HomePageContent() {
             ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
             transition-all duration-300
           `}
+          style={{ overscrollBehavior: 'contain' }}
         >
           {/* Header - Sticky */}
           <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
@@ -264,7 +273,7 @@ function HomePageContent() {
               <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
                 showCompanyNameInHeader ? 'opacity-100' : 'opacity-0'
               }`}>
-                {selectedCompany.name}
+                {displayCompany.name}
               </h2>
             </div>
             <div className="relative">
@@ -289,10 +298,11 @@ function HomePageContent() {
 
           {/* Company Detail Content */}
           <div className="pt-4 px-4 sm:px-6 pb-6 panel-view">
-            <CompanyDetail company={selectedCompany} />
+            <CompanyDetail company={displayCompany} />
           </div>
         </div>
-      )}
+        );
+      })()}
     </div>
   );
 }
