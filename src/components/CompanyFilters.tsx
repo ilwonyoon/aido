@@ -8,6 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/CompanyCardLayouts';
 
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'aiLevel';
 
@@ -345,7 +346,7 @@ function MultiSelectFilter({
   );
 }
 
-type ViewMode = 'card' | 'table';
+type ViewMode = 'grid' | 'list';
 
 interface CompanyFiltersProps {
   companies: Company[];
@@ -356,7 +357,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const router = useRouter();
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
-  const [viewMode, setViewMode] = useState<ViewMode>('table');
+  const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [isMobile, setIsMobile] = useState(false);
   const [reviewStatusFilter, setReviewStatusFilter] = useState('not_yet_reviewed');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
@@ -365,6 +366,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
   const [marketFilter, setMarketFilter] = useState<Market[]>([]);
   const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
+  const [designFocusFilter, setDesignFocusFilter] = useState('');
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -376,7 +378,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const effectiveViewMode = isMobile ? 'card' : viewMode;
+  const effectiveViewMode = isMobile ? 'grid' : viewMode;
 
   // SF Bay Area cities to consolidate
   const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
@@ -569,9 +571,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!hasMatch) return false;
       }
 
+      // Design Focus Filter
+      if (designFocusFilter) {
+        const dwt = company.designWorkType;
+        if (designFocusFilter === 'logic' && dwt.logicBehavior.level !== 'high') return false;
+        if (designFocusFilter === 'evaluation' && dwt.evaluation.level !== 'high') return false;
+        if (designFocusFilter === 'interface' && dwt.interface.level !== 'high') return false;
+      }
+
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, designFocusFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -649,7 +659,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0 || designFocusFilter;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
@@ -659,6 +669,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     setAiTypeFilter([]);
     setMarketFilter([]);
     setIndustryFilter([]);
+    setDesignFocusFilter('');
   };
 
   return (
@@ -731,6 +742,16 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             options={industryOptions}
             onChange={(vals) => setIndustryFilter(vals as Industry[])}
           />
+          <DropdownFilter
+            label="Design Focus"
+            value={designFocusFilter}
+            options={[
+              { value: 'logic', label: 'Logic & Behavior — High' },
+              { value: 'evaluation', label: 'Evaluation — High' },
+              { value: 'interface', label: 'Interface — High' },
+            ]}
+            onChange={setDesignFocusFilter}
+          />
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
@@ -779,35 +800,18 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             {!isMobile && (
               <div className="flex items-center gap-1">
                 <button
-                  onClick={() => setViewMode('card')}
-                  className={`p-1.5 rounded border transition-colors ${
-                    viewMode === 'card'
-                      ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                      : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-                  }`}
-                  title="Card view"
+                  onClick={() => setViewMode('list')}
+                  className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
+                  aria-label="List view"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="3" y="3" width="7" height="7" rx="1"/>
-                    <rect x="14" y="3" width="7" height="7" rx="1"/>
-                    <rect x="3" y="14" width="7" height="7" rx="1"/>
-                    <rect x="14" y="14" width="7" height="7" rx="1"/>
-                  </svg>
+                  <ListIcon active={viewMode === 'list'} />
                 </button>
                 <button
-                  onClick={() => setViewMode('table')}
-                  className={`p-1.5 rounded border transition-colors ${
-                    viewMode === 'table'
-                      ? 'bg-[var(--accent)] border-[var(--accent)] text-white'
-                      : 'bg-[var(--card)] border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-                  }`}
-                  title="Table view"
+                  onClick={() => setViewMode('grid')}
+                  className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
+                  aria-label="Grid view"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="3" y1="6" x2="21" y2="6"/>
-                    <line x1="3" y1="12" x2="21" y2="12"/>
-                    <line x1="3" y1="18" x2="21" y2="18"/>
-                  </svg>
+                  <GridIcon active={viewMode === 'grid'} />
                 </button>
               </div>
             )}
@@ -820,253 +824,19 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         <div className="card p-8 text-center text-[var(--muted)]">
           No companies match your filters.
         </div>
-      ) : effectiveViewMode === 'table' ? (
-        /* Table View - Google Sheets style */
-        <div className="border border-[var(--border)] rounded-lg overflow-hidden bg-[var(--card)]">
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-[var(--background)] border-b border-[var(--border)]">
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Company
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Description
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Location
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Stage & Funding
-                  </th>
-                  <th className="text-center py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Roles
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedCompanies.map((company) => {
-                  const interest = interestStatuses[company.id];
-                  const aiLevelColors = {
-                    D: 'text-[var(--muted)]',
-                    C: 'text-[var(--muted)]',
-                    B: 'text-[var(--accent-light)]',
-                    A: 'text-[var(--success)]',
-                  };
-
-                  const handleNavigate = () => {
-                    void trackEvent('company_detail_click', {
-                      company_id: company.id,
-                      company_name: company.name,
-                      source: 'table_row',
-                    });
-                    if (onCompanyClick) {
-                      onCompanyClick(company.id);
-                    } else {
-                      router.push(`/company/${company.id}`);
-                    }
-                  };
-
-                  return (
-                    <tr
-                      key={company.id}
-                      className={`group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors ${
-                        interest === 'not_interested' ? 'opacity-50' : ''
-                      }`}
-                    >
-                      <td
-                        onClick={handleNavigate}
-                        className="py-3 px-4 border-r border-[var(--border)] cursor-pointer"
-                      >
-                        <Link
-                          href={onCompanyClick ? '#' : `/company/${company.id}`}
-                          className="hover:text-[var(--accent-light)]"
-                          onClick={(e) => {
-                            e.stopPropagation(); // Prevent td onClick from firing
-                            void trackEvent('company_detail_click', {
-                              company_id: company.id,
-                              company_name: company.name,
-                              source: 'table_name_link',
-                            });
-                            if (onCompanyClick) {
-                              e.preventDefault();
-                              onCompanyClick(company.id);
-                            }
-                          }}
-                        >
-                          <div className="flex items-center gap-2 flex-nowrap">
-                            <span className="font-medium text-sm whitespace-nowrap">{company.name}</span>
-                            <span className={`text-xs font-medium flex-shrink-0 ${aiLevelColors[company.aiNativeLevel]}`}>
-                              {company.aiNativeLevel}
-                            </span>
-                          </div>
-                        </Link>
-                      </td>
-                      <td
-                        onClick={handleNavigate}
-                        className="py-3 px-4 text-sm text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors border-r border-[var(--border)] cursor-pointer"
-                      >
-                        <div className="line-clamp-2">{company.description}</div>
-                        {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
-                          <div className="flex flex-wrap gap-1 mt-1.5">
-                            {company.aiTypes?.map(t => (
-                              <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                                {AI_TYPE_LABELS[t]}
-                              </span>
-                            ))}
-                            {company.markets?.map(m => (
-                              <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                                {MARKET_LABELS[m]}
-                              </span>
-                            ))}
-                            {company.industries?.map(i => (
-                              <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                                {INDUSTRY_LABELS[i]}
-                              </span>
-                            ))}
-                          </div>
-                        ) : null}
-                      </td>
-                      <td
-                        onClick={handleNavigate}
-                        className="py-3 px-4 text-xs border-r border-[var(--border)] cursor-pointer"
-                      >
-                        <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">{company.headquarters.split(',')[0]}</span>
-                        <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">, </span>
-                        {company.remote === 'No' ? (
-                          <span className="text-[var(--warning)]">On-site</span>
-                        ) : company.remote === 'Hybrid' ? (
-                          <span className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors">Hybrid</span>
-                        ) : (
-                          <span className="text-[var(--success)]">Remote</span>
-                        )}
-                      </td>
-                      <td
-                        onClick={handleNavigate}
-                        className="py-3 px-4 text-xs border-r border-[var(--border)] cursor-pointer"
-                      >
-                        <div className="text-[var(--foreground)]">{company.stage}</div>
-                        {company.totalFunding && (
-                          <div className="text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors mt-0.5">{company.totalFunding}</div>
-                        )}
-                      </td>
-                      <td
-                        onClick={handleNavigate}
-                        className="py-3 px-4 text-center cursor-pointer"
-                      >
-                        {company.openRoles.length > 0 ? (
-                          <span className="text-[var(--success)] text-lg">✓</span>
-                        ) : (
-                          <span className="text-[var(--muted)]">-</span>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+      ) : effectiveViewMode === 'grid' ? (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {sortedCompanies.map(company => (
+            <CompanyCard key={company.id} company={company} onCompanyClick={onCompanyClick} />
+          ))}
         </div>
       ) : (
-        /* Card View */
-        <div className="space-y-4">
-          {sortedCompanies.map((company) => {
-            const interest = interestStatuses[company.id];
-            const hasRecentFunding = isRecentFunding(company);
-            return (
-              <Link
-                key={company.id}
-                href={onCompanyClick ? '#' : `/company/${company.id}`}
-                className={`card block p-5 ${interest === 'not_interested' ? 'opacity-50' : ''}`}
-                onClick={(e) => {
-                  void trackEvent('company_detail_click', {
-                    company_id: company.id,
-                    company_name: company.name,
-                    source: 'card',
-                  });
-                  if (onCompanyClick) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    onCompanyClick(company.id);
-                  }
-                }}
-              >
-                <div className="space-y-3">
-                  {/* Top Row: Company Name + Open Roles Only */}
-                  <div className="flex items-start justify-between gap-4">
-                    <h2 className="text-lg font-medium flex-1 min-w-0">{company.name}</h2>
-                    <div className="flex-shrink-0 text-sm text-[var(--muted)]">
-                      <span className="inline-block mr-1">Open Roles:</span>
-                      {company.openRoles.length > 0 ? (
-                        <span className="text-[var(--success)] text-lg">✓</span>
-                      ) : (
-                        <span>-</span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Tags */}
-                  {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
-                    <div className="flex flex-wrap gap-1">
-                      {company.aiTypes?.map(t => (
-                        <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                          {AI_TYPE_LABELS[t]}
-                        </span>
-                      ))}
-                      {company.markets?.map(m => (
-                        <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                          {MARKET_LABELS[m]}
-                        </span>
-                      ))}
-                      {company.industries?.map(i => (
-                        <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-                          {INDUSTRY_LABELS[i]}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
-
-                  {/* Full Width: Description */}
-                  <p className="text-[var(--muted)] text-sm line-clamp-2">
-                    {company.description}
-                  </p>
-
-                  {/* Full Width: AI Level + Metadata */}
-                  <div className="flex items-center gap-1.5 text-sm flex-wrap">
-                    <AiLevelText level={company.aiNativeLevel} />
-                    <span className="text-[var(--border)]">|</span>
-                    {interest === 'tier_0' && (
-                      <>
-                        <span className="text-[var(--success)]">🥇 Tier 0</span>
-                        <span className="text-[var(--border)]">|</span>
-                      </>
-                    )}
-                    {interest === 'tier_1' && (
-                      <>
-                        <span className="text-[var(--accent)]">🥈 Tier 1</span>
-                        <span className="text-[var(--border)]">|</span>
-                      </>
-                    )}
-                    <span className="text-[var(--muted)]">{company.headquarters}</span>
-                    <span className="text-[var(--border)]">|</span>
-                    <span className="text-[var(--muted)]">{company.stage}</span>
-                    {company.remote === 'Yes' && (
-                      <>
-                        <span className="text-[var(--border)]">|</span>
-                        <span className="text-[var(--muted)]">Remote OK</span>
-                      </>
-                    )}
-                    {hasRecentFunding && (
-                      <>
-                        <span className="text-[var(--border)]">|</span>
-                        <span className="text-[var(--warning)]">New Funding</span>
-                      </>
-                    )}
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
+        <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
+          {sortedCompanies.map(company => (
+            <div key={company.id} className="px-5">
+              <CompanyListRow company={company} onCompanyClick={onCompanyClick} />
+            </div>
+          ))}
         </div>
       )}
     </div>

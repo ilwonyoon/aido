@@ -57,16 +57,6 @@ export function Navigation() {
                 : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
             }
           >
-            Companies
-          </Link>
-          <Link
-            href="/jobs"
-            className={
-              isActive('/jobs')
-                ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
-            }
-          >
             Jobs
           </Link>
           <Link
@@ -142,17 +132,6 @@ export function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-3 px-4 rounded-lg ${
                   isActive('/')
-                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
-                }`}
-              >
-                Companies
-              </Link>
-              <Link
-                href="/jobs"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block py-3 px-4 rounded-lg ${
-                  isActive('/jobs')
                     ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
                     : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
                 }`}

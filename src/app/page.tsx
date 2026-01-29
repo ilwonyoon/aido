@@ -27,6 +27,7 @@ function HomePageContent() {
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const [isFullWidth, setIsFullWidth] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
@@ -55,9 +56,13 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    window.history.pushState({}, '', '/');
-    setSelectedCompanyId(null);
-    setIsFullWidth(false);
+    setIsClosing(true);
+    setTimeout(() => {
+      window.history.pushState({}, '', '/');
+      setSelectedCompanyId(null);
+      setIsFullWidth(false);
+      setIsClosing(false);
+    }, 300); // Match animation duration
   }, []);
 
   const handleCompanyClick = useCallback((companyId: string) => {
@@ -194,9 +199,9 @@ function HomePageContent() {
       >
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-2xl font-semibold mb-2">AI design opportunities for Product Design</h1>
-          <p className="text-[var(--muted)] text-sm">
-            Collecting various information about user problems, companies, and opportunities in the AI-native space
+          <h1 className="text-2xl font-semibold mb-2">Where to Design AI</h1>
+          <p className="text-[var(--muted)] text-sm leading-relaxed">
+            AI-native companies with research-backed notes on why to join, and why not.
           </p>
         </div>
 
@@ -206,16 +211,8 @@ function HomePageContent() {
         </div>
       </div>
 
-      {/* Backdrop - click to close panel (desktop only, non-fullwidth) */}
-      {selectedCompanyId && selectedCompany && !isFullWidth && (
-        <div
-          className="hidden md:block fixed inset-0 z-40"
-          onClick={closePanel}
-        />
-      )}
-
       {/* Side Panel - Overlay on top */}
-      {selectedCompanyId && selectedCompany && (
+      {(selectedCompanyId || isClosing) && selectedCompany && (
         <div
           ref={panelRef}
           className={`
@@ -224,14 +221,14 @@ function HomePageContent() {
             ${isFullWidth ? 'w-full' : 'w-full md:w-[60%] lg:w-1/2'}
             bg-[var(--background)]
             border-l border-[var(--border)]
-            z-50
+            z-[100]
             overflow-y-auto
-            animate-slideInRight
+            ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
             transition-all duration-300
           `}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
