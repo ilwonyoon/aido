@@ -276,7 +276,7 @@ function HomePageContent() {
               </button>
               {showCopied && (
                 <div className="absolute right-0 top-full mt-1 px-3 py-1.5 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap">
-                  Link copied
+                  🔗 Link copied to your clipboard
                 </div>
               )}
             </div>
