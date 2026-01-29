@@ -172,6 +172,17 @@ a.card {
   color: inherit;
 }
 
+/* Article content links - company links in markdown */
+.article-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.article-content a:hover {
+  color: var(--accent-light);
+}
+
 /* Badge styles */
 .badge {
   display: inline-flex;
