@@ -28,6 +28,7 @@ import { colors, spacing, typography, components } from '@/design/tokens';
 - `background` - Main background color
 - `foreground` - Main text color
 - `muted` - Secondary text, less prominent
+- `mutedDim` - Dimmed text, inactive navigation (dark: #555, light: #999)
 - `border` - Border color for dividers and outlines
 
 **Accent Colors:**
@@ -227,7 +228,7 @@ Navigation links with active state indicator. Active = foreground + font-medium,
   className={
     isActive('/path')
       ? 'text-[var(--foreground)] font-medium'
-      : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+      : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
   }
 >
   Link Label

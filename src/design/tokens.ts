@@ -14,6 +14,7 @@ export const colors = {
   background: 'var(--background)',
   foreground: 'var(--foreground)',
   muted: 'var(--muted)',
+  mutedDim: 'var(--muted-dim)',
   border: 'var(--border)',
 
   // Accent colors
