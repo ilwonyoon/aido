@@ -7,6 +7,54 @@ import { Company } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 
 // ────────────────────────────────────────────────────────────────────────────
+// Logo helper
+// ────────────────────────────────────────────────────────────────────────────
+
+const LOGO_DEV_TOKEN = 'pk_ZjMwtG5fQ_-Dt-Km4EjHHg';
+
+function getLogoDomain(website: string): string {
+  try {
+    return new URL(website).hostname.replace(/^www\./, '');
+  } catch {
+    return '';
+  }
+}
+
+function CompanyLogo({ company, size = 32 }: { company: Company; size?: number }) {
+  const domain = getLogoDomain(company.website);
+  const config = getAiLevelConfig(company.aiNativeLevel);
+  const [errored, setErrored] = useState(false);
+
+  const fallbackStyle = config.badgeClass === 'badge-success'
+    ? 'bg-[rgba(80,227,194,0.12)] text-[var(--success)]'
+    : config.badgeClass === 'badge-accent'
+      ? 'bg-[rgba(0,112,243,0.12)] text-[var(--accent-light)]'
+      : 'bg-[var(--card-hover)] text-[var(--muted)]';
+
+  if (!domain || errored) {
+    return (
+      <div
+        className={`rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${fallbackStyle}`}
+        style={{ width: size, height: size }}
+      >
+        {company.name[0]}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=${size * 2}&format=png`}
+      alt={`${company.name} logo`}
+      width={size}
+      height={size}
+      className="rounded-lg flex-shrink-0 bg-white"
+      onError={() => setErrored(true)}
+    />
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
 // Filter Components
 // ────────────────────────────────────────────────────────────────────────────
 
@@ -199,7 +247,133 @@ function DesignFocus({ dwt }: { dwt: Company['designWorkType'] }) {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// Company Card
+// View Toggle Icons
+// ────────────────────────────────────────────────────────────────────────────
+
+function GridIcon({ active }: { active: boolean }) {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={active ? 'text-[var(--foreground)]' : 'text-[var(--muted-dim)]'}>
+      <rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+function ListIcon({ active }: { active: boolean }) {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={active ? 'text-[var(--foreground)]' : 'text-[var(--muted-dim)]'}>
+      <rect x="1" y="2" width="14" height="3" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="1" y="7" width="14" height="3" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="1" y="12" width="14" height="3" rx="1" stroke="currentColor" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Company List Row (full-width, all data)
+// ────────────────────────────────────────────────────────────────────────────
+
+function CompanyListRow({ company }: { company: Company }) {
+  const config = getAiLevelConfig(company.aiNativeLevel);
+  const roles = company.openRoles;
+
+  return (
+    <div className="py-6">
+      {/* Header row */}
+      <div className="flex items-start justify-between gap-4 mb-1.5">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <CompanyLogo company={company} size={32} />
+          <div className="min-w-0">
+            <div className="flex items-center gap-2 flex-wrap">
+              <h3 className="font-semibold text-[var(--foreground)]">{company.name}</h3>
+              <span
+                className={`badge ${config.badgeClass} flex-shrink-0`}
+                style={{ fontSize: '10px', padding: '1px 6px' }}
+              >
+                {company.aiNativeLevel}
+              </span>
+              <span className="text-xs text-[var(--muted)]">
+                {company.headquarters} &middot; {company.stage}
+                {company.remote && company.remote !== 'Unknown' && <> &middot; {company.remote}</>}
+              </span>
+            </div>
+          </div>
+        </div>
+        <Link
+          href={`/company/${company.id}`}
+          className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)] transition-colors flex-shrink-0"
+        >
+          Full profile &rarr;
+        </Link>
+      </div>
+
+      {/* Description */}
+      <p className="text-sm text-[var(--muted)] mb-4">{company.description}</p>
+
+      {/* Two-column: Why Join / Why Not */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 mb-4">
+        {/* Why Join */}
+        <div>
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--muted)] mb-1.5">Why join</div>
+          <ul className="space-y-1">
+            {company.tracking.whyJoin.map((reason, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm leading-snug">
+                <span className="text-[var(--success)] flex-shrink-0 mt-px font-medium">+</span>
+                <span className="text-[var(--foreground)]">{reason}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Why Not */}
+        <div>
+          <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--muted)] mb-1.5">Watch out</div>
+          <ul className="space-y-1">
+            {company.tracking.whyNot.map((reason, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm leading-snug">
+                <span className="text-[var(--warning)] flex-shrink-0 mt-px font-medium">&minus;</span>
+                <span className="text-[var(--muted)]">{reason}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Design Focus */}
+      <div className="mb-4">
+        <DesignFocus dwt={company.designWorkType} />
+      </div>
+
+      {/* Open Roles */}
+      <div className="border-t border-[var(--border)] pt-3">
+        <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--muted)] mb-2">
+          {roles.length} open {roles.length === 1 ? 'role' : 'roles'}
+        </div>
+        <div className="flex flex-wrap gap-x-6 gap-y-1.5">
+          {roles.map((role, i) => (
+            <Link
+              key={i}
+              href={role.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm hover:text-[var(--accent-light)] transition-colors group"
+            >
+              <span>{role.title}</span>
+              <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent-light)] ml-1.5">
+                {role.location.split(',')[0]} &rarr;
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Company Card (grid view)
 // ────────────────────────────────────────────────────────────────────────────
 
 function CompanyCard({ company }: { company: Company }) {
@@ -208,20 +382,12 @@ function CompanyCard({ company }: { company: Company }) {
   const topWhyNot = company.tracking.whyNot[0];
   const roles = company.openRoles;
 
-  const avatarStyle = config.badgeClass === 'badge-success'
-    ? 'bg-[rgba(80,227,194,0.12)] text-[var(--success)]'
-    : config.badgeClass === 'badge-accent'
-      ? 'bg-[rgba(0,112,243,0.12)] text-[var(--accent-light)]'
-      : 'bg-[var(--card-hover)] text-[var(--muted)]';
-
   return (
     <div className="card p-5 flex flex-col">
       {/* Header */}
       <div className="flex items-start justify-between gap-3 mb-1.5">
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${avatarStyle}`}>
-            {company.name[0]}
-          </div>
+          <CompanyLogo company={company} size={32} />
           <div className="min-w-0">
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-[var(--foreground)] truncate">{company.name}</h3>
@@ -325,6 +491,7 @@ function isSFBayArea(hq: string): boolean {
 // ────────────────────────────────────────────────────────────────────────────
 
 export default function JobsPage() {
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [designFocusFilter, setDesignFocusFilter] = useState('');
@@ -432,8 +599,8 @@ export default function JobsPage() {
           )}
         </div>
 
-        {/* Count */}
-        <div className="flex items-center pl-3 pr-3">
+        {/* Count + View Toggle */}
+        <div className="flex items-center justify-between pl-3 pr-3">
           <div className="text-sm font-medium text-[var(--foreground)]">
             {filtered.length === totalCompanies ? (
               <>{totalCompanies} companies &middot; {totalRoles} roles</>
@@ -446,18 +613,42 @@ export default function JobsPage() {
               </>
             )}
           </div>
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setViewMode('list')}
+              className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
+              aria-label="List view"
+            >
+              <ListIcon active={viewMode === 'list'} />
+            </button>
+            <button
+              onClick={() => setViewMode('grid')}
+              className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
+              aria-label="Grid view"
+            >
+              <GridIcon active={viewMode === 'grid'} />
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Company Cards */}
+      {/* Company List */}
       {filtered.length === 0 ? (
         <div className="card p-8 text-center text-[var(--muted)]">
           No companies match your filters.
         </div>
-      ) : (
+      ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {filtered.map(company => (
             <CompanyCard key={company.id} company={company} />
+          ))}
+        </div>
+      ) : (
+        <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
+          {filtered.map(company => (
+            <div key={company.id} className="px-5">
+              <CompanyListRow company={company} />
+            </div>
           ))}
         </div>
       )}
