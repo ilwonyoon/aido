@@ -35,15 +35,16 @@ export function MarkdownRenderer({
         ),
 
         // Customize link styles
-        a: ({ node, href, ...props }) => {
+        a: ({ node, href, children, ...props }) => {
           // Internal links (starting with /)
           if (href?.startsWith('/')) {
             return (
               <Link
                 href={href}
                 className="text-[var(--accent-light)] underline hover:text-[var(--accent)]"
-                {...props}
-              />
+              >
+                {children}
+              </Link>
             );
           }
           // External links
@@ -54,7 +55,9 @@ export function MarkdownRenderer({
               target="_blank"
               rel="noopener noreferrer"
               {...props}
-            />
+            >
+              {children}
+            </a>
           );
         },
 
