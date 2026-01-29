@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { CompanyLogo } from './CompanyLogo';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
@@ -108,8 +109,20 @@ export function CompanyDetail({ company }: { company: Company }) {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
+    if (!element) return;
+
+    const offset = 80;
+    // Find the panel scroll container (closest scrollable parent)
+    const scrollContainer = element.closest('.overflow-y-auto') as HTMLElement | null;
+
+    if (scrollContainer) {
+      // Panel mode: scroll within the panel
+      const elementTop = element.getBoundingClientRect().top;
+      const containerTop = scrollContainer.getBoundingClientRect().top;
+      const scrollPosition = scrollContainer.scrollTop + (elementTop - containerTop) - offset;
+      scrollContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    } else {
+      // Full page mode: scroll window
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
@@ -181,6 +194,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           {/* Header Info */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
+              <CompanyLogo website={company.website} name={company.name} size={48} />
               <h1 className="text-2xl sm:text-3xl font-semibold">{company.name}</h1>
               <AiLevelBadge level={company.aiNativeLevel} />
             </div>
