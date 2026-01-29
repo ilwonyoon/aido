@@ -85,8 +85,8 @@ function analyzeSeriesBCompanies(): SeriesBAnalysis[] {
       seedAmount: seedRound?.amount || null,
       seriesAAmount: seriesARound?.amount || null,
       seriesBAmount: seriesBRound.amount,
-      totalFunding: company.totalFunding,
-      latestValuation: company.valuation,
+      totalFunding: company.totalFunding || null,
+      latestValuation: company.valuation || null,
       timeline,
     });
   }
