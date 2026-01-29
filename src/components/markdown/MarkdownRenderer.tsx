@@ -2,8 +2,6 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
-import Link from 'next/link';
 
 interface MarkdownRendererProps {
   content: string;
@@ -15,11 +13,10 @@ export function MarkdownRenderer({
   className = '',
 }: MarkdownRendererProps) {
   return (
-    <div className={`markdown-content ${className}`}>
-    <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw]}
-      components={{
+    <div className={className}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
         // Customize heading styles
         h1: ({ node, ...props }) => (
           <h1 className="text-3xl font-semibold mb-4 mt-8" {...props} />
@@ -34,114 +31,42 @@ export function MarkdownRenderer({
           <h4 className="text-lg font-medium mb-2 mt-3" {...props} />
         ),
 
-        // Customize link styles
-        a: ({ node, href, children, ...props }) => {
-          // Internal links (starting with /)
-          if (href?.startsWith('/')) {
-            return (
-              <Link
-                href={href}
-                className="text-[var(--accent-light)] underline hover:text-[var(--accent)]"
-              >
-                {children}
-              </Link>
-            );
-          }
-          // External links
-          return (
-            <a
-              href={href}
-              className="text-[var(--accent-light)] underline hover:text-[var(--accent)]"
-              target="_blank"
-              rel="noopener noreferrer"
-              {...props}
-            >
-              {children}
-            </a>
-          );
-        },
+        // Links - let CSS handle styling
+        a: ({ node, ...props }) => <a {...props} />,
 
-        // Customize list styles
-        ul: ({ node, ...props }) => (
-          <ul className="space-y-2 my-4" {...props} />
-        ),
-        ol: ({ node, ...props }) => (
-          <ol className="space-y-2 my-4 list-decimal list-inside" {...props} />
-        ),
-        li: ({ node, ...props }) => (
-          <li className="text-[var(--foreground)] ml-5 list-disc" {...props} />
-        ),
+        // Lists
+        ul: ({ node, ...props }) => <ul {...props} />,
+        ol: ({ node, ...props }) => <ol {...props} />,
+        li: ({ node, ...props }) => <li {...props} />,
 
-        // Customize paragraph
-        p: ({ node, ...props }) => (
-          <p className="mb-4 leading-relaxed text-[var(--foreground)]" {...props} />
-        ),
+        // Paragraph
+        p: ({ node, ...props }) => <p {...props} />,
 
-        // Customize blockquote
-        blockquote: ({ node, ...props }) => (
-          <blockquote
-            className="pl-4 border-l-4 border-[var(--accent)] text-[var(--muted)] my-4"
-            {...props}
-          />
-        ),
+        // Blockquote
+        blockquote: ({ node, ...props }) => <blockquote {...props} />,
 
-        // Customize code blocks
-        code: ({ node, className: codeClassName, ...props }) => {
-          const inline = !codeClassName;
-          if (inline) {
-            return (
-              <code
-                className="font-mono text-sm text-[var(--accent)] bg-[var(--card)] px-1.5 py-0.5 rounded"
-                {...props}
-              />
-            );
-          }
-          return (
-            <code
-              className="block font-mono text-sm bg-[var(--card)] p-4 rounded my-4 overflow-x-auto"
-              {...props}
-            />
-          );
-        },
+        // Code
+        code: ({ node, ...props }) => <code {...props} />,
+        pre: ({ node, ...props }) => <pre {...props} />,
 
-        // Customize tables
-        table: ({ node, ...props }) => (
-          <div className="overflow-x-auto my-4">
-            <table className="w-full text-sm" {...props} />
-          </div>
-        ),
-        thead: ({ node, ...props }) => (
-          <thead className="border-b border-[var(--border)]" {...props} />
-        ),
-        th: ({ node, ...props }) => (
-          <th className="text-left py-3 font-medium" {...props} />
-        ),
-        tbody: ({ node, ...props }) => (
-          <tbody className="text-[var(--muted)]" {...props} />
-        ),
-        tr: ({ node, ...props }) => (
-          <tr className="border-b border-[var(--border)]" {...props} />
-        ),
-        td: ({ node, ...props }) => <td className="py-3" {...props} />,
+        // Tables
+        table: ({ node, ...props }) => <table {...props} />,
+        thead: ({ node, ...props }) => <thead {...props} />,
+        tbody: ({ node, ...props }) => <tbody {...props} />,
+        tr: ({ node, ...props }) => <tr {...props} />,
+        th: ({ node, ...props }) => <th {...props} />,
+        td: ({ node, ...props }) => <td {...props} />,
 
-        // Customize horizontal rule
-        hr: ({ node, ...props }) => (
-          <hr className="border-[var(--border)] my-8" {...props} />
-        ),
+        // HR
+        hr: ({ node, ...props }) => <hr {...props} />,
 
-        // Customize strong/bold
-        strong: ({ node, ...props }) => (
-          <strong className="font-semibold text-[var(--foreground)]" {...props} />
-        ),
-
-        // Customize emphasis/italic
-        em: ({ node, ...props }) => (
-          <em className="italic text-[var(--foreground)]" {...props} />
-        ),
+        // Strong/Em
+        strong: ({ node, ...props }) => <strong {...props} />,
+        em: ({ node, ...props }) => <em {...props} />,
       }}
-    >
-      {content}
-    </ReactMarkdown>
+      >
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
