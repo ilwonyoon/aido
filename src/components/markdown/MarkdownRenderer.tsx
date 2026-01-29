@@ -17,18 +17,18 @@ export function MarkdownRenderer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-        // Customize heading styles with better spacing
+        // Customize heading styles with generous spacing for blog readability
         h1: ({ node, ...props }) => (
-          <h1 className="text-3xl font-semibold mb-6 mt-12 first:mt-0" {...props} />
+          <h1 className="!text-4xl !font-semibold !mb-8 !mt-24 first:!mt-0" {...props} />
         ),
         h2: ({ node, ...props }) => (
-          <h2 className="text-2xl font-semibold mb-4 mt-10 first:mt-0" {...props} />
+          <h2 className="!text-3xl !font-semibold !mb-7 !mt-20 first:!mt-0 !border-t !border-[var(--border)] !pt-12 first:!border-0 first:!pt-0" {...props} />
         ),
         h3: ({ node, ...props }) => (
-          <h3 className="text-xl font-medium mb-3 mt-8" {...props} />
+          <h3 className="!text-2xl !font-semibold !mb-5 !mt-14" {...props} />
         ),
         h4: ({ node, ...props }) => (
-          <h4 className="text-lg font-medium mb-2 mt-6" {...props} />
+          <h4 className="!text-xl !font-semibold !mb-4 !mt-10" {...props} />
         ),
 
         // Links - let CSS handle styling
@@ -37,11 +37,11 @@ export function MarkdownRenderer({
         // Lists with proper styling - FORCE BULLETS
         ul: ({ node, ...props }) => (
           <ul
-            className="!list-disc !list-outside !ml-8 !my-3"
+            className="!list-disc !list-outside !my-3"
             style={{
               listStyleType: 'disc',
               listStylePosition: 'outside',
-              paddingLeft: '2rem',
+              paddingLeft: '1.25rem',
               marginTop: '0.75rem',
               marginBottom: '1rem'
             }}
@@ -50,11 +50,11 @@ export function MarkdownRenderer({
         ),
         ol: ({ node, ...props }) => (
           <ol
-            className="!list-decimal !list-outside !ml-8 !my-3"
+            className="!list-decimal !list-outside !my-3"
             style={{
               listStyleType: 'decimal',
               listStylePosition: 'outside',
-              paddingLeft: '2rem',
+              paddingLeft: '1.25rem',
               marginTop: '0.75rem',
               marginBottom: '1rem'
             }}
@@ -67,7 +67,7 @@ export function MarkdownRenderer({
             style={{
               display: 'list-item',
               marginBottom: '0.5rem',
-              paddingLeft: '0.5rem'
+              paddingLeft: '0.25rem'
             }}
             {...props}
           />
