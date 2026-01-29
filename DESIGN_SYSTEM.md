@@ -216,6 +216,46 @@ Or using Tailwind directly:
 </div>
 ```
 
+### Navigation Link
+
+Navigation links with active state indicator.
+
+**Desktop Pattern (underline):**
+```tsx
+<Link
+  href="/path"
+  className={
+    isActive('/path')
+      ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
+      : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+  }
+>
+  Link Label
+</Link>
+```
+
+**Mobile Pattern (left border):**
+```tsx
+<Link
+  href="/path"
+  className={`block py-3 px-4 rounded-lg ${
+    isActive('/path')
+      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+  }`}
+>
+  Link Label
+</Link>
+```
+
+**Active state helper:**
+```typescript
+const isActive = (path: string) => {
+  if (path === '/') return pathname === '/';
+  return pathname.startsWith(path);
+};
+```
+
 ## Layout Patterns
 
 ### Page Container

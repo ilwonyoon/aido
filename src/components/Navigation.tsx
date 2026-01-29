@@ -40,11 +40,21 @@ export function Navigation() {
         </button>
         <div className="hidden lg:flex items-center gap-4 text-sm">
           <Link
+            href="/about"
+            className={
+              isActive('/about')
+                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+            }
+          >
+            About
+          </Link>
+          <Link
             href="/"
             className={
               isActive('/')
-                ? 'text-[var(--foreground)]'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
             }
           >
             Companies
@@ -53,21 +63,11 @@ export function Navigation() {
             href="/jobs"
             className={
               isActive('/jobs')
-                ? 'text-[var(--foreground)]'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
             }
           >
             Jobs
-          </Link>
-          <Link
-            href="/about"
-            className={
-              isActive('/about')
-                ? 'text-[var(--foreground)]'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
-            }
-          >
-            About
           </Link>
 
           {/* Analytics - Admin only */}
@@ -76,8 +76,8 @@ export function Navigation() {
               href="/analytics"
               className={
                 isActive('/analytics')
-                  ? 'text-[var(--foreground)]'
-                  : 'text-[var(--muted)] hover:text-[var(--foreground)]'
+                  ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
+                  : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
               }
             >
               Analytics
@@ -117,12 +117,23 @@ export function Navigation() {
             {/* Navigation Links */}
             <nav className="flex-1 px-6 space-y-1">
               <Link
+                href="/about"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/about')
+                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                }`}
+              >
+                About
+              </Link>
+              <Link
                 href="/"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-3 px-4 rounded-lg ${
                   isActive('/')
-                    ? 'bg-[var(--card)] text-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
                 }`}
               >
                 Companies
@@ -132,22 +143,11 @@ export function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-3 px-4 rounded-lg ${
                   isActive('/jobs')
-                    ? 'bg-[var(--card)] text-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
                 }`}
               >
                 Jobs
-              </Link>
-              <Link
-                href="/about"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block py-3 px-4 rounded-lg ${
-                  isActive('/about')
-                    ? 'bg-[var(--card)] text-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
-                }`}
-              >
-                About
               </Link>
 
               {isAdmin && (
@@ -156,8 +156,8 @@ export function Navigation() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-3 px-4 rounded-lg ${
                     isActive('/analytics')
-                      ? 'bg-[var(--card)] text-[var(--foreground)]'
-                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
                   }`}
                 >
                   Analytics
