@@ -42,9 +42,10 @@ export default function AboutPage() {
             <a href="https://www.bucketplace.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-light)] hover:underline">
               Bucketplace
             </a>
-            , a unicorn in the home interior space. Great experience. But while I was heads-down
-            building design systems and shipping features 14 hours ahead of SF, the AI landscape
-            quietly (or not so quietly) did a full speedrun without me.
+            , a unicorn in the home interior space. I spent most of 2025 pushing AI transformation
+            across the company — new workflows, new tools, a lot of convincing. But while I was
+            heads-down leading that charge 14 hours ahead of SF, the AI landscape quietly
+            (or not so quietly) did a full speedrun without me.
           </p>
           <p>
             I came back to the States and realized my mental map of tech was about two paradigm
