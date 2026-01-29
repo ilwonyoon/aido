@@ -41,7 +41,7 @@ export function MarkdownRenderer({
             return (
               <Link
                 href={href}
-                className="text-[var(--accent-light)] hover:underline"
+                className="text-[var(--accent-light)] underline hover:text-[var(--accent)]"
                 {...props}
               />
             );
@@ -50,7 +50,7 @@ export function MarkdownRenderer({
           return (
             <a
               href={href}
-              className="text-[var(--accent-light)] hover:underline"
+              className="text-[var(--accent-light)] underline hover:text-[var(--accent)]"
               target="_blank"
               rel="noopener noreferrer"
               {...props}
