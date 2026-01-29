@@ -26,6 +26,7 @@ function HomePageContent() {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const [isFullWidth, setIsFullWidth] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
@@ -74,6 +75,36 @@ function HomePageContent() {
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);
   }, []);
+
+  const handleShare = useCallback(async () => {
+    if (!selectedCompanyId) return;
+    const url = `${window.location.origin}/company/${selectedCompanyId}`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ url });
+        return;
+      } catch {
+        // User cancelled or share failed, fall through to clipboard
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(url);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const input = document.createElement('input');
+      input.value = url;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  }, [selectedCompanyId]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -241,6 +272,24 @@ function HomePageContent() {
               }`}>
                 {selectedCompany.name}
               </h2>
+            </div>
+            <div className="relative">
+              <button
+                onClick={handleShare}
+                className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
+                title="Share company page"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+              </button>
+              {showCopied && (
+                <div className="absolute right-0 top-full mt-1 px-3 py-1.5 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap">
+                  Link copied
+                </div>
+              )}
             </div>
           </div>
 
