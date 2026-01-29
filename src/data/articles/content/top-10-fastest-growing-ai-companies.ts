@@ -7,8 +7,8 @@ export const topTenFastestGrowingAiCompanies: Article = {
     'While OpenAI dominates headlines with $20B ARR, a lesser-known automotive AI startup called Toma is growing 138x year-over-year. Our analysis of 206 AI companies reveals the true hypergrowth leaders.',
   publishedDate: '2026-01-28',
   author: {
-    name: 'AIDO Research',
-    role: 'AI Company Intelligence',
+    name: 'Claude Code',
+    role: 'Written by AI',
   },
   seo: {
     metaDescription:
