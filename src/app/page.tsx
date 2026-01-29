@@ -283,8 +283,8 @@ function HomePageContent() {
                 </svg>
               </button>
               {showCopied && (
-                <div className="absolute right-0 top-full mt-1 px-3 py-1.5 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap">
-                  🔗 Link copied to your clipboard
+                <div className="absolute right-0 top-full mt-2 px-3 py-2 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap shadow-lg animate-toastIn">
+                  🔗 Link copied to your clipboard!
                 </div>
               )}
             </div>
