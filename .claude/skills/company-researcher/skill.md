@@ -431,9 +431,67 @@ userProblems: [
 
 ---
 
-### Phase 6: Designer Links & Open Roles
+### Phase 6: Visual Assets Collection (OG Images & Screenshots)
 
-#### 6.1 Designer Links
+#### 6.1 Automatic Image Collection
+
+**IMPORTANT**: OG 이미지와 스크린샷은 company 데이터의 일부로 자동 수집되어야 합니다.
+
+**수집 방법:**
+
+1. **Microlink API 사용** (API 키 불필요, 무료)
+   ```javascript
+   // OG Image
+   const ogUrl = `https://api.microlink.io?url=${company.website}&meta=true`;
+   const response = await fetch(ogUrl);
+   const data = await response.json();
+
+   if (data.status === 'success') {
+     ogImage = data.data.image?.url || data.data.logo?.url || null;
+   }
+
+   // Screenshot (optional, as fallback)
+   const screenshotUrl = `https://api.microlink.io?url=${company.website}&screenshot=true`;
+   const screenshotResponse = await fetch(screenshotUrl);
+   const screenshotData = await screenshotResponse.json();
+
+   if (screenshotData.status === 'success') {
+     screenshot = screenshotData.data.screenshot?.url || null;
+   }
+   ```
+
+2. **자동 다운로드 및 최적화**
+
+   수집된 이미지는 자동으로 다운로드되고 최적화됩니다:
+   ```bash
+   # 스크립트가 자동으로 실행됨
+   npm run fetch-og-images
+   ```
+
+   결과:
+   - 파일: `/public/og-images/{company-id}-og.webp`
+   - 파일: `/public/og-images/{company-id}-screenshot.webp`
+   - WebP 포맷으로 압축 (12-60KB)
+   - 800px max width, 85% quality
+
+3. **Company 데이터에 추가**
+   ```typescript
+   {
+     ogImage: '/og-images/company-id-og.webp',
+     screenshot: '/og-images/company-id-screenshot.webp',
+   }
+   ```
+
+**자동화 통합:**
+- OG 이미지 수집은 company researcher 실행 시 자동으로 포함됩니다
+- Microlink API는 CORS 우회 및 meta 태그 추출을 자동으로 처리합니다
+- 이미지가 없는 경우 screenshot을 fallback으로 사용합니다
+
+---
+
+### Phase 7: Designer Links & Open Roles
+
+#### 7.1 Designer Links
 ```typescript
 designerLinks: [
   {
@@ -454,7 +512,7 @@ designerLinks: [
 
 ---
 
-#### 6.2 Open Roles
+#### 7.2 Open Roles
 **이미 `/job-scraper`에서 수집 완료**
 
 Job scraper 결과를 그대로 사용:
@@ -466,7 +524,7 @@ openRoles: [
 
 ---
 
-### Phase 7: Culture Insights
+### Phase 8: Culture Insights
 
 #### 7.1 Culture Sources
 ```typescript
@@ -490,7 +548,7 @@ cultureInsights: [
 
 ---
 
-### Phase 8: Tracking & Meta
+### Phase 9: Tracking & Meta
 
 #### 8.1 Personal Tracking
 ```typescript

@@ -135,6 +135,10 @@ export interface Company {
   description: string;
   website: string;
 
+  // Visual Assets (automatically collected)
+  ogImage?: string;      // OpenGraph image URL (from Microlink API)
+  screenshot?: string;   // Screenshot URL (fallback if no OG image)
+
   // Location
   headquarters: string; // e.g., "San Francisco, CA"
   remote?: 'Yes' | 'Hybrid' | 'No' | 'Unknown';

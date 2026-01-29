@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyLogo } from './CompanyLogo';
+import { CompanyOGImage } from './CompanyOGImage';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
@@ -191,6 +192,9 @@ export function CompanyDetail({ company }: { company: Company }) {
 
         {/* Main Content */}
         <div className="w-full lg:flex-1 min-w-0 space-y-12">
+          {/* OG Image - 16:9 aspect ratio */}
+          <CompanyOGImage companyId={company.id} companyName={company.name} />
+
           {/* Header Info */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
