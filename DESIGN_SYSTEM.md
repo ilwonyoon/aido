@@ -218,16 +218,16 @@ Or using Tailwind directly:
 
 ### Navigation Link
 
-Navigation links with active state indicator.
+Navigation links with active state indicator. Active = foreground + font-medium, inactive = muted.
 
-**Desktop Pattern (underline):**
+**Desktop Pattern:**
 ```tsx
 <Link
   href="/path"
   className={
     isActive('/path')
-      ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
-      : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+      ? 'text-[var(--foreground)] font-medium'
+      : 'text-[var(--muted)] hover:text-[var(--foreground)]'
   }
 >
   Link Label

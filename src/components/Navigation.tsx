@@ -43,8 +43,8 @@ export function Navigation() {
             href="/about"
             className={
               isActive('/about')
-                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+                ? 'text-[var(--foreground)] font-medium'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             About
@@ -53,8 +53,8 @@ export function Navigation() {
             href="/"
             className={
               isActive('/')
-                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+                ? 'text-[var(--foreground)] font-medium'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             Companies
@@ -63,8 +63,8 @@ export function Navigation() {
             href="/jobs"
             className={
               isActive('/jobs')
-                ? 'text-[var(--foreground)] border-b-2 border-[var(--foreground)] pb-0.5'
-                : 'text-[var(--muted)] hover:text-[var(--foreground)] border-b-2 border-transparent pb-0.5'
+                ? 'text-[var(--foreground)] font-medium'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             Jobs
