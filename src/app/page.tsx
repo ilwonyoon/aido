@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, memo, Suspense } from 'react';
+import { flushSync } from 'react-dom';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
@@ -67,9 +68,15 @@ function HomePageContent() {
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
     console.log('[CLOSE] Starting close animation', { selectedCompanyId, currentCompany });
-    setClosingCompany(currentCompany);
-    setIsClosing(true);
+
+    // Force synchronous state update to ensure animation class is applied
+    flushSync(() => {
+      setClosingCompany(currentCompany);
+      setIsClosing(true);
+    });
+
     console.log('[CLOSE] State set: isClosing=true, closingCompany=', currentCompany?.name);
+
     setTimeout(() => {
       console.log('[CLOSE] Animation complete, cleaning up state');
       window.history.pushState({}, '', '/');
