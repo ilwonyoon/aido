@@ -242,8 +242,8 @@ a.card {
 
 .article-content p {
   color: rgba(237, 237, 237, 0.9);
-  line-height: 1.6; /* Reduced from 1.8 for better readability */
-  margin-bottom: 1rem; /* Reduced from 1.5rem */
+  line-height: 1.8; /* Restored - user prefers this */
+  margin-bottom: 1rem; /* Keep reduced margin */
 }
 
 [data-theme="light"] .article-content p {
@@ -282,8 +282,8 @@ a.card {
 
 .article-content li {
   margin-bottom: 0.25rem !important; /* Tighter grouping within lists */
-  line-height: 1.6 !important; /* Reduced from 1.7 */
-  padding-left: 0.25rem !important; /* Reduced from 0.5rem */
+  line-height: 1.8 !important; /* Restored - user prefers this */
+  padding-left: 0.25rem !important;
   display: list-item !important;
 }
 
