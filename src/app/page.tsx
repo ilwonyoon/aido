@@ -169,7 +169,7 @@ function HomePageContent() {
       {/* Main Content - Disable when panel is open */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'pointer-events-none select-none' : ''}
+        className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto' : ''}
         style={selectedCompanyId ? { filter: 'blur(0px)' } : undefined}
       >
         {/* Header */}
