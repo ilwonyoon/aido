@@ -32,10 +32,36 @@ export default function AboutPage() {
 
       {/* Header */}
       <div className="mb-16">
-        <h1 className="text-4xl font-semibold mb-4">About AIDO</h1>
-        <p className="text-lg text-[var(--muted)] mb-8">
-          {/* TODO: User will fill in this content */}
-        </p>
+        <h1 className="text-4xl font-semibold mb-6">About AIDO</h1>
+        <div className="space-y-4 text-[var(--muted)] leading-relaxed">
+          <p>
+            Hi, I&apos;m Ilwon — a Product Designer looking for my next thing in AI.
+          </p>
+          <p>
+            I spent the past year in South Korea as Head of Design at{' '}
+            <a href="https://www.bucketplace.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-light)] hover:underline">
+              Bucketplace
+            </a>
+            , a unicorn in the home interior space. Great experience. But while I was heads-down
+            building design systems and shipping features 14 hours ahead of SF, the AI landscape
+            quietly (or not so quietly) did a full speedrun without me.
+          </p>
+          <p>
+            I came back to the States and realized my mental map of tech was about two paradigm
+            shifts out of date. So I did what any designer would do — I made a tool.
+          </p>
+          <p>
+            AIDO is how I&apos;m learning the landscape. Every company here is one I&apos;ve researched,
+            categorized, and evaluated through the lens of &quot;would this be a great place for me to
+            design?&quot; The data is unapologetically skewed toward what I care about — AI-native
+            products, design ownership, and teams that actually ship.
+          </p>
+          <p>
+            If you&apos;re a designer (or anyone, really) trying to navigate the AI job landscape,
+            I hope this is useful to you too. And if you know of a company I&apos;m missing —
+            well, that&apos;s what the internet is for.
+          </p>
+        </div>
       </div>
 
       {/* Divider */}
