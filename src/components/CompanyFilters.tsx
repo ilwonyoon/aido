@@ -907,6 +907,25 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                         className="py-3 px-4 text-sm text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors border-r border-[var(--border)] cursor-pointer"
                       >
                         <div className="line-clamp-2">{company.description}</div>
+                        {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
+                          <div className="flex flex-wrap gap-1 mt-1.5">
+                            {company.aiTypes?.map(t => (
+                              <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                                {AI_TYPE_LABELS[t]}
+                              </span>
+                            ))}
+                            {company.markets?.map(m => (
+                              <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                                {MARKET_LABELS[m]}
+                              </span>
+                            ))}
+                            {company.industries?.map(i => (
+                              <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                                {INDUSTRY_LABELS[i]}
+                              </span>
+                            ))}
+                          </div>
+                        ) : null}
                       </td>
                       <td
                         onClick={handleNavigate}
@@ -985,6 +1004,27 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                       )}
                     </div>
                   </div>
+
+                  {/* Tags */}
+                  {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
+                    <div className="flex flex-wrap gap-1">
+                      {company.aiTypes?.map(t => (
+                        <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                          {AI_TYPE_LABELS[t]}
+                        </span>
+                      ))}
+                      {company.markets?.map(m => (
+                        <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                          {MARKET_LABELS[m]}
+                        </span>
+                      ))}
+                      {company.industries?.map(i => (
+                        <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+                          {INDUSTRY_LABELS[i]}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
 
                   {/* Full Width: Description */}
                   <p className="text-[var(--muted)] text-sm line-clamp-2">
