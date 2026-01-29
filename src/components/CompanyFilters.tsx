@@ -8,6 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { CompanyLogo } from './CompanyLogo';
 
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'aiLevel';
 
@@ -895,6 +896,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                           }}
                         >
                           <div className="flex items-center gap-2 flex-nowrap">
+                            <CompanyLogo website={company.website} name={company.name} size={28} />
                             <span className="font-medium text-sm whitespace-nowrap">{company.name}</span>
                             <span className={`text-xs font-medium flex-shrink-0 ${aiLevelColors[company.aiNativeLevel]}`}>
                               {company.aiNativeLevel}
@@ -994,7 +996,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                 <div className="space-y-3">
                   {/* Top Row: Company Name + Open Roles Only */}
                   <div className="flex items-start justify-between gap-4">
-                    <h2 className="text-lg font-medium flex-1 min-w-0">{company.name}</h2>
+                    <div className="flex items-center gap-3 flex-1 min-w-0">
+                      <CompanyLogo website={company.website} name={company.name} size={36} />
+                      <h2 className="text-lg font-medium">{company.name}</h2>
+                    </div>
                     <div className="flex-shrink-0 text-sm text-[var(--muted)]">
                       <span className="inline-block mr-1">Open Roles:</span>
                       {company.openRoles.length > 0 ? (

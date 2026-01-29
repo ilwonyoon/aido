@@ -24,6 +24,7 @@ function HomePageContent() {
   const searchParams = useSearchParams();
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+  const [isClosing, setIsClosing] = useState(false);
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const [isFullWidth, setIsFullWidth] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
@@ -55,9 +56,13 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    window.history.pushState({}, '', '/');
-    setSelectedCompanyId(null);
-    setIsFullWidth(false);
+    setIsClosing(true);
+    setTimeout(() => {
+      window.history.pushState({}, '', '/');
+      setSelectedCompanyId(null);
+      setIsFullWidth(false);
+      setIsClosing(false);
+    }, 250);
   }, []);
 
   const handleCompanyClick = useCallback((companyId: string) => {
@@ -160,6 +165,11 @@ function HomePageContent() {
   }, [selectedCompanyId]);
 
   const selectedCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+  const lastCompanyRef = useRef<Company | null>(null);
+  if (selectedCompany) {
+    lastCompanyRef.current = selectedCompany;
+  }
+  const displayCompany = selectedCompany || lastCompanyRef.current;
 
   if (loading) {
     return (
@@ -207,7 +217,7 @@ function HomePageContent() {
       </div>
 
       {/* Backdrop - click to close panel (desktop only, non-fullwidth) */}
-      {selectedCompanyId && selectedCompany && !isFullWidth && (
+      {selectedCompanyId && displayCompany && !isFullWidth && !isClosing && (
         <div
           className="hidden md:block fixed inset-0 z-40"
           onClick={closePanel}
@@ -215,23 +225,24 @@ function HomePageContent() {
       )}
 
       {/* Side Panel - Overlay on top */}
-      {selectedCompanyId && selectedCompany && (
+      {(selectedCompanyId || isClosing) && displayCompany && (
         <div
           ref={panelRef}
           className={`
             fixed
-            right-0 top-0 bottom-0
+            right-0 top-14 bottom-0
             ${isFullWidth ? 'w-full' : 'w-full md:w-[60%] lg:w-1/2'}
             bg-[var(--background)]
             border-l border-[var(--border)]
             z-50
             overflow-y-auto
-            animate-slideInRight
-            transition-all duration-300
+            ${!isClosing ? 'animate-slideInRight' : ''}
+            transition-transform duration-250 ease-in-out
           `}
+          style={isClosing ? { transform: 'translateX(100%)' } : undefined}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
@@ -267,7 +278,7 @@ function HomePageContent() {
               <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
                 showCompanyNameInHeader ? 'opacity-100' : 'opacity-0'
               }`}>
-                {selectedCompany.name}
+                {displayCompany.name}
               </h2>
             </div>
             <div className="relative">
@@ -292,7 +303,7 @@ function HomePageContent() {
 
           {/* Company Detail Content */}
           <div className="pt-4 px-4 sm:px-6 pb-6 panel-view">
-            <CompanyDetail company={selectedCompany} />
+            <CompanyDetail company={displayCompany} />
           </div>
         </div>
       )}
