@@ -24,9 +24,7 @@ export const topTenFastestGrowingAiCompanies: Article = {
       'Anthropic revenue',
     ],
   },
-  content: `# The New Unicorns: 10 AI Companies Growing at Unprecedented Speed
-
-The AI industry added 15 new unicorns in 2025 alone, but not all growth is created equal. We analyzed revenue trajectories, funding velocity, and market signals across **206 AI companies** to identify the 10 fastest-growing companies redefining their categories.
+  content: `The AI industry added 15 new unicorns in 2025 alone, but not all growth is created equal. We analyzed revenue trajectories, funding velocity, and market signals across **206 AI companies** to identify the 10 fastest-growing companies redefining their categories.
 
 Among them: a code editor that reached $1B ARR faster than any SaaS in history, an automotive AI voice agent growing 138x year-over-year, and multiple developer tools capturing the AI-native development market.
 
