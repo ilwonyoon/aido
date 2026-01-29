@@ -58,7 +58,7 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    const currentCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
+    const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
 
     // Force synchronous state update to ensure animation class is applied
     flushSync(() => {
