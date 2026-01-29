@@ -366,7 +366,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
   const [marketFilter, setMarketFilter] = useState<Market[]>([]);
   const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
-  const [designFocusFilter, setDesignFocusFilter] = useState('');
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -571,17 +570,9 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!hasMatch) return false;
       }
 
-      // Design Focus Filter
-      if (designFocusFilter) {
-        const dwt = company.designWorkType;
-        if (designFocusFilter === 'logic' && dwt.logicBehavior.level !== 'high') return false;
-        if (designFocusFilter === 'evaluation' && dwt.evaluation.level !== 'high') return false;
-        if (designFocusFilter === 'interface' && dwt.interface.level !== 'high') return false;
-      }
-
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, designFocusFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -659,7 +650,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0 || designFocusFilter;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
@@ -741,16 +732,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             values={industryFilter}
             options={industryOptions}
             onChange={(vals) => setIndustryFilter(vals as Industry[])}
-          />
-          <DropdownFilter
-            label="Design Focus"
-            value={designFocusFilter}
-            options={[
-              { value: 'logic', label: 'Logic & Behavior — High' },
-              { value: 'evaluation', label: 'Evaluation — High' },
-              { value: 'interface', label: 'Interface — High' },
-            ]}
-            onChange={setDesignFocusFilter}
           />
           {hasActiveFilters && (
             <button

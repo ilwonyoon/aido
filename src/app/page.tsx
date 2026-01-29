@@ -34,14 +34,6 @@ function HomePageContent() {
   const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
-  // Debug render
-  console.log('[RENDER] HomePageContent', {
-    selectedCompanyId,
-    isClosing,
-    closingCompany: closingCompany?.name,
-    panelShouldRender: (selectedCompanyId || isClosing) && (closingCompany || (selectedCompanyId ? getCompanyById(selectedCompanyId) : null))
-  });
-
   useEffect(() => {
     // Initial load from URL
     const companyId = searchParams.get('company');
@@ -67,7 +59,6 @@ function HomePageContent() {
 
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? getCompanyById(selectedCompanyId) : null;
-    console.log('[CLOSE] Starting close animation', { selectedCompanyId, currentCompany });
 
     // Force synchronous state update to ensure animation class is applied
     flushSync(() => {
@@ -75,10 +66,7 @@ function HomePageContent() {
       setIsClosing(true);
     });
 
-    console.log('[CLOSE] State set: isClosing=true, closingCompany=', currentCompany?.name);
-
     setTimeout(() => {
-      console.log('[CLOSE] Animation complete, cleaning up state');
       window.history.pushState({}, '', '/');
       setSelectedCompanyId(null);
       setIsFullWidth(false);
@@ -237,8 +225,6 @@ function HomePageContent() {
       {(selectedCompanyId || isClosing) && (closingCompany || selectedCompany) && (() => {
         const displayCompany = closingCompany || selectedCompany;
         if (!displayCompany) return null;
-
-        console.log('[PANEL] Rendering panel', { isClosing, displayCompany: displayCompany.name, animationClass: isClosing ? 'slideOutRight' : 'slideInRight' });
 
         return (
         <div
