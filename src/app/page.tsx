@@ -80,30 +80,19 @@ function HomePageContent() {
     if (!selectedCompanyId) return;
     const url = `${window.location.origin}/company/${selectedCompanyId}`;
 
-    if (navigator.share) {
-      try {
-        await navigator.share({ url });
-        return;
-      } catch {
-        // User cancelled or share failed, fall through to clipboard
-      }
-    }
-
     try {
       await navigator.clipboard.writeText(url);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
     } catch {
-      // Fallback for older browsers
       const input = document.createElement('input');
       input.value = url;
       document.body.appendChild(input);
       input.select();
       document.execCommand('copy');
       document.body.removeChild(input);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
     }
+
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
   }, [selectedCompanyId]);
 
   useEffect(() => {
