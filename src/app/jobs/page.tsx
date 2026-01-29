@@ -1,17 +1,15 @@
 'use client';
 
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { Company } from '@/data/types';
+import { getAiLevelConfig } from '@/design/tokens';
 
-interface JobWithCompany {
-  company: Company;
-  role: Company['openRoles'][0];
-}
+// ────────────────────────────────────────────────────────────────────────────
+// Filter Components
+// ────────────────────────────────────────────────────────────────────────────
 
-// Custom dropdown filter component matching Companies page style
 function DropdownFilter({
   label,
   value,
@@ -31,10 +29,7 @@ function DropdownFilter({
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      setDropdownStyle({
-        top: rect.bottom + 4,
-        left: rect.left,
-      });
+      setDropdownStyle({ top: rect.bottom + 4, left: rect.left });
     }
   }, [isOpen]);
 
@@ -54,24 +49,16 @@ function DropdownFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-
       {isOpen && dropdownStyle && buttonRef.current && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
-            style={{
-              top: `${dropdownStyle.top}px`,
-              left: `${dropdownStyle.left}px`,
-              minWidth: `${buttonRef.current.offsetWidth}px`,
-              maxWidth: 'calc(100vw - 2rem)'
-            }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, minWidth: `${buttonRef.current.offsetWidth}px`, maxWidth: 'calc(100vw - 2rem)' }}
           >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
-              className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
-                !value ? 'text-[var(--accent-light)]' : 'text-[var(--muted)]'
-              }`}
+              className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${!value ? 'text-[var(--accent-light)]' : 'text-[var(--muted)]'}`}
             >
               {label}
             </button>
@@ -79,9 +66,7 @@ function DropdownFilter({
               <button
                 key={opt.value}
                 onClick={() => { onChange(opt.value); setIsOpen(false); }}
-                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${
-                  value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
-                }`}
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap ${value === opt.value ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'}`}
               >
                 {opt.label}
               </button>
@@ -93,7 +78,6 @@ function DropdownFilter({
   );
 }
 
-// Multi-select filter for locations
 function MultiSelectFilter({
   label,
   values,
@@ -116,20 +100,16 @@ function MultiSelectFilter({
       const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 180);
       const spaceOnRight = window.innerWidth - rect.left;
       const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
-
-      setDropdownStyle({
-        top: rect.bottom + 4,
-        left: Math.max(16, left),
-      });
+      setDropdownStyle({ top: rect.bottom + 4, left: Math.max(16, left) });
     }
   }, [isOpen]);
 
-  const toggleValue = (value: string) => {
-    if (values.includes(value)) {
-      onChange(values.filter((v) => v !== value));
-    } else {
-      onChange([...values, value]);
-    }
+  const toggleValue = (val: string) => {
+    onChange(
+      values.includes(val)
+        ? values.filter((v) => v !== val)
+        : [...values, val]
+    );
   };
 
   return (
@@ -148,19 +128,12 @@ function MultiSelectFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-
       {isOpen && dropdownStyle && buttonRef.current && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
-            style={{
-              top: `${dropdownStyle.top}px`,
-              left: `${dropdownStyle.left}px`,
-              width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`,
-              maxWidth: 'calc(100vw - 2rem)',
-              maxHeight: '320px'
-            }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`, maxWidth: 'calc(100vw - 2rem)', maxHeight: '320px' }}
           >
             {values.length > 0 && (
               <button
@@ -176,15 +149,9 @@ function MultiSelectFilter({
                 <button
                   key={opt.value}
                   onClick={() => toggleValue(opt.value)}
-                  className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${
-                    isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
-                  }`}
+                  className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'}`}
                 >
-                  <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${
-                    isSelected
-                      ? 'bg-[var(--accent)] border-[var(--accent)]'
-                      : 'border-[var(--border)]'
-                  }`}>
+                  <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${isSelected ? 'bg-[var(--accent)] border-[var(--accent)]' : 'border-[var(--border)]'}`}>
                     {isSelected && (
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="white">
                         <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
@@ -202,206 +169,296 @@ function MultiSelectFilter({
   );
 }
 
-export default function JobsPage() {
-  const [aiLevelFilter, setAiLevelFilter] = useState<string>('');
-  const [locationFilter, setLocationFilter] = useState<string[]>([]);
+// ────────────────────────────────────────────────────────────────────────────
+// Design Focus Indicator
+// ────────────────────────────────────────────────────────────────────────────
 
-  // Collect all jobs with company context
-  const allJobs: JobWithCompany[] = companies.flatMap((company) =>
-    company.openRoles.map((role) => ({ company, role }))
+function DesignFocus({ dwt }: { dwt: Company['designWorkType'] }) {
+  const indicator = (label: string, level: 'high' | 'medium' | 'low') => {
+    const dots = level === 'high' ? '\u25CF\u25CF\u25CF' : level === 'medium' ? '\u25CF\u25CF\u25CB' : '\u25CF\u25CB\u25CB';
+    const color = level === 'high'
+      ? 'text-[var(--success)]'
+      : level === 'medium'
+        ? 'text-[var(--accent-light)]'
+        : 'text-[var(--muted-dim)]';
+    return (
+      <span className="flex items-center gap-1.5">
+        <span className="text-[var(--muted)]">{label}</span>
+        <span className={`${color} tracking-tight text-[10px]`}>{dots}</span>
+      </span>
+    );
+  };
+
+  return (
+    <div className="flex gap-4 text-xs">
+      {indicator('Logic', dwt.logicBehavior.level)}
+      {indicator('Eval', dwt.evaluation.level)}
+      {indicator('UI', dwt.interface.level)}
+    </div>
   );
+}
 
-  // Get unique locations
-  const locations = useMemo(() => {
-    const locs = new Set<string>();
-    allJobs.forEach(({ role }) => {
-      const loc = role.location.split(',')[0].trim();
-      locs.add(loc);
-    });
-    return Array.from(locs).sort();
-  }, [allJobs]);
+// ────────────────────────────────────────────────────────────────────────────
+// Company Card
+// ────────────────────────────────────────────────────────────────────────────
 
-  // Filter jobs
-  const filteredJobs = useMemo(() => {
-    return allJobs.filter(({ company, role }) => {
-      // AI Level filter
+function CompanyCard({ company }: { company: Company }) {
+  const config = getAiLevelConfig(company.aiNativeLevel);
+  const whyJoin = company.tracking.whyJoin.slice(0, 3);
+  const topWhyNot = company.tracking.whyNot[0];
+  const roles = company.openRoles;
+
+  const avatarStyle = config.badgeClass === 'badge-success'
+    ? 'bg-[rgba(80,227,194,0.12)] text-[var(--success)]'
+    : config.badgeClass === 'badge-accent'
+      ? 'bg-[rgba(0,112,243,0.12)] text-[var(--accent-light)]'
+      : 'bg-[var(--card-hover)] text-[var(--muted)]';
+
+  return (
+    <div className="card p-5 flex flex-col">
+      {/* Header */}
+      <div className="flex items-start justify-between gap-3 mb-1.5">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${avatarStyle}`}>
+            {company.name[0]}
+          </div>
+          <div className="min-w-0">
+            <div className="flex items-center gap-2">
+              <h3 className="font-semibold text-[var(--foreground)] truncate">{company.name}</h3>
+              <span
+                className={`badge ${config.badgeClass} flex-shrink-0`}
+                style={{ fontSize: '10px', padding: '1px 6px' }}
+              >
+                {company.aiNativeLevel}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="text-xs text-[var(--muted)] text-right flex-shrink-0 leading-relaxed">
+          <div>{company.headquarters.split(',')[0]}</div>
+          <div>{company.stage}</div>
+        </div>
+      </div>
+
+      {/* Description */}
+      <p className="text-sm text-[var(--muted)] mb-3 line-clamp-1">{company.description}</p>
+
+      {/* Why Join */}
+      <div className="mb-2">
+        <ul className="space-y-1">
+          {whyJoin.map((reason, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm leading-snug">
+              <span className="text-[var(--success)] flex-shrink-0 mt-px font-medium">+</span>
+              <span className="text-[var(--foreground)]">{reason}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Top Why Not */}
+      {topWhyNot && (
+        <div className="mb-3">
+          <div className="flex items-start gap-2 text-sm leading-snug">
+            <span className="text-[var(--warning)] flex-shrink-0 mt-px font-medium">&minus;</span>
+            <span className="text-[var(--muted)]">{topWhyNot}</span>
+          </div>
+        </div>
+      )}
+
+      {/* Design Focus */}
+      <div className="mb-4">
+        <DesignFocus dwt={company.designWorkType} />
+      </div>
+
+      {/* Spacer */}
+      <div className="flex-1" />
+
+      {/* Open Roles */}
+      <div className="border-t border-[var(--border)] pt-3">
+        <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--muted)] mb-2">
+          {roles.length} open {roles.length === 1 ? 'role' : 'roles'}
+        </div>
+        <div className="space-y-1.5">
+          {roles.map((role, i) => (
+            <Link
+              key={i}
+              href={role.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between text-sm hover:text-[var(--accent-light)] transition-colors group"
+            >
+              <span className="truncate">{role.title}</span>
+              <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent-light)] flex-shrink-0 ml-2">
+                {role.location.split(',')[0]} &rarr;
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Company Link */}
+      <div className="mt-3 pt-3 border-t border-[var(--border)]">
+        <Link
+          href={`/company/${company.id}`}
+          className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)] transition-colors"
+        >
+          Full profile &rarr;
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Location helpers
+// ────────────────────────────────────────────────────────────────────────────
+
+const SF_BAY_PATTERN = /San Francisco|Palo Alto|Mountain View|San Jose|Menlo Park|Sunnyvale|Cupertino|Oakland|Berkeley|Redwood City|San Mateo|Santa Clara|Fremont/i;
+const NY_PATTERN = /New York|NYC|Brooklyn/i;
+
+function isSFBayArea(hq: string): boolean {
+  return SF_BAY_PATTERN.test(hq);
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Page
+// ────────────────────────────────────────────────────────────────────────────
+
+export default function JobsPage() {
+  const [aiLevelFilter, setAiLevelFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState<string[]>([]);
+  const [designFocusFilter, setDesignFocusFilter] = useState('');
+
+  const companiesWithRoles = useMemo(() => {
+    const levelOrder: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
+    return companies
+      .filter(c => c.openRoles.length > 0)
+      .sort((a, b) => {
+        const diff = (levelOrder[a.aiNativeLevel] ?? 4) - (levelOrder[b.aiNativeLevel] ?? 4);
+        return diff !== 0 ? diff : b.openRoles.length - a.openRoles.length;
+      });
+  }, []);
+
+  const filtered = useMemo(() => {
+    return companiesWithRoles.filter(company => {
       if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
 
-      // Location filter
       if (locationFilter.length > 0) {
-        const jobLoc = role.location.split(',')[0].trim();
-        if (!locationFilter.includes(jobLoc)) return false;
+        const hq = company.headquarters;
+        const matches = locationFilter.some(loc => {
+          if (loc === 'sf-bay-area') return isSFBayArea(hq);
+          if (loc === 'new-york') return NY_PATTERN.test(hq);
+          if (loc === 'remote') return company.remote === 'Yes';
+          if (loc === 'other') return !isSFBayArea(hq) && !NY_PATTERN.test(hq);
+          return false;
+        });
+        if (!matches) return false;
+      }
+
+      if (designFocusFilter) {
+        const dwt = company.designWorkType;
+        if (designFocusFilter === 'logic' && dwt.logicBehavior.level !== 'high') return false;
+        if (designFocusFilter === 'evaluation' && dwt.evaluation.level !== 'high') return false;
+        if (designFocusFilter === 'interface' && dwt.interface.level !== 'high') return false;
       }
 
       return true;
     });
-  }, [allJobs, aiLevelFilter, locationFilter]);
+  }, [companiesWithRoles, aiLevelFilter, locationFilter, designFocusFilter]);
 
-  // Sort by most recent
-  const sortedJobs = useMemo(() => {
-    return [...filteredJobs].sort((a, b) => {
-      const dateA = new Date(a.company.lastUpdated || 0);
-      const dateB = new Date(b.company.lastUpdated || 0);
-      return dateB.getTime() - dateA.getTime();
-    });
-  }, [filteredJobs]);
-
-  const totalJobs = allJobs.length;
-  const companiesWithJobs = companies.filter(c => c.openRoles.length > 0).length;
-
-  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0;
+  const totalCompanies = companiesWithRoles.length;
+  const totalRoles = companiesWithRoles.reduce((sum, c) => sum + c.openRoles.length, 0);
+  const filteredRoles = filtered.reduce((sum, c) => sum + c.openRoles.length, 0);
+  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '';
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setLocationFilter([]);
+    setDesignFocusFilter('');
   };
 
   return (
     <div>
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-2xl font-semibold mb-2">AI design opportunities for Product Design</h1>
-        <p className="text-[var(--muted)] text-sm">
-          {totalJobs} open roles at {companiesWithJobs} AI-native companies
+        <h1 className="text-2xl font-semibold mb-2">Where to Design AI</h1>
+        <p className="text-[var(--muted)] text-sm leading-relaxed">
+          {totalRoles} roles at {totalCompanies} companies — each with research-backed notes on why to join, and why not.
         </p>
       </div>
 
-      {/* Filter & Sort Bar */}
+      {/* Filters */}
       <div className="space-y-3 mb-6">
-        {/* Row 1: Filter chips only */}
         <div className="flex items-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide">
-          {/* AI Level Filter */}
           <DropdownFilter
             label="All Levels"
             value={aiLevelFilter}
             options={[
-              { value: 'A', label: 'Level A' },
-              { value: 'B', label: 'Level B' },
-              { value: 'C', label: 'Level C' },
-              { value: 'D', label: 'Level D' },
+              { value: 'A', label: 'Level A \u2014 AI-Native' },
+              { value: 'B', label: 'Level B \u2014 AI-Core' },
+              { value: 'C', label: 'Level C \u2014 AI Feature' },
+              { value: 'D', label: 'Level D \u2014 AI-Assisted' },
             ]}
             onChange={setAiLevelFilter}
           />
-
-          {/* Location Filter */}
           <MultiSelectFilter
             label="Location"
             values={locationFilter}
-            options={locations.map(loc => ({ value: loc, label: loc }))}
+            options={[
+              { value: 'sf-bay-area', label: 'SF Bay Area' },
+              { value: 'new-york', label: 'New York' },
+              { value: 'remote', label: 'Remote' },
+              { value: 'other', label: 'Other' },
+            ]}
             onChange={setLocationFilter}
           />
-
+          <DropdownFilter
+            label="Design Focus"
+            value={designFocusFilter}
+            options={[
+              { value: 'logic', label: 'Logic & Behavior \u2014 High' },
+              { value: 'evaluation', label: 'Evaluation \u2014 High' },
+              { value: 'interface', label: 'Interface \u2014 High' },
+            ]}
+            onChange={setDesignFocusFilter}
+          />
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] px-2"
+              className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] px-2 flex-shrink-0"
             >
               Clear
             </button>
           )}
         </div>
 
-        {/* Row 2: Job count */}
-        <div className="flex items-center justify-between pl-3 pr-3">
+        {/* Count */}
+        <div className="flex items-center pl-3 pr-3">
           <div className="text-sm font-medium text-[var(--foreground)]">
-            {sortedJobs.length === totalJobs ? (
-              `${totalJobs} jobs`
+            {filtered.length === totalCompanies ? (
+              <>{totalCompanies} companies &middot; {totalRoles} roles</>
             ) : (
               <>
-                {sortedJobs.length} <span className="text-[var(--muted)]">of {totalJobs}</span>
+                {filtered.length} companies &middot; {filteredRoles} roles{' '}
+                <span className="text-[var(--muted)]">
+                  of {totalCompanies} &middot; {totalRoles}
+                </span>
               </>
             )}
           </div>
         </div>
       </div>
 
-      {/* Job Listings - List Style */}
-      {sortedJobs.length === 0 ? (
+      {/* Company Cards */}
+      {filtered.length === 0 ? (
         <div className="card p-8 text-center text-[var(--muted)]">
-          No jobs match your filters.
+          No companies match your filters.
         </div>
       ) : (
-        <div className="border border-[var(--border)] rounded-lg overflow-hidden bg-[var(--card)]">
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-[var(--background)] border-b border-[var(--border)]">
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Role
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Company
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Location
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Level
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-medium text-[var(--muted)]">
-                    Compensation
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedJobs.map(({ company, role }, idx) => {
-                  const aiLevelColors = {
-                    D: 'text-[var(--muted)]',
-                    C: 'text-[var(--muted)]',
-                    B: 'text-[var(--accent-light)]',
-                    A: 'text-[var(--success)]',
-                  };
-
-                  return (
-                    <tr
-                      key={`${company.id}-${idx}`}
-                      className="group border-b border-[var(--border)] hover:bg-[var(--card-hover)] transition-colors"
-                    >
-                      <td className="py-3 px-4 border-r border-[var(--border)]">
-                        <Link
-                          href={role.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-[var(--accent-light)]"
-                        >
-                          <div className="font-medium text-sm">{role.title}</div>
-                          {role.level && (
-                            <div className="text-xs text-[var(--muted)] mt-0.5">{role.level}</div>
-                          )}
-                        </Link>
-                      </td>
-                      <td className="py-3 px-4 text-sm border-r border-[var(--border)]">
-                        <Link
-                          href={`/company/${company.id}`}
-                          className="hover:text-[var(--accent-light)]"
-                        >
-                          <div className="flex items-center gap-2">
-                            <span className="font-medium">{company.name}</span>
-                            <span className={`text-xs font-medium ${aiLevelColors[company.aiNativeLevel]}`}>
-                              {company.aiNativeLevel}
-                            </span>
-                          </div>
-                        </Link>
-                      </td>
-                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
-                        <span className="text-[var(--muted)]">{role.location}</span>
-                      </td>
-                      <td className="py-3 px-4 text-xs border-r border-[var(--border)]">
-                        <span className="text-[var(--muted)]">{role.type || 'Full-time'}</span>
-                      </td>
-                      <td className="py-3 px-4 text-xs">
-                        {role.compensation ? (
-                          <span className="text-[var(--success)]">{role.compensation}</span>
-                        ) : (
-                          <span className="text-[var(--muted)]">-</span>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {filtered.map(company => (
+            <CompanyCard key={company.id} company={company} />
+          ))}
         </div>
       )}
     </div>
