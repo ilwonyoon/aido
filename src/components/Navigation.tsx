@@ -44,7 +44,7 @@ export function Navigation() {
             className={
               isActive('/about')
                 ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             About
@@ -54,7 +54,7 @@ export function Navigation() {
             className={
               isActive('/')
                 ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             Companies
@@ -64,7 +64,7 @@ export function Navigation() {
             className={
               isActive('/jobs')
                 ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             Jobs
@@ -74,7 +74,7 @@ export function Navigation() {
             className={
               isActive('/insights')
                 ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+                : 'text-[var(--muted)] hover:text-[var(--foreground)]'
             }
           >
             Insights
@@ -87,7 +87,7 @@ export function Navigation() {
               className={
                 isActive('/analytics')
                   ? 'text-[var(--foreground)] font-medium'
-                  : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+                  : 'text-[var(--muted)] hover:text-[var(--foreground)]'
               }
             >
               Analytics
