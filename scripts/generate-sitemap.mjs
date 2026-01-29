@@ -21,6 +21,28 @@ const companyIds = exportMatch[1]
   .map(id => id.trim())
   .filter(id => id && !id.startsWith('get')); // Filter out utility functions
 
+// Read articles data
+const articlesIndexPath = path.join(__dirname, '../src/data/articles/index.ts');
+let articleSlugs = [];
+try {
+  const articlesContent = fs.readFileSync(articlesIndexPath, 'utf-8');
+  // Extract article slugs from the content files
+  // Look for slug: 'article-slug' patterns in imported files
+  const contentDir = path.join(__dirname, '../src/data/articles/content');
+  if (fs.existsSync(contentDir)) {
+    const contentFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.ts'));
+    contentFiles.forEach(file => {
+      const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+      const slugMatch = content.match(/slug:\s*['"]([^'"]+)['"]/);
+      if (slugMatch) {
+        articleSlugs.push(slugMatch[1]);
+      }
+    });
+  }
+} catch (error) {
+  console.log('No articles found yet');
+}
+
 const baseUrl = 'https://aido-d2cc0.web.app';
 const today = new Date().toISOString().split('T')[0];
 
@@ -38,6 +60,12 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/insights</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>${baseUrl}/ai-levels</loc>
@@ -61,6 +89,16 @@ ${companyIds
   </url>`
   )
   .join('\n')}
+${articleSlugs
+  .map(
+    (slug) => `  <url>
+    <loc>${baseUrl}/insights/${slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`
+  )
+  .join('\n')}
 </urlset>
 `;
 
@@ -71,4 +109,5 @@ if (!fs.existsSync(publicDir)) {
 }
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap);
-console.log(`✓ Generated sitemap with ${companyIds.length + 4} URLs`);
+const totalUrls = 5 + companyIds.length + articleSlugs.length; // 5 static pages + companies + articles
+console.log(`✓ Generated sitemap with ${totalUrls} URLs (${companyIds.length} companies, ${articleSlugs.length} articles)`);

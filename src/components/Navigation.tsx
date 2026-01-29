@@ -69,6 +69,16 @@ export function Navigation() {
           >
             Jobs
           </Link>
+          <Link
+            href="/insights"
+            className={
+              isActive('/insights')
+                ? 'text-[var(--foreground)] font-medium'
+                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+            }
+          >
+            Insights
+          </Link>
 
           {/* Analytics - Admin only */}
           {isAdmin && (
@@ -148,6 +158,17 @@ export function Navigation() {
                 }`}
               >
                 Jobs
+              </Link>
+              <Link
+                href="/insights"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/insights')
+                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                }`}
+              >
+                Insights
               </Link>
 
               {isAdmin && (
