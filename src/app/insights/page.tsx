@@ -30,7 +30,7 @@ export default function InsightsPage() {
 
   if (articles.length === 0) {
     return (
-      <div>
+      <div className="max-w-3xl mx-auto">
         <div className="mb-6">
           <h1 className="text-2xl font-semibold mb-2">Insights</h1>
           <p className="text-[var(--muted)] text-sm">
@@ -52,7 +52,7 @@ export default function InsightsPage() {
   const regular = articles.filter((a) => !a.featured);
 
   return (
-    <div>
+    <div className="max-w-3xl mx-auto">
       <div className="mb-6">
         <h1 className="text-2xl font-semibold mb-2">Insights</h1>
         <p className="text-[var(--muted)] text-sm">
