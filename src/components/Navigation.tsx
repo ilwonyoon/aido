@@ -22,7 +22,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-50">
+    <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-[60]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-semibold tracking-tight">
           AIDO

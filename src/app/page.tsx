@@ -206,6 +206,14 @@ function HomePageContent() {
         </div>
       </div>
 
+      {/* Backdrop - click to close panel (desktop only, non-fullwidth) */}
+      {selectedCompanyId && selectedCompany && !isFullWidth && (
+        <div
+          className="hidden md:block fixed inset-0 z-40"
+          onClick={closePanel}
+        />
+      )}
+
       {/* Side Panel - Overlay on top */}
       {selectedCompanyId && selectedCompany && (
         <div
