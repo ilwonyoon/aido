@@ -308,6 +308,13 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - 새로운 AI-native 회사 리서치 및 데이터 수집
 - Business, Founders, Design team, Product 정보 수집
 
+**writer**
+- 위치: `.claude/skills/writer/`
+- 사용법: `/writer "article topic"`
+- Data-driven analytical 블로그 글 자동 생성
+- 주제만 입력 → 회사 자동 선택, SEO 메타데이터 생성, 회사 링크 자동 삽입
+- TypeScript Article 파일 생성 및 articles index 업데이트
+
 ### Available Commands
 
 글로벌 커맨드들 (모든 프로젝트에서 사용 가능):
