@@ -33,6 +33,14 @@ function HomePageContent() {
   const mainContentRef = useRef<HTMLDivElement>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
+  // Debug render
+  console.log('[RENDER] HomePageContent', {
+    selectedCompanyId,
+    isClosing,
+    closingCompany: closingCompany?.name,
+    panelShouldRender: (selectedCompanyId || isClosing) && (closingCompany || (selectedCompanyId ? getCompanyById(selectedCompanyId) : null))
+  });
+
   useEffect(() => {
     // Initial load from URL
     const companyId = searchParams.get('company');
