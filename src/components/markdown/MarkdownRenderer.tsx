@@ -17,37 +17,52 @@ export function MarkdownRenderer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-        // Customize heading styles
+        // Customize heading styles with better spacing
         h1: ({ node, ...props }) => (
-          <h1 className="text-3xl font-semibold mb-4 mt-8" {...props} />
+          <h1 className="text-3xl font-semibold mb-6 mt-12 first:mt-0" {...props} />
         ),
         h2: ({ node, ...props }) => (
-          <h2 className="text-2xl font-semibold mb-3 mt-6" {...props} />
+          <h2 className="text-2xl font-semibold mb-4 mt-10 first:mt-0" {...props} />
         ),
         h3: ({ node, ...props }) => (
-          <h3 className="text-xl font-medium mb-2 mt-4" {...props} />
+          <h3 className="text-xl font-medium mb-3 mt-8" {...props} />
         ),
         h4: ({ node, ...props }) => (
-          <h4 className="text-lg font-medium mb-2 mt-3" {...props} />
+          <h4 className="text-lg font-medium mb-2 mt-6" {...props} />
         ),
 
         // Links - let CSS handle styling
         a: ({ node, ...props }) => <a {...props} />,
 
-        // Lists
-        ul: ({ node, ...props }) => <ul {...props} />,
-        ol: ({ node, ...props }) => <ol {...props} />,
-        li: ({ node, ...props }) => <li {...props} />,
+        // Lists with proper styling
+        ul: ({ node, ...props }) => (
+          <ul className="list-disc list-outside ml-6 space-y-2 my-4" {...props} />
+        ),
+        ol: ({ node, ...props }) => (
+          <ol className="list-decimal list-outside ml-6 space-y-2 my-4" {...props} />
+        ),
+        li: ({ node, ...props }) => <li className="leading-relaxed" {...props} />,
 
-        // Paragraph
-        p: ({ node, ...props }) => <p {...props} />,
+        // Paragraph with better spacing
+        p: ({ node, ...props }) => <p className="mb-4 leading-relaxed" {...props} />,
 
-        // Blockquote
-        blockquote: ({ node, ...props }) => <blockquote {...props} />,
+        // Blockquote with visual styling
+        blockquote: ({ node, ...props }) => (
+          <blockquote className="border-l-4 border-[var(--accent)] pl-4 italic my-6 text-[var(--muted)]" {...props} />
+        ),
 
-        // Code
-        code: ({ node, ...props }) => <code {...props} />,
-        pre: ({ node, ...props }) => <pre {...props} />,
+        // Code with inline/block handling
+        code: ({ node, className, ...props }) => {
+          const isInline = !className;
+          return isInline ? (
+            <code className="bg-[var(--card)] px-1.5 py-0.5 rounded text-sm font-mono" {...props} />
+          ) : (
+            <code {...props} />
+          );
+        },
+        pre: ({ node, ...props }) => (
+          <pre className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 overflow-x-auto my-6 text-sm" {...props} />
+        ),
 
         // Tables
         table: ({ node, ...props }) => <table {...props} />,
