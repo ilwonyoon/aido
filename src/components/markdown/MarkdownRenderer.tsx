@@ -17,19 +17,11 @@ export function MarkdownRenderer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-        // Customize heading styles
-        h1: ({ node, ...props }) => (
-          <h1 className="text-3xl font-semibold mb-4 mt-8" {...props} />
-        ),
-        h2: ({ node, ...props }) => (
-          <h2 className="text-2xl font-semibold mb-3 mt-6" {...props} />
-        ),
-        h3: ({ node, ...props }) => (
-          <h3 className="text-xl font-medium mb-2 mt-4" {...props} />
-        ),
-        h4: ({ node, ...props }) => (
-          <h4 className="text-lg font-medium mb-2 mt-3" {...props} />
-        ),
+        // Headings — styled by .article-content CSS cascade
+        h1: ({ node, ...props }) => <h1 {...props} />,
+        h2: ({ node, ...props }) => <h2 {...props} />,
+        h3: ({ node, ...props }) => <h3 {...props} />,
+        h4: ({ node, ...props }) => <h4 {...props} />,
 
         // Links - let CSS handle styling
         a: ({ node, ...props }) => <a {...props} />,

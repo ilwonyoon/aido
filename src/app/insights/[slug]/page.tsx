@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleBySlug, getRelatedArticles } from '@/data/articles';
 import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
+import { ArticleVisualizations } from './ArticleVisualizations';
 import Link from 'next/link';
 
 export function generateStaticParams() {
@@ -168,7 +169,7 @@ export default async function ArticlePage({
 
       {/* Article Content */}
       <div className="article-content mb-12">
-        <MarkdownRenderer content={article.content} />
+        <ArticleVisualizations slug={article.slug} content={article.content} />
       </div>
 
       {/* Related Articles */}
