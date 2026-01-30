@@ -1,7 +1,5 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
@@ -44,83 +42,8 @@ function WorkTypeSection({
   );
 }
 
-const sections = [
-  { id: 'quick-info', label: 'Quick Info', icon: '⚡' },
-  { id: 'company', label: 'Company', icon: '🏢' },
-  { id: 'design', label: 'Design', icon: '🎨' },
-];
-
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
-  const [activeSection, setActiveSection] = useState('quick-info');
-  const [showMobileNav, setShowMobileNav] = useState(false);
-  const observerRef = useRef<IntersectionObserver | null>(null);
-  const headerObserverRef = useRef<IntersectionObserver | null>(null);
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-20% 0px -70% 0px' }
-    );
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element) observerRef.current?.observe(element);
-    });
-
-    return () => observerRef.current?.disconnect();
-  }, []);
-
-  // Observer for Quick Info header to show/hide mobile nav
-  useEffect(() => {
-    headerObserverRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Show mobile nav when Quick Info header is NOT visible
-          setShowMobileNav(!entry.isIntersecting);
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: '-56px 0px 0px 0px'
-      }
-    );
-
-    const header = document.getElementById('quick-info-header');
-    if (header) {
-      headerObserverRef.current.observe(header);
-    }
-
-    return () => headerObserverRef.current?.disconnect();
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-
-    const offset = 80;
-    // Find the panel scroll container (closest scrollable parent)
-    const scrollContainer = element.closest('.overflow-y-auto') as HTMLElement | null;
-
-    if (scrollContainer) {
-      // Panel mode: scroll within the panel
-      const elementTop = element.getBoundingClientRect().top;
-      const containerTop = scrollContainer.getBoundingClientRect().top;
-      const scrollPosition = scrollContainer.scrollTop + (elementTop - containerTop) - offset;
-      scrollContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-    } else {
-      // Full page mode: scroll window
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="w-full">
@@ -134,58 +57,15 @@ export function CompanyDetail({ company }: { company: Company }) {
         </button>
       </div>
 
-      {/* Main Layout: Index Nav + Content */}
+      {/* Main Layout: Content only (navigation removed) */}
       <div className="flex flex-col lg:flex-row lg:gap-8">
-        {/* Sticky Index Nav */}
-        <nav className="hidden lg:block w-48 flex-shrink-0">
-          <div className="sticky top-8 space-y-1">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`w-full text-left px-3 py-2 rounded text-sm transition-colors flex items-center gap-2 ${
-                  activeSection === section.id
-                    ? 'bg-[var(--card)] text-[var(--foreground)] font-medium'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
-                }`}
-              >
-                <span>{section.icon}</span>
-                <span>{section.label}</span>
-                {activeSection === section.id && (
-                  <span className="ml-auto text-[var(--accent-light)]">●</span>
-                )}
-              </button>
-            ))}
-          </div>
-        </nav>
-
-        {/* Mobile horizontal nav - only show when Quick Info header scrolls out */}
-        {showMobileNav && (
-          <div className="lg:hidden sticky top-14 z-40 py-3 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] -mx-4 sm:-mx-6">
-            <div className="overflow-x-auto scrollbar-hide px-4 sm:px-6">
-              <div className="flex gap-2 w-max">
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className={`flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-md text-sm transition-colors ${
-                    activeSection === section.id
-                      ? 'bg-[var(--accent)] text-white'
-                      : 'bg-[var(--card)] text-[var(--foreground)] hover:bg-[var(--card-hover)]'
-                  }`}
-                >
-                  {section.icon} {section.label}
-                </button>
-              ))}
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Main Content */}
-        <div className="w-full lg:flex-1 min-w-0 space-y-12">
-          {/* OG Image - 16:9 aspect ratio */}
-          <CompanyOGImage companyId={company.id} companyName={company.name} />
+        <div className="w-full lg:flex-1 min-w-0">
+          {/* OG Image - Full width at top */}
+          <div className="-mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-6">
+            <CompanyOGImage companyId={company.id} companyName={company.name} />
+          </div>
 
           {/* Header Info */}
           <div className="mb-8">
@@ -218,6 +98,8 @@ export function CompanyDetail({ company }: { company: Company }) {
               <InterestToggle companyId={company.id} />
             </div>
           </div>
+
+          <div className="space-y-12">
 
           {/* Quick Info */}
           <section id="quick-info" className="scroll-mt-20 space-y-4">
