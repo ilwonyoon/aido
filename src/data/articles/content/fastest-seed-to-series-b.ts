@@ -47,6 +47,8 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 ## The Top 5
 
+[Mistral AI](/company/mistral-ai)
+
 ### 1. Mistral AI
 **🏆 Champion: 12 months (1 year) from Seed to Series B**
 
@@ -60,7 +62,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 #### Business Model: The European AI Challenger
 
-[Mistral AI](/company/mistral-ai) builds **open-weight and commercial large language models** (LLMs), positioning itself as the European answer to OpenAI. Unlike closed proprietary models, Mistral releases open-weight versions that developers can download, modify, and self-host.
+Builds **open-weight and commercial large language models** (LLMs), positioning itself as the European answer to OpenAI. Unlike closed proprietary models, Mistral releases open-weight versions that developers can download, modify, and self-host.
 
 **Revenue Model**:
 - Enterprise API access (La Plateforme)
@@ -119,6 +121,8 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 ---
 
+[Harvey](/company/harvey)
+
 ### 2. Harvey
 **⚖️ Legal AI Dominator: 13 months from Seed to Series B**
 
@@ -132,7 +136,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 #### Business Model: AI Copilot for Elite Law
 
-[Harvey](/company/harvey) builds **custom legal AI** trained on proprietary legal data, integrated directly into elite law firms' workflows. Think "GitHub Copilot, but for lawyers."
+Builds **custom legal AI** trained on proprietary legal data, integrated directly into elite law firms' workflows. Think "GitHub Copilot, but for lawyers."
 
 **Revenue Model**:
 - Per-lawyer subscription ($500+/month)
@@ -191,6 +195,8 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 ---
 
+[Pika](/company/pika)
+
 ### 3. Pika
 **🎥 AI Video for Everyone: 14 months from Seed to Series B**
 
@@ -204,7 +210,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 #### Business Model: Consumer AI Video Platform
 
-[Pika](/company/pika) makes **AI video generation** accessible to everyone. Text-to-video, image-to-video, video editing—all through a simple interface.
+Makes **AI video generation** accessible to everyone. Text-to-video, image-to-video, video editing—all through a simple interface.
 
 **Revenue Model**:
 - Freemium: Free tier with watermark
@@ -266,6 +272,8 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 ---
 
+[xAI](/company/xai)
+
 ### 4. xAI
 **🚀 Elon's AI Moonshot: 14 months from Seed to Series B**
 
@@ -279,7 +287,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 #### Business Model: Real-Time AI with X Distribution
 
-[xAI](/company/xai) builds **Grok**, an AI assistant with exclusive access to X's real-time data feed. Positioning: "maximally truth-seeking" AI (vs politically correct competitors).
+Builds **Grok**, an AI assistant with exclusive access to X's real-time data feed. Positioning: "maximally truth-seeking" AI (vs politically correct competitors).
 
 **Revenue Model**:
 - X Premium subscriptions ($8-16/month, includes Grok)
@@ -343,6 +351,8 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 ---
 
+[Granola](/company/granola)
+
 ### 5. Granola
 **📝 The Anti-Otter: 15 months from Seed to Series B**
 
@@ -356,7 +366,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 
 #### Business Model: Premium AI Meeting Notes
 
-[Granola](/company/granola) is an **AI notepad** that augments your meeting notes instead of replacing your judgment. Positioning: "For people who think their judgment matters."
+An **AI notepad** that augments your meeting notes instead of replacing your judgment. Positioning: "For people who think their judgment matters."
 
 **Revenue Model**:
 - Freemium: Basic AI enhancements free

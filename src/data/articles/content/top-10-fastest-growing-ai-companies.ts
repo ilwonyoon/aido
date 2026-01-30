@@ -43,6 +43,8 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 
 ## Top 10 Fastest Growing AI Companies
 
+[Toma](/company/toma)
+
 ### 1. Toma — 138x YoY Growth in Automotive AI
 
 **Growth Score: 414.0**
@@ -52,11 +54,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Market Position**: Automotive-first AI voice agents with proven ROI
 - **Users**: Car dealerships (service, parts, sales)
 
-[Toma](/company/toma) is the dark horse of AI growth. While most AI companies chase broad horizontal markets, Toma laser-focused on automotive dealerships — and it's paying off massively. Their voice AI handles service appointments, parts inquiries, and sales calls with proven ROI that makes adoption a no-brainer.
+The dark horse of AI growth. While most AI companies chase broad horizontal markets, Toma laser-focused on automotive dealerships — and it's paying off massively. Their voice AI handles service appointments, parts inquiries, and sales calls with proven ROI that makes adoption a no-brainer.
 
 **Why they're winning**: Vertical focus means deep domain expertise. Instead of generic chatbots, Toma's AI understands automotive jargon, dealership workflows, and customer buying patterns. The result? 138x growth despite minimal funding.
 
 ---
+
+[Linear](/company/linear)
 
 ### 2. Linear — $100M ARR with 12x YoY Growth
 
@@ -67,11 +71,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Total Funding**: $134M ($2M/month velocity)
 - **Users**: Vercel, Ramp, Watershed, high-growth startups
 
-[Linear](/company/linear) isn't just a project management tool — it's a design philosophy. The company reached $100M ARR with exceptional craft and zero marketing spend, proving that product quality wins in the long run.
+This isn't just a project management tool — it's a design philosophy. The company reached $100M ARR with exceptional craft and zero marketing spend, proving that product quality wins in the long run.
 
 **Why they're winning**: AI-enhanced workflow automation without sacrificing speed. Linear feels instantly faster than Jira, and their AI features (automatic triaging, smart sub-issue generation) save hours without getting in the way. Premium pricing ($19/user) targets fast-moving engineering teams who value quality.
 
 ---
+
+[Anthropic](/company/anthropic)
 
 ### 3. Anthropic — $7B ARR, 7x YoY Growth
 
@@ -83,11 +89,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: 300,000+ B2B customers
 - **Market Position**: #1 in Enterprise LLM (32% market share)
 
-[Anthropic](/company/anthropic) went from $1B to $7B ARR in a single year — a trajectory that puts them on track to surpass OpenAI in enterprise revenue. Claude Code alone hit $500M+ ARR in 3 months.
+They went from $1B to $7B ARR in a single year — a trajectory that puts them on track to surpass OpenAI in enterprise revenue. Claude Code alone hit $500M+ ARR in 3 months.
 
 **Why they're winning**: Safety-first positioning attracts enterprises wary of OpenAI's data practices. Claude's "character" and nuanced reasoning wins developers. Instead of owning distribution, Anthropic powers other platforms (Cursor, Perplexity) — a platform strategy that's working.
 
 ---
+
+[OpenAI](/company/openai)
 
 ### 4. OpenAI — $20B ARR, 3x YoY Growth
 
@@ -98,11 +106,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Total Funding**: $57.9B ($514M/month velocity)
 - **Users**: 800M+ weekly users, 1M+ business customers
 
-[OpenAI](/company/openai) is the giant everyone chases. ChatGPT's brand recognition is unmatched, and their $20B ARR makes them the largest AI company by revenue.
+The giant everyone chases. ChatGPT's brand recognition is unmatched, and their $20B ARR makes them the largest AI company by revenue.
 
 **Why they're winning**: First-mover advantage in consumer AI. ChatGPT is synonymous with AI for most people. Microsoft partnership provides distribution (integrated into Office, Bing) and unlimited compute resources. Despite safety concerns and governance drama, OpenAI continues to set the pace.
 
 ---
+
+[Replit](/company/replit)
 
 ### 5. Replit — $240M ARR with 4x YoY Growth
 
@@ -114,11 +124,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: 150,000+ paying customers
 - **Market Position**: Leader in AI-native coding platforms
 
-[Replit](/company/replit) Agent is the fastest-growing AI product of 2025. Users describe entire apps with natural language, and Replit builds them — no coding required. The education-to-pro pipeline is working: students learn on Replit, then bring it to work.
+Replit Agent is the fastest-growing AI product of 2025. Users describe entire apps with natural language, and Replit builds them — no coding required. The education-to-pro pipeline is working: students learn on Replit, then bring it to work.
 
 **Why they're winning**: Zero setup, immediate coding. No local environment, no dependencies, just code. AI Agent makes it accessible to non-developers while remaining powerful for pros. Browser-based = works everywhere.
 
 ---
+
+[Listen Labs](/company/listen-labs)
 
 ### 6. Listen Labs — 15x YoY Growth
 
@@ -129,11 +141,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: Microsoft, Sweetgreen, Perplexity, Robinhood, Canva
 - **Market Position**: AI-native market research automation
 
-[Listen Labs](/company/listen-labs) automates market research by analyzing customer conversations at scale. What used to take weeks of manual research now happens in hours.
+Automates market research by analyzing customer conversations at scale. What used to take weeks of manual research now happens in hours.
 
 **Why they're winning**: Replaces expensive human labor (market research analysts) with AI that's faster and cheaper. Enterprise customers see immediate ROI. As customer data grows, Listen Labs' AI gets smarter — creating a data moat.
 
 ---
+
+[ElevenLabs](/company/elevenlabs)
 
 ### 7. ElevenLabs — $330M ARR with 3.6x YoY Growth
 
@@ -145,11 +159,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: Publishers, game studios, content creators
 - **Market Position**: Market leader in quality voice synthesis
 
-[ElevenLabs](/company/elevenlabs) is the voice of AI. Their text-to-speech quality is indistinguishable from human narration, opening up massive markets: audiobooks, podcasts, game voiceovers, video dubbing.
+The voice of AI. Their text-to-speech quality is indistinguishable from human narration, opening up massive markets: audiobooks, podcasts, game voiceovers, video dubbing.
 
 **Why they're winning**: Best-in-class quality. Competitors have AI voices, but ElevenLabs has *natural* AI voices. Multi-language support and voice cloning enable global content creation. Creators who used to hire voice actors now use ElevenLabs.
 
 ---
+
+[Perplexity](/company/perplexity)
 
 ### 8. Perplexity — $200M ARR with 3x YoY Growth
 
@@ -161,11 +177,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: 30M+ monthly active users
 - **Market Position**: #1 in AI Search Engines
 
-[Perplexity](/company/perplexity) is attacking Google where it hurts — information retrieval. Instead of 10 blue links, users get direct answers with source citations.
+Attacking Google where it hurts — information retrieval. Instead of 10 blue links, users get direct answers with source citations.
 
 **Why they're winning**: Speed + transparency. Answers are instant and always cite sources, building trust vs Google AI Overviews. Not trying to be everything, just the best answer engine. Pro subscription ($20/month) with unlimited queries is growing fast.
 
 ---
+
+[xAI](/company/xai)
 
 ### 9. xAI — $500M ARR
 
@@ -177,11 +195,13 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: 600M monthly active users (via X integration)
 - **Market Position**: Real-time AI with X integration
 
-[xAI](/company/xai) has unprecedented funding velocity — $1.24B per month. Elon Musk's vision: AI that seeks truth, integrated directly into X (formerly Twitter).
+Unprecedented funding velocity — $1.24B per month. Elon Musk's vision: AI that seeks truth, integrated directly into X (formerly Twitter).
 
 **Why they're winning**: Distribution through X means instant access to 600M users. Real-time training on X data gives xAI the freshest knowledge. Grok's personality (witty, unfiltered) appeals to users tired of "safe" AI responses.
 
 ---
+
+[Vercel](/company/vercel)
 
 ### 10. Vercel — $200M ARR with 1.8x YoY Growth
 
@@ -193,7 +213,7 @@ We weighted these factors (40% ARR, 30% growth rate, 20% funding velocity, 10% v
 - **Users**: Uber, Notion, Zapier, PayPal, Under Armour
 - **Market Position**: #1 in Frontend-as-a-Service
 
-[Vercel](/company/vercel) is the infrastructure behind the modern web. Their v0 AI tool generates production-ready React code from natural language — turning designers into developers.
+The infrastructure behind the modern web. Their v0 AI tool generates production-ready React code from natural language — turning designers into developers.
 
 **Why they're winning**: Developer experience is unmatched. Deploy with one command, automatic SSL, instant rollbacks. AI features (v0) lower the barrier to web development. Enterprise customers pay premium for reliability and speed.
 
