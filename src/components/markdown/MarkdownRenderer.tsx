@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { CompanyMention } from '@/components/article/CompanyMention';
 
 interface MarkdownRendererProps {
   content: string;
@@ -23,8 +24,21 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - let CSS handle styling
-        a: ({ node, ...props }) => <a {...props} />,
+        // Links - detect company links and render with screenshot
+        a: ({ node, href, children, ...props }) => {
+          // Check if this is a company link
+          if (href && href.startsWith('/company/')) {
+            const companyId = href.replace('/company/', '');
+            const companyName = typeof children === 'string' ? children :
+                               (Array.isArray(children) && typeof children[0] === 'string') ? children[0] :
+                               companyId;
+
+            return <CompanyMention companyId={companyId} companyName={companyName} />;
+          }
+
+          // Regular link
+          return <a href={href} {...props}>{children}</a>;
+        },
 
         // Lists - Proximity Principle: CLOSE to heading, FAR from next section
         ul: ({ node, ...props }) => (
