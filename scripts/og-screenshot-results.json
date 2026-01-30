@@ -1,53 +1,288 @@
 [
   {
-    "id": "openai",
-    "url": "https://openai.com",
-    "success": false,
-    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://openai.com/\", waiting until \"networkidle\"\u001b[22m\n"
-  },
-  {
-    "id": "perplexity",
-    "url": "https://www.perplexity.ai",
-    "success": false,
-    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.perplexity.ai/\", waiting until \"networkidle\"\u001b[22m\n"
-  },
-  {
-    "id": "midjourney",
-    "url": "https://www.midjourney.com",
-    "success": false,
-    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.midjourney.com/\", waiting until \"networkidle\"\u001b[22m\n"
-  },
-  {
-    "id": "xai",
-    "url": "https://x.ai",
+    "id": "airloom",
+    "url": "https://www.airloom.energy",
+    "name": "Airloom",
     "success": true,
-    "localPath": "/og-images/xai-og.webp",
-    "sizeKB": "13.08"
+    "localPath": "/og-images/airloom-og.webp",
+    "sizeKB": "22.79"
+  },
+  {
+    "id": "alloy",
+    "url": "https://www.alloy.com/",
+    "name": "Alloy",
+    "success": true,
+    "localPath": "/og-images/alloy-og.webp",
+    "sizeKB": "63.21"
+  },
+  {
+    "id": "ando",
+    "url": "https://ando.so",
+    "name": "Ando",
+    "success": true,
+    "localPath": "/og-images/ando-og.webp",
+    "sizeKB": "58.38"
+  },
+  {
+    "id": "axiom-math",
+    "url": "https://axiommath.ai",
+    "name": "Axiom (Math)",
+    "success": true,
+    "localPath": "/og-images/axiom-math-og.webp",
+    "sizeKB": "26.46"
+  },
+  {
+    "id": "bindwell",
+    "url": "https://bindwell.ai/",
+    "name": "Bindwell",
+    "success": true,
+    "localPath": "/og-images/bindwell-og.webp",
+    "sizeKB": "75.32"
+  },
+  {
+    "id": "blaze-ai",
+    "url": "https://www.withblaze.app",
+    "name": "Blaze AI",
+    "success": false,
+    "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.withblaze.app/\nCall log:\n\u001b[2m  - navigating to \"https://www.withblaze.app/\", waiting until \"domcontentloaded\"\u001b[22m\n"
   },
   {
     "id": "canva",
     "url": "https://www.canva.com",
-    "success": false,
-    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.canva.com/\", waiting until \"networkidle\"\u001b[22m\n"
+    "name": "Canva",
+    "success": true,
+    "localPath": "/og-images/canva-og.webp",
+    "sizeKB": "13.24"
+  },
+  {
+    "id": "clickhouse",
+    "url": "https://clickhouse.com/",
+    "name": "ClickHouse",
+    "success": true,
+    "localPath": "/og-images/clickhouse-og.webp",
+    "sizeKB": "86.48"
+  },
+  {
+    "id": "composite",
+    "url": "https://www.composite.ai/",
+    "name": "Composite",
+    "success": true,
+    "localPath": "/og-images/composite-og.webp",
+    "sizeKB": "31.24"
+  },
+  {
+    "id": "edison-scientific",
+    "url": "https://edisonscientific.com/",
+    "name": "Edison Scientific",
+    "success": true,
+    "localPath": "/og-images/edison-scientific-og.webp",
+    "sizeKB": "41.86"
   },
   {
     "id": "gamma",
     "url": "https://gamma.app",
+    "name": "Gamma",
+    "success": true,
+    "localPath": "/og-images/gamma-og.webp",
+    "sizeKB": "13.63"
+  },
+  {
+    "id": "index",
+    "url": "https://index.com/",
+    "name": "Index",
+    "success": true,
+    "localPath": "/og-images/index-og.webp",
+    "sizeKB": "44.38"
+  },
+  {
+    "id": "item-app",
+    "url": "https://item.app/",
+    "name": "Item App",
+    "success": true,
+    "localPath": "/og-images/item-app-og.webp",
+    "sizeKB": "93.02"
+  },
+  {
+    "id": "item",
+    "url": "https://www.item.app/",
+    "name": "Item",
+    "success": true,
+    "localPath": "/og-images/item-og.webp",
+    "sizeKB": "93.02"
+  },
+  {
+    "id": "llmarena",
+    "url": "https://lmarena.ai",
+    "name": "LLMArena",
+    "success": true,
+    "localPath": "/og-images/llmarena-og.webp",
+    "sizeKB": "14.37"
+  },
+  {
+    "id": "midjourney",
+    "url": "https://www.midjourney.com/",
+    "name": "Midjourney",
+    "success": true,
+    "localPath": "/og-images/midjourney-og.webp",
+    "sizeKB": "16.74"
+  },
+  {
+    "id": "miter",
+    "url": "https://miter.co",
+    "name": "Miter",
+    "success": true,
+    "localPath": "/og-images/miter-og.webp",
+    "sizeKB": "84.76"
+  },
+  {
+    "id": "nuraline",
+    "url": "https://www.nuraline.ai/",
+    "name": "Nuraline",
+    "success": true,
+    "localPath": "/og-images/nuraline-og.webp",
+    "sizeKB": "49.21"
+  },
+  {
+    "id": "onton",
+    "url": "https://www.onton.com/",
+    "name": "Onton",
+    "success": true,
+    "localPath": "/og-images/onton-og.webp",
+    "sizeKB": "42.65"
+  },
+  {
+    "id": "openai",
+    "url": "https://openai.com",
+    "name": "OpenAI",
+    "success": true,
+    "localPath": "/og-images/openai-og.webp",
+    "sizeKB": "4.46"
+  },
+  {
+    "id": "pacific-fusion",
+    "url": "https://pacificfusion.com/",
+    "name": "Pacific Fusion",
+    "success": true,
+    "localPath": "/og-images/pacific-fusion-og.webp",
+    "sizeKB": "51.83"
+  },
+  {
+    "id": "perle-ai",
+    "url": "https://perle.ai/",
+    "name": "Perle AI",
+    "success": true,
+    "localPath": "/og-images/perle-ai-og.webp",
+    "sizeKB": "56.17"
+  },
+  {
+    "id": "perplexity",
+    "url": "https://perplexity.ai",
+    "name": "Perplexity",
+    "success": true,
+    "localPath": "/og-images/perplexity-og.webp",
+    "sizeKB": "16.57"
+  },
+  {
+    "id": "quanta",
+    "url": "https://quanta.com/",
+    "name": "Quanta",
+    "success": true,
+    "localPath": "/og-images/quanta-og.webp",
+    "sizeKB": "44.28"
+  },
+  {
+    "id": "red-queen-bio",
+    "url": "https://www.redqueen.bio/",
+    "name": "Red Queen Bio",
+    "success": true,
+    "localPath": "/og-images/red-queen-bio-og.webp",
+    "sizeKB": "123.82"
+  },
+  {
+    "id": "sierra",
+    "url": "https://www.sierra.ai/",
+    "name": "Sierra",
+    "success": true,
+    "localPath": "/og-images/sierra-og.webp",
+    "sizeKB": "74.42"
+  },
+  {
+    "id": "sonatic",
+    "url": "https://www.sonatic.ai/",
+    "name": "Sonatic",
+    "success": true,
+    "localPath": "/og-images/sonatic-og.webp",
+    "sizeKB": "46.81"
+  },
+  {
+    "id": "span",
+    "url": "https://span.app",
+    "name": "Span",
+    "success": true,
+    "localPath": "/og-images/span-og.webp",
+    "sizeKB": "43.74"
+  },
+  {
+    "id": "subtrate",
+    "url": "https://subtrate.com/",
+    "name": "Subtrate",
     "success": false,
-    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://gamma.app/\", waiting until \"networkidle\"\u001b[22m\n"
+    "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://subtrate.com/\nCall log:\n\u001b[2m  - navigating to \"https://subtrate.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "id": "suger",
+    "url": "https://www.suger.io/",
+    "name": "Suger",
+    "success": true,
+    "localPath": "/og-images/suger-og.webp",
+    "sizeKB": "50.91"
+  },
+  {
+    "id": "tabnine",
+    "url": "https://www.tabnine.com",
+    "name": "Tabnine",
+    "success": true,
+    "localPath": "/og-images/tabnine-og.webp",
+    "sizeKB": "59.77"
+  },
+  {
+    "id": "tigereye",
+    "url": "https://tigereye.com/",
+    "name": "TigerEye",
+    "success": true,
+    "localPath": "/og-images/tigereye-og.webp",
+    "sizeKB": "31.37"
   },
   {
     "id": "tome",
     "url": "https://tome.app",
+    "name": "Tome",
     "success": true,
     "localPath": "/og-images/tome-og.webp",
-    "sizeKB": "11.04"
+    "sizeKB": "10.96"
   },
   {
-    "id": "sierra",
-    "url": "https://sierra.ai",
+    "id": "town",
+    "url": "https://town.com/",
+    "name": "Town",
     "success": true,
-    "localPath": "/og-images/sierra-og.webp",
-    "sizeKB": "50.01"
+    "localPath": "/og-images/town-og.webp",
+    "sizeKB": "21.16"
+  },
+  {
+    "id": "variant",
+    "url": "https://variant.ai/",
+    "name": "Variant",
+    "success": true,
+    "localPath": "/og-images/variant-og.webp",
+    "sizeKB": "29.38"
+  },
+  {
+    "id": "xai",
+    "url": "https://x.ai",
+    "name": "xAI",
+    "success": true,
+    "localPath": "/og-images/xai-og.webp",
+    "sizeKB": "32.58"
   }
 ]
