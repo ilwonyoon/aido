@@ -5,21 +5,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Read companies data
+// Read companies data - extract IDs from companies array
 const companiesIndexPath = path.join(__dirname, '../src/data/companies/index.ts');
 const indexContent = fs.readFileSync(companiesIndexPath, 'utf-8');
 
-// Extract company IDs from export statement
-const exportMatch = indexContent.match(/export \{ (.+) \}/);
-if (!exportMatch) {
-  console.error('Could not find company exports');
-  process.exit(1);
-}
-
-const companyIds = exportMatch[1]
-  .split(',')
-  .map(id => id.trim())
-  .filter(id => id && !id.startsWith('get')); // Filter out utility functions
+// Extract company IDs from the companies array by reading id: 'value' patterns
+const companyIdMatches = indexContent.matchAll(/id:\s*['"]([^'"]+)['"]/g);
+const companyIds = [...companyIdMatches].map(match => match[1]);
 
 // Read articles data
 const articlesIndexPath = path.join(__dirname, '../src/data/articles/index.ts');
