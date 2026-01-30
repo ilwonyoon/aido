@@ -185,11 +185,6 @@ export const anthropic: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Content Designer, Enterprise Growth',
-        location: 'New York City, NY | Seattle, WA; San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/anthropic/jobs/5077227008',
-      },
-      {
         title: 'Product Designer, Claude Code',
         location: 'New York City, NY; Remote-Friendly (Travel Required) | San Francisco, CA; San Francisco, CA | New York City, NY | Seattle, WA',
         url: 'https://job-boards.greenhouse.io/anthropic/jobs/5025976008',

@@ -154,21 +154,7 @@ export const hebbia: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'New York, NY',
-        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
-        type: 'full-time',
-        aboutRole: 'Create innovative AI interaction designs for finance-focused SaaS platform. Lead end-to-end user experience.',
-        responsibilities: [
-          'Lead design of product features and UX',
-          'Ensure product is intuitive and visually appealing',
-          'Collaborate with cross-functional teams',
-        ],
-        whyInteresting: 'Work with genius founder. Profitable startup. 40% of largest asset managers use your product.',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],

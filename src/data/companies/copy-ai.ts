@@ -65,7 +65,7 @@ export const copyAi: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Remote (Yes)', url: 'https://www.copy.ai/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',

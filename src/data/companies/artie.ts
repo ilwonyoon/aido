@@ -171,31 +171,7 @@ export const artie: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA',
-      url: 'https://www.artie.com/careers/product-designer',
-      type: 'full-time',
-      aboutRole:
-        'Own end-to-end product design for Artie, from discovery to UI, in a high-ownership, hands-on team.',
-      responsibilities: [
-        'Own product design projects from research and ideation to delivery',
-        'Collaborate with engineering and product to shape solutions',
-        'Create wireframes, high-fidelity UI, and interactive prototypes',
-      ],
-      requirements: [
-        'Proven experience designing complex products for technical users',
-        'Ability to simplify complex workflows into clear interfaces',
-        'Strong visual design and prototyping skills',
-      ],
-      preferred: [
-        'Experience with data infrastructure or developer tools',
-        'Comfort working in a fast-moving early-stage environment',
-      ],
-      compensation: '$150K-$250K + equity',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [

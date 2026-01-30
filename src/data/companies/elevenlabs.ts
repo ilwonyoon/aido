@@ -151,13 +151,7 @@ export const elevenlabs: Company = {
         description: 'Product and research updates',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'Remote, London',
-        url: 'https://elevenlabs.io/careers/a4a9cda2-c5d8-47f0-989d-21617b58ab39',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {

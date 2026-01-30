@@ -168,25 +168,7 @@ export const railway: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'Remote (US)',
-      url: 'https://railway.com/careers/product-designer',
-      type: 'full-time',
-      aboutRole: 'Lead end-to-end product design across the Railway platform.',
-      responsibilities: [
-        'Own design from concept to implementation',
-        'Collaborate with engineering and product to ship features',
-        'Create prototypes to explore and validate solutions',
-      ],
-      requirements: [
-        'Experience designing complex products and systems',
-        'Strong visual and interaction design skills',
-        'Ability to communicate design rationale clearly',
-      ],
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [

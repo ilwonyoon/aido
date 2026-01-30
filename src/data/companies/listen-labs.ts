@@ -165,15 +165,7 @@ export const listenLabs: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Founding Product Designer',
-        location: 'San Francisco, CA (Onsite)',
-        url: 'https://www.builtinseattle.com/job/founding-product-designer/6686342',
-        level: 'Founding',
-        type: 'full-time',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],

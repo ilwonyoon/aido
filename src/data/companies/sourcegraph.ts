@@ -155,27 +155,7 @@ export const sourcegraph: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Product Designer [IC4]',
-        location: 'San Francisco, CA (Required)',
-        url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
-        level: 'IC4',
-        type: 'full-time',
-        aboutRole: 'Design features for Cody and search teams, crafting solutions that make developers more productive with AI-powered tools.',
-        responsibilities: [
-          'Collaborate with teammates to define the future of AI in developer tools',
-          'Design for complex developer tools and IDE-like applications',
-          'Conduct user research and lead customer calls',
-        ],
-        requirements: [
-          '8+ years designing complex B2B or B2C web applications',
-          'Experience with user research and usability testing',
-          '3+ years writing and shipping JavaScript, TypeScript, or Python code',
-        ],
-        whyInteresting: 'Work on cutting-edge AI coding tools. Shape the future of developer productivity. Strong technical founders.',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],

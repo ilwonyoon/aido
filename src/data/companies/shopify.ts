@@ -159,17 +159,6 @@ export const shopify: Company = {
     ],
     openRoles: [
       {
-        title: 'Design Apprentice, Product Design',
-        location: 'Remote (offices in Ottawa, Toronto, Montreal, NYC, Bellevue)',
-        type: 'full-time',
-        url: 'https://www.shopify.com/careers',
-        requirements: [
-          'Early career design talent',
-          '12-month paid program with two team placements',
-          'Remote or in-office flexible',
-        ],
-      },
-      {
         title: 'Staff Product Designer',
         location: 'Remote (global)',
         type: 'full-time',

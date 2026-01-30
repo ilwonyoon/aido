@@ -175,11 +175,6 @@ export const perplexity: Company = {
         location: 'San Francisco, CA',
         url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4865806007',
       },
-      {
-        title: 'AI Interaction Designer',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4848736007',
-      },
     ],
 
     cultureInsights: [
