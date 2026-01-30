@@ -609,38 +609,67 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return 0;
   };
 
+  // Upside score: ranks companies by join-now potential (0–100)
+  const computeUpsideScore = (company: Company): number => {
+    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+    const nycArea = ['New York', 'Brooklyn', 'Manhattan'];
+
+    // Open Roles (0 or 30) — strongest gate
+    const rolesScore = company.openRoles.length > 0 ? 30 : 0;
+
+    // Growth Stage (0–25)
+    const growthScores: Record<string, number> = {
+      'hypergrowth': 25, 'high-growth': 18, 'early-growth': 12,
+      'mature-growth': 6, 'steady': 3, 'plateau': 0, 'declining': 0, 'unknown': 0,
+    };
+    const growthScore = company.growthMetrics?.stage
+      ? (growthScores[company.growthMetrics.stage] ?? 0)
+      : 0;
+
+    // Funding Stage (0–20) — earlier = more equity upside
+    const fundingScores: Record<string, number> = {
+      'Pre-seed': 20, 'Seed': 20, 'Series A': 17, 'Series B': 14,
+      'Series C': 10, 'Series D': 7, 'Series E': 4, 'Series F': 4,
+    };
+    let fundingScore = 0;
+    for (const [key, value] of Object.entries(fundingScores)) {
+      if (company.stage.includes(key)) { fundingScore = value; break; }
+    }
+
+    // AI-Native Level (0–15)
+    const aiScores: Record<string, number> = { A: 15, B: 11, C: 7, D: 3 };
+    const aiScore = aiScores[company.aiNativeLevel] ?? 0;
+
+    // Location (0–10)
+    const hq = company.headquarters;
+    const isSF = sfBayArea.some(city => hq.includes(city));
+    const isNYC = nycArea.some(city => hq.includes(city));
+    const isRemote = company.remote === 'Yes' || company.remote === 'Hybrid';
+    const locationScore = isSF ? 10 : isNYC ? 7 : isRemote ? 5 : hq.includes('US') || hq.includes('CA') ? 3 : 0;
+
+    return rolesScore + growthScore + fundingScore + aiScore + locationScore;
+  };
+
   // Sort companies (uses initial interest statuses so sorting doesn't change when toggling interest)
   const sortedCompanies = useMemo(() => {
-    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
-
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
-        case 'recommended':
-          // Priority 1: SF Bay Area + Open Positions
-          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
-          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
-          const aHasRoles = a.openRoles.length > 0;
-          const bHasRoles = b.openRoles.length > 0;
-          const aScore = (aIsSF ? 2 : 0) + (aHasRoles ? 1 : 0);
-          const bScore = (bIsSF ? 2 : 0) + (bHasRoles ? 1 : 0);
-          if (aScore !== bScore) return bScore - aScore;
-
-          // Priority 2: Tier status (tier_0 > tier_1 > not_reviewed > not_interested)
-          // Use initialInterestStatuses so sort order doesn't change until page reload
+        case 'recommended': {
+          // Priority 1: Tier status (user's explicit assessment takes precedence)
           const statusA = initialInterestStatuses[a.id];
           const statusB = initialInterestStatuses[b.id];
-          const orderA = statusA === 'tier_0' ? 0 : statusA === 'tier_1' ? 1 : statusA === 'not_interested' ? 3 : 2;
-          const orderB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
-          if (orderA !== orderB) return orderA - orderB;
+          const tierA = statusA === 'tier_0' ? 0 : statusA === 'tier_1' ? 1 : statusA === 'not_interested' ? 3 : 2;
+          const tierB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
+          if (tierA !== tierB) return tierA - tierB;
 
-          // Priority 3: AI Level (A > B > C > D)
-          const levelOrder = { A: 0, B: 1, C: 2, D: 3 };
-          if (a.aiNativeLevel !== b.aiNativeLevel) {
-            return levelOrder[a.aiNativeLevel] - levelOrder[b.aiNativeLevel];
-          }
+          // Priority 2: Upside Score (growth + roles + stage + AI level + location)
+          const upsideA = computeUpsideScore(a);
+          const upsideB = computeUpsideScore(b);
+          if (upsideA !== upsideB) return upsideB - upsideA;
 
-          // Priority 4: Alphabetical
+          // Priority 3: Alphabetical
           return a.name.localeCompare(b.name);
+        }
         case 'teamSize':
           const teamSizeDiff = parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
           if (teamSizeDiff !== 0) return teamSizeDiff;
