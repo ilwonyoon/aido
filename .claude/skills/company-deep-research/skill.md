@@ -427,6 +427,43 @@ WebSearch: "[problem domain]" how people currently solve
 - **Meta**: [진입 가능성]
 - **Amazon**: [진입 가능성]
 
+### vs Foundation Models (거대 LLM과의 관계)
+
+> 거의 모든 AI 스타트업이 GPT, Claude, Gemini, Grok 위에 지어진다.
+> 이 관계가 **공생**인지 **의존**인지 **경쟁**인지가 핵심.
+
+- **Relationship type**:
+  - 🔗 **Infrastructure dependency**: LLM API 위에 빌드 (대부분의 AI 스타트업)
+  - 🤝 **Symbiosis**: LLM과 상호보완 (e.g., Cursor는 Claude/GPT가 좋을수록 좋아짐)
+  - ⚔️ **Competition**: LLM 자체와 경쟁 (e.g., 검색 스타트업 vs Gemini 검색)
+  - 🏗️ **Building the LLM**: 직접 파운데이션 모델 개발 (Anthropic, OpenAI, Mistral)
+
+- **Key questions**:
+  - 어떤 LLM에 의존하는가? (단일 vs 멀티 모델)
+  - LLM provider가 같은 제품을 만들면? (e.g., ChatGPT가 코드 에디터 내장)
+  - LLM 비용이 매출에서 차지하는 비중은? (마진 구조)
+  - 모델 스위칭이 쉬운가? (OpenAI → Claude 전환 비용)
+  - LLM 위에 쌓은 고유 가치는? (프롬프트 vs 데이터 vs 워크플로우 vs 도메인 지식)
+
+- **Defensibility spectrum**:
+  ```
+  Weak ◀━━━━━━━━━━━━━━━━━━━━━━━━━━━▶ Strong
+
+  Thin wrapper    Domain data    Workflow lock-in    Platform/Network
+  (GPT wrapper)   (학습 데이터)   (전환 비용)          (생태계 효과)
+  ```
+
+- **LLM provider expansion risk**:
+  - ChatGPT: [이 회사 영역에 진입할 가능성]
+  - Claude: [이 회사 영역에 진입할 가능성]
+  - Gemini: [이 회사 영역에 진입할 가능성]
+  - Grok: [이 회사 영역에 진입할 가능성]
+
+- **Designer implication**:
+  - LLM 의존도가 높으면 → 디자인 차별화가 유일한 moat일 수 있음 (기회)
+  - LLM 의존도가 높으면 → 제품이 하루아침에 obsolete될 수 있음 (리스크)
+  - LLM 교체 시 → UX가 바뀌어야 하는가? (디자인 부채 리스크)
+
 ### Competitive Positioning
 - [Company]'s unique angle: [다른 누구도 안 하는 것]
 - Switching costs: [사용자가 바꾸기 얼마나 어려운가]
@@ -780,6 +817,38 @@ graph TD
 
 ## Output Format
 
+### Report Length Constraint
+
+> **Target: 10분 이내 읽기 (~2,500 words / 한글 ~4,000자)**
+
+9개 Phase에서 수집한 정보는 방대하지만, 최종 리포트는 **핵심만 압축**.
+리서치 과정에서 수집한 raw data는 내부 참고용이고, 리포트는 의사결정용.
+
+**Section별 길이 가이드:**
+
+| Section | Target | 원칙 |
+|---------|--------|------|
+| Executive Summary | 3-5 문장 | 읽고 바로 판단 가능해야 |
+| Design Team Intel | 리더십 3-5명 + 팀 규모 요약 | 전원 나열 X, 핵심 인물만 |
+| Business Model | 5-8 bullet points | 숫자 위주, 설명 최소 |
+| Product Design Take | 10-15 lines | 핵심 문제 + 규모 + 디자인 기회 |
+| Upside | 5 bullet points | 가장 강한 근거만 |
+| Downside | 5 bullet points | 가장 현실적 리스크만 |
+| Competition + LLM | 테이블 + 3-5 lines | 테이블로 압축, 서술 최소 |
+| Articles | 링크 리스트 | 제목 + 한 줄 요약 |
+| Decision Framework | 점수표 + 1 paragraph verdict | 숫자로 판단 |
+
+**압축 원칙:**
+- 같은 말 반복 금지 (Upside에 쓴 내용을 Decision에서 또 풀지 않음)
+- Bullet point > 문단 (읽는 시간 절약)
+- 데이터 포인트는 숫자로, 분석은 한 줄로
+- "자세한 내용은 Phase X 참고" 같은 내부 참조 금지 — 리포트 자체로 완결
+
+**Full raw data는 별도 보관:**
+- 디자이너 전원 LinkedIn 리스트 → report 하단 appendix
+- 수집한 아티클 전체 → Sources 섹션
+- 상세 경쟁 분석 → 필요 시 별도 파일
+
 ### Report File
 
 Path: `src/data/deep-research/[company-id].md`
@@ -790,41 +859,40 @@ Path: `src/data/deep-research/[company-id].md`
 > Generated: [date]
 > Tier: [0 or 1]
 > Overall Score: [X.X/10]
+> Reading time: ~8-10 min
 
 ---
 
 ## Executive Summary
-[3-5 sentences: VC + Designer 관점 종합 요약]
+[3-5 sentences: 이 회사에 대한 최종 판단을 한 문단으로]
 
 ## Design Team Intelligence
-[Phase 1 output]
+[핵심 리더십 + 팀 규모 + 내 fit 한 줄 평가]
 
-## Business Model Analysis
-[Phase 2 output]
+## Business Model
+[Revenue model + 핵심 메트릭 bullet points]
 
 ## Product Design Take
-[Phase 3 output — User problem deep dive, problem scale & universality,
-solution-problem fit, designer impact potential]
+[핵심 문제 한 문장 → 규모 → 디자인 기회 3개]
 
-## Upside Case
-[Phase 4 output]
+## Upside / Downside
+[각 5 bullet points — 양쪽을 나란히 비교]
 
-## Downside & Risks
-[Phase 5 output]
+## Competition & LLM Position
+[경쟁사 테이블 + Foundation model 관계 한 줄]
 
-## Competition Landscape
-[Phase 6 output]
+## Key References
+[핵심 아티클 5-10개 링크]
 
-## Key Articles & References
-[Phase 7 output]
-
-## Decision Framework
-[Phase 8 output]
+## Decision
+[점수표 + Verdict 1 paragraph + Action items]
 
 ---
 
-## Sources
-- [All URLs used in research]
+## Appendix
+- Full design team LinkedIn list
+- All sources
+
 ```
 
 ### Company Data Update
