@@ -19,8 +19,8 @@ const rootDir = path.join(__dirname, '..');
 
 const CONFIG = {
   outputDir: path.join(rootDir, 'public', 'og-images'),
-  maxWidth: 800,
-  quality: 85,
+  maxWidth: 1440,
+  quality: 90,
   format: 'webp'
 };
 

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "openai",
+    "url": "https://openai.com",
+    "success": false,
+    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://openai.com/\", waiting until \"networkidle\"\u001b[22m\n"
+  },
+  {
+    "id": "perplexity",
+    "url": "https://www.perplexity.ai",
+    "success": false,
+    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.perplexity.ai/\", waiting until \"networkidle\"\u001b[22m\n"
+  },
+  {
+    "id": "midjourney",
+    "url": "https://www.midjourney.com",
+    "success": false,
+    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.midjourney.com/\", waiting until \"networkidle\"\u001b[22m\n"
+  },
+  {
+    "id": "xai",
+    "url": "https://x.ai",
+    "success": true,
+    "localPath": "/og-images/xai-og.webp",
+    "sizeKB": "13.08"
+  },
+  {
+    "id": "canva",
+    "url": "https://www.canva.com",
+    "success": false,
+    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.canva.com/\", waiting until \"networkidle\"\u001b[22m\n"
+  },
+  {
+    "id": "gamma",
+    "url": "https://gamma.app",
+    "success": false,
+    "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://gamma.app/\", waiting until \"networkidle\"\u001b[22m\n"
+  },
+  {
+    "id": "tome",
+    "url": "https://tome.app",
+    "success": true,
+    "localPath": "/og-images/tome-og.webp",
+    "sizeKB": "11.04"
+  },
+  {
+    "id": "sierra",
+    "url": "https://sierra.ai",
+    "success": true,
+    "localPath": "/og-images/sierra-og.webp",
+    "sizeKB": "50.01"
+  }
+]
