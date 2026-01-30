@@ -369,6 +369,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
+  // Track previous interest statuses to detect changes
+  const prevInterestStatusesRef = useRef<Record<string, InterestStatus>>({});
 
   const checkMobile = useCallback(() => {
     setIsMobile(window.innerWidth < 768);
@@ -510,6 +512,32 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [user, loading]);
+
+  // Auto-switch filter when user reviews a company from "Not Yet Reviewed"
+  useEffect(() => {
+    if (reviewStatusFilter !== 'not_yet_reviewed') {
+      prevInterestStatusesRef.current = interestStatuses;
+      return;
+    }
+
+    // Find newly added or changed statuses
+    const prev = prevInterestStatusesRef.current;
+    const changedCompanies = Object.entries(interestStatuses).filter(
+      ([companyId, status]) => status && prev[companyId] !== status
+    );
+
+    if (changedCompanies.length > 0) {
+      // Get the status they just selected (use the first changed company)
+      const newStatus = changedCompanies[0][1];
+      // Auto-switch to that status filter (guaranteed non-null by filter above)
+      if (newStatus) {
+        setReviewStatusFilter(newStatus);
+      }
+    }
+
+    // Update ref
+    prevInterestStatusesRef.current = interestStatuses;
+  }, [interestStatuses, reviewStatusFilter]);
 
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
