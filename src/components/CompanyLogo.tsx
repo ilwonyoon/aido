@@ -25,10 +25,19 @@ export function CompanyLogo(props: CompanyLogoProps) {
   const size = props.size ?? 32;
 
   // Extract values from either props pattern
-  const company = 'company' in props ? props.company : null;
-  const website = company?.website ?? props.website;
-  const name = company?.name ?? props.name;
-  const aiNativeLevel = company?.aiNativeLevel ?? ('aiNativeLevel' in props ? props.aiNativeLevel : undefined);
+  let website: string;
+  let name: string;
+  let aiNativeLevel: Company['aiNativeLevel'] | undefined;
+
+  if ('company' in props) {
+    website = props.company.website;
+    name = props.company.name;
+    aiNativeLevel = props.company.aiNativeLevel;
+  } else {
+    website = props.website;
+    name = props.name;
+    aiNativeLevel = props.aiNativeLevel;
+  }
 
   const domain = getDomain(website);
   const config = aiNativeLevel ? getAiLevelConfig(aiNativeLevel) : null;
