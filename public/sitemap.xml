@@ -1452,4 +1452,44 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/pulley</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/lighthouse</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/osmosis</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/zed-dev</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/warmer</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/campfire</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/causal-labs</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/trunk</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/sentient-labs</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
+  <url>
+    <loc>https://aido-d2cc0.web.app/company/inference-net</loc>
+    <lastmod>2026-01-30</lastmod>
+  </url>
 </urlset>
