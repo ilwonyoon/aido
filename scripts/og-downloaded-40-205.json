@@ -1,0 +1,1470 @@
+[
+  {
+    "companyId": "corgi",
+    "name": "Corgi",
+    "website": "https://www.corgi.insure/",
+    "ogImage": "https://corgi.insure/brand/corgi-logo.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/corgi-og.webp"
+  },
+  {
+    "companyId": "cursor",
+    "name": "Cursor",
+    "website": "https://cursor.com",
+    "ogImage": "https://cursor.com/public/opengraph-image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/cursor-og.webp"
+  },
+  {
+    "companyId": "dedalus-labs",
+    "name": "Dedalus Labs",
+    "website": "https://dedaluslabs.ai",
+    "ogImage": "https://dedaluslabs.ai/images/og/dedalus_og.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/dedalus-labs-og.webp"
+  },
+  {
+    "companyId": "deepgram",
+    "name": "Deepgram",
+    "website": "https://deepgram.com",
+    "ogImage": "https://cdn.sanity.io/images/10fppwnn/production/50a3df6fe19d7675e74161c06ecbae7e3375515d-1800x945.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/deepgram-og.webp"
+  },
+  {
+    "companyId": "delve",
+    "name": "Delve",
+    "website": "https://delve.co/",
+    "ogImage": "https://cdn.prod.website-files.com/686c116534831e8f603168b9/687fc1afd8a23ccb95e140d4_Delve%20OG.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/delve-og.webp"
+  },
+  {
+    "companyId": "descript",
+    "name": "Descript",
+    "website": "https://www.descript.com",
+    "ogImage": "https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2Fb1cf2c175fbe4a028dff4622ee1ce727",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/descript-og.webp"
+  },
+  {
+    "companyId": "dev-agents",
+    "name": "Dev Agents",
+    "website": "https://sdsa.ai/",
+    "ogImage": "https://sdsa.ai/social_card.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/dev-agents-og.webp"
+  },
+  {
+    "companyId": "ditto-live",
+    "name": "Ditto Live",
+    "website": "https://www.ditto.com/",
+    "ogImage": "https://cdn.prod.website-files.com/6761335affb7c1ca9aae00dd/679b735b4b721c781715573c_ditto_opengraph.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/ditto-live-og.webp"
+  },
+  {
+    "companyId": "ditto",
+    "name": "Ditto",
+    "website": "https://www.ditto.live/",
+    "ogImage": "https://cdn.prod.website-files.com/6761335affb7c1ca9aae00dd/679b735b4b721c781715573c_ditto_opengraph.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/ditto-og.webp"
+  },
+  {
+    "companyId": "doppel",
+    "name": "Doppel",
+    "website": "https://www.doppel.com",
+    "ogImage": "https://www.doppel.com/sites/default/files/2025-11/Open_Graph_Image_0.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/doppel-og.webp"
+  },
+  {
+    "companyId": "doss",
+    "name": "Doss",
+    "website": "https://www.doss.com/",
+    "ogImage": "https://www.doss.com/assets/img/og-image-DgTw3QV_.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/doss-og.webp"
+  },
+  {
+    "companyId": "edison-scientific",
+    "name": "Edison Scientific",
+    "website": "https://edisonscientific.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "elevenlabs",
+    "name": "ElevenLabs",
+    "website": "https://elevenlabs.io",
+    "ogImage": "https://elevenlabs.io/cover.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/elevenlabs-og.webp"
+  },
+  {
+    "companyId": "eventual",
+    "name": "Eventual",
+    "website": "https://www.eventual.ai",
+    "ogImage": "https://www.eventual.ai/images/diagram.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/eventual-og.webp"
+  },
+  {
+    "companyId": "exa",
+    "name": "Exa",
+    "website": "https://exa.ai",
+    "ogImage": "https://exa.imgix.net/og-image.png/",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/exa-og.webp"
+  },
+  {
+    "companyId": "extropic",
+    "name": "Extropic",
+    "website": "https://extropic.ai",
+    "ogImage": "http://extropic.ai/social-1024.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/extropic-og.webp"
+  },
+  {
+    "companyId": "factory",
+    "name": "Factory",
+    "website": "https://factory.ai",
+    "ogImage": "https://factory.ai/og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/factory-og.webp"
+  },
+  {
+    "companyId": "fal",
+    "name": "fal",
+    "website": "https://fal.ai/",
+    "ogImage": "https://fal.ai/og-thumbnail.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/fal-og.webp"
+  },
+  {
+    "companyId": "fastino",
+    "name": "Fastino",
+    "website": "https://fastino.ai",
+    "ogImage": "https://framerusercontent.com/images/pMGLPfId87dGx42NQSoGuySQe8.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/fastino-og.webp"
+  },
+  {
+    "companyId": "figma",
+    "name": "Figma",
+    "website": "https://figma.com",
+    "ogImage": "https://cdn.sanity.io/images/599r6htc/regionalized/1adfa5a99040c80af7b4b5e3e2cf845315ea2367-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/figma-og.webp"
+  },
+  {
+    "companyId": "firecrawl",
+    "name": "Firecrawl",
+    "website": "https://www.firecrawl.dev/",
+    "ogImage": "https://www.firecrawl.dev/og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/firecrawl-og.webp"
+  },
+  {
+    "companyId": "flint",
+    "name": "Flint",
+    "website": "https://www.tryflint.com/",
+    "ogImage": "https://www.tryflint.com/images/og-preview.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/flint-og.webp"
+  },
+  {
+    "companyId": "gamma",
+    "name": "Gamma",
+    "website": "https://gamma.app",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "gc-ai",
+    "name": "GC AI",
+    "website": "https://gc.ai/",
+    "ogImage": "https://framerusercontent.com/images/Zth3qSTP7QF72InJJ60jCoqi190.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/gc-ai-og.webp"
+  },
+  {
+    "companyId": "gigaml",
+    "name": "GigaML",
+    "website": "https://giga.ai",
+    "ogImage": "https://framerusercontent.com/images/A0yYH5sFzbWdsYme1utMvbVQow.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/gigaml-og.webp"
+  },
+  {
+    "companyId": "gigs",
+    "name": "Gigs",
+    "website": "https://gigs.com",
+    "ogImage": "https://a.storyblok.com/f/231660/2400x1260/d571d70c0b/opengraph-gigs.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/gigs-og.webp"
+  },
+  {
+    "companyId": "glean",
+    "name": "Glean",
+    "website": "https://www.glean.com",
+    "ogImage": "https://cdn.prod.website-files.com/6127a84dfe068e153ef20572/68d4e4b2f311b084a6eb9cef_Glean%5Bdot%5Dcom%20Cover%20Image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/glean-og.webp"
+  },
+  {
+    "companyId": "glide",
+    "name": "Glide",
+    "website": "https://www.glideapps.com/",
+    "ogImage": "https://www.glideapps.com/opengraph-image-1udkml.jpg?opengraph-image.299b9a54.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/glide-og.webp"
+  },
+  {
+    "companyId": "gong",
+    "name": "Gong",
+    "website": "https://gong.io",
+    "ogImage": "https://www.gong.io/opengraph-image.png?382b6411b64d7381",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/gong-og.webp"
+  },
+  {
+    "companyId": "goodfire",
+    "name": "Goodfire",
+    "website": "https://www.goodfire.ai/",
+    "ogImage": "https://cdn.prod.website-files.com/67b4608695ee3b31a669d3a9/67f8223b7a5017e5e1e983ac_opengraph.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/goodfire-og.webp"
+  },
+  {
+    "companyId": "grammarly",
+    "name": "Grammarly",
+    "website": "https://www.grammarly.com",
+    "ogImage": "https://static-web.grammarly.com/cms/master/public/open-graph/social-24.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/grammarly-og.webp"
+  },
+  {
+    "companyId": "granola",
+    "name": "Granola",
+    "website": "https://granola.ai",
+    "ogImage": "https://granola.ai/opengraph-image.png?9f0ee69b11547e2f",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/granola-og.webp"
+  },
+  {
+    "companyId": "happyrobot",
+    "name": "Happyrobot",
+    "website": "https://www.happyrobot.ai/",
+    "ogImage": "https://cdn.prod.website-files.com/685d041f2560b50696e9fbf1/6864e54f5aad4043e750b9f6_06b997871ec9c755427ff12b2bcbd60f_open%20graph%202.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/happyrobot-og.webp"
+  },
+  {
+    "companyId": "harmonic",
+    "name": "Harmonic",
+    "website": "https://harmonic.fun",
+    "ogImage": "https://harmonic.fun/harmonic-icon-512x512.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/harmonic-og.webp"
+  },
+  {
+    "companyId": "harvey",
+    "name": "Harvey",
+    "website": "https://harvey.ai",
+    "ogImage": "https://cdn.sanity.io/images/07s0r5r6/production/9a4b2e0eec438fb56057db128a11ade2c04c01cf-2400x1260.png?fm=jpg&amp;q=95&amp;dpr=2",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/harvey-og.webp"
+  },
+  {
+    "companyId": "hebbia",
+    "name": "Hebbia",
+    "website": "https://www.hebbia.ai",
+    "ogImage": "https://images.ctfassets.net/bn476u6z5acg/ZfUcuBJAjvy62PGtbfDHp/27195fa1dd4bab2394636a91ffb00df6/102125_Hebbia_Website_OpenGraphCard_Home.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/hebbia-og.webp"
+  },
+  {
+    "companyId": "heirloom",
+    "name": "Heirloom",
+    "website": "https://www.heirloomcarbon.com/",
+    "ogImage": "https://cdn.prod.website-files.com/639c8f646dc35afd81aeebc2/651aee726de0080273ee5ad9_Heirloom_SocialShare.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/heirloom-og.webp"
+  },
+  {
+    "companyId": "heygen",
+    "name": "HeyGen",
+    "website": "https://heygen.com",
+    "ogImage": "https://cdn.sanity.io/images/pdhqcmb1/production/579e83ff34c4c832744efaedb9681d255e58dc13-1200x630.png?fit=max&amp;auto=format",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/heygen-og.webp"
+  },
+  {
+    "companyId": "higgsfield",
+    "name": "Higgsfield",
+    "website": "https://higgsfield.ai",
+    "ogImage": "https://higgsfield.ai/thumbnail/default.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/higgsfield-og.webp"
+  },
+  {
+    "companyId": "highscore",
+    "name": "Highscore",
+    "website": "https://highscore.com",
+    "ogImage": "https://waitlist.highscore.com/opengraph-image.png?7e5956cd3700931d",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/highscore-og.webp"
+  },
+  {
+    "companyId": "hightouch",
+    "name": "Hightouch",
+    "website": "https://hightouch.com/",
+    "ogImage": "https://hightouch.com/assets/meta.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/hightouch-og.webp"
+  },
+  {
+    "companyId": "humansand",
+    "name": "Humans&",
+    "website": "https://humansand.ai",
+    "ogImage": "https://humansand.ai/icon.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/humansand-og.webp"
+  },
+  {
+    "companyId": "humble-ops",
+    "name": "Humble Ops",
+    "website": "https://humbleops.ai/",
+    "ogImage": "https://framerusercontent.com/images/TcqGH24J7DCy46RMYkFuepV2vg.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/humble-ops-og.webp"
+  },
+  {
+    "companyId": "hume-ai",
+    "name": "Hume AI",
+    "website": "https://www.hume.ai",
+    "ogImage": "https://hume.ai/opengraph-image.jpg?opengraph-image.6b4cd84b.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/hume-ai-og.webp"
+  },
+  {
+    "companyId": "hummingbird",
+    "name": "Hummingbird",
+    "website": "https://www.hummingbird.co/",
+    "ogImage": "https://www.hummingbird.co/hubfs/FI_Homepage.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/hummingbird-og.webp"
+  },
+  {
+    "companyId": "index",
+    "name": "Index",
+    "website": "https://index.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "inferact",
+    "name": "Inferact",
+    "website": "https://inferact.ai",
+    "ogImage": "https://inferact.ai/og-image.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/inferact-og.webp"
+  },
+  {
+    "companyId": "inngest",
+    "name": "Inngest",
+    "website": "https://www.inngest.com/",
+    "ogImage": "https://www.inngest.com/assets/homepage/open-graph-june-2025.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/inngest-og.webp"
+  },
+  {
+    "companyId": "intercom-fin",
+    "name": "Intercom (Fin)",
+    "website": "https://www.intercom.com",
+    "ogImage": "https://www.intercom.com/intercom-marketing-site/img/social/default.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/intercom-fin-og.webp"
+  },
+  {
+    "companyId": "internet-backyard",
+    "name": "Internet Backyard",
+    "website": "https://internetbackyard.com/",
+    "ogImage": "https://internetbackyard.com/images/banner.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/internet-backyard-og.webp"
+  },
+  {
+    "companyId": "item-app",
+    "name": "Item App",
+    "website": "https://item.app/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "item",
+    "name": "Item",
+    "website": "https://www.item.app/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "ivo",
+    "name": "Ivo",
+    "website": "https://www.ivo.ai",
+    "ogImage": "https://cdn.prod.website-files.com/65f4b30742f9be11e8959d5c/696ef34a6829192b4c87450e_OG%20Image%20-%20main.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/ivo-og.webp"
+  },
+  {
+    "companyId": "jasper",
+    "name": "Jasper",
+    "website": "https://jasper.ai",
+    "ogImage": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/6846454bda26628fcf51d54c_7691ff456e72b9f4a29accf974053688_OpenGraph%20-%20Home.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/jasper-og.webp"
+  },
+  {
+    "companyId": "layer-financial",
+    "name": "Layer Financial",
+    "website": "https://www.layerfi.com/",
+    "ogImage": "https://cdn.prod.website-files.com/68108544b907ee4f552e3b07/681b4a7dc2fcebdfcfbfa731_og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/layer-financial-og.webp"
+  },
+  {
+    "companyId": "legend-xyz",
+    "name": "Legend.xyz",
+    "website": "https://legend.xyz",
+    "ogImage": "https://legend.xyz/og-homepage.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/legend-xyz-og.webp"
+  },
+  {
+    "companyId": "letta",
+    "name": "Letta",
+    "website": "https://www.letta.com",
+    "ogImage": "https://cdn.prod.website-files.com/66b5f39db6c9510dc8cbe834/68da02c471fc36b8447c9275_MetaCover.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/letta-og.webp"
+  },
+  {
+    "companyId": "leya",
+    "name": "Leya",
+    "website": "https://leya.law",
+    "ogImage": "https://framerusercontent.com/images/xW66oPxL0wNf3JufwF7Zzwbwchc.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/leya-og.webp"
+  },
+  {
+    "companyId": "lgnd",
+    "name": "LGND",
+    "website": "https://www.lgnd.com/",
+    "ogImage": "https://framerusercontent.com/images/FhM4N2IJCetzI6skb6qWNc6ypDU.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/lgnd-og.webp"
+  },
+  {
+    "companyId": "lightfield",
+    "name": "Lightfield",
+    "website": "https://lightfield.app",
+    "ogImage": "https://cdn.sanity.io/images/3ccg9tet/production/c3318d90b88db7c5adcf08bb49eb65a829bb85e4-2400x1260.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/lightfield-og.webp"
+  },
+  {
+    "companyId": "lightpage",
+    "name": "Lightpage",
+    "website": "https://lightpage.com/",
+    "ogImage": "https://lightpage.com/og-card.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/lightpage-og.webp"
+  },
+  {
+    "companyId": "linear",
+    "name": "Linear",
+    "website": "https://linear.app",
+    "ogImage": "https://linear.app/static/og/homepage-2024.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/linear-og.webp"
+  },
+  {
+    "companyId": "listen-labs",
+    "name": "Listen Labs",
+    "website": "https://listenlabs.ai",
+    "ogImage": "https://framerusercontent.com/images/RGXJ1tjBzZi8qrkze1vrTFOQw.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/listen-labs-og.webp"
+  },
+  {
+    "companyId": "livekit",
+    "name": "LiveKit",
+    "website": "https://livekit.io/",
+    "ogImage": "https://livekit.io/opengraph-image.png?849e3432a530b1c6",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/livekit-og.webp"
+  },
+  {
+    "companyId": "llmarena",
+    "name": "LLMArena",
+    "website": "https://lmarena.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 429",
+    "downloaded": false
+  },
+  {
+    "companyId": "loonen",
+    "name": "Loonen",
+    "website": "https://loonen.com/",
+    "ogImage": "http://loonen.com/cdn/shop/files/loonen-share-v1.png?v=1754947939",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/loonen-og.webp"
+  },
+  {
+    "companyId": "loop",
+    "name": "Loop",
+    "website": "https://loop.com/",
+    "ogImage": "https://cdn.prod.website-files.com/668bb14a7a97da320e5022ed/66c70f294893e981b7a38704_OG%20Image.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/loop-og.webp"
+  },
+  {
+    "companyId": "lovable",
+    "name": "Lovable",
+    "website": "https://lovable.dev",
+    "ogImage": "https://lovable.dev/opengraph-image.png?e7ae4aa2faea9aea",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/lovable-og.webp"
+  },
+  {
+    "companyId": "macroscope",
+    "name": "Macroscope",
+    "website": "https://macroscope.com/",
+    "ogImage": "https://macroscope.com/social-image-v2.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/macroscope-og.webp"
+  },
+  {
+    "companyId": "magic-patterns",
+    "name": "Magic Patterns",
+    "website": "https://magicpatterns.com",
+    "ogImage": "https://www.magicpatterns.com/marketing/main_og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/magic-patterns-og.webp"
+  },
+  {
+    "companyId": "medra",
+    "name": "Medra",
+    "website": "https://www.medra.ai/",
+    "ogImage": "https://cdn.prod.website-files.com/68bf1d91684fd08a07b0d8e3/68c24f55e957b241f6c53bba_Teaser.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/medra-og.webp"
+  },
+  {
+    "companyId": "mem0",
+    "name": "Mem0",
+    "website": "https://mem0.ai",
+    "ogImage": "https://framerusercontent.com/images/Mm4DtRfHMURyBy4FmfV4AFt7OQ.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/mem0-og.webp"
+  },
+  {
+    "companyId": "mercor",
+    "name": "Mercor",
+    "website": "https://mercor.com",
+    "ogImage": "https://www.mercor.com/mercor-logo-white.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/mercor-og.webp"
+  },
+  {
+    "companyId": "metronome",
+    "name": "Metronome",
+    "website": "https://metronome.com/",
+    "ogImage": "https://cdn.prod.website-files.com/67d16f49f8d727a72056608c/68a35109d50cab0a1a52a358_OG%20image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/metronome-og.webp"
+  },
+  {
+    "companyId": "micro1",
+    "name": "Micro1",
+    "website": "https://micro1.ai/",
+    "ogImage": "https://cdn.prod.website-files.com/68b095121300aebde21ab3f4/696b9f179133757963b40bf1_home%20link%20preview%20(3)%20(1).jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/micro1-og.webp"
+  },
+  {
+    "companyId": "midjourney",
+    "name": "Midjourney",
+    "website": "https://www.midjourney.com/",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "mistral",
+    "name": "Mistral AI",
+    "website": "https://mistral.ai",
+    "ogImage": "https://cms.mistral.ai/assets/060bdeb1-fbff-419c-b2ae-b32b5e441864",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/mistral-og.webp"
+  },
+  {
+    "companyId": "miter",
+    "name": "Miter",
+    "website": "https://miter.co",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "momentic",
+    "name": "Momentic",
+    "website": "https://www.momentic.ai/",
+    "ogImage": "https://cdn.prod.website-files.com/685b0b625295304e693ca8f5/689e3fb90ca8f457d3a65bcc_default%20og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/momentic-og.webp"
+  },
+  {
+    "companyId": "motif",
+    "name": "Motif",
+    "website": "https://www.motif.io/",
+    "ogImage": "https://cdn.prod.website-files.com/67d5cee480fc1961821510ca/6881559b095b58266f650b06_motif%20og.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/motif-og.webp"
+  },
+  {
+    "companyId": "mutiny",
+    "name": "Mutiny",
+    "website": "https://www.mutinyhq.com/",
+    "ogImage": "https://images.ctfassets.net/iyugl3c8guv8/2wN6G5GouoExHdr9tyhID1/553d195d9b2b0a3945f94d6f9e195922/mutiny_logo_-_cyan.svg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/mutiny-og.webp"
+  },
+  {
+    "companyId": "mytra",
+    "name": "Mytra",
+    "website": "https://mytra.ai/",
+    "ogImage": "https://image-cdn.mytra.ai/images/xg8bw7px/production/ff82fd7bd29f5c4aeedee58b8a8bad63321d0201-1920x1080.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/mytra-og.webp"
+  },
+  {
+    "companyId": "netic",
+    "name": "Netic",
+    "website": "https://netic.ai",
+    "ogImage": "https://cdn.prod.website-files.com/67d1b2757aed7051cae78460/683c975453773d9881a43143_Hero%20OG.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/netic-og.webp"
+  },
+  {
+    "companyId": "nexus",
+    "name": "Nexus",
+    "website": "https://nexus.xyz/",
+    "ogImage": "https://framerusercontent.com/images/rj7WYEn8kN0pgryMvb583AzieU.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/nexus-og.webp"
+  },
+  {
+    "companyId": "nokken",
+    "name": "Nokken",
+    "website": "https://the-nokken.com/",
+    "ogImage": "http://static1.squarespace.com/static/62b34058a1525e5b1bd8d1fc/t/62b46e4cbb8dc37928296dc5/1655991884171/black-02-01.png?format=1500w",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/nokken-og.webp"
+  },
+  {
+    "companyId": "notion",
+    "name": "Notion",
+    "website": "https://notion.so",
+    "ogImage": "https://www.notion.com/front-static/meta/mwn-og-image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/notion-og.webp"
+  },
+  {
+    "companyId": "numeral",
+    "name": "Numeral",
+    "website": "https://www.numeralhq.com",
+    "ogImage": "https://cdn.prod.website-files.com/63fe7042804e3d54e81443a6/67ad01740d5a905f3eebba59_c979f5e564a6cc396463f804f6db686e_opengraph-numeral-light.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/numeral-og.webp"
+  },
+  {
+    "companyId": "numeric",
+    "name": "Numeric",
+    "website": "https://www.numeric.io",
+    "ogImage": "https://cdn.prod.website-files.com/683907d38b135da8b22f5ce5/68670bd49d4abf6fd42093db_275b3deced6d826937973d678299d439_numeric-og.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/numeric-og.webp"
+  },
+  {
+    "companyId": "nuraline",
+    "name": "Nuraline",
+    "website": "https://www.nuraline.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "odyssey",
+    "name": "Odyssey",
+    "website": "https://odyssey.ml/",
+    "ogImage": "https://framerusercontent.com/images/soEaQqYIwQlnhfTjIjbQLoxUQ8.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/odyssey-og.webp"
+  },
+  {
+    "companyId": "onton",
+    "name": "Onton",
+    "website": "https://www.onton.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "openai",
+    "name": "OpenAI",
+    "website": "https://openai.com",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "openrouter",
+    "name": "OpenRouter",
+    "website": "https://openrouter.ai/",
+    "ogImage": "https://openrouter.ai/dynamic-og?pathname=default&amp;title=OpenRouter&amp;description=The+unified+interface+for+LLMs.+Find+the+best+models+%26+prices+for+your+prompts",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/openrouter-og.webp"
+  },
+  {
+    "companyId": "operate-crm",
+    "name": "Operate CRM",
+    "website": "https://operate.so/",
+    "ogImage": "https://operate.so/operate-crm.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/operate-crm-og.webp"
+  },
+  {
+    "companyId": "orion-sleep",
+    "name": "Orion Sleep",
+    "website": "https://www.orionsleep.com",
+    "ogImage": "https://cdn.prod.website-files.com/689f5db10cdf610258b43f94/68e6bbfc9b30ee60468eb20f_tower_cover.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/orion-sleep-og.webp"
+  },
+  {
+    "companyId": "otter-ai",
+    "name": "Otter.ai",
+    "website": "https://otter.ai",
+    "ogImage": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_og-image-otter-optim.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/otter-ai-og.webp"
+  },
+  {
+    "companyId": "overlap-ai",
+    "name": "Overlap",
+    "website": "https://overlap.ai/",
+    "ogImage": "https://framerusercontent.com/images/LdayGU6lvlQcUzUiiyoJDRM6OHM.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/overlap-ai-og.webp"
+  },
+  {
+    "companyId": "pacific-fusion",
+    "name": "Pacific Fusion",
+    "website": "https://pacificfusion.com/",
+    "ogImage": "https://pacific-fusion.transforms.svdcdn.com/production/PF-Social-Share-Image_2024-11-04-133838_vcio.jpg?w=1199&amp;h=627&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1730727544&amp;s=50d3d842d99c723432a9a87ffafa7403",
+    "success": true,
+    "downloaded": false,
+    "error": "HTTP 401"
+  },
+  {
+    "companyId": "pallet",
+    "name": "Pallet",
+    "website": "https://pallet.com",
+    "ogImage": "https://cdn.sanity.io/images/1ua24syd/production/9e6b6371626a4ae6220937feaeea3ceca82a3a62-3600x1890.png?rect=0,5,3600,1881&w=1200&h=627&q=95&fit=crop&auto=format",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/pallet-og.webp"
+  },
+  {
+    "companyId": "parahelp",
+    "name": "Parahelp",
+    "website": "https://parahelp.com",
+    "ogImage": "https://framerusercontent.com/images/oYyYtkgoUMdxOa918IsKGXi5Kxs.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/parahelp-og.webp"
+  },
+  {
+    "companyId": "perle-ai",
+    "name": "Perle AI",
+    "website": "https://perle.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "perplexity",
+    "name": "Perplexity",
+    "website": "https://perplexity.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "physical-intelligence",
+    "name": "Physical Intelligence",
+    "website": "https://www.physicalintelligence.company/",
+    "ogImage": "https://physicalintelligence.company/images/og/og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/physical-intelligence-og.webp"
+  },
+  {
+    "companyId": "pika",
+    "name": "Pika",
+    "website": "https://pika.art",
+    "ogImage": "https://pika-julubiya2-pika-labs.vercel.app/images/og.jpeg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/pika-og.webp"
+  },
+  {
+    "companyId": "quanta",
+    "name": "Quanta",
+    "website": "https://quanta.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "quo",
+    "name": "Quo",
+    "website": "https://quo.com",
+    "ogImage": "https://cdn.prod.website-files.com/6899ec2c2b29c1edf8c20f15/690d0a9bad3f5225ab9fc359_7c18f9d49ac0d507597d6c00b78e10b4_OG%20image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/quo-og.webp"
+  },
+  {
+    "companyId": "railway",
+    "name": "Railway",
+    "website": "https://railway.com/",
+    "ogImage": "https://railway.com/og.png?v=2",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/railway-og.webp"
+  },
+  {
+    "companyId": "raindrop-ai",
+    "name": "Raindrop AI",
+    "website": "https://www.raindrop.ai/",
+    "ogImage": "https://i.imgur.com/xusBTAm.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/raindrop-ai-og.webp"
+  },
+  {
+    "companyId": "ramp",
+    "name": "Ramp",
+    "website": "https://ramp.com",
+    "ogImage": "https://next.ramp.com/assets/images/super-bowl-og-image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/ramp-og.webp"
+  },
+  {
+    "companyId": "red-queen-bio",
+    "name": "Red Queen Bio",
+    "website": "https://www.redqueen.bio/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "reevo",
+    "name": "Reevo",
+    "website": "https://reevo.ai/",
+    "ogImage": "https://cdn.sanity.io/images/319mqrro/production/fab469fe14da8b0d9309066d826219be218b7cd8-1200x630.png?w=1200&amp;h=630",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/reevo-og.webp"
+  },
+  {
+    "companyId": "remofirst",
+    "name": "RemoFirst",
+    "website": "https://remofirst.com/",
+    "ogImage": "https://cdn.prod.website-files.com/66e024b53e0bf52bf9cb6fd0/67ae2897ccffbee388e25cb1_open_graph-generic.webp",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/remofirst-og.webp"
+  },
+  {
+    "companyId": "replit",
+    "name": "Replit",
+    "website": "https://replit.com",
+    "ogImage": "https://replit.com/public/images/opengraph.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/replit-og.webp"
+  },
+  {
+    "companyId": "resolve-ai",
+    "name": "Resolve AI",
+    "website": "https://resolve.ai",
+    "ogImage": "https://media.website-prod.resolve.ai/Big_Resolve_AI_c60042174a.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/resolve-ai-og.webp"
+  },
+  {
+    "companyId": "response",
+    "name": "Response",
+    "website": "https://tryresponse.com/",
+    "ogImage": "https://main--tryresponse.netlify.app/graph.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/response-og.webp"
+  },
+  {
+    "companyId": "rox",
+    "name": "Rox",
+    "website": "https://rox.com/",
+    "ogImage": "https://assets.basehub.com/08e7f56f/2d415b5ec603962c05b1b43fdda2ccf2/rox-og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/rox-og.webp"
+  },
+  {
+    "companyId": "runway",
+    "name": "Runway",
+    "website": "https://runwayml.com/",
+    "ogImage": "https://runwayml.com/opengraph-image.png?opengraph-image.e277c978.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/runway-og.webp"
+  },
+  {
+    "companyId": "safetykit",
+    "name": "SafetyKit",
+    "website": "https://www.safetykit.com",
+    "ogImage": "https://cdn.prod.website-files.com/67f043481889440b9d0ed13e/67f043481889440b9d0ed170_a5826400373f60a9d521bc5bca8ad3f3_OG%20Image.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/safetykit-og.webp"
+  },
+  {
+    "companyId": "sauron-systems",
+    "name": "Sauron Systems",
+    "website": "https://www.sauron.systems/",
+    "ogImage": "https://cdn.prod.website-files.com/6787700598a8239c8e8d97e6/6787869b32500937964e5eb9_Open%20Graph.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/sauron-systems-og.webp"
+  },
+  {
+    "companyId": "scale-ai",
+    "name": "Scale AI",
+    "website": "https://scale.com",
+    "ogImage": "https://site-assets.plasmic.app/c8614a7c14dbe281988fe75f9d71da13.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/scale-ai-og.webp"
+  },
+  {
+    "companyId": "scribe",
+    "name": "Scribe",
+    "website": "https://scribehow.com",
+    "ogImage": "https://cdn.prod.website-files.com/615f415173b71a5211e28de7/687141e983a3518b8b1c5102_Open%20Graph.avif",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/scribe-og.webp"
+  },
+  {
+    "companyId": "serval",
+    "name": "Serval",
+    "website": "https://www.serval.com/",
+    "ogImage": "https://framerusercontent.com/images/V6k6fFCAJ2d3ZHM9P4chDQnDbY.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/serval-og.webp"
+  },
+  {
+    "companyId": "shopify",
+    "name": "Shopify",
+    "website": "https://www.shopify.com",
+    "ogImage": "https://cdn.shopify.com/b/shopify-brochure2-assets/d617483c5e5cdd01ae8b4f2571c76f34.png?originalWidth=2400&amp;originalHeight=1260",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/shopify-og.webp"
+  },
+  {
+    "companyId": "shortwave",
+    "name": "Shortwave",
+    "website": "https://www.shortwave.com",
+    "ogImage": "https://www.shortwave.com/og-image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/shortwave-og.webp"
+  },
+  {
+    "companyId": "sierra",
+    "name": "Sierra",
+    "website": "https://www.sierra.ai/",
+    "ogImage": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F0ced1be0c54656680ef9792b524f2f2e828d95ad-1920x1080.png%3Fauto%3Dformat&amp;width=1200&amp;quality=75",
+    "success": true,
+    "downloaded": false,
+    "error": "HTTP 400"
+  },
+  {
+    "companyId": "solidroad",
+    "name": "Solidroad",
+    "website": "https://solidroad.com/",
+    "ogImage": "https://framerusercontent.com/assets/StUwBW8CYU4iCuENS8fofMQjbg.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/solidroad-og.webp"
+  },
+  {
+    "companyId": "sonatic",
+    "name": "Sonatic",
+    "website": "https://www.sonatic.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "sourcegraph",
+    "name": "Sourcegraph",
+    "website": "https://sourcegraph.com",
+    "ogImage": "https://cdn.prod.website-files.com/673f71b4ebbb99190437de75/69174630c438fdc7bbcb1eef_3bd0dbe29d04b93515ebff40dfc3c2ff_sourcegraph-home-og.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/sourcegraph-og.webp"
+  },
+  {
+    "companyId": "span",
+    "name": "Span",
+    "website": "https://span.app",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "sphere",
+    "name": "Sphere",
+    "website": "https://getsphere.com",
+    "ogImage": "https://cdn.prod.website-files.com/6750a6d3239ddbf81847542b/691b5bdc55e4cae4c325e907_Preview.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/sphere-og.webp"
+  },
+  {
+    "companyId": "spiral-db",
+    "name": "SpiralDB",
+    "website": "https://www.spiraldb.com/",
+    "ogImage": "https://api.basehub.com/og/v1/LN9egFzMGURKKHgmZU5Pp/draft/370b6dcde37c6ada28aef/N4Ig%2BmD2BuCmBO8CWATJA7A5iAXCAZgIYA2AzrCAL5A",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/spiral-db-og.webp"
+  },
+  {
+    "companyId": "stability-ai",
+    "name": "Stability AI",
+    "website": "https://stability.ai/",
+    "ogImage": "http://static1.squarespace.com/static/6213c340453c3f502425776e/t/6876a077511f8354c8382c6b/1765262478217/Homepage+Meta+Image+v4.png?format=1500w",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/stability-ai-og.webp"
+  },
+  {
+    "companyId": "subtle-computing",
+    "name": "Subtle Computing",
+    "website": "https://www.subtle.co",
+    "ogImage": "https://cdn.prod.website-files.com/68530299fb95a69ba6a202bc/695c699d8c37c37d2faa1532_voicebuds-open-graph.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/subtle-computing-og.webp"
+  },
+  {
+    "companyId": "subtrate",
+    "name": "Subtrate",
+    "website": "https://subtrate.com/",
+    "ogImage": null,
+    "success": false,
+    "error": "getaddrinfo ENOTFOUND subtrate.com",
+    "downloaded": false
+  },
+  {
+    "companyId": "suger",
+    "name": "Suger",
+    "website": "https://www.suger.io/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "suno",
+    "name": "Suno",
+    "website": "https://suno.com",
+    "ogImage": "https://cdn-o.suno.com/meta-preview.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/suno-og.webp"
+  },
+  {
+    "companyId": "superhuman",
+    "name": "Superhuman",
+    "website": "https://superhuman.com",
+    "ogImage": "https://superhumanstatic.com/super-funnel/main/public/images/v1/social-share.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/superhuman-og.webp"
+  },
+  {
+    "companyId": "surge-ai",
+    "name": "Surge AI",
+    "website": "https://surgehq.ai",
+    "ogImage": "https://cdn.prod.website-files.com/68dc970bd6e945ea3fb0f426/68dcfd8def0efcd7e132e3fa_Open%20Graph%20Image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/surge-ai-og.webp"
+  },
+  {
+    "companyId": "tabnine",
+    "name": "Tabnine",
+    "website": "https://www.tabnine.com",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "tailor",
+    "name": "Tailor",
+    "website": "https://www.tailor.tech/",
+    "ogImage": "https://www.tailor.tech/og.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/tailor-og.webp"
+  },
+  {
+    "companyId": "tavus",
+    "name": "Tavus",
+    "website": "https://tavus.io",
+    "ogImage": "https://cdn.prod.website-files.com/68a3622d17312a5dc16e5cc6/68c726371c9da69ce10a4895_Frame%202147228889.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/tavus-og.webp"
+  },
+  {
+    "companyId": "tera-ai",
+    "name": "Tera AI",
+    "website": "https://tera-ai.com",
+    "ogImage": "https://cdn.prod.website-files.com/67d165dc37ecc19b7a61d267/67d9e4d6e4a6f2f90d66d844_OGP-v2.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/tera-ai-og.webp"
+  },
+  {
+    "companyId": "terradot",
+    "name": "Terradot",
+    "website": "https://terradot.earth/",
+    "ogImage": "https://framerusercontent.com/assets/RcTFou2ED6up0DuZHl1GXtfvM7w.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/terradot-og.webp"
+  },
+  {
+    "companyId": "tigereye",
+    "name": "TigerEye",
+    "website": "https://tigereye.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "toma",
+    "name": "Toma",
+    "website": "https://www.toma.com",
+    "ogImage": "https://cdn.prod.website-files.com/69050ec3364f0ba147e1acf2/691c52b4e09439e4aa94cd0a_og-image-1200x630px.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/toma-og.webp"
+  },
+  {
+    "companyId": "tome",
+    "name": "Tome",
+    "website": "https://tome.app",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 404",
+    "downloaded": false
+  },
+  {
+    "companyId": "town",
+    "name": "Town",
+    "website": "https://town.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "trm-labs",
+    "name": "TRM Labs",
+    "website": "https://www.trmlabs.com/",
+    "ogImage": "https://cdn.prod.website-files.com/6082dc5b67056233213587a4/66708e440108bf588a6ea379_TRM_openGraph_June2024%402x.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/trm-labs-og.webp"
+  },
+  {
+    "companyId": "truemed",
+    "name": "Truemed",
+    "website": "https://www.truemed.com/",
+    "ogImage": "https://www.truemed.com/images/jumping-jack.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/truemed-og.webp"
+  },
+  {
+    "companyId": "truffle-security",
+    "name": "Truffle Security",
+    "website": "https://trufflesecurity.com/",
+    "ogImage": "https://framerusercontent.com/images/c9rqEcTgLk1priOj0eoCUkzAVbY.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/truffle-security-og.webp"
+  },
+  {
+    "companyId": "222",
+    "name": "222",
+    "website": "https://222.place/",
+    "ogImage": "https://corn-mandrill-9956.twil.io/assets/og-landing.gif",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/222-og.webp"
+  },
+  {
+    "companyId": "typeface",
+    "name": "Typeface",
+    "website": "https://typeface.ai",
+    "ogImage": "https://www.typeface.ai/static/e0b883c5419ffa07c5b97e82b1b3d020/584fa/AI_native_Content_Lifecycle_Blog_Header_c72ca6d1f4.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/typeface-og.webp"
+  },
+  {
+    "companyId": "unlimited-industries",
+    "name": "Unlimited Industries",
+    "website": "https://unlimitedindustries.com/",
+    "ogImage": "https://cdn.prod.website-files.com/67856a597ed4a73e289bd3ee/6804331a35ad71863b873021_UNLTD.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/unlimited-industries-og.webp"
+  },
+  {
+    "companyId": "vapi",
+    "name": "Vapi",
+    "website": "https://vapi.ai/",
+    "ogImage": "https://vapi.ai/vapi_social_preview.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/vapi-og.webp"
+  },
+  {
+    "companyId": "variant",
+    "name": "Variant",
+    "website": "https://variant.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "vercel",
+    "name": "Vercel",
+    "website": "https://vercel.com",
+    "ogImage": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/0c3576832aae5b1a4d98c8c9f98863c3/Vercel_Home_OG.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/vercel-og.webp"
+  },
+  {
+    "companyId": "wabi",
+    "name": "Wabi",
+    "website": "https://wabi.ai",
+    "ogImage": "https://wabi.ai/opengraph-image.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/wabi-og.webp"
+  },
+  {
+    "companyId": "watershed",
+    "name": "Watershed",
+    "website": "https://www.watershed.com/",
+    "ogImage": "https://cdn.sanity.io/images/3ogo9b9g/production/585df129172025fc52864431eeddb9eb5fb2d645-1200x630.png?w=1200&amp;fit=max&amp;auto=format",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/watershed-og.webp"
+  },
+  {
+    "companyId": "welltheory",
+    "name": "WellTheory",
+    "website": "https://www.welltheory.com",
+    "ogImage": "https://cdn.prod.website-files.com/606b0c58344d153f2b31bfef/68a77b8abd91f6feb3dbaadb_c94534d424d4a74215953176bddc17bd_Global%20Meta%20Image.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/welltheory-og.webp"
+  },
+  {
+    "companyId": "wispr-flow",
+    "name": "Wispr Flow",
+    "website": "https://www.wispr.ai",
+    "ogImage": "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/683c611aba65ade013982bcd_wispr-og-min.jpg",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/wispr-flow-og.webp"
+  },
+  {
+    "companyId": "wonder",
+    "name": "Wonder",
+    "website": "https://wonder.so",
+    "ogImage": "https://wonder.so/opengraph-image.png?4bed0176e3513656",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/wonder-og.webp"
+  },
+  {
+    "companyId": "world-labs",
+    "name": "World Labs",
+    "website": "https://worldlabs.ai",
+    "ogImage": "https://www.worldlabs.ai/opengraph-image.png?4b39e0cc40ca8b21",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/world-labs-og.webp"
+  },
+  {
+    "companyId": "writer",
+    "name": "Writer",
+    "website": "https://writer.com",
+    "ogImage": "https://writer.com/wp-content/uploads/2025/11/Home-The-enterprise-AI-platform-for-work-1.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/writer-og.webp"
+  },
+  {
+    "companyId": "xai",
+    "name": "xAI",
+    "website": "https://x.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "yutori",
+    "name": "Yutori",
+    "website": "https://yutori.com",
+    "ogImage": "https://yutori.com/opengraph-image.png",
+    "success": true,
+    "downloaded": true,
+    "localPath": "/og-images/yutori-og.webp"
+  }
+]
