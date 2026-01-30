@@ -229,6 +229,88 @@ export const [camelCaseSlug]: Article = {
 
 ---
 
+## Article Typography & Visual Rules
+
+Articles are rendered inside `.article-content` CSS cascade via `<MarkdownRenderer>`. All styling is handled automatically — **never add inline styles or HTML in markdown content**.
+
+### Heading Hierarchy (Strict)
+
+Use proper heading levels — CSS assigns distinct size, weight, and spacing per level:
+
+```
+h2 — Major sections (7rem top margin acts as visual divider)
+h3 — Sub-sections within h2
+h4 — Groups within h3 (e.g., "Business Model", "Why Their Model is Strong")
+```
+
+**Rules:**
+- **Never skip levels** (h2 → h4 without h3)
+- **Never use `---` (hr) as section divider** — h2's 7rem gap replaces it visually (hr is hidden in article CSS)
+- Use `---` only in the source template between Methodology and Main Content for legacy compatibility
+- Bold-leading lines (`**Revenue Model**:`) followed by bullet lists get automatic tight spacing via CSS `:has()`
+
+### Data Visualization
+
+**Do NOT use ASCII art, box-drawing characters, or code blocks for infographics.**
+
+When an article contains numeric/timeline data that benefits from visualization:
+
+1. **Use `<!-- viz:id -->` placeholders** in the markdown content where a chart should appear
+2. **Create a numeric data file** at `src/data/articles/visualizations/[slug]-data.ts`
+3. **Create visualization components** or reuse existing ones from `src/components/visualizations/`
+4. **Wire up in `ArticleVisualizations.tsx`** at `src/app/insights/[slug]/ArticleVisualizations.tsx`
+
+**Available visualization components:**
+- `FundingTimeline` — Horizontal SVG timeline for funding rounds (per company)
+- `ComparisonChart` — Horizontal bar chart comparing companies
+- `GrowthTrajectory` — D3 log-scale line chart of cumulative funding over time
+
+**Placeholder example in markdown:**
+```
+#### Timeline Breakdown
+- **Seed**: June 2023 — €105M
+- **Series A**: December 2023 — €385M
+
+<!-- viz:mistral-timeline -->
+
+#### Business Model
+```
+
+**Data file template** (`src/data/articles/visualizations/[slug]-data.ts`):
+```typescript
+import type { CompanyFunding } from '@/components/visualizations/types';
+
+export const fundingData: readonly CompanyFunding[] = [
+  {
+    id: 'company-id',
+    name: 'Company Name',
+    emoji: '🏆',
+    tagline: 'One-line description',
+    rounds: [
+      { name: 'Seed', amount: '$5M', date: "Jun '23", monthsFromSeed: 0 },
+      { name: 'Series A', amount: '$50M', date: "Dec '23", monthsFromSeed: 6 },
+    ],
+    currentValuation: '$1B',
+    seedToSeriesBMonths: 12,
+    totalFunding: '$55M',
+    color: 'var(--accent)',
+  },
+];
+```
+
+**When to include visualizations:**
+- Funding timelines (Seed → Series B progression)
+- Company comparisons with numeric data
+- Growth trajectory over time
+- Any data that would otherwise be an ASCII table or code block
+
+**When NOT to include visualizations:**
+- Simple metric lists (just use bullet points)
+- Qualitative comparisons (use prose)
+- Single data points (inline in text)
+
+---
+
 ## Quality Standards
 
 ### Before File Creation - Validate:
@@ -252,6 +334,15 @@ export const [camelCaseSlug]: Article = {
 - [ ] Scannable: headers, bullets, short paragraphs
 - [ ] Actionable: clear insights and takeaways
 - [ ] 5-10 minute reading time (1000-2000 words)
+
+### Typography & Visual:
+
+- [ ] Heading hierarchy: h2 → h3 → h4 (no skipping)
+- [ ] No `---` used as section divider (h2 gap handles it)
+- [ ] No ASCII art or code blocks for data visualization
+- [ ] `<!-- viz:id -->` placeholders for numeric infographics
+- [ ] Visualization data file created if placeholders are used
+- [ ] Bold-subtitle pattern used for sub-points (e.g., `**Revenue Model**:` → bullets)
 
 ---
 

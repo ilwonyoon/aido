@@ -56,16 +56,7 @@ Companies were ranked by **total months from Seed to Series B**, with tie-breake
 - **Series B**: June 2024 — €600M (12 months from Seed)
 - **Current**: Series C, $14B valuation (Sept 2025)
 
-\`\`\`
-📊 Growth Infographic:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Seed       Series A       Series B       Series C
-€105M      €385M          €600M          $14B val
-Jun'23  →  Dec'23    →    Jun'24    →    Sep'25
-  └─6mo─┘    └──6mo──┘       └──15mo──┘
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total Funding: $3.05B | 29 months to $14B unicorn
-\`\`\`
+<!-- viz:mistral-timeline -->
 
 #### Business Model: The European AI Challenger
 
@@ -137,16 +128,7 @@ Total Funding: $3.05B | 29 months to $14B unicorn
 - **Series B**: December 2023 — $80M (13 months from Seed)
 - **Current**: Series E, $8B valuation, $100M ARR (Oct 2025)
 
-\`\`\`
-📊 Growth Infographic:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Seed      Series A    Series B       Series E
-$5M       $21M        $80M           $8B val
-Nov'22 → Mar'23  →  Dec'23    →     Oct'25
- └4mo┘   └──9mo──┘    └───22mo───┘
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total: $1.02B | 42% of AmLaw 100 firms | $100M ARR
-\`\`\`
+<!-- viz:harvey-timeline -->
 
 #### Business Model: AI Copilot for Elite Law
 
@@ -218,16 +200,7 @@ Total: $1.02B | 42% of AmLaw 100 firms | $100M ARR
 - **Series B**: June 2024 — $80M (14 months from Seed)
 - **Current**: Series B, $470M valuation
 
-\`\`\`
-📊 Growth Infographic:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Seed       Series A       Series B
-$5.5M      $55M           $80M          $470M val
-Apr'23  →  Nov'23    →    Jun'24
-  └─7mo─┘    └──7mo──┘
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-500K+ users | Millions of videos/week | Consumer-first
-\`\`\`
+<!-- viz:pika-timeline -->
 
 #### Business Model: Consumer AI Video Platform
 
@@ -302,16 +275,7 @@ Apr'23  →  Nov'23    →    Jun'24
 - **Series B**: May 2024 — $6B (14 months from Seed)
 - **Current**: Series E, $230B valuation (Jan 2026)
 
-\`\`\`
-📊 Growth Infographic:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Seed      Series A    Series B       Series E
-???       $134M       $6B            $230B val
-Mar'23 → May'23  →   May'24    →    Jan'26
- └2mo┘   └──12mo──┘    └────20mo────┘
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total: $42.73B | 600M MAU via X | Colossus: 1M+ GPUs
-\`\`\`
+<!-- viz:xai-timeline -->
 
 #### Business Model: Real-Time AI with X Distribution
 
@@ -388,16 +352,7 @@ Total: $42.73B | 600M MAU via X | Colossus: 1M+ GPUs
 - **Series B**: May 2025 — $43M (15 months from Seed)
 - **Current**: Series B, $250M valuation
 
-\`\`\`
-📊 Growth Infographic:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Seed       Series A       Series B
-$4M        $20M           $43M          $250M val
-Feb'24  →  Oct'24    →    May'25
-  └─8mo─┘    └──7mo──┘
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-10% WoW growth | "Augments, not replaces judgment"
-\`\`\`
+<!-- viz:granola-timeline -->
 
 #### Business Model: Premium AI Meeting Notes
 
@@ -503,32 +458,7 @@ Analyzing these 5 companies reveals **4 key patterns** behind hypergrowth:
 
 ## Infographic Summary
 
-\`\`\`
-╔════════════════════════════════════════════════════════════════╗
-║  SEED TO SERIES B: THE SPEED CHAMPIONS                        ║
-╠════════════════════════════════════════════════════════════════╣
-║                                                                 ║
-║  1. MISTRAL AI                     🇫🇷 12 months → $14B       ║
-║     └─ Open-weight LLMs + EU sovereignty play                  ║
-║                                                                 ║
-║  2. HARVEY                         ⚖️  13 months → $8B        ║
-║     └─ AI copilot for elite law firms (42% of AmLaw 100)      ║
-║                                                                 ║
-║  3. PIKA                           🎥 14 months → $470M       ║
-║     └─ Consumer-first AI video generation                      ║
-║                                                                 ║
-║  4. xAI                            🚀 14 months → $230B       ║
-║     └─ Real-time AI with X integration (Elon Musk)            ║
-║                                                                 ║
-║  5. GRANOLA                        📝 15 months → $250M       ║
-║     └─ Premium AI meeting notes ("augment, not replace")      ║
-║                                                                 ║
-╠════════════════════════════════════════════════════════════════╣
-║  AVERAGE TIME: 13.6 months                                     ║
-║  INDUSTRY AVERAGE: 36-48 months                                ║
-║  SPEEDUP: 2.6x - 3.5x FASTER                                   ║
-╚════════════════════════════════════════════════════════════════╝
-\`\`\`
+<!-- viz:summary-chart -->
 
 ---
 
