@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyLogo } from './CompanyLogo';
+import { Badge } from '@/components/ui/Badge';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
@@ -311,8 +312,8 @@ export function CompanyDetail({ company }: { company: Company }) {
                       </a>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
                         <span className="text-sm text-[var(--muted)]">{role.location}</span>
-                        {role.level && <span className="badge text-xs">{role.level}</span>}
-                        {role.team && <span className="badge badge-accent text-xs">{role.team}</span>}
+                        {role.level && <Badge className="text-xs">{role.level}</Badge>}
+                        {role.team && <Badge variant="accent" className="text-xs">{role.team}</Badge>}
                         {role.compensation && (
                           <span className="text-sm font-medium text-[var(--success)]">{role.compensation}</span>
                         )}
@@ -405,7 +406,7 @@ export function CompanyDetail({ company }: { company: Company }) {
                       {/* Mobile: Vertical layout, Desktop: Horizontal */}
                       <div className="flex items-center gap-3 text-sm flex-wrap lg:flex-nowrap">
                         <div className="w-16 font-mono text-[var(--muted)] flex-shrink-0">{round.date}</div>
-                        <span className="badge flex-shrink-0">{round.stage}</span>
+                        <Badge className="flex-shrink-0">{round.stage}</Badge>
                         <div className="font-medium text-[var(--success)] flex-shrink-0">{round.amount}</div>
                         {round.valuation && (
                           <div className="text-[var(--muted)] flex-shrink-0">@ {round.valuation}</div>
@@ -632,7 +633,7 @@ export function CompanyDetail({ company }: { company: Company }) {
                         <h3 className="font-medium mb-3">Competitive Moat</h3>
                         <div className="space-y-2">
                           <div>
-                            <span className="badge badge-accent mr-2">{company.growthMetrics.moatType}</span>
+                            <Badge variant="accent" className="mr-2">{company.growthMetrics.moatType}</Badge>
                             {company.growthMetrics.moatStrength && (
                               <span className="text-sm text-[var(--muted)]">{company.growthMetrics.moatStrength}</span>
                             )}
@@ -827,7 +828,7 @@ export function CompanyDetail({ company }: { company: Company }) {
               <h3 className="section-title">My Tracking</h3>
             <div className="card p-5">
               <div className="flex items-center justify-between mb-4">
-                <span className="badge badge-accent">{company.tracking.status}</span>
+                <Badge variant="accent">{company.tracking.status}</Badge>
                 <div className="text-right">
                   <div className="text-2xl font-mono font-bold">{company.tracking.fitScore}/10</div>
                 </div>
