@@ -23,30 +23,8 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - detect company links and render with logo
+        // Links - regular rendering
         a: ({ node, href, children, ...props }) => {
-          // Check if this is a company link
-          if (href && href.startsWith('/company/')) {
-            const companyId = href.replace('/company/', '');
-
-            return (
-              <a href={href} className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline" {...props}>
-                <img
-                  src={`/logos/${companyId}.png`}
-                  alt=""
-                  width={16}
-                  height={16}
-                  className="inline-block"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-                {children}
-              </a>
-            );
-          }
-
-          // Regular link
           return <a href={href} {...props}>{children}</a>;
         },
 

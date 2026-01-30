@@ -32,6 +32,7 @@ function HomePageContent() {
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
+  const savedScrollPosition = useRef<number>(0);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -72,10 +73,20 @@ function HomePageContent() {
       setIsFullWidth(false);
       setIsClosing(false);
       setClosingCompany(null);
+
+      // Restore scroll position after panel closes
+      requestAnimationFrame(() => {
+        window.scrollTo(0, savedScrollPosition.current);
+      });
     }, 300); // Match animation duration
   }, [selectedCompanyId]);
 
   const handleCompanyClick = useCallback((companyId: string) => {
+    // Save current scroll position before opening panel
+    if (mainContentRef.current) {
+      savedScrollPosition.current = window.scrollY;
+    }
+
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
     setSelectedCompanyId(companyId);
