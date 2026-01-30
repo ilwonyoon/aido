@@ -471,6 +471,39 @@ openRoles: [
 
 ---
 
+### Phase 7: Media Assets (OG + Screenshot)
+
+**목표:** 회사 페이지 메타데이터와 상세 페이지에 사용할 OG 이미지 + 제품 스크린샷 확보.
+
+#### 7.1 OG Image
+1. 홈페이지/블로그에서 `og:image` 메타 태그 확인
+2. 이미지 URL HTTP 200 확인
+3. 가능하면 로컬 저장:
+   - `public/og/[company-id].png`
+   - `company.media.ogImage = "/og/[company-id].png"`
+4. 로컬 저장이 어려우면 원본 URL 사용:
+   - `company.media.ogImage = "https://..."`
+5. `company.media.ogImageSource`에 출처 URL 기록
+
+#### 7.2 Product Screenshot
+1. 제품 페이지/대시보드/앱 UI에서 대표 화면 캡처
+2. 가능하면 로컬 저장:
+   - `public/screenshots/[company-id].png`
+   - `company.media.screenshot = "/screenshots/[company-id].png"`
+3. `company.media.screenshotSource`에 캡처한 페이지 URL 기록
+
+#### 7.3 필드 예시
+```ts
+media: {
+  ogImage: '/og/anthropic.png',
+  ogImageSource: 'https://www.anthropic.com',
+  screenshot: '/screenshots/anthropic.png',
+  screenshotSource: 'https://www.anthropic.com/product',
+}
+```
+
+---
+
 ### Phase 7: Culture Insights
 
 #### 7.1 Culture Sources

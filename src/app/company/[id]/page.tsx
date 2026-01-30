@@ -27,6 +27,12 @@ export async function generateMetadata({
 
   const jobCount = company.openRoles.length;
   const levelConfig = aiLevels[company.aiNativeLevel];
+  const ogImage = company.media?.ogImage ?? `/logos/${company.id}.png`;
+  const ogImageUrl = ogImage
+    ? ogImage.startsWith('http')
+      ? ogImage
+      : `https://aido-d2cc0.web.app${ogImage}`
+    : undefined;
 
   return {
     title: `${company.name} Product Designer Jobs`,
@@ -44,6 +50,7 @@ export async function generateMetadata({
       url: `https://aido-d2cc0.web.app/company/${company.id}`,
       siteName: 'AIDO',
       type: 'website',
+      images: ogImageUrl ? [ogImageUrl] : undefined,
     },
     alternates: {
       canonical: `https://aido-d2cc0.web.app/company/${company.id}`,

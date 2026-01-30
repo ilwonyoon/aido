@@ -283,6 +283,30 @@ export function CompanyDetail({ company }: { company: Company }) {
               </div>
             </div>
 
+            {company.media?.screenshot && (
+              <div className="card p-5">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-xs text-[var(--muted)]">Product Screenshot</div>
+                  {company.media.screenshotSource && (
+                    <a
+                      href={company.media.screenshotSource}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-[var(--accent-light)] hover:underline"
+                    >
+                      Source ↗
+                    </a>
+                  )}
+                </div>
+                <img
+                  src={company.media.screenshot}
+                  alt={`${company.name} product screenshot`}
+                  className="w-full rounded-lg border border-[var(--border)]"
+                  loading="lazy"
+                />
+              </div>
+            )}
+
           </section>
 
           {/* Open Roles - Detailed */}

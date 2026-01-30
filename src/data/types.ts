@@ -224,6 +224,14 @@ export interface Company {
   // Open Roles
   openRoles: OpenRole[];
 
+  // Media Assets
+  media?: {
+    ogImage?: string; // Absolute URL or public path (e.g., "/og/anthropic.png")
+    ogImageSource?: string; // Source page URL where OG image was found
+    screenshot?: string; // Product UI screenshot (absolute URL or public path)
+    screenshotSource?: string; // Source page URL where screenshot was captured
+  };
+
   // Culture Insights (Blind, Glassdoor, etc.)
   cultureInsights?: CultureInsight[];
 
