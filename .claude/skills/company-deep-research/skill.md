@@ -423,6 +423,191 @@ WebSearch: "[company name]" future roadmap vision
 
 ---
 
+## Phase 8: Writer Skill Integration (리서치 → 아티클)
+
+> 딥 리서치 완료 후 자동으로 `/writer` 스킬을 호출하여 인사이트 아티클 초안 작성.
+> **반드시 유저 검수 후 퍼블리싱.**
+
+### 8.1 Auto-trigger Workflow
+
+Phase 1-7 완료 + Report MD 저장 + Company Data 업데이트 후:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Deep Research Complete: [Company Name]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Report saved: src/data/deep-research/[company-id].md
+Company data updated: src/data/companies/[company-id].ts
+
+Now drafting an article based on the research...
+```
+
+### 8.2 Article Topic Auto-generation
+
+딥 리서치 결과에서 가장 흥미로운 앵글을 자동 선택:
+
+**Topic Selection Logic:**
+
+```
+1. If company has unique design team story:
+   → "[Company]: What [N] designers are building at the [fastest-growing / most-funded] AI [category]"
+
+2. If competition landscape is interesting:
+   → "[Company] vs [Top Competitor]: Which AI [category] wins for designers?"
+
+3. If business metrics are dramatic:
+   → "Inside [Company]'s [Nx] growth: What it means for product designers"
+
+4. If founder story is compelling:
+   → "Why [Founder] left [Previous Company] to build [Company] — and why designers should care"
+
+5. Default:
+   → "[Company] Deep Dive: [N] reasons this [Stage] AI company is worth watching"
+```
+
+**Topic은 유저가 변경 가능.**
+
+### 8.3 Writer Skill Invocation
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Invoking /writer skill...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Suggested topic: "Inside Anthropic's 7x growth: What 50+ designers are building at the $183B AI lab"
+
+Proceed with this topic? (or type a different topic)
+```
+
+유저가 토픽을 확인하거나 수정하면:
+
+1. `/writer` 스킬이 딥 리서치 데이터를 input으로 받아 아티클 초안 작성
+2. 리서치에서 수집한 데이터 포인트, 인사이트, 소스를 아티클에 자동 반영
+3. Data-Driven Analytical voice로 작성
+
+### 8.4 Writer Input: Deep Research Data
+
+`/writer` 스킬에 넘기는 데이터:
+
+```typescript
+// Deep research에서 writer로 전달되는 컨텍스트
+const writerContext = {
+  // Company basics
+  company: companyData,           // Full company object from DB
+
+  // Deep research insights (Phase 1-7 핵심 발견)
+  designTeamIntel: {
+    teamSize: number,
+    leadershipNames: string[],    // CPO, Head of Design
+    seniorDesigners: string[],
+    teamDynamics: string,         // Phase 1.4 assessment
+  },
+
+  businessAnalysis: {
+    revenueModel: string,
+    currentARR: string,
+    growthRate: string,
+    runway: string,
+  },
+
+  upsidePoints: string[],        // Phase 3 top insights
+  downsidePoints: string[],       // Phase 4 top risks
+  competitionInsights: string[],  // Phase 5 key findings
+  keyArticles: Article[],         // Phase 6 collected sources
+  decisionScore: number,          // Phase 7 final score
+
+  // Suggested topic
+  suggestedTopic: string,
+};
+```
+
+### 8.5 User Review Gate
+
+아티클 초안 완성 후 **반드시 유저에게 검수 요청**:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Article Draft Ready for Review
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Title: "Inside Anthropic's 7x Growth: What 50+ Designers Are Building"
+Slug: inside-anthropic-growth-designers
+Category: analysis
+Reading time: 8 minutes
+Companies featured: Anthropic (+ OpenAI, Cursor as comparison)
+
+━━━━━━━━━━ DRAFT START ━━━━━━━━━━
+
+[Full markdown article content]
+
+━━━━━━━━━━ DRAFT END ━━━━━━━━━━━
+
+Review Checklist:
+- [ ] Factual accuracy (numbers, dates, names)
+- [ ] Tone appropriate (data-driven, not promotional)
+- [ ] No sensitive/private information exposed
+- [ ] Designer perspective is clear
+- [ ] Sources properly cited
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Options:
+  1. Approve — Create article file and commit
+  2. Edit   — Tell me what to change
+  3. Rewrite — Generate with different angle/topic
+  4. Skip   — Save research only, no article
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### 8.6 Post-Approval Actions
+
+유저가 **Approve** 하면:
+
+```
+1. Create article file:
+   → src/data/articles/content/[slug].ts
+
+2. Update articles index:
+   → src/data/articles/index.ts
+
+3. Link article in deep research report:
+   → src/data/deep-research/[company-id].md에 아티클 링크 추가
+
+4. Update company tracking notes:
+   → "Deep research article published: /insights/[slug]"
+
+5. Commit all changes:
+   → git add + commit
+
+6. Show verification steps:
+   → npm run build
+   → npm run dev → /insights/[slug]
+   → Review on localhost before deploy
+```
+
+유저가 **Edit** 하면:
+- 유저의 피드백을 반영하여 수정
+- 수정된 초안을 다시 Review Gate로
+
+유저가 **Skip** 하면:
+- 아티클 없이 딥 리서치만 저장
+- "Article generation skipped by user" 노트 추가
+
+### 8.7 Article Quality from Deep Research
+
+딥 리서치 기반 아티클이 일반 `/writer` 아티클보다 높은 퀄리티를 가져야 하는 이유:
+
+| 일반 /writer | Deep Research → /writer |
+|---|---|
+| DB 데이터만 참조 | DB + 딥 리서치 전체 결과 참조 |
+| 공개 메트릭 위주 | 디자인팀 인텔, 비하인드 인사이트 포함 |
+| 표면적 분석 | Upside/Downside 데이터 기반 심층 분석 |
+| 일반적 디자이너 관점 | 특정 회사에 대한 구체적 디자이너 인사이트 |
+| 소스 3-5개 | 소스 10-20개 (리서치에서 수집) |
+
+---
+
 ## Execution Flow
 
 ```mermaid
@@ -439,6 +624,12 @@ graph TD
   J --> K[Generate Report MD]
   K --> L[Update Company Data]
   L --> M[Commit & Save]
+  M --> N[Phase 8: Writer Skill — Draft Article]
+  N --> O{User Review}
+  O -->|Approve| P[Publish Article]
+  O -->|Edit| Q[Revise Draft]
+  O -->|Skip| R[Done without article]
+  Q --> O
 ```
 
 ---
@@ -711,11 +902,33 @@ large organization.
 
 ## Integration with Other Skills
 
+### Full Pipeline
+
 ```
-1. /job-scraper → Open roles 수집
-2. /company-researcher → 기본 데이터 수집
+1. /job-scraper         → Open roles 수집
+2. /company-researcher  → 기본 데이터 수집
 3. /company-deep-research → 딥 리서치 (이 스킬)
-4. /writer → 인사이트 블로그 글 생성 (optional)
+   ↓ (auto-trigger)
+4. /writer              → 리서치 기반 아티클 초안 생성
+   ↓ (user review gate)
+5. Publish              → 유저 승인 후 아티클 파일 생성 & 커밋
+```
+
+### Pipeline Rules
+
+- **Phase 1-7**: 자동 실행, 유저 개입 없음
+- **Phase 8 (Writer)**: 토픽 확인 → 초안 생성 → **유저 검수 필수**
+- **Publish**: 유저가 Approve 해야만 아티클 파일 생성
+- **Skip 가능**: 유저가 아티클 없이 리서치만 저장 가능
+
+### Data Flow
+
+```
+company DB → deep research phases → research report (.md)
+                                  → company data update (.ts)
+                                  → writer context → article draft
+                                                   → [USER REVIEW]
+                                                   → article file (.ts) + index update
 ```
 
 ---
