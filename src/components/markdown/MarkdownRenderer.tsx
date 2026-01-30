@@ -17,19 +17,11 @@ export function MarkdownRenderer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-        // Proximity Principle: heading CLOSE to content, FAR from previous section
-        h1: ({ node, ...props }) => (
-          <h1 className="!text-4xl !font-semibold !mb-3 !mt-16 first:!mt-0" {...props} />
-        ),
-        h2: ({ node, ...props }) => (
-          <h2 className="!text-3xl !font-semibold !mb-3 !mt-16 first:!mt-0 !border-t !border-[var(--border)] !pt-8 first:!border-0 first:!pt-0" {...props} />
-        ),
-        h3: ({ node, ...props }) => (
-          <h3 className="!text-2xl !font-semibold !mb-2 !mt-12" {...props} />
-        ),
-        h4: ({ node, ...props }) => (
-          <h4 className="!text-xl !font-semibold !mb-2 !mt-8" {...props} />
-        ),
+        // Headings — styled by .article-content CSS cascade
+        h1: ({ node, ...props }) => <h1 {...props} />,
+        h2: ({ node, ...props }) => <h2 {...props} />,
+        h3: ({ node, ...props }) => <h3 {...props} />,
+        h4: ({ node, ...props }) => <h4 {...props} />,
 
         // Links - let CSS handle styling
         a: ({ node, ...props }) => <a {...props} />,

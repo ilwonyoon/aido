@@ -7,13 +7,14 @@ import {
   deleteDoc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { db } from './config';
+import { getFirebaseDb } from './lazy-config';
 import type { UserTracking } from '@/lib/tracking/types';
 
 export async function getUserTracking(
   userId: string,
   companyId: string
 ): Promise<UserTracking | null> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, 'users', userId, 'tracking', companyId);
   const snapshot = await getDoc(docRef);
 
@@ -28,6 +29,7 @@ export async function getUserTracking(
 }
 
 export async function getAllUserTracking(userId: string): Promise<UserTracking[]> {
+  const db = await getFirebaseDb();
   const trackingRef = collection(db, 'users', userId, 'tracking');
   const snapshot = await getDocs(trackingRef);
 
@@ -42,6 +44,7 @@ export async function setUserTracking(
   companyId: string,
   data: Partial<UserTracking>
 ): Promise<void> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, 'users', userId, 'tracking', companyId);
 
   await setDoc(
@@ -60,6 +63,7 @@ export async function deleteUserTracking(
   userId: string,
   companyId: string
 ): Promise<void> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, 'users', userId, 'tracking', companyId);
   await deleteDoc(docRef);
 }

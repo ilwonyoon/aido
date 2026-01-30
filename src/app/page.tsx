@@ -201,11 +201,10 @@ function HomePageContent() {
 
   return (
     <div>
-      {/* Main Content - Disable when panel is open */}
+      {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto' : ''}
-        style={selectedCompanyId ? { filter: 'blur(0px)' } : undefined}
+        className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
       >
         {/* Header */}
         <div className="mb-6">

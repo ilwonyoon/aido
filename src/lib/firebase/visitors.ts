@@ -12,7 +12,7 @@ import {
   Timestamp,
   increment,
 } from 'firebase/firestore';
-import { db } from './config';
+import { getFirebaseDb } from './lazy-config';
 
 export interface VisitorSession {
   sessionId: string;
@@ -79,6 +79,7 @@ export async function trackVisit(
   userId?: string
 ): Promise<void> {
   try {
+    const db = await getFirebaseDb();
     const sessionId = getSessionId();
     if (!sessionId) return;
 
@@ -139,6 +140,7 @@ async function updateDailyStats(
   sessionId: string,
   userId?: string
 ): Promise<void> {
+  const db = await getFirebaseDb();
   const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
   const dailyRef = doc(db, 'visitors', 'daily', 'stats', today);
 
@@ -190,6 +192,7 @@ async function updateDailyStats(
  * Mark inactive sessions (called periodically)
  */
 export async function markInactiveSessions(): Promise<void> {
+  const db = await getFirebaseDb();
   const fiveMinutesAgo = Timestamp.fromMillis(Date.now() - 5 * 60 * 1000);
 
   try {
@@ -216,6 +219,7 @@ export async function markInactiveSessions(): Promise<void> {
  */
 export async function getActiveVisitorsCount(): Promise<number> {
   try {
+    const db = await getFirebaseDb();
     const sessionsRef = collection(db, 'visitors', 'sessions', 'data');
     const q = query(sessionsRef, where('isActive', '==', true));
     const snapshot = await getDocs(q);
@@ -231,6 +235,7 @@ export async function getActiveVisitorsCount(): Promise<number> {
  */
 export async function getDailyStats(startDate: string, endDate: string): Promise<DailyStats[]> {
   try {
+    const db = await getFirebaseDb();
     const statsRef = collection(db, 'visitors', 'daily', 'stats');
     const q = query(
       statsRef,
@@ -255,6 +260,7 @@ export async function getDailyStats(startDate: string, endDate: string): Promise
  */
 export async function getCountryDistribution(): Promise<Record<string, number>> {
   try {
+    const db = await getFirebaseDb();
     const sessionsRef = collection(db, 'visitors', 'sessions', 'data');
     const snapshot = await getDocs(sessionsRef);
 

@@ -15,14 +15,14 @@
     "og-pipeline": "npm run export-companies && npm run fetch-og-images && npm run populate-og-data"
   },
   "dependencies": {
+    "@types/d3": "^7.4.3",
+    "d3": "^7.9.0",
     "firebase": "^12.8.0",
     "next": "16.1.4",
     "next-themes": "^0.4.6",
     "react": "19.2.3",
-    "react-chrono": "^3.3.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
-    "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {

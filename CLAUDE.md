@@ -48,6 +48,39 @@
 - **Badge**: status + category indicator
 - **Button**: only for actions, not for navigation
 
+### Article Typography (`.article-content`)
+
+All article content is wrapped in `.article-content` and rendered via `<MarkdownRenderer>`. CSS cascade handles all styling — no inline styles or Tailwind classes on elements.
+
+**Heading hierarchy** (each level has distinct size, weight, and spacing):
+
+| Level | Size | Weight | margin-top | margin-bottom |
+|-------|------|--------|------------|---------------|
+| h1 | 2rem | 800 | 4rem | 0.75rem |
+| h2 | 1.75rem | 700 | 7rem | 0.75rem |
+| h3 | 1.375rem | 600 | 2.5rem | 0.5rem |
+| h4 | 1.125rem | 600 | 2rem | 0.375rem |
+
+**Spacing zones** (largest to smallest):
+- **Section boundary** (h2 top): 7rem — acts as visual section divider
+- **Sub-section break** (h3 top, hr): 2.5rem
+- **Group boundary** (h4 top): 2rem
+- **Content flow** (p→p, list→list): 1.333em
+- **Heading proximity** (heading→content): 0.375–0.75rem
+- **Family bond** (bold subtitle→its list): 0.25rem
+
+**Color tiers** (theme-safe CSS variables):
+- `--foreground`: headings, strong text
+- `--text-body`: paragraphs, table cells (82% opacity)
+- `--text-secondary`: lists (78% opacity)
+- `--muted`: blockquotes
+
+**Key rules**:
+- Proximity Principle: heading top:bottom ratio ≈ 5:1
+- Adjacent headings tighten: `h2+h3`, `h3+h4`, `h3+p`, `h4+p` get reduced margin-top
+- Bold subtitle → list uses `:has()` for tight family bond spacing
+- First heading in article: margin-top suppressed to 0
+
 ## Code Style for UI
 
 - Always use CSS variables, never hardcoded colors
@@ -307,6 +340,14 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - 위치: `.claude/skills/company-researcher/`
 - 새로운 AI-native 회사 리서치 및 데이터 수집
 - Business, Founders, Design team, Product 정보 수집
+
+**company-deep-research** ⭐
+- 위치: `.claude/skills/company-deep-research/`
+- 사용법: `/company-deep-research [company name]`
+- Tier 0/1 회사에 대한 VC + Product Design 관점 딥 리서치
+- 디자인팀 전원 LinkedIn 매핑, 비즈니스 모델 딥다이브
+- Upside/Downside/Competition 분석, Decision Framework
+- Output: `src/data/deep-research/[company-id].md`
 
 **writer**
 - 위치: `.claude/skills/writer/`

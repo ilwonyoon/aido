@@ -4,83 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
-
-// ────────────────────────────────────────────────────────────────────────────
-// Logo helper
-// ────────────────────────────────────────────────────────────────────────────
-
-const LOGO_DEV_TOKEN = 'pk_ZjMwtG5fQ_-Dt-Km4EjHHg';
-
-function getLogoDomain(website: string): string {
-  try {
-    return new URL(website).hostname.replace(/^www\./, '');
-  } catch {
-    return '';
-  }
-}
-
-export function CompanyLogo({ company, size = 32 }: { company: Company; size?: number }) {
-  const domain = getLogoDomain(company.website);
-  const config = getAiLevelConfig(company.aiNativeLevel);
-  const [errored, setErrored] = useState(false);
-
-  const fallbackStyle = config.badgeClass === 'badge-success'
-    ? 'bg-[rgba(80,227,194,0.12)] text-[var(--success)]'
-    : config.badgeClass === 'badge-accent'
-      ? 'bg-[rgba(0,112,243,0.12)] text-[var(--accent-light)]'
-      : 'bg-[var(--card-hover)] text-[var(--muted)]';
-
-  if (!domain || errored) {
-    return (
-      <div
-        className={`rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${fallbackStyle}`}
-        style={{ width: size, height: size }}
-      >
-        {company.name[0]}
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=${size * 2}&format=png`}
-      alt={`${company.name} logo`}
-      width={size}
-      height={size}
-      className="rounded-lg flex-shrink-0 bg-white"
-      onError={() => setErrored(true)}
-    />
-  );
-}
-
-// ────────────────────────────────────────────────────────────────────────────
-// Design Focus Indicator
-// ────────────────────────────────────────────────────────────────────────────
-
-export function DesignFocus({ dwt }: { dwt: Company['designWorkType'] }) {
-  const indicator = (label: string, level: 'high' | 'medium' | 'low') => {
-    const dots = level === 'high' ? '\u25CF\u25CF\u25CF' : level === 'medium' ? '\u25CF\u25CF\u25CB' : '\u25CF\u25CB\u25CB';
-    const color = level === 'high'
-      ? 'text-[var(--success)]'
-      : level === 'medium'
-        ? 'text-[var(--accent-light)]'
-        : 'text-[var(--muted-dim)]';
-    return (
-      <span className="flex items-center gap-1.5">
-        <span className="text-[var(--muted)]">{label}</span>
-        <span className={`${color} tracking-tight text-[10px]`}>{dots}</span>
-      </span>
-    );
-  };
-
-  return (
-    <div className="flex gap-4 text-xs">
-      {indicator('Logic', dwt.logicBehavior.level)}
-      {indicator('Eval', dwt.evaluation.level)}
-      {indicator('UI', dwt.interface.level)}
-    </div>
-  );
-}
+import { CompanyLogo } from './CompanyLogo';
+import { DesignFocus } from './DesignFocus';
 
 // ────────────────────────────────────────────────────────────────────────────
 // View Toggle Icons
