@@ -2,7 +2,6 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import Image from 'next/image';
 
 interface MarkdownRendererProps {
   content: string;
@@ -32,12 +31,15 @@ export function MarkdownRenderer({
 
             return (
               <a href={href} className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline" {...props}>
-                <Image
+                <img
                   src={`/logos/${companyId}.png`}
                   alt=""
                   width={16}
                   height={16}
                   className="inline-block"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
                 {children}
               </a>
