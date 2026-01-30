@@ -205,7 +205,138 @@ WebSearch: "[company name]" annual recurring revenue
 
 ---
 
-## Phase 3: Upside Analysis (왜 이 회사가 잘될 수 있는가)
+## Phase 3: Product Design Take (유저 문제의 본질)
+
+> 투자자가 시장 크기를 보는 것처럼, 디자이너는 **문제의 깊이와 보편성**을 봐야 한다.
+> 이 회사가 풀고 있는 문제가 진짜인지, 얼마나 많은 사람이 겪는지, 어떻게 해결하는지.
+
+### 3.1 User Pain Point Deep Dive
+
+표면적인 문제 나열이 아닌, **유저가 실제로 겪는 고통의 구조**를 분석:
+
+```markdown
+## User Problem Analysis
+
+### The Core Problem
+- What: [한 문장으로 핵심 문제]
+- Who: [구체적으로 누가 겪는가 — 직함, 일상, 맥락]
+- When: [언제 이 문제가 발생하는가 — 빈도, 트리거]
+- How painful: [문제를 안 풀면 어떻게 되는가 — 돈, 시간, 감정 비용]
+
+### Pain Point Anatomy
+1. **Primary pain**: [가장 직접적인 고통]
+   - Frequency: [하루에 몇 번 겪는가]
+   - Current workaround: [지금은 어떻게 버티고 있는가]
+   - Cost of inaction: [안 풀면 얼마 손해인가]
+
+2. **Secondary pain**: [파생되는 고통]
+   - Who else suffers: [1차 유저 외에 영향받는 사람]
+   - Cascading effects: [문제가 번지는 구조]
+
+3. **Emotional pain**: [수치로 안 잡히는 고통]
+   - Frustration source: [왜 짜증나는가]
+   - Status/identity impact: [직업적 자존감에 미치는 영향]
+```
+
+### 3.2 Problem Scale & Universality
+
+```markdown
+### Problem Scale
+
+#### Domestic (US)
+- Affected users: [구체적 숫자 — e.g., "16,000+ dealerships × 5 service advisors = 80,000+ people"]
+- Market penetration of problem: [이 문제를 겪는 비율]
+- $ value of the problem: [연간 손실 규모]
+
+#### International
+- Same problem exists in: [국가/지역 리스트]
+- Why universal: [문화/산업 구조적으로 공통인 이유]
+- Why NOT universal: [특정 시장에서만 존재하는 이유]
+- Global TAM multiplier: [US-only vs global이면 몇 배]
+
+#### Adjacent Problems (같은 유저가 겪는 다른 문제)
+- [관련 문제 1] → expansion opportunity
+- [관련 문제 2] → platform play potential
+- [관련 문제 3] → vertical depth vs horizontal breadth
+
+### Problem Longevity
+- Is this problem growing or shrinking? [트렌드]
+- Will AI eliminate this problem entirely? [자기잠식 리스크]
+- Will regulation change the problem? [규제 영향]
+- 10-year view: [이 문제가 10년 후에도 존재하는가]
+```
+
+### 3.3 Solution-Problem Fit (디자인 렌즈)
+
+```markdown
+### How the Product Solves It
+
+#### Solution Mapping
+| User Pain | Product Solution | Design Role in Solution |
+|-----------|-----------------|------------------------|
+| [Pain 1]  | [Feature/flow]  | [디자이너가 설계하는 부분] |
+| [Pain 2]  | [Feature/flow]  | [디자이너가 설계하는 부분] |
+| [Pain 3]  | [Feature/flow]  | [디자이너가 설계하는 부분] |
+
+#### Solution Quality Assessment
+- Does it eliminate the pain or reduce it? [제거 vs 완화]
+- How much user behavior change required? [기존 습관 vs 새로운 워크플로우]
+- Time to value: [유저가 가치를 느끼기까지 걸리는 시간]
+- Aha moment: [유저가 "이거다" 느끼는 순간]
+
+#### What's Still Unsolved (디자인 기회)
+- Gap 1: [제품이 아직 못 풀고 있는 문제]
+  → Design opportunity: [디자이너가 풀 수 있는 방향]
+- Gap 2: [유저가 불만인 부분]
+  → Design opportunity: [개선 방향]
+- Gap 3: [경쟁사는 풀었지만 이 회사는 아직인 것]
+  → Design opportunity: [차별화 방향]
+```
+
+### 3.4 Designer Impact Potential
+
+```markdown
+### Why This Problem Matters for a Designer
+
+#### Design Leverage
+- User touch frequency: [유저가 제품을 얼마나 자주 쓰는가]
+  → High frequency = 디자인 결정의 누적 임팩트 큼
+- Decision criticality: [제품 사용 순간이 얼마나 중요한가]
+  → High stakes = 디자인 퀄리티가 비즈니스에 직결
+- Emotional intensity: [유저가 감정적으로 얼마나 관여하는가]
+  → High emotion = 디자인이 경험을 좌우
+
+#### Design Problem Novelty
+- Has this UX pattern been solved before? [선례 존재 여부]
+- If novel: [디자이너가 새로 정의해야 하는 패턴]
+- If solved: [기존 패턴 대비 이 회사의 차별점]
+- Portfolio story: [이 경험이 포트폴리오에서 어떤 이야기가 되는가]
+
+#### Design Scope
+- End-to-end ownership: [유저 여정 전체를 디자인하는가]
+- Surface area: [디자인할 화면/플로우가 얼마나 넓은가]
+- Depth vs breadth: [한 문제를 깊이 파는가 vs 여러 문제를 넓게]
+- Cross-functional weight: [디자인 결정이 엔지니어링/비즈니스에 미치는 영향]
+```
+
+### 3.5 Research Queries for Product Design Take
+
+```
+WebSearch: "[company name]" user reviews complaints
+WebSearch: "[company name]" product review G2 Capterra
+WebSearch: "[industry/domain]" biggest problems pain points
+WebSearch: "[industry/domain]" market size global
+WebSearch: "[industry/domain]" "[country]" (for international scale)
+WebSearch: "[company name]" product demo walkthrough
+WebSearch: "[company name]" case study customer story
+WebSearch: "[competitor]" vs "[company]" user experience
+WebSearch: "[industry]" software adoption rate
+WebSearch: "[problem domain]" how people currently solve
+```
+
+---
+
+## Phase 4: Upside Analysis (왜 이 회사가 잘될 수 있는가)
 
 ```markdown
 ## Upside Case
@@ -241,7 +372,7 @@ WebSearch: "[company name]" annual recurring revenue
 
 ---
 
-## Phase 4: Downside / Risk Analysis (왜 이 회사가 안 될 수 있는가)
+## Phase 5: Downside / Risk Analysis (왜 이 회사가 안 될 수 있는가)
 
 ```markdown
 ## Downside Case
@@ -272,7 +403,7 @@ WebSearch: "[company name]" annual recurring revenue
 
 ---
 
-## Phase 5: Competition Landscape Deep Dive
+## Phase 6: Competition Landscape Deep Dive
 
 > 단순 경쟁사 리스트가 아닌, 전략적 경쟁 구도 분석
 
@@ -303,7 +434,7 @@ WebSearch: "[company name]" annual recurring revenue
 - Likely outcome: [인수 / IPO / 시장 리더 / 니치 플레이어]
 ```
 
-### 5.1 Competition Research Queries
+### 6.1 Competition Research Queries
 
 ```
 WebSearch: "[company name]" vs "[competitor]"
@@ -316,7 +447,7 @@ WebSearch: G2 "[company name]" vs "[competitor]"
 
 ---
 
-## Phase 6: Articles & Reference Collection
+## Phase 7: Articles & Reference Collection
 
 > 의사결정에 도움되는 모든 외부 자료 수집
 
@@ -351,7 +482,7 @@ WebSearch: G2 "[company name]" vs "[competitor]"
   - Relevance: [왜 중요한가]
 ```
 
-### 6.1 Article Research Queries
+### 7.1 Article Research Queries
 
 ```
 WebSearch: "[company name]" founder interview podcast
@@ -367,7 +498,7 @@ WebSearch: "[company name]" future roadmap vision
 
 ---
 
-## Phase 7: Designer's Decision Framework
+## Phase 8: Designer's Decision Framework
 
 > 모든 리서치를 종합한 최종 판단
 
@@ -423,12 +554,12 @@ WebSearch: "[company name]" future roadmap vision
 
 ---
 
-## Phase 8: Writer Skill Integration (리서치 → 아티클)
+## Phase 9: Writer Skill Integration (리서치 → 아티클)
 
 > 딥 리서치 완료 후 자동으로 `/writer` 스킬을 호출하여 인사이트 아티클 초안 작성.
 > **반드시 유저 검수 후 퍼블리싱.**
 
-### 8.1 Auto-trigger Workflow
+### 9.1 Auto-trigger Workflow
 
 Phase 1-7 완료 + Report MD 저장 + Company Data 업데이트 후:
 
@@ -443,7 +574,7 @@ Company data updated: src/data/companies/[company-id].ts
 Now drafting an article based on the research...
 ```
 
-### 8.2 Article Topic Auto-generation
+### 9.2 Article Topic Auto-generation
 
 딥 리서치 결과에서 가장 흥미로운 앵글을 자동 선택:
 
@@ -468,7 +599,7 @@ Now drafting an article based on the research...
 
 **Topic은 유저가 변경 가능.**
 
-### 8.3 Writer Skill Invocation
+### 9.3 Writer Skill Invocation
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -486,7 +617,7 @@ Proceed with this topic? (or type a different topic)
 2. 리서치에서 수집한 데이터 포인트, 인사이트, 소스를 아티클에 자동 반영
 3. Data-Driven Analytical voice로 작성
 
-### 8.4 Writer Input: Deep Research Data
+### 9.4 Writer Input: Deep Research Data
 
 `/writer` 스킬에 넘기는 데이터:
 
@@ -496,7 +627,7 @@ const writerContext = {
   // Company basics
   company: companyData,           // Full company object from DB
 
-  // Deep research insights (Phase 1-7 핵심 발견)
+  // Deep research insights (Phase 1-8 핵심 발견)
   designTeamIntel: {
     teamSize: number,
     leadershipNames: string[],    // CPO, Head of Design
@@ -511,18 +642,30 @@ const writerContext = {
     runway: string,
   },
 
-  upsidePoints: string[],        // Phase 3 top insights
-  downsidePoints: string[],       // Phase 4 top risks
-  competitionInsights: string[],  // Phase 5 key findings
-  keyArticles: Article[],         // Phase 6 collected sources
-  decisionScore: number,          // Phase 7 final score
+  productDesignTake: {            // Phase 3 — NEW
+    coreProblem: string,          // 핵심 유저 문제 한 문장
+    painPointAnatomy: string[],   // Primary, secondary, emotional pain
+    affectedUsers: string,        // 규모 — e.g., "80,000+ service advisors in US alone"
+    isUniversal: boolean,         // US-only vs global problem
+    globalScale: string,          // 국제 시장 규모
+    solutionFit: string,         // 제품이 문제를 얼마나 잘 푸는가
+    unsolved: string[],           // 아직 못 풀고 있는 문제 (디자인 기회)
+    designLeverage: string,       // 디자인 결정의 임팩트 수준
+    novelty: string,              // 새로운 UX 패턴인가
+  },
+
+  upsidePoints: string[],        // Phase 4 top insights
+  downsidePoints: string[],       // Phase 5 top risks
+  competitionInsights: string[],  // Phase 6 key findings
+  keyArticles: Article[],         // Phase 7 collected sources
+  decisionScore: number,          // Phase 8 final score
 
   // Suggested topic
   suggestedTopic: string,
 };
 ```
 
-### 8.5 User Review Gate
+### 9.5 User Review Gate
 
 아티클 초안 완성 후 **반드시 유저에게 검수 요청**:
 
@@ -560,7 +703,7 @@ Options:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-### 8.6 Post-Approval Actions
+### 9.6 Post-Approval Actions
 
 유저가 **Approve** 하면:
 
@@ -594,7 +737,7 @@ Options:
 - 아티클 없이 딥 리서치만 저장
 - "Article generation skipped by user" 노트 추가
 
-### 8.7 Article Quality from Deep Research
+### 9.7 Article Quality from Deep Research
 
 딥 리서치 기반 아티클이 일반 `/writer` 아티클보다 높은 퀄리티를 가져야 하는 이유:
 
@@ -616,20 +759,21 @@ graph TD
   B -->|No| C[Run /company-researcher first]
   B -->|Yes| D[Phase 1: Design Team Intel]
   D --> E[Phase 2: VC Business Analysis]
-  E --> F[Phase 3: Upside Analysis]
-  F --> G[Phase 4: Downside/Risk Analysis]
-  G --> H[Phase 5: Competition Deep Dive]
-  H --> I[Phase 6: Articles & References]
-  I --> J[Phase 7: Decision Framework]
-  J --> K[Generate Report MD]
-  K --> L[Update Company Data]
-  L --> M[Commit & Save]
-  M --> N[Phase 8: Writer Skill — Draft Article]
-  N --> O{User Review}
-  O -->|Approve| P[Publish Article]
-  O -->|Edit| Q[Revise Draft]
-  O -->|Skip| R[Done without article]
-  Q --> O
+  E --> F[Phase 3: Product Design Take]
+  F --> G[Phase 4: Upside Analysis]
+  G --> H[Phase 5: Downside/Risk Analysis]
+  H --> I[Phase 6: Competition Deep Dive]
+  I --> J[Phase 7: Articles & References]
+  J --> K[Phase 8: Decision Framework]
+  K --> L[Generate Report MD]
+  L --> M[Update Company Data]
+  M --> N[Commit & Save]
+  N --> O[Phase 9: Writer Skill — Draft Article]
+  O --> P{User Review}
+  P -->|Approve| Q[Publish Article]
+  P -->|Edit| R[Revise Draft]
+  P -->|Skip| S[Done without article]
+  R --> P
 ```
 
 ---
@@ -658,20 +802,24 @@ Path: `src/data/deep-research/[company-id].md`
 ## Business Model Analysis
 [Phase 2 output]
 
-## Upside Case
-[Phase 3 output]
+## Product Design Take
+[Phase 3 output — User problem deep dive, problem scale & universality,
+solution-problem fit, designer impact potential]
 
-## Downside & Risks
+## Upside Case
 [Phase 4 output]
 
-## Competition Landscape
+## Downside & Risks
 [Phase 5 output]
 
-## Key Articles & References
+## Competition Landscape
 [Phase 6 output]
 
-## Decision Framework
+## Key Articles & References
 [Phase 7 output]
+
+## Decision Framework
+[Phase 8 output]
 
 ---
 
@@ -793,16 +941,22 @@ Round 1 (Parallel):
   - WebSearch: Design team LinkedIn
   - WebSearch: Business metrics
   - WebSearch: Competition landscape
+  - WebSearch: User pain points & reviews
 
 Round 2 (Parallel):
   - WebFetch: Top designer LinkedIn profiles
   - WebSearch: Founder interviews
   - WebSearch: Culture insights
+  - WebSearch: Problem scale & international market
 
 Round 3 (Parallel):
   - WebFetch: Key articles
-  - WebSearch: Product reviews
-  - Compile Decision Framework
+  - WebSearch: Product demos & case studies
+  - WebSearch: Current workarounds & adjacent problems
+
+Round 4:
+  - Compile Product Design Take (Phase 3)
+  - Compile Decision Framework (Phase 8)
 ```
 
 ---
@@ -916,8 +1070,8 @@ large organization.
 
 ### Pipeline Rules
 
-- **Phase 1-7**: 자동 실행, 유저 개입 없음
-- **Phase 8 (Writer)**: 토픽 확인 → 초안 생성 → **유저 검수 필수**
+- **Phase 1-8**: 자동 실행, 유저 개입 없음
+- **Phase 9 (Writer)**: 토픽 확인 → 초안 생성 → **유저 검수 필수**
 - **Publish**: 유저가 Approve 해야만 아티클 파일 생성
 - **Skip 가능**: 유저가 아티클 없이 리서치만 저장 가능
 
