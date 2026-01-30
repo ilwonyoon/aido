@@ -18,13 +18,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = onAuthChange((user) => {
-      setUser(user);
-      setLoading(false);
-    });
+    let unsubscribe: (() => void) | null = null;
+
+    // Delay Firebase initialization to not block initial page load
+    const initAuth = async () => {
+      unsubscribe = await onAuthChange((user) => {
+        setUser(user);
+        setLoading(false);
+      });
+    };
+
+    // Defer auth check to after initial render
+    const timer = setTimeout(() => {
+      void initAuth();
+    }, 100);
 
     return () => {
-      unsubscribe();
+      clearTimeout(timer);
+      if (unsubscribe) {
+        unsubscribe();
+      }
     };
   }, []);
 

@@ -9,9 +9,25 @@ const __dirname = path.dirname(__filename);
 const companiesIndexPath = path.join(__dirname, '../src/data/companies/index.ts');
 const indexContent = fs.readFileSync(companiesIndexPath, 'utf-8');
 
-// Extract company IDs from the companies array by reading id: 'value' patterns
-const companyIdMatches = indexContent.matchAll(/id:\s*['"]([^'"]+)['"]/g);
-const companyIds = [...companyIdMatches].map(match => match[1]);
+// Extract company variable names from the companies array
+// The array looks like: export const companies: Company[] = [ anthropic, leya, ... ];
+const arrayMatch = indexContent.match(/export const companies[^[]*\[([\s\S]*?)\];/);
+if (!arrayMatch) {
+  console.error('Could not find companies array');
+  process.exit(1);
+}
+
+// Parse company variable names from the array
+const companyVars = arrayMatch[1]
+  .split(',')
+  .map(v => v.trim())
+  .filter(v => v && !v.startsWith('//'));
+
+// Convert camelCase variable names to kebab-case IDs
+// (e.g., physicalIntelligence -> physical-intelligence)
+const companyIds = companyVars.map(varName => {
+  return varName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+});
 
 // Read articles data
 const articlesIndexPath = path.join(__dirname, '../src/data/articles/index.ts');
