@@ -186,13 +186,8 @@ export const anthropic: Company = {
     openRoles: [
       {
         title: 'Product Designer, Claude Code',
-        location: 'New York City, NY; Remote-Friendly (Travel Required) | San Francisco, CA; San Francisco, CA | New York City, NY | Seattle, WA',
+        location: 'New York City, NY; Remote-Friendly (Travel Required) | San Francisco, CA | New York City, NY | Seattle, WA',
         url: 'https://job-boards.greenhouse.io/anthropic/jobs/5025976008',
-      },
-      {
-        title: 'Product Designer, Enterprise',
-        location: 'San Francisco, CA | New York City, NY | Seattle, WA',
-        url: 'https://job-boards.greenhouse.io/anthropic/jobs/5055600008',
       },
     ],
 

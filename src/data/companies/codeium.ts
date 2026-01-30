@@ -139,7 +139,7 @@ export const codeium: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://codeium.com/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [
       {
         source: 'techcrunch',

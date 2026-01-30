@@ -163,19 +163,7 @@ export const perplexity: Company = {
     // Designer Links
     designerLinks: [],
 
-    // Open Roles - NONE CURRENTLY
-    openRoles: [
-      {
-        title: 'Product Designer - Enterprise Lead',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4865846007',
-      },
-      {
-        title: 'Product Designer - Growth',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4865806007',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {

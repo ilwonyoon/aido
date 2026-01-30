@@ -165,7 +165,7 @@ export const superhuman: Company = {
       {
         title: 'Senior Product Designer',
         location: 'Remote, North America',
-        url: 'https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc',
+        url: 'https://job-boards.greenhouse.io/grammarly/jobs/7270136',
         level: 'Senior',
         type: 'full-time',
         compensation: '$155,000 – $240,000/year (USD)',

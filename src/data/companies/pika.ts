@@ -150,7 +150,7 @@ export const pika: Company = {
     ],
     openRoles: [
       {
-        title: 'Senior Product Designer',
+        title: 'Product Designer',
         location: 'Palo Alto, CA',
         type: 'full-time',
         url: 'https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541',

@@ -172,11 +172,10 @@ export const gamma: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Staff Product Designer',
-        location: 'San Francisco, CA (Remote-friendly)',
-        url: 'https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer',
-        level: 'Staff',
+        title: 'Product Designer',
+        location: 'San Francisco, CA',
         type: 'full-time',
+        url: 'https://careers.gamma.app/',
         aboutRole: 'Join a lean team transforming presentations with AI. Design for 30M+ users.',
         whyInteresting: 'Designer CEO. $100M ARR with 52 people. Profitable. AI-first product. High craft bar.',
       },
