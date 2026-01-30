@@ -34,7 +34,7 @@ export function CompanyOGImage({ companyId, companyName }: CompanyOGImageProps) 
 
   return (
     <div
-      className="relative w-full bg-[var(--card)] overflow-hidden -mx-4 sm:-mx-6 -mt-4 sm:-mt-6"
+      className="relative w-full bg-[var(--card)] overflow-hidden rounded-lg"
       style={{ aspectRatio: '16 / 9' }}
     >
       <Image
@@ -44,10 +44,9 @@ export function CompanyOGImage({ companyId, companyName }: CompanyOGImageProps) 
         className="object-cover"
         onError={handleError}
         priority
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+        quality={95}
       />
-      {/* Gradient overlay for better text visibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
     </div>
   );
 }

@@ -63,7 +63,7 @@ export function CompanyDetail({ company }: { company: Company }) {
         {/* Main Content */}
         <div className="w-full lg:flex-1 min-w-0">
           {/* OG Image - Full width at top */}
-          <div className="-mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-6">
+          <div className="mb-6">
             <CompanyOGImage companyId={company.id} companyName={company.name} />
           </div>
 
@@ -98,8 +98,6 @@ export function CompanyDetail({ company }: { company: Company }) {
               <InterestToggle companyId={company.id} />
             </div>
           </div>
-
-          <div className="space-y-12">
 
           {/* Quick Info */}
           <section id="quick-info" className="scroll-mt-20 space-y-4">
