@@ -341,6 +341,14 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - 새로운 AI-native 회사 리서치 및 데이터 수집
 - Business, Founders, Design team, Product 정보 수집
 
+**company-deep-research** ⭐
+- 위치: `.claude/skills/company-deep-research/`
+- 사용법: `/company-deep-research [company name]`
+- Tier 0/1 회사에 대한 VC + Product Design 관점 딥 리서치
+- 디자인팀 전원 LinkedIn 매핑, 비즈니스 모델 딥다이브
+- Upside/Downside/Competition 분석, Decision Framework
+- Output: `src/data/deep-research/[company-id].md`
+
 **writer**
 - 위치: `.claude/skills/writer/`
 - 사용법: `/writer "article topic"`
