@@ -17,18 +17,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(false);
 
-  console.log('[AuthProvider] Initializing...');
-
   useEffect(() => {
-    console.log('[AuthProvider] useEffect running');
     const unsubscribe = onAuthChange((user) => {
-      console.log('[AuthProvider] Auth state changed:', { hasUser: !!user, email: user?.email });
       setUser(user);
       setLoading(false);
     });
 
     return () => {
-      console.log('[AuthProvider] Cleaning up');
       unsubscribe();
     };
   }, []);

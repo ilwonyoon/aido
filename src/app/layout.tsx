@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import { Navigation } from "@/components/Navigation";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -78,17 +79,19 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <AuthProvider>
-            <AnalyticsTracker />
-            <Navigation />
-            <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
-              {children}
-            </main>
-            <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--muted)]">
-              Logos provided by{' '}
-              <a href="https://logo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--foreground)]">
-                Logo.dev
-              </a>
-            </footer>
+            <ErrorBoundary>
+              <AnalyticsTracker />
+              <Navigation />
+              <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
+                {children}
+              </main>
+              <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--muted)]">
+                Logos provided by{' '}
+                <a href="https://logo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--foreground)]">
+                  Logo.dev
+                </a>
+              </footer>
+            </ErrorBoundary>
           </AuthProvider>
         </ThemeProvider>
       </body>
