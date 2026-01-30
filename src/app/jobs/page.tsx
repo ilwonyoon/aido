@@ -5,54 +5,7 @@ import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { Company } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
-
-// ────────────────────────────────────────────────────────────────────────────
-// Logo helper
-// ────────────────────────────────────────────────────────────────────────────
-
-const LOGO_DEV_TOKEN = 'pk_ZjMwtG5fQ_-Dt-Km4EjHHg';
-
-function getLogoDomain(website: string): string {
-  try {
-    return new URL(website).hostname.replace(/^www\./, '');
-  } catch {
-    return '';
-  }
-}
-
-function CompanyLogo({ company, size = 32 }: { company: Company; size?: number }) {
-  const domain = getLogoDomain(company.website);
-  const config = getAiLevelConfig(company.aiNativeLevel);
-  const [errored, setErrored] = useState(false);
-
-  const fallbackStyle = config.badgeClass === 'badge-success'
-    ? 'bg-[rgba(80,227,194,0.12)] text-[var(--success)]'
-    : config.badgeClass === 'badge-accent'
-      ? 'bg-[rgba(0,112,243,0.12)] text-[var(--accent-light)]'
-      : 'bg-[var(--card-hover)] text-[var(--muted)]';
-
-  if (!domain || errored) {
-    return (
-      <div
-        className={`rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 ${fallbackStyle}`}
-        style={{ width: size, height: size }}
-      >
-        {company.name[0]}
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_TOKEN}&size=${size * 2}&format=png`}
-      alt={`${company.name} logo`}
-      width={size}
-      height={size}
-      className="rounded-lg flex-shrink-0 bg-white"
-      onError={() => setErrored(true)}
-    />
-  );
-}
+import { CompanyLogo } from '@/components/CompanyLogo';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Filter Components
