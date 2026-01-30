@@ -133,15 +133,7 @@ export const console: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA (in-person)',
-      type: 'full-time',
-      url: 'https://console.com/careers',
-      aboutRole: 'Design AI-powered IT support and automation experiences.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],

@@ -167,9 +167,9 @@ export const openai: Company = {
         url: 'https://openai.com/careers/product-designer-chatgpt-san-francisco/',
       },
       {
-        title: 'Product Designer, Platform & Tools',
+        title: 'Product Designer, Growth',
         location: 'San Francisco, CA',
-        url: 'https://openai.com/careers/product-designer-platform-and-tools-san-francisco/',
+        url: 'https://openai.com/careers/product-designer-growth-san-francisco/',
       },
     ],
 

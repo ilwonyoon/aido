@@ -134,7 +134,7 @@ export const beautifulAi: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.beautiful.ai/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',

@@ -154,10 +154,10 @@ export const tavus: Company = {
     ],
     openRoles: [
       {
-        title: 'Product Designer',
+        title: 'Senior Product Designer',
         location: 'San Francisco, CA',
         type: 'full-time',
-        url: 'https://jobs.ashbyhq.com/tavus',
+        url: 'https://jobs.ashbyhq.com/tavus/2f3a9e2d-813f-4f28-bae4-ba8f970b1a06',
         requirements: [
           '3+ years product design experience',
           'Experience with developer tools or API products',

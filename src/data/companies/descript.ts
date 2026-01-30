@@ -65,7 +65,7 @@ export const descript: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',

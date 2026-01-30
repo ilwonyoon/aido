@@ -65,7 +65,7 @@ export const intercomFin: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.intercom.com/careers', type: 'full-time' }],
+    openRoles: [{ title: 'Product Designer', location: 'Dublin, Ireland (Hybrid)', url: 'https://boards.greenhouse.io/intercom/jobs/2532587', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',

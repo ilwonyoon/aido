@@ -170,7 +170,7 @@ export const cohere: Company = {
       {
         title: 'Senior Product Designer',
         location: 'Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/cohere',
+        url: 'https://jobs.ashbyhq.com/cohere/ca00e74b-e005-48b3-9158-8064148e1d63',
         level: 'Senior',
         type: 'full-time',
         aboutRole: 'Lead the design process for AI-powered user experiences, conducting research, collaborating with teams, and ensuring high-quality design across platforms.',

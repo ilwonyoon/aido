@@ -65,7 +65,7 @@ export const grammarly: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.grammarly.com/careers', type: 'full-time' }],
+    openRoles: [{ title: 'Staff Product Designer', location: 'Remote (US/Canada, Hybrid quarterly)', url: 'https://www.grammarly.com/careers/jobs/design/staff-product-designer?gh_jid=7167811', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',

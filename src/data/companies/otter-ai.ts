@@ -65,7 +65,7 @@ export const otterAi: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://otter.ai/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',

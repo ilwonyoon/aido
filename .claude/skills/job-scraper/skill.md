@@ -426,12 +426,61 @@ If no external sources found → `openRoles: []`
 
 ---
 
+## Phase 5: URL Validation (MANDATORY)
+
+**모든 URL은 추가 전에 반드시 HTTP 200을 반환해야 합니다.**
+
+### URL 품질 규칙
+
+1. **NEVER use generic careers page URLs** as job URLs:
+   - ❌ `https://company.com/careers`
+   - ❌ `https://jobs.ashbyhq.com/company` (UUID 없음)
+   - ❌ `https://company.com/jobs`
+   - ✅ `https://jobs.ashbyhq.com/company/UUID-HERE`
+   - ✅ `https://job-boards.greenhouse.io/company/jobs/12345`
+   - ✅ `https://jobs.lever.co/company/UUID-HERE`
+
+2. **URL Priority Order** (가장 안정적인 것 먼저):
+   - 1st: Company career page with specific job path (e.g., `openai.com/careers/product-designer-chatgpt-san-francisco/`) — 회사가 직접 관리하므로 가장 안정적
+   - 2nd: Company career → 파트너 ATS 페이지 (Greenhouse, Ashby, Lever, Wellfound 등 specific job URL)
+     - `job-boards.greenhouse.io/[company]/jobs/[id]`
+     - `jobs.ashbyhq.com/[company]/[uuid]`
+     - `jobs.lever.co/[company]/[uuid]`
+     - `wellfound.com/company/[company]/jobs/[id]`
+   - NEVER: Generic careers page without job ID
+
+3. **HTTP Verification** (추가 전 필수):
+   ```bash
+   # 각 URL에 대해 실행
+   curl -sL -o /dev/null -w "%{http_code} %{url_effective}" "[URL]"
+   ```
+   - 200 → ✅ OK
+   - 301/302 → Check redirect target. If redirects to generic careers page → ❌ REJECT
+   - 404/410 → ❌ REJECT (role removed)
+   - 403 → ❌ REJECT (access denied = likely removed)
+
+4. **No specific URL found? → Do NOT add the role.**
+   - Generic careers page URL = role existence is UNVERIFIED
+   - Only add roles with confirmed, specific, working URLs
+
+### Post-Scrape Validation
+
+항상 스크래핑 완료 후 실행:
+```bash
+npm run verify-jobs
+```
+모든 URL이 OK가 아니면 → 해당 role 제거
+
+---
+
 ## 성공 기준
 
 ✅ **완벽한 수집**
 - 모든 Product Design 역할 발견
 - Detail 페이지까지 방문
 - 교차 검증 완료
+- **모든 URL이 HTTP 200 반환 (verified)**
+- **모든 URL이 specific job posting URL (generic careers page 아님)**
 - 정확한 TypeScript object 생성
 
 ❌ **불완전한 수집**
@@ -439,6 +488,22 @@ If no external sources found → `openRoles: []`
 - Detail 페이지 스킵
 - 제목만 수집, 세부사항 누락
 - 교차 검증 안 함
+- **Generic careers page URL 사용 (NO!)**
+- **URL 검증 안 함 (NO!)**
+
+---
+
+## Root Cause Prevention
+
+과거 발생한 문제와 방지책:
+
+| 문제 | 원인 | 방지책 |
+|------|------|--------|
+| 없는 포지션이 있다고 표시 | Generic careers page URL로 추가 | Phase 5 URL 품질 규칙 적용 |
+| 깨진 job link | URL 검증 없이 추가 | HTTP 200 검증 필수 |
+| 있는 포지션이 없다고 표시 | Career page JS 렌더링 실패 | Playwright + 교차 검증 |
+| 잘못된 URL | WebSearch 캐시된 결과 사용 | curl로 실시간 검증 |
+| ATS URL 인코딩 문제 | URL 수동 구성 | ATS 검색 결과에서 직접 복사 |
 
 ---
 

@@ -157,19 +157,7 @@ export const shopify: Company = {
         description: 'CEO insights on AI-first strategy',
       },
     ],
-    openRoles: [
-      {
-        title: 'Staff Product Designer',
-        location: 'Remote (global)',
-        type: 'full-time',
-        url: 'https://www.shopify.com/careers',
-        requirements: [
-          'Lead design projects of significant scope and complexity',
-          'Creative vision, strategy, and execution',
-          'Collaborate with 750+ designers globally',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {

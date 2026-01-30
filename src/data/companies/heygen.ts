@@ -65,7 +65,7 @@ export const heygen: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Los Angeles, CA (Hybrid)', url: 'https://heygen.com/careers', type: 'full-time' }],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA | Los Angeles, CA (Hybrid)', url: 'https://job-boards.greenhouse.io/heygen/jobs/4978509007', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
