@@ -9,6 +9,9 @@ export const openrouter: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/openrouter-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'code-assistant'],

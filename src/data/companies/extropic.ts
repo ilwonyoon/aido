@@ -9,6 +9,9 @@ export const extropic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/extropic-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

@@ -8,6 +8,9 @@ export const stabilityAi: Company = {
     headquarters: 'London, UK',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/stability-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['image-generation', 'audio-generation', 'code-assistant'],

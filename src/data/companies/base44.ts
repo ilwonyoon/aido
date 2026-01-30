@@ -8,6 +8,9 @@ export const base44: Company = {
     headquarters: 'Tel Aviv, Israel',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/base44-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],

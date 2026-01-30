@@ -8,6 +8,9 @@ export const shortwave: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/shortwave-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

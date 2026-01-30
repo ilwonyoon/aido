@@ -9,6 +9,9 @@ export const nuraline: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/nuraline-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

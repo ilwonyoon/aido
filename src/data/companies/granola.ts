@@ -8,6 +8,9 @@ export const granola: Company = {
     headquarters: 'London, UK',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/granola-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

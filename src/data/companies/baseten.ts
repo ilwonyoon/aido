@@ -9,6 +9,9 @@ export const baseten: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/baseten-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

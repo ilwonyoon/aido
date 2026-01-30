@@ -9,6 +9,9 @@ export const redQueenBio: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/red-queen-bio-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

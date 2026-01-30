@@ -8,6 +8,9 @@ export const magicPatterns: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/magic-patterns-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

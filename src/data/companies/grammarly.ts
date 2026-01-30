@@ -8,6 +8,9 @@ export const grammarly: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/grammarly-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['prosumer'],

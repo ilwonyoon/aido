@@ -8,6 +8,9 @@ export const cohere: Company = {
     headquarters: 'Toronto, Canada',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/cohere-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

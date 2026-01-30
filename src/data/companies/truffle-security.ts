@@ -9,6 +9,9 @@ export const truffleSecurity: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/truffle-security-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

@@ -8,6 +8,9 @@ export const numeric: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/numeric-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['data-analysis', 'automation'],

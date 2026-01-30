@@ -8,6 +8,9 @@ export const xai: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/xai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

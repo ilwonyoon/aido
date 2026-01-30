@@ -9,6 +9,9 @@ export const mytra: Company = {
   headquarters: 'Brisbane, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/mytra-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

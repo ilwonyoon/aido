@@ -9,6 +9,9 @@ export const overlapAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/overlap-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

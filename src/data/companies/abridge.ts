@@ -8,6 +8,9 @@ export const abridge: Company = {
     headquarters: 'Pittsburgh, PA',
     remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/abridge-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'conversation-ai'],

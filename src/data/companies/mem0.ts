@@ -8,6 +8,9 @@ export const mem0: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/mem0-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

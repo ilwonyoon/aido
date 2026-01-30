@@ -8,6 +8,9 @@ export const vercel: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/vercel-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

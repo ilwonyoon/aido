@@ -9,6 +9,9 @@ export const unlimitedIndustries: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/unlimited-industries-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

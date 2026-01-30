@@ -8,6 +8,9 @@ export const subtleComputing: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/subtle-computing-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

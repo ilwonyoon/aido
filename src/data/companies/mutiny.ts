@@ -9,6 +9,9 @@ export const mutiny: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/mutiny-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],

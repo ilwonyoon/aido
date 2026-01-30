@@ -8,6 +8,9 @@ export const blossom: Company = {
     headquarters: 'New York, NY',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/blossom-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

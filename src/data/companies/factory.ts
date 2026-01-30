@@ -9,6 +9,9 @@ export const factory: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/factory-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

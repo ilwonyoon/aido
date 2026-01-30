@@ -9,6 +9,9 @@ export const composite: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/composite-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

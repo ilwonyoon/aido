@@ -9,6 +9,9 @@ export const exa: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/exa-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'search-retrieval'],

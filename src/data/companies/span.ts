@@ -8,6 +8,9 @@ export const span: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/span-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

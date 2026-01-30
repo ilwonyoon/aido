@@ -8,6 +8,9 @@ export const airloom: Company = {
   headquarters: 'Laramie, WY',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/airloom-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

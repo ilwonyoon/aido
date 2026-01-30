@@ -8,6 +8,9 @@ export const perplexity: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/perplexity-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'search-retrieval'],

@@ -8,6 +8,9 @@ export const tabnine: Company = {
     headquarters: 'Tel Aviv, Israel',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/tabnine-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['enterprise'],

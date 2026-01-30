@@ -8,6 +8,9 @@ export const harmonic: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/harmonic-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

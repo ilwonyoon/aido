@@ -435,57 +435,66 @@ userProblems: [
 
 #### 6.1 Automatic Image Collection
 
-**IMPORTANT**: OG 이미지와 스크린샷은 company 데이터의 일부로 자동 수집되어야 합니다.
+**CRITICAL**: OG 이미지는 company 데이터의 필수 부분입니다. Company 파일 생성 후 반드시 자동으로 수집하세요.
 
-**수집 방법:**
+**실행 방법:**
 
-1. **Microlink API 사용** (API 키 불필요, 무료)
-   ```javascript
-   // OG Image
-   const ogUrl = `https://api.microlink.io?url=${company.website}&meta=true`;
-   const response = await fetch(ogUrl);
-   const data = await response.json();
+Company TypeScript 파일을 생성한 직후, 다음 스크립트를 **반드시** 실행:
 
-   if (data.status === 'success') {
-     ogImage = data.data.image?.url || data.data.logo?.url || null;
-   }
+```bash
+node scripts/fetch-og-single.mjs <company-id> <company-website>
+```
 
-   // Screenshot (optional, as fallback)
-   const screenshotUrl = `https://api.microlink.io?url=${company.website}&screenshot=true`;
-   const screenshotResponse = await fetch(screenshotUrl);
-   const screenshotData = await screenshotResponse.json();
+**예시:**
+```bash
+# Anthropic 회사 추가 후
+node scripts/fetch-og-single.mjs anthropic https://anthropic.com
 
-   if (screenshotData.status === 'success') {
-     screenshot = screenshotData.data.screenshot?.url || null;
-   }
-   ```
+# Cursor 회사 추가 후
+node scripts/fetch-og-single.mjs cursor https://cursor.sh
+```
 
-2. **자동 다운로드 및 최적화**
-
-   수집된 이미지는 자동으로 다운로드되고 최적화됩니다:
-   ```bash
-   # 스크립트가 자동으로 실행됨
-   npm run fetch-og-images
-   ```
-
-   결과:
-   - 파일: `/public/og-images/{company-id}-og.webp`
-   - 파일: `/public/og-images/{company-id}-screenshot.webp`
-   - WebP 포맷으로 압축 (12-60KB)
-   - 800px max width, 85% quality
-
-3. **Company 데이터에 추가**
+**스크립트가 자동으로 수행하는 작업:**
+1. Microlink API로 OG image URL 추출 (무료, API 키 불필요)
+2. 이미지 다운로드 및 최적화:
+   - 최대 너비: 1440px
+   - WebP 포맷, 90% 품질
+   - 저장 위치: `/public/og-images/{company-id}-og.webp`
+3. Company 파일에 `ogImage` 필드 자동 추가:
    ```typescript
    {
-     ogImage: '/og-images/company-id-og.webp',
-     screenshot: '/og-images/company-id-screenshot.webp',
+     ogImage: '/og-images/{company-id}-og.webp',
    }
    ```
 
-**자동화 통합:**
-- OG 이미지 수집은 company researcher 실행 시 자동으로 포함됩니다
-- Microlink API는 CORS 우회 및 meta 태그 추출을 자동으로 처리합니다
-- 이미지가 없는 경우 screenshot을 fallback으로 사용합니다
+**워크플로우:**
+```bash
+# 1. Company 파일 생성
+cat > src/data/companies/new-company.ts << 'EOF'
+export const newCompany: Company = {
+  id: 'new-company',
+  name: 'New Company',
+  website: 'https://newcompany.com',
+  // ... 나머지 필드
+};
+EOF
+
+# 2. OG 이미지 자동 수집 (필수!)
+node scripts/fetch-og-single.mjs new-company https://newcompany.com
+
+# 3. 확인
+# - public/og-images/new-company-og.webp 생성됨 ✓
+# - src/data/companies/new-company.ts에 ogImage 필드 추가됨 ✓
+```
+
+**실패 시 대응:**
+- OG 이미지가 없으면 스크립트가 경고 표시
+- 이미지가 없어도 company 파일은 유효함 (fallback UI 있음)
+- 나중에 다시 실행 가능
+
+**주의사항:**
+- ⚠️ Company 파일에 `remote` 필드가 반드시 있어야 함 (insertion point)
+- ⚠️ 스크립트는 이미 `ogImage` 필드가 있으면 skip함
 
 ---
 

@@ -8,6 +8,9 @@ export const typeface: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/typeface-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

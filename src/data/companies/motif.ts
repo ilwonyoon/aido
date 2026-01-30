@@ -9,6 +9,9 @@ export const motif: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/motif-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

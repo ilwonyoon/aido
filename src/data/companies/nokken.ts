@@ -9,6 +9,9 @@ export const nokken: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/nokken-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

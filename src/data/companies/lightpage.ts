@@ -9,6 +9,9 @@ export const lightpage: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/lightpage-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

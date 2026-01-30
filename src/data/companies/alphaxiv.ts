@@ -8,6 +8,9 @@ export const alphaXiv: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/alphaxiv-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],

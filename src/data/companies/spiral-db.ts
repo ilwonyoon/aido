@@ -9,6 +9,9 @@ export const spiralDb: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/spiral-db-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure', 'search-retrieval'],

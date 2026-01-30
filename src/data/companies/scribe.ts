@@ -8,6 +8,9 @@ export const scribe: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/scribe-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

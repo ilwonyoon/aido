@@ -8,6 +8,9 @@ export const sphere: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/sphere-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

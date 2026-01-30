@@ -1,113 +1,130 @@
 #!/usr/bin/env node
 
-/**
- * Populate OG Image Data into Company Files
- *
- * Reads manifest.json and updates company TypeScript files
- * with ogImage and screenshot fields.
- */
-
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const rootDir = path.join(__dirname, '..');
+const rootDir = path.resolve(__dirname, '..');
 
-const manifestPath = path.join(rootDir, 'public', 'og-images', 'manifest.json');
-const companiesDir = path.join(rootDir, 'src', 'data', 'companies');
+const CONFIG = {
+  downloadedFile: path.join(rootDir, 'scripts', 'og-downloaded-0-205.json'),
+  screenshotsFile: path.join(rootDir, 'scripts', 'og-screenshot-results.json'),
+  companiesDir: path.join(rootDir, 'src', 'data', 'companies'),
+};
 
 async function main() {
-  console.log('📝 Populating OG image data into company files\n');
+  console.log('🔄 Populating OG Image data to company files...\n');
 
-  // Load manifest
-  if (!fs.existsSync(manifestPath)) {
-    console.error('❌ Manifest not found:', manifestPath);
-    console.error('Run: node scripts/fetch-og-images.mjs first');
-    process.exit(1);
-  }
+  // Read both result files and merge
+  const downloaded = JSON.parse(fs.readFileSync(CONFIG.downloadedFile, 'utf-8'));
+  const screenshots = JSON.parse(fs.readFileSync(CONFIG.screenshotsFile, 'utf-8'));
 
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
-  console.log(`Found ${manifest.length} companies in manifest\n`);
+  // Convert screenshots to map for easy lookup
+  const screenshotsMap = new Map(
+    screenshots.map(s => [s.id, s])
+  );
 
-  let updated = 0;
-  let skipped = 0;
-  let errors = 0;
+  // Merge: downloaded as base, override with screenshots if available
+  const results = downloaded.map(d => {
+    const screenshot = screenshotsMap.get(d.companyId);
+    if (screenshot && screenshot.success) {
+      return {
+        id: d.companyId,
+        name: d.name,
+        success: true,
+        localPath: screenshot.localPath
+      };
+    }
+    return {
+      id: d.companyId,
+      name: d.name,
+      success: d.downloaded,
+      localPath: d.localPath
+    };
+  });
 
-  for (const item of manifest) {
+  console.log(`Found ${results.length} companies (${downloaded.length} downloaded + ${screenshots.length} screenshots)\n`);
+
+  let updatedCount = 0;
+  let skippedCount = 0;
+  let errorCount = 0;
+
+  for (const company of results) {
+    const companyFilePath = path.join(CONFIG.companiesDir, `${company.id}.ts`);
+
+    // Check if company file exists
+    if (!fs.existsSync(companyFilePath)) {
+      console.log(`⏭️  ${company.name}: No file found at ${companyFilePath}`);
+      skippedCount++;
+      continue;
+    }
+
     try {
-      const companyFile = path.join(companiesDir, `${item.companyId}.ts`);
+      // Read company file
+      let content = fs.readFileSync(companyFilePath, 'utf-8');
 
-      if (!fs.existsSync(companyFile)) {
-        console.warn(`⚠️  Company file not found: ${item.companyId}.ts`);
-        skipped++;
+      // Check if already has ogImage or screenshot fields
+      if (content.includes('ogImage:') || content.includes('screenshot:')) {
+        console.log(`⏭️  ${company.name}: Already has image fields`);
+        skippedCount++;
         continue;
       }
 
-      let content = fs.readFileSync(companyFile, 'utf-8');
+      // Determine what to add
+      const fieldsToAdd = [];
+      if (company.success && company.localPath) {
+        fieldsToAdd.push(`ogImage: '${company.localPath}'`);
+      }
+      // Note: screenshots are stored with -og.webp suffix if they're the only available image
+      // So we don't need a separate screenshot field
 
-      // Check if already has ogImage/screenshot fields
-      const hasOgImage = /ogImage:\s*['"]/.test(content);
-      const hasScreenshot = /screenshot:\s*['"]/.test(content);
-
-      if (hasOgImage && hasScreenshot) {
-        console.log(`⏭️  ${item.name}: Already has OG data`);
-        skipped++;
+      if (fieldsToAdd.length === 0) {
+        console.log(`⏭️  ${company.name}: No images to add`);
+        skippedCount++;
         continue;
       }
 
-      // Prepare OG data lines
-      const ogImageLine = item.og
-        ? `  ogImage: '/og-images/${item.companyId}-og.webp',`
-        : '';
-      const screenshotLine = item.screenshot
-        ? `  screenshot: '/og-images/${item.companyId}-screenshot.webp',`
-        : '';
-
-      // Find the location to insert (after website field)
-      const websitePattern = /(website:\s*['"][^'"]+['"],?\s*\n)/;
-      const match = content.match(websitePattern);
-
-      if (!match) {
-        console.warn(`⚠️  ${item.name}: Could not find website field`);
-        errors++;
+      // Find insertion point: after 'remote' field and before multi-dimensional tags
+      const remoteMatch = content.match(/remote:\s*['"].*?['"],?\n/);
+      if (!remoteMatch) {
+        console.log(`⚠️  ${company.name}: Could not find 'remote' field for insertion`);
+        errorCount++;
         continue;
       }
 
-      // Insert OG fields after website
-      const insertion = [];
-      if (ogImageLine && !hasOgImage) insertion.push(ogImageLine);
-      if (screenshotLine && !hasScreenshot) insertion.push(screenshotLine);
+      const insertionIndex = remoteMatch.index + remoteMatch[0].length;
 
-      if (insertion.length > 0) {
-        content = content.replace(
-          websitePattern,
-          `${match[1]}${insertion.join('\n')}\n`
-        );
+      // Build insertion text
+      const indentation = '    ';
+      const insertionText = `\n${indentation}// OG Image\n${indentation}${fieldsToAdd.join(',\n' + indentation)},\n`;
 
-        // Write back to file
-        fs.writeFileSync(companyFile, content, 'utf-8');
-        console.log(`✅ ${item.name}: Added ${insertion.length} field(s)`);
-        updated++;
-      } else {
-        skipped++;
-      }
+      // Insert into content
+      const newContent =
+        content.slice(0, insertionIndex) +
+        insertionText +
+        content.slice(insertionIndex);
+
+      // Write back to file
+      fs.writeFileSync(companyFilePath, newContent, 'utf-8');
+
+      console.log(`✅ ${company.name}: Added ${fieldsToAdd.length} field(s)`);
+      updatedCount++;
+
     } catch (error) {
-      console.error(`❌ Error processing ${item.name}:`, error.message);
-      errors++;
+      console.error(`❌ ${company.name}: Error - ${error.message}`);
+      errorCount++;
     }
   }
 
-  console.log(`\n📊 Summary:`);
-  console.log(`  Updated: ${updated}`);
-  console.log(`  Skipped: ${skipped}`);
-  console.log(`  Errors: ${errors}`);
-
-  if (updated > 0) {
-    console.log(`\n✅ Successfully populated OG data for ${updated} companies`);
-    console.log(`Next step: git add . && git commit`);
-  }
+  console.log('\n' + '='.repeat(50));
+  console.log('📊 Summary:');
+  console.log(`   Updated: ${updatedCount}`);
+  console.log(`   Skipped: ${skippedCount}`);
+  console.log(`   Errors: ${errorCount}`);
+  console.log(`   Total: ${results.length}`);
+  console.log('='.repeat(50));
 }
 
 main().catch(console.error);

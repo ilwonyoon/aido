@@ -9,6 +9,9 @@ export const heirloom: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/heirloom-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

@@ -8,6 +8,9 @@ export const copyAi: Company = {
     headquarters: 'Remote',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/copy-ai-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

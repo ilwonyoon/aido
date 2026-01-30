@@ -8,6 +8,9 @@ export const dedalusLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/dedalus-labs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

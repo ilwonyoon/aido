@@ -8,6 +8,9 @@ export const wisprFlow: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/wispr-flow-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],

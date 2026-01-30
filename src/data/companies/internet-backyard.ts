@@ -9,6 +9,9 @@ export const internetBackyard: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/internet-backyard-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

@@ -9,6 +9,9 @@ export const delve: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/delve-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

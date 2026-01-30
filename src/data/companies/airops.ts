@@ -8,6 +8,9 @@ export const airops: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/airops-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval', 'automation'],

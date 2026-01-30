@@ -9,6 +9,9 @@ export const blacksmith: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/blacksmith-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
