@@ -654,6 +654,7 @@ Proceed with this topic? (or type a different topic)
 2. 리서치에서 수집한 데이터 포인트, 인사이트, 소스를 아티클에 자동 반영
 3. Data-Driven Analytical voice로 작성
 4. 회사 언급 시 `[Company Name](/company/id)` 형식 사용 → 자동으로 OG 이미지 스크린샷 카드로 렌더링
+   - 스크린샷 카드는 위 64px, 아래 24px 간격으로 이전 섹션과 분리되고 제목과 그룹핑됨
 
 ### 9.4 Writer Input: Deep Research Data
 

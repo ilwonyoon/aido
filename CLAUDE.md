@@ -63,6 +63,8 @@ All article content is wrapped in `.article-content` and rendered via `<Markdown
 
 **Spacing zones** (largest to smallest):
 - **Section boundary** (h2 top): 7rem — acts as visual section divider
+- **Company screenshot card** (top): 4rem (64px) — separates from previous section
+- **Company screenshot card** (bottom): 1.5rem (24px) — groups with heading below
 - **Sub-section break** (h3 top, hr): 2.5rem
 - **Group boundary** (h4 top): 2rem
 - **Content flow** (p→p, list→list): 1.333em
@@ -77,6 +79,7 @@ All article content is wrapped in `.article-content` and rendered via `<Markdown
 
 **Key rules**:
 - Proximity Principle: heading top:bottom ratio ≈ 5:1
+- Company screenshot cards: large top margin (64px) separates from previous section, small bottom margin (24px) groups with company heading
 - Adjacent headings tighten: `h2+h3`, `h3+h4`, `h3+p`, `h4+p` get reduced margin-top
 - Bold subtitle → list uses `:has()` for tight family bond spacing
 - First heading in article: margin-top suppressed to 0

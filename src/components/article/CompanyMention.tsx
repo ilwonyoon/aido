@@ -12,7 +12,7 @@ export function CompanyMention({ companyId, companyName }: CompanyMentionProps) 
   const imagePath = `/og-images/${companyId}-og.webp`;
 
   return (
-    <div className="my-6 not-prose">
+    <div className="mt-16 mb-6 not-prose">
       <Link
         href={`/company/${companyId}`}
         className="block group"

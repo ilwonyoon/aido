@@ -141,6 +141,9 @@ Calculate comparative stats:
 - Based on companyIds array
 - Validate all IDs exist in database
 - Image path is auto-resolved from `/og-images/[company-id]-og.webp`
+- **Spacing**: Screenshot cards have 64px (4rem) top margin and 24px (1.5rem) bottom margin
+  - Creates strong visual separation from previous section
+  - Groups screenshot tightly with its company heading below
 
 **Calculate Reading Time:**
 - Word count ÷ 200 words/minute
