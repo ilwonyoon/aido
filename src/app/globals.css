@@ -120,10 +120,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Prevent scroll when panel is open */
-html.panel-open,
-html.panel-open body {
-  overflow: hidden !important;
+/* Prevent scroll when panel is open — mobile only.
+   Desktop: left list keeps independent scroll via overflow-y-auto on main content. */
+@media (max-width: 767px) {
+  html.panel-open,
+  html.panel-open body {
+    overflow: hidden !important;
+  }
 }
 
 html.panel-open {
