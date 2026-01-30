@@ -653,8 +653,7 @@ Proceed with this topic? (or type a different topic)
 1. `/writer` 스킬이 딥 리서치 데이터를 input으로 받아 아티클 초안 작성
 2. 리서치에서 수집한 데이터 포인트, 인사이트, 소스를 아티클에 자동 반영
 3. Data-Driven Analytical voice로 작성
-4. 회사 언급 시 `[Company Name](/company/id)` 형식 사용 → 자동으로 OG 이미지 스크린샷 카드로 렌더링
-   - 스크린샷 카드는 위 64px, 아래 24px 간격으로 이전 섹션과 분리되고 제목과 그룹핑됨
+4. 회사 언급 시 `[Company Name](/company/id)` 형식 사용 → 자동으로 회사 로고 아이콘과 함께 렌더링
 
 ### 9.4 Writer Input: Deep Research Data
 
@@ -787,7 +786,7 @@ Options:
 | 표면적 분석 | Upside/Downside 데이터 기반 심층 분석 |
 | 일반적 디자이너 관점 | 특정 회사에 대한 구체적 디자이너 인사이트 |
 | 소스 3-5개 | 소스 10-20개 (리서치에서 수집) |
-| 회사 링크만 | 회사 OG 이미지 스크린샷 카드 자동 렌더링 |
+| 회사 링크만 | 회사 로고 아이콘과 함께 링크 렌더링 |
 
 ---
 

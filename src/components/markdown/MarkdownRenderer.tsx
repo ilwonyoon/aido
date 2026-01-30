@@ -2,7 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { CompanyMention } from '@/components/article/CompanyMention';
+import Image from 'next/image';
 
 interface MarkdownRendererProps {
   content: string;
@@ -24,16 +24,24 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - detect company links and render with screenshot
+        // Links - detect company links and render with logo
         a: ({ node, href, children, ...props }) => {
           // Check if this is a company link
           if (href && href.startsWith('/company/')) {
             const companyId = href.replace('/company/', '');
-            const companyName = typeof children === 'string' ? children :
-                               (Array.isArray(children) && typeof children[0] === 'string') ? children[0] :
-                               companyId;
 
-            return <CompanyMention companyId={companyId} companyName={companyName} />;
+            return (
+              <a href={href} className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline" {...props}>
+                <Image
+                  src={`/logos/${companyId}.png`}
+                  alt=""
+                  width={16}
+                  height={16}
+                  className="inline-block"
+                />
+                {children}
+              </a>
+            );
           }
 
           // Regular link

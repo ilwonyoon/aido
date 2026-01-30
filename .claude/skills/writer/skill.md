@@ -118,7 +118,7 @@ Calculate comparative stats:
   - Why they're winning (moat/differentiation)
   - Designer perspective (culture, team, roles)
   - Link to company page: [Company](/company/id)
-    → Automatically renders as screenshot card with OG image
+    → Automatically renders with company logo icon
 
 - For Comparison: Side-by-side analysis with data
 
@@ -134,16 +134,13 @@ Calculate comparative stats:
 - Link to /jobs for design roles
 ```
 
-**Auto-insert Company Links with Screenshots:**
+**Auto-insert Company Links with Logos:**
 - First mention of each company → `[Company Name](/company/id)`
-- This automatically renders as a screenshot card showing the company's OG image
-- The MarkdownRenderer detects `/company/` links and renders CompanyMention component
+- This automatically renders with a small company logo icon (16x16px) next to the name
+- The MarkdownRenderer detects `/company/` links and adds logo image
 - Based on companyIds array
 - Validate all IDs exist in database
-- Image path is auto-resolved from `/og-images/[company-id]-og.webp`
-- **Spacing**: Screenshot cards have 64px (4rem) top margin and 24px (1.5rem) bottom margin
-  - Creates strong visual separation from previous section
-  - Groups screenshot tightly with its company heading below
+- Logo path is auto-resolved from `/logos/[company-id].png`
 
 **Calculate Reading Time:**
 - Word count ÷ 200 words/minute
