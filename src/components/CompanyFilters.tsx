@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
@@ -370,14 +370,30 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
 
+  const checkMobile = useCallback(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  }, [checkMobile]);
 
   const effectiveViewMode = isMobile ? 'grid' : viewMode;
+
+  // Memoized event handlers
+  const handleSortChange = useCallback((v: string) => {
+    setSortBy(v as SortOption);
+  }, []);
+
+  const handleViewModeList = useCallback(() => {
+    setViewMode('list');
+  }, []);
+
+  const handleViewModeGrid = useCallback(() => {
+    setViewMode('grid');
+  }, []);
 
   // SF Bay Area cities to consolidate
   const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
@@ -772,7 +788,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                   { value: 'fundingStage', label: 'Funding Stage' },
                   { value: 'aiLevel', label: 'AI Level' },
                 ]}
-                onChange={(v) => setSortBy(v as SortOption)}
+                onChange={handleSortChange}
               />
             </div>
 
@@ -780,14 +796,14 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             {!isMobile && (
               <div className="flex items-center gap-1">
                 <button
-                  onClick={() => setViewMode('list')}
+                  onClick={handleViewModeList}
                   className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
                   aria-label="List view"
                 >
                   <ListIcon active={viewMode === 'list'} />
                 </button>
                 <button
-                  onClick={() => setViewMode('grid')}
+                  onClick={handleViewModeGrid}
                   className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
                   aria-label="Grid view"
                 >
