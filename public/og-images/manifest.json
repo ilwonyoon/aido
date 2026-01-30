@@ -1,23 +1,58 @@
 [
   {
-    "companyId": "abridge",
-    "name": "Abridge",
-    "website": "https://www.abridge.com",
-    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/abridge-og.webp",
-    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/abridge-screenshot.webp"
+    "companyId": "alloy",
+    "name": "Alloy",
+    "website": "https://www.alloy.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alloy-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alloy-screenshot.webp"
   },
   {
-    "companyId": "airloom",
-    "name": "Airloom",
-    "website": "https://www.airloom.energy",
-    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airloom-og.webp",
-    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airloom-screenshot.webp"
+    "companyId": "alphaxiv",
+    "name": "alphaXiv",
+    "website": "https://alphaxiv.org",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alphaxiv-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alphaxiv-screenshot.webp"
   },
   {
-    "companyId": "airops",
-    "name": "Airops",
-    "website": "https://www.airops.com",
-    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airops-og.webp",
-    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/airops-screenshot.webp"
+    "companyId": "ambience-healthcare",
+    "name": "Ambience Healthcare",
+    "website": "https://www.ambiencehealthcare.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ambience-healthcare-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ambience-healthcare-screenshot.webp"
+  },
+  {
+    "companyId": "ando",
+    "name": "Ando",
+    "website": "https://ando.so",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ando-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ando-screenshot.webp"
+  },
+  {
+    "companyId": "anrok",
+    "name": "Anrok",
+    "website": "https://www.anrok.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anrok-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anrok-screenshot.webp"
+  },
+  {
+    "companyId": "anthropic",
+    "name": "Anthropic",
+    "website": "https://anthropic.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anthropic-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anthropic-screenshot.webp"
+  },
+  {
+    "companyId": "anything-ai",
+    "name": "Anything AI",
+    "website": "https://createanything.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anything-ai-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anything-ai-screenshot.webp"
+  },
+  {
+    "companyId": "arcade-dev",
+    "name": "Arcade.dev",
+    "website": "https://www.arcade.dev/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/arcade-dev-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/arcade-dev-screenshot.webp"
   }
 ]

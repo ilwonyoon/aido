@@ -164,9 +164,55 @@ async function processCompany(company) {
 }
 
 /**
+ * Parse CLI arguments
+ */
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const options = {
+    start: 0,
+    end: null,
+    resume: false,
+    testMode: process.env.TEST_MODE === 'true',
+  };
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--start' && args[i + 1]) {
+      options.start = parseInt(args[i + 1], 10);
+      i++;
+    } else if (args[i] === '--end' && args[i + 1]) {
+      options.end = parseInt(args[i + 1], 10);
+      i++;
+    } else if (args[i] === '--resume') {
+      options.resume = true;
+    }
+  }
+
+  return options;
+}
+
+/**
+ * Load or initialize manifest
+ */
+function loadManifest(manifestPath) {
+  if (fs.existsSync(manifestPath)) {
+    return JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+  }
+  return [];
+}
+
+/**
+ * Save manifest incrementally
+ */
+function saveManifest(manifestPath, results) {
+  fs.writeFileSync(manifestPath, JSON.stringify(results, null, 2));
+}
+
+/**
  * Main execution
  */
 async function main() {
+  const options = parseArgs();
+
   console.log('🖼️  OG Image Fetcher & Optimizer\n');
   console.log(`Output directory: ${CONFIG.outputDir}`);
   console.log(`Image format: ${CONFIG.format}`);
@@ -181,28 +227,54 @@ async function main() {
   }
   let companies = JSON.parse(fs.readFileSync(companiesPath, 'utf-8'));
 
-  // Test mode: limit to first 3 companies if TEST_MODE env var is set
-  if (process.env.TEST_MODE === 'true') {
+  // Load existing manifest for resume mode
+  const manifestPath = path.join(CONFIG.outputDir, 'manifest.json');
+  let results = options.resume ? loadManifest(manifestPath) : [];
+  const processedIds = new Set(results.map(r => r.companyId));
+
+  // Apply range filter
+  if (options.testMode) {
     companies = companies.slice(0, 3);
     console.log(`⚠️  TEST MODE: Processing only ${companies.length} companies\n`);
+  } else {
+    const end = options.end || companies.length;
+    companies = companies.slice(options.start, end);
+    console.log(`📊 Range: ${options.start} to ${end}`);
+    console.log(`Found ${companies.length} companies to process\n`);
   }
 
-  console.log(`Found ${companies.length} companies to process\n`);
+  // Filter out already processed if resume mode
+  if (options.resume) {
+    const originalCount = companies.length;
+    companies = companies.filter(c => !processedIds.has(c.id));
+    console.log(`⏭️  Resume mode: Skipping ${originalCount - companies.length} already processed\n`);
+  }
 
-  const results = [];
   let processed = 0;
 
   for (const company of companies) {
-    const result = await processCompany(company);
-    results.push(result);
-    processed++;
+    try {
+      const result = await processCompany(company);
 
-    console.log(`Progress: ${processed}/${companies.length}`);
+      // Update or add result
+      const existingIndex = results.findIndex(r => r.companyId === company.id);
+      if (existingIndex >= 0) {
+        results[existingIndex] = result;
+      } else {
+        results.push(result);
+      }
+
+      processed++;
+
+      // Save manifest after each company (incremental save)
+      saveManifest(manifestPath, results);
+
+      console.log(`Progress: ${processed}/${companies.length}`);
+    } catch (error) {
+      console.error(`❌ Failed to process ${company.name}:`, error.message);
+      // Continue with next company
+    }
   }
-
-  // Save results manifest
-  const manifestPath = path.join(CONFIG.outputDir, 'manifest.json');
-  fs.writeFileSync(manifestPath, JSON.stringify(results, null, 2));
 
   console.log(`\n✅ Complete! Processed ${processed} companies`);
   console.log(`Manifest saved to: ${manifestPath}`);
@@ -212,8 +284,8 @@ async function main() {
   const withScreenshot = results.filter(r => r.screenshot).length;
 
   console.log(`\nSummary:`);
-  console.log(`  OG Images: ${withOG}/${companies.length}`);
-  console.log(`  Screenshots: ${withScreenshot}/${companies.length}`);
+  console.log(`  OG Images: ${withOG}/${results.length}`);
+  console.log(`  Screenshots: ${withScreenshot}/${results.length}`);
 }
 
 main().catch(console.error);
