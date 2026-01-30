@@ -7,21 +7,12 @@ import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyLogo } from './CompanyLogo';
-import { Badge } from '@/components/ui/Badge';
+import { Badge, AiLevelBadge } from '@/components/ui/Badge';
 
 const InterestToggle = dynamic(
   () => import('@/components/InterestToggle').then(mod => ({ default: mod.InterestToggle })),
   { ssr: false }
 );
-
-function AiLevelBadge({ level }: { level: AiLevel }) {
-  const config = getAiLevelConfig(level);
-  return (
-    <span className={`badge ${config.badgeClass}`}>
-      Level {level}: {config.label}
-    </span>
-  );
-}
 
 function WorkTypeSection({
   title,
