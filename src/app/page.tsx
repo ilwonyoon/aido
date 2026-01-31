@@ -83,9 +83,8 @@ function HomePageContent() {
 
   const handleCompanyClick = useCallback((companyId: string) => {
     // Save current scroll position before opening panel
-    if (mainContentRef.current) {
-      savedScrollPosition.current = window.scrollY;
-    }
+    // On desktop: div scroll, on mobile: window scroll
+    savedScrollPosition.current = window.scrollY;
 
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
@@ -96,6 +95,14 @@ function HomePageContent() {
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
+
+    // Preserve scroll position after React renders the new scroll container
+    requestAnimationFrame(() => {
+      if (mainContentRef.current) {
+        // On desktop, set div scrollTop; on mobile, it won't have scroll
+        mainContentRef.current.scrollTop = savedScrollPosition.current;
+      }
+    });
   }, []);
 
   const toggleFullWidth = useCallback(() => {
@@ -210,26 +217,22 @@ function HomePageContent() {
     );
   }
 
-  const handleBackgroundClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    // Close panel if clicking on non-interactive areas (not on company cards or buttons)
-    if (!selectedCompanyId) return;
-
-    const target = e.target as HTMLElement;
-    // Check if click is on a company card or any interactive element
-    const isInteractive = target.closest('[role="button"], button, a, input, select, textarea, .card');
-
-    if (!isInteractive) {
-      closePanel();
-    }
-  }, [selectedCompanyId, closePanel]);
 
   return (
     <div>
+      {/* Backdrop - Click to close panel (desktop only) */}
+      {selectedCompanyId && (
+        <div
+          className="hidden md:block fixed inset-0 z-[90]"
+          onClick={closePanel}
+          style={{ cursor: 'default' }}
+        />
+      )}
+
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
         className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
-        onClick={handleBackgroundClick}
       >
         {/* Header */}
         <div className="mb-6">
