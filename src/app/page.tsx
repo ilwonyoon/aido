@@ -81,6 +81,19 @@ function HomePageContent() {
     }, 300); // Match animation duration
   }, [selectedCompanyId]);
 
+  const handleBackgroundClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!selectedCompanyId) return;
+
+    const target = e.target as HTMLElement;
+    // If clicking on a card or inside a card, don't close (let the card's onClick handle it)
+    if (target.closest('.card')) {
+      return;
+    }
+
+    // Close panel when clicking on background/whitespace
+    closePanel();
+  }, [selectedCompanyId, closePanel]);
+
   const handleCompanyClick = useCallback((companyId: string) => {
     // Save current scroll position before opening panel
     // On desktop: div scroll, on mobile: window scroll
@@ -220,19 +233,11 @@ function HomePageContent() {
 
   return (
     <div>
-      {/* Backdrop - Click to close panel (desktop only) */}
-      {selectedCompanyId && (
-        <div
-          className="hidden md:block fixed inset-0 z-[90]"
-          onClick={closePanel}
-          style={{ cursor: 'default' }}
-        />
-      )}
-
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
         className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
+        onClick={handleBackgroundClick}
       >
         {/* Header */}
         <div className="mb-6">
