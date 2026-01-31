@@ -166,6 +166,14 @@ export default function AboutPage() {
           Browse All Companies
         </Link>
       </div>
+
+      {/* Credits */}
+      <div className="text-center text-xs text-[var(--muted)] pt-8 border-t border-[var(--border)]">
+        Logos provided by{' '}
+        <a href="https://logo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--foreground)]">
+          Logo.dev
+        </a>
+      </div>
     </div>
   );
 }
