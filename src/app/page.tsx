@@ -210,12 +210,26 @@ function HomePageContent() {
     );
   }
 
+  const handleBackgroundClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    // Close panel if clicking on non-interactive areas (not on company cards or buttons)
+    if (!selectedCompanyId) return;
+
+    const target = e.target as HTMLElement;
+    // Check if click is on a company card or any interactive element
+    const isInteractive = target.closest('[role="button"], button, a, input, select, textarea, .card');
+
+    if (!isInteractive) {
+      closePanel();
+    }
+  }, [selectedCompanyId, closePanel]);
+
   return (
     <div>
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
         className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
+        onClick={handleBackgroundClick}
       >
         {/* Header */}
         <div className="mb-6">
