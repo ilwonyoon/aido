@@ -7,6 +7,7 @@ import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARK
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
+import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/CompanyCardLayouts';
 
@@ -536,6 +537,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       status: newStatus ?? 'cleared',
       source: 'list_checkbox',
     });
+
+    void trackFirestoreEvent('tier_change', {
+      companyId,
+      status: newStatus ?? 'cleared',
+      source: 'list_checkbox',
+    }, user?.email);
   };
 
   // Filter companies

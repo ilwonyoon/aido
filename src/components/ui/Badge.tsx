@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAiLevelConfig, components, type AiLevel } from '@/design/tokens';
+import { getAiLevelConfig, components } from '@/design/tokens';
 
 export type BadgeVariant = keyof typeof components.badge.variants;
 

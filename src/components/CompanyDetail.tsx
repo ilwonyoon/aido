@@ -6,6 +6,8 @@ import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { trackFirestoreEvent } from '@/lib/firebase/events';
+import { useAuth } from '@/contexts/AuthContext';
 import { CompanyLogo } from './CompanyLogo';
 import { Badge, AiLevelBadge } from '@/components/ui/Badge';
 
@@ -51,10 +53,19 @@ const sections = [
 
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
+  const { user } = useAuth();
   const [activeSection, setActiveSection] = useState('quick-info');
   const [showMobileNav, setShowMobileNav] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
   const headerObserverRef = useRef<IntersectionObserver | null>(null);
+
+  // Track company detail view
+  useEffect(() => {
+    void trackFirestoreEvent('company_detail_view', {
+      companyId: company.id,
+      companyName: company.name,
+    }, user?.email);
+  }, [company.id, user?.email]);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(

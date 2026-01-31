@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
+import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { CompanyLogo } from './CompanyLogo';
 import { DesignFocus } from './DesignFocus';
 
@@ -50,6 +51,11 @@ export function CompanyListRow({
     if (onCompanyClick) {
       e.preventDefault();
       onCompanyClick(company.id);
+      void trackFirestoreEvent('company_click', {
+        companyId: company.id,
+        companyName: company.name,
+        source: 'list_row',
+      });
     }
   };
 
@@ -189,6 +195,11 @@ export function CompanyCard({
     if (onCompanyClick) {
       e.preventDefault();
       onCompanyClick(company.id);
+      void trackFirestoreEvent('company_click', {
+        companyId: company.id,
+        companyName: company.name,
+        source: 'card',
+      });
     }
   };
 

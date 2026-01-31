@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
@@ -10,6 +10,8 @@ import {
   getCountryDistribution,
   type DailyStats,
 } from '@/lib/firebase/visitors';
+import { getEventStats, type EventStats } from '@/lib/firebase/events';
+import { companies } from '@/data/companies';
 
 export default function AnalyticsPage() {
   const router = useRouter();
@@ -17,7 +19,17 @@ export default function AnalyticsPage() {
   const [activeVisitors, setActiveVisitors] = useState<number>(0);
   const [dailyStats, setDailyStats] = useState<DailyStats[]>([]);
   const [countries, setCountries] = useState<Record<string, number>>({});
+  const [eventStats, setEventStats] = useState<EventStats | null>(null);
   const [dataLoading, setDataLoading] = useState(true);
+
+  // Company name lookup
+  const companyNameMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    companies.forEach((c) => {
+      map[c.id] = c.name;
+    });
+    return map;
+  }, []);
 
   // Check admin access
   useEffect(() => {
@@ -40,15 +52,17 @@ export default function AnalyticsPage() {
         .toISOString()
         .split('T')[0];
 
-      const [count, stats, countryDist] = await Promise.all([
+      const [count, stats, countryDist, events] = await Promise.all([
         getActiveVisitorsCount(),
         getDailyStats(startDate, endDate),
         getCountryDistribution(),
+        getEventStats(startDate, endDate),
       ]);
 
       setActiveVisitors(count);
       setDailyStats(stats);
       setCountries(countryDist);
+      setEventStats(events);
       setDataLoading(false);
     };
 
@@ -68,7 +82,6 @@ export default function AnalyticsPage() {
   }
 
   // Calculate totals
-  // For unique visitors, count distinct sessions across all days (not sum of daily visitors)
   const allSessions = new Set<string>();
   dailyStats.forEach(day => {
     if (day.visitorSessions) {
@@ -84,11 +97,48 @@ export default function AnalyticsPage() {
     .sort(([, a], [, b]) => b - a)
     .slice(0, 10);
 
+  // Merge company clicks + detail views for ranking
+  const topCompanies = eventStats
+    ? Object.entries(eventStats.companyClicks)
+        .map(([id, clicks]) => ({
+          id,
+          name: companyNameMap[id] || id,
+          clicks,
+          detailViews: eventStats.companyDetailViews[id] || 0,
+          total: clicks + (eventStats.companyDetailViews[id] || 0),
+        }))
+        .sort((a, b) => b.total - a.total)
+        .slice(0, 15)
+    : [];
+
+  // Also include companies that only have detail views (no list clicks)
+  if (eventStats) {
+    for (const [id, views] of Object.entries(eventStats.companyDetailViews)) {
+      if (!eventStats.companyClicks[id] && views > 0) {
+        topCompanies.push({
+          id,
+          name: companyNameMap[id] || id,
+          clicks: 0,
+          detailViews: views,
+          total: views,
+        });
+      }
+    }
+    topCompanies.sort((a, b) => b.total - a.total);
+    topCompanies.splice(15);
+  }
+
+  // Article views sorted
+  const sortedArticles = eventStats
+    ? Object.entries(eventStats.articleViews)
+        .sort(([, a], [, b]) => b - a)
+    : [];
+
   return (
     <div className="max-w-6xl mx-auto">
       <div className="mb-8">
         <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
-          ← Back to companies
+          &larr; Back to companies
         </Link>
       </div>
 
@@ -146,6 +196,131 @@ export default function AnalyticsPage() {
               </div>
             </div>
           </section>
+
+          {/* Top Clicked Companies */}
+          {topCompanies.length > 0 && (
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Top Companies (30 days)</h2>
+              <div className="card overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="border-b border-[var(--border)]">
+                      <tr>
+                        <th className="text-left py-3 px-4 font-medium w-8">#</th>
+                        <th className="text-left py-3 px-4 font-medium">Company</th>
+                        <th className="text-right py-3 px-4 font-medium">List Clicks</th>
+                        <th className="text-right py-3 px-4 font-medium">Detail Views</th>
+                        <th className="text-right py-3 px-4 font-medium">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-[var(--muted)]">
+                      {topCompanies.map((company, idx) => (
+                        <tr key={company.id} className="border-b border-[var(--border)]">
+                          <td className="py-3 px-4 text-xs text-[var(--muted)]">{idx + 1}</td>
+                          <td className="py-3 px-4">
+                            <Link
+                              href={`/company/${company.id}`}
+                              className="text-[var(--foreground)] hover:text-[var(--accent-light)]"
+                            >
+                              {company.name}
+                            </Link>
+                          </td>
+                          <td className="py-3 px-4 text-right font-mono">{company.clicks}</td>
+                          <td className="py-3 px-4 text-right font-mono">{company.detailViews}</td>
+                          <td className="py-3 px-4 text-right font-mono font-medium text-[var(--foreground)]">
+                            {company.total}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Tier Status Activity */}
+          {eventStats && (
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Tier Activity (30 days)</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="card p-5">
+                  <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">
+                    Tier 0
+                  </div>
+                  <div className="text-3xl font-mono font-bold text-[var(--success)]">
+                    {eventStats.tierChanges.tier_0 || 0}
+                  </div>
+                </div>
+                <div className="card p-5">
+                  <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">
+                    Tier 1
+                  </div>
+                  <div className="text-3xl font-mono font-bold text-[var(--accent-light)]">
+                    {eventStats.tierChanges.tier_1 || 0}
+                  </div>
+                </div>
+                <div className="card p-5">
+                  <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">
+                    Not Interested
+                  </div>
+                  <div className="text-3xl font-mono font-bold text-[var(--warning)]">
+                    {eventStats.tierChanges.not_interested || 0}
+                  </div>
+                </div>
+                <div className="card p-5">
+                  <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">
+                    Cleared
+                  </div>
+                  <div className="text-3xl font-mono font-bold text-[var(--muted)]">
+                    {eventStats.tierChanges.cleared || 0}
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Article Views */}
+          {sortedArticles.length > 0 && (
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Article Views (30 days)</h2>
+              <div className="card p-6">
+                <div className="space-y-3">
+                  {sortedArticles.map(([slug, views], idx) => {
+                    const maxViews = sortedArticles[0][1];
+                    const percentage = (views / maxViews) * 100;
+
+                    return (
+                      <div key={slug}>
+                        <div className="flex items-center justify-between mb-1 text-sm">
+                          <div className="flex items-center gap-3 min-w-0">
+                            <span className="text-xs text-[var(--muted)] w-4 flex-shrink-0">
+                              #{idx + 1}
+                            </span>
+                            <Link
+                              href={`/insights/${slug}`}
+                              className="font-mono text-[var(--foreground)] hover:text-[var(--accent-light)] truncate"
+                            >
+                              {slug}
+                            </Link>
+                          </div>
+                          <span className="font-mono text-[var(--muted)] flex-shrink-0 ml-4">
+                            {views} views
+                          </span>
+                        </div>
+                        <div className="h-2 bg-[var(--border)] rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-[var(--accent)] transition-all"
+                            style={{ width: `${percentage}%` }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* Country Distribution */}
           <section>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { getUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
+import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { InterestStatus } from '@/data/types';
 
 function SyncIndicator({ isSyncing, lastSynced }: { isSyncing: boolean; lastSynced?: Date }) {
@@ -83,6 +84,11 @@ export function useInterestStatus(companyId: string) {
       company_id: companyId,
       status: newStatus ?? 'cleared',
     });
+
+    void trackFirestoreEvent('tier_change', {
+      companyId,
+      status: newStatus ?? 'cleared',
+    }, user?.email);
 
     setIsSyncing(false);
     setLastSynced(new Date());

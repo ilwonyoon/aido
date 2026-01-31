@@ -35,6 +35,11 @@ export interface DailyStats {
   topPages: { path: string; views: number }[];
   countries: Record<string, number>;
   visitorSessions?: string[]; // Session IDs for tracking unique visitors
+  // Event tracking fields (populated by events.ts)
+  companyClicks?: Record<string, number>;
+  companyDetailViews?: Record<string, number>;
+  tierChanges?: Record<string, number>;
+  articleViews?: Record<string, number>;
 }
 
 /**
