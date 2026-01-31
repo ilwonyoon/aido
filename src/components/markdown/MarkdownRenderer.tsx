@@ -31,13 +31,13 @@ export function MarkdownRenderer({
             const companyId = href.replace('/company/', '');
             const domain = getCompanyDomain(companyId);
 
-            if (domain) {
-              return (
-                <a
-                  href={href}
-                  className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline align-baseline"
-                  {...props}
-                >
+            return (
+              <a
+                href={href}
+                className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline align-baseline"
+                {...props}
+              >
+                {domain && (
                   <img
                     src={`https://www.google.com/s2/favicons?domain=${domain}&sz=16`}
                     alt=""
@@ -48,10 +48,10 @@ export function MarkdownRenderer({
                       e.currentTarget.style.display = 'none';
                     }}
                   />
-                  {children}
-                </a>
-              );
-            }
+                )}
+                {children}
+              </a>
+            );
           }
 
           // Regular link
