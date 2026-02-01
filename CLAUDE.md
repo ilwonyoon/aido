@@ -48,6 +48,45 @@
 - **Badge**: status + category indicator
 - **Button**: only for actions, not for navigation
 
+### Article Typography (`.article-content`)
+
+All article content is wrapped in `.article-content` and rendered via `<MarkdownRenderer>`. CSS cascade handles all styling — no inline styles or Tailwind classes on elements.
+
+**Spacing philosophy**: "Wide Open" — celebrate whitespace. Large gaps between peer sections for clear group separation. Tight coupling between heading and its owned content.
+
+**Heading hierarchy**:
+
+| Level | Size | Weight | margin-top | margin-bottom |
+|-------|------|--------|------------|---------------|
+| h1 | 2rem | 800 | 4rem | 0.75rem |
+| h2 | 1.75rem | 700 | 10rem | 1.25rem |
+| h3 | 1.375rem | 600 | 6rem | 0.875rem |
+| h4 | 1.125rem | 600 | 3.5rem | 0.625rem |
+
+**Spacing zones** (largest to smallest):
+- **Section boundary** (h2 top): 10rem — major visual section divider
+- **Sub-section break** (h3 top): 6rem — clear group separation
+- **Group boundary** (h4 top): 3.5rem
+- **Content flow** (p→p): 1.667em
+- **Heading proximity** (heading→content): 0.625–1.25rem
+- **Family bond** (bold subtitle→its list): 0.25rem
+
+**Adjacent heading pairs** (tighter coupling):
+- `h2+h3`: 1.25rem
+- `h3+h4`: 0.875rem
+- `h3+p` / `h4+p`: 0.875rem / 0.625rem
+
+**Color tiers**:
+- `--foreground`: headings, strong text
+- `--text-body`: paragraphs, table cells (82% opacity)
+- `--text-secondary`: lists (78% opacity)
+- `--muted`: blockquotes
+
+**Key rules**:
+- First heading in article: margin-top suppressed to 0
+- Bold subtitle → list uses `:has()` for tight family bond spacing (0.25rem)
+- `hr` is `display: none` — h2 10rem gap acts as section divider
+
 ## Code Style for UI
 
 - Always use CSS variables, never hardcoded colors

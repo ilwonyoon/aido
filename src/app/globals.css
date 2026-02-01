@@ -1,10 +1,12 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
 /* Dark theme (default) */
 :root {
   --background: #000000;
   --foreground: #ededed;
   --muted: #888888;
+  --muted-dim: #444444;
   --border: #333333;
   --accent: #0070f3;
   --accent-light: #3291ff;
@@ -15,6 +17,8 @@
   --error: #e00;
   --card: #111111;
   --card-hover: #1a1a1a;
+  --text-body: rgba(255, 255, 255, 0.82);
+  --text-secondary: rgba(255, 255, 255, 0.78);
 }
 
 /* Light theme */
@@ -22,6 +26,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --muted: #666666;
+  --muted-dim: #999999;
   --border: #e5e5e5;
   --accent: #0070f3;
   --accent-light: #0061d5;
@@ -32,6 +37,8 @@
   --error: #dc2626;
   --card: #fafafa;
   --card-hover: #f5f5f5;
+  --text-body: rgba(0, 0, 0, 0.82);
+  --text-secondary: rgba(0, 0, 0, 0.78);
 }
 
 /* System preference support */
@@ -40,6 +47,7 @@
     --background: #ffffff;
     --foreground: #171717;
     --muted: #666666;
+    --muted-dim: #999999;
     --border: #e5e5e5;
     --accent: #0070f3;
     --accent-light: #0061d5;
@@ -50,6 +58,8 @@
     --error: #dc2626;
     --card: #fafafa;
     --card-hover: #f5f5f5;
+    --text-body: rgba(0, 0, 0, 0.82);
+    --text-secondary: rgba(0, 0, 0, 0.78);
   }
 }
 
@@ -58,6 +68,7 @@
     --background: #000000;
     --foreground: #ededed;
     --muted: #888888;
+    --muted-dim: #444444;
     --border: #333333;
     --accent: #0070f3;
     --accent-light: #3291ff;
@@ -68,6 +79,8 @@
     --error: #e00;
     --card: #111111;
     --card-hover: #1a1a1a;
+    --text-body: rgba(255, 255, 255, 0.82);
+    --text-secondary: rgba(255, 255, 255, 0.78);
   }
 }
 
@@ -75,6 +88,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-muted-dim: var(--muted-dim);
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
@@ -85,6 +99,8 @@
   --color-error: var(--error);
   --color-card: var(--card);
   --color-card-hover: var(--card-hover);
+  --color-text-body: var(--text-body);
+  --color-text-secondary: var(--text-secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -105,13 +121,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Prevent scroll when panel is open */
-html.panel-open,
-html.panel-open body {
-  overflow: hidden !important;
-  height: 100% !important;
-  position: fixed !important;
-  width: 100% !important;
+/* Prevent scroll when panel is open — mobile only.
+   Desktop: left list keeps independent scroll via overflow-y-auto on main content. */
+@media (max-width: 767px) {
+  html.panel-open,
+  html.panel-open body {
+    overflow: hidden !important;
+  }
+}
+
+html.panel-open {
   -moz-osx-font-smoothing: grayscale;
   transition: background 0.2s ease, color 0.2s ease;
 }
@@ -153,6 +172,236 @@ a:hover {
 .card:hover {
   background: var(--card-hover);
   border-color: var(--muted);
+}
+
+/* Make card links fully clickable */
+a.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================================================================
+   Article Design System v2.0
+
+   Spacing philosophy: "Wide Open" — celebrate whitespace.
+   Large gaps between peer sections for clear group separation.
+   Tight coupling between heading and its owned content.
+
+   Spacing scale (rem, base unit 0.25rem at 17px):
+     0.25rem (4px)   micro      subtitle→list family bond
+     0.625rem(11px)  tight      h4→content proximity
+     0.875rem(15px)  small      h3 margin-bottom, h3+h4 adjacent
+     1.25rem (21px)  medium     h2 margin-bottom, h2+h3 adjacent
+     1.5rem  (26px)  indent     list padding, table cell
+     3.5rem  (60px)  group      h4 section gap
+     4rem    (68px)  page       h1 gap
+     6rem    (102px) section    h3 peer section gap
+     10rem   (170px) major      h2 section gap (acts as visual divider)
+   Exception: 1.667em for paragraph flow
+
+   Typography: h1(2rem/800) h2(1.75rem/700) h3(1.375rem/600) h4(1.125rem/600)
+   Colors: --foreground (headings) > --text-body (paragraphs) > --text-secondary (lists)
+   ================================================================ */
+
+/* --- Container --- */
+.article-content {
+  color: var(--foreground);
+  line-height: 1.778;
+}
+
+/* --- Headings ---
+   margin-top hierarchy: h2(10rem) > h3(6rem) > h1(4rem) > h4(3.5rem)
+   margin-bottom stays small → proximity to owned content */
+
+.article-content h1 {
+  color: var(--foreground);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-top: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-content h2 {
+  color: var(--foreground);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-top: 10rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-content h3 {
+  color: var(--foreground);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-top: 6rem;
+  margin-bottom: 0.875rem;
+}
+
+.article-content h4 {
+  color: var(--foreground);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  margin-top: 3.5rem;
+  margin-bottom: 0.625rem;
+}
+
+/* --- First heading: suppress top margin --- */
+.article-content > h1:first-child,
+.article-content > h2:first-child,
+.article-content > h3:first-child,
+.article-content > h4:first-child,
+.article-content > div > h1:first-child,
+.article-content > div > h2:first-child,
+.article-content > div > h3:first-child,
+.article-content > div > h4:first-child {
+  margin-top: 0;
+}
+
+/* --- Adjacent heading pairs: tighter coupling ---
+   When headings are consecutive, the child heading's margin-top
+   is reduced since the parent heading already provides separation. */
+.article-content h2 + h3 { margin-top: 1.25rem; }
+.article-content h3 + h4 { margin-top: 0.875rem; }
+.article-content h3 + p  { margin-top: 0.875rem; }
+.article-content h4 + p  { margin-top: 0.625rem; }
+
+/* --- Body text --- */
+.article-content p {
+  color: var(--text-body);
+  line-height: 1.778;
+  margin-top: 0;
+  margin-bottom: 1.667em;
+}
+
+/* --- Paragraph → List transitions ---
+   Paragraphs before lists get reduced margin-bottom.
+   Bold-leading subtitles (like **Revenue Model**:) before lists
+   get extra-tight "family bond" spacing. */
+.article-content p:has(+ ul),
+.article-content p:has(+ ol) {
+  margin-bottom: 0.5em;
+}
+
+.article-content p:has(> strong:first-child):has(+ ul),
+.article-content p:has(> strong:first-child):has(+ ol) {
+  margin-bottom: 0.25rem;
+}
+
+/* --- Strong & emphasis --- */
+.article-content strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.article-content em {
+  font-style: italic;
+}
+
+/* --- Lists --- */
+.article-content ul,
+.article-content ol {
+  color: var(--text-secondary);
+  margin-top: 0;
+  margin-bottom: 1.333em;
+  padding-left: 1.5rem;
+}
+
+.article-content ul { list-style-type: disc; }
+.article-content ol { list-style-type: decimal; }
+
+.article-content li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.778;
+  padding-left: 0.25rem;
+  display: list-item;
+}
+
+.article-content li > p {
+  margin-bottom: 0.5em;
+}
+
+/* --- Blockquote --- */
+.article-content blockquote {
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+  padding-left: 1.25rem;
+  margin: 2rem 0;
+}
+
+/* --- Horizontal rule --- hidden; h2 10rem gap acts as section divider */
+.article-content hr {
+  display: none;
+}
+
+/* --- Links --- */
+.article-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.article-content a:hover {
+  color: var(--accent-light);
+}
+
+/* --- Code --- */
+.article-content code {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.875em;
+  background: var(--card);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.article-content pre {
+  background: linear-gradient(135deg, rgba(0, 112, 243, 0.05) 0%, rgba(80, 227, 194, 0.05) 100%);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.article-content pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+}
+
+/* --- Tables --- */
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.article-content th {
+  color: var(--foreground);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.article-content td {
+  color: var(--text-body);
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
 }
 
 /* Badge styles */
@@ -234,6 +483,15 @@ a:hover {
   }
 }
 
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -243,12 +501,46 @@ a:hover {
   }
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .animate-slideInRight {
   animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.animate-slideOutRight {
+  animation: slideOutRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Toast animation */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-toastIn {
+  animation: toastIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Hide scrollbar but maintain scroll functionality */
