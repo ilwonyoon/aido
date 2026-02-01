@@ -10,7 +10,7 @@ import {
   where,
   orderBy,
 } from 'firebase/firestore';
-import { db } from './config';
+import { getFirebaseDb } from './lazy-config';
 import type { Company } from '@/data/types';
 
 const COMPANIES_COLLECTION = 'companies';
@@ -19,6 +19,7 @@ const COMPANIES_COLLECTION = 'companies';
  * Get all companies from Firestore
  */
 export async function getCompaniesFromFirestore(): Promise<Company[]> {
+  const db = await getFirebaseDb();
   const companiesRef = collection(db, COMPANIES_COLLECTION);
   const q = query(companiesRef, orderBy('name'));
   const snapshot = await getDocs(q);
@@ -33,6 +34,7 @@ export async function getCompaniesFromFirestore(): Promise<Company[]> {
  * Get a single company by ID
  */
 export async function getCompanyFromFirestore(id: string): Promise<Company | null> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, COMPANIES_COLLECTION, id);
   const snapshot = await getDoc(docRef);
 
@@ -50,6 +52,7 @@ export async function getCompanyFromFirestore(id: string): Promise<Company | nul
  * Add or update a company
  */
 export async function setCompanyInFirestore(company: Company): Promise<void> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, COMPANIES_COLLECTION, company.id);
   await setDoc(docRef, company);
 }
@@ -61,6 +64,7 @@ export async function updateCompanyInFirestore(
   id: string,
   data: Partial<Company>
 ): Promise<void> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, COMPANIES_COLLECTION, id);
   await updateDoc(docRef, data);
 }
@@ -69,6 +73,7 @@ export async function updateCompanyInFirestore(
  * Delete a company
  */
 export async function deleteCompanyFromFirestore(id: string): Promise<void> {
+  const db = await getFirebaseDb();
   const docRef = doc(db, COMPANIES_COLLECTION, id);
   await deleteDoc(docRef);
 }
@@ -77,6 +82,7 @@ export async function deleteCompanyFromFirestore(id: string): Promise<void> {
  * Get companies by AI native level
  */
 export async function getCompaniesByAiLevel(level: 'A' | 'B' | 'C' | 'D'): Promise<Company[]> {
+  const db = await getFirebaseDb();
   const companiesRef = collection(db, COMPANIES_COLLECTION);
   const q = query(companiesRef, where('aiNativeLevel', '==', level));
   const snapshot = await getDocs(q);

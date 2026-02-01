@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { companies, getCompanyById } from '@/data/companies';
 import { CompanyDetail } from '@/components/CompanyDetail';
+import { aiLevels } from '@/design/tokens';
 
 export function generateStaticParams() {
   return companies.map((company) => ({
@@ -25,16 +26,15 @@ export async function generateMetadata({
   }
 
   const jobCount = company.openRoles.length;
-  const aiLevelLabels = {
-    A: 'AI-Native',
-    B: 'AI-Core',
-    C: 'AI Feature',
-    D: 'AI-Assisted',
-  };
+  const levelConfig = aiLevels[company.aiNativeLevel];
+
+  const ogImageUrl = company.ogImage
+    ? `https://aido-d2cc0.web.app${company.ogImage}`
+    : `https://logo.clearbit.com/${new URL(company.website).hostname}`;
 
   return {
     title: `${company.name} Product Designer Jobs`,
-    description: `${jobCount} open product design role${jobCount === 1 ? '' : 's'} at ${company.name}. ${company.description} Level ${company.aiNativeLevel} ${aiLevelLabels[company.aiNativeLevel]} company.`,
+    description: `${jobCount} open product design role${jobCount === 1 ? '' : 's'} at ${company.name}. ${company.description} Level ${company.aiNativeLevel} ${levelConfig.label} company.`,
     keywords: [
       `${company.name} product designer`,
       `${company.name} design jobs`,
@@ -48,6 +48,20 @@ export async function generateMetadata({
       url: `https://aido-d2cc0.web.app/company/${company.id}`,
       siteName: 'AIDO',
       type: 'website',
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${company.name} preview`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${company.name} Product Designer Jobs`,
+      description: company.description,
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: `https://aido-d2cc0.web.app/company/${company.id}`,

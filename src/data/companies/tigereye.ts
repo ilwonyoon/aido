@@ -9,6 +9,9 @@ export const tigereye: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/tigereye-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['data-analysis'],

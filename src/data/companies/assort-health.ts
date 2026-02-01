@@ -8,6 +8,9 @@ export const assortHealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/assort-health-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

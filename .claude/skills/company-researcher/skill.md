@@ -431,9 +431,76 @@ userProblems: [
 
 ---
 
-### Phase 6: Designer Links & Open Roles
+### Phase 6: Visual Assets Collection (OG Images & Screenshots)
 
-#### 6.1 Designer Links
+#### 6.1 Automatic Image Collection
+
+**CRITICAL**: OG 이미지는 company 데이터의 필수 부분입니다. Company 파일 생성 후 반드시 자동으로 수집하세요.
+
+**실행 방법:**
+
+Company TypeScript 파일을 생성한 직후, 다음 스크립트를 **반드시** 실행:
+
+```bash
+node scripts/fetch-og-single.mjs <company-id> <company-website>
+```
+
+**예시:**
+```bash
+# Anthropic 회사 추가 후
+node scripts/fetch-og-single.mjs anthropic https://anthropic.com
+
+# Cursor 회사 추가 후
+node scripts/fetch-og-single.mjs cursor https://cursor.sh
+```
+
+**스크립트가 자동으로 수행하는 작업:**
+1. Microlink API로 OG image URL 추출 (무료, API 키 불필요)
+2. 이미지 다운로드 및 최적화:
+   - 최대 너비: 1440px
+   - WebP 포맷, 90% 품질
+   - 저장 위치: `/public/og-images/{company-id}-og.webp`
+3. Company 파일에 `ogImage` 필드 자동 추가:
+   ```typescript
+   {
+     ogImage: '/og-images/{company-id}-og.webp',
+   }
+   ```
+
+**워크플로우:**
+```bash
+# 1. Company 파일 생성
+cat > src/data/companies/new-company.ts << 'EOF'
+export const newCompany: Company = {
+  id: 'new-company',
+  name: 'New Company',
+  website: 'https://newcompany.com',
+  // ... 나머지 필드
+};
+EOF
+
+# 2. OG 이미지 자동 수집 (필수!)
+node scripts/fetch-og-single.mjs new-company https://newcompany.com
+
+# 3. 확인
+# - public/og-images/new-company-og.webp 생성됨 ✓
+# - src/data/companies/new-company.ts에 ogImage 필드 추가됨 ✓
+```
+
+**실패 시 대응:**
+- OG 이미지가 없으면 스크립트가 경고 표시
+- 이미지가 없어도 company 파일은 유효함 (fallback UI 있음)
+- 나중에 다시 실행 가능
+
+**주의사항:**
+- ⚠️ Company 파일에 `remote` 필드가 반드시 있어야 함 (insertion point)
+- ⚠️ 스크립트는 이미 `ogImage` 필드가 있으면 skip함
+
+---
+
+### Phase 7: Designer Links & Open Roles
+
+#### 7.1 Designer Links
 ```typescript
 designerLinks: [
   {
@@ -454,7 +521,7 @@ designerLinks: [
 
 ---
 
-#### 6.2 Open Roles
+#### 7.2 Open Roles
 **이미 `/job-scraper`에서 수집 완료**
 
 Job scraper 결과를 그대로 사용:
@@ -466,7 +533,7 @@ openRoles: [
 
 ---
 
-### Phase 7: Culture Insights
+### Phase 8: Culture Insights
 
 #### 7.1 Culture Sources
 ```typescript
@@ -490,7 +557,7 @@ cultureInsights: [
 
 ---
 
-### Phase 8: Tracking & Meta
+### Phase 9: Tracking & Meta
 
 #### 8.1 Personal Tracking
 ```typescript

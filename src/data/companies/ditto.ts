@@ -9,6 +9,9 @@ export const ditto: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/ditto-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

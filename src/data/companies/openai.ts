@@ -8,6 +8,9 @@ export const openai: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/openai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'image-generation', 'search-retrieval'],

@@ -9,6 +9,9 @@ export const trmLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/trm-labs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

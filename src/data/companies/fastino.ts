@@ -8,6 +8,9 @@ export const fastino: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/fastino-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'automation'],

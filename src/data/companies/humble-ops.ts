@@ -9,6 +9,9 @@ export const humbleOps: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/humble-ops-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

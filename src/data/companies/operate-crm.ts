@@ -9,6 +9,9 @@ export const operateCrm: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/operate-crm-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

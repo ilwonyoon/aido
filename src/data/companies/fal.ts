@@ -9,6 +9,9 @@ export const fal: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/fal-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],

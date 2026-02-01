@@ -9,6 +9,9 @@ export const odyssey: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/odyssey-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

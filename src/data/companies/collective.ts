@@ -9,6 +9,9 @@ export const collective: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/collective-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

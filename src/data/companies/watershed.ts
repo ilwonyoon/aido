@@ -9,6 +9,9 @@ export const watershed: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/watershed-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

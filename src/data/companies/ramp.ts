@@ -10,6 +10,9 @@ export const ramp: Company = {
     headquarters: 'New York, NY',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/ramp-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

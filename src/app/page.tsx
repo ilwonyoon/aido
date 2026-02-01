@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, memo, Suspense } from 'react';
+import { flushSync } from 'react-dom';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
@@ -26,8 +27,12 @@ function HomePageContent() {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
   const [showCompanyNameInHeader, setShowCompanyNameInHeader] = useState(false);
   const [isFullWidth, setIsFullWidth] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
+  const savedScrollPosition = useRef<number>(0);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -54,12 +59,40 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    window.history.pushState({}, '', '/');
-    setSelectedCompanyId(null);
-    setIsFullWidth(false);
-  }, []);
+    const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
+
+    // Save CURRENT scroll position from the scrollable div (desktop) or window (mobile)
+    const currentScroll = mainContentRef.current?.scrollTop || window.scrollY;
+
+    // Force synchronous state update to ensure animation class is applied
+    flushSync(() => {
+      setClosingCompany(currentCompany);
+      setIsClosing(true);
+    });
+
+    setTimeout(() => {
+      window.history.pushState({}, '', '/');
+      setSelectedCompanyId(null);
+      setIsFullWidth(false);
+      setIsClosing(false);
+      setClosingCompany(null);
+
+      // Restore scroll position after panel closes and className changes
+      requestAnimationFrame(() => {
+        window.scrollTo(0, currentScroll);
+      });
+    }, 300); // Match animation duration
+  }, [selectedCompanyId]);
+
 
   const handleCompanyClick = useCallback((companyId: string) => {
+    const isOpeningPanel = !selectedCompanyId;
+
+    // Only save scroll position when OPENING panel (not when switching companies)
+    if (isOpeningPanel) {
+      savedScrollPosition.current = window.scrollY;
+    }
+
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
     setSelectedCompanyId(companyId);
@@ -69,11 +102,40 @@ function HomePageContent() {
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
-  }, []);
+
+    // Only restore scroll position when OPENING panel (not when switching)
+    if (isOpeningPanel) {
+      requestAnimationFrame(() => {
+        if (mainContentRef.current) {
+          // On desktop, set div scrollTop; on mobile, it won't have scroll
+          mainContentRef.current.scrollTop = savedScrollPosition.current;
+        }
+      });
+    }
+  }, [selectedCompanyId]);
 
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);
   }, []);
+
+  const handleShare = useCallback(async () => {
+    if (!selectedCompanyId) return;
+    const url = `${window.location.origin}/company/${selectedCompanyId}`;
+
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      const input = document.createElement('input');
+      input.value = url;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+  }, [selectedCompanyId]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -164,19 +226,27 @@ function HomePageContent() {
     );
   }
 
+
   return (
     <div>
-      {/* Main Content - Disable when panel is open */}
+      {/* Backdrop - Click outside company list to close panel (desktop only) */}
+      {selectedCompanyId && (
+        <div
+          className="hidden md:block fixed inset-0 z-[1]"
+          onClick={closePanel}
+        />
+      )}
+
+      {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'pointer-events-none select-none' : ''}
-        style={selectedCompanyId ? { filter: 'blur(0px)' } : undefined}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
       >
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-2xl font-semibold mb-2">AI design opportunities for Product Design</h1>
-          <p className="text-[var(--muted)] text-sm">
-            Collecting various information about user problems, companies, and opportunities in the AI-native space
+          <h1 className="text-2xl font-semibold mb-2">Where to Design AI</h1>
+          <p className="text-[var(--muted)] text-sm leading-relaxed">
+            AI-native companies with research-backed notes on why to join, and why not.
           </p>
         </div>
 
@@ -187,7 +257,11 @@ function HomePageContent() {
       </div>
 
       {/* Side Panel - Overlay on top */}
-      {selectedCompanyId && selectedCompany && (
+      {(selectedCompanyId || isClosing) && (closingCompany || selectedCompany) && (() => {
+        const displayCompany = closingCompany || selectedCompany;
+        if (!displayCompany) return null;
+
+        return (
         <div
           ref={panelRef}
           className={`
@@ -196,14 +270,17 @@ function HomePageContent() {
             ${isFullWidth ? 'w-full' : 'w-full md:w-[60%] lg:w-1/2'}
             bg-[var(--background)]
             border-l border-[var(--border)]
-            z-50
+            z-[100]
             overflow-y-auto
-            animate-slideInRight
-            transition-all duration-300
+            ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
           `}
+          style={{
+            overscrollBehavior: 'contain',
+            transition: isClosing ? 'none' : 'width 0.3s ease'
+          }}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-10 h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
@@ -239,17 +316,36 @@ function HomePageContent() {
               <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
                 showCompanyNameInHeader ? 'opacity-100' : 'opacity-0'
               }`}>
-                {selectedCompany.name}
+                {displayCompany.name}
               </h2>
+            </div>
+            <div className="relative">
+              <button
+                onClick={handleShare}
+                className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
+                title="Share company page"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+              </button>
+              {showCopied && (
+                <div className="absolute right-0 top-full mt-2 px-3 py-2 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap shadow-lg animate-toastIn">
+                  🔗 Link copied to your clipboard!
+                </div>
+              )}
             </div>
           </div>
 
           {/* Company Detail Content */}
           <div className="pt-4 px-4 sm:px-6 pb-6 panel-view">
-            <CompanyDetail company={selectedCompany} />
+            <CompanyDetail company={displayCompany} />
           </div>
         </div>
-      )}
+        );
+      })()}
     </div>
   );
 }

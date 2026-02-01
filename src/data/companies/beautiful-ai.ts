@@ -8,6 +8,9 @@ export const beautifulAi: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/beautiful-ai-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

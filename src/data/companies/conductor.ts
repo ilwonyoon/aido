@@ -9,6 +9,9 @@ export const conductor: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/conductor-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'automation'],

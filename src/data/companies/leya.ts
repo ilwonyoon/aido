@@ -8,6 +8,9 @@ export const leya: Company = {
     headquarters: 'Stockholm, Sweden',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/leya-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'search-retrieval'],

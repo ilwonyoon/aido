@@ -8,6 +8,9 @@ export const legendXyz: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/legend-xyz-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

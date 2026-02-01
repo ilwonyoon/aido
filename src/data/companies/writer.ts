@@ -8,6 +8,9 @@ export const writer: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/writer-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'automation'],
   markets: ['b2b', 'enterprise'],

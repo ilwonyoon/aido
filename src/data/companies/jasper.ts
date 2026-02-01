@@ -8,6 +8,9 @@ export const jasper: Company = {
     headquarters: 'Austin, TX',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/jasper-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

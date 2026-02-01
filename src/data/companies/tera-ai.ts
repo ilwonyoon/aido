@@ -8,6 +8,9 @@ export const teraAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/tera-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

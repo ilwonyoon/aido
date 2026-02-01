@@ -8,6 +8,9 @@ export const orionSleep: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/orion-sleep-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

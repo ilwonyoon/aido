@@ -10,6 +10,9 @@ export const hebbia: Company = {
     headquarters: 'New York, NY',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/hebbia-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'search-retrieval'],

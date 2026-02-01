@@ -8,6 +8,9 @@ export const welltheory: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/welltheory-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2c'],

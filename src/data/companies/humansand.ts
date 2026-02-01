@@ -8,6 +8,9 @@ export const humansand: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/humansand-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "abridge",
+    "name": "Abridge",
+    "website": "https://www.abridge.com"
+  },
+  {
+    "id": "airloom",
+    "name": "Airloom",
+    "website": "https://www.airloom.energy"
+  },
+  {
+    "id": "airops",
+    "name": "Airops",
+    "website": "https://www.airops.com"
+  },
+  {
+    "id": "alloy",
+    "name": "Alloy",
+    "website": "https://www.alloy.com/"
+  },
+  {
+    "id": "alphaxiv",
+    "name": "alphaXiv",
+    "website": "https://alphaxiv.org"
+  },
+  {
+    "id": "ambience-healthcare",
+    "name": "Ambience Healthcare",
+    "website": "https://www.ambiencehealthcare.com"
+  },
+  {
+    "id": "ando",
+    "name": "Ando",
+    "website": "https://ando.so"
+  },
+  {
+    "id": "anrok",
+    "name": "Anrok",
+    "website": "https://www.anrok.com/"
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "website": "https://anthropic.com"
+  },
+  {
+    "id": "anything-ai",
+    "name": "Anything AI",
+    "website": "https://createanything.com/"
+  },
+  {
+    "id": "arcade-dev",
+    "name": "Arcade.dev",
+    "website": "https://www.arcade.dev/"
+  },
+  {
+    "id": "artie",
+    "name": "Artie",
+    "website": "https://www.artie.com/"
+  },
+  {
+    "id": "assort-health",
+    "name": "Assort Health",
+    "website": "https://assorthealth.com"
+  },
+  {
+    "id": "axiom-math",
+    "name": "Axiom (Math)",
+    "website": "https://axiommath.ai"
+  },
+  {
+    "id": "base44",
+    "name": "Base44",
+    "website": "https://base44.com"
+  },
+  {
+    "id": "baseten",
+    "name": "Baseten",
+    "website": "https://www.baseten.co/"
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "website": "https://www.beautiful.ai"
+  },
+  {
+    "id": "bindwell",
+    "name": "Bindwell",
+    "website": "https://bindwell.ai/"
+  },
+  {
+    "id": "blacksmith",
+    "name": "Blacksmith",
+    "website": "https://www.blacksmith.sh/"
+  },
+  {
+    "id": "blaze-ai",
+    "name": "Blaze AI",
+    "website": "https://www.withblaze.app"
+  },
+  {
+    "id": "blossom",
+    "name": "Blossom Health",
+    "website": "https://www.joinblossomhealth.com"
+  },
+  {
+    "id": "brex",
+    "name": "Brex",
+    "website": "https://www.brex.com"
+  },
+  {
+    "id": "buildforever",
+    "name": "BuildForever",
+    "website": "https://buildforever.com"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "website": "https://www.canva.com"
+  },
+  {
+    "id": "casca",
+    "name": "Casca",
+    "website": "https://www.cascading.ai/"
+  },
+  {
+    "id": "chai-discovery",
+    "name": "Chai Discovery",
+    "website": "https://www.chaidiscovery.com/"
+  },
+  {
+    "id": "character-ai",
+    "name": "Character.AI",
+    "website": "https://character.ai"
+  },
+  {
+    "id": "chroma",
+    "name": "Chroma",
+    "website": "https://www.trychroma.com"
+  },
+  {
+    "id": "clerk",
+    "name": "Clerk",
+    "website": "https://clerk.com"
+  },
+  {
+    "id": "clickhouse",
+    "name": "ClickHouse",
+    "website": "https://clickhouse.com/"
+  },
+  {
+    "id": "cocoon",
+    "name": "Cocoon",
+    "website": "https://cocoon.com"
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium (now Windsurf)",
+    "website": "https://codeium.com"
+  },
+  {
+    "id": "cogent-security",
+    "name": "Cogent Security",
+    "website": "https://www.cogent.security"
+  },
+  {
+    "id": "cognition",
+    "name": "Cognition",
+    "website": "https://cognition.ai"
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "website": "https://cohere.com"
+  },
+  {
+    "id": "collective",
+    "name": "Collective",
+    "website": "https://www.collective.com/"
+  },
+  {
+    "id": "composite",
+    "name": "Composite",
+    "website": "https://www.composite.ai/"
+  },
+  {
+    "id": "conductor",
+    "name": "Conductor",
+    "website": "https://www.conductor.build/"
+  },
+  {
+    "id": "console",
+    "name": "Console",
+    "website": "https://console.co"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "website": "https://www.copy.ai"
+  },
+  {
+    "id": "corgi",
+    "name": "Corgi",
+    "website": "https://www.corgi.insure/"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "website": "https://cursor.com"
+  },
+  {
+    "id": "dedalus-labs",
+    "name": "Dedalus Labs",
+    "website": "https://dedaluslabs.ai"
+  },
+  {
+    "id": "deepgram",
+    "name": "Deepgram",
+    "website": "https://deepgram.com"
+  },
+  {
+    "id": "delve",
+    "name": "Delve",
+    "website": "https://delve.co/"
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "website": "https://www.descript.com"
+  },
+  {
+    "id": "dev-agents",
+    "name": "Dev Agents",
+    "website": "https://sdsa.ai/"
+  },
+  {
+    "id": "ditto-live",
+    "name": "Ditto Live",
+    "website": "https://www.ditto.com/"
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto",
+    "website": "https://www.ditto.live/"
+  },
+  {
+    "id": "doppel",
+    "name": "Doppel",
+    "website": "https://www.doppel.com"
+  },
+  {
+    "id": "doss",
+    "name": "Doss",
+    "website": "https://www.doss.com/"
+  },
+  {
+    "id": "edison-scientific",
+    "name": "Edison Scientific",
+    "website": "https://edisonscientific.com/"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "website": "https://elevenlabs.io"
+  },
+  {
+    "id": "eventual",
+    "name": "Eventual",
+    "website": "https://www.eventual.ai"
+  },
+  {
+    "id": "exa",
+    "name": "Exa",
+    "website": "https://exa.ai"
+  },
+  {
+    "id": "extropic",
+    "name": "Extropic",
+    "website": "https://extropic.ai"
+  },
+  {
+    "id": "factory",
+    "name": "Factory",
+    "website": "https://factory.ai"
+  },
+  {
+    "id": "fal",
+    "name": "fal",
+    "website": "https://fal.ai/"
+  },
+  {
+    "id": "fastino",
+    "name": "Fastino",
+    "website": "https://fastino.ai"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "website": "https://figma.com"
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "website": "https://www.firecrawl.dev/"
+  },
+  {
+    "id": "flint",
+    "name": "Flint",
+    "website": "https://www.tryflint.com/"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "website": "https://gamma.app"
+  },
+  {
+    "id": "gc-ai",
+    "name": "GC AI",
+    "website": "https://gc.ai/"
+  },
+  {
+    "id": "gigaml",
+    "name": "GigaML",
+    "website": "https://giga.ai"
+  },
+  {
+    "id": "gigs",
+    "name": "Gigs",
+    "website": "https://gigs.com"
+  },
+  {
+    "id": "glean",
+    "name": "Glean",
+    "website": "https://www.glean.com"
+  },
+  {
+    "id": "glide",
+    "name": "Glide",
+    "website": "https://www.glideapps.com/"
+  },
+  {
+    "id": "gong",
+    "name": "Gong",
+    "website": "https://gong.io"
+  },
+  {
+    "id": "goodfire",
+    "name": "Goodfire",
+    "website": "https://www.goodfire.ai/"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "website": "https://www.grammarly.com"
+  },
+  {
+    "id": "granola",
+    "name": "Granola",
+    "website": "https://granola.ai"
+  },
+  {
+    "id": "happyrobot",
+    "name": "Happyrobot",
+    "website": "https://www.happyrobot.ai/"
+  },
+  {
+    "id": "harmonic",
+    "name": "Harmonic",
+    "website": "https://harmonic.fun"
+  },
+  {
+    "id": "harvey",
+    "name": "Harvey",
+    "website": "https://harvey.ai"
+  },
+  {
+    "id": "hebbia",
+    "name": "Hebbia",
+    "website": "https://www.hebbia.ai"
+  },
+  {
+    "id": "heirloom",
+    "name": "Heirloom",
+    "website": "https://www.heirloomcarbon.com/"
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "website": "https://heygen.com"
+  },
+  {
+    "id": "higgsfield",
+    "name": "Higgsfield",
+    "website": "https://higgsfield.ai"
+  },
+  {
+    "id": "highscore",
+    "name": "Highscore",
+    "website": "https://highscore.com"
+  },
+  {
+    "id": "hightouch",
+    "name": "Hightouch",
+    "website": "https://hightouch.com/"
+  },
+  {
+    "id": "humansand",
+    "name": "Humans&",
+    "website": "https://humansand.ai"
+  },
+  {
+    "id": "humble-ops",
+    "name": "Humble Ops",
+    "website": "https://humbleops.ai/"
+  },
+  {
+    "id": "hume-ai",
+    "name": "Hume AI",
+    "website": "https://www.hume.ai"
+  },
+  {
+    "id": "hummingbird",
+    "name": "Hummingbird",
+    "website": "https://www.hummingbird.co/"
+  },
+  {
+    "id": "index",
+    "name": "Index",
+    "website": "https://index.com/"
+  },
+  {
+    "id": "inferact",
+    "name": "Inferact",
+    "website": "https://inferact.ai"
+  },
+  {
+    "id": "inngest",
+    "name": "Inngest",
+    "website": "https://www.inngest.com/"
+  },
+  {
+    "id": "intercom-fin",
+    "name": "Intercom (Fin)",
+    "website": "https://www.intercom.com"
+  },
+  {
+    "id": "internet-backyard",
+    "name": "Internet Backyard",
+    "website": "https://internetbackyard.com/"
+  },
+  {
+    "id": "item-app",
+    "name": "Item App",
+    "website": "https://item.app/"
+  },
+  {
+    "id": "item",
+    "name": "Item",
+    "website": "https://www.item.app/"
+  },
+  {
+    "id": "ivo",
+    "name": "Ivo",
+    "website": "https://www.ivo.ai"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "website": "https://jasper.ai"
+  },
+  {
+    "id": "layer-financial",
+    "name": "Layer Financial",
+    "website": "https://www.layerfi.com/"
+  },
+  {
+    "id": "legend-xyz",
+    "name": "Legend.xyz",
+    "website": "https://legend.xyz"
+  },
+  {
+    "id": "letta",
+    "name": "Letta",
+    "website": "https://www.letta.com"
+  },
+  {
+    "id": "leya",
+    "name": "Leya",
+    "website": "https://leya.law"
+  },
+  {
+    "id": "lgnd",
+    "name": "LGND",
+    "website": "https://www.lgnd.com/"
+  },
+  {
+    "id": "lightfield",
+    "name": "Lightfield",
+    "website": "https://lightfield.app"
+  },
+  {
+    "id": "lightpage",
+    "name": "Lightpage",
+    "website": "https://lightpage.com/"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "website": "https://linear.app"
+  },
+  {
+    "id": "listen-labs",
+    "name": "Listen Labs",
+    "website": "https://listenlabs.ai"
+  },
+  {
+    "id": "livekit",
+    "name": "LiveKit",
+    "website": "https://livekit.io/"
+  },
+  {
+    "id": "llmarena",
+    "name": "LLMArena",
+    "website": "https://lmarena.ai"
+  },
+  {
+    "id": "loonen",
+    "name": "Loonen",
+    "website": "https://loonen.com/"
+  },
+  {
+    "id": "loop",
+    "name": "Loop",
+    "website": "https://loop.com/"
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "website": "https://lovable.dev"
+  },
+  {
+    "id": "macroscope",
+    "name": "Macroscope",
+    "website": "https://macroscope.com/"
+  },
+  {
+    "id": "magic-patterns",
+    "name": "Magic Patterns",
+    "website": "https://magicpatterns.com"
+  },
+  {
+    "id": "medra",
+    "name": "Medra",
+    "website": "https://www.medra.ai/"
+  },
+  {
+    "id": "mem0",
+    "name": "Mem0",
+    "website": "https://mem0.ai"
+  },
+  {
+    "id": "mercor",
+    "name": "Mercor",
+    "website": "https://mercor.com"
+  },
+  {
+    "id": "metronome",
+    "name": "Metronome",
+    "website": "https://metronome.com/"
+  },
+  {
+    "id": "micro1",
+    "name": "Micro1",
+    "website": "https://micro1.ai/"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "website": "https://www.midjourney.com/"
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "website": "https://mistral.ai"
+  },
+  {
+    "id": "miter",
+    "name": "Miter",
+    "website": "https://miter.co"
+  },
+  {
+    "id": "momentic",
+    "name": "Momentic",
+    "website": "https://www.momentic.ai/"
+  },
+  {
+    "id": "motif",
+    "name": "Motif",
+    "website": "https://www.motif.io/"
+  },
+  {
+    "id": "mutiny",
+    "name": "Mutiny",
+    "website": "https://www.mutinyhq.com/"
+  },
+  {
+    "id": "mytra",
+    "name": "Mytra",
+    "website": "https://mytra.ai/"
+  },
+  {
+    "id": "netic",
+    "name": "Netic",
+    "website": "https://netic.ai"
+  },
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "website": "https://nexus.xyz/"
+  },
+  {
+    "id": "nokken",
+    "name": "Nokken",
+    "website": "https://the-nokken.com/"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "website": "https://notion.so"
+  },
+  {
+    "id": "numeral",
+    "name": "Numeral",
+    "website": "https://www.numeralhq.com"
+  },
+  {
+    "id": "numeric",
+    "name": "Numeric",
+    "website": "https://www.numeric.io"
+  },
+  {
+    "id": "nuraline",
+    "name": "Nuraline",
+    "website": "https://www.nuraline.ai/"
+  },
+  {
+    "id": "odyssey",
+    "name": "Odyssey",
+    "website": "https://odyssey.ml/"
+  },
+  {
+    "id": "onton",
+    "name": "Onton",
+    "website": "https://www.onton.com/"
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "website": "https://openai.com"
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "website": "https://openrouter.ai/"
+  },
+  {
+    "id": "operate-crm",
+    "name": "Operate CRM",
+    "website": "https://operate.so/"
+  },
+  {
+    "id": "orion-sleep",
+    "name": "Orion Sleep",
+    "website": "https://www.orionsleep.com"
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "website": "https://otter.ai"
+  },
+  {
+    "id": "overlap-ai",
+    "name": "Overlap",
+    "website": "https://overlap.ai/"
+  },
+  {
+    "id": "pacific-fusion",
+    "name": "Pacific Fusion",
+    "website": "https://pacificfusion.com/"
+  },
+  {
+    "id": "pallet",
+    "name": "Pallet",
+    "website": "https://pallet.com"
+  },
+  {
+    "id": "parahelp",
+    "name": "Parahelp",
+    "website": "https://parahelp.com"
+  },
+  {
+    "id": "perle-ai",
+    "name": "Perle AI",
+    "website": "https://perle.ai/"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "website": "https://perplexity.ai"
+  },
+  {
+    "id": "physical-intelligence",
+    "name": "Physical Intelligence",
+    "website": "https://www.physicalintelligence.company/"
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "website": "https://pika.art"
+  },
+  {
+    "id": "quanta",
+    "name": "Quanta",
+    "website": "https://quanta.com/"
+  },
+  {
+    "id": "quo",
+    "name": "Quo",
+    "website": "https://quo.com"
+  },
+  {
+    "id": "railway",
+    "name": "Railway",
+    "website": "https://railway.com/"
+  },
+  {
+    "id": "raindrop-ai",
+    "name": "Raindrop AI",
+    "website": "https://www.raindrop.ai/"
+  },
+  {
+    "id": "ramp",
+    "name": "Ramp",
+    "website": "https://ramp.com"
+  },
+  {
+    "id": "red-queen-bio",
+    "name": "Red Queen Bio",
+    "website": "https://www.redqueen.bio/"
+  },
+  {
+    "id": "reevo",
+    "name": "Reevo",
+    "website": "https://reevo.ai/"
+  },
+  {
+    "id": "remofirst",
+    "name": "RemoFirst",
+    "website": "https://remofirst.com/"
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "website": "https://replit.com"
+  },
+  {
+    "id": "resolve-ai",
+    "name": "Resolve AI",
+    "website": "https://resolve.ai"
+  },
+  {
+    "id": "response",
+    "name": "Response",
+    "website": "https://tryresponse.com/"
+  },
+  {
+    "id": "rox",
+    "name": "Rox",
+    "website": "https://rox.com/"
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "website": "https://runwayml.com/"
+  },
+  {
+    "id": "safetykit",
+    "name": "SafetyKit",
+    "website": "https://www.safetykit.com"
+  },
+  {
+    "id": "sauron-systems",
+    "name": "Sauron Systems",
+    "website": "https://www.sauron.systems/"
+  },
+  {
+    "id": "scale-ai",
+    "name": "Scale AI",
+    "website": "https://scale.com"
+  },
+  {
+    "id": "scribe",
+    "name": "Scribe",
+    "website": "https://scribehow.com"
+  },
+  {
+    "id": "serval",
+    "name": "Serval",
+    "website": "https://www.serval.com/"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "website": "https://www.shopify.com"
+  },
+  {
+    "id": "shortwave",
+    "name": "Shortwave",
+    "website": "https://www.shortwave.com"
+  },
+  {
+    "id": "sierra",
+    "name": "Sierra",
+    "website": "https://www.sierra.ai/"
+  },
+  {
+    "id": "solidroad",
+    "name": "Solidroad",
+    "website": "https://solidroad.com/"
+  },
+  {
+    "id": "sonatic",
+    "name": "Sonatic",
+    "website": "https://www.sonatic.ai/"
+  },
+  {
+    "id": "sourcegraph",
+    "name": "Sourcegraph",
+    "website": "https://sourcegraph.com"
+  },
+  {
+    "id": "span",
+    "name": "Span",
+    "website": "https://span.app"
+  },
+  {
+    "id": "sphere",
+    "name": "Sphere",
+    "website": "https://getsphere.com"
+  },
+  {
+    "id": "spiral-db",
+    "name": "SpiralDB",
+    "website": "https://www.spiraldb.com/"
+  },
+  {
+    "id": "stability-ai",
+    "name": "Stability AI",
+    "website": "https://stability.ai/"
+  },
+  {
+    "id": "subtle-computing",
+    "name": "Subtle Computing",
+    "website": "https://www.subtle.co"
+  },
+  {
+    "id": "subtrate",
+    "name": "Subtrate",
+    "website": "https://subtrate.com/"
+  },
+  {
+    "id": "suger",
+    "name": "Suger",
+    "website": "https://www.suger.io/"
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "website": "https://suno.com"
+  },
+  {
+    "id": "superhuman",
+    "name": "Superhuman",
+    "website": "https://superhuman.com"
+  },
+  {
+    "id": "surge-ai",
+    "name": "Surge AI",
+    "website": "https://surgehq.ai"
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "website": "https://www.tabnine.com"
+  },
+  {
+    "id": "tailor",
+    "name": "Tailor",
+    "website": "https://www.tailor.tech/"
+  },
+  {
+    "id": "tavus",
+    "name": "Tavus",
+    "website": "https://tavus.io"
+  },
+  {
+    "id": "tera-ai",
+    "name": "Tera AI",
+    "website": "https://tera-ai.com"
+  },
+  {
+    "id": "terradot",
+    "name": "Terradot",
+    "website": "https://terradot.earth/"
+  },
+  {
+    "id": "tigereye",
+    "name": "TigerEye",
+    "website": "https://tigereye.com/"
+  },
+  {
+    "id": "toma",
+    "name": "Toma",
+    "website": "https://www.toma.com"
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "website": "https://tome.app"
+  },
+  {
+    "id": "town",
+    "name": "Town",
+    "website": "https://town.com/"
+  },
+  {
+    "id": "trm-labs",
+    "name": "TRM Labs",
+    "website": "https://www.trmlabs.com/"
+  },
+  {
+    "id": "truemed",
+    "name": "Truemed",
+    "website": "https://www.truemed.com/"
+  },
+  {
+    "id": "truffle-security",
+    "name": "Truffle Security",
+    "website": "https://trufflesecurity.com/"
+  },
+  {
+    "id": "222",
+    "name": "222",
+    "website": "https://222.place/"
+  },
+  {
+    "id": "typeface",
+    "name": "Typeface",
+    "website": "https://typeface.ai"
+  },
+  {
+    "id": "unlimited-industries",
+    "name": "Unlimited Industries",
+    "website": "https://unlimitedindustries.com/"
+  },
+  {
+    "id": "vapi",
+    "name": "Vapi",
+    "website": "https://vapi.ai/"
+  },
+  {
+    "id": "variant",
+    "name": "Variant",
+    "website": "https://variant.ai/"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "website": "https://vercel.com"
+  },
+  {
+    "id": "wabi",
+    "name": "Wabi",
+    "website": "https://wabi.ai"
+  },
+  {
+    "id": "watershed",
+    "name": "Watershed",
+    "website": "https://www.watershed.com/"
+  },
+  {
+    "id": "welltheory",
+    "name": "WellTheory",
+    "website": "https://www.welltheory.com"
+  },
+  {
+    "id": "wispr-flow",
+    "name": "Wispr Flow",
+    "website": "https://www.wispr.ai"
+  },
+  {
+    "id": "wonder",
+    "name": "Wonder",
+    "website": "https://wonder.so"
+  },
+  {
+    "id": "world-labs",
+    "name": "World Labs",
+    "website": "https://worldlabs.ai"
+  },
+  {
+    "id": "writer",
+    "name": "Writer",
+    "website": "https://writer.com"
+  },
+  {
+    "id": "xai",
+    "name": "xAI",
+    "website": "https://x.ai"
+  },
+  {
+    "id": "yutori",
+    "name": "Yutori",
+    "website": "https://yutori.com"
+  }
+]

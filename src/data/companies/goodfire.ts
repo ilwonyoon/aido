@@ -9,6 +9,9 @@ export const goodfire: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/goodfire-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

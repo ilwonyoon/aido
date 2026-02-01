@@ -9,6 +9,9 @@ export const item: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/item-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

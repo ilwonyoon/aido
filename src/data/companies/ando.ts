@@ -8,6 +8,9 @@ export const ando: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/ando-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

@@ -8,6 +8,9 @@ export const cocoon: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/cocoon-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

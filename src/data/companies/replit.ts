@@ -8,6 +8,9 @@ export const replit: Company = {
     headquarters: 'Foster City, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/replit-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

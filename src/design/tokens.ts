@@ -14,6 +14,7 @@ export const colors = {
   background: 'var(--background)',
   foreground: 'var(--foreground)',
   muted: 'var(--muted)',
+  mutedDim: 'var(--muted-dim)',
   border: 'var(--border)',
 
   // Accent colors
@@ -325,21 +326,25 @@ export const aiLevels = {
     label: 'AI-Native',
     color: colors.success,
     badgeClass: 'badge-success',
+    textClass: 'text-[var(--success)]',
   },
   B: {
     label: 'AI-Core',
     color: colors.accentLight,
     badgeClass: 'badge-accent',
+    textClass: 'text-[var(--accent-light)]',
   },
   C: {
     label: 'AI Feature',
     color: colors.foreground,
     badgeClass: 'badge',
+    textClass: 'text-[var(--foreground)]',
   },
   D: {
     label: 'AI-Assisted',
     color: colors.muted,
     badgeClass: 'badge',
+    textClass: 'text-[var(--muted)]',
   },
 } as const;
 

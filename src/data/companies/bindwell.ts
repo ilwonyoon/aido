@@ -9,6 +9,9 @@ export const bindwell: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/bindwell-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'code-assistant'],

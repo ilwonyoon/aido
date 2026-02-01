@@ -8,6 +8,9 @@ export const anthropic: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/anthropic-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

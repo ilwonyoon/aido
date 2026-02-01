@@ -8,6 +8,9 @@ export const tome: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/tome-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],

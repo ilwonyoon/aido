@@ -10,6 +10,9 @@ export const sourcegraph: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/sourcegraph-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'search-retrieval'],

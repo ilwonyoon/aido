@@ -8,6 +8,9 @@ export const doppel: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/doppel-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

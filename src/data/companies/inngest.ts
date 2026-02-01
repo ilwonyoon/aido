@@ -9,6 +9,9 @@ export const inngest: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/inngest-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],

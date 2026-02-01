@@ -9,6 +9,9 @@ export const hummingbird: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/hummingbird-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

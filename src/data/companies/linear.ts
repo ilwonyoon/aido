@@ -8,6 +8,9 @@ export const linear: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/linear-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

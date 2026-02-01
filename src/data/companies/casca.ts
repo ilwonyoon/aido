@@ -9,6 +9,9 @@ export const casca: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/casca-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'automation'],

@@ -8,6 +8,9 @@ export const ambienceHealthcare: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/ambience-healthcare-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'text-assistant', 'automation'],

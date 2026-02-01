@@ -9,6 +9,9 @@ export const anrok: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/anrok-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

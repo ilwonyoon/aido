@@ -15,21 +15,29 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  console.log('[AuthProvider] Initializing...');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    console.log('[AuthProvider] useEffect running');
-    const unsubscribe = onAuthChange((user) => {
-      console.log('[AuthProvider] Auth state changed:', { hasUser: !!user, email: user?.email });
-      setUser(user);
-      setLoading(false);
-    });
+    let unsubscribe: (() => void) | null = null;
+
+    // Delay Firebase initialization to not block initial page load
+    const initAuth = async () => {
+      unsubscribe = await onAuthChange((user) => {
+        setUser(user);
+        setLoading(false);
+      });
+    };
+
+    // Defer auth check to after initial render
+    const timer = setTimeout(() => {
+      void initAuth();
+    }, 100);
 
     return () => {
-      console.log('[AuthProvider] Cleaning up');
-      unsubscribe();
+      clearTimeout(timer);
+      if (unsubscribe) {
+        unsubscribe();
+      }
     };
   }, []);
 

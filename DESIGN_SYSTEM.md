@@ -28,6 +28,7 @@ import { colors, spacing, typography, components } from '@/design/tokens';
 - `background` - Main background color
 - `foreground` - Main text color
 - `muted` - Secondary text, less prominent
+- `mutedDim` - Dimmed text, inactive navigation (dark: #555, light: #999)
 - `border` - Border color for dividers and outlines
 
 **Accent Colors:**
@@ -216,6 +217,46 @@ Or using Tailwind directly:
 </div>
 ```
 
+### Navigation Link
+
+Navigation links with active state indicator. Active = foreground + font-medium, inactive = muted.
+
+**Desktop Pattern:**
+```tsx
+<Link
+  href="/path"
+  className={
+    isActive('/path')
+      ? 'text-[var(--foreground)] font-medium'
+      : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+  }
+>
+  Link Label
+</Link>
+```
+
+**Mobile Pattern (left border):**
+```tsx
+<Link
+  href="/path"
+  className={`block py-3 px-4 rounded-lg ${
+    isActive('/path')
+      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+  }`}
+>
+  Link Label
+</Link>
+```
+
+**Active state helper:**
+```typescript
+const isActive = (path: string) => {
+  if (path === '/') return pathname === '/';
+  return pathname.startsWith(path);
+};
+```
+
 ## Layout Patterns
 
 ### Page Container
@@ -264,19 +305,48 @@ Company list uses a side panel pattern:
 
 Each AI level has specific color coding:
 
-| Level | Label | Color | Usage |
-|-------|-------|-------|-------|
-| A | AI-Native | Success (teal) | Highest emphasis |
-| B | AI-Core | Accent (blue) | Medium-high emphasis |
-| C | AI Feature | Foreground (gray) | Neutral |
-| D | AI-Assisted | Muted (light gray) | Low emphasis |
+| Level | Label | Color | Badge Class | Text Class |
+|-------|-------|-------|-------------|------------|
+| A | AI-Native | Success (teal) | `badge-success` | `text-[var(--success)]` |
+| B | AI-Core | Accent (blue) | `badge-accent` | `text-[var(--accent-light)]` |
+| C | AI Feature | Foreground (gray) | `badge` | `text-[var(--foreground)]` |
+| D | AI-Assisted | Muted (light gray) | `badge` | `text-[var(--muted)]` |
 
 **Helper function:**
 ```typescript
-import { getAiLevelConfig } from '@/design/tokens';
+import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 
+// Get full configuration for an AI level
 const config = getAiLevelConfig('A');
-// { label: 'AI-Native', color: 'var(--success)', badgeClass: 'badge-success' }
+// Returns: { label: 'AI-Native', color: 'var(--success)', badgeClass: 'badge-success', textClass: 'text-[var(--success)]' }
+
+// Use in components
+function AiLevelBadge({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
+  return (
+    <span className={`badge ${config.badgeClass}`}>
+      Level {level}: {config.label}
+    </span>
+  );
+}
+
+// For text-only display
+function AiLevelText({ level }: { level: AiLevel }) {
+  const config = getAiLevelConfig(level);
+  return (
+    <span className={`text-sm ${config.textClass}`}>
+      Level {level} {config.label}
+    </span>
+  );
+}
+```
+
+**Direct access to all levels:**
+```typescript
+import { aiLevels } from '@/design/tokens';
+
+// Access specific level config
+const levelA = aiLevels.A; // { label, color, badgeClass, textClass }
 ```
 
 ## Responsive Design
@@ -469,4 +539,4 @@ import { typography, spacing, colors } from '@/design/tokens';
 ---
 
 **Last Updated:** 2026-01-28
-**Version:** 1.0.0
+**Version:** 1.1.0 - AI Level tokens fully integrated

@@ -9,6 +9,9 @@ export const perleAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/perle-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

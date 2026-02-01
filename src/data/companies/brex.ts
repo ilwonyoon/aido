@@ -8,6 +8,9 @@ export const brex: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/brex-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

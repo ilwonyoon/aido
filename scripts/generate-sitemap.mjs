@@ -5,21 +5,51 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Read companies data
+// Read companies data - extract IDs from companies array
 const companiesIndexPath = path.join(__dirname, '../src/data/companies/index.ts');
 const indexContent = fs.readFileSync(companiesIndexPath, 'utf-8');
 
-// Extract company IDs from export statement
-const exportMatch = indexContent.match(/export \{ (.+) \}/);
-if (!exportMatch) {
-  console.error('Could not find company exports');
+// Extract company variable names from the companies array
+// The array looks like: export const companies: Company[] = [ anthropic, leya, ... ];
+const arrayMatch = indexContent.match(/export const companies[^[]*\[([\s\S]*?)\];/);
+if (!arrayMatch) {
+  console.error('Could not find companies array');
   process.exit(1);
 }
 
-const companyIds = exportMatch[1]
+// Parse company variable names from the array
+const companyVars = arrayMatch[1]
   .split(',')
-  .map(id => id.trim())
-  .filter(id => id && !id.startsWith('get')); // Filter out utility functions
+  .map(v => v.trim())
+  .filter(v => v && !v.startsWith('//'));
+
+// Convert camelCase variable names to kebab-case IDs
+// (e.g., physicalIntelligence -> physical-intelligence)
+const companyIds = companyVars.map(varName => {
+  return varName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+});
+
+// Read articles data
+const articlesIndexPath = path.join(__dirname, '../src/data/articles/index.ts');
+let articleSlugs = [];
+try {
+  const articlesContent = fs.readFileSync(articlesIndexPath, 'utf-8');
+  // Extract article slugs from the content files
+  // Look for slug: 'article-slug' patterns in imported files
+  const contentDir = path.join(__dirname, '../src/data/articles/content');
+  if (fs.existsSync(contentDir)) {
+    const contentFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.ts'));
+    contentFiles.forEach(file => {
+      const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+      const slugMatch = content.match(/slug:\s*['"]([^'"]+)['"]/);
+      if (slugMatch) {
+        articleSlugs.push(slugMatch[1]);
+      }
+    });
+  }
+} catch (error) {
+  console.log('No articles found yet');
+}
 
 const baseUrl = 'https://aido-d2cc0.web.app';
 const today = new Date().toISOString().split('T')[0];
@@ -38,6 +68,12 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/insights</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>${baseUrl}/ai-levels</loc>
@@ -61,6 +97,16 @@ ${companyIds
   </url>`
   )
   .join('\n')}
+${articleSlugs
+  .map(
+    (slug) => `  <url>
+    <loc>${baseUrl}/insights/${slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`
+  )
+  .join('\n')}
 </urlset>
 `;
 
@@ -71,4 +117,5 @@ if (!fs.existsSync(publicDir)) {
 }
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap);
-console.log(`✓ Generated sitemap with ${companyIds.length + 4} URLs`);
+const totalUrls = 5 + companyIds.length + articleSlugs.length; // 5 static pages + companies + articles
+console.log(`✓ Generated sitemap with ${totalUrls} URLs (${companyIds.length} companies, ${articleSlugs.length} articles)`);

@@ -9,6 +9,9 @@ export const sierra: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/sierra-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

@@ -8,6 +8,9 @@ export const netic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/netic-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

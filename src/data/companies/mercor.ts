@@ -8,6 +8,9 @@ export const mercor: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/mercor-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

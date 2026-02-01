@@ -8,6 +8,9 @@ export const deepgram: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/deepgram-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'code-assistant'],

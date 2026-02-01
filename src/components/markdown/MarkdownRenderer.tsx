@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { getCompanyDomain } from '@/utils/companyDomains';
 
 interface MarkdownRendererProps {
   content: string;
@@ -23,8 +24,39 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - let CSS handle styling
-        a: ({ node, ...props }) => <a {...props} />,
+        // Links - detect company links and render with favicon
+        a: ({ node, href, children, ...props }) => {
+          // Check if this is a company link
+          if (href && href.startsWith('/company/')) {
+            const companyId = href.replace('/company/', '');
+            const domain = getCompanyDomain(companyId);
+
+            return (
+              <a
+                href={href}
+                className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline align-baseline"
+                {...props}
+              >
+                {domain && (
+                  <img
+                    src={`https://www.google.com/s2/favicons?domain=${domain}&sz=16`}
+                    alt=""
+                    width={16}
+                    height={16}
+                    className="inline-block flex-shrink-0"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                )}
+                {children}
+              </a>
+            );
+          }
+
+          // Regular link
+          return <a href={href} {...props}>{children}</a>;
+        },
 
         // Lists - Proximity Principle: CLOSE to heading, FAR from next section
         ul: ({ node, ...props }) => (

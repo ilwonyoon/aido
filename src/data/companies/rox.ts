@@ -9,6 +9,9 @@ export const rox: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/rox-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

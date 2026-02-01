@@ -9,6 +9,9 @@ export const micro1: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/micro1-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

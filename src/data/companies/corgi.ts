@@ -9,6 +9,9 @@ export const corgi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/corgi-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

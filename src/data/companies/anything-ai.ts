@@ -9,6 +9,9 @@ export const anythingAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/anything-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

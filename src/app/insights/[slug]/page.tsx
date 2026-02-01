@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleBySlug, getRelatedArticles } from '@/data/articles';
 import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
 import { ArticleVisualizations } from './ArticleVisualizations';
-import { ArticleViewTracker } from '@/components/ArticleViewTracker';
 import Link from 'next/link';
 
 export function generateStaticParams() {
@@ -80,7 +79,6 @@ export default async function ArticlePage({
 
   return (
     <article className="max-w-3xl mx-auto">
-      <ArticleViewTracker slug={article.slug} title={article.title} />
       {/* Article Schema (JSON-LD) */}
       <script
         type="application/ld+json"

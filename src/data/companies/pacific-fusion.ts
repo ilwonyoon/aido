@@ -9,6 +9,9 @@ export const pacificFusion: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/pacific-fusion-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

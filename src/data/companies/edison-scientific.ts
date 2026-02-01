@@ -9,6 +9,9 @@ export const edisonScientific: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/edison-scientific-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

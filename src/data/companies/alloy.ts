@@ -9,6 +9,9 @@ export const alloy: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/alloy-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

@@ -9,6 +9,9 @@ export const yutori: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/yutori-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],
