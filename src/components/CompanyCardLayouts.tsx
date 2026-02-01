@@ -49,6 +49,7 @@ export function CompanyListRow({
   const handleClick = (e: React.MouseEvent) => {
     if (onCompanyClick) {
       e.preventDefault();
+      e.stopPropagation();
       onCompanyClick(company.id);
     }
   };
@@ -188,6 +189,7 @@ export function CompanyCard({
   const handleClick = (e: React.MouseEvent) => {
     if (onCompanyClick) {
       e.preventDefault();
+      e.stopPropagation();
       onCompanyClick(company.id);
     }
   };

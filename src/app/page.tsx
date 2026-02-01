@@ -84,13 +84,8 @@ function HomePageContent() {
   const handleBackgroundClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!selectedCompanyId) return;
 
-    const target = e.target as HTMLElement;
-    // If clicking on a card or inside a card, don't close (let the card's onClick handle it)
-    if (target.closest('.card')) {
-      return;
-    }
-
-    // Close panel when clicking on background/whitespace
+    // Only close if clicking directly on the background (not on cards or their children)
+    // Cards now stopPropagation, so this only fires for whitespace clicks
     closePanel();
   }, [selectedCompanyId, closePanel]);
 
