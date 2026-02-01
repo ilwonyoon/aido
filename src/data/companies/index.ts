@@ -115,7 +115,30 @@ import { chroma } from './chroma';
 import { legendXyz } from './legend-xyz';
 import { wabi } from './wabi';
 import { welltheory } from './welltheory';
+import { thinkingMachinesLab } from './thinking-machines-lab';
+import { impulseLabs } from './impulse-labs';
+import { decart } from './decart';
+import { lettuce } from './lettuce';
+import { sanity } from './sanity';
+import { relace } from './relace';
+import { speakeasy } from './speakeasy';
+import { mosey } from './mosey';
+import { brainfish } from './brainfish';
+import { poolside } from './poolside';
+import { catalyxSpace } from './catalyx-space';
+import { appliedCompute } from './applied-compute';
+import { vizcom } from './vizcom';
+import { cartesia } from './cartesia';
+import { generationLab } from './generation-lab';
+import { tensormesh } from './tensormesh';
+import { unstructured } from './unstructured';
+import { alexAi } from './alex-ai';
+import { contra } from './contra';
 import { livekit } from './livekit';
+import { mandolin } from './mandolin';
+import { furtherAi } from './further-ai';
+import { senecaSystems } from './seneca-systems';
+import { rivo } from './rivo';
 import { railway } from './railway';
 import { baseten } from './baseten';
 import { artie } from './artie';
@@ -183,6 +206,16 @@ import { metronome } from './metronome';
 import { doss } from './doss';
 import { devAgents } from './dev-agents';
 import { indexCompany } from './index-company';
+import { infisical } from './infisical';
+import { natural } from './natural';
+import { claritycare } from './claritycare';
+import { agora } from './agora';
+import { nooks } from './nooks';
+import { sesameAi } from './sesame-ai';
+import { langchain } from './langchain';
+import { replicate } from './replicate';
+import { tempo } from './tempo';
+import { comulate } from './comulate';
 import { reevo } from './reevo';
 import { clickhouse } from './clickhouse';
 import { bindwell } from './bindwell';
@@ -205,6 +238,41 @@ import { subtrate } from './subtrate';
 import { sierra } from './sierra';
 import { tailor } from './tailor';
 import { physicalIntelligence } from './physical-intelligence';
+import { pulley } from './pulley';
+import { lighthouse } from './lighthouse';
+import { osmosis } from './osmosis';
+import { zedDev } from './zed-dev';
+import { warmer } from './warmer';
+import { campfire } from './campfire';
+import { causalLabs } from './causal-labs';
+import { trunk } from './trunk';
+import { sentientLabs } from './sentient-labs';
+import { inferenceNet } from './inference-net';
+import { flowEngineering } from './flow-engineering';
+import { reducto } from './reducto';
+import { mintlify } from './mintlify';
+import { zeroentropy } from './zeroentropy';
+import { found } from './found';
+import { owner } from './owner';
+import { clockwise } from './clockwise';
+import { mainstay } from './mainstay';
+import { anara } from './anara';
+import { kernel } from './kernel';
+import { mastra } from './mastra';
+import { datacurve } from './datacurve';
+import { davidAi } from './david-ai';
+import { unify } from './unify';
+import { seso } from './seso';
+import { supermemory } from './supermemory';
+import { convokeBio } from './convoke-bio';
+import { paper } from './paper';
+import { mem } from './mem';
+import { calCom } from './cal-com';
+import { osmind } from './osmind';
+import { collate } from './collate';
+import { primeIntellect } from './prime-intellect';
+import { pierre } from './pierre';
+import { supabase } from './supabase';
 import { thinkingMachines } from './thinking-machines';
 import { promisePay } from './promise-pay';
 import { moonlakeAi } from './moonlake-ai';
@@ -347,7 +415,30 @@ export const companies: Company[] = [
   legendXyz,
   wabi,
   welltheory,
+  thinkingMachinesLab,
+  impulseLabs,
+  decart,
+  lettuce,
+  sanity,
+  relace,
+  speakeasy,
+  mosey,
+  brainfish,
+  poolside,
+  catalyxSpace,
+  appliedCompute,
+  vizcom,
+  cartesia,
+  generationLab,
+  tensormesh,
+  unstructured,
+  alexAi,
+  contra,
   livekit,
+  mandolin,
+  furtherAi,
+  senecaSystems,
+  rivo,
   railway,
   baseten,
   artie,
@@ -415,6 +506,16 @@ export const companies: Company[] = [
   doss,
   devAgents,
   indexCompany,
+  infisical,
+  natural,
+  claritycare,
+  agora,
+  nooks,
+  sesameAi,
+  langchain,
+  replicate,
+  tempo,
+  comulate,
   reevo,
   clickhouse,
   bindwell,
@@ -437,6 +538,41 @@ export const companies: Company[] = [
   sierra,
   tailor,
   physicalIntelligence,
+  pulley,
+  lighthouse,
+  osmosis,
+  zedDev,
+  warmer,
+  campfire,
+  causalLabs,
+  trunk,
+  sentientLabs,
+  inferenceNet,
+  flowEngineering,
+  reducto,
+  mintlify,
+  zeroentropy,
+  found,
+  owner,
+  clockwise,
+  mainstay,
+  anara,
+  kernel,
+  mastra,
+  datacurve,
+  davidAi,
+  unify,
+  seso,
+  supermemory,
+  convokeBio,
+  paper,
+  mem,
+  calCom,
+  osmind,
+  collate,
+  primeIntellect,
+  pierre,
+  supabase,
   thinkingMachines,
   promisePay,
   moonlakeAi,
@@ -464,7 +600,7 @@ export const companies: Company[] = [
   succint,
 ];
 
-// Individual company exports removed (unused - companies array is sufficient)
+export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, thinkingMachinesLab, impulseLabs, decart, lettuce, sanity, relace, speakeasy, mosey, brainfish, poolside, catalyxSpace, appliedCompute, vizcom, cartesia, generationLab, tensormesh, unstructured, alexAi, contra, livekit, mandolin, furtherAi, senecaSystems, rivo, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, infisical, natural, claritycare, agora, nooks, sesameAi, langchain, replicate, tempo, comulate, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence, pulley, lighthouse, osmosis, zedDev, warmer, campfire, causalLabs, trunk, sentientLabs, inferenceNet };
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);

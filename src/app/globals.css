@@ -184,22 +184,24 @@ a.card {
 /* ================================================================
    Article Design System v2.0
 
+   Spacing philosophy: "Wide Open" — celebrate whitespace.
+   Large gaps between peer sections for clear group separation.
+   Tight coupling between heading and its owned content.
+
    Spacing scale (rem, base unit 0.25rem at 17px):
      0.25rem (4px)   micro      subtitle→list family bond
-     0.5rem  (9px)   tight      heading→content proximity
-     0.75rem (13px)  small      heading margin-bottom
-     1rem    (17px)  base
-     1.25rem (21px)  medium     blockquote indent
+     0.625rem(11px)  tight      h4→content proximity
+     0.875rem(15px)  small      h3 margin-bottom, h3+h4 adjacent
+     1.25rem (21px)  medium     h2 margin-bottom, h2+h3 adjacent
      1.5rem  (26px)  indent     list padding, table cell
-     2rem    (34px)  group      h4 section gap
-     2.5rem  (43px)  section    h3 gap, hr
+     3.5rem  (60px)  group      h4 section gap
      4rem    (68px)  page       h1 gap
-     7rem    (119px) major      h2 section gap (acts as visual divider)
-   Exception: 1.333em for paragraph flow (= 0.75 × line-height 1.778)
+     6rem    (102px) section    h3 peer section gap
+     10rem   (170px) major      h2 section gap (acts as visual divider)
+   Exception: 1.667em for paragraph flow
 
    Typography: h1(2rem/800) h2(1.75rem/700) h3(1.375rem/600) h4(1.125rem/600)
    Colors: --foreground (headings) > --text-body (paragraphs) > --text-secondary (lists)
-   Proximity: heading top:bottom ratio ≈ 5:1
    ================================================================ */
 
 /* --- Container --- */
@@ -209,8 +211,8 @@ a.card {
 }
 
 /* --- Headings ---
-   margin-top hierarchy: h2(7rem) > h1(4rem) > h3(2.5rem) > h4(2rem)
-   margin-bottom is small for proximity to owned content */
+   margin-top hierarchy: h2(10rem) > h3(6rem) > h1(4rem) > h4(3.5rem)
+   margin-bottom stays small → proximity to owned content */
 
 .article-content h1 {
   color: var(--foreground);
@@ -228,8 +230,8 @@ a.card {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-top: 7rem;
-  margin-bottom: 0.75rem;
+  margin-top: 10rem;
+  margin-bottom: 1.25rem;
 }
 
 .article-content h3 {
@@ -238,8 +240,8 @@ a.card {
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.01em;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 6rem;
+  margin-bottom: 0.875rem;
 }
 
 .article-content h4 {
@@ -248,8 +250,8 @@ a.card {
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.005em;
-  margin-top: 2rem;
-  margin-bottom: 0.375rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.625rem;
 }
 
 /* --- First heading: suppress top margin --- */
@@ -267,17 +269,17 @@ a.card {
 /* --- Adjacent heading pairs: tighter coupling ---
    When headings are consecutive, the child heading's margin-top
    is reduced since the parent heading already provides separation. */
-.article-content h2 + h3 { margin-top: 0.75rem; }
-.article-content h3 + h4,
-.article-content h3 + p  { margin-top: 0.5rem; }
-.article-content h4 + p  { margin-top: 0.5rem; }
+.article-content h2 + h3 { margin-top: 1.25rem; }
+.article-content h3 + h4 { margin-top: 0.875rem; }
+.article-content h3 + p  { margin-top: 0.875rem; }
+.article-content h4 + p  { margin-top: 0.625rem; }
 
 /* --- Body text --- */
 .article-content p {
   color: var(--text-body);
   line-height: 1.778;
   margin-top: 0;
-  margin-bottom: 1.333em;
+  margin-bottom: 1.667em;
 }
 
 /* --- Paragraph → List transitions ---
@@ -337,7 +339,7 @@ a.card {
   margin: 2rem 0;
 }
 
-/* --- Horizontal rule --- hidden; h2 7rem gap acts as section divider */
+/* --- Horizontal rule --- hidden; h2 10rem gap acts as section divider */
 .article-content hr {
   display: none;
 }
