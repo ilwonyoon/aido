@@ -28,15 +28,10 @@ export async function generateMetadata({
   const jobCount = company.openRoles.length;
   const levelConfig = aiLevels[company.aiNativeLevel];
   const ogImage = company.media?.ogImage ?? `/logos/${company.id}.png`;
-  const ogImageUrl = ogImage
-    ? ogImage.startsWith('http')
-      ? ogImage
-      : `https://aido-d2cc0.web.app${ogImage}`
-    : undefined;
+  const ogImageUrl = ogImage.startsWith('http')
+    ? ogImage
+    : `https://aido-d2cc0.web.app${ogImage}`;
 
-  const ogImageUrl = company.ogImage
-    ? `https://aido-d2cc0.web.app${company.ogImage}`
-    : `https://logo.clearbit.com/${new URL(company.website).hostname}`;
 
   return {
     title: `${company.name} Product Designer Jobs`,
