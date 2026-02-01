@@ -273,6 +273,31 @@ import { collate } from './collate';
 import { primeIntellect } from './prime-intellect';
 import { pierre } from './pierre';
 import { supabase } from './supabase';
+import { thinkingMachines } from './thinking-machines';
+import { promisePay } from './promise-pay';
+import { moonlakeAi } from './moonlake-ai';
+import { blackbirdLabs } from './blackbird-labs';
+import { framework } from './framework';
+import { posthog } from './posthog';
+import { nexhealth } from './nexhealth';
+import { fermat } from './fermat';
+import { patch } from './patch';
+import { newlimit } from './newlimit';
+import { polycam } from './polycam';
+import { slash } from './slash';
+import { hyperbolic } from './hyperbolic';
+import { podqi } from './podqi';
+import { parabola } from './parabola';
+import { modular } from './modular';
+import { imbueAi } from './imbue-ai';
+import { edia } from './edia';
+import { divineResearch } from './divine-research';
+import { juicebox } from './juicebox';
+import { nudge } from './nudge';
+import { manifest } from './manifest';
+import { neonPay } from './neon-pay';
+import { tolans } from './tolans';
+import { succint } from './succint';
 
 export const companies: Company[] = [
   anthropic,
@@ -548,6 +573,31 @@ export const companies: Company[] = [
   primeIntellect,
   pierre,
   supabase,
+  thinkingMachines,
+  promisePay,
+  moonlakeAi,
+  blackbirdLabs,
+  framework,
+  posthog,
+  nexhealth,
+  fermat,
+  patch,
+  newlimit,
+  polycam,
+  slash,
+  hyperbolic,
+  podqi,
+  parabola,
+  modular,
+  imbueAi,
+  edia,
+  divineResearch,
+  juicebox,
+  nudge,
+  manifest,
+  neonPay,
+  tolans,
+  succint,
 ];
 
 export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, thinkingMachinesLab, impulseLabs, decart, lettuce, sanity, relace, speakeasy, mosey, brainfish, poolside, catalyxSpace, appliedCompute, vizcom, cartesia, generationLab, tensormesh, unstructured, alexAi, contra, livekit, mandolin, furtherAi, senecaSystems, rivo, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, infisical, natural, claritycare, agora, nooks, sesameAi, langchain, replicate, tempo, comulate, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence, pulley, lighthouse, osmosis, zedDev, warmer, campfire, causalLabs, trunk, sentientLabs, inferenceNet };
