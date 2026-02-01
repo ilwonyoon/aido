@@ -61,6 +61,9 @@ function HomePageContent() {
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
 
+    // Save CURRENT scroll position from the scrollable div (desktop) or window (mobile)
+    const currentScroll = mainContentRef.current?.scrollTop || window.scrollY;
+
     // Force synchronous state update to ensure animation class is applied
     flushSync(() => {
       setClosingCompany(currentCompany);
@@ -74,9 +77,9 @@ function HomePageContent() {
       setIsClosing(false);
       setClosingCompany(null);
 
-      // Restore scroll position after panel closes
+      // Restore scroll position after panel closes and className changes
       requestAnimationFrame(() => {
-        window.scrollTo(0, savedScrollPosition.current);
+        window.scrollTo(0, currentScroll);
       });
     }, 300); // Match animation duration
   }, [selectedCompanyId]);
