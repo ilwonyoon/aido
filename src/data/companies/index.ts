@@ -323,6 +323,31 @@ import { column } from './column';
 import { openpay } from './openpay';
 import { langbase } from './langbase';
 import { adalineAi } from './adaline-ai';
+import { aquaVoice } from './aqua-voice';
+import { commonKnowledge } from './common-knowledge';
+import { recTechnologies } from './rec-technologies';
+import { apothekary } from './apothekary';
+import { hyperbound } from './hyperbound';
+import { sway } from './sway';
+import { arc } from './arc';
+import { orchids } from './orchids';
+import { comfyUi } from './comfy-ui';
+import { willow } from './willow';
+import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
+import { centralHq } from './central-hq';
+import { meter } from './meter';
+import { openmind } from './openmind';
+import { stackai } from './stackai';
+import { hedraAi } from './hedra-ai';
+import { greenlite } from './greenlite';
+import { aegisai } from './aegisai';
+import { dimensionLabs } from './dimension-labs';
+import { symbiotic } from './symbiotic';
+import { farel } from './farel';
+import { kiteAi } from './kite-ai';
+import { humanBehavior } from './human-behavior';
+import { cognitionAi } from './cognition-ai';
+import { elevenX } from './11x';
 
 export const companies: Company[] = [
   anthropic,
@@ -648,6 +673,31 @@ export const companies: Company[] = [
   openpay,
   langbase,
   adalineAi,
+  aquaVoice,
+  commonKnowledge,
+  recTechnologies,
+  apothekary,
+  hyperbound,
+  sway,
+  arc,
+  orchids,
+  comfyUi,
+  willow,
+  theInteractionCompanyOfCalifornia,
+  centralHq,
+  meter,
+  openmind,
+  stackai,
+  hedraAi,
+  greenlite,
+  aegisai,
+  dimensionLabs,
+  symbiotic,
+  farel,
+  kiteAi,
+  humanBehavior,
+  cognitionAi,
+  elevenX,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
