@@ -8,6 +8,9 @@ export const shopify: Company = {
     headquarters: 'Ottawa, Canada',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/shopify-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

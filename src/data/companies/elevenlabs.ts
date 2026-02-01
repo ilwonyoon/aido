@@ -8,6 +8,9 @@ export const elevenlabs: Company = {
     headquarters: 'New York, NY',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/elevenlabs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],

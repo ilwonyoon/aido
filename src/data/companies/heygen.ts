@@ -8,6 +8,9 @@ export const heygen: Company = {
     headquarters: 'Los Angeles, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/heygen-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['video-generation', 'code-assistant'],
   markets: ['b2b'],

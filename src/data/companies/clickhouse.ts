@@ -9,6 +9,9 @@ export const clickhouse: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/clickhouse-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['data-analysis'],

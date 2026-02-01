@@ -9,6 +9,9 @@ export const metronome: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/metronome-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

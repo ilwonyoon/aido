@@ -9,6 +9,9 @@ export const quanta: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/quanta-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

@@ -8,6 +8,9 @@ export const canva: Company = {
     headquarters: 'Sydney, Australia',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/canva-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],

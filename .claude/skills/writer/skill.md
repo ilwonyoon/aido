@@ -118,6 +118,7 @@ Calculate comparative stats:
   - Why they're winning (moat/differentiation)
   - Designer perspective (culture, team, roles)
   - Link to company page: [Company](/company/id)
+    → Automatically renders with company logo icon
 
 - For Comparison: Side-by-side analysis with data
 
@@ -133,10 +134,13 @@ Calculate comparative stats:
 - Link to /jobs for design roles
 ```
 
-**Auto-insert Company Links:**
+**Auto-insert Company Links with Logos:**
 - First mention of each company → `[Company Name](/company/id)`
+- This automatically renders with a small company logo icon (16x16px) next to the name
+- The MarkdownRenderer detects `/company/` links and adds logo image
 - Based on companyIds array
 - Validate all IDs exist in database
+- Logo path is auto-resolved from `/logos/[company-id].png`
 
 **Calculate Reading Time:**
 - Word count ÷ 200 words/minute

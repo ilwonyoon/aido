@@ -9,6 +9,9 @@ export const macroscope: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/macroscope-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

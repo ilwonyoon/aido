@@ -8,6 +8,9 @@ export const runway: Company = {
     headquarters: 'New York City, NY',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/runway-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

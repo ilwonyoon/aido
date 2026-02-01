@@ -9,6 +9,9 @@ export const doss: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/doss-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

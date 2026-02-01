@@ -8,6 +8,9 @@ export const humeAi: Company = {
   headquarters: 'New York, NY',
   remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/hume-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'search-retrieval'],

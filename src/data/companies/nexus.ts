@@ -9,6 +9,9 @@ export const nexus: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/nexus-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

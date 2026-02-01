@@ -8,6 +8,9 @@ export const miter: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/miter-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

@@ -8,6 +8,9 @@ export const harvey: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/harvey-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],

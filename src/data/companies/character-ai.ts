@@ -8,6 +8,9 @@ export const characterAi: Company = {
     headquarters: 'Menlo Park, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/character-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

@@ -8,6 +8,9 @@ export const gigs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/gigs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

@@ -8,6 +8,9 @@ export const listenLabs: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/listen-labs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],

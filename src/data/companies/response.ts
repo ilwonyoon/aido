@@ -9,6 +9,9 @@ export const response: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/response-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

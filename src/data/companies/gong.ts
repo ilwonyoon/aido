@@ -8,6 +8,9 @@ export const gong: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/gong-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],

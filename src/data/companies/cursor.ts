@@ -8,6 +8,9 @@ export const cursor: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/cursor-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'conversation-ai'],

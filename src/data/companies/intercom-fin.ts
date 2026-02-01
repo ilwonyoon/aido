@@ -8,6 +8,9 @@ export const intercomFin: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/intercom-fin-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2b'],

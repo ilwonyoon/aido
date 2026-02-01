@@ -1,7 +1,5 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
@@ -9,6 +7,7 @@ import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { useAuth } from '@/contexts/AuthContext';
 import { CompanyLogo } from './CompanyLogo';
+import { CompanyOGImage } from './CompanyOGImage';
 import { Badge, AiLevelBadge } from '@/components/ui/Badge';
 
 const InterestToggle = dynamic(
@@ -45,92 +44,8 @@ function WorkTypeSection({
   );
 }
 
-const sections = [
-  { id: 'quick-info', label: 'Quick Info', icon: '⚡' },
-  { id: 'company', label: 'Company', icon: '🏢' },
-  { id: 'design', label: 'Design', icon: '🎨' },
-];
-
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
-  const { user } = useAuth();
-  const [activeSection, setActiveSection] = useState('quick-info');
-  const [showMobileNav, setShowMobileNav] = useState(false);
-  const observerRef = useRef<IntersectionObserver | null>(null);
-  const headerObserverRef = useRef<IntersectionObserver | null>(null);
-
-  // Track company detail view
-  useEffect(() => {
-    void trackFirestoreEvent('company_detail_view', {
-      companyId: company.id,
-      companyName: company.name,
-    }, user?.email);
-  }, [company.id, user?.email]);
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-20% 0px -70% 0px' }
-    );
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element) observerRef.current?.observe(element);
-    });
-
-    return () => observerRef.current?.disconnect();
-  }, []);
-
-  // Observer for Quick Info header to show/hide mobile nav
-  useEffect(() => {
-    headerObserverRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // Show mobile nav when Quick Info header is NOT visible
-          setShowMobileNav(!entry.isIntersecting);
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: '-56px 0px 0px 0px'
-      }
-    );
-
-    const header = document.getElementById('quick-info-header');
-    if (header) {
-      headerObserverRef.current.observe(header);
-    }
-
-    return () => headerObserverRef.current?.disconnect();
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-
-    const offset = 80;
-    // Find the panel scroll container (closest scrollable parent)
-    const scrollContainer = element.closest('.overflow-y-auto') as HTMLElement | null;
-
-    if (scrollContainer) {
-      // Panel mode: scroll within the panel
-      const elementTop = element.getBoundingClientRect().top;
-      const containerTop = scrollContainer.getBoundingClientRect().top;
-      const scrollPosition = scrollContainer.scrollTop + (elementTop - containerTop) - offset;
-      scrollContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-    } else {
-      // Full page mode: scroll window
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="w-full">
@@ -144,56 +59,16 @@ export function CompanyDetail({ company }: { company: Company }) {
         </button>
       </div>
 
-      {/* Main Layout: Index Nav + Content */}
+      {/* Main Layout: Content only (navigation removed) */}
       <div className="flex flex-col lg:flex-row lg:gap-8">
-        {/* Sticky Index Nav */}
-        <nav className="hidden lg:block w-48 flex-shrink-0">
-          <div className="sticky top-8 space-y-1">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`w-full text-left px-3 py-2 rounded text-sm transition-colors flex items-center gap-2 ${
-                  activeSection === section.id
-                    ? 'bg-[var(--card)] text-[var(--foreground)] font-medium'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
-                }`}
-              >
-                <span>{section.icon}</span>
-                <span>{section.label}</span>
-                {activeSection === section.id && (
-                  <span className="ml-auto text-[var(--accent-light)]">●</span>
-                )}
-              </button>
-            ))}
-          </div>
-        </nav>
-
-        {/* Mobile horizontal nav - only show when Quick Info header scrolls out */}
-        {showMobileNav && (
-          <div className="lg:hidden sticky top-14 z-40 py-3 bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)] -mx-4 sm:-mx-6">
-            <div className="overflow-x-auto scrollbar-hide px-4 sm:px-6">
-              <div className="flex gap-2 w-max">
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className={`flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-md text-sm transition-colors ${
-                    activeSection === section.id
-                      ? 'bg-[var(--accent)] text-white'
-                      : 'bg-[var(--card)] text-[var(--foreground)] hover:bg-[var(--card-hover)]'
-                  }`}
-                >
-                  {section.icon} {section.label}
-                </button>
-              ))}
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Main Content */}
-        <div className="w-full lg:flex-1 min-w-0 space-y-12">
+        <div className="w-full lg:flex-1 min-w-0">
+          {/* OG Image - Full width at top */}
+          <div className="mb-6">
+            <CompanyOGImage companyId={company.id} companyName={company.name} />
+          </div>
+
           {/* Header Info */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
@@ -227,7 +102,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
 
           {/* Quick Info */}
-          <section id="quick-info" className="scroll-mt-20 space-y-4">
+          <section id="quick-info" className="scroll-mt-20 space-y-4 mb-12">
             <h2 id="quick-info-header" className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
@@ -322,7 +197,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
           {/* Open Roles - Detailed */}
           {company.openRoles.length > 0 && (
-            <section className="scroll-mt-20">
+            <section className="scroll-mt-20 mb-12">
               <h2 className="text-2xl font-semibold mb-6">💼 Open Roles Details</h2>
               <div className="space-y-4">
                 {company.openRoles.map((role, i) => (
@@ -415,12 +290,12 @@ export function CompanyDetail({ company }: { company: Company }) {
           )}
 
           {/* Company */}
-          <section id="company" className="scroll-mt-20 space-y-8">
+          <section id="company" className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🏢 Company</h2>
 
             {/* Business */}
             <div>
-              <h3 className="section-title">Business</h3>
+              <h3 className="section-title mb-4">Business</h3>
 
             {/* Funding History */}
             {company.fundingHistory && company.fundingHistory.length > 0 && (
@@ -483,7 +358,7 @@ export function CompanyDetail({ company }: { company: Company }) {
             {/* Product & User Context */}
             {(company.targetAudiences || company.userProblems) && (
             <div>
-              <h3 className="section-title">Product & User Context</h3>
+              <h3 className="section-title mb-4">Product & User Context</h3>
               <div className="card p-5">
                 {company.targetAudiences && (
                   <div className="mb-6">
@@ -522,7 +397,7 @@ export function CompanyDetail({ company }: { company: Company }) {
             {/* Company Health & Growth */}
             {(company.revenue || company.growth || company.runway || company.customers || company.growthMetrics) && (
               <div>
-                <h3 className="section-title">Company Health & Growth</h3>
+                <h3 className="section-title mb-4">Company Health & Growth</h3>
 
                 {/* Basic Metrics */}
                 {(company.revenue || company.growth || company.runway || company.customers) && (
@@ -674,7 +549,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* AI Native Level */}
             <div>
-              <h3 className="section-title">AI-Native Level</h3>
+              <h3 className="section-title mb-4">AI-Native Level</h3>
             <div className="card p-5">
               <div className="mb-6">
                 <AiLevelBadge level={company.aiNativeLevel} />
@@ -697,7 +572,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* Founders & Vision */}
             <div>
-              <h3 className="section-title">Founders & Vision</h3>
+              <h3 className="section-title mb-4">Founders & Vision</h3>
             <div className="card p-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {company.founders.map((f) => (
@@ -758,12 +633,12 @@ export function CompanyDetail({ company }: { company: Company }) {
           </section>
 
           {/* Design */}
-          <section id="design" className="scroll-mt-20 space-y-8">
+          <section id="design" className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🎨 Design</h2>
 
             {/* Design Team + Designer Links */}
             <div>
-              <h3 className="section-title">Design Team</h3>
+              <h3 className="section-title mb-4">Design Team</h3>
             <div className="card p-5 mb-4">
               {company.designTeam.cpo && (
                 <div className="mb-3">
@@ -818,7 +693,7 @@ export function CompanyDetail({ company }: { company: Company }) {
             {/* Culture Insights */}
             {company.cultureInsights && company.cultureInsights.length > 0 && (
             <div>
-              <h3 className="section-title">Culture Insights</h3>
+              <h3 className="section-title mb-4">Culture Insights</h3>
               <div className="card p-5">
                 <div className="space-y-4">
                   {company.cultureInsights.map((insight, i) => {
@@ -851,7 +726,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* My Tracking */}
             <div>
-              <h3 className="section-title">My Tracking</h3>
+              <h3 className="section-title mb-4">My Tracking</h3>
             <div className="card p-5">
               <div className="flex items-center justify-between mb-4">
                 <Badge variant="accent">{company.tracking.status}</Badge>
@@ -896,7 +771,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* Design Work Type */}
             <div>
-              <h3 className="section-title">Design Work Type</h3>
+              <h3 className="section-title mb-4">Design Work Type</h3>
             <div className="card p-5">
               <WorkTypeSection
                 title="Logic / Behavior Design"
@@ -920,7 +795,7 @@ export function CompanyDetail({ company }: { company: Company }) {
 
             {/* Sources */}
             <div>
-              <h3 className="section-title">Sources</h3>
+              <h3 className="section-title mb-4">Sources</h3>
               <div className="space-y-2">
                 {company.sources.map((s, i) => (
                   <a

@@ -9,6 +9,9 @@ export const ivo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/ivo-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
@@ -209,7 +212,7 @@ export const ivo: Company = {
       type: 'full-time',
       level: 'Senior',
       aboutRole:
-        'Own and scale Ivo’s design system to enable rapid iteration and consistent product craft.',
+        "Own and scale Ivo's design system to enable rapid iteration and consistent product craft.",
       responsibilities: [
         'Create and scale component libraries, tokens, and interaction patterns',
         'Define design system vision, strategy, and roadmap',

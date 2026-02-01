@@ -298,6 +298,31 @@ import { manifest } from './manifest';
 import { neonPay } from './neon-pay';
 import { tolans } from './tolans';
 import { succint } from './succint';
+import { seedHealth } from './seed-health';
+import { martian } from './martian';
+import { coderabbit } from './coderabbit';
+import { cube } from './cube';
+import { greptile } from './greptile';
+import { kaedim } from './kaedim';
+import { cardless } from './cardless';
+import { radiantgraph } from './radiantgraph';
+import { untilLabs } from './until-labs';
+import { axiom } from './axiom';
+import { e2b } from './e2b';
+import { loyalDogs } from './loyal-dogs';
+import { anon } from './anon';
+import { arcadeAi } from './arcade-ai';
+import { bem } from './bem';
+import { bedrockRobotics } from './bedrock-robotics';
+import { tandem } from './tandem';
+import { stable } from './stable';
+import { midday } from './midday';
+import { sonder } from './sonder';
+import { subframe } from './subframe';
+import { column } from './column';
+import { openpay } from './openpay';
+import { langbase } from './langbase';
+import { adalineAi } from './adaline-ai';
 import { aquaVoice } from './aqua-voice';
 import { commonKnowledge } from './common-knowledge';
 import { recTechnologies } from './rec-technologies';
@@ -623,6 +648,31 @@ export const companies: Company[] = [
   neonPay,
   tolans,
   succint,
+  seedHealth,
+  martian,
+  coderabbit,
+  cube,
+  greptile,
+  kaedim,
+  cardless,
+  radiantgraph,
+  untilLabs,
+  axiom,
+  e2b,
+  loyalDogs,
+  anon,
+  arcadeAi,
+  bem,
+  bedrockRobotics,
+  tandem,
+  stable,
+  midday,
+  sonder,
+  subframe,
+  column,
+  openpay,
+  langbase,
+  adalineAi,
   aquaVoice,
   commonKnowledge,
   recTechnologies,
@@ -650,7 +700,7 @@ export const companies: Company[] = [
   elevenX,
 ];
 
-export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, thinkingMachinesLab, impulseLabs, decart, lettuce, sanity, relace, speakeasy, mosey, brainfish, poolside, catalyxSpace, appliedCompute, vizcom, cartesia, generationLab, tensormesh, unstructured, alexAi, contra, livekit, mandolin, furtherAi, senecaSystems, rivo, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, infisical, natural, claritycare, agora, nooks, sesameAi, langchain, replicate, tempo, comulate, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence, pulley, lighthouse, osmosis, zedDev, warmer, campfire, causalLabs, trunk, sentientLabs, inferenceNet };
+// Individual company exports removed (unused - companies array is sufficient)
 
 export function getCompanyById(id: string): Company | undefined {
   return companies.find((c) => c.id === id);

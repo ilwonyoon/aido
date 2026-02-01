@@ -9,6 +9,9 @@ export const variant: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/variant-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

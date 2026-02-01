@@ -3,7 +3,7 @@ import { Company } from '../types';
 export const apothekary: Company = {
   id: 'apothekary',
   name: 'Apothekary',
-  description: 'Mother Nature's farmacy.',
+  description: "Mother Nature's farmacy.",
   website: 'https://apothekary.co',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
@@ -30,7 +30,7 @@ export const apothekary: Company = {
       whyTheyWin: 'Unknown',
     },
   ],
-  marketPosition: 'Mother Nature's farmacy',
+  marketPosition: "Mother Nature's farmacy",
   moat: ['Unknown'],
   vsGiants: 'Unknown',
 

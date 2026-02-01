@@ -9,6 +9,9 @@ export const reevo: Company = {
   headquarters: 'Santa Clara, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/reevo-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

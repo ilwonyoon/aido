@@ -8,6 +8,9 @@ export const tavus: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/tavus-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure', 'video-generation', 'audio-generation'],

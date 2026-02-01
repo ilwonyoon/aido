@@ -8,6 +8,9 @@ export const otterAi: Company = {
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/otter-ai-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai', 'automation'],
   markets: ['b2b'],

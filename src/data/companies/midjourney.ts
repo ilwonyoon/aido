@@ -8,6 +8,9 @@ export const midjourney: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/midjourney-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['image-generation'],

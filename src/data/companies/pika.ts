@@ -8,6 +8,9 @@ export const pika: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/pika-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['video-generation', 'code-assistant'],

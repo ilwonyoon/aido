@@ -8,6 +8,9 @@ export const scaleAi: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/scale-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'ai-infrastructure'],

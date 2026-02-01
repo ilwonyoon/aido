@@ -1,6 +1,6 @@
 import { Company } from '../types';
 
-export const 11x: Company = {
+export const elevenX: Company = {
   id: '11x',
   name: '11x',
   description: 'AI digital workers platform.',

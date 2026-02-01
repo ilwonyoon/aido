@@ -8,6 +8,9 @@ export const worldLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/world-labs-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

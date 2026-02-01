@@ -9,6 +9,9 @@ export const lgnd: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/lgnd-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

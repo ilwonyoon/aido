@@ -8,6 +8,9 @@ export const notion: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/notion-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

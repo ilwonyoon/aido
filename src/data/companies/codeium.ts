@@ -8,6 +8,9 @@ export const codeium: Company = {
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/codeium-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['enterprise'],

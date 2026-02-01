@@ -32,6 +32,7 @@ function HomePageContent() {
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
+  const savedScrollPosition = useRef<number>(0);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -60,6 +61,9 @@ function HomePageContent() {
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
 
+    // Save CURRENT scroll position from the scrollable div (desktop) or window (mobile)
+    const currentScroll = mainContentRef.current?.scrollTop || window.scrollY;
+
     // Force synchronous state update to ensure animation class is applied
     flushSync(() => {
       setClosingCompany(currentCompany);
@@ -72,10 +76,23 @@ function HomePageContent() {
       setIsFullWidth(false);
       setIsClosing(false);
       setClosingCompany(null);
+
+      // Restore scroll position after panel closes and className changes
+      requestAnimationFrame(() => {
+        window.scrollTo(0, currentScroll);
+      });
     }, 300); // Match animation duration
   }, [selectedCompanyId]);
 
+
   const handleCompanyClick = useCallback((companyId: string) => {
+    const isOpeningPanel = !selectedCompanyId;
+
+    // Only save scroll position when OPENING panel (not when switching companies)
+    if (isOpeningPanel) {
+      savedScrollPosition.current = window.scrollY;
+    }
+
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
     setSelectedCompanyId(companyId);
@@ -85,7 +102,17 @@ function HomePageContent() {
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
-  }, []);
+
+    // Only restore scroll position when OPENING panel (not when switching)
+    if (isOpeningPanel) {
+      requestAnimationFrame(() => {
+        if (mainContentRef.current) {
+          // On desktop, set div scrollTop; on mobile, it won't have scroll
+          mainContentRef.current.scrollTop = savedScrollPosition.current;
+        }
+      });
+    }
+  }, [selectedCompanyId]);
 
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);
@@ -199,12 +226,21 @@ function HomePageContent() {
     );
   }
 
+
   return (
     <div>
+      {/* Backdrop - Click outside company list to close panel (desktop only) */}
+      {selectedCompanyId && (
+        <div
+          className="hidden md:block fixed inset-0 z-[1]"
+          onClick={closePanel}
+        />
+      )}
+
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
       >
         {/* Header */}
         <div className="mb-6">

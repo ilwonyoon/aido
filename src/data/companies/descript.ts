@@ -8,6 +8,9 @@ export const descript: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/descript-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'code-assistant'],
   markets: ['b2b'],

@@ -9,6 +9,9 @@ export const resolveAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/resolve-ai-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

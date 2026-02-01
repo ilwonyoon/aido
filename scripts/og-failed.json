@@ -1,0 +1,295 @@
+[
+  {
+    "companyId": "airloom",
+    "name": "Airloom",
+    "website": "https://www.airloom.energy",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "ando",
+    "name": "Ando",
+    "website": "https://ando.so",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "axiom-math",
+    "name": "Axiom (Math)",
+    "website": "https://axiommath.ai",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "bindwell",
+    "name": "Bindwell",
+    "website": "https://bindwell.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "blaze-ai",
+    "name": "Blaze AI",
+    "website": "https://www.withblaze.app",
+    "ogImage": null,
+    "success": false,
+    "error": "getaddrinfo ENOTFOUND www.withblaze.app",
+    "downloaded": false
+  },
+  {
+    "companyId": "canva",
+    "name": "Canva",
+    "website": "https://www.canva.com",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "clickhouse",
+    "name": "ClickHouse",
+    "website": "https://clickhouse.com/",
+    "ogImage": "https://clickhouse.com/_next/image?url=%2Fimages%2Fsocial_share.png&amp;w=1200&amp;h=630&amp;q=80",
+    "success": true,
+    "downloaded": false,
+    "error": "HTTP 400"
+  },
+  {
+    "companyId": "composite",
+    "name": "Composite",
+    "website": "https://www.composite.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "edison-scientific",
+    "name": "Edison Scientific",
+    "website": "https://edisonscientific.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "gamma",
+    "name": "Gamma",
+    "website": "https://gamma.app",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "index",
+    "name": "Index",
+    "website": "https://index.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "item-app",
+    "name": "Item App",
+    "website": "https://item.app/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "item",
+    "name": "Item",
+    "website": "https://www.item.app/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "llmarena",
+    "name": "LLMArena",
+    "website": "https://lmarena.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 429",
+    "downloaded": false
+  },
+  {
+    "companyId": "midjourney",
+    "name": "Midjourney",
+    "website": "https://www.midjourney.com/",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "miter",
+    "name": "Miter",
+    "website": "https://miter.co",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "nuraline",
+    "name": "Nuraline",
+    "website": "https://www.nuraline.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "onton",
+    "name": "Onton",
+    "website": "https://www.onton.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "openai",
+    "name": "OpenAI",
+    "website": "https://openai.com",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "pacific-fusion",
+    "name": "Pacific Fusion",
+    "website": "https://pacificfusion.com/",
+    "ogImage": "https://pacific-fusion.transforms.svdcdn.com/production/PF-Social-Share-Image_2024-11-04-133838_vcio.jpg?w=1199&amp;h=627&amp;auto=compress%2Cformat&amp;fit=crop&amp;dm=1730727544&amp;s=50d3d842d99c723432a9a87ffafa7403",
+    "success": true,
+    "downloaded": false,
+    "error": "HTTP 401"
+  },
+  {
+    "companyId": "perle-ai",
+    "name": "Perle AI",
+    "website": "https://perle.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "perplexity",
+    "name": "Perplexity",
+    "website": "https://perplexity.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  },
+  {
+    "companyId": "quanta",
+    "name": "Quanta",
+    "website": "https://quanta.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "red-queen-bio",
+    "name": "Red Queen Bio",
+    "website": "https://www.redqueen.bio/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "sierra",
+    "name": "Sierra",
+    "website": "https://www.sierra.ai/",
+    "ogImage": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F0ced1be0c54656680ef9792b524f2f2e828d95ad-1920x1080.png%3Fauto%3Dformat&amp;width=1200&amp;quality=75",
+    "success": true,
+    "downloaded": false,
+    "error": "HTTP 400"
+  },
+  {
+    "companyId": "sonatic",
+    "name": "Sonatic",
+    "website": "https://www.sonatic.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "span",
+    "name": "Span",
+    "website": "https://span.app",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "subtrate",
+    "name": "Subtrate",
+    "website": "https://subtrate.com/",
+    "ogImage": null,
+    "success": false,
+    "error": "getaddrinfo ENOTFOUND subtrate.com",
+    "downloaded": false
+  },
+  {
+    "companyId": "suger",
+    "name": "Suger",
+    "website": "https://www.suger.io/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "tabnine",
+    "name": "Tabnine",
+    "website": "https://www.tabnine.com",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "tigereye",
+    "name": "TigerEye",
+    "website": "https://tigereye.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "tome",
+    "name": "Tome",
+    "website": "https://tome.app",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 404",
+    "downloaded": false
+  },
+  {
+    "companyId": "town",
+    "name": "Town",
+    "website": "https://town.com/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "variant",
+    "name": "Variant",
+    "website": "https://variant.ai/",
+    "ogImage": null,
+    "success": false,
+    "downloaded": false
+  },
+  {
+    "companyId": "xai",
+    "name": "xAI",
+    "website": "https://x.ai",
+    "ogImage": null,
+    "success": false,
+    "error": "HTTP 403",
+    "downloaded": false
+  }
+]

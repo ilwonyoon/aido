@@ -9,6 +9,9 @@ export const momentic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/momentic-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],

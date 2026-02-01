@@ -9,6 +9,9 @@ export const firecrawl: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/firecrawl-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

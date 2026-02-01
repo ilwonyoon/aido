@@ -8,6 +8,9 @@ export const suno: Company = {
     headquarters: 'Cambridge, MA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/suno-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

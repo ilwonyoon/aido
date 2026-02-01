@@ -8,6 +8,9 @@ export const quo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/quo-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: [],

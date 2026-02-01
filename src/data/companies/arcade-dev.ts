@@ -9,6 +9,9 @@ export const arcadeDev: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+    // OG Image
+    ogImage: '/og-images/arcade-dev-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],

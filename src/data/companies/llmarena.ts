@@ -8,6 +8,9 @@ export const llmarena: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'No',
 
+    // OG Image
+    ogImage: '/og-images/llmarena-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'code-assistant'],

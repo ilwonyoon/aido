@@ -1,0 +1,261 @@
+[
+  {
+    "companyId": "alloy",
+    "name": "Alloy",
+    "website": "https://www.alloy.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alloy-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alloy-screenshot.webp"
+  },
+  {
+    "companyId": "alphaxiv",
+    "name": "alphaXiv",
+    "website": "https://alphaxiv.org",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alphaxiv-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/alphaxiv-screenshot.webp"
+  },
+  {
+    "companyId": "ambience-healthcare",
+    "name": "Ambience Healthcare",
+    "website": "https://www.ambiencehealthcare.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ambience-healthcare-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ambience-healthcare-screenshot.webp"
+  },
+  {
+    "companyId": "ando",
+    "name": "Ando",
+    "website": "https://ando.so",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ando-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/ando-screenshot.webp"
+  },
+  {
+    "companyId": "anrok",
+    "name": "Anrok",
+    "website": "https://www.anrok.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anrok-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anrok-screenshot.webp"
+  },
+  {
+    "companyId": "anthropic",
+    "name": "Anthropic",
+    "website": "https://anthropic.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anthropic-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anthropic-screenshot.webp"
+  },
+  {
+    "companyId": "anything-ai",
+    "name": "Anything AI",
+    "website": "https://createanything.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anything-ai-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/anything-ai-screenshot.webp"
+  },
+  {
+    "companyId": "arcade-dev",
+    "name": "Arcade.dev",
+    "website": "https://www.arcade.dev/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/arcade-dev-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/arcade-dev-screenshot.webp"
+  },
+  {
+    "companyId": "artie",
+    "name": "Artie",
+    "website": "https://www.artie.com/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/artie-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/artie-screenshot.webp"
+  },
+  {
+    "companyId": "assort-health",
+    "name": "Assort Health",
+    "website": "https://assorthealth.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/assort-health-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/assort-health-screenshot.webp"
+  },
+  {
+    "companyId": "axiom-math",
+    "name": "Axiom (Math)",
+    "website": "https://axiommath.ai",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/axiom-math-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/axiom-math-screenshot.webp"
+  },
+  {
+    "companyId": "base44",
+    "name": "Base44",
+    "website": "https://base44.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/base44-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/base44-screenshot.webp"
+  },
+  {
+    "companyId": "baseten",
+    "name": "Baseten",
+    "website": "https://www.baseten.co/",
+    "og": null,
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/baseten-screenshot.webp"
+  },
+  {
+    "companyId": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "website": "https://www.beautiful.ai",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/beautiful-ai-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/beautiful-ai-screenshot.webp"
+  },
+  {
+    "companyId": "bindwell",
+    "name": "Bindwell",
+    "website": "https://bindwell.ai/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/bindwell-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/bindwell-screenshot.webp"
+  },
+  {
+    "companyId": "blacksmith",
+    "name": "Blacksmith",
+    "website": "https://www.blacksmith.sh/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blacksmith-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blacksmith-screenshot.webp"
+  },
+  {
+    "companyId": "blaze-ai",
+    "name": "Blaze AI",
+    "website": "https://www.withblaze.app",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blaze-ai-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blaze-ai-screenshot.webp"
+  },
+  {
+    "companyId": "blossom",
+    "name": "Blossom Health",
+    "website": "https://www.joinblossomhealth.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blossom-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/blossom-screenshot.webp"
+  },
+  {
+    "companyId": "brex",
+    "name": "Brex",
+    "website": "https://www.brex.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/brex-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/brex-screenshot.webp"
+  },
+  {
+    "companyId": "buildforever",
+    "name": "BuildForever",
+    "website": "https://buildforever.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/buildforever-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/buildforever-screenshot.webp"
+  },
+  {
+    "companyId": "canva",
+    "name": "Canva",
+    "website": "https://www.canva.com",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/canva-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/canva-screenshot.webp"
+  },
+  {
+    "companyId": "casca",
+    "name": "Casca",
+    "website": "https://www.cascading.ai/",
+    "og": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/casca-og.webp",
+    "screenshot": "/Users/ilwonyoon/Documents/AIDO/aido/public/og-images/casca-screenshot.webp"
+  },
+  {
+    "companyId": "chai-discovery",
+    "name": "Chai Discovery",
+    "website": "https://www.chaidiscovery.com/",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "character-ai",
+    "name": "Character.AI",
+    "website": "https://character.ai",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "chroma",
+    "name": "Chroma",
+    "website": "https://www.trychroma.com",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "clerk",
+    "name": "Clerk",
+    "website": "https://clerk.com",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "clickhouse",
+    "name": "ClickHouse",
+    "website": "https://clickhouse.com/",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "cocoon",
+    "name": "Cocoon",
+    "website": "https://cocoon.com",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "codeium",
+    "name": "Codeium (now Windsurf)",
+    "website": "https://codeium.com",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "cogent-security",
+    "name": "Cogent Security",
+    "website": "https://www.cogent.security",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "cognition",
+    "name": "Cognition",
+    "website": "https://cognition.ai",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "cohere",
+    "name": "Cohere",
+    "website": "https://cohere.com",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "collective",
+    "name": "Collective",
+    "website": "https://www.collective.com/",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "composite",
+    "name": "Composite",
+    "website": "https://www.composite.ai/",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "conductor",
+    "name": "Conductor",
+    "website": "https://www.conductor.build/",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "console",
+    "name": "Console",
+    "website": "https://console.co",
+    "og": null,
+    "screenshot": null
+  },
+  {
+    "companyId": "copy-ai",
+    "name": "Copy.ai",
+    "website": "https://www.copy.ai",
+    "og": null,
+    "screenshot": null
+  }
+]

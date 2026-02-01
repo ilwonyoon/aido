@@ -8,6 +8,9 @@ export const mistral: Company = {
     headquarters: 'Paris, France',
     remote: 'Yes',
 
+    // OG Image
+    ogImage: '/og-images/mistral-og.webp',
+
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

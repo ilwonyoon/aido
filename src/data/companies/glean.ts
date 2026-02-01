@@ -8,6 +8,9 @@ export const glean: Company = {
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
 
+    // OG Image
+    ogImage: '/og-images/glean-og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],
   markets: ['enterprise'],
