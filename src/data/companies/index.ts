@@ -205,6 +205,31 @@ import { subtrate } from './subtrate';
 import { sierra } from './sierra';
 import { tailor } from './tailor';
 import { physicalIntelligence } from './physical-intelligence';
+import { thinkingMachines } from './thinking-machines';
+import { promisePay } from './promise-pay';
+import { moonlakeAi } from './moonlake-ai';
+import { blackbirdLabs } from './blackbird-labs';
+import { framework } from './framework';
+import { posthog } from './posthog';
+import { nexhealth } from './nexhealth';
+import { fermat } from './fermat';
+import { patch } from './patch';
+import { newlimit } from './newlimit';
+import { polycam } from './polycam';
+import { slash } from './slash';
+import { hyperbolic } from './hyperbolic';
+import { podqi } from './podqi';
+import { parabola } from './parabola';
+import { modular } from './modular';
+import { imbueAi } from './imbue-ai';
+import { edia } from './edia';
+import { divineResearch } from './divine-research';
+import { juicebox } from './juicebox';
+import { nudge } from './nudge';
+import { manifest } from './manifest';
+import { neonPay } from './neon-pay';
+import { tolans } from './tolans';
+import { succint } from './succint';
 
 export const companies: Company[] = [
   anthropic,
@@ -412,6 +437,31 @@ export const companies: Company[] = [
   sierra,
   tailor,
   physicalIntelligence,
+  thinkingMachines,
+  promisePay,
+  moonlakeAi,
+  blackbirdLabs,
+  framework,
+  posthog,
+  nexhealth,
+  fermat,
+  patch,
+  newlimit,
+  polycam,
+  slash,
+  hyperbolic,
+  podqi,
+  parabola,
+  modular,
+  imbueAi,
+  edia,
+  divineResearch,
+  juicebox,
+  nudge,
+  manifest,
+  neonPay,
+  tolans,
+  succint,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
