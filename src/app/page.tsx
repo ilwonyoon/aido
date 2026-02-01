@@ -90,9 +90,12 @@ function HomePageContent() {
   }, [selectedCompanyId, closePanel]);
 
   const handleCompanyClick = useCallback((companyId: string) => {
-    // Save current scroll position before opening panel
-    // On desktop: div scroll, on mobile: window scroll
-    savedScrollPosition.current = window.scrollY;
+    const isOpeningPanel = !selectedCompanyId;
+
+    // Only save scroll position when OPENING panel (not when switching companies)
+    if (isOpeningPanel) {
+      savedScrollPosition.current = window.scrollY;
+    }
 
     // Use window.history to avoid router re-render
     window.history.pushState({}, '', `/?company=${companyId}`);
@@ -104,14 +107,16 @@ function HomePageContent() {
       panelRef.current.scrollTop = 0;
     }
 
-    // Preserve scroll position after React renders the new scroll container
-    requestAnimationFrame(() => {
-      if (mainContentRef.current) {
-        // On desktop, set div scrollTop; on mobile, it won't have scroll
-        mainContentRef.current.scrollTop = savedScrollPosition.current;
-      }
-    });
-  }, []);
+    // Only restore scroll position when OPENING panel (not when switching)
+    if (isOpeningPanel) {
+      requestAnimationFrame(() => {
+        if (mainContentRef.current) {
+          // On desktop, set div scrollTop; on mobile, it won't have scroll
+          mainContentRef.current.scrollTop = savedScrollPosition.current;
+        }
+      });
+    }
+  }, [selectedCompanyId]);
 
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);

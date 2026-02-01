@@ -55,7 +55,7 @@ export function CompanyListRow({
   };
 
   return (
-    <div className="py-6 cursor-pointer" onClick={handleClick}>
+    <div className="px-5 py-6 cursor-pointer" onClick={handleClick}>
       {/* Header row */}
       <div className="flex items-start justify-between gap-4 mb-1.5">
         <div className="flex items-center gap-2.5 min-w-0">

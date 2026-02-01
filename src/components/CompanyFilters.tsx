@@ -857,9 +857,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
           {sortedCompanies.map(company => (
-            <div key={company.id} className="px-5">
-              <CompanyListRow company={company} onCompanyClick={onCompanyClick} />
-            </div>
+            <CompanyListRow key={company.id} company={company} onCompanyClick={onCompanyClick} />
           ))}
         </div>
       )}
