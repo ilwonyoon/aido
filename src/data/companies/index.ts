@@ -298,6 +298,31 @@ import { manifest } from './manifest';
 import { neonPay } from './neon-pay';
 import { tolans } from './tolans';
 import { succint } from './succint';
+import { aquaVoice } from './aqua-voice';
+import { commonKnowledge } from './common-knowledge';
+import { recTechnologies } from './rec-technologies';
+import { apothekary } from './apothekary';
+import { hyperbound } from './hyperbound';
+import { sway } from './sway';
+import { arc } from './arc';
+import { orchids } from './orchids';
+import { comfyUi } from './comfy-ui';
+import { willow } from './willow';
+import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
+import { centralHq } from './central-hq';
+import { meter } from './meter';
+import { openmind } from './openmind';
+import { stackai } from './stackai';
+import { hedraAi } from './hedra-ai';
+import { greenlite } from './greenlite';
+import { aegisai } from './aegisai';
+import { dimensionLabs } from './dimension-labs';
+import { symbiotic } from './symbiotic';
+import { farel } from './farel';
+import { kiteAi } from './kite-ai';
+import { humanBehavior } from './human-behavior';
+import { cognitionAi } from './cognition-ai';
+import { elevenX } from './11x';
 
 export const companies: Company[] = [
   anthropic,
@@ -598,6 +623,31 @@ export const companies: Company[] = [
   neonPay,
   tolans,
   succint,
+  aquaVoice,
+  commonKnowledge,
+  recTechnologies,
+  apothekary,
+  hyperbound,
+  sway,
+  arc,
+  orchids,
+  comfyUi,
+  willow,
+  theInteractionCompanyOfCalifornia,
+  centralHq,
+  meter,
+  openmind,
+  stackai,
+  hedraAi,
+  greenlite,
+  aegisai,
+  dimensionLabs,
+  symbiotic,
+  farel,
+  kiteAi,
+  humanBehavior,
+  cognitionAi,
+  elevenX,
 ];
 
 export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, thinkingMachinesLab, impulseLabs, decart, lettuce, sanity, relace, speakeasy, mosey, brainfish, poolside, catalyxSpace, appliedCompute, vizcom, cartesia, generationLab, tensormesh, unstructured, alexAi, contra, livekit, mandolin, furtherAi, senecaSystems, rivo, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, infisical, natural, claritycare, agora, nooks, sesameAi, langchain, replicate, tempo, comulate, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence, pulley, lighthouse, osmosis, zedDev, warmer, campfire, causalLabs, trunk, sentientLabs, inferenceNet };
