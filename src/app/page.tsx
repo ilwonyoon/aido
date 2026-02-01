@@ -81,13 +81,6 @@ function HomePageContent() {
     }, 300); // Match animation duration
   }, [selectedCompanyId]);
 
-  const handleBackgroundClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    if (!selectedCompanyId) return;
-
-    // Only close if clicking directly on the background (not on cards or their children)
-    // Cards now stopPropagation, so this only fires for whitespace clicks
-    closePanel();
-  }, [selectedCompanyId, closePanel]);
 
   const handleCompanyClick = useCallback((companyId: string) => {
     const isOpeningPanel = !selectedCompanyId;
@@ -233,11 +226,18 @@ function HomePageContent() {
 
   return (
     <div>
+      {/* Backdrop - Click outside company list to close panel (desktop only) */}
+      {selectedCompanyId && (
+        <div
+          className="hidden md:block fixed inset-0 z-[1]"
+          onClick={closePanel}
+        />
+      )}
+
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
-        onClick={handleBackgroundClick}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
       >
         {/* Header */}
         <div className="mb-6">
