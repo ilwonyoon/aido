@@ -248,6 +248,31 @@ import { causalLabs } from './causal-labs';
 import { trunk } from './trunk';
 import { sentientLabs } from './sentient-labs';
 import { inferenceNet } from './inference-net';
+import { flowEngineering } from './flow-engineering';
+import { reducto } from './reducto';
+import { mintlify } from './mintlify';
+import { zeroentropy } from './zeroentropy';
+import { found } from './found';
+import { owner } from './owner';
+import { clockwise } from './clockwise';
+import { mainstay } from './mainstay';
+import { anara } from './anara';
+import { kernel } from './kernel';
+import { mastra } from './mastra';
+import { datacurve } from './datacurve';
+import { davidAi } from './david-ai';
+import { unify } from './unify';
+import { seso } from './seso';
+import { supermemory } from './supermemory';
+import { convokeBio } from './convoke-bio';
+import { paper } from './paper';
+import { mem } from './mem';
+import { calCom } from './cal-com';
+import { osmind } from './osmind';
+import { collate } from './collate';
+import { primeIntellect } from './prime-intellect';
+import { pierre } from './pierre';
+import { supabase } from './supabase';
 
 export const companies: Company[] = [
   anthropic,
@@ -498,6 +523,31 @@ export const companies: Company[] = [
   trunk,
   sentientLabs,
   inferenceNet,
+  flowEngineering,
+  reducto,
+  mintlify,
+  zeroentropy,
+  found,
+  owner,
+  clockwise,
+  mainstay,
+  anara,
+  kernel,
+  mastra,
+  datacurve,
+  davidAi,
+  unify,
+  seso,
+  supermemory,
+  convokeBio,
+  paper,
+  mem,
+  calCom,
+  osmind,
+  collate,
+  primeIntellect,
+  pierre,
+  supabase,
 ];
 
 export { anthropic, leya, granola, pika, elevenlabs, cognition, mercor, linear, notion, figma, mistral, cursor, perplexity, openai, vercel, midjourney, runway, stabilityAi, harvey, characterAi, typeface, scaleAi, replit, cohere, jasper, sourcegraph, superhuman, hebbia, gamma, ramp, lovable, codeium, heygen, gong, intercomFin, descript, glean, writer, brex, tome, grammarly, canva, otterAi, copyAi, beautifulAi, tabnine, harmonic, ambienceHealthcare, abridge, listenLabs, blossom, tavus, toma, shopify, base44, xai, suno, higgsfield, inferact, humansand, subtleComputing, deepgram, letta, llmarena, mem0, humeAi, ivo, surgeAi, factory, axiomMath, extropic, yutori, resolveAi, parahelp, exa, alphaXiv, wisprFlow, pallet, numeric, doppel, orionSleep, buildForever, sphere, cogentSecurity, wonder, span, safetykit, eventual, dedalusLabs, clerk, gigaml, worldLabs, airloom, console, lightfield, assortHealth, netic, numeral, gigs, magicPatterns, airops, quo, scribe, ando, fastino, shortwave, highscore, teraAi, cocoon, miter, blazeAi, chroma, legendXyz, wabi, welltheory, thinkingMachinesLab, impulseLabs, decart, lettuce, sanity, relace, speakeasy, mosey, brainfish, poolside, catalyxSpace, appliedCompute, vizcom, cartesia, generationLab, tensormesh, unstructured, alexAi, contra, livekit, mandolin, furtherAi, senecaSystems, rivo, railway, baseten, artie, chaiDiscovery, item, blacksmith, terradot, odyssey, mytra, corgi, glide, motif, tigereye, macroscope, trmLabs, hightouch, remofirst, loop, perleAi, flint, overlapAi, pacificFusion, ditto, truffleSecurity, lightpage, conductor, arcadeDev, layerFinancial, sauronSystems, hummingbird, redQueenBio, nexus, casca, twoTwoTwo, truemed, dittoLive, edisonScientific, loonen, inngest, suger, nokken, gcAi, anythingAi, medra, serval, anrok, fal, town, itemApp, internetBackyard, operateCrm, openrouter, humbleOps, rox, delve, solidroad, mutiny, heirloom, happyrobot, quanta, raindropAi, micro1, unlimitedIndustries, metronome, doss, devAgents, indexCompany, infisical, natural, claritycare, agora, nooks, sesameAi, langchain, replicate, tempo, comulate, reevo, clickhouse, bindwell, firecrawl, nuraline, collective, response, spiralDb, vapi, watershed, onton, goodfire, alloy, momentic, variant, lgnd, composite, sonatic, subtrate, sierra, tailor, physicalIntelligence, pulley, lighthouse, osmosis, zedDev, warmer, campfire, causalLabs, trunk, sentientLabs, inferenceNet };
