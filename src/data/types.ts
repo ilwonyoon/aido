@@ -86,6 +86,49 @@ export const INDUSTRY_LABELS: Record<Industry, string> = {
   'other': 'Other',
 };
 
+export type FundingStageCategory =
+  | 'pre-seed'
+  | 'seed'
+  | 'series-a'
+  | 'series-b'
+  | 'series-c'
+  | 'series-d-plus'
+  | 'growth'
+  | 'other';
+
+export const FUNDING_STAGE_LABELS: Record<FundingStageCategory, string> = {
+  'pre-seed': 'Pre-seed',
+  'seed': 'Seed',
+  'series-a': 'Series A',
+  'series-b': 'Series B',
+  'series-c': 'Series C',
+  'series-d-plus': 'Series D+',
+  'growth': 'Public / Private',
+  'other': 'Other',
+};
+
+export function normalizeFundingStage(stage: string): FundingStageCategory {
+  const s = stage.toLowerCase().trim();
+
+  if (s.includes('pre-seed') || s.includes('pre-series a')) return 'pre-seed';
+  if (s === 'seed') return 'seed';
+  if (s.startsWith('series a')) return 'series-a';
+  if (s.startsWith('series b')) return 'series-b';
+  if (s.startsWith('series c')) return 'series-c';
+  if (
+    s.startsWith('series d') ||
+    s.startsWith('series e') ||
+    s.startsWith('series f')
+  ) return 'series-d-plus';
+  if (
+    s.includes('public') ||
+    s.includes('private') ||
+    s.includes('bootstrapped')
+  ) return 'growth';
+
+  return 'other';
+}
+
 export interface FundingRound {
   stage: 'Pre-seed' | 'Seed' | 'Series A' | 'Series B' | 'Series C' | 'Series D' | 'Series E' | 'Series F' | 'Unknown';
   amount: string; // e.g., "$50M"
