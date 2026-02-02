@@ -60,30 +60,31 @@ function HomePageContent() {
 
   const closePanel = useCallback(() => {
     const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
-
-    // Use the scroll position saved when panel was opened
     const scrollToRestore = savedScrollPosition.current;
 
-    // Force synchronous state update to ensure animation class is applied
+    // Start close animation
     flushSync(() => {
       setClosingCompany(currentCompany);
       setIsClosing(true);
     });
 
     setTimeout(() => {
-      window.history.pushState({}, '', '/');
-      setSelectedCompanyId(null);
-      setIsFullWidth(false);
-      setIsClosing(false);
-      setClosingCompany(null);
+      // Remove panel-open class BEFORE state change to control scroll timing
+      document.documentElement.classList.remove('panel-open');
 
-      // Restore scroll position after layout recalculates (double rAF for safety)
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          window.scrollTo(0, scrollToRestore);
-        });
+      window.history.pushState({}, '', '/');
+
+      // Synchronous state update so layout changes happen immediately
+      flushSync(() => {
+        setSelectedCompanyId(null);
+        setIsFullWidth(false);
+        setIsClosing(false);
+        setClosingCompany(null);
       });
-    }, 300); // Match animation duration
+
+      // Restore scroll immediately after layout recalc
+      window.scrollTo(0, scrollToRestore);
+    }, 300);
   }, [selectedCompanyId]);
 
 
@@ -150,20 +151,13 @@ function HomePageContent() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCompanyId, closePanel]);
 
-  // Prevent background scroll when panel is open
+  // Prevent background scroll when panel is open (only ADD class here; removal handled in closePanel)
   useEffect(() => {
-    const html = document.documentElement;
-
     if (selectedCompanyId) {
-      // Add class to html element to prevent scroll
-      html.classList.add('panel-open');
-    } else {
-      // Remove class when panel closes
-      html.classList.remove('panel-open');
+      document.documentElement.classList.add('panel-open');
     }
-
     return () => {
-      html.classList.remove('panel-open');
+      document.documentElement.classList.remove('panel-open');
     };
   }, [selectedCompanyId]);
 
