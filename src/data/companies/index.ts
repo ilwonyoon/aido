@@ -373,6 +373,31 @@ import { invertBio } from './invert-bio';
 import { upwind } from './upwind';
 import { oway } from './oway';
 import { conversion } from './conversion';
+import { coframe } from './coframe';
+import { playbook } from './playbook';
+import { mage } from './mage';
+import { walrus } from './walrus';
+import { strideHealth } from './stride-health';
+import { merge } from './merge';
+import { instant } from './instant';
+import { wordware } from './wordware';
+import { roboflow } from './roboflow';
+import { dubCo } from './dub-co';
+import { mail0 } from './mail0';
+import { middesk } from './middesk';
+import { thatch } from './thatch';
+import { onyx } from './onyx';
+import { pylon } from './pylon';
+import { nuvo } from './nuvo';
+import { paradigm } from './paradigm';
+import { footprint } from './footprint';
+import { incidentIo } from './incident-io';
+import { workos } from './workos';
+import { chronicle } from './chronicle';
+import { cline } from './cline';
+import { nowadays } from './nowadays';
+import { alix } from './alix';
+import { stytch } from './stytch';
 
 export const companies: Company[] = [
   anthropic,
@@ -748,6 +773,31 @@ export const companies: Company[] = [
   upwind,
   oway,
   conversion,
+  coframe,
+  playbook,
+  mage,
+  walrus,
+  strideHealth,
+  merge,
+  instant,
+  wordware,
+  roboflow,
+  dubCo,
+  mail0,
+  middesk,
+  thatch,
+  onyx,
+  pylon,
+  nuvo,
+  paradigm,
+  footprint,
+  incidentIo,
+  workos,
+  chronicle,
+  cline,
+  nowadays,
+  alix,
+  stytch,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
