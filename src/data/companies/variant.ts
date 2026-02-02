@@ -6,8 +6,9 @@ export const variant: Company = {
   description:
     'AI agents platform focused on automating complex workflows for enterprises.',
   website: 'https://variant.ai/',
+  screenshot: '/screenshots/variant-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/variant-og.webp',
@@ -19,10 +20,12 @@ export const variant: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$5.9M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$5.9M', date: '2025-04' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const variant: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
@@ -189,5 +192,6 @@ export const variant: Company = {
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
     { title: 'Variant website', url: 'https://variant.ai/' },
+    { title: 'Variant on startups.gallery', url: 'https://startups.gallery/companies/variant' },
   ],
 };

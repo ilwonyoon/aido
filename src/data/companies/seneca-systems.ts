@@ -7,7 +7,7 @@ export const senecaSystems: Company = {
   website: 'https://seneca.com',
     screenshot: '/screenshots/seneca-systems-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   ogImage: 'https://seneca.com/_assets/og.B3gJA8ip_Z1OF3kC.png',
@@ -117,7 +117,7 @@ export const senecaSystems: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

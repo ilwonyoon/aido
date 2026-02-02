@@ -5,6 +5,7 @@ export const unstructured: Company = {
   name: 'Unstructured',
   description: 'Automated ETL platform for preparing data for LLMs.',
   website: 'https://unstructured.io',
+  screenshot: '/screenshots/unstructured-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -19,7 +20,7 @@ export const unstructured: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$40M',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -93,7 +94,7 @@ export const unstructured: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

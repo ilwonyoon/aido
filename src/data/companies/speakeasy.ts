@@ -5,6 +5,7 @@ export const speakeasy: Company = {
   name: 'Speakeasy',
   description: 'Platform to generate SDKs, docs, and MCP servers from OpenAPI specs.',
   website: 'https://www.speakeasy.com',
+  screenshot: '/screenshots/speakeasy-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -94,7 +95,7 @@ export const speakeasy: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

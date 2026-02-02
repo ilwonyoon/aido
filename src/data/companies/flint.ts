@@ -8,7 +8,7 @@ export const flint: Company = {
   website: 'https://www.tryflint.com/',
     screenshot: '/screenshots/flint-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/flint-og.webp',
@@ -23,7 +23,9 @@ export const flint: Company = {
   stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$24M',
-  fundingHistory: [],
+  fundingHistory: [
+    { stage: 'Seed', amount: '$5M', date: '2025-10' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const flint: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

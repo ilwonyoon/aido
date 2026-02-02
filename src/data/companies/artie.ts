@@ -7,7 +7,7 @@ export const artie: Company = {
     'Real-time data replication platform that syncs operational data across systems without lag.',
   website: 'https://www.artie.com/',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   screenshot: 'https://iad.microlink.io/KYk67MVkJsivsyQm4HOiPX29KIlw0PlkBkFIIXBU_2LQbgC6DaQXRJIix2DrWgrGDC1OXc4_WsOcHF33iSPlcQ.png',
@@ -24,7 +24,7 @@ export const artie: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$12M',
   fundingHistory: [
     {
       stage: 'Series A',
@@ -131,7 +131,7 @@ export const artie: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

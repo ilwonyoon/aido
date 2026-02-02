@@ -19,10 +19,12 @@ export const infisical: Company = {
   industries: ['security'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$19M',
-  fundingHistory: [],
+  fundingHistory: [
+    { stage: 'Series A', amount: '$16M', date: '2025-06' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -100,7 +102,7 @@ export const infisical: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

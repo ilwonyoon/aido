@@ -6,8 +6,9 @@ export const sonatic: Company = {
   description:
     'AI voice platform focused on building real-time voice agents for enterprise workflows.',
   website: 'https://www.sonatic.ai/',
+    screenshot: '/screenshots/sonatic-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/sonatic-og.webp',
@@ -116,7 +117,7 @@ export const sonatic: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

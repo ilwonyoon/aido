@@ -5,6 +5,7 @@ export const warmer: Company = {
   name: 'Warmer',
   description: 'A new kind of advice.',
   website: 'https://warmer.com',
+  screenshot: '/screenshots/warmer-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -19,7 +20,7 @@ export const warmer: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$10.4M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -84,7 +85,7 @@ export const warmer: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

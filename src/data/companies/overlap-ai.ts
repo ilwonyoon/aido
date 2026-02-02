@@ -8,7 +8,7 @@ export const overlapAi: Company = {
   website: 'https://overlap.ai/',
     screenshot: '/screenshots/overlap-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/overlap-ai-og.webp',
@@ -22,8 +22,10 @@ export const overlapAi: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$1.9M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$1.9M', date: '2024-09' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const overlapAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

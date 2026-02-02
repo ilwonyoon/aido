@@ -22,7 +22,7 @@ export const happyrobot: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$44M',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -124,7 +124,7 @@ export const happyrobot: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

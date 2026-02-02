@@ -6,8 +6,9 @@ export const sierra: Company = {
   description:
     'AI customer experience platform that helps enterprises deploy AI agents for support and service.',
   website: 'https://www.sierra.ai/',
+    screenshot: '/screenshots/sierra-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/sierra-og.webp',
@@ -21,7 +22,7 @@ export const sierra: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$350M',
   fundingHistory: [
     {
       stage: 'Series A',
@@ -129,7 +130,7 @@ export const sierra: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

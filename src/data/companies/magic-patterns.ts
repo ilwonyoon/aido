@@ -21,7 +21,7 @@ export const magicPatterns: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$6M',
   fundingHistory: [
     {
       stage: 'Series A',
@@ -95,7 +95,7 @@ export const magicPatterns: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

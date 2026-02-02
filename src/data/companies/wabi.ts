@@ -5,8 +5,9 @@ export const wabi: Company = {
   name: 'Wabi',
   description: 'AI-native consumer app focused on personal intelligence.',
   website: 'https://wabi.ai',
+  screenshot: '/screenshots/wabi-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/wabi-og.webp',
@@ -94,7 +95,7 @@ export const wabi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

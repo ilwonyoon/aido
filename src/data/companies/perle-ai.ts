@@ -23,7 +23,9 @@ export const perleAi: Company = {
   stage: 'Seed',
   valuation: 'Unknown',
   totalFunding: '$5.6M (seed)',
-  fundingHistory: [],
+  fundingHistory: [
+    { stage: 'Seed', amount: '$9M', date: '2025-08' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const perleAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

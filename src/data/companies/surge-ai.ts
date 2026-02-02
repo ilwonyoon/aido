@@ -6,6 +6,7 @@ export const surgeAi: Company = {
   description:
     'Human feedback and data labeling platform powering frontier AI training, evaluation, and RLHF.',
   website: 'https://surgehq.ai',
+  screenshot: '/screenshots/surge-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

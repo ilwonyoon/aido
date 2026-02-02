@@ -5,6 +5,7 @@ export const vercel: Company = {
     name: 'Vercel',
     description: 'Frontend cloud platform and creator of Next.js. Building the infrastructure for AI-native web.',
     website: 'https://vercel.com',
+  screenshot: '/screenshots/vercel-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

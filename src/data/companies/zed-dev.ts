@@ -5,6 +5,7 @@ export const zedDev: Company = {
   name: 'Zed',
   description: 'Multiplayer code editor.',
   website: 'https://zed.dev',
+  screenshot: '/screenshots/zed-dev-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -19,7 +20,7 @@ export const zedDev: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$32M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -85,7 +86,7 @@ export const zedDev: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

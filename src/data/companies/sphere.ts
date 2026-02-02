@@ -5,6 +5,7 @@ export const sphere: Company = {
   name: 'Sphere',
   description: 'Global tax compliance platform for modern finance teams.',
   website: 'https://getsphere.com',
+  screenshot: '/screenshots/sphere-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -20,8 +21,10 @@ export const sphere: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$21M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$21M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -88,7 +91,7 @@ export const sphere: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

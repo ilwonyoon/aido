@@ -5,6 +5,7 @@ export const shopify: Company = {
     name: 'Shopify',
     description: 'E-commerce platform with AI-powered tools (Sidekick, Magic) for merchants. Enables anyone to build and run an online store.',
     website: 'https://www.shopify.com',
+    screenshot: '/screenshots/shopify-screenshot.png',
     headquarters: 'Ottawa, Canada',
     remote: 'Hybrid',
 

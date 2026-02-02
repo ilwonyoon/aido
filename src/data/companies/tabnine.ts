@@ -5,6 +5,7 @@ export const tabnine: Company = {
     name: 'Tabnine',
     description: 'AI code assistant. Privacy-first, enterprise-focused AI coding completion.',
     website: 'https://www.tabnine.com',
+  screenshot: '/screenshots/tabnine-screenshot.png',
     headquarters: 'Tel Aviv, Israel',
     remote: 'Hybrid',
 
@@ -78,5 +79,9 @@ export const tabnine: Company = {
       nextActions: ['Try Tabnine product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Tabnine Series B', 'url': 'https://www.tabnine.com/blog/tabnine-series-b/'}, {'title': 'Tabnine Funding', 'url': 'https://www.cbinsights.com/company/tabnine/financials'}],
+    sources: [
+      { title: 'Tabnine Series B', url: 'https://www.tabnine.com/blog/tabnine-series-b/' },
+      { title: 'Tabnine Funding', url: 'https://www.cbinsights.com/company/tabnine/financials' },
+      { title: 'Tabnine Careers', url: 'https://www.tabnine.com/careers' },
+    ],
   };

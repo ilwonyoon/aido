@@ -18,9 +18,9 @@ export const subframe: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Pre-Seed',
+  stage: 'Pre-seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: 'Not publicly disclosed',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const subframe: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

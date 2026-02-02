@@ -122,7 +122,7 @@ export const listenLabs: Company = {
 
     // Design Opportunity
     designTeam: {
-      teamSize: 'Unknown (company size 11-50)',
+      teamSize: '11-50 employees (startups.gallery)',
     },
     designWorkType: {
       logicBehavior: {

@@ -16,7 +16,7 @@ export const fermat: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$45M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -56,7 +56,7 @@ export const fermat: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

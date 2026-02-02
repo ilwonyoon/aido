@@ -7,7 +7,7 @@ export const legendXyz: Company = {
   website: 'https://legend.xyz',
     screenshot: '/screenshots/legend-xyz-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/legend-xyz-og.webp',
@@ -19,9 +19,9 @@ export const legendXyz: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$15M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -89,7 +89,7 @@ export const legendXyz: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

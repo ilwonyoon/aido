@@ -8,7 +8,7 @@ export const composite: Company = {
   website: 'https://www.composite.ai/',
     screenshot: '/screenshots/composite-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/composite-og.webp',
@@ -22,8 +22,10 @@ export const composite: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$5.6M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$5.6M', date: '2025-09' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const composite: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

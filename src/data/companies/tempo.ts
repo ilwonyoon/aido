@@ -5,6 +5,7 @@ export const tempo: Company = {
   name: 'Tempo',
   description: 'Payments-focused blockchain designed for high-throughput settlement.',
   website: 'https://tempo.xyz',
+  screenshot: '/screenshots/tempo-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -93,7 +94,7 @@ export const tempo: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -6,8 +6,9 @@ export const tailor: Company = {
   description:
     'AI-native ERP and operations platform for modern manufacturing and supply chain teams.',
   website: 'https://www.tailor.tech/',
+  screenshot: '/screenshots/tailor-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/tailor-og.webp',
@@ -21,8 +22,10 @@ export const tailor: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$37M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$37M', date: '2025-06' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const tailor: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
@@ -189,5 +192,6 @@ export const tailor: Company = {
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
     { title: 'Tailor website', url: 'https://www.tailor.tech/' },
+    { title: 'Tailor on startups.gallery', url: 'https://startups.gallery/companies/tailor' },
   ],
 };

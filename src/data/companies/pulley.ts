@@ -20,7 +20,7 @@ export const pulley: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$40M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -86,7 +86,7 @@ export const pulley: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -5,6 +5,7 @@ export const typeface: Company = {
     name: 'Typeface',
     description: 'Generative AI platform for enterprise marketing content, enabling businesses to create personalized, on-brand content at scale.',
     website: 'https://typeface.ai',
+  screenshot: '/screenshots/typeface-screenshot.png',
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
 

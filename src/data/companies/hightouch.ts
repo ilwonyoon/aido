@@ -8,7 +8,7 @@ export const hightouch: Company = {
   website: 'https://hightouch.com/',
     screenshot: '/screenshots/hightouch-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/hightouch-og.webp',
@@ -22,7 +22,7 @@ export const hightouch: Company = {
   // Business
   stage: 'Series C',
   valuation: '$1.2B (Feb 2025)',
-  totalFunding: 'Unknown',
+  totalFunding: '$80M',
   fundingHistory: [
     {
       stage: 'Series C',
@@ -135,7 +135,7 @@ export const hightouch: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

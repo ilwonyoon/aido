@@ -5,6 +5,7 @@ export const tensormesh: Company = {
   name: 'Tensormesh',
   description: 'Caching layer for LLM inference to reduce latency and costs.',
   website: 'https://tensormesh.ai',
+  screenshot: '/screenshots/tensormesh-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -93,7 +94,7 @@ export const tensormesh: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

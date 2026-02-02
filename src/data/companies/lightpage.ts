@@ -8,7 +8,7 @@ export const lightpage: Company = {
   website: 'https://lightpage.com/',
     screenshot: '/screenshots/lightpage-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/lightpage-og.webp',
@@ -117,7 +117,7 @@ export const lightpage: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

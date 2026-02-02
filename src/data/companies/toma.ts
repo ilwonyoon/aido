@@ -5,6 +5,7 @@ export const toma: Company = {
     name: 'Toma',
     description: 'AI voice agents for automotive industry. Handles phone calls, scheduling, and customer service for car dealerships.',
     website: 'https://www.toma.com',
+  screenshot: '/screenshots/toma-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

@@ -22,7 +22,7 @@ export const quanta: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$15M',
   fundingHistory: [
     {
       stage: 'Series A',
@@ -124,7 +124,7 @@ export const quanta: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -8,7 +8,7 @@ export const response: Company = {
   website: 'https://tryresponse.com/',
     screenshot: '/screenshots/response-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/response-og.webp',
@@ -117,7 +117,7 @@ export const response: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

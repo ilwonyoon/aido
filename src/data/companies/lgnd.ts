@@ -8,7 +8,7 @@ export const lgnd: Company = {
   website: 'https://www.lgnd.com/',
     screenshot: '/screenshots/lgnd-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/lgnd-og.webp',
@@ -20,10 +20,12 @@ export const lgnd: Company = {
   industries: ['infrastructure', 'legal'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$9M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$9M', date: '2025-07' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const lgnd: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

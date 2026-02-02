@@ -21,8 +21,10 @@ export const furtherAi: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$25M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$25M', date: '2025-10' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',

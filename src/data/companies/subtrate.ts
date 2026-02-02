@@ -5,10 +5,14 @@ export const subtrate: Company = {
   name: 'Subtrate',
   description:
     'AI infrastructure platform focused on accelerating model training and deployment.',
-  website: 'https://subtrate.com/',
+  website: 'https://substrate.com/',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
+
+  // Visual Assets
+  screenshot: '/screenshots/subtrate-screenshot.png',
+  ogImage: '/screenshots/subtrate-screenshot.png',
 
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
@@ -16,10 +20,12 @@ export const subtrate: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$100M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$100M', date: '2025-10' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -113,7 +119,7 @@ export const subtrate: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
@@ -185,6 +191,7 @@ export const subtrate: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Subtrate website', url: 'https://subtrate.com/' },
+    { title: 'Substrate website', url: 'https://substrate.com/' },
+    { title: 'Subtrate on startups.gallery', url: 'https://startups.gallery/companies/subtrate' },
   ],
 };

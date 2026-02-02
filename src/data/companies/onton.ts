@@ -8,7 +8,7 @@ export const onton: Company = {
   website: 'https://www.onton.com/',
     screenshot: '/screenshots/onton-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/onton-og.webp',
@@ -129,7 +129,7 @@ export const onton: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

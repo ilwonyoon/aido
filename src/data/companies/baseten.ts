@@ -7,7 +7,7 @@ export const baseten: Company = {
     'Model inference platform that helps teams deploy and scale AI models with production-grade latency and reliability.',
   website: 'https://www.baseten.co/',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
   // Visual Assets
   screenshot: 'https://iad.microlink.io/MWHtaq6felmNLlT-_DdXdATesJAXWxbB459TtVM1qUkKngxkhlvyxbBk49LfS-RFS8OoJdNboroN59KplJhS4g.png',
@@ -24,7 +24,7 @@ export const baseten: Company = {
   // Business
   stage: 'Series E',
   valuation: '$5B (Jan 2026)',
-  totalFunding: 'Unknown',
+  totalFunding: '$300M',
   fundingHistory: [
     {
       stage: 'Series E',
@@ -137,7 +137,7 @@ export const baseten: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

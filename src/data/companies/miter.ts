@@ -7,7 +7,7 @@ export const miter: Company = {
   website: 'https://miter.co',
     screenshot: '/screenshots/miter-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/miter-og.webp',
@@ -19,10 +19,12 @@ export const miter: Company = {
   industries: ['productivity'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$23M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$23M', date: '2025-05' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -89,7 +91,7 @@ export const miter: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

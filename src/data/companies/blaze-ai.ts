@@ -6,7 +6,7 @@ export const blazeAi: Company = {
   description: 'AI marketing platform that helps teams create and automate content.',
   website: 'https://www.withblaze.app',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
   // Visual Assets
   ogImage: 'https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.withblaze.app/&size=128',
@@ -21,7 +21,7 @@ export const blazeAi: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$34M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -89,7 +89,7 @@ export const blazeAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

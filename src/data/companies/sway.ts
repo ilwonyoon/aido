@@ -4,13 +4,13 @@ export const sway: Company = {
   id: 'sway',
   name: 'Sway',
   description: 'Seaweed as replacement for plastic.',
-  website: 'https://sway.bio',
+  website: 'https://swaythefuture.com/',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
   // Visual Assets
   screenshot: '/screenshots/sway-screenshot.png',
-    ogImage: '/screenshots/sway-screenshot.png',
+  ogImage: '/screenshots/sway-screenshot.png',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],
@@ -20,7 +20,7 @@ export const sway: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$8.5M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const sway: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
@@ -119,7 +119,7 @@ export const sway: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Sway', url: 'https://sway.bio' },
+    { title: 'Sway', url: 'https://swaythefuture.com/' },
     { title: 'Sway on startups.gallery', url: 'https://startups.gallery/companies/sway' },
   ],
 };

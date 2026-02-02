@@ -5,6 +5,7 @@ export const subtleComputing: Company = {
     name: 'Subtle Computing',
     description: 'AI-powered tool for capturing and querying real-time conversations.',
     website: 'https://www.subtle.co',
+  screenshot: '/screenshots/subtle-computing-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

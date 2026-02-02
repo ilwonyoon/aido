@@ -4,7 +4,7 @@ export const stable: Company = {
   id: 'stable',
   name: 'Stable',
   description: 'Virtual address + mailroom for startups.',
-  website: 'https://stable.io',
+  website: 'https://www.usestable.com/',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -20,7 +20,7 @@ export const stable: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: 'Not publicly disclosed',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const stable: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
@@ -119,7 +119,7 @@ export const stable: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Stable', url: 'https://stable.io' },
+    { title: 'Stable', url: 'https://www.usestable.com/' },
     { title: 'Stable on startups.gallery', url: 'https://startups.gallery/companies/stable' },
   ],
 };

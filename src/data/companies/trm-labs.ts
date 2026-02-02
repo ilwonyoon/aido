@@ -6,6 +6,7 @@ export const trmLabs: Company = {
   description:
     'Blockchain intelligence platform that helps governments, financial institutions, and crypto businesses detect, investigate, and prevent illicit activity.',
   website: 'https://www.trmlabs.com/',
+  screenshot: '/screenshots/trm-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -130,7 +131,7 @@ export const trmLabs: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -6,6 +6,7 @@ export const truemed: Company = {
   description:
     'Platform that enables shoppers to use HSA/FSA funds for eligible health and wellness products.',
   website: 'https://www.truemed.com/',
+  screenshot: '/screenshots/truemed-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -21,8 +22,10 @@ export const truemed: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$34M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$34M', date: '2025-12' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const truemed: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

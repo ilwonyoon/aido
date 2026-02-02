@@ -6,8 +6,9 @@ export const truffleSecurity: Company = {
   description:
     'Security platform that finds and remediates secrets and credentials across codebases and infrastructure.',
   website: 'https://trufflesecurity.com/',
+  screenshot: '/screenshots/truffle-security-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/truffle-security-og.webp',
@@ -21,8 +22,10 @@ export const truffleSecurity: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$25M',
+  fundingHistory: [
+    { stage: 'Series B', amount: '$25M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const truffleSecurity: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

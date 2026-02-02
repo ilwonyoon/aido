@@ -5,6 +5,7 @@ export const worldLabs: Company = {
   name: 'World Labs',
   description: 'Building large world models to generate 3D worlds without limits.',
   website: 'https://worldlabs.ai',
+  screenshot: '/screenshots/world-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -109,7 +110,7 @@ export const worldLabs: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

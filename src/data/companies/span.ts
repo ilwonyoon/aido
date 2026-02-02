@@ -5,6 +5,7 @@ export const span: Company = {
   name: 'Span',
   description: 'Developer intelligence platform for engineering teams.',
   website: 'https://span.app',
+    screenshot: '/screenshots/span-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -95,7 +96,7 @@ export const span: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

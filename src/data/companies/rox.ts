@@ -8,7 +8,7 @@ export const rox: Company = {
   website: 'https://rox.com/',
     screenshot: '/screenshots/rox-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/rox-og.webp',
@@ -22,8 +22,10 @@ export const rox: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$50M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$50M', date: '2024-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const rox: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {
