@@ -13,6 +13,7 @@ export interface TourStep {
   delayMs?: number;        // delay before showing (e.g., wait for panel animation)
   scrollContainer?: string; // CSS selector of scroll container (for panel steps)
   padding?: number;        // spotlight padding around target
+  tooltipAlignSelector?: string; // CSS selector of child element to align tooltip top with
 }
 
 interface SpotlightRect {
@@ -29,6 +30,7 @@ interface SpotlightTourProps {
   currentStep: number;
   onNext: () => void;
   onSkip: () => void;
+  onVisible?: () => void; // called when a step becomes visible
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -37,14 +39,14 @@ interface SpotlightTourProps {
 
 const TOOLTIP_HEIGHT_ESTIMATE = 200;
 
-function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
+function getTooltipStyle(spotlight: SpotlightRect, contentTop?: number | null): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
   const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
   const isMobile = viewW < 768;
   const gap = 12;
   const margin = 16;
 
-  // Mobile: always fixed at the bottom of screen, matching card width
+  // Mobile: pinned to bottom of visible viewport
   if (isMobile) {
     const cardEl = typeof document !== 'undefined'
       ? document.querySelector('[data-tour="first-card"]') ?? document.querySelector('.card')
@@ -52,20 +54,26 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     const cardRect = cardEl?.getBoundingClientRect();
     const tooltipLeft = cardRect ? cardRect.left : 16;
     const tooltipWidth = cardRect ? cardRect.width : viewW - 32;
+    // Use visualViewport for accurate mobile height (excludes browser chrome)
+    const visibleH = typeof window !== 'undefined'
+      ? (window.visualViewport?.height ?? window.innerHeight)
+      : viewH;
+    const top = visibleH - TOOLTIP_HEIGHT_ESTIMATE - 24;
 
-    return { position: 'absolute', bottom: margin, left: tooltipLeft, width: tooltipWidth };
+    return { position: 'fixed', top, left: tooltipLeft, width: tooltipWidth };
   }
 
-  // Desktop — top-aligned with the spotlight highlight area
+  // Desktop — all positions use fixed to match overlay divs
   const tooltipWidth = 320;
-  const alignTop = spotlight.top;
+  // Use content card top if available, otherwise fall back to spotlight top
+  const alignTop = contentTop ?? spotlight.top;
 
   // Try right side first (preferred — keeps spotlight visible)
   const spaceRight = viewW - spotlight.right;
   if (spaceRight > tooltipWidth + gap + margin && alignTop > 60) {
     const top = Math.max(margin, Math.min(alignTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
-      position: 'absolute',
+      position: 'fixed',
       top,
       left: spotlight.right + gap,
       width: tooltipWidth,
@@ -77,20 +85,20 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   if (spaceLeft > tooltipWidth + gap + margin && alignTop > 60) {
     const top = Math.max(margin, Math.min(alignTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
-      position: 'absolute',
+      position: 'fixed',
       top,
       left: spotlight.left - tooltipWidth - gap,
       width: tooltipWidth,
     };
   }
 
-  // Try below (top-aligned to spotlight bottom)
+  // Try below
   const spaceBelow = viewH - spotlight.bottom;
   if (spaceBelow > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
     const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
-    return { position: 'absolute', top, left, width: tooltipWidth };
+    return { position: 'fixed', top, left, width: tooltipWidth };
   }
 
   // Try above
@@ -98,14 +106,14 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   if (spaceAbove > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
-    return { position: 'absolute', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+    return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
   }
 
-  // Last resort: overlay inside the spotlight area, near the top
+  // Last resort
   let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
   left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
   const top = Math.max(margin, spotlight.top + gap);
-  return { position: 'absolute', top, left, width: tooltipWidth };
+  return { position: 'fixed', top, left, width: tooltipWidth };
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -154,6 +162,7 @@ export function SpotlightTour({
   currentStep,
   onNext,
   onSkip,
+  onVisible,
 }: SpotlightTourProps) {
   const [spotlight, setSpotlight] = useState<SpotlightRect | null>(null);
   const [visible, setVisible] = useState(false);
@@ -183,8 +192,10 @@ export function SpotlightTour({
     }
 
     if (!el) {
-      // Retry a few times (element might not be rendered yet)
-      if (retryCountRef.current < 5) {
+      // Retry — element might not be rendered yet
+      // Step 0 gets more retries since the company list always renders eventually
+      const maxRetries = currentStep === 0 ? 20 : 5;
+      if (retryCountRef.current < maxRetries) {
         retryCountRef.current += 1;
         setTimeout(() => calculatePosition(), 300);
         return;
@@ -204,19 +215,49 @@ export function SpotlightTour({
 
     retryCountRef.current = 0;
 
-    // Scroll element into view inside its scroll container
+    const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
+    const isMobile = viewW < 768;
+
+    // Scroll element into view
     if (container && step.scrollContainer) {
+      // Panel scroll container
       const htmlEl = el as HTMLElement;
       const containerEl = container as HTMLElement;
-      const targetOffset = htmlEl.offsetTop - 80; // 80px offset for header
+      const targetOffset = htmlEl.offsetTop - 80;
       containerEl.scrollTo({ top: targetOffset, behavior: 'smooth' });
+    } else if (isMobile) {
+      // Mobile: scroll page so target is near top, leaving room for tooltip at bottom
+      const rect = el.getBoundingClientRect();
+      const navHeight = 56;
+      const targetScrollTop = window.scrollY + rect.top - navHeight - 8;
+      window.scrollTo({ top: Math.max(0, targetScrollTop), behavior: 'smooth' });
     }
 
     // Wait for scroll to settle, then measure
-    const positionDelay = step.scrollContainer ? 500 : 100;
+    const positionDelay = (step.scrollContainer || isMobile) ? 500 : 100;
     setTimeout(() => {
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
+      // Re-query the element fresh to avoid stale closure references
+      let freshEl: Element | null = null;
+      if (step.scrollContainer) {
+        const freshContainer = document.querySelector(step.scrollContainer);
+        if (freshContainer) {
+          freshEl = freshContainer.querySelector(step.target);
+        }
+      } else {
+        freshEl = document.querySelector(step.target);
+      }
+
+      if (!freshEl) {
+        if (retryCountRef.current < 3) {
+          retryCountRef.current += 1;
+          setTimeout(() => calculatePosition(), 300);
+          return;
+        }
+        onNext();
+        return;
+      }
+
+      const rect = freshEl.getBoundingClientRect();
 
       // Validate: element must be visible in viewport
       const viewH = window.innerHeight;
@@ -242,8 +283,9 @@ export function SpotlightTour({
 
       setSpotlight(clampToViewport(raw));
       setVisible(true);
+      onVisible?.();
     }, positionDelay);
-  }, [step, onNext]);
+  }, [step, currentStep, onNext, onVisible]);
 
   // Recalculate on step change
   useEffect(() => {
@@ -275,7 +317,18 @@ export function SpotlightTour({
 
   if (!spotlight || !visible || !step) return null;
 
-  const tooltipStyle = getTooltipStyle(spotlight);
+  // Measure tooltip alignment target at render time for accuracy
+  // This runs AFTER the spotlight is positioned and the DOM is stable
+  let contentTop: number | null = null;
+  if (step.tooltipAlignSelector) {
+    const fullSelector = `${step.target} ${step.tooltipAlignSelector}`;
+    const alignEl = typeof document !== 'undefined' ? document.querySelector(fullSelector) : null;
+    if (alignEl) {
+      contentTop = alignEl.getBoundingClientRect().top;
+    }
+  }
+
+  const tooltipStyle = getTooltipStyle(spotlight, contentTop);
 
   return (
     <div className="fixed inset-0 z-[10000]" style={{ pointerEvents: 'none' }}>
@@ -348,6 +401,10 @@ export function SpotlightTour({
           </span>
         </div>
 
+        {/* DEBUG: remove after testing */}
+        <div className="text-[9px] font-mono opacity-50 mb-1">
+          top:{JSON.stringify(tooltipStyle.top)} bot:{JSON.stringify(tooltipStyle.bottom)} vH:{typeof window !== 'undefined' ? (window.visualViewport?.height ?? window.innerHeight) : '?'}
+        </div>
         <h3 className="text-sm font-semibold mb-1">{step.title}</h3>
         <p className="text-xs sm:text-sm tour-tooltip-muted leading-relaxed mb-3 sm:mb-4">
           {step.description}

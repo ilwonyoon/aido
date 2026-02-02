@@ -26,21 +26,24 @@ const TOUR_STEPS: TourStep[] = [
     description: 'Stage, valuation, AI level, open roles, and funding — everything you need at a glance.',
     delayMs: 600,
     scrollContainer: '.panel-scroll',
-    padding: 8,
+    padding: 24,
+    tooltipAlignSelector: '.card',
   },
   {
     target: '#company',
     title: 'Deep company analysis',
     description: 'Funding history, competitive landscape, market position, growth metrics, and AI-native level.',
     scrollContainer: '.panel-scroll',
-    padding: 8,
+    padding: 24,
+    tooltipAlignSelector: '.card',
   },
   {
     target: '#design',
     title: 'Design opportunities',
     description: 'Team structure, design work types, culture insights, and your personal fit score.',
     scrollContainer: '.panel-scroll',
-    padding: 8,
+    padding: 24,
+    tooltipAlignSelector: '.card',
   },
   {
     target: '[data-tour="nav-insights"]',
@@ -116,6 +119,7 @@ function HomePageContent() {
   const tourStepRef = useRef<number | null>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
   const tourInitRef = useRef(false);
+  const tourShownRef = useRef(false); // true only after user saw at least one step
 
   // Keep refs in sync
   selectedCompanyIdRef.current = selectedCompanyId;
@@ -128,6 +132,14 @@ function HomePageContent() {
     // Tour initialization — only once on first mount
     if (!tourInitRef.current) {
       tourInitRef.current = true;
+
+      // Allow forced tour reset via URL param: ?tour=reset
+      if (searchParams.get('tour') === 'reset') {
+        try { localStorage.removeItem(ONBOARDING_KEY); } catch { /* */ }
+        window.history.replaceState({}, '', '/');
+        setTourStep(0);
+        return;
+      }
 
       if (isTourUnseen()) {
         // Clear any URL company param, start tour clean
@@ -224,9 +236,11 @@ function HomePageContent() {
     }
 
     if (current >= TOUR_STEPS.length - 1) {
-      // Tour complete
+      // Tour complete — only persist if user actually saw it
       setTourStep(null);
-      markTourSeen();
+      if (tourShownRef.current) {
+        markTourSeen();
+      }
       return;
     }
 
@@ -259,7 +273,13 @@ function HomePageContent() {
 
   const handleTourSkip = useCallback(() => {
     setTourStep(null);
-    markTourSeen();
+    if (tourShownRef.current) {
+      markTourSeen();
+    }
+  }, []);
+
+  const handleTourVisible = useCallback(() => {
+    tourShownRef.current = true;
   }, []);
 
   const toggleFullWidth = useCallback(() => {
@@ -501,6 +521,7 @@ function HomePageContent() {
           currentStep={tourStep}
           onNext={handleTourNext}
           onSkip={handleTourSkip}
+          onVisible={handleTourVisible}
         />
       )}
     </div>
