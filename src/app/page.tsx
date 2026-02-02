@@ -27,7 +27,6 @@ const TOUR_STEPS: TourStep[] = [
     delayMs: 600,
     scrollContainer: '.panel-scroll',
     padding: 8,
-    maxHeight: 280,
   },
   {
     target: '#company',
@@ -35,7 +34,6 @@ const TOUR_STEPS: TourStep[] = [
     description: 'Funding history, competitive landscape, market position, growth metrics, and AI-native level.',
     scrollContainer: '.panel-scroll',
     padding: 8,
-    maxHeight: 200,
   },
   {
     target: '#design',
@@ -43,7 +41,18 @@ const TOUR_STEPS: TourStep[] = [
     description: 'Team structure, design work types, culture insights, and your personal fit score.',
     scrollContainer: '.panel-scroll',
     padding: 8,
-    maxHeight: 200,
+  },
+  {
+    target: '[data-tour="nav-insights"]',
+    title: 'Read our insights',
+    description: 'In-depth articles analyzing AI design trends, company strategies, and career opportunities.',
+    padding: 6,
+  },
+  {
+    target: '[data-tour="nav-about"]',
+    title: 'About AIDO',
+    description: 'Learn about the AI-native level framework and how we evaluate companies for designers.',
+    padding: 6,
   },
 ];
 
@@ -196,13 +205,38 @@ function HomePageContent() {
       return; // handleCompanyClick will advance to step 1
     }
 
-    if (current < TOUR_STEPS.length - 1) {
-      setTourStep(current + 1);
-    } else {
+    if (current >= TOUR_STEPS.length - 1) {
       // Tour complete
       setTourStep(null);
       markTourSeen();
+      return;
     }
+
+    const nextStep = current + 1;
+
+    // Transitioning from panel steps (1-3) to nav steps (4+): close panel first
+    if (current === 3 && nextStep === 4 && selectedCompanyIdRef.current) {
+      const id = selectedCompanyIdRef.current;
+      const currentCompany = id ? (getCompanyById(id) || null) : null;
+      setClosingCompany(currentCompany);
+      setIsClosing(true);
+
+      setTimeout(() => {
+        window.history.pushState({}, '', '/');
+        setSelectedCompanyId(null);
+        setIsFullWidth(false);
+        setIsClosing(false);
+        setClosingCompany(null);
+
+        requestAnimationFrame(() => {
+          window.scrollTo(0, 0);
+          setTourStep(nextStep);
+        });
+      }, 300);
+      return;
+    }
+
+    setTourStep(nextStep);
   }, [handleCompanyClick]);
 
   const handleTourSkip = useCallback(() => {

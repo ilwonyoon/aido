@@ -13,7 +13,6 @@ export interface TourStep {
   delayMs?: number;        // delay before showing (e.g., wait for panel animation)
   scrollContainer?: string; // CSS selector of scroll container (for panel steps)
   padding?: number;        // spotlight padding around target
-  maxHeight?: number;      // cap spotlight height
 }
 
 interface SpotlightRect {
@@ -33,21 +32,35 @@ interface SpotlightTourProps {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// Tooltip position calculator
+// Tooltip position calculator (mobile-aware)
 // ────────────────────────────────────────────────────────────────────────────
 
-function getTooltipStyle(
-  spotlight: SpotlightRect
-): React.CSSProperties {
-  const tooltipWidth = 320;
-  const gap = 16;
+function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
   const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
+  const isMobile = viewW < 768;
+  const tooltipWidth = isMobile ? Math.min(viewW - 32, 320) : 320;
+  const gap = 12;
 
   const spaceBelow = viewH - spotlight.bottom;
-  const spaceRight = viewW - spotlight.right;
+  const spaceAbove = spotlight.top;
 
-  // Try right side first (desktop side panel steps)
+  // Mobile: always center horizontally, prefer below
+  if (isMobile) {
+    const left = Math.max(16, (viewW - tooltipWidth) / 2);
+
+    if (spaceBelow > 160) {
+      return { position: 'fixed', top: spotlight.bottom + gap, left, width: tooltipWidth };
+    }
+    if (spaceAbove > 160) {
+      return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+    }
+    // Fallback: overlay at bottom of screen
+    return { position: 'fixed', bottom: 16, left, width: tooltipWidth };
+  }
+
+  // Desktop: try right side first (for panel steps)
+  const spaceRight = viewW - spotlight.right;
   if (spaceRight > tooltipWidth + gap + 16 && spotlight.top > 60) {
     return {
       position: 'fixed',
@@ -57,26 +70,39 @@ function getTooltipStyle(
     };
   }
 
-  // Try below
+  // Desktop: try below
   if (spaceBelow > 180) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(16, Math.min(left, viewW - tooltipWidth - 16));
-    return {
-      position: 'fixed',
-      top: spotlight.bottom + gap,
-      left,
-      width: tooltipWidth,
-    };
+    return { position: 'fixed', top: spotlight.bottom + gap, left, width: tooltipWidth };
   }
 
-  // Fall back to above
+  // Desktop: fall back to above
   let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
   left = Math.max(16, Math.min(left, viewW - tooltipWidth - 16));
+  return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Clamp spotlight to visible viewport
+// ────────────────────────────────────────────────────────────────────────────
+
+function clampToViewport(rect: SpotlightRect): SpotlightRect {
+  const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
+  const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
+
+  const top = Math.max(0, rect.top);
+  const left = Math.max(0, rect.left);
+  const right = Math.min(viewW, rect.right);
+  const bottom = Math.min(viewH, rect.bottom);
+
   return {
-    position: 'fixed',
-    bottom: viewH - spotlight.top + gap,
+    top,
     left,
-    width: tooltipWidth,
+    width: right - left,
+    height: bottom - top,
+    right,
+    bottom,
   };
 }
 
@@ -93,6 +119,7 @@ export function SpotlightTour({
   const [spotlight, setSpotlight] = useState<SpotlightRect | null>(null);
   const [visible, setVisible] = useState(false);
   const recalcTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const retryCountRef = useRef(0);
 
   const step = steps[currentStep];
   const isLastStep = currentStep === steps.length - 1;
@@ -105,49 +132,78 @@ export function SpotlightTour({
 
     // Find target element
     let el: Element | null = null;
+    let container: Element | null = null;
 
     if (step.scrollContainer) {
-      const container = document.querySelector(step.scrollContainer);
+      container = document.querySelector(step.scrollContainer);
       if (container) {
         el = container.querySelector(step.target);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
       }
     } else {
       el = document.querySelector(step.target);
     }
 
     if (!el) {
-      // Target not found — skip this step
-      setSpotlight(null);
+      // Retry a few times (element might not be rendered yet)
+      if (retryCountRef.current < 5) {
+        retryCountRef.current += 1;
+        setTimeout(() => calculatePosition(), 300);
+        return;
+      }
+      // Give up — auto-advance to next step
+      retryCountRef.current = 0;
+      onNext();
       return;
     }
 
-    // Small delay for scroll to settle
-    const positionDelay = step.scrollContainer ? 400 : 50;
-    setTimeout(() => {
-      const rect = el!.getBoundingClientRect();
-      const height = step.maxHeight
-        ? Math.min(rect.height + pad * 2, step.maxHeight)
-        : rect.height + pad * 2;
+    retryCountRef.current = 0;
 
-      setSpotlight({
+    // Scroll element into view inside its scroll container
+    if (container && step.scrollContainer) {
+      const htmlEl = el as HTMLElement;
+      const containerEl = container as HTMLElement;
+      const targetOffset = htmlEl.offsetTop - 80; // 80px offset for header
+      containerEl.scrollTo({ top: targetOffset, behavior: 'smooth' });
+    }
+
+    // Wait for scroll to settle, then measure
+    const positionDelay = step.scrollContainer ? 500 : 100;
+    setTimeout(() => {
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+
+      // Validate: element must be visible in viewport
+      const viewH = window.innerHeight;
+      if (rect.top > viewH || rect.bottom < 0 || rect.width === 0) {
+        // Element not visible, retry
+        if (retryCountRef.current < 3) {
+          retryCountRef.current += 1;
+          setTimeout(() => calculatePosition(), 300);
+          return;
+        }
+        onNext();
+        return;
+      }
+
+      const raw: SpotlightRect = {
         top: rect.top - pad,
         left: rect.left - pad,
         width: rect.width + pad * 2,
-        height,
+        height: rect.height + pad * 2,
         right: rect.right + pad,
-        bottom: rect.top - pad + height,
-      });
+        bottom: rect.bottom + pad,
+      };
+
+      setSpotlight(clampToViewport(raw));
       setVisible(true);
     }, positionDelay);
-  }, [step]);
+  }, [step, onNext]);
 
   // Recalculate on step change
   useEffect(() => {
     setVisible(false);
     setSpotlight(null);
+    retryCountRef.current = 0;
 
     const delay = step?.delayMs ?? 0;
     const timer = setTimeout(() => {
@@ -236,11 +292,11 @@ export function SpotlightTour({
 
       {/* Tooltip card */}
       <div
-        className="card p-5 shadow-2xl animate-fadeIn border border-[var(--accent)]/30"
+        className="card p-4 sm:p-5 shadow-2xl animate-fadeIn border border-[var(--accent)]/30"
         style={{ ...tooltipStyle, pointerEvents: 'auto' }}
       >
         {/* Step counter */}
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-1.5 mb-2">
           {steps.map((_, i) => (
             <div
               key={i}
@@ -259,7 +315,7 @@ export function SpotlightTour({
         </div>
 
         <h3 className="text-sm font-semibold mb-1">{step.title}</h3>
-        <p className="text-sm text-[var(--muted)] leading-relaxed mb-4">
+        <p className="text-xs sm:text-sm text-[var(--muted)] leading-relaxed mb-3 sm:mb-4">
           {step.description}
         </p>
 

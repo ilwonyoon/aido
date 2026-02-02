@@ -41,6 +41,7 @@ export function Navigation() {
         <div className="hidden lg:flex items-center gap-4 text-sm">
           <Link
             href="/about"
+            data-tour="nav-about"
             className={
               isActive('/about')
                 ? 'text-[var(--foreground)] font-medium'
@@ -61,6 +62,7 @@ export function Navigation() {
           </Link>
           <Link
             href="/insights"
+            data-tour="nav-insights"
             className={
               isActive('/insights')
                 ? 'text-[var(--foreground)] font-medium'
