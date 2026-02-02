@@ -37,14 +37,17 @@ interface SpotlightTourProps {
 
 const TOOLTIP_HEIGHT_ESTIMATE = 200;
 
-function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
+function getTooltipStyle(spotlight: SpotlightRect, pad: number): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
   const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
   const isMobile = viewW < 768;
   const gap = 12;
   const margin = 16;
 
-  // Mobile: measure an actual .card element to get exact width and position
+  // The actual element top (spotlight.top includes padding above)
+  const elementTop = spotlight.top + pad;
+
+  // Mobile: always fixed at the bottom of screen, matching card width
   if (isMobile) {
     const cardEl = typeof document !== 'undefined'
       ? document.querySelector('[data-tour="first-card"]') ?? document.querySelector('.card')
@@ -53,43 +56,16 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     const tooltipLeft = cardRect ? cardRect.left : 16;
     const tooltipWidth = cardRect ? cardRect.width : viewW - 32;
 
-    const spaceBelow = viewH - spotlight.bottom;
-    const spaceAbove = spotlight.top;
-
-    if (spaceBelow > 160) {
-      const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
-      return { position: 'absolute', top, left: tooltipLeft, width: tooltipWidth };
-    }
-    if (spaceAbove > 160) {
-      return { position: 'absolute', bottom: viewH - spotlight.top + gap, left: tooltipLeft, width: tooltipWidth };
-    }
-    // Fallback: fixed at bottom of screen
     return { position: 'absolute', bottom: margin, left: tooltipLeft, width: tooltipWidth };
   }
 
-  // Desktop
+  // Desktop — top-aligned with the actual element (not the spotlight padding)
   const tooltipWidth = 320;
-  const spaceBelow = viewH - spotlight.bottom;
-  const spaceAbove = spotlight.top;
 
-  // Try left side of panel (for panel steps where spotlight is on right half)
-  const spaceLeft = spotlight.left;
-  if (spaceLeft > tooltipWidth + gap + margin && spotlight.top > 60) {
-    const idealTop = spotlight.top;
-    const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
-    return {
-      position: 'absolute',
-      top,
-      left: spotlight.left - tooltipWidth - gap,
-      width: tooltipWidth,
-    };
-  }
-
-  // Try right side
+  // Try right side first (preferred — keeps spotlight visible)
   const spaceRight = viewW - spotlight.right;
-  if (spaceRight > tooltipWidth + gap + margin && spotlight.top > 60) {
-    const idealTop = spotlight.top;
-    const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
+  if (spaceRight > tooltipWidth + gap + margin && elementTop > 60) {
+    const top = Math.max(margin, Math.min(elementTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
       position: 'absolute',
       top,
@@ -98,7 +74,20 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     };
   }
 
-  // Try below
+  // Try left side (for panel steps where spotlight is on the right half)
+  const spaceLeft = spotlight.left;
+  if (spaceLeft > tooltipWidth + gap + margin && elementTop > 60) {
+    const top = Math.max(margin, Math.min(elementTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
+    return {
+      position: 'absolute',
+      top,
+      left: spotlight.left - tooltipWidth - gap,
+      width: tooltipWidth,
+    };
+  }
+
+  // Try below (top-aligned to spotlight bottom)
+  const spaceBelow = viewH - spotlight.bottom;
   if (spaceBelow > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
@@ -107,6 +96,7 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   }
 
   // Try above
+  const spaceAbove = spotlight.top;
   if (spaceAbove > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
@@ -287,14 +277,14 @@ export function SpotlightTour({
 
   if (!spotlight || !visible || !step) return null;
 
-  const tooltipStyle = getTooltipStyle(spotlight);
+  const tooltipStyle = getTooltipStyle(spotlight, step.padding ?? 12);
 
   return (
     <div className="fixed inset-0 z-[10000]" style={{ pointerEvents: 'none' }}>
       {/* 4-piece overlay frame (allows clicks through the spotlight hole) */}
       {/* Top */}
       <div
-        className="fixed left-0 right-0 bg-black/60 transition-all duration-300"
+        className="fixed left-0 right-0 bg-black/80 transition-all duration-300"
         style={{
           top: 0,
           height: Math.max(0, spotlight.top),
@@ -304,7 +294,7 @@ export function SpotlightTour({
       />
       {/* Bottom */}
       <div
-        className="fixed left-0 right-0 bottom-0 bg-black/60 transition-all duration-300"
+        className="fixed left-0 right-0 bottom-0 bg-black/80 transition-all duration-300"
         style={{
           top: spotlight.bottom,
           pointerEvents: 'auto',
@@ -313,7 +303,7 @@ export function SpotlightTour({
       />
       {/* Left */}
       <div
-        className="fixed bg-black/60 transition-all duration-300"
+        className="fixed bg-black/80 transition-all duration-300"
         style={{
           top: spotlight.top,
           left: 0,
@@ -325,7 +315,7 @@ export function SpotlightTour({
       />
       {/* Right */}
       <div
-        className="fixed bg-black/60 transition-all duration-300"
+        className="fixed bg-black/80 transition-all duration-300"
         style={{
           top: spotlight.top,
           left: spotlight.right,
