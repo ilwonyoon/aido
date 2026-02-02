@@ -5,8 +5,12 @@ export const pulley: Company = {
   name: 'Pulley',
   description: 'Equity management for high growth startups.',
   website: 'https://pulley.com',
+    screenshot: '/screenshots/pulley-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68009f16fb924b0148b14053/689f4833e95a5c3bee7c29a9_Pulley.avif',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

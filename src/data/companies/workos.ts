@@ -8,6 +8,10 @@ export const workos: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/627321b887917b110d342e2b_homepage.png',
+  screenshot: '/screenshots/workos-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

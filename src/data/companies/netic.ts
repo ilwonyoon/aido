@@ -5,6 +5,7 @@ export const netic: Company = {
   name: 'Netic',
   description: 'AI revenue engine for SMBs and growth teams.',
   website: 'https://netic.ai',
+    screenshot: '/screenshots/netic-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

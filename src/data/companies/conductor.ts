@@ -6,6 +6,7 @@ export const conductor: Company = {
   description:
     'Native Mac app for secure, high-performance local AI models and workflows.',
   website: 'https://www.conductor.build/',
+    screenshot: '/screenshots/conductor-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

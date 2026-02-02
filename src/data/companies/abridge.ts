@@ -8,6 +8,9 @@ export const abridge: Company = {
     headquarters: 'Pittsburgh, PA',
     remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/VHXzq_pQmAAt1tjh8vTg5AF3Kr8GWhnif_yeFeXQoZkkEbs7latpInCFiM3s6fyjmU1Jb4I3sE3b8T02-ORKfA.png',
+
     // OG Image
     ogImage: '/og-images/abridge-og.webp',
 

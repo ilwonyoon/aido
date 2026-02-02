@@ -5,6 +5,7 @@ export const characterAi: Company = {
     name: 'Character.AI',
     description: 'Conversational AI platform for creating and chatting with AI characters, enabling personalized AI interactions.',
     website: 'https://character.ai',
+    screenshot: '/screenshots/character-ai-screenshot.png',
     headquarters: 'Menlo Park, CA',
     remote: 'Hybrid',
 

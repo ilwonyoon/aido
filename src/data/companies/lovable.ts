@@ -5,6 +5,7 @@ export const lovable: Company = {
     name: 'Lovable',
     description: 'AI-powered no-code platform. Build full-stack apps by describing what you want.',
     website: 'https://lovable.dev',
+    screenshot: '/screenshots/lovable-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

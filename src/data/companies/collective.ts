@@ -6,6 +6,7 @@ export const collective: Company = {
   description:
     'Back-office platform that provides accounting, taxes, and financial services for self-employed professionals.',
   website: 'https://www.collective.com/',
+    screenshot: '/screenshots/collective-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

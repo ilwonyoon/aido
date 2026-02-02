@@ -8,6 +8,10 @@ export const dubCo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://assets.dub.co/thumbnail.jpg',
+  screenshot: '/screenshots/dub-co-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

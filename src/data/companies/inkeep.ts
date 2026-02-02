@@ -8,6 +8,10 @@ export const inkeep: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://inkeep.com/images/og-image.png',
+  screenshot: '/screenshots/inkeep-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

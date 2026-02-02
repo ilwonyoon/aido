@@ -8,6 +8,10 @@ export const thatch: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://thatch.com/opengraph/thatch-main.png',
+  screenshot: '/screenshots/thatch-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

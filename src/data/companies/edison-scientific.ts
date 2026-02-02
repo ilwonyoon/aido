@@ -6,6 +6,7 @@ export const edisonScientific: Company = {
   description:
     'AI platform for scientific R&D workflows, accelerating experimentation and discovery.',
   website: 'https://edisonscientific.com/',
+    screenshot: '/screenshots/edison-scientific-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

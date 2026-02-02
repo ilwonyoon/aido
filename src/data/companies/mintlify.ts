@@ -8,6 +8,10 @@ export const mintlify: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.mintlify.com/_next/static/media/og.28576e75.png',
+  screenshot: '/screenshots/mintlify-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

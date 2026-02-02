@@ -5,6 +5,7 @@ export const humansand: Company = {
     name: 'Humans&',
     description: 'AI-generated collaborators that help teams do their most ambitious work.',
     website: 'https://humansand.ai',
+    screenshot: '/screenshots/humansand-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

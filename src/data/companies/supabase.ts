@@ -8,6 +8,10 @@ export const supabase: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://supabase.com/images/og/supabase-og.png',
+  screenshot: '/screenshots/supabase-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

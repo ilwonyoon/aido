@@ -8,6 +8,10 @@ export const e2b: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6717bb6618f6a40d53ac2929/689daedd2d27f81001967356_Share-Image-(1200x630).png',
+  screenshot: '/screenshots/e2b-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

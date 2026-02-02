@@ -8,6 +8,10 @@ export const tolans: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/nsjb4VvF5YxFHsdqlHZTWElWpE.jpg?width=1925&amp;height=1163',
+  screenshot: '/screenshots/tolans-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

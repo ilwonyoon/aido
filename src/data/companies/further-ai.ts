@@ -5,8 +5,12 @@ export const furtherAi: Company = {
   name: 'FurtherAI',
   description: 'AI agents that automate insurance operations across intake, underwriting, and policy servicing.',
   website: 'https://www.furtherai.com',
+    screenshot: '/screenshots/further-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/67bce5e386b7ca213dda94ef/6953e855a94b89982f87028c_OG%20IMAGE.png',
 
 
   // Multi-dimensional Tags

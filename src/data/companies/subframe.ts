@@ -8,6 +8,10 @@ export const subframe: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.subframe.com/images/social-media.png',
+  screenshot: '/screenshots/subframe-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

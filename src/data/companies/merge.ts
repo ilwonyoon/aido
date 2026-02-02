@@ -8,6 +8,10 @@ export const merge: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/624b192df0b0151225c10026/68dc1b75a180baae4147c2b8_New%20homepage%20-%20meta%20image.png',
+  screenshot: '/screenshots/merge-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

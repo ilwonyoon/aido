@@ -5,6 +5,8 @@ export const twoDots: Company = {
   name: 'Two Dots',
   description: 'Consumer underwriting agent.',
   website: 'https://www.twodots.com',
+    screenshot: '/screenshots/two-dots-screenshot.png',
+    ogImage: '/screenshots/two-dots-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

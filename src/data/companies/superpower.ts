@@ -8,6 +8,10 @@ export const superpower: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/63792ff4f3d6aa3d62071b61/68a46596a7cc1743771ce6f3_image%20(10).avif',
+  screenshot: '/screenshots/superpower-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

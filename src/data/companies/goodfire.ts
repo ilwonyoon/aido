@@ -6,6 +6,7 @@ export const goodfire: Company = {
   description:
     'AI interpretability platform focused on understanding and steering model behavior.',
   website: 'https://www.goodfire.ai/',
+    screenshot: '/screenshots/goodfire-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

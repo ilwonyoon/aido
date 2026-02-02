@@ -8,6 +8,10 @@ export const sway: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/sway-screenshot.png',
+    ogImage: '/screenshots/sway-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

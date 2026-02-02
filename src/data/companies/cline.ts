@@ -8,6 +8,10 @@ export const cline: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cline.bot/cline_og_img.png',
+  screenshot: '/screenshots/cline-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

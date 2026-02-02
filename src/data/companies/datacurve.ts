@@ -8,6 +8,10 @@ export const datacurve: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/datacurve-screenshot.png',
+    ogImage: '/screenshots/datacurve-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

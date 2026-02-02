@@ -5,8 +5,12 @@ export const infisical: Company = {
   name: 'Infisical',
   description: 'Open source security infrastructure platform for secrets, certificates, and access management.',
   website: 'https://infisical.com',
+    screenshot: '/screenshots/infisical-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://infisical.com/images/message.png',
 
 
   // Multi-dimensional Tags

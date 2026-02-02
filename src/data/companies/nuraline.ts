@@ -6,6 +6,7 @@ export const nuraline: Company = {
   description:
     'AI platform focused on adaptive AI systems for enterprise deployments.',
   website: 'https://www.nuraline.ai/',
+    screenshot: '/screenshots/nuraline-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

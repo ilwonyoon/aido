@@ -8,6 +8,10 @@ export const paradigm: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/5c5b68f5debc6d830fca7888/6418015861e2deb9102246ee_og%20--%20home.png',
+  screenshot: '/screenshots/paradigm-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const moonlakeAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/qNBbk5Yqf5pOzawxSjyuodp2U.jpeg?width=1500&amp;height=500',
+  screenshot: '/screenshots/moonlake-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

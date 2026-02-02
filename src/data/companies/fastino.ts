@@ -5,6 +5,7 @@ export const fastino: Company = {
   name: 'Fastino',
   description: 'Task-specific language models for production workflows.',
   website: 'https://fastino.ai',
+    screenshot: '/screenshots/fastino-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

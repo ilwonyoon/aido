@@ -8,6 +8,10 @@ export const modular: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68c9c3107effc2ea46e1a81f/694200ddc90d7f2b96a6eb0f_og-image-2026.png',
+  screenshot: '/screenshots/modular-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const edia: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/edia-screenshot.png',
+    ogImage: '/screenshots/edia-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

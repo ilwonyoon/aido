@@ -6,6 +6,7 @@ export const delve: Company = {
   description:
     'Compliance OS for AI teams, focused on security and regulatory readiness.',
   website: 'https://delve.co/',
+    screenshot: '/screenshots/delve-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

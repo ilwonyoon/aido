@@ -8,6 +8,10 @@ export const agora: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://agora.xyz/assets/agora-og-image.jpg',
+  screenshot: 'https://iad.microlink.io/kxsJzG7XHb-LGaoL9NLfmAlRgptVmGvDg8mqZ-O1Ik8aGkwG3-7Us-8svD7Fu38MtnXS4tpCdNHXeNWn8oRM_g.png',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

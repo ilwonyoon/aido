@@ -8,6 +8,10 @@ export const playbook: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://playbook-at.ghost.io/content/images/2025/08/website-cover-3.jpg',
+  screenshot: '/screenshots/playbook-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

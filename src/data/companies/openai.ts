@@ -5,6 +5,7 @@ export const openai: Company = {
     name: 'OpenAI',
     description: 'Leading AI research company behind GPT-4, ChatGPT, and DALL-E. Pioneering AGI development.',
     website: 'https://openai.com',
+    screenshot: '/screenshots/openai-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

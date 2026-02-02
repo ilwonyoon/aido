@@ -8,6 +8,10 @@ export const radiantgraph: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/assets/uCp1zp37x2D2PsLDnl7eBii2qMw.png',
+  screenshot: '/screenshots/radiantgraph-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

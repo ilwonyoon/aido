@@ -6,6 +6,7 @@ export const physicalIntelligence: Company = {
   description:
     'AI robotics company building general-purpose models and robots for real-world tasks.',
   website: 'https://www.physicalintelligence.company/',
+    screenshot: '/screenshots/physical-intelligence-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

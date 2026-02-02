@@ -6,6 +6,7 @@ export const metronome: Company = {
   description:
     'Usage-based billing platform for modern software companies.',
   website: 'https://metronome.com/',
+    screenshot: '/screenshots/metronome-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

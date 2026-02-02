@@ -9,6 +9,9 @@ export const alloy: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/KGCrV6ucX-0DCYe8GbhT7aG9y2_IDu68_W7ic7fkeBBKiSWY9-RmixWVpaOGwU6dvPIGJqv-Oii9V5T0EqdRtA.png',
+
     // OG Image
     ogImage: '/og-images/alloy-og.webp',
 

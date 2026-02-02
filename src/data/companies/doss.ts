@@ -6,6 +6,7 @@ export const doss: Company = {
   description:
     'Accounting automation platform designed to help teams close the books faster.',
   website: 'https://www.doss.com/',
+    screenshot: '/screenshots/doss-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -8,6 +8,10 @@ export const mail0: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://0.email/og.png',
+  screenshot: '/screenshots/mail0-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

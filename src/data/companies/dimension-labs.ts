@@ -8,6 +8,10 @@ export const dimensionLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/dimension-labs-screenshot.png',
+    ogImage: '/screenshots/dimension-labs-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

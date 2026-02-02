@@ -5,8 +5,12 @@ export const causalLabs: Company = {
   name: 'Causal Labs',
   description: 'AI physics models to predict and control the weather.',
   website: 'https://www.getcausal.ai',
+    screenshot: '/screenshots/causal-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6977a9c6055cd296356ce1d0/69786945ff11eafe3793296d_44720ecd47dcbec811e851d0560d3a99_Open%20Graph.png',
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'data-analysis'],

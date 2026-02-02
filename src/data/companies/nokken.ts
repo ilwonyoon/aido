@@ -6,6 +6,7 @@ export const nokken: Company = {
   description:
     'Ecoconscious modular cabin company focused on sustainable hospitality and off-grid stays.',
   website: 'https://the-nokken.com/',
+    screenshot: '/screenshots/nokken-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

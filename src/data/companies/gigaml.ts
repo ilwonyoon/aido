@@ -5,6 +5,7 @@ export const gigaml: Company = {
   name: 'GigaML',
   description: 'Voice AI agents for consumer-facing companies.',
   website: 'https://giga.ai',
+    screenshot: '/screenshots/gigaml-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

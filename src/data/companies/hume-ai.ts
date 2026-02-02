@@ -5,6 +5,7 @@ export const humeAi: Company = {
   name: 'Hume AI',
   description: 'Research lab and technology company building empathic AI and voice interfaces optimized for human well-being.',
   website: 'https://www.hume.ai',
+    screenshot: '/screenshots/hume-ai-screenshot.png',
   headquarters: 'New York, NY',
   remote: 'Hybrid',
 

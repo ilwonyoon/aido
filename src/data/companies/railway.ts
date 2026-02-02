@@ -6,6 +6,7 @@ export const railway: Company = {
   description:
     'Developer cloud platform for building, deploying, and scaling applications without infrastructure setup.',
   website: 'https://railway.com/',
+    screenshot: '/screenshots/railway-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

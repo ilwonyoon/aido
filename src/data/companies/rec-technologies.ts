@@ -8,6 +8,10 @@ export const recTechnologies: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/rec-technologies-screenshot.png',
+    ogImage: '/screenshots/rec-technologies-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

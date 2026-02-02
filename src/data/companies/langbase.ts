@@ -8,6 +8,10 @@ export const langbase: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://langbase.com/og/cover.jpg',
+  screenshot: '/screenshots/langbase-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

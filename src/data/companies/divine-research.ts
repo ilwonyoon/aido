@@ -8,6 +8,10 @@ export const divineResearch: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/hvRrCeHeGZFuJgGN1Q4zIGNc.jpeg?width=1500&amp;height=500',
+  screenshot: '/screenshots/divine-research-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const cambium: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cambiumcarbon.com/assets/img/og.png',
+  screenshot: 'https://iad.microlink.io/o3-vj1Xro7Hfv0llwxTV1WzBKjHh5ZiaVUCzxjU06uqST99fjMDqH6_w5-PMaD8uHrsej6Nin8TmbD0LeiaU7A.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

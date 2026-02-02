@@ -8,6 +8,10 @@ export const hyperbolic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.hyperbolic.ai/open-graph.png',
+  screenshot: '/screenshots/hyperbolic-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

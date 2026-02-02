@@ -8,6 +8,10 @@ export const mainstay: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://www.mainstay.io/images/mainstay-opengraph.jpg',
+  screenshot: '/screenshots/mainstay-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

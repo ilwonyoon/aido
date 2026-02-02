@@ -5,8 +5,12 @@ export const nooks: Company = {
   name: 'Nooks',
   description: 'AI sales assistant platform that supports outbound and inbound sales workflows.',
   website: 'https://www.nooks.ai',
+    screenshot: '/screenshots/nooks-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6822db388c44137c00f8c124/685ee7f0d8929272d1cc402d_OG-Nooks_V%2002.png',
 
 
   // Multi-dimensional Tags

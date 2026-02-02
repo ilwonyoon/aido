@@ -8,6 +8,10 @@ export const convokeBio: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/Iv0xFY0plj2ZF7UOeWLJ7vJcdy8.jpg',
+  screenshot: '/screenshots/convoke-bio-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

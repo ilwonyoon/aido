@@ -6,6 +6,7 @@ export const ivo: Company = {
   description:
     'AI contract intelligence platform that reviews, redlines, and extracts insights from enterprise contracts.',
   website: 'https://www.ivo.ai',
+    screenshot: '/screenshots/ivo-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

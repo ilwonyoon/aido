@@ -8,6 +8,10 @@ export const solaSecurity: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://sola.security/wp-content/uploads/2025/04/img-og-hp.png',
+  screenshot: '/screenshots/sola-security-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

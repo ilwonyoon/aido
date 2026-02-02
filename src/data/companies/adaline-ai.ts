@@ -8,6 +8,10 @@ export const adalineAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.adaline.ai/metadata/og-image.jpg',
+  screenshot: 'https://iad.microlink.io/9QQpCVGlHnImqM3H00YV2kzAZVpgJ4MTVxwcYvLMjvmjJyxUT340U0kZx4yVdtlwgq6-4qHu_WHzINKRD3zrJQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

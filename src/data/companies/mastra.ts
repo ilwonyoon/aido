@@ -8,6 +8,10 @@ export const mastra: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://mastra.ai/api/og/page?title=The%20TypeScript%20Agent%20Framework',
+  screenshot: '/screenshots/mastra-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

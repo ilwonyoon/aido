@@ -8,6 +8,10 @@ export const unify: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/65a7e0cdd5ac0838035bd1af/6875739e3beeff4382371aae_Open%20graph_transformGrowth.png',
+  screenshot: '/screenshots/unify-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

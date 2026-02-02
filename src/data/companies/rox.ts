@@ -6,6 +6,7 @@ export const rox: Company = {
   description:
     'Household wallet platform built to help families manage shared spending and payments.',
   website: 'https://rox.com/',
+    screenshot: '/screenshots/rox-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

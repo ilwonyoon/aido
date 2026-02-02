@@ -8,6 +8,10 @@ export const hyperbound: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/678dda3f87c259a4fd5e4fd1/67c107c2dd339c1a693aac1a_Frame%201321317039%20(1).png',
+  screenshot: '/screenshots/hyperbound-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

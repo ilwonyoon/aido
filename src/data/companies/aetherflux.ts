@@ -8,6 +8,10 @@ export const aetherflux: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66ac394c2383a68b4dc6252b/67e8ea1570cb3f3e084c2614_Aetherflux-logo_OpenGraph.png',
+  screenshot: 'https://iad.microlink.io/axa-0Fe6QBss7WTGqgq7Xd13na4ypmObp-OzXBGu8abz9jtY3Vi-iy8bxMlzdZeFcv5jYxRNUQQsm1ZlqaJ7sQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

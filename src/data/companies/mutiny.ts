@@ -6,6 +6,7 @@ export const mutiny: Company = {
   description:
     'No-code platform for personalized B2B marketing experiences and conversion optimization.',
   website: 'https://www.mutinyhq.com/',
+    screenshot: '/screenshots/mutiny-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

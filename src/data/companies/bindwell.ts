@@ -9,6 +9,9 @@ export const bindwell: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/CAHilCWpc550x3P6xRGQyJf7-Y00IYycSSTOPOPuNdBx2wGSEHpXCHLZPlWUncHYzM4MIMEYPfF7cYuH8rtw-A.png',
+
     // OG Image
     ogImage: '/og-images/bindwell-og.webp',
 

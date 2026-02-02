@@ -6,6 +6,7 @@ export const happyrobot: Company = {
   description:
     'Voice AI workers for logistics teams, focused on automating calls and coordination.',
   website: 'https://www.happyrobot.ai/',
+    screenshot: '/screenshots/happyrobot-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

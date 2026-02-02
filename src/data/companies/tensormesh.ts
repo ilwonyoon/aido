@@ -8,6 +8,9 @@ export const tensormesh: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68f027846c58012d6d1902ac/6903c9cdaa1db289d98ced83_Tensormesh_Black_whitebg-p-1200-630.png',
+
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],

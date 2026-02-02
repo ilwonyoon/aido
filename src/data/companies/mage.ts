@@ -8,6 +8,10 @@ export const mage: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/RWcxzAUa8aAmswMQDlrq8fER8.jpg',
+  screenshot: '/screenshots/mage-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

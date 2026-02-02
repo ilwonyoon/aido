@@ -8,6 +8,10 @@ export const calCom: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/wR3hWD1bOPJdosDiPSZLtYpHR3k.png',
+  screenshot: 'https://iad.microlink.io/NaHth8rAQo974zyWgHxZIm7I3ueowcsqY3c3-VzsSGc_wA_FhqSZNfWDv5i532Oc2M1Ka8fQYB-xH0dVa9cyvg.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

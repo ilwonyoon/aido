@@ -6,6 +6,7 @@ export const resolveAi: Company = {
   description:
     'Agentic AI SRE platform that helps teams resolve production incidents, find root cause faster, and act with production context.',
   website: 'https://resolve.ai',
+    screenshot: '/screenshots/resolve-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

@@ -8,6 +8,10 @@ export const midday: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.midday.ai/opengraph-image-v1.jpg',
+  screenshot: '/screenshots/midday-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

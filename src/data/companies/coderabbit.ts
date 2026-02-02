@@ -8,6 +8,10 @@ export const coderabbit: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  ogImage: 'https://victorious-bubble-f69a016683.media.strapiapp.com/og_home_3a0c2bf16f.png',
+  screenshot: '/screenshots/coderabbit-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

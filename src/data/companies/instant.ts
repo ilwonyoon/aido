@@ -8,6 +8,10 @@ export const instant: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.instantdb.com/img/og_preview.png',
+  screenshot: '/screenshots/instant-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

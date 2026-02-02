@@ -8,6 +8,10 @@ export const freed: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6626cd90a59907680f6ccb64/68d1bac5ecc2952f7db814fb_OpenGraph.jpg',
+  screenshot: '/screenshots/freed-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

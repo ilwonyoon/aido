@@ -9,6 +9,9 @@ export const blacksmith: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/nH3iElkyKBNk54-i4xmPhTo91R-V1JAOO0N30TcyjQRs4nAycx-5SeshV5jnRRPDBegkqMdq_97HladCICxJ2g.png',
+
     // OG Image
     ogImage: '/og-images/blacksmith-og.webp',
 

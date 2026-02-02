@@ -6,8 +6,12 @@ export const twoTwoTwo: Company = {
   description:
     'Social platform designed to spark real-world serendipity and in-person connections.',
   website: 'https://222.place/',
+    screenshot: '/screenshots/222-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://corn-mandrill-9956.twil.io/assets/og-landing.gif',
 
 
   // Multi-dimensional Tags

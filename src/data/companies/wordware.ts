@@ -8,6 +8,10 @@ export const wordware: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://wordware-sauna-landing-page-3pbt0ohjq-wordware.vercel.app/Wordware%20Social%20Card.png',
+  screenshot: '/screenshots/wordware-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const clockwise: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6336f6e0b70611d51dfeba5b/6375defae3f1363faa3bb79d_clockwise-og-image2.png',
+  screenshot: '/screenshots/clockwise-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

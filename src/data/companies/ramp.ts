@@ -5,6 +5,7 @@ export const ramp: Company = {
     name: 'Ramp',
     description: 'AI-powered finance automation platform. Corporate cards, expense management, and bill payments—designed to save companies time and money.',
     website: 'https://ramp.com',
+    screenshot: '/screenshots/ramp-screenshot.png',
 
     // Location
     headquarters: 'New York, NY',

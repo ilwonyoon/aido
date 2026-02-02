@@ -6,6 +6,7 @@ export const openrouter: Company = {
   description:
     'Unified API marketplace that lets developers access and route requests across multiple AI models.',
   website: 'https://openrouter.ai/',
+    screenshot: '/screenshots/openrouter-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

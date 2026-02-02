@@ -8,6 +8,10 @@ export const pylon: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/689071d222bec6ce3d3d6fbf/68a49db0177e819479abd409_logo.jpg',
+  screenshot: '/screenshots/pylon-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

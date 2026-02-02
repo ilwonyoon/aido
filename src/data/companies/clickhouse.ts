@@ -6,6 +6,7 @@ export const clickhouse: Company = {
   description:
     'Cloud data warehouse and real-time analytics database for fast, scalable analytics workloads.',
   website: 'https://clickhouse.com/',
+    screenshot: '/screenshots/clickhouse-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

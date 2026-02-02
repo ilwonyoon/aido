@@ -8,6 +8,10 @@ export const appliedCompute: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://appliedcompute.com/api/og',
+  screenshot: 'https://iad.microlink.io/aU4sQ3e99SYDUkoCQMjo54egnwCDqeaumziCrJ4J4V1RwRCUHZ4jcHT8UWpnQ-OarZozL-un6AL4UgOsxiWg7A.png',
+
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['enterprise'],

@@ -5,6 +5,7 @@ export const listenLabs: Company = {
     name: 'Listen Labs',
     description: 'Autonomous market researcher that runs AI interviews and delivers customer insights.',
     website: 'https://listenlabs.ai',
+    screenshot: '/screenshots/listen-labs-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

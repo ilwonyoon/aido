@@ -8,6 +8,10 @@ export const zeroentropy: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/assets/1h2fGjjVrh9QZzHcaJlK2zmgE.webp',
+  screenshot: '/screenshots/zeroentropy-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

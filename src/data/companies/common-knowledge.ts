@@ -8,6 +8,10 @@ export const commonKnowledge: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'http://static1.squarespace.com/static/65dc6e58a075a932dc00d188/t/668fb28e67085e5e7c74ed3e/1720693390357/Icon+%28PNG%29+copy.png?format=1500w',
+  screenshot: '/screenshots/common-knowledge-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

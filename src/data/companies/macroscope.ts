@@ -6,6 +6,7 @@ export const macroscope: Company = {
   description:
     'AI platform that analyzes codebases to provide leaders and engineers with real-time visibility into product and engineering progress.',
   website: 'https://macroscope.com/',
+    screenshot: '/screenshots/macroscope-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

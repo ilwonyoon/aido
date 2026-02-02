@@ -5,6 +5,7 @@ export const lightfield: Company = {
   name: 'Lightfield',
   description: 'AI-native CRM for modern revenue teams.',
   website: 'https://lightfield.app',
+    screenshot: '/screenshots/lightfield-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -6,6 +6,7 @@ export const devAgents: Company = {
   description:
     'Autonomous developer agents that help teams ship software faster.',
   website: 'https://sdsa.ai/',
+    screenshot: '/screenshots/dev-agents-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

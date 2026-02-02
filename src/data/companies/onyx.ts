@@ -8,6 +8,10 @@ export const onyx: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.onyx.app/onyx-thumbnail.png',
+  screenshot: '/screenshots/onyx-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

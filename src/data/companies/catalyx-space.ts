@@ -5,6 +5,8 @@ export const catalyxSpace: Company = {
   name: 'Catalyx Space',
   description: 'In-space infrastructure platform providing power, compute, and communications for space missions.',
   website: 'https://catalyx.space',
+    screenshot: '/screenshots/catalyx-space-screenshot.png',
+    ogImage: '/screenshots/catalyx-space-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

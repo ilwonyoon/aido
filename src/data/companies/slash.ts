@@ -8,6 +8,10 @@ export const slash: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.slash.com/images/social-previews/index.jpg',
+  screenshot: '/screenshots/slash-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

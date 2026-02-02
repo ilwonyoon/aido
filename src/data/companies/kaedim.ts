@@ -8,6 +8,10 @@ export const kaedim: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://kaedim3d.com/opengraph-image.png?1d7674bc16ebb20a',
+  screenshot: '/screenshots/kaedim-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

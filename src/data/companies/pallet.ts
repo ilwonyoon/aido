@@ -5,6 +5,7 @@ export const pallet: Company = {
   name: 'Pallet',
   description: 'AI workers for logistics operations and back-office workflows.',
   website: 'https://pallet.com',
+    screenshot: '/screenshots/pallet-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

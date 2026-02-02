@@ -8,6 +8,10 @@ export const tako: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/tako-screenshot.png',
+    ogImage: '/screenshots/tako-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

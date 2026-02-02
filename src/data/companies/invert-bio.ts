@@ -8,6 +8,10 @@ export const invertBio: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/670ff2aa4610217f70c251cf/67238463d1aafe6296afc12a_Invert%20og_image%20rectangle%20(social%20share).png',
+  screenshot: '/screenshots/invert-bio-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

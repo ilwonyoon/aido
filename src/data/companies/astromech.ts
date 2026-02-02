@@ -8,6 +8,10 @@ export const astromech: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/H5AHBdlLcLJkL_2WJlI4Nobhrq9Rg1vXA7FN2lZVRNiyp1cWR2lUd6X3KPtij7FXRa6ilhi--qbc6-8_v8p_Yw.png',
+    ogImage: 'https://iad.microlink.io/H5AHBdlLcLJkL_2WJlI4Nobhrq9Rg1vXA7FN2lZVRNiyp1cWR2lUd6X3KPtij7FXRa6ilhi--qbc6-8_v8p_Yw.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

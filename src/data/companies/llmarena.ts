@@ -5,6 +5,7 @@ export const llmarena: Company = {
     name: 'LLMArena',
     description: 'Open-source project that provides evaluations and benchmarks for large language models.',
     website: 'https://lmarena.ai',
+    screenshot: '/screenshots/llmarena-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

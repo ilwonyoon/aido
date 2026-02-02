@@ -5,6 +5,7 @@ export const dedalusLabs: Company = {
   name: 'Dedalus Labs',
   description: 'Multi-modal, multi-tool agents designed to run in minutes.',
   website: 'https://dedaluslabs.ai',
+    screenshot: '/screenshots/dedalus-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

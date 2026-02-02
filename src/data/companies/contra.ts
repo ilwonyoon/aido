@@ -5,8 +5,12 @@ export const contra: Company = {
   name: 'Contra',
   description: 'Commission-free creative network for freelancers and teams.',
   website: 'https://contra.com',
+    screenshot: '/screenshots/contra-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://contra.com/static/opengraph-assets/v2/fallbacks/contra-fallback-open-graph-image.png',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

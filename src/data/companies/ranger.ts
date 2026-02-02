@@ -8,6 +8,10 @@ export const ranger: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: '/screenshots/ranger-screenshot.png',
+    ogImage: '/screenshots/ranger-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

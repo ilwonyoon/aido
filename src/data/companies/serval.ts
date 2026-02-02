@@ -6,6 +6,7 @@ export const serval: Company = {
   description:
     'AI agents for IT teams to automate service operations and resolve incidents faster.',
   website: 'https://www.serval.com/',
+    screenshot: '/screenshots/serval-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -8,6 +8,10 @@ export const augment: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.augmentcode.com/api/og?title=Augment+Code+-+The+Software+Agent+Company',
+  screenshot: 'https://iad.microlink.io/ZBi054vIT-Aa62fqXaZ6WoKbJMGrg9Nsuao2kmZdz2tg5egHxK48OQ9pVHI7p0pICq5kI2fY6cJTT4wrmJ7IMg.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

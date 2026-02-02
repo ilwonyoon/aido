@@ -8,6 +8,10 @@ export const comfyUi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/0BcAr9INx6VHF0VtAXa30RHfqPo.png',
+  screenshot: '/screenshots/comfy-ui-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

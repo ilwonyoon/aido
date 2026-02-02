@@ -5,6 +5,7 @@ export const chaiDiscovery: Company = {
   name: 'Chai Discovery',
   description: 'AI-first drug discovery company engineering better molecules with foundation models.',
   website: 'https://www.chaidiscovery.com/',
+    screenshot: '/screenshots/chai-discovery-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

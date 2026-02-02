@@ -8,6 +8,10 @@ export const upwind: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://www.upwind.io/wp-content/uploads/2026/01/upwind-preview-link-image-1200x630-1.png',
+  screenshot: '/screenshots/upwind-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const strideHealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://images.ctfassets.net/yjgtqlbfutxo/3CwyGqwPGfTUANm5EfJmb2/c14b59ac38bd17323d19811880a50e08/share.png',
+  screenshot: '/screenshots/stride-health-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

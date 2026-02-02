@@ -8,6 +8,10 @@ export const blazeAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  ogImage: 'https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.withblaze.app/&size=128',
+  screenshot: 'https://iad.microlink.io/LkOkw2evuFVUILFHpAWHL2BIV6qahfIRLdYR2hlcH4Acqa1g4BSVZWukORrZr0i4JfwRigqBfEIbdYNY4KxAsQ.png',
+
 
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],

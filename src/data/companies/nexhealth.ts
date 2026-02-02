@@ -8,6 +8,10 @@ export const nexhealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/62f7955338a7286dd4b633cc/6363d653a60a0efd101f5557_homepage-opengraph-1.jpg',
+  screenshot: '/screenshots/nexhealth-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

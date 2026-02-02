@@ -8,6 +8,10 @@ export const bedrockRobotics: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://bedrockrobotics.com/static-image.jpg',
+  screenshot: 'https://iad.microlink.io/1aJ63EMuv731nk7LUVygDeNdEUVIV4UTjcLka9-LzIdNUWWgDoZnBGJdF2MhVIbJOn94Q_96UJZJ6bvSivcnXw.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

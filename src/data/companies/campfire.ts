@@ -8,6 +8,10 @@ export const campfire: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.sanity.io/images/zu7n19wi/production/bfbbbc1d37198bd8c8e47cdb9330c5248fa6a8b4-1200x630.png?rect=0,2,1200,627&w=1200&h=627&fit=crop&auto=format',
+  screenshot: 'https://iad.microlink.io/v3Mc6_ayAUVZ0W-GjxplHgQtVjpgyH53bfnWNKy4O-sTSTU60kJzoNK6Dlp-sbkpaye7PDrttOOgDUUcPe85-w.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation', 'data-analysis'],
   markets: ['b2b'],

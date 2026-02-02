@@ -5,6 +5,7 @@ export const gamma: Company = {
     name: 'Gamma',
     description: 'AI-powered presentation and document creation. Create beautiful, interactive content with AI in seconds—no slides required.',
     website: 'https://gamma.app',
+    screenshot: '/screenshots/gamma-screenshot.png',
 
     // Location
     headquarters: 'San Francisco, CA',

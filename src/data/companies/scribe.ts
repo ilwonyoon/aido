@@ -5,6 +5,7 @@ export const scribe: Company = {
   name: 'Scribe',
   description: 'Tool that turns any process into step-by-step guides.',
   website: 'https://scribehow.com',
+    screenshot: '/screenshots/scribe-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

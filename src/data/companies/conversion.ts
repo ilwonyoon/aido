@@ -8,6 +8,10 @@ export const conversion: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/conversion-screenshot.png',
+    ogImage: '/screenshots/conversion-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

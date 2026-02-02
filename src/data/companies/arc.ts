@@ -8,6 +8,10 @@ export const arc: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://storage.googleapis.com/website-cms-uploads/Home_Pricing_Premium_e3b8320779/Home_Pricing_Premium_e3b8320779.png?1770016002656',
+  screenshot: 'https://iad.microlink.io/GzLDg2MV8-sueSRsR_YgfjK62oHbBNSmtqvRsG7GeazOIXCxJwD_yjH_0R4WiRwJWgNHrc0jbsRxuITYYVQVdQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

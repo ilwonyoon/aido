@@ -5,6 +5,7 @@ export const descript: Company = {
     name: 'Descript',
     description: 'AI-powered video and audio editing. Edit by editing text transcripts.',
     website: 'https://www.descript.com',
+    screenshot: '/screenshots/descript-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

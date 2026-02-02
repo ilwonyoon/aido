@@ -6,6 +6,7 @@ export const internetBackyard: Company = {
   description:
     'Bitcoin productivity layer focused on helping people save and earn in BTC.',
   website: 'https://internetbackyard.com/',
+    screenshot: '/screenshots/internet-backyard-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

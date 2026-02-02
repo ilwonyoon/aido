@@ -5,6 +5,7 @@ export const gong: Company = {
     name: 'Gong',
     description: 'Revenue AI platform analyzing customer interactions to help sales teams win more deals.',
     website: 'https://gong.io',
+    screenshot: '/screenshots/gong-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

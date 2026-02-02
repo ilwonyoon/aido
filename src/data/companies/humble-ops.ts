@@ -6,6 +6,7 @@ export const humbleOps: Company = {
   description:
     'Ops team for AI apps, focused on making human review and escalation easy to manage.',
   website: 'https://humbleops.ai/',
+    screenshot: '/screenshots/humble-ops-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

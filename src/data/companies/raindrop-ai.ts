@@ -6,6 +6,7 @@ export const raindropAi: Company = {
   description:
     'AI travel planning tool that helps users design trips and itineraries quickly.',
   website: 'https://www.raindrop.ai/',
+    screenshot: '/screenshots/raindrop-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -5,6 +5,7 @@ export const mem0: Company = {
     name: 'Mem0',
     description: 'AI-powered, scalable memory solution for AI applications.',
     website: 'https://mem0.ai',
+    screenshot: '/screenshots/mem0-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

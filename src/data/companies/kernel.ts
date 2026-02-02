@@ -8,6 +8,10 @@ export const kernel: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.kernel.sh/og-image.png',
+  screenshot: '/screenshots/kernel-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

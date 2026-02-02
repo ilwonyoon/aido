@@ -5,6 +5,7 @@ export const glean: Company = {
     name: 'Glean',
     description: 'AI-powered enterprise search and work assistant. Search, Assistant, and Agents.',
     website: 'https://www.glean.com',
+    screenshot: '/screenshots/glean-screenshot.png',
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
 

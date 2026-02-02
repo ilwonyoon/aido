@@ -8,6 +8,10 @@ export const cognitionAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cognition.ai/assets/images/cover.jpg',
+  screenshot: '/screenshots/cognition-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

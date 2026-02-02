@@ -6,6 +6,7 @@ export const lgnd: Company = {
   description:
     'AI-native security and compliance platform focused on continuous monitoring and assurance.',
   website: 'https://www.lgnd.com/',
+    screenshot: '/screenshots/lgnd-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

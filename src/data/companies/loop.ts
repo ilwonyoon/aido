@@ -6,6 +6,7 @@ export const loop: Company = {
   description:
     'Business banking platform focused on stable, reliable payments and treasury workflows for startups and finance teams.',
   website: 'https://loop.com/',
+    screenshot: '/screenshots/loop-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

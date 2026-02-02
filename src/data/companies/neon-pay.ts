@@ -8,6 +8,10 @@ export const neonPay: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/07FS4k295cjO5U0P4tq2WfyyH2M.jpeg?width=1500&amp;height=500',
+  screenshot: '/screenshots/neon-pay-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

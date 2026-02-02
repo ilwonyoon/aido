@@ -5,8 +5,12 @@ export const impulseLabs: Company = {
   name: 'Impulse Labs',
   description: 'Battery-integrated induction cooktop delivering high-power, precise electric cooking.',
   website: 'https://www.impulselabs.com',
+    screenshot: '/screenshots/impulse-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://images.ctfassets.net/v0es4papxmyo/5M1OQ4NQkYhDGit8m90aO6/2f22197e63af99b79d48ed228ab58430/impulse-stove-share-image.jpg',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

@@ -5,6 +5,7 @@ export const linear: Company = {
     name: 'Linear',
     description: 'Issue tracking and project management for high-performance teams. The anti-Jira.',
     website: 'https://linear.app',
+    screenshot: '/screenshots/linear-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

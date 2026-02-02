@@ -5,8 +5,12 @@ export const sentientLabs: Company = {
   name: 'Sentient Labs',
   description: 'Ensuring AGI is open source.',
   website: 'https://sentient.foundation',
+    screenshot: '/screenshots/sentient-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68d66859b7a6a1c99da48cc7/68f24efadb8782726f98bff1_Open%20graph.png',
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

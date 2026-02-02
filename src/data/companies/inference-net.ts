@@ -5,8 +5,12 @@ export const inferenceNet: Company = {
   name: 'Inference',
   description: 'Affordable, scalable LLM inference API.',
   website: 'https://www.inference.net',
+    screenshot: '/screenshots/inference-net-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://inference.net/inference-opengraph.png',
 
   // Multi-dimensional Tags
   aiTypes: ['model-platform', 'ai-infrastructure'],

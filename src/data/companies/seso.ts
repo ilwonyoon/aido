@@ -8,6 +8,10 @@ export const seso: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/67RfB8hatG4gm1ntUwiQLk9nQew.png',
+  screenshot: '/screenshots/seso-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

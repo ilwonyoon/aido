@@ -5,6 +5,7 @@ export const otterAi: Company = {
     name: 'Otter.ai',
     description: 'AI meeting transcription and automation. Real-time transcription, summaries, action items.',
     website: 'https://otter.ai',
+    screenshot: '/screenshots/otter-ai-screenshot.png',
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
 

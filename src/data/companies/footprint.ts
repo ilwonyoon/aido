@@ -8,6 +8,10 @@ export const footprint: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/footprint-screenshot.png',
+    ogImage: '/screenshots/footprint-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

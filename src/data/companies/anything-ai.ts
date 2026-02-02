@@ -9,6 +9,9 @@ export const anythingAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/0nUeUlnXgIA7Wpj69nvhUHguHSv3lNapWH0m9Y_gDeTJ7Fw6RlTTzKloOp_QAYzFyODnQIM6ibj88ESLSc-1mA.png',
+
     // OG Image
     ogImage: '/og-images/anything-ai-og.webp',
 

@@ -5,6 +5,7 @@ export const replit: Company = {
     name: 'Replit',
     description: 'AI-powered software creation platform enabling anyone to build applications using natural language.',
     website: 'https://replit.com',
+    screenshot: '/screenshots/replit-screenshot.png',
     headquarters: 'Foster City, CA',
     remote: 'Hybrid',
 

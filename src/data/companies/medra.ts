@@ -6,6 +6,7 @@ export const medra: Company = {
   description:
     'Physical AI platform integrated into laboratory workflows to automate and accelerate experiments.',
   website: 'https://www.medra.ai/',
+    screenshot: '/screenshots/medra-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -6,6 +6,7 @@ export const redQueenBio: Company = {
   description:
     'AI-enabled biosecurity platform focused on detecting and mitigating biological threats.',
   website: 'https://www.redqueen.bio/',
+    screenshot: '/screenshots/red-queen-bio-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

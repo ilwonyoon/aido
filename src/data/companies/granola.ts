@@ -5,6 +5,7 @@ export const granola: Company = {
     name: 'Granola',
     description: 'AI notepad for meetings. Augments your notes instead of replacing your judgment.',
     website: 'https://granola.ai',
+    screenshot: '/screenshots/granola-screenshot.png',
     headquarters: 'London, UK',
     remote: 'Hybrid',
 

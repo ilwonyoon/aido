@@ -5,6 +5,7 @@ export const cohere: Company = {
     name: 'Cohere',
     description: 'Enterprise AI platform providing secure, customizable language models for businesses to build AI applications.',
     website: 'https://cohere.com',
+    screenshot: '/screenshots/cohere-screenshot.png',
     headquarters: 'Toronto, Canada',
     remote: 'Hybrid',
 

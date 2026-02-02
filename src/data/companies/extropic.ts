@@ -6,6 +6,7 @@ export const extropic: Company = {
   description:
     'Building thermodynamic computing hardware that is far more energy-efficient than GPUs for probabilistic AI workloads.',
   website: 'https://extropic.ai',
+    screenshot: '/screenshots/extropic-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

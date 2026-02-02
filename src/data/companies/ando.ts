@@ -8,6 +8,9 @@ export const ando: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/r9G3LxGxqoTXR8ifRbRwYiduc4Q5-8e99wEYjSaTYPC758bGdXTEKLG8gSjKKznNZNYdGA6ePN_sG47IsiC7_A.png',
+
     // OG Image
     ogImage: '/og-images/ando-og.webp',
 

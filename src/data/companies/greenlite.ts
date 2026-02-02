@@ -8,6 +8,10 @@ export const greenlite: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/greenlite-screenshot.png',
+    ogImage: '/screenshots/greenlite-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

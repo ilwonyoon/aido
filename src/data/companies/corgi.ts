@@ -6,6 +6,7 @@ export const corgi: Company = {
   description:
     'AI-native full-stack insurance carrier focused on startups and high-growth companies.',
   website: 'https://www.corgi.insure/',
+    screenshot: '/screenshots/corgi-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

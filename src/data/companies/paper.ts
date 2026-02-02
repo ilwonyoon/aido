@@ -8,6 +8,10 @@ export const paper: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://paper.design/opengraph-image.jpg?opengraph-image.9a84ecdd.jpg',
+  screenshot: '/screenshots/paper-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

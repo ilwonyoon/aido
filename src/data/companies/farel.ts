@@ -8,6 +8,10 @@ export const farel: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: '/screenshots/farel-screenshot.png',
+    ogImage: '/screenshots/farel-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

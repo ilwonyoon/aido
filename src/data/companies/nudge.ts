@@ -8,6 +8,10 @@ export const nudge: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6372644369a530caa8c39dfc/679b9211408dbfb8adbd712b_Affinity%20OG%202025.webp',
+  screenshot: '/screenshots/nudge-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

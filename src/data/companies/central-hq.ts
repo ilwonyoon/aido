@@ -8,6 +8,10 @@ export const centralHq: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/aJQCMTIKlway0KxKXpscRUJ4b4k.png',
+  screenshot: '/screenshots/central-hq-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const higgsfield: Company = {
     name: 'Higgsfield',
     description: 'GenAI video platform for creative professionals to produce high-quality, stylized content with true cinematic control.',
     website: 'https://higgsfield.ai',
+    screenshot: '/screenshots/higgsfield-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

@@ -6,6 +6,7 @@ export const hummingbird: Company = {
   description:
     'AI platform that helps financial institutions detect and prevent financial crime with automated investigations and compliance workflows.',
   website: 'https://www.hummingbird.co/',
+    screenshot: '/screenshots/hummingbird-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

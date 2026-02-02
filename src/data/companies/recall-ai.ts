@@ -8,6 +8,10 @@ export const recallAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/recall-ai-screenshot.png',
+    ogImage: '/screenshots/recall-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const doppel: Company = {
   name: 'Doppel',
   description: 'AI-native digital risk protection for identifying and stopping threats.',
   website: 'https://www.doppel.com',
+    screenshot: '/screenshots/doppel-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 

@@ -8,6 +8,10 @@ export const supermemory: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/0vwwOshCy9cpQqoy4VrpL9jAnU.png',
+  screenshot: '/screenshots/supermemory-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

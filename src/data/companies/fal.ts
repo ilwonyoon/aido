@@ -6,6 +6,7 @@ export const fal: Company = {
   description:
     'Generative media platform for developers to build and run AI media workflows.',
   website: 'https://fal.ai/',
+    screenshot: '/screenshots/fal-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

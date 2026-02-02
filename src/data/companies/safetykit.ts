@@ -5,6 +5,7 @@ export const safetykit: Company = {
   name: 'SafetyKit',
   description: 'AI agent platform for trust and safety operations.',
   website: 'https://www.safetykit.com',
+    screenshot: '/screenshots/safetykit-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

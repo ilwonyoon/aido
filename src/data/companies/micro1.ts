@@ -6,6 +6,7 @@ export const micro1: Company = {
   description:
     'Hiring platform for sourcing and placing software engineers quickly.',
   website: 'https://micro1.ai/',
+    screenshot: '/screenshots/micro1-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

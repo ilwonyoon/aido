@@ -5,6 +5,7 @@ export const miter: Company = {
   name: 'Miter',
   description: 'Meeting management product focused on structured agendas and notes.',
   website: 'https://miter.co',
+    screenshot: '/screenshots/miter-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

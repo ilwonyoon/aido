@@ -9,6 +9,9 @@ export const arcadeDev: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/VN4BiqMKtJnifXk3H8AORrp-FvRsXpX-F8UbZnhE9QdXhulVfT4HuYtIPJm0Y8Paeo5ieXV6GWt6RuuNsVg1lA.png',
+
     // OG Image
     ogImage: '/og-images/arcade-dev-og.webp',
 

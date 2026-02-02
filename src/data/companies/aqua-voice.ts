@@ -8,6 +8,10 @@ export const aquaVoice: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb',
+  screenshot: 'https://iad.microlink.io/FZyORyKXCT_yt8Ho9LXDcjRiOlPzGILDk0Q37LsCrEVzGZlJMLvbC6SWK0O8fQ40PI6fmMEde9EPkyZrjoQ1yg.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,9 @@ export const vizcom: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68da69e18c8988d039a9f6fe/694b256896dd559dad1f8296_Generic_OpenGraph_1200x630.png',
+
   // Multi-dimensional Tags
   aiTypes: ['image-generation'],
   markets: ['prosumer', 'b2b'],

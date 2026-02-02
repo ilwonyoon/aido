@@ -5,6 +5,7 @@ export const grammarly: Company = {
     name: 'Grammarly',
     description: 'AI writing assistant. Grammar, spelling, tone, and style suggestions for professionals.',
     website: 'https://www.grammarly.com',
+    screenshot: '/screenshots/grammarly-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

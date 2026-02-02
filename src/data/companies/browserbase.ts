@@ -8,6 +8,10 @@ export const browserbase: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.browserbase.com/assets/social_share.png?v=2',
+  screenshot: 'https://iad.microlink.io/PyikUqr7w8KED0l4hBEpB-VhzZM1g-EzI_5976H5PYkUl8iBIod8_ZV9BLLv4P-SuF8pfG8Y3VrM_nor6SkNSA.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

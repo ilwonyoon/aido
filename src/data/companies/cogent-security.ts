@@ -5,6 +5,7 @@ export const cogentSecurity: Company = {
   name: 'Cogent Security',
   description: 'AI taskforce for vulnerability management and security remediation.',
   website: 'https://www.cogent.security',
+    screenshot: '/screenshots/cogent-security-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

@@ -8,6 +8,10 @@ export const mural: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/62e11362da2667ac3d0e6ed5/638f50f56076f389d91406a0_Mural_OG_image_launch.png',
+  screenshot: '/screenshots/mural-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

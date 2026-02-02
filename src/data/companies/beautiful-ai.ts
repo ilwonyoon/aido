@@ -8,6 +8,9 @@ export const beautifulAi: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/5gMzxEb0dopfHZMAieSEwhk_ddrn1cn2s-W5XE6tk7Qknaug--rw8pegajI4rpJ6Pi5nS3iWYoHvrp14WfMuUg.png',
+
     // OG Image
     ogImage: '/og-images/beautiful-ai-og.webp',
 

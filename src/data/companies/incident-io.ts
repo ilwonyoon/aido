@@ -8,6 +8,10 @@ export const incidentIo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://incident.io/opengraph-image.png?opengraph-image.bb73b9f4.png',
+  screenshot: '/screenshots/incident-io-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

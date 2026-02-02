@@ -8,6 +8,10 @@ export const things: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66ea3a5528a044beafcf913e/673414b93c1fd7b39424c945_home.webp',
+  screenshot: '/screenshots/things-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

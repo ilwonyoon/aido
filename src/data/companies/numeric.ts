@@ -5,6 +5,7 @@ export const numeric: Company = {
   name: 'Numeric',
   description: 'AI accounting automation platform for close and reporting workflows.',
   website: 'https://www.numeric.io',
+    screenshot: '/screenshots/numeric-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

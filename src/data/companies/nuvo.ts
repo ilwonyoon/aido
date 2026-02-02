@@ -8,6 +8,10 @@ export const nuvo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/642b1089873d6b67a004d671/67c9e0da191c497b2d12f597_Nuvo_Logo_2025.svg',
+  screenshot: '/screenshots/nuvo-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

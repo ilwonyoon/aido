@@ -8,6 +8,9 @@ export const canva: Company = {
     headquarters: 'Sydney, Australia',
     remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/vIG8c2DJzrnN1Leqr3Rb4U5vgMR0-xR-_yMRt72m0f8kajL3EBSmMXMpl4zC-42W4-EH3N6houE1qJCk4CYhAQ.png',
+
     // OG Image
     ogImage: '/og-images/canva-og.webp',
 

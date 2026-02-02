@@ -8,6 +8,10 @@ export const promisePay: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/promise-pay-screenshot.png',
+    ogImage: '/screenshots/promise-pay-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const alix: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/wwlXeE7zSuM8ExRatWVln85rMrLBqACbeV9jMSvoOSnjCsFGW6WaGd8WjULV-Xxw0R-21sRDqjzCZemxr7a1mw.png',
+    ogImage: 'https://iad.microlink.io/wwlXeE7zSuM8ExRatWVln85rMrLBqACbeV9jMSvoOSnjCsFGW6WaGd8WjULV-Xxw0R-21sRDqjzCZemxr7a1mw.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

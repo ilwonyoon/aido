@@ -8,6 +8,10 @@ export const mem: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://storage.googleapis.com/mem-public-assets/sq-f.jpg',
+  screenshot: '/screenshots/mem-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

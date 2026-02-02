@@ -8,6 +8,10 @@ export const medallion: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6877cbe9ead9a7e4d203574e/68b0bf566d2ad3b5e2829b4c_Homepage_SEO.png',
+  screenshot: '/screenshots/medallion-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

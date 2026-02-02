@@ -8,6 +8,10 @@ export const sfcompute: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://sfcompute.com/images/open-graph/site-og-image.jpg',
+  screenshot: '/screenshots/sfcompute-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

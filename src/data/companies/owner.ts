@@ -8,6 +8,10 @@ export const owner: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66643a14df53b71d1ed72d08/669009b2b750c70ec24fd4b8_owner-og.jpg',
+  screenshot: '/screenshots/owner-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const flowEngineering: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/Gx4M8eFjl74wJOcY8oxDnhfVX4g.png',
+  screenshot: '/screenshots/flow-engineering-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const alexAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68aeb8386df2a4eb63bab7e3/69767c8fa91a4725f8da328c_Alex_2026_web_thumb_01.jpg',
+  screenshot: 'https://iad.microlink.io/-vPGJnuZPiYJMakrpdFkRznPjOCVzGtAkpOyW2N6Dh3R1LEIAibV6oRfFPVJ2MzAmgpJDdFkZLg-KqwtWmFb8g.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

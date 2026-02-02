@@ -8,6 +8,10 @@ export const oway: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.shopify.com/s/files/1/0685/5586/6336/files/Dettaglio_flacone.jpg?v=1747919944',
+  screenshot: '/screenshots/oway-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const magicPatterns: Company = {
   name: 'Magic Patterns',
   description: 'AI design tool that helps teams go from idea to production faster.',
   website: 'https://magicpatterns.com',
+    screenshot: '/screenshots/magic-patterns-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

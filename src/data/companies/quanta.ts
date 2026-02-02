@@ -6,6 +6,7 @@ export const quanta: Company = {
   description:
     'Zero DevOps Postgres platform that helps teams run reliable databases without infrastructure work.',
   website: 'https://quanta.com/',
+    screenshot: '/screenshots/quanta-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

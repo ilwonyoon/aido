@@ -8,6 +8,10 @@ export const dagster: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/681399f654933b29e12fb8bd/681cb5f07ccf87ece14559ef_OG%20-%20v2FIX.jpg',
+  screenshot: '/screenshots/dagster-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const gigs: Company = {
   name: 'Gigs',
   description: 'Platform to launch and run mobile services with embedded connectivity.',
   website: 'https://gigs.com',
+    screenshot: '/screenshots/gigs-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

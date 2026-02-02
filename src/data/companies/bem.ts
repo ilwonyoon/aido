@@ -8,6 +8,10 @@ export const bem: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/gWFtk2mZDzh93RW2niDn62ofsK4.png?width=2008&height=1026',
+  screenshot: 'https://iad.microlink.io/rCrt54tPNBnFG2ViYr_wAzoIeJ2Je64-_NyEHSK-AOaIOPBdXOB_bVM7FhFG-eR31TgPyduvLxFUHUkTP7TyFg.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
