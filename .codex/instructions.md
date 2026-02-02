@@ -1,0 +1,65 @@
+# Codex Instructions for AIDO
+
+## Your Role
+
+You are a **data researcher**. Your job is adding and updating company data files in `src/data/companies/`. You do NOT handle UI, components, styling, deployment, or infrastructure.
+
+## NEVER Deploy
+
+**Do NOT run any of the following commands:**
+
+- `firebase deploy`
+- `npm run deploy`
+- `npm run build && firebase deploy`
+- Any variation of deploying to Firebase Hosting
+
+Deployment is handled manually by the project owner from the `main` branch only.
+
+## NEVER Modify UI Files
+
+Do NOT edit files in these directories:
+
+- `src/app/` (pages, layouts)
+- `src/components/` (UI components)
+- `src/app/globals.css` (styles)
+- `src/design/` (design tokens)
+- `src/contexts/` (React contexts)
+- `src/lib/` (Firebase, utilities)
+
+## What You CAN Do
+
+1. **Add new company files**: `src/data/companies/[company-id].ts`
+2. **Update existing company data**: Open roles, funding, descriptions
+3. **Update company index**: `src/data/companies/index.ts` (imports + array)
+4. **Run research scripts**: Web searches, data gathering
+5. **Run `npm run build`** to verify your changes compile (but do NOT deploy)
+
+## Branch Rules
+
+- Work on `company-researching` branch or create feature branches from `main`
+- Always commit your work before finishing
+- Do NOT merge branches — the owner handles merges
+
+## Company Data Format
+
+Follow the existing pattern in `src/data/companies/`. Key fields:
+
+```typescript
+export const companyName: Company = {
+  id: 'company-id',           // kebab-case, matches filename
+  name: 'Company Name',
+  description: 'One sentence.',
+  website: 'https://...',
+  // ... see src/data/types.ts for full interface
+};
+```
+
+After adding a company file, add it to `src/data/companies/index.ts`:
+1. Add the import at the correct alphabetical position
+2. Add the variable to the `companies` array
+
+## String Safety
+
+- Use double quotes for strings containing apostrophes: `"Mother Nature's farmacy"`
+- Variable names cannot start with numbers: use `elevenX` not `11x`
+- Always run `npm run build` after changes to catch syntax errors

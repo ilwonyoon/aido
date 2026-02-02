@@ -7,7 +7,7 @@
     "build": "node scripts/generate-sitemap.mjs && next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && firebase deploy --only hosting",
+    "deploy": "node scripts/check-branch.mjs && npm run build && firebase deploy --only hosting",
     "deploy:preview": "npm run build && firebase hosting:channel:deploy preview",
     "export-companies": "node scripts/export-companies.mjs",
     "fetch-og-images": "node scripts/fetch-og-images.mjs",
