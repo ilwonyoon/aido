@@ -42,31 +42,30 @@ export default function AboutPage() {
       <section className="space-y-4 text-[var(--muted)] leading-relaxed mb-12">
         <p>
           Hi, I&apos;m Ilwon — a Product Designer looking for my next thing in AI.
-          Previously at{' '}
-          <span className="text-[var(--foreground)]">Meta</span> and{' '}
-          <span className="text-[var(--foreground)]">Google</span>,
-          where I designed products used by billions.
+          Previously at Meta and Google, where I designed products used by billions.
         </p>
         <p>
           Most recently, I spent a year in South Korea as Head of Design at{' '}
           <a href="https://www.bucketplace.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-light)] hover:underline">
             Bucketplace
           </a>
-          , a unicorn in the home interior space. I spent most of 2025 pushing AI transformation
-          across the company — new workflows, new tools, a lot of convincing. But while I was
+          , a unicorn in the home interior space. I spent most of 2025{' '}
+          <span className="text-[var(--foreground)]">pushing AI transformation
+          across the company</span> — new workflows, new tools, a lot of convincing. But while I was
           heads-down leading that charge 14 hours ahead of SF, the AI landscape quietly
           (or not so quietly) did a full speedrun without me.
         </p>
         <p>
-          I came back to the States and realized my mental map of tech was about two paradigm
-          shifts out of date. So I did what any designer would do — I made a tool.
+          I came back to the States and realized{' '}
+          <span className="text-[var(--foreground)]">my mental map of tech was about two paradigm
+          shifts out of date</span>. So I did what any designer would do — I made a tool.
         </p>
         <p>
           <a
             href="https://www.linkedin.com/in/ilwonyoon/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline"
+            className="inline-flex items-center gap-1.5 px-4 py-2 bg-[var(--accent)] text-white rounded-lg hover:bg-[var(--accent-light)] transition-colors text-sm font-medium"
           >
             Connect with me on LinkedIn &rarr;
           </a>

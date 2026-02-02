@@ -904,6 +904,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
               onCompanyClick={onCompanyClick}
               isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
               pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
+              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
             />
           ))}
         </div>
@@ -916,6 +917,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
               onCompanyClick={onCompanyClick}
               isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
               pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
+              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
             />
           ))}
         </div>
