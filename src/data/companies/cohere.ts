@@ -221,7 +221,7 @@ export const cohere: Company = {
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'AI-native Level 4: AI is the product',
+        'AI-native Level A: AI is the product',
         'Founder credibility: Aidan Gomez co-authored Transformer paper',
         'Strong growth: $200M+ ARR heading into 2026',
         'IPO-bound: mid-2026 IPO planned',

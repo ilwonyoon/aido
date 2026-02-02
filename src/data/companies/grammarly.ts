@@ -73,7 +73,7 @@ export const grammarly: Company = {
     tracking: {
       status: 'watching',
       fitScore: 8,
-      whyJoin: ['AI-native Level 3', '$13B (2021)'],
+      whyJoin: ['AI-native Level B', '$13B (2021)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Grammarly product', 'Research founders'],
     },

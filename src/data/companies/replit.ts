@@ -261,7 +261,7 @@ export const replit: Company = {
       status: 'interested',
       fitScore: 9,
       whyJoin: [
-        'AI-native Level 4: AI is the product (Replit Agent)',
+        'AI-native Level A: AI is the product (Replit Agent)',
         'Explosive growth: $3B → $9B in 4 months',
         'Co-founder leads design: Haya Odeh (amazing signal)',
         'Product Designer role open',

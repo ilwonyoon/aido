@@ -214,7 +214,7 @@ export const base44: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level 4: AI is the product',
+        'AI-native Level A: AI is the product',
         'Fastest bootstrapped exit ever ($80M in 6 months)',
         'Wix resources + Base44 independence',
         'Won 2025 vibe coding shootout (validation)',

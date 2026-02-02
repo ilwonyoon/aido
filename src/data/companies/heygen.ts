@@ -73,7 +73,7 @@ export const heygen: Company = {
     tracking: {
       status: 'watching',
       fitScore: 8,
-      whyJoin: ['AI-native Level 4', '$500M (2024)'],
+      whyJoin: ['AI-native Level A', '$500M (2024)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try HeyGen product', 'Research founders'],
     },

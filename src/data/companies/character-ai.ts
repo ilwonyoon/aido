@@ -226,7 +226,7 @@ export const characterAi: Company = {
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level 4: AI is the product',
+        'AI-native Level A: AI is the product',
         'Massive scale: 208M monthly visits',
         'Creative product: entertainment AI vs boring productivity tools',
         'Community-driven: 16M+ user-created characters',

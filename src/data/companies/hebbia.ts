@@ -181,7 +181,7 @@ export const hebbia: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level 4: AI is the product',
+        'AI-native Level A: AI is the product',
         'George Sivulka is brilliant founder',
         'Profitable and well-funded',
         'Elite customers (BlackRock, KKR)',

@@ -193,7 +193,7 @@ export const gamma: Company = {
       fitScore: 9,
       whyJoin: [
         'Grant Lee is designer CEO (rare!)',
-        'AI-native Level 4: AI is the product',
+        'AI-native Level A: AI is the product',
         '$100M ARR, profitable, lean team',
         '30M+ users, strong growth',
         'Interesting design challenges (AI generation)',

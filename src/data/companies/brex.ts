@@ -140,7 +140,7 @@ export const brex: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level 3', '$12.3B'],
+      whyJoin: ['AI-native Level B', '$12.3B'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Brex product', 'Research founders'],
     },

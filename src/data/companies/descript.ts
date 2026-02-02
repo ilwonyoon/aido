@@ -73,7 +73,7 @@ export const descript: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level 3', 'Unknown'],
+      whyJoin: ['AI-native Level B', 'Unknown'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Descript product', 'Research founders'],
     },

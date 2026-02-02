@@ -247,7 +247,7 @@ export const scaleAi: Company = {
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level 3: enabling AI infrastructure',
+        'AI-native Level B: enabling AI infrastructure',
         'Multiple Product Designer roles open',
         'Elite customers (historically): OpenAI, Anthropic, Google',
         'Massive scale: powering the best AI models',

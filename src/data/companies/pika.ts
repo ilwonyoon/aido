@@ -239,7 +239,7 @@ export const pika: Company = {
       status: 'interested',
       fitScore: 7,
       whyJoin: [
-        'Level 4 AI-native',
+        'Level A AI-native',
         'Creative tools space',
         'Small team — high impact',
         'Stanford AI Lab founders',

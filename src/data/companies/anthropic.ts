@@ -265,7 +265,7 @@ export const anthropic: Company = {
       status: 'interested',
       fitScore: 9,
       whyJoin: [
-        'Level 4 AI-native — frontier of AI design',
+        'Level A AI-native — frontier of AI design',
         'Founder philosophy aligns with my values',
         'Character Design — unique learning opportunity',
         'Strong business — no risk of failure',

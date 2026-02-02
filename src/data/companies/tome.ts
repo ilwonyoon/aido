@@ -73,7 +73,7 @@ export const tome: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level 4', '$300M'],
+      whyJoin: ['AI-native Level A', '$300M'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Tome product', 'Research founders'],
     },

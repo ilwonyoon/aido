@@ -219,7 +219,7 @@ export const elevenlabs: Company = {
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'Level 4 AI-native',
+        'Level A AI-native',
         'Market leader with clear differentiation',
         'Strong revenue — stable',
         'Voice is fascinating domain',

@@ -201,7 +201,7 @@ export const sourcegraph: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level 3: Cody is core product',
+        'AI-native Level B: Cody is core product',
         'Strong technical founders (ex-Palantir)',
         '$2.6B valuation, well-funded',
         'Yes',

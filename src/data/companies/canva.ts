@@ -73,7 +73,7 @@ export const canva: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level 2', '$42B (2024)'],
+      whyJoin: ['AI-native Level C', '$42B (2024)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Canva product', 'Research founders'],
     },

@@ -142,7 +142,7 @@ export const beautifulAi: Company = {
     tracking: {
       status: 'watching',
       fitScore: 6,
-      whyJoin: ['AI-native Level 3', 'Unknown'],
+      whyJoin: ['AI-native Level B', 'Unknown'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Beautiful.ai product', 'Research founders'],
     },

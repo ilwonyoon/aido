@@ -247,7 +247,7 @@ export const typeface: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level 3: AI is core differentiator',
+        'AI-native Level B: AI is core differentiator',
         'Founder credibility: Parasnis (ex-CTO Adobe)',
         'Enterprise focus: Fortune 500 customers',
         'Well-funded: $206M at $1B valuation',

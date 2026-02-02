@@ -239,7 +239,7 @@ export const jasper: Company = {
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level 3: AI is core differentiator',
+        'AI-native Level B: AI is core differentiator',
         '100,000+ customers',
         'Principal Product Designer role (senior level)',
         'Yes',

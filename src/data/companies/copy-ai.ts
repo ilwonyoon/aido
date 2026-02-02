@@ -73,7 +73,7 @@ export const copyAi: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level 4', 'Unknown'],
+      whyJoin: ['AI-native Level A', 'Unknown'],
       whyNot: ['Yes work policy', 'Unknown design culture'],
       nextActions: ['Try Copy.ai product', 'Research founders'],
     },
