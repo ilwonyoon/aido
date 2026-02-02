@@ -30,6 +30,13 @@ export interface EventStats {
 
 const OWNER_EMAIL = 'ilwonyoon@gmail.com';
 
+function isOwnerTraffic(email?: string | null): boolean {
+  if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+    return true;
+  }
+  return email === OWNER_EMAIL;
+}
+
 // ── Write: Track event to Firestore DailyStats ─────────────────────────────
 
 export async function trackFirestoreEvent(
@@ -39,7 +46,7 @@ export async function trackFirestoreEvent(
 ): Promise<void> {
   try {
     if (typeof window === 'undefined') return;
-    if (userEmail === OWNER_EMAIL) return;
+    if (isOwnerTraffic(userEmail)) return;
 
     const sessionId = getSessionId();
     if (!sessionId) return;

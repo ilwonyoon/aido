@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
+import { useAuth } from '@/contexts/AuthContext';
 import { CompanyLogo } from './CompanyLogo';
 import { DesignFocus } from './DesignFocus';
 
@@ -44,6 +45,7 @@ export function CompanyListRow({
   company: Company;
   onCompanyClick?: (companyId: string) => void;
 }) {
+  const { user } = useAuth();
   const config = getAiLevelConfig(company.aiNativeLevel);
   const roles = company.openRoles;
 
@@ -56,7 +58,7 @@ export function CompanyListRow({
         companyId: company.id,
         companyName: company.name,
         source: 'list_row',
-      });
+      }, user?.email);
     }
   };
 
@@ -191,6 +193,7 @@ export function CompanyCard({
   company: Company;
   onCompanyClick?: (companyId: string) => void;
 }) {
+  const { user } = useAuth();
   const config = getAiLevelConfig(company.aiNativeLevel);
   const whyJoin = company.tracking.whyJoin.slice(0, 3);
   const topWhyNot = company.tracking.whyNot[0];
@@ -205,7 +208,7 @@ export function CompanyCard({
         companyId: company.id,
         companyName: company.name,
         source: 'card',
-      });
+      }, user?.email);
     }
   };
 
