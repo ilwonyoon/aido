@@ -122,17 +122,22 @@ function HomePageContent() {
 
   const isTourActive = tourStep !== null;
 
-  // Check if tour should start
+  // Initialize: tour check + URL company load
   useEffect(() => {
-    if (isTourUnseen()) {
-      setTourStep(0);
-    }
-  }, []);
+    const companyFromUrl = searchParams.get('company');
+    const shouldTour = isTourUnseen();
 
-  useEffect(() => {
-    // Initial load from URL
-    const companyId = searchParams.get('company');
-    setSelectedCompanyId(companyId);
+    if (shouldTour) {
+      // Tour takes priority — clear any URL company param, start clean
+      if (companyFromUrl) {
+        window.history.replaceState({}, '', '/');
+      }
+      setSelectedCompanyId(null);
+      setTourStep(0);
+    } else {
+      // Normal flow — load company from URL
+      setSelectedCompanyId(companyFromUrl);
+    }
   }, [searchParams]);
 
   useEffect(() => {
