@@ -348,6 +348,31 @@ import { kiteAi } from './kite-ai';
 import { humanBehavior } from './human-behavior';
 import { cognitionAi } from './cognition-ai';
 import { elevenX } from './11x';
+import { tako } from './tako';
+import { superpower } from './superpower';
+import { mural } from './mural';
+import { inkeep } from './inkeep';
+import { cambium } from './cambium';
+import { solaSecurity } from './sola-security';
+import { augment } from './augment';
+import { recallAi } from './recall-ai';
+import { aetherflux } from './aetherflux';
+import { ranger } from './ranger';
+import { interfere } from './interfere';
+import { sfcompute } from './sfcompute';
+import { astromech } from './astromech';
+import { aurasell } from './aurasell';
+import { hanomi } from './hanomi';
+import { things } from './things';
+import { medallion } from './medallion';
+import { dagster } from './dagster';
+import { browserbase } from './browserbase';
+import { freed } from './freed';
+import { twoDots } from './two-dots';
+import { invertBio } from './invert-bio';
+import { upwind } from './upwind';
+import { oway } from './oway';
+import { conversion } from './conversion';
 
 export const companies: Company[] = [
   anthropic,
@@ -698,6 +723,31 @@ export const companies: Company[] = [
   humanBehavior,
   cognitionAi,
   elevenX,
+  tako,
+  superpower,
+  mural,
+  inkeep,
+  cambium,
+  solaSecurity,
+  augment,
+  recallAi,
+  aetherflux,
+  ranger,
+  interfere,
+  sfcompute,
+  astromech,
+  aurasell,
+  hanomi,
+  things,
+  medallion,
+  dagster,
+  browserbase,
+  freed,
+  twoDots,
+  invertBio,
+  upwind,
+  oway,
+  conversion,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
