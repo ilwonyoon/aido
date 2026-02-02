@@ -40,10 +40,16 @@ export function ListIcon({ active }: { active: boolean }) {
 
 export function CompanyListRow({
   company,
-  onCompanyClick
+  onCompanyClick,
+  isHighlighted,
+  pinnedLabel,
+  dataTour,
 }: {
   company: Company;
   onCompanyClick?: (companyId: string) => void;
+  isHighlighted?: boolean;
+  pinnedLabel?: string;
+  dataTour?: string;
 }) {
   const { user } = useAuth();
   const config = getAiLevelConfig(company.aiNativeLevel);
@@ -63,7 +69,7 @@ export function CompanyListRow({
   };
 
   return (
-    <div className="px-5 py-6 cursor-pointer" onClick={handleClick}>
+    <div className={`px-5 py-6 cursor-pointer ${isHighlighted ? 'onboarding-highlight rounded-lg' : ''}`} onClick={handleClick} data-tour={dataTour}>
       {/* Header row */}
       <div className="flex items-start justify-between gap-4 mb-1.5">
         <div className="flex items-center gap-2.5 min-w-0">
@@ -71,6 +77,11 @@ export function CompanyListRow({
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <h3 className="font-semibold text-[var(--foreground)]">{company.name}</h3>
+              {pinnedLabel && (
+                <span className="badge badge-accent" style={{ fontSize: '10px', padding: '1px 6px' }}>
+                  {pinnedLabel}
+                </span>
+              )}
               <span
                 className={`badge ${config.badgeClass} flex-shrink-0`}
                 style={{ fontSize: '10px', padding: '1px 6px' }}
@@ -188,10 +199,16 @@ export function CompanyListRow({
 
 export function CompanyCard({
   company,
-  onCompanyClick
+  onCompanyClick,
+  isHighlighted,
+  pinnedLabel,
+  dataTour,
 }: {
   company: Company;
   onCompanyClick?: (companyId: string) => void;
+  isHighlighted?: boolean;
+  pinnedLabel?: string;
+  dataTour?: string;
 }) {
   const { user } = useAuth();
   const config = getAiLevelConfig(company.aiNativeLevel);
@@ -213,7 +230,7 @@ export function CompanyCard({
   };
 
   return (
-    <div className="card p-5 flex flex-col cursor-pointer" onClick={handleClick}>
+    <div className={`card p-5 flex flex-col cursor-pointer ${isHighlighted ? 'onboarding-highlight' : ''}`} onClick={handleClick} data-tour={dataTour}>
       {/* Header */}
       <div className="flex items-start justify-between gap-3 mb-1.5">
         <div className="flex items-center gap-2.5 min-w-0">
@@ -221,6 +238,11 @@ export function CompanyCard({
           <div className="min-w-0">
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-[var(--foreground)] truncate">{company.name}</h3>
+              {pinnedLabel && (
+                <span className="badge badge-accent flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
+                  {pinnedLabel}
+                </span>
+              )}
               <span
                 className={`badge ${config.badgeClass} flex-shrink-0`}
                 style={{ fontSize: '10px', padding: '1px 6px' }}

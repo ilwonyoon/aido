@@ -31,6 +31,7 @@ export function Navigation() {
           className="lg:hidden p-2"
           onClick={() => setIsMobileMenuOpen(true)}
           aria-label="Open menu"
+          data-tour="nav-menu-mobile"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="3" y1="6" x2="21" y2="6" />
@@ -41,6 +42,7 @@ export function Navigation() {
         <div className="hidden lg:flex items-center gap-4 text-sm">
           <Link
             href="/about"
+            data-tour="nav-about"
             className={
               isActive('/about')
                 ? 'text-[var(--foreground)] font-medium'
@@ -61,6 +63,7 @@ export function Navigation() {
           </Link>
           <Link
             href="/insights"
+            data-tour="nav-insights"
             className={
               isActive('/insights')
                 ? 'text-[var(--foreground)] font-medium'

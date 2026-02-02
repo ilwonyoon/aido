@@ -352,9 +352,10 @@ type ViewMode = 'grid' | 'list';
 interface CompanyFiltersProps {
   companies: Company[];
   onCompanyClick?: (companyId: string) => void;
+  isFirstVisit?: boolean;
 }
 
-export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProps) {
+export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: CompanyFiltersProps) {
   const router = useRouter();
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
@@ -722,8 +723,18 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           return 0;
       }
     });
+
+    // Pin Anthropic to top for first-time visitors
+    if (isFirstVisit) {
+      const anthropicIdx = sorted.findIndex(c => c.id === 'anthropic');
+      if (anthropicIdx > 0) {
+        const [anthropic] = sorted.splice(anthropicIdx, 1);
+        sorted.unshift(anthropic);
+      }
+    }
+
     return sorted;
-  }, [filteredCompanies, sortBy, initialInterestStatuses]);
+  }, [filteredCompanies, sortBy, initialInterestStatuses, isFirstVisit]);
 
   // Count not reviewed companies
   const notReviewedCount = useMemo(() => {
@@ -886,14 +897,28 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         </div>
       ) : effectiveViewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {sortedCompanies.map(company => (
-            <CompanyCard key={company.id} company={company} onCompanyClick={onCompanyClick} />
+          {sortedCompanies.map((company, index) => (
+            <CompanyCard
+              key={company.id}
+              company={company}
+              onCompanyClick={onCompanyClick}
+              isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
+              pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
+              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
+            />
           ))}
         </div>
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {sortedCompanies.map(company => (
-            <CompanyListRow key={company.id} company={company} onCompanyClick={onCompanyClick} />
+          {sortedCompanies.map((company, index) => (
+            <CompanyListRow
+              key={company.id}
+              company={company}
+              onCompanyClick={onCompanyClick}
+              isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
+              pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
+              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
+            />
           ))}
         </div>
       )}
