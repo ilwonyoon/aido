@@ -5,6 +5,7 @@ export const writer: Company = {
     name: 'Writer',
     description: 'AI writing platform for enterprises. Full-stack generative AI for business workflows.',
     website: 'https://writer.com',
+  screenshot: '/screenshots/writer-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
@@ -46,7 +47,7 @@ export const writer: Company = {
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: ['Unknown design culture', 'Competitive market'],
-    designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
+    designTeam: { designHead: 'Unknown', teamSize: '201-500 employees (startups.gallery)' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
       evaluation: { level: 'medium', tasks: [] },
@@ -111,5 +112,9 @@ export const writer: Company = {
       nextActions: ['Try Writer product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Writer Series C', 'url': 'https://writer.com/blog/series-c-funding-writer-press-release/'}, {'title': 'Writer $1.9B Valuation', 'url': 'https://techcrunch.com/2024/11/12/generative-ai-startup-writer-raises-200m-at-a-1-9b-valuation/'}],
+    sources: [
+      { title: 'Writer Series C', url: 'https://writer.com/blog/series-c-funding-writer-press-release/' },
+      { title: 'Writer $1.9B Valuation', url: 'https://techcrunch.com/2024/11/12/generative-ai-startup-writer-raises-200m-at-a-1-9b-valuation/' },
+      { title: 'Writer on startups.gallery', url: 'https://startups.gallery/companies/writer' },
+    ],
   };

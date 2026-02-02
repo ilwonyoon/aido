@@ -8,7 +8,7 @@ export const railway: Company = {
   website: 'https://railway.com/',
     screenshot: '/screenshots/railway-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/railway-og.webp',
@@ -22,7 +22,7 @@ export const railway: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$100M',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -126,7 +126,7 @@ export const railway: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

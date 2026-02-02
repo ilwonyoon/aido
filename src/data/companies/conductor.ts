@@ -8,7 +8,7 @@ export const conductor: Company = {
   website: 'https://www.conductor.build/',
     screenshot: '/screenshots/conductor-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/conductor-og.webp',
@@ -117,7 +117,7 @@ export const conductor: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

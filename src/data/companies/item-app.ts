@@ -8,7 +8,7 @@ export const itemApp: Company = {
   website: 'https://item.app/',
     screenshot: '/screenshots/item-app-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/item-app-og.webp',
@@ -117,7 +117,7 @@ export const itemApp: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

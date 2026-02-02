@@ -20,7 +20,7 @@ export const cognitionAi: Company = {
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$400M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const cognitionAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

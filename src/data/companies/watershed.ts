@@ -6,8 +6,9 @@ export const watershed: Company = {
   description:
     'Enterprise climate platform that helps companies measure, report, and reduce emissions.',
   website: 'https://www.watershed.com/',
+  screenshot: '/screenshots/watershed-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/watershed-og.webp',
@@ -19,9 +20,9 @@ export const watershed: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$100M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -117,7 +118,7 @@ export const watershed: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

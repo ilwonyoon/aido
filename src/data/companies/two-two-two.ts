@@ -22,8 +22,10 @@ export const twoTwoTwo: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$10.1M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$10.1M', date: '2025-12' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const twoTwoTwo: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

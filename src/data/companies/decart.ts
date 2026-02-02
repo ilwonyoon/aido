@@ -20,7 +20,7 @@ export const decart: Company = {
   // Business
   stage: 'Series B',
   valuation: '$3.1B (Aug 2025)',
-  totalFunding: 'Unknown',
+  totalFunding: '$100M',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -106,7 +106,7 @@ export const decart: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

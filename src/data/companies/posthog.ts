@@ -20,7 +20,7 @@ export const posthog: Company = {
   // Business
   stage: 'Series E',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$75M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const posthog: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

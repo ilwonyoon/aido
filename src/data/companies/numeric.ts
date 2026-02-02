@@ -21,8 +21,10 @@ export const numeric: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$51M',
+  fundingHistory: [
+    { stage: 'Series B', amount: '$51M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -89,7 +91,7 @@ export const numeric: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

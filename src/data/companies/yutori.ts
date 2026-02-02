@@ -6,6 +6,7 @@ export const yutori: Company = {
   description:
     'AI agents that help people with everyday digital tasks and act as a chief-of-staff for online workflows.',
   website: 'https://yutori.com',
+  screenshot: '/screenshots/yutori-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -131,7 +132,7 @@ export const yutori: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
     notableMembers: [
       { name: 'Maximillian Piras', role: 'Designer' },
     ],

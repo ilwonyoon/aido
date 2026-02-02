@@ -6,8 +6,9 @@ export const spiralDb: Company = {
   description:
     'Data platform for storage- and compute-efficient datasets used in AI pre-training and data infrastructure.',
   website: 'https://www.spiraldb.com/',
+  screenshot: '/screenshots/spiral-db-screenshot.png',
   headquarters: 'New York, NY',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/spiral-db-og.webp',
@@ -123,7 +124,7 @@ export const spiralDb: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

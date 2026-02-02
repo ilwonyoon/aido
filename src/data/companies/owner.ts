@@ -20,7 +20,7 @@ export const owner: Company = {
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$120M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const owner: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -21,7 +21,9 @@ export const alexAi: Company = {
   stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$20M',
-  fundingHistory: [],
+  fundingHistory: [
+    { stage: 'Series A', amount: '$17M', date: '2025-09' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -93,7 +95,7 @@ export const alexAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -7,7 +7,7 @@ export const arcadeDev: Company = {
     'Developer platform for shipping AI-powered apps with managed tooling and infrastructure.',
   website: 'https://www.arcade.dev/',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   screenshot: 'https://iad.microlink.io/VN4BiqMKtJnifXk3H8AORrp-FvRsXpX-F8UbZnhE9QdXhulVfT4HuYtIPJm0Y8Paeo5ieXV6GWt6RuuNsVg1lA.png',
@@ -24,8 +24,10 @@ export const arcadeDev: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$12M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$12M', date: '2025-03' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -119,7 +121,7 @@ export const arcadeDev: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

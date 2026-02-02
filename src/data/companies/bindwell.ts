@@ -7,7 +7,7 @@ export const bindwell: Company = {
     'Agriculture biotech company using AI models to discover safer, more effective pesticides.',
   website: 'https://bindwell.ai/',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   screenshot: 'https://iad.microlink.io/CAHilCWpc550x3P6xRGQyJf7-Y00IYycSSTOPOPuNdBx2wGSEHpXCHLZPlWUncHYzM4MIMEYPfF7cYuH8rtw-A.png',
@@ -131,7 +131,7 @@ export const bindwell: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

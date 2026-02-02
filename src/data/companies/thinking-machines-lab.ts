@@ -5,6 +5,7 @@ export const thinkingMachinesLab: Company = {
   name: 'Thinking Machines Lab',
   description: 'AI research and product company building tools so more people can make AI work for their unique needs and goals.',
   website: 'https://thinkingmachines.ai',
+  screenshot: '/screenshots/thinking-machines-lab-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

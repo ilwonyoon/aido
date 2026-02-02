@@ -20,7 +20,7 @@ export const patch: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$55M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const patch: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

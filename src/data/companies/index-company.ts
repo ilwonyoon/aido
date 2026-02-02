@@ -20,7 +20,7 @@ export const indexCompany: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$2.6M',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -122,7 +122,7 @@ export const indexCompany: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

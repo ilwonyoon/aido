@@ -8,7 +8,7 @@ export const mutiny: Company = {
   website: 'https://www.mutinyhq.com/',
     screenshot: '/screenshots/mutiny-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/mutiny-og.webp',
@@ -22,7 +22,7 @@ export const mutiny: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$50M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -117,7 +117,7 @@ export const mutiny: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

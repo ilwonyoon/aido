@@ -8,7 +8,7 @@ export const pacificFusion: Company = {
   website: 'https://pacificfusion.com/',
     screenshot: '/screenshots/pacific-fusion-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/pacific-fusion-og.webp',
@@ -20,9 +20,9 @@ export const pacificFusion: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$900M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -117,7 +117,7 @@ export const pacificFusion: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

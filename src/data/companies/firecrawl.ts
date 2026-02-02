@@ -20,10 +20,12 @@ export const firecrawl: Company = {
   industries: ['infrastructure', 'creative-media'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$14.5M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$14.5M', date: '2025-08' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const firecrawl: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

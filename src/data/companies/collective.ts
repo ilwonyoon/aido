@@ -8,7 +8,7 @@ export const collective: Company = {
   website: 'https://www.collective.com/',
     screenshot: '/screenshots/collective-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/collective-og.webp',
@@ -20,7 +20,7 @@ export const collective: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$50M (announced)',
   fundingHistory: [
@@ -124,7 +124,7 @@ export const collective: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

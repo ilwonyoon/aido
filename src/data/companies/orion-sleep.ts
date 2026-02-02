@@ -21,7 +21,7 @@ export const orionSleep: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$18M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -89,7 +89,7 @@ export const orionSleep: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

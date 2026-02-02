@@ -111,7 +111,7 @@ export const hebbia: Company = {
     // Design Opportunity
     designTeam: {
       designHead: 'Unknown',
-      teamSize: 'Unknown',
+      teamSize: '51-200 employees (startups.gallery)',
     },
     designWorkType: {
       logicBehavior: {

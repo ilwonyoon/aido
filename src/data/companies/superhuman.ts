@@ -5,6 +5,7 @@ export const superhuman: Company = {
     name: 'Superhuman',
     description: 'The fastest email experience ever made. Now part of Grammarly, building AI productivity suite with agents that work wherever people work.',
     website: 'https://superhuman.com',
+  screenshot: '/screenshots/superhuman-screenshot.png',
 
     // Location
     headquarters: 'San Francisco, CA',
@@ -250,7 +251,7 @@ export const superhuman: Company = {
         url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/',
       },
       {
-        title: 'Rahul Vohra on Lenny\'s Podcast',
+        title: 'Rahul Vohra on Lenny newsletter podcast',
         url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra',
       },
     ],

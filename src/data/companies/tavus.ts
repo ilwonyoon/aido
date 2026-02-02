@@ -5,6 +5,7 @@ export const tavus: Company = {
     name: 'Tavus',
     description: 'AI-powered personalized video generation platform. Face and voice cloning for sales, marketing, and training at scale.',
     website: 'https://tavus.io',
+  screenshot: '/screenshots/tavus-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

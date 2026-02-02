@@ -5,6 +5,7 @@ export const wisprFlow: Company = {
   name: 'Wispr Flow',
   description: 'Immersive voice keyboard for fast, hands-free typing and dictation.',
   website: 'https://www.wispr.ai',
+  screenshot: '/screenshots/wispr-flow-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
@@ -20,8 +21,10 @@ export const wisprFlow: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$25M',
+  fundingHistory: [
+    { stage: 'Unknown', amount: '$25M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -88,7 +91,7 @@ export const wisprFlow: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

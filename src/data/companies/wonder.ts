@@ -5,6 +5,7 @@ export const wonder: Company = {
   name: 'Wonder',
   description: 'AI on the canvas for creative work and design workflows.',
   website: 'https://wonder.so',
+  screenshot: '/screenshots/wonder-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -18,9 +19,9 @@ export const wonder: Company = {
   industries: ['creative-media'],
 
   // Business
-  stage: 'Pre-Seed',
+  stage: 'Pre-seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -88,7 +89,7 @@ export const wonder: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

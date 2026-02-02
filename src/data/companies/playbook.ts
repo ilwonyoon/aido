@@ -20,7 +20,7 @@ export const playbook: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$18M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -49,7 +49,7 @@ export const playbook: Company = {
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },

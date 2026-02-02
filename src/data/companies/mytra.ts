@@ -8,7 +8,7 @@ export const mytra: Company = {
   website: 'https://mytra.ai/',
     screenshot: '/screenshots/mytra-screenshot.png',
   headquarters: 'Brisbane, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/mytra-og.webp',
@@ -140,7 +140,7 @@ export const mytra: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

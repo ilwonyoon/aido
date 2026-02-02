@@ -8,7 +8,7 @@ export const resolveAi: Company = {
   website: 'https://resolve.ai',
     screenshot: '/screenshots/resolve-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/resolve-ai-og.webp',
@@ -22,7 +22,7 @@ export const resolveAi: Company = {
   // Business
   stage: 'Series A',
   valuation: '$1B headline (Dec 2025; blended valuation lower)',
-  totalFunding: 'Unknown',
+  totalFunding: '$35M',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -137,7 +137,7 @@ export const resolveAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

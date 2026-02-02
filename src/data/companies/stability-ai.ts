@@ -5,6 +5,7 @@ export const stabilityAi: Company = {
     name: 'Stability AI',
     description: 'Generative AI company known for Stable Diffusion and models across image, video, audio, and 3D.',
     website: 'https://stability.ai/',
+  screenshot: '/screenshots/stability-ai-screenshot.png',
     headquarters: 'London, UK',
     remote: 'Hybrid',
 
@@ -20,7 +21,7 @@ export const stabilityAi: Company = {
     // Business
     stage: 'Private',
     valuation: 'Unknown',
-    totalFunding: 'Unknown',
+    totalFunding: 'Not publicly disclosed',
     fundingHistory: [
       {
         stage: 'Unknown',

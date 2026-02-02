@@ -20,7 +20,7 @@ export const seedHealth: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$40M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const seedHealth: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '201-500 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

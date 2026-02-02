@@ -5,8 +5,9 @@ export const teraAi: Company = {
   name: 'Tera AI',
   description: 'AI chip design platform focused on faster hardware iteration.',
   website: 'https://tera-ai.com',
+  screenshot: '/screenshots/tera-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/tera-ai-og.webp',
@@ -95,7 +96,7 @@ export const teraAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

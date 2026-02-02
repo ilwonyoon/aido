@@ -20,7 +20,7 @@ export const comfyUi: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$14M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -60,7 +60,7 @@ export const comfyUi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -47,7 +47,7 @@ export const descript: Company = {
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],
     redFlags: ['Unknown design culture', 'Competitive market'],
-    designTeam: { designHead: 'Unknown', teamSize: 'Unknown' },
+    designTeam: { designHead: 'Unknown', teamSize: '201-500 employees (startups.gallery)' },
     designWorkType: {
       logicBehavior: { level: 'high', tasks: [] },
       evaluation: { level: 'medium', tasks: [] },

@@ -8,7 +8,7 @@ export const item: Company = {
   website: 'https://www.item.app/',
     screenshot: '/screenshots/item-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/item-og.webp',

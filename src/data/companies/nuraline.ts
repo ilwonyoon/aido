@@ -8,7 +8,7 @@ export const nuraline: Company = {
   website: 'https://www.nuraline.ai/',
     screenshot: '/screenshots/nuraline-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/nuraline-og.webp',
@@ -117,7 +117,7 @@ export const nuraline: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -18,7 +18,7 @@ export const appliedCompute: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Venture',
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [
@@ -95,7 +95,7 @@ export const appliedCompute: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

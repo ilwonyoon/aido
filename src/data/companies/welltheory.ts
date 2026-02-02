@@ -5,8 +5,9 @@ export const welltheory: Company = {
   name: 'WellTheory',
   description: 'Digital health platform focused on autoimmune care.',
   website: 'https://www.welltheory.com',
+  screenshot: '/screenshots/welltheory-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/welltheory-og.webp',
@@ -17,10 +18,12 @@ export const welltheory: Company = {
   industries: ['healthcare'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$14M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$14M', date: '2025-10' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -87,7 +90,7 @@ export const welltheory: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

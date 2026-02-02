@@ -5,6 +5,7 @@ export const trunk: Company = {
   name: 'Trunk',
   description: 'Redefining writing software at scale.',
   website: 'https://trunk.io',
+  screenshot: '/screenshots/trunk-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
@@ -19,7 +20,7 @@ export const trunk: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$25M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -85,7 +86,7 @@ export const trunk: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

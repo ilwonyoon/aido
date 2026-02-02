@@ -6,6 +6,7 @@ export const tigereye: Company = {
   description:
     'AI-powered business intelligence platform that helps go-to-market teams forecast, plan, and execute with real-time insights.',
   website: 'https://tigereye.com/',
+  screenshot: '/screenshots/tigereye-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -134,7 +135,7 @@ export const tigereye: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

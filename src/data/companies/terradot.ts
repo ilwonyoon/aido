@@ -6,6 +6,7 @@ export const terradot: Company = {
   description:
     'Climate company scaling Enhanced Rock Weathering (ERW) to remove CO2 while improving soil health.',
   website: 'https://terradot.earth/',
+  screenshot: '/screenshots/terradot-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -127,7 +128,7 @@ export const terradot: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

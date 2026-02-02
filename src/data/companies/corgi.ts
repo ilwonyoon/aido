@@ -8,7 +8,7 @@ export const corgi: Company = {
   website: 'https://www.corgi.insure/',
     screenshot: '/screenshots/corgi-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/corgi-og.webp',
@@ -23,7 +23,9 @@ export const corgi: Company = {
   stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$108M',
-  fundingHistory: [],
+  fundingHistory: [
+    { stage: 'Series A', amount: '$108M', date: '2026-01' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -122,7 +124,7 @@ export const corgi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

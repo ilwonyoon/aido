@@ -4,7 +4,7 @@ export const twoDots: Company = {
   id: 'two-dots',
   name: 'Two Dots',
   description: 'Consumer underwriting agent.',
-  website: 'https://www.twodots.com',
+  website: 'https://twodots.com',
     screenshot: '/screenshots/two-dots-screenshot.png',
     ogImage: '/screenshots/two-dots-screenshot.png',
   headquarters: 'San Francisco, CA',
@@ -18,7 +18,7 @@ export const twoDots: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$10.5M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -47,7 +47,7 @@ export const twoDots: Company = {
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -94,7 +94,7 @@ export const twoDots: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Two Dots', url: 'https://www.twodots.com' },
+    { title: 'Two Dots', url: 'https://twodots.com' },
     { title: 'Two Dots on startups.gallery', url: 'https://startups.gallery/companies/two-dots' },
   ],
 };

@@ -7,7 +7,7 @@ export const cocoon: Company = {
   website: 'https://cocoon.com',
     screenshot: '/screenshots/cocoon-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/cocoon-og.webp',
@@ -19,9 +19,9 @@ export const cocoon: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$20M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -89,7 +89,7 @@ export const cocoon: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

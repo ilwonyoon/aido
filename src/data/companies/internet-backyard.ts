@@ -8,7 +8,7 @@ export const internetBackyard: Company = {
   website: 'https://internetbackyard.com/',
     screenshot: '/screenshots/internet-backyard-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/internet-backyard-og.webp',
@@ -22,8 +22,10 @@ export const internetBackyard: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$4.5M',
+  fundingHistory: [
+    { stage: 'Pre-seed', amount: '$4.5M', date: '2025-12' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const internetBackyard: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

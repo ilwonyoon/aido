@@ -20,7 +20,7 @@ export const mural: Company = {
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$50M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -49,7 +49,7 @@ export const mural: Company = {
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '201-500 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },

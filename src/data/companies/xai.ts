@@ -5,6 +5,7 @@ export const xai: Company = {
     name: 'xAI',
     description: 'AI company building Grok, a maximally truth-seeking AI assistant with real-time X integration.',
     website: 'https://x.ai',
+  screenshot: '/screenshots/xai-screenshot.png',
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 

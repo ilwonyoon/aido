@@ -21,8 +21,10 @@ export const gigs: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$73M',
+  fundingHistory: [
+    { stage: 'Series B', amount: '$73M', date: '2024-12' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -89,7 +91,7 @@ export const gigs: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

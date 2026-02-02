@@ -5,6 +5,7 @@ export const vizcom: Company = {
   name: 'Vizcom',
   description: 'AI-powered industrial design platform for visualization and concepting.',
   website: 'https://www.vizcom.com',
+  screenshot: '/screenshots/vizcom-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -93,7 +94,7 @@ export const vizcom: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

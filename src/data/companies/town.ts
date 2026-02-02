@@ -6,6 +6,7 @@ export const town: Company = {
   description:
     'Software platform focused on making financial workflows easier to run for modern businesses.',
   website: 'https://town.com/',
+  screenshot: '/screenshots/town-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -21,8 +22,10 @@ export const town: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$18M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$18M', date: '2025-03' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const town: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

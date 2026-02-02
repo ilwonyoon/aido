@@ -8,7 +8,7 @@ export const livekit: Company = {
   website: 'https://livekit.io/',
     screenshot: '/screenshots/livekit-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/livekit-og.webp',
@@ -22,7 +22,7 @@ export const livekit: Company = {
   // Business
   stage: 'Series C',
   valuation: '$1B (Jan 2026)',
-  totalFunding: 'Unknown',
+  totalFunding: '$100M',
   fundingHistory: [
     {
       stage: 'Series C',
@@ -131,7 +131,7 @@ export const livekit: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

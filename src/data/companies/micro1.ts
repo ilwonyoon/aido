@@ -22,7 +22,7 @@ export const micro1: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$35M',
   fundingHistory: [
     {
       stage: 'Series A',
@@ -124,7 +124,7 @@ export const micro1: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

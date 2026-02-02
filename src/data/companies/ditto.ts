@@ -22,7 +22,7 @@ export const ditto: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$1.5M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -117,7 +117,7 @@ export const ditto: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

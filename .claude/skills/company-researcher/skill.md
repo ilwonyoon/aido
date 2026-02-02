@@ -12,6 +12,14 @@ AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함�
 
 회사에 대한 모든 정보를 체계적으로 수집하여 `Company` 타입의 완전한 TypeScript 객체 생성.
 
+## 핵심 원칙 (매우 중요)
+
+1. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
+2. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
+3. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
+4. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
+5. **Unknown 사용 시 근거 기록**: sources에 “무엇을 어디서 확인했는데 없었는지”를 남김.
+
 ---
 
 ## 워크플로우
@@ -124,10 +132,11 @@ markets: ['enterprise'],
 industries: ['healthcare'],
 ```
 
-**Sources:**
-- Company website → About 페이지
-- LinkedIn company page
-- Crunchbase
+**Sources (필수 우선순위):**
+- 1차: Company website(About/Product/Careers/Blog), 공식 보도자료
+- 2차: Crunchbase, PitchBook, Dealroom, YC/Winter/Summer batch pages
+- 3차: TechCrunch/Reuters/Forbes 등 신뢰 가능한 미디어
+- 보조: startups.gallery (슬러그/요약/힌트 확인용)
 
 ---
 
@@ -840,11 +849,11 @@ Before outputting final TypeScript object:
 
 ### 1. Start with Best Sources
 ```
-1. Company website (About, Blog, Careers)
-2. Crunchbase (Business metrics)
-3. LinkedIn (Founders, team)
-4. TechCrunch (Funding news)
-5. Glassdoor/Blind (Culture)
+1. Company website + 공식 보도자료 (최우선)
+2. Crunchbase/PitchBook/Dealroom (펀딩/밸류에이션)
+3. LinkedIn (Founders, 팀 구성, 채용 시그널)
+4. 신뢰 매체(TechCrunch/Reuters 등)로 교차검증
+5. startups.gallery는 보조 시드 데이터로만 사용
 ```
 
 ### 2. Use Parallel WebFetch
@@ -864,8 +873,9 @@ await Promise.all([
 
 ### 4. When Data is Missing
 - Don't guess or hallucinate
-- Mark as 'Unknown' or leave empty
-- Add to sources: "Limited public information available"
+- 먼저 공식/투자/뉴스 소스를 추가로 2-3회 더 탐색
+- 그래도 없으면 `Unknown` 또는 빈값 처리
+- sources에 `Limited public information available` + 시도한 출처를 함께 기록
 
 ---
 
@@ -874,6 +884,7 @@ await Promise.all([
 ### ❌ Don't:
 - Skip /job-scraper (always run it first)
 - Copy-paste from other companies without verification
+- startups.gallery 단일 소스로 필드를 확정
 - Use old funding data (check dates)
 - Ignore culture insights (very important for fit)
 - Leave competitors empty (always find 3-5)

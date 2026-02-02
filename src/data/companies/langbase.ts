@@ -18,7 +18,7 @@ export const langbase: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Pre-Seed',
+  stage: 'Pre-seed',
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',
@@ -60,7 +60,7 @@ export const langbase: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

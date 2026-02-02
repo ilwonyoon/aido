@@ -18,9 +18,9 @@ export const impulseLabs: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$20M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -88,7 +88,7 @@ export const impulseLabs: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

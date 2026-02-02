@@ -6,6 +6,7 @@ export const suger: Company = {
   description:
     'GTM platform for cloud marketplaces that helps software teams sell and expand through marketplace channels.',
   website: 'https://www.suger.io/',
+  screenshot: '/screenshots/suger-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -21,8 +22,10 @@ export const suger: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$15M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$15M', date: '2025-02' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const suger: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

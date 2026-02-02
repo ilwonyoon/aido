@@ -7,7 +7,7 @@ export const highscore: Company = {
   website: 'https://highscore.com',
     screenshot: '/screenshots/highscore-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/highscore-og.webp',
@@ -89,7 +89,7 @@ export const highscore: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

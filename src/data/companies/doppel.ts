@@ -21,8 +21,10 @@ export const doppel: Company = {
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$70M',
+  fundingHistory: [
+    { stage: 'Series C', amount: '$70M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -89,7 +91,7 @@ export const doppel: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -6,8 +6,9 @@ export const vapi: Company = {
   description:
     'Voice AI platform for building and deploying real-time voice agents.',
   website: 'https://vapi.ai/',
+  screenshot: '/screenshots/vapi-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/vapi-og.webp',
@@ -128,7 +129,7 @@ export const vapi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

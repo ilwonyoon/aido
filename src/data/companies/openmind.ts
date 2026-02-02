@@ -16,7 +16,7 @@ export const openmind: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$20M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -56,7 +56,7 @@ export const openmind: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

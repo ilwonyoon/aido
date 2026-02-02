@@ -22,7 +22,7 @@ export const metronome: Company = {
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$50M',
   fundingHistory: [
     {
       stage: 'Series C',
@@ -124,7 +124,7 @@ export const metronome: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

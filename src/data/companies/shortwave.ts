@@ -5,8 +5,9 @@ export const shortwave: Company = {
   name: 'Shortwave',
   description: 'AI-native email and productivity platform focused on faster workflows.',
   website: 'https://www.shortwave.com',
+    screenshot: '/screenshots/shortwave-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/shortwave-og.webp',
@@ -18,9 +19,9 @@ export const shortwave: Company = {
   industries: ['infrastructure', 'productivity'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$9M',
   fundingHistory: [],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -88,7 +89,7 @@ export const shortwave: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

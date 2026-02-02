@@ -6,6 +6,7 @@ export const solidroad: Company = {
   description:
     'Quality assurance automation platform for AI, focused on reliable customer interactions.',
   website: 'https://solidroad.com/',
+    screenshot: '/screenshots/solidroad-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
@@ -21,8 +22,10 @@ export const solidroad: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$6.5M',
+  fundingHistory: [
+    { stage: 'Seed', amount: '$6.5M', date: '2025-08' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -116,7 +119,7 @@ export const solidroad: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

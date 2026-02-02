@@ -20,7 +20,7 @@ export const things: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$10M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -49,7 +49,7 @@ export const things: Company = {
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '1-10 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },

@@ -22,7 +22,7 @@ export const exa: Company = {
   // Business
   stage: 'Series B',
   valuation: '$700M (Sept 2025)',
-  totalFunding: 'Unknown',
+  totalFunding: '$85M',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -131,7 +131,7 @@ export const exa: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

@@ -23,7 +23,7 @@ export const brainfish: Company = {
   totalFunding: '$10M',
   fundingHistory: [
     {
-      stage: 'Unknown',
+      stage: 'Seed',
       amount: '$6.4M',
       date: '2025-07',
       leadInvestors: ['Prosus Ventures'],
@@ -95,7 +95,7 @@ export const brainfish: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

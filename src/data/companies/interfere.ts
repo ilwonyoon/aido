@@ -14,9 +14,9 @@ export const interfere: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Pre-Seed',
+  stage: 'Pre-seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$1.7M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -45,7 +45,7 @@ export const interfere: Company = {
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '1-10 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },

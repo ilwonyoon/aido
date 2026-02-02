@@ -5,6 +5,7 @@ export const suno: Company = {
     name: 'Suno',
     description: 'AI-powered music creation platform helping anyone turn ideas into original songs and fully produced tracks.',
     website: 'https://suno.com',
+  screenshot: '/screenshots/suno-screenshot.png',
     headquarters: 'Cambridge, MA',
     remote: 'No',
 
@@ -20,7 +21,7 @@ export const suno: Company = {
     // Business
     stage: 'Series C',
     valuation: '$2.45B (Nov 2025)',
-    totalFunding: 'Unknown',
+    totalFunding: '$250M',
     fundingHistory: [
       {
         stage: 'Series C',
@@ -102,7 +103,7 @@ export const suno: Company = {
 
     // Design Opportunity
     designTeam: {
-      teamSize: 'Unknown',
+      teamSize: '51-200 employees (startups.gallery)',
     },
     designWorkType: {
       logicBehavior: {

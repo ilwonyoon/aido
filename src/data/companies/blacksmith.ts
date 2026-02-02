@@ -24,7 +24,7 @@ export const blacksmith: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$10M',
   fundingHistory: [
     {
       stage: 'Seed',

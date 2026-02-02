@@ -8,7 +8,7 @@ export const momentic: Company = {
   website: 'https://www.momentic.ai/',
     screenshot: '/screenshots/momentic-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/momentic-og.webp',
@@ -20,10 +20,12 @@ export const momentic: Company = {
   industries: ['infrastructure', 'sales-marketing'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$15M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$15M', date: '2025-11' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const momentic: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

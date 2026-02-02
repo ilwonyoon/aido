@@ -7,7 +7,7 @@ export const alloy: Company = {
     'Identity and fraud prevention platform for financial services and fintech companies.',
   website: 'https://www.alloy.com/',
   headquarters: 'New York, NY',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   screenshot: 'https://iad.microlink.io/KGCrV6ucX-0DCYe8GbhT7aG9y2_IDu68_W7ic7fkeBBKiSWY9-RmixWVpaOGwU6dvPIGJqv-Oii9V5T0EqdRtA.png',
@@ -126,7 +126,7 @@ export const alloy: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

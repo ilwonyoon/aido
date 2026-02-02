@@ -6,6 +6,7 @@ export const unlimitedIndustries: Company = {
   description:
     'Precision manufacturing platform focused on automating fabrication for construction and industrial use.',
   website: 'https://unlimitedindustries.com/',
+  screenshot: '/screenshots/unlimited-industries-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
@@ -21,7 +22,7 @@ export const unlimitedIndustries: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$12M',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -123,7 +124,7 @@ export const unlimitedIndustries: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

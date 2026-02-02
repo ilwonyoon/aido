@@ -8,7 +8,7 @@ export const reevo: Company = {
   website: 'https://reevo.ai/',
     screenshot: '/screenshots/reevo-screenshot.png',
   headquarters: 'Santa Clara, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
     // OG Image
     ogImage: '/og-images/reevo-og.webp',
@@ -20,7 +20,7 @@ export const reevo: Company = {
   industries: ['sales-marketing'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [
@@ -139,7 +139,7 @@ export const reevo: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '51-200 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

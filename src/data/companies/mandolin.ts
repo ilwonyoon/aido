@@ -7,7 +7,7 @@ export const mandolin: Company = {
   website: 'https://mandolin.com',
     screenshot: '/screenshots/mandolin-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'No',
 
   // Visual Assets
   ogImage: 'https://cdn.prod.website-files.com/684d3e3dc03ecdf4c24616ec/6852ccbc7e5ac3ecb11c1279_mandolin-og.jpg',
@@ -97,7 +97,7 @@ export const mandolin: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

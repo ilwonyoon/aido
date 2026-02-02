@@ -5,6 +5,7 @@ export const tome: Company = {
     name: 'Tome',
     description: 'AI-powered storytelling platform. Create presentations from prompts.',
     website: 'https://tome.app',
+  screenshot: '/screenshots/tome-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
@@ -78,5 +79,18 @@ export const tome: Company = {
       nextActions: ['Try Tome product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Tome Series B', 'url': 'https://www.globenewswire.com/news-release/2023/02/22/2613034/0/en/Tome-Is-Fastest-Productivity-Tool-To-Reach-1M-Users-Raises-43M-Series-B-to-Empower-All-Storytellers.html'}, {'title': 'Tome Valuation', 'url': 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/'}],
+    sources: [
+      {
+        title: 'Tome Series B',
+        url: 'https://www.globenewswire.com/news-release/2023/02/22/2613034/0/en/Tome-Is-Fastest-Productivity-Tool-To-Reach-1M-Users-Raises-43M-Series-B-to-Empower-All-Storytellers.html',
+      },
+      {
+        title: 'Tome Valuation',
+        url: 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/',
+      },
+      {
+        title: 'Tome on startups.gallery',
+        url: 'https://startups.gallery/companies/tome',
+      },
+    ],
   };

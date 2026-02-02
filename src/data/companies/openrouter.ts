@@ -8,7 +8,7 @@ export const openrouter: Company = {
   website: 'https://openrouter.ai/',
     screenshot: '/screenshots/openrouter-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Yes',
 
     // OG Image
     ogImage: '/og-images/openrouter-og.webp',
@@ -20,10 +20,12 @@ export const openrouter: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
   // Business
-  stage: 'Unknown',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  fundingHistory: [],
+  totalFunding: '$28M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$28M', date: '2025-06' },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -117,7 +119,7 @@ export const openrouter: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

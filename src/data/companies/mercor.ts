@@ -107,7 +107,7 @@ export const mercor: Company = {
     ],
 
     designTeam: {
-      teamSize: 'Unknown (likely small)',
+      teamSize: '51-200 employees (startups.gallery)',
     },
     designWorkType: {
       logicBehavior: {

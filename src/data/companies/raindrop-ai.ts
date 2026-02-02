@@ -22,7 +22,7 @@ export const raindropAi: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$15M',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -124,7 +124,7 @@ export const raindropAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '1-10 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

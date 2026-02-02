@@ -20,7 +20,7 @@ export const sentientLabs: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$85M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -85,7 +85,7 @@ export const sentientLabs: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '11-50 employees (startups.gallery)',
   },
   designWorkType: {
     logicBehavior: {

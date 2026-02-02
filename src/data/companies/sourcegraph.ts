@@ -5,6 +5,7 @@ export const sourcegraph: Company = {
     name: 'Sourcegraph',
     description: 'Universal code search and AI coding assistant. Cody helps developers understand, write, and fix code faster across any codebase.',
     website: 'https://sourcegraph.com',
+    screenshot: '/screenshots/sourcegraph-screenshot.png',
 
     // Location
     headquarters: 'San Francisco, CA',
