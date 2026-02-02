@@ -401,10 +401,6 @@ export function SpotlightTour({
           </span>
         </div>
 
-        {/* DEBUG: remove after testing */}
-        <div className="text-[9px] font-mono opacity-50 mb-1">
-          top:{JSON.stringify(tooltipStyle.top)} bot:{JSON.stringify(tooltipStyle.bottom)} vH:{typeof window !== 'undefined' ? (window.visualViewport?.height ?? window.innerHeight) : '?'}
-        </div>
         <h3 className="text-sm font-semibold mb-1">{step.title}</h3>
         <p className="text-xs sm:text-sm tour-tooltip-muted leading-relaxed mb-3 sm:mb-4">
           {step.description}
