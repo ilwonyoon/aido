@@ -30,7 +30,11 @@ function HomePageContent() {
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const savedScrollPosition = useRef<number>(0);
+  const selectedCompanyIdRef = useRef<string | null>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
+
+  // Keep ref in sync so callbacks don't need selectedCompanyId as dependency
+  selectedCompanyIdRef.current = selectedCompanyId;
 
   useEffect(() => {
     // Initial load from URL
@@ -56,7 +60,8 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
+    const id = selectedCompanyIdRef.current;
+    const currentCompany = id ? (getCompanyById(id) || null) : null;
     const scrollToRestore = savedScrollPosition.current;
 
     // Start close animation
@@ -66,25 +71,21 @@ function HomePageContent() {
     setTimeout(() => {
       window.history.pushState({}, '', '/');
 
-      // Unlock body scroll BEFORE React state change
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
-      document.documentElement.classList.remove('panel-open');
-
-      // Restore scroll position immediately
-      window.scrollTo(0, scrollToRestore);
-
       setSelectedCompanyId(null);
       setIsFullWidth(false);
       setIsClosing(false);
       setClosingCompany(null);
+
+      // Restore scroll after React commits (next frame)
+      requestAnimationFrame(() => {
+        window.scrollTo(0, scrollToRestore);
+      });
     }, 300);
-  }, [selectedCompanyId]);
+  }, []);
 
 
   const handleCompanyClick = useCallback((companyId: string) => {
-    const isOpeningPanel = !selectedCompanyId;
+    const isOpeningPanel = !selectedCompanyIdRef.current;
 
     // Only save scroll position when OPENING panel (not when switching companies)
     if (isOpeningPanel) {
@@ -100,7 +101,7 @@ function HomePageContent() {
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
     }
-  }, [selectedCompanyId]);
+  }, []);
 
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);
@@ -127,30 +128,22 @@ function HomePageContent() {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && selectedCompanyId) {
+      if (e.key === 'Escape' && selectedCompanyIdRef.current) {
         closePanel();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedCompanyId, closePanel]);
+  }, [closePanel]);
 
-  // Lock body scroll when panel is open using position:fixed pattern
+  // Lock body scroll on mobile when panel is open
   useEffect(() => {
     if (selectedCompanyId) {
-      const scrollY = savedScrollPosition.current;
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.width = '100%';
       document.documentElement.classList.add('panel-open');
-    }
-    return () => {
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
+    } else {
       document.documentElement.classList.remove('panel-open');
-    };
+    }
   }, [selectedCompanyId]);
 
   // Observer for company name in content to show/hide in header

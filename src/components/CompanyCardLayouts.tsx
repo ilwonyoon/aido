@@ -166,6 +166,9 @@ export function CompanyListRow({
               onClick={(e) => e.stopPropagation()}
             >
               <span>{role.title}</span>
+              {role.compensation && (
+                <span className="text-xs text-[var(--success)] ml-1.5">{role.compensation}</span>
+              )}
               <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent-light)] ml-1.5">
                 {role.location.split(',')[0]} &rarr;
               </span>
@@ -299,7 +302,12 @@ export function CompanyCard({
               className="flex items-center justify-between text-sm hover:text-[var(--accent-light)] transition-colors group"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="truncate">{role.title}</span>
+              <span className="truncate">
+                {role.title}
+                {role.compensation && (
+                  <span className="text-xs text-[var(--success)] ml-1.5">{role.compensation}</span>
+                )}
+              </span>
               <span className="text-xs text-[var(--muted)] group-hover:text-[var(--accent-light)] flex-shrink-0 ml-2">
                 {role.location.split(',')[0]} &rarr;
               </span>
