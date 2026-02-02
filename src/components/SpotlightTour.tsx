@@ -44,12 +44,14 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const gap = 12;
   const margin = 16;
 
-  // Mobile: measure the actual <main> element to get exact card container bounds
+  // Mobile: measure an actual .card element to get exact width and position
   if (isMobile) {
-    const mainEl = typeof document !== 'undefined' ? document.querySelector('main') : null;
-    const mainRect = mainEl?.getBoundingClientRect();
-    const tooltipLeft = mainRect ? mainRect.left : 16;
-    const tooltipWidth = mainRect ? mainRect.width : viewW - 32;
+    const cardEl = typeof document !== 'undefined'
+      ? document.querySelector('[data-tour="first-card"]') ?? document.querySelector('.card')
+      : null;
+    const cardRect = cardEl?.getBoundingClientRect();
+    const tooltipLeft = cardRect ? cardRect.left : 16;
+    const tooltipWidth = cardRect ? cardRect.width : viewW - 32;
 
     const spaceBelow = viewH - spotlight.bottom;
     const spaceAbove = spotlight.top;
