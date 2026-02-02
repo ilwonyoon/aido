@@ -54,6 +54,12 @@ const TOUR_STEPS: TourStep[] = [
     description: 'Learn about the AI-native level framework and how we evaluate companies for designers.',
     padding: 6,
   },
+  {
+    target: '[data-tour="nav-menu-mobile"]',
+    title: 'Explore more',
+    description: 'Tap the menu to find Insights articles, About page, theme toggle, and more.',
+    padding: 8,
+  },
 ];
 
 const ONBOARDING_KEY = 'aido_tour_seen';

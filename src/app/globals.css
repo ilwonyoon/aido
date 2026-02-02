@@ -551,6 +551,47 @@ a.card {
   animation: subtlePulse 2s ease-in-out infinite;
 }
 
+/* Tour tooltip — inverted theme for maximum contrast */
+/* Default (dark theme): light tooltip */
+.tour-tooltip {
+  background: #ffffff;
+  color: #171717;
+  border: 1px solid #e5e5e5;
+}
+.tour-tooltip-muted { color: #666666; }
+.tour-tooltip-dot-inactive { background: #e5e5e5; }
+
+/* Light theme: dark tooltip */
+[data-theme="light"] .tour-tooltip {
+  background: #1a1a1a;
+  color: #ededed;
+  border-color: #333333;
+}
+[data-theme="light"] .tour-tooltip-muted { color: #888888; }
+[data-theme="light"] .tour-tooltip-dot-inactive { background: #333333; }
+
+/* System preference: light → dark tooltip */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .tour-tooltip {
+    background: #1a1a1a;
+    color: #ededed;
+    border-color: #333333;
+  }
+  :root:not([data-theme="dark"]) .tour-tooltip-muted { color: #888888; }
+  :root:not([data-theme="dark"]) .tour-tooltip-dot-inactive { background: #333333; }
+}
+
+/* System preference: dark → light tooltip */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tour-tooltip {
+    background: #ffffff;
+    color: #171717;
+    border-color: #e5e5e5;
+  }
+  :root:not([data-theme="light"]) .tour-tooltip-muted { color: #666666; }
+  :root:not([data-theme="light"]) .tour-tooltip-dot-inactive { background: #e5e5e5; }
+}
+
 /* Hide scrollbar but maintain scroll functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */

@@ -32,8 +32,10 @@ interface SpotlightTourProps {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// Tooltip position calculator (mobile-aware)
+// Tooltip position calculator (mobile-aware, viewport-clamped)
 // ────────────────────────────────────────────────────────────────────────────
+
+const TOOLTIP_HEIGHT_ESTIMATE = 200;
 
 function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
@@ -41,30 +43,35 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const isMobile = viewW < 768;
   const tooltipWidth = isMobile ? Math.min(viewW - 32, 320) : 320;
   const gap = 12;
+  const margin = 16;
 
   const spaceBelow = viewH - spotlight.bottom;
   const spaceAbove = spotlight.top;
 
   // Mobile: always center horizontally, prefer below
   if (isMobile) {
-    const left = Math.max(16, (viewW - tooltipWidth) / 2);
+    const left = Math.max(margin, (viewW - tooltipWidth) / 2);
 
     if (spaceBelow > 160) {
-      return { position: 'fixed', top: spotlight.bottom + gap, left, width: tooltipWidth };
+      const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
+      return { position: 'fixed', top, left, width: tooltipWidth };
     }
     if (spaceAbove > 160) {
       return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
     }
     // Fallback: overlay at bottom of screen
-    return { position: 'fixed', bottom: 16, left, width: tooltipWidth };
+    return { position: 'fixed', bottom: margin, left, width: tooltipWidth };
   }
 
   // Desktop: try right side first (for panel steps)
   const spaceRight = viewW - spotlight.right;
-  if (spaceRight > tooltipWidth + gap + 16 && spotlight.top > 60) {
+  if (spaceRight > tooltipWidth + gap + margin && spotlight.top > 60) {
+    // Clamp top so tooltip doesn't go above or below viewport
+    const idealTop = spotlight.top;
+    const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
       position: 'fixed',
-      top: Math.max(16, spotlight.top),
+      top,
       left: spotlight.right + gap,
       width: tooltipWidth,
     };
@@ -73,13 +80,14 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   // Desktop: try below
   if (spaceBelow > 180) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
-    left = Math.max(16, Math.min(left, viewW - tooltipWidth - 16));
-    return { position: 'fixed', top: spotlight.bottom + gap, left, width: tooltipWidth };
+    left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
+    const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
+    return { position: 'fixed', top, left, width: tooltipWidth };
   }
 
   // Desktop: fall back to above
   let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
-  left = Math.max(16, Math.min(left, viewW - tooltipWidth - 16));
+  left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
   return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
 }
 
@@ -278,21 +286,9 @@ export function SpotlightTour({
         onClick={onSkip}
       />
 
-      {/* Spotlight border ring */}
+      {/* Tooltip card — uses inverted theme for contrast */}
       <div
-        className="fixed rounded-lg border-2 border-[var(--accent)]/60 transition-all duration-300"
-        style={{
-          top: spotlight.top,
-          left: spotlight.left,
-          width: spotlight.width,
-          height: spotlight.height,
-          pointerEvents: 'none',
-        }}
-      />
-
-      {/* Tooltip card */}
-      <div
-        className="card p-4 sm:p-5 shadow-2xl animate-fadeIn border border-[var(--accent)]/30"
+        className="tour-tooltip p-4 sm:p-5 rounded-xl shadow-2xl animate-fadeIn"
         style={{ ...tooltipStyle, pointerEvents: 'auto' }}
       >
         {/* Step counter */}
@@ -305,24 +301,24 @@ export function SpotlightTour({
                   ? 'w-4 bg-[var(--accent)]'
                   : i < currentStep
                     ? 'w-2 bg-[var(--accent)]/40'
-                    : 'w-2 bg-[var(--border)]'
+                    : 'w-2 tour-tooltip-dot-inactive'
               }`}
             />
           ))}
-          <span className="text-[10px] text-[var(--muted)] ml-auto">
+          <span className="text-[10px] tour-tooltip-muted ml-auto">
             {currentStep + 1}/{steps.length}
           </span>
         </div>
 
         <h3 className="text-sm font-semibold mb-1">{step.title}</h3>
-        <p className="text-xs sm:text-sm text-[var(--muted)] leading-relaxed mb-3 sm:mb-4">
+        <p className="text-xs sm:text-sm tour-tooltip-muted leading-relaxed mb-3 sm:mb-4">
           {step.description}
         </p>
 
         <div className="flex items-center justify-between">
           <button
             onClick={onSkip}
-            className="text-xs text-[var(--muted)] hover:text-[var(--foreground)] transition-colors cursor-pointer"
+            className="text-xs tour-tooltip-muted hover:opacity-80 transition-opacity cursor-pointer"
           >
             Skip tour
           </button>
