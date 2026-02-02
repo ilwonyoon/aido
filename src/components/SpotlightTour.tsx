@@ -37,15 +37,12 @@ interface SpotlightTourProps {
 
 const TOOLTIP_HEIGHT_ESTIMATE = 200;
 
-function getTooltipStyle(spotlight: SpotlightRect, pad: number): React.CSSProperties {
+function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
   const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
   const isMobile = viewW < 768;
   const gap = 12;
   const margin = 16;
-
-  // The actual element top (spotlight.top includes padding above)
-  const elementTop = spotlight.top + pad;
 
   // Mobile: always fixed at the bottom of screen, matching card width
   if (isMobile) {
@@ -59,13 +56,14 @@ function getTooltipStyle(spotlight: SpotlightRect, pad: number): React.CSSProper
     return { position: 'absolute', bottom: margin, left: tooltipLeft, width: tooltipWidth };
   }
 
-  // Desktop — top-aligned with the actual element (not the spotlight padding)
+  // Desktop — top-aligned with the spotlight highlight area
   const tooltipWidth = 320;
+  const alignTop = spotlight.top;
 
   // Try right side first (preferred — keeps spotlight visible)
   const spaceRight = viewW - spotlight.right;
-  if (spaceRight > tooltipWidth + gap + margin && elementTop > 60) {
-    const top = Math.max(margin, Math.min(elementTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
+  if (spaceRight > tooltipWidth + gap + margin && alignTop > 60) {
+    const top = Math.max(margin, Math.min(alignTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
       position: 'absolute',
       top,
@@ -76,8 +74,8 @@ function getTooltipStyle(spotlight: SpotlightRect, pad: number): React.CSSProper
 
   // Try left side (for panel steps where spotlight is on the right half)
   const spaceLeft = spotlight.left;
-  if (spaceLeft > tooltipWidth + gap + margin && elementTop > 60) {
-    const top = Math.max(margin, Math.min(elementTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
+  if (spaceLeft > tooltipWidth + gap + margin && alignTop > 60) {
+    const top = Math.max(margin, Math.min(alignTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
       position: 'absolute',
       top,
@@ -277,7 +275,7 @@ export function SpotlightTour({
 
   if (!spotlight || !visible || !step) return null;
 
-  const tooltipStyle = getTooltipStyle(spotlight, step.padding ?? 12);
+  const tooltipStyle = getTooltipStyle(spotlight);
 
   return (
     <div className="fixed inset-0 z-[10000]" style={{ pointerEvents: 'none' }}>
