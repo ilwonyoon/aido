@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
+import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
@@ -347,6 +347,131 @@ function MultiSelectFilter({
   );
 }
 
+interface GroupedOption {
+  value: string;
+  label: string;
+}
+
+interface OptionGroup {
+  header: string;
+  options: GroupedOption[];
+}
+
+function GroupedMultiSelectFilter({
+  label,
+  values,
+  groups,
+  onChange,
+}: {
+  label: string;
+  values: string[];
+  groups: OptionGroup[];
+  onChange: (values: string[]) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
+
+  useEffect(() => {
+    if (isOpen && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 220);
+      const spaceOnRight = window.innerWidth - rect.left;
+      const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
+
+      setDropdownStyle({
+        top: rect.bottom + 4,
+        left: Math.max(16, left),
+      });
+    }
+  }, [isOpen]);
+
+  const toggleValue = (value: string) => {
+    if (values.includes(value)) {
+      onChange(values.filter((v) => v !== value));
+    } else {
+      onChange([...values, value]);
+    }
+  };
+
+  return (
+    <div className="relative">
+      <button
+        ref={buttonRef}
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+          values.length > 0
+            ? 'border-[var(--accent)] text-[var(--foreground)]'
+            : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+        }`}
+      >
+        <span>{displayLabel}</span>
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
+      {isOpen && dropdownStyle && buttonRef.current && (
+        <>
+          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+          <div
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
+            style={{
+              top: `${dropdownStyle.top}px`,
+              left: `${dropdownStyle.left}px`,
+              minWidth: `${Math.max(buttonRef.current.offsetWidth, 220)}px`,
+              maxWidth: 'calc(100vw - 2rem)',
+              maxHeight: '360px'
+            }}
+          >
+            {values.length > 0 && (
+              <button
+                onClick={() => onChange([])}
+                className="w-full text-left px-4 py-2 text-sm text-[var(--muted)] hover:bg-[var(--card-hover)] transition-colors border-b border-[var(--border)]"
+              >
+                Clear all
+              </button>
+            )}
+            {groups.map((group) => (
+              <div key={group.header}>
+                <div className="px-4 pt-3 pb-1 text-xs font-medium text-[var(--muted)] uppercase tracking-wider">
+                  {group.header}
+                </div>
+                {group.options.map((opt) => {
+                  const isSelected = values.includes(opt.value);
+                  return (
+                    <button
+                      key={opt.value}
+                      onClick={() => toggleValue(opt.value)}
+                      className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${
+                        isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
+                      }`}
+                    >
+                      <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${
+                        isSelected
+                          ? 'bg-[var(--accent)] border-[var(--accent)]'
+                          : 'border-[var(--border)]'
+                      }`}>
+                        {isSelected && (
+                          <svg width="10" height="10" viewBox="0 0 16 16" fill="white">
+                            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
+                          </svg>
+                        )}
+                      </span>
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 type ViewMode = 'grid' | 'list';
 
 interface CompanyFiltersProps {
@@ -366,8 +491,8 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
-  const [marketFilter, setMarketFilter] = useState<Market[]>([]);
-  const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
+  const [marketIndustryFilter, setMarketIndustryFilter] = useState<string[]>([]);
+  const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -400,7 +525,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
   }, []);
 
   // SF Bay Area cities to consolidate
-  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
+  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Santa Clara', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
 
   // Get unique locations (consolidate SF Bay Area and New York)
   const locations = useMemo(() => {
@@ -448,30 +573,46 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
       .map(t => ({ value: t, label: `${AI_TYPE_LABELS[t]} (${counts[t]})` }));
   }, [companies]);
 
-  // Get Market options with counts
-  const marketOptions = useMemo(() => {
-    const counts: Record<Market, number> = {} as Record<Market, number>;
+  // Get Market & Industry grouped options with counts
+  const marketIndustryGroups = useMemo(() => {
+    const marketCounts: Record<Market, number> = {} as Record<Market, number>;
+    const industryCounts: Record<Industry, number> = {} as Record<Industry, number>;
     companies.forEach(c => {
       c.markets?.forEach(m => {
-        counts[m] = (counts[m] || 0) + 1;
+        marketCounts[m] = (marketCounts[m] || 0) + 1;
+      });
+      c.industries?.forEach(i => {
+        industryCounts[i] = (industryCounts[i] || 0) + 1;
       });
     });
-    return (Object.keys(MARKET_LABELS) as Market[])
-      .filter(m => counts[m] > 0)
-      .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${counts[m]})` }));
+
+    const marketGroup: OptionGroup = {
+      header: 'Market',
+      options: (Object.keys(MARKET_LABELS) as Market[])
+        .filter(m => marketCounts[m] > 0)
+        .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${marketCounts[m]})` })),
+    };
+
+    const industryGroup: OptionGroup = {
+      header: 'Industry',
+      options: (Object.keys(INDUSTRY_LABELS) as Industry[])
+        .filter(i => industryCounts[i] > 0)
+        .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${industryCounts[i]})` })),
+    };
+
+    return [marketGroup, industryGroup];
   }, [companies]);
 
-  // Get Industry options with counts
-  const industryOptions = useMemo(() => {
-    const counts: Record<Industry, number> = {} as Record<Industry, number>;
+  // Get Funding Stage options with counts
+  const fundingStageOptions = useMemo(() => {
+    const counts: Record<FundingStageCategory, number> = {} as Record<FundingStageCategory, number>;
     companies.forEach(c => {
-      c.industries?.forEach(i => {
-        counts[i] = (counts[i] || 0) + 1;
-      });
+      const category = normalizeFundingStage(c.stage);
+      counts[category] = (counts[category] || 0) + 1;
     });
-    return (Object.keys(INDUSTRY_LABELS) as Industry[])
-      .filter(i => counts[i] > 0)
-      .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${counts[i]})` }));
+    return (Object.keys(FUNDING_STAGE_LABELS) as FundingStageCategory[])
+      .filter(cat => counts[cat] > 0)
+      .map(cat => ({ value: cat, label: `${FUNDING_STAGE_LABELS[cat]} (${counts[cat]})` }));
   }, [companies]);
 
   // Load interest statuses from Firestore (per user)
@@ -610,21 +751,26 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
         if (!hasMatch) return false;
       }
 
-      // Market Filter
-      if (marketFilter.length > 0) {
-        const hasMatch = marketFilter.some(m => company.markets?.includes(m));
-        if (!hasMatch) return false;
+      // Market & Industry Filter (combined — OR across both groups)
+      if (marketIndustryFilter.length > 0) {
+        const marketValues = Object.keys(MARKET_LABELS) as Market[];
+        const industryValues = Object.keys(INDUSTRY_LABELS) as Industry[];
+        const selectedMarkets = marketIndustryFilter.filter(v => marketValues.includes(v as Market)) as Market[];
+        const selectedIndustries = marketIndustryFilter.filter(v => industryValues.includes(v as Industry)) as Industry[];
+        const marketMatch = selectedMarkets.length > 0 ? selectedMarkets.some(m => company.markets?.includes(m)) : false;
+        const industryMatch = selectedIndustries.length > 0 ? selectedIndustries.some(i => company.industries?.includes(i)) : false;
+        if (!marketMatch && !industryMatch) return false;
       }
 
-      // Industry Filter
-      if (industryFilter.length > 0) {
-        const hasMatch = industryFilter.some(i => company.industries?.includes(i));
-        if (!hasMatch) return false;
+      // Funding Stage Filter
+      if (fundingStageFilter.length > 0) {
+        const companyStage = normalizeFundingStage(company.stage);
+        if (!fundingStageFilter.includes(companyStage)) return false;
       }
 
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketIndustryFilter, fundingStageFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -647,7 +793,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
 
   // Upside score: ranks companies by join-now potential (0–100)
   const computeUpsideScore = (company: Company): number => {
-    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Santa Clara', 'Berkeley', 'Oakland', 'Redwood City'];
     const nycArea = ['New York', 'Brooklyn', 'Manhattan'];
 
     // Open Roles (0 or 30) — strongest gate
@@ -741,7 +887,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketIndustryFilter.length > 0 || fundingStageFilter.length > 0;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
@@ -749,8 +895,8 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     setOpenRolesFilter('');
     setLocationFilter([]);
     setAiTypeFilter([]);
-    setMarketFilter([]);
-    setIndustryFilter([]);
+    setMarketIndustryFilter([]);
+    setFundingStageFilter([]);
   };
 
   return (
@@ -811,17 +957,17 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
             options={aiTypeOptions}
             onChange={(vals) => setAiTypeFilter(vals as AIType[])}
           />
-          <MultiSelectFilter
-            label="Market"
-            values={marketFilter}
-            options={marketOptions}
-            onChange={(vals) => setMarketFilter(vals as Market[])}
+          <GroupedMultiSelectFilter
+            label="Market & Industry"
+            values={marketIndustryFilter}
+            groups={marketIndustryGroups}
+            onChange={setMarketIndustryFilter}
           />
           <MultiSelectFilter
-            label="Industry"
-            values={industryFilter}
-            options={industryOptions}
-            onChange={(vals) => setIndustryFilter(vals as Industry[])}
+            label="Funding Stage"
+            values={fundingStageFilter}
+            options={fundingStageOptions}
+            onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
           />
           {hasActiveFilters && (
             <button
