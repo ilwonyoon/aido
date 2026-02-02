@@ -54,13 +54,13 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     // Use left + right (not width) so the browser calculates width to match container
     if (spaceBelow > 160) {
       const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
-      return { position: 'fixed', top, left: pagePad, right: pagePad };
+      return { position: 'absolute', top, left: pagePad, right: pagePad };
     }
     if (spaceAbove > 160) {
-      return { position: 'fixed', bottom: viewH - spotlight.top + gap, left: pagePad, right: pagePad };
+      return { position: 'absolute', bottom: viewH - spotlight.top + gap, left: pagePad, right: pagePad };
     }
     // Fallback: fixed at bottom of screen
-    return { position: 'fixed', bottom: margin, left: pagePad, right: pagePad };
+    return { position: 'absolute', bottom: margin, left: pagePad, right: pagePad };
   }
 
   // Desktop
@@ -74,7 +74,7 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     const idealTop = spotlight.top;
     const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
-      position: 'fixed',
+      position: 'absolute',
       top,
       left: spotlight.left - tooltipWidth - gap,
       width: tooltipWidth,
@@ -87,7 +87,7 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     const idealTop = spotlight.top;
     const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
-      position: 'fixed',
+      position: 'absolute',
       top,
       left: spotlight.right + gap,
       width: tooltipWidth,
@@ -99,21 +99,21 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
     const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
-    return { position: 'fixed', top, left, width: tooltipWidth };
+    return { position: 'absolute', top, left, width: tooltipWidth };
   }
 
   // Try above
   if (spaceAbove > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
-    return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+    return { position: 'absolute', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
   }
 
   // Last resort: overlay inside the spotlight area, near the top
   let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
   left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
   const top = Math.max(margin, spotlight.top + gap);
-  return { position: 'fixed', top, left, width: tooltipWidth };
+  return { position: 'absolute', top, left, width: tooltipWidth };
 }
 
 // ────────────────────────────────────────────────────────────────────────────

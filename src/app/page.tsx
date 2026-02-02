@@ -115,6 +115,7 @@ function HomePageContent() {
   const selectedCompanyIdRef = useRef<string | null>(null);
   const tourStepRef = useRef<number | null>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
+  const tourInitRef = useRef(false);
 
   // Keep refs in sync
   selectedCompanyIdRef.current = selectedCompanyId;
@@ -122,22 +123,28 @@ function HomePageContent() {
 
   const isTourActive = tourStep !== null;
 
-  // Initialize: tour check + URL company load
+  // Initialize tour + load company from URL
   useEffect(() => {
-    const companyFromUrl = searchParams.get('company');
-    const shouldTour = isTourUnseen();
+    // Tour initialization — only once on first mount
+    if (!tourInitRef.current) {
+      tourInitRef.current = true;
 
-    if (shouldTour) {
-      // Tour takes priority — clear any URL company param, start clean
-      if (companyFromUrl) {
-        window.history.replaceState({}, '', '/');
+      if (isTourUnseen()) {
+        // Clear any URL company param, start tour clean
+        const companyFromUrl = searchParams.get('company');
+        if (companyFromUrl) {
+          window.history.replaceState({}, '', '/');
+        }
+        setTourStep(0);
+        return; // Don't load company from URL during tour init
       }
-      setSelectedCompanyId(null);
-      setTourStep(0);
-    } else {
-      // Normal flow — load company from URL
-      setSelectedCompanyId(companyFromUrl);
     }
+
+    // Normal URL loading — skip if tour is actively running
+    if (tourStepRef.current !== null) return;
+
+    const companyId = searchParams.get('company');
+    setSelectedCompanyId(companyId);
   }, [searchParams]);
 
   useEffect(() => {
