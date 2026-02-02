@@ -541,6 +541,16 @@ a.card {
   animation: toastIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Onboarding highlight pulse */
+@keyframes subtlePulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(0, 112, 243, 0.2); }
+  50% { box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.4); }
+}
+
+.onboarding-highlight {
+  animation: subtlePulse 2s ease-in-out infinite;
+}
+
 /* Hide scrollbar but maintain scroll functionality */
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */

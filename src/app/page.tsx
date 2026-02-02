@@ -5,18 +5,22 @@ import { useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
+import { OnboardingHint, isFirstVisit } from '@/components/OnboardingHint';
+import { DetailWelcomeCard } from '@/components/DetailWelcomeCard';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
 
 // Memoized company list to prevent re-render
 const MemoizedCompanyList = memo(function MemoizedCompanyList({
   companies,
-  onCompanyClick
+  onCompanyClick,
+  isFirstVisit: firstVisit,
 }: {
   companies: Company[];
   onCompanyClick: (id: string) => void;
+  isFirstVisit?: boolean;
 }) {
-  return <CompanyFilters companies={companies} onCompanyClick={onCompanyClick} />;
+  return <CompanyFilters companies={companies} onCompanyClick={onCompanyClick} isFirstVisit={firstVisit} />;
 });
 
 function HomePageContent() {
@@ -28,6 +32,8 @@ function HomePageContent() {
   const [showCopied, setShowCopied] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
+  const [showListOnboarding, setShowListOnboarding] = useState(false);
+  const [showDetailOnboarding, setShowDetailOnboarding] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const savedScrollPosition = useRef<number>(0);
   const selectedCompanyIdRef = useRef<string | null>(null);
@@ -35,6 +41,16 @@ function HomePageContent() {
 
   // Keep ref in sync so callbacks don't need selectedCompanyId as dependency
   selectedCompanyIdRef.current = selectedCompanyId;
+
+  // Check first-visit onboarding state
+  useEffect(() => {
+    setShowListOnboarding(isFirstVisit());
+    try {
+      setShowDetailOnboarding(!localStorage.getItem('aido_onboarding_detail_seen'));
+    } catch {
+      // localStorage unavailable
+    }
+  }, []);
 
   useEffect(() => {
     // Initial load from URL
@@ -90,6 +106,14 @@ function HomePageContent() {
     // Only save scroll position when OPENING panel (not when switching companies)
     if (isOpeningPanel) {
       savedScrollPosition.current = window.scrollY;
+    }
+
+    // Dismiss list onboarding on first company click
+    setShowListOnboarding(false);
+    try {
+      localStorage.setItem('aido_onboarding_list_seen', 'true');
+    } catch {
+      // localStorage unavailable
     }
 
     // Use window.history to avoid router re-render
@@ -230,9 +254,14 @@ function HomePageContent() {
           </p>
         </div>
 
+        {/* Onboarding Hint */}
+        {showListOnboarding && (
+          <OnboardingHint onDismiss={() => setShowListOnboarding(false)} />
+        )}
+
         {/* Company List - Full Width */}
         <div className="w-full">
-          <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
+          <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} isFirstVisit={showListOnboarding} />
         </div>
       </div>
 
@@ -321,6 +350,9 @@ function HomePageContent() {
 
           {/* Company Detail Content */}
           <div className="pt-4 px-4 sm:px-6 pb-6 panel-view">
+            {showDetailOnboarding && (
+              <DetailWelcomeCard onDismiss={() => setShowDetailOnboarding(false)} />
+            )}
             <CompanyDetail company={displayCompany} />
           </div>
         </div>
