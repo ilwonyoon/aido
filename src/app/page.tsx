@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, memo, Suspense } from 'react';
-import { flushSync } from 'react-dom';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
@@ -21,7 +20,6 @@ const MemoizedCompanyList = memo(function MemoizedCompanyList({
 });
 
 function HomePageContent() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
@@ -31,7 +29,6 @@ function HomePageContent() {
   const [isClosing, setIsClosing] = useState(false);
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const mainContentRef = useRef<HTMLDivElement>(null);
   const savedScrollPosition = useRef<number>(0);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
 
@@ -63,27 +60,25 @@ function HomePageContent() {
     const scrollToRestore = savedScrollPosition.current;
 
     // Start close animation
-    flushSync(() => {
-      setClosingCompany(currentCompany);
-      setIsClosing(true);
-    });
+    setClosingCompany(currentCompany);
+    setIsClosing(true);
 
     setTimeout(() => {
-      // Remove panel-open class BEFORE state change to control scroll timing
-      document.documentElement.classList.remove('panel-open');
-
       window.history.pushState({}, '', '/');
 
-      // Synchronous state update so layout changes happen immediately
-      flushSync(() => {
-        setSelectedCompanyId(null);
-        setIsFullWidth(false);
-        setIsClosing(false);
-        setClosingCompany(null);
-      });
+      // Unlock body scroll BEFORE React state change
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.documentElement.classList.remove('panel-open');
 
-      // Restore scroll immediately after layout recalc
+      // Restore scroll position immediately
       window.scrollTo(0, scrollToRestore);
+
+      setSelectedCompanyId(null);
+      setIsFullWidth(false);
+      setIsClosing(false);
+      setClosingCompany(null);
     }, 300);
   }, [selectedCompanyId]);
 
@@ -104,16 +99,6 @@ function HomePageContent() {
     // Reset panel scroll
     if (panelRef.current) {
       panelRef.current.scrollTop = 0;
-    }
-
-    // Only restore scroll position when OPENING panel (not when switching)
-    if (isOpeningPanel) {
-      requestAnimationFrame(() => {
-        if (mainContentRef.current) {
-          // On desktop, set div scrollTop; on mobile, it won't have scroll
-          mainContentRef.current.scrollTop = savedScrollPosition.current;
-        }
-      });
     }
   }, [selectedCompanyId]);
 
@@ -151,12 +136,19 @@ function HomePageContent() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCompanyId, closePanel]);
 
-  // Prevent background scroll when panel is open (only ADD class here; removal handled in closePanel)
+  // Lock body scroll when panel is open using position:fixed pattern
   useEffect(() => {
     if (selectedCompanyId) {
+      const scrollY = savedScrollPosition.current;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
       document.documentElement.classList.add('panel-open');
     }
     return () => {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
       document.documentElement.classList.remove('panel-open');
     };
   }, [selectedCompanyId]);
@@ -235,8 +227,7 @@ function HomePageContent() {
 
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
-        ref={mainContentRef}
-        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto' : ''}
       >
         {/* Header */}
         <div className="mb-6">
