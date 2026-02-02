@@ -6,6 +6,7 @@ export const inngest: Company = {
   description:
     'Developer platform for running reliable background functions and event-driven workflows without managing infrastructure.',
   website: 'https://www.inngest.com/',
+    screenshot: '/screenshots/inngest-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

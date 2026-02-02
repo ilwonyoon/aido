@@ -8,6 +8,10 @@ export const pylon: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/689071d222bec6ce3d3d6fbf/68a49db0177e819479abd409_logo.jpg',
+  screenshot: '/screenshots/pylon-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const pylon: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Pylon', url: 'https://usepylon.com' },
     { title: 'Pylon on startups.gallery', url: 'https://startups.gallery/companies/pylon' },

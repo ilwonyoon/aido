@@ -6,6 +6,7 @@ export const firecrawl: Company = {
   description:
     'Web data and crawling platform designed to help teams extract and structure web content at scale.',
   website: 'https://www.firecrawl.dev/',
+    screenshot: '/screenshots/firecrawl-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 

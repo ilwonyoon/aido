@@ -6,6 +6,8 @@ export const indexCompany: Company = {
   description:
     'Platform that helps companies launch and manage their own index funds.',
   website: 'https://index.com/',
+    screenshot: '/screenshots/index-screenshot.png',
+    ogImage: '/screenshots/index-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

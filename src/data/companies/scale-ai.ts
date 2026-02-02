@@ -5,6 +5,7 @@ export const scaleAi: Company = {
     name: 'Scale AI',
     description: 'AI data platform powering the most advanced LLMs and AI models with high-quality training data.',
     website: 'https://scale.com',
+    screenshot: '/screenshots/scale-ai-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

@@ -8,6 +8,9 @@ export const unstructured: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.sanity.io/images/d35hevy9/production/f19dac06a6b8d3e66fe818be470470e4cb954635-1200x628.jpg?rect=2,0,1196,628&amp;w=1200&amp;h=630&amp;max-h=3840&amp;max-w=3840&amp;q=85&amp;auto=format',
+
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],

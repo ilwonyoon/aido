@@ -5,6 +5,7 @@ export const perplexity: Company = {
     name: 'Perplexity',
     description: 'AI-powered answer engine that provides direct answers with sources, challenging Google Search.',
     website: 'https://perplexity.ai',
+    screenshot: '/screenshots/perplexity-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

@@ -8,6 +8,9 @@ export const blossom: Company = {
     headquarters: 'New York, NY',
     remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/vrcwRxYVI2NoS6f_CMyxp1LmBYL1brURwsjvoMyLFdTBxrALilbkGn46MMAemywQCqNQuZ7GXyKcVXVjbLySjw.png',
+
     // OG Image
     ogImage: '/og-images/blossom-og.webp',
 

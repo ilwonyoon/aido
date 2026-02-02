@@ -8,6 +8,10 @@ export const primeIntellect: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66239f0441b09824acb92c75/695eff0f1166146a932d7aca_og-prime-intellect-v2.jpg',
+  screenshot: '/screenshots/prime-intellect-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

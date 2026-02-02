@@ -5,6 +5,7 @@ export const elevenlabs: Company = {
     name: 'ElevenLabs',
     description: 'AI voice platform. Text-to-speech, voice cloning, dubbing.',
     website: 'https://elevenlabs.io',
+    screenshot: '/screenshots/elevenlabs-screenshot.png',
     headquarters: 'New York, NY',
     remote: 'Yes',
 

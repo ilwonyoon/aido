@@ -8,6 +8,10 @@ export const cube: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://lgo0ecceic.ucarecd.net/13323f3e-57eb-4966-a9b5-6ed1dd0a7a41/',
+  screenshot: '/screenshots/cube-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -6,6 +6,7 @@ export const onton: Company = {
   description:
     'AI shopping platform focused on helping users discover and buy products with AI guidance.',
   website: 'https://www.onton.com/',
+    screenshot: '/screenshots/onton-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

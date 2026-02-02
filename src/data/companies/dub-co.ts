@@ -8,6 +8,10 @@ export const dubCo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://assets.dub.co/thumbnail.jpg',
+  screenshot: '/screenshots/dub-co-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const dubCo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Dub', url: 'https://dub.co' },
     { title: 'Dub on startups.gallery', url: 'https://startups.gallery/companies/dub-co' },

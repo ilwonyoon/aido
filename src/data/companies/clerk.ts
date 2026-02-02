@@ -5,6 +5,7 @@ export const clerk: Company = {
   name: 'Clerk',
   description: 'Authentication and user management platform for developers.',
   website: 'https://clerk.com',
+    screenshot: '/screenshots/clerk-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

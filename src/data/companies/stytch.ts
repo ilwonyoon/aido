@@ -8,6 +8,10 @@ export const stytch: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  ogImage: 'https://cdn.sanity.io/images/3jwyzebk/production/ec2290dd0d0880bcfcf705aeb056e6209808b0ef-2400x1260.png',
+  screenshot: '/screenshots/stytch-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const stytch: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Stytch', url: 'https://stytch.com' },
     { title: 'Stytch on startups.gallery', url: 'https://startups.gallery/companies/stytch' },

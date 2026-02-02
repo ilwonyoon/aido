@@ -8,6 +8,10 @@ export const brainfish: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68397108d6cb6ceb1b41f856/688224481e06ce46e51d127f_86f306cf2bdd9a52b891a5a69d9a0e9e_OG%20Image.png',
+  screenshot: 'https://iad.microlink.io/Cf_JS5RZAtleI4GqjDg6zQBMBT1EGYShgo9KsnACUd_uJnyC3EdVHWZ6ZdyOUqfOB3YMmPeD2-pyLgNoyabRAQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2b'],

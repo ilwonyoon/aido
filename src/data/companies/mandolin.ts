@@ -5,8 +5,12 @@ export const mandolin: Company = {
   name: 'Mandolin',
   description: 'Automation platform for specialty drug workflows, including intake, benefits, and prior authorization.',
   website: 'https://mandolin.com',
+    screenshot: '/screenshots/mandolin-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/684d3e3dc03ecdf4c24616ec/6852ccbc7e5ac3ecb11c1279_mandolin-og.jpg',
 
 
   // Multi-dimensional Tags

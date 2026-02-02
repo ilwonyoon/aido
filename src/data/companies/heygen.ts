@@ -5,6 +5,7 @@ export const heygen: Company = {
     name: 'HeyGen',
     description: 'AI video generation platform with realistic avatars. Create videos from text in minutes.',
     website: 'https://heygen.com',
+    screenshot: '/screenshots/heygen-screenshot.png',
     headquarters: 'Los Angeles, CA',
     remote: 'Hybrid',
 

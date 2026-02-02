@@ -9,6 +9,9 @@ export const axiomMath: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/9Qri_CexXiwLE2Tm09XomWC8J_pESK0SD0u-8eFgdKBdIqKBKsdmBVXv75_DVIemYmlF_Apgh3Anwwml_LZTEA.png',
+
     // OG Image
     ogImage: '/og-images/axiom-math-og.webp',
 

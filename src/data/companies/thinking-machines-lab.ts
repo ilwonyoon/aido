@@ -8,6 +8,9 @@ export const thinkingMachinesLab: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  ogImage: 'https://thinkingmachines.ai/images/home.png',
+
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b', 'enterprise'],

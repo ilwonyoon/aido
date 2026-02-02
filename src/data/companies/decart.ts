@@ -5,8 +5,12 @@ export const decart: Company = {
   name: 'Decart',
   description: 'Real-time generative AI platform for interactive experiences.',
   website: 'https://decart.ai',
+    screenshot: '/screenshots/decart-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6874f65b561c843511ee5b85/692c922491f12b79b85fedee_open%20graph%20decart.png',
 
   // Multi-dimensional Tags
   aiTypes: ['video-generation'],

@@ -6,6 +6,7 @@ export const reevo: Company = {
   description:
     'AI-native revenue operating system that unifies GTM workflows across marketing, sales, and customer success.',
   website: 'https://reevo.ai/',
+    screenshot: '/screenshots/reevo-screenshot.png',
   headquarters: 'Santa Clara, CA',
   remote: 'Unknown',
 

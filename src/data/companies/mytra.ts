@@ -6,6 +6,7 @@ export const mytra: Company = {
   description:
     'Software-defined industrial robotics platform that automates material handling with AI-powered robotics and intelligence.',
   website: 'https://mytra.ai/',
+    screenshot: '/screenshots/mytra-screenshot.png',
   headquarters: 'Brisbane, CA',
   remote: 'Unknown',
 

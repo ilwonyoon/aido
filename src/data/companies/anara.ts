@@ -8,6 +8,10 @@ export const anara: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://anara.com/images/og-main-anara.png',
+  screenshot: 'https://iad.microlink.io/RjNPfde0ucT5WnFNFBVPtf2e4mHkzOIB7kZYap57KEhQhqvcIYf6OUR3PcdOggZjxCMlWCuIlMDNNv18VuQRJQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

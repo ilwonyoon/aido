@@ -5,8 +5,12 @@ export const sesameAi: Company = {
   name: 'Sesame AI',
   description: 'Voice assistant platform focused on high-quality natural speech and conversation.',
   website: 'https://www.sesame.com',
+    screenshot: '/screenshots/sesame-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://www.datocms-assets.com/143763/1730375369-sesame-og.png?auto=format&amp;fit=max&amp;w=1200',
 
 
   // Multi-dimensional Tags

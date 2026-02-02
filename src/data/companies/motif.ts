@@ -6,6 +6,7 @@ export const motif: Company = {
   description:
     'Collaboration platform for the AEC industry that brings design, review, and presentation into one shared workspace with AI-assisted rendering.',
   website: 'https://www.motif.io/',
+    screenshot: '/screenshots/motif-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

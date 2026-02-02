@@ -8,6 +8,10 @@ export const onyx: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.onyx.app/onyx-thumbnail.png',
+  screenshot: '/screenshots/onyx-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const onyx: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Onyx', url: 'https://www.onyx.app' },
     { title: 'Onyx on startups.gallery', url: 'https://startups.gallery/companies/onyx' },

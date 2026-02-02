@@ -8,6 +8,10 @@ export const greptile: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.greptile.com/opengraph/opengraph-image.webp',
+  screenshot: '/screenshots/greptile-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

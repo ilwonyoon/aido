@@ -6,6 +6,7 @@ export const casca: Company = {
   description:
     'AI platform that helps lenders process loans faster with automated underwriting workflows.',
   website: 'https://www.cascading.ai/',
+    screenshot: '/screenshots/casca-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

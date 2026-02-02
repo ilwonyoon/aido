@@ -6,6 +6,7 @@ export const itemApp: Company = {
   description:
     'Social shopping and sharing app focused on helping people discover and save items together.',
   website: 'https://item.app/',
+    screenshot: '/screenshots/item-app-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

@@ -8,6 +8,9 @@ export const warmer: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6818fe50ac7d407eea59da90/68cacb417260d10d4a9b46c8_WarmerOGImage.png',
+
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2c'],

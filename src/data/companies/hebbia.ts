@@ -5,6 +5,7 @@ export const hebbia: Company = {
     name: 'Hebbia',
     description: 'AI platform for knowledge work. Enables professionals to search, analyze, and synthesize information across unlimited documents.',
     website: 'https://www.hebbia.ai',
+    screenshot: '/screenshots/hebbia-screenshot.png',
 
     // Location
     headquarters: 'New York, NY',

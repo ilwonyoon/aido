@@ -5,6 +5,7 @@ export const console: Company = {
   name: 'Console',
   description: 'AI coworker for IT teams to automate support tasks.',
   website: 'https://console.co',
+    screenshot: '/screenshots/console-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

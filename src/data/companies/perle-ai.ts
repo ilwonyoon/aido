@@ -6,6 +6,7 @@ export const perleAi: Company = {
   description:
     'Agentic AI platform that helps teams deploy and manage AI agents for enterprise workflows.',
   website: 'https://perle.ai/',
+    screenshot: '/screenshots/perle-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

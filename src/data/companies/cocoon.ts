@@ -5,6 +5,7 @@ export const cocoon: Company = {
   name: 'Cocoon',
   description: 'Leave management platform for HR teams.',
   website: 'https://cocoon.com',
+    screenshot: '/screenshots/cocoon-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

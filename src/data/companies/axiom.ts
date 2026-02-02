@@ -8,6 +8,10 @@ export const axiom: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://axiom.co/social-card-main.png',
+  screenshot: 'https://iad.microlink.io/Q_Mh58xPczPNaUqzHMZxg8crEQDu7pygREpCfqFBIanD6MRS_bj2O3oNOKUqGBrU_6uEszTz79-9ZlXzjcC7Dw.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

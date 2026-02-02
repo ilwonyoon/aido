@@ -5,8 +5,12 @@ export const langchain: Company = {
   name: 'LangChain',
   description: 'Open-source framework and platform for building applications with LLMs and agents.',
   website: 'https://langchain.com',
+    screenshot: '/screenshots/langchain-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/65c69af1f3035ff97de2cc38_HomePage-metaImage.jpg',
 
 
   // Multi-dimensional Tags

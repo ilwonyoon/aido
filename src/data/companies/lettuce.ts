@@ -5,6 +5,8 @@ export const lettuce: Company = {
   name: 'Lettuce',
   description: 'Automated accounting and tax platform for solopreneurs.',
   website: 'https://lettuce.co',
+    screenshot: '/screenshots/lettuce-screenshot.png',
+    ogImage: '/screenshots/lettuce-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

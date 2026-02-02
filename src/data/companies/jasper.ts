@@ -5,6 +5,7 @@ export const jasper: Company = {
     name: 'Jasper',
     description: 'AI marketing platform for enterprises, enabling teams to create on-brand content at scale with generative AI.',
     website: 'https://jasper.ai',
+    screenshot: '/screenshots/jasper-screenshot.png',
     headquarters: 'Austin, TX',
     remote: 'Yes',
 

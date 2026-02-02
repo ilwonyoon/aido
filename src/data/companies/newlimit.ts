@@ -8,6 +8,10 @@ export const newlimit: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/61e68fe4e7bec7037d55d34e/626b875e7de5968525202299_newlimit-open-graph.png',
+  screenshot: '/screenshots/newlimit-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

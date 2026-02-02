@@ -5,8 +5,12 @@ export const osmosis: Company = {
   name: 'Osmosis',
   description: 'Create task-specific models that beat foundation models.',
   website: 'https://osmosis.ai',
+    screenshot: '/screenshots/osmosis-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/68e57e4c53b55278417c1e17/68e59277aaa362cb3c144f66_a52a70f75bca1833de4b26e57e464b3d_Opengraph.jpg',
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'ai-infrastructure'],

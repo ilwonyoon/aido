@@ -6,6 +6,7 @@ export const overlapAi: Company = {
   description:
     'AI meeting intelligence platform focused on capturing context, decisions, and action items for teams.',
   website: 'https://overlap.ai/',
+    screenshot: '/screenshots/overlap-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

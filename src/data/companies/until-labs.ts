@@ -8,6 +8,10 @@ export const untilLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.untillabs.com/opengraph-image.png?opengraph-image.fba1f88c.png',
+  screenshot: '/screenshots/until-labs-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

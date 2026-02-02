@@ -6,6 +6,7 @@ export const sauronSystems: Company = {
   description:
     'Home security and monitoring system focused on real-time perception, analytics, and incident response.',
   website: 'https://www.sauron.systems/',
+    screenshot: '/screenshots/sauron-systems-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

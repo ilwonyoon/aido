@@ -5,6 +5,7 @@ export const midjourney: Company = {
     name: 'Midjourney',
     description: 'Generative AI service that creates images from text prompts, accessed via web and Discord.',
     website: 'https://www.midjourney.com/',
+    screenshot: '/screenshots/midjourney-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

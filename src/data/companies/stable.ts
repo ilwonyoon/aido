@@ -8,6 +8,10 @@ export const stable: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/stable-screenshot.png',
+    ogImage: '/screenshots/stable-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

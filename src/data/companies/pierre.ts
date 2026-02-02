@@ -8,6 +8,10 @@ export const pierre: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/pierre-screenshot.png',
+    ogImage: '/screenshots/pierre-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

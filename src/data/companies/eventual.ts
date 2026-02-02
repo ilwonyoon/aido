@@ -5,6 +5,7 @@ export const eventual: Company = {
   name: 'Eventual',
   description: 'Creators of Daft, focused on building tools for developers.',
   website: 'https://www.eventual.ai',
+    screenshot: '/screenshots/eventual-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

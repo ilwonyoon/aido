@@ -8,6 +8,10 @@ export const hedraAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://mkt.hedra.com/opengraph-image.png?opengraph-image.87d91b98.png',
+  screenshot: '/screenshots/hedra-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

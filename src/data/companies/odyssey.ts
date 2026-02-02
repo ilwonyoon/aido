@@ -6,6 +6,7 @@ export const odyssey: Company = {
   description:
     'Generative world models that enable interactive video where viewers can explore and influence scenes in real time.',
   website: 'https://odyssey.ml/',
+    screenshot: '/screenshots/odyssey-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

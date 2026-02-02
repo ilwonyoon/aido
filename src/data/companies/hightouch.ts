@@ -6,6 +6,7 @@ export const hightouch: Company = {
   description:
     'Data activation platform that syncs warehouse data into SaaS tools so teams can run personalized marketing, sales, and lifecycle workflows.',
   website: 'https://hightouch.com/',
+    screenshot: '/screenshots/hightouch-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

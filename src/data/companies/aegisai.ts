@@ -8,6 +8,10 @@ export const aegisai: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.coinednames.com/forsale/_next/image?url=%2Fforsale%2Fimgs%2Fpayments%2Fvisa.png&w=128&q=75',
+  screenshot: 'https://iad.microlink.io/BhoR3R3GW8elCKci8-9X0PvNczUSZK9njkpWenPUIMPWILaQRKvxVNFB7K69o-FgtcwG96iyf4CPwNQuXzMErQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

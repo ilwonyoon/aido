@@ -8,6 +8,10 @@ export const juicebox: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/assets/4taa8DFpl0ylGE3TP0WIc4WP6s.svg',
+  screenshot: '/screenshots/juicebox-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

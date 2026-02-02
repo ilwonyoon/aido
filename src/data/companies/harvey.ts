@@ -5,6 +5,7 @@ export const harvey: Company = {
     name: 'Harvey',
     description: 'AI copilot for elite law firms, transforming how legal professionals work with AI-powered research, drafting, and analysis.',
     website: 'https://harvey.ai',
+    screenshot: '/screenshots/harvey-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

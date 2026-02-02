@@ -5,6 +5,7 @@ export const cognition: Company = {
     name: 'Cognition',
     description: 'AI software engineer. Devin can autonomously complete entire coding projects.',
     website: 'https://cognition.ai',
+    screenshot: '/screenshots/cognition-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

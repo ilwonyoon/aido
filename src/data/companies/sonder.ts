@@ -8,6 +8,10 @@ export const sonder: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://img1.wsimg.com/isteam/videos/uA41GmyyG8IMaxXdb',
+  screenshot: '/screenshots/sonder-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

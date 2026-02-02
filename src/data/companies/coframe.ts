@@ -8,6 +8,10 @@ export const coframe: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66abefe349b0c8356d750497/66f5e0c93f60a713ba3bdb35_Coframe%20OG%20Image.webp',
+  screenshot: '/screenshots/coframe-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const coframe: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Coframe', url: 'https://www.coframe.com' },
     { title: 'Coframe on startups.gallery', url: 'https://startups.gallery/companies/coframe' },

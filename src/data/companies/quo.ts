@@ -5,6 +5,7 @@ export const quo: Company = {
   name: 'Quo',
   description: 'Business phone platform for modern teams.',
   website: 'https://quo.com',
+    screenshot: '/screenshots/quo-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

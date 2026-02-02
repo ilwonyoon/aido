@@ -8,6 +8,9 @@ export const buildForever: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/u2qPT5gKZ0aY9jlY--mcG1B_uiQPBHXZtFGSdgBCCxvcXlUglrwaIUZYudbiU5RRMYTNg6WsKfTJ4cm4ovxjRg.png',
+
     // OG Image
     ogImage: '/og-images/buildforever-og.webp',
 

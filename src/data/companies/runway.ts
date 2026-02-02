@@ -5,6 +5,7 @@ export const runway: Company = {
     name: 'Runway',
     description: 'Generative AI company building video and multimedia creation tools.',
     website: 'https://runwayml.com/',
+    screenshot: '/screenshots/runway-screenshot.png',
     headquarters: 'New York City, NY',
     remote: 'Yes',
 

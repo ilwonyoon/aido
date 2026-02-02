@@ -9,6 +9,9 @@ export const baseten: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/MWHtaq6felmNLlT-_DdXdATesJAXWxbB459TtVM1qUkKngxkhlvyxbBk49LfS-RFS8OoJdNboroN59KplJhS4g.png',
+
     // OG Image
     ogImage: '/og-images/baseten-og.webp',
 

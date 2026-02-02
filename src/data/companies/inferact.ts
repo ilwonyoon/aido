@@ -5,6 +5,7 @@ export const inferact: Company = {
     name: 'Inferact',
     description: 'AI system that provides real-time instructions to customer support agents during live conversations.',
     website: 'https://inferact.ai',
+    screenshot: '/screenshots/inferact-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

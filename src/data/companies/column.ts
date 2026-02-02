@@ -8,6 +8,10 @@ export const column: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://column.com/images/social/column-og.png',
+  screenshot: '/screenshots/column-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

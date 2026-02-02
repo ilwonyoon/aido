@@ -8,6 +8,10 @@ export const tandem: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/67ef895ebcae5ebab6aa5d30/68710df48d829cfdda30f397_Meta-img-general.png',
+  screenshot: '/screenshots/tandem-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -6,6 +6,7 @@ export const nexus: Company = {
   description:
     'Layer 1 blockchain for verifiable computation, designed for AI-era financial and exchange workflows.',
   website: 'https://nexus.xyz/',
+    screenshot: '/screenshots/nexus-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

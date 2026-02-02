@@ -5,8 +5,12 @@ export const mosey: Company = {
   name: 'Mosey',
   description: 'Compliance automation platform for state and local payroll requirements.',
   website: 'https://www.mosey.com',
+    screenshot: '/screenshots/mosey-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://mosey.com/img/og-image.png',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

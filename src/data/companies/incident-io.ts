@@ -8,6 +8,10 @@ export const incidentIo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://incident.io/opengraph-image.png?opengraph-image.bb73b9f4.png',
+  screenshot: '/screenshots/incident-io-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const incidentIo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'incident.io', url: 'https://incident.io' },
     { title: 'incident.io on startups.gallery', url: 'https://startups.gallery/companies/incident-io' },

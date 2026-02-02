@@ -8,6 +8,10 @@ export const instant: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.instantdb.com/img/og_preview.png',
+  screenshot: '/screenshots/instant-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const instant: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Instant', url: 'https://www.instantdb.com' },
     { title: 'Instant on startups.gallery', url: 'https://startups.gallery/companies/instant' },

@@ -8,6 +8,10 @@ export const apothekary: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.sanity.io/images/4yfa4c0n/production/2908d99a0b3e2d128cf533a4d5ab7fed988b7571-300x300.png?w=300&fm=webp',
+  screenshot: 'https://iad.microlink.io/NKkfkHeBJ9ZlCxrsfSuLjpJ8YDzuH4DsNYdcVdbmCn0RWq0xf0yBp_fdIOXkdT98Bvz-47QKprF-G6jmYV-VUg.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -8,6 +8,10 @@ export const footprint: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/footprint-screenshot.png',
+    ogImage: '/screenshots/footprint-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const footprint: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Footprint', url: 'https://footprint.us' },
     { title: 'Footprint on startups.gallery', url: 'https://startups.gallery/companies/footprint' },

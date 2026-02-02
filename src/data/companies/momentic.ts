@@ -6,6 +6,7 @@ export const momentic: Company = {
   description:
     'AI-native customer insights platform for analyzing feedback and conversation data.',
   website: 'https://www.momentic.ai/',
+    screenshot: '/screenshots/momentic-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

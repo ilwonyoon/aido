@@ -5,8 +5,12 @@ export const cartesia: Company = {
   name: 'Cartesia',
   description: 'Ultra-realistic, low-latency voice AI platform for real-time applications.',
   website: 'https://cartesia.ai',
+    screenshot: '/screenshots/cartesia-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/assets/nvFWoimT13QFzTrSNSycJkZp5o.jpg',
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'conversation-ai'],

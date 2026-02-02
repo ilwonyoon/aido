@@ -8,6 +8,9 @@ export const base44: Company = {
     headquarters: 'Tel Aviv, Israel',
     remote: 'Yes',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/gbNDlXv7_rE5XVorwYMw8uxCvhRC1dC59PLpEJsabI37QCXSGfNwVw7NqDJl7sPm-lSr46o_-c5xJ6YA996oKw.png',
+
     // OG Image
     ogImage: '/og-images/base44-og.webp',
 

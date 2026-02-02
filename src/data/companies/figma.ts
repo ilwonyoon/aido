@@ -5,6 +5,7 @@ export const figma: Company = {
     name: 'Figma',
     description: 'Collaborative design platform. The Google Docs of design tools.',
     website: 'https://figma.com',
+    screenshot: '/screenshots/figma-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

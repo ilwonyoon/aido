@@ -5,6 +5,7 @@ export const notion: Company = {
     name: 'Notion',
     description: 'All-in-one workspace for notes, docs, wikis, and project management.',
     website: 'https://notion.so',
+    screenshot: '/screenshots/notion-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

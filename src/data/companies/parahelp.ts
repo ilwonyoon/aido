@@ -6,6 +6,7 @@ export const parahelp: Company = {
   description:
     'AI support agent that automates complex customer support tickets for fast-moving software companies.',
   website: 'https://parahelp.com',
+    screenshot: '/screenshots/parahelp-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

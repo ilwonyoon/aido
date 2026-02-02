@@ -5,8 +5,12 @@ export const natural: Company = {
   name: 'Natural',
   description: 'Payments infrastructure for AI agents to send, receive, and manage transactions.',
   website: 'https://www.natural.co',
+    screenshot: '/screenshots/natural-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'http://localhost:3000/opengraph.jpg',
 
 
   // Multi-dimensional Tags

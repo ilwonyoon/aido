@@ -5,6 +5,8 @@ export const relace: Company = {
   name: 'Relace',
   description: 'LLM platform for fast, production-grade code generation.',
   website: 'https://relace.ai',
+    screenshot: '/screenshots/relace-screenshot.png',
+    ogImage: '/screenshots/relace-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

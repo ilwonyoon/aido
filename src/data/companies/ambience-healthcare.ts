@@ -8,6 +8,9 @@ export const ambienceHealthcare: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/8oSbfhnDH6tB__Cb4Vs10wGXeVGEC2_Dg6VFkbEvfDAoOQjg4l7QpZNQWmtJKvnHgbuiGWR6XYOwixbh88jCeQ.png',
+
     // OG Image
     ogImage: '/og-images/ambience-healthcare-og.webp',
 

@@ -5,6 +5,7 @@ export const chroma: Company = {
   name: 'Chroma',
   description: 'Open-source embedding database for AI applications.',
   website: 'https://www.trychroma.com',
+    screenshot: '/screenshots/chroma-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

@@ -5,8 +5,12 @@ export const generationLab: Company = {
   name: 'Generation Lab',
   description: 'Biotech company focused on reversing biological age and improving longevity.',
   website: 'https://www.generationlab.com',
+    screenshot: '/screenshots/generation-lab-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://www.generationlab.com/og/home.webp',
 
   // Multi-dimensional Tags
   aiTypes: ['data-analysis'],

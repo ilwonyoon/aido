@@ -5,6 +5,7 @@ export const leya: Company = {
     name: 'Leya',
     description: 'AI workspace for lawyers. Automates legal research, document review, and drafting.',
     website: 'https://leya.law',
+    screenshot: '/screenshots/leya-screenshot.png',
     headquarters: 'Stockholm, Sweden',
     remote: 'Hybrid',
 

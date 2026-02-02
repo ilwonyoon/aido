@@ -6,6 +6,7 @@ export const glide: Company = {
   description:
     'No-code platform that lets teams build and deploy apps from spreadsheets and data sources.',
   website: 'https://www.glideapps.com/',
+    screenshot: '/screenshots/glide-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

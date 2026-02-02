@@ -8,6 +8,10 @@ export const posthog: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://posthog.com/images/og/default.png',
+  screenshot: '/screenshots/posthog-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

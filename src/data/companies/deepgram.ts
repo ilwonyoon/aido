@@ -5,6 +5,7 @@ export const deepgram: Company = {
     name: 'Deepgram',
     description: 'AI-powered, voice-enabled data for developers.',
     website: 'https://deepgram.com',
+    screenshot: '/screenshots/deepgram-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Yes',
 

@@ -8,6 +8,10 @@ export const manifest: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/manifest-screenshot.png',
+    ogImage: '/screenshots/manifest-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

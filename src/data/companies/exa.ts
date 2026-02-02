@@ -6,6 +6,7 @@ export const exa: Company = {
   description:
     'AI search engine and API that provides web data for AI agents, research, and applications.',
   website: 'https://exa.ai',
+    screenshot: '/screenshots/exa-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

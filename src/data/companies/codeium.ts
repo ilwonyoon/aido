@@ -5,6 +5,7 @@ export const codeium: Company = {
     name: 'Codeium (now Windsurf)',
     description: 'AI coding platform with Windsurf Editor (agentic IDE) and plugins. Features Cascade AI for flow-based reasoning. Free tier and enterprise offerings.',
     website: 'https://codeium.com',
+    screenshot: '/screenshots/codeium-screenshot.png',
     headquarters: 'Mountain View, CA',
     remote: 'Hybrid',
 

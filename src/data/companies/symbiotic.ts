@@ -8,6 +8,10 @@ export const symbiotic: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://symbiotic.fi/lines.png',
+  screenshot: '/screenshots/symbiotic-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

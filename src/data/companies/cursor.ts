@@ -5,6 +5,7 @@ export const cursor: Company = {
     name: 'Cursor',
     description: 'AI-first code editor that helps developers write code faster with intelligent autocomplete and chat.',
     website: 'https://cursor.com',
+    screenshot: '/screenshots/cursor-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

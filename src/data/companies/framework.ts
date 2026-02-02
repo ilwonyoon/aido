@@ -8,6 +8,10 @@ export const framework: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/framework-screenshot.png',
+    ogImage: '/screenshots/framework-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

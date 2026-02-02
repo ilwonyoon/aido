@@ -8,6 +8,10 @@ export const wordware: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://wordware-sauna-landing-page-3pbt0ohjq-wordware.vercel.app/Wordware%20Social%20Card.png',
+  screenshot: '/screenshots/wordware-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const wordware: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Wordware', url: 'https://www.wordware.ai' },
     { title: 'Wordware on startups.gallery', url: 'https://startups.gallery/companies/wordware' },

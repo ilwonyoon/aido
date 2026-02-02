@@ -8,6 +8,10 @@ export const nowadays: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://nowadays.ai/opengraph-image.png',
+  screenshot: '/screenshots/nowadays-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const nowadays: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Nowadays', url: 'https://www.nowadays.ai' },
     { title: 'Nowadays on startups.gallery', url: 'https://startups.gallery/companies/nowadays' },

@@ -8,6 +8,9 @@ export const airops: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/5A3Rb8-DMCgcFtxIKQcyrqOgdo3bOugRNC-hIG5XY1H6Ra1wOSGn0kRXiNmLUx-HDOYop_yawUbEoxd79w1rDg.png',
+
     // OG Image
     ogImage: '/og-images/airops-og.webp',
 

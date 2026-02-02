@@ -8,6 +8,10 @@ export const blackbirdLabs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/LdZGp2d41lQbFvlVmdcVzcmePY.png?width=1200&height=630',
+  screenshot: 'https://iad.microlink.io/5pPzURRIkVeFDDOyjinV3KO_oWB6zeYadpty7cbnjJYh9HWHbsGn7PISGzh5gf0if15QOzoKTtS8agbDwRhGIQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

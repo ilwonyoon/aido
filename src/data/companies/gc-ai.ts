@@ -6,6 +6,7 @@ export const gcAi: Company = {
   description:
     'In-house legal AI platform for enterprise legal teams to review and manage legal work faster.',
   website: 'https://gc.ai/',
+    screenshot: '/screenshots/gc-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

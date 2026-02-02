@@ -8,6 +8,9 @@ export const alphaXiv: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/QJbF2eGrJlbw04UOVcUlP0X7CCvFqzGICudEg_FOnbAMZQIsME0Z-J_vhqSaNk4L64GAcdw1q40YzGg0WljrXw.png',
+
     // OG Image
     ogImage: '/og-images/alphaxiv-og.webp',
 

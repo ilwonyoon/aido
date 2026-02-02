@@ -8,6 +8,10 @@ export const walrus: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6864f039b26f4afedada6bc5/68b711a06f9db1a7f43bfa3b_walrus-og.jpg',
+  screenshot: '/screenshots/walrus-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const walrus: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Walrus', url: 'https://www.walrus.xyz' },
     { title: 'Walrus on startups.gallery', url: 'https://startups.gallery/companies/walrus' },

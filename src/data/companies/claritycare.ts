@@ -5,8 +5,12 @@ export const claritycare: Company = {
   name: 'ClarityCare',
   description: 'AI-powered utilization management platform for medical necessity reviews.',
   website: 'https://docs.claritycare.ai',
+    screenshot: '/screenshots/claritycare-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://claritycareai.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DGetting%2BStarted%26title%3DIntroduction%2Bto%2BClarityCare%2BAI%26description%3DLearn%2Babout%2Bour%2BAI-powered%2Butilization%2Bmanagement%2B%2528UM%2529%2Bsolution%253A%2BElectra%25E2%2584%25A2%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaritycareai%252FeSciVI1A6sKUydps%252Flogo%252FClarityCare%252520Logo_v2-01.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DeSciVI1A6sKUydps%2526q%253D85%2526s%253D4c9d1c9acbbd9ddd1aa3b132ccb5a0ce%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaritycareai%252FeSciVI1A6sKUydps%252Flogo%252FClarityCare%252520Logo_v2-01.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DeSciVI1A6sKUydps%2526q%253D85%2526s%253D4c9d1c9acbbd9ddd1aa3b132ccb5a0ce%26primaryColor%3D%25230D9373%26lightColor%3D%252307C983%26darkColor%3D%25230D9373%26backgroundLight%3D%2523ffffff%26backgroundDark%3D%2523090d0d&amp;w=1200&amp;q=100',
 
 
   // Multi-dimensional Tags

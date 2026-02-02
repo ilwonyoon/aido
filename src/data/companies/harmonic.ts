@@ -5,6 +5,7 @@ export const harmonic: Company = {
     name: 'Harmonic',
     description: 'AI lab developing Mathematical Superintelligence (MSI) and the Aristotle model for formal mathematical reasoning.',
     website: 'https://harmonic.fun',
+    screenshot: '/screenshots/harmonic-screenshot.png',
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 

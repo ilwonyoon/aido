@@ -8,6 +8,9 @@ export const brex: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/uY2tg8SgFL0l1USfMjQ3ysoMeL7M2iA8FAV79OMQ4B5hSmsBhTU-GjrirTqhytblU97SUsZtsUd5fdX2GyPHFA.png',
+
     // OG Image
     ogImage: '/og-images/brex-og.webp',
 

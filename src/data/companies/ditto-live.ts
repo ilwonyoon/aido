@@ -6,6 +6,7 @@ export const dittoLive: Company = {
   description:
     'Edge connectivity platform for resilient device communication and synchronization.',
   website: 'https://www.ditto.com/',
+    screenshot: '/screenshots/ditto-live-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

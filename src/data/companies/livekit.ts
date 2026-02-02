@@ -6,6 +6,7 @@ export const livekit: Company = {
   description:
     'Infrastructure for real-time audio and video applications, using WebRTC to power low-latency experiences.',
   website: 'https://livekit.io/',
+    screenshot: '/screenshots/livekit-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

@@ -8,6 +8,10 @@ export const elevenX: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/66fe5a1a88c73ef8f270d312/67312606ff40e81cde3f1b32_11x%20OG.jpg',
+  screenshot: 'https://iad.microlink.io/WlAv6cor0JNqN8OzXr98uscTBq3tOCu20FgrgDSGQ_h28CDov5KVIKojc3phZi_v1C4DmVAQCZ7tcjMTsoCaqQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

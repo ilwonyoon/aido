@@ -8,6 +8,10 @@ export const polycam: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/67a3e58efec5f4dc95fd18c6/689ba71206502427e99364e7_Polycam-OG.png',
+  screenshot: '/screenshots/polycam-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

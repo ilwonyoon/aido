@@ -8,6 +8,10 @@ export const stackai: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/URFWRwFFnfMongXgt62be3qCgA.png',
+  screenshot: '/screenshots/stackai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

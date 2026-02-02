@@ -8,6 +8,10 @@ export const arcadeAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://www.arcade.ai/_next/static/media/arcade-word.0a3bb62b.svg',
+  screenshot: 'https://iad.microlink.io/XEO9Xgv_8TloLjUTyzdKXmBsVwfVVREyX_kyCUXNRknd72LTfxZzp_vnh0ufq_NsyyXTCxh2wSsNeui0ZOFrRA.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

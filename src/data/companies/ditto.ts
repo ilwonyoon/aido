@@ -6,6 +6,7 @@ export const ditto: Company = {
   description:
     'Edge sync platform that provides resilient, offline-first data synchronization for apps and devices.',
   website: 'https://www.ditto.live/',
+    screenshot: '/screenshots/ditto-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

@@ -5,6 +5,7 @@ export const legendXyz: Company = {
   name: 'Legend.xyz',
   description: 'Onchain finance and wallet platform for crypto users.',
   website: 'https://legend.xyz',
+    screenshot: '/screenshots/legend-xyz-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

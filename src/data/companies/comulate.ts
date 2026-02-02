@@ -5,6 +5,8 @@ export const comulate: Company = {
   name: 'Comulate',
   description: 'AI-powered platform for insurance operations and servicing workflows.',
   website: 'https://comulate.com',
+    screenshot: '/screenshots/comulate-screenshot.png',
+    ogImage: '/screenshots/comulate-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

@@ -8,6 +8,10 @@ export const chronicle: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://chroniclehq.com/meta/og.png',
+  screenshot: '/screenshots/chronicle-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const chronicle: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Chronicle', url: 'https://chroniclehq.com' },
     { title: 'Chronicle on startups.gallery', url: 'https://startups.gallery/companies/chronicle' },

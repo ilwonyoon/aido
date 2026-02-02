@@ -6,6 +6,7 @@ export const factory: Company = {
   description:
     'AI software development platform with autonomous “Droids” that build, test, and ship code across the stack.',
   website: 'https://factory.ai',
+    screenshot: '/screenshots/factory-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

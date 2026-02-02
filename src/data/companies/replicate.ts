@@ -5,6 +5,8 @@ export const replicate: Company = {
   name: 'Replicate',
   description: 'Model hosting and APIs for running machine learning models in production.',
   website: 'https://replicate.com',
+    screenshot: '/screenshots/replicate-screenshot.png',
+    ogImage: '/screenshots/replicate-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

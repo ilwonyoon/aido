@@ -6,6 +6,7 @@ export const pacificFusion: Company = {
   description:
     'Fusion energy company developing pulsed fusion systems to deliver scalable, clean energy.',
   website: 'https://pacificfusion.com/',
+    screenshot: '/screenshots/pacific-fusion-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

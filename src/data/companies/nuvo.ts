@@ -8,6 +8,10 @@ export const nuvo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/642b1089873d6b67a004d671/67c9e0da191c497b2d12f597_Nuvo_Logo_2025.svg',
+  screenshot: '/screenshots/nuvo-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const nuvo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Nuvo', url: 'https://nuvo.com' },
     { title: 'Nuvo on startups.gallery', url: 'https://startups.gallery/companies/nuvo' },

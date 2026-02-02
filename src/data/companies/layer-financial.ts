@@ -6,6 +6,7 @@ export const layerFinancial: Company = {
   description:
     'Embedded accounting platform that lets SMB-focused software platforms offer accounting and bookkeeping products.',
   website: 'https://www.layerfi.com/',
+    screenshot: '/screenshots/layer-financial-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

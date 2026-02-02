@@ -6,6 +6,7 @@ export const remofirst: Company = {
   description:
     'Employer of Record (EOR) platform that helps companies hire and manage global teams with local compliance, payroll, and benefits.',
   website: 'https://remofirst.com/',
+    screenshot: '/screenshots/remofirst-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

@@ -6,6 +6,7 @@ export const heirloom: Company = {
   description:
     'Direct air capture company building cost-effective technology to permanently remove CO2 from the atmosphere.',
   website: 'https://www.heirloomcarbon.com/',
+    screenshot: '/screenshots/heirloom-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

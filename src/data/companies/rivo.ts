@@ -5,8 +5,12 @@ export const rivo: Company = {
   name: 'Rivo',
   description: 'Retention and loyalty platform for Shopify brands focused on customer conversion and repeat purchases.',
   website: 'https://rivo.io',
+    screenshot: '/screenshots/rivo-screenshot.png',
   headquarters: 'Las Vegas, NV',
   remote: 'Unknown',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/667299ba8b7eaf0ae47a30a0/66a31ee1f64b96a934d7bf6b_rivo-og2.jpeg',
 
 
   // Multi-dimensional Tags

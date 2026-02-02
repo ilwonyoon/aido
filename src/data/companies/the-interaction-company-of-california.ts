@@ -8,6 +8,10 @@ export const theInteractionCompanyOfCalifornia: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://poke.com/assets/og.jpg',
+  screenshot: '/screenshots/the-interaction-company-of-california-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,8 +5,12 @@ export const senecaSystems: Company = {
   name: 'Seneca Systems',
   description: 'Wildfire defense company building AI-enabled autonomous response systems and infrastructure.',
   website: 'https://seneca.com',
+    screenshot: '/screenshots/seneca-systems-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
+
+  // Visual Assets
+  ogImage: 'https://seneca.com/_assets/og.B3gJA8ip_Z1OF3kC.png',
 
 
   // Multi-dimensional Tags

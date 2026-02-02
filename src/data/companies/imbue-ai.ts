@@ -8,6 +8,10 @@ export const imbueAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://imbue.com/sculptor/og-image.png',
+  screenshot: '/screenshots/imbue-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

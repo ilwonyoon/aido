@@ -8,6 +8,10 @@ export const martian: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/v3cDGLnZoqNt3guoVrCzb4LbcM.png?width=2192&amp;height=1092',
+  screenshot: '/screenshots/martian-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

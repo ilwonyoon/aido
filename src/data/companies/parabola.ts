@@ -8,6 +8,10 @@ export const parabola: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Hybrid',
 
+  // Visual Assets
+  ogImage: 'https://your-new-image-host.com/parabola-preview.png',
+  screenshot: '/screenshots/parabola-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

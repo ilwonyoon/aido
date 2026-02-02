@@ -5,8 +5,12 @@ export const poolside: Company = {
   name: 'Poolside',
   description: 'Frontier AI company building foundation models for software development.',
   website: 'https://poolside.ai',
+    screenshot: '/screenshots/poolside-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://poolside.ai/og/og-home.png',
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],

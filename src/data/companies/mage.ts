@@ -8,6 +8,10 @@ export const mage: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/RWcxzAUa8aAmswMQDlrq8fER8.jpg',
+  screenshot: '/screenshots/mage-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const mage: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Mage', url: 'https://www.mage.ai' },
     { title: 'Mage on startups.gallery', url: 'https://startups.gallery/companies/mage' },

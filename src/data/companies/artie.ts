@@ -9,6 +9,9 @@ export const artie: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/KYk67MVkJsivsyQm4HOiPX29KIlw0PlkBkFIIXBU_2LQbgC6DaQXRJIix2DrWgrGDC1OXc4_WsOcHF33iSPlcQ.png',
+
     // OG Image
     ogImage: '/og-images/artie-og.webp',
 

@@ -6,6 +6,7 @@ export const lightpage: Company = {
   description:
     'Workspace for faster writing and thinking with AI assistance and a minimal editor.',
   website: 'https://lightpage.com/',
+    screenshot: '/screenshots/lightpage-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

@@ -8,6 +8,9 @@ export const zedDev: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://zed.dev/img/home/og.webp',
+
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['prosumer', 'b2b'],

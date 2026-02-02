@@ -8,6 +8,9 @@ export const tempo: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://tempo.xyz/images/opengraph/og-image.png',
+
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

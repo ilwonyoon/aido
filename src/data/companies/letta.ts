@@ -5,6 +5,7 @@ export const letta: Company = {
     name: 'Letta',
     description: 'Memory for AI agents and applications.',
     website: 'https://www.letta.com',
+    screenshot: '/screenshots/letta-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

@@ -8,6 +8,10 @@ export const cline: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cline.bot/cline_og_img.png',
+  screenshot: '/screenshots/cline-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const cline: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Cline', url: 'https://cline.bot' },
     { title: 'Cline on startups.gallery', url: 'https://startups.gallery/companies/cline' },

@@ -5,6 +5,7 @@ export const highscore: Company = {
   name: 'Highscore',
   description: 'AI-powered product development platform for game studios.',
   website: 'https://highscore.com',
+    screenshot: '/screenshots/highscore-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

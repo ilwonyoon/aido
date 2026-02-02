@@ -6,6 +6,7 @@ export const composite: Company = {
   description:
     'AI-native CRM platform focused on consolidating customer data and engagement workflows.',
   website: 'https://www.composite.ai/',
+    screenshot: '/screenshots/composite-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

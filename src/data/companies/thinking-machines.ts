@@ -8,6 +8,10 @@ export const thinkingMachines: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/Rbp18Hv7S4poU30s8qyBel4MxE.png?width=1376&amp;height=902',
+  screenshot: '/screenshots/thinking-machines-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

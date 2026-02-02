@@ -8,6 +8,10 @@ export const meter: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://meter-web.s3.us-west-1.amazonaws.com/meter.com/meter-com.png',
+  screenshot: '/screenshots/meter-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

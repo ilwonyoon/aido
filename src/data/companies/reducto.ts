@@ -8,6 +8,10 @@ export const reducto: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://reducto.ai/opengraph-image-pztefn.png?dad257abe5b90369',
+  screenshot: '/screenshots/reducto-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

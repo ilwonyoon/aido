@@ -8,6 +8,10 @@ export const patch: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/6357008bb1dd16395e9e2e70/6367cd29a0bbe11ac4a7d085_home%20opengraph.jpg',
+  screenshot: '/screenshots/patch-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

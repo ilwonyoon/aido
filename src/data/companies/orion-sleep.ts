@@ -5,6 +5,7 @@ export const orionSleep: Company = {
   name: 'Orion Sleep',
   description: 'AI-enabled mattress cover designed to improve sleep quality.',
   website: 'https://www.orionsleep.com',
+    screenshot: '/screenshots/orion-sleep-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

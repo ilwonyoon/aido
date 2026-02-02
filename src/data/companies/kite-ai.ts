@@ -8,6 +8,10 @@ export const kiteAi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://res.cloudinary.com/du5fldub3/image/upload/v1769728520/app/e0ef38d7-556c-44a4-84cf-f9e52d3783f5/eksczpgydk9jh2br57oe.png',
+  screenshot: '/screenshots/kite-ai-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const pika: Company = {
     name: 'Pika',
     description: 'AI video generation and editing platform. Text-to-video, image-to-video.',
     website: 'https://pika.art',
+    screenshot: '/screenshots/pika-screenshot.png',
     headquarters: 'Palo Alto, CA',
     remote: 'No',
 

@@ -8,6 +8,9 @@ export const airloom: Company = {
   headquarters: 'Laramie, WY',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/EPhgGEctQRqM84kqO5ktBJuryfOMdw3-F8TzETWCnywlJ1Rp9wQ8yhnhLYY3VQN9vag8JGEBqxX0P9xCbxa7vQ.png',
+
     // OG Image
     ogImage: '/og-images/airloom-og.webp',
 

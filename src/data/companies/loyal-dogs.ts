@@ -8,6 +8,10 @@ export const loyalDogs: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://loyal.com/images/loyal-og-preview.png',
+  screenshot: '/screenshots/loyal-dogs-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

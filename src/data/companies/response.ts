@@ -6,6 +6,7 @@ export const response: Company = {
   description:
     'Procurement software platform that helps companies run sourcing and purchasing workflows faster.',
   website: 'https://tryresponse.com/',
+    screenshot: '/screenshots/response-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

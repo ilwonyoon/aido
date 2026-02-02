@@ -8,6 +8,10 @@ export const cardless: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/hm4RTByVdin3oyQTHY2rMm9doQ.jpg',
+  screenshot: '/screenshots/cardless-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

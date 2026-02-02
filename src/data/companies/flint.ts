@@ -6,6 +6,7 @@ export const flint: Company = {
   description:
     'AI-powered finance operations platform focused on spend management and corporate finance workflows.',
   website: 'https://www.tryflint.com/',
+    screenshot: '/screenshots/flint-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

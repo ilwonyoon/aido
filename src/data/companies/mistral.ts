@@ -5,6 +5,7 @@ export const mistral: Company = {
     name: 'Mistral AI',
     description: 'European AI lab building open-weight and commercial LLMs. The French challenger to OpenAI.',
     website: 'https://mistral.ai',
+    screenshot: '/screenshots/mistral-screenshot.png',
     headquarters: 'Paris, France',
     remote: 'Yes',
 

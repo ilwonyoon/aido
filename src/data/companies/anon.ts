@@ -8,6 +8,10 @@ export const anon: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/689bc3805f94765d37f8acd7/68c977dfcc3ea38cda866895_seo_anon_20.jpg',
+  screenshot: 'https://iad.microlink.io/uPPMY_LseF7_D8t6ZjdbpJoLlkhAjLsuX974BekZ8criFkA6cqFMn_QXMou3tRBwO0Qq_dyrVxIFGMqBPYIPtQ.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

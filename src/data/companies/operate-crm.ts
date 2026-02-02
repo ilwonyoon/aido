@@ -6,6 +6,7 @@ export const operateCrm: Company = {
   description:
     'CRM built to run directly in Slack for faster relationship management and follow-ups.',
   website: 'https://operate.so/',
+    screenshot: '/screenshots/operate-crm-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 

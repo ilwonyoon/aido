@@ -5,8 +5,12 @@ export const sanity: Company = {
   name: 'Sanity',
   description: 'Content Operating System for structured content and developer-first workflows.',
   website: 'https://www.sanity.io',
+    screenshot: '/screenshots/sanity-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+
+  // Visual Assets
+  ogImage: 'https://cdn.sanity.io/images/3do82whm/next/85765ad960a5a13761600d98d9e46e64da186087-1200x630.png',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

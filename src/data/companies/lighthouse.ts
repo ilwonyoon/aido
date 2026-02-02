@@ -5,8 +5,12 @@ export const lighthouse: Company = {
   name: 'Lighthouse',
   description: 'Get a U.S. work visa with ease.',
   website: 'https://www.lighthousehq.com',
+    screenshot: '/screenshots/lighthouse-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
+
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/664c0dc11ed37c28d0e4a8b1/664db86e44eff954b6b05d6c_Opengraph.png',
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],

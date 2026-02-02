@@ -6,6 +6,7 @@ export const loonen: Company = {
   description:
     'Water company focused on delivering clean, purified water products with a sustainable approach.',
   website: 'https://loonen.com/',
+    screenshot: '/screenshots/loonen-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

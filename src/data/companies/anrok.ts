@@ -9,6 +9,9 @@ export const anrok: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/LXRyAoEKdj_bYWvwYSk0mGJrxblPdDTUWeo2QB41f5SHQ8Q58gV2jhufdkrv_HS718lWjQYfY4_yIjIvx83eBA.png',
+
     // OG Image
     ogImage: '/og-images/anrok-og.webp',
 

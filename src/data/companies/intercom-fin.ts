@@ -5,6 +5,7 @@ export const intercomFin: Company = {
     name: 'Intercom (Fin)',
     description: 'AI customer service platform with Fin AI Agent. Handles support conversations at scale.',
     website: 'https://www.intercom.com',
+    screenshot: '/screenshots/intercom-fin-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 

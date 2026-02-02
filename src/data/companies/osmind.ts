@@ -8,6 +8,10 @@ export const osmind: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/624378a4ca64f003be92dd58/62745dfb44c3890358a2ff86_1200x630.jpg',
+  screenshot: '/screenshots/osmind-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

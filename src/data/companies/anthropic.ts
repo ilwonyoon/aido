@@ -8,6 +8,9 @@ export const anthropic: Company = {
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/9PUGCDGRHJb-7ZLVnH47fjAe5C4hjNbIvAnn9Xj-GJpBQbaJsEAGQTTFlH99heFFdCPOP-tTSIMTX-3ZZEi_HQ.png',
+
     // OG Image
     ogImage: '/og-images/anthropic-og.webp',
 

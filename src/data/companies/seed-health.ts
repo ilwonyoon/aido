@@ -8,6 +8,10 @@ export const seedHealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  screenshot: '/screenshots/seed-health-screenshot.png',
+    ogImage: '/screenshots/seed-health-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

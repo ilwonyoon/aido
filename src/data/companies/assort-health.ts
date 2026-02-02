@@ -8,6 +8,9 @@ export const assortHealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: 'https://iad.microlink.io/EYCZurCLhQyxsaj-WxLSetIaZxheELt20p9EyGKQqYNG6atCE2fT_Txxe4ITv4tP-xOEw88oJ5DESqj_NwjR2g.png',
+
     // OG Image
     ogImage: '/og-images/assort-health-og.webp',
 

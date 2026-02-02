@@ -6,6 +6,7 @@ export const item: Company = {
   description:
     'Automated CRM for sales teams that handles logging, emails, and deal tracking with AI agents.',
   website: 'https://www.item.app/',
+    screenshot: '/screenshots/item-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 

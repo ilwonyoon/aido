@@ -5,6 +5,7 @@ export const mercor: Company = {
     name: 'Mercor',
     description: 'AI-powered hiring platform. Matches talent with opportunities using AI interviews.',
     website: 'https://mercor.com',
+    screenshot: '/screenshots/mercor-screenshot.png',
     headquarters: 'San Francisco, CA',
     remote: 'No',
 

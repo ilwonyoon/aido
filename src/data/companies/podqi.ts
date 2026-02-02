@@ -8,6 +8,10 @@ export const podqi: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://framerusercontent.com/images/WM0iBdKPIsyJd6TVD0VkhdMVYjU.png?width=1398&amp;height=880',
+  screenshot: '/screenshots/podqi-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

@@ -5,6 +5,7 @@ export const copyAi: Company = {
     name: 'Copy.ai',
     description: 'AI-powered Go-to-Market engine. Generate sales copy, automate workflows at scale.',
     website: 'https://www.copy.ai',
+    screenshot: '/screenshots/copy-ai-screenshot.png',
     headquarters: 'Remote',
     remote: 'Yes',
 

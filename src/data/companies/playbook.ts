@@ -8,6 +8,10 @@ export const playbook: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://playbook-at.ghost.io/content/images/2025/08/website-cover-3.jpg',
+  screenshot: '/screenshots/playbook-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const playbook: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Playbook', url: 'https://www.playbook.com' },
     { title: 'Playbook on startups.gallery', url: 'https://startups.gallery/companies/playbook' },

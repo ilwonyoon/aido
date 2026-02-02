@@ -8,6 +8,10 @@ export const mail0: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://0.email/og.png',
+  screenshot: '/screenshots/mail0-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const mail0: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Mail0', url: 'https://mail0.com' },
     { title: 'Mail0 on startups.gallery', url: 'https://startups.gallery/companies/mail0' },

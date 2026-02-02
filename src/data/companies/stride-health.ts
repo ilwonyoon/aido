@@ -8,6 +8,10 @@ export const strideHealth: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  // Visual Assets
+  ogImage: 'https://images.ctfassets.net/yjgtqlbfutxo/3CwyGqwPGfTUANm5EfJmb2/c14b59ac38bd17323d19811880a50e08/share.png',
+  screenshot: '/screenshots/stride-health-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const strideHealth: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Stride Health', url: 'https://www.stridehealth.com' },
     { title: 'Stride Health on startups.gallery', url: 'https://startups.gallery/companies/stride-health' },

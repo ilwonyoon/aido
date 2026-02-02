@@ -8,6 +8,10 @@ export const succint: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  screenshot: '/screenshots/succint-screenshot.png',
+    ogImage: '/screenshots/succint-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],

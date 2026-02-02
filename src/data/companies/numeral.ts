@@ -5,6 +5,7 @@ export const numeral: Company = {
   name: 'Numeral',
   description: 'Ecommerce sales tax automation platform.',
   website: 'https://www.numeralhq.com',
+    screenshot: '/screenshots/numeral-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 

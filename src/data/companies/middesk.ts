@@ -8,6 +8,10 @@ export const middesk: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  // Visual Assets
+  ogImage: 'https://cdn.prod.website-files.com/63beb0e2461232502d3d70a6/67fd277ecced752309a0caa6_middesk-home-v2-opengraph.webp',
+  screenshot: '/screenshots/middesk-screenshot.png',
+
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
@@ -90,7 +94,7 @@ export const middesk: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:55:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Middesk', url: 'https://middesk.com' },
     { title: 'Middesk on startups.gallery', url: 'https://startups.gallery/companies/middesk' },
