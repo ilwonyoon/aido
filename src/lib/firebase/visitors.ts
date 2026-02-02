@@ -13,6 +13,8 @@ import {
   increment,
 } from 'firebase/firestore';
 import { getFirebaseDb } from './lazy-config';
+import type { DeviceInfo, ReferrerInfo, UTMParams } from '@/lib/analytics/collectors';
+import type { PageVisit } from '@/lib/analytics/session-manager';
 
 export interface VisitorSession {
   sessionId: string;
@@ -26,6 +28,18 @@ export interface VisitorSession {
   pages: string[];
   userId?: string;
   isActive: boolean;
+
+  // Acquisition data (set once per session)
+  device?: DeviceInfo;
+  referrer?: ReferrerInfo;
+  utm?: UTMParams | null;
+
+  // Engagement data (updated periodically)
+  pageSequence?: PageVisit[];
+  totalTimeOnSite?: number; // seconds
+  maxScrollDepth?: number; // 0-100
+  isReturnVisitor?: boolean;
+  visitCount?: number;
 }
 
 export interface DailyStats {
@@ -35,11 +49,25 @@ export interface DailyStats {
   topPages: { path: string; views: number }[];
   countries: Record<string, number>;
   visitorSessions?: string[]; // Session IDs for tracking unique visitors
+
   // Event tracking fields (populated by events.ts)
   companyClicks?: Record<string, number>;
   companyDetailViews?: Record<string, number>;
   tierChanges?: Record<string, number>;
   articleViews?: Record<string, number>;
+
+  // Aggregated engagement (incremented on write)
+  trafficSources?: Record<string, number>;
+  deviceTypes?: Record<string, number>;
+  browsers?: Record<string, number>;
+  returnVisitorCount?: number;
+  bounceCount?: number;
+
+  // Engagement averages (computed on read)
+  totalTimeOnSiteSum?: number;
+  totalTimeOnSiteCount?: number;
+  totalScrollDepthSum?: number;
+  totalScrollDepthCount?: number;
 }
 
 /**
@@ -281,5 +309,130 @@ export async function getCountryDistribution(): Promise<Record<string, number>> 
   } catch (error) {
     console.error('Failed to get country distribution:', error);
     return {};
+  }
+}
+
+// ── Engagement Updates ─────────────────────────────────────────────────────
+
+/**
+ * Update session with engagement + acquisition data.
+ * Called periodically (every 30s) by the session manager.
+ */
+export async function updateEngagement(
+  sessionData: {
+    device?: DeviceInfo;
+    referrer?: ReferrerInfo;
+    utm?: UTMParams | null;
+    pageSequence?: PageVisit[];
+    totalTimeOnSite?: number;
+    maxScrollDepth?: number;
+    isReturnVisitor?: boolean;
+    visitCount?: number;
+  }
+): Promise<void> {
+  try {
+    const db = await getFirebaseDb();
+    const sessionId = getSessionId();
+    if (!sessionId) return;
+
+    const sessionRef = doc(db, 'visitors', 'sessions', 'data', sessionId);
+
+    // Only write non-undefined fields
+    const update: Record<string, unknown> = {
+      lastActivity: Timestamp.now(),
+      isActive: true,
+    };
+
+    if (sessionData.device) update.device = sessionData.device;
+    if (sessionData.referrer) update.referrer = sessionData.referrer;
+    if (sessionData.utm !== undefined) update.utm = sessionData.utm;
+    if (sessionData.pageSequence) update.pageSequence = sessionData.pageSequence;
+    if (sessionData.totalTimeOnSite !== undefined) update.totalTimeOnSite = sessionData.totalTimeOnSite;
+    if (sessionData.maxScrollDepth !== undefined) update.maxScrollDepth = sessionData.maxScrollDepth;
+    if (sessionData.isReturnVisitor !== undefined) update.isReturnVisitor = sessionData.isReturnVisitor;
+    if (sessionData.visitCount !== undefined) update.visitCount = sessionData.visitCount;
+
+    await setDoc(sessionRef, update, { merge: true });
+  } catch (error) {
+    console.error('Failed to update engagement:', error);
+  }
+}
+
+/**
+ * Update daily stats with acquisition counters.
+ * Called once per session start (not on every flush).
+ */
+export async function updateDailyAcquisition(
+  data: {
+    trafficSource: string;
+    deviceType: string;
+    browser: string;
+    isReturnVisitor: boolean;
+  }
+): Promise<void> {
+  try {
+    const db = await getFirebaseDb();
+    const today = new Date().toISOString().split('T')[0];
+    const dailyRef = doc(db, 'visitors', 'daily', 'stats', today);
+
+    const snap = await getDoc(dailyRef);
+    const existing = snap.exists() ? snap.data() : {};
+
+    const trafficSources = { ...(existing.trafficSources || {}) };
+    trafficSources[data.trafficSource] = (trafficSources[data.trafficSource] || 0) + 1;
+
+    const deviceTypes = { ...(existing.deviceTypes || {}) };
+    deviceTypes[data.deviceType] = (deviceTypes[data.deviceType] || 0) + 1;
+
+    const browsers = { ...(existing.browsers || {}) };
+    browsers[data.browser] = (browsers[data.browser] || 0) + 1;
+
+    const update: Record<string, unknown> = {
+      trafficSources,
+      deviceTypes,
+      browsers,
+    };
+
+    if (data.isReturnVisitor) {
+      update.returnVisitorCount = (existing.returnVisitorCount || 0) + 1;
+    }
+
+    await setDoc(dailyRef, update, { merge: true });
+  } catch (error) {
+    console.error('Failed to update daily acquisition:', error);
+  }
+}
+
+/**
+ * Update daily engagement averages.
+ * Called on session end or final flush.
+ */
+export async function updateDailyEngagement(
+  data: {
+    totalTimeOnSite: number;
+    maxScrollDepth: number;
+    pageCount: number;
+  }
+): Promise<void> {
+  try {
+    const db = await getFirebaseDb();
+    const today = new Date().toISOString().split('T')[0];
+    const dailyRef = doc(db, 'visitors', 'daily', 'stats', today);
+
+    const update: Record<string, unknown> = {
+      totalTimeOnSiteSum: increment(data.totalTimeOnSite),
+      totalTimeOnSiteCount: increment(1),
+      totalScrollDepthSum: increment(data.maxScrollDepth),
+      totalScrollDepthCount: increment(1),
+    };
+
+    // Single-page session = bounce
+    if (data.pageCount <= 1) {
+      update.bounceCount = increment(1);
+    }
+
+    await setDoc(dailyRef, update, { merge: true });
+  } catch (error) {
+    console.error('Failed to update daily engagement:', error);
   }
 }
