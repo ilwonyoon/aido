@@ -917,6 +917,12 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
             ]}
             onChange={setReviewStatusFilter}
           />
+          <MultiSelectFilter
+            label="Funding Stage"
+            values={fundingStageFilter}
+            options={fundingStageOptions}
+            onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
+          />
           <DropdownFilter
             label="AI Level"
             value={aiLevelFilter}
@@ -962,12 +968,6 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
             values={marketIndustryFilter}
             groups={marketIndustryGroups}
             onChange={setMarketIndustryFilter}
-          />
-          <MultiSelectFilter
-            label="Funding Stage"
-            values={fundingStageFilter}
-            options={fundingStageOptions}
-            onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
           />
           {hasActiveFilters && (
             <button
