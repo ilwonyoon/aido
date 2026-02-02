@@ -41,16 +41,16 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const viewW = typeof window !== 'undefined' ? window.innerWidth : 1024;
   const viewH = typeof window !== 'undefined' ? window.innerHeight : 768;
   const isMobile = viewW < 768;
-  const tooltipWidth = isMobile ? Math.min(viewW - 32, 320) : 320;
   const gap = 12;
   const margin = 16;
 
-  const spaceBelow = viewH - spotlight.bottom;
-  const spaceAbove = spotlight.top;
-
-  // Mobile: always center horizontally, prefer below
+  // Mobile: match card width (full width minus page padding), centered
   if (isMobile) {
-    const left = Math.max(margin, (viewW - tooltipWidth) / 2);
+    const tooltipWidth = viewW - margin * 2;
+    const left = margin;
+
+    const spaceBelow = viewH - spotlight.bottom;
+    const spaceAbove = spotlight.top;
 
     if (spaceBelow > 160) {
       const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
@@ -59,14 +59,31 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     if (spaceAbove > 160) {
       return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
     }
-    // Fallback: overlay at bottom of screen
+    // Fallback: fixed at bottom of screen, above the spotlight
     return { position: 'fixed', bottom: margin, left, width: tooltipWidth };
   }
 
-  // Desktop: try right side first (for panel steps)
+  // Desktop
+  const tooltipWidth = 320;
+  const spaceBelow = viewH - spotlight.bottom;
+  const spaceAbove = spotlight.top;
+
+  // Try left side of panel (for panel steps where spotlight is on right half)
+  const spaceLeft = spotlight.left;
+  if (spaceLeft > tooltipWidth + gap + margin && spotlight.top > 60) {
+    const idealTop = spotlight.top;
+    const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
+    return {
+      position: 'fixed',
+      top,
+      left: spotlight.left - tooltipWidth - gap,
+      width: tooltipWidth,
+    };
+  }
+
+  // Try right side
   const spaceRight = viewW - spotlight.right;
   if (spaceRight > tooltipWidth + gap + margin && spotlight.top > 60) {
-    // Clamp top so tooltip doesn't go above or below viewport
     const idealTop = spotlight.top;
     const top = Math.max(margin, Math.min(idealTop, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin));
     return {
@@ -77,18 +94,26 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
     };
   }
 
-  // Desktop: try below
-  if (spaceBelow > 180) {
+  // Try below
+  if (spaceBelow > TOOLTIP_HEIGHT_ESTIMATE + gap) {
     let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
     left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
     const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
     return { position: 'fixed', top, left, width: tooltipWidth };
   }
 
-  // Desktop: fall back to above
+  // Try above
+  if (spaceAbove > TOOLTIP_HEIGHT_ESTIMATE + gap) {
+    let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
+    left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
+    return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+  }
+
+  // Last resort: overlay inside the spotlight area, near the top
   let left = spotlight.left + spotlight.width / 2 - tooltipWidth / 2;
   left = Math.max(margin, Math.min(left, viewW - tooltipWidth - margin));
-  return { position: 'fixed', bottom: viewH - spotlight.top + gap, left, width: tooltipWidth };
+  const top = Math.max(margin, spotlight.top + gap);
+  return { position: 'fixed', top, left, width: tooltipWidth };
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -112,6 +137,20 @@ function clampToViewport(rect: SpotlightRect): SpotlightRect {
     right,
     bottom,
   };
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// Check if an element is hidden by CSS (display:none, visibility:hidden, etc.)
+// ────────────────────────────────────────────────────────────────────────────
+
+function isElementHidden(el: Element): boolean {
+  const rect = el.getBoundingClientRect();
+  if (rect.width === 0 && rect.height === 0) return true;
+
+  const style = window.getComputedStyle(el);
+  if (style.display === 'none' || style.visibility === 'hidden') return true;
+
+  return false;
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -159,6 +198,13 @@ export function SpotlightTour({
         return;
       }
       // Give up — auto-advance to next step
+      retryCountRef.current = 0;
+      onNext();
+      return;
+    }
+
+    // Immediately skip if element is hidden by CSS (e.g., desktop nav on mobile)
+    if (isElementHidden(el)) {
       retryCountRef.current = 0;
       onNext();
       return;
