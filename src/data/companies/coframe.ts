@@ -13,14 +13,14 @@ export const coframe: Company = {
   screenshot: '/screenshots/coframe-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['automation'],
+  aiTypes: ['multimodal', 'automation'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['commerce', 'creative-media'],
 
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$18.6M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -28,11 +28,13 @@ export const coframe: Company = {
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Dynamic Yield (Mastercard)', description: 'AI-powered personalization and optimization platform', whyTheyWin: 'Mastercard distribution and enterprise trust' },
+    { name: 'Intellimize', description: 'AI-driven website personalization and conversion optimization', whyTheyWin: 'Established in conversion optimization' },
+    { name: 'Optimizely', description: 'Digital experience platform with A/B testing and experimentation', whyTheyWin: 'Market leader in A/B testing' },
   ],
-  marketPosition: 'Bringing user experiences to life',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'AI-powered living interfaces platform that continuously optimizes website copy, visuals, and components — campaigns show avg 42% better CTR, 352% lift in top segment',
+  moat: ['Proprietary multimodal AI models for UI optimization', 'Khosla Ventures + Samsung NEXT backing', '42% avg CTR improvement'],
+  vsGiants: 'Optimizely requires manual A/B test creation; Coframe uses AI to continuously generate and optimize interface variations autonomously',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,9 @@ export const coframe: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Josh Payne', role: 'Founder & CEO', background: 'Stanford (BS, MS in CS, MBA). 20+ papers/patents in AI. Co-founded Autograph with Tom Brady ($200M raise, $2B valuation). Created GPT Migrate (first major autonomous AI code agent).' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Websites are static when they should be alive. AI can continuously optimize every element of a digital interface for each user.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +60,7 @@ export const coframe: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Marketing teams and growth engineers optimizing website conversion rates' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +96,7 @@ export const coframe: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T14:20:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Coframe', url: 'https://www.coframe.com' },
     { title: 'Coframe on startups.gallery', url: 'https://startups.gallery/companies/coframe' },

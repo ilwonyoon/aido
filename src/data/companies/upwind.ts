@@ -15,24 +15,26 @@ export const upwind: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['security'],
 
   // Business
   stage: 'Series A',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: '$1.5B',
+  totalFunding: '$430M',
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: '900% YoY revenue growth, 300+ employees',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Siemens, Carvana, Roku, Peloton, Wix, Nubank',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Wiz', description: 'Dominant CNAPP with agentless scanning and multi-cloud visibility', whyTheyWin: 'Market leader with massive funding' },
+    { name: 'Orca Security', description: 'Agentless CNAPP using patented SideScanning', whyTheyWin: 'Agentless approach, no performance impact' },
+    { name: 'Sysdig', description: 'Runtime security and monitoring for containers and cloud', whyTheyWin: 'Runtime security pioneer' },
   ],
-  marketPosition: 'Cloud security happens at runtime',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'Runtime-powered CNAPP unicorn at $1.5B valuation — 900% YoY revenue growth, secures Siemens, Carvana, Roku, Peloton, Wix, Nubank',
+  moat: ['Runtime-first approach (not just scanning)', '$1.5B unicorn valuation', 'All 60 former Spot.io employees joined'],
+  vsGiants: 'Wiz does agentless scanning (point-in-time); Upwind provides real-time runtime protection that catches active threats',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,12 @@ export const upwind: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Amiram Shachar', role: 'Co-Founder & CEO', background: 'Former CEO of Spot.io (sold to NetApp for $450M). 6 years as IDF Mamram officer. VP & GM at NetApp post-acquisition.' },
+    { name: 'Liran Polak', role: 'Co-Founder', background: 'IDF Mamram unit (top 1% selection). Co-founded Spot.io.' },
+    { name: 'Lavi Ferdman', role: 'Co-Founder', background: 'IDF Mamram unit. Co-founded Spot.io.' },
+    { name: 'Tal Zuri', role: 'Co-Founder', background: 'Spot.io alumni. Cloud infrastructure engineering.' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Cloud security needs real-time runtime protection, not just periodic scans. Agentless tools miss active threats.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +63,7 @@ export const upwind: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Enterprise security teams protecting cloud-native infrastructure' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +99,7 @@ export const upwind: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:35:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Upwind', url: 'https://www.upwind.io' },
     { title: 'Upwind on startups.gallery', url: 'https://startups.gallery/companies/upwind' },

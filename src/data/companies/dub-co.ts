@@ -15,24 +15,26 @@ export const dubCo: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['developer-tools', 'sales-marketing'],
 
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$2M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: '1,000+ companies including Twilio, Vercel, Perplexity',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Bitly', description: 'Most recognized URL shortener with enterprise analytics', whyTheyWin: 'Brand recognition and massive adoption' },
+    { name: 'Rebrandly', description: 'Branded link management platform for marketing teams', whyTheyWin: 'Strong branded link focus' },
+    { name: 'Short.io', description: 'Cost-effective link management with strong API', whyTheyWin: 'Developer-friendly and affordable' },
   ],
-  marketPosition: 'The modern link attribution platform',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'Open-source link attribution platform for modern marketing teams — short links, QR codes, and conversion analytics for 1,000+ companies including Twilio, Vercel, Perplexity',
+  moat: ['Open-source with strong community', 'AI-powered analytics', 'Free unlimited custom domains'],
+  vsGiants: 'Bitly is expensive ($300/mo for advanced metrics) with terrible free tier; Dub.co is open-source with generous free plan and modern developer experience',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,9 @@ export const dubCo: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Steven Tey', role: 'Founder & CEO', background: 'Minerva University CS graduate. Former Senior Developer Advocate at Vercel (2021-2023). Built Dub.co as open source project while at Vercel.' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Link management is overpriced and stuck in 2010. Open-source approach with modern UX and AI analytics democratizes link attribution.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +60,7 @@ export const dubCo: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Marketing teams and developers needing link management, attribution, and analytics' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +96,7 @@ export const dubCo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T14:20:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Dub', url: 'https://dub.co' },
     { title: 'Dub on startups.gallery', url: 'https://startups.gallery/companies/dub-co' },

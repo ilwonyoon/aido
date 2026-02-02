@@ -13,7 +13,12 @@ export type AIType =
   | 'search-retrieval'    // Perplexity, Glean
   | 'conversation-ai'     // Intercom, Gong
   | 'data-analysis'       // Hightouch
-  | 'automation';         // Zapier AI
+  | 'automation'          // Zapier AI
+  | 'agent'               // Browserbase, Cline (AI 에이전트)
+  | 'llm-app'             // Freed, Thatch (LLM 기반 앱)
+  | 'voice'               // Freed, ElevenLabs (음성 AI)
+  | 'computer-vision'     // Roboflow (컴퓨터 비전)
+  | 'multimodal';         // Coframe (멀티모달 AI)
 
 export type Market =
   | 'b2c'          // 개인 소비자
@@ -33,6 +38,8 @@ export type Industry =
   | 'legal'              // 법률
   | 'security'           // 보안
   | 'education'          // 교육
+  | 'data'               // 데이터/분석
+  | 'commerce'           // 커머스
   | 'other';             // 기타
 
 export const AI_TYPE_LABELS: Record<AIType, string> = {
@@ -48,6 +55,11 @@ export const AI_TYPE_LABELS: Record<AIType, string> = {
   'conversation-ai': 'Conversation AI',
   'data-analysis': 'Data Analysis',
   'automation': 'Automation',
+  'agent': 'AI Agent',
+  'llm-app': 'LLM App',
+  'voice': 'Voice AI',
+  'computer-vision': 'Computer Vision',
+  'multimodal': 'Multimodal AI',
 };
 
 export const MARKET_LABELS: Record<Market, string> = {
@@ -69,6 +81,8 @@ export const INDUSTRY_LABELS: Record<Industry, string> = {
   'legal': 'Legal',
   'security': 'Security',
   'education': 'Education',
+  'data': 'Data & Analytics',
+  'commerce': 'Commerce',
   'other': 'Other',
 };
 

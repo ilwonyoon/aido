@@ -15,24 +15,26 @@ export const walrus: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['data', 'other'],
 
   // Business
-  stage: 'Seed',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  stage: 'Token Sale',
+  valuation: '~$2B (WAL token)',
+  totalFunding: '$140M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: '120+ projects building on Walrus',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Filecoin', description: 'Decentralized storage with full replication', whyTheyWin: 'First mover, large ecosystem' },
+    { name: 'Arweave', description: 'Permanent decentralized storage', whyTheyWin: 'One-time payment model' },
+    { name: 'IPFS', description: 'Content-addressed P2P file protocol', whyTheyWin: 'Open protocol, massive adoption' },
   ],
-  marketPosition: 'Scalable, onchain storage',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'Next-gen programmable decentralized storage on Sui using novel 2D erasure coding — 100x cost reduction vs competitors',
+  moat: ['Novel 2D erasure coding', 'Sui blockchain ecosystem', 'Mysten Labs backing'],
+  vsGiants: 'Filecoin/Arweave use 25-100x replication overhead; Walrus achieves same reliability with 4-5x',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,11 @@ export const walrus: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Evan Cheng', role: 'Co-Founder & CEO (Mysten Labs)', background: '10 yrs at Apple as LLVM tech lead. Led Novi Research at Meta. Co-authored Move language.' },
+    { name: 'George Danezis', role: 'Co-Founder & Chief Scientist', background: 'Distributed systems and cryptography expert. Former Novi Research at Meta.' },
+    { name: 'Sam Blackshear', role: 'Co-Founder & CTO', background: 'Programming languages expert, lead architect of Move at Meta.' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Decentralized storage should be as fast and cheap as centralized solutions, not 25-100x more expensive.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -94,7 +98,7 @@ export const walrus: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T14:20:00',
+  lastUpdated: '2026-02-02T17:30:00',
   sources: [
     { title: 'Walrus', url: 'https://www.walrus.xyz' },
     { title: 'Walrus on startups.gallery', url: 'https://startups.gallery/companies/walrus' },

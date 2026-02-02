@@ -15,12 +15,12 @@ export const stytch: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['developer-tools', 'security'],
 
   // Business
   stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: '$1B',
+  totalFunding: '$146M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -28,11 +28,13 @@ export const stytch: Company = {
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Clerk', description: 'Developer-first authentication and user management platform', whyTheyWin: 'Simpler developer experience' },
+    { name: 'Auth0 (Okta)', description: 'Identity-as-a-service platform acquired by Okta for $6.5B', whyTheyWin: 'Massive market share and brand recognition' },
+    { name: 'HYPR', description: 'Passwordless MFA and identity assurance platform', whyTheyWin: 'Passwordless focus' },
   ],
-  marketPosition: 'Authentication infrastructure for developers',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'Developer-first identity and access management platform focused on passwordless authentication — unicorn at $1B valuation since 2021',
+  moat: ['Passwordless-first approach', '$1B unicorn valuation', 'Coatue + Benchmark + Thrive Capital backing'],
+  vsGiants: 'Auth0/Okta is legacy and complex; Stytch is developer-first with passwordless as default and modern fraud prevention',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,10 @@ export const stytch: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Reed McGinley-Stempel', role: 'Co-Founder & CEO', background: 'Former consultant at Bain & Company. Previously worked at Plaid on authentication.' },
+    { name: 'Julianna Lamb', role: 'Co-Founder & CTO', background: 'Engineer at Strava then Plaid (backend team, authentication and fraud detection).' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Authentication is broken — passwords are insecure and UX-hostile. Every app needs auth but building it well is incredibly hard.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +61,7 @@ export const stytch: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Developers building authentication and identity management for web/mobile apps' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +97,7 @@ export const stytch: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T14:20:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Stytch', url: 'https://stytch.com' },
     { title: 'Stytch on startups.gallery', url: 'https://startups.gallery/companies/stytch' },

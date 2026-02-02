@@ -13,26 +13,28 @@ export const inkeep: Company = {
   screenshot: '/screenshots/inkeep-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['automation'],
+  aiTypes: ['agent', 'search-retrieval'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['developer-tools'],
 
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$13M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Anthropic, Midjourney, Clay, PostHog',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Kapa.ai', description: 'AI-powered documentation assistant for developer-facing products', whyTheyWin: 'Developer docs specialization' },
+    { name: 'Mendable', description: 'YC-backed chat-powered search for docs', whyTheyWin: 'One-line deployment simplicity' },
+    { name: 'Glean', description: 'Enterprise AI search across all company apps ($4.6B valuation)', whyTheyWin: 'Enterprise scale and funding' },
   ],
-  marketPosition: 'AI support you can trust',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'No-code + code AI agent platform for CX/ops teams, transforming documentation into conversational AI assistants — serves Anthropic, Midjourney, Clay, PostHog',
+  moat: ['Anthropic + Midjourney as customers', 'Khosla Ventures + YC backing', 'Two-way sync between no-code builder and TypeScript SDK'],
+  vsGiants: 'Glean targets broad enterprise search; Inkeep specializes in turning product documentation into AI-powered customer support agents',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,10 @@ export const inkeep: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Nick Gomez', role: 'Co-Founder & CEO', background: 'MIT (Business & CS). Previously at Microsoft leading developer experiences in identity space for 3 years.' },
+    { name: 'Robert Tran', role: 'Co-Founder & CTO', background: 'MIT (MS in CS, BS in CS & Math). Former Head of Engineering at illumis (acquired by ComplySci).' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Product documentation is a goldmine of support knowledge, but customers still struggle to find answers. AI agents should surface the right docs instantly.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +61,7 @@ export const inkeep: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Developer-facing companies needing AI-powered documentation search and support' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +97,7 @@ export const inkeep: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:35:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Inkeep', url: 'https://www.inkeep.com' },
     { title: 'Inkeep on startups.gallery', url: 'https://startups.gallery/companies/inkeep' },

@@ -13,26 +13,28 @@ export const superpower: Company = {
   screenshot: '/screenshots/superpower-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['automation'],
+  aiTypes: ['llm-app'],
   markets: ['b2b'],
-  industries: ['other'],
+  industries: ['healthcare'],
 
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  totalFunding: '$34M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: '150K waitlist',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Function Health', description: 'Comprehensive biomarker testing platform co-founded by Mark Hyman', whyTheyWin: 'Mark Hyman brand and Ezra MRI acquisition' },
+    { name: 'InsideTracker', description: 'Blood biomarker analysis with personalized nutrition recommendations', whyTheyWin: 'DNA integration and flexible testing' },
+    { name: 'Lifeforce', description: 'Health optimization platform with at-home diagnostics', whyTheyWin: 'Functional medicine doctors and hormone therapy' },
   ],
-  marketPosition: 'The most advanced platform to optimize your health',
-  moat: ['Unknown'],
-  vsGiants: 'Unknown',
+  marketPosition: 'AI-powered preventive health platform — 100+ biomarker testing at $199/year with personalized health plans, 24/7 AI guidance, and concierge physician access. 150K waitlist',
+  moat: ['$199/year vs competitors at $500+', '150K waitlist', '100+ biomarkers per test'],
+  vsGiants: 'Function Health charges $499/year with limited AI; Superpower offers 100+ biomarkers at $199 with 24/7 AI health guidance',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -41,9 +43,11 @@ export const superpower: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Jacob Peters', role: 'Co-Founder & CEO', background: 'Former data scientist at J.P. Morgan. Co-founded Commsor (raised $68M). UVA graduate.' },
+    { name: 'Kevin Unkrich', role: 'Co-Founder & CTO', background: 'Technical co-founder leading engineering and platform development.' },
+    { name: 'Max Marchione', role: 'Co-Founder', background: 'Co-founder contributing to company operations and growth strategy.' },
   ],
-  whyBuilding: 'Unknown',
+  whyBuilding: 'Preventive health testing is expensive and inaccessible. AI can make comprehensive health monitoring affordable for everyone.',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -58,7 +62,7 @@ export const superpower: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Unknown' },
+  targetAudiences: { primary: 'Health-conscious individuals wanting affordable, AI-powered preventive health monitoring' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -94,7 +98,7 @@ export const superpower: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:35:00',
+  lastUpdated: '2026-02-02T18:00:00',
   sources: [
     { title: 'Superpower', url: 'https://www.superpower.com' },
     { title: 'Superpower on startups.gallery', url: 'https://startups.gallery/companies/superpower' },

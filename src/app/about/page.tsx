@@ -42,9 +42,13 @@ export default function AboutPage() {
       <section className="space-y-4 text-[var(--muted)] leading-relaxed mb-12">
         <p>
           Hi, I&apos;m Ilwon — a Product Designer looking for my next thing in AI.
+          Previously at{' '}
+          <span className="text-[var(--foreground)]">Meta</span> and{' '}
+          <span className="text-[var(--foreground)]">Google</span>,
+          where I designed products used by billions.
         </p>
         <p>
-          I spent the past year in South Korea as Head of Design at{' '}
+          Most recently, I spent a year in South Korea as Head of Design at{' '}
           <a href="https://www.bucketplace.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-light)] hover:underline">
             Bucketplace
           </a>
@@ -56,6 +60,16 @@ export default function AboutPage() {
         <p>
           I came back to the States and realized my mental map of tech was about two paradigm
           shifts out of date. So I did what any designer would do — I made a tool.
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/ilwonyoon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[var(--accent-light)] hover:underline"
+          >
+            Connect with me on LinkedIn &rarr;
+          </a>
         </p>
       </section>
 
