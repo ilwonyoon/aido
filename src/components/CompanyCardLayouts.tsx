@@ -78,7 +78,7 @@ export function CompanyListRow({
               <span className="text-xs text-[var(--muted)]">
                 {company.headquarters} &middot; {company.stage}
                 {company.totalFunding && company.totalFunding !== 'Unknown' && <> &middot; {company.totalFunding}</>}
-                {company.remote && company.remote !== 'Unknown' && <> &middot; {company.remote}</>}
+                {company.remote && company.remote !== 'Unknown' && <> &middot; {company.remote === 'Yes' ? 'Remote' : company.remote === 'No' ? 'On-site' : company.remote}</>}
               </span>
             </div>
           </div>
