@@ -77,6 +77,7 @@ export function CompanyListRow({
               </span>
               <span className="text-xs text-[var(--muted)]">
                 {company.headquarters} &middot; {company.stage}
+                {company.totalFunding && company.totalFunding !== 'Unknown' && <> &middot; {company.totalFunding}</>}
                 {company.remote && company.remote !== 'Unknown' && <> &middot; {company.remote}</>}
               </span>
             </div>
@@ -225,7 +226,7 @@ export function CompanyCard({
         </div>
         <div className="text-xs text-[var(--muted)] text-right flex-shrink-0 leading-relaxed">
           <div>{company.headquarters.split(',')[0]}</div>
-          <div>{company.stage}</div>
+          <div>{company.stage}{company.totalFunding && company.totalFunding !== 'Unknown' && ` · ${company.totalFunding}`}</div>
         </div>
       </div>
 
