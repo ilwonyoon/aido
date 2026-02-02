@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies (fresh resolve for Linux native binaries)
+        run: rm -f package-lock.json && npm install
 
       - name: Build Next.js
         env:
