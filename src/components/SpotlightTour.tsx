@@ -44,23 +44,25 @@ function getTooltipStyle(spotlight: SpotlightRect): React.CSSProperties {
   const gap = 12;
   const margin = 16;
 
-  // Mobile: match page container padding (px-4 = 16px, sm:px-6 = 24px)
+  // Mobile: measure the actual <main> element to get exact card container bounds
   if (isMobile) {
-    const pagePad = viewW >= 640 ? 24 : 16;
+    const mainEl = typeof document !== 'undefined' ? document.querySelector('main') : null;
+    const mainRect = mainEl?.getBoundingClientRect();
+    const tooltipLeft = mainRect ? mainRect.left : 16;
+    const tooltipWidth = mainRect ? mainRect.width : viewW - 32;
 
     const spaceBelow = viewH - spotlight.bottom;
     const spaceAbove = spotlight.top;
 
-    // Use left + right (not width) so the browser calculates width to match container
     if (spaceBelow > 160) {
       const top = Math.min(spotlight.bottom + gap, viewH - TOOLTIP_HEIGHT_ESTIMATE - margin);
-      return { position: 'absolute', top, left: pagePad, right: pagePad };
+      return { position: 'absolute', top, left: tooltipLeft, width: tooltipWidth };
     }
     if (spaceAbove > 160) {
-      return { position: 'absolute', bottom: viewH - spotlight.top + gap, left: pagePad, right: pagePad };
+      return { position: 'absolute', bottom: viewH - spotlight.top + gap, left: tooltipLeft, width: tooltipWidth };
     }
     // Fallback: fixed at bottom of screen
-    return { position: 'absolute', bottom: margin, left: pagePad, right: pagePad };
+    return { position: 'absolute', bottom: margin, left: tooltipLeft, width: tooltipWidth };
   }
 
   // Desktop
