@@ -447,7 +447,7 @@ function HomePageContent() {
           }}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)]/80 backdrop-blur-md border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"

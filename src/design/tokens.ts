@@ -42,7 +42,11 @@ export const typography = {
   fontFamily: {
     sans: 'var(--font-sans)',
     mono: 'var(--font-mono)',
+    jbMono: 'var(--font-jb-mono)',
   },
+
+  // Optical scale factor for JB Mono (monospace → visual parity)
+  jbScale: 0.9,
 
   // Font sizes
   fontSize: {

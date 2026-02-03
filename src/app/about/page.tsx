@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { TextReveal } from '@/components/TextReveal';
 
 export const metadata = {
   title: 'About — AIDO',
@@ -32,7 +33,9 @@ export default function AboutPage() {
 
       {/* Title */}
       <div className="mb-12">
-        <h1 className="text-4xl font-semibold mb-3">A Designer&apos;s Guide to the AI Landscape</h1>
+        <h1 className="text-4xl font-semibold mb-3">
+          <TextReveal text="A Designer's Guide to the AI Landscape" />
+        </h1>
         <p className="text-lg text-[var(--muted)]">
           How I evaluate AI companies — and how you might too.
         </p>

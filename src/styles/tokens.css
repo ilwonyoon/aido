@@ -39,6 +39,10 @@
   --primitive-radius-4: 12px;
   --primitive-radius-full: 9999px;
 
+  /* Font Family */
+  --font-jb-mono: var(--font-jb-mono);
+  --jb-scale: 0.9;
+
   /* Font Size Scale (17px base) */
   --primitive-font-size-xs: 0.706rem;   /* 12px */
   --primitive-font-size-sm: 0.824rem;   /* 14px */

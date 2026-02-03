@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
@@ -11,6 +11,7 @@ export function Navigation() {
   const pathname = usePathname();
   const { user } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const isAdmin = user?.email === 'ilwonyoon@gmail.com';
 
@@ -21,8 +22,27 @@ export function Navigation() {
     return pathname.startsWith(path);
   };
 
+  const handleScroll = useCallback(() => {
+    setScrolled(window.scrollY > 8);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
   return (
-    <nav className="border-b border-[var(--border)] sticky top-0 bg-[var(--background)] z-[60]">
+    <nav
+      className="sticky top-0 z-[60] transition-[background-color,backdrop-filter] duration-500 ease-out"
+      style={scrolled ? {
+        backgroundColor: 'color-mix(in srgb, var(--background) 60%, transparent)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+      } : {
+        backgroundColor: 'transparent',
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-semibold tracking-tight">
           AIDO

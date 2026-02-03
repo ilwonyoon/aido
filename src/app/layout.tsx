@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import { Navigation } from "@/components/Navigation";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { PageBackground } from "@/components/PageBackground";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +15,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jb-mono",
   subsets: ["latin"],
 });
 
@@ -75,17 +81,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <ThemeProvider>
           <AuthProvider>
             <ErrorBoundary>
+              <PageBackground />
               <AnalyticsTracker />
-              <Navigation />
-              <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
-                {children}
-              </main>
-              <footer className="border-t border-[var(--border)] py-6" />
+              <div className="relative z-[1]">
+                <Navigation />
+                <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
+                  {children}
+                </main>
+                <footer className="border-t border-[var(--border)] py-6" />
+              </div>
             </ErrorBoundary>
           </AuthProvider>
         </ThemeProvider>
