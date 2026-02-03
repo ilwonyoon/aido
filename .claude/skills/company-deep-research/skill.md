@@ -28,6 +28,7 @@ Tier 0/1 회사에 대한 VC-level 비즈니스 분석 + Product Design 팀 인�
 1. 해당 회사가 이미 `src/data/companies/[id].ts`에 존재해야 함
 2. `/company-researcher`로 기본 데이터가 채워져 있어야 함
 3. `/job-scraper`로 openRoles가 수집되어 있어야 함
+4. job-scraper가 robot fail이면 `HTTP → Playwright MCP → ATS endpoint` fallback 적용 후 결과를 사용
 
 **기존 데이터 위에 딥 리서치를 추가하는 방식.**
 

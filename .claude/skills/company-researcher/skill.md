@@ -48,6 +48,16 @@ const companyData = await collectCompanyData(companyName);
 const finalCompany = { ...companyData, openRoles: jobResults.openRoles };
 ```
 
+#### Phase 0-A: Job Scraper 실패 내구성 규칙 (필수)
+
+`job-scraper`에서 `robot failed`/`403`/`captcha`가 발생하면:
+
+1. `job-scraper`의 fallback ladder를 그대로 적용한다.
+   - HTTP 재시도 → Playwright MCP → ATS 직접 엔드포인트
+2. 그래도 확정 불가인 role은 `openRoles`에 추가하지 않는다.
+3. 이 경우 `sources`에 검증 시도 경로를 남기고, tracking/notes에 `needs_review` 성격의 메모를 남긴다.
+4. 실패했다고 전체 company 리서치를 중단하지 말고, 나머지 필드는 계속 채운다.
+
 ---
 
 ### Phase 1: Basic Information (필수)
