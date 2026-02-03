@@ -10,8 +10,6 @@ export const natural: Company = {
   remote: 'No',
 
   // Visual Assets
-  ogImage: 'http://localhost:3000/opengraph.jpg',
-
 
   // Multi-dimensional Tags
   aiTypes: ['automation'],
