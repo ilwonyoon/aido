@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { companies, getCompanyById } from '@/data/companies';
 import { CompanyDetail } from '@/components/CompanyDetail';
 import { aiLevels } from '@/design/tokens';
@@ -27,7 +29,20 @@ export async function generateMetadata({
 
   const jobCount = company.openRoles.length;
   const levelConfig = aiLevels[company.aiNativeLevel];
-  const ogImage = company.media?.ogImage ?? `/logos/${company.id}.png`;
+
+  const rawOgImage = company.media?.ogImage ?? company.ogImage;
+  const companyOgPath = `/og-images/${company.id}-og.webp`;
+  const hasLocalOgImage = existsSync(join(process.cwd(), 'public', 'og-images', `${company.id}-og.webp`));
+
+  let ogImage: string;
+  if (rawOgImage && !rawOgImage.includes('localhost')) {
+    ogImage = rawOgImage;
+  } else if (hasLocalOgImage) {
+    ogImage = companyOgPath;
+  } else {
+    ogImage = '/og-image.png';
+  }
+
   const ogImageUrl = ogImage.startsWith('http')
     ? ogImage
     : `https://aido-d2cc0.web.app${ogImage}`;
