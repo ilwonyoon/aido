@@ -6,6 +6,7 @@ import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/
 import { getAiLevelConfig } from '@/design/tokens';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { useAuth } from '@/contexts/AuthContext';
+import { useIsTourActive } from '@/contexts/TourContext';
 import { CompanyLogo } from './CompanyLogo';
 import { DesignFocus } from './DesignFocus';
 
@@ -52,6 +53,7 @@ export function CompanyListRow({
   dataTour?: string;
 }) {
   const { user } = useAuth();
+  const isTourActive = useIsTourActive();
   const config = getAiLevelConfig(company.aiNativeLevel);
   const roles = company.openRoles;
 
@@ -63,7 +65,7 @@ export function CompanyListRow({
       void trackFirestoreEvent('company_click', {
         companyId: company.id,
         companyName: company.name,
-        source: 'list_row',
+        source: isTourActive ? 'tour' : 'list_row',
       }, user?.email);
     }
   };
@@ -211,6 +213,7 @@ export function CompanyCard({
   dataTour?: string;
 }) {
   const { user } = useAuth();
+  const isTourActive = useIsTourActive();
   const config = getAiLevelConfig(company.aiNativeLevel);
   const whyJoin = company.tracking.whyJoin.slice(0, 3);
   const topWhyNot = company.tracking.whyNot[0];
@@ -224,7 +227,7 @@ export function CompanyCard({
       void trackFirestoreEvent('company_click', {
         companyId: company.id,
         companyName: company.name,
-        source: 'card',
+        source: isTourActive ? 'tour' : 'card',
       }, user?.email);
     }
   };

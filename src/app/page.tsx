@@ -10,6 +10,7 @@ import { SpotlightTour, type TourStep } from '@/components/SpotlightTour';
 import { usePageTransitions } from '@/lib/usePageTransitions';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
+import { TourProvider } from '@/contexts/TourContext';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Tour Steps
@@ -402,6 +403,7 @@ function HomePageContent() {
 
 
   return (
+    <TourProvider value={isTourActive}>
     <div ref={pageRef}>
       {/* <TransitionEditor /> — dev tool, uncomment to tune transitions */}
       {/* Backdrop - Click outside company list to close panel (desktop only) */}
@@ -533,6 +535,7 @@ function HomePageContent() {
         />
       )}
     </div>
+    </TourProvider>
   );
 }
 

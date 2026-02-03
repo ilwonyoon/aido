@@ -11,6 +11,8 @@ import {
   serverTimestamp,
   Timestamp,
   increment,
+  type QueryDocumentSnapshot,
+  type DocumentData,
 } from 'firebase/firestore';
 import { getFirebaseDb } from './lazy-config';
 import type { DeviceInfo, ReferrerInfo, UTMParams } from '@/lib/analytics/collectors';
@@ -70,17 +72,31 @@ export interface DailyStats {
   totalScrollDepthCount?: number;
 }
 
+const SESSION_TIMEOUT_MS = 30 * 60 * 1000; // 30 minutes (GA4 standard)
+const SESSION_ID_KEY = 'aido_session_id';
+const SESSION_TS_KEY = 'aido_session_ts';
+
 /**
- * Get or create session ID from localStorage
+ * Get or create session ID from localStorage.
+ * Rotates session after 30 min of inactivity (GA4 standard).
  */
 export function getSessionId(): string {
   if (typeof window === 'undefined') return '';
 
-  let sessionId = localStorage.getItem('aido_session_id');
-  if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).substring(7)}`;
-    localStorage.setItem('aido_session_id', sessionId);
-  }
+  const now = Date.now();
+  const existingId = localStorage.getItem(SESSION_ID_KEY);
+  const lastActivityStr = localStorage.getItem(SESSION_TS_KEY);
+  const lastActivity = lastActivityStr ? parseInt(lastActivityStr, 10) : 0;
+
+  const isExpired = !existingId || (now - lastActivity > SESSION_TIMEOUT_MS);
+
+  const sessionId = isExpired
+    ? `session_${now}_${Math.random().toString(36).substring(7)}`
+    : existingId;
+
+  localStorage.setItem(SESSION_ID_KEY, sessionId);
+  localStorage.setItem(SESSION_TS_KEY, String(now));
+
   return sessionId;
 }
 
@@ -222,23 +238,39 @@ async function updateDailyStats(
 }
 
 /**
- * Mark inactive sessions (called periodically)
+ * Mark inactive sessions (called periodically).
+ * Includes fallback for missing composite index.
  */
 export async function markInactiveSessions(): Promise<void> {
-  const db = await getFirebaseDb();
-  const fiveMinutesAgo = Timestamp.fromMillis(Date.now() - 5 * 60 * 1000);
-
   try {
+    const db = await getFirebaseDb();
+    const fiveMinutesAgo = Timestamp.fromMillis(Date.now() - 5 * 60 * 1000);
     const sessionsRef = collection(db, 'visitors', 'sessions', 'data');
-    const q = query(
-      sessionsRef,
-      where('isActive', '==', true),
-      where('lastActivity', '<', fiveMinutesAgo)
-    );
 
-    const snapshot = await getDocs(q);
-    const updates = snapshot.docs.map(doc =>
-      setDoc(doc.ref, { isActive: false }, { merge: true })
+    let staleDocs: QueryDocumentSnapshot<DocumentData>[] = [];
+
+    try {
+      // Try compound query first (requires composite index)
+      const q = query(
+        sessionsRef,
+        where('isActive', '==', true),
+        where('lastActivity', '<', fiveMinutesAgo)
+      );
+      const snapshot = await getDocs(q);
+      staleDocs = snapshot.docs;
+    } catch {
+      // Fallback: fetch all active, filter client-side
+      const fallbackQ = query(sessionsRef, where('isActive', '==', true));
+      const fallbackSnap = await getDocs(fallbackQ);
+      const cutoff = fiveMinutesAgo.toMillis();
+      staleDocs = fallbackSnap.docs.filter((d) => {
+        const data = d.data() as VisitorSession;
+        return data.lastActivity && data.lastActivity.toMillis() < cutoff;
+      });
+    }
+
+    const updates = staleDocs.map((d) =>
+      setDoc(d.ref, { isActive: false }, { merge: true })
     );
 
     await Promise.all(updates);
@@ -248,15 +280,37 @@ export async function markInactiveSessions(): Promise<void> {
 }
 
 /**
- * Get active visitors count
+ * Get active visitors count.
+ * Uses time-based filter as primary check (not just isActive flag)
+ * to avoid counting zombie sessions from days when cleanup didn't run.
  */
 export async function getActiveVisitorsCount(): Promise<number> {
   try {
     const db = await getFirebaseDb();
     const sessionsRef = collection(db, 'visitors', 'sessions', 'data');
-    const q = query(sessionsRef, where('isActive', '==', true));
-    const snapshot = await getDocs(q);
-    return snapshot.size;
+    const fiveMinutesAgo = Timestamp.fromMillis(Date.now() - 5 * 60 * 1000);
+
+    // Primary: time-based — sessions active in last 5 minutes
+    const q = query(
+      sessionsRef,
+      where('isActive', '==', true),
+      where('lastActivity', '>', fiveMinutesAgo)
+    );
+
+    try {
+      const snapshot = await getDocs(q);
+      return snapshot.size;
+    } catch {
+      // Fallback if composite index doesn't exist:
+      // fetch all active and filter client-side
+      const fallbackQ = query(sessionsRef, where('isActive', '==', true));
+      const fallbackSnap = await getDocs(fallbackQ);
+      const cutoff = Date.now() - 5 * 60 * 1000;
+      return fallbackSnap.docs.filter((d) => {
+        const data = d.data() as VisitorSession;
+        return data.lastActivity && data.lastActivity.toMillis() > cutoff;
+      }).length;
+    }
   } catch (error) {
     console.error('Failed to get active visitors:', error);
     return 0;
