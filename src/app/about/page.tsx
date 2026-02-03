@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { AboutReveal } from './AboutReveal';
-import { TypographyEditor } from './TypographyEditor';
+// import { TypographyEditor } from './TypographyEditor';
 
 export const metadata = {
   title: 'About — AIDO',
@@ -26,7 +26,7 @@ export default function AboutPage() {
 
   return (
     <>
-    <TypographyEditor />
+    {/* <TypographyEditor /> — dev tool, uncomment to tune typography */}
     <AboutReveal className="max-w-3xl mx-auto about-typo-scope">
       <div className="mb-8">
         <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
