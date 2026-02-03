@@ -6,6 +6,8 @@ import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
 import { SpotlightTour, type TourStep } from '@/components/SpotlightTour';
+import { TransitionEditor } from '@/components/TransitionEditor';
+import { usePageTransitions } from '@/lib/usePageTransitions';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
 
@@ -18,7 +20,8 @@ const TOUR_STEPS: TourStep[] = [
     target: '[data-tour="first-card"]',
     title: 'Explore any company',
     description: 'Click a card to open detailed analysis — founders, design team, competition, growth metrics, and open roles.',
-    padding: 8,
+    padding: 6,
+    delayMs: 2000,  // wait for page layout to settle (fonts, lazy content)
   },
   {
     target: '#quick-info',
@@ -26,7 +29,7 @@ const TOUR_STEPS: TourStep[] = [
     description: 'Stage, valuation, AI level, open roles, and funding — everything you need at a glance.',
     delayMs: 600,
     scrollContainer: '.panel-scroll',
-    padding: 24,
+    padding: 32,
     tooltipAlignSelector: '.card',
   },
   {
@@ -114,6 +117,7 @@ function HomePageContent() {
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
   const [tourStep, setTourStep] = useState<number | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const pageRef = useRef<HTMLDivElement>(null);
   const savedScrollPosition = useRef<number>(0);
   const selectedCompanyIdRef = useRef<string | null>(null);
   const tourStepRef = useRef<number | null>(null);
@@ -126,6 +130,9 @@ function HomePageContent() {
   tourStepRef.current = tourStep;
 
   const isTourActive = tourStep !== null;
+
+  // Page entrance transitions (with TransitionEditor support)
+  usePageTransitions(pageRef, !loading);
 
   // Initialize tour + load company from URL
   useEffect(() => {
@@ -395,7 +402,8 @@ function HomePageContent() {
 
 
   return (
-    <div>
+    <div ref={pageRef}>
+      <TransitionEditor />
       {/* Backdrop - Click outside company list to close panel (desktop only) */}
       {selectedCompanyId && !isTourActive && (
         <div
@@ -409,7 +417,7 @@ function HomePageContent() {
         className={selectedCompanyId && !isTourActive ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto' : ''}
       >
         {/* Header */}
-        <div className="mb-6">
+        <div data-transition="header" className="mb-6">
           <h1 className="text-2xl font-semibold mb-2">Where to Design AI</h1>
           <p className="text-[var(--muted)] text-sm leading-relaxed">
             AI-native companies with research-backed notes on why to join, and why not.
@@ -417,7 +425,7 @@ function HomePageContent() {
         </div>
 
         {/* Company List - Full Width */}
-        <div className="w-full">
+        <div data-transition="cards" className="w-full">
           <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} isFirstVisit={isTourActive && tourStep === 0} />
         </div>
       </div>
@@ -447,7 +455,7 @@ function HomePageContent() {
           }}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)]/80 backdrop-blur-md border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"

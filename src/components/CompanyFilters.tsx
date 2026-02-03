@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import { useState, useMemo, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
@@ -165,9 +165,13 @@ function DropdownFilter({
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
+      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 200);
+      const spaceOnRight = window.innerWidth - rect.left;
+      const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
+
       setDropdownStyle({
         top: rect.bottom + 4,
-        left: rect.left,
+        left: Math.max(16, left),
       });
     }
   }, [isOpen]);
@@ -203,12 +207,13 @@ function DropdownFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${buttonRef.current.offsetWidth}px`,
-              maxWidth: 'calc(100vw - 2rem)'
+              minWidth: `${Math.max(buttonRef.current.offsetWidth, 200)}px`,
+              maxWidth: 'calc(100vw - 2rem)',
+              maxHeight: '320px'
             }}
           >
             <button
@@ -503,8 +508,12 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     setIsMobile(window.innerWidth < 768);
   }, []);
 
-  useEffect(() => {
+  // Synchronous check before first paint to avoid flash of desktop layout on mobile
+  useLayoutEffect(() => {
     checkMobile();
+  }, [checkMobile]);
+
+  useEffect(() => {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, [checkMobile]);
@@ -980,15 +989,12 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
         </div>
 
         {/* Row 2: Company count + Sort + View Toggle */}
-        <div className="flex items-center justify-between pl-3 pr-3">
+        <div className="flex flex-wrap items-center justify-between gap-y-1 pl-3 pr-3">
           {/* Left: Company count */}
           <div className="text-sm font-medium text-[var(--foreground)]">
             {sortedCompanies.length === companies.length ? (
               <>
                 {companies.length} companies
-                {notReviewedCount > 0 && (
-                  <span className="text-[var(--muted)] ml-2">({notReviewedCount} not reviewed)</span>
-                )}
               </>
             ) : (
               <>
@@ -1013,9 +1019,9 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
               />
             </div>
 
-            {/* View toggle - Hide on mobile */}
+            {/* View toggle - Hide on mobile (CSS + JS for SSR safety) */}
             {!isMobile && (
-              <div className="flex items-center gap-1">
+              <div className="hidden md:flex items-center gap-1">
                 <button
                   onClick={handleViewModeList}
                   className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"

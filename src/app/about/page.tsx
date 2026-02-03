@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { companies } from '@/data/companies';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
+import { AboutReveal } from './AboutReveal';
+import { TypographyEditor } from './TypographyEditor';
 
 export const metadata = {
   title: 'About — AIDO',
@@ -23,7 +25,9 @@ export default function AboutPage() {
   const levelD = companies.filter(c => c.aiNativeLevel === 'D');
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <>
+    <TypographyEditor />
+    <AboutReveal className="max-w-3xl mx-auto about-typo-scope">
       <div className="mb-8">
         <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
           &larr; Back to companies
@@ -32,8 +36,10 @@ export default function AboutPage() {
 
       {/* Title */}
       <div className="mb-12">
-        <h1 className="text-4xl font-semibold mb-3">A Designer&apos;s Guide to the AI Landscape</h1>
-        <p className="text-lg text-[var(--muted)]">
+        <h1 className="text-4xl font-semibold mb-3">
+          A Designer&apos;s Guide to the AI Landscape
+        </h1>
+        <p data-subtitle className="text-lg text-[var(--text-secondary)]">
           How I evaluate AI companies — and how you might too.
         </p>
       </div>
@@ -65,7 +71,8 @@ export default function AboutPage() {
             href="https://www.linkedin.com/in/ilwonyoon/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-[var(--accent)] text-white rounded-lg hover:bg-[var(--accent-light)] transition-colors text-sm font-medium"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[var(--accent)] rounded-lg hover:bg-[var(--accent-light)] transition-colors font-medium tracking-wide"
+            style={{ color: '#fff' }}
           >
             Connect with me on LinkedIn &rarr;
           </a>
@@ -171,22 +178,24 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <div className="text-center py-8">
+      <div className="fade-block text-center py-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white rounded-lg hover:bg-[var(--accent-light)] transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] rounded-lg hover:bg-[var(--accent-light)] transition-colors"
+          style={{ color: '#fff' }}
         >
           Browse All Companies
         </Link>
       </div>
 
       {/* Credits */}
-      <div className="text-center text-xs text-[var(--muted)] pt-8 border-t border-[var(--border)]">
+      <div className="fade-block text-center text-xs text-[var(--muted)] pt-8 border-t border-[var(--border)]">
         Logos provided by{' '}
         <a href="https://logo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--foreground)]">
           Logo.dev
         </a>
       </div>
-    </div>
+    </AboutReveal>
+    </>
   );
 }
