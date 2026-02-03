@@ -6,7 +6,7 @@ import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
 import { SpotlightTour, type TourStep } from '@/components/SpotlightTour';
-import { TransitionEditor } from '@/components/TransitionEditor';
+// import { TransitionEditor } from '@/components/TransitionEditor';
 import { usePageTransitions } from '@/lib/usePageTransitions';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
@@ -403,7 +403,7 @@ function HomePageContent() {
 
   return (
     <div ref={pageRef}>
-      <TransitionEditor />
+      {/* <TransitionEditor /> — dev tool, uncomment to tune transitions */}
       {/* Backdrop - Click outside company list to close panel (desktop only) */}
       {selectedCompanyId && !isTourActive && (
         <div
