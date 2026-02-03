@@ -34,100 +34,44 @@ export default function DesignRefreshPage() {
 
         .mono-scope {
           font-family: var(--font-jb-mono), monospace;
-          --s: 0.9;
           line-height: 1.7;
           letter-spacing: -0.01em;
         }
 
-        /* ── Typography scale (JB Mono @ 90%) ─────────── */
+        /* ── Typography scale ─────────────────────────── */
 
-        .mono-scope .text-4xl {
-          font-size: calc(2.25rem * var(--s)) !important;
-          letter-spacing: -0.035em;
-          line-height: 1.15;
-        }
-        .mono-scope .text-3xl {
-          font-size: calc(1.875rem * var(--s)) !important;
-          letter-spacing: -0.03em;
-          line-height: 1.2;
-        }
-        .mono-scope .text-2xl {
-          font-size: calc(1.5rem * var(--s)) !important;
-          letter-spacing: -0.025em;
-          line-height: 1.25;
-        }
-        .mono-scope .text-xl {
-          font-size: calc(1.25rem * var(--s)) !important;
-          letter-spacing: -0.02em;
-          line-height: 1.3;
-        }
-        .mono-scope .text-lg {
-          font-size: calc(1.125rem * var(--s)) !important;
-          letter-spacing: -0.015em;
-          line-height: 1.35;
-        }
-        .mono-scope .text-base {
-          font-size: calc(1rem * var(--s)) !important;
-          line-height: 1.7;
-        }
-        .mono-scope .text-sm {
-          font-size: calc(0.875rem * var(--s)) !important;
-          line-height: 1.65;
-        }
-        .mono-scope .text-xs {
-          font-size: calc(0.75rem * var(--s)) !important;
-          letter-spacing: 0.01em;
-          line-height: 1.5;
-        }
+        .mono-scope .text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em; line-height: 1.15; }
+        .mono-scope .text-3xl { font-size: 1.294rem !important; letter-spacing: -0.03em; line-height: 1.2; }
+        .mono-scope .text-2xl { font-size: 1.176rem !important; letter-spacing: -0.025em; line-height: 1.25; }
+        .mono-scope .text-xl  { font-size: 1.029rem !important; letter-spacing: -0.02em; line-height: 1.3; }
+        .mono-scope .text-lg  { font-size: 0.882rem !important; letter-spacing: -0.015em; line-height: 1.35; }
+        .mono-scope .text-base { font-size: 0.882rem !important; line-height: 1.7; }
+        .mono-scope .text-sm  { font-size: 0.765rem !important; line-height: 1.65; }
+        .mono-scope .text-xs  { font-size: 0.676rem !important; letter-spacing: 0.01em; line-height: 1.5; }
 
         @media (min-width: 640px) {
-          .mono-scope .sm\\:text-4xl {
-            font-size: calc(2.25rem * var(--s)) !important;
-            letter-spacing: -0.035em;
-            line-height: 1.15;
-          }
+          .mono-scope .sm\\:text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em; line-height: 1.15; }
         }
 
         /* ── Component classes ────────────────────────── */
-        .mono-scope .section-title {
-          font-size: calc(0.75rem * var(--s)) !important;
-          letter-spacing: 0.08em;
-        }
-        .mono-scope .badge {
-          font-size: calc(0.75rem * var(--s)) !important;
-          letter-spacing: 0.01em;
-        }
+        .mono-scope .section-title { font-size: 0.676rem !important; letter-spacing: 0.08em; }
+        .mono-scope .badge { font-size: 0.676rem !important; letter-spacing: 0.01em; }
 
         /* ── Article content ──────────────────────────── */
-        .mono-scope .article-content h2 {
-          font-size: calc(1.75rem * var(--s)) !important;
-          letter-spacing: -0.03em;
-          line-height: 1.2;
-        }
-        .mono-scope .article-content h3 {
-          font-size: calc(1.375rem * var(--s)) !important;
-          letter-spacing: -0.02em;
-          line-height: 1.25;
-        }
-        .mono-scope .article-content h4 {
-          font-size: calc(1.125rem * var(--s)) !important;
-          letter-spacing: -0.015em;
-          line-height: 1.3;
-        }
+        .mono-scope .article-content h2 { font-size: 1.176rem !important; letter-spacing: -0.03em; line-height: 1.2; }
+        .mono-scope .article-content h3 { font-size: 1.029rem !important; letter-spacing: -0.02em; line-height: 1.25; }
+        .mono-scope .article-content h4 { font-size: 0.882rem !important; letter-spacing: -0.015em; line-height: 1.3; }
         .mono-scope .article-content p,
-        .mono-scope .article-content li {
-          font-size: calc(1rem * var(--s));
-          line-height: 1.8;
-        }
+        .mono-scope .article-content li { font-size: 0.882rem; line-height: 1.8; }
 
         /* ── Token typography utilities ────────────────── */
-        .mono-scope .text-display  { font-size: calc(var(--primitive-font-size-3xl) * var(--s)) !important; letter-spacing: -0.035em; }
-        .mono-scope .text-headline { font-size: calc(var(--primitive-font-size-2xl) * var(--s)) !important; letter-spacing: -0.025em; }
-        .mono-scope .text-title    { font-size: calc(var(--primitive-font-size-lg) * var(--s)) !important; letter-spacing: -0.015em; }
-        .mono-scope .text-body-lg  { font-size: calc(var(--primitive-font-size-base) * var(--s)) !important; }
-        .mono-scope .text-body     { font-size: calc(var(--primitive-font-size-sm) * var(--s)) !important; }
-        .mono-scope .text-label    { font-size: calc(var(--primitive-font-size-sm) * var(--s)) !important; letter-spacing: 0.02em; }
-        .mono-scope .text-caption  { font-size: calc(var(--primitive-font-size-xs) * var(--s)) !important; letter-spacing: 0.01em; }
+        .mono-scope .text-display  { font-size: 1.294rem !important; letter-spacing: -0.035em; }
+        .mono-scope .text-headline { font-size: 1.176rem !important; letter-spacing: -0.025em; }
+        .mono-scope .text-title    { font-size: 0.882rem !important; letter-spacing: -0.015em; }
+        .mono-scope .text-body-lg  { font-size: 0.882rem !important; }
+        .mono-scope .text-body     { font-size: 0.765rem !important; }
+        .mono-scope .text-label    { font-size: 0.765rem !important; letter-spacing: 0.02em; }
+        .mono-scope .text-caption  { font-size: 0.676rem !important; letter-spacing: 0.01em; }
 
         /* ── Flowing gradient background ─────────────── */
         .page-gradient {

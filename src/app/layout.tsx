@@ -48,11 +48,20 @@ export const metadata: Metadata = {
     siteName: 'AIDO',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIDO — AI Design Opportunities',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AIDO - AI Product Designer Jobs',
     description: 'Curated AI companies with 120+ product design roles',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -80,6 +89,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          /* JetBrains Mono Typography Scale (17px base) — inline to bypass CSS cache */
+          .text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em !important; line-height: 1.15 !important; }
+          .text-3xl { font-size: 1.294rem !important; letter-spacing: -0.03em !important; line-height: 1.2 !important; }
+          .text-2xl { font-size: 1.176rem !important; letter-spacing: -0.025em !important; line-height: 1.25 !important; }
+          .text-xl  { font-size: 1.029rem !important; letter-spacing: -0.02em !important; line-height: 1.3 !important; }
+          .text-lg  { font-size: 0.882rem !important; letter-spacing: -0.015em !important; line-height: 1.35 !important; }
+          .text-base { font-size: 0.882rem !important; line-height: 1.7 !important; }
+          .text-sm  { font-size: 0.765rem !important; line-height: 1.65 !important; }
+          .text-xs  { font-size: 0.706rem !important; letter-spacing: 0.01em !important; line-height: 1.5 !important; }
+          @media (min-width: 640px) {
+            .sm\\:text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em !important; line-height: 1.15 !important; }
+            .sm\\:text-3xl { font-size: 1.294rem !important; letter-spacing: -0.03em !important; line-height: 1.2 !important; }
+          }
+        `}} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
       >
@@ -88,12 +114,12 @@ export default function RootLayout({
             <ErrorBoundary>
               <PageBackground />
               <AnalyticsTracker />
-              <div className="relative z-[1]">
+              <div className="relative z-[1] overflow-x-hidden">
                 <Navigation />
                 <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
                   {children}
                 </main>
-                <footer className="border-t border-[var(--border)] py-6" />
+                <footer className="py-6" />
               </div>
             </ErrorBoundary>
           </AuthProvider>

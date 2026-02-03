@@ -44,10 +44,12 @@ export function PageBackground() {
   }, [handleMouseMove])
 
   return (
-    <div
-      ref={ref}
-      className="page-gradient fixed inset-0 pointer-events-none"
-      style={{ zIndex: 0, transform: 'translate(var(--mx, 0px), var(--my, 0px))' }}
-    />
+    <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
+      <div
+        ref={ref}
+        className="page-gradient absolute"
+        style={{ inset: '-40px', transform: 'translate(var(--mx, 0px), var(--my, 0px))' }}
+      />
+    </div>
   )
 }

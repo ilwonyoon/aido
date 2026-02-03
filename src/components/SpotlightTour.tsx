@@ -220,11 +220,12 @@ export function SpotlightTour({
 
     // Scroll element into view
     if (container && step.scrollContainer) {
-      // Panel scroll container
+      // Panel scroll container — use instant scroll so measurement is accurate
+      // (smooth scroll over long distances can take 500ms+ and cause stale positions)
       const htmlEl = el as HTMLElement;
       const containerEl = container as HTMLElement;
       const targetOffset = htmlEl.offsetTop - 80;
-      containerEl.scrollTo({ top: targetOffset, behavior: 'smooth' });
+      containerEl.scrollTo({ top: targetOffset, behavior: 'instant' });
     } else if (isMobile) {
       // Mobile: scroll page so target is near top, leaving room for tooltip at bottom
       const rect = el.getBoundingClientRect();
@@ -233,8 +234,9 @@ export function SpotlightTour({
       window.scrollTo({ top: Math.max(0, targetScrollTop), behavior: 'smooth' });
     }
 
-    // Wait for scroll to settle, then measure
-    const positionDelay = (step.scrollContainer || isMobile) ? 500 : 100;
+    // Wait for reveal animation to settle, then measure
+    // Panel sections use GSAP reveal (0.6s) triggered by IntersectionObserver after scroll
+    const positionDelay = (step.scrollContainer || isMobile) ? 900 : 100;
     setTimeout(() => {
       // Re-query the element fresh to avoid stale closure references
       let freshEl: Element | null = null;
@@ -332,55 +334,30 @@ export function SpotlightTour({
 
   return (
     <div className="fixed inset-0 z-[10000]" style={{ pointerEvents: 'none' }}>
-      {/* 4-piece overlay frame (allows clicks through the spotlight hole) */}
-      {/* Top */}
+      {/* Rounded spotlight overlay using box-shadow */}
       <div
-        className="fixed left-0 right-0 bg-black/80 transition-all duration-300"
-        style={{
-          top: 0,
-          height: Math.max(0, spotlight.top),
-          pointerEvents: 'auto',
-        }}
-        onClick={onSkip}
-      />
-      {/* Bottom */}
-      <div
-        className="fixed left-0 right-0 bottom-0 bg-black/80 transition-all duration-300"
-        style={{
-          top: spotlight.bottom,
-          pointerEvents: 'auto',
-        }}
-        onClick={onSkip}
-      />
-      {/* Left */}
-      <div
-        className="fixed bg-black/80 transition-all duration-300"
+        className="fixed transition-all duration-300"
         style={{
           top: spotlight.top,
-          left: 0,
-          width: Math.max(0, spotlight.left),
+          left: spotlight.left,
+          width: spotlight.width,
           height: spotlight.height,
-          pointerEvents: 'auto',
+          borderRadius: 12,
+          boxShadow: '0 0 0 9999px rgba(0,0,0,0.75)',
+          pointerEvents: 'none',
+          zIndex: 1,
         }}
-        onClick={onSkip}
       />
-      {/* Right */}
-      <div
-        className="fixed bg-black/80 transition-all duration-300"
-        style={{
-          top: spotlight.top,
-          left: spotlight.right,
-          right: 0,
-          height: spotlight.height,
-          pointerEvents: 'auto',
-        }}
-        onClick={onSkip}
-      />
+      {/* Invisible click-catchers for skip (4-piece frame around spotlight) */}
+      <div className="fixed top-0 left-0 right-0" style={{ height: Math.max(0, spotlight.top), pointerEvents: 'auto', zIndex: 2 }} onClick={onSkip} />
+      <div className="fixed left-0 right-0 bottom-0" style={{ top: spotlight.bottom, pointerEvents: 'auto', zIndex: 2 }} onClick={onSkip} />
+      <div className="fixed" style={{ top: spotlight.top, left: 0, width: Math.max(0, spotlight.left), height: spotlight.height, pointerEvents: 'auto', zIndex: 2 }} onClick={onSkip} />
+      <div className="fixed" style={{ top: spotlight.top, left: spotlight.right, right: 0, height: spotlight.height, pointerEvents: 'auto', zIndex: 2 }} onClick={onSkip} />
 
-      {/* Tooltip card — uses inverted theme for contrast */}
+      {/* Tooltip card — uses inverted theme for contrast, z-index above box-shadow overlay */}
       <div
         className="tour-tooltip p-4 sm:p-5 rounded-xl shadow-2xl animate-fadeIn"
-        style={{ ...tooltipStyle, pointerEvents: 'auto' }}
+        style={{ ...tooltipStyle, pointerEvents: 'auto', zIndex: 3 }}
       >
         {/* Step counter */}
         <div className="flex items-center gap-1.5 mb-2">

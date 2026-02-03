@@ -1,7 +1,9 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
+import gsap from 'gsap';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { useAuth } from '@/contexts/AuthContext';
@@ -45,9 +47,55 @@ function WorkTypeSection({
 
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
+  const detailRef = useRef<HTMLDivElement>(null);
+
+  // Self-contained scroll reveal using IntersectionObserver.
+  // Works in both window scroll and panel scroll contexts.
+  useEffect(() => {
+    const el = detailRef.current;
+    if (!el) return;
+
+    const blocks = el.querySelectorAll('[data-reveal]');
+    blocks.forEach((b) => gsap.set(b, { opacity: 0, y: 20 }));
+
+    // Find nearest scrollable parent (for panel context)
+    let scrollParent: Element | null = el.parentElement;
+    while (scrollParent && scrollParent !== document.documentElement) {
+      const overflow = getComputedStyle(scrollParent).overflowY;
+      if (overflow === 'auto' || overflow === 'scroll') break;
+      scrollParent = scrollParent.parentElement;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+              opacity: 1,
+              y: 0,
+              duration: 0.6,
+              ease: 'power2.out',
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: scrollParent !== document.documentElement ? scrollParent : null,
+        threshold: 0.1,
+      }
+    );
+
+    blocks.forEach((b) => observer.observe(b));
+
+    return () => {
+      observer.disconnect();
+      blocks.forEach((b) => gsap.set(b, { clearProps: 'opacity,y' }));
+    };
+  }, [company.id]);
 
   return (
-    <div className="w-full">
+    <div ref={detailRef} className="w-full">
       {/* Back Link */}
       <div className="mb-2">
         <button
@@ -69,7 +117,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
 
           {/* Header Info */}
-          <div className="mb-8">
+          <div data-reveal className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <CompanyLogo website={company.website} name={company.name} size={48} />
               <h1 className="text-2xl sm:text-3xl font-semibold">{company.name}</h1>
@@ -101,7 +149,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
 
           {/* Quick Info */}
-          <section id="quick-info" className="scroll-mt-20 space-y-4 mb-12">
+          <section id="quick-info" data-reveal className="scroll-mt-20 space-y-4 mb-12">
             <h2 id="quick-info-header" className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
@@ -289,7 +337,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           )}
 
           {/* Company */}
-          <section id="company" className="scroll-mt-20 space-y-8 mb-12">
+          <section id="company" data-reveal className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🏢 Company</h2>
 
             {/* Business */}
@@ -632,7 +680,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </section>
 
           {/* Design */}
-          <section id="design" className="scroll-mt-20 space-y-8 mb-12">
+          <section id="design" data-reveal className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🎨 Design</h2>
 
             {/* Design Team + Designer Links */}

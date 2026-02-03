@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleBySlug, getRelatedArticles } from '@/data/articles';
-import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
 import { ArticleVisualizations } from './ArticleVisualizations';
+import { ArticleReveal } from './ArticleReveal';
 import Link from 'next/link';
 
 export function generateStaticParams() {
@@ -78,7 +78,13 @@ export default async function ArticlePage({
   const relatedArticles = getRelatedArticles(article.slug, article.tags);
 
   return (
-    <article className="max-w-3xl mx-auto">
+    <ArticleReveal className="max-w-3xl mx-auto">
+      <div className="mb-8">
+        <Link href="/insights" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
+          &larr; Back to Insights
+        </Link>
+      </div>
+
       {/* Article Schema (JSON-LD) */}
       <script
         type="application/ld+json"
@@ -123,48 +129,50 @@ export default async function ArticlePage({
         </h1>
 
         {/* Excerpt/Subtitle */}
-        <p className="text-lg text-[var(--muted)] mb-4">{article.excerpt}</p>
+        <p data-subtitle className="text-lg text-[var(--muted)] mb-4">{article.excerpt}</p>
 
-        {/* Meta info */}
-        <div className="flex flex-wrap items-center gap-4 text-sm text-[var(--muted)]">
-          <div className="flex items-center gap-2">
-            <span>{article.author.name}</span>
-            {article.author.role && (
+        {/* Meta info + Tags — fades in after typing */}
+        <div data-header-meta>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-[var(--muted)]">
+            <div className="flex items-center gap-2">
+              <span>{article.author.name}</span>
+              {article.author.role && (
+                <>
+                  <span>•</span>
+                  <span>{article.author.role}</span>
+                </>
+              )}
+            </div>
+            <span>•</span>
+            <span>
+              {new Date(article.publishedDate).toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </span>
+            {article.readingTimeMinutes && (
               <>
                 <span>•</span>
-                <span>{article.author.role}</span>
+                <span>{article.readingTimeMinutes} min read</span>
               </>
             )}
           </div>
-          <span>•</span>
-          <span>
-            {new Date(article.publishedDate).toLocaleDateString('en-US', {
-              month: 'long',
-              day: 'numeric',
-              year: 'numeric',
-            })}
-          </span>
-          {article.readingTimeMinutes && (
-            <>
-              <span>•</span>
-              <span>{article.readingTimeMinutes} min read</span>
-            </>
+
+          {/* Tags */}
+          {article.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-4">
+              {article.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)]"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
           )}
         </div>
-
-        {/* Tags */}
-        {article.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-4">
-            {article.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)]"
-              >
-                #{tag}
-              </span>
-            ))}
-          </div>
-        )}
       </header>
 
       {/* Article Content */}
@@ -199,15 +207,6 @@ export default async function ArticlePage({
         </aside>
       )}
 
-      {/* Back to Insights */}
-      <div className="mt-8">
-        <Link
-          href="/insights"
-          className="text-[var(--accent-light)] hover:underline text-sm"
-        >
-          ← Back to Insights
-        </Link>
-      </div>
-    </article>
+    </ArticleReveal>
   );
 }

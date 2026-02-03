@@ -41,7 +41,6 @@
 
   /* Font Family */
   --font-jb-mono: var(--font-jb-mono);
-  --jb-scale: 0.9;
 
   /* Font Size Scale (17px base) */
   --primitive-font-size-xs: 0.706rem;   /* 12px */
