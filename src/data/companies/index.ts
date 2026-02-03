@@ -373,6 +373,36 @@ import { cline } from './cline';
 import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
+import { abacusAi } from './abacus-ai';
+import { affinityCo } from './affinity-co';
+import { afresh } from './afresh';
+import { agentIq } from './agent-iq';
+import { alleviateHealth } from './alleviate-health';
+import { altasAi } from './altas-ai';
+import { altimateAi } from './altimate-ai';
+import { ambientAi } from './ambient-ai';
+import { embeddingVc } from './embedding-vc';
+import { ensue } from './ensue';
+import { essentialAi } from './essential-ai';
+import { evvolveAndPartners } from './evvolve-and-partners';
+import { faction } from './faction';
+import { fairwai } from './fairwai';
+import { finthos } from './finthos';
+import { firefliesAi } from './fireflies-ai';
+import { fleetworks } from './fleetworks';
+import { floeLabs } from './floe-labs';
+import { fractionalAi } from './fractional-ai';
+import { fyxerAi } from './fyxer-ai';
+import { globalbizops } from './globalbizops';
+import { goodgoblinAi } from './goodgoblin-ai';
+import { gotofit } from './gotofit';
+import { heartthrobAi } from './heartthrob-ai';
+import { herostealthModeStartupDisruptingARealWorldSpaceInDireNeedOfAChange } from './herostealth-mode-startup-disrupting-a-real-world-space-in-dire-need-of-a-change';
+import { hipex } from './hipex';
+import { hippHealth } from './hipp-health';
+import { hive } from './hive';
+import { hiveai } from './hiveai';
+import { honeyBadgerLabs } from './honey-badger-labs';
 
 export const companies: Company[] = [
   anthropic,
@@ -748,6 +778,36 @@ export const companies: Company[] = [
   nowadays,
   alix,
   stytch,
+  abacusAi,
+  affinityCo,
+  afresh,
+  agentIq,
+  alleviateHealth,
+  altasAi,
+  altimateAi,
+  ambientAi,
+  embeddingVc,
+  ensue,
+  essentialAi,
+  evvolveAndPartners,
+  faction,
+  fairwai,
+  finthos,
+  firefliesAi,
+  fleetworks,
+  floeLabs,
+  fractionalAi,
+  fyxerAi,
+  globalbizops,
+  goodgoblinAi,
+  gotofit,
+  heartthrobAi,
+  herostealthModeStartupDisruptingARealWorldSpaceInDireNeedOfAChange,
+  hipex,
+  hippHealth,
+  hive,
+  hiveai,
+  honeyBadgerLabs,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
