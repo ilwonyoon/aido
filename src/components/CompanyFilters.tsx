@@ -3,14 +3,15 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
+import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/CompanyCardLayouts';
+import { getCompanyQualityScore, parseFundingAmount } from '@/lib/companyScoring';
 
-type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'aiLevel';
+type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'fundingSize' | 'aiLevel';
 
 function AiLevelText({ level }: { level: AiLevel }) {
   const config = getAiLevelConfig(level);
@@ -366,6 +367,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
   const [marketFilter, setMarketFilter] = useState<Market[]>([]);
   const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
+  const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -474,6 +476,18 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${counts[i]})` }));
   }, [companies]);
 
+  // Get Funding Stage options with counts
+  const fundingStageOptions = useMemo(() => {
+    const counts: Record<FundingStageCategory, number> = {} as Record<FundingStageCategory, number>;
+    companies.forEach(c => {
+      const cat = normalizeFundingStage(c.stage);
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    return (Object.keys(FUNDING_STAGE_LABELS) as FundingStageCategory[])
+      .filter(cat => counts[cat] > 0)
+      .map(cat => ({ value: cat, label: `${FUNDING_STAGE_LABELS[cat]} (${counts[cat]})` }));
+  }, [companies]);
+
   // Load interest statuses from Firestore (per user)
   useEffect(() => {
     if (loading) return;
@@ -528,10 +542,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       ([companyId, status]) => status && prev[companyId] !== status
     );
 
-    if (changedCompanies.length > 0) {
-      // Get the status they just selected (use the first changed company)
+    // Only auto-switch on single-company changes (user action),
+    // not bulk changes (initial Firestore load)
+    if (changedCompanies.length === 1) {
       const newStatus = changedCompanies[0][1];
-      // Auto-switch to that status filter (guaranteed non-null by filter above)
       if (newStatus) {
         setReviewStatusFilter(newStatus);
       }
@@ -541,7 +555,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     prevInterestStatusesRef.current = interestStatuses;
   }, [interestStatuses, reviewStatusFilter]);
 
-  // Progressive loading: load more cards as user scrolls
+  // Progressive loading: observe sentinel and load more on scroll
   useEffect(() => {
     const sentinel = loadMoreRef.current;
     if (!sentinel) return;
@@ -552,17 +566,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           setVisibleCount((prev) => prev + 20);
         }
       },
-      { rootMargin: '400px' }
+      { rootMargin: '600px' }
     );
 
     observer.observe(sentinel);
     return () => observer.disconnect();
-  }, []);
+  }, [visibleCount]);
 
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(20);
-  }, [reviewStatusFilter, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, sortBy]);
+  }, [reviewStatusFilter, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, fundingStageFilter, sortBy]);
 
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
@@ -639,9 +653,15 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!hasMatch) return false;
       }
 
+      // Funding Stage Filter
+      if (fundingStageFilter.length > 0) {
+        const companyStage = normalizeFundingStage(company.stage);
+        if (!fundingStageFilter.includes(companyStage)) return false;
+      }
+
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, fundingStageFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -686,11 +706,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           const orderB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
           if (orderA !== orderB) return orderA - orderB;
 
-          // Priority 3: AI Level (A > B > C > D)
-          const levelOrder = { A: 0, B: 1, C: 2, D: 3 };
-          if (a.aiNativeLevel !== b.aiNativeLevel) {
-            return levelOrder[a.aiNativeLevel] - levelOrder[b.aiNativeLevel];
-          }
+          // Priority 3: Company Quality Score (funding + founders + open roles)
+          const qualityA = getCompanyQualityScore(a);
+          const qualityB = getCompanyQualityScore(b);
+          if (qualityA !== qualityB) return qualityB - qualityA;
 
           // Priority 4: Alphabetical
           return a.name.localeCompare(b.name);
@@ -700,6 +719,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           // Secondary: Funding stage
           return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'fundingStage':
+          return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
+        case 'fundingSize':
+          const fundingSizeDiff = parseFundingAmount(b.totalFunding) - parseFundingAmount(a.totalFunding);
+          if (fundingSizeDiff !== 0) return fundingSizeDiff;
           return getFundingStageOrder(b.stage) - getFundingStageOrder(a.stage);
         case 'aiLevel':
           const levelOrder3 = { A: 0, B: 1, C: 2, D: 3 };
@@ -723,7 +746,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0 || fundingStageFilter.length > 0;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
@@ -733,6 +756,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     setAiTypeFilter([]);
     setMarketFilter([]);
     setIndustryFilter([]);
+    setFundingStageFilter([]);
   };
 
   return (
@@ -752,6 +776,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
               { value: 'all', label: 'All' },
             ]}
             onChange={setReviewStatusFilter}
+          />
+          <MultiSelectFilter
+            label="Funding Stage"
+            values={fundingStageFilter}
+            options={fundingStageOptions}
+            onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
           />
           <DropdownFilter
             label="AI Level"
@@ -843,6 +873,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
                   { value: 'recommended', label: 'Recommended' },
                   { value: 'teamSize', label: 'Team Size' },
                   { value: 'fundingStage', label: 'Funding Stage' },
+                  { value: 'fundingSize', label: 'Funding Size' },
                   { value: 'aiLevel', label: 'AI Level' },
                 ]}
                 onChange={handleSortChange}
