@@ -66,6 +66,7 @@ export function CompanyLogo(props: CompanyLogoProps) {
       alt={`${name} logo`}
       width={size}
       height={size}
+      loading="lazy"
       className="rounded-lg flex-shrink-0 bg-white"
       onError={() => setErrored(true)}
     />

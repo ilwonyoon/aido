@@ -380,25 +380,25 @@ export function CompanyDetail({ company }: { company: Company }) {
                       {company.revenue && (
                         <div>
                           <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Revenue</div>
-                          <div className="font-medium text-[var(--success)]">{company.revenue}</div>
+                          <div className="text-sm font-medium text-[var(--success)]">{company.revenue}</div>
                         </div>
                       )}
                       {company.growth && (
                         <div>
                           <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Growth</div>
-                          <div className="font-medium text-[var(--success)]">{company.growth}</div>
+                          <div className="text-sm font-medium text-[var(--success)]">{company.growth}</div>
                         </div>
                       )}
                       {company.runway && (
                         <div>
                           <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Runway</div>
-                          <div className="font-medium">{company.runway}</div>
+                          <div className="text-sm font-medium">{company.runway}</div>
                         </div>
                       )}
                       {company.customers && (
                         <div>
                           <div className="text-xs text-[var(--muted)] uppercase tracking-wide mb-1">Customers</div>
-                          <div className="font-medium">{company.customers}</div>
+                          <div className="text-sm font-medium">{company.customers}</div>
                         </div>
                       )}
                     </div>

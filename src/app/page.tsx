@@ -240,7 +240,7 @@ function HomePageContent() {
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
         ref={mainContentRef}
-        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8 scrollbar-hide' : ''}
       >
         {/* Header */}
         <div className="mb-6">
@@ -271,7 +271,7 @@ function HomePageContent() {
             bg-[var(--background)]
             border-l border-[var(--border)]
             z-[100]
-            overflow-y-auto
+            overflow-y-auto scrollbar-hide
             ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
           `}
           style={{

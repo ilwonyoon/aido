@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import Link from 'next/link';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
@@ -39,7 +39,7 @@ export function ListIcon({ active }: { active: boolean }) {
 // Company List Row (full-width, all data)
 // ────────────────────────────────────────────────────────────────────────────
 
-export function CompanyListRow({
+export const CompanyListRow = memo(function CompanyListRow({
   company,
   onCompanyClick,
   isHighlighted,
@@ -71,7 +71,7 @@ export function CompanyListRow({
   };
 
   return (
-    <div className={`px-5 py-6 cursor-pointer ${isHighlighted ? 'onboarding-highlight rounded-lg' : ''}`} onClick={handleClick} data-tour={dataTour}>
+    <div className={`px-5 py-6 cursor-pointer overflow-hidden ${isHighlighted ? 'onboarding-highlight rounded-lg' : ''}`} onClick={handleClick} data-tour={dataTour}>
       {/* Header row */}
       <div className="flex items-start justify-between gap-4 mb-1.5">
         <div className="flex items-center gap-2.5 min-w-0">
@@ -90,7 +90,7 @@ export function CompanyListRow({
               >
                 {company.aiNativeLevel}
               </span>
-              <span className="text-xs text-[var(--muted)]">
+              <span className="text-xs text-[var(--muted)] truncate">
                 {company.headquarters} &middot; {company.stage}
                 {company.totalFunding && company.totalFunding !== 'Unknown' && <> &middot; {company.totalFunding}</>}
                 {company.remote && company.remote !== 'Unknown' && <> &middot; {company.remote === 'Yes' ? 'Remote' : company.remote === 'No' ? 'On-site' : company.remote}</>}
@@ -108,7 +108,7 @@ export function CompanyListRow({
       </div>
 
       {/* Description */}
-      <p className="text-sm text-[var(--muted)] mb-3">{company.description}</p>
+      <p className="text-sm text-[var(--muted)] mb-3 line-clamp-2">{company.description}</p>
 
       {/* Tags */}
       {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
@@ -193,13 +193,13 @@ export function CompanyListRow({
       </div>
     </div>
   );
-}
+});
 
 // ────────────────────────────────────────────────────────────────────────────
 // Company Card (grid view)
 // ────────────────────────────────────────────────────────────────────────────
 
-export function CompanyCard({
+export const CompanyCard = memo(function CompanyCard({
   company,
   onCompanyClick,
   isHighlighted,
@@ -233,14 +233,14 @@ export function CompanyCard({
   };
 
   return (
-    <div className={`card p-5 flex flex-col cursor-pointer ${isHighlighted ? 'onboarding-highlight' : ''}`} onClick={handleClick} data-tour={dataTour}>
+    <div className={`card p-5 flex flex-col cursor-pointer overflow-hidden ${isHighlighted ? 'onboarding-highlight' : ''}`} onClick={handleClick} data-tour={dataTour}>
       {/* Header */}
       <div className="flex items-start justify-between gap-3 mb-1.5">
-        <div className="flex items-center gap-2.5 min-w-0">
+        <div className="flex items-center gap-2.5 min-w-0 flex-1">
           <CompanyLogo company={company} size={32} />
           <div className="min-w-0">
-            <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-[var(--foreground)] truncate">{company.name}</h3>
+            <div className="flex items-center gap-2 min-w-0">
+              <h3 className="font-semibold text-[var(--foreground)] truncate min-w-[60px]">{company.name}</h3>
               {pinnedLabel && (
                 <span className="badge badge-accent flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                   {pinnedLabel}
@@ -255,14 +255,14 @@ export function CompanyCard({
             </div>
           </div>
         </div>
-        <div className="text-xs text-[var(--muted)] text-right flex-shrink-0 leading-relaxed">
-          <div>{company.headquarters.split(',')[0]}</div>
-          <div>{company.stage}{company.totalFunding && company.totalFunding !== 'Unknown' && ` · ${company.totalFunding}`}</div>
+        <div className="text-xs text-[var(--muted)] text-right flex-shrink-0 leading-relaxed max-w-[35%]">
+          <div className="truncate">{company.headquarters.split(',')[0]}</div>
+          <div className="truncate">{company.stage}{company.totalFunding && company.totalFunding !== 'Unknown' && ` · ${company.totalFunding}`}</div>
         </div>
       </div>
 
       {/* Description */}
-      <p className="text-sm text-[var(--muted)] mb-2">{company.description}</p>
+      <p className="text-sm text-[var(--muted)] mb-2 line-clamp-2">{company.description}</p>
 
       {/* Tags */}
       {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
@@ -356,4 +356,4 @@ export function CompanyCard({
       </div>
     </div>
   );
-}
+});

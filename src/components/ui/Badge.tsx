@@ -69,7 +69,7 @@ export interface AiLevelBadgeProps {
 export function AiLevelBadge({ level }: AiLevelBadgeProps) {
   const config = getAiLevelConfig(level);
   return (
-    <span className={`badge ${config.badgeClass}`}>
+    <span className={`badge ${config.badgeClass} whitespace-nowrap flex-shrink-0`}>
       Level {level}: {config.label}
     </span>
   );

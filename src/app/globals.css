@@ -900,3 +900,15 @@ a.card {
   .article-content li { font-size: 1.000rem !important; }
 }
 
+/* Responsive sm: breakpoint overrides (from inline styles) */
+@media (min-width: 640px) {
+  .sm\:text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em !important; line-height: 1.15 !important; }
+  .sm\:text-3xl { font-size: 1.294rem !important; letter-spacing: -0.03em !important; line-height: 1.2 !important; }
+}
+
+/* Tablet override for sm: classes (768–1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .sm\:text-4xl { font-size: 1.506rem !important; }
+  .sm\:text-3xl { font-size: 1.380rem !important; }
+}
+
