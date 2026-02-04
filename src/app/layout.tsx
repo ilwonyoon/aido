@@ -6,6 +6,7 @@ import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 import { Navigation } from "@/components/Navigation";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageBackground } from "@/components/PageBackground";
+import { MobileTypographyEditor } from "@/components/MobileTypographyEditor";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -104,6 +105,30 @@ export default function RootLayout({
             .sm\\:text-4xl { font-size: 1.412rem !important; letter-spacing: -0.035em !important; line-height: 1.15 !important; }
             .sm\\:text-3xl { font-size: 1.294rem !important; letter-spacing: -0.03em !important; line-height: 1.2 !important; }
           }
+          /* Tablet (768–1023px): body 16px, ×1.067 */
+          @media (max-width: 1023px) {
+            .text-4xl { font-size: 1.506rem !important; }
+            .text-3xl { font-size: 1.380rem !important; }
+            .text-2xl { font-size: 1.254rem !important; }
+            .text-xl  { font-size: 1.098rem !important; }
+            .text-lg  { font-size: 0.941rem !important; }
+            .text-base { font-size: 0.941rem !important; }
+            .text-sm  { font-size: 0.816rem !important; }
+            .text-xs  { font-size: 0.753rem !important; }
+            .sm\\:text-4xl { font-size: 1.506rem !important; }
+            .sm\\:text-3xl { font-size: 1.380rem !important; }
+          }
+          /* Mobile (<768px): body 17px, ×1.133 */
+          @media (max-width: 767px) {
+            .text-4xl { font-size: 1.600rem !important; }
+            .text-3xl { font-size: 1.467rem !important; }
+            .text-2xl { font-size: 1.333rem !important; }
+            .text-xl  { font-size: 1.166rem !important; }
+            .text-lg  { font-size: 1.000rem !important; }
+            .text-base { font-size: 1.000rem !important; }
+            .text-sm  { font-size: 0.867rem !important; }
+            .text-xs  { font-size: 0.800rem !important; }
+          }
         `}} />
       </head>
       <body
@@ -121,6 +146,7 @@ export default function RootLayout({
                 </main>
                 <footer className="py-6" />
               </div>
+              <MobileTypographyEditor />
             </ErrorBoundary>
           </AuthProvider>
         </ThemeProvider>
