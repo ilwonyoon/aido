@@ -169,6 +169,10 @@ function DropdownFilter({
         top: rect.bottom + 4,
         left: rect.left,
       });
+
+      const handleScroll = () => setIsOpen(false);
+      window.addEventListener('scroll', handleScroll, true);
+      return () => window.removeEventListener('scroll', handleScroll, true);
     }
   }, [isOpen]);
 
@@ -266,6 +270,10 @@ function MultiSelectFilter({
         top: rect.bottom + 4,
         left: Math.max(16, left), // Ensure at least 16px from left edge
       });
+
+      const handleScroll = () => setIsOpen(false);
+      window.addEventListener('scroll', handleScroll, true);
+      return () => window.removeEventListener('scroll', handleScroll, true);
     }
   }, [isOpen]);
 
@@ -373,7 +381,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Track previous interest statuses to detect changes
   const prevInterestStatusesRef = useRef<Record<string, InterestStatus>>({});
-  const [visibleCount, setVisibleCount] = useState(20);
+  const [visibleCount, setVisibleCount] = useState(30);
   const loadMoreRef = useRef<HTMLDivElement>(null);
 
   const checkMobile = useCallback(() => {
@@ -515,8 +523,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     load();
 
     // Reload when page becomes visible (e.g., returning from company detail)
+    // Debounce to prevent rapid re-fetches when switching tabs quickly
+    let lastLoadTime = Date.now();
     const handleVisibilityChange = () => {
-      if (!document.hidden && user) {
+      if (!document.hidden && user && Date.now() - lastLoadTime > 5000) {
+        lastLoadTime = Date.now();
         load();
       }
     };
@@ -563,7 +574,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setVisibleCount((prev) => prev + 20);
+          setVisibleCount((prev) => prev + 30);
         }
       },
       { rootMargin: '600px' }
@@ -575,7 +586,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
   // Reset visible count when filters change
   useEffect(() => {
-    setVisibleCount(20);
+    setVisibleCount(30);
   }, [reviewStatusFilter, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, fundingStageFilter, sortBy]);
 
   // Update interest status
