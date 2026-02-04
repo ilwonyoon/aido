@@ -1,113 +1,27 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, memo, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { flushSync } from 'react-dom';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useCompanies } from '@/hooks/useCompanies';
 import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
-import { SpotlightTour, type TourStep } from '@/components/SpotlightTour';
-// import { TransitionEditor } from '@/components/TransitionEditor';
-import { usePageTransitions } from '@/lib/usePageTransitions';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
-import { TourProvider } from '@/contexts/TourContext';
 
-// ────────────────────────────────────────────────────────────────────────────
-// Tour Steps
-// ────────────────────────────────────────────────────────────────────────────
-
-const TOUR_STEPS: TourStep[] = [
-  {
-    target: '[data-tour="first-card"]',
-    title: 'Explore any company',
-    description: 'Click a card to open detailed analysis — founders, design team, competition, growth metrics, and open roles.',
-    padding: 6,
-    delayMs: 2000,  // wait for page layout to settle (fonts, lazy content)
-  },
-  {
-    target: '#quick-info',
-    title: 'Quick snapshot',
-    description: 'Stage, valuation, AI level, open roles, and funding — everything you need at a glance.',
-    delayMs: 600,
-    scrollContainer: '.panel-scroll',
-    padding: 32,
-    tooltipAlignSelector: '.card',
-  },
-  {
-    target: '#company',
-    title: 'Deep company analysis',
-    description: 'Funding history, competitive landscape, market position, growth metrics, and AI-native level.',
-    scrollContainer: '.panel-scroll',
-    padding: 24,
-    tooltipAlignSelector: '.card',
-  },
-  {
-    target: '#design',
-    title: 'Design opportunities',
-    description: 'Team structure, design work types, culture insights, and your personal fit score.',
-    scrollContainer: '.panel-scroll',
-    padding: 24,
-    tooltipAlignSelector: '.card',
-  },
-  {
-    target: '[data-tour="nav-insights"]',
-    title: 'Read our insights',
-    description: 'In-depth articles analyzing AI design trends, company strategies, and career opportunities.',
-    padding: 6,
-  },
-  {
-    target: '[data-tour="nav-about"]',
-    title: 'About AIDO',
-    description: 'Learn about the AI-native level framework and how we evaluate companies for designers.',
-    padding: 6,
-  },
-  {
-    target: '[data-tour="nav-menu-mobile"]',
-    title: 'Explore more',
-    description: 'Tap the menu to find Insights articles, About page, theme toggle, and more.',
-    padding: 8,
-  },
-];
-
-const ONBOARDING_KEY = 'aido_tour_seen';
-
-function isTourUnseen(): boolean {
-  try {
-    return !localStorage.getItem(ONBOARDING_KEY);
-  } catch {
-    return false;
-  }
-}
-
-function markTourSeen(): void {
-  try {
-    localStorage.setItem(ONBOARDING_KEY, 'true');
-  } catch {
-    // localStorage unavailable
-  }
-}
-
-// ────────────────────────────────────────────────────────────────────────────
-// Memoized company list
-// ────────────────────────────────────────────────────────────────────────────
-
+// Memoized company list to prevent re-render
 const MemoizedCompanyList = memo(function MemoizedCompanyList({
   companies,
-  onCompanyClick,
-  isFirstVisit: firstVisit,
+  onCompanyClick
 }: {
   companies: Company[];
   onCompanyClick: (id: string) => void;
-  isFirstVisit?: boolean;
 }) {
-  return <CompanyFilters companies={companies} onCompanyClick={onCompanyClick} isFirstVisit={firstVisit} />;
+  return <CompanyFilters companies={companies} onCompanyClick={onCompanyClick} />;
 });
 
-// ────────────────────────────────────────────────────────────────────────────
-// Home Page
-// ────────────────────────────────────────────────────────────────────────────
-
 function HomePageContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const { companies, loading, error } = useCompanies();
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
@@ -116,53 +30,13 @@ function HomePageContent() {
   const [showCopied, setShowCopied] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [closingCompany, setClosingCompany] = useState<Company | null>(null);
-  const [tourStep, setTourStep] = useState<number | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const pageRef = useRef<HTMLDivElement>(null);
+  const mainContentRef = useRef<HTMLDivElement>(null);
   const savedScrollPosition = useRef<number>(0);
-  const selectedCompanyIdRef = useRef<string | null>(null);
-  const tourStepRef = useRef<number | null>(null);
   const companyNameObserverRef = useRef<IntersectionObserver | null>(null);
-  const tourInitRef = useRef(false);
-  const tourShownRef = useRef(false); // true only after user saw at least one step
 
-  // Keep refs in sync
-  selectedCompanyIdRef.current = selectedCompanyId;
-  tourStepRef.current = tourStep;
-
-  const isTourActive = tourStep !== null;
-
-  // Page entrance transitions (with TransitionEditor support)
-  usePageTransitions(pageRef, !loading);
-
-  // Initialize tour + load company from URL
   useEffect(() => {
-    // Tour initialization — only once on first mount
-    if (!tourInitRef.current) {
-      tourInitRef.current = true;
-
-      // Allow forced tour reset via URL param: ?tour=reset
-      if (searchParams.get('tour') === 'reset') {
-        try { localStorage.removeItem(ONBOARDING_KEY); } catch { /* */ }
-        window.history.replaceState({}, '', '/');
-        setTourStep(0);
-        return;
-      }
-
-      if (isTourUnseen()) {
-        // Clear any URL company param, start tour clean
-        const companyFromUrl = searchParams.get('company');
-        if (companyFromUrl) {
-          window.history.replaceState({}, '', '/');
-        }
-        setTourStep(0);
-        return; // Don't load company from URL during tour init
-      }
-    }
-
-    // Normal URL loading — skip if tour is actively running
-    if (tourStepRef.current !== null) return;
-
+    // Initial load from URL
     const companyId = searchParams.get('company');
     setSelectedCompanyId(companyId);
   }, [searchParams]);
@@ -185,32 +59,34 @@ function HomePageContent() {
   }, []);
 
   const closePanel = useCallback(() => {
-    const id = selectedCompanyIdRef.current;
-    const currentCompany = id ? (getCompanyById(id) || null) : null;
-    const scrollToRestore = savedScrollPosition.current;
+    const currentCompany = selectedCompanyId ? (getCompanyById(selectedCompanyId) || null) : null;
 
-    // Start close animation
-    setClosingCompany(currentCompany);
-    setIsClosing(true);
+    // Save CURRENT scroll position from the scrollable div (desktop) or window (mobile)
+    const currentScroll = mainContentRef.current?.scrollTop || window.scrollY;
+
+    // Force synchronous state update to ensure animation class is applied
+    flushSync(() => {
+      setClosingCompany(currentCompany);
+      setIsClosing(true);
+    });
 
     setTimeout(() => {
       window.history.pushState({}, '', '/');
-
       setSelectedCompanyId(null);
       setIsFullWidth(false);
       setIsClosing(false);
       setClosingCompany(null);
 
-      // Restore scroll after React commits (next frame)
+      // Restore scroll position after panel closes and className changes
       requestAnimationFrame(() => {
-        window.scrollTo(0, scrollToRestore);
+        window.scrollTo(0, currentScroll);
       });
-    }, 300);
-  }, []);
+    }, 300); // Match animation duration
+  }, [selectedCompanyId]);
 
 
   const handleCompanyClick = useCallback((companyId: string) => {
-    const isOpeningPanel = !selectedCompanyIdRef.current;
+    const isOpeningPanel = !selectedCompanyId;
 
     // Only save scroll position when OPENING panel (not when switching companies)
     if (isOpeningPanel) {
@@ -227,68 +103,16 @@ function HomePageContent() {
       panelRef.current.scrollTop = 0;
     }
 
-    // Advance tour from step 0 (card click) to step 1 (panel content)
-    if (tourStepRef.current === 0) {
-      setTimeout(() => setTourStep(1), 100);
+    // Only restore scroll position when OPENING panel (not when switching)
+    if (isOpeningPanel) {
+      requestAnimationFrame(() => {
+        if (mainContentRef.current) {
+          // On desktop, set div scrollTop; on mobile, it won't have scroll
+          mainContentRef.current.scrollTop = savedScrollPosition.current;
+        }
+      });
     }
-  }, []);
-
-  const handleTourNext = useCallback(() => {
-    const current = tourStepRef.current;
-    if (current === null) return;
-
-    if (current === 0) {
-      // Step 0 → open Anthropic panel, then advance
-      handleCompanyClick('anthropic');
-      return; // handleCompanyClick will advance to step 1
-    }
-
-    if (current >= TOUR_STEPS.length - 1) {
-      // Tour complete — only persist if user actually saw it
-      setTourStep(null);
-      if (tourShownRef.current) {
-        markTourSeen();
-      }
-      return;
-    }
-
-    const nextStep = current + 1;
-
-    // Transitioning from panel steps (1-3) to nav steps (4+): close panel first
-    if (current === 3 && nextStep === 4 && selectedCompanyIdRef.current) {
-      const id = selectedCompanyIdRef.current;
-      const currentCompany = id ? (getCompanyById(id) || null) : null;
-      setClosingCompany(currentCompany);
-      setIsClosing(true);
-
-      setTimeout(() => {
-        window.history.pushState({}, '', '/');
-        setSelectedCompanyId(null);
-        setIsFullWidth(false);
-        setIsClosing(false);
-        setClosingCompany(null);
-
-        requestAnimationFrame(() => {
-          window.scrollTo(0, 0);
-          setTourStep(nextStep);
-        });
-      }, 300);
-      return;
-    }
-
-    setTourStep(nextStep);
-  }, [handleCompanyClick]);
-
-  const handleTourSkip = useCallback(() => {
-    setTourStep(null);
-    if (tourShownRef.current) {
-      markTourSeen();
-    }
-  }, []);
-
-  const handleTourVisible = useCallback(() => {
-    tourShownRef.current = true;
-  }, []);
+  }, [selectedCompanyId]);
 
   const toggleFullWidth = useCallback(() => {
     setIsFullWidth(prev => !prev);
@@ -315,29 +139,30 @@ function HomePageContent() {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        // If tour is active, skip tour
-        if (tourStepRef.current !== null) {
-          handleTourSkip();
-          return;
-        }
-        if (selectedCompanyIdRef.current) {
-          closePanel();
-        }
+      if (e.key === 'Escape' && selectedCompanyId) {
+        closePanel();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [closePanel, handleTourSkip]);
+  }, [selectedCompanyId, closePanel]);
 
-  // Lock body scroll on mobile when panel is open
+  // Prevent background scroll when panel is open
   useEffect(() => {
+    const html = document.documentElement;
+
     if (selectedCompanyId) {
-      document.documentElement.classList.add('panel-open');
+      // Add class to html element to prevent scroll
+      html.classList.add('panel-open');
     } else {
-      document.documentElement.classList.remove('panel-open');
+      // Remove class when panel closes
+      html.classList.remove('panel-open');
     }
+
+    return () => {
+      html.classList.remove('panel-open');
+    };
   }, [selectedCompanyId]);
 
   // Observer for company name in content to show/hide in header
@@ -403,11 +228,9 @@ function HomePageContent() {
 
 
   return (
-    <TourProvider value={isTourActive}>
-    <div ref={pageRef}>
-      {/* <TransitionEditor /> — dev tool, uncomment to tune transitions */}
+    <div>
       {/* Backdrop - Click outside company list to close panel (desktop only) */}
-      {selectedCompanyId && !isTourActive && (
+      {selectedCompanyId && (
         <div
           className="hidden md:block fixed inset-0 z-[1]"
           onClick={closePanel}
@@ -416,10 +239,11 @@ function HomePageContent() {
 
       {/* Main Content - Disable on mobile when panel is open, independent scroll on desktop */}
       <div
-        className={selectedCompanyId && !isTourActive ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto' : ''}
+        ref={mainContentRef}
+        className={selectedCompanyId ? 'relative z-[2] pointer-events-none select-none md:pointer-events-auto md:select-auto md:h-screen md:overflow-y-auto md:pb-8' : ''}
       >
         {/* Header */}
-        <div data-transition="header" className="mb-6">
+        <div className="mb-6">
           <h1 className="text-2xl font-semibold mb-2">Where to Design AI</h1>
           <p className="text-[var(--muted)] text-sm leading-relaxed">
             AI-native companies with research-backed notes on why to join, and why not.
@@ -427,8 +251,8 @@ function HomePageContent() {
         </div>
 
         {/* Company List - Full Width */}
-        <div data-transition="cards" className="w-full">
-          <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} isFirstVisit={isTourActive && tourStep === 0} />
+        <div className="w-full">
+          <MemoizedCompanyList key="company-list" companies={companies} onCompanyClick={handleCompanyClick} />
         </div>
       </div>
 
@@ -448,7 +272,6 @@ function HomePageContent() {
             border-l border-[var(--border)]
             z-[100]
             overflow-y-auto
-            panel-scroll
             ${isClosing ? 'animate-slideOutRight' : 'animate-slideInRight'}
           `}
           style={{
@@ -457,7 +280,7 @@ function HomePageContent() {
           }}
         >
           {/* Header - Sticky */}
-          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)]/80 backdrop-blur-md border-b border-[var(--border)] flex items-center px-4 gap-3">
+          <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
             <button
               onClick={closePanel}
               className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
@@ -523,19 +346,7 @@ function HomePageContent() {
         </div>
         );
       })()}
-
-      {/* Spotlight Tour */}
-      {isTourActive && (
-        <SpotlightTour
-          steps={TOUR_STEPS}
-          currentStep={tourStep}
-          onNext={handleTourNext}
-          onSkip={handleTourSkip}
-          onVisible={handleTourVisible}
-        />
-      )}
     </div>
-    </TourProvider>
   );
 }
 

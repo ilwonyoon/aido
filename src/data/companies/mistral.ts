@@ -156,7 +156,13 @@ export const mistral: Company = {
         description: 'Model releases and research',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Product Designer, Web apps',
+        location: 'Paris, France',
+        url: 'https://jobs.lever.co/mistral/7d41ad25-c536-492d-b06c-5a74ce16c163',
+      },
+    ],
 
     cultureInsights: [
       {

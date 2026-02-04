@@ -13,28 +13,26 @@ export const thatch: Company = {
   screenshot: '/screenshots/thatch-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['llm-app', 'automation'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['healthcare'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$84.5M',
+  totalFunding: '$40M',
   revenue: 'Unknown',
-  growth: 'ICHRA market growing 29-34% YoY',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: '1,000+ companies',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Venteur', description: 'ICHRA-focused health benefits with digital wallet', whyTheyWin: '$27M+ raised, focused on ICHRA' },
-    { name: 'Take Command Health', description: 'HRA administration since 2014', whyTheyWin: 'Early mover, advised on ICHRA legislation' },
-    { name: 'Justworks / Gusto', description: 'Broader HR/payroll with health benefits', whyTheyWin: 'Bundled HR offering, existing customer base' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Product-first ICHRA platform combining Stripe-quality fintech infra with AI-powered health plan recommendations',
-  moat: ['Stripe/Ramp/Rippling team pedigree', 'ADP partnership', 'AI plan recommendation engine'],
-  vsGiants: 'Traditional benefits brokers lack tech; Gusto/Justworks lack ICHRA depth',
+  marketPosition: 'Modern health benefits platform',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const thatch: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Chris Ellis', role: 'Co-Founder & CEO', background: 'MIT cancer researcher turned biotech. Lost father to cancer at 6, driving healthcare mission.' },
-    { name: 'Adam Stevenson', role: 'Co-Founder & President', background: 'Former engineering leader at Stripe. Also worked at Humana — rare healthcare + fintech dual expertise.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Health benefits are broken — employers overpay, employees get cookie-cutter plans. ICHRA enables personalized benefits.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const thatch: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'HR teams and employers managing health benefits' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const thatch: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Thatch', url: 'https://thatch.ai' },
     { title: 'Thatch on startups.gallery', url: 'https://startups.gallery/companies/thatch' },

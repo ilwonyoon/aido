@@ -69,12 +69,12 @@ export const tabnine: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [],
+    openRoles: [{ title: 'Product Designer', location: 'Tel Aviv, Israel (Hybrid)', url: 'https://www.tabnine.com/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 6,
-      whyJoin: ['AI-native Level A', 'Unknown'],
+      whyJoin: ['AI-native Level 4', 'Unknown'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Tabnine product', 'Research founders'],
     },

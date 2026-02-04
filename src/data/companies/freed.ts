@@ -13,28 +13,26 @@ export const freed: Company = {
   screenshot: '/screenshots/freed-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['llm-app', 'voice'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['healthcare'],
+  industries: ['other'],
 
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: '$34M',
-  revenue: '$20M+ ARR',
-  growth: '4x YoY revenue growth',
+  totalFunding: '$30M',
+  revenue: 'Unknown',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: '20,000 paying clinicians, 3M patient visits/month',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Abridge', description: 'AI medical conversation summarization', whyTheyWin: 'Strong clinical partnerships' },
-    { name: 'Suki', description: 'AI voice assistant for clinicians', whyTheyWin: 'Voice-first approach, significant funding' },
-    { name: 'Doximity', description: 'Free ambient AI scribe for US physicians', whyTheyWin: 'Free tier may commoditize market' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Fastest-growing AI medical scribe — generates clinical notes within 60s, saves clinicians 2-3 hours daily',
-  moat: ['20K paying clinicians', '4x YoY growth', 'Sequoia backing', '60-second note generation'],
-  vsGiants: 'Doximity offers free scribe but lacks depth; Freed is purpose-built with superior clinical accuracy',
+  marketPosition: 'AI Scribe for happier clinicians',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const freed: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Erez Druk', role: 'Co-Founder & CEO', background: 'Former Meta engineer. Berklee music scholarship at 10. Top of class at Technion. Wife is a clinician.' },
-    { name: 'Andrey Bannikov', role: 'Co-Founder & CTO', background: 'Former Meta engineer. Met Erez on his first day at Facebook. Long partnership in tech.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Clinicians spend hours on documentation instead of patients. Founded because co-founder\'s wife (Dr. Gabi Meckler) suffered this burden daily.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const freed: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Clinicians and healthcare providers burdened by documentation' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const freed: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T13:35:00',
   sources: [
     { title: 'Freed', url: 'https://www.getfreed.ai' },
     { title: 'Freed on startups.gallery', url: 'https://startups.gallery/companies/freed' },

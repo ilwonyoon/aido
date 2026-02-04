@@ -15,26 +15,24 @@ export const merge: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$75M',
+  totalFunding: '$55M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: '3,000+ companies',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Finch', description: 'Unified API specialized for HRIS and payroll integrations', whyTheyWin: 'HRIS/payroll specialization' },
-    { name: 'Apideck', description: 'Broad real-time unified API with 190+ connectors', whyTheyWin: 'Broader connector coverage' },
-    { name: 'Knit', description: 'Security-first unified API for CRM, HRIS, ATS, Accounting', whyTheyWin: 'Security-first approach' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Leading unified API platform offering 150+ integrations across HRIS, ATS, CRM, Ticketing, and Accounting — 3,000+ customers, 30x ARR growth',
-  moat: ['150+ integrations across 6 categories', '3,000+ customers', 'Accel + NEA backing'],
-  vsGiants: 'Building each integration manually takes weeks; Merge offers one API for 150+ integrations with HIPAA/SOC 2 compliance',
+  marketPosition: 'One API to 100s of integrations',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const merge: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Shensi Ding', role: 'Co-Founder & CEO', background: 'Columbia University. Credit Suisse investment banking, Silver Lake, Chief of Staff at Expanse (acquired by Palo Alto Networks for ~$1B).' },
-    { name: 'Gil Feig', role: 'Co-Founder & CTO', background: 'Columbia University. Software engineer at LinkedIn. Founding engineer and Head of Engineering at Untapped.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Every B2B product needs integrations, but building and maintaining them is a massive engineering drain. One unified API solves this.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const merge: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'B2B SaaS companies needing to build integrations with HRIS, ATS, CRM, and accounting platforms' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const merge: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Merge', url: 'https://www.merge.dev' },
     { title: 'Merge on startups.gallery', url: 'https://startups.gallery/companies/merge' },

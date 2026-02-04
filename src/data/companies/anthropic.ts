@@ -191,9 +191,19 @@ export const anthropic: Company = {
     // Open Roles
     openRoles: [
       {
+        title: 'Content Designer, Enterprise Growth',
+        location: 'New York City, NY | Seattle, WA; San Francisco, CA',
+        url: 'https://job-boards.greenhouse.io/anthropic/jobs/5077227008',
+      },
+      {
         title: 'Product Designer, Claude Code',
-        location: 'New York City, NY; Remote-Friendly (Travel Required) | San Francisco, CA | New York City, NY | Seattle, WA',
+        location: 'New York City, NY; Remote-Friendly (Travel Required) | San Francisco, CA; San Francisco, CA | New York City, NY | Seattle, WA',
         url: 'https://job-boards.greenhouse.io/anthropic/jobs/5025976008',
+      },
+      {
+        title: 'Product Designer, Enterprise',
+        location: 'San Francisco, CA | New York City, NY | Seattle, WA',
+        url: 'https://job-boards.greenhouse.io/anthropic/jobs/5055600008',
       },
     ],
 
@@ -268,7 +278,7 @@ export const anthropic: Company = {
       status: 'interested',
       fitScore: 9,
       whyJoin: [
-        'Level A AI-native — frontier of AI design',
+        'Level 4 AI-native — frontier of AI design',
         'Founder philosophy aligns with my values',
         'Character Design — unique learning opportunity',
         'Strong business — no risk of failure',

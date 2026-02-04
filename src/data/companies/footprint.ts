@@ -15,12 +15,12 @@ export const footprint: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['fintech', 'security'],
+  industries: ['other'],
 
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: '$26M',
+  totalFunding: '$13M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -28,13 +28,11 @@ export const footprint: Company = {
 
   // Competition
   competitors: [
-    { name: 'Persona', description: 'Identity verification platform with embeddable SDK', whyTheyWin: 'Broad marketplace support' },
-    { name: 'Alloy', description: 'Identity orchestration platform for fraud prevention', whyTheyWin: 'Orchestration layer flexibility' },
-    { name: 'Plaid', description: 'Financial data network entering KYC via Cognito acquisition', whyTheyWin: 'Massive fintech distribution' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'One-click KYC and portable identity platform — combines identity verification, fraud prevention, and PII vaulting in 5 lines of code (the Apple Pay of identity)',
-  moat: ['Portable identity model (verify once, use everywhere)', 'PII vaulting + KYC in one product', 'QED Investors + Index Ventures backing'],
-  vsGiants: 'Persona and Plaid require re-verification every time; Footprint makes identity portable — verify once, onboard everywhere',
+  marketPosition: 'Frictionless KYC + KYB',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const footprint: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Eli Wachs', role: 'Co-Founder & CEO', background: 'Stanford MBA. Previously led identity and data security investing at General Atlantic. Serial entrepreneur since high school.' },
-    { name: 'Alex Grinman', role: 'Co-Founder & CTO', background: 'MIT CS, math, and cryptography. Founded KryptCo (mobile auth, acquired by Akamai). Former Principal Product Architect at Akamai.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Identity verification is repetitive and wasteful. Users verify themselves hundreds of times. Portable identity makes it one-and-done.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const footprint: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Fintech companies and platforms needing KYC/identity verification and PII management' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const footprint: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Footprint', url: 'https://footprint.us' },
     { title: 'Footprint on startups.gallery', url: 'https://startups.gallery/companies/footprint' },

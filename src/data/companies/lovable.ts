@@ -110,7 +110,7 @@ export const lovable: Company = {
     tracking: {
       status: 'interested',
       fitScore: 9,
-      whyJoin: ['$200M ARR with 100 people = incredible', 'Nikita Bier (proven founder)', '$1.8B valuation', 'AI-native Level A', '50%+ Fortune 500'],
+      whyJoin: ['$200M ARR with 100 people = incredible', 'Nikita Bier (proven founder)', '$1.8B valuation', 'AI-native Level 4', '50%+ Fortune 500'],
       whyNot: ['Very small team = high pressure', 'Consumer founder in B2B', 'Unknown design culture', 'High competition risk'],
       nextActions: ['Try Lovable product', 'Research Nikita Bier', 'Connect with Lovable designers'],
     },

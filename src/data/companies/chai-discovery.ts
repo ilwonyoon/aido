@@ -181,7 +181,7 @@ export const chaiDiscovery: Company = {
     {
       title: 'Product Designer',
       location: 'San Francisco, CA (In-person)',
-      url: 'https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c',
+      url: 'https://jobs.ashbyhq.com/chaidiscovery',
       type: 'full-time',
       aboutRole: 'Design product experiences for AI-first drug discovery teams.',
     },

@@ -13,9 +13,9 @@ export const onyx: Company = {
   screenshot: '/screenshots/onyx-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['search-retrieval', 'agent'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Seed',
@@ -28,13 +28,11 @@ export const onyx: Company = {
 
   // Competition
   competitors: [
-    { name: 'Elastic', description: 'Enterprise search and observability platform', whyTheyWin: 'Massive adoption and brand recognition' },
-    { name: 'Glean', description: 'AI-powered enterprise search at $4.6B valuation', whyTheyWin: 'Massive funding and enterprise sales force' },
-    { name: 'Coveo', description: 'AI-powered relevance platform for enterprise search', whyTheyWin: 'Established enterprise relationships' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Open-source AI enterprise search and assistant platform that connects to company documents and apps, with on-prem/VPC deployment options',
-  moat: ['Open-source with self-hosting', 'On-prem/VPC deployment for security-conscious enterprises', 'YC backing'],
-  vsGiants: 'Glean is closed-source and expensive; Onyx is open-source with self-hosting capability for enterprises that need data sovereignty',
+  marketPosition: 'Open source AI connected to your work',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,10 +41,9 @@ export const onyx: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Yuhong Sun', role: 'Co-Founder & Co-CEO', background: 'ML/NLP specialist. Previously worked on deep learning for NL-to-SQL and semantic search at Alation.' },
-    { name: 'Chris Weaver', role: 'Co-Founder & Co-CEO', background: 'Former team lead on anti-fraud engine team at Robinhood.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Enterprise knowledge is scattered across dozens of tools. Teams need AI-powered search that connects everything while keeping data secure.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -61,7 +58,7 @@ export const onyx: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Enterprises needing secure, self-hosted AI search across internal tools and documents' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const onyx: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Onyx', url: 'https://www.onyx.app' },
     { title: 'Onyx on startups.gallery', url: 'https://startups.gallery/companies/onyx' },

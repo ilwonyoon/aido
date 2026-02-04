@@ -74,7 +74,7 @@ export const glean: Company = {
     tracking: {
       status: 'watching',
       fitScore: 8,
-      whyJoin: ['AI-native Level B', '$7.2B (2025)'],
+      whyJoin: ['AI-native Level 3', '$7.2B (2025)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Glean product', 'Research founders'],
     },

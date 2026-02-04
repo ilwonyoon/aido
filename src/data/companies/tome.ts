@@ -69,12 +69,12 @@ export const tome: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://tome.app/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level A', '$300M'],
+      whyJoin: ['AI-native Level 4', '$300M'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Tome product', 'Research founders'],
     },

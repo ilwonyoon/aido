@@ -158,7 +158,21 @@ export const hebbia: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'New York, NY',
+        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
+        type: 'full-time',
+        aboutRole: 'Create innovative AI interaction designs for finance-focused SaaS platform. Lead end-to-end user experience.',
+        responsibilities: [
+          'Lead design of product features and UX',
+          'Ensure product is intuitive and visually appealing',
+          'Collaborate with cross-functional teams',
+        ],
+        whyInteresting: 'Work with genius founder. Profitable startup. 40% of largest asset managers use your product.',
+      },
+    ],
 
     // Culture Insights
     cultureInsights: [],
@@ -182,7 +196,7 @@ export const hebbia: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level A: AI is the product',
+        'AI-native Level 4: AI is the product',
         'George Sivulka is brilliant founder',
         'Profitable and well-funded',
         'Elite customers (BlackRock, KKR)',

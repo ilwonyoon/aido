@@ -169,6 +169,19 @@ export const typeface: Company = {
     // Open Roles
     openRoles: [
       {
+        title: 'Product Designer',
+        location: 'Palo Alto, CA (Hybrid)',
+        url: 'https://job-boards.greenhouse.io/typeface/jobs/4616989007',
+        type: 'full-time',
+        aboutRole: 'Create and execute design solutions for generative AI tools that empower marketing teams to create personalized content at scale.',
+        responsibilities: [
+          'Design user-friendly, visually appealing products',
+          'Work with cross-functional teams to ensure products meet customer needs',
+          'Build design systems for AI-powered marketing tools',
+        ],
+        whyInteresting: 'Designing for Fortune 500 marketing teams. Building enterprise AI tools with massive scale impact.',
+      },
+      {
         title: 'Staff Product Designer',
         location: 'Palo Alto, CA',
         url: 'https://job-boards.greenhouse.io/typeface/jobs/4617046007',
@@ -248,7 +261,7 @@ export const typeface: Company = {
       status: 'watching',
       fitScore: 7,
       whyJoin: [
-        'AI-native Level B: AI is core differentiator',
+        'AI-native Level 3: AI is core differentiator',
         'Founder credibility: Parasnis (ex-CTO Adobe)',
         'Enterprise focus: Fortune 500 customers',
         'Well-funded: $206M at $1B valuation',

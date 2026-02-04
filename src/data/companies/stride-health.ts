@@ -15,26 +15,24 @@ export const strideHealth: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['healthcare'],
+  industries: ['other'],
 
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
-  totalFunding: '$96M',
+  totalFunding: '$47M',
   revenue: 'Unknown',
-  growth: '3.5x enrollment growth YoY, saved workers $8B+',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: '2.7M+ members via Uber, Amazon, DoorDash, Mastercard partnerships',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'eHealth', description: 'Public online health insurance comparison platform', whyTheyWin: 'Public company scale and brand recognition' },
-    { name: 'GoHealth', description: 'Public Medicare and health insurance marketplace', whyTheyWin: 'Medicare specialization' },
-    { name: 'Collective Health', description: 'Employer health benefits management platform', whyTheyWin: 'Employer-side focus' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Leading portable benefits platform for gig/1099 workers with 2.7M+ members — strategic partnerships with Uber, Amazon, DoorDash, Mastercard',
-  moat: ['2.7M+ members', 'Uber + Amazon + DoorDash partnerships', 'Healthcare.gov approved partner'],
-  vsGiants: 'eHealth and GoHealth target general consumers; Stride specializes in gig economy workers with employer partnership distribution',
+  marketPosition: 'Portable benefits for small business',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const strideHealth: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Noah Lang', role: 'Co-Founder & CEO', background: 'Stanford (President\'s Scholar, Product Design degree). VP at Reputation.com. Collaborated with US DHHS on ACA enrollment.' },
-    { name: 'Matt Butner', role: 'Co-Founder & CTO (former)', background: 'Formerly of R/GA (digital agency). No longer actively with the company.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Gig workers and freelancers lack access to affordable health insurance. Stride makes benefits portable and accessible for the independent workforce.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const strideHealth: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Gig workers, freelancers, and independent contractors needing health insurance' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const strideHealth: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Stride Health', url: 'https://www.stridehealth.com' },
     { title: 'Stride Health on startups.gallery', url: 'https://startups.gallery/companies/stride-health' },

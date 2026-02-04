@@ -13,14 +13,14 @@ export const solaSecurity: Company = {
   screenshot: '/screenshots/sola-security-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['agent', 'automation'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['security'],
+  industries: ['other'],
 
   // Business
   stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: '$65M',
+  totalFunding: '$35M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -28,13 +28,11 @@ export const solaSecurity: Company = {
 
   // Competition
   competitors: [
-    { name: 'Torq', description: 'Security hyper-automation platform with no-code/low-code capabilities', whyTheyWin: '$190M funding and platform maturity' },
-    { name: 'Tines', description: 'No-code security workflow automation platform', whyTheyWin: 'Enterprise security automation leader' },
-    { name: 'Blink', description: 'Security hyper-automation copilot for security and IT teams', whyTheyWin: 'AI copilot approach' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'AI-powered no-code cybersecurity platform — 2,000+ users creating 1,000+ custom security apps within 6 months of launch',
-  moat: ['Founder sold previous company to Palo Alto Networks for $195M', 'Microsoft-backed', '1,000+ custom security apps in 6 months'],
-  vsGiants: 'Torq and Tines require security engineering expertise; Sola enables any security team member to build custom security apps with no-code + AI',
+  marketPosition: 'The no-BS security app studio',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const solaSecurity: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Guy Flechter', role: 'Co-Founder & CEO', background: 'Former CEO of Cider Security (acquired by Palo Alto Networks for $195M in 2022). Deep cybersecurity entrepreneurship.' },
-    { name: 'Ron Peled', role: 'Co-Founder', background: 'Former Global CISO of LivePerson. Former Founder & CEO of ProtectOps. Strategic security consultant.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Security teams are understaffed and overwhelmed with alerts. No-code AI tools let them build custom solutions without waiting for engineering.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const solaSecurity: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Security operations teams building custom security workflows and applications' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const solaSecurity: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T13:35:00',
   sources: [
     { title: 'Sola Security', url: 'https://www.sola.security' },
     { title: 'Sola Security on startups.gallery', url: 'https://startups.gallery/companies/sola-security' },

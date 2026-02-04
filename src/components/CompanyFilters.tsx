@@ -1,13 +1,12 @@
 'use client';
 
-import { useState, useMemo, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
+import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
-import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/CompanyCardLayouts';
 
@@ -165,13 +164,9 @@ function DropdownFilter({
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 200);
-      const spaceOnRight = window.innerWidth - rect.left;
-      const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
-
       setDropdownStyle({
         top: rect.bottom + 4,
-        left: Math.max(16, left),
+        left: rect.left,
       });
     }
   }, [isOpen]);
@@ -207,13 +202,12 @@ function DropdownFilter({
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
-            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
+            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${Math.max(buttonRef.current.offsetWidth, 200)}px`,
-              maxWidth: 'calc(100vw - 2rem)',
-              maxHeight: '320px'
+              minWidth: `${buttonRef.current.offsetWidth}px`,
+              maxWidth: 'calc(100vw - 2rem)'
             }}
           >
             <button
@@ -352,140 +346,14 @@ function MultiSelectFilter({
   );
 }
 
-interface GroupedOption {
-  value: string;
-  label: string;
-}
-
-interface OptionGroup {
-  header: string;
-  options: GroupedOption[];
-}
-
-function GroupedMultiSelectFilter({
-  label,
-  values,
-  groups,
-  onChange,
-}: {
-  label: string;
-  values: string[];
-  groups: OptionGroup[];
-  onChange: (values: string[]) => void;
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
-  const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
-
-  useEffect(() => {
-    if (isOpen && buttonRef.current) {
-      const rect = buttonRef.current.getBoundingClientRect();
-      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 220);
-      const spaceOnRight = window.innerWidth - rect.left;
-      const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
-
-      setDropdownStyle({
-        top: rect.bottom + 4,
-        left: Math.max(16, left),
-      });
-    }
-  }, [isOpen]);
-
-  const toggleValue = (value: string) => {
-    if (values.includes(value)) {
-      onChange(values.filter((v) => v !== value));
-    } else {
-      onChange([...values, value]);
-    }
-  };
-
-  return (
-    <div className="relative">
-      <button
-        ref={buttonRef}
-        onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
-          values.length > 0
-            ? 'border-[var(--accent)] text-[var(--foreground)]'
-            : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-        }`}
-      >
-        <span>{displayLabel}</span>
-        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
-          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </button>
-
-      {isOpen && dropdownStyle && buttonRef.current && (
-        <>
-          <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div
-            className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
-            style={{
-              top: `${dropdownStyle.top}px`,
-              left: `${dropdownStyle.left}px`,
-              minWidth: `${Math.max(buttonRef.current.offsetWidth, 220)}px`,
-              maxWidth: 'calc(100vw - 2rem)',
-              maxHeight: '360px'
-            }}
-          >
-            {values.length > 0 && (
-              <button
-                onClick={() => onChange([])}
-                className="w-full text-left px-4 py-2 text-sm text-[var(--muted)] hover:bg-[var(--card-hover)] transition-colors border-b border-[var(--border)]"
-              >
-                Clear all
-              </button>
-            )}
-            {groups.map((group) => (
-              <div key={group.header}>
-                <div className="px-4 pt-3 pb-1 text-xs font-medium text-[var(--muted)] uppercase tracking-wider">
-                  {group.header}
-                </div>
-                {group.options.map((opt) => {
-                  const isSelected = values.includes(opt.value);
-                  return (
-                    <button
-                      key={opt.value}
-                      onClick={() => toggleValue(opt.value)}
-                      className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${
-                        isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
-                      }`}
-                    >
-                      <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${
-                        isSelected
-                          ? 'bg-[var(--accent)] border-[var(--accent)]'
-                          : 'border-[var(--border)]'
-                      }`}>
-                        {isSelected && (
-                          <svg width="10" height="10" viewBox="0 0 16 16" fill="white">
-                            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
-                          </svg>
-                        )}
-                      </span>
-                      {opt.label}
-                    </button>
-                  );
-                })}
-              </div>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
-
 type ViewMode = 'grid' | 'list';
 
 interface CompanyFiltersProps {
   companies: Company[];
   onCompanyClick?: (companyId: string) => void;
-  isFirstVisit?: boolean;
 }
 
-export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: CompanyFiltersProps) {
+export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProps) {
   const router = useRouter();
   const { user, loading } = useAuth();
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
@@ -496,8 +364,8 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
   const [openRolesFilter, setOpenRolesFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
-  const [marketIndustryFilter, setMarketIndustryFilter] = useState<string[]>([]);
-  const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
+  const [marketFilter, setMarketFilter] = useState<Market[]>([]);
+  const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -508,12 +376,8 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     setIsMobile(window.innerWidth < 768);
   }, []);
 
-  // Synchronous check before first paint to avoid flash of desktop layout on mobile
-  useLayoutEffect(() => {
-    checkMobile();
-  }, [checkMobile]);
-
   useEffect(() => {
+    checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, [checkMobile]);
@@ -534,7 +398,7 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
   }, []);
 
   // SF Bay Area cities to consolidate
-  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Santa Clara', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
+  const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
 
   // Get unique locations (consolidate SF Bay Area and New York)
   const locations = useMemo(() => {
@@ -582,46 +446,30 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
       .map(t => ({ value: t, label: `${AI_TYPE_LABELS[t]} (${counts[t]})` }));
   }, [companies]);
 
-  // Get Market & Industry grouped options with counts
-  const marketIndustryGroups = useMemo(() => {
-    const marketCounts: Record<Market, number> = {} as Record<Market, number>;
-    const industryCounts: Record<Industry, number> = {} as Record<Industry, number>;
+  // Get Market options with counts
+  const marketOptions = useMemo(() => {
+    const counts: Record<Market, number> = {} as Record<Market, number>;
     companies.forEach(c => {
       c.markets?.forEach(m => {
-        marketCounts[m] = (marketCounts[m] || 0) + 1;
-      });
-      c.industries?.forEach(i => {
-        industryCounts[i] = (industryCounts[i] || 0) + 1;
+        counts[m] = (counts[m] || 0) + 1;
       });
     });
-
-    const marketGroup: OptionGroup = {
-      header: 'Market',
-      options: (Object.keys(MARKET_LABELS) as Market[])
-        .filter(m => marketCounts[m] > 0)
-        .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${marketCounts[m]})` })),
-    };
-
-    const industryGroup: OptionGroup = {
-      header: 'Industry',
-      options: (Object.keys(INDUSTRY_LABELS) as Industry[])
-        .filter(i => industryCounts[i] > 0)
-        .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${industryCounts[i]})` })),
-    };
-
-    return [marketGroup, industryGroup];
+    return (Object.keys(MARKET_LABELS) as Market[])
+      .filter(m => counts[m] > 0)
+      .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${counts[m]})` }));
   }, [companies]);
 
-  // Get Funding Stage options with counts
-  const fundingStageOptions = useMemo(() => {
-    const counts: Record<FundingStageCategory, number> = {} as Record<FundingStageCategory, number>;
+  // Get Industry options with counts
+  const industryOptions = useMemo(() => {
+    const counts: Record<Industry, number> = {} as Record<Industry, number>;
     companies.forEach(c => {
-      const category = normalizeFundingStage(c.stage);
-      counts[category] = (counts[category] || 0) + 1;
+      c.industries?.forEach(i => {
+        counts[i] = (counts[i] || 0) + 1;
+      });
     });
-    return (Object.keys(FUNDING_STAGE_LABELS) as FundingStageCategory[])
-      .filter(cat => counts[cat] > 0)
-      .map(cat => ({ value: cat, label: `${FUNDING_STAGE_LABELS[cat]} (${counts[cat]})` }));
+    return (Object.keys(INDUSTRY_LABELS) as Industry[])
+      .filter(i => counts[i] > 0)
+      .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${counts[i]})` }));
   }, [companies]);
 
   // Load interest statuses from Firestore (per user)
@@ -716,12 +564,6 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
       status: newStatus ?? 'cleared',
       source: 'list_checkbox',
     });
-
-    void trackFirestoreEvent('tier_change', {
-      companyId,
-      status: newStatus ?? 'cleared',
-      source: 'list_checkbox',
-    }, user?.email);
   };
 
   // Filter companies
@@ -760,26 +602,21 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
         if (!hasMatch) return false;
       }
 
-      // Market & Industry Filter (combined — OR across both groups)
-      if (marketIndustryFilter.length > 0) {
-        const marketValues = Object.keys(MARKET_LABELS) as Market[];
-        const industryValues = Object.keys(INDUSTRY_LABELS) as Industry[];
-        const selectedMarkets = marketIndustryFilter.filter(v => marketValues.includes(v as Market)) as Market[];
-        const selectedIndustries = marketIndustryFilter.filter(v => industryValues.includes(v as Industry)) as Industry[];
-        const marketMatch = selectedMarkets.length > 0 ? selectedMarkets.some(m => company.markets?.includes(m)) : false;
-        const industryMatch = selectedIndustries.length > 0 ? selectedIndustries.some(i => company.industries?.includes(i)) : false;
-        if (!marketMatch && !industryMatch) return false;
+      // Market Filter
+      if (marketFilter.length > 0) {
+        const hasMatch = marketFilter.some(m => company.markets?.includes(m));
+        if (!hasMatch) return false;
       }
 
-      // Funding Stage Filter
-      if (fundingStageFilter.length > 0) {
-        const companyStage = normalizeFundingStage(company.stage);
-        if (!fundingStageFilter.includes(companyStage)) return false;
+      // Industry Filter
+      if (industryFilter.length > 0) {
+        const hasMatch = industryFilter.some(i => company.industries?.includes(i));
+        if (!hasMatch) return false;
       }
 
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketIndustryFilter, fundingStageFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -800,67 +637,38 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     return 0;
   };
 
-  // Upside score: ranks companies by join-now potential (0–100)
-  const computeUpsideScore = (company: Company): number => {
-    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Santa Clara', 'Berkeley', 'Oakland', 'Redwood City'];
-    const nycArea = ['New York', 'Brooklyn', 'Manhattan'];
-
-    // Open Roles (0 or 30) — strongest gate
-    const rolesScore = company.openRoles.length > 0 ? 30 : 0;
-
-    // Growth Stage (0–25)
-    const growthScores: Record<string, number> = {
-      'hypergrowth': 25, 'high-growth': 18, 'early-growth': 12,
-      'mature-growth': 6, 'steady': 3, 'plateau': 0, 'declining': 0, 'unknown': 0,
-    };
-    const growthScore = company.growthMetrics?.stage
-      ? (growthScores[company.growthMetrics.stage] ?? 0)
-      : 0;
-
-    // Funding Stage (0–20) — earlier = more equity upside
-    const fundingScores: Record<string, number> = {
-      'Pre-seed': 20, 'Seed': 20, 'Series A': 17, 'Series B': 14,
-      'Series C': 10, 'Series D': 7, 'Series E': 4, 'Series F': 4,
-    };
-    let fundingScore = 0;
-    for (const [key, value] of Object.entries(fundingScores)) {
-      if (company.stage.includes(key)) { fundingScore = value; break; }
-    }
-
-    // AI-Native Level (0–15)
-    const aiScores: Record<string, number> = { A: 15, B: 11, C: 7, D: 3 };
-    const aiScore = aiScores[company.aiNativeLevel] ?? 0;
-
-    // Location (0–10)
-    const hq = company.headquarters;
-    const isSF = sfBayArea.some(city => hq.includes(city));
-    const isNYC = nycArea.some(city => hq.includes(city));
-    const isRemote = company.remote === 'Yes' || company.remote === 'Hybrid';
-    const locationScore = isSF ? 10 : isNYC ? 7 : isRemote ? 5 : hq.includes('US') || hq.includes('CA') ? 3 : 0;
-
-    return rolesScore + growthScore + fundingScore + aiScore + locationScore;
-  };
-
   // Sort companies (uses initial interest statuses so sorting doesn't change when toggling interest)
   const sortedCompanies = useMemo(() => {
+    const sfBayArea = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City'];
+
     const sorted = [...filteredCompanies].sort((a, b) => {
       switch (sortBy) {
-        case 'recommended': {
-          // Priority 1: Tier status (user's explicit assessment takes precedence)
+        case 'recommended':
+          // Priority 1: SF Bay Area + Open Positions
+          const aIsSF = sfBayArea.some(city => a.headquarters.includes(city));
+          const bIsSF = sfBayArea.some(city => b.headquarters.includes(city));
+          const aHasRoles = a.openRoles.length > 0;
+          const bHasRoles = b.openRoles.length > 0;
+          const aScore = (aIsSF ? 2 : 0) + (aHasRoles ? 1 : 0);
+          const bScore = (bIsSF ? 2 : 0) + (bHasRoles ? 1 : 0);
+          if (aScore !== bScore) return bScore - aScore;
+
+          // Priority 2: Tier status (tier_0 > tier_1 > not_reviewed > not_interested)
+          // Use initialInterestStatuses so sort order doesn't change until page reload
           const statusA = initialInterestStatuses[a.id];
           const statusB = initialInterestStatuses[b.id];
-          const tierA = statusA === 'tier_0' ? 0 : statusA === 'tier_1' ? 1 : statusA === 'not_interested' ? 3 : 2;
-          const tierB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
-          if (tierA !== tierB) return tierA - tierB;
+          const orderA = statusA === 'tier_0' ? 0 : statusA === 'tier_1' ? 1 : statusA === 'not_interested' ? 3 : 2;
+          const orderB = statusB === 'tier_0' ? 0 : statusB === 'tier_1' ? 1 : statusB === 'not_interested' ? 3 : 2;
+          if (orderA !== orderB) return orderA - orderB;
 
-          // Priority 2: Upside Score (growth + roles + stage + AI level + location)
-          const upsideA = computeUpsideScore(a);
-          const upsideB = computeUpsideScore(b);
-          if (upsideA !== upsideB) return upsideB - upsideA;
+          // Priority 3: AI Level (A > B > C > D)
+          const levelOrder = { A: 0, B: 1, C: 2, D: 3 };
+          if (a.aiNativeLevel !== b.aiNativeLevel) {
+            return levelOrder[a.aiNativeLevel] - levelOrder[b.aiNativeLevel];
+          }
 
-          // Priority 3: Alphabetical
+          // Priority 4: Alphabetical
           return a.name.localeCompare(b.name);
-        }
         case 'teamSize':
           const teamSizeDiff = parseTeamSize(b.designTeam.teamSize) - parseTeamSize(a.designTeam.teamSize);
           if (teamSizeDiff !== 0) return teamSizeDiff;
@@ -878,25 +686,15 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
           return 0;
       }
     });
-
-    // Pin Anthropic to top for first-time visitors
-    if (isFirstVisit) {
-      const anthropicIdx = sorted.findIndex(c => c.id === 'anthropic');
-      if (anthropicIdx > 0) {
-        const [anthropic] = sorted.splice(anthropicIdx, 1);
-        sorted.unshift(anthropic);
-      }
-    }
-
     return sorted;
-  }, [filteredCompanies, sortBy, initialInterestStatuses, isFirstVisit]);
+  }, [filteredCompanies, sortBy, initialInterestStatuses]);
 
   // Count not reviewed companies
   const notReviewedCount = useMemo(() => {
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketIndustryFilter.length > 0 || fundingStageFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
@@ -904,8 +702,8 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
     setOpenRolesFilter('');
     setLocationFilter([]);
     setAiTypeFilter([]);
-    setMarketIndustryFilter([]);
-    setFundingStageFilter([]);
+    setMarketFilter([]);
+    setIndustryFilter([]);
   };
 
   return (
@@ -925,12 +723,6 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
               { value: 'all', label: 'All' },
             ]}
             onChange={setReviewStatusFilter}
-          />
-          <MultiSelectFilter
-            label="Funding Stage"
-            values={fundingStageFilter}
-            options={fundingStageOptions}
-            onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
           />
           <DropdownFilter
             label="AI Level"
@@ -972,11 +764,17 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
             options={aiTypeOptions}
             onChange={(vals) => setAiTypeFilter(vals as AIType[])}
           />
-          <GroupedMultiSelectFilter
-            label="Market & Industry"
-            values={marketIndustryFilter}
-            groups={marketIndustryGroups}
-            onChange={setMarketIndustryFilter}
+          <MultiSelectFilter
+            label="Market"
+            values={marketFilter}
+            options={marketOptions}
+            onChange={(vals) => setMarketFilter(vals as Market[])}
+          />
+          <MultiSelectFilter
+            label="Industry"
+            values={industryFilter}
+            options={industryOptions}
+            onChange={(vals) => setIndustryFilter(vals as Industry[])}
           />
           {hasActiveFilters && (
             <button
@@ -989,12 +787,15 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
         </div>
 
         {/* Row 2: Company count + Sort + View Toggle */}
-        <div className="flex flex-wrap items-center justify-between gap-y-1 pl-3 pr-3">
+        <div className="flex items-center justify-between pl-3 pr-3">
           {/* Left: Company count */}
           <div className="text-sm font-medium text-[var(--foreground)]">
             {sortedCompanies.length === companies.length ? (
               <>
                 {companies.length} companies
+                {notReviewedCount > 0 && (
+                  <span className="text-[var(--muted)] ml-2">({notReviewedCount} not reviewed)</span>
+                )}
               </>
             ) : (
               <>
@@ -1019,9 +820,9 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
               />
             </div>
 
-            {/* View toggle - Hide on mobile (CSS + JS for SSR safety) */}
+            {/* View toggle - Hide on mobile */}
             {!isMobile && (
-              <div className="hidden md:flex items-center gap-1">
+              <div className="flex items-center gap-1">
                 <button
                   onClick={handleViewModeList}
                   className="p-1.5 rounded transition-colors hover:bg-[var(--card-hover)]"
@@ -1049,28 +850,14 @@ export function CompanyFilters({ companies, onCompanyClick, isFirstVisit }: Comp
         </div>
       ) : effectiveViewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {sortedCompanies.map((company, index) => (
-            <CompanyCard
-              key={company.id}
-              company={company}
-              onCompanyClick={onCompanyClick}
-              isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
-              pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
-              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
-            />
+          {sortedCompanies.map(company => (
+            <CompanyCard key={company.id} company={company} onCompanyClick={onCompanyClick} />
           ))}
         </div>
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {sortedCompanies.map((company, index) => (
-            <CompanyListRow
-              key={company.id}
-              company={company}
-              onCompanyClick={onCompanyClick}
-              isHighlighted={isFirstVisit && index === 0 && company.id === 'anthropic'}
-              pinnedLabel={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'Start here' : undefined}
-              dataTour={isFirstVisit && index === 0 && company.id === 'anthropic' ? 'first-card' : undefined}
-            />
+          {sortedCompanies.map(company => (
+            <CompanyListRow key={company.id} company={company} onCompanyClick={onCompanyClick} />
           ))}
         </div>
       )}

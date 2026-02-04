@@ -245,7 +245,7 @@ export const harvey: Company = {
       status: 'watching',
       fitScore: 8,
       whyJoin: [
-        'AI-native Level A: AI is the product',
+        'AI-native Level 4: AI is the product',
         'Massive design challenge: high-stakes legal AI',
         'Elite customers: working with top law firms',
         'Strong founders: Pereyra (DeepMind) + Weinberg (O\'Melveny)',

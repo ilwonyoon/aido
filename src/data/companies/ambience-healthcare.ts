@@ -179,7 +179,15 @@ export const ambienceHealthcare: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Staff Product Designer',
+        location: 'San Francisco, CA (Onsite)',
+        url: 'https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65',
+        level: 'Staff',
+        type: 'full-time',
+      },
+    ],
 
     // Culture Insights
     cultureInsights: [],

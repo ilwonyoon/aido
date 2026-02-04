@@ -348,6 +348,31 @@ import { kiteAi } from './kite-ai';
 import { humanBehavior } from './human-behavior';
 import { cognitionAi } from './cognition-ai';
 import { elevenX } from './11x';
+import { tako } from './tako';
+import { superpower } from './superpower';
+import { mural } from './mural';
+import { inkeep } from './inkeep';
+import { cambium } from './cambium';
+import { solaSecurity } from './sola-security';
+import { augment } from './augment';
+import { recallAi } from './recall-ai';
+import { aetherflux } from './aetherflux';
+import { ranger } from './ranger';
+import { interfere } from './interfere';
+import { sfcompute } from './sfcompute';
+import { astromech } from './astromech';
+import { aurasell } from './aurasell';
+import { hanomi } from './hanomi';
+import { things } from './things';
+import { medallion } from './medallion';
+import { dagster } from './dagster';
+import { browserbase } from './browserbase';
+import { freed } from './freed';
+import { twoDots } from './two-dots';
+import { invertBio } from './invert-bio';
+import { upwind } from './upwind';
+import { oway } from './oway';
+import { conversion } from './conversion';
 import { coframe } from './coframe';
 import { playbook } from './playbook';
 import { mage } from './mage';
@@ -373,36 +398,6 @@ import { cline } from './cline';
 import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
-import { abacusAi } from './abacus-ai';
-import { affinityCo } from './affinity-co';
-import { afresh } from './afresh';
-import { agentIq } from './agent-iq';
-import { alleviateHealth } from './alleviate-health';
-import { altasAi } from './altas-ai';
-import { altimateAi } from './altimate-ai';
-import { ambientAi } from './ambient-ai';
-import { embeddingVc } from './embedding-vc';
-import { ensue } from './ensue';
-import { essentialAi } from './essential-ai';
-import { evvolveAndPartners } from './evvolve-and-partners';
-import { faction } from './faction';
-import { fairwai } from './fairwai';
-import { finthos } from './finthos';
-import { firefliesAi } from './fireflies-ai';
-import { fleetworks } from './fleetworks';
-import { floeLabs } from './floe-labs';
-import { fractionalAi } from './fractional-ai';
-import { fyxerAi } from './fyxer-ai';
-import { globalbizops } from './globalbizops';
-import { goodgoblinAi } from './goodgoblin-ai';
-import { gotofit } from './gotofit';
-import { heartthrobAi } from './heartthrob-ai';
-import { herostealthModeStartupDisruptingARealWorldSpaceInDireNeedOfAChange } from './herostealth-mode-startup-disrupting-a-real-world-space-in-dire-need-of-a-change';
-import { hipex } from './hipex';
-import { hippHealth } from './hipp-health';
-import { hive } from './hive';
-import { hiveai } from './hiveai';
-import { honeyBadgerLabs } from './honey-badger-labs';
 
 export const companies: Company[] = [
   anthropic,
@@ -753,6 +748,31 @@ export const companies: Company[] = [
   humanBehavior,
   cognitionAi,
   elevenX,
+  tako,
+  superpower,
+  mural,
+  inkeep,
+  cambium,
+  solaSecurity,
+  augment,
+  recallAi,
+  aetherflux,
+  ranger,
+  interfere,
+  sfcompute,
+  astromech,
+  aurasell,
+  hanomi,
+  things,
+  medallion,
+  dagster,
+  browserbase,
+  freed,
+  twoDots,
+  invertBio,
+  upwind,
+  oway,
+  conversion,
   coframe,
   playbook,
   mage,
@@ -778,36 +798,6 @@ export const companies: Company[] = [
   nowadays,
   alix,
   stytch,
-  abacusAi,
-  affinityCo,
-  afresh,
-  agentIq,
-  alleviateHealth,
-  altasAi,
-  altimateAi,
-  ambientAi,
-  embeddingVc,
-  ensue,
-  essentialAi,
-  evvolveAndPartners,
-  faction,
-  fairwai,
-  finthos,
-  firefliesAi,
-  fleetworks,
-  floeLabs,
-  fractionalAi,
-  fyxerAi,
-  globalbizops,
-  goodgoblinAi,
-  gotofit,
-  heartthrobAi,
-  herostealthModeStartupDisruptingARealWorldSpaceInDireNeedOfAChange,
-  hipex,
-  hippHealth,
-  hive,
-  hiveai,
-  honeyBadgerLabs,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)

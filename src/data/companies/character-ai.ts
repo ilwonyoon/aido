@@ -165,7 +165,7 @@ export const characterAi: Company = {
       {
         title: 'Product Designer',
         location: 'Menlo Park, CA (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6',
+        url: 'https://jobs.ashbyhq.com/character/',
         type: 'full-time',
         aboutRole: 'Create user-centered designs for AI entertainment products, crafting interfaces that spark curiosity and offer endless ways to explore.',
         responsibilities: [
@@ -227,7 +227,7 @@ export const characterAi: Company = {
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level A: AI is the product',
+        'AI-native Level 4: AI is the product',
         'Massive scale: 208M monthly visits',
         'Creative product: entertainment AI vs boring productivity tools',
         'Community-driven: 16M+ user-created characters',

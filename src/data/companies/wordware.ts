@@ -13,28 +13,26 @@ export const wordware: Company = {
   screenshot: '/screenshots/wordware-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['agent', 'llm-app'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: '$30.5M',
+  totalFunding: '$30M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: '286K+ users',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'LangChain', description: 'Open-source code-first LLM framework', whyTheyWin: 'Massive open-source community' },
-    { name: 'CrewAI', description: 'Python framework for multi-agent teams', whyTheyWin: 'Developer familiarity with Python' },
-    { name: 'n8n', description: 'Open-source workflow automation', whyTheyWin: 'Broad automation use cases' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Natural-language-first AI development OS — build agents 20x faster than code-first alternatives (YC S24)',
-  moat: ['Natural language IDE paradigm', 'YC S24 network', 'Speed of agent creation'],
-  vsGiants: 'Code-first frameworks like LangChain require deep technical expertise; Wordware enables non-engineers to build agents',
+  marketPosition: 'AI Agent orchestration platform',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const wordware: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Filip Kozera', role: 'Co-Founder & CEO', background: 'Cambridge (Master\'s Info Engineering). Previously co-founded KRISTALIC (Techstars \'19, raised $6.5M).' },
-    { name: 'Robert Chandler', role: 'Co-Founder & CTO', background: 'Cambridge. Early engineer at Five AI (acquired by Bosch). 5+ patents, decade in AI.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Building agents should be as easy as writing in natural language, not wrestling with code frameworks.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const wordware: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Developers and product teams building AI agents' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const wordware: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Wordware', url: 'https://www.wordware.ai' },
     { title: 'Wordware on startups.gallery', url: 'https://startups.gallery/companies/wordware' },

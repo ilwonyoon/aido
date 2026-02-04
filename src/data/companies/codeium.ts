@@ -143,7 +143,7 @@ export const codeium: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [],
+    openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://codeium.com/careers', type: 'full-time' }],
     cultureInsights: [
       {
         source: 'techcrunch',
@@ -155,7 +155,7 @@ export const codeium: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level A', '$2.9B (Feb 2025, in talks)'],
+      whyJoin: ['AI-native Level 4', '$2.9B (Feb 2025, in talks)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Codeium product', 'Research founders'],
     },

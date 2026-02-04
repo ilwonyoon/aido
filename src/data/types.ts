@@ -13,12 +13,7 @@ export type AIType =
   | 'search-retrieval'    // Perplexity, Glean
   | 'conversation-ai'     // Intercom, Gong
   | 'data-analysis'       // Hightouch
-  | 'automation'          // Zapier AI
-  | 'agent'               // Browserbase, Cline (AI 에이전트)
-  | 'llm-app'             // Freed, Thatch (LLM 기반 앱)
-  | 'voice'               // Freed, ElevenLabs (음성 AI)
-  | 'computer-vision'     // Roboflow (컴퓨터 비전)
-  | 'multimodal';         // Coframe (멀티모달 AI)
+  | 'automation';         // Zapier AI
 
 export type Market =
   | 'b2c'          // 개인 소비자
@@ -38,8 +33,6 @@ export type Industry =
   | 'legal'              // 법률
   | 'security'           // 보안
   | 'education'          // 교육
-  | 'data'               // 데이터/분석
-  | 'commerce'           // 커머스
   | 'other';             // 기타
 
 export const AI_TYPE_LABELS: Record<AIType, string> = {
@@ -55,11 +48,6 @@ export const AI_TYPE_LABELS: Record<AIType, string> = {
   'conversation-ai': 'Conversation AI',
   'data-analysis': 'Data Analysis',
   'automation': 'Automation',
-  'agent': 'AI Agent',
-  'llm-app': 'LLM App',
-  'voice': 'Voice AI',
-  'computer-vision': 'Computer Vision',
-  'multimodal': 'Multimodal AI',
 };
 
 export const MARKET_LABELS: Record<Market, string> = {
@@ -81,53 +69,8 @@ export const INDUSTRY_LABELS: Record<Industry, string> = {
   'legal': 'Legal',
   'security': 'Security',
   'education': 'Education',
-  'data': 'Data & Analytics',
-  'commerce': 'Commerce',
   'other': 'Other',
 };
-
-export type FundingStageCategory =
-  | 'pre-seed'
-  | 'seed'
-  | 'series-a'
-  | 'series-b'
-  | 'series-c'
-  | 'series-d-plus'
-  | 'growth'
-  | 'other';
-
-export const FUNDING_STAGE_LABELS: Record<FundingStageCategory, string> = {
-  'pre-seed': 'Pre-seed',
-  'seed': 'Seed',
-  'series-a': 'Series A',
-  'series-b': 'Series B',
-  'series-c': 'Series C',
-  'series-d-plus': 'Series D+',
-  'growth': 'Public / Private',
-  'other': 'Other',
-};
-
-export function normalizeFundingStage(stage: string): FundingStageCategory {
-  const s = stage.toLowerCase().trim();
-
-  if (s.includes('pre-seed') || s.includes('pre-series a')) return 'pre-seed';
-  if (s === 'seed') return 'seed';
-  if (s.startsWith('series a')) return 'series-a';
-  if (s.startsWith('series b')) return 'series-b';
-  if (s.startsWith('series c')) return 'series-c';
-  if (
-    s.startsWith('series d') ||
-    s.startsWith('series e') ||
-    s.startsWith('series f')
-  ) return 'series-d-plus';
-  if (
-    s.includes('public') ||
-    s.includes('private') ||
-    s.includes('bootstrapped')
-  ) return 'growth';
-
-  return 'other';
-}
 
 export interface FundingRound {
   stage: 'Pre-seed' | 'Seed' | 'Series A' | 'Series B' | 'Series C' | 'Series D' | 'Series E' | 'Series F' | 'Unknown';
@@ -284,14 +227,6 @@ export interface Company {
 
   // Open Roles
   openRoles: OpenRole[];
-
-  // Media Assets
-  media?: {
-    ogImage?: string; // Absolute URL or public path (e.g., "/og/anthropic.png")
-    ogImageSource?: string; // Source page URL where OG image was found
-    screenshot?: string; // Product UI screenshot (absolute URL or public path)
-    screenshotSource?: string; // Source page URL where screenshot was captured
-  };
 
   // Culture Insights (Blind, Glassdoor, etc.)
   cultureInsights?: CultureInsight[];

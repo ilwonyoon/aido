@@ -138,12 +138,12 @@ export const brex: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Staff Product Designer', location: 'San Francisco, CA | New York, NY (Hybrid)', url: 'https://www.brex.com/careers/8124973002?gh_jid=8124973002', type: 'full-time' }],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.brex.com/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level B', '$12.3B'],
+      whyJoin: ['AI-native Level 3', '$12.3B'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Brex product', 'Research founders'],
     },

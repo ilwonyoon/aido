@@ -15,26 +15,24 @@ export const workos: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools', 'security'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
-  valuation: '~$525M',
-  totalFunding: '$99M',
-  revenue: '$30M+ ARR',
+  valuation: 'Unknown',
+  totalFunding: '$80M',
+  revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: '1,000+',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Auth0 (Okta)', description: 'Auth platform acquired by Okta for $6.5B', whyTheyWin: 'Massive distribution and brand recognition' },
-    { name: 'Clerk', description: 'Developer authentication and user management', whyTheyWin: 'Modern DX focus, growing fast' },
-    { name: 'Stytch', description: 'Authentication infrastructure for developers', whyTheyWin: 'Developer-first approach' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Category-defining Stripe for enterprise features — SSO, directory sync, audit logs, admin portal as APIs',
-  moat: ['Category creation', 'API-first architecture', 'Enterprise integrations moat'],
-  vsGiants: 'Okta/Auth0 focus on auth only; WorkOS provides full enterprise-readiness stack',
+  marketPosition: 'Dev platform to implement enterprise-grade features',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,15 +41,15 @@ export const workos: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Michael Grinich', role: 'Founder & CEO', background: 'MIT. Previously founded Nylas. Saw need for enterprise-readiness as a service.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Every SaaS eventually needs enterprise features — SSO, SCIM, audit logs. WorkOS makes it a one-line integration.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -60,7 +58,7 @@ export const workos: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'SaaS developers building enterprise features' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -96,7 +94,7 @@ export const workos: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'WorkOS', url: 'https://workos.com' },
     { title: 'WorkOS on startups.gallery', url: 'https://startups.gallery/companies/workos' },

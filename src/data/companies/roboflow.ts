@@ -13,28 +13,26 @@ export const roboflow: Company = {
   screenshot: '/screenshots/roboflow-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['computer-vision'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools', 'data'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$63.6M',
+  totalFunding: '$40M',
   revenue: 'Unknown',
-  growth: '1M+ developers, 500K+ datasets',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: '25,000+ companies, half of Fortune 100',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Clarifai', description: 'Full-stack AI platform for CV, NLP, audio', whyTheyWin: 'Broader AI platform scope' },
-    { name: 'Landing AI', description: 'Andrew Ng\'s visual AI for manufacturing', whyTheyWin: 'Andrew Ng brand, manufacturing focus' },
-    { name: 'V7 Labs', description: 'AI data engine for computer vision', whyTheyWin: 'Strong annotation tooling' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Leading open-source computer vision platform — 1M+ devs, 500M+ images, 150K+ pretrained models',
-  moat: ['Massive open-source community', '500K+ public datasets', 'Developer ecosystem network effects'],
-  vsGiants: 'Cloud providers offer generic ML tools; Roboflow is purpose-built for computer vision with superior DX',
+  marketPosition: 'Computer vision tools for developers and enterprises',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const roboflow: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Joseph Nelson', role: 'Co-Founder & CEO', background: 'Economics degree, self-taught ML. Co-created Magic Sudoku AR app.' },
-    { name: 'Brad Dwyer', role: 'Co-Founder & CTO', background: 'Founded Hatchlings (social gaming, 10M+ users). Web dev company in high school.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Computer vision is transformative but too hard to use. Mission: make the world programmable through vision AI.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const roboflow: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Developers building computer vision applications' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const roboflow: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Roboflow', url: 'https://roboflow.com' },
     { title: 'Roboflow on startups.gallery', url: 'https://startups.gallery/companies/roboflow' },

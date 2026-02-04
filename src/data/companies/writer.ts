@@ -107,7 +107,7 @@ export const writer: Company = {
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level A', '$1.9B (2024)'],
+      whyJoin: ['AI-native Level 4', '$1.9B (2024)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Writer product', 'Research founders'],
     },

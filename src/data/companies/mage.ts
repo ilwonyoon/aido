@@ -15,12 +15,12 @@ export const mage: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['data'],
+  industries: ['other'],
 
   // Business
   stage: 'Seed',
   valuation: 'Unknown',
-  totalFunding: '$11.8M',
+  totalFunding: '$6.3M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -28,13 +28,11 @@ export const mage: Company = {
 
   // Competition
   competitors: [
-    { name: 'Apache Airflow', description: 'Industry-standard open-source data pipeline orchestrator', whyTheyWin: 'Massive community adoption (52K members)' },
-    { name: 'Prefect', description: 'Hybrid execution data orchestration with strong observability', whyTheyWin: 'Strong cloud offerings and observability' },
-    { name: 'Dagster', description: 'Software-defined assets approach to data orchestration', whyTheyWin: 'Asset-centric paradigm innovation' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Open-source modern replacement for Airflow with visual pipeline building, AI-powered code assistance, and Python/SQL/R support',
-  moat: ['Open-source Airflow alternative', 'Visual pipeline builder with notebook-style UI', 'AI-powered code generation'],
-  vsGiants: 'Airflow requires extensive boilerplate and painful DAG management; Mage provides visual building with notebook-style UI and AI assistance',
+  marketPosition: 'Open-source data pipeline tool',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const mage: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Tommy Dang', role: 'Co-Founder & CEO', background: 'UC Berkeley graduate. Former engineer at Airbnb (joined when <200 engineers), built internal low-code data tools.' },
-    { name: 'Xiaoyou Wang', role: 'Co-Founder', background: 'Former Airbnb engineer. Co-built internal low-code tool Omni with Tommy Dang.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Data pipelines shouldnt require writing hundreds of lines of boilerplate code. Visual building with AI assistance makes data engineering accessible.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const mage: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Data engineers and analytics teams building and maintaining data pipelines' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const mage: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Mage', url: 'https://www.mage.ai' },
     { title: 'Mage on startups.gallery', url: 'https://startups.gallery/companies/mage' },

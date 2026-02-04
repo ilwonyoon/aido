@@ -15,26 +15,24 @@ export const dagster: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['data', 'developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$47M',
+  totalFunding: '$33M',
   revenue: 'Unknown',
-  growth: '97 employees across 4 continents',
+  growth: 'Unknown',
   runway: 'Unknown',
   customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Apache Airflow', description: 'Most widely adopted task-based DAG orchestrator', whyTheyWin: 'Massive adoption, 2K+ job listings' },
-    { name: 'Prefect', description: 'Python-native orchestration', whyTheyWin: 'Founded by former Airflow PMC member' },
-    { name: 'Mage', description: 'Modern data pipeline with notebook-style UI', whyTheyWin: 'Familiar notebook interface' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Asset-centric data orchestration pioneer — created by GraphQL co-creator, led by React co-creator',
-  moat: ['Asset-centric paradigm (first-mover)', 'Founder pedigree (GraphQL + React creators)', 'Sequoia/Index Ventures backing'],
-  vsGiants: 'Airflow is task-based and painful to maintain; Dagster treats data assets as first-class citizens',
+  marketPosition: 'Ship data pipelines with extraordinary velocity',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const dagster: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Nick Schrock', role: 'Founder', background: 'Former Facebook engineer, co-created GraphQL. Founded Elementl (now Dagster Labs) in 2018.' },
-    { name: 'Pete Hunt', role: 'CEO (joined 2022)', background: 'Co-creator of React at Facebook. Joined as CEO to enhance developer experience focus.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Data orchestration should be asset-centric, not task-centric. Data pipelines deserve the same developer experience as code.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const dagster: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Data engineers and analytics teams' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const dagster: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T13:35:00',
   sources: [
     { title: 'Dagster', url: 'https://dagster.io' },
     { title: 'Dagster on startups.gallery', url: 'https://startups.gallery/companies/dagster' },

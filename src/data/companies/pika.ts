@@ -154,7 +154,7 @@ export const pika: Company = {
     ],
     openRoles: [
       {
-        title: 'Product Designer',
+        title: 'Senior Product Designer',
         location: 'Palo Alto, CA',
         type: 'full-time',
         url: 'https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541',
@@ -240,7 +240,7 @@ export const pika: Company = {
       status: 'interested',
       fitScore: 7,
       whyJoin: [
-        'Level A AI-native',
+        'Level 4 AI-native',
         'Creative tools space',
         'Small team — high impact',
         'Stanford AI Lab founders',

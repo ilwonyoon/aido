@@ -69,12 +69,12 @@ export const gong: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://gong.io/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 6,
-      whyJoin: ['AI-native Level B', '$7.25B (2021)'],
+      whyJoin: ['AI-native Level 3', '$7.25B (2021)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Gong product', 'Research founders'],
     },

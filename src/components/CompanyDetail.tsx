@@ -1,12 +1,9 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
-import gsap from 'gsap';
 import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
-import { useAuth } from '@/contexts/AuthContext';
 import { CompanyLogo } from './CompanyLogo';
 import { CompanyOGImage } from './CompanyOGImage';
 import { Badge, AiLevelBadge } from '@/components/ui/Badge';
@@ -47,55 +44,9 @@ function WorkTypeSection({
 
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
-  const detailRef = useRef<HTMLDivElement>(null);
-
-  // Self-contained scroll reveal using IntersectionObserver.
-  // Works in both window scroll and panel scroll contexts.
-  useEffect(() => {
-    const el = detailRef.current;
-    if (!el) return;
-
-    const blocks = el.querySelectorAll('[data-reveal]');
-    blocks.forEach((b) => gsap.set(b, { opacity: 0, y: 20 }));
-
-    // Find nearest scrollable parent (for panel context)
-    let scrollParent: Element | null = el.parentElement;
-    while (scrollParent && scrollParent !== document.documentElement) {
-      const overflow = getComputedStyle(scrollParent).overflowY;
-      if (overflow === 'auto' || overflow === 'scroll') break;
-      scrollParent = scrollParent.parentElement;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, {
-              opacity: 1,
-              y: 0,
-              duration: 0.6,
-              ease: 'power2.out',
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        root: scrollParent !== document.documentElement ? scrollParent : null,
-        threshold: 0.1,
-      }
-    );
-
-    blocks.forEach((b) => observer.observe(b));
-
-    return () => {
-      observer.disconnect();
-      blocks.forEach((b) => gsap.set(b, { clearProps: 'opacity,y' }));
-    };
-  }, [company.id]);
 
   return (
-    <div ref={detailRef} className="w-full">
+    <div className="w-full">
       {/* Back Link */}
       <div className="mb-2">
         <button
@@ -117,7 +68,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
 
           {/* Header Info */}
-          <div data-reveal className="mb-8">
+          <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <CompanyLogo website={company.website} name={company.name} size={48} />
               <h1 className="text-2xl sm:text-3xl font-semibold">{company.name}</h1>
@@ -149,7 +100,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </div>
 
           {/* Quick Info */}
-          <section id="quick-info" data-reveal className="scroll-mt-20 space-y-4 mb-12">
+          <section id="quick-info" className="scroll-mt-20 space-y-4 mb-12">
             <h2 id="quick-info-header" className="text-2xl font-semibold mb-6">⚡ Quick Info</h2>
 
             {/* Overview - Summary Card */}
@@ -215,30 +166,6 @@ export function CompanyDetail({ company }: { company: Company }) {
                 </div>
               </div>
             </div>
-
-            {company.media?.screenshot && (
-              <div className="card p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="text-xs text-[var(--muted)]">Product Screenshot</div>
-                  {company.media.screenshotSource && (
-                    <a
-                      href={company.media.screenshotSource}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-[var(--accent-light)] hover:underline"
-                    >
-                      Source ↗
-                    </a>
-                  )}
-                </div>
-                <img
-                  src={company.media.screenshot}
-                  alt={`${company.name} product screenshot`}
-                  className="w-full rounded-lg border border-[var(--border)]"
-                  loading="lazy"
-                />
-              </div>
-            )}
 
           </section>
 
@@ -337,7 +264,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           )}
 
           {/* Company */}
-          <section id="company" data-reveal className="scroll-mt-20 space-y-8 mb-12">
+          <section id="company" className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🏢 Company</h2>
 
             {/* Business */}
@@ -680,7 +607,7 @@ export function CompanyDetail({ company }: { company: Company }) {
           </section>
 
           {/* Design */}
-          <section id="design" data-reveal className="scroll-mt-20 space-y-8 mb-12">
+          <section id="design" className="scroll-mt-20 space-y-8 mb-12">
             <h2 className="text-2xl font-semibold mb-6">🎨 Design</h2>
 
             {/* Design Team + Designer Links */}

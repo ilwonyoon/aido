@@ -212,7 +212,7 @@ export const ramp: Company = {
         'Eric Glyman and Karim Atiyeh (repeat founders)',
         '$32B valuation, $1B ARR',
         '100% YoY growth (rare at scale)',
-        'AI-native Level B: AI is core',
+        'AI-native Level 3: AI is core',
         'Multiple senior roles (Principal, Staff)',
       ],
       whyNot: [

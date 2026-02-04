@@ -155,7 +155,13 @@ export const granola: Company = {
         description: 'Product updates and philosophy',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Design Engineer',
+        location: 'London, UK (In-person)',
+        url: 'https://www.granola.ai/jobs/design-engineer',
+      },
+    ],
 
     cultureInsights: [
       {

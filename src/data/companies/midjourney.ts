@@ -117,7 +117,13 @@ export const midjourney: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Remote (Bay Area and London preferred)',
+        url: 'https://www.midjourney.com/careers',
+      },
+    ],
 
     cultureInsights: [],
 

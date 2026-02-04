@@ -15,7 +15,7 @@ export const instant: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Seed',
@@ -28,13 +28,11 @@ export const instant: Company = {
 
   // Competition
   competitors: [
-    { name: 'Firebase', description: 'Google mobile/web app platform with Realtime Database and Firestore', whyTheyWin: 'Google ecosystem and massive adoption' },
-    { name: 'Supabase', description: 'Open-source Firebase alternative built on PostgreSQL', whyTheyWin: 'PostgreSQL compatibility and open-source community' },
-    { name: 'Convex', description: 'Open-source reactive database with TypeScript-native APIs', whyTheyWin: 'TypeScript-native with built-in reactivity' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Modern Firebase alternative with graph-based real-time database, relational query support, offline mode, and optimistic updates — YC S22',
-  moat: ['Graph-based real-time database (novel approach)', 'Offline-first with optimistic updates', 'YC S22 backing'],
-  vsGiants: 'Firebase locks you into Google with limited query support; Instant is open-source with relational queries and graph-based data model',
+  marketPosition: 'A modern Firebase',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,10 +41,9 @@ export const instant: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Joe Averbukh', role: 'Co-Founder & CEO', background: 'UCLA graduate. Former senior engineer at Facebook.' },
-    { name: 'Stepan Parunashvili', role: 'Co-Founder & CTO', background: 'Former Staff Software Engineer at Airbnb. Deep expertise in real-time systems.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Real-time databases should not require you to sacrifice querying power or lock into a vendor. Instant combines Firebase-like reactivity with relational power.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
@@ -61,7 +58,7 @@ export const instant: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Frontend developers building real-time, collaborative web applications' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const instant: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Instant', url: 'https://www.instantdb.com' },
     { title: 'Instant on startups.gallery', url: 'https://startups.gallery/companies/instant' },

@@ -15,26 +15,24 @@ export const middesk: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['fintech'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$77M',
+  totalFunding: '$57M',
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Affirm, Brex, Plaid, Mercury, Rippling',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Persona', description: 'Flexible identity verification with 150+ official business registries', whyTheyWin: 'Broader identity verification scope' },
-    { name: 'Alloy', description: 'Identity decisioning and orchestration platform for KYC/KYB/AML', whyTheyWin: 'Orchestration and decisioning layer' },
-    { name: 'Trulioo', description: 'Global identity verification covering 195+ countries', whyTheyWin: 'Global coverage' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Leading U.S. business identity verification (KYB) platform with direct connections to every Secretary of State office and the IRS — serves Affirm, Brex, Plaid, Mercury, Rippling',
-  moat: ['Direct Secretary of State + IRS connections', 'Sequoia + Accel + Insight Partners backing', 'Forbes Fintech 50'],
-  vsGiants: 'Generic KYC platforms verify individuals; Middesk specializes in business identity with direct government data connections',
+  marketPosition: 'Business identity platform',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,16 +41,15 @@ export const middesk: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Kyle Mack', role: 'Co-Founder & CEO', background: 'Former Director of Solutions at Checkr. Sequoia Scout. Y Combinator alum.' },
-    { name: 'Kurt Ruppel', role: 'Co-Founder & CTO', background: 'UC Berkeley. Previously at Checkr and Zendesk. Full-stack engineer.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Business verification is stuck in the past — manual, slow, and error-prone. Middesk automates KYB with direct government data.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -61,7 +58,7 @@ export const middesk: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Fintech companies and financial institutions needing KYB verification' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -97,7 +94,7 @@ export const middesk: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T18:00:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Middesk', url: 'https://middesk.com' },
     { title: 'Middesk on startups.gallery', url: 'https://startups.gallery/companies/middesk' },

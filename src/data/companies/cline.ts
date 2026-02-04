@@ -13,28 +13,26 @@ export const cline: Company = {
   screenshot: '/screenshots/cline-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['code-assistant', 'agent'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools'],
+  industries: ['other'],
 
   // Business
   stage: 'Series A',
-  valuation: '$110M',
-  totalFunding: '$32M',
+  valuation: 'Unknown',
+  totalFunding: '$27M',
   revenue: 'Unknown',
-  growth: '2.7M developers, 57.3K GitHub stars',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: '2.7M developers including Samsung and SAP',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'Cursor', description: 'AI-first code editor with deep IDE integration', whyTheyWin: 'Better IDE experience, fast autocomplete' },
-    { name: 'GitHub Copilot', description: 'Microsoft-backed AI coding assistant', whyTheyWin: 'Massive distribution via VS Code and GitHub' },
-    { name: 'Augment', description: 'AI coding platform for enterprise teams', whyTheyWin: 'Enterprise focus' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Open-source privacy-first AI coding agent with zero-trust architecture — code never touches their servers',
-  moat: ['Open-source community (57K stars)', 'Zero-trust privacy model', 'Model-agnostic (bring your own key)'],
-  vsGiants: 'Copilot is closed-source and sends code to Microsoft; Cline is open-source with zero-trust architecture',
+  marketPosition: 'Open source AI coding',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,15 +41,15 @@ export const cline: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Saoud Rizwan', role: 'Founder & CEO', background: '10 yrs software engineering. iOS dev with open-source contributions. Started as Anthropic hackathon project June 2024.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'AI coding should be open-source, privacy-first, and model-agnostic — not locked into one vendor.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '11-50 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -60,7 +58,7 @@ export const cline: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Software developers wanting AI coding assistance with privacy' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -96,7 +94,7 @@ export const cline: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'Cline', url: 'https://cline.bot' },
     { title: 'Cline on startups.gallery', url: 'https://startups.gallery/companies/cline' },

@@ -13,28 +13,26 @@ export const incidentIo: Company = {
   screenshot: '/screenshots/incident-io-screenshot.png',
 
   // Multi-dimensional Tags
-  aiTypes: ['agent', 'automation'],
+  aiTypes: ['automation'],
   markets: ['b2b'],
-  industries: ['developer-tools', 'security'],
+  industries: ['other'],
 
   // Business
   stage: 'Series B',
-  valuation: '$400M',
-  totalFunding: '$96M',
+  valuation: 'Unknown',
+  totalFunding: '$62M',
   revenue: 'Unknown',
-  growth: '250,000+ incidents managed',
+  growth: 'Unknown',
   runway: 'Unknown',
-  customers: 'Netflix, Linear, Ramp, Etsy',
+  customers: 'Unknown',
 
   // Competition
   competitors: [
-    { name: 'PagerDuty', description: 'Market leader in alerting/on-call', whyTheyWin: 'Brand recognition, large customer base' },
-    { name: 'FireHydrant', description: 'Full lifecycle incident management', whyTheyWin: 'Comprehensive feature set' },
-    { name: 'Rootly', description: 'Slack-native incident management', whyTheyWin: 'Deep Slack integration' },
+    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
-  marketPosition: 'Chat-native incident management with AI agents for automated response — G2 9.5 ease of use, 9.8 support quality',
-  moat: ['Superior UX (G2 9.5/9.8)', 'Slack/Teams native', 'Opsgenie shutting down 2027 → customer migration opportunity'],
-  vsGiants: 'PagerDuty is alerting-centric with weak incident coordination; incident.io covers full lifecycle with better UX',
+  marketPosition: 'Incident management platform',
+  moat: ['Unknown'],
+  vsGiants: 'Unknown',
 
   // AI-native analysis
   aiNativeLevel: 'D',
@@ -43,17 +41,15 @@ export const incidentIo: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Stephen Whitworth', role: 'Co-Founder & CEO', background: 'Co-founded Ravelin (fraud detection). Former staff engineer at Monzo Bank.' },
-    { name: 'Pete Hamilton', role: 'Co-Founder & CTO', background: 'Former Senior Staff Engineer at Monzo. Previously at GoCardless and Amazon.' },
-    { name: 'Chris Evans', role: 'Co-Founder & CPO', background: 'Former engineer at Monzo, built open-source incident tooling that inspired incident.io.' },
+    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
   ],
-  whyBuilding: 'Incident management tools are outdated and painful. Modern teams deserve chat-native, AI-powered incident response.',
+  whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
   greenFlags: ['Unknown'],
   redFlags: ['Unknown'],
 
   // Design Opportunity
-  designTeam: { teamSize: 'Unknown' },
+  designTeam: { teamSize: '51-200 employees (startups.gallery)' },
   designWorkType: {
     logicBehavior: { level: 'medium', tasks: ['Unknown'] },
     evaluation: { level: 'low', tasks: ['Unknown'] },
@@ -62,7 +58,7 @@ export const incidentIo: Company = {
   productStage: '1→10',
 
   // User Context
-  targetAudiences: { primary: 'Engineering and SRE teams managing production incidents' },
+  targetAudiences: { primary: 'Unknown' },
   userProblems: ['Unknown'],
 
   // Designer Links
@@ -98,7 +94,7 @@ export const incidentIo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-02T17:30:00',
+  lastUpdated: '2026-02-01T14:20:00',
   sources: [
     { title: 'incident.io', url: 'https://incident.io' },
     { title: 'incident.io on startups.gallery', url: 'https://startups.gallery/companies/incident-io' },

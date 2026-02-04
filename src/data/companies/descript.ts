@@ -69,12 +69,12 @@ export const descript: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [],
+    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 7,
-      whyJoin: ['AI-native Level B', 'Unknown'],
+      whyJoin: ['AI-native Level 3', 'Unknown'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Descript product', 'Research founders'],
     },

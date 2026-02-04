@@ -155,7 +155,13 @@ export const elevenlabs: Company = {
         description: 'Product and research updates',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'Remote, London',
+        url: 'https://elevenlabs.io/careers/a4a9cda2-c5d8-47f0-989d-21617b58ab39',
+      },
+    ],
 
     cultureInsights: [
       {
@@ -220,7 +226,7 @@ export const elevenlabs: Company = {
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'Level A AI-native',
+        'Level 4 AI-native',
         'Market leader with clear differentiation',
         'Strong revenue — stable',
         'Voice is fascinating domain',

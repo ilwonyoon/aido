@@ -170,7 +170,7 @@ export const jasper: Company = {
       {
         title: 'Principal Product Designer',
         location: 'Austin, TX / Remote',
-        url: 'https://jobs.ashbyhq.com/Jasper%20AI/c87f771c-206b-499f-9d75-7d650ceb3b4b',
+        url: 'https://jobs.ashbyhq.com/Jasper%20AI',
         level: 'Principal',
         type: 'full-time',
         aboutRole: 'Shape Jasper\'s AI tools\' user experience, mentor designers, and prototype workflows, collaborating closely with PMs and engineers.',
@@ -240,7 +240,7 @@ export const jasper: Company = {
       status: 'watching',
       fitScore: 6,
       whyJoin: [
-        'AI-native Level B: AI is core differentiator',
+        'AI-native Level 3: AI is core differentiator',
         '100,000+ customers',
         'Principal Product Designer role (senior level)',
         'Yes',

@@ -174,7 +174,7 @@ export const cohere: Company = {
       {
         title: 'Senior Product Designer',
         location: 'Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/cohere/ca00e74b-e005-48b3-9158-8064148e1d63',
+        url: 'https://jobs.ashbyhq.com/cohere',
         level: 'Senior',
         type: 'full-time',
         aboutRole: 'Lead the design process for AI-powered user experiences, conducting research, collaborating with teams, and ensuring high-quality design across platforms.',
@@ -222,7 +222,7 @@ export const cohere: Company = {
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'AI-native Level A: AI is the product',
+        'AI-native Level 4: AI is the product',
         'Founder credibility: Aidan Gomez co-authored Transformer paper',
         'Strong growth: $200M+ ARR heading into 2026',
         'IPO-bound: mid-2026 IPO planned',

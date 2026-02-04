@@ -176,10 +176,11 @@ export const gamma: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer',
-        location: 'San Francisco, CA',
+        title: 'Staff Product Designer',
+        location: 'San Francisco, CA (Remote-friendly)',
+        url: 'https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer',
+        level: 'Staff',
         type: 'full-time',
-        url: 'https://careers.gamma.app/',
         aboutRole: 'Join a lean team transforming presentations with AI. Design for 30M+ users.',
         whyInteresting: 'Designer CEO. $100M ARR with 52 people. Profitable. AI-first product. High craft bar.',
       },
@@ -194,7 +195,7 @@ export const gamma: Company = {
       fitScore: 9,
       whyJoin: [
         'Grant Lee is designer CEO (rare!)',
-        'AI-native Level A: AI is the product',
+        'AI-native Level 4: AI is the product',
         '$100M ARR, profitable, lean team',
         '30M+ users, strong growth',
         'Interesting design challenges (AI generation)',

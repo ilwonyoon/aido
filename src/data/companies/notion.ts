@@ -154,7 +154,13 @@ export const notion: Company = {
         description: 'Design and product updates',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: 'Product Designer',
+        location: 'San Francisco, California; New York, New York',
+        url: 'https://job-boards.greenhouse.io/notion/jobs/6325053003',
+      },
+    ],
 
     cultureInsights: [
       {

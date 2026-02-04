@@ -69,12 +69,12 @@ export const heygen: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA | Los Angeles, CA (Hybrid)', url: 'https://job-boards.greenhouse.io/heygen/jobs/4978509007', type: 'full-time' }],
+    openRoles: [{ title: 'Product Designer', location: 'Los Angeles, CA (Hybrid)', url: 'https://heygen.com/careers', type: 'full-time' }],
     cultureInsights: [],
     tracking: {
       status: 'watching',
       fitScore: 8,
-      whyJoin: ['AI-native Level A', '$500M (2024)'],
+      whyJoin: ['AI-native Level 4', '$500M (2024)'],
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try HeyGen product', 'Research founders'],
     },
