@@ -17,6 +17,8 @@ export const itemApp: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2c'],
+  category: 'enterprise-ops' as const,
+
   industries: ['other'],
 
   // Business

@@ -17,6 +17,8 @@ export const nuraline: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

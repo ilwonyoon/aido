@@ -16,6 +16,8 @@ export const leya: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['productivity', 'legal'],
 
     stage: 'Series A',

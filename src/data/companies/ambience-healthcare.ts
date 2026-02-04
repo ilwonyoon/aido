@@ -18,6 +18,8 @@ export const ambienceHealthcare: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'text-assistant', 'automation'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'productivity'],
 
     // Business

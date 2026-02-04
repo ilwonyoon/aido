@@ -17,6 +17,8 @@ export const delve: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['legal', 'security'],
 
   // Business

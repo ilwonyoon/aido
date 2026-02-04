@@ -17,6 +17,8 @@ export const corgi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['smb'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

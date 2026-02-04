@@ -16,6 +16,8 @@ export const tavus: Company = {
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure', 'video-generation', 'audio-generation'],
   markets: ['b2c'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',

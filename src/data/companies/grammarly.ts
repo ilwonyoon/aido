@@ -15,6 +15,8 @@ export const grammarly: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['prosumer'],
+  category: 'productivity' as const,
+
   industries: ['other'],
 
     stage: 'Private',

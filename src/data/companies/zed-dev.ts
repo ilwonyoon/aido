@@ -15,6 +15,8 @@ export const zedDev: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['prosumer', 'b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
   // Business

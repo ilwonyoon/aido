@@ -16,6 +16,8 @@ export const gigaml: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],
   markets: ['b2c'],
+  category: 'creative-media' as const,
+
   industries: ['other'],
 
   // Business

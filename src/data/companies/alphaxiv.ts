@@ -18,6 +18,8 @@ export const alphaXiv: Company = {
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['other'],
 
   // Business

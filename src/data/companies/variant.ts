@@ -17,6 +17,8 @@ export const variant: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['enterprise'],
+  category: 'enterprise-ops' as const,
+
   industries: ['infrastructure'],
 
   // Business

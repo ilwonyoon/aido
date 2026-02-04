@@ -17,6 +17,8 @@ export const exa: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
   // Business

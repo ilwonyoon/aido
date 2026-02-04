@@ -1,6 +1,26 @@
 export type InterestStatus = 'tier_0' | 'tier_1' | 'not_interested' | null;
 
-// Multi-dimensional tagging system
+// Unified company category
+export type Category =
+  | 'ai-models'          // Foundation models, model platforms, AI research (Anthropic, OpenAI, Mistral)
+  | 'developer-tools'    // Code assistants, dev infra, deployment (Cursor, Replit, Vercel)
+  | 'creative-media'     // Image/video/audio gen, design tools (Midjourney, Runway, ElevenLabs)
+  | 'productivity'       // Writing, notes, search, general work tools (Notion, Grammarly, Perplexity)
+  | 'sales-marketing'    // CRM, marketing, conversation AI (Gong, Intercom, Copy.ai)
+  | 'enterprise-ops'     // Business automation, data, workflow (Ramp, Brex, Scale AI)
+  | 'vertical-saas';     // Healthcare, legal, fintech, security (Harvey, Ambience, Abridge)
+
+export const CATEGORY_LABELS: Record<Category, string> = {
+  'ai-models': 'AI Models & Research',
+  'developer-tools': 'Developer Tools',
+  'creative-media': 'Creative & Media',
+  'productivity': 'Productivity',
+  'sales-marketing': 'Sales & Marketing',
+  'enterprise-ops': 'Enterprise Ops',
+  'vertical-saas': 'Vertical SaaS',
+};
+
+// Multi-dimensional tagging system (legacy, kept for data compatibility)
 export type AIType =
   | 'foundation-model'    // Anthropic, OpenAI, Mistral (LLM 직접 개발)
   | 'model-platform'      // Together AI, Replicate (모델 호스팅/커스터마이징)
@@ -186,10 +206,13 @@ export interface Company {
   headquarters: string; // e.g., "San Francisco, CA"
   remote?: 'Yes' | 'Hybrid' | 'No' | 'Unknown';
 
-  // Multi-dimensional Tags
-  aiTypes: AIType[];      // 1-3개, 주요 유형 먼저
-  markets: Market[];      // 1-3개
-  industries: Industry[]; // 1-2개
+  // Category
+  category: Category;
+
+  // Multi-dimensional Tags (legacy)
+  aiTypes: AIType[];
+  markets: Market[];
+  industries: Industry[];
 
   // Business
   stage: string;

@@ -15,6 +15,8 @@ export const mosey: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['productivity'],
 
   // Business

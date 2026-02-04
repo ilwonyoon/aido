@@ -15,6 +15,8 @@ export const osmind: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'enterprise-ops' as const,
+
   industries: ['other'],
 
   // Business

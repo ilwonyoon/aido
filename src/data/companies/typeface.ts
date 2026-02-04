@@ -16,6 +16,8 @@ export const typeface: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2c', 'b2b', 'enterprise'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure', 'creative-media'],
 
     // Business

@@ -17,6 +17,8 @@ export const watershed: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

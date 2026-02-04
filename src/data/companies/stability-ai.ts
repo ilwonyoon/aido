@@ -16,6 +16,8 @@ export const stabilityAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['image-generation', 'audio-generation', 'code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools', 'creative-media'],
 
     // Business

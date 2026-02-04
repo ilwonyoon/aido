@@ -14,6 +14,8 @@ export const replicate: Company = {
   // Multi-dimensional Tags
   aiTypes: ['model-platform'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['developer-tools'],
 
   // Business

@@ -15,6 +15,8 @@ export const upwind: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['other'],
 
   // Business

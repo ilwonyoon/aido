@@ -13,6 +13,8 @@ export const relace: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
   // Business

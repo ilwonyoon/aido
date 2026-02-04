@@ -17,6 +17,8 @@ export const mutiny: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],
   markets: ['b2c'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
   // Business

@@ -18,6 +18,8 @@ export const hebbia: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'search-retrieval'],
   markets: ['prosumer'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure', 'productivity'],
 
     // Business

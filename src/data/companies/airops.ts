@@ -18,6 +18,8 @@ export const airops: Company = {
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval', 'automation'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure', 'creative-media'],
 
   // Business

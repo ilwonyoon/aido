@@ -17,6 +17,8 @@ export const loop: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['smb', 'b2b'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure', 'creative-media'],
 
   // Business

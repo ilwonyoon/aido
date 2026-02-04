@@ -17,6 +17,8 @@ export const operateCrm: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

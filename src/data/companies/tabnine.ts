@@ -15,6 +15,8 @@ export const tabnine: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['enterprise'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
     stage: 'Series B',

@@ -17,6 +17,8 @@ export const yutori: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2c'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
   // Business

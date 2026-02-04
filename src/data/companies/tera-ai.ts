@@ -16,6 +16,8 @@ export const teraAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure', 'creative-media'],
 
   // Business

@@ -15,6 +15,8 @@ export const impulseLabs: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2c'],
+  category: 'enterprise-ops' as const,
+
   industries: ['other'],
 
   // Business

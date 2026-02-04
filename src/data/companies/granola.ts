@@ -16,6 +16,8 @@ export const granola: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['productivity'],
 
     stage: 'Series B',

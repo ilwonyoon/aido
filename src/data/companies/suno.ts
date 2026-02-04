@@ -16,6 +16,8 @@ export const suno: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     // Business

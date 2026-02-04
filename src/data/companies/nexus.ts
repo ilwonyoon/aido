@@ -17,6 +17,8 @@ export const nexus: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['creative-media', 'fintech'],
 
   // Business

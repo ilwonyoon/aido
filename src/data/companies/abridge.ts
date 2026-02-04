@@ -18,6 +18,8 @@ export const abridge: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'conversation-ai'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['infrastructure', 'productivity'],
 
     // Business

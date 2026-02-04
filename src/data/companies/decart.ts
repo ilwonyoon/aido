@@ -15,6 +15,8 @@ export const decart: Company = {
   // Multi-dimensional Tags
   aiTypes: ['video-generation'],
   markets: ['prosumer', 'b2b'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

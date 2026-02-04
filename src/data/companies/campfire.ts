@@ -15,6 +15,8 @@ export const campfire: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation', 'data-analysis'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['fintech'],
 
   // Business

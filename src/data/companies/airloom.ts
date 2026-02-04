@@ -18,6 +18,8 @@ export const airloom: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['other'],
 
   // Business

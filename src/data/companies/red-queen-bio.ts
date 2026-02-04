@@ -17,6 +17,8 @@ export const redQueenBio: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'security'],
 
   // Business

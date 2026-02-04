@@ -18,6 +18,8 @@ export const sourcegraph: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
     // Business

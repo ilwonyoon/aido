@@ -16,6 +16,8 @@ export const replit: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     // Business

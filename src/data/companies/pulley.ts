@@ -15,6 +15,8 @@ export const pulley: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b', 'smb'],
+  category: 'vertical-saas' as const,
+
   industries: ['fintech'],
 
   // Business

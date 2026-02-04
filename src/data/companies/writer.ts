@@ -15,6 +15,8 @@ export const writer: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'automation'],
   markets: ['b2b', 'enterprise'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure'],
 
     stage: 'Series C',

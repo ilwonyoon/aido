@@ -16,6 +16,8 @@ export const sesameAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai', 'audio-generation'],
   markets: ['b2c'],
+  category: 'creative-media' as const,
+
   industries: ['other'],
 
   // Business

@@ -16,6 +16,8 @@ export const notion: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['productivity'],
 
     stage: 'Series D (IPO potential)',

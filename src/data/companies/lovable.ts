@@ -15,6 +15,8 @@ export const lovable: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'automation'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',

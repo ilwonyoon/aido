@@ -17,6 +17,8 @@ export const mytra: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
   // Business

@@ -16,6 +16,8 @@ export const wonder: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

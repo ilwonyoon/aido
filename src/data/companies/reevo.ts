@@ -17,6 +17,8 @@ export const reevo: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

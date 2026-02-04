@@ -15,6 +15,8 @@ export const cartesia: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'conversation-ai'],
   markets: ['b2b', 'enterprise'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

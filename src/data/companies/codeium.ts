@@ -15,6 +15,8 @@ export const codeium: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['enterprise'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series C',

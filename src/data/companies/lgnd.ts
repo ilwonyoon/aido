@@ -17,6 +17,8 @@ export const lgnd: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'legal'],
 
   // Business

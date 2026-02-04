@@ -17,6 +17,8 @@ export const ivo: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['enterprise'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'legal'],
 
   // Business

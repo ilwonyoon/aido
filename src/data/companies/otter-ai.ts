@@ -15,6 +15,8 @@ export const otterAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai', 'automation'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['other'],
 
     stage: 'Series B+',

@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus, AIType, Market, Industry, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
+import { Company, InterestStatus, Category, CATEGORY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
@@ -369,13 +369,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [isMobile, setIsMobile] = useState(false);
   const [reviewStatusFilter, setReviewStatusFilter] = useState('not_yet_reviewed');
-  const [aiLevelFilter, setAiLevelFilter] = useState('');
-  const [openRolesFilter, setOpenRolesFilter] = useState('');
-  const [locationFilter, setLocationFilter] = useState<string[]>([]);
-  const [aiTypeFilter, setAiTypeFilter] = useState<AIType[]>([]);
-  const [marketFilter, setMarketFilter] = useState<Market[]>([]);
-  const [industryFilter, setIndustryFilter] = useState<Industry[]>([]);
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
+  const [categoryFilter, setCategoryFilter] = useState<Category[]>([]);
+  const [locationFilter, setLocationFilter] = useState<string[]>([]);
+  const [openRolesToggle, setOpenRolesToggle] = useState(false);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -445,43 +442,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return sorted;
   }, [companies]);
 
-  // Get AI Type options with counts
-  const aiTypeOptions = useMemo(() => {
-    const counts: Record<AIType, number> = {} as Record<AIType, number>;
+  // Get Category options with counts
+  const categoryOptions = useMemo(() => {
+    const counts: Record<Category, number> = {} as Record<Category, number>;
     companies.forEach(c => {
-      c.aiTypes?.forEach(t => {
-        counts[t] = (counts[t] || 0) + 1;
-      });
+      if (c.category) {
+        counts[c.category] = (counts[c.category] || 0) + 1;
+      }
     });
-    return (Object.keys(AI_TYPE_LABELS) as AIType[])
-      .filter(t => counts[t] > 0)
-      .map(t => ({ value: t, label: `${AI_TYPE_LABELS[t]} (${counts[t]})` }));
-  }, [companies]);
-
-  // Get Market options with counts
-  const marketOptions = useMemo(() => {
-    const counts: Record<Market, number> = {} as Record<Market, number>;
-    companies.forEach(c => {
-      c.markets?.forEach(m => {
-        counts[m] = (counts[m] || 0) + 1;
-      });
-    });
-    return (Object.keys(MARKET_LABELS) as Market[])
-      .filter(m => counts[m] > 0)
-      .map(m => ({ value: m, label: `${MARKET_LABELS[m]} (${counts[m]})` }));
-  }, [companies]);
-
-  // Get Industry options with counts
-  const industryOptions = useMemo(() => {
-    const counts: Record<Industry, number> = {} as Record<Industry, number>;
-    companies.forEach(c => {
-      c.industries?.forEach(i => {
-        counts[i] = (counts[i] || 0) + 1;
-      });
-    });
-    return (Object.keys(INDUSTRY_LABELS) as Industry[])
-      .filter(i => counts[i] > 0)
-      .map(i => ({ value: i, label: `${INDUSTRY_LABELS[i]} (${counts[i]})` }));
+    return (Object.keys(CATEGORY_LABELS) as Category[])
+      .filter(cat => counts[cat] > 0)
+      .map(cat => ({ value: cat, label: `${CATEGORY_LABELS[cat]} (${counts[cat]})` }));
   }, [companies]);
 
   // Get Funding Stage options with counts
@@ -587,7 +558,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(30);
-  }, [reviewStatusFilter, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, fundingStageFilter, sortBy]);
+  }, [reviewStatusFilter, fundingStageFilter, categoryFilter, locationFilter, openRolesToggle, sortBy]);
 
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
@@ -626,43 +597,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       if (reviewStatusFilter === 'tier_1' && status !== 'tier_1') return false;
       if (reviewStatusFilter === 'not_interested' && status !== 'not_interested') return false;
 
-      if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
-      if (openRolesFilter === 'yes' && company.openRoles.length === 0) return false;
-      if (openRolesFilter === 'no' && company.openRoles.length > 0) return false;
-
-      // Location Filter with SF Bay Area and New York handling
-      if (locationFilter.length > 0) {
-        const hasMatch = locationFilter.some((loc) => {
-          if (loc === 'SF Bay Area') {
-            // Check if company is in any SF Bay Area city
-            return sfBayAreaCities.some(sfCity => company.headquarters.includes(sfCity));
-          }
-          if (loc === 'New York') {
-            // Check if company is in New York (any variant)
-            return company.headquarters.includes('New York');
-          }
-          return company.headquarters.includes(loc);
-        });
-        if (!hasMatch) return false;
-      }
-
-      // AI Type Filter
-      if (aiTypeFilter.length > 0) {
-        const hasMatch = aiTypeFilter.some(t => company.aiTypes?.includes(t));
-        if (!hasMatch) return false;
-      }
-
-      // Market Filter
-      if (marketFilter.length > 0) {
-        const hasMatch = marketFilter.some(m => company.markets?.includes(m));
-        if (!hasMatch) return false;
-      }
-
-      // Industry Filter
-      if (industryFilter.length > 0) {
-        const hasMatch = industryFilter.some(i => company.industries?.includes(i));
-        if (!hasMatch) return false;
-      }
+      // Open Roles Toggle
+      if (openRolesToggle && company.openRoles.length === 0) return false;
 
       // Funding Stage Filter
       if (fundingStageFilter.length > 0) {
@@ -670,9 +606,28 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!fundingStageFilter.includes(companyStage)) return false;
       }
 
+      // Category Filter
+      if (categoryFilter.length > 0) {
+        if (!categoryFilter.includes(company.category)) return false;
+      }
+
+      // Location Filter with SF Bay Area and New York handling
+      if (locationFilter.length > 0) {
+        const hasMatch = locationFilter.some((loc) => {
+          if (loc === 'SF Bay Area') {
+            return sfBayAreaCities.some(sfCity => company.headquarters.includes(sfCity));
+          }
+          if (loc === 'New York') {
+            return company.headquarters.includes('New York');
+          }
+          return company.headquarters.includes(loc);
+        });
+        if (!hasMatch) return false;
+      }
+
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, fundingStageFilter]);
+  }, [companies, reviewStatusFilter, interestStatuses, openRolesToggle, fundingStageFilter, categoryFilter, locationFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -757,17 +712,14 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || aiLevelFilter || openRolesFilter || locationFilter.length > 0 || aiTypeFilter.length > 0 || marketFilter.length > 0 || industryFilter.length > 0 || fundingStageFilter.length > 0;
+  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
 
   const clearFilters = () => {
     setReviewStatusFilter('not_yet_reviewed');
-    setAiLevelFilter('');
-    setOpenRolesFilter('');
-    setLocationFilter([]);
-    setAiTypeFilter([]);
-    setMarketFilter([]);
-    setIndustryFilter([]);
     setFundingStageFilter([]);
+    setCategoryFilter([]);
+    setLocationFilter([]);
+    setOpenRolesToggle(false);
   };
 
   return (
@@ -794,33 +746,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             options={fundingStageOptions}
             onChange={(vals) => setFundingStageFilter(vals as FundingStageCategory[])}
           />
-          <DropdownFilter
-            label="AI Level"
-            value={aiLevelFilter}
-            options={[
-              { value: 'A', label: 'Level A' },
-              { value: 'B', label: 'Level B' },
-              { value: 'C', label: 'Level C' },
-              { value: 'D', label: 'Level D' },
-            ]}
-            onChange={setAiLevelFilter}
-            infoTooltip={
-              <div className="text-xs space-y-2">
-                <div><span className="font-medium text-[var(--success)]">Level A:</span> AI-Native/Zero-to-One (Anthropic, OpenAI, Cursor)</div>
-                <div><span className="font-medium text-[var(--accent-light)]">Level B:</span> AI-Core on Proven Workflow (Perplexity, Harvey)</div>
-                <div><span className="font-medium">Level C:</span> AI Major Feature (Notion AI, Figma AI)</div>
-                <div><span className="font-medium">Level D:</span> AI Minor Feature/Assisted</div>
-              </div>
-            }
-          />
-          <DropdownFilter
-            label="Open Roles"
-            value={openRolesFilter}
-            options={[
-              { value: 'yes', label: 'Hiring' },
-              { value: 'no', label: 'Not Hiring' },
-            ]}
-            onChange={setOpenRolesFilter}
+          <MultiSelectFilter
+            label="Category"
+            values={categoryFilter}
+            options={categoryOptions}
+            onChange={(vals) => setCategoryFilter(vals as Category[])}
           />
           <MultiSelectFilter
             label="Location"
@@ -828,24 +758,16 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             options={locations.map(loc => ({ value: loc, label: loc }))}
             onChange={setLocationFilter}
           />
-          <MultiSelectFilter
-            label="AI Type"
-            values={aiTypeFilter}
-            options={aiTypeOptions}
-            onChange={(vals) => setAiTypeFilter(vals as AIType[])}
-          />
-          <MultiSelectFilter
-            label="Market"
-            values={marketFilter}
-            options={marketOptions}
-            onChange={(vals) => setMarketFilter(vals as Market[])}
-          />
-          <MultiSelectFilter
-            label="Industry"
-            values={industryFilter}
-            options={industryOptions}
-            onChange={(vals) => setIndustryFilter(vals as Industry[])}
-          />
+          <button
+            onClick={() => setOpenRolesToggle(prev => !prev)}
+            className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+              openRolesToggle
+                ? 'border-[var(--accent)] text-[var(--foreground)]'
+                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+            }`}
+          >
+            Hiring
+          </button>
           {hasActiveFilters && (
             <button
               onClick={clearFilters}

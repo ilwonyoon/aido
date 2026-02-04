@@ -19,6 +19,8 @@ export const baseten: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

@@ -15,6 +15,8 @@ export const warmer: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2c'],
+  category: 'vertical-saas' as const,
+
   industries: ['healthcare'],
 
   // Business

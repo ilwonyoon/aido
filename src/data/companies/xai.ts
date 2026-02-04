@@ -16,6 +16,8 @@ export const xai: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['other'],
 
     // Business

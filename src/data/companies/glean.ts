@@ -15,6 +15,8 @@ export const glean: Company = {
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],
   markets: ['enterprise'],
+  category: 'productivity' as const,
+
   industries: ['other'],
 
     stage: 'Series F',

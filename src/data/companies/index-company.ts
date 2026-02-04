@@ -15,6 +15,7 @@ export const indexCompany: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'enterprise-ops' as const,
   industries: ['infrastructure'],
 
   // Business

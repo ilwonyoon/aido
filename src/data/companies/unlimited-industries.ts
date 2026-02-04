@@ -17,6 +17,8 @@ export const unlimitedIndustries: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

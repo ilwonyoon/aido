@@ -16,6 +16,8 @@ export const openai: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'image-generation', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['sales-marketing'],
 
     // Business

@@ -17,6 +17,8 @@ export const livekit: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
   // Business

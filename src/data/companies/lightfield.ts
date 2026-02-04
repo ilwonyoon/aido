@@ -16,6 +16,8 @@ export const lightfield: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

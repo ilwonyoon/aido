@@ -16,6 +16,8 @@ export const tempo: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['fintech'],
 
   // Business

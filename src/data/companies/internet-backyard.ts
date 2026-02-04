@@ -17,6 +17,8 @@ export const internetBackyard: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2c'],
+  category: 'productivity' as const,
+
   industries: ['productivity'],
 
   // Business

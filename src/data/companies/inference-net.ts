@@ -15,6 +15,8 @@ export const inferenceNet: Company = {
   // Multi-dimensional Tags
   aiTypes: ['model-platform', 'ai-infrastructure'],
   markets: ['b2b', 'enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

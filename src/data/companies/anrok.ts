@@ -19,6 +19,8 @@ export const anrok: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['infrastructure', 'sales-marketing'],
 
   // Business

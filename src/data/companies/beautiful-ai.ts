@@ -17,6 +17,8 @@ export const beautifulAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools', 'creative-media'],
 
     stage: 'Series B',

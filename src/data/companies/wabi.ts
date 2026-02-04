@@ -16,6 +16,8 @@ export const wabi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2c'],
+  category: 'ai-models' as const,
+
   industries: ['other'],
 
   // Business

@@ -17,6 +17,8 @@ export const parahelp: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools', 'sales-marketing'],
 
   // Business

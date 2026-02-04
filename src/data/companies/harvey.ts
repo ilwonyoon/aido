@@ -16,6 +16,8 @@ export const harvey: Company = {
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],
   markets: ['prosumer'],
+  category: 'vertical-saas' as const,
+
   industries: ['legal'],
 
     // Business

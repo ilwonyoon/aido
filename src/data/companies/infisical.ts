@@ -16,6 +16,8 @@ export const infisical: Company = {
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b', 'enterprise'],
+  category: 'vertical-saas' as const,
+
   industries: ['security'],
 
   // Business

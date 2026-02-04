@@ -16,6 +16,8 @@ export const higgsfield: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['prosumer'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     // Business

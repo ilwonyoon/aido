@@ -17,6 +17,8 @@ export const lightpage: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['productivity'],
 
   // Business

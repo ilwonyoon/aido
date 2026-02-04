@@ -16,6 +16,8 @@ export const numeric: Company = {
   // Multi-dimensional Tags
   aiTypes: ['data-analysis', 'automation'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'fintech'],
 
   // Business

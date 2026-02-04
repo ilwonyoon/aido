@@ -18,6 +18,8 @@ export const assortHealth: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'healthcare'],
 
   // Business

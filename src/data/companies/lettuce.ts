@@ -13,6 +13,8 @@ export const lettuce: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['smb'],
+  category: 'vertical-saas' as const,
+
   industries: ['fintech'],
 
   // Business

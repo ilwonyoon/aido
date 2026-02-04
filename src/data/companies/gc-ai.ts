@@ -17,6 +17,8 @@ export const gcAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b', 'enterprise'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'legal'],
 
   // Business

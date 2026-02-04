@@ -16,6 +16,8 @@ export const inferact: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant', 'conversation-ai'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools', 'sales-marketing'],
 
     // Business

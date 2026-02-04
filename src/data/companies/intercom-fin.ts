@@ -15,6 +15,8 @@ export const intercomFin: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['infrastructure', 'sales-marketing'],
 
     stage: 'Private',

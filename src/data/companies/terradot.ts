@@ -17,6 +17,8 @@ export const terradot: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['healthcare'],
 
   // Business

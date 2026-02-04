@@ -17,6 +17,8 @@ export const subtrate: Company = {
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

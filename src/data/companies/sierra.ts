@@ -17,6 +17,8 @@ export const sierra: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure', 'sales-marketing'],
 
   // Business

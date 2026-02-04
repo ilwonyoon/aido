@@ -16,6 +16,8 @@ export const doppel: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['developer-tools', 'security'],
 
   // Business

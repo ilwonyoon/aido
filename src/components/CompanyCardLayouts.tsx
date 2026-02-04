@@ -2,7 +2,7 @@
 
 import { useState, memo } from 'react';
 import Link from 'next/link';
-import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
+import { Company, CATEGORY_LABELS } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { useAuth } from '@/contexts/AuthContext';
@@ -110,26 +110,14 @@ export const CompanyListRow = memo(function CompanyListRow({
       {/* Description */}
       <p className="text-sm text-[var(--muted)] mb-3 line-clamp-2">{company.description}</p>
 
-      {/* Tags */}
-      {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
+      {/* Category Tag */}
+      {company.category && (
         <div className="flex flex-wrap gap-1 mb-4">
-          {company.aiTypes?.map(t => (
-            <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {AI_TYPE_LABELS[t]}
-            </span>
-          ))}
-          {company.markets?.map(m => (
-            <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {MARKET_LABELS[m]}
-            </span>
-          ))}
-          {company.industries?.map(i => (
-            <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {INDUSTRY_LABELS[i]}
-            </span>
-          ))}
+          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+            {CATEGORY_LABELS[company.category]}
+          </span>
         </div>
-      ) : null}
+      )}
 
       {/* Two-column: Why Join / Why Not */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 mb-4">
@@ -264,26 +252,14 @@ export const CompanyCard = memo(function CompanyCard({
       {/* Description */}
       <p className="text-sm text-[var(--muted)] mb-2 line-clamp-2">{company.description}</p>
 
-      {/* Tags */}
-      {(company.aiTypes?.length || company.markets?.length || company.industries?.length) ? (
+      {/* Category Tag */}
+      {company.category && (
         <div className="flex flex-wrap gap-1 mb-3">
-          {company.aiTypes?.map(t => (
-            <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {AI_TYPE_LABELS[t]}
-            </span>
-          ))}
-          {company.markets?.map(m => (
-            <span key={m} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {MARKET_LABELS[m]}
-            </span>
-          ))}
-          {company.industries?.map(i => (
-            <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-              {INDUSTRY_LABELS[i]}
-            </span>
-          ))}
+          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
+            {CATEGORY_LABELS[company.category]}
+          </span>
         </div>
-      ) : null}
+      )}
 
       {/* Why Join */}
       <div className="mb-2">

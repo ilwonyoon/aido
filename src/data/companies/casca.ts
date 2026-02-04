@@ -17,6 +17,8 @@ export const casca: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant', 'automation'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure'],
 
   // Business

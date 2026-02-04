@@ -16,6 +16,8 @@ export const humeAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['other'],
 
   // Business

@@ -16,6 +16,8 @@ export const vercel: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['prosumer'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure'],
 
     // Business

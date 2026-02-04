@@ -16,6 +16,8 @@ export const rivo: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['smb'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

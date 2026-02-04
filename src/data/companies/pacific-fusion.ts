@@ -17,6 +17,8 @@ export const pacificFusion: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'enterprise-ops' as const,
+
   industries: ['other'],
 
   // Business

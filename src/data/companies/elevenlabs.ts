@@ -16,6 +16,8 @@ export const elevenlabs: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure'],
 
     stage: 'Series C',

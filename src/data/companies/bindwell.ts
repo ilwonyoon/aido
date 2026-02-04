@@ -19,6 +19,8 @@ export const bindwell: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'code-assistant'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['developer-tools'],
 
   // Business

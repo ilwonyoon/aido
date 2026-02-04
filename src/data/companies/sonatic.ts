@@ -17,6 +17,8 @@ export const sonatic: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'automation'],
   markets: ['enterprise'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure'],
 
   // Business

@@ -16,6 +16,8 @@ export const shortwave: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure', 'productivity'],
 
   // Business

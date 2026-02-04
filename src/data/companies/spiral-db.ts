@@ -17,6 +17,8 @@ export const spiralDb: Company = {
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure', 'search-retrieval'],
   markets: ['b2b'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

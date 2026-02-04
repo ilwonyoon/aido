@@ -15,6 +15,8 @@ export const gong: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['infrastructure', 'sales-marketing'],
 
     stage: 'Series E',

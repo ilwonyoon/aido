@@ -16,6 +16,8 @@ export const sphere: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'vertical-saas' as const,
+
   industries: ['infrastructure', 'fintech'],
 
   // Business

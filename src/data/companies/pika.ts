@@ -16,6 +16,8 @@ export const pika: Company = {
   // Multi-dimensional Tags
   aiTypes: ['video-generation', 'code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',

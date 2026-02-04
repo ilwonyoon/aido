@@ -17,6 +17,8 @@ export const hightouch: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2c', 'b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['infrastructure', 'sales-marketing'],
 
   // Business

@@ -16,6 +16,8 @@ export const nooks: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai', 'automation'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

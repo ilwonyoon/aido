@@ -16,6 +16,8 @@ export const deepgram: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
     // Business

@@ -16,6 +16,8 @@ export const netic: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['smb', 'b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
   // Business

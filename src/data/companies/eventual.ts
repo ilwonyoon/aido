@@ -16,6 +16,8 @@ export const eventual: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['prosumer'],
+  category: 'developer-tools' as const,
+
   industries: ['developer-tools'],
 
   // Business

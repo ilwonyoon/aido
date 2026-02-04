@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { Company, AI_TYPE_LABELS, MARKET_LABELS, INDUSTRY_LABELS } from '@/data/types';
+import { Company, CATEGORY_LABELS } from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyLogo } from './CompanyLogo';
 import { CompanyOGImage } from './CompanyOGImage';
@@ -75,14 +75,12 @@ export function CompanyDetail({ company }: { company: Company }) {
               <AiLevelBadge level={company.aiNativeLevel} />
             </div>
             <p className="text-[var(--muted)] text-base sm:text-lg">{company.description}</p>
-            {/* Tags - text style */}
-            <div className="text-sm text-[var(--muted)] mt-2">
-              {[
-                company.aiTypes?.map(t => AI_TYPE_LABELS[t]).join(', '),
-                company.markets?.map(m => MARKET_LABELS[m]).join(', '),
-                company.industries?.map(i => INDUSTRY_LABELS[i]).join(', ')
-              ].filter(Boolean).join(' · ')}
-            </div>
+            {/* Category */}
+            {company.category && (
+              <div className="text-sm text-[var(--muted)] mt-2">
+                {CATEGORY_LABELS[company.category]}
+              </div>
+            )}
             <div className="flex items-center gap-4 mt-4 text-sm">
               <a
                 href={company.website}

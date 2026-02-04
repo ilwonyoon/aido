@@ -16,6 +16,8 @@ export const listenLabs: Company = {
   // Multi-dimensional Tags
   aiTypes: ['search-retrieval'],
   markets: ['b2b'],
+  category: 'sales-marketing' as const,
+
   industries: ['sales-marketing'],
 
     // Business

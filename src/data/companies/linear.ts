@@ -16,6 +16,8 @@ export const linear: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['productivity'],
 
     stage: 'Series C',

@@ -17,6 +17,8 @@ export const tailor: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure'],
 
   // Business

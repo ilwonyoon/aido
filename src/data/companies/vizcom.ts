@@ -15,6 +15,8 @@ export const vizcom: Company = {
   // Multi-dimensional Tags
   aiTypes: ['image-generation'],
   markets: ['prosumer', 'b2b'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

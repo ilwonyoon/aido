@@ -17,6 +17,8 @@ export const layerFinancial: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['smb'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
   // Business

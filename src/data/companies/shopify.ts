@@ -16,6 +16,8 @@ export const shopify: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Public (IPO 2015)',

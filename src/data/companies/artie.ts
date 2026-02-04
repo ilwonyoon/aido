@@ -19,6 +19,8 @@ export const artie: Company = {
   // Multi-dimensional Tags
   aiTypes: [],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['infrastructure', 'creative-media'],
 
   // Business

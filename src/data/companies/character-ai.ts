@@ -16,6 +16,8 @@ export const characterAi: Company = {
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
   markets: ['b2c'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
     // Business

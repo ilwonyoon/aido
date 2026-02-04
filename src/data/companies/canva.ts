@@ -17,6 +17,8 @@ export const canva: Company = {
   // Multi-dimensional Tags
   aiTypes: ['code-assistant'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Private',

@@ -17,6 +17,8 @@ export const tigereye: Company = {
   // Multi-dimensional Tags
   aiTypes: ['data-analysis'],
   markets: ['b2b'],
+  category: 'productivity' as const,
+
   industries: ['infrastructure'],
 
   // Business

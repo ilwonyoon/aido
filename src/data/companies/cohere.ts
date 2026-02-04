@@ -16,6 +16,8 @@ export const cohere: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['b2b', 'enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
     // Business

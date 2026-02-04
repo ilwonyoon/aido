@@ -18,6 +18,8 @@ export const superhuman: Company = {
   // Multi-dimensional Tags
   aiTypes: ['text-assistant'],
   markets: ['b2c'],
+  category: 'productivity' as const,
+
   industries: ['creative-media', 'productivity'],
 
     // Business

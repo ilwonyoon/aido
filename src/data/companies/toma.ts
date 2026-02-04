@@ -16,6 +16,8 @@ export const toma: Company = {
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],
   markets: ['b2b'],
+  category: 'creative-media' as const,
+
   industries: ['sales-marketing'],
 
     stage: 'Series A',

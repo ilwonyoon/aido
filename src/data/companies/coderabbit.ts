@@ -15,6 +15,8 @@ export const coderabbit: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
+  category: 'developer-tools' as const,
+
   industries: ['other'],
 
   // Business

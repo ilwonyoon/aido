@@ -15,6 +15,8 @@ export const generationLab: Company = {
   // Multi-dimensional Tags
   aiTypes: ['data-analysis'],
   markets: ['b2c'],
+  category: 'vertical-saas' as const,
+
   industries: ['healthcare'],
 
   // Business

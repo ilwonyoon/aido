@@ -15,6 +15,8 @@ export const contra: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['prosumer', 'smb'],
+  category: 'creative-media' as const,
+
   industries: ['creative-media'],
 
   // Business

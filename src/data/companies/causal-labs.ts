@@ -15,6 +15,8 @@ export const causalLabs: Company = {
   // Multi-dimensional Tags
   aiTypes: ['foundation-model', 'data-analysis'],
   markets: ['b2b', 'enterprise'],
+  category: 'ai-models' as const,
+
   industries: ['infrastructure'],
 
   // Business

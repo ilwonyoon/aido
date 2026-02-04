@@ -16,6 +16,8 @@ export const claritycare: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation', 'data-analysis'],
   markets: ['enterprise'],
+  category: 'vertical-saas' as const,
+
   industries: ['healthcare'],
 
   // Business
