@@ -842,3 +842,61 @@ a.card {
   50% { transform: translateY(6px); }
 }
 
+/* ================================================================
+   Responsive Typography — viewport-based proportional scaling
+   Desktop (≥1024px): body 15px — default, no override
+   Tablet  (768–1023px): body 16px — scale ×1.067
+   Mobile  (<768px):     body 17px — scale ×1.133
+   ================================================================ */
+
+/* --- Tablet (768–1023px) — body 16px, ×1.067 --- */
+@media (max-width: 1023px) {
+  .text-4xl { font-size: 1.506rem !important; }
+  .text-3xl { font-size: 1.380rem !important; }
+  .text-2xl { font-size: 1.254rem !important; }
+  .text-xl  { font-size: 1.098rem !important; }
+  .text-lg  { font-size: 0.941rem !important; }
+  .text-base { font-size: 0.941rem !important; }
+  .text-sm  { font-size: 0.816rem !important; }
+  .text-xs  { font-size: 0.753rem !important; }
+
+  body { font-size: 0.941rem !important; }
+
+  .section-title { font-size: 0.753rem !important; }
+  .badge { font-size: 0.753rem !important; }
+
+  .article-content h1 { font-size: 1.506rem !important; }
+  .article-content h2 { font-size: 1.254rem !important; }
+  .article-content h3 { font-size: 1.098rem !important; }
+  .article-content h4 { font-size: 0.941rem !important; }
+  .article-content p,
+  .article-content li { font-size: 0.941rem !important; }
+
+  .sm\:text-4xl { font-size: 1.506rem !important; }
+  .sm\:text-3xl { font-size: 1.380rem !important; }
+}
+
+/* --- Mobile (<768px) — body 17px, ×1.133 --- */
+@media (max-width: 767px) {
+  .text-4xl { font-size: 1.600rem !important; }
+  .text-3xl { font-size: 1.467rem !important; }
+  .text-2xl { font-size: 1.333rem !important; }
+  .text-xl  { font-size: 1.166rem !important; }
+  .text-lg  { font-size: 1.000rem !important; }
+  .text-base { font-size: 1.000rem !important; }
+  .text-sm  { font-size: 0.867rem !important; }
+  .text-xs  { font-size: 0.800rem !important; }
+
+  body { font-size: 1.000rem !important; }
+
+  .section-title { font-size: 0.800rem !important; }
+  .badge { font-size: 0.800rem !important; }
+
+  .article-content h1 { font-size: 1.600rem !important; }
+  .article-content h2 { font-size: 1.333rem !important; }
+  .article-content h3 { font-size: 1.166rem !important; }
+  .article-content h4 { font-size: 1.000rem !important; }
+  .article-content p,
+  .article-content li { font-size: 1.000rem !important; }
+}
+
