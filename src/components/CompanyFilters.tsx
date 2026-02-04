@@ -371,6 +371,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Track previous interest statuses to detect changes
   const prevInterestStatusesRef = useRef<Record<string, InterestStatus>>({});
+  const [visibleCount, setVisibleCount] = useState(20);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
 
   const checkMobile = useCallback(() => {
     setIsMobile(window.innerWidth < 768);
@@ -539,6 +541,29 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     prevInterestStatusesRef.current = interestStatuses;
   }, [interestStatuses, reviewStatusFilter]);
 
+  // Progressive loading: load more cards as user scrolls
+  useEffect(() => {
+    const sentinel = loadMoreRef.current;
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) => prev + 20);
+        }
+      },
+      { rootMargin: '400px' }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, []);
+
+  // Reset visible count when filters change
+  useEffect(() => {
+    setVisibleCount(20);
+  }, [reviewStatusFilter, aiLevelFilter, openRolesFilter, locationFilter, aiTypeFilter, marketFilter, industryFilter, sortBy]);
+
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
     if (!user) return;
@@ -688,6 +713,10 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     });
     return sorted;
   }, [filteredCompanies, sortBy, initialInterestStatuses]);
+
+  const visibleCompanies = useMemo(() => {
+    return sortedCompanies.slice(0, visibleCount);
+  }, [sortedCompanies, visibleCount]);
 
   // Count not reviewed companies
   const notReviewedCount = useMemo(() => {
@@ -849,17 +878,27 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
           No companies match your filters.
         </div>
       ) : effectiveViewMode === 'grid' ? (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {sortedCompanies.map(company => (
-            <CompanyCard key={company.id} company={company} onCompanyClick={onCompanyClick} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {visibleCompanies.map(company => (
+              <CompanyCard key={company.id} company={company} onCompanyClick={onCompanyClick} />
+            ))}
+          </div>
+          {visibleCount < sortedCompanies.length && (
+            <div ref={loadMoreRef} className="h-10" />
+          )}
+        </>
       ) : (
-        <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {sortedCompanies.map(company => (
-            <CompanyListRow key={company.id} company={company} onCompanyClick={onCompanyClick} />
-          ))}
-        </div>
+        <>
+          <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
+            {visibleCompanies.map(company => (
+              <CompanyListRow key={company.id} company={company} onCompanyClick={onCompanyClick} />
+            ))}
+          </div>
+          {visibleCount < sortedCompanies.length && (
+            <div ref={loadMoreRef} className="h-10" />
+          )}
+        </>
       )}
     </div>
   );
