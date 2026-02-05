@@ -5,31 +5,27 @@ export const cartesia: Company = {
   name: 'Cartesia',
   description: 'Ultra-realistic, low-latency voice AI platform for real-time applications.',
   website: 'https://cartesia.ai',
-    screenshot: '/screenshots/cartesia-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
-
-  // Visual Assets
-  ogImage: 'https://framerusercontent.com/assets/nvFWoimT13QFzTrSNSycJkZp5o.jpg',
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'conversation-ai'],
   markets: ['b2b', 'enterprise'],
-  category: 'creative-media' as const,
-
   industries: ['creative-media'],
 
   // Business
   stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: '$100M',
+  valuation: 'Not disclosed',
+  totalFunding: '$186M+',
   fundingHistory: [
-    { stage: 'Series B', amount: '$100M', date: '2025-10' },
+    { stage: 'Seed', amount: '$22M', date: '2024-12', leadInvestors: ['Index Ventures'] },
+    { stage: 'Series A', amount: '$64M', date: '2025-03', leadInvestors: ['Kleiner Perkins'] },
+    { stage: 'Series B', amount: '$100M', date: '2025', leadInvestors: ['Kleiner Perkins'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: '$17M (2024)',
+  growth: 'Rapid — from seed to Series B in under a year',
+  runway: 'Strong — $186M+ raised',
+  customers: '50,000+ customers including ServiceNow, Cresta, Decagon',
 
   // Competition
   competitors: [
@@ -69,9 +65,24 @@ export const cartesia: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Karan Goel',
+      role: 'CEO & Co-Founder',
+      background: 'PhD in CS from Stanford. Previously at Salesforce AI Research and Snorkel AI.',
+    },
+    {
+      name: 'Albert Gu',
+      role: 'Chief Scientist & Co-Founder',
+      background: 'Stanford PhD researcher. Invented State Space Models (SSMs) architecture.',
+    },
+    {
+      name: 'Arjun Desai',
+      role: 'Co-Founder',
+      background: 'PhD in Electrical Engineering from Stanford. Biomedical engineering and ML background.',
+    },
+    {
+      name: 'Christopher Ré',
+      role: 'Co-Founder & Advisor',
+      background: 'Stanford CS Professor. MacArthur Fellow. Director of Stanford AI Lab, Machine Learning Group.',
     },
   ],
   whyBuilding: 'Enable real-time, human-like voice experiences for applications.',
@@ -80,7 +91,7 @@ export const cartesia: Company = {
     'Low latency unlocks real-time AI experiences',
     'Developers need powerful, flexible voice APIs',
   ],
-  designPhilosophy: 'Unknown',
+  designPhilosophy: 'Real-time voice experiences with ultra-low latency. SSM architecture for continuous, streaming AI.',
   greenFlags: [
     'Clear differentiation on latency and fidelity',
     'Developer-first platform positioning',
@@ -92,7 +103,7 @@ export const cartesia: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '51-200 employees (startups.gallery)',
+    teamSize: '~49 employees total',
   },
   designWorkType: {
     logicBehavior: {
@@ -139,28 +150,53 @@ export const cartesia: Company = {
   // Culture Insights
   cultureInsights: [],
 
+  // Growth Metrics
+  growthMetrics: {
+    stage: 'hypergrowth',
+    revenueGrowth: '$17M (2024), seed to Series B in <1 year',
+    userGrowth: '50,000+ customers, millions of conversations monthly',
+    signals: [
+      '$186M+ raised (Kleiner Perkins, Index Ventures, NVIDIA)',
+      'Sonic-3: fastest TTS in industry (45ms time-to-first-audio)',
+      'SSM architecture inventors (S4, Mamba) — Stanford AI Lab origin',
+      'Notable customers: ServiceNow, Cresta, Decagon',
+      '42+ languages supported',
+    ],
+    tam: '$10B+ (Voice AI, conversational AI, TTS)',
+    marketShare: '<1% (early market, fastest growing segment)',
+    ceiling: 'Early innings: Voice AI is nascent. Cartesia owns latency advantage with SSM architecture. Real-time voice is critical for agent UX.',
+    tailwinds: ['Voice agents becoming primary AI interface', 'Enterprise voice automation demand', 'SSM architecture advantages over transformers for streaming'],
+    headwinds: ['ElevenLabs dominates voice quality perception', 'OpenAI building native voice capabilities', 'Commoditization risk as models improve'],
+    moatType: 'technology',
+    moatStrength: 'Strong: SSM architecture provides structural latency advantage. Stanford AI Lab pedigree. But voice quality is quickly replicable.',
+  },
+
   // My Tracking
   tracking: {
     status: 'researching',
-    fitScore: 6,
+    fitScore: 7,
     whyJoin: [
+      'Stanford AI Lab founding team with MacArthur Fellow',
       'Deep voice UX challenges with real-time constraints',
-      'Strong developer platform focus',
+      'Hypergrowth: seed to $186M+ in under a year',
+      'SSM architecture is genuinely novel technology',
     ],
     whyNot: [
-      'Highly competitive voice AI market',
-      'Quality expectations are extremely high',
+      'Highly competitive voice AI market (ElevenLabs, OpenAI)',
+      'Small team (~49), design team may be tiny',
     ],
     nextActions: [
-      'Monitor for product design roles and team growth',
+      'Monitor for product design roles',
+      'Try Sonic-3 API for voice quality evaluation',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:55:00',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Cartesia Docs', url: 'https://docs.cartesia.ai' },
-    { title: 'Cartesia Voice AI', url: 'https://cartesia.ai/product/ai-voice-generator' },
-    { title: 'Cartesia on startups.gallery', url: 'https://startups.gallery/companies/cartesia' },
+    { title: 'Cartesia Company', url: 'https://cartesia.ai/company' },
+    { title: 'Cartesia $64M Series A (Fortune)', url: 'https://fortune.com/2025/03/11/exclusive-cartesia-voice-ai-startup-raises-64-million-series-a/' },
+    { title: 'Kleiner Perkins — Cartesia', url: 'https://www.kleinerperkins.com/perspectives/cartesia-pioneering-real-time-voice-ai/' },
+    { title: 'Index Ventures — Cartesia', url: 'https://www.indexventures.com/perspectives/building-the-next-generation-of-real-time-ai-models-our-investment-in-cartesia/' },
   ],
 };

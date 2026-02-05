@@ -21,18 +21,16 @@ export const vizcom: Company = {
 
   // Business
   stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: '$27M',
+  valuation: 'Not disclosed',
+  totalFunding: '$52M',
   fundingHistory: [
-    {
-      stage: 'Series B',
-      amount: '$27M',
-      date: '2024-11',
-    },
+    { stage: 'Seed', amount: '$5M', date: '2023-01', leadInvestors: ['Unusual Ventures'] },
+    { stage: 'Series A', amount: '$20M', date: '2024-03', leadInvestors: ['Index Ventures'] },
+    { stage: 'Series B', amount: '$27M', date: '2025-04', leadInvestors: ['Radical Ventures'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
+  revenue: 'Not disclosed',
+  growth: '700K+ designer community, rapid adoption',
+  runway: 'Strong — $52M total raised',
   customers: '700,000+ designers (platform users)',
 
   // Competition
@@ -73,9 +71,14 @@ export const vizcom: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Jordan Taylor',
+      role: 'Co-Founder & CEO',
+      background: 'Transportation Design degree from CCS. Former NVIDIA Industrial Designer (2018-2021). Honda Advance Design. Created Designers Pen Instagram community (~70K followers).',
+    },
+    {
+      name: 'Kaelan Richards',
+      role: 'Co-Founder & CTO',
+      background: 'Software engineer. Childhood friend of Jordan Taylor.',
     },
   ],
   whyBuilding: 'Help industrial designers create faster with AI-powered visualization.',
@@ -84,7 +87,7 @@ export const vizcom: Company = {
     'AI can augment professional creative workflows',
     'Great tools enable better products',
   ],
-  designPhilosophy: 'Unknown',
+  designPhilosophy: 'Design at the speed of thought. AI-augmented industrial design workflows built by designers, for designers.',
   greenFlags: [
     'Series B funding signal',
     'Large community adoption numbers',
@@ -161,9 +164,11 @@ export const vizcom: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:23:25',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Vizcom Series B', url: 'https://www.vizcom.com/blog/vizcom-raises-27m-series-b' },
-    { title: 'Vizcom on startups.gallery', url: 'https://startups.gallery/companies/vizcom' },
+    { title: 'Vizcom Series B', url: 'https://www.vizcom.com/blog/announcing-our-series-b' },
+    { title: 'Vizcom Series A', url: 'https://www.vizcom.com/blog/vizcom-raises-series-a-funding' },
+    { title: 'Radical Ventures — Vizcom', url: 'https://radical.vc/building-the-future-of-industrial-design/' },
+    { title: 'Vizcom on Index Ventures', url: 'https://www.indexventures.com/companies/vizcom/' },
   ],
 };

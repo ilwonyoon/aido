@@ -5,37 +5,29 @@ export const langchain: Company = {
   name: 'LangChain',
   description: 'Open-source framework and platform for building applications with LLMs and agents.',
   website: 'https://langchain.com',
-    screenshot: '/screenshots/langchain-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'No',
-
-  // Visual Assets
-  ogImage: 'https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/65c69af1f3035ff97de2cc38_HomePage-metaImage.jpg',
+  remote: 'Hybrid',
 
 
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],
-  category: 'ai-models' as const,
-
   industries: ['developer-tools'],
 
   // Business
   stage: 'Series B',
-  valuation: '$1.25B (Oct 2024)',
-  totalFunding: '$125M',
+  valuation: '$1.25B (Oct 2025)',
+  totalFunding: '$260M+',
   fundingHistory: [
-    {
-      stage: 'Series B',
-      amount: '$125M',
-      date: '2024-10',
-      leadInvestors: ['IVP'],
-    },
+    { stage: 'Seed', amount: '$10M', date: '2023-04', leadInvestors: ['Benchmark'] },
+    { stage: 'Series A', amount: '$25M', date: '2024-02', valuation: '$200M', leadInvestors: ['Sequoia Capital'] },
+    { stage: 'Series B', amount: '$100M', date: '2025-07', valuation: '$1.1B', leadInvestors: ['IVP'] },
+    { stage: 'Series B Extension', amount: '$125M', date: '2025-10', valuation: '$1.25B', leadInvestors: ['IVP', 'CapitalG', 'Sapphire Ventures'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: '$16M ARR (2025), up from $8.5M in 2024',
+  growth: '~2x YoY revenue growth',
+  runway: 'Strong — $260M+ raised, unicorn status',
+  customers: '1,000+ paying customers, 1,300+ companies using LangChain',
 
   // Competition
   competitors: [
@@ -75,9 +67,14 @@ export const langchain: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Harrison Chase',
+      role: 'Co-Founder & CEO',
+      background: 'Harvard grad in Statistics & CS. Led Entity Linking team at Kensho, then ML team at Robust Intelligence before founding LangChain.',
+    },
+    {
+      name: 'Ankush Gola',
+      role: 'Co-Founder',
+      background: 'Former engineer at Meta and Robust Intelligence.',
     },
   ],
   whyBuilding: 'Developers need a standard framework to build reliable LLM apps and agents.',
@@ -97,7 +94,7 @@ export const langchain: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '51-200 employees (startups.gallery)',
+    teamSize: '~163 employees total',
   },
   designWorkType: {
     logicBehavior: {
@@ -147,23 +144,30 @@ export const langchain: Company = {
   // Growth Metrics
   growthMetrics: {
     stage: 'high-growth',
-    revenueGrowth: 'Unknown',
-    userGrowth: 'Unknown',
-    signals: ['Series B funding announced'],
-    tam: 'Unknown',
-    marketShare: 'Unknown',
-    ceiling: 'LLM app infrastructure remains early with massive adoption ahead.',
-    tailwinds: ['Rising LLM adoption', 'Open-source community expansion'],
-    headwinds: ['Commoditization risk', 'Platform consolidation'],
+    revenueGrowth: '$16M ARR (2025), ~2x YoY from $8.5M',
+    userGrowth: '1,300+ companies, 1,000+ paying customers',
+    signals: [
+      'Unicorn status at $1.25B valuation',
+      '$260M+ total funding (Sequoia, Benchmark, IVP)',
+      'LangSmith platform driving commercial revenue',
+      'Leading framework for agentic AI development',
+      'Notable customers: Klarna, Snowflake, BCG, Elastic, Rakuten',
+    ],
+    tam: '$50B+ (AI developer tools and agent infrastructure)',
+    marketShare: '<1% (leading framework but early market)',
+    ceiling: 'Early innings: AI agent development is nascent. LangChain well-positioned as default framework but must maintain lead against OpenAI native tooling.',
+    tailwinds: ['Agentic AI adoption accelerating', 'Open-source community expansion', 'Enterprise AI spending growth'],
+    headwinds: ['OpenAI Assistants API commoditization', 'Model providers building native tooling', 'Fast-moving competitive landscape'],
     moatType: 'platform-ecosystem',
-    moatStrength: 'Large community and ecosystem integration.',
+    moatStrength: 'Strong: Largest open-source community for LLM development. LangSmith creates switching costs. But platform risk from model providers.',
   },
 
   // Meta
-  lastUpdated: '2026-01-28T17:10:00',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
     { title: 'LangChain Series B announcement', url: 'https://blog.langchain.com/series-b-announcement/' },
+    { title: 'LangChain $125M at $1.25B (Fortune)', url: 'https://fortune.com/2025/10/20/exclusive-early-ai-darling-langchain-is-now-a-unicorn-with-a-fresh-125-million-in-funding/' },
     { title: 'LangChain careers', url: 'https://www.langchain.com/careers' },
-    { title: 'LangChain on startups.gallery', url: 'https://startups.gallery/companies/langchain' },
+    { title: 'LangChain customer stories', url: 'https://www.langchain.com/customers' },
   ],
 };
