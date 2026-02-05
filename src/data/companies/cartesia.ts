@@ -8,6 +8,8 @@ export const cartesia: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
+  category: 'ai-models' as const,
+
   // Multi-dimensional Tags
   aiTypes: ['audio-generation', 'conversation-ai'],
   markets: ['b2b', 'enterprise'],

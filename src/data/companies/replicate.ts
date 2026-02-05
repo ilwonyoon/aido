@@ -9,6 +9,8 @@ export const replicate: Company = {
   remote: 'Hybrid',
 
 
+  category: 'developer-tools' as const,
+
   // Multi-dimensional Tags
   aiTypes: ['model-platform'],
   markets: ['b2b'],

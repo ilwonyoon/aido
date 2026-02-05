@@ -8,6 +8,8 @@ export const unstructured: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
 
+  category: 'developer-tools' as const,
+
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],

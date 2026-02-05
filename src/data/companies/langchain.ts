@@ -9,6 +9,8 @@ export const langchain: Company = {
   remote: 'Hybrid',
 
 
+  category: 'developer-tools' as const,
+
   // Multi-dimensional Tags
   aiTypes: ['ai-infrastructure'],
   markets: ['b2b'],
@@ -22,7 +24,7 @@ export const langchain: Company = {
     { stage: 'Seed', amount: '$10M', date: '2023-04', leadInvestors: ['Benchmark'] },
     { stage: 'Series A', amount: '$25M', date: '2024-02', valuation: '$200M', leadInvestors: ['Sequoia Capital'] },
     { stage: 'Series B', amount: '$100M', date: '2025-07', valuation: '$1.1B', leadInvestors: ['IVP'] },
-    { stage: 'Series B Extension', amount: '$125M', date: '2025-10', valuation: '$1.25B', leadInvestors: ['IVP', 'CapitalG', 'Sapphire Ventures'] },
+    { stage: 'Series B', amount: '$125M', date: '2025-10', valuation: '$1.25B', leadInvestors: ['IVP', 'CapitalG', 'Sapphire Ventures'] },
   ],
   revenue: '$16M ARR (2025), up from $8.5M in 2024',
   growth: '~2x YoY revenue growth',

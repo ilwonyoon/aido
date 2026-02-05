@@ -9,6 +9,8 @@ export const poolside: Company = {
   remote: 'Yes',
   // Note: Remote-first, 80% Europe-based, monthly 3-day in-person meetups
 
+  category: 'ai-models' as const,
+
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
   markets: ['enterprise'],
