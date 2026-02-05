@@ -409,13 +409,19 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // SF Bay Area cities to consolidate
   const sfBayAreaCities = ['San Francisco', 'Palo Alto', 'Mountain View', 'Menlo Park', 'Sunnyvale', 'San Jose', 'Berkeley', 'Oakland', 'Redwood City', 'Foster City'];
 
-  // Get unique locations (consolidate SF Bay Area and New York)
+  // Get unique locations (consolidate SF Bay Area, New York, and Remote/Hybrid)
   const locations = useMemo(() => {
     const locs = new Set<string>();
     let hasSFBayArea = false;
     let hasNewYork = false;
+    let hasRemote = false;
+    let hasHybrid = false;
 
     companies.forEach((c) => {
+      // Track remote/hybrid status
+      if (c.remote === 'Yes') hasRemote = true;
+      if (c.remote === 'Hybrid') hasHybrid = true;
+
       const city = c.headquarters.split(',')[0]?.trim();
       if (city) {
         // Check if it's a SF Bay Area city
@@ -431,12 +437,18 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
     const sorted = Array.from(locs).sort((a, b) => a.localeCompare(b));
 
-    // Add consolidated locations at the top
+    // Add consolidated locations at the top (reverse order since unshift)
     if (hasNewYork) {
       sorted.unshift('New York');
     }
     if (hasSFBayArea) {
       sorted.unshift('SF Bay Area');
+    }
+    if (hasHybrid) {
+      sorted.unshift('Hybrid');
+    }
+    if (hasRemote) {
+      sorted.unshift('Remote');
     }
 
     return sorted;
@@ -611,9 +623,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!categoryFilter.includes(company.category)) return false;
       }
 
-      // Location Filter with SF Bay Area and New York handling
+      // Location Filter with Remote, Hybrid, SF Bay Area, and New York handling
       if (locationFilter.length > 0) {
         const hasMatch = locationFilter.some((loc) => {
+          if (loc === 'Remote') return company.remote === 'Yes';
+          if (loc === 'Hybrid') return company.remote === 'Hybrid';
           if (loc === 'SF Bay Area') {
             return sfBayAreaCities.some(sfCity => company.headquarters.includes(sfCity));
           }
