@@ -7,6 +7,7 @@ export const poolside: Company = {
   website: 'https://poolside.ai',
   headquarters: 'San Francisco, CA',
   remote: 'Yes',
+  // Note: Remote-first, 80% Europe-based, monthly 3-day in-person meetups
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
@@ -14,21 +15,18 @@ export const poolside: Company = {
   industries: ['developer-tools'],
 
   // Business
-  stage: 'Series B',
-  valuation: '$3B (Oct 2024)',
-  totalFunding: '$626M',
+  stage: 'Series B+',
+  valuation: '$12B (Oct 2025, raising $2B)',
+  totalFunding: '$626M (raising to $2.6B)',
   fundingHistory: [
-    {
-      stage: 'Series B',
-      amount: '$500M',
-      date: '2024-10',
-      leadInvestors: ['Bain Capital Ventures'],
-    },
+    { stage: 'Seed', amount: '$26M', date: '2023' },
+    { stage: 'Series A', amount: '$100M', date: '2024', leadInvestors: ['Felicis Ventures', 'Redpoint Ventures'] },
+    { stage: 'Series B', amount: '$500M', date: '2024-10', valuation: '$3B', leadInvestors: ['Bain Capital Ventures'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: '$50M (March 2025), up from $30M (Dec 2024)',
+  growth: '~67% growth in 3 months, raising $2B at $12B',
+  runway: 'Strong — $626M+ raised, Nvidia investing up to $1B',
+  customers: 'Enterprise software teams, AWS Bedrock partnership',
 
   // Competition
   competitors: [
@@ -68,9 +66,14 @@ export const poolside: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Jason Warner',
+      role: 'CEO & Co-Founder',
+      background: 'Former CTO of GitHub. Previously Managing Director at Redpoint Ventures. Led GitHub Actions, Codespaces, and AI initiatives.',
+    },
+    {
+      name: 'Eiso Kant',
+      role: 'CTO & Co-Founder',
+      background: 'Founder of source{d}, the first company applying AI to source code. Spent 6 years planning AI developer tools before launching Poolside.',
     },
   ],
   whyBuilding: 'Deliver frontier AI systems that accelerate software development.',
@@ -79,7 +82,7 @@ export const poolside: Company = {
     'Frontier models need to be enterprise-ready',
     'Safety and performance must evolve together',
   ],
-  designPhilosophy: 'Unknown',
+  designPhilosophy: 'Enterprise-first AI development tools. Focus on trust, safety, and developer productivity.',
   greenFlags: [
     'Significant Series B funding signal',
     'Enterprise positioning with strong investor backing',
@@ -91,7 +94,7 @@ export const poolside: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '256 employees total, 70% technical',
   },
   designWorkType: {
     logicBehavior: {
@@ -156,10 +159,11 @@ export const poolside: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:23:25',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
     { title: 'Poolside', url: 'https://poolside.ai' },
     { title: 'Poolside Series B (TechCrunch)', url: 'https://techcrunch.com/2024/10/02/poolside-raises-500m-series-b-at-3b-valuation-to-build-ai-coding-models/' },
-    { title: 'Poolside on startups.gallery', url: 'https://startups.gallery/companies/poolside' },
+    { title: 'Nvidia investing $1B (TechCrunch)', url: 'https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/' },
+    { title: 'Poolside Wikipedia', url: 'https://en.wikipedia.org/wiki/Poolside_AI' },
   ],
 };

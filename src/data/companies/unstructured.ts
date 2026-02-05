@@ -15,19 +15,17 @@ export const unstructured: Company = {
 
   // Business
   stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: 'Not disclosed',
+  totalFunding: '$65M',
   fundingHistory: [
-    {
-      stage: 'Series B',
-      amount: '$40M',
-      date: '2024-11',
-    },
+    { stage: 'Seed', amount: 'Undisclosed', date: '2022', leadInvestors: ['Madrona'] },
+    { stage: 'Series A', amount: 'Undisclosed', date: '2023', leadInvestors: ['Bain Capital Ventures'] },
+    { stage: 'Series B', amount: '$40M', date: '2024-03', leadInvestors: ['Menlo Ventures'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: '~$7.7M (2024)',
+  growth: '6M+ open-source library downloads',
+  runway: 'Strong — $65M total raised',
+  customers: '45,000+ organizations, 1/3 of Fortune 500',
 
   // Competition
   competitors: [
@@ -67,9 +65,9 @@ export const unstructured: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Brian Raymond',
+      role: 'Founder & CEO',
+      background: 'Former CIA Intelligence Officer. White House NSC Director for Iraq. VP Global Public Sector at Primer.ai. Investment banking at Harris Williams.',
     },
   ],
   whyBuilding: 'Make unstructured data ready for LLM applications.',
@@ -78,7 +76,7 @@ export const unstructured: Company = {
     'Automated ETL should reduce engineering burden',
     'Developer-first workflows drive adoption',
   ],
-  designPhilosophy: 'Unknown',
+  designPhilosophy: 'Developer-first data preparation. Automated pipelines that reduce engineering burden for AI teams.',
   greenFlags: [
     'Series B funding signal',
     'Clear LLM data infrastructure focus',
@@ -90,7 +88,7 @@ export const unstructured: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '~85 employees total',
   },
   designWorkType: {
     logicBehavior: {
@@ -155,10 +153,10 @@ export const unstructured: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T16:20:00',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
     { title: 'Unstructured', url: 'https://unstructured.io' },
-    { title: 'Unstructured Series B (Business Wire)', url: 'https://www.businesswire.com/news/home/20241105005078/en/Unstructured-Raises-40M-Series-B-to-Build-the-Data-Layer-for-AI' },
-    { title: 'Unstructured on startups.gallery', url: 'https://startups.gallery/companies/unstructured' },
+    { title: 'Unstructured $40M Series B (BusinessWire)', url: 'https://www.businesswire.com/news/home/20240314620374/en/Unstructured-Raises-$40M-Series-B-From-Menlo-Ventures-Databricks-Ventures-IBM-Ventures-and-NVIDIA-to-Make-Enterprise-Data-LLM-ready' },
+    { title: 'Madrona — Unstructured', url: 'https://www.madrona.com/featuredleader/unstructured/' },
   ],
 };

@@ -6,7 +6,7 @@ export const replicate: Company = {
   description: 'Model hosting and APIs for running machine learning models in production.',
   website: 'https://replicate.com',
   headquarters: 'San Francisco, CA',
-  remote: 'Yes',
+  remote: 'Hybrid',
 
 
   // Multi-dimensional Tags
@@ -15,20 +15,18 @@ export const replicate: Company = {
   industries: ['developer-tools'],
 
   // Business
-  stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: '$40M',
+  stage: 'Acquired',
+  valuation: '$350M (Dec 2023)',
+  totalFunding: '$57.8M',
   fundingHistory: [
-    {
-      stage: 'Series B',
-      amount: '$40M',
-      date: '2023-12',
-    },
+    { stage: 'Seed', amount: '$5.3M', date: '2022', leadInvestors: ['Angel investors'] },
+    { stage: 'Series A', amount: '$12.5M', date: '2023-02', leadInvestors: ['Andreessen Horowitz'] },
+    { stage: 'Series B', amount: '$40M', date: '2023-12', leadInvestors: ['Andreessen Horowitz'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: '$5.3M ARR (2024)',
+  growth: 'Acquired by Cloudflare (Nov 2025)',
+  runway: 'N/A — acquired by Cloudflare',
+  customers: '30,000+ paying customers, 2M+ registered users',
 
   // Competition
   competitors: [
@@ -68,9 +66,14 @@ export const replicate: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Ben Firshman',
+      role: 'Founder & CEO',
+      background: 'Former Product Lead at Docker. Creator of Docker Compose. 4x founder.',
+    },
+    {
+      name: 'Andreas Jansson',
+      role: 'Co-Founder',
+      background: 'Former ML Engineer at Spotify. PhD in ML for Music.',
     },
   ],
   whyBuilding: 'Developers need simple, reliable tooling to run and share AI models.',
@@ -90,7 +93,7 @@ export const replicate: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: '~37 employees total',
   },
   designWorkType: {
     logicBehavior: {
@@ -139,24 +142,29 @@ export const replicate: Company = {
 
   // Growth Metrics
   growthMetrics: {
-    stage: 'high-growth',
-    revenueGrowth: 'Unknown',
-    userGrowth: 'Unknown',
-    signals: ['Series B funding announced'],
-    tam: 'Unknown',
-    marketShare: 'Unknown',
-    ceiling: 'Model hosting remains a rapidly growing segment.',
-    tailwinds: ['AI app growth', 'Demand for hosted models'],
-    headwinds: ['Commodity GPU pricing', 'Platform competition'],
+    stage: 'mature-growth',
+    revenueGrowth: '$5.3M ARR (2024), now part of Cloudflare',
+    userGrowth: '2M+ users, 30K+ paying customers',
+    signals: [
+      'Acquired by Cloudflare (Nov 2025)',
+      '$57.8M total funding (a16z, Sequoia, Y Combinator, Nvidia)',
+      'Notable customers: Character AI, BuzzFeed, Unsplash',
+      '2M+ registered users on platform',
+    ],
+    tam: '$15B+ (AI model hosting and inference infrastructure)',
+    marketShare: '<1% (niche developer-focused segment)',
+    ceiling: 'Now part of Cloudflare: acquired for infrastructure integration. Standalone growth ceiling reached.',
+    tailwinds: ['Cloudflare distribution and scale', 'Growing demand for model hosting'],
+    headwinds: ['Part of larger corporation now', 'Hugging Face and Together AI competition'],
     moatType: 'platform-ecosystem',
-    moatStrength: 'Developer ecosystem and API simplicity.',
+    moatStrength: 'Medium: Developer-friendly API created loyalty but model hosting is commoditizing. Cloudflare acquisition validates the platform.',
   },
 
   // Meta
-  lastUpdated: '2026-01-28T17:10:00',
+  lastUpdated: '2026-02-05T22:30:00',
   sources: [
     { title: 'Replicate Series B', url: 'https://replicate.com/blog/series-b' },
-    { title: 'Replicate jobs', url: 'https://replicate.com/about/jobs' },
-    { title: 'Replicate on startups.gallery', url: 'https://startups.gallery/companies/replicate' },
+    { title: 'Replicate (TechCrunch)', url: 'https://techcrunch.com/2023/02/21/replicate-wants-to-take-the-pain-out-of-running-and-hosting-ml-models/' },
+    { title: 'Replicate About', url: 'https://replicate.com/about' },
   ],
 };
