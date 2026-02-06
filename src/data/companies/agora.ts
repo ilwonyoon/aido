@@ -26,7 +26,7 @@ export const agora: Company = {
   totalFunding: '$5M',
   fundingHistory: [],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
   customers: 'Onchain organizations and governance communities',
 
@@ -68,7 +68,7 @@ export const agora: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Founding team not listed in sources reviewed.',
     },

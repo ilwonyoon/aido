@@ -24,7 +24,7 @@ export const intercomFin: Company = {
     totalFunding: '$250M',
     revenue: '$343M (2024)',
     growth: '25% YoY',
-    customers: 'Unknown',
+    customers: 'User growth signal: Fin approaching $100M ARR',
     growthMetrics: {
       stage: 'high-growth',
       revenueGrowth: '25% YoY ($343M in 2024)',
@@ -44,7 +44,28 @@ export const intercomFin: Company = {
     aiNativeLevel: 'B',
     aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for customer messaging. Proven customer communication workflow with AI.',
     aiDesignChallenges: [],
-    founders: [],
+    founders: [
+      {
+        name: 'Eoghan McCabe',
+        role: 'Co-founder',
+        background: 'Co-founded Intercom to modernize business customer communication.',
+      },
+      {
+        name: 'Des Traynor',
+        role: 'Co-founder',
+        background: 'Co-founded Intercom and led product/strategy across messaging and support.',
+      },
+      {
+        name: 'Ciaran Lee',
+        role: 'Co-founder',
+        background: 'Co-founded Intercom and led engineering organization growth.',
+      },
+      {
+        name: 'David Barrett',
+        role: 'Co-founder',
+        background: 'Co-founded Intercom and helped scale the company from Ireland to global markets.',
+      },
+    ],
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],

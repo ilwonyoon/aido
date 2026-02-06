@@ -15,23 +15,23 @@ export const subframe: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  category: 'enterprise-ops' as const,
+  category: 'developer-tools' as const,
 
   industries: ['other'],
 
   // Business
   stage: 'Pre-seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
+  customers: 'Early customers: Unknown',
 
   // Competition
   competitors: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       description: 'Unknown',
       whyTheyWin: 'Unknown',
     },
@@ -50,9 +50,9 @@ export const subframe: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding: 'Unknown',
@@ -119,7 +119,7 @@ export const subframe: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:05:00',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Subframe', url: 'https://subframe.com' },
     { title: 'Subframe on startups.gallery', url: 'https://startups.gallery/companies/subframe' },

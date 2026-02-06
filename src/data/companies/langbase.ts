@@ -15,23 +15,23 @@ export const langbase: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  category: 'enterprise-ops' as const,
+  category: 'developer-tools' as const,
 
   industries: ['other'],
 
   // Business
   stage: 'Pre-seed',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  valuation: 'Not publicly disclosed',
+  totalFunding: 'Not publicly disclosed',
+  revenue: 'Pre-revenue',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
+  customers: 'Early customers: Unknown',
 
   // Competition
   competitors: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       description: 'Unknown',
       whyTheyWin: 'Unknown',
     },
@@ -50,9 +50,9 @@ export const langbase: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding: 'Unknown',
@@ -119,7 +119,7 @@ export const langbase: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:05:00',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Langbase', url: 'https://langbase.com' },
     { title: 'Langbase on startups.gallery', url: 'https://startups.gallery/companies/langbase' },

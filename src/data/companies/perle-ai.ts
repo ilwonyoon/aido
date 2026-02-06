@@ -29,9 +29,9 @@ export const perleAi: Company = {
     { stage: 'Seed', amount: '$9M', date: '2025-08' },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2025-08 round ($9M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Enterprise ops and AI platform teams',
 
   // Growth & Potential
   growthMetrics: {

@@ -36,9 +36,9 @@ export const artie: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2026-01 round ($12M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Data engineers and platform teams',
 
   // Growth & Potential
   growthMetrics: {

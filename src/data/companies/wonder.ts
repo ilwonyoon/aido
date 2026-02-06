@@ -22,13 +22,13 @@ export const wonder: Company = {
 
   // Business
   stage: 'Pre-seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Early stage - growth metrics N/A',
+  runway: 'Not publicly disclosed',
+  customers: 'Primary audience: Designers and creative teams experimenting with AI',
 
   // Competition
   competitors: [
@@ -68,7 +68,7 @@ export const wonder: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
@@ -164,7 +164,7 @@ export const wonder: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T11:33:21',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Wonder', url: 'https://wonder.so' },
     { title: 'Wonder Jobs', url: 'https://wonder.so/jobs' },

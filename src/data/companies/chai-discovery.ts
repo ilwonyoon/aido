@@ -40,9 +40,9 @@ export const chaiDiscovery: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'high-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2025-12 round ($130M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Drug discovery researchers and computational biologists',
 
   // Growth & Potential
   growthMetrics: {

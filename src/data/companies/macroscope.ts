@@ -40,9 +40,9 @@ export const macroscope: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2024-05 round ($30M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Engineering leaders and product executives',
 
   // Growth & Potential
   growthMetrics: {

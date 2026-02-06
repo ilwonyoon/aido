@@ -32,9 +32,9 @@ export const natural: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2025-10 round ($9.8M); exact runway not publicly disclosed',
+  customers: 'Primary audience: AI agent builders and platform teams',
 
   // Competition
   competitors: [
@@ -74,7 +74,7 @@ export const natural: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Founders not listed on public sources reviewed.',
     },

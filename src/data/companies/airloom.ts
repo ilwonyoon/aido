@@ -35,8 +35,8 @@ export const airloom: Company = {
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  runway: 'Estimated 18-24 months post 2024-10 round ($7.5M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Energy operators and utilities',
 
   // Competition
   competitors: [
@@ -76,7 +76,7 @@ export const airloom: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },

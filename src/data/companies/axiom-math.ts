@@ -36,9 +36,9 @@ export const axiomMath: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: '24+ months (per funding notes)',
-  customers: 'Unknown',
+  customers: 'Primary audience: Researchers and technical teams needing formal reasoning',
 
   // Growth & Potential
   growthMetrics: {

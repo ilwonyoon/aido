@@ -15,7 +15,7 @@ export const elevenX: Company = {
   // Multi-dimensional Tags
   aiTypes: ['automation'],
   markets: ['b2b'],
-  category: 'enterprise-ops' as const,
+  category: 'sales-marketing' as const,
 
   industries: ['other'],
 
@@ -24,14 +24,14 @@ export const elevenX: Company = {
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: Unknown',
 
   // Competition
   competitors: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       description: 'Unknown',
       whyTheyWin: 'Unknown',
     },
@@ -50,9 +50,9 @@ export const elevenX: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding: 'Unknown',

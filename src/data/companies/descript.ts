@@ -23,7 +23,7 @@ export const descript: Company = {
     valuation: 'Unknown',
     totalFunding: '$100M+',
     revenue: 'Unknown',
-    growth: 'Unknown',
+    growth: 'steady trajectory (public % not disclosed)',
     customers: 'Millions of users',
     growthMetrics: {
       stage: 'steady',
@@ -44,7 +44,13 @@ export const descript: Company = {
     aiNativeLevel: 'C',
     aiNativeLevelDescription: 'AI as Major Feature: Video/audio editing tool with AI transcription and editing. Proven editing workflow with AI enhancement.',
     aiDesignChallenges: [],
-    founders: [],
+    founders: [
+      {
+        name: 'Andrew Mason',
+        role: 'CEO',
+        background: 'Former Groupon founder; started Descript to make audio/video editing as easy as text editing.',
+      },
+    ],
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],

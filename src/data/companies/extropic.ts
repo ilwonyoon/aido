@@ -26,9 +26,9 @@ export const extropic: Company = {
   valuation: 'Unknown',
   totalFunding: '$14.1M',
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: AI infrastructure teams and researchers building probabilistic models',
 
   // Growth & Potential
   growthMetrics: {

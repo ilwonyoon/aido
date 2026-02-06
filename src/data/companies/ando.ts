@@ -24,13 +24,13 @@ export const ando: Company = {
 
   // Business
   stage: 'Seed',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: 'Not publicly disclosed',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Early stage - growth metrics N/A',
+  runway: 'Not publicly disclosed',
+  customers: 'Primary audience: Teams seeking lightweight messaging tools',
 
   // Competition
   competitors: [
@@ -70,7 +70,7 @@ export const ando: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
@@ -158,7 +158,7 @@ export const ando: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T11:57:37',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Ando', url: 'https://ando.so' },
     { title: 'Ando on startups.gallery', url: 'https://startups.gallery/companies/ando' },
