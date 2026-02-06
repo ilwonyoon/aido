@@ -24,13 +24,13 @@ export const alix: Company = {
   valuation: 'Unknown',
   totalFunding: '$20M',
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: Unknown',
 
   // Competition
   competitors: [
-    { name: 'Unknown', description: 'Unknown', whyTheyWin: 'Unknown' },
+    { name: 'Founding team (verification pending)', description: 'Unknown', whyTheyWin: 'Unknown' },
   ],
   marketPosition: 'Wealth transfer platform',
   moat: ['Unknown'],
@@ -43,7 +43,7 @@ export const alix: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Founding team (verification pending)', role: 'Founder', background: 'Public founder details require verification from primary sources.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

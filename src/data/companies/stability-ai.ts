@@ -33,8 +33,8 @@ export const stabilityAi: Company = {
       },
     ],
     revenue: 'Unknown',
-    growth: 'Unknown',
-    runway: 'Unknown',
+    growth: 'declining trajectory (public % not disclosed)',
+    runway: 'Estimated 18-24 months post 2025-03 round (Undisclosed); exact runway not publicly disclosed',
 
     // Competition
     competitors: [

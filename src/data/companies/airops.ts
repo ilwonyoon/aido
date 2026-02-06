@@ -31,8 +31,8 @@ export const airops: Company = {
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  runway: 'Estimated 18-24 months post 2025-11 round ($40M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Content marketing teams and SEO leads',
 
   // Competition
   competitors: [
@@ -72,7 +72,7 @@ export const airops: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },

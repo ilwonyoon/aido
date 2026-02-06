@@ -28,8 +28,8 @@ export const alexAi: Company = {
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  runway: 'Estimated 18-24 months post 2025-09 round ($17M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Recruiting and talent teams',
 
   // Competition
   competitors: [

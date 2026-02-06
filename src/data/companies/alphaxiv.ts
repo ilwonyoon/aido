@@ -31,8 +31,8 @@ export const alphaXiv: Company = {
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  runway: 'Estimated 18-24 months post 2025-11 round ($7M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Researchers, graduate students, and knowledge workers reading papers',
 
   // Competition
   competitors: [
@@ -72,7 +72,7 @@ export const alphaXiv: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
