@@ -46,7 +46,7 @@ export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       {/* Back Link */}
       <div className="mb-2">
         <button
