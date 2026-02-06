@@ -46,6 +46,43 @@ import { otterAi } from './otter-ai';
 import { copyAi } from './copy-ai';
 import { beautifulAi } from './beautiful-ai';
 import { tabnine } from './tabnine';
+import { h2oAi } from './h2o-ai';
+import { benchsci } from './benchsci';
+import { voiceflow } from './voiceflow';
+import { kindredSystems } from './kindred-systems';
+import { ada } from './ada';
+import { obieAi } from './obie-ai';
+import { elementAi } from './element-ai';
+import { snaptravel } from './snaptravel';
+import { xanadu } from './xanadu';
+import { bluedot } from './bluedot';
+import { validere } from './validere';
+import { kiite } from './kiite';
+import { interaction } from './interaction';
+import { klue } from './klue';
+import { invisionAi } from './invision-ai';
+import { hopper } from './hopper';
+import { fortyTwoTechnologies } from './forty-two-technologies';
+import { xpertsea } from './xpertsea';
+import { flybits } from './flybits';
+import { unbounce } from './unbounce';
+import { tealbook } from './tealbook';
+import { swae } from './swae';
+import { resolver } from './resolver';
+import { granify } from './granify';
+import { netramark } from './netramark';
+import { partnerstack } from './partnerstack';
+import { algolux } from './algolux';
+import { certn } from './certn';
+import { leddartech } from './leddartech';
+import { chillwallAi } from './chillwall-ai';
+import { fortunaAi } from './fortuna-ai';
+import { heyday } from './heyday';
+import { cerebriAi } from './cerebri-ai';
+import { vantageAnalytics } from './vantage-analytics';
+import { clearpathRobotics } from './clearpath-robotics';
+import { sharpestminds } from './sharpestminds';
+import { finnAi } from './finn-ai';
 import { harmonic } from './harmonic';
 import { ambienceHealthcare } from './ambience-healthcare';
 import { abridge } from './abridge';
@@ -798,6 +835,43 @@ export const companies: Company[] = [
   nowadays,
   alix,
   stytch,
+  h2oAi,
+  benchsci,
+  voiceflow,
+  kindredSystems,
+  ada,
+  obieAi,
+  elementAi,
+  snaptravel,
+  xanadu,
+  bluedot,
+  validere,
+  kiite,
+  interaction,
+  klue,
+  invisionAi,
+  hopper,
+  fortyTwoTechnologies,
+  xpertsea,
+  flybits,
+  unbounce,
+  tealbook,
+  swae,
+  resolver,
+  granify,
+  netramark,
+  partnerstack,
+  algolux,
+  certn,
+  leddartech,
+  chillwallAi,
+  fortunaAi,
+  heyday,
+  cerebriAi,
+  vantageAnalytics,
+  clearpathRobotics,
+  sharpestminds,
+  finnAi,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
