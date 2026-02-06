@@ -22,7 +22,7 @@ export const chroma: Company = {
 
   // Business
   stage: 'Seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$18M',
   fundingHistory: [
     {
@@ -32,10 +32,10 @@ export const chroma: Company = {
       leadInvestors: ['Quiet Capital', 'Lux Capital'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Early stage - growth metrics N/A',
+  runway: 'Estimated 18-24 months post 2023-04 round ($18M); exact runway not publicly disclosed',
+  customers: 'Primary audience: AI developers building retrieval systems',
 
   // Competition
   competitors: [
@@ -75,7 +75,7 @@ export const chroma: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
@@ -171,7 +171,7 @@ export const chroma: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:05:37',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Chroma', url: 'https://www.trychroma.com' },
     { title: 'Chroma Careers', url: 'https://careers.trychroma.com' },

@@ -23,8 +23,8 @@ export const glean: Company = {
     valuation: '$7.2B (2025)',
     totalFunding: '$410M',
     revenue: 'Unknown',
-    growth: 'Unknown',
-    customers: 'Unknown',
+    growth: 'hypergrowth trajectory (public % not disclosed)',
+    customers: 'User growth signal: 850+ employees (nearly doubled in 6 months)',
     growthMetrics: {
       stage: 'hypergrowth',
       revenueGrowth: 'Unknown',
@@ -44,7 +44,28 @@ export const glean: Company = {
     aiNativeLevel: 'B',
     aiNativeLevelDescription: 'AI-Core on Proven Workflow: AI is core differentiator for enterprise search. Building on proven workplace search needs with AI.',
     aiDesignChallenges: [],
-    founders: [],
+    founders: [
+      {
+        name: 'Arvind Jain',
+        role: 'CEO',
+        background: 'Former Google search engineering leader; co-founded Glean to improve enterprise knowledge access.',
+      },
+      {
+        name: 'Vishwanath T R',
+        role: 'CTO',
+        background: 'Former Facebook engineering leader; co-founded Glean and leads technical infrastructure.',
+      },
+      {
+        name: 'Tony Gentilcore',
+        role: 'Co-founder, Engineering',
+        background: 'Former Chrome speed team lead at Google; co-founded Glean\'s product engineering.',
+      },
+      {
+        name: 'Piyush Prahladka',
+        role: 'Co-founder',
+        background: 'Built Glean\'s early core search product and platform capabilities.',
+      },
+    ],
     whyBuilding: 'Unknown',
     beliefs: [],
     greenFlags: ['AI-native company', 'Growth potential'],

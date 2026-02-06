@@ -21,14 +21,14 @@ export const highscore: Company = {
   industries: ['infrastructure'],
 
   // Business
-  stage: 'Unknown',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  stage: 'Not publicly disclosed',
+  valuation: 'Not publicly disclosed',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Early stage - growth metrics N/A',
+  runway: 'Not publicly disclosed',
+  customers: 'Primary audience: Game product and data teams',
 
   // Competition
   competitors: [
@@ -68,7 +68,7 @@ export const highscore: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
@@ -156,7 +156,7 @@ export const highscore: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:05:37',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'Highscore', url: 'https://highscore.com' },
     { title: 'Highscore on startups.gallery', url: 'https://startups.gallery/companies/highscore' },

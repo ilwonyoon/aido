@@ -37,9 +37,9 @@ export const baseten: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'high-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2026-01 round ($300M); exact runway not publicly disclosed',
+  customers: 'Primary audience: ML and platform engineers deploying production models',
 
   // Growth & Potential
   growthMetrics: {

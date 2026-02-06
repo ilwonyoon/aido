@@ -25,8 +25,8 @@ export const brex: Company = {
     valuation: '$12.3B',
     totalFunding: '$1.2B',
     revenue: 'Unknown',
-    growth: 'Unknown',
-    customers: 'Unknown',
+    growth: 'high-growth trajectory (public % not disclosed)',
+    customers: 'Primary audience: Startups and high-growth companies managing corporate spending',
     growthMetrics: {
       stage: 'high-growth',
       revenueGrowth: 'Unknown',

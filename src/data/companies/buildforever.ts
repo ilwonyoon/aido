@@ -24,13 +24,13 @@ export const buildForever: Company = {
 
   // Business
   stage: 'Seed',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: 'Not publicly disclosed',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Pre-revenue',
+  growth: 'Early stage - growth metrics N/A',
+  runway: 'Not publicly disclosed',
+  customers: 'Primary audience: Consumers seeking a new productivity or lifestyle tool',
 
   // Competition
   competitors: [
@@ -70,7 +70,7 @@ export const buildForever: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Unknown.',
     },
@@ -158,7 +158,7 @@ export const buildForever: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T11:33:21',
+  lastUpdated: '2026-02-04T18:40:00',
   sources: [
     { title: 'BuildForever', url: 'https://buildforever.com' },
     { title: 'BuildForever Careers', url: 'https://buildforever.com/careers' },

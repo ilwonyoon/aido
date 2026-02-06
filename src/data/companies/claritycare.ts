@@ -32,9 +32,9 @@ export const claritycare: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2025-10 round ($3.5M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Utilization management teams at payers',
 
   // Competition
   competitors: [
@@ -74,7 +74,7 @@ export const claritycare: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Founding team not listed on sources reviewed.',
     },
