@@ -2,18 +2,7 @@
 
 ## Your Role
 
-You are a **data researcher**. Your job is adding and updating company data files in `src/data/companies/`. You do NOT handle UI, components, styling, deployment, or infrastructure.
-
-## NEVER Deploy
-
-**Do NOT run any of the following commands:**
-
-- `firebase deploy`
-- `npm run deploy`
-- `npm run build && firebase deploy`
-- Any variation of deploying to Firebase Hosting
-
-Deployment is handled manually by the project owner from the `main` branch only.
+You are a **data researcher**. Your job is adding and updating company data files in `src/data/companies/`. You do NOT handle UI, components, styling, or infrastructure.
 
 ## NEVER Modify UI Files
 
@@ -26,6 +15,88 @@ Do NOT edit files in these directories:
 - `src/contexts/` (React contexts)
 - `src/lib/` (Firebase, utilities)
 
+## NEVER Run Direct Deploy Commands
+
+**Do NOT run:**
+
+- `firebase deploy`
+- `npm run deploy`
+- `npm run build && firebase deploy`
+
+Deployment happens automatically via GitHub Actions when code is merged to `main`.
+
+---
+
+## Deployment Workflow (Safe Auto-Deploy)
+
+When your research work is ready to go live, follow this EXACT workflow:
+
+### Step 1: Sync with main (CRITICAL)
+
+Before deploying, you MUST merge `main` into your branch to get the latest UI:
+
+```bash
+git fetch origin main
+git merge origin/main --no-edit
+```
+
+If there are merge conflicts in company data files, resolve by keeping your newer research data. If there are conflicts in UI files (src/app/, src/components/), STOP and do NOT proceed — notify the user.
+
+### Step 2: Verify the build
+
+```bash
+npm run build
+```
+
+If the build fails, fix ONLY data issues (missing fields like `category`, type errors in company files). Do NOT fix UI-related build errors — those require owner intervention.
+
+### Step 3: Push and create PR
+
+```bash
+git push origin company-researching
+gh pr create --title "Company data update: [brief summary]" --body "$(cat <<'EOF'
+## Summary
+- [List companies added/updated]
+
+## Data changes only
+- No UI changes
+- Merged latest main before building
+- Build verified: passes
+
+## Auto-deploy
+This PR will auto-deploy to production when merged.
+EOF
+)"
+```
+
+### Step 4: Done
+
+GitHub Actions will:
+1. Create a preview deployment for the PR (for review)
+2. Auto-deploy to production when the PR is merged to `main`
+
+You do NOT need to do anything else. The owner may merge the PR, or you may be given permission to merge.
+
+---
+
+## ⚠️ Deployment History & Context
+
+### Why "NEVER deploy" was the original rule
+
+Previously (Jan 2026), Codex was told to NEVER deploy because:
+
+1. **UI Rollback Bug**: The `company-researching` branch did not have the latest UI changes from `main`. When code from this branch was deployed directly, the production website reverted to an older UI version — breaking the live site.
+
+2. **Root Cause**: The `company-researching` branch diverged from `main` and missed UI improvements (click-outside-to-close, scroll position, article typography, OG images, design system v2, location filters, etc.) that were added on `main` or `feature/insight-update`.
+
+3. **Resolution (Feb 2026)**: The workflow now requires `git merge origin/main` BEFORE any build/deploy. This ensures all UI changes are included. Deployment goes through PR → GitHub Actions, not direct Firebase deploy.
+
+### Key rule: ALWAYS merge main first
+
+The #1 cause of deployment issues is deploying without the latest `main`. Never skip Step 1.
+
+---
+
 ## What You CAN Do
 
 1. **Add new company files**: `src/data/companies/[company-id].ts`
@@ -33,13 +104,15 @@ Do NOT edit files in these directories:
 3. **Update company index**: `src/data/companies/index.ts` (imports + array)
 4. **Fetch OG images for new companies** (see below)
 5. **Run research scripts**: Web searches, data gathering
-6. **Run `npm run build`** to verify your changes compile (but do NOT deploy)
+6. **Run `npm run build`** to verify your changes compile
+7. **Create PRs to main** following the deployment workflow above
 
 ## Branch Rules
 
-- Work on `company-researching` branch or create feature branches from `main`
+- Work on `company-researching` branch
 - Always commit your work before finishing
-- Do NOT merge branches — the owner handles merges
+- When ready to deploy: merge main → verify build → push → create PR
+- Do NOT force push or rebase — use merge only
 
 ## Company Data Format
 
@@ -49,11 +122,21 @@ Follow the existing pattern in `src/data/companies/`. Key fields:
 export const companyName: Company = {
   id: 'company-id',           // kebab-case, matches filename
   name: 'Company Name',
+  category: 'developer-tools' as const,  // REQUIRED — see types.ts for options
   description: 'One sentence.',
   website: 'https://...',
   // ... see src/data/types.ts for full interface
 };
 ```
+
+**IMPORTANT**: The `category` field is REQUIRED. Valid values:
+- `'ai-models'` — Foundation models, AI research (Anthropic, OpenAI)
+- `'developer-tools'` — Code assistants, dev infra (Cursor, Replit)
+- `'creative-media'` — Image/video/audio gen, design tools (Midjourney, Runway)
+- `'productivity'` — Writing, notes, search (Notion, Perplexity)
+- `'sales-marketing'` — CRM, marketing (Gong, Intercom)
+- `'enterprise-ops'` — Business automation, data (Ramp, Scale AI)
+- `'vertical-saas'` — Healthcare, legal, fintech (Harvey, Abridge)
 
 After adding a company file, add it to `src/data/companies/index.ts`:
 1. Add the import at the correct alphabetical position
