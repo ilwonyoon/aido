@@ -29,9 +29,9 @@ export const overlapAi: Company = {
     { stage: 'Seed', amount: '$1.9M', date: '2024-09' },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2024-09 round ($1.9M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Product, engineering, and ops teams',
 
   // Growth & Potential
   growthMetrics: {
@@ -97,9 +97,9 @@ export const overlapAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding:

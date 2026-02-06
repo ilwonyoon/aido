@@ -33,9 +33,9 @@ export const nooks: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'high-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2024-10 round ($43M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Sales teams and SDR managers',
 
   // Competition
   competitors: [
@@ -75,7 +75,7 @@ export const nooks: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
       background: 'Founding team not listed in sources reviewed.',
     },

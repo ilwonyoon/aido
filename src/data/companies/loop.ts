@@ -27,9 +27,9 @@ export const loop: Company = {
   totalFunding: '$35M (Series B reported)',
   fundingHistory: [],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: Finance teams at startups and SMBs',
 
   // Growth & Potential
   growthMetrics: {
@@ -95,9 +95,9 @@ export const loop: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding:

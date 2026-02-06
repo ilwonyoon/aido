@@ -34,9 +34,9 @@ export const odyssey: Company = {
     },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
+  runway: 'Estimated 18-24 months post 2024-11 round ($18M); exact runway not publicly disclosed',
+  customers: 'Primary audience: Creators and developers building interactive video experiences',
 
   // Growth & Potential
   growthMetrics: {

@@ -27,9 +27,9 @@ export const item: Company = {
   totalFunding: 'Unknown',
   fundingHistory: [],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: Sales teams and account executives',
 
   // Growth & Potential
   growthMetrics: {

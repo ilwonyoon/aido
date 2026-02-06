@@ -27,9 +27,9 @@ export const pacificFusion: Company = {
   totalFunding: '$900M',
   fundingHistory: [],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'early-growth trajectory (public % not disclosed)',
   runway: 'Unknown',
-  customers: 'Unknown',
+  customers: 'Primary audience: Fusion researchers and engineering teams',
 
   // Growth & Potential
   growthMetrics: {
@@ -95,9 +95,9 @@ export const pacificFusion: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Founding team (verification pending)',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Public founder details require verification from primary sources.',
     },
   ],
   whyBuilding:
