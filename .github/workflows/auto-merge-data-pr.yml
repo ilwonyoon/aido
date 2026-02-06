@@ -1,0 +1,54 @@
+name: Auto-merge company data PRs
+
+on:
+  workflow_run:
+    workflows: ["Deploy to Firebase Hosting on PR"]
+    types:
+      - completed
+
+jobs:
+  auto-merge:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Auto-merge data-only PRs from company-researching
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get PR number from the workflow run
+          PR_NUMBER=$(echo '${{ toJSON(github.event.workflow_run.pull_requests) }}' | jq '.[0].number')
+
+          if [ "$PR_NUMBER" == "null" ] || [ -z "$PR_NUMBER" ]; then
+            echo "No PR associated with this workflow run"
+            exit 0
+          fi
+
+          # Check if PR is from company-researching branch
+          HEAD_BRANCH=$(gh pr view "$PR_NUMBER" --json headRefName -q '.headRefName')
+          if [ "$HEAD_BRANCH" != "company-researching" ]; then
+            echo "PR #$PR_NUMBER is not from company-researching, skipping"
+            exit 0
+          fi
+
+          # Safety check: only auto-merge if ONLY data files changed
+          CHANGED=$(gh pr diff "$PR_NUMBER" --name-only)
+          NON_DATA=$(echo "$CHANGED" | grep -vE '^(src/data/|public/og-images/)' || true)
+
+          if [ -n "$NON_DATA" ]; then
+            echo "PR #$PR_NUMBER contains non-data file changes:"
+            echo "$NON_DATA"
+            echo ""
+            echo "Skipping auto-merge — manual review required"
+            exit 0
+          fi
+
+          echo "All checks passed. Only data files changed."
+          echo "Auto-merging PR #$PR_NUMBER..."
+
+          gh pr merge "$PR_NUMBER" --squash --delete-branch=false \
+            --subject "chore: auto-merge company data update (#$PR_NUMBER)"

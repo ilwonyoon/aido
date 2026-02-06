@@ -69,13 +69,16 @@ EOF
 )"
 ```
 
-### Step 4: Done
+### Step 4: Done — fully automated
 
 GitHub Actions will:
-1. Create a preview deployment for the PR (for review)
-2. Auto-deploy to production when the PR is merged to `main`
+1. Build and create a preview deployment for the PR
+2. **Auto-merge the PR** if ONLY data files changed (`src/data/`, `public/og-images/`)
+3. Auto-deploy to production once merged to `main`
 
-You do NOT need to do anything else. The owner may merge the PR, or you may be given permission to merge.
+You do NOT need to do anything else. The entire pipeline is automated.
+
+> **Note**: If the PR touches non-data files (UI, components, etc.), auto-merge is skipped and manual review is required. This is a safety guardrail.
 
 ---
 
@@ -91,9 +94,14 @@ Previously (Jan 2026), Codex was told to NEVER deploy because:
 
 3. **Resolution (Feb 2026)**: The workflow now requires `git merge origin/main` BEFORE any build/deploy. This ensures all UI changes are included. Deployment goes through PR → GitHub Actions, not direct Firebase deploy.
 
+4. **Full Automation (Feb 2026)**: Three GitHub Actions now handle the pipeline:
+   - `sync-branches.yml`: Auto-merges `main` → `company-researching` on every main push
+   - `auto-merge-data-pr.yml`: Auto-merges data-only PRs from `company-researching` when build passes
+   - `firebase-deploy.yml` / `firebase-hosting-merge.yml`: Auto-deploys to production on merge to `main`
+
 ### Key rule: ALWAYS merge main first
 
-The #1 cause of deployment issues is deploying without the latest `main`. Never skip Step 1.
+The #1 cause of deployment issues is deploying without the latest `main`. The auto-sync workflow handles this automatically, but if you're in the middle of work, always run Step 1 before creating a PR.
 
 ---
 
@@ -113,6 +121,28 @@ The #1 cause of deployment issues is deploying without the latest `main`. Never 
 - Always commit your work before finishing
 - When ready to deploy: merge main → verify build → push → create PR
 - Do NOT force push or rebase — use merge only
+
+## Auto-Sync (Background)
+
+A GitHub Action automatically merges `main` into `company-researching` whenever `main` is updated. This keeps your branch current with the latest UI. You generally don't need to worry about this, but if you see merge conflicts during your work, run:
+
+```bash
+git fetch origin main
+git merge origin/main --no-edit
+```
+
+And resolve data file conflicts by keeping your newer research data.
+
+## When to Create a PR (Auto-Deploy Trigger)
+
+Create a PR to deploy your work when ANY of these apply:
+
+1. **Batch complete**: You've added or updated 10+ companies
+2. **Research task done**: You've finished a specific research request
+3. **End of session**: You're done working and have uncommitted changes
+4. **Explicitly asked**: The owner tells you to deploy
+
+Follow the Deployment Workflow (Steps 1-4) above. The PR will be auto-merged and deployed without manual intervention.
 
 ## Company Data Format
 

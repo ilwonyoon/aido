@@ -1,0 +1,44 @@
+name: Sync main → company-researching
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge main into company-researching
+        run: |
+          # Check if company-researching branch exists on remote
+          if ! git ls-remote --exit-code --heads origin company-researching; then
+            echo "company-researching branch does not exist, skipping"
+            exit 0
+          fi
+
+          # Checkout company-researching
+          git checkout company-researching
+
+          # Merge main (fast-forward or merge commit)
+          if git merge origin/main --no-edit; then
+            echo "Merge successful"
+            git push origin company-researching
+          else
+            echo "Merge conflict detected — aborting auto-sync"
+            echo "Manual merge required on company-researching branch"
+            git merge --abort
+            exit 1
+          fi
