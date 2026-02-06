@@ -65,6 +65,7 @@ import { hopper } from './hopper';
 import { fortyTwoTechnologies } from './forty-two-technologies';
 import { xpertsea } from './xpertsea';
 import { flybits } from './flybits';
+import { crowdriff } from './crowdriff';
 import { unbounce } from './unbounce';
 import { tealbook } from './tealbook';
 import { swae } from './swae';
@@ -78,11 +79,13 @@ import { leddartech } from './leddartech';
 import { chillwallAi } from './chillwall-ai';
 import { fortunaAi } from './fortuna-ai';
 import { heyday } from './heyday';
+import { naborly } from './naborly';
 import { cerebriAi } from './cerebri-ai';
 import { vantageAnalytics } from './vantage-analytics';
 import { clearpathRobotics } from './clearpath-robotics';
 import { sharpestminds } from './sharpestminds';
 import { finnAi } from './finn-ai';
+import { openOceanRobotics } from './open-ocean-robotics';
 import { harmonic } from './harmonic';
 import { ambienceHealthcare } from './ambience-healthcare';
 import { abridge } from './abridge';
@@ -163,6 +166,7 @@ import { mosey } from './mosey';
 import { brainfish } from './brainfish';
 import { poolside } from './poolside';
 import { catalyxSpace } from './catalyx-space';
+import { terramera } from './terramera';
 import { appliedCompute } from './applied-compute';
 import { vizcom } from './vizcom';
 import { cartesia } from './cartesia';
@@ -174,6 +178,7 @@ import { contra } from './contra';
 import { livekit } from './livekit';
 import { mandolin } from './mandolin';
 import { furtherAi } from './further-ai';
+import { avidbots } from './avidbots';
 import { senecaSystems } from './seneca-systems';
 import { rivo } from './rivo';
 import { railway } from './railway';
@@ -564,6 +569,7 @@ export const companies: Company[] = [
   brainfish,
   poolside,
   catalyxSpace,
+  terramera,
   appliedCompute,
   vizcom,
   cartesia,
@@ -575,6 +581,7 @@ export const companies: Company[] = [
   livekit,
   mandolin,
   furtherAi,
+  avidbots,
   senecaSystems,
   rivo,
   railway,
@@ -856,6 +863,7 @@ export const companies: Company[] = [
   fortyTwoTechnologies,
   xpertsea,
   flybits,
+  crowdriff,
   unbounce,
   tealbook,
   swae,
@@ -869,11 +877,13 @@ export const companies: Company[] = [
   chillwallAi,
   fortunaAi,
   heyday,
+  naborly,
   cerebriAi,
   vantageAnalytics,
   clearpathRobotics,
   sharpestminds,
   finnAi,
+  openOceanRobotics,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
