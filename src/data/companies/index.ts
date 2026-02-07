@@ -86,6 +86,7 @@ import { naborly } from './naborly';
 import { cerebriAi } from './cerebri-ai';
 import { vantageAnalytics } from './vantage-analytics';
 import { clearpathRobotics } from './clearpath-robotics';
+import { c2ro } from './c2ro';
 import { sharpestminds } from './sharpestminds';
 import { finnAi } from './finn-ai';
 import { openOceanRobotics } from './open-ocean-robotics';
@@ -105,6 +106,7 @@ import { inferact } from './inferact';
 import { humansand } from './humansand';
 import { subtleComputing } from './subtle-computing';
 import { deepgram } from './deepgram';
+import { darwinai } from './darwinai';
 import { letta } from './letta';
 import { llmarena } from './llmarena';
 import { mem0 } from './mem0';
@@ -443,7 +445,12 @@ import { cline } from './cline';
 import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
+<<<<<<< HEAD
 import { jackAndJill } from './jack-and-jill';
+=======
+import { botpress } from './botpress';
+import { symend } from './symend';
+>>>>>>> 3c25a7f (Add C2RO and DarwinAI profiles)
 
 export const companies: Company[] = [
   anthropic,
@@ -497,6 +504,8 @@ export const companies: Company[] = [
   abridge,
   listenLabs,
   blossom,
+  botpress,
+  symend,
   tavus,
   toma,
   shopify,
@@ -508,6 +517,7 @@ export const companies: Company[] = [
   humansand,
   subtleComputing,
   deepgram,
+  darwinai,
   letta,
   llmarena,
   mem0,
@@ -887,6 +897,7 @@ export const companies: Company[] = [
   cerebriAi,
   vantageAnalytics,
   clearpathRobotics,
+  c2ro,
   sharpestminds,
   finnAi,
   openOceanRobotics,
