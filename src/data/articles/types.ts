@@ -27,11 +27,14 @@ export interface Article {
 
   // Categorization
   tags: string[];
-  category: 'analysis' | 'insights' | 'trends' | 'guides';
+  category: 'analysis' | 'deep-dive' | 'insights' | 'trends' | 'guides';
 
   // Featured status
   featured?: boolean;
 
   // Reading time (auto-calculated)
   readingTimeMinutes?: number;
+
+  // View count (tracked via Firestore, display only)
+  views?: number;
 }

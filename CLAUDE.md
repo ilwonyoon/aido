@@ -82,6 +82,30 @@ All article content is wrapped in `.article-content` and rendered via `<Markdown
 - Bold subtitle → list uses `:has()` for tight family bond spacing
 - First heading in article: margin-top suppressed to 0
 
+### Article Publishing System Rules
+
+**Page structure** (article detail page):
+- Header group: badge → title → excerpt → meta (author, date, reading time, views) → tags
+- Divider: `border-b border-[var(--border)]` separating header from body
+- Header spacing: `mb-16 pb-8` — 4rem margin + 2rem padding before divider
+- Body: `.article-content` with scroll-triggered reveal
+
+**Content rules**:
+- Article markdown content must NOT start with `# Title` — the page header already shows the title
+- `stripLeadingH1()` in page.tsx auto-removes leading h1 as a safety net
+- Categories: `'analysis' | 'deep-dive' | 'insights' | 'trends' | 'guides'`
+- Category display: capitalize first letter only (e.g., 'deep-dive' → 'Deep-dive')
+
+**Insights list page**:
+- All articles use the same full-width card layout (no grid, no featured/regular split)
+- Sorted by publishedDate descending (newest first)
+- Each card shows: badge, title, excerpt, date, reading time, view count
+
+**View counter**:
+- `ViewCounter` component (Firestore-based, `articleViews` collection)
+- Article detail page: `increment={true}` (counts page views)
+- Insights list page: `increment={false}` (read-only display)
+
 ## Code Style for UI
 
 - Always use CSS variables, never hardcoded colors
