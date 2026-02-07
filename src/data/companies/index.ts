@@ -66,6 +66,9 @@ import { fortyTwoTechnologies } from './forty-two-technologies';
 import { xpertsea } from './xpertsea';
 import { flybits } from './flybits';
 import { crowdriff } from './crowdriff';
+import { ecobee } from './ecobee';
+import { landr } from './landr';
+import { skyhive } from './skyhive';
 import { unbounce } from './unbounce';
 import { tealbook } from './tealbook';
 import { swae } from './swae';
@@ -864,6 +867,9 @@ export const companies: Company[] = [
   xpertsea,
   flybits,
   crowdriff,
+  ecobee,
+  landr,
+  skyhive,
   unbounce,
   tealbook,
   swae,
