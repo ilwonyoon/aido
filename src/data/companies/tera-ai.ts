@@ -75,9 +75,9 @@ export const teraAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Tony Zhang',
+      role: 'Founder & CEO',
+      background: 'Founded Tera AI in 2023 to build visual navigation and spatial reasoning software for robots. Backed by Felicis, Inovia, and Naval Ravikant.',
     },
   ],
   whyBuilding: 'Speed up chip design with AI-assisted workflows.',

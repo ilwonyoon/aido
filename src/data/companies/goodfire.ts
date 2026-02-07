@@ -102,9 +102,19 @@ export const goodfire: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Eric Ho',
+      role: 'Co-founder & CEO',
+      background: 'Founded RippleMatch in 2016 and scaled to $10M+ ARR; named Forbes 30 under 30 (2022).',
+    },
+    {
+      name: 'Dan Balsam',
+      role: 'Co-founder & CTO',
+      background: 'Former founding engineer and Head of AI at RippleMatch; built core engineering org and deployed LLMs in production.',
+    },
+    {
+      name: 'Tom McGrath',
+      role: 'Co-founder & Chief Scientist',
+      background: 'PhD (2016); co-founded the Interpretability team at DeepMind before leaving Google in March 2024.',
     },
   ],
   whyBuilding:

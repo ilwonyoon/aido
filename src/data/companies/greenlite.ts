@@ -50,9 +50,14 @@ export const greenlite: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Will Lawrence',
+      role: 'Co-founder & CEO',
+      background: 'Led product for Facebook anti-money laundering platform; built core compliance infrastructure at Paxos.',
+    },
+    {
+      name: 'Alex Jin',
+      role: 'Co-founder',
+      background: 'Former engineer and product manager at Dropbox; first employee at Flixed where he led product development.',
     },
   ],
   whyBuilding: 'Unknown',

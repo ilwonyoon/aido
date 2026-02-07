@@ -95,9 +95,14 @@ export const conductor: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Charlie Holtz',
+      role: 'Co-founder',
+      background: 'Previously led growth at Replicate building apps reaching millions of users; former quantitative developer at Point72.',
+    },
+    {
+      name: 'Jackson de Campos',
+      role: 'Co-founder',
+      background: 'Worked on ML infrastructure at Netflix scaling inference for video understanding models.',
     },
   ],
   whyBuilding:

@@ -74,9 +74,14 @@ export const magicPatterns: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Alex Danilowicz',
+      role: 'Co-founder & CEO',
+      background: 'Former frontend engineer; studied CS at Dartmouth; YC W23 founder building AI design tools.',
+    },
+    {
+      name: 'Teddy Ni',
+      role: 'Co-founder',
+      background: 'Former frontend engineer; met Alex freshman year at Dartmouth while studying CS.',
     },
   ],
   whyBuilding: 'Help teams move from idea to production design faster with AI.',

@@ -50,9 +50,14 @@ export const martian: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Shriyash Upadhyay',
+      role: 'Co-founder & Co-CEO',
+      background: 'Has been studying interpretability of large language models since 2016; built the first commercial application of mechanistic interpretability.',
+    },
+    {
+      name: 'Etan Ginsberg',
+      role: 'Co-founder & Co-CEO',
+      background: 'Team has worked on Google DeepMind\'s early scientific initiatives and developed Anthropic\'s interpretability efforts.',
     },
   ],
   whyBuilding: 'Unknown',

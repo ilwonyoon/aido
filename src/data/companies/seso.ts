@@ -49,11 +49,8 @@ export const seso: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Michael Guirguis', role: 'Co-Founder & CEO', background: 'Founded Seso to address agricultural labor shortages. Named one of Fast Company\'s Most Innovative Companies 2025.' },
+    { name: 'Jordan Taylor', role: 'Co-Founder', background: 'Grew up farming. Former product leader at Farmers\' Business Network.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

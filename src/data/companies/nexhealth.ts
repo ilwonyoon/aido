@@ -49,11 +49,8 @@ export const nexhealth: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Alamin Uddin', role: 'Co-Founder & CEO', background: 'Former medical receptionist turned entrepreneur. Forbes 30 Under 30 Healthcare 2018.' },
+    { name: 'Waleed Asif', role: 'Co-Founder', background: 'Co-founded NexHealth in 2017. Forbes 30 Under 30 Healthcare 2018.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

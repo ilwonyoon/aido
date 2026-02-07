@@ -97,9 +97,14 @@ export const inngest: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Tony Holdstock-Brown',
+      role: 'Co-founder & CEO',
+      background: 'Former Docker engineer and former head of engineering at healthcare company Uniform Teeth.',
+    },
+    {
+      name: 'Dan Farrelly',
+      role: 'Co-founder & CTO',
+      background: 'Former CTO of Buffer; co-founded Inngest in 2021 to simplify background job orchestration.',
     },
   ],
   whyBuilding:

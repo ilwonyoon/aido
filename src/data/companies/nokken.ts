@@ -94,11 +94,8 @@ export const nokken: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Nathan Aylott', role: 'Co-Founder', background: 'Co-founder of Aylott + Van Tromp design studio. Background in hospitality architecture and design.' },
+    { name: 'James Van Tromp', role: 'Co-Founder', background: 'Co-founder of Aylott + Van Tromp design studio. Background in hospitality architecture and design.' },
   ],
   whyBuilding:
     'Create sustainable, modular hospitality experiences that connect guests with nature.',

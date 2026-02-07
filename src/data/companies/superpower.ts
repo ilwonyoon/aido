@@ -43,7 +43,9 @@ export const superpower: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Jacob Peters', role: 'Co-founder & CEO', background: 'Inspired by personal health challenges and $2M in medical bills from years of undiagnosed conditions.' },
+    { name: 'Max Marchione', role: 'Co-founder', background: 'Spent decades navigating misdiagnoses from 20 doctors, motivating him to co-found Superpower.' },
+    { name: 'Kevin Unkrich', role: 'Co-founder', background: 'Co-founded Superpower to build personalized health testing and optimization.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

@@ -43,7 +43,16 @@ export const chronicle: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Mayuresh Patole',
+      role: 'Co-founder & CEO',
+      background: 'Self-proclaimed presentation nerd who earned recognition for transforming standard PowerPoint into something unrecognizable; built Chronicle as the "Cursor for presentations."',
+    },
+    {
+      name: 'Tejas Gawande',
+      role: 'Co-founder',
+      background: 'Co-founded Chronicle with Mayuresh at university to reinvent how presentations are created and delivered with AI.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

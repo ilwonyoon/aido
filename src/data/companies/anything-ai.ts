@@ -99,9 +99,14 @@ export const anythingAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Dhruv Amin',
+      role: 'Co-founder & Co-CEO',
+      background: 'YouTube TV\'s first product manager; co-founded Anything to help teams build and ship apps faster with AI.',
+    },
+    {
+      name: 'Marcus Lowe',
+      role: 'Co-founder & Co-CEO',
+      background: 'Ex-Google Maps and MIT Media Lab; co-founded Anything to democratize no-code AI app development.',
     },
   ],
   whyBuilding:

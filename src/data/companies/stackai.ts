@@ -50,9 +50,14 @@ export const stackai: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Antoni Rosinol',
+      role: 'Co-founder & CEO',
+      background: 'PhD in Machine Learning from MIT, MS in Robotics from ETH Zurich, BS from EPFL and NTU Singapore.',
+    },
+    {
+      name: 'Bernardo Aceituno',
+      role: 'Co-founder',
+      background: 'PhD in Computer Science and AI from MIT. Met co-founder Antoni while at MIT.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -50,9 +50,9 @@ export const hedraAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Michael Lingelbach',
+      role: 'Co-founder & CEO',
+      background: 'PhD from Stanford, former theatre actor turned AI researcher; previously worked at NVIDIA, Google, and Meta.',
     },
   ],
   whyBuilding: 'Unknown',

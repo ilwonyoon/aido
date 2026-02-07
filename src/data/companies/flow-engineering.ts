@@ -50,9 +50,9 @@ export const flowEngineering: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Pari Singh',
+      role: 'Founder & CEO',
+      background: 'Mechanical engineer by training; started career at BAE Systems in the UK working with legacy waterfall engineering approaches.',
     },
   ],
   whyBuilding: 'Unknown',

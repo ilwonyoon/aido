@@ -50,9 +50,9 @@ export const blackbirdLabs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Ben Leventhal',
+      role: 'Founder & CEO',
+      background: 'Co-founded Eater (food publication, 2005) and co-founded Resy (restaurant reservations, acquired by Amex in 2019); serial restaurant-tech entrepreneur.',
     },
   ],
   whyBuilding: 'Unknown',

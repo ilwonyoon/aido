@@ -43,7 +43,11 @@ export const coframe: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Josh Payne',
+      role: 'Founder & CEO',
+      background: 'Founded Coframe to pioneer self-optimizing user interfaces that adapt, evolve, and improve themselves using multimodal AI models.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

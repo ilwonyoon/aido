@@ -43,7 +43,21 @@ export const augment: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Scott Dietzen',
+      role: 'CEO',
+      background: 'Former CEO of Pure Storage (grew from 0 to $1B+ revenue and IPO); Ph.D. in Computer Science (ML focus) from Carnegie Mellon.',
+    },
+    {
+      name: 'Guy Gur-Ari',
+      role: 'Co-founder & Chief Scientist',
+      background: 'Former Google researcher who worked on training large language models and using them for hard reasoning tasks.',
+    },
+    {
+      name: 'Igor Ostrovsky',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder building Augment\'s Context Engine for enterprise-scale AI coding assistance.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

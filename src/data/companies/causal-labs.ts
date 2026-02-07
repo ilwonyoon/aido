@@ -66,9 +66,14 @@ export const causalLabs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Dar Mehta',
+      role: 'Co-founder & CEO',
+      background: 'Former Cruise ML engineer; co-founded Causal Labs to build AI physics models for weather prediction and control.',
+    },
+    {
+      name: 'Yue Kelsie Zhao',
+      role: 'Co-founder & CTO',
+      background: 'Former Cruise ML engineer; technical co-founder building Large Physics foundation Models (LPMs) for atmospheric simulation.',
     },
   ],
   whyBuilding: 'Traditional weather forecasting is limited; physics-based AI can improve accuracy.',

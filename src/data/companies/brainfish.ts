@@ -74,9 +74,14 @@ export const brainfish: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Daniel Kimber',
+      role: 'Co-founder & CEO',
+      background: 'Ex-SiteMinder product builder; launched Brainfish at age 25 to reinvent customer support with ambient AI agents.',
+    },
+    {
+      name: 'Ajain Vivek Thankaswamy',
+      role: 'Co-founder & CTO',
+      background: 'Ex-SiteMinder; technical co-founder building AI-powered customer support and knowledge automation at Brainfish.',
     },
   ],
   whyBuilding: 'Reduce the burden on support teams with ambient AI agents.',

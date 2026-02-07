@@ -50,9 +50,14 @@ export const kernel: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Catherine Jue',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Sway Finance (YC S16); led Cash App\'s forward deployed engineers and docs platform.',
+    },
+    {
+      name: 'Rafael Garcia',
+      role: 'Co-founder & CTO',
+      background: 'Co-founder/CTO of Clever (YC S12), which exited for $500M in 2021.',
     },
   ],
   whyBuilding: 'Unknown',

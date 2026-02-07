@@ -50,9 +50,9 @@ export const edia: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Joe Philleo',
+      role: 'Co-founder & CEO',
+      background: 'USC dropout (Applied Mathematics); previously worked with Joe Lonsdale (Palantir, Addepar, OpenGov).',
     },
   ],
   whyBuilding: 'Unknown',

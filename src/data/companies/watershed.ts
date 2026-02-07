@@ -96,9 +96,19 @@ export const watershed: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Christian Anderson',
+      role: 'Co-founder & CEO',
+      background: 'Previously at Stripe, where he helped launch Stripe Climate. Leading product vision and company strategy at Watershed.',
+    },
+    {
+      name: 'Taylor Francis',
+      role: 'Co-founder',
+      background: 'Previously at Stripe. Co-founded Watershed in 2019 to help enterprises measure and reduce emissions.',
+    },
+    {
+      name: 'Avi Itskovich',
+      role: 'Co-founder',
+      background: 'Previously at Stripe. Co-founded Watershed to build enterprise-grade climate data products.',
     },
   ],
   whyBuilding:

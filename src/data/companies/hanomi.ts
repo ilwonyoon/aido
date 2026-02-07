@@ -39,7 +39,8 @@ export const hanomi: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Marco Mascolo', role: 'Co-founder & CEO', background: 'Mechanical engineer who spent years creating 2D drawings at NASA, F1, Apple, and Fortune 500 manufacturing companies.' },
+    { name: 'Drishti Bhasin', role: 'Co-founder & CTO', background: 'Mechanical engineer with experience at NASA and Apple; co-founded Hanomi in 2024 to slash hardware design cycles.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

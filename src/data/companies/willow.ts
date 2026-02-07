@@ -50,9 +50,19 @@ export const willow: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Allan Guo',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Willow Voice in 2024. Building AI dictation that is 40%+ more accurate than built-in tools. Backed by Y Combinator.',
+    },
+    {
+      name: 'Ian Ye',
+      role: 'Co-founder',
+      background: 'Co-founded Willow to build voice-first typing across Mac and iOS platforms.',
+    },
+    {
+      name: 'Lawrence Liu',
+      role: 'Co-founder & CTO',
+      background: 'Building the AI speech-to-text engine that powers Willow Voice dictation.',
     },
   ],
   whyBuilding: 'Unknown',

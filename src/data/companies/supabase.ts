@@ -50,9 +50,14 @@ export const supabase: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Paul Copplestone',
+      role: 'Co-founder & CEO',
+      background: 'Previously worked at a startup in Southeast Asia. Saw the gap between Firebase simplicity and Postgres flexibility, launching Supabase via YC S20.',
+    },
+    {
+      name: 'Ant Wilson',
+      role: 'Co-founder & CTO',
+      background: 'Co-founded Supabase in 2020 to build the open-source Firebase alternative on Postgres.',
     },
   ],
   whyBuilding: 'Unknown',

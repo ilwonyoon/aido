@@ -97,9 +97,14 @@ export const subtrate: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Ben Guo',
+      role: 'Co-founder',
+      background: 'Co-founded Substrate to build APIs for AI that harness curated open-source models at scale.',
+    },
+    {
+      name: 'Rob Cheung',
+      role: 'Co-founder & CEO',
+      background: 'Leading Substrate to accelerate AI deployment with optimized infrastructure.',
     },
   ],
   whyBuilding:

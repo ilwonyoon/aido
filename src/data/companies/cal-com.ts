@@ -50,9 +50,14 @@ export const calCom: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Peer Richelsen',
+      role: 'Co-founder & Co-CEO',
+      background: 'Former Head of Product at On Deck; founder of Lean Hire; YC alumnus (W19); launched Cal.com after searching for "calendly open source" and finding nothing.',
+    },
+    {
+      name: 'Bailey Pumfleet',
+      role: 'Co-founder & Co-CEO',
+      background: 'Co-founded Cal.com (originally Calendso) to build open-source scheduling infrastructure with a mission to connect 1 billion people by 2031.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -43,7 +43,8 @@ export const recallAi: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'David Gu', role: 'Co-Founder & CEO', background: 'Built Recall.ai into the universal meeting data API. Over 2,000 companies use the platform.' },
+    { name: 'Amanda Zhu', role: 'Co-Founder & COO', background: 'Co-founded Recall.ai to power AI products with conversation data.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

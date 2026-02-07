@@ -50,9 +50,14 @@ export const symbiotic: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Misha Putiatin',
+      role: 'Co-founder & CEO',
+      background: 'Previously CEO of MixBytes, a smart contract auditing firm. Built Symbiotic with the team behind Statemind security firm.',
+    },
+    {
+      name: 'Algys Ievlev',
+      role: 'Co-founder',
+      background: 'Former CTO at MixBytes. Co-founded Symbiotic to create a universal staking coordination layer.',
     },
   ],
   whyBuilding: 'Unknown',

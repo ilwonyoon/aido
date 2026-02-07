@@ -35,10 +35,10 @@ export const superhuman: Company = {
         leadInvestors: ['Andreessen Horowitz'],
       },
     ],
-    revenue: '$20M ARR (estimated before acquisition)',
-    growth: 'Unknown',
+    revenue: '$36.5M ARR (late 2024, pre-acquisition)',
+    growth: '2x faster in 2024 vs 2023; $36.5M ARR pre-acquisition, 120%+ NRR',
     runway: 'N/A (acquired)',
-    customers: 'Undisclosed',
+    customers: '40M+ daily users (post-Grammarly rebrand), 30M+ Grammarly users absorbed',
 
     // Competition
     competitors: [
@@ -119,8 +119,11 @@ export const superhuman: Company = {
 
     // Design Opportunity
     designTeam: {
-      designHead: 'Unknown',
-      teamSize: 'Unknown',
+      designHead: 'Collin Whitehead (VP of Design, ex-Dropbox)',
+      teamSize: '~20-30 (estimated, part of 491-person org)',
+      notableMembers: [
+        { name: 'Kevin Cannon', role: 'Product Design Director' },
+      ],
     },
     designWorkType: {
       logicBehavior: {
@@ -190,14 +193,15 @@ export const superhuman: Company = {
 
     growthMetrics: {
       stage: 'steady',
-      revenueGrowth: "$50M+ ARR (estimated 2024 before acquisition)",
-      userGrowth: "Unknown (premium product, selective growth)",
+      revenueGrowth: "$36.5M ARR (late 2024, pre-acquisition), 2x growth vs prior year",
+      userGrowth: "94% of weekly active users use AI features; 72% more emails/hour with AI",
       signals: [
-        "Acquired by Grammarly in 2024",
-        "~$50M ARR pre-acquisition",
-        "$125M total raised (a16z, IVP)",
+        "Acquired by Grammarly in July 2025",
+        "$36.5M ARR pre-acquisition, 120%+ NRR",
+        "$118M total raised (a16z, IVP, Tiger Global)",
         "Product visionary founder (Rahul Vohra)",
-        "Cult following among power users",
+        "Grammarly rebranded entire company as Superhuman (Oct 2025)",
+        "491-person combined team, global hubs",
       ],
 
       tam: "$10B+ (Email productivity for professionals)",

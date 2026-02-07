@@ -96,11 +96,8 @@ export const redQueenBio: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Nikolai Eroshenko', role: 'Co-Founder & CEO', background: 'PhD from Harvard. Former co-founder of HelixNano (clinical-stage mRNA company). YC W17 alum.' },
+    { name: 'Hannu Rajaniemi', role: 'Co-Founder', background: 'Co-founded HelixNano with Nikolai. Nearly a decade of collaboration. Spun out Red Queen Bio after working with OpenAI on AI biological capabilities.' },
   ],
   whyBuilding:
     'Strengthen biosecurity by detecting and mitigating biological threats with AI.',

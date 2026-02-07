@@ -50,9 +50,9 @@ export const comfyUi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Yoland Yan',
+      role: 'CEO',
+      background: 'CEO of Comfy Org, the team behind ComfyUI; team members come from Stability AI and Google.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -41,7 +41,8 @@ export const twoDots: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Henson Orser', role: 'Co-founder & CEO', background: 'Previously at Goldman Sachs for 4 years, then joined a proptech startup as 4th employee processing rental applications.' },
+    { name: 'Max Ponte', role: 'Co-founder & CTO', background: 'One of the first engineers on the income verification team at Blend. Later worked on search at Google.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

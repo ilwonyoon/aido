@@ -99,9 +99,19 @@ export const arcadeDev: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Alex Salazar',
+      role: 'Co-founder & CEO',
+      background: 'Former VP of Product at Okta; co-founder and CEO of Stormpath (first Authentication API for developers); auth industry veteran.',
+    },
+    {
+      name: 'Sam Partee',
+      role: 'Co-founder',
+      background: 'Former Principal Applied AI Engineer at Redis who led the Applied AI team and contributed to LangChain and LlamaIndex.',
+    },
+    {
+      name: 'Itai Liptz',
+      role: 'Co-founder',
+      background: 'Co-founded Arcade.dev to build a developer platform for shipping AI-powered apps with managed tooling.',
     },
   ],
   whyBuilding:

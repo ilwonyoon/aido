@@ -50,9 +50,9 @@ export const dimensionLabs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Andrew Hong',
+      role: 'Founder & CEO',
+      background: 'Founded Dimension Labs to transform unstructured customer conversations into structured intelligence.',
     },
   ],
   whyBuilding: 'Unknown',

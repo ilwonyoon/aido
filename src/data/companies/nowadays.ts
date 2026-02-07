@@ -43,7 +43,8 @@ export const nowadays: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Anna Sun', role: 'Co-Founder', background: 'Co-founded Nowadays in 2023 for AI-powered corporate event planning. YC alum.' },
+    { name: 'Amy Yan', role: 'Co-Founder', background: 'Co-founded Nowadays in 2023. YC alum.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

@@ -50,9 +50,14 @@ export const arc: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Nick Lombardo',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Arc in 2021 to build a cash management and capital markets platform for technology companies.',
+    },
+    {
+      name: 'Don Muir',
+      role: 'Co-founder',
+      background: 'Co-founded Arc; now serves as CEO of F2, an AI-focused spin-off for private markets investors.',
     },
   ],
   whyBuilding: 'Unknown',

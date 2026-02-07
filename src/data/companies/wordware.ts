@@ -43,7 +43,8 @@ export const wordware: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Filip Kozera', role: 'Co-founder & CEO', background: 'Previously co-founded and exited KRISTALIC. Studied Deep Learning at Cambridge. Building Wordware as an IDE for Natural Language Programming.' },
+    { name: 'Robert Chandler', role: 'Co-founder & CTO', background: 'Former early engineer at Five AI (acquired by Bosch). Led Offline Perception team with 5+ patents. Studied Information Engineering at Cambridge.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

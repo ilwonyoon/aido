@@ -43,7 +43,8 @@ export const thatch: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Chris Ellis', role: 'Co-founder & CEO', background: 'Started career as a cancer researcher at MIT. Previously founded U.S. sales at Sophia Genetics and worked at Agilent Technologies.' },
+    { name: 'Adam Stevenson', role: 'Co-founder & President', background: 'Spent 4 years at Humana, then 7 years at Stripe where he led customer engineering teams.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

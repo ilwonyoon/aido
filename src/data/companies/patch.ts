@@ -49,11 +49,8 @@ export const patch: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Brennan Spellacy', role: 'Co-Founder & CEO', background: 'Chemical engineering from McGill. Former developer at Shopify and Sonder.' },
+    { name: 'Aaron Grunfeld', role: 'Co-Founder', background: 'Previously at Sonder. Co-founded Patch in 2020 to scale carbon removal.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

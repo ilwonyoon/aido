@@ -43,7 +43,8 @@ export const instant: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Joe Averbukh', role: 'Co-founder & CEO', background: 'Previously worked at Wit.ai, Facebook, and Airbnb; YC-backed founder building a modern Firebase alternative.' },
+    { name: 'Stepan Parunashvili', role: 'Co-founder', background: 'Previously worked at Wit.ai, Facebook, and Airbnb; focused on real-time collaborative database infrastructure.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

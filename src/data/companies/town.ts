@@ -97,9 +97,14 @@ export const town: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Jean-Denis Greze',
+      role: 'Co-founder & CEO',
+      background: 'Former executive at Plaid. Leading Town to automate SME tax solutions with AI.',
+    },
+    {
+      name: 'Tony Vincent',
+      role: 'Co-founder & CPO',
+      background: 'Previously at OpenAI and Google. Co-founded Town in 2024 to democratize tax management.',
     },
   ],
   whyBuilding:

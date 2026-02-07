@@ -95,9 +95,14 @@ export const ditto: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Adam Fish',
+      role: 'Co-founder & CEO',
+      background: 'Former VP of Product at Realm Inc (acquired by MongoDB); previously co-founded Roobiq, a mobile sales platform.',
+    },
+    {
+      name: 'Max Alexander',
+      role: 'Co-founder & CPO',
+      background: 'Co-founded Ditto in 2018 and serves as Chief Product Officer.',
     },
   ],
   whyBuilding:

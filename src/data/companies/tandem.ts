@@ -50,9 +50,19 @@ export const tandem: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Lukas Saari',
+      role: 'Co-founder & CEO',
+      background: 'Previously led McKinsey Nordic healthcare digitization and AI practice. Experience in ML at Spotify.',
+    },
+    {
+      name: 'Oscar Boldt-Christmas',
+      role: 'Co-founder & CCO',
+      background: 'Former Senior Partner at McKinsey leading the European healthcare practice for 20 years.',
+    },
+    {
+      name: 'Oliver Astrand',
+      role: 'Co-founder & CTO',
+      background: 'AI researcher at GoogleX and Uber. Developed AI products at startups Depict and Mavenoid.',
     },
   ],
   whyBuilding: 'Unknown',

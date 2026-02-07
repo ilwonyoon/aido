@@ -102,9 +102,19 @@ export const happyrobot: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Pablo Palafox',
+      role: 'Co-founder & CEO',
+      background: 'Masters in Mechanical Engineering from TU Munich; co-founded HappyRobot with his brother and college friend.',
+    },
+    {
+      name: 'Javi Palafox',
+      role: 'Co-founder & COO',
+      background: 'Sibling of Pablo; leads operations at HappyRobot.',
+    },
+    {
+      name: 'Luis Paarup',
+      role: 'Co-founder & CTO',
+      background: 'Met Pablo on second day of Robotics and Electronics undergrad; Masters in Mechanical Engineering from TU Munich.',
     },
   ],
   whyBuilding:

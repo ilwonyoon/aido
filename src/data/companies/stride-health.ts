@@ -43,7 +43,8 @@ export const strideHealth: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Noah Lang', role: 'Co-founder & CEO', background: 'Building portable benefits for gig workers and self-employed Americans. Previously advised on healthcare policy.' },
+    { name: 'Matt Butner', role: 'Co-founder', background: 'Co-founded Stride Health in 2013 to connect individuals with health plans under the ACA.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

@@ -50,9 +50,9 @@ export const supermemory: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Dhravya Shah',
+      role: 'Founder & CEO',
+      background: '19-year-old founder from Mumbai. Previously built and sold a screenshot bot to Hypefury. Attending Arizona State University. Backed by Google AI chief Jeff Dean and Cloudflare execs.',
     },
   ],
   whyBuilding: 'Unknown',

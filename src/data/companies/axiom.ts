@@ -50,9 +50,19 @@ export const axiom: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Neil Jagdish Patel',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Axiom to reinvent logging and observability with a serverless approach to event data storage.',
+    },
+    {
+      name: 'Seif Lotfy',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder building Axiom\'s cloud-native log management and observability platform.',
+    },
+    {
+      name: 'Gordon Allott',
+      role: 'Co-founder',
+      background: 'Co-founded Axiom to build next-generation logging infrastructure for developers.',
     },
   ],
   whyBuilding: 'Unknown',

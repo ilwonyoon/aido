@@ -43,7 +43,9 @@ export const upwind: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Amiram Shachar', role: 'Co-founder & CEO', background: 'Previously founded Spot.io (acquired by NetApp for ~$450M in 2020). Built Upwind to protect cloud infrastructure at runtime.' },
+    { name: 'Lavi Ferdman', role: 'Co-founder & SVP of Growth', background: 'Previously at Spot.io. Co-founded Upwind with the team behind the cloud optimization platform.' },
+    { name: 'Liran Polak', role: 'Co-founder', background: 'Previously at Spot.io. Part of the founding team building runtime cloud security at Upwind.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

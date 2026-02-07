@@ -66,9 +66,9 @@ export const warmer: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Pete Kadens',
+      role: 'Co-founder & CEO',
+      background: 'Built Warmer after feeling friends and family could not relate when he stopped drinking. Matching people with lived-experience advisors.',
     },
   ],
   whyBuilding: 'People want clearer guidance and advice for health and life decisions.',

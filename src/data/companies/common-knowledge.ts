@@ -52,7 +52,7 @@ export const commonKnowledge: Company = {
     {
       name: 'Unknown',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Team includes members from Humane and Slack (iOS/Desktop); studied CS at Brown and design at RISD.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -50,9 +50,14 @@ export const theInteractionCompanyOfCalifornia: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Marvin von Hagen',
+      role: 'Co-founder & CEO',
+      background: 'Research experience at Stanford, MIT, and Cambridge. Worked at Tesla and Apple. Led TUM Boring team that won SpaceX Not-a-Boring Competition.',
+    },
+    {
+      name: 'Felix Schlegel',
+      role: 'Co-founder',
+      background: 'Long-time collaborator with Marvin. Combined experience in AI research and systems engineering at scale.',
     },
   ],
   whyBuilding: 'Unknown',

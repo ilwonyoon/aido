@@ -43,7 +43,8 @@ export const inkeep: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Nick Gomez', role: 'Co-founder & CEO', background: 'MIT graduate; previously led developer experience at Microsoft focusing on self-serve and no-code builders.' },
+    { name: 'Robert Tran', role: 'Co-founder & CTO', background: 'MIT graduate; former Head of Engineering at illumis, building software to aggregate public data sources.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

@@ -50,9 +50,24 @@ export const bedrockRobotics: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Boris Sofman',
+      role: 'Co-founder & CEO',
+      background: 'Former head at Waymo and co-founder of Anki; applying ML and robotics to autonomous construction equipment.',
+    },
+    {
+      name: 'Kevin Peterson',
+      role: 'Co-founder & CTO',
+      background: 'Former Head of Perception for Waymo Via; previously founded Marble Robot, a robotic and autonomy solutions provider.',
+    },
+    {
+      name: 'Ajay Gummalla',
+      role: 'Co-founder & VP Engineering',
+      background: 'Co-founded Bedrock Robotics to build autonomous construction technology from ex-Waymo engineering talent.',
+    },
+    {
+      name: 'Tom Eliaz',
+      role: 'Co-founder & VP Engineering',
+      background: 'Co-founded Bedrock Robotics to retrofit existing construction vehicles with AI-driven autonomy systems.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -50,9 +50,19 @@ export const centralHq: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Josh Wymer',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Central to build an AI-first back-office platform for startups handling payroll, benefits, and compliance via Slack.',
+    },
+    {
+      name: 'Pranav Kashyap',
+      role: 'Co-founder',
+      background: 'Co-founded Central to automate payroll and HR workflows for startups; backed by First Round Capital and YC.',
+    },
+    {
+      name: 'Nilay Modi',
+      role: 'Co-founder',
+      background: 'Co-founded Central to replace legacy HR providers like Rippling, Gusto, and Deel for startup teams.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -49,11 +49,8 @@ export const modular: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Chris Lattner', role: 'Co-Founder & CEO', background: 'Creator of LLVM, Clang, MLIR, Swift, and Cloud TPUs. Former Apple, Google, Tesla.' },
+    { name: 'Tim Davis', role: 'Co-Founder', background: 'Met Chris Lattner at Google. Co-founded Modular to reinvent AI infrastructure.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

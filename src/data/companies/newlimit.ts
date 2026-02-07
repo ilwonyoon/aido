@@ -49,11 +49,8 @@ export const newlimit: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Brian Armstrong', role: 'Co-Founder', background: 'Co-founder and CEO of Coinbase. Grew Coinbase from inception to public company.' },
+    { name: 'Blake Byers', role: 'Co-Founder', background: 'Former General Partner at GV for a decade. Led investments in tech and healthcare including Forty Seven, Arcus, Denali, and Grail.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

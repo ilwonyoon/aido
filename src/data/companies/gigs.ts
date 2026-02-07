@@ -70,9 +70,14 @@ export const gigs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Hermann Frank',
+      role: 'Co-founder & CEO',
+      background: 'Responsible for strategy and product at Gigs; founded the company in 2020.',
+    },
+    {
+      name: 'Dennis Bauer',
+      role: 'Co-founder & President',
+      background: 'Responsible for growth and operations; co-founded Gigs in 2020 (YC 2021 batch).',
     },
   ],
   whyBuilding: 'Enable any brand to launch a mobile service quickly.',

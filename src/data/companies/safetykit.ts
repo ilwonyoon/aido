@@ -74,11 +74,9 @@ export const safetykit: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'David Graunke', role: 'Co-Founder', background: 'Led engineering for risk reviews at Stripe for fraud, credit, content moderation, and financial crimes. YC S23.' },
+    { name: 'Steven Guichard', role: 'Co-Founder', background: 'Former first engineer and later CEO at Carbic. YC S23.' },
+    { name: 'Alex Rosenblatt', role: 'Co-Founder', background: 'Led Trust & Safety automation at Airbnb and Stripe. Focus on marketplace risk and offline harm.' },
   ],
   whyBuilding: 'Enable trust and safety teams to scale with AI agents.',
   beliefs: [

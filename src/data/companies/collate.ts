@@ -50,9 +50,19 @@ export const collate: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Surbhi Sarna',
+      role: 'Co-founder & CEO',
+      background: 'Former CEO of nVision Medical (acquired by Boston Scientific for $275M); former General Partner at Y Combinator leading healthcare practice.',
+    },
+    {
+      name: 'Nate Smith',
+      role: 'Co-founder',
+      background: 'Former CEO, CTO, and Founder of Lever (acquired by Employ for $517M, 5000+ customers); former YC Visiting Partner and Google PM.',
+    },
+    {
+      name: 'Jigish Patel',
+      role: 'Co-founder',
+      background: 'Co-founded Collate to automate labor-intensive documentation in the life sciences industry using AI.',
     },
   ],
   whyBuilding: 'Unknown',

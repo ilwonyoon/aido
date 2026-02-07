@@ -43,7 +43,9 @@ export const pylon: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Marty Kausas', role: 'Co-Founder & CEO', background: 'Former software engineer at Airbnb. Kleiner Perkins Fellow. YC alum.' },
+    { name: 'Advith Chelikani', role: 'Co-Founder', background: 'Former software engineer at Samsara. Caltech alum. Kleiner Perkins Fellow.' },
+    { name: 'Robert Eng', role: 'Co-Founder', background: 'Former software engineer at Affinity. Caltech alum. Kleiner Perkins Fellow.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

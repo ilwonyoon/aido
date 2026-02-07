@@ -68,9 +68,9 @@ export const legendXyz: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Jayson Hobby',
+      role: 'Co-founder & CEO',
+      background: 'Former CEO of Compound (crypto lending and borrowing platform) where he spent five years.',
     },
   ],
   whyBuilding: 'Make onchain finance more accessible with modern UX.',

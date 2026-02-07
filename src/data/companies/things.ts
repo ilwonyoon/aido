@@ -43,7 +43,7 @@ export const things: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Jason Toff', role: 'Founder & CEO', background: 'Google alumni. Founded Things Inc. in 2021 to make 3D creation easy. Raised $10M seed from a16z and Scott Belsky (Adobe CPO).' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

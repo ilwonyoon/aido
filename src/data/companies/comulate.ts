@@ -73,9 +73,14 @@ export const comulate: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Jordan Katz',
+      role: 'Co-founder & CEO',
+      background: 'Built Asana product from Series C to IPO before co-founding Comulate.',
+    },
+    {
+      name: 'Michael Mattheakis',
+      role: 'Co-founder & CTO',
+      background: 'Former Meta engineer and 10th employee at Brex, where he built financial software.',
     },
   ],
   whyBuilding: 'Insurance operations remain manual; AI can reduce cost and turnaround time.',

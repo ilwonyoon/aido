@@ -96,11 +96,9 @@ export const sauronSystems: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Jack Abraham', role: 'Co-Founder', background: 'Serial entrepreneur. Founded Sauron in 2024 after security frustrations at his Miami Beach residence.' },
+    { name: 'Kevin Hartz', role: 'Co-Founder', background: 'Co-founded Eventbrite. Co-founded Sauron in 2024 for military-grade home security.' },
+    { name: 'Vasumathi Raman', role: 'Co-Founder', background: 'Co-founded Sauron in 2024.' },
   ],
   whyBuilding:
     'Deliver a perception-first home security system that improves detection and response.',

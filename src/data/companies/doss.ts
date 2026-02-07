@@ -102,9 +102,14 @@ export const doss: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Wiley Jones',
+      role: 'Co-founder & CEO',
+      background: 'Mechanical engineer from UIUC; spent 18 months in China as hardware engineer at Sprite Robotics before founding Doss.',
+    },
+    {
+      name: 'Arnav Mishra',
+      role: 'Co-founder & CTO',
+      background: 'Former founding software engineer at Siteline building construction billing software.',
     },
   ],
   whyBuilding:

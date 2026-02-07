@@ -96,11 +96,9 @@ export const rox: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Ishan Mukherjee', role: 'Co-Founder & CEO', background: 'Former Chief Growth Officer at New Relic, scaled self-serve business from $0-$100M ARR.' },
+    { name: 'Avanika Narayan', role: 'Co-Founder', background: 'Co-founded Rox in 2024.' },
+    { name: 'Diogo Ribeiro', role: 'Co-Founder', background: 'Co-founded Rox in 2024.' },
   ],
   whyBuilding:
     'Make it easy for households to manage shared spending and financial goals.',

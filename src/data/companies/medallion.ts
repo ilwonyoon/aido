@@ -43,7 +43,7 @@ export const medallion: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Derek Lo', role: 'Founder & CEO', background: 'Second-time founder; Forbes 30 Under 30; Modern Healthcare 40 Under 40; grew Medallion to 250+ customers and 175+ employees.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

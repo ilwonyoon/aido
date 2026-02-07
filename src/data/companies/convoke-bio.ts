@@ -50,9 +50,19 @@ export const convokeBio: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Alex Telford',
+      role: 'Co-founder & CEO',
+      background: 'Deep domain expertise from years advising biopharma companies.',
+    },
+    {
+      name: 'Maged Ahmed',
+      role: 'Co-founder',
+      background: 'Early engineering leader from Applied Intuition (autonomy software) and Google.',
+    },
+    {
+      name: 'Vikas Velagapudi',
+      role: 'Co-founder',
+      background: 'Early engineering leader from Applied Intuition and Google.',
     },
   ],
   whyBuilding: 'Unknown',

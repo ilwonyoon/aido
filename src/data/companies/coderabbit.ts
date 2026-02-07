@@ -50,9 +50,19 @@ export const coderabbit: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Harjot Gill',
+      role: 'Co-founder & CEO',
+      background: 'Previously co-founded FluxNinja (observability startup) and Netsil (sold to Nutanix in 2018); launched CodeRabbit in 2023.',
+    },
+    {
+      name: 'Vishu Kaur',
+      role: 'Co-founder',
+      background: 'Co-founded CodeRabbit to build an AI-powered code review platform used by 8,000+ businesses including Chegg and Mercury.',
+    },
+    {
+      name: 'Guritfaq Singh',
+      role: 'Co-founder',
+      background: 'Co-founded CodeRabbit to automate code reviews with AI, growing to $15M+ ARR and a $550M valuation in two years.',
     },
   ],
   whyBuilding: 'Unknown',

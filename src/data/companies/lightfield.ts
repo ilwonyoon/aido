@@ -74,9 +74,14 @@ export const lightfield: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Keith Peiris',
+      role: 'Co-founder & CEO',
+      background: 'Former co-founder and CEO of Tome (viral AI presentation app with 20M+ users); pivoted to build Lightfield.',
+    },
+    {
+      name: 'Henri Liriani',
+      role: 'Co-founder & President',
+      background: 'Former co-founder of Tome; now leading Lightfield as an AI-native CRM for founder-led sales.',
     },
   ],
   whyBuilding: 'Replace legacy CRM with AI-native workflows for revenue teams.',

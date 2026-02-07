@@ -43,7 +43,8 @@ export const sfcompute: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Evan Conrad', role: 'Co-Founder & CEO', background: 'Previously tried to launch an AI music startup but hit GPU access walls, inspiring SF Compute.' },
+    { name: 'Alex Gajewski', role: 'Co-Founder', background: 'Background in AI and cloud computing. Co-created the GPU rental model that attracted 170 AI companies.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

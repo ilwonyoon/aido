@@ -97,9 +97,14 @@ export const variant: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Daniel Bulhosa Solorzano',
+      role: 'Co-founder',
+      background: 'Experience at CMU. Building Variant to embed AI agents into enterprise workflows through Y Combinator.',
+    },
+    {
+      name: 'Benjamin South Lee',
+      role: 'Co-founder',
+      background: 'Experience at Princeton. Co-founded Variant in 2024 to automate complex enterprise operations with AI agents.',
     },
   ],
   whyBuilding:

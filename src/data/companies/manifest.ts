@@ -52,7 +52,7 @@ export const manifest: Company = {
     {
       name: 'Unknown',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Founder information not publicly available.',
     },
   ],
   whyBuilding: 'Unknown',

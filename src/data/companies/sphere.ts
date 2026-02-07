@@ -69,11 +69,8 @@ export const sphere: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Nicholas Rudder', role: 'Co-Founder & CEO', background: 'Finance background in TMT (PwC, Macquarie). Founded Sphere in 2021 after experiencing indirect tax pain in his previous B2C marketplace.' },
+    { name: 'Adrian Sarstedt', role: 'Co-Founder & CTO', background: 'Co-founded Sphere in 2021. YC alum.' },
   ],
   whyBuilding: 'Simplify and automate global tax compliance for finance teams.',
   beliefs: [

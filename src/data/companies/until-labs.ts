@@ -50,9 +50,14 @@ export const untilLabs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Laura Deming',
+      role: 'Co-founder & CEO',
+      background: 'Pioneer in longevity research. Leading Until Labs to build reversible cryopreservation technology, starting with organ-scale preservation for transplants.',
+    },
+    {
+      name: 'Hunter Davis',
+      role: 'Co-founder',
+      background: 'Co-founded Until Labs (previously known as Cradle) to develop perfusion hardware and cryoprotective agents for biological preservation.',
     },
   ],
   whyBuilding: 'Unknown',

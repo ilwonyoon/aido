@@ -45,11 +45,8 @@ export const orchids: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Kevin Lu', role: 'Co-Founder', background: 'Co-founded Orchids in 2025. YC W25 batch.' },
+    { name: 'Bach Tran', role: 'Co-Founder', background: 'Co-founded Orchids in 2025. YC W25 batch.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

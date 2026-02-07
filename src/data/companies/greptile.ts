@@ -50,9 +50,19 @@ export const greptile: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Daksh Gupta',
+      role: 'Co-founder & CEO',
+      background: 'Georgia Tech graduate (2023); went through YC W24 cohort before raising seed round led by Initialized Capital.',
+    },
+    {
+      name: 'Soohoon Choi',
+      role: 'Co-founder',
+      background: 'Co-founded Greptile in 2023.',
+    },
+    {
+      name: 'Vaishant Kameswaran',
+      role: 'Co-founder',
+      background: 'Co-founded Greptile in 2023.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -68,9 +68,19 @@ export const cocoon: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Mahima Chawla',
+      role: 'Co-founder & CEO',
+      background: 'Former Product Manager at Square; founded Cocoon in 2020 to simplify the complicated world of employee leave for HR teams.',
+    },
+    {
+      name: 'Amber Feng',
+      role: 'Co-founder & CTO',
+      background: 'Former Business Lead for Corporate Card & Banking at Stripe; technical co-founder building Cocoon\'s leave management platform.',
+    },
+    {
+      name: 'Lauren Dai',
+      role: 'Co-founder & COO',
+      background: 'Former Stripe and Square employee; co-founded Cocoon to automate compliance, claims, and payroll for employee leave.',
     },
   ],
   whyBuilding: 'Simplify and modernize leave management for HR teams.',

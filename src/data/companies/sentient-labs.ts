@@ -65,11 +65,9 @@ export const sentientLabs: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
-    },
+    { name: 'Sandeep Nailwal', role: 'Co-Founder', background: 'Co-founder of Polygon. Serial entrepreneur in crypto and AI.' },
+    { name: 'Pramod Viswanath', role: 'Co-Founder', background: 'Forrest G. Hamrick Professor of Engineering at Princeton University.' },
+    { name: 'Himanshu Tyagi', role: 'Co-Founder', background: 'Professor and Scientist at IISc Bangalore. Co-founded Sentient Labs.' },
   ],
   whyBuilding: 'AGI should be open-source and community-owned.',
   beliefs: [

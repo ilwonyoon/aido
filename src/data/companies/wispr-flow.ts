@@ -70,9 +70,14 @@ export const wisprFlow: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Tanay Kothari',
+      role: 'Co-founder & CEO',
+      background: 'Previously Head of Engineering & Product at Cerebra. Building Wispr to make voice a primary input method for knowledge work.',
+    },
+    {
+      name: 'Sahaj Garg',
+      role: 'Co-founder & CTO',
+      background: 'Co-founded Wispr to build the voice operating system. Leading technical development of the Flow dictation platform.',
     },
   ],
   whyBuilding: 'Make voice typing fast and natural for everyday productivity.',

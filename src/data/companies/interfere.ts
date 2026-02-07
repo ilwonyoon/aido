@@ -39,7 +39,7 @@ export const interfere: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Luke Shiels', role: 'Founder & CEO', background: 'YC S25 founder building the self-healing layer of the internet; backed by Vercel Ventures, Designer Fund, and Hummingbird.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

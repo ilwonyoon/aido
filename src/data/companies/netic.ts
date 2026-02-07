@@ -69,11 +69,7 @@ export const netic: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Melisa Tokmak', role: 'Founder & CEO', background: 'Stanford CS graduate. Former Scale AI executive, built Scale Government & Enterprise businesses.' },
   ],
   whyBuilding: 'Help SMB teams automate revenue workflows with AI.',
   beliefs: [

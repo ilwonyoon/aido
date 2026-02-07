@@ -70,9 +70,19 @@ export const cogentSecurity: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Vineet Edupuganti',
+      role: 'Co-founder & CEO',
+      background: 'Pivotal in scaling Abnormal AI from earliest days to market-leading security company; spent years remediating vulnerabilities at Coinbase and Blackstone.',
+    },
+    {
+      name: 'Geng Sng',
+      role: 'Co-founder & CTO',
+      background: 'Pivotal in scaling Abnormal AI from its earliest days; co-founded Cogent to build the first AI taskforce for vulnerability management.',
+    },
+    {
+      name: 'Thanos Baskous',
+      role: 'Co-founder & VP Engineering',
+      background: 'Spent years remediating vulnerabilities at security-conscious companies; co-founded Cogent to automate vulnerability management with agentic AI.',
     },
   ],
   whyBuilding: 'Make vulnerability management faster and more actionable with AI.',

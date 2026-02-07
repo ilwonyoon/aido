@@ -50,9 +50,14 @@ export const found: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Lauren Myrick',
+      role: 'Co-founder & CEO',
+      background: 'Former Square executive with deep experience in taxes, accounting, and financial services.',
+    },
+    {
+      name: 'Connor Dunn',
+      role: 'Co-founder & CIO',
+      background: 'Former Square executive; co-founded Found in 2019 to serve the self-employed.',
     },
   ],
   whyBuilding: 'Unknown',

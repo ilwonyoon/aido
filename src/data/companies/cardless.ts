@@ -50,9 +50,14 @@ export const cardless: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Scott Kazmierowicz',
+      role: 'Co-founder & CEO',
+      background: 'Stanford School of Engineering alumnus; background in banking at Allen & Company and Goldman Sachs.',
+    },
+    {
+      name: 'Michael Spelfogel',
+      role: 'Co-founder & President',
+      background: 'Stanford School of Engineering alumnus; previously at Visa and Lyft before co-founding Cardless.',
     },
   ],
   whyBuilding: 'Unknown',

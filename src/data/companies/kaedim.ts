@@ -50,9 +50,14 @@ export const kaedim: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Konstantina Psoma',
+      role: 'Co-founder & CEO',
+      background: 'Grew up in Athens watching her father build software and mother immerse in art; co-founded Kaedim while studying CS at Bristol University.',
+    },
+    {
+      name: 'Roman Bromidge',
+      role: 'Co-founder & CTO',
+      background: 'Co-founded Kaedim in 2019 while studying CS at Bristol University; focused on ML-powered 2D to 3D conversion.',
     },
   ],
   whyBuilding: 'Unknown',

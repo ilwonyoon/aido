@@ -85,9 +85,14 @@ export const decart: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Dean Leitersdorf',
+      role: 'Co-founder & CEO',
+      background: 'Holds three computer science degrees; completed a postdoc in Singapore before founding Decart.',
+    },
+    {
+      name: 'Moshe Shalev',
+      role: 'Co-founder & CPO',
+      background: 'Former cyber operator who grew up in Israel ultra-Orthodox community.',
     },
   ],
   whyBuilding: 'Enable real-time generative experiences that feel interactive and responsive.',

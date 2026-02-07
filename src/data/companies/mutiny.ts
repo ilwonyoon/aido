@@ -94,11 +94,8 @@ export const mutiny: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Jaleh Rezaei', role: 'Co-Founder & CEO', background: 'Former early employee at Gusto. Previously in product marketing at VMware. YC S18.' },
+    { name: 'Nikhil Mathew', role: 'Co-Founder & CTO', background: 'Former early employee at Gusto. Co-founded Mutiny in 2018.' },
   ],
   whyBuilding:
     'Give B2B marketing teams no-code tools to personalize and convert more users.',

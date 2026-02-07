@@ -43,7 +43,8 @@ export const roboflow: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Joseph Nelson', role: 'Co-Founder & CEO', background: 'Co-founded Represently (acquired by Fireside). Taught 2000+ hours of data science at General Assembly.' },
+    { name: 'Brad Dwyer', role: 'Co-Founder', background: 'Founded and bootstrapped Hatchlings (social gaming) to 10M+ users and 7 figures revenue.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

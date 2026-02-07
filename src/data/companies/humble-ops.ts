@@ -95,9 +95,9 @@ export const humbleOps: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Radu Spineanu',
+      role: 'Founder & CEO',
+      background: 'Previously built 2Performant, Romania\'s first affiliate network which went public; focused on embedding AI into manufacturing.',
     },
   ],
   whyBuilding:

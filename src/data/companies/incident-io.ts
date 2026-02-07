@@ -43,7 +43,9 @@ export const incidentIo: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Stephen Whitworth', role: 'Co-founder & CEO', background: 'Former data scientist at Hailo; co-founded Ravelin (fraud detection); previously at Monzo.' },
+    { name: 'Pete Hamilton', role: 'Co-founder & CTO', background: 'Former Senior Staff Engineer at Monzo Bank.' },
+    { name: 'Chris Evans', role: 'Co-founder & CPO', background: 'Built open-source incident tooling at Monzo that inspired incident.io.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

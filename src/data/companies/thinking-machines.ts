@@ -50,9 +50,24 @@ export const thinkingMachines: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Mira Murati',
+      role: 'CEO',
+      background: 'Former CTO of OpenAI. Founded Thinking Machines Lab in February 2025 as a public benefit corporation.',
+    },
+    {
+      name: 'Barret Zoph',
+      role: 'Co-founder',
+      background: 'Former VP of Research at OpenAI.',
+    },
+    {
+      name: 'Lilian Weng',
+      role: 'Co-founder',
+      background: 'Former VP at OpenAI.',
+    },
+    {
+      name: 'John Schulman',
+      role: 'Co-founder',
+      background: 'Co-founder of OpenAI. Joined Thinking Machines Lab as part of the founding team.',
     },
   ],
   whyBuilding: 'Unknown',

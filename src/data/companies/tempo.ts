@@ -74,9 +74,9 @@ export const tempo: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Matt Huang',
+      role: 'CEO',
+      background: 'Co-founder and managing partner at Paradigm. Board member at Stripe since 2021. Tempo is a joint venture incubated by Stripe and Paradigm.',
     },
   ],
   whyBuilding: 'Payments infrastructure needs faster, cheaper settlement for modern commerce.',

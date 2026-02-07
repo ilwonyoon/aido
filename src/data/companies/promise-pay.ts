@@ -49,11 +49,8 @@ export const promisePay: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Phaedra Ellis-Lamkins', role: 'Co-Founder & CEO', background: 'Technology entrepreneur and former labor organizer. YC S18.' },
+    { name: 'Diana Frappier', role: 'Co-Founder', background: 'Co-founded Promise in 2017 to digitize government payments.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

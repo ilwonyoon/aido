@@ -50,9 +50,14 @@ export const anon: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Daniel Mason',
+      role: 'Co-founder & CEO',
+      background: 'Previously a Partner at Framework Ventures and co-founded Spring Labs, a $300M Series B data security and identity company.',
+    },
+    {
+      name: 'Kai Aichholz',
+      role: 'Co-founder & CTO',
+      background: 'Previously CTO at Alaffia Health (AI/ML health tech startup); formerly at Amazon and Goldman Sachs; MIT graduate.',
     },
   ],
   whyBuilding: 'Unknown',

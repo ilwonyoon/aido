@@ -43,7 +43,8 @@ export const mage: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Tommy Dang', role: 'Co-founder & CEO', background: 'Built Mage as a modern open-source replacement for Airflow; raised $6.3M seed round.' },
+    { name: 'Xiaoyou Wang', role: 'Co-founder', background: 'Co-founded Mage to simplify data pipeline tooling for data engineers.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

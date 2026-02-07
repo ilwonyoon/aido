@@ -49,11 +49,8 @@ export const seedHealth: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Ara Katz', role: 'Co-Founder & Co-CEO', background: 'Previously founded an e-commerce startup. Invested in Mind Body Green. Led Seed to become Target\'s top-selling probiotics brand.' },
+    { name: 'Raja Dhir', role: 'Co-Founder & Co-CEO', background: 'Life sciences entrepreneur. Leads Seed\'s R&D, clinical trial design, supply chain, and IP strategy.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

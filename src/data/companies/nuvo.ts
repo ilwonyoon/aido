@@ -43,7 +43,8 @@ export const nuvo: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Sid Malladi', role: 'Co-Founder & CEO', background: 'Built payments and marketplace products in home services. Founded Nuvo in 2021.' },
+    { name: 'Rameez Remsudeen', role: 'Co-Founder & CTO', background: 'Built software and ML systems for retail and logistics.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

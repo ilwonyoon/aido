@@ -43,7 +43,8 @@ export const tako: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Alex Rosenberg', role: 'Co-founder & CEO', background: 'Previously spent three years at Amazon. Building Tako as a "Google Maps for knowledge" with visual data cards.' },
+    { name: 'Bobby Abbott', role: 'Co-founder', background: 'Software engineer, previously at crypto VC firm Paradigm. Co-founded Tako to visualize knowledge through interactive cards.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

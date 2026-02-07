@@ -50,9 +50,14 @@ export const sway: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Julia Marsh',
+      role: 'Co-founder & CEO',
+      background: 'Leading Sway to develop seaweed-based biopolymer packaging as a replacement for single-use plastics. Winner of Tom Ford Plastic Innovation Prize.',
+    },
+    {
+      name: 'Matt Mayes',
+      role: 'Co-founder',
+      background: 'Co-founded Sway to build patent-pending thermoplastic seaweed resin (TPSea) for sustainable packaging.',
     },
   ],
   whyBuilding: 'Unknown',

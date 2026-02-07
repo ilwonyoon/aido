@@ -50,9 +50,19 @@ export const mastra: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Sam Bhagwat',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Gatsby (used by hundreds of thousands of developers); YC-backed.',
+    },
+    {
+      name: 'Shane Thomas',
+      role: 'Co-founder',
+      background: 'Former staff engineer and head of product at Gatsby.',
+    },
+    {
+      name: 'Abhi Aiyer',
+      role: 'Co-founder',
+      background: 'Former principal engineer at Gatsby.',
     },
   ],
   whyBuilding: 'Unknown',

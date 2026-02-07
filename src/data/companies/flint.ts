@@ -97,9 +97,14 @@ export const flint: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Michelle Lim',
+      role: 'Co-founder & CEO',
+      background: 'First engineer and head of growth at Sequoia-backed Warp; scaled the company from zero to hundreds of thousands of developers.',
+    },
+    {
+      name: 'Max Levenson',
+      role: 'Co-founder & CTO',
+      background: 'Former staff tech lead manager at Nuro leading simulation and infrastructure teams for autonomous vehicles.',
     },
   ],
   whyBuilding:

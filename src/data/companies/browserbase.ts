@@ -43,7 +43,11 @@ export const browserbase: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Paul Klein IV',
+      role: 'Founder & CEO',
+      background: 'Former Twilio engineer; co-founded Stream Club (acquired by Mux); built headless browser tech at Mux before founding Browserbase in 2024.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

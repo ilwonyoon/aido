@@ -69,11 +69,8 @@ export const miter: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Dave Feldman', role: 'Founder & CEO', background: 'Former VP Design at Heap. Founded Miter in 2020.' },
+    { name: 'Damian Wisniewski', role: 'Co-Founder & COO', background: 'Co-founded Miter to fix meeting workflows.' },
   ],
   whyBuilding: 'Help teams run better meetings with structure and clarity.',
   beliefs: [

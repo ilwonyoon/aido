@@ -43,7 +43,7 @@ export const dubCo: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Steven Tey', role: 'Founder & CEO', background: 'Previously helped build the future of the web at Vercel; built Dub.co as a side project in 2022.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

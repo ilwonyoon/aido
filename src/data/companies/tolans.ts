@@ -50,9 +50,19 @@ export const tolans: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Quinten Farmer',
+      role: 'Co-founder & CEO',
+      background: 'Previously founded and exited fintech company Even, which Walmart acquired in 2022 for $300M.',
+    },
+    {
+      name: 'Evan Goldschmidt',
+      role: 'Co-founder & CTO',
+      background: 'Former senior software engineer at Google.',
+    },
+    {
+      name: 'Ajay Mehta',
+      role: 'Co-founder & President',
+      background: 'Previously founded Birthdate Co., Therapy Notebooks, and FamilyLeaf. Product and growth leadership at Wealthsimple and Tilt.',
     },
   ],
   whyBuilding: 'Unknown',

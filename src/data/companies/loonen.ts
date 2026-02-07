@@ -97,9 +97,14 @@ export const loonen: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Clara Sieg',
+      role: 'Co-founder',
+      background: 'New mom and longtime venture investor who started Loonen after discovering microplastic contamination in bottled water during pregnancy.',
+    },
+    {
+      name: 'David Kimmell',
+      role: 'Co-founder',
+      background: 'Seasoned beverage operator who helped build Spindrift into a nationally recognized brand.',
     },
   ],
   whyBuilding:

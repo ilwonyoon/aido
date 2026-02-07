@@ -101,11 +101,7 @@ export const nexus: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Daniel Marin', role: 'Founder & CEO', background: 'Founded Nexus in his Stanford dorm room. Forbes 30 Under 30 Science 2025.' },
   ],
   whyBuilding:
     'Create a verifiable computation layer to power financial and AI-era applications.',

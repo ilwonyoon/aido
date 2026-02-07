@@ -72,11 +72,10 @@ export const sanity: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Magnus Kongsli Hillestad', role: 'Co-Founder & CEO', background: 'Founded Sanity in 2016 in Oslo, Norway. Leads the company from San Francisco.' },
+    { name: 'Even Westvang', role: 'Co-Founder', background: 'Co-founded Sanity in 2016.' },
+    { name: 'Oyvind Rostad', role: 'Co-Founder', background: 'Co-founded Sanity in 2016.' },
+    { name: 'Simen Svale Skogsrud', role: 'Co-Founder', background: 'Co-founded Sanity in 2016.' },
   ],
   whyBuilding: 'Provide a content operating system for modern digital experiences.',
   beliefs: [

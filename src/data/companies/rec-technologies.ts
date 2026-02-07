@@ -49,11 +49,8 @@ export const recTechnologies: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Birju Kadakia', role: 'Co-Founder & CEO', background: 'Early Uber, UberEATS, and The Athletic employee. Expertise in go-to-market and operations.' },
+    { name: 'Rachel Williams', role: 'Co-Founder', background: 'Former Head of Launch at MasterClass. Part of founding team at Uber Eats and Uber Canada.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
