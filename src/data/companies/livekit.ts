@@ -24,20 +24,16 @@ export const livekit: Company = {
   // Business
   stage: 'Series C',
   valuation: '$1B (Jan 2026)',
-  totalFunding: '$100M',
+  totalFunding: '$174M+',
   fundingHistory: [
-    {
-      stage: 'Series C',
-      amount: '$100M',
-      date: '2026-01',
-      valuation: '$1B',
-      leadInvestors: ['Index Ventures'],
-    },
+    { stage: 'Series A', amount: '$22.5M', date: '2022-09', leadInvestors: ['Altimeter Capital'] },
+    { stage: 'Series B', amount: '$45M', date: '2025-04', valuation: '$345M', leadInvestors: ['Altimeter Capital'] },
+    { stage: 'Series C', amount: '$100M', date: '2026-01', valuation: '$1B', leadInvestors: ['Index Ventures'] },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'OpenAI, xAI, Salesforce, Coursera, Spotify (per FinSMEs)',
+  revenue: '~$3.7M (2025, GetLatka)',
+  growth: '23% YoY revenue, 200K+ developers',
+  runway: 'Strong -- 5-8+ years at current burn with $174M raised',
+  customers: 'OpenAI, xAI, Salesforce, Tesla, Meta, Microsoft, Spotify, Character.AI, Coursera',
 
   // Growth & Potential
   growthMetrics: {
@@ -106,12 +102,12 @@ export const livekit: Company = {
     {
       name: 'Russ d\'Sa',
       role: 'Co-founder & CEO',
-      background: 'Co-founded LiveKit and leads the realtime AI agent platform.',
+      background: 'YC S07 alum. 2nd frontend engineer at Twitter (#75 employee). Early at 23andMe (~30th employee). Co-founded Evie Labs (acquired by Medium). 5th-time founder.',
     },
     {
       name: 'David Zhao',
-      role: 'Co-founder',
-      background: 'Co-founded LiveKit and leads technical product development.',
+      role: 'Co-founder & CTO',
+      background: 'UW grad. Co-founded ZumoDrive and Evie Labs (acquired by Medium). Former Director of Engineering at Motorola. Senior Venture Partner at Pioneer Fund.',
     },
   ],
   whyBuilding:
@@ -133,7 +129,8 @@ export const livekit: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '51-200 employees (startups.gallery)',
+    designHead: 'Matt Herzog (ex-Medium, AKQA)',
+    teamSize: '2-3 designers, hiring 5-6 more (~50 total employees)',
   },
   designWorkType: {
     logicBehavior: {
@@ -176,7 +173,11 @@ export const livekit: Company = {
   ],
 
   // Designer Links
-  designerLinks: [],
+  designerLinks: [
+    { name: 'Matt Herzog', role: 'Head of Design', platform: 'linkedin', url: 'https://www.linkedin.com/in/matt-herzog-5538a8b', description: 'Design leadership at LiveKit, ex-Medium/AKQA' },
+    { name: 'Thomas Yuill', role: 'Design Engineer', platform: 'linkedin', url: 'https://ca.linkedin.com/in/thomasyuill', description: 'Ex-Shopify Staff UX Dev, ex-Amazon' },
+    { name: 'LiveKit Design', role: 'Design Team', platform: 'blog', url: 'https://design.livekit.io/', description: 'Resources and experiments from the LiveKit Design team' },
+  ],
 
   // Open Roles
   openRoles: [
@@ -198,7 +199,10 @@ export const livekit: Company = {
   ],
 
   // Culture Insights
-  cultureInsights: [],
+  cultureInsights: [
+    { source: 'glassdoor', content: 'Being part of LiveKit in its formative stages has been one of the most fulfilling experiences. The team is genuinely invested in the mission and in each other -- no ego, just people working hard and with heart.', sentiment: 'positive' as const, rating: 5 },
+    { source: 'glassdoor', content: 'Engineers building software stacks for other engineers. Long-term thinking without shortcuts, combined with consistent daily progress.', sentiment: 'positive' as const },
+  ],
 
   // My Tracking
   tracking: {
@@ -219,11 +223,15 @@ export const livekit: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T16:10:00',
+  lastUpdated: '2026-02-06T00:00:00',
   sources: [
     { title: 'LiveKit website', url: 'https://livekit.io/' },
-    { title: 'LiveKit Series C (FinSMEs)', url: 'https://www.finsmes.com/2026/01/livekit-raises-100m-in-series-c-funding-at-a-1-billion-valuation.html' },
-    { title: 'LiveKit on startups.gallery', url: 'https://startups.gallery/companies/livekit' },
-    { title: 'LiveKit Product Designer, Growth (Redpoint job board)', url: 'https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth' },
+    { title: 'LiveKit Series C (TechCrunch)', url: 'https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/' },
+    { title: 'LiveKit Series C blog', url: 'https://blog.livekit.io/livekit-series-c/' },
+    { title: 'LiveKit Series B (TechCrunch)', url: 'https://techcrunch.com/2025/04/10/livekits-tools-help-power-real-time-communications/' },
+    { title: 'OpenSourceCEO: Russ d\'Sa interview', url: 'https://www.opensourceceo.com/p/russ-dsa-interview' },
+    { title: 'LiveKit Design', url: 'https://design.livekit.io/' },
+    { title: 'LiveKit Careers (Ashby)', url: 'https://jobs.ashbyhq.com/livekit' },
+    { title: 'GetLatka revenue data', url: 'https://getlatka.com/companies/livekit.io' },
   ],
 };
