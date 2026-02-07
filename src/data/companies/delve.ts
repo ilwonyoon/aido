@@ -235,16 +235,9 @@ export const delve: Company = {
 
   // Culture Insights
   cultureInsights: [
-    'Glassdoor: 4.1/5 overall, 83% recommend to friend, 4.4/5 culture & values, 4.3/5 work-life balance, 3.6/5 career opportunities',
-    'Positive: "Very nice people to work with, everyone is knowledgeable about their craft"',
-    'Positive: "Office culture was strong, sense of community that made going into office worthwhile"',
-    'Negative: "Leadership doesn\'t really know what they are doing"',
-    'Negative: "No real opportunity for growth and no career support"',
-    'Note: Glassdoor reviews may mix Delve.co (compliance) with Delve design firm (different company)',
-    'Creative culture: 10,000 donuts distributed across SF, airplane banners at SaaStr, $6K doormats for GTM',
-    'Team: engineers from Stanford, MIT, Berkeley; OpenAI alumni; Olympiad medalists; ex-Apple, Netflix, Shopify',
-    'Benefits: 100% medical/dental/vision, 401k match, unlimited PTO, in-office meals, Grubhub stipend, gym membership, team events/offsites',
-    'Young founders (21 at Series A) - startup energy, move-fast culture',
+    { source: 'glassdoor' as const, content: 'Very nice people to work with. Everyone is knowledgeable about their craft.', sentiment: 'positive' as const, rating: 4.1 },
+    { source: 'glassdoor' as const, content: 'Office culture was strong -- sense of community that made going into office worthwhile.', sentiment: 'positive' as const },
+    { source: 'glassdoor' as const, content: 'No real opportunity for growth and no career support.', sentiment: 'negative' as const },
   ],
 
   // My Tracking
