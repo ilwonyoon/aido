@@ -50,9 +50,14 @@ export const stable: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Sarah Ahmad',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Stable, a Y Combinator-backed virtual address and mailroom platform for startups.',
+    },
+    {
+      name: 'Collin Pham',
+      role: 'Co-founder & CTO',
+      background: 'Co-founded Stable, building the technology platform for digital mailroom management.',
     },
   ],
   whyBuilding: 'Unknown',

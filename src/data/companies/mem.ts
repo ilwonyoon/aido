@@ -50,9 +50,14 @@ export const mem: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Kevin Moody',
+      role: 'Co-founder & Co-CEO',
+      background: 'Former PM at Google and software engineer at Google X; Stanford CS graduate focused on Systems & AI.',
+    },
+    {
+      name: 'Dennis Xu',
+      role: 'Co-founder & Co-CEO',
+      background: 'Co-founded Mem to build the world\'s first self-organizing workspace powered by AI.',
     },
   ],
   whyBuilding: 'Unknown',

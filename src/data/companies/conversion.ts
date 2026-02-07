@@ -43,7 +43,8 @@ export const conversion: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Neil Tewari', role: 'Co-founder & CEO', background: 'UC Berkeley dropout; started Conversion at age 19 with multiple pivots before focusing on marketing automation.' },
+    { name: 'James Jiao', role: 'Co-founder & CTO', background: 'UC Berkeley dropout; met Neil at UC Berkeley and co-built the AI marketing automation platform.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

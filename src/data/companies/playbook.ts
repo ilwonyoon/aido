@@ -43,7 +43,8 @@ export const playbook: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Jessica Ko', role: 'Co-Founder & CEO', background: 'Former Opendoor. Left in 2018 to build cloud storage for creatives.' },
+    { name: 'Alex Zirbel', role: 'Co-Founder & CTO', background: 'Co-founded Playbook in 2020.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

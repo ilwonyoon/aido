@@ -49,11 +49,7 @@ export const sonder: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Unknown', role: 'Founder', background: 'Founder information not publicly available. Team includes designers, researchers, and engineers building interfaces for human intimacy.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

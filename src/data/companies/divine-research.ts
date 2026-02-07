@@ -50,9 +50,9 @@ export const divineResearch: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
+      name: 'Diego Estevez',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Founded Divine to build an undercollateralized lending system using stablecoins and progressive trust-building.',
     },
   ],
   whyBuilding: 'Unknown',

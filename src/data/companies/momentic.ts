@@ -96,11 +96,8 @@ export const momentic: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Wei-Wei Wu', role: 'Co-Founder & CEO', background: 'First employee and founding engineer at Nashi (acquired by Density in 2021).' },
+    { name: 'Jeff An', role: 'Co-Founder & CTO', background: 'Led testing at Robinhood, enterprise quality at Retool.' },
   ],
   whyBuilding:
     'Make customer feedback instantly actionable with AI-powered insights.',

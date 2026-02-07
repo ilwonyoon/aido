@@ -74,9 +74,19 @@ export const appliedCompute: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Yash Patil',
+      role: 'Co-founder & CEO',
+      background: 'Stanford graduate and former OpenAI researcher who contributed to Codex, OpenAI\'s software engineer project.',
+    },
+    {
+      name: 'Rhythm Garg',
+      role: 'Co-founder',
+      background: 'Stanford graduate and former OpenAI researcher who developed the first reasoning model trained with reinforcement learning.',
+    },
+    {
+      name: 'Linden Li',
+      role: 'Co-founder',
+      background: 'Stanford graduate and former OpenAI researcher who built infrastructure for reinforcement learning training.',
     },
   ],
   whyBuilding: 'Deliver specific intelligence systems that work reliably in production.',

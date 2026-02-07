@@ -50,9 +50,14 @@ export const column: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'William Hockey',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Plaid ($13B+ financial infrastructure company) with Zachary Perret; launched Column in 2022 as a nationally chartered bank for developers.',
+    },
+    {
+      name: 'Annie Hockey',
+      role: 'Co-founder',
+      background: 'Previously at Bain & Co and Goldman Sachs; early employee at various Silicon Valley startups; co-founded Column with William.',
     },
   ],
   whyBuilding: 'Unknown',

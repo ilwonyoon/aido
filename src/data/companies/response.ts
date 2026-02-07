@@ -94,11 +94,9 @@ export const response: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Keivan Shahida', role: 'Co-Founder & CEO', background: 'Built Response to $2.1M revenue with a 14-person team. YC alum.' },
+    { name: 'Kais Baillargeon', role: 'Co-Founder', background: 'Co-founded Response to modernize procurement workflows.' },
+    { name: 'Nolan Gray', role: 'Co-Founder', background: 'Co-founded Response to streamline sourcing and purchasing.' },
   ],
   whyBuilding:
     'Make procurement workflows faster and more transparent for modern companies.',

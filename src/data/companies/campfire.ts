@@ -66,9 +66,9 @@ export const campfire: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'John Glasgow',
+      role: 'Founder & CEO',
+      background: 'Over 15 years in finance at Fidelity, Union Square Advisors, and Bill.com; helped grow Invoice2go to a $625M+ acquisition by Bill.com.',
     },
   ],
   whyBuilding: 'Legacy ERPs are slow and complex; finance teams need modern automation.',

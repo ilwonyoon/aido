@@ -46,9 +46,14 @@ export const fermat: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Rishabh Jain',
+      role: 'Co-founder & CEO',
+      background: 'Former LiveRamp product executive; founded FERMAT in 2021 to enable AI-powered commerce experiences.',
+    },
+    {
+      name: 'Shreyas Kumar',
+      role: 'Co-founder',
+      background: 'Former LiveRamp engineering executive; co-founded FERMAT with Rishabh.',
     },
   ],
   whyBuilding: 'Unknown',

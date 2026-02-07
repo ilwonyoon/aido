@@ -43,7 +43,16 @@ export const aurasell: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Jason Eubanks',
+      role: 'Co-founder & CEO',
+      background: 'Former CRO at Harness (grew from $1M to $100M+ in 5 years); former CRO at Markforged; VP Global Sales at Twilio pre-IPO.',
+    },
+    {
+      name: 'Srinivas Bandi',
+      role: 'Co-founder & CTO',
+      background: 'Former SVP of Product & Engineering at Harness; previously at VMware, Nutanix, and other hypergrowth enterprise companies.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

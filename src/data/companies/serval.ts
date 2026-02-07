@@ -96,11 +96,8 @@ export const serval: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Jake Stauch', role: 'Co-Founder & CEO', background: 'Spent 5+ years at Verkada, led multiple products from 0-1 and helped scale across hardware and software.' },
+    { name: 'Alex McLeod', role: 'Co-Founder', background: 'Co-founded Serval to build AI agents for IT service management.' },
   ],
   whyBuilding:
     'Help IT teams resolve incidents faster with AI agents and automation.',

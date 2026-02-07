@@ -97,9 +97,14 @@ export const composite: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Yang Fan Yun',
+      role: 'Co-founder & CEO',
+      background: 'New Zealand national valedictorian; achieved the highest GPA in Stanford CS department.',
+    },
+    {
+      name: 'Charlie Deane',
+      role: 'Co-founder',
+      background: 'Previously founded a company selling server proxies.',
     },
   ],
   whyBuilding:

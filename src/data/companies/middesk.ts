@@ -43,7 +43,8 @@ export const middesk: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Kyle Mack', role: 'Co-Founder & CEO', background: 'Founded Middesk in 2019 to build business identity infrastructure.' },
+    { name: 'Kurt Ruppel', role: 'Co-Founder & CTO', background: 'Co-founded Middesk in 2019. Leads technical development.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

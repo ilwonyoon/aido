@@ -49,11 +49,8 @@ export const moonlakeAi: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Fan-Yun Sun', role: 'Co-Founder', background: 'PhD in Computer Science from Stanford. Researcher at NVIDIA on Learning & Perception Research Team and Metropolis Deep Learning (Omniverse).' },
+    { name: 'Sharon Lee', role: 'Co-Founder', background: 'CS PhD from Stanford focused on generative AI and computer graphics. Develops foundation models for spatial reasoning.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

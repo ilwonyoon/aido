@@ -74,9 +74,14 @@ export const console: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Andrei Serban',
+      role: 'Co-founder & CEO',
+      background: 'Former product lead at Rippling on apps and integrations; previously founded coding security startup Fuzzbuzz (acquired by Rippling).',
+    },
+    {
+      name: 'Neal Chandra',
+      role: 'Co-founder',
+      background: 'Co-founded Console in 2024 in San Francisco.',
     },
   ],
   whyBuilding: 'Make IT support faster by automating routine workflows.',

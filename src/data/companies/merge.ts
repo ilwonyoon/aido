@@ -43,7 +43,8 @@ export const merge: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Shensi Ding', role: 'Co-Founder & CEO', background: 'Former Chief of Staff at Expanse. Columbia University alum.' },
+    { name: 'Gil Feig', role: 'Co-Founder & CTO', background: 'Former Head of Engineering at Jumpstart. Columbia University alum.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

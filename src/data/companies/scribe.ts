@@ -73,11 +73,8 @@ export const scribe: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Jennifer Smith', role: 'Co-Founder & CEO', background: 'Former McKinsey & Company and Greylock Partners. Built Scribe to $1.3B valuation with 5M+ users.' },
+    { name: 'Aaron Podolny', role: 'Co-Founder & CTO', background: 'Former Google engineer (via acquisition of his software automation company).' },
   ],
   whyBuilding: 'Make documenting workflows effortless for teams.',
   beliefs: [

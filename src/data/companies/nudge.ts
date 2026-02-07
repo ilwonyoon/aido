@@ -49,11 +49,9 @@ export const nudge: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Fred Ehrsam', role: 'Co-Founder & CEO', background: 'Co-founder of Coinbase. Shifted focus to neurotech with Nudge.' },
+    { name: 'Quintin Frerichs', role: 'Co-Founder', background: 'Co-founded Nudge to build whole-brain interfaces.' },
+    { name: 'Jeremy Barenholtz', role: 'Co-Founder', background: 'Co-founded Nudge for non-invasive brain-computer interfaces.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

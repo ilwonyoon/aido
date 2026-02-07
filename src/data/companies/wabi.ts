@@ -74,9 +74,9 @@ export const wabi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Eugenia Kuyda',
+      role: 'Founder & CEO',
+      background: 'Previously founded Replika (AI companion app, launched 2016). Created Wabi as a "YouTube for apps" platform where prompts create shareable mini-apps. Backed by a16z.',
     },
   ],
   whyBuilding: 'Create a personal AI that helps users remember and organize their lives.',

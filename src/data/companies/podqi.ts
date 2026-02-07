@@ -49,11 +49,7 @@ export const podqi: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Unknown', role: 'Founder', background: 'Founder information not publicly available.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

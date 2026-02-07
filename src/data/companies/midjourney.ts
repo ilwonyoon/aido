@@ -22,12 +22,13 @@ export const midjourney: Company = {
 
     // Business
     stage: 'Bootstrapped',
-    valuation: 'Unknown',
-    totalFunding: 'Self-funded (community-funded)',
+    valuation: '~$10B (estimated, based on $500M revenue at 20x multiple)',
+    totalFunding: 'Self-funded (bootstrapped, no VC funding)',
     fundingHistory: [],
-    revenue: 'Unknown',
-    growth: 'Unknown',
-    runway: 'Unknown',
+    revenue: '~$500M (2025)',
+    growth: '67% YoY ($300M in 2024 to $500M in 2025)',
+    runway: 'Profitable since Aug 2022 — self-sustaining, no burn',
+    customers: '21M+ Discord users, ~1.4M paying subscribers, 100K+ enterprise customers',
 
     // Competition
     competitors: [
@@ -70,7 +71,7 @@ export const midjourney: Company = {
       'Create AI tools that augment people rather than replace them',
     ],
     greenFlags: ['AI-native company', 'Growth potential', 'Strong community', 'Self-funded success'],
-    redFlags: ['Unknown design culture', 'Competitive market', 'Discord-first may limit reach'],
+    redFlags: ['Design culture not well documented', 'Competitive market (DALL-E, Stable Diffusion, Adobe Firefly)', 'Discord-first may limit enterprise reach'],
 
     // Design Opportunity
     designTeam: {
@@ -130,15 +131,15 @@ export const midjourney: Company = {
     cultureInsights: [],
 
     growthMetrics: {
-      stage: 'steady',
-      revenueGrowth: "$300M ARR (estimated 2025), ~1.5x YoY",
-      userGrowth: "20M+ users, strong creative community",
+      stage: 'high-growth',
+      revenueGrowth: "$500M revenue (2025), 67% YoY ($300M in 2024)",
+      userGrowth: "21M+ registered Discord users, ~1.4M paying subscribers, 1.2-2.5M DAU",
       signals: [
-        "$300M+ ARR (bootstrapped, no VC funding)",
-        "20M+ registered users",
-        "Profitable since launch",
-        "Small team (~100 people) = extreme efficiency",
-        "Discord-native with 20M+ community members",
+        "$500M revenue in 2025 (bootstrapped, no VC funding)",
+        "21M+ registered users, ~1.4M paying subscribers",
+        "Profitable since Aug 2022 — no external funding needed",
+        "Small team (~107-163 people) = $3-5M revenue per employee",
+        "10x revenue growth from $50M (2022) to $500M (2025)",
       ],
 
       tam: "$15B+ (Creative software, design, and content creation)",
@@ -172,7 +173,7 @@ export const midjourney: Company = {
         'Remote-friendly',
       ],
       whyNot: [
-        'Unknown team size and structure',
+        'Small team (~107-163 people) — design team structure unclear',
         'Discord-first UX may be limiting',
       ],
       nextActions: ['Check if Product Designer role is still open', 'Use Midjourney extensively'],

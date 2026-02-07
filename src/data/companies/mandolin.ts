@@ -75,9 +75,14 @@ export const mandolin: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not publicly listed on the company site or blog.',
+      name: 'Will Yin',
+      role: 'Co-founder & CEO',
+      background: 'Published neuroscience research in high school and college; mission-driven by family experiences with Alzheimer\'s and cancer.',
+    },
+    {
+      name: 'Rohit Rustagi',
+      role: 'Co-founder & COO',
+      background: 'Fulbright awardee; studied bioethics and attended Stanford medical school before co-founding Mandolin.',
     },
   ],
   whyBuilding: 'Specialty drug access is slowed by manual paperwork and fragmented systems.',

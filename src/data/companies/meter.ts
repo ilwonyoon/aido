@@ -49,11 +49,8 @@ export const meter: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Anil Varanasi', role: 'Co-Founder & CEO', background: 'Leads enterprise networking solutions at Meter. Backed by Sam Altman and Sequoia Capital.' },
+    { name: 'Sunil Varanasi', role: 'Co-Founder & CTO', background: 'Drives technological innovation and oversees product development at Meter.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

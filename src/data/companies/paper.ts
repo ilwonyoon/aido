@@ -49,11 +49,7 @@ export const paper: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Stephen Haney', role: 'Founder', background: 'Previously built Modulz (company behind Radix UI). Founded Paper in 2024.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

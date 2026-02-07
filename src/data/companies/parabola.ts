@@ -49,11 +49,7 @@ export const parabola: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Alex Yaseen', role: 'Founder & CEO', background: 'Former strategy consultant. Founded Parabola after seeing enterprises depend on manual processes.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

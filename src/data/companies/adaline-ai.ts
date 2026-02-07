@@ -50,9 +50,9 @@ export const adalineAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Akshay G.',
+      role: 'Co-founder & CTO',
+      background: 'Co-founded Adaline in 2024 to build an LLM prompt engineering and testing platform for product and engineering teams.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -50,9 +50,14 @@ export const bem: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Antonio Bustamante',
+      role: 'Co-founder & CEO',
+      background: 'Previously founded Silo; launched Bem to solve unstructured data integration challenges discovered while working with supply chain customers.',
+    },
+    {
+      name: 'Upal Saha',
+      role: 'Co-founder & CTO',
+      background: 'Former Engineering Manager at Silo; co-founded Bem to build an AI-powered data interface for transforming any input into structured data.',
     },
   ],
   whyBuilding: 'Unknown',

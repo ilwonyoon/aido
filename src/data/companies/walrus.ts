@@ -43,7 +43,7 @@ export const walrus: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Evan Cheng', role: 'Co-founder & CEO (Mysten Labs)', background: 'Co-founder and CEO of Mysten Labs, which built the Sui blockchain and developed the Walrus decentralized storage protocol.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

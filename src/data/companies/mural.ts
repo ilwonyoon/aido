@@ -43,7 +43,9 @@ export const mural: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Mariano Suarez-Battan', role: 'Co-Founder & CEO', background: 'Previously founded a video game company acquired by Disney. EY Entrepreneur of the Year 2021 finalist.' },
+    { name: 'Patricio Jutard', role: 'Co-Founder & CTO', background: 'Co-founded Mural in 2011 to enable visual collaboration for distributed teams.' },
+    { name: 'Agustin Soler', role: 'Co-Founder', background: 'Co-founded Mural in 2011.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

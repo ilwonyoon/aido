@@ -49,11 +49,8 @@ export const polycam: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Chris Heinrich', role: 'Co-Founder & CEO', background: 'Physics PhD. Previously at Ubiquity6 working on 3D scanning and AR.' },
+    { name: 'Elliott Spelman', role: 'Co-Founder', background: 'Previously at Roblox and Ubiquity6. Co-founded Polycam for 3D capture.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

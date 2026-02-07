@@ -50,9 +50,14 @@ export const kiteAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Chi Zhang',
+      role: 'Co-founder & CEO',
+      background: 'PhD in AI from UC Berkeley; led core data products at Databricks; previously built infrastructure as Zettablock.',
+    },
+    {
+      name: 'Scott Shi',
+      role: 'Co-founder & CTO',
+      background: 'Built real-time AI infrastructure at Uber; founding engineer on Salesforce Einstein AI.',
     },
   ],
   whyBuilding: 'Unknown',

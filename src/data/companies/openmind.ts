@@ -45,11 +45,7 @@ export const openmind: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Jan Liphardt', role: 'Founder & CEO', background: 'Stanford professor. Founded OpenMind in 2024 to build the Android OS for humanoid robots.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

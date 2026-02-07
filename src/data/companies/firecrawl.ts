@@ -97,9 +97,19 @@ export const firecrawl: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Caleb Peffer',
+      role: 'Co-founder & CEO',
+      background: 'Previously built and scaled Mendable, a chat-with-docs app used by Snapchat, Coinbase, and MongoDB.',
+    },
+    {
+      name: 'Eric Ciarla',
+      role: 'Co-founder',
+      background: 'Co-founded Firecrawl in 2022 after recognizing web scraping was a recurring challenge across AI applications.',
+    },
+    {
+      name: 'Nicolas Silberstein Camara',
+      role: 'Co-founder',
+      background: 'Co-founded Firecrawl to make web data extraction universally available for AI teams.',
     },
   ],
   whyBuilding:

@@ -70,9 +70,14 @@ export const doppel: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Kevin Tian',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Doppel in 2022 to build an AI-native social engineering defense platform.',
+    },
+    {
+      name: 'Rahul Madduluri',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder leading engineering for Doppel digital risk protection platform.',
     },
   ],
   whyBuilding: 'Help security teams identify and stop digital risk faster.',

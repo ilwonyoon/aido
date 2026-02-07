@@ -101,11 +101,9 @@ export const raindropAi: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Zubin Koticha', role: 'Co-Founder & CEO', background: 'Second-time founder. Previously co-founded Opyn (DeFi options platform, $15B+ volume), acquired by Coinbase.' },
+    { name: 'Ben Hylak', role: 'Co-Founder', background: 'Former Apple engineer on the Human Interface (HI) Design team for 4 years.' },
+    { name: 'Alexis Gauba', role: 'Co-Founder', background: 'Second-time founder. Previous company acquired by Coinbase.' },
   ],
   whyBuilding:
     'Make travel planning fast and personalized with AI assistance.',

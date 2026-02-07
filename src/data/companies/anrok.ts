@@ -99,9 +99,14 @@ export const anrok: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Michelle Valentine',
+      role: 'Co-founder & CEO',
+      background: 'Former Product at Airtable and VC at Index Ventures; founded Anrok in 2020 to automate SaaS tax compliance.',
+    },
+    {
+      name: 'Kannan Goundan',
+      role: 'Co-founder & CTO',
+      background: 'Previously at Dropbox; co-founded Anrok to build automated tax compliance infrastructure for SaaS companies.',
     },
   ],
   whyBuilding:

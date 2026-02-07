@@ -69,11 +69,9 @@ export const numeric: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Parker Gilbert', role: 'Co-Founder & CEO', background: 'Previously led a finance and accounting team. Founded Numeric in 2020 to automate month-end close.' },
+    { name: 'Anthony Alvernaz', role: 'Co-Founder', background: 'Co-founded Numeric in 2020.' },
+    { name: 'Andrew Bihl', role: 'Co-Founder', background: 'Co-founded Numeric in 2020.' },
   ],
   whyBuilding: 'Modernize accounting operations with AI-driven automation.',
   beliefs: [

@@ -66,9 +66,14 @@ export const inferenceNet: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'John Yue',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Inference.ai in 2024 to build affordable, scalable LLM inference infrastructure.',
+    },
+    {
+      name: 'Michael Yu',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder focused on GPU compute optimization for AI inference workloads.',
     },
   ],
   whyBuilding: 'LLM inference is expensive; developers need affordable, scalable options.',

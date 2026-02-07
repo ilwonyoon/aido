@@ -45,11 +45,7 @@ export const openpay: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Lance Co Ting Keh', role: 'Founder & CEO', background: 'Serial entrepreneur. Former Alphabet Head of AI. Founded OpenPay in 2023. Acquired by Airwallex.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

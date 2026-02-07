@@ -50,9 +50,9 @@ export const apothekary: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Shizu Okusa',
+      role: 'Founder & CEO',
+      background: 'Former Goldman Sachs (distressed assets); previously founded a juice company; launched Apothekary to make plant-medicine fun and accessible.',
     },
   ],
   whyBuilding: 'Unknown',

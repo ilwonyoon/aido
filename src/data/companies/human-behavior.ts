@@ -46,9 +46,19 @@ export const humanBehavior: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Amogh Chaturvedi',
+      role: 'Co-founder & CEO',
+      background: 'Stanford dropout, age 20; previously built and sold a startup called Dough.',
+    },
+    {
+      name: 'Skyler Ji',
+      role: 'Co-founder & CTO',
+      background: 'Age 22; co-founded Dough before pivoting to Human Behavior.',
+    },
+    {
+      name: 'Chirag Kawediya',
+      role: 'Co-founder & COO',
+      background: 'Age 22; co-founded Dough before pivoting to Human Behavior.',
     },
   ],
   whyBuilding: 'Unknown',

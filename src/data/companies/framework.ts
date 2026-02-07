@@ -50,9 +50,9 @@ export const framework: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Nirav Patel',
+      role: 'Founder & CEO',
+      background: 'Former Apple FaceTime team member; original Head of Hardware at Oculus (stayed 5 years after Facebook acquisition).',
     },
   ],
   whyBuilding: 'Unknown',

@@ -102,9 +102,19 @@ export const unlimitedIndustries: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Alex Modon',
+      role: 'Co-founder & CEO',
+      background: 'Serial founder. Leading Unlimited Industries to transform infrastructure development through AI-driven automation.',
+    },
+    {
+      name: 'Jordan Stern',
+      role: 'Co-founder',
+      background: 'Previously built and scaled Rupa Health from zero to millions in revenue before its 2024 acquisition.',
+    },
+    {
+      name: 'Tara Viswanathan',
+      role: 'Co-founder',
+      background: 'Previously co-founded Rupa Health. Combined expertise in engineering, operations, and hyper-scaling.',
     },
   ],
   whyBuilding:

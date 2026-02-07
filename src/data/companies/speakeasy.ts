@@ -73,11 +73,8 @@ export const speakeasy: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Sagar Batchu', role: 'Co-Founder & CEO', background: 'Experienced API integration challenges at startups and enterprises. Founded Speakeasy in 2022.' },
+    { name: 'Simon Yu', role: 'Co-Founder & CPO', background: 'Co-founded Speakeasy in 2022. Experienced API integration pain at both startups and large enterprises.' },
   ],
   whyBuilding: 'Make API developer experience faster with automated SDK and doc generation.',
   beliefs: [

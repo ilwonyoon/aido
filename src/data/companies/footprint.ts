@@ -43,7 +43,8 @@ export const footprint: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Eli Wachs', role: 'Founder & CEO', background: 'Stanford graduate and multi-time entrepreneur who started his first company in high school.' },
+    { name: 'Alex Grinman', role: 'Co-founder & CTO', background: 'Co-founder of Krypt.co (acquired by Akamai).' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

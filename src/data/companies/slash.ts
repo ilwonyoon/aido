@@ -49,11 +49,8 @@ export const slash: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Victor Cardenas Codriansky', role: 'Co-Founder & CEO', background: 'Stanford dropout. Founded Slash in 2020. YC alum. Backed by NEA and founders of Tinder and Plaid.' },
+    { name: 'Kevin Bai', role: 'Co-Founder & CTO', background: 'University of Waterloo dropout. Co-founded Slash in 2020.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

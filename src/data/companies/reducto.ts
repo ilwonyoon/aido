@@ -49,11 +49,8 @@ export const reducto: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Adit Abraham', role: 'Co-Founder & CEO', background: 'Former Product Manager at Google (Ads and Search). Machine learning research at MIT Media Lab.' },
+    { name: 'Raunak Chowdhuri', role: 'Co-Founder & CTO', background: 'Former engineer at Google and Nvidia. Co-founded Reducto in 2023.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

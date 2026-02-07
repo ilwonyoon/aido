@@ -190,7 +190,7 @@ export const granola: Company = {
 
     growthMetrics: {
       stage: 'hypergrowth',
-      revenueGrowth: "Unknown (not disclosed, early monetization)",
+      revenueGrowth: "Not disclosed (early monetization, $67M raised in 15 months)",
       userGrowth: "10% WoW user growth since launch",
       signals: [
         "$67M raised in 15 months (Seed → Series B)",

@@ -49,11 +49,7 @@ export const neonPay: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Chris Faught', role: 'Founder & CEO', background: 'Former Apple (strategy for Apple Pay, Apple Card, Apple Pay Later) and Affirm (commercial strategy, Series B through IPO).' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

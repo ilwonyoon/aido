@@ -97,9 +97,14 @@ export const tailor: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Yo Shibata',
+      role: 'Co-founder & CEO',
+      background: 'Previously advised global enterprises at McKinsey. Serial entrepreneur with multiple exits, including a startup acquired by Rakuten.',
+    },
+    {
+      name: 'Misato Takahashi',
+      role: 'Co-founder & CTO',
+      background: 'Former Head of R&D at Mercari. Co-founded multiple tech ventures. Built Tailor in 2021 to reinvent ERP.',
     },
   ],
   whyBuilding:

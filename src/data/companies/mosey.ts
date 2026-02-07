@@ -73,11 +73,7 @@ export const mosey: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Alex Kehayias', role: 'Founder & CEO', background: 'Former engineering manager at Stripe, built and headed Stripe Atlas. Previously product manager at Morgan Stanley.' },
   ],
   whyBuilding: 'Make state and local compliance simple for distributed teams.',
   beliefs: [

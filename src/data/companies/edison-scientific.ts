@@ -97,9 +97,14 @@ export const edisonScientific: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Sam Rodriques',
+      role: 'Co-founder & CEO',
+      background: 'Physicist and bioengineer; co-founded FutureHouse (nonprofit) in 2023, from which Edison was spun out.',
+    },
+    {
+      name: 'Andrew White',
+      role: 'Co-founder & CTO',
+      background: 'Led multiple AI for science projects including ChemCrow (first LLM agents in chemistry) and paperqa (first superhuman literature agent).',
     },
   ],
   whyBuilding:

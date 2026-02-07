@@ -43,7 +43,11 @@ export const cline: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Saoud Rizwan',
+      role: 'Founder',
+      background: 'Created Cline (originally Claude Dev) as an open-source autonomous AI coding agent for VS Code; grown to 4M+ developers worldwide.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

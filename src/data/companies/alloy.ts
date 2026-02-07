@@ -104,9 +104,19 @@ export const alloy: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Tommy Nicholas',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Alloy in 2015 to build an identity and fraud prevention platform for financial services.',
+    },
+    {
+      name: 'Laura Spiekerman',
+      role: 'Co-founder & President',
+      background: 'Co-founded Alloy to help financial institutions onboard customers securely while reducing fraud risk.',
+    },
+    {
+      name: 'Charles Hearn',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder responsible for building Alloy\'s identity decisioning and fraud prevention platform.',
     },
   ],
   whyBuilding:

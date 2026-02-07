@@ -77,9 +77,14 @@ export const assortHealth: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Jon Wang',
+      role: 'Co-founder & Co-CEO',
+      background: 'Stanford Bioinformatics (M.S. & B.S.); ML research at Stanford School of Medicine, MIT, Apple, and Gates Foundation; departed UCSF Medicine to pursue entrepreneurship.',
+    },
+    {
+      name: 'Jeffery Liu',
+      role: 'Co-founder & Co-CEO',
+      background: 'Duke-educated engineer; former Head of Product Engineering at Athelas working on AI-related software for patient care and physician workflows.',
     },
   ],
   whyBuilding: 'Reduce wait times and improve patient experiences with AI agents.',

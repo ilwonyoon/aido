@@ -43,7 +43,8 @@ export const stytch: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Reed McGinley-Stempel', role: 'Co-founder & CEO', background: 'Previously at Plaid, where he witnessed authentication shortcomings firsthand.' },
+    { name: 'Julianna Lamb', role: 'Co-founder & CTO', background: 'Previously at Plaid. Co-founded Stytch to build modern authentication infrastructure for developers.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

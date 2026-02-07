@@ -77,9 +77,19 @@ export const catalyxSpace: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Rifath Shaarook',
+      role: 'Co-founder & CEO',
+      background: 'Founded Catalyx Space in 2021 to build autonomous labs with re-entry capabilities for next-era orbital logistics.',
+    },
+    {
+      name: 'Clinton Antony',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder building Catalyx Space\'s in-space infrastructure hardware and software systems.',
+    },
+    {
+      name: 'Saqib Hussain',
+      role: 'Co-founder & CMO',
+      background: 'Co-founded Catalyx Space to build complete back-end infrastructure for space logistics and operations.',
     },
   ],
   whyBuilding: 'Provide scalable infrastructure for space missions.',

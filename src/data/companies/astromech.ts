@@ -43,7 +43,16 @@ export const astromech: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Ben Lamm',
+      role: 'Co-founder & CEO',
+      background: 'TIME100 Next honoree; co-founder of Colossal Biosciences; serial entrepreneur expanding into AI-biotechnology with Astromech.',
+    },
+    {
+      name: 'George Church',
+      role: 'Co-founder',
+      background: 'Harvard professor and world-renowned geneticist and synthetic biology researcher; co-founded Astromech to apply AI to biotechnology.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

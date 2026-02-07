@@ -43,7 +43,8 @@ export const freed: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Erez Druk', role: 'Co-founder & CEO', background: 'Former Facebook software engineer; previously founded UrbanLeap; inspired by wife medical documentation burden.' },
+    { name: 'Andrey Bannikov', role: 'Co-founder & CTO', background: 'Spent a decade at Facebook before co-founding Freed in 2023.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

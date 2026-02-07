@@ -70,11 +70,8 @@ export const relace: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Preston Zhou', role: 'Co-Founder & CEO', background: 'AI research and engineering background. YC alum. Led Relace to $23M Series A from a16z.' },
+    { name: 'Eitan Borgnia', role: 'Co-Founder & CTO', background: 'Deep experience in systems programming and infrastructure.' },
   ],
   whyBuilding: 'Enable fast and reliable code generation for production workloads.',
   beliefs: [

@@ -50,9 +50,19 @@ export const clockwise: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Matt Martin',
+      role: 'Co-founder & CEO',
+      background: 'Former software engineer at RelateIQ (acquired by Salesforce); B.A. from Dartmouth, J.D. from UPenn Law; founded Clockwise in 2016.',
+    },
+    {
+      name: 'Gary Lerhaupt',
+      role: 'Co-founder',
+      background: 'Former RelateIQ colleague; co-founded Clockwise to build AI-powered time management and calendar optimization.',
+    },
+    {
+      name: 'Mike Grinolds',
+      role: 'Co-founder',
+      background: 'Former RelateIQ alumnus; co-founded Clockwise to reimagine how teams manage their calendars and schedules.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -69,11 +69,8 @@ export const quo: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Mahyar Raissi', role: 'Co-Founder & CEO', background: 'Canadian entrepreneur. Co-founded OpenPhone (now Quo) in 2018. YC alum.' },
+    { name: 'Daryna Kulya', role: 'Co-Founder & COO', background: 'Co-founded OpenPhone (now Quo) in 2018. Moved to Bay Area after YC.' },
   ],
   whyBuilding: 'Make business calling simple and modern for teams.',
   beliefs: [

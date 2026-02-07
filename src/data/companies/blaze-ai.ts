@@ -68,9 +68,9 @@ export const blazeAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Adam Nathan',
+      role: 'Founder & CEO',
+      background: 'Previously at the White House, Apple, and Lyft; founded Almanac in 2019 before launching Blaze in 2023 to help small businesses with AI-powered marketing.',
     },
   ],
   whyBuilding: 'Make marketing content creation faster with AI workflows.',

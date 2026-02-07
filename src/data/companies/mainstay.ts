@@ -50,9 +50,14 @@ export const mainstay: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Dod Fraser',
+      role: 'Co-founder',
+      background: 'Founded Mainstay within Opendoor to build a market intelligence platform for single-family rental industry.',
+    },
+    {
+      name: 'Nate Harbacek',
+      role: 'Co-founder',
+      background: 'Co-founded Mainstay within Opendoor; launched it as an independent company in 2024 backed by Khosla Ventures.',
     },
   ],
   whyBuilding: 'Unknown',

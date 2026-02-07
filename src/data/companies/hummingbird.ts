@@ -95,9 +95,14 @@ export const hummingbird: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Joe Robinson',
+      role: 'Co-founder & CEO',
+      background: 'Former VP of Risk and Data Science at Circle and Senior Product Lead at Square.',
+    },
+    {
+      name: 'Matthew Van Buskirk',
+      role: 'Co-founder',
+      background: 'Fintech veteran with experience at Block (formerly Square) and blockchain payments.',
     },
   ],
   whyBuilding:

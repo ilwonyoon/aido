@@ -69,11 +69,8 @@ export const pallet: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Sushanth Raman', role: 'Co-Founder & CEO', background: 'Early engineer at Retool. Launched Pallet in 2021.' },
+    { name: 'Andrew Spencer', role: 'Co-Founder', background: 'Former engineer at Retool. Co-founded Pallet in 2021.' },
   ],
   whyBuilding: 'Automate manual logistics operations with AI workers.',
   beliefs: [

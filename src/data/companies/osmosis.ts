@@ -65,11 +65,8 @@ export const osmosis: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
-    },
+    { name: 'Kasey Zhang', role: 'Co-Founder & CEO', background: 'Repeat founder. Sold first company in undergrad. Previously co-founded a gaming startup (acquired).' },
+    { name: 'Andy Lyu', role: 'Co-Founder & CTO', background: 'Youngest tech lead at TikTok on real-time recommendations/model serving team.' },
   ],
   whyBuilding: 'Specialized models can outperform general LLMs on narrow tasks.',
   beliefs: [

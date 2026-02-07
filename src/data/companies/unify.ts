@@ -50,9 +50,14 @@ export const unify: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Austin Hughes',
+      role: 'Co-founder & CEO',
+      background: 'Previously worked closely with Ramp co-founder Gene Lee on growth. Achieved 39x revenue growth in under 2 years through founder-led sales.',
+    },
+    {
+      name: 'Connor Heggie',
+      role: 'Co-founder & CTO',
+      background: 'Former research engineer in machine learning at Scale AI. Building AI-driven automated outbound sales platform.',
     },
   ],
   whyBuilding: 'Unknown',

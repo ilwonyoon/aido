@@ -43,7 +43,7 @@ export const dagster: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Nick Schrock', role: 'Founder & CTO', background: 'Former Principal Engineer and Director at Facebook (2009-2017); co-created GraphQL and founded the Product Infrastructure team.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

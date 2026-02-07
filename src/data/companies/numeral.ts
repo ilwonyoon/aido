@@ -69,11 +69,8 @@ export const numeral: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Sam Ross', role: 'Co-Founder & CEO', background: 'Former PM at Airbnb. Started e-commerce businesses generating over $50M in revenue.' },
+    { name: 'Matt DuVall', role: 'Co-Founder & CTO', background: '12+ years software engineering. YC founder. Led teams at Stripe, Notion, and Box.' },
   ],
   whyBuilding: 'Make sales tax compliance easier for ecommerce teams.',
   beliefs: [

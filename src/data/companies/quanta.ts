@@ -104,7 +104,7 @@ export const quanta: Company = {
     {
       name: 'Unknown',
       role: 'Founder',
-      background: 'Unknown',
+      background: 'Founder information not publicly available.',
     },
   ],
   whyBuilding:

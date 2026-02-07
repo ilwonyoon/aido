@@ -94,11 +94,7 @@ export const sonatic: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Kinjal Nandy', role: 'Co-Founder & CEO', background: 'Building AI voice agent infrastructure with AgentOS platform for enterprise customers.' },
   ],
   whyBuilding:
     'Make enterprise voice automation reliable and scalable with AI agents.',

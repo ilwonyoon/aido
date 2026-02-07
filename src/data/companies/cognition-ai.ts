@@ -50,9 +50,19 @@ export const cognitionAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Scott Wu',
+      role: 'Co-founder & CEO',
+      background: 'Three-time gold medalist at the International Olympiad in Informatics (IOI), placing 1st in 2014; also co-founded Lunchclub.',
+    },
+    {
+      name: 'Steven Hao',
+      role: 'Co-founder',
+      background: 'Gold medalist at the International Olympiad in Informatics (IOI); co-founded Cognition in August 2023 to build Devin, the first AI software engineer.',
+    },
+    {
+      name: 'Walden Yan',
+      role: 'Co-founder',
+      background: 'Gold medalist at the International Olympiad in Informatics (IOI); co-founded Cognition to build autonomous AI software engineering.',
     },
   ],
   whyBuilding: 'Unknown',

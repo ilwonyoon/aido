@@ -71,9 +71,9 @@ export const lettuce: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Ran Harpaz',
+      role: 'Founder & CEO',
+      background: 'Founded Lettuce in 2023 to build an AI-powered operating system for solopreneurs to manage taxes and accounting.',
     },
   ],
   whyBuilding: 'Make accounting and taxes effortless for solopreneurs.',

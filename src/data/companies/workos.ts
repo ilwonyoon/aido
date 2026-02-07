@@ -43,7 +43,7 @@ export const workos: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Michael Grinich', role: 'Founder & CEO', background: 'Previously founded Nylas (email client and APIs). Founded WorkOS in 2019 after realizing enterprise features are critical for sustainable software growth.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

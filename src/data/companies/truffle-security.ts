@@ -97,9 +97,19 @@ export const truffleSecurity: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Dylan Ayrey',
+      role: 'Co-founder & CEO',
+      background: 'Original author of TruffleHog open-source tool. Previously at Netflix. Recognized the prevalence of credential exposure in Git.',
+    },
+    {
+      name: 'Dustin Decker',
+      role: 'Co-founder & CTO',
+      background: 'Previously worked with Dylan as a cybersecurity consultant. Co-founded Truffle Security in 2021.',
+    },
+    {
+      name: 'Julian Dunning',
+      role: 'Co-founder',
+      background: 'Previously worked with Dylan and Dustin as a cybersecurity consultant.',
     },
   ],
   whyBuilding:

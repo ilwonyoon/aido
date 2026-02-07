@@ -50,9 +50,14 @@ export const datacurve: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Serena Ge',
+      role: 'Co-founder & CEO',
+      background: 'Interned at Cohere training LLMs; dropped out of University of Waterloo to build Datacurve.',
+    },
+    {
+      name: 'Charley Lee',
+      role: 'Co-founder',
+      background: 'Interned at Google building synthetic data; dropped out of University of Waterloo to co-found Datacurve.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -74,9 +74,14 @@ export const clerk: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Colin Sidoti',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Clerk in 2019 with his brother to make authentication easier for developers; grew managed users to 500% in 5 months.',
+    },
+    {
+      name: 'Braden Sidoti',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder at Clerk building developer-first authentication and user management infrastructure.',
     },
   ],
   whyBuilding: 'Make authentication easier to implement and manage for developers.',

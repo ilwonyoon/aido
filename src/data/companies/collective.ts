@@ -102,9 +102,19 @@ export const collective: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Hooman Radfar',
+      role: 'Co-founder & CEO',
+      background: 'Serial entrepreneur; built and sold AddThis to Oracle (2016); founding partner at Expa with Uber co-founder Garrett Camp.',
+    },
+    {
+      name: 'Ugur Kaner',
+      role: 'Co-founder',
+      background: 'Co-founded Collective to support self-employed professionals with automated back-office finance services.',
+    },
+    {
+      name: 'Bugra Akcay',
+      role: 'Co-founder',
+      background: 'Co-founded Collective to build an AI-powered finance platform designed specifically for the self-employed.',
     },
   ],
   whyBuilding:

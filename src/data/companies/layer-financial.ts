@@ -97,9 +97,14 @@ export const layerFinancial: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Justin Meretab',
+      role: 'Co-founder & CEO',
+      background: 'Former product leader on Square\'s Banking team; started Layer in 2023.',
+    },
+    {
+      name: 'Daniel O\'Neel',
+      role: 'Co-founder',
+      background: 'Former engineering leader at Wealthfront.',
     },
   ],
   whyBuilding:

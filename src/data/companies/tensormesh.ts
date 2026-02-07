@@ -73,9 +73,19 @@ export const tensormesh: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Junchen Jiang',
+      role: 'Co-founder',
+      background: 'University of Chicago faculty member. Co-creator of LMCache, the leading open-source KV caching project with 5K+ GitHub stars.',
+    },
+    {
+      name: 'Yihua Cheng',
+      role: 'Co-founder & CTO',
+      background: 'PhD from University of Chicago with expertise in AI systems and LLM inference. Launched and maintains LMCache.',
+    },
+    {
+      name: 'Kuntai Du',
+      role: 'Co-founder & Chief Scientist',
+      background: 'PhD from University of Chicago. Expert in KV-cache optimization for AI inference.',
     },
   ],
   whyBuilding: 'Reduce inference latency and cost through smart caching.',

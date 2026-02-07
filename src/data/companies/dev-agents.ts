@@ -102,9 +102,24 @@ export const devAgents: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'David Singleton',
+      role: 'Co-founder & CEO',
+      background: 'Former CTO of Stripe (2018+); early Google Mobile team leader.',
+    },
+    {
+      name: 'Hugo Barra',
+      role: 'Co-founder (Product)',
+      background: 'Former VP of VR at Meta; led global expansion for Xiaomi smartphones; early Google Mobile.',
+    },
+    {
+      name: 'Ficus Kirkpatrick',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder leading engineering at /dev/agents.',
+    },
+    {
+      name: 'Nicholas Jitkoff',
+      role: 'Co-founder (Design)',
+      background: 'Leads design at /dev/agents.',
     },
   ],
   whyBuilding:

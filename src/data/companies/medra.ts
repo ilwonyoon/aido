@@ -97,9 +97,9 @@ export const medra: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Michelle Lee',
+      role: 'Founder & CEO',
+      background: 'PhD in Robotics from Stanford University; left a planned academic career at NYU to found Medra in 2022.',
     },
   ],
   whyBuilding:

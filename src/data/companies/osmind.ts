@@ -49,11 +49,8 @@ export const osmind: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Lucia Huang', role: 'Co-Founder & CEO', background: 'MBA from Stanford, BS Chemistry from Yale. Former business and operations lead at Verge Genomics.' },
+    { name: 'Jimmy Qian', role: 'Co-Founder & President', background: 'MS Biomedical Data Science from Stanford. Summa cum laude from University of Pennsylvania.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

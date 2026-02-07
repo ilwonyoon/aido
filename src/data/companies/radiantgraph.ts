@@ -49,11 +49,7 @@ export const radiantgraph: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Anmol Madan', role: 'Founder & CEO', background: 'PhD in machine learning from MIT Media Lab. Former Chief Data Scientist at Teladoc Health & Livongo. Co-founded Ginger.io and served as CEO for 7 years. Fast Company 100 Most Creative People. World Economic Forum Technology Pioneer.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

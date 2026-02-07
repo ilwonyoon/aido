@@ -97,9 +97,14 @@ export const gcAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Cecilia Ziniti',
+      role: 'Co-founder & CEO',
+      background: '20-year legal veteran; former general counsel at Amazon Alexa, Cruise, and Replit.',
+    },
+    {
+      name: 'Bardia Pourvakil',
+      role: 'Co-founder & CTO',
+      background: 'Early engineer at Roam Research and Replit; co-founded GC AI in November 2023.',
     },
   ],
   whyBuilding:

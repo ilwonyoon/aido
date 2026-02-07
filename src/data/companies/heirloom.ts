@@ -102,9 +102,14 @@ export const heirloom: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Shashank Samala',
+      role: 'Co-founder & CEO',
+      background: 'Founded Heirloom in 2020 to scale direct air capture technology for permanent carbon removal.',
+    },
+    {
+      name: 'Noah McQueen',
+      role: 'Co-founder',
+      background: 'Doctorate in chemical engineering from the University of Pennsylvania.',
     },
   ],
   whyBuilding:

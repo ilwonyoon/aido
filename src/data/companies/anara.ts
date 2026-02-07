@@ -50,9 +50,9 @@ export const anara: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Naveed Janmohamed',
+      role: 'Founder & CEO',
+      background: 'Founded Anara (formerly Unriddle) to reshape how researchers engage with scientific literature; backed by YC and the founders of GitHub and Reddit.',
     },
   ],
   whyBuilding: 'Unknown',

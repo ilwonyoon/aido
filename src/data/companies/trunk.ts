@@ -66,9 +66,14 @@ export const trunk: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'David Apirian',
+      role: 'Co-founder & Co-CEO',
+      background: 'Previously at Uber, most recently as head of autonomy systems and simulation platform at Uber self-driving unit.',
+    },
+    {
+      name: 'Eli Schleifer',
+      role: 'Co-founder & Co-CEO',
+      background: 'Senior and staff engineer background from Uber and Google. Co-founded Trunk in 2021, backed by a16z.',
     },
   ],
   whyBuilding: 'Large teams struggle to scale software writing and code maintenance.',

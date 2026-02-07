@@ -96,9 +96,19 @@ export const twoTwoTwo: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Keyan Kazemian',
+      role: 'Co-founder & CEO',
+      background: 'Gen Z founder (age 23 at founding). Started 222 by curating intimate dinners using ML and psychological questionnaires.',
+    },
+    {
+      name: 'Danial Hashemi',
+      role: 'Co-founder & COO',
+      background: 'Gen Z co-founder. Helped build 222 from backyard dinners to a funded social platform.',
+    },
+    {
+      name: 'Arman Roshannai',
+      role: 'Co-founder & CTO',
+      background: 'Gen Z co-founder. Built the technical infrastructure for 222 matching and discovery.',
     },
   ],
   whyBuilding:

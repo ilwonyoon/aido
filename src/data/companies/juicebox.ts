@@ -50,9 +50,14 @@ export const juicebox: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'David Paffenholz',
+      role: 'Co-founder & CEO',
+      background: 'Harvard Economics graduate; founded Juicebox at age 22 through YC S22.',
+    },
+    {
+      name: 'Ishan Gupta',
+      role: 'Co-founder',
+      background: 'Studied CS at Dartmouth; left to focus on building Juicebox at age 19 through YC S22.',
     },
   ],
   whyBuilding: 'Unknown',

@@ -67,9 +67,9 @@ export const impulseLabs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Sam D\'Amico',
+      role: 'Founder & CEO',
+      background: 'Stanford graduate with 10 years in consumer electronics designing tech at Google Glass and Oculus; passion for cooking led to founding Impulse Labs in 2021.',
     },
   ],
   whyBuilding: 'Deliver a better electric cooking experience and accelerate home electrification.',

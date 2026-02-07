@@ -49,11 +49,8 @@ export const midday: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Sophia Westwood', role: 'Co-Founder & CEO', background: 'Former Senior Product Director at Quip.' },
+    { name: 'Jon McAlister', role: 'Co-Founder & CTO', background: 'Former Distinguished Engineer at Quip.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

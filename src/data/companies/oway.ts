@@ -43,7 +43,7 @@ export const oway: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Phillip Nadjafov', role: 'Founder & CEO', background: '2nd-time founder. Previously founded Isotrex. Founded Oway in 2023. YC alum.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

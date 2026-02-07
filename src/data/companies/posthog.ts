@@ -49,11 +49,8 @@ export const posthog: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'James Hawkins', role: 'Co-Founder & CEO', background: 'Co-founded PostHog in 2020. YC W20 batch.' },
+    { name: 'Tim Glaser', role: 'Co-Founder & CTO', background: 'Co-founded PostHog in 2020. YC W20 batch.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

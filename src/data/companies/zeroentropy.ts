@@ -50,9 +50,14 @@ export const zeroentropy: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Ghita Houir Alami',
+      role: 'Co-founder & CEO',
+      background: 'Born and raised in Morocco. Attended Ecole Polytechnique, MS in Mathematics from UC Berkeley. One of the few female CEOs building deep AI infrastructure.',
+    },
+    {
+      name: 'Nicholas Pipitone',
+      role: 'Co-founder & CTO',
+      background: 'Background in theoretical mathematics and computer science. Dropped out of CMU to pursue startups.',
     },
   ],
   whyBuilding: 'Unknown',

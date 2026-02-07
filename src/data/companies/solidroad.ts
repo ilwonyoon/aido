@@ -96,11 +96,8 @@ export const solidroad: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Mark Hughes', role: 'Co-Founder & CEO', background: 'Former Intercom employee. Founded Solidroad in 2023. YC alum.' },
+    { name: 'Patrick Finlay', role: 'Co-Founder & CTO', background: 'Former Intercom employee. Met co-founder Mark Hughes at Intercom.' },
   ],
   whyBuilding:
     'Ensure AI customer interactions are reliable and high quality at scale.',

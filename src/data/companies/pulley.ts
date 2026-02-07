@@ -65,11 +65,8 @@ export const pulley: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
-    },
+    { name: 'Yin Wu', role: 'Co-Founder & CEO', background: 'Serial entrepreneur. Sold previous company to Microsoft. Former youngest principal engineer at Microsoft. Stanford CS. 3x YC alum (S11, S13, W20).' },
+    { name: 'Mark Erdmann', role: 'Co-Founder', background: 'Co-founded Pulley in 2019.' },
   ],
   whyBuilding: 'Equity management and cap table workflows are complex for fast-growing startups.',
   beliefs: [

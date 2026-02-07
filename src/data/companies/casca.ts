@@ -97,9 +97,14 @@ export const casca: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Lukas Haffer',
+      role: 'Co-founder & CEO',
+      background: 'Former Chief of Staff for European Market at Avaloq; MBA from Stanford (Arjay-Miller Scholar, top 10%); banking IT expert.',
+    },
+    {
+      name: 'Isaiah Williams',
+      role: 'Co-founder',
+      background: 'Met Lukas at Stanford; previously deployed ML applications at EliseAI; co-founded Casca to build AI-native loan origination.',
     },
   ],
   whyBuilding:

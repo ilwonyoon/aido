@@ -50,9 +50,14 @@ export const imbueAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Kanjun Qiu',
+      role: 'Co-founder & CEO',
+      background: 'Former first chief of staff at Dropbox (200-1200 employees); co-founded Sourceress (ML recruiting); studied CS at MIT and wrote high-frequency trading algorithms.',
+    },
+    {
+      name: 'Josh Albrecht',
+      role: 'Co-founder & CTO',
+      background: 'AI researcher focused on building agents capable of reasoning and coding.',
     },
   ],
   whyBuilding: 'Unknown',

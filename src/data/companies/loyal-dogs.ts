@@ -50,9 +50,9 @@ export const loyalDogs: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Celine Halioua',
+      role: 'Founder & CEO',
+      background: 'Founded Loyal in 2019 at age 24; background in neuroscience at UT Austin and gene therapy at Oxford; former chief of staff at The Longevity Fund.',
     },
   ],
   whyBuilding: 'Unknown',

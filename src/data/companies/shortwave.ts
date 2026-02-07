@@ -67,11 +67,8 @@ export const shortwave: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Andrew Lee', role: 'Co-Founder & CEO', background: 'Co-founder of Firebase (acquired by Google in 2014). Built products used by millions at Firebase and Google.' },
+    { name: 'Jacob Wenger', role: 'Co-Founder & CPO', background: 'Co-founded Shortwave. Previously at Firebase and Google.' },
   ],
   whyBuilding: 'Make email faster and more manageable with AI workflows.',
   beliefs: [

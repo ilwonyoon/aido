@@ -49,11 +49,8 @@ export const owner: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Adam Guild', role: 'Co-Founder & CEO', background: 'Founded Owner.com to help independent restaurants manage online presence.' },
+    { name: 'Dean Bloembergen', role: 'Co-Founder', background: 'Co-founded Owner.com in 2021.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

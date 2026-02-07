@@ -50,9 +50,9 @@ export const hyperbolic: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Jasper (Yue) Zhang',
+      role: 'Co-founder & CEO',
+      background: 'PhD in Mathematics from UC Berkeley completed in two years; gold medalist at Alibaba Global Math Competition; former Citadel Securities and Avalanche Labs.',
     },
   ],
   whyBuilding: 'Unknown',

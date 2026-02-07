@@ -97,9 +97,14 @@ export const truemed: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Justin Mares',
+      role: 'Founder & CEO',
+      background: 'Previously founded Kettle & Fire, Perfect Keto, and Surely. Serial health and wellness entrepreneur.',
+    },
+    {
+      name: 'Calley Means',
+      role: 'Co-founder',
+      background: 'Co-founded Truemed to honor his mother who died of a preventable disease. Sister Casey Means co-founded Levels (metabolic health).',
     },
   ],
   whyBuilding:

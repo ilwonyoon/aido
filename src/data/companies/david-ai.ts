@@ -50,9 +50,14 @@ export const davidAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Tomer Cohen',
+      role: 'Co-founder & CEO',
+      background: 'Former Chief of Staff at Scale AI; previously a consultant at McKinsey & Company.',
+    },
+    {
+      name: 'Ben Wiley',
+      role: 'Co-founder & CTO',
+      background: 'Previously led engineering for Scale AI Public Sector GenAI Platform (Donovan); former software engineer at Microsoft.',
     },
   ],
   whyBuilding: 'Unknown',

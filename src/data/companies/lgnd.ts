@@ -97,9 +97,19 @@ export const lgnd: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Nat Manning',
+      role: 'Co-founder',
+      background: 'Former Chief Data Officer at USAID; co-founded Kettle, an AI-native reinsurance company.',
+    },
+    {
+      name: 'Dan Hammer',
+      role: 'Co-founder',
+      background: 'Built mission-critical infrastructure in geospatial analytics throughout his career, including work at NASA.',
+    },
+    {
+      name: 'Bruno Sanchez-Andrade Nuno',
+      role: 'Co-founder',
+      background: 'Former Chief Scientist at Mapbox; expert in Earth observation and geospatial data.',
     },
   ],
   whyBuilding:

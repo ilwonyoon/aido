@@ -43,7 +43,8 @@ export const solaSecurity: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Guy Flechter', role: 'Co-Founder & CEO', background: 'Previously co-founded Cider Security (acquired by Palo Alto Networks for $300M in 2022).' },
+    { name: 'Ron Peled', role: 'Co-Founder & COO', background: 'Former Chief Infosec Officer at LivePerson. Advisor to multiple security companies.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

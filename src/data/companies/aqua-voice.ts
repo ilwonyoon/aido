@@ -50,9 +50,14 @@ export const aquaVoice: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Finnian Brown',
+      role: 'Co-founder & CEO',
+      background: 'Lifelong dictation software user since childhood due to dyslexia; founded Aqua Voice to build super-fast AI voice-to-text (YC W24).',
+    },
+    {
+      name: 'Jack McIntire',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder at Aqua Voice building AI-powered voice dictation technology (YC W24).',
     },
   ],
   whyBuilding: 'Unknown',

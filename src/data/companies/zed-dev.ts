@@ -66,9 +66,19 @@ export const zedDev: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Nathan Sobo',
+      role: 'Co-founder & CEO',
+      background: 'Previously created Atom text editor and Electron at GitHub. Describes Zed as "a collaborative platform disguised as a world-class code editor."',
+    },
+    {
+      name: 'Max Brunsfeld',
+      role: 'Co-founder',
+      background: 'Co-created Atom and Tree-sitter. Building the high-performance multiplayer editing experience at Zed.',
+    },
+    {
+      name: 'Antonio Scandurra',
+      role: 'Co-founder',
+      background: 'Co-created Atom at GitHub. Building the core editor architecture for Zed.',
     },
   ],
   whyBuilding: 'Developers need a fast, multiplayer editor with modern collaboration.',

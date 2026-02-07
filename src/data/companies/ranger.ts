@@ -43,7 +43,7 @@ export const ranger: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Josh Ip', role: 'Founder & CEO', background: 'Founded Ranger to build AI-powered QA testing. Clients include OpenAI, Clay, and Suno.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

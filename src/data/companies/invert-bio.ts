@@ -43,7 +43,8 @@ export const invertBio: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Martin Tromp Permin', role: 'Co-founder & CEO', background: 'Previously worked at Airbnb and Hive (YC S14); focused on transforming biomanufacturing through software.' },
+    { name: 'Holger Hjorth Thorup', role: 'Co-founder', background: 'Engineer and product leader; formerly VP Engineering at Zeronorth; built multiple companies.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

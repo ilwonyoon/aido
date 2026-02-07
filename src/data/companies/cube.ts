@@ -50,9 +50,14 @@ export const cube: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Artyom Keydunov',
+      role: 'Co-founder & CEO',
+      background: 'Created Cube as a side project in 2018; previously co-founded Statsbot, a data analytics startup.',
+    },
+    {
+      name: 'Pavel Tiunov',
+      role: 'Co-founder',
+      background: 'Co-founded Statsbot in 2016 with Artyom before building Cube.',
     },
   ],
   whyBuilding: 'Unknown',

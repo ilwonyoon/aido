@@ -43,7 +43,8 @@ export const mail0: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Nizar Abi Zaher', role: 'Co-founder', background: 'YC-backed founder building an open-source AI-native email client; 15K+ signups in three months of beta.' },
+    { name: 'Adam Wazzan', role: 'Co-founder', background: 'Co-founded Mail0 to reinvent email as a transparent, intelligent platform prioritizing user control.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

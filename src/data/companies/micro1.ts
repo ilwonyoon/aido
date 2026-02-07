@@ -101,11 +101,7 @@ export const micro1: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Ali Ansari', role: 'Founder & CEO', background: 'Founded Micro1 in 2022 to reinvent engineering hiring with AI-powered vetting and matching.' },
   ],
   whyBuilding:
     'Help companies hire engineers faster with a streamlined marketplace.',

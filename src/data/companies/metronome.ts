@@ -101,11 +101,9 @@ export const metronome: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Scott Woody', role: 'Co-Founder & CEO', background: 'Former engineer at Dropbox. Previously an exited founder.' },
+    { name: 'Kevin Liu', role: 'Co-Founder & Chairman', background: 'Former CEO of Metronome, exited founder. Previously at Dropbox.' },
+    { name: 'Ledion Bitincka', role: 'Co-Founder', background: 'Co-founded Metronome in 2019.' },
   ],
   whyBuilding:
     'Give SaaS companies flexible billing infrastructure for usage-based pricing.',

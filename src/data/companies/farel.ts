@@ -50,9 +50,9 @@ export const farel: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Askhat Omarov',
+      role: 'Founder & CEO',
+      background: 'Founded Farel in 2020 (YC S20 batch) to build the operating system for next-generation airlines.',
     },
   ],
   whyBuilding: 'Unknown',

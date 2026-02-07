@@ -50,9 +50,14 @@ export const succint: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Uma Roy',
+      role: 'Co-founder & CEO',
+      background: 'Leading Succinct Labs to make zero-knowledge proofs accessible and scalable for developers.',
+    },
+    {
+      name: 'John Guibas',
+      role: 'Co-founder',
+      background: 'Stanford graduate, previously at 0xPARC applied cryptography and Stanford DAWN Lab. Co-founded Succinct in 2022.',
     },
   ],
   whyBuilding: 'Unknown',

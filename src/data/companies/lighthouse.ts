@@ -66,9 +66,9 @@ export const lighthouse: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
+      name: 'Minn Kim',
+      role: 'Founder & CEO',
+      background: 'Former career in financial services and venture capital; has helped 100+ founders and technologists with U.S. immigration with 100% approval rate.',
     },
   ],
   whyBuilding: 'Visa sponsorship is complex; companies need a simpler, faster process.',

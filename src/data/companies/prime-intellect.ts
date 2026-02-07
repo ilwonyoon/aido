@@ -49,11 +49,8 @@ export const primeIntellect: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Vincent Weisser', role: 'Co-Founder & CEO', background: 'Experience in Web3, DeSci, and AI sectors. Backed by Andrej Karpathy and Founders Fund.' },
+    { name: 'Johannes Hagemann', role: 'Co-Founder & CTO', background: 'Former AI Research Engineer at Aleph Alpha. Focus on decentralized AI and energy optimization.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

@@ -69,9 +69,19 @@ export const welltheory: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Ellen Rudolph',
+      role: 'Co-founder & CEO',
+      background: 'Previously led Product at Oscar Health and Everlane. Launched WellTheory in 2022 after autoimmune disease left her bedridden at 25.',
+    },
+    {
+      name: 'Claire Rudolph',
+      role: 'Co-founder',
+      background: 'Ellen\'s sister. Has an autoimmune diagnosis that inspired the founding of WellTheory.',
+    },
+    {
+      name: 'Wallace Torres',
+      role: 'Co-founder',
+      background: 'Wife struggled with autoimmune disease. Co-founded WellTheory to improve care for autoimmune patients.',
     },
   ],
   whyBuilding: 'Provide accessible digital care for people with autoimmune conditions.',

@@ -95,9 +95,9 @@ export const lightpage: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Kasra Kyanzadeh',
+      role: 'Founder & CEO',
+      background: '13 years of experience building product-led engineering teams; 4th hire at Airtable; first employee at Watershed.',
     },
   ],
   whyBuilding:

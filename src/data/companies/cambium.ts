@@ -43,7 +43,16 @@ export const cambium: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    {
+      name: 'Ben Christensen',
+      role: 'Co-founder & CEO',
+      background: 'Co-founded Cambium in 2019 to transform waste wood into sustainable building materials with Carbon Smart Wood technology.',
+    },
+    {
+      name: 'Marisa Repka',
+      role: 'Co-founder & COO',
+      background: 'Co-founded Cambium to build a tech platform that creates localized, sustainable supply chains for recycled wood.',
+    },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

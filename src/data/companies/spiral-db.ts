@@ -101,11 +101,9 @@ export const spiralDb: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Will Manning', role: 'Co-Founder & CEO', background: 'Former Palantir. Designed and iterated on infrastructure behind Palantir Foundry.' },
+    { name: 'Nicholas Gates', role: 'Co-Founder & CTO', background: 'Former Palantir. Built data systems for one of the most demanding data platforms.' },
+    { name: 'Rob Kruszewski', role: 'Co-Founder', background: 'Former Palantir. Co-founded Spiral to build AI-native data infrastructure.' },
   ],
   whyBuilding:
     'Reduce the cost and complexity of preparing datasets for AI pre-training.',

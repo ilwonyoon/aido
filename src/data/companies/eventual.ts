@@ -74,9 +74,14 @@ export const eventual: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Sammy Sidhu',
+      role: 'Co-founder & CEO',
+      background: 'Background in HPC and deep learning; previously worked on high-frequency trading, medical AI at Berkeley, and self-driving at DeepScale (acquired by Tesla) and Lyft Level 5 (acquired by Toyota).',
+    },
+    {
+      name: 'Jay Chia',
+      role: 'Co-founder',
+      background: 'Cornell graduate; worked in ML infrastructure at Freenome (biotech) and Lyft L5 (autonomous driving).',
     },
   ],
   whyBuilding: 'Build developer tools that make complex workflows easier to manage.',

@@ -74,11 +74,8 @@ export const span: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'J Zac Stein', role: 'Co-Founder & CEO', background: 'Former Chief Product Officer at Lattice. Zenefits alum.' },
+    { name: 'Henry Liu', role: 'Co-Founder', background: 'Former co-founder of a startup acquired by Compass. Zenefits alum.' },
   ],
   whyBuilding: 'Help engineering leaders understand and improve team performance.',
   beliefs: [

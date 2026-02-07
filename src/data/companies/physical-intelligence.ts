@@ -101,11 +101,9 @@ export const physicalIntelligence: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Karol Hausman', role: 'Co-Founder & CEO', background: 'Former Staff Research Scientist at Google DeepMind. Adjunct professor at Stanford. 10+ years in robot learning.' },
+    { name: 'Sergey Levine', role: 'Co-Founder', background: 'Professor at UC Berkeley. Leading researcher in deep reinforcement learning and robotics.' },
+    { name: 'Chelsea Finn', role: 'Co-Founder', background: 'Assistant Professor at Stanford. Expert in robot learning and meta-learning.' },
   ],
   whyBuilding:
     'Bring general-purpose AI into the physical world to automate real-world tasks.',

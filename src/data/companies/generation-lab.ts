@@ -69,9 +69,19 @@ export const generationLab: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Alina Rui Su',
+      role: 'Co-founder & CEO',
+      background: 'Harvard PhD dropout; studied longevity at Harvard Medical School and Berkeley; previously founder and CEO of NovaXS.',
+    },
+    {
+      name: 'Irina Conboy',
+      role: 'Co-founder',
+      background: 'UC Berkeley Bioengineering Professor with 20+ years pioneering aging science; discovered parabiosis rejuvenation (2005).',
+    },
+    {
+      name: 'Michael Suswal',
+      role: 'Co-founder',
+      background: 'Previous company was unicorn Standard AI.',
     },
   ],
   whyBuilding: 'Advance science to extend healthspan and reverse biological aging.',

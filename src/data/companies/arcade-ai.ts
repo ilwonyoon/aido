@@ -50,9 +50,9 @@ export const arcadeAi: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Mariam Naficy',
+      role: 'Co-founder & CEO',
+      background: 'Founder of Minted (stationery and art platform); launched Arcade as a generative AI marketplace for physical product creation.',
     },
   ],
   whyBuilding: 'Unknown',

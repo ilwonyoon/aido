@@ -50,9 +50,14 @@ export const e2b: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Vasek Mlejnsky',
+      role: 'Co-founder & CEO',
+      background: 'Graduated from Czech Academy of Mathematics and Physics; co-founded E2B in 2023.',
+    },
+    {
+      name: 'Tomas Valenta',
+      role: 'Co-founder & CTO',
+      background: 'Graduated from Czech Academy of Mathematics and Physics; close friend and co-founder with Vasek.',
     },
   ],
   whyBuilding: 'Unknown',

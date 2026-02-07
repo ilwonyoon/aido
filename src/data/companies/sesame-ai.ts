@@ -73,11 +73,9 @@ export const sesameAi: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Founding team not listed in sources reviewed.',
-    },
+    { name: 'Brendan Iribe', role: 'Co-Founder & CEO', background: 'Former CEO and co-founder of Oculus. Founded Sesame in June 2023.' },
+    { name: 'Ankit Kumar', role: 'Co-Founder & CTO', background: 'Former CTO of Ubiquity6.' },
+    { name: 'Ryan Brown', role: 'Co-Founder', background: 'Former Oculus engineer manager and Reality Labs engineering director.' },
   ],
   whyBuilding: 'Voice assistants need more natural, human-like conversation quality.',
   beliefs: [

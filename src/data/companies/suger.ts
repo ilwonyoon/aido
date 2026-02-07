@@ -97,9 +97,19 @@ export const suger: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Jon Yoo',
+      role: 'Co-founder & CEO',
+      background: 'Leading Suger to automate cloud marketplace GTM workflows for software companies.',
+    },
+    {
+      name: 'Chengjun Yuan',
+      role: 'Co-founder & CTO',
+      background: 'Building the technical platform for cloud marketplace automation at Suger.',
+    },
+    {
+      name: 'Ruming Zhen',
+      role: 'Co-founder',
+      background: 'Co-founded Suger to streamline B2B marketplace transactions.',
     },
   ],
   whyBuilding:

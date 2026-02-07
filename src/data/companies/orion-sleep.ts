@@ -67,11 +67,7 @@ export const orionSleep: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
-    },
+    { name: 'Harry Gestetner', role: 'Founder & CEO', background: 'Previously co-founded Fanfix (acquired by SuperOrdinary for ~$65M).' },
   ],
   whyBuilding: 'Improve sleep outcomes with AI-guided hardware personalization.',
   beliefs: [

@@ -50,9 +50,14 @@ export const hyperbound: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
+      name: 'Sriharsha Guduguntla',
+      role: 'Co-founder & CEO',
+      background: 'YC S23 founder who pivoted from an AI email personalization tool after CROs showed more interest in their internal sales training platform.',
+    },
+    {
+      name: 'Atul Raghunathan',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder focused on building AI-powered sales roleplay and coaching simulations.',
     },
   ],
   whyBuilding: 'Unknown',

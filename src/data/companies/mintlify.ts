@@ -49,11 +49,8 @@ export const mintlify: Company = {
 
   // Founders & Vision
   founders: [
-    {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown',
-    },
+    { name: 'Han Wang', role: 'Co-Founder & CEO', background: 'Founded Mintlify in 2022 to simplify developer documentation.' },
+    { name: 'Hahnbee Lee', role: 'Co-Founder', background: 'Co-founded Mintlify in 2022. Scaled platform to 10,000+ companies.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],

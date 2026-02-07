@@ -78,9 +78,14 @@ export const contra: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Unknown',
-      role: 'Founder',
-      background: 'Unknown.',
+      name: 'Ben Huffman',
+      role: 'Co-founder & CEO',
+      background: 'Former music producer and freelancer; previously co-founded Ripe (acquired by Hungry in 2020).',
+    },
+    {
+      name: 'Gajus Kuizinas',
+      role: 'Co-founder & CTO',
+      background: 'Technical co-founder of Contra since 2019.',
     },
   ],
   whyBuilding: 'Give creatives a commission-free way to showcase work and get hired.',

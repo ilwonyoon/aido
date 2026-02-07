@@ -43,7 +43,8 @@ export const onyx: Company = {
 
   // Founders & Vision
   founders: [
-    { name: 'Unknown', role: 'Founder', background: 'Unknown' },
+    { name: 'Yuhong Sun', role: 'Co-Founder & Co-CEO', background: 'Co-founded Onyx (formerly Danswer) in 2023 for open-source enterprise AI search.' },
+    { name: 'Chris Weaver', role: 'Co-Founder & Co-CEO', background: 'Co-founded Onyx in 2023. YC alum.' },
   ],
   whyBuilding: 'Unknown',
   beliefs: ['Unknown'],
