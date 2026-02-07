@@ -3,8 +3,10 @@ import { aiProductDesignInterviewGuide } from './content/ai-product-design-inter
 import { topTenFastestGrowingAiCompanies } from './content/top-10-fastest-growing-ai-companies';
 import { fastestSeedToSeriesB } from './content/fastest-seed-to-series-b';
 import { livekitVoiceAiInfrastructureDesign } from './content/livekit-voice-ai-infrastructure-design';
+import { delveAiComplianceDesignOpportunity } from './content/delve-ai-compliance-design-opportunity';
 
 export const articles: Article[] = [
+  delveAiComplianceDesignOpportunity,
   livekitVoiceAiInfrastructureDesign,
   aiProductDesignInterviewGuide,
   fastestSeedToSeriesB,
