@@ -22,9 +22,7 @@ export const livekitVoiceAiInfrastructureDesign: Article = {
       'AI voice agents',
     ],
   },
-  content: `# Inside LiveKit: Designing the Infrastructure Behind ChatGPT Voice
-
-Every time someone talks to ChatGPT using voice, the audio flows through [LiveKit](/company/livekit)'s infrastructure. Every Grok voice agent call on Tesla and Starlink support lines runs on LiveKit. With 200,000+ developers, billions of annual calls, and a $1B valuation -- this 50-person startup has quietly become the nervous system of voice AI.
+  content: `Every time someone talks to ChatGPT using voice, the audio flows through [LiveKit](/company/livekit)'s infrastructure. Every Grok voice agent call on Tesla and Starlink support lines runs on LiveKit. With 200,000+ developers, billions of annual calls, and a $1B valuation -- this 50-person startup has quietly become the nervous system of voice AI.
 
 But here is what makes LiveKit interesting for designers: their entire design team is 2-3 people, and they are hiring 5-6 more. This is a ground-floor design opportunity at a unicorn.
 
@@ -127,7 +125,7 @@ The 5-6 open design roles signal the company is ready to make that investment. T
 *Sources: [TechCrunch](https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/), [OpenSourceCEO](https://www.opensourceceo.com/p/russ-dsa-interview), [LiveKit Blog](https://blog.livekit.io/livekit-series-c/), [GetLatka](https://getlatka.com/companies/livekit.io), [LiveKit Careers](https://jobs.ashbyhq.com/livekit)*`,
   companyIds: ['livekit', 'perplexity', 'replit', 'vercel', 'openai', 'anthropic'],
   tags: ['voice-ai', 'infrastructure', 'developer-tools', 'design-team', 'deep-research'],
-  category: 'analysis',
+  category: 'deep-dive',
   featured: false,
   readingTimeMinutes: 8,
 };

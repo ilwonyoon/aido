@@ -715,7 +715,7 @@ Article Draft Ready for Review
 
 Title: "Inside Anthropic's 7x Growth: What 50+ Designers Are Building"
 Slug: inside-anthropic-growth-designers
-Category: analysis
+Category: deep-dive
 Reading time: 8 minutes
 Companies featured: Anthropic (+ OpenAI, Cursor as comparison)
 

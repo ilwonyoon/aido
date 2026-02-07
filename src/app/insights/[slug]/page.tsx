@@ -3,7 +3,18 @@ import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleBySlug, getRelatedArticles } from '@/data/articles';
 import { ArticleVisualizations } from './ArticleVisualizations';
 import { ArticleReveal } from './ArticleReveal';
+import { ViewCounter } from '@/components/article/ViewCounter';
 import Link from 'next/link';
+
+// Strip leading h1 from markdown content to avoid duplicating the page header title
+function stripLeadingH1(content: string): string {
+  return content.replace(/^#\s+[^\n]+\n*/, '');
+}
+
+// Format category for display (e.g., 'deep-dive' → 'Deep-dive')
+function formatCategory(category: string): string {
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
 
 export function generateStaticParams() {
   const articles = getAllArticles();
@@ -76,6 +87,7 @@ export default async function ArticlePage({
   }
 
   const relatedArticles = getRelatedArticles(article.slug, article.tags);
+  const cleanContent = stripLeadingH1(article.content);
 
   return (
     <ArticleReveal className="max-w-3xl mx-auto">
@@ -111,12 +123,11 @@ export default async function ArticlePage({
       />
 
       {/* Article Header */}
-      <header className="mb-8">
+      <header className="mb-16 pb-8 border-b border-[var(--border)]">
         {/* Category Badge */}
         <div className="flex items-center gap-2 mb-4">
           <span className="badge badge-accent">
-            {article.category.charAt(0).toUpperCase() +
-              article.category.slice(1)}
+            {formatCategory(article.category)}
           </span>
           {article.featured && (
             <span className="badge badge-success">Featured</span>
@@ -157,6 +168,8 @@ export default async function ArticlePage({
                 <span>{article.readingTimeMinutes} min read</span>
               </>
             )}
+            <span>•</span>
+            <ViewCounter slug={article.slug} increment />
           </div>
 
           {/* Tags */}
@@ -177,7 +190,7 @@ export default async function ArticlePage({
 
       {/* Article Content */}
       <div className="article-content mb-12">
-        <ArticleVisualizations slug={article.slug} content={article.content} />
+        <ArticleVisualizations slug={article.slug} content={cleanContent} />
       </div>
 
       {/* Related Articles */}
@@ -193,8 +206,7 @@ export default async function ArticlePage({
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="badge badge-accent text-xs">
-                    {related.category.charAt(0).toUpperCase() +
-                      related.category.slice(1)}
+                    {formatCategory(related.category)}
                   </span>
                 </div>
                 <h3 className="font-medium mb-1">{related.title}</h3>

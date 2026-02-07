@@ -225,7 +225,7 @@ export const [camelCaseSlug]: Article = {
   content: `[generated-markdown-with-links]`,
   companyIds: ['id1', 'id2', ...],
   tags: ['tag1', 'tag2', ...],
-  category: '[analysis|insights|trends|guides]',
+  category: '[analysis|deep-dive|insights|trends|guides]',
   featured: false,
   readingTimeMinutes: [calculated],
 };
@@ -489,9 +489,18 @@ Excerpt: 6 of the 10 fastest-growing AI companies build for developers. Analysis
 
 Map topic to category:
 - "Top N", "fastest", "best", rankings → `analysis`
+- Company-specific deep research, "[Company] deep dive" → `deep-dive`
 - "trend", "why", "pattern" → `insights`
 - "how to", "guide", "evaluate" → `guides`
 - Other → `trends`
+
+### Content Rules (CRITICAL)
+
+- **Never start markdown content with `# Title`** — the page header already renders the title
+- Content should start directly with the first paragraph or h2 section
+- `stripLeadingH1()` exists as a safety net but do NOT rely on it
+- All articles use the same full-width card layout on the list page (no grid)
+- Articles are sorted by publishedDate descending (newest first)
 
 ---
 
