@@ -1,0 +1,51 @@
+[2026-02-08 00:40:36] === Request Watcher STARTED (polling every 30s) ===
+[2026-02-08 00:40:38] Processing: Jack and Jill (IMRZzIZkdN7kKxyA5mXw)
+[2026-02-08 00:40:41] Switching to company-researching...
+[2026-02-08 00:41:44] === Request Watcher STARTED (polling every 30s) ===
+[2026-02-08 00:41:47] Processing: Jack and Jill (IMRZzIZkdN7kKxyA5mXw)
+[2026-02-08 00:41:49] Switching to company-researching...
+[2026-02-08 00:41:50] Running company-researcher for Jack and Jill...
+./scripts/watch-requests.sh: line 56: timeout: command not found
+[2026-02-08 00:41:50] ERROR: Claude exited with code 127.
+[2026-02-08 00:41:52] Request IMRZzIZkdN7kKxyA5mXw failed: file not generated.
+[2026-02-08 00:42:50] === Request Watcher STARTED (polling every 30s) ===
+[2026-02-08 00:42:52] Processing: Jack and Jill (IMRZzIZkdN7kKxyA5mXw)
+[2026-02-08 00:42:54] Running company-researcher for Jack and Jill...
+Research complete. Here's the summary:
+
+---
+
+# Jack & Jill AI Research Report
+
+## Summary
+- **AI Level**: A (AI-Native) — AI IS the product
+- **Stage**: Seed ($20M, Oct 2025)
+- **Lead Investor**: Creandum (early Spotify/Klarna backer)
+- **Design Roles Open**: 1 (Founding Product Designer, £180K+)
+- **Data Completeness**: ~85%
+
+## Key Findings
+
+**Product**: Two-sided AI recruitment platform. Jack (voice AI career agent) talks to candidates to understand their goals/skills, while Jill (AI recruiter) works with companies to find perfect matches. 10% placement fee vs 20% traditional agencies.
+
+**Founders**:
+- **Matthew Wilson** (CEO): Oxford Physics, scaled Omnipresent to $600M valuation in 3 years
+- **Saaras Mehan** (CTO): Cambridge CS, YC-backed founder of Kular.ai, former England Chess Team member, ex-Microsoft/Goldman Sachs
+
+**Traction**: 49K+ candidates spoken to in first 6 months, hundreds of companies using Jill (incl. TrueLayer)
+
+**Investors**: Creandum (lead), Dig Ventures, Entrepreneur First, Ada Ventures + 75 angels from Anthropic, Lovable, ElevenLabs, Nico Rosberg
+
+**Design Opportunity**: Founding designer hire (first ever). Voice-first AI UX, two-sided marketplace design, multimodal interaction patterns. Greenfield 0→1 with £180K+ comp.
+
+**Concerns**: London-based, very early stage (9 months old), Trustpilot 3.9/5 with some quality inconsistency reports, AI recruitment faces user trust challenges (78% prefer human interaction)
+
+## Files Created
+- `src/data/companies/jack-and-jill.ts` — Full Company object
+- `public/og-images/jack-and-jill-og.webp` — OG image
+- Updated `src/data/companies/index.ts` — Added to companies array
+
+TypeScript compilation passes. No git commands run per instructions.
+[2026-02-08 00:47:15] Research completed for Jack and Jill.
+[2026-02-08 00:47:15] Company file created: /Users/ilwonyoon/Documents/AIDO/aido/src/data/companies/jack-and-jill.ts
+[2026-02-08 00:47:18] Request IMRZzIZkdN7kKxyA5mXw completed.
