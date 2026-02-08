@@ -54,22 +54,53 @@ update_log_file() {
 }
 
 # ============================================================
-# Step 1: Pick the next company
+# Pipeline START
 # ============================================================
 log "=== Daily Research Pipeline START ==="
-log "Step 1: Picking next company..."
 
 cd "${PROJECT_DIR}"
-PICK_RESULT=$($NPX tsx scripts/pick-next-research.ts)
+IS_USER_REQUEST=false
+REQUEST_ID=""
 
-if [ "${PICK_RESULT}" = "NONE" ]; then
-  log "All companies completed. Nothing to do."
-  exit 0
+# ============================================================
+# Step 0: Check for pending user-submitted company requests
+# ============================================================
+log "Step 0: Checking for pending company requests..."
+
+REQUEST_RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
+
+if [ "${REQUEST_RESULT}" != "NO_PENDING_REQUESTS" ]; then
+  IFS='|' read -r REQUEST_ID REQUEST_COMPANY REQUEST_WEBSITE <<< "${REQUEST_RESULT}"
+  log "Found user request: ${REQUEST_COMPANY} (ID: ${REQUEST_ID})"
+
+  # Mark as researching
+  $NPX tsx scripts/process-company-requests.ts --start "${REQUEST_ID}" 2>/dev/null || true
+
+  COMPANY_NAME="${REQUEST_COMPANY}"
+  COMPANY_ID=$(echo "${REQUEST_COMPANY}" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+  TIER="request"
+  IS_USER_REQUEST=true
+
+  log "Processing user-requested company: ${COMPANY_NAME} (${COMPANY_ID})"
+else
+  log "No pending user requests."
+
+  # ============================================================
+  # Step 1: Pick the next company from tier list
+  # ============================================================
+  log "Step 1: Picking next company..."
+
+  PICK_RESULT=$($NPX tsx scripts/pick-next-research.ts)
+
+  if [ "${PICK_RESULT}" = "NONE" ]; then
+    log "All companies completed. Nothing to do."
+    exit 0
+  fi
+
+  # Parse: "CompanyName|company-id|tier"
+  IFS='|' read -r COMPANY_NAME COMPANY_ID TIER <<< "${PICK_RESULT}"
+  log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
 fi
-
-# Parse: "CompanyName|company-id|tier"
-IFS='|' read -r COMPANY_NAME COMPANY_ID TIER <<< "${PICK_RESULT}"
-log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
 
 START_TIME=$(date +%s)
 
@@ -179,6 +210,19 @@ update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "success" "${DURATIO
 ${GIT} add scripts/daily-research-log.json
 ${GIT} commit -m "${DATE_SHORT} | log: ${COMPANY_NAME} research complete (${DURATION}s)"
 ${GIT} push origin "${BRANCH}"
+
+# ============================================================
+# Step 8: Update request status (if user-requested)
+# ============================================================
+if [ "${IS_USER_REQUEST}" = "true" ]; then
+  if [ -f "${RESEARCH_FILE}" ]; then
+    $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
+    log "Request ${REQUEST_ID} marked as completed."
+  else
+    $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Research file not generated" 2>/dev/null || true
+    log "Request ${REQUEST_ID} marked as failed."
+  fi
+fi
 
 log "=== Daily Research Pipeline COMPLETE ==="
 log "Company: ${COMPANY_NAME} | Duration: ${DURATION}s | Status: success"
