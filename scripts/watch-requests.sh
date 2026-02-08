@@ -4,18 +4,16 @@
 # Company Request Watcher
 # Polls Firestore every 30s for pending requests.
 # When found, runs company-researcher via Claude CLI.
+# Works on main branch (auto-merge pipeline handles the rest).
 # ============================================================
 
-NODE="/usr/local/bin/node"
 NPX="/usr/local/bin/npx"
 GIT="/usr/bin/git"
-GH="/opt/homebrew/bin/gh"
 CLAUDE="/Users/ilwonyoon/.local/bin/claude"
 
 PROJECT_DIR="/Users/ilwonyoon/Documents/AIDO/aido"
 OUTPUT_LOG="${PROJECT_DIR}/scripts/watch-requests.log"
-BRANCH="company-researching"
-POLL_INTERVAL=30
+POLL_INTERVAL=21600  # 6 hours (4 times per day)
 
 cd "${PROJECT_DIR}"
 
@@ -37,31 +35,24 @@ process_request() {
   COMPANY_ID=$(echo "${COMPANY_NAME}" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
   DATE_SHORT=$(date '+%d/%m/%y - %H:%M:%S')
 
-  # Switch to company-researching branch
-  log "Switching to ${BRANCH}..."
-  ${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
-  ${GIT} checkout "${BRANCH}" 2>&1 || true
-  ${GIT} pull origin "${BRANCH}" --rebase 2>/dev/null || true
-
   # Build research prompt
-  RESEARCH_PROMPT="/company-researcher ${COMPANY_NAME}
+  local RESEARCH_PROMPT="/company-researcher ${COMPANY_NAME}
 
 IMPORTANT INSTRUCTIONS:
 - Do NOT run any git commands (no git add, git commit, git push). The watcher script handles git.
-- Complete the full research pipeline end-to-end without stopping.
-- If a website is provided, use it: ${WEBSITE}"
+- Complete the full research pipeline end-to-end without stopping."
 
-  # Run Claude company-researcher (30 min timeout)
+  if [ -n "${WEBSITE}" ]; then
+    RESEARCH_PROMPT="${RESEARCH_PROMPT}
+- Company website: ${WEBSITE}"
+  fi
+
+  # Run Claude company-researcher (no timeout on macOS)
   log "Running company-researcher for ${COMPANY_NAME}..."
-  if timeout 1800 ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1; then
+  if ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1; then
     log "Research completed for ${COMPANY_NAME}."
   else
-    CLAUDE_EXIT=$?
-    if [ ${CLAUDE_EXIT} -eq 124 ]; then
-      log "ERROR: Timed out after 30 minutes."
-    else
-      log "ERROR: Claude exited with code ${CLAUDE_EXIT}."
-    fi
+    log "WARNING: Claude exited with code $?."
   fi
 
   # Check if company file was created
@@ -70,26 +61,13 @@ IMPORTANT INSTRUCTIONS:
   if [ -f "${COMPANY_FILE}" ]; then
     log "Company file created: ${COMPANY_FILE}"
 
-    # Commit and push
+    # Commit and push on main
     ${GIT} add src/data/
     ${GIT} commit -m "${DATE_SHORT} | company-researcher: ${COMPANY_NAME}
 
 Auto-researched via watch-requests pipeline.
-Request ID: ${REQUEST_ID}"
-    ${GIT} push origin "${BRANCH}"
-
-    # Create or update PR
-    EXISTING_PR=$(${GH} pr list --head "${BRANCH}" --state open --json number --jq '.[0].number' 2>/dev/null || echo "")
-    if [ -z "${EXISTING_PR}" ]; then
-      ${GH} pr create \
-        --base main \
-        --head "${BRANCH}" \
-        --title "Company Research: ${COMPANY_NAME}" \
-        --body "Auto-researched **${COMPANY_NAME}** via request watcher pipeline."
-      log "PR created."
-    else
-      log "PR #${EXISTING_PR} updated."
-    fi
+Request ID: ${REQUEST_ID}" || true
+    ${GIT} push origin main || true
 
     # Mark as completed
     $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
@@ -99,9 +77,6 @@ Request ID: ${REQUEST_ID}"
     $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Company file not generated" 2>/dev/null || true
     log "Request ${REQUEST_ID} failed: file not generated."
   fi
-
-  # Switch back to main
-  ${GIT} checkout main 2>/dev/null || true
 }
 
 # ============================================================
