@@ -132,10 +132,10 @@ export default function RequestsPage() {
               Website URL <span className="text-[var(--muted)] font-normal">(optional)</span>
             </label>
             <input
-              type="url"
+              type="text"
               value={formData.websiteUrl}
               onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
-              placeholder="https://anthropic.com"
+              placeholder="https://anthropic.com (optional)"
               className="w-full bg-[var(--background)] border border-[var(--border)] rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-[var(--accent)]"
             />
           </div>
