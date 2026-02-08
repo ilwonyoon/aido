@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # ============================================================
 # Company Request Watcher
@@ -41,7 +40,7 @@ process_request() {
   # Switch to company-researching branch
   log "Switching to ${BRANCH}..."
   ${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
-  ${GIT} checkout "${BRANCH}" 2>/dev/null || ${GIT} checkout -b "${BRANCH}"
+  ${GIT} checkout "${BRANCH}" 2>&1 || true
   ${GIT} pull origin "${BRANCH}" --rebase 2>/dev/null || true
 
   # Build research prompt
