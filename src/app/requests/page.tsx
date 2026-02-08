@@ -73,15 +73,18 @@ export default function RequestsPage() {
     setSubmitting(true);
     setMessage(null);
 
+    const name = formData.companyName;
+
     try {
       await createCompanyRequest(
-        formData.companyName,
+        name,
         formData.websiteUrl || undefined,
         user.email
       );
       setFormData({ companyName: '', websiteUrl: '' });
-      setMessage({ type: 'success', text: `"${formData.companyName}" added to research queue.` });
+      setMessage({ type: 'success', text: `"${name}" added to research queue.` });
       await loadRequests();
+      setTimeout(() => setMessage(null), 3000);
     } catch (error) {
       console.error('Failed to submit request:', error);
       setMessage({ type: 'error', text: 'Failed to submit request.' });
