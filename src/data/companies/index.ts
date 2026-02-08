@@ -435,6 +435,7 @@ import { cline } from './cline';
 import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
+import { jackAndJill } from './jack-and-jill';
 
 export const companies: Company[] = [
   anthropic,
@@ -835,6 +836,7 @@ export const companies: Company[] = [
   nowadays,
   alix,
   stytch,
+  jackAndJill,
   h2oAi,
   benchsci,
   voiceflow,
