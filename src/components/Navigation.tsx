@@ -93,7 +93,7 @@ export function Navigation() {
             Insights
           </Link>
 
-          {/* Analytics - Admin only */}
+          {/* Admin only */}
           {isAdmin && (
             <Link
               href="/analytics"
@@ -104,6 +104,18 @@ export function Navigation() {
               }
             >
               Analytics
+            </Link>
+          )}
+          {isAdmin && (
+            <Link
+              href="/requests"
+              className={
+                isActive('/requests')
+                  ? 'text-[var(--foreground)] font-medium'
+                  : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+              }
+            >
+              Requests
             </Link>
           )}
 
@@ -184,6 +196,19 @@ export function Navigation() {
                   }`}
                 >
                   Analytics
+                </Link>
+              )}
+              {isAdmin && (
+                <Link
+                  href="/requests"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block py-3 px-4 rounded-lg ${
+                    isActive('/requests')
+                      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                  }`}
+                >
+                  Requests
                 </Link>
               )}
             </nav>

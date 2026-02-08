@@ -39,5 +39,12 @@ service cloud.firestore {
       allow read: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
       allow write: if true;
     }
+
+    // Company research requests - admin only
+    match /companyRequests/{requestId} {
+      allow read: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
+      allow create: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
+      allow update: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
+    }
   }
 }
