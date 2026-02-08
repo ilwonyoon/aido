@@ -110,7 +110,11 @@ START_TIME=$(date +%s)
 log "Step 2: Switching to ${BRANCH} branch..."
 
 ${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
-${GIT} checkout "${BRANCH}" 2>/dev/null || ${GIT} checkout -b "${BRANCH}"
+if ${GIT} show-ref --verify --quiet "refs/heads/${BRANCH}"; then
+  ${GIT} checkout "${BRANCH}"
+else
+  ${GIT} checkout -b "${BRANCH}" "origin/${BRANCH}" 2>/dev/null || ${GIT} checkout -b "${BRANCH}"
+fi
 ${GIT} pull origin "${BRANCH}" --rebase 2>/dev/null || true
 
 # ============================================================
