@@ -48,11 +48,27 @@ function initializeFirebase(): admin.firestore.Firestore {
 
 async function getNextPending(): Promise<void> {
   const db = initializeFirebase();
-  const snapshot = await db.collection(COLLECTION)
-    .where('status', '==', 'pending')
-    .orderBy('createdAt', 'asc')
-    .limit(1)
-    .get();
+
+  let snapshot;
+  try {
+    // Try composite index query first
+    snapshot = await db.collection(COLLECTION)
+      .where('status', '==', 'pending')
+      .orderBy('createdAt', 'asc')
+      .limit(1)
+      .get();
+  } catch {
+    // Fallback: fetch all and filter client-side (index still building)
+    const allDocs = await db.collection(COLLECTION).get();
+    const pending = allDocs.docs
+      .filter(d => d.data().status === 'pending')
+      .sort((a, b) => {
+        const aTime = a.data().createdAt?.toMillis?.() ?? 0;
+        const bTime = b.data().createdAt?.toMillis?.() ?? 0;
+        return aTime - bTime;
+      });
+    snapshot = { empty: pending.length === 0, docs: pending.slice(0, 1) };
+  }
 
   if (snapshot.empty) {
     process.stdout.write('NO_PENDING_REQUESTS\n');
