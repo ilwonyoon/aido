@@ -95,6 +95,24 @@ import { finnAi } from './finn-ai';
 import { meya } from './meya';
 import { openOceanRobotics } from './open-ocean-robotics';
 import { pitstop } from './pitstop';
+import { botpress } from './botpress';
+import { aiShift } from './ai-shift';
+import { careforceAi } from './careforce-ai';
+import { cekura } from './cekura';
+import { consioAi } from './consio-ai';
+import { curans } from './curans';
+import { genspark } from './genspark';
+import { holomd } from './holomd';
+import { insightHealthAi } from './insight-health-ai';
+import { lomanAi } from './loman-ai';
+import { mecanizou } from './mecanizou';
+import { neruHealth } from './neru-health';
+import { ohmd } from './ohmd';
+import { phonely } from './phonely';
+import { r2 } from './r2';
+import { strada } from './strada';
+import { subbyx } from './subbyx';
+import { vozy } from './vozy';
 import { harmonic } from './harmonic';
 import { ambienceHealthcare } from './ambience-healthcare';
 import { abridge } from './abridge';
@@ -901,6 +919,28 @@ export const companies: Company[] = [
   sharpestminds,
   finnAi,
   openOceanRobotics,
+  attabotics,
+  canvassAi,
+  meya,
+  pitstop,
+  botpress,
+  aiShift,
+  careforceAi,
+  cekura,
+  consioAi,
+  curans,
+  genspark,
+  holomd,
+  insightHealthAi,
+  lomanAi,
+  mecanizou,
+  neruHealth,
+  ohmd,
+  phonely,
+  r2,
+  strada,
+  subbyx,
+  vozy,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
