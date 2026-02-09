@@ -109,6 +109,7 @@ START_TIME=$(date +%s)
 # ============================================================
 log "Step 2: Switching to ${BRANCH} branch..."
 
+${GIT} stash --include-untracked 2>/dev/null || true
 ${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
 if ${GIT} show-ref --verify --quiet "refs/heads/${BRANCH}"; then
   ${GIT} checkout "${BRANCH}"
