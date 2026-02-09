@@ -26,3 +26,5 @@ export const articles: Article[] = [
 ];
 
 export { getArticleBySlug, getAllArticles, getFeaturedArticles, getArticlesByCategory, getArticlesByTag, calculateReadingTime, getRelatedArticles } from './utils';
+export type { ArticleCategory } from './types';
+export { ARTICLE_CATEGORY_LABELS } from './types';

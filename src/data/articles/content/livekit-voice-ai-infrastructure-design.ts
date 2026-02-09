@@ -125,7 +125,7 @@ The 5-6 open design roles signal the company is ready to make that investment. T
 *Sources: [TechCrunch](https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/), [OpenSourceCEO](https://www.opensourceceo.com/p/russ-dsa-interview), [LiveKit Blog](https://blog.livekit.io/livekit-series-c/), [GetLatka](https://getlatka.com/companies/livekit.io), [LiveKit Careers](https://jobs.ashbyhq.com/livekit)*`,
   companyIds: ['livekit', 'perplexity', 'replit', 'vercel', 'openai', 'anthropic'],
   tags: ['voice-ai', 'infrastructure', 'developer-tools', 'design-team', 'deep-research'],
-  category: 'deep-dive',
+  category: 'company',
   featured: false,
   readingTimeMinutes: 8,
 };

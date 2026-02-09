@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllArticles, getArticleBySlug, getRelatedArticles } from '@/data/articles';
+import { getAllArticles, getArticleBySlug, getRelatedArticles, ARTICLE_CATEGORY_LABELS } from '@/data/articles';
 import { ArticleVisualizations } from './ArticleVisualizations';
 import { ArticleReveal } from './ArticleReveal';
 import { ViewCounter } from '@/components/article/ViewCounter';
@@ -11,10 +11,6 @@ function stripLeadingH1(content: string): string {
   return content.replace(/^#\s+[^\n]+\n*/, '');
 }
 
-// Format category for display (e.g., 'deep-dive' → 'Deep-dive')
-function formatCategory(category: string): string {
-  return category.charAt(0).toUpperCase() + category.slice(1);
-}
 
 export function generateStaticParams() {
   const articles = getAllArticles();
@@ -127,7 +123,7 @@ export default async function ArticlePage({
         {/* Category Badge */}
         <div className="flex items-center gap-2 mb-4">
           <span className="badge badge-accent">
-            {formatCategory(article.category)}
+            {ARTICLE_CATEGORY_LABELS[article.category]}
           </span>
           {article.featured && (
             <span className="badge badge-success">Featured</span>
@@ -206,7 +202,7 @@ export default async function ArticlePage({
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="badge badge-accent text-xs">
-                    {formatCategory(related.category)}
+                    {ARTICLE_CATEGORY_LABELS[related.category]}
                   </span>
                 </div>
                 <h3 className="font-medium mb-1">{related.title}</h3>

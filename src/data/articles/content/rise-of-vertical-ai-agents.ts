@@ -178,6 +178,6 @@ The $52.62 billion question is not whether vertical AI agents will dominate -- t
     'lovable',
   ],
   tags: ['ai-agents', 'vertical-ai', 'market-analysis', 'startup-funding'],
-  category: 'trends' as const,
+  category: 'perspectives' as const,
   featured: true,
 };

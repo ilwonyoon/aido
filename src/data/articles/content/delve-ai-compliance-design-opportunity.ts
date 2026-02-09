@@ -138,7 +138,7 @@ The two open roles signal the company is ready to invest in design. The question
 *Sources: [TechCrunch](https://techcrunch.com/2025/07/22/21-year-old-mit-dropouts-raise-32m-at-300m-valuation-led-by-insight/), [Delve Series A](https://delve.co/blog/series-a), [Insight Partners](https://www.insightpartners.com/ideas/delve-raises-32m-series-a-to-build-ai-agents-for-compliance/), [GetLatka](https://getlatka.com/companies/delve.co), [Y Combinator](https://www.ycombinator.com/companies/delve)*`,
   companyIds: ['delve', 'livekit', 'anthropic', 'openai'],
   tags: ['compliance', 'ai-agents', 'founding-designer', 'design-team', 'deep-research'],
-  category: 'deep-dive',
+  category: 'company',
   featured: false,
   readingTimeMinutes: 9,
 };

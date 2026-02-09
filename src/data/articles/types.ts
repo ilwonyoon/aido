@@ -27,7 +27,7 @@ export interface Article {
 
   // Categorization
   tags: string[];
-  category: 'analysis' | 'deep-dive' | 'insights' | 'trends' | 'guides';
+  category: 'company' | 'analysis' | 'perspectives' | 'guides';
 
   // Featured status
   featured?: boolean;
@@ -38,3 +38,12 @@ export interface Article {
   // View count (tracked via Firestore, display only)
   views?: number;
 }
+
+export type ArticleCategory = Article['category'];
+
+export const ARTICLE_CATEGORY_LABELS: Record<ArticleCategory, string> = {
+  company: 'Company',
+  analysis: 'Analysis',
+  perspectives: 'Perspectives',
+  guides: 'Guides',
+} as const;
