@@ -129,7 +129,7 @@ The foundation is being poured right now. The question is not whether AI agents 
 
 *Sources: [TechCrunch](https://techcrunch.com/2025/12/16/anthropic-google-and-openai-partner-to-form-a-new-post-under-the-linux-foundation/), [The Information](https://www.theinformation.com/articles/langchain-is-in-talks-for-new-funding-at-roughly-10-billion-valuation), [Mem0 Blog](https://mem0.ai/blog/mem0-aws-partnership), [Crunchbase](https://www.crunchbase.com/organization/arize-ai), [a]16z](https://a16z.com/announcement/investing-in-letta/), [Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/a2a-a-new-era-of-agent-interoperability), [Linux Foundation](https://www.linuxfoundation.org/press/linux-foundation-launches-agentic-ai-initiative)*`,
   tags: ['ai-infrastructure', 'ai-agents', 'mcp', 'developer-tools', 'protocols', 'memory', 'orchestration'],
-  category: 'deep-dive' as const,
+  category: 'analysis' as const,
   featured: true,
   readingTimeMinutes: 8,
 };

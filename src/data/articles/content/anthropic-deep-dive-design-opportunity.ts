@@ -129,7 +129,7 @@ For designers who want to help define how humanity interacts with intelligence i
 *Sources: [Bloomberg](https://www.bloomberg.com/news/articles/2026-01-21/anthropic-s-revenue-run-rate-tops-9-billion-as-vcs-pile-in), [TechCrunch](https://techcrunch.com/2025/07/31/enterprises-prefer-anthropics-ai-models-over-anyone-elses-including-openais/), [Lenny's Newsletter](https://www.lennysnewsletter.com/p/anthropics-cpo-heres-what-comes-next), [CNBC](https://www.cnbc.com/2026/01/07/anthropic-funding-term-sheet-valuation.html), [SignalFire](https://www.signalfire.com/blog/anthropic-talent-retention), [Kinfolk](https://www.kinfolk.com/stories/the-artisans-of-ai/), [Anthropic Careers](https://www.anthropic.com/careers)*`,
   companyIds: ['anthropic', 'openai', 'figma', 'retool', 'meta'],
   tags: ['ai-safety', 'design-team', 'enterprise-ai', 'deep-research', 'character-design', 'agentic-ux'],
-  category: 'deep-dive',
+  category: 'company',
   featured: true,
   readingTimeMinutes: 10,
 };

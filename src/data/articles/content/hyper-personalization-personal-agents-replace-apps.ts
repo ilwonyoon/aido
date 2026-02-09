@@ -125,7 +125,7 @@ The age of the personal agent is not coming. For dating, finance, and a growing 
 
 *This analysis is part of AIDO's ongoing research into AI-native product trends and their implications for product design opportunities.*`,
   tags: ['personal-agents', 'hyper-personalization', 'ai-trends', 'future-of-work'],
-  category: 'insights' as const,
+  category: 'perspectives' as const,
   featured: true,
   readingTimeMinutes: 8,
 };
