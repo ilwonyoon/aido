@@ -7,8 +7,10 @@ import { delveAiComplianceDesignOpportunity } from './content/delve-ai-complianc
 import { anthropicDeepDiveDesignOpportunity } from './content/anthropic-deep-dive-design-opportunity';
 import { foundationStackForAiAgents } from './content/foundation-stack-for-ai-agents';
 import { riseOfVerticalAiAgents } from './content/rise-of-vertical-ai-agents';
+import { hyperPersonalizationPersonalAgents } from './content/hyper-personalization-personal-agents-replace-apps';
 
 export const articles: Article[] = [
+  hyperPersonalizationPersonalAgents,
   riseOfVerticalAiAgents,
   foundationStackForAiAgents,
   anthropicDeepDiveDesignOpportunity,
