@@ -136,7 +136,6 @@ export const thinkingMachines: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Thinking Machines', url: 'https://startups.gallery/companies/thinking-machines' },
-    { title: 'Thinking Machines on startups.gallery', url: 'https://startups.gallery/companies/thinking-machines' },
+    { title: 'Source', url: 'https://startups.gallery/companies/thinking-machines' }
   ],
 };

@@ -220,11 +220,11 @@ export const exa: Company = {
   // Meta
   lastUpdated: '2026-01-27T15:25:00',
   sources: [
-    { title: 'Exa website', url: 'https://exa.ai/' },
-    { title: 'Exa Series B (FinSMEs)', url: 'https://www.finsmes.com/2025/09/exa-raises-85m-in-series-b-funding.html' },
-    { title: 'Exa blog (Series B)', url: 'https://exa.ai/blog/series-b' },
-    { title: 'Exa careers', url: 'https://exa.ai/careers' },
-    { title: 'Exa Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35' },
-    { title: 'Exa on startups.gallery', url: 'https://startups.gallery/companies/exa' },
+    { title: 'Source', url: 'https://exa.ai/' },
+    { title: 'Source', url: 'https://www.finsmes.com/2025/09/exa-raises-85m-in-series-b-funding.html' },
+    { title: 'Source', url: 'https://exa.ai/blog/series-b' },
+    { title: 'Source', url: 'https://exa.ai/careers' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35' },
+    { title: 'Source', url: 'https://startups.gallery/companies/exa' }
   ],
 };

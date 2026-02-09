@@ -160,7 +160,7 @@ export const ando: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Ando', url: 'https://ando.so' },
-    { title: 'Ando on startups.gallery', url: 'https://startups.gallery/companies/ando' },
+    { title: 'Source', url: 'https://ando.so' },
+    { title: 'Source', url: 'https://startups.gallery/companies/ando' }
   ],
 };

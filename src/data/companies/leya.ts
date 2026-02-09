@@ -223,13 +223,7 @@ export const leya: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'Leya Series A Announcement',
-        url: 'https://techcrunch.com/2024/07/17/leya-raises-25m-series-a/',
-      },
-      {
-        title: 'YC Company Page',
-        url: 'https://www.ycombinator.com/companies/legora',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2024/07/17/leya-raises-25m-series-a/' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/legora' }
+  ],
   };

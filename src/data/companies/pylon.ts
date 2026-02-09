@@ -100,7 +100,7 @@ export const pylon: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Pylon', url: 'https://usepylon.com' },
-    { title: 'Pylon on startups.gallery', url: 'https://startups.gallery/companies/pylon' },
+    { title: 'Source', url: 'https://usepylon.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/pylon' }
   ],
 };

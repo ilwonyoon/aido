@@ -169,8 +169,8 @@ export const fastino: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Fastino', url: 'https://fastino.ai' },
-    { title: 'Fastino funding (Fastino blog)', url: 'https://fastino.ai/blog/seed-round' },
-    { title: 'Fastino on startups.gallery', url: 'https://startups.gallery/companies/fastino' },
+    { title: 'Source', url: 'https://fastino.ai' },
+    { title: 'Source', url: 'https://fastino.ai/blog/seed-round' },
+    { title: 'Source', url: 'https://startups.gallery/companies/fastino' }
   ],
 };

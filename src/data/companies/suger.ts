@@ -203,7 +203,7 @@ export const suger: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Suger website', url: 'https://www.suger.io/' },
-    { title: 'Suger on startups.gallery', url: 'https://startups.gallery/companies/suger' },
+    { title: 'Source', url: 'https://www.suger.io/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/suger' }
   ],
 };

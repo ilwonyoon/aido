@@ -121,7 +121,7 @@ export const dimensionLabs: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Dimension Labs', url: 'https://dimension.ai' },
-    { title: 'Dimension Labs on startups.gallery', url: 'https://startups.gallery/companies/dimension-labs' },
+    { title: 'Source', url: 'https://dimension.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/dimension-labs' }
   ],
 };

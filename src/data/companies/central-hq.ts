@@ -131,7 +131,7 @@ export const centralHq: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Central', url: 'https://centralhq.com' },
-    { title: 'Central on startups.gallery', url: 'https://startups.gallery/companies/central-hq' },
+    { title: 'Source', url: 'https://centralhq.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/central-hq' }
   ],
 };

@@ -200,8 +200,8 @@ export const anythingAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Anything website', url: 'https://createanything.com/' },
-    { title: 'Anything careers', url: 'https://jobs.ashbyhq.com/anything' },
-    { title: 'Anything on startups.gallery', url: 'https://startups.gallery/companies/anything-ai' },
+    { title: 'Source', url: 'https://createanything.com/' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/anything' },
+    { title: 'Source', url: 'https://startups.gallery/companies/anything-ai' }
   ],
 };

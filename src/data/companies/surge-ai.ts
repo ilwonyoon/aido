@@ -190,12 +190,12 @@ export const surgeAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T12:30:00',
   sources: [
-    { title: 'Surge AI website', url: 'https://surgehq.ai/' },
-    { title: 'Surge AI About', url: 'https://surgehq.ai/about' },
-    { title: 'Surge AI Careers', url: 'https://surgehq.ai/careers' },
-    { title: 'Surge AI on startups.gallery', url: 'https://startups.gallery/companies/surge-ai' },
-    { title: 'Scale AI documentation', url: 'https://scale.com/docs' },
-    { title: 'Labelbox platform', url: 'https://labelbox.com/product/platform/' },
-    { title: 'Appen data annotation', url: 'https://www.appen.com/solutions/data-annotation/' },
+    { title: 'Source', url: 'https://surgehq.ai/' },
+    { title: 'Source', url: 'https://surgehq.ai/about' },
+    { title: 'Source', url: 'https://surgehq.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/surge-ai' },
+    { title: 'Source', url: 'https://scale.com/docs' },
+    { title: 'Source', url: 'https://labelbox.com/product/platform/' },
+    { title: 'Source', url: 'https://www.appen.com/solutions/data-annotation/' }
   ],
 };

@@ -203,9 +203,9 @@ export const odyssey: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Odyssey homepage', url: 'https://odyssey.ml/' },
-    { title: 'Odyssey funding announcement', url: 'https://odyssey.ml/learning-from-our-world' },
-    { title: 'Odyssey careers page', url: 'https://odyssey.ml/careers' },
-    { title: 'Odyssey on startups.gallery', url: 'https://startups.gallery/companies/odyssey' },
+    { title: 'Source', url: 'https://odyssey.ml/' },
+    { title: 'Source', url: 'https://odyssey.ml/learning-from-our-world' },
+    { title: 'Source', url: 'https://odyssey.ml/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/odyssey' }
   ],
 };

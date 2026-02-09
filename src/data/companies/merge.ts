@@ -99,7 +99,7 @@ export const merge: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Merge', url: 'https://www.merge.dev' },
-    { title: 'Merge on startups.gallery', url: 'https://startups.gallery/companies/merge' },
+    { title: 'Source', url: 'https://www.merge.dev' },
+    { title: 'Source', url: 'https://startups.gallery/companies/merge' }
   ],
 };

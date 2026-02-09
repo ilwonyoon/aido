@@ -169,9 +169,9 @@ export const gigaml: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Giga', url: 'https://www.ycombinator.com/companies/giga' },
-    { title: 'GigaML', url: 'https://giga.ai' },
-    { title: 'GigaML funding (Globe Newswire)', url: 'https://www.globenewswire.com/news-release/2025/11/06/3025056/0/en/GigaML-Raises-61-Million-to-Build-the-Next-Generation-of-Voice-AI-Agents.html' },
-    { title: 'GigaML on startups.gallery', url: 'https://startups.gallery/companies/gigaml' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/giga' },
+    { title: 'Source', url: 'https://giga.ai' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/11/06/3025056/0/en/GigaML-Raises-61-Million-to-Build-the-Next-Generation-of-Voice-AI-Agents.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/gigaml' }
   ],
 };

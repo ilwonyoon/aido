@@ -98,7 +98,7 @@ export const medallion: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Medallion', url: 'https://www.medallion.co' },
-    { title: 'Medallion on startups.gallery', url: 'https://startups.gallery/companies/medallion' },
+    { title: 'Source', url: 'https://www.medallion.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/medallion' }
   ],
 };

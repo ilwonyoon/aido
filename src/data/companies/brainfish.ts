@@ -169,7 +169,7 @@ export const brainfish: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Brainfish pre-Series A (Business Wire)', url: 'https://www.businesswire.com/news/home/20250729969463/en/Brainfish-Raises-%246.4M-Pre-Series-A-to-Reinvent-Customer-Support-with-AI-and-Computer-Vision' },
-    { title: 'Brainfish on startups.gallery', url: 'https://startups.gallery/companies/brainfish' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20250729969463/en/Brainfish-Raises-%246.4M-Pre-Series-A-to-Reinvent-Customer-Support-with-AI-and-Computer-Vision' },
+    { title: 'Source', url: 'https://startups.gallery/companies/brainfish' }
   ],
 };

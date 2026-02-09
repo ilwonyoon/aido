@@ -191,7 +191,7 @@ export const lightpage: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Lightpage website', url: 'https://lightpage.com/' },
-    { title: 'Lightpage on startups.gallery', url: 'https://startups.gallery/companies/lightpage' },
+    { title: 'Source', url: 'https://lightpage.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/lightpage' }
   ],
 };

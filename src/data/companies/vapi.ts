@@ -203,7 +203,7 @@ export const vapi: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Vapi Series A (Business Wire)', url: 'https://www.businesswire.com/news/home/20251112937314/en/Vapi-Raises-%2420M-Series-A-to-Scale-Voice-AI-Platform' },
-    { title: 'Vapi YC jobs page', url: 'https://www.ycombinator.com/jobs/role/7d1b4200-80e4-4934-9c8f-cd208cc677fa' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20251112937314/en/Vapi-Raises-%2420M-Series-A-to-Scale-Voice-AI-Platform' },
+    { title: 'Source', url: 'https://www.ycombinator.com/jobs/role/7d1b4200-80e4-4934-9c8f-cd208cc677fa' }
   ],
 };

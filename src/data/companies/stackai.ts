@@ -126,7 +126,7 @@ export const stackai: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'StackAI', url: 'https://stackai.com' },
-    { title: 'StackAI on startups.gallery', url: 'https://startups.gallery/companies/stackai' },
+    { title: 'Source', url: 'https://stackai.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/stackai' }
   ],
 };

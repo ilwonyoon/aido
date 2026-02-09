@@ -204,13 +204,13 @@ export const blossom: Company = {
     // Meta
     lastUpdated: '2026-01-26T23:55:00',
     sources: [
-      { title: 'Blossom Health website', url: 'https://www.joinblossomhealth.com' },
-      { title: 'Blossom Health LinkedIn', url: 'https://www.linkedin.com/company/join-blossom-health/' },
-      { title: 'Blossom raises $18.4M (Behavioral Health Business)', url: 'https://bhbusiness.com/2025/10/01/psychiatry-company-blossom-raises-18-4m/' },
-      { title: 'Blossom funding and investors (job listing)', url: 'https://www.simplyhired.com/job/N8PM9y9hg0AQ2VSbU2wxf1uEl1O0TQ0bAlPK5S1Y7zzTH4e_1d8Y8g' },
-      { title: 'Blossom Health Crunchbase', url: 'https://www.crunchbase.com/organization/blossom-health-32b4' },
-      { title: 'U.S. behavioral health market size (2024)', url: 'https://www.precedenceresearch.com/us-behavioral-health-market' },
-      { title: 'John Zhao LinkedIn', url: 'https://www.linkedin.com/in/zhao-john/' },
-      { title: 'Blossom Health People', url: 'https://wellfound.com/company/join-blossom-health/people' },
-    ],
+    { title: 'Source', url: 'https://www.joinblossomhealth.com' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/join-blossom-health/' },
+    { title: 'Source', url: 'https://bhbusiness.com/2025/10/01/psychiatry-company-blossom-raises-18-4m/' },
+    { title: 'Source', url: 'https://www.simplyhired.com/job/N8PM9y9hg0AQ2VSbU2wxf1uEl1O0TQ0bAlPK5S1Y7zzTH4e_1d8Y8g' },
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/blossom-health-32b4' },
+    { title: 'Source', url: 'https://www.precedenceresearch.com/us-behavioral-health-market' },
+    { title: 'Source', url: 'https://www.linkedin.com/in/zhao-john/' },
+    { title: 'Source', url: 'https://wellfound.com/company/join-blossom-health/people' }
+  ],
   };

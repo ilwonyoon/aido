@@ -113,7 +113,7 @@ export const openpay: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Openpay', url: 'https://openpay.com' },
-    { title: 'Openpay on startups.gallery', url: 'https://startups.gallery/companies/openpay' },
+    { title: 'Source', url: 'https://openpay.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/openpay' }
   ],
 };

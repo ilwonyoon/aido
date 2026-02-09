@@ -97,5 +97,8 @@ export const grammarly: Company = {
       nextActions: ['Try Grammarly product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Grammarly $1B Financing', 'url': 'https://www.techi.com/grammarly-1b-funding-ai-platform-expansion/'}, {'title': 'Grammarly Growth', 'url': 'https://fueler.io/blog/grammarly-usage-revenue-valuation-growth-statistics'}],
+    sources: [
+    { title: 'Source', url: 'https://www.techi.com/grammarly-1b-funding-ai-platform-expansion/' },
+    { title: 'Source', url: 'https://fueler.io/blog/grammarly-usage-revenue-valuation-growth-statistics' }
+  ],
   };

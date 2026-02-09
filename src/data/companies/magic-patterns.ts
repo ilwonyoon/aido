@@ -169,8 +169,8 @@ export const magicPatterns: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Magic Patterns', url: 'https://magicpatterns.com' },
-    { title: 'Magic Patterns Series A', url: 'https://magicpatterns.com/blog/series-a' },
-    { title: 'Magic Patterns on startups.gallery', url: 'https://startups.gallery/companies/magic-patterns' },
+    { title: 'Source', url: 'https://magicpatterns.com' },
+    { title: 'Source', url: 'https://magicpatterns.com/blog/series-a' },
+    { title: 'Source', url: 'https://startups.gallery/companies/magic-patterns' }
   ],
 };

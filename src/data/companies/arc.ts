@@ -126,7 +126,7 @@ export const arc: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Arc', url: 'https://arc.tech' },
-    { title: 'Arc on startups.gallery', url: 'https://startups.gallery/companies/arc' },
+    { title: 'Source', url: 'https://arc.tech' },
+    { title: 'Source', url: 'https://startups.gallery/companies/arc' }
   ],
 };

@@ -167,12 +167,12 @@ export const landr: Company = {
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-    { title: 'LANDR About', url: 'https://www.landr.com/about/' },
-    { title: 'LANDR Careers', url: 'https://www.landr.com/careers/' },
-    { title: 'LANDR Series A funding (TechCrunch)', url: 'https://techcrunch.com/2015/07/07/landr-drums-up-6-2-million-to-master-music-with-big-data/' },
-    { title: 'LANDR Series B funding (PR Newswire)', url: 'https://www.prnewswire.com/news-releases/landr-raises-26m-in-series-b-financing-to-further-develop-its-ai-powered-creative-platform-for-musicians-300885248.html' },
-    { title: 'LANDR Fair Trade AI program (founder quote, customer scale)', url: 'https://www.landr.com/fairtradeai' },
-    { title: 'LANDR founders and HQ (CNBC Upstart 25)', url: 'https://www.cnbc.com/2017/02/28/upstart-25-landr-audio.html' },
-    { title: 'G2 alternatives (competitors)', url: 'https://www.g2.com/products/landr/competitors/alternatives' },
+    { title: 'Source', url: 'https://www.landr.com/about/' },
+    { title: 'Source', url: 'https://www.landr.com/careers/' },
+    { title: 'Source', url: 'https://techcrunch.com/2015/07/07/landr-drums-up-6-2-million-to-master-music-with-big-data/' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/landr-raises-26m-in-series-b-financing-to-further-develop-its-ai-powered-creative-platform-for-musicians-300885248.html' },
+    { title: 'Source', url: 'https://www.landr.com/fairtradeai' },
+    { title: 'Source', url: 'https://www.cnbc.com/2017/02/28/upstart-25-landr-audio.html' },
+    { title: 'Source', url: 'https://www.g2.com/products/landr/competitors/alternatives' }
   ],
 };

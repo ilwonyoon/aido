@@ -126,7 +126,7 @@ export const datacurve: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Datacurve', url: 'https://datacurve.ai' },
-    { title: 'Datacurve on startups.gallery', url: 'https://startups.gallery/companies/datacurve' },
+    { title: 'Source', url: 'https://datacurve.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/datacurve' }
   ],
 };

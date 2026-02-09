@@ -118,7 +118,7 @@ export const seso: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Seso', url: 'https://www.sesolabor.com' },
-    { title: 'Seso on startups.gallery', url: 'https://startups.gallery/companies/seso' },
+    { title: 'Source', url: 'https://www.sesolabor.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/seso' }
   ],
 };

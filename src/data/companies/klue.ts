@@ -127,7 +127,7 @@ export const klue: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:10:00',
   sources: [
-    { title: 'Klue', url: 'https://klue.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://klue.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

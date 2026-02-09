@@ -196,7 +196,7 @@ export const raindropAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Raindrop AI website', url: 'https://www.raindrop.ai/' },
-    { title: 'Raindrop AI on startups.gallery', url: 'https://startups.gallery/companies/raindrop-ai' },
+    { title: 'Source', url: 'https://www.raindrop.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/raindrop-ai' }
   ],
 };

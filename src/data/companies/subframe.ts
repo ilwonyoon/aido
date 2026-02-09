@@ -121,7 +121,7 @@ export const subframe: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Subframe', url: 'https://subframe.com' },
-    { title: 'Subframe on startups.gallery', url: 'https://startups.gallery/companies/subframe' },
+    { title: 'Source', url: 'https://subframe.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/subframe' }
   ],
 };

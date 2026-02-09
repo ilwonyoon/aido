@@ -179,8 +179,8 @@ export const worldLabs: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'World Labs', url: 'https://worldlabs.ai' },
-    { title: 'World Labs About', url: 'https://worldlabs.ai/about' },
-    { title: 'World Labs on startups.gallery', url: 'https://startups.gallery/companies/world-labs' },
+    { title: 'Source', url: 'https://worldlabs.ai' },
+    { title: 'Source', url: 'https://worldlabs.ai/about' },
+    { title: 'Source', url: 'https://startups.gallery/companies/world-labs' }
   ],
 };

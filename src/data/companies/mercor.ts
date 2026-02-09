@@ -249,13 +249,7 @@ export const mercor: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'Mercor Series C - TechCrunch',
-        url: 'https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b/',
-      },
-      {
-        title: 'Sacra Profile',
-        url: 'https://sacra.com/c/mercor/',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b/' },
+    { title: 'Source', url: 'https://sacra.com/c/mercor/' }
+  ],
   };

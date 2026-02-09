@@ -98,7 +98,7 @@ export const things: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Things', url: 'https://www.things.inc' },
-    { title: 'Things on startups.gallery', url: 'https://startups.gallery/companies/things' },
+    { title: 'Source', url: 'https://www.things.inc' },
+    { title: 'Source', url: 'https://startups.gallery/companies/things' }
   ],
 };

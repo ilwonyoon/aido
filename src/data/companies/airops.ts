@@ -162,8 +162,8 @@ export const airops: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Airops', url: 'https://www.airops.com' },
-    { title: 'Airops Careers', url: 'https://www.airops.com/careers' },
-    { title: 'Airops on startups.gallery', url: 'https://startups.gallery/companies/airops' },
+    { title: 'Source', url: 'https://www.airops.com' },
+    { title: 'Source', url: 'https://www.airops.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/airops' }
   ],
 };

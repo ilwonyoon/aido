@@ -165,8 +165,8 @@ export const wisprFlow: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Wispr', url: 'https://www.wispr.ai' },
-    { title: 'Wispr Careers', url: 'https://www.wispr.ai/careers' },
-    { title: 'Wispr Flow on startups.gallery', url: 'https://startups.gallery/companies/wispr-flow' },
+    { title: 'Source', url: 'https://www.wispr.ai' },
+    { title: 'Source', url: 'https://www.wispr.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/wispr-flow' }
   ],
 };

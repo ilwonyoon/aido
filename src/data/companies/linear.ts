@@ -252,17 +252,8 @@ export const linear: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Linear Series C - TechCrunch',
-        url: 'https://techcrunch.com/2025/06/10/atlassian-rival-linear-raises-82m-at-1-25b-valuation/',
-      },
-      {
-        title: 'Linear Blog - Series C Announcement',
-        url: 'https://linear.app/now/building-our-way',
-      },
-      {
-        title: 'Sequoia Spotlight',
-        url: 'https://sequoiacap.com/article/linear-spotlight/',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/06/10/atlassian-rival-linear-raises-82m-at-1-25b-valuation/' },
+    { title: 'Source', url: 'https://linear.app/now/building-our-way' },
+    { title: 'Source', url: 'https://sequoiacap.com/article/linear-spotlight/' }
+  ],
   };

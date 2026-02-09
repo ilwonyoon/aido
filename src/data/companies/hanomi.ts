@@ -95,7 +95,7 @@ export const hanomi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Hanomi', url: 'https://www.hanomi.design' },
-    { title: 'Hanomi on startups.gallery', url: 'https://startups.gallery/companies/hanomi' },
+    { title: 'Source', url: 'https://www.hanomi.design' },
+    { title: 'Source', url: 'https://startups.gallery/companies/hanomi' }
   ],
 };

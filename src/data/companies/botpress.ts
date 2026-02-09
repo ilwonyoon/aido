@@ -168,10 +168,10 @@ export const botpress: Company = {
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-    { title: 'Botpress About', url: 'https://www.botpress.com/company/about' },
-    { title: 'Botpress Series B press release (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2025/06/23/3103351/0/en/Botpress-Raises-25M-Series-B-to-Scale-AI-Agent-Infrastructure.html' },
-    { title: 'Botpress Series A funding (TechCrunch)', url: 'https://techcrunch.com/2021/04/28/botpress-nabs-15m-series-a-to-help-developers-build-conversational-apps/' },
-    { title: 'Botpress careers', url: 'https://www.botpress.com/careers' },
-    { title: 'G2 Botpress competitors', url: 'https://www.g2.com/products/botpress/competitors/alternatives' },
+    { title: 'Source', url: 'https://www.botpress.com/company/about' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/06/23/3103351/0/en/Botpress-Raises-25M-Series-B-to-Scale-AI-Agent-Infrastructure.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2021/04/28/botpress-nabs-15m-series-a-to-help-developers-build-conversational-apps/' },
+    { title: 'Source', url: 'https://www.botpress.com/careers' },
+    { title: 'Source', url: 'https://www.g2.com/products/botpress/competitors/alternatives' }
   ],
 };

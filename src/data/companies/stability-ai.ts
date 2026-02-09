@@ -187,13 +187,7 @@ export const stabilityAi: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'Stability AI WPP investment',
-        url: 'https://stability.ai/news/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production',
-      },
-      {
-        title: 'Stability AI (Wikipedia)',
-        url: 'https://en.wikipedia.org/wiki/Stability_AI',
-      },
-    ],
+    { title: 'Source', url: 'https://stability.ai/news/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Stability_AI' }
+  ],
   };

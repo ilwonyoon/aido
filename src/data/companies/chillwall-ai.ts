@@ -127,7 +127,7 @@ export const chillwallAi: Company = {
   // Meta
   lastUpdated: '2026-02-04T21:15:00',
   sources: [
-    { title: 'Chillwall AI', url: 'https://chillwall.ai' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://chillwall.ai' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

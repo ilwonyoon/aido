@@ -99,7 +99,7 @@ export const nowadays: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Nowadays', url: 'https://www.nowadays.ai' },
-    { title: 'Nowadays on startups.gallery', url: 'https://startups.gallery/companies/nowadays' },
+    { title: 'Source', url: 'https://www.nowadays.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nowadays' }
   ],
 };

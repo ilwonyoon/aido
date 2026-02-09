@@ -126,7 +126,7 @@ export const kaedim: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Kaedim', url: 'https://www.kaedim3d.com' },
-    { title: 'Kaedim on startups.gallery', url: 'https://startups.gallery/companies/kaedim' },
+    { title: 'Source', url: 'https://www.kaedim3d.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/kaedim' }
   ],
 };

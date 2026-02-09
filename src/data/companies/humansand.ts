@@ -169,9 +169,9 @@ export const humansand: Company = {
     // Meta
     lastUpdated: '2026-01-27T10:58:34',
     sources: [
-      { title: 'Humans& (startups.gallery)', url: 'https://startups.gallery/companies/humansand' },
-      { title: 'Humans& funding + founders (TechCrunch)', url: 'https://techcrunch.com/2026/01/20/openai-alums-raise-480m-seed-round-for-humans-ai/' },
-      { title: 'Humans&', url: 'https://humansand.ai/' },
-      { title: 'Humans& Jobs (Ashby)', url: 'https://jobs.ashbyhq.com/humans-and' },
-    ],
+    { title: 'Source', url: 'https://startups.gallery/companies/humansand' },
+    { title: 'Source', url: 'https://techcrunch.com/2026/01/20/openai-alums-raise-480m-seed-round-for-humans-ai/' },
+    { title: 'Source', url: 'https://humansand.ai/' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/humans-and' }
+  ],
   };

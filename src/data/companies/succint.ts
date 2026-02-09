@@ -126,7 +126,7 @@ export const succint: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Succinct', url: 'https://succinct.xyz' },
-    { title: 'Succinct on startups.gallery', url: 'https://startups.gallery/companies/succint' },
+    { title: 'Source', url: 'https://succinct.xyz' },
+    { title: 'Source', url: 'https://startups.gallery/companies/succint' }
   ],
 };

@@ -99,7 +99,7 @@ export const sfcompute: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'San Francisco Compute Company', url: 'https://www.sfcompute.com' },
-    { title: 'San Francisco Compute Company on startups.gallery', url: 'https://startups.gallery/companies/sfcompute' },
+    { title: 'Source', url: 'https://www.sfcompute.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sfcompute' }
   ],
 };

@@ -156,7 +156,7 @@ export const inferenceNet: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:55:00',
   sources: [
-    { title: 'Inference', url: 'https://www.inference.net' },
-    { title: 'Inference Net on startups.gallery', url: 'https://startups.gallery/companies/inference-net' },
+    { title: 'Source', url: 'https://www.inference.net' },
+    { title: 'Source', url: 'https://startups.gallery/companies/inference-net' }
   ],
 };

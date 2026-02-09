@@ -321,6 +321,15 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 
 ---
 
+## Antigravity IDE Settings
+
+리서치 작업의 생산성을 위해 Antigravity IDE의 자동 승인(Auto-approval) 기능을 활용합니다.
+
+### Automated Workflows
+- 위치: `.agent/workflows/research.md`
+- 용도: `/research` 워크플로우를 통해 회사 리서치, 이미지 수집, 빌드 검증을 자동 수행합니다.
+- 설정: `// turbo-all` 플래그를 통해 리서치 관련 커맨드들이 사용자 개입 없이 실행되도록 설정되어 있습니다.
+
 ## Available Tools & Skills
 
 이 프로젝트에서 사용 가능한 글로벌 Claude Code 도구들.

@@ -99,7 +99,7 @@ export const roboflow: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Roboflow', url: 'https://roboflow.com' },
-    { title: 'Roboflow on startups.gallery', url: 'https://startups.gallery/companies/roboflow' },
+    { title: 'Source', url: 'https://roboflow.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/roboflow' }
   ],
 };

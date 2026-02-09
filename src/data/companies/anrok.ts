@@ -200,8 +200,8 @@ export const anrok: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Anrok website', url: 'https://www.anrok.com/' },
-    { title: 'Anrok careers', url: 'https://www.anrok.com/careers' },
-    { title: 'Anrok on startups.gallery', url: 'https://startups.gallery/companies/anrok' },
+    { title: 'Source', url: 'https://www.anrok.com/' },
+    { title: 'Source', url: 'https://www.anrok.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/anrok' }
   ],
 };

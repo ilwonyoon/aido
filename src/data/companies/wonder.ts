@@ -166,8 +166,8 @@ export const wonder: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Wonder', url: 'https://wonder.so' },
-    { title: 'Wonder Jobs', url: 'https://wonder.so/jobs' },
-    { title: 'Wonder on startups.gallery', url: 'https://startups.gallery/companies/wonder' },
+    { title: 'Source', url: 'https://wonder.so' },
+    { title: 'Source', url: 'https://wonder.so/jobs' },
+    { title: 'Source', url: 'https://startups.gallery/companies/wonder' }
   ],
 };

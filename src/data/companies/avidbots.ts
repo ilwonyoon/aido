@@ -155,9 +155,9 @@ export const avidbots: Company = {
   // Meta
   lastUpdated: '2026-02-06T12:00:00',
   sources: [
-    { title: 'Avidbots website', url: 'https://www.avidbots.com' },
-    { title: 'Avidbots about', url: 'https://www.avidbots.com/about/' },
-    { title: 'University of Waterloo - Avidbots Series C', url: 'https://uwaterloo.ca/news/avidbots-closes-us70-million-series-c-investment' },
-    { title: 'Forbes - Avidbots founders profile', url: 'https://www.forbes.com/profile/avidbots/' },
+    { title: 'Source', url: 'https://www.avidbots.com' },
+    { title: 'Source', url: 'https://www.avidbots.com/about/' },
+    { title: 'Source', url: 'https://uwaterloo.ca/news/avidbots-closes-us70-million-series-c-investment' },
+    { title: 'Source', url: 'https://www.forbes.com/profile/avidbots/' }
   ],
 };

@@ -22,15 +22,15 @@ export const darwinai: Company = {
   fundingHistory: [
     {
       stage: 'Seed',
-      amount: 'CAD$3.9M',
-      date: '2018-09',
-      leadInvestors: ['Honeywell Ventures', 'Startup Capital Ventures', 'REAL Ventures'],
+      amount: '$3M',
+      date: '2018-11',
+      leadInvestors: ['Obvious Ventures', 'iNovia Capital'],
     },
     {
-      stage: 'Series A',
+      stage: 'Unknown',
       amount: '$6M',
       date: '2022-09',
-      leadInvestors: ['Insight Partners', 'BMO Capital Partners'],
+      leadInvestors: ['BDC Capital'],
     },
   ],
   revenue: 'Not publicly disclosed',
@@ -99,7 +99,7 @@ export const darwinai: Company = {
     'Quality assurance teams need actionable, real-time defect insights',
     'AI should integrate seamlessly with existing production workflows',
   ],
-  greenFlags: ['Backed by strategic manufacturing investors', 'Recognized as a workplace award winner'],
+  greenFlags: ['Backed by strategic manufacturing investors', 'Explainable AI focus in regulated environments'],
   redFlags: ['Industrial sales cycles are long', 'Crowded AI vision market'],
 
   // Design Opportunity
@@ -153,14 +153,7 @@ export const darwinai: Company = {
   openRoles: [],
 
   // Culture Insights
-  cultureInsights: [
-    {
-      source: 'techcrunch',
-      sentiment: 'positive',
-      content: 'Recognized as a Great Place to Work in Canada for technology teams.',
-      url: 'https://www.businesswire.com/news/home/20220922005348/en/DarwinAI-Raises-6-Million-in-Strategic-Funding-to-Scale-Explainable-AI-for-Production-Quality-Inspection',
-    },
-  ],
+  cultureInsights: [],
 
   // My Tracking
   tracking: {
@@ -174,10 +167,10 @@ export const darwinai: Company = {
   // Meta
   lastUpdated: '2026-02-07T13:30:00',
   sources: [
-    { title: 'DarwinAI website', url: 'https://www.darwinai.com' },
-    { title: 'DarwinAI Series A funding (BusinessWire)', url: 'https://www.businesswire.com/news/home/20220922005348/en/DarwinAI-Raises-6-Million-in-Strategic-Funding-to-Scale-Explainable-AI-for-Production-Quality-Inspection' },
-    { title: 'DarwinAI seed round (BetaKit)', url: 'https://betakit.com/darwinai-closes-3-9-million-seed-round/' },
-    { title: 'DarwinAI founders (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2018/05/24/1511472/0/en/DarwinAI-Secures-2-8-Million-Seed-Investment-For-Proprietary-AI-Technology.html' },
-    { title: 'DarwinAI acquisition (Mergr)', url: 'https://mergr.com/darwinai-acquired-by-apple' },
+    { title: 'Source', url: 'https://www.darwinai.com' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20220922005348/en/DarwinAI-Raises-6-Million-in-Strategic-Funding-to-Scale-Explainable-AI-for-Production-Quality-Inspection' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2018/11/14/1651044/0/en/DarwinAI-Secures-3-Million-Seed-Investment-For-Proprietary-AI-Technology.html' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2018/05/24/1511472/0/en/DarwinAI-Secures-2-8-Million-Seed-Investment-For-Proprietary-AI-Technology.html' },
+    { title: 'Source', url: 'https://mergr.com/darwinai-acquired-by-apple' }
   ],
 };

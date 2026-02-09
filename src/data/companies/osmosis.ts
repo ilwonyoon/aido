@@ -149,7 +149,7 @@ export const osmosis: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:20:00',
   sources: [
-    { title: 'Osmosis', url: 'https://osmosis.ai' },
-    { title: 'Osmosis on startups.gallery', url: 'https://startups.gallery/companies/osmosis' },
+    { title: 'Source', url: 'https://osmosis.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/osmosis' }
   ],
 };

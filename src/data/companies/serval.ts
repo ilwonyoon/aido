@@ -190,8 +190,8 @@ export const serval: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Serval website', url: 'https://www.serval.com/' },
-    { title: 'Serval careers', url: 'https://www.serval.com/careers' },
-    { title: 'Serval on startups.gallery', url: 'https://startups.gallery/companies/serval' },
+    { title: 'Source', url: 'https://www.serval.com/' },
+    { title: 'Source', url: 'https://www.serval.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/serval' }
   ],
 };

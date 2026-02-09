@@ -225,9 +225,9 @@ export const railway: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:10:00',
   sources: [
-    { title: 'Railway website', url: 'https://railway.com/' },
-    { title: 'Railway Series B (FinSMEs)', url: 'https://www.finsmes.com/2026/01/railway-raises-100m-in-series-b-funding.html' },
-    { title: 'Railway Product Designer role', url: 'https://railway.com/careers/product-designer' },
-    { title: 'Railway on startups.gallery', url: 'https://startups.gallery/companies/railway' },
+    { title: 'Source', url: 'https://railway.com/' },
+    { title: 'Source', url: 'https://www.finsmes.com/2026/01/railway-raises-100m-in-series-b-funding.html' },
+    { title: 'Source', url: 'https://railway.com/careers/product-designer' },
+    { title: 'Source', url: 'https://startups.gallery/companies/railway' }
   ],
 };

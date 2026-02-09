@@ -118,7 +118,7 @@ export const slash: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Slash', url: 'https://slash.com' },
-    { title: 'Slash on startups.gallery', url: 'https://startups.gallery/companies/slash' },
+    { title: 'Source', url: 'https://slash.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/slash' }
   ],
 };

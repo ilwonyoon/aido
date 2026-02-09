@@ -261,15 +261,15 @@ export const ivo: Company = {
   // Meta
   lastUpdated: '2026-01-27T12:30:00',
   sources: [
-    { title: 'Ivo website', url: 'https://www.ivo.ai/' },
-    { title: 'Ivo on startups.gallery', url: 'https://startups.gallery/companies/ivo' },
-    { title: 'Ivo Series A (FinSMEs)', url: 'https://www.finsmes.com/2025/02/ivo-raises-16m-in-series-a-funding.html' },
-    { title: 'Ivo Series B (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2026/01/20/3221758/0/en/Ivo-raises-55M-to-transform-contracts-into-a-trusted-source-of-intelligence-for-every-business.html' },
-    { title: 'Ivo Product Designer role', url: 'https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9' },
-    { title: 'Ivo Senior Product Designer role', url: 'https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd' },
-    { title: 'CLM market overview (FT)', url: 'https://www.ft.com/content/1026fd13-d7f1-40de-a0d6-9e4843ac3d29' },
-    { title: 'Ironclad PR', url: 'https://www.prnewswire.com/news-releases/ironclad-named-a-leader-in-the-2025-gartner-magic-quadrant-for-contract-life-cycle-management-for-third-consecutive-year-302615851.html' },
-    { title: 'LinkSquares platform', url: 'https://linksquares.com/' },
-    { title: 'Evisort platform', url: 'https://www.evisort.com/platform/platform-overview' },
+    { title: 'Source', url: 'https://www.ivo.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/ivo' },
+    { title: 'Source', url: 'https://www.finsmes.com/2025/02/ivo-raises-16m-in-series-a-funding.html' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2026/01/20/3221758/0/en/Ivo-raises-55M-to-transform-contracts-into-a-trusted-source-of-intelligence-for-every-business.html' },
+    { title: 'Source', url: 'https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9' },
+    { title: 'Source', url: 'https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd' },
+    { title: 'Source', url: 'https://www.ft.com/content/1026fd13-d7f1-40de-a0d6-9e4843ac3d29' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/ironclad-named-a-leader-in-the-2025-gartner-magic-quadrant-for-contract-life-cycle-management-for-third-consecutive-year-302615851.html' },
+    { title: 'Source', url: 'https://linksquares.com/' },
+    { title: 'Source', url: 'https://www.evisort.com/platform/platform-overview' }
   ],
 };

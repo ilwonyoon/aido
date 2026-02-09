@@ -121,7 +121,7 @@ export const aegisai: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Aegis AI', url: 'https://aegisai.com' },
-    { title: 'Aegis AI on startups.gallery', url: 'https://startups.gallery/companies/aegisai' },
+    { title: 'Source', url: 'https://aegisai.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/aegisai' }
   ],
 };

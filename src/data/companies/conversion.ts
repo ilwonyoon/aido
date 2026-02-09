@@ -99,7 +99,7 @@ export const conversion: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Conversion', url: 'https://www.conversion.ai' },
-    { title: 'Conversion on startups.gallery', url: 'https://startups.gallery/companies/conversion' },
+    { title: 'Source', url: 'https://www.conversion.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/conversion' }
   ],
 };

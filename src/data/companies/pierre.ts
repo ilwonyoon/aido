@@ -117,7 +117,7 @@ export const pierre: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Pierre', url: 'https://heypierre.app' },
-    { title: 'Pierre on startups.gallery', url: 'https://startups.gallery/companies/pierre' },
+    { title: 'Source', url: 'https://heypierre.app' },
+    { title: 'Source', url: 'https://startups.gallery/companies/pierre' }
   ],
 };

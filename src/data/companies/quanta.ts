@@ -198,7 +198,7 @@ export const quanta: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Quanta website', url: 'https://quanta.com/' },
-    { title: 'Quanta on startups.gallery', url: 'https://startups.gallery/companies/quanta' },
+    { title: 'Source', url: 'https://quanta.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/quanta' }
   ],
 };

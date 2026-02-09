@@ -250,17 +250,8 @@ export const characterAi: Company = {
     // Meta
     lastUpdated: '2026-01-26T10:45:00',
     sources: [
-      {
-        title: 'Character.AI Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Character.ai',
-      },
-      {
-        title: 'Google hires Character.AI founders',
-        url: 'https://techcrunch.com/2024/08/02/character-ai-ceo-noam-shazeer-returns-to-google/',
-      },
-      {
-        title: 'Character.AI valuation after Google deal',
-        url: 'https://www.oreateai.com/blog/characterais-bold-return-to-google-a-25-billion-acquisition/fa44e864e4e84a728d18224c87276e52',
-      },
-    ],
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Character.ai' },
+    { title: 'Source', url: 'https://techcrunch.com/2024/08/02/character-ai-ceo-noam-shazeer-returns-to-google/' },
+    { title: 'Source', url: 'https://www.oreateai.com/blog/characterais-bold-return-to-google-a-25-billion-acquisition/fa44e864e4e84a728d18224c87276e52' }
+  ],
   };

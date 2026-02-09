@@ -129,7 +129,7 @@ export const lovable: Company = {
     },
     lastUpdated: '2026-01-26T18:00:00',
     sources: [
-      { title: 'Lovable $200M ARR', url: 'https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/' },
-      { title: 'Lovable Growth Playbook', url: 'https://thecreatorsai.com/p/lovable-growth-secrets-and-costs' },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/' },
+    { title: 'Source', url: 'https://thecreatorsai.com/p/lovable-growth-secrets-and-costs' }
+  ],
   };

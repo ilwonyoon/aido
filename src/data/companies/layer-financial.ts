@@ -224,8 +224,8 @@ export const layerFinancial: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:30:00',
   sources: [
-    { title: 'Layer website', url: 'https://www.layerfi.com/' },
-    { title: 'Layer on startups.gallery', url: 'https://startups.gallery/companies/layer-financial' },
-    { title: 'Layer Founding Designer (Ashby)', url: 'https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62' },
+    { title: 'Source', url: 'https://www.layerfi.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/layer-financial' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62' }
   ],
 };

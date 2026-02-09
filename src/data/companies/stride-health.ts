@@ -99,7 +99,7 @@ export const strideHealth: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Stride Health', url: 'https://www.stridehealth.com' },
-    { title: 'Stride Health on startups.gallery', url: 'https://startups.gallery/companies/stride-health' },
+    { title: 'Source', url: 'https://www.stridehealth.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/stride-health' }
   ],
 };

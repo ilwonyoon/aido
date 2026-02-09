@@ -196,7 +196,7 @@ export const hummingbird: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Hummingbird website', url: 'https://www.hummingbird.co/' },
-    { title: 'Hummingbird on startups.gallery', url: 'https://startups.gallery/companies/hummingbird' },
+    { title: 'Source', url: 'https://www.hummingbird.co/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/hummingbird' }
   ],
 };

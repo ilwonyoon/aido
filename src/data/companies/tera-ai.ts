@@ -165,8 +165,8 @@ export const teraAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Tera AI', url: 'https://tera-ai.com' },
-    { title: 'Tera AI funding (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/tera-ai-raises-7-8-million-seed-round-to-transform-chip-design-with-ai-302405187.html' },
-    { title: 'Tera AI on startups.gallery', url: 'https://startups.gallery/companies/tera-ai' },
+    { title: 'Source', url: 'https://tera-ai.com' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/tera-ai-raises-7-8-million-seed-round-to-transform-chip-design-with-ai-302405187.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tera-ai' }
   ],
 };

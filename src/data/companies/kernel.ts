@@ -126,7 +126,7 @@ export const kernel: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Kernel', url: 'https://kernel.sh' },
-    { title: 'Kernel on startups.gallery', url: 'https://startups.gallery/companies/kernel' },
+    { title: 'Source', url: 'https://kernel.sh' },
+    { title: 'Source', url: 'https://startups.gallery/companies/kernel' }
   ],
 };

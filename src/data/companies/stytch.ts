@@ -99,7 +99,7 @@ export const stytch: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Stytch', url: 'https://stytch.com' },
-    { title: 'Stytch on startups.gallery', url: 'https://startups.gallery/companies/stytch' },
+    { title: 'Source', url: 'https://stytch.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/stytch' }
   ],
 };

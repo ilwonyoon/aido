@@ -208,9 +208,9 @@ export const goodfire: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Goodfire company page', url: 'https://www.goodfire.ai/company' },
-    { title: 'Goodfire careers', url: 'https://www.goodfire.ai/careers' },
-    { title: 'Goodfire Series A announcement', url: 'https://www.goodfire.ai/blog/series-a' },
-    { title: 'Goodfire Series A (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/goodfire-announces-50-million-series-a-to-expand-its-interpretability-research-and-build-ai-lens-for-understanding-model-behavior-302399266.html' },
+    { title: 'Source', url: 'https://www.goodfire.ai/company' },
+    { title: 'Source', url: 'https://www.goodfire.ai/careers' },
+    { title: 'Source', url: 'https://www.goodfire.ai/blog/series-a' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/goodfire-announces-50-million-series-a-to-expand-its-interpretability-research-and-build-ai-lens-for-understanding-model-behavior-302399266.html' }
   ],
 };

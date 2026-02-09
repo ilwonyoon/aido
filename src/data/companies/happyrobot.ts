@@ -208,7 +208,7 @@ export const happyrobot: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Happyrobot website', url: 'https://www.happyrobot.ai/' },
-    { title: 'Happyrobot on startups.gallery', url: 'https://startups.gallery/companies/happyrobot' },
+    { title: 'Source', url: 'https://www.happyrobot.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/happyrobot' }
   ],
 };

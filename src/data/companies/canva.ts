@@ -99,5 +99,8 @@ export const canva: Company = {
       nextActions: ['Try Canva product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Canva AI Features', 'url': 'https://techcrunch.com/2025/10/30/canva-launches-its-own-design-model-adds-new-ai-features-to-the-platform/'}, {'title': 'Canva $42B Valuation', 'url': 'https://www.inc.com/jennifer-conrad/how-ai-is-powering-canva-to-a-42-billion-valuation-and-a-future-ipo/91267864'}],
+    sources: [
+    { title: 'Source', url: 'https://techcrunch.com/2025/10/30/canva-launches-its-own-design-model-adds-new-ai-features-to-the-platform/' },
+    { title: 'Source', url: 'https://www.inc.com/jennifer-conrad/how-ai-is-powering-canva-to-a-42-billion-valuation-and-a-future-ipo/91267864' }
+  ],
   };

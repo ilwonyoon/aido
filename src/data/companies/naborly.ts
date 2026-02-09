@@ -142,8 +142,8 @@ export const naborly: Company = {
   // Meta
   lastUpdated: '2026-02-06T12:00:00',
   sources: [
-    { title: 'Naborly website', url: 'https://www.naborly.com' },
-    { title: 'Naborly seed funding', url: 'https://www.prnewswire.com/news-releases/naborly-raises-7-5-million-in-seed-funding-to-tackle-renters-application-dilemma-300465136.html' },
-    { title: 'Naborly YC profile', url: 'https://www.ycombinator.com/companies/naborly' },
+    { title: 'Source', url: 'https://www.naborly.com' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/naborly-raises-7-5-million-in-seed-funding-to-tackle-renters-application-dilemma-300465136.html' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/naborly' }
   ],
 };

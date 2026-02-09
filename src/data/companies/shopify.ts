@@ -271,21 +271,9 @@ export const shopify: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'Shopify Magic and Sidekick',
-        url: 'https://www.shopify.com/magic',
-      },
-      {
-        title: 'Shopify Winter 26 Edition',
-        url: 'https://www.shopify.com/news/winter-26-edition-renaissance',
-      },
-      {
-        title: 'Shopify CEO AI-First Strategy',
-        url: 'https://www.inc.com/ben-sherry/shopify-ceo-to-employees-use-ai-now/91173063',
-      },
-      {
-        title: 'Shopify Careers',
-        url: 'https://www.shopify.com/careers',
-      },
-    ],
+    { title: 'Source', url: 'https://www.shopify.com/magic' },
+    { title: 'Source', url: 'https://www.shopify.com/news/winter-26-edition-renaissance' },
+    { title: 'Source', url: 'https://www.inc.com/ben-sherry/shopify-ceo-to-employees-use-ai-now/91173063' },
+    { title: 'Source', url: 'https://www.shopify.com/careers' }
+  ],
   };

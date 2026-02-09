@@ -184,9 +184,9 @@ export const senecaSystems: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'Seneca Systems', url: 'https://seneca.com' },
-    { title: 'Seneca Systems news', url: 'https://seneca.com/news' },
-    { title: 'Seneca Systems funding (FinSMEs)', url: 'https://www.finsmes.com/2025/10/seneca-systems-raises-60m-seed-funding.html' },
-    { title: 'Seneca Systems on startups.gallery', url: 'https://startups.gallery/companies/seneca-systems' },
+    { title: 'Source', url: 'https://seneca.com' },
+    { title: 'Source', url: 'https://seneca.com/news' },
+    { title: 'Source', url: 'https://www.finsmes.com/2025/10/seneca-systems-raises-60m-seed-funding.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/seneca-systems' }
   ],
 };

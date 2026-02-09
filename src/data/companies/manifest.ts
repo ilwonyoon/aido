@@ -121,7 +121,7 @@ export const manifest: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Manifest', url: 'https://manifest.com' },
-    { title: 'Manifest on startups.gallery', url: 'https://startups.gallery/companies/manifest' },
+    { title: 'Source', url: 'https://manifest.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/manifest' }
   ],
 };

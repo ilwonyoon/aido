@@ -158,8 +158,8 @@ export const legendXyz: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Legend.xyz', url: 'https://legend.xyz' },
-    { title: 'Legend.xyz Careers', url: 'https://jobs.ashbyhq.com/legend' },
-    { title: 'Legend.xyz on startups.gallery', url: 'https://startups.gallery/companies/legend-xyz' },
+    { title: 'Source', url: 'https://legend.xyz' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/legend' },
+    { title: 'Source', url: 'https://startups.gallery/companies/legend-xyz' }
   ],
 };

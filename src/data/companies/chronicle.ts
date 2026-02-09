@@ -107,7 +107,7 @@ export const chronicle: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Chronicle', url: 'https://chroniclehq.com' },
-    { title: 'Chronicle on startups.gallery', url: 'https://startups.gallery/companies/chronicle' },
+    { title: 'Source', url: 'https://chroniclehq.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/chronicle' }
   ],
 };

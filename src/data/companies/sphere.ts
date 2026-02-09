@@ -157,8 +157,8 @@ export const sphere: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Sphere', url: 'https://getsphere.com' },
-    { title: 'Sphere Careers', url: 'https://getsphere.com/join-us' },
-    { title: 'Sphere on startups.gallery', url: 'https://startups.gallery/companies/sphere' },
+    { title: 'Source', url: 'https://getsphere.com' },
+    { title: 'Source', url: 'https://getsphere.com/join-us' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sphere' }
   ],
 };

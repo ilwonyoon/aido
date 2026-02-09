@@ -156,7 +156,7 @@ export const netic: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Netic', url: 'https://netic.ai' },
-    { title: 'Netic on startups.gallery', url: 'https://startups.gallery/companies/netic' },
+    { title: 'Source', url: 'https://netic.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/netic' }
   ],
 };

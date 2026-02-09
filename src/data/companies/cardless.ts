@@ -126,7 +126,7 @@ export const cardless: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Cardless', url: 'https://www.cardless.com' },
-    { title: 'Cardless on startups.gallery', url: 'https://startups.gallery/companies/cardless' },
+    { title: 'Source', url: 'https://www.cardless.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cardless' }
   ],
 };

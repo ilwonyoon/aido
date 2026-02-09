@@ -252,13 +252,7 @@ export const superhuman: Company = {
     // Meta
     lastUpdated: '2026-01-26T14:10:00',
     sources: [
-      {
-        title: 'Grammarly acquires Superhuman',
-        url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/',
-      },
-      {
-        title: 'Rahul Vohra on Lenny newsletter podcast',
-        url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/' },
+    { title: 'Source', url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra' }
+  ],
   };

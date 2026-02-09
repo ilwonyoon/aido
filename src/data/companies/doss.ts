@@ -203,7 +203,7 @@ export const doss: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Doss website', url: 'https://www.doss.com/' },
-    { title: 'Doss on startups.gallery', url: 'https://startups.gallery/companies/doss' },
+    { title: 'Source', url: 'https://www.doss.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/doss' }
   ],
 };

@@ -264,21 +264,9 @@ export const jasper: Company = {
     // Meta
     lastUpdated: '2026-01-26T12:25:00',
     sources: [
-      {
-        title: 'Jasper raises $125M at $1.5B valuation',
-        url: 'https://www.jasper.ai/blog/jasper-announces-125m-series-a-funding',
-      },
-      {
-        title: 'Jasper revenue and growth',
-        url: 'https://getlatka.com/companies/jasper.ai',
-      },
-      {
-        title: 'Timothy Young becomes CEO',
-        url: 'https://www.jasper.ai/blog/jasper-new-ceo',
-      },
-      {
-        title: 'Jasper AI statistics 2026',
-        url: 'https://sqmagazine.co.uk/jasper-ai-statistics/',
-      },
-    ],
+    { title: 'Source', url: 'https://www.jasper.ai/blog/jasper-announces-125m-series-a-funding' },
+    { title: 'Source', url: 'https://getlatka.com/companies/jasper.ai' },
+    { title: 'Source', url: 'https://www.jasper.ai/blog/jasper-new-ceo' },
+    { title: 'Source', url: 'https://sqmagazine.co.uk/jasper-ai-statistics/' }
+  ],
   };

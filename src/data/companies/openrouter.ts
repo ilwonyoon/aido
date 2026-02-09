@@ -193,7 +193,7 @@ export const openrouter: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'OpenRouter website', url: 'https://openrouter.ai/' },
-    { title: 'OpenRouter on startups.gallery', url: 'https://startups.gallery/companies/openrouter' },
+    { title: 'Source', url: 'https://openrouter.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/openrouter' }
   ],
 };

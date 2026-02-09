@@ -118,7 +118,7 @@ export const newlimit: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'NewLimit', url: 'https://newlimit.com' },
-    { title: 'NewLimit on startups.gallery', url: 'https://startups.gallery/companies/newlimit' },
+    { title: 'Source', url: 'https://newlimit.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/newlimit' }
   ],
 };

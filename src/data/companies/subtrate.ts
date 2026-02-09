@@ -198,7 +198,7 @@ export const subtrate: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Substrate website', url: 'https://substrate.com/' },
-    { title: 'Subtrate on startups.gallery', url: 'https://startups.gallery/companies/subtrate' },
+    { title: 'Source', url: 'https://substrate.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/subtrate' }
   ],
 };

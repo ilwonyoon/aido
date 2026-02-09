@@ -193,8 +193,8 @@ export const medra: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Medra website', url: 'https://www.medra.ai/' },
-    { title: 'Medra careers', url: 'https://www.medra.ai/careers' },
-    { title: 'Medra on startups.gallery', url: 'https://startups.gallery/companies/medra' },
+    { title: 'Source', url: 'https://www.medra.ai/' },
+    { title: 'Source', url: 'https://www.medra.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/medra' }
   ],
 };

@@ -117,7 +117,7 @@ export const sonder: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Sonder', url: 'https://sonder.ai' },
-    { title: 'Sonder on startups.gallery', url: 'https://startups.gallery/companies/sonder' },
+    { title: 'Source', url: 'https://sonder.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sonder' }
   ],
 };

@@ -208,8 +208,8 @@ export const collective: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Collective careers', url: 'https://www.collective.com/careers' },
-    { title: 'Collective funding (Business Wire)', url: 'https://www.businesswire.com/news/home/20230711005255/en/Collective-Raises-%2450M-to-Become-the-First-AI-Powered-Finance-Platform-Designed-Specifically-for-the-Self-Employed' },
-    { title: 'Collective LinkedIn', url: 'https://www.linkedin.com/company/collectiveinc/' },
+    { title: 'Source', url: 'https://www.collective.com/careers' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20230711005255/en/Collective-Raises-%2450M-to-Become-the-First-AI-Powered-Finance-Platform-Designed-Specifically-for-the-Self-Employed' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/collectiveinc/' }
   ],
 };

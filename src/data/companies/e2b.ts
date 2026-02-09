@@ -126,7 +126,7 @@ export const e2b: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'E2B', url: 'https://e2b.dev' },
-    { title: 'E2B on startups.gallery', url: 'https://startups.gallery/companies/e2b' },
+    { title: 'Source', url: 'https://e2b.dev' },
+    { title: 'Source', url: 'https://startups.gallery/companies/e2b' }
   ],
 };

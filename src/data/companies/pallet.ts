@@ -157,8 +157,8 @@ export const pallet: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Pallet', url: 'https://pallet.com' },
-    { title: 'Pallet Jobs (Greenhouse)', url: 'https://boards.greenhouse.io/pallet' },
-    { title: 'Pallet on startups.gallery', url: 'https://startups.gallery/companies/pallet' },
+    { title: 'Source', url: 'https://pallet.com' },
+    { title: 'Source', url: 'https://boards.greenhouse.io/pallet' },
+    { title: 'Source', url: 'https://startups.gallery/companies/pallet' }
   ],
 };

@@ -92,5 +92,8 @@ export const copyAi: Company = {
       nextActions: ['Try Copy.ai product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Copy.ai Revenue', 'url': 'https://getlatka.com/companies/copyai'}, {'title': 'Copy.ai Hiring', 'url': 'https://www.linkedin.com/jobs/view/senior-product-designer-at-copy-ai-3050055207'}],
+    sources: [
+    { title: 'Source', url: 'https://getlatka.com/companies/copyai' },
+    { title: 'Source', url: 'https://www.linkedin.com/jobs/view/senior-product-designer-at-copy-ai-3050055207' }
+  ],
   };

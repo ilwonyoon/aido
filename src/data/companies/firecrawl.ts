@@ -203,8 +203,8 @@ export const firecrawl: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Firecrawl website', url: 'https://www.firecrawl.site/' },
-    { title: 'Firecrawl careers', url: 'https://www.firecrawl.dev/careers' },
-    { title: 'Firecrawl YC job page', url: 'https://www.ycombinator.com/jobs/78XV5jQ8' },
+    { title: 'Source', url: 'https://www.firecrawl.site/' },
+    { title: 'Source', url: 'https://www.firecrawl.dev/careers' },
+    { title: 'Source', url: 'https://www.ycombinator.com/jobs/78XV5jQ8' }
   ],
 };

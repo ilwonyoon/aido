@@ -195,7 +195,7 @@ export const indexCompany: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Index website', url: 'https://index.com/' },
-    { title: 'Index on startups.gallery', url: 'https://startups.gallery/companies/index' },
+    { title: 'Source', url: 'https://index.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/index' }
   ],
 };

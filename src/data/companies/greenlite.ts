@@ -126,7 +126,7 @@ export const greenlite: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Greenlite', url: 'https://greenlite.ai' },
-    { title: 'Greenlite on startups.gallery', url: 'https://startups.gallery/companies/greenlite' },
+    { title: 'Source', url: 'https://greenlite.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/greenlite' }
   ],
 };

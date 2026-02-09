@@ -99,7 +99,7 @@ export const instant: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Instant', url: 'https://www.instantdb.com' },
-    { title: 'Instant on startups.gallery', url: 'https://startups.gallery/companies/instant' },
+    { title: 'Source', url: 'https://www.instantdb.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/instant' }
   ],
 };

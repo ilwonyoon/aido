@@ -102,7 +102,7 @@ export const browserbase: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Browserbase', url: 'https://www.browserbase.com' },
-    { title: 'Browserbase on startups.gallery', url: 'https://startups.gallery/companies/browserbase' },
+    { title: 'Source', url: 'https://www.browserbase.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/browserbase' }
   ],
 };

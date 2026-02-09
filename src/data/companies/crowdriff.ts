@@ -141,8 +141,8 @@ export const crowdriff: Company = {
   // Meta
   lastUpdated: '2026-02-06T12:00:00',
   sources: [
-    { title: 'CrowdRiff website', url: 'https://crowdriff.com' },
-    { title: 'CrowdRiff about', url: 'https://crowdriff.com/about' },
-    { title: 'CrowdRiff Series A funding', url: 'https://crowdriff.com/blog/2018/03/01/crowdriff-series-a-funding' },
+    { title: 'Source', url: 'https://crowdriff.com' },
+    { title: 'Source', url: 'https://crowdriff.com/about' },
+    { title: 'Source', url: 'https://crowdriff.com/blog/2018/03/01/crowdriff-series-a-funding' }
   ],
 };

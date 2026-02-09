@@ -157,8 +157,8 @@ export const numeral: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Numeral', url: 'https://www.numeralhq.com' },
-    { title: 'Numeral on YC Launch', url: 'https://www.ycombinator.com/launches/KxY-numeral-ecommerce-sales-tax-on-autopilot' },
-    { title: 'Numeral on startups.gallery', url: 'https://startups.gallery/companies/numeral' },
+    { title: 'Source', url: 'https://www.numeralhq.com' },
+    { title: 'Source', url: 'https://www.ycombinator.com/launches/KxY-numeral-ecommerce-sales-tax-on-autopilot' },
+    { title: 'Source', url: 'https://startups.gallery/companies/numeral' }
   ],
 };

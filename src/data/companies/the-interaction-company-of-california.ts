@@ -126,7 +126,7 @@ export const theInteractionCompanyOfCalifornia: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'The Interaction Company Of California', url: 'https://poke.ai' },
-    { title: 'The Interaction Company Of California on startups.gallery', url: 'https://startups.gallery/companies/the-interaction-company-of-california' },
+    { title: 'Source', url: 'https://poke.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/the-interaction-company-of-california' }
   ],
 };

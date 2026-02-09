@@ -121,7 +121,7 @@ export const hyperbolic: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Hyperbolic', url: 'https://hyperbolic.xyz' },
-    { title: 'Hyperbolic on startups.gallery', url: 'https://startups.gallery/companies/hyperbolic' },
+    { title: 'Source', url: 'https://hyperbolic.xyz' },
+    { title: 'Source', url: 'https://startups.gallery/companies/hyperbolic' }
   ],
 };

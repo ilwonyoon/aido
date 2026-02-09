@@ -132,7 +132,7 @@ export const xpertsea: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:30:00',
   sources: [
-    { title: 'Xpertsea', url: 'https://xpertsea.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://xpertsea.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

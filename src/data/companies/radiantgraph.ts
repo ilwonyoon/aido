@@ -117,7 +117,7 @@ export const radiantgraph: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Radiantgraph', url: 'https://radiantgraph.com' },
-    { title: 'Radiantgraph on startups.gallery', url: 'https://startups.gallery/companies/radiantgraph' },
+    { title: 'Source', url: 'https://radiantgraph.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/radiantgraph' }
   ],
 };

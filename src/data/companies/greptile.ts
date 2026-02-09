@@ -131,7 +131,7 @@ export const greptile: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Greptile', url: 'https://greptile.com' },
-    { title: 'Greptile on startups.gallery', url: 'https://startups.gallery/companies/greptile' },
+    { title: 'Source', url: 'https://greptile.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/greptile' }
   ],
 };

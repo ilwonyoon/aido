@@ -133,8 +133,8 @@ export const ada: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:35:00',
   sources: [
-    { title: 'Ada', url: 'https://www.ada.cx' },
-    { title: 'VentureBeat - Ada raises $44M Series B', url: 'https://venturebeat.com/ai/ada-raises-44-million-to-automate-customer-support-with-ai-chatbots/' },
-    { title: 'FinSMEs - Ada Support raises $2.5M', url: 'https://www.finsmes.com/2017/07/ada-support-raises-2-5m-in-funding.html' },
+    { title: 'Source', url: 'https://www.ada.cx' },
+    { title: 'Source', url: 'https://venturebeat.com/ai/ada-raises-44-million-to-automate-customer-support-with-ai-chatbots/' },
+    { title: 'Source', url: 'https://www.finsmes.com/2017/07/ada-support-raises-2-5m-in-funding.html' }
   ],
 };

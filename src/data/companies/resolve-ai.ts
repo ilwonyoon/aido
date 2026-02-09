@@ -211,8 +211,8 @@ export const resolveAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T15:25:00',
   sources: [
-    { title: 'Resolve AI website', url: 'https://resolve.ai/' },
-    { title: 'Resolve AI: Why Resolve', url: 'https://resolve.ai/why-resolve' },
-    { title: 'Resolve AI Series A (TechCrunch)', url: 'https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/' },
+    { title: 'Source', url: 'https://resolve.ai/' },
+    { title: 'Source', url: 'https://resolve.ai/why-resolve' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/' }
   ],
 };

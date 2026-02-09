@@ -254,13 +254,7 @@ export const cursor: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Cursor $29.3B Series D - CNBC',
-        url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html',
-      },
-      {
-        title: 'Cursor Revenue and Stats - Sacra',
-        url: 'https://sacra.com/c/cursor/',
-      },
-    ],
+    { title: 'Source', url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html' },
+    { title: 'Source', url: 'https://sacra.com/c/cursor/' }
+  ],
   };

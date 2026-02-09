@@ -119,7 +119,7 @@ export const nudge: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Nudge', url: 'https://nudge.ai' },
-    { title: 'Nudge on startups.gallery', url: 'https://startups.gallery/companies/nudge' },
+    { title: 'Source', url: 'https://nudge.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nudge' }
   ],
 };

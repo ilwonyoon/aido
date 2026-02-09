@@ -99,7 +99,7 @@ export const thatch: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Thatch', url: 'https://thatch.ai' },
-    { title: 'Thatch on startups.gallery', url: 'https://startups.gallery/companies/thatch' },
+    { title: 'Source', url: 'https://thatch.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/thatch' }
   ],
 };

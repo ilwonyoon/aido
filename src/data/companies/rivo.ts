@@ -157,8 +157,8 @@ export const rivo: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'Rivo', url: 'https://rivo.io' },
-    { title: 'Rivo Shopify app listing', url: 'https://apps.shopify.com/rivo' },
-    { title: 'Rivo on startups.gallery', url: 'https://startups.gallery/companies/rivo' },
+    { title: 'Source', url: 'https://rivo.io' },
+    { title: 'Source', url: 'https://apps.shopify.com/rivo' },
+    { title: 'Source', url: 'https://startups.gallery/companies/rivo' }
   ],
 };

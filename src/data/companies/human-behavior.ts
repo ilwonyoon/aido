@@ -127,7 +127,7 @@ export const humanBehavior: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Human Behavior', url: 'https://humanbehavior.ai' },
-    { title: 'Human Behavior on startups.gallery', url: 'https://startups.gallery/companies/human-behavior' },
+    { title: 'Source', url: 'https://humanbehavior.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/human-behavior' }
   ],
 };

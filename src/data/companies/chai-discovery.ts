@@ -213,9 +213,9 @@ export const chaiDiscovery: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:10:00',
   sources: [
-    { title: 'Chai Discovery website', url: 'https://www.chaidiscovery.com/' },
-    { title: 'Chai Discovery Series B (TechCrunch)', url: 'https://techcrunch.com/2025/12/15/openai-backed-biotech-firm-chai-discovery-raises-130m-series-b-at-1-3b-valuation/' },
-    { title: 'Chai Discovery on startups.gallery', url: 'https://startups.gallery/companies/chai-discovery' },
-    { title: 'Chai Discovery Product Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/chaidiscovery' },
+    { title: 'Source', url: 'https://www.chaidiscovery.com/' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/12/15/openai-backed-biotech-firm-chai-discovery-raises-130m-series-b-at-1-3b-valuation/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/chai-discovery' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/chaidiscovery' }
   ],
 };

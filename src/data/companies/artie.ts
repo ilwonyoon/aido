@@ -236,10 +236,10 @@ export const artie: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:10:00',
   sources: [
-    { title: 'Artie website', url: 'https://www.artie.com/' },
-    { title: 'Artie Series A announcement', url: 'https://www.artie.com/blogs/artie-series-a-real-time-data-streaming-platform' },
-    { title: 'Artie Series A (FinSMEs)', url: 'https://www.finsmes.com/2026/01/artie-raises-12m-in-series-a-funding.html' },
-    { title: 'Artie Product Designer role', url: 'https://www.artie.com/careers/product-designer' },
-    { title: 'Artie on startups.gallery', url: 'https://startups.gallery/companies/artie' },
+    { title: 'Source', url: 'https://www.artie.com/' },
+    { title: 'Source', url: 'https://www.artie.com/blogs/artie-series-a-real-time-data-streaming-platform' },
+    { title: 'Source', url: 'https://www.finsmes.com/2026/01/artie-raises-12m-in-series-a-funding.html' },
+    { title: 'Source', url: 'https://www.artie.com/careers/product-designer' },
+    { title: 'Source', url: 'https://startups.gallery/companies/artie' }
   ],
 };

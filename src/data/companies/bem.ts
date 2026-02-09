@@ -126,7 +126,6 @@ export const bem: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Bem', url: 'https://startups.gallery/companies/bem' },
-    { title: 'Bem on startups.gallery', url: 'https://startups.gallery/companies/bem' },
+    { title: 'Source', url: 'https://startups.gallery/companies/bem' }
   ],
 };

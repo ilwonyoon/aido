@@ -122,8 +122,8 @@ export const granify: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:45:00',
   sources: [
-    { title: 'Granify', url: 'https://granify.com' },
-    { title: 'Granify - BusinessWire release', url: 'https://www.businesswire.com/news/home/20220811005718/en/Granify-Now-Personalizing-Search-Results' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://granify.com' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20220811005718/en/Granify-Now-Personalizing-Search-Results' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

@@ -102,5 +102,8 @@ export const intercomFin: Company = {
       nextActions: ['Try Intercom (Fin) product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Intercom Berlin Hub', 'url': 'https://www.intercom.com/blog/our-next-research-and-development-hub-berlin/'}, {'title': 'Intercom Fin Growth', 'url': 'https://www.growthunhinged.com/p/intercoms-bet-on-ai'}],
+    sources: [
+    { title: 'Source', url: 'https://www.intercom.com/blog/our-next-research-and-development-hub-berlin/' },
+    { title: 'Source', url: 'https://www.growthunhinged.com/p/intercoms-bet-on-ai' }
+  ],
   };

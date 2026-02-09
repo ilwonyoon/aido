@@ -92,5 +92,8 @@ export const heygen: Company = {
       nextActions: ['Try HeyGen product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'HeyGen Series A', 'url': 'https://www.heygen.com/blog/announcing-our-series-a'}, {'title': 'HeyGen Growth', 'url': 'https://www.aibase.com/news/9839'}],
+    sources: [
+    { title: 'Source', url: 'https://www.heygen.com/blog/announcing-our-series-a' },
+    { title: 'Source', url: 'https://www.aibase.com/news/9839' }
+  ],
   };

@@ -126,7 +126,7 @@ export const kiteAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Kite AI', url: 'https://kite.ai' },
-    { title: 'Kite AI on startups.gallery', url: 'https://startups.gallery/companies/kite-ai' },
+    { title: 'Source', url: 'https://kite.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/kite-ai' }
   ],
 };

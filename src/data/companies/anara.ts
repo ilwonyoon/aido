@@ -121,7 +121,7 @@ export const anara: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Anara', url: 'https://anara.com' },
-    { title: 'Anara on startups.gallery', url: 'https://startups.gallery/companies/anara' },
+    { title: 'Source', url: 'https://anara.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/anara' }
   ],
 };

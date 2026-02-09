@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-02-09T18:03:42Z",
+  "scope": {
+    "companiesScanned": 8,
+    "priority": "SF Bay Area first; then US-presence Tier 0/1 companies with openRoles: []",
+    "policy": "Product Design IC/leadership only; require job-specific URLs; validate postings via official careers/ATS pages; exclude brand/visual/marketing roles.",
+    "notes": "Lightweight ATS/careers checks via web search and official boards; detailed scrape only for changed candidates. Local curl validation returned 000 (network/DNS), so HTTP 200 status could not be confirmed in-terminal; Greenhouse job pages loaded via web fetch."
+  },
+  "summary": {
+    "added": 5,
+    "companiesWithAdditions": 3
+  },
+  "added": [
+    {
+      "company": "fal",
+      "title": "Senior Product Designer",
+      "location": "San Francisco, CA",
+      "type": "",
+      "url": "https://job-boards.greenhouse.io/fal/jobs/4105054009",
+      "confidence": 0.78,
+      "checkedAt": "2026-02-09T18:03:42Z",
+      "sources": [
+        "https://job-boards.greenhouse.io/fal/jobs/4105054009"
+      ]
+    },
+    {
+      "company": "Glean",
+      "title": "Product Designer",
+      "location": "San Francisco Bay Area",
+      "type": "",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4577381005",
+      "confidence": 0.74,
+      "checkedAt": "2026-02-09T18:03:42Z",
+      "sources": [
+        "https://job-boards.greenhouse.io/gleanwork/jobs/4577381005"
+      ]
+    },
+    {
+      "company": "Glean",
+      "title": "Product Design Lead, AI Products",
+      "location": "San Francisco Bay Area",
+      "type": "",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4600865005",
+      "confidence": 0.74,
+      "checkedAt": "2026-02-09T18:03:42Z",
+      "sources": [
+        "https://job-boards.greenhouse.io/gleanwork/jobs/4600865005"
+      ]
+    },
+    {
+      "company": "Hightouch",
+      "title": "Senior Product Designer, Agents",
+      "location": "Remote (North America)",
+      "type": "",
+      "url": "https://job-boards.greenhouse.io/hightouch/jobs/5733315004",
+      "confidence": 0.73,
+      "checkedAt": "2026-02-09T18:03:42Z",
+      "sources": [
+        "https://job-boards.greenhouse.io/hightouch/jobs/5733315004"
+      ]
+    },
+    {
+      "company": "Hightouch",
+      "title": "Senior Product Designer, Customer Studio",
+      "location": "Remote (North America)",
+      "type": "",
+      "url": "https://job-boards.greenhouse.io/hightouch/jobs/5793428004",
+      "confidence": 0.73,
+      "checkedAt": "2026-02-09T18:03:42Z",
+      "sources": [
+        "https://job-boards.greenhouse.io/hightouch/jobs/5793428004"
+      ]
+    }
+  ]
+}

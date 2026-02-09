@@ -193,10 +193,10 @@ export const extropic: Company = {
   // Meta
   lastUpdated: '2026-01-27T14:30:00',
   sources: [
-    { title: 'Extropic website', url: 'https://extropic.ai' },
-    { title: 'Extropic About', url: 'https://extropic.ai/about' },
-    { title: 'Extropic Careers', url: 'https://extropic.ai/careers' },
-    { title: 'Extropic on startups.gallery', url: 'https://startups.gallery/companies/extropic' },
-    { title: 'Extropic profile (Wired)', url: 'https://www.wired.com/story/extropic-probabilistic-computing-chips/' },
+    { title: 'Source', url: 'https://extropic.ai' },
+    { title: 'Source', url: 'https://extropic.ai/about' },
+    { title: 'Source', url: 'https://extropic.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/extropic' },
+    { title: 'Source', url: 'https://www.wired.com/story/extropic-probabilistic-computing-chips/' }
   ],
 };

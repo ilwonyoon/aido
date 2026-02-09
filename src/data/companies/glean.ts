@@ -102,5 +102,8 @@ export const glean: Company = {
       nextActions: ['Try Glean product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Glean Series F', 'url': 'https://www.glean.com/blog/glean-series-f-announcement'}, {'title': 'Glean Funding', 'url': 'https://www.cnbc.com/2025/06/10/glean-gen-ai-search-startup-raises-150-million-at-7-billion-value.html'}],
+    sources: [
+    { title: 'Source', url: 'https://www.glean.com/blog/glean-series-f-announcement' },
+    { title: 'Source', url: 'https://www.cnbc.com/2025/06/10/glean-gen-ai-search-startup-raises-150-million-at-7-billion-value.html' }
+  ],
   };

@@ -269,21 +269,9 @@ export const harvey: Company = {
     // Meta
     lastUpdated: '2026-01-26T10:30:00',
     sources: [
-      {
-        title: 'Harvey AI Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Harvey_(software)',
-      },
-      {
-        title: 'Harvey raises $300M Series E at $5B valuation',
-        url: 'https://techfundingnews.com/legal-ai-startup-harvey-300m-series-e-funding-5b-valuation/',
-      },
-      {
-        title: 'Harvey founders podcast on LawNext',
-        url: 'https://www.lawnext.com/2026/01/lawnext-from-roommates-to-billionaires-harveys-founders-gabriel-pereyra-and-winston-weinberg-on-building-ai-infrastructure-for-law.html',
-      },
-      {
-        title: 'Inside Harvey: TechCrunch profile',
-        url: 'https://techcrunch.com/2025/11/14/inside-harvey-how-a-first-year-legal-associate-built-one-of-silicon-valleys-hottest-startups/',
-      },
-    ],
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Harvey_(software' },
+    { title: 'Source', url: 'https://techfundingnews.com/legal-ai-startup-harvey-300m-series-e-funding-5b-valuation/' },
+    { title: 'Source', url: 'https://www.lawnext.com/2026/01/lawnext-from-roommates-to-billionaires-harveys-founders-gabriel-pereyra-and-winston-weinberg-on-building-ai-infrastructure-for-law.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/14/inside-harvey-how-a-first-year-legal-associate-built-one-of-silicon-valleys-hottest-startups/' }
+  ],
   };

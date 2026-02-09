@@ -121,7 +121,7 @@ export const arcadeAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Arcade AI', url: 'https://arcade.ai' },
-    { title: 'Arcade AI on startups.gallery', url: 'https://startups.gallery/companies/arcade-ai' },
+    { title: 'Source', url: 'https://arcade.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/arcade-ai' }
   ],
 };

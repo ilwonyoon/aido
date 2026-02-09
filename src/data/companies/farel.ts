@@ -121,7 +121,7 @@ export const farel: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Farel', url: 'https://farel.ai' },
-    { title: 'Farel on startups.gallery', url: 'https://startups.gallery/companies/farel' },
+    { title: 'Source', url: 'https://farel.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/farel' }
   ],
 };

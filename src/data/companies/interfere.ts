@@ -94,7 +94,7 @@ export const interfere: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Interfere', url: 'https://www.interfere.ai' },
-    { title: 'Interfere on startups.gallery', url: 'https://startups.gallery/companies/interfere' },
+    { title: 'Source', url: 'https://www.interfere.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/interfere' }
   ],
 };

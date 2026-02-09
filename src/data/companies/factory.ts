@@ -201,12 +201,12 @@ export const factory: Company = {
   // Meta
   lastUpdated: '2026-01-27T12:30:00',
   sources: [
-    { title: 'Factory website', url: 'https://factory.ai/' },
-    { title: 'Factory on startups.gallery', url: 'https://startups.gallery/companies/factory' },
-    { title: 'Factory Series B announcement', url: 'https://factory.ai/news/factory-announces-50m-series-b-at-300m-valuation' },
-    { title: 'OpenAI + Factory partnership (founders)', url: 'https://openai.com/index/adding-enterprise-grade-software-engineering-to-codex-with-factory/' },
-    { title: 'Cognition (Devin)', url: 'https://www.cognition.ai/' },
-    { title: 'GitHub Copilot', url: 'https://github.com/features/copilot' },
-    { title: 'Replit', url: 'https://replit.com/' },
+    { title: 'Source', url: 'https://factory.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/factory' },
+    { title: 'Source', url: 'https://factory.ai/news/factory-announces-50m-series-b-at-300m-valuation' },
+    { title: 'Source', url: 'https://openai.com/index/adding-enterprise-grade-software-engineering-to-codex-with-factory/' },
+    { title: 'Source', url: 'https://www.cognition.ai/' },
+    { title: 'Source', url: 'https://github.com/features/copilot' },
+    { title: 'Source', url: 'https://replit.com/' }
   ],
 };

@@ -198,7 +198,7 @@ export const variant: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Variant website', url: 'https://variant.ai/' },
-    { title: 'Variant on startups.gallery', url: 'https://startups.gallery/companies/variant' },
+    { title: 'Source', url: 'https://variant.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/variant' }
   ],
 };

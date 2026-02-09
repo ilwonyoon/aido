@@ -118,7 +118,7 @@ export const reducto: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Reducto', url: 'https://reducto.ai' },
-    { title: 'Reducto on startups.gallery', url: 'https://startups.gallery/companies/reducto' },
+    { title: 'Source', url: 'https://reducto.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/reducto' }
   ],
 };

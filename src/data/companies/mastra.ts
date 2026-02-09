@@ -131,7 +131,7 @@ export const mastra: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Mastra', url: 'https://mastra.ai' },
-    { title: 'Mastra on startups.gallery', url: 'https://startups.gallery/companies/mastra' },
+    { title: 'Source', url: 'https://mastra.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mastra' }
   ],
 };

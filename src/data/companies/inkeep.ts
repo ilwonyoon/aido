@@ -99,7 +99,7 @@ export const inkeep: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Inkeep', url: 'https://www.inkeep.com' },
-    { title: 'Inkeep on startups.gallery', url: 'https://startups.gallery/companies/inkeep' },
+    { title: 'Source', url: 'https://www.inkeep.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/inkeep' }
   ],
 };

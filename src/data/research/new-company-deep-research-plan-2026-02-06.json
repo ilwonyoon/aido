@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-02-06T22:29:51.372Z",
+  "mode": "new-company-deep-research-hourly+manual-acceleration",
+  "totalRemaining": 34,
+  "qualityGate": {
+    "requiredConcrete": [
+      "founders",
+      "stage",
+      "remote",
+      "totalFunding"
+    ],
+    "allowNPDWithSource": [
+      "valuation",
+      "revenue",
+      "growth",
+      "runway",
+      "customers"
+    ],
+    "minSources": 3,
+    "requiredSources": [
+      "official website",
+      "funding/news source"
+    ]
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "companies": [
+        "Kindred AI",
+        "Flybits, Inc",
+        "Terrene",
+        "Automat (company)",
+        "OpenOcean Robotics"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 2,
+      "companies": [
+        "ecobee (company)",
+        "Terramera",
+        "CrowdRiff",
+        "Naborly",
+        "Avidbots"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 3,
+      "companies": [
+        "SkyHive",
+        "LANDR",
+        "C2RO Robotics",
+        "Meya.ai",
+        "DarwinAI"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 4,
+      "companies": [
+        "Symend",
+        "Canvass AI",
+        "Botpress",
+        "Pitstop",
+        "WeavAir"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 5,
+      "companies": [
+        "Attabotics",
+        "CryptoNumerics",
+        "Sightline Innovation Inc.",
+        "Swift Medical",
+        "NextAI"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 6,
+      "companies": [
+        "PiinPoint",
+        "Private AI",
+        "Phenomic AI",
+        "reDock",
+        "dcbel"
+      ],
+      "targetProcessed": 5,
+      "qualityGate": "strict"
+    },
+    {
+      "batch": 7,
+      "companies": [
+        "Operant.AI",
+        "SortSpoke",
+        "UrbanLogiq",
+        "Aerial"
+      ],
+      "targetProcessed": 4,
+      "qualityGate": "strict"
+    }
+  ]
+}

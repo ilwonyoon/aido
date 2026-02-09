@@ -198,6 +198,6 @@ export const composite: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Composite website', url: 'https://www.composite.ai/' },
+    { title: 'Source', url: 'https://www.composite.ai/' }
   ],
 };

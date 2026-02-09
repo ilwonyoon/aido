@@ -177,8 +177,8 @@ export const console: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Console', url: 'https://console.co' },
-    { title: 'Console Careers', url: 'https://console.com/careers' },
-    { title: 'Console on startups.gallery', url: 'https://startups.gallery/companies/console' },
+    { title: 'Source', url: 'https://console.co' },
+    { title: 'Source', url: 'https://console.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/console' }
   ],
 };

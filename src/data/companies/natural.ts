@@ -169,7 +169,7 @@ export const natural: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Natural on startups.gallery', url: 'https://startups.gallery/companies/natural' },
-    { title: 'Natural Product Designer role', url: 'https://www.natural.co/careers/product-designer' },
+    { title: 'Source', url: 'https://startups.gallery/companies/natural' },
+    { title: 'Source', url: 'https://www.natural.co/careers/product-designer' }
   ],
 };

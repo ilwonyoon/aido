@@ -203,7 +203,7 @@ export const truffleSecurity: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Truffle Security website', url: 'https://trufflesecurity.com/' },
-    { title: 'Truffle Security on startups.gallery', url: 'https://startups.gallery/companies/truffle-security' },
+    { title: 'Source', url: 'https://trufflesecurity.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/truffle-security' }
   ],
 };

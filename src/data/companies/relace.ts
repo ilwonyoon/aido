@@ -158,8 +158,8 @@ export const relace: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Relace Series A', url: 'https://relace.ai/blog/series-a' },
-    { title: 'Relace', url: 'https://relace.ai' },
-    { title: 'Relace on startups.gallery', url: 'https://startups.gallery/companies/relace' },
+    { title: 'Source', url: 'https://relace.ai/blog/series-a' },
+    { title: 'Source', url: 'https://relace.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/relace' }
   ],
 };

@@ -193,7 +193,7 @@ export const internetBackyard: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Internet Backyard website', url: 'https://internetbackyard.com/' },
-    { title: 'Internet Backyard on startups.gallery', url: 'https://startups.gallery/companies/internet-backyard' },
+    { title: 'Source', url: 'https://internetbackyard.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/internet-backyard' }
   ],
 };

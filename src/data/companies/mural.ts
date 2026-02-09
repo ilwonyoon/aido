@@ -100,7 +100,7 @@ export const mural: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Mural', url: 'https://www.mural.co' },
-    { title: 'Mural on startups.gallery', url: 'https://startups.gallery/companies/mural' },
+    { title: 'Source', url: 'https://www.mural.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mural' }
   ],
 };

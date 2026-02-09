@@ -161,13 +161,13 @@ export const ecobee: Company = {
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-    { title: 'ecobee About', url: 'https://www.ecobee.com/en-ca/about/' },
-    { title: 'ecobee Careers (remote policy)', url: 'https://www.ecobee.com/en-ca/careers/' },
-    { title: 'ecobee Contact (HQ address)', url: 'https://www.ecobee.com/en-ca/contact/' },
-    { title: 'Generac to Acquire ecobee (valuation)', url: 'https://investors.generac.com/news-releases/news-release-details/generac-acquire-ecobee-inc' },
-    { title: 'Ecobee Series C funding (TechCrunch)', url: 'https://techcrunch.com/2018/03/07/ecobee-scores-a-61-million-series-c-with-help-from-amazon/' },
-    { title: 'Ecobee Series C round details (CNBC)', url: 'https://www.cnbc.com/2018/03/06/amazon-alexa-fund-and-energy-impact-partners-invested-in-ecobee.html' },
-    { title: 'Ecobee vs Nest thermostat competition (The Verge)', url: 'https://www.theverge.com/2025/1/6/24335022/ecobee-essential-thermostat-price-ces-2025' },
-    { title: 'ENERGY STAR Sensi thermostat listing', url: 'https://www.energystar.gov/productfinder/product/certified-connected-thermostats/details/2380652' },
+    { title: 'Source', url: 'https://www.ecobee.com/en-ca/about/' },
+    { title: 'Source', url: 'https://www.ecobee.com/en-ca/careers/' },
+    { title: 'Source', url: 'https://www.ecobee.com/en-ca/contact/' },
+    { title: 'Source', url: 'https://investors.generac.com/news-releases/news-release-details/generac-acquire-ecobee-inc' },
+    { title: 'Source', url: 'https://techcrunch.com/2018/03/07/ecobee-scores-a-61-million-series-c-with-help-from-amazon/' },
+    { title: 'Source', url: 'https://www.cnbc.com/2018/03/06/amazon-alexa-fund-and-energy-impact-partners-invested-in-ecobee.html' },
+    { title: 'Source', url: 'https://www.theverge.com/2025/1/6/24335022/ecobee-essential-thermostat-price-ces-2025' },
+    { title: 'Source', url: 'https://www.energystar.gov/productfinder/product/certified-connected-thermostats/details/2380652' }
   ],
 };

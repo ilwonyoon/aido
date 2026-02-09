@@ -246,10 +246,10 @@ export const clickhouse: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:55:00',
   sources: [
-    { title: 'ClickHouse our story', url: 'https://clickhouse.com/company/our-story' },
-    { title: 'ClickHouse careers', url: 'https://clickhouse.com/company/careers' },
-    { title: 'ClickHouse Series B announcement', url: 'https://clickhouse.com/blog/clickhouse-inc-raises-250-million-at-2-billion-valuation-to-support-open-source-community-and-new-cloud-service' },
-    { title: 'ClickHouse Series C (Business Wire)', url: 'https://www.businesswire.com/news/home/20250529254399/en/ClickHouse-Raises-%24350-Million-Series-C-to-Power-Analytics-for-the-AI-Era' },
-    { title: 'ClickHouse Series D announcement', url: 'https://clickhouse.com/blog/clickhouse-raises-400-million-series-d-acquires-langfuse-launches-postgres' },
+    { title: 'Source', url: 'https://clickhouse.com/company/our-story' },
+    { title: 'Source', url: 'https://clickhouse.com/company/careers' },
+    { title: 'Source', url: 'https://clickhouse.com/blog/clickhouse-inc-raises-250-million-at-2-billion-valuation-to-support-open-source-community-and-new-cloud-service' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20250529254399/en/ClickHouse-Raises-%24350-Million-Series-C-to-Power-Analytics-for-the-AI-Era' },
+    { title: 'Source', url: 'https://clickhouse.com/blog/clickhouse-raises-400-million-series-d-acquires-langfuse-launches-postgres' }
   ],
 };

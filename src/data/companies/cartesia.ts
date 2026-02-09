@@ -196,9 +196,9 @@ export const cartesia: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Cartesia Company', url: 'https://cartesia.ai/company' },
-    { title: 'Cartesia $64M Series A (Fortune)', url: 'https://fortune.com/2025/03/11/exclusive-cartesia-voice-ai-startup-raises-64-million-series-a/' },
-    { title: 'Kleiner Perkins — Cartesia', url: 'https://www.kleinerperkins.com/perspectives/cartesia-pioneering-real-time-voice-ai/' },
-    { title: 'Index Ventures — Cartesia', url: 'https://www.indexventures.com/perspectives/building-the-next-generation-of-real-time-ai-models-our-investment-in-cartesia/' },
+    { title: 'Source', url: 'https://cartesia.ai/company' },
+    { title: 'Source', url: 'https://fortune.com/2025/03/11/exclusive-cartesia-voice-ai-startup-raises-64-million-series-a/' },
+    { title: 'Source', url: 'https://www.kleinerperkins.com/perspectives/cartesia-pioneering-real-time-voice-ai/' },
+    { title: 'Source', url: 'https://www.indexventures.com/perspectives/building-the-next-generation-of-real-time-ai-models-our-investment-in-cartesia/' }
   ],
 };

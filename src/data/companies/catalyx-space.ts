@@ -177,9 +177,9 @@ export const catalyxSpace: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Catalyx Space', url: 'https://catalyx.space' },
-    { title: 'Catalyx Space Funding', url: 'https://catalyx.space/funding' },
-    { title: 'Catalyx Space Seed (Business Wire)', url: 'https://www.businesswire.com/news/home/20251030616788/en/Catalyx-Space-Announces-5.4M-Seed-Round-to-Build-In-Space-Infrastructure' },
-    { title: 'Catalyx Space on startups.gallery', url: 'https://startups.gallery/companies/catalyx-space' },
+    { title: 'Source', url: 'https://catalyx.space' },
+    { title: 'Source', url: 'https://catalyx.space/funding' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20251030616788/en/Catalyx-Space-Announces-5.4M-Seed-Round-to-Build-In-Space-Infrastructure' },
+    { title: 'Source', url: 'https://startups.gallery/companies/catalyx-space' }
   ],
 };

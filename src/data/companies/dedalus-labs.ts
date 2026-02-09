@@ -169,8 +169,8 @@ export const dedalusLabs: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Dedalus Labs', url: 'https://dedaluslabs.ai' },
-    { title: 'Dedalus Labs YC profile', url: 'https://www.ycombinator.com/companies/dedalus-labs' },
-    { title: 'Dedalus Labs on startups.gallery', url: 'https://startups.gallery/companies/dedalus-labs' },
+    { title: 'Source', url: 'https://dedaluslabs.ai' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/dedalus-labs' },
+    { title: 'Source', url: 'https://startups.gallery/companies/dedalus-labs' }
   ],
 };

@@ -196,8 +196,8 @@ export const physicalIntelligence: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Physical Intelligence website', url: 'https://www.physicalintelligence.company/' },
-    { title: 'Physical Intelligence Series A (TechCrunch)', url: 'https://techcrunch.com/2024/03/13/physical-intelligence-raises-70m-to-build-general-purpose-robotics-models/' },
-    { title: 'Physical Intelligence Series A (PR Newswire)', url: 'https://www.prnewswire.com/news-releases/physical-intelligence-raises-70m-to-build-foundation-models-for-physical-robotics-302087317.html' },
+    { title: 'Source', url: 'https://www.physicalintelligence.company/' },
+    { title: 'Source', url: 'https://techcrunch.com/2024/03/13/physical-intelligence-raises-70m-to-build-general-purpose-robotics-models/' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/physical-intelligence-raises-70m-to-build-foundation-models-for-physical-robotics-302087317.html' }
   ],
 };

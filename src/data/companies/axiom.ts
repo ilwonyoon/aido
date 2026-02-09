@@ -131,7 +131,7 @@ export const axiom: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Axiom', url: 'https://axiom.co' },
-    { title: 'Axiom on startups.gallery', url: 'https://startups.gallery/companies/axiom' },
+    { title: 'Source', url: 'https://axiom.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/axiom' }
   ],
 };

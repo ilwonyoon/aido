@@ -100,7 +100,7 @@ export const incidentIo: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'incident.io', url: 'https://incident.io' },
-    { title: 'incident.io on startups.gallery', url: 'https://startups.gallery/companies/incident-io' },
+    { title: 'Source', url: 'https://incident.io' },
+    { title: 'Source', url: 'https://startups.gallery/companies/incident-io' }
   ],
 };

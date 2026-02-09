@@ -118,7 +118,6 @@ export const moonlakeAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Moonlake', url: 'https://startups.gallery/companies/moonlake-ai' },
-    { title: 'Moonlake on startups.gallery', url: 'https://startups.gallery/companies/moonlake-ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/moonlake-ai' }
   ],
 };

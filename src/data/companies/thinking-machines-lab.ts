@@ -165,10 +165,10 @@ export const thinkingMachinesLab: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Thinking Machines Lab', url: 'https://thinkingmachines.ai' },
-    { title: 'Thinking Machines Lab Blog', url: 'https://thinkingmachines.ai/blog/' },
-    { title: 'Thinking Machines Lab Jobs (Greenhouse)', url: 'https://job-boards.greenhouse.io/thinkingmachines' },
-    { title: 'Thinking Machines Lab launch (TechCrunch)', url: 'https://techcrunch.com/2025/02/18/thinking-machines-lab-is-ex-openai-cto-mira-muratis-new-startup/' },
-    { title: 'Thinking Machines Lab seed round (TechCrunch)', url: 'https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/' },
+    { title: 'Source', url: 'https://thinkingmachines.ai' },
+    { title: 'Source', url: 'https://thinkingmachines.ai/blog/' },
+    { title: 'Source', url: 'https://job-boards.greenhouse.io/thinkingmachines' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/02/18/thinking-machines-lab-is-ex-openai-cto-mira-muratis-new-startup/' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/' }
   ],
 };

@@ -136,7 +136,7 @@ export const bedrockRobotics: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Bedrock Robotics', url: 'https://bedrockrobotics.com' },
-    { title: 'Bedrock Robotics on startups.gallery', url: 'https://startups.gallery/companies/bedrock-robotics' },
+    { title: 'Source', url: 'https://bedrockrobotics.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/bedrock-robotics' }
   ],
 };

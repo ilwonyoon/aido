@@ -102,7 +102,7 @@ export const coframe: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Coframe', url: 'https://www.coframe.com' },
-    { title: 'Coframe on startups.gallery', url: 'https://startups.gallery/companies/coframe' },
+    { title: 'Source', url: 'https://www.coframe.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/coframe' }
   ],
 };

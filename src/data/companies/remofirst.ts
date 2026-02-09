@@ -235,12 +235,12 @@ export const remofirst: Company = {
   // Meta
   lastUpdated: '2026-01-27T19:25:00',
   sources: [
-    { title: 'RemoFirst website', url: 'https://remofirst.com/' },
-    { title: 'RemoFirst about', url: 'https://remofirst.com/about-us' },
-    { title: 'RemoFirst Series A (BusinessWire)', url: 'https://www.businesswire.com/news/home/20240306357812/en/HR-Solution-Remofirst-Raises-%2425-Million-Series-A-Funding-to-Make-it-Affordable-and-Easy-to-Employ-Global-Remote-Teams' },
-    { title: 'RemoFirst Series A (company blog)', url: 'https://www.remofirst.com/post/remofirst-raises-series-a-funding' },
-    { title: 'RemoFirst careers', url: 'https://remofirst.com/careers' },
-    { title: 'RemoFirst Senior Product Designer (Lever)', url: 'https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08' },
-    { title: 'RemoFirst jobs list (Lever)', url: 'https://jobs.lever.co/remofirst' },
+    { title: 'Source', url: 'https://remofirst.com/' },
+    { title: 'Source', url: 'https://remofirst.com/about-us' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20240306357812/en/HR-Solution-Remofirst-Raises-%2425-Million-Series-A-Funding-to-Make-it-Affordable-and-Easy-to-Employ-Global-Remote-Teams' },
+    { title: 'Source', url: 'https://www.remofirst.com/post/remofirst-raises-series-a-funding' },
+    { title: 'Source', url: 'https://remofirst.com/careers' },
+    { title: 'Source', url: 'https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08' },
+    { title: 'Source', url: 'https://jobs.lever.co/remofirst' }
   ],
 };

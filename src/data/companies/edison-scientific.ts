@@ -198,7 +198,7 @@ export const edisonScientific: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Edison Scientific website', url: 'https://edisonscientific.com/' },
-    { title: 'Edison Scientific on startups.gallery', url: 'https://startups.gallery/companies/edison-scientific' },
+    { title: 'Source', url: 'https://edisonscientific.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/edison-scientific' }
   ],
 };

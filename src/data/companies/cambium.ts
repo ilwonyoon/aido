@@ -107,7 +107,7 @@ export const cambium: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Cambium', url: 'https://www.cambiumcarbon.com' },
-    { title: 'Cambium on startups.gallery', url: 'https://startups.gallery/companies/cambium' },
+    { title: 'Source', url: 'https://www.cambiumcarbon.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cambium' }
   ],
 };

@@ -198,9 +198,9 @@ export const flint: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Flint website', url: 'https://www.tryflint.com/' },
-    { title: 'Flint Series A (FinSMEs)', url: 'https://www.finsmes.com/2025/01/flint-raises-24m-in-series-a-funding.html' },
-    { title: 'Flint Series A (company blog)', url: 'https://www.tryflint.com/blog/series-a' },
-    { title: 'Flint on startups.gallery', url: 'https://startups.gallery/companies/flint' },
+    { title: 'Source', url: 'https://www.tryflint.com/' },
+    { title: 'Source', url: 'https://www.finsmes.com/2025/01/flint-raises-24m-in-series-a-funding.html' },
+    { title: 'Source', url: 'https://www.tryflint.com/blog/series-a' },
+    { title: 'Source', url: 'https://startups.gallery/companies/flint' }
   ],
 };

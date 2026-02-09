@@ -247,13 +247,7 @@ export const mistral: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Mistral Series C - Official',
-        url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai',
-      },
-      {
-        title: 'Mistral $14B Valuation - TechFundingNews',
-        url: 'https://techfundingnews.com/mistral-ai-raises-2-billion-valuation-europe-ai-frontrunner/',
-      },
-    ],
+    { title: 'Source', url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai' },
+    { title: 'Source', url: 'https://techfundingnews.com/mistral-ai-raises-2-billion-valuation-europe-ai-frontrunner/' }
+  ],
   };

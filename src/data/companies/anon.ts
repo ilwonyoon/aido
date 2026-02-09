@@ -126,7 +126,7 @@ export const anon: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Anon', url: 'https://anon.com' },
-    { title: 'Anon on startups.gallery', url: 'https://startups.gallery/companies/anon' },
+    { title: 'Source', url: 'https://anon.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/anon' }
   ],
 };

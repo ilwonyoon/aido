@@ -99,7 +99,7 @@ export const nuvo: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Nuvo', url: 'https://nuvo.com' },
-    { title: 'Nuvo on startups.gallery', url: 'https://startups.gallery/companies/nuvo' },
+    { title: 'Source', url: 'https://nuvo.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nuvo' }
   ],
 };

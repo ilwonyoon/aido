@@ -128,7 +128,7 @@ export const kindredSystems: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:35:00',
   sources: [
-    { title: 'Ocado acquires Kindred Systems (press)', url: 'https://www.ocadogroup.com/newsroom/ocado-acquires-kindred-systems-and-haddington-dynamics' },
-    { title: 'CNBC - Ocado acquires Kindred Systems', url: 'https://www.cnbc.com/2020/11/02/ocado-acquires-kindred-systems-haddington-dynamics-robotics.html' },
+    { title: 'Source', url: 'https://www.ocadogroup.com/newsroom/ocado-acquires-kindred-systems-and-haddington-dynamics' },
+    { title: 'Source', url: 'https://www.cnbc.com/2020/11/02/ocado-acquires-kindred-systems-haddington-dynamics-robotics.html' }
   ],
 };

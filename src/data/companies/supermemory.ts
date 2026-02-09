@@ -121,7 +121,7 @@ export const supermemory: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Supermemory', url: 'https://supermemory.ai' },
-    { title: 'Supermemory on startups.gallery', url: 'https://startups.gallery/companies/supermemory' },
+    { title: 'Source', url: 'https://supermemory.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/supermemory' }
   ],
 };

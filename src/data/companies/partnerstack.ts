@@ -132,7 +132,7 @@ export const partnerstack: Company = {
   // Meta
   lastUpdated: '2026-02-04T21:00:00',
   sources: [
-    { title: 'PartnerStack', url: 'https://partnerstack.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://partnerstack.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

@@ -157,7 +157,7 @@ export const causalLabs: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:40:00',
   sources: [
-    { title: 'Causal Labs', url: 'https://www.getcausal.ai' },
-    { title: 'Causal Labs on startups.gallery', url: 'https://startups.gallery/companies/causal-labs' },
+    { title: 'Source', url: 'https://www.getcausal.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/causal-labs' }
   ],
 };

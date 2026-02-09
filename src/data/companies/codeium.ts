@@ -163,11 +163,11 @@ export const codeium: Company = {
     },
     lastUpdated: '2026-01-26T23:40:00',
     sources: [
-      {'title': 'Codeium $3B Valuation Talks', 'url': 'https://techcrunch.com/2025/02/19/ai-coding-startup-codeium-in-talks-to-raise-at-an-almost-3b-valuation-sources-say/'},
-      {'title': 'Codeium Growth Statistics', 'url': 'https://fueler.io/blog/codeium-usage-revenue-valuation-growth-statistics'},
-      {'title': 'Windsurf Editor Launch', 'url': 'https://codeium.com/windsurf'},
-      {'title': 'Windsurf Review 2026', 'url': 'https://vibecoding.app/blog/windsurf-review'},
-      {'title': 'Varun Mohan Interview (Lenny\'s Podcast)', 'url': 'https://www.lennysnewsletter.com/p/the-untold-story-of-windsurf-varun-mohan'},
-      {'title': 'Google Hires Windsurf CEO', 'url': 'https://www.business-standard.com/technology/tech-news/google-hires-windsurf-ceo-varun-mohan-gemini-ai-project-openai-douglas-chen-125071200543_1.html'},
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/02/19/ai-coding-startup-codeium-in-talks-to-raise-at-an-almost-3b-valuation-sources-say/' },
+    { title: 'Source', url: 'https://fueler.io/blog/codeium-usage-revenue-valuation-growth-statistics' },
+    { title: 'Source', url: 'https://codeium.com/windsurf' },
+    { title: 'Source', url: 'https://vibecoding.app/blog/windsurf-review' },
+    { title: 'Source', url: 'https://www.lennysnewsletter.com/p/the-untold-story-of-windsurf-varun-mohan' },
+    { title: 'Source', url: 'https://www.business-standard.com/technology/tech-news/google-hires-windsurf-ceo-varun-mohan-gemini-ai-project-openai-douglas-chen-125071200543_1.html' }
+  ],
   };

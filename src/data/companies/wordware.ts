@@ -99,7 +99,7 @@ export const wordware: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Wordware', url: 'https://www.wordware.ai' },
-    { title: 'Wordware on startups.gallery', url: 'https://startups.gallery/companies/wordware' },
+    { title: 'Source', url: 'https://www.wordware.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/wordware' }
   ],
 };

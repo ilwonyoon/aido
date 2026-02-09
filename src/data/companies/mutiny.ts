@@ -195,8 +195,8 @@ export const mutiny: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Mutiny website', url: 'https://www.mutinyhq.com/' },
-    { title: 'Mutiny on startups.gallery', url: 'https://startups.gallery/companies/mutiny' },
-    { title: 'Mutiny Senior Product Designer job', url: 'https://boards.greenhouse.io/mutinyhq/jobs/7855143002' },
+    { title: 'Source', url: 'https://www.mutinyhq.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mutiny' },
+    { title: 'Source', url: 'https://boards.greenhouse.io/mutinyhq/jobs/7855143002' }
   ],
 };

@@ -126,7 +126,7 @@ export const mainstay: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Mainstay', url: 'https://mainstay.io' },
-    { title: 'Mainstay on startups.gallery', url: 'https://startups.gallery/companies/mainstay' },
+    { title: 'Source', url: 'https://mainstay.io' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mainstay' }
   ],
 };

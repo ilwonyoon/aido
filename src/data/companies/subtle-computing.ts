@@ -163,8 +163,8 @@ export const subtleComputing: Company = {
     // Meta
     lastUpdated: '2026-01-27T10:58:34',
     sources: [
-      { title: 'Subtle Computing (startups.gallery)', url: 'https://startups.gallery/companies/subtle-computing' },
-      { title: 'Voicebuds funding + founders (TechCrunch)', url: 'https://techcrunch.com/2025/10/09/voicebuds-has-raised-6m-to-let-you-record-and-query-real-time-conversations/' },
-      { title: 'Subtle', url: 'https://www.subtle.co/' },
-    ],
+    { title: 'Source', url: 'https://startups.gallery/companies/subtle-computing' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/10/09/voicebuds-has-raised-6m-to-let-you-record-and-query-real-time-conversations/' },
+    { title: 'Source', url: 'https://www.subtle.co/' }
+  ],
   };

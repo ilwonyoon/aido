@@ -99,7 +99,7 @@ export const mail0: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Mail0', url: 'https://mail0.com' },
-    { title: 'Mail0 on startups.gallery', url: 'https://startups.gallery/companies/mail0' },
+    { title: 'Source', url: 'https://mail0.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mail0' }
   ],
 };

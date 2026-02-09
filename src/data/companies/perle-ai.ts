@@ -193,9 +193,9 @@ export const perleAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Perle AI website', url: 'https://perle.ai/' },
-    { title: 'Perle AI company page', url: 'https://perle.ai/company' },
-    { title: 'Perle AI seed funding (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/perle-ai-raises-5-6m-seed-round-to-build-agentic-ai-workforce-302298293.html' },
-    { title: 'Perle AI on startups.gallery', url: 'https://startups.gallery/companies/perle-ai' },
+    { title: 'Source', url: 'https://perle.ai/' },
+    { title: 'Source', url: 'https://perle.ai/company' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/perle-ai-raises-5-6m-seed-round-to-build-agentic-ai-workforce-302298293.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/perle-ai' }
   ],
 };

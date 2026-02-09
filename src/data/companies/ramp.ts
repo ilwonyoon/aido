@@ -233,13 +233,7 @@ export const ramp: Company = {
     // Meta
     lastUpdated: '2026-01-26T14:40:00',
     sources: [
-      {
-        title: 'Ramp $32B valuation, $1B ARR',
-        url: 'https://techstartups.com/2025/11/17/ramp-hits-32b-valuation-with-new-300m-funding-round-as-investors-double-down-on-autonomous-finance/',
-      },
-      {
-        title: 'Eric Glyman on SaaStr',
-        url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/',
-      },
-    ],
+    { title: 'Source', url: 'https://techstartups.com/2025/11/17/ramp-hits-32b-valuation-with-new-300m-funding-round-as-investors-double-down-on-autonomous-finance/' },
+    { title: 'Source', url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/' }
+  ],
   };

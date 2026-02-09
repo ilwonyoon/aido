@@ -165,8 +165,8 @@ export const doppel: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Doppel', url: 'https://www.doppel.com' },
-    { title: 'Doppel Careers', url: 'https://www.doppel.com/careers' },
-    { title: 'Doppel on startups.gallery', url: 'https://startups.gallery/companies/doppel' },
+    { title: 'Source', url: 'https://www.doppel.com' },
+    { title: 'Source', url: 'https://www.doppel.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/doppel' }
   ],
 };

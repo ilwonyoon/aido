@@ -149,7 +149,7 @@ export const sentientLabs: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:50:00',
   sources: [
-    { title: 'Sentient Foundation', url: 'https://sentient.foundation' },
-    { title: 'Sentient Labs on startups.gallery', url: 'https://startups.gallery/companies/sentient-labs' },
+    { title: 'Source', url: 'https://sentient.foundation' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sentient-labs' }
   ],
 };

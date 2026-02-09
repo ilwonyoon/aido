@@ -198,9 +198,9 @@ export const corgi: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Corgi YC profile', url: 'https://www.ycombinator.com/companies/corgi' },
-    { title: 'Corgi funding announcement (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/corgi-raises-108-million-to-launch-its-ai-native-full-stack-insurance-carrier-302346204.html' },
-    { title: 'Corgi website', url: 'https://www.corgi.insure/' },
-    { title: 'Corgi on startups.gallery', url: 'https://startups.gallery/companies/corgi' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/corgi' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/corgi-raises-108-million-to-launch-its-ai-native-full-stack-insurance-carrier-302346204.html' },
+    { title: 'Source', url: 'https://www.corgi.insure/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/corgi' }
   ],
 };

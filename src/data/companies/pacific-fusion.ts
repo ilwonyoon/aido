@@ -191,7 +191,7 @@ export const pacificFusion: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Pacific Fusion website', url: 'https://pacificfusion.com/' },
-    { title: 'Pacific Fusion on startups.gallery', url: 'https://startups.gallery/companies/pacific-fusion' },
+    { title: 'Source', url: 'https://pacificfusion.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/pacific-fusion' }
   ],
 };

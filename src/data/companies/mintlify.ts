@@ -118,7 +118,7 @@ export const mintlify: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Mintlify', url: 'https://mintlify.com' },
-    { title: 'Mintlify on startups.gallery', url: 'https://startups.gallery/companies/mintlify' },
+    { title: 'Source', url: 'https://mintlify.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mintlify' }
   ],
 };

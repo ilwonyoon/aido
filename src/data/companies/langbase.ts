@@ -121,7 +121,7 @@ export const langbase: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Langbase', url: 'https://langbase.com' },
-    { title: 'Langbase on startups.gallery', url: 'https://startups.gallery/companies/langbase' },
+    { title: 'Source', url: 'https://langbase.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/langbase' }
   ],
 };

@@ -158,8 +158,8 @@ export const blazeAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Blaze', url: 'https://www.withblaze.app' },
-    { title: 'Blaze on Y Combinator', url: 'https://www.ycombinator.com/companies/blaze' },
-    { title: 'Blaze AI on startups.gallery', url: 'https://startups.gallery/companies/blaze-ai' },
+    { title: 'Source', url: 'https://www.withblaze.app' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/blaze' },
+    { title: 'Source', url: 'https://startups.gallery/companies/blaze-ai' }
   ],
 };

@@ -127,7 +127,7 @@ export const certn: Company = {
   // Meta
   lastUpdated: '2026-02-04T21:00:00',
   sources: [
-    { title: 'Certn', url: 'https://certn.co' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://certn.co' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

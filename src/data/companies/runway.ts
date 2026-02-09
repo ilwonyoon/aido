@@ -189,13 +189,7 @@ export const runway: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'Runway Series D - TechCrunch',
-        url: 'https://techcrunch.com/2025/04/03/runway-best-known-for-its-video-generating-models-raises-308m/',
-      },
-      {
-        title: 'Runway (Wikipedia)',
-        url: 'https://en.wikipedia.org/wiki/Runway_(company)',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/04/03/runway-best-known-for-its-video-generating-models-raises-308m/' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Runway_(company' }
+  ],
   };

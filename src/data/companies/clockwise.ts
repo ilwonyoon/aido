@@ -131,7 +131,7 @@ export const clockwise: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Clockwise', url: 'https://www.getclockwise.com' },
-    { title: 'Clockwise on startups.gallery', url: 'https://startups.gallery/companies/clockwise' },
+    { title: 'Source', url: 'https://www.getclockwise.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/clockwise' }
   ],
 };

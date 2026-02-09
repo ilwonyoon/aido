@@ -160,8 +160,8 @@ export const mosey: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Mosey', url: 'https://www.mosey.com' },
-    { title: 'Mosey Series A (TechCrunch)', url: 'https://techcrunch.com/2022/08/04/mosey-secures-fresh-capital-to-help-companies-comply-with-payroll-rules/' },
-    { title: 'Mosey on startups.gallery', url: 'https://startups.gallery/companies/mosey' },
+    { title: 'Source', url: 'https://www.mosey.com' },
+    { title: 'Source', url: 'https://techcrunch.com/2022/08/04/mosey-secures-fresh-capital-to-help-companies-comply-with-payroll-rules/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mosey' }
   ],
 };

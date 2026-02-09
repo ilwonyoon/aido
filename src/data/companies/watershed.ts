@@ -202,7 +202,7 @@ export const watershed: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Watershed website', url: 'https://www.watershed.com/' },
-    { title: 'Watershed about', url: 'https://www.watershed.com/about-us' },
+    { title: 'Source', url: 'https://www.watershed.com/' },
+    { title: 'Source', url: 'https://www.watershed.com/about-us' }
   ],
 };

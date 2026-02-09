@@ -158,7 +158,7 @@ export const highscore: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Highscore', url: 'https://highscore.com' },
-    { title: 'Highscore on startups.gallery', url: 'https://startups.gallery/companies/highscore' },
+    { title: 'Source', url: 'https://highscore.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/highscore' }
   ],
 };

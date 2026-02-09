@@ -99,7 +99,7 @@ export const onyx: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Onyx', url: 'https://www.onyx.app' },
-    { title: 'Onyx on startups.gallery', url: 'https://startups.gallery/companies/onyx' },
+    { title: 'Source', url: 'https://www.onyx.app' },
+    { title: 'Source', url: 'https://startups.gallery/companies/onyx' }
   ],
 };

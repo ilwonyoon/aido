@@ -187,6 +187,6 @@ export const sonatic: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Sonatic website', url: 'https://www.sonatic.ai/' },
+    { title: 'Source', url: 'https://www.sonatic.ai/' }
   ],
 };

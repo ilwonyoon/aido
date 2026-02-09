@@ -209,11 +209,11 @@ export const motif: Company = {
   // Meta
   lastUpdated: '2026-01-27T18:05:00',
   sources: [
-    { title: 'Motif website', url: 'https://www.motif.io/' },
-    { title: 'Motif collaboration', url: 'https://www.motif.io/collaboration' },
-    { title: 'Motif careers', url: 'https://www.motif.io/careers' },
-    { title: 'Motif funding (CBO)', url: 'https://www.constructionbusinessowner.com/news/motif-raises-46m-modernize-aec-software-industry' },
-    { title: 'Motif on startups.gallery', url: 'https://startups.gallery/companies/motif' },
-    { title: 'Motif jobs (Lever)', url: 'https://jobs.lever.co/motifsystems' },
+    { title: 'Source', url: 'https://www.motif.io/' },
+    { title: 'Source', url: 'https://www.motif.io/collaboration' },
+    { title: 'Source', url: 'https://www.motif.io/careers' },
+    { title: 'Source', url: 'https://www.constructionbusinessowner.com/news/motif-raises-46m-modernize-aec-software-industry' },
+    { title: 'Source', url: 'https://startups.gallery/companies/motif' },
+    { title: 'Source', url: 'https://jobs.lever.co/motifsystems' }
   ],
 };

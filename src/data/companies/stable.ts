@@ -126,7 +126,7 @@ export const stable: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Stable', url: 'https://www.usestable.com/' },
-    { title: 'Stable on startups.gallery', url: 'https://startups.gallery/companies/stable' },
+    { title: 'Source', url: 'https://www.usestable.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/stable' }
   ],
 };

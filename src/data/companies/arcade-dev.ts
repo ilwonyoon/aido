@@ -205,7 +205,7 @@ export const arcadeDev: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Arcade.dev website', url: 'https://www.arcade.dev/' },
-    { title: 'Arcade.dev on startups.gallery', url: 'https://startups.gallery/companies/arcade-dev' },
+    { title: 'Source', url: 'https://www.arcade.dev/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/arcade-dev' }
   ],
 };

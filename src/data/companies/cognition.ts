@@ -245,13 +245,7 @@ export const cognition: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'Cognition Funding - Contrary Research',
-        url: 'https://research.contrary.com/company/cognition',
-      },
-      {
-        title: 'Devin Introduction',
-        url: 'https://cognition.ai/blog/introducing-devin',
-      },
-    ],
+    { title: 'Source', url: 'https://research.contrary.com/company/cognition' },
+    { title: 'Source', url: 'https://cognition.ai/blog/introducing-devin' }
+  ],
   };

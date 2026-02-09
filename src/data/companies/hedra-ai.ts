@@ -121,7 +121,7 @@ export const hedraAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Hedra', url: 'https://hedra.com' },
-    { title: 'Hedra on startups.gallery', url: 'https://startups.gallery/companies/hedra-ai' },
+    { title: 'Source', url: 'https://hedra.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/hedra-ai' }
   ],
 };

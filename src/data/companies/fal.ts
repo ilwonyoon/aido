@@ -193,8 +193,8 @@ export const fal: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'fal website', url: 'https://fal.ai/' },
-    { title: 'fal careers', url: 'https://fal.ai/careers' },
-    { title: 'fal on startups.gallery', url: 'https://startups.gallery/companies/fal' },
+    { title: 'Source', url: 'https://fal.ai/' },
+    { title: 'Source', url: 'https://fal.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/fal' }
   ],
 };

@@ -191,6 +191,6 @@ export const nuraline: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Nuraline website', url: 'https://www.nuraline.ai/' },
+    { title: 'Source', url: 'https://www.nuraline.ai/' }
   ],
 };

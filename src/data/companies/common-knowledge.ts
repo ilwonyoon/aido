@@ -121,7 +121,7 @@ export const commonKnowledge: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Common Knowledge', url: 'https://commonknowledge.ai' },
-    { title: 'Common Knowledge on startups.gallery', url: 'https://startups.gallery/companies/common-knowledge' },
+    { title: 'Source', url: 'https://commonknowledge.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/common-knowledge' }
   ],
 };

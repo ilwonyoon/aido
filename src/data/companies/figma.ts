@@ -256,13 +256,7 @@ export const figma: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Figma IPO - CNBC',
-        url: 'https://www.cnbc.com/2024/05/16/figma-tender-offer-values-company-at-12point5-billion.html',
-      },
-      {
-        title: 'Figma S-1 Filing',
-        url: 'https://getlatka.com/blog/figma-revenue/',
-      },
-    ],
+    { title: 'Source', url: 'https://www.cnbc.com/2024/05/16/figma-tender-offer-values-company-at-12point5-billion.html' },
+    { title: 'Source', url: 'https://getlatka.com/blog/figma-revenue/' }
+  ],
   };

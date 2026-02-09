@@ -138,7 +138,7 @@ export const voiceflow: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:10:00',
   sources: [
-    { title: 'Voiceflow', url: 'https://www.voiceflow.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://www.voiceflow.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

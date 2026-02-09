@@ -247,21 +247,9 @@ export const cohere: Company = {
     // Meta
     lastUpdated: '2026-01-26T12:10:00',
     sources: [
-      {
-        title: 'Cohere Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Cohere',
-      },
-      {
-        title: 'Aidan Gomez profile',
-        url: 'https://en.wikipedia.org/wiki/Aidan_Gomez',
-      },
-      {
-        title: 'Cohere raises $500M at $7B valuation',
-        url: 'https://tracxn.com/d/companies/cohere/__o4xfwmr3XwgsGEyH41XvwBm6Xd-SjsMlSld3d4ci6G0',
-      },
-      {
-        title: 'Cohere IPO plans 2026',
-        url: 'https://startupwired.com/2025/10/22/cohere-prepares-for-ipo-as-it-redefines-the-global-ai-landscape/',
-      },
-    ],
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Cohere' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Aidan_Gomez' },
+    { title: 'Source', url: 'https://tracxn.com/d/companies/cohere/__o4xfwmr3XwgsGEyH41XvwBm6Xd-SjsMlSld3d4ci6G0' },
+    { title: 'Source', url: 'https://startupwired.com/2025/10/22/cohere-prepares-for-ipo-as-it-redefines-the-global-ai-landscape/' }
+  ],
   };

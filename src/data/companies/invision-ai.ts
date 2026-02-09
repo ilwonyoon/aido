@@ -127,7 +127,7 @@ export const invisionAi: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:10:00',
   sources: [
-    { title: 'Invision AI', url: 'https://invision.ai' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://invision.ai' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

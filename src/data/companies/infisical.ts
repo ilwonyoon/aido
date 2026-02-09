@@ -169,7 +169,7 @@ export const infisical: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Infisical careers', url: 'https://infisical.com/careers' },
-    { title: 'Infisical Founding Product Designer (YC)', url: 'https://www.ycombinator.com/companies/infisical/jobs/zXqcmYx-founding-product-designer-san-francisco' },
+    { title: 'Source', url: 'https://infisical.com/careers' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/infisical/jobs/zXqcmYx-founding-product-designer-san-francisco' }
   ],
 };

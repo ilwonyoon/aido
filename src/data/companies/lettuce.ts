@@ -161,8 +161,8 @@ export const lettuce: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Lettuce', url: 'https://lettuce.co' },
-    { title: 'Lettuce Series A (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2025/01/07/3005464/0/en/Lettuce-Raises-15M-Series-A-to-Scale-AI-Powered-Accounting-and-Tax-Management-for-Solopreneurs.html' },
-    { title: 'Lettuce on startups.gallery', url: 'https://startups.gallery/companies/lettuce' },
+    { title: 'Source', url: 'https://lettuce.co' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/01/07/3005464/0/en/Lettuce-Raises-15M-Series-A-to-Scale-AI-Powered-Accounting-and-Tax-Management-for-Solopreneurs.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/lettuce' }
   ],
 };

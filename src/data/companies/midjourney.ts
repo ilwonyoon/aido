@@ -182,13 +182,7 @@ export const midjourney: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'Midjourney Careers',
-        url: 'https://www.midjourney.com/careers',
-      },
-      {
-        title: 'Midjourney (Wikipedia)',
-        url: 'https://en.wikipedia.org/wiki/Midjourney',
-      },
-    ],
+    { title: 'Source', url: 'https://www.midjourney.com/careers' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Midjourney' }
+  ],
   };

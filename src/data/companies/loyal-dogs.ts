@@ -121,7 +121,7 @@ export const loyalDogs: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Loyal', url: 'https://loyal.com' },
-    { title: 'Loyal on startups.gallery', url: 'https://startups.gallery/companies/loyal-dogs' },
+    { title: 'Source', url: 'https://loyal.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/loyal-dogs' }
   ],
 };

@@ -165,8 +165,8 @@ export const replicate: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Replicate Series B', url: 'https://replicate.com/blog/series-b' },
-    { title: 'Replicate (TechCrunch)', url: 'https://techcrunch.com/2023/02/21/replicate-wants-to-take-the-pain-out-of-running-and-hosting-ml-models/' },
-    { title: 'Replicate About', url: 'https://replicate.com/about' },
+    { title: 'Source', url: 'https://replicate.com/blog/series-b' },
+    { title: 'Source', url: 'https://techcrunch.com/2023/02/21/replicate-wants-to-take-the-pain-out-of-running-and-hosting-ml-models/' },
+    { title: 'Source', url: 'https://replicate.com/about' }
   ],
 };

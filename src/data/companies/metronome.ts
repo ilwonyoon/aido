@@ -196,7 +196,7 @@ export const metronome: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Metronome website', url: 'https://metronome.com/' },
-    { title: 'Metronome on startups.gallery', url: 'https://startups.gallery/companies/metronome' },
+    { title: 'Source', url: 'https://metronome.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/metronome' }
   ],
 };

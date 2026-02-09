@@ -175,8 +175,8 @@ export const lighthouse: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:15:00',
   sources: [
-    { title: 'Lighthouse', url: 'https://www.lighthousehq.com' },
-    { title: 'Lighthouse Product Designer', url: 'https://careers.lighthousehq.com/product-designer.html' },
-    { title: 'Lighthouse on startups.gallery', url: 'https://startups.gallery/companies/lighthouse' },
+    { title: 'Source', url: 'https://www.lighthousehq.com' },
+    { title: 'Source', url: 'https://careers.lighthousehq.com/product-designer.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/lighthouse' }
   ],
 };

@@ -166,9 +166,9 @@ export const numeric: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Numeric', url: 'https://www.numeric.io' },
-    { title: 'Numeric Careers', url: 'https://www.numeric.io/careers' },
-    { title: 'Numeric Senior Product Designer (Ashby)', url: 'https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2' },
-    { title: 'Numeric on startups.gallery', url: 'https://startups.gallery/companies/numeric' },
+    { title: 'Source', url: 'https://www.numeric.io' },
+    { title: 'Source', url: 'https://www.numeric.io/careers' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2' },
+    { title: 'Source', url: 'https://startups.gallery/companies/numeric' }
   ],
 };

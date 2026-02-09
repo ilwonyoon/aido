@@ -98,7 +98,7 @@ export const dagster: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Dagster', url: 'https://dagster.io' },
-    { title: 'Dagster on startups.gallery', url: 'https://startups.gallery/companies/dagster' },
+    { title: 'Source', url: 'https://dagster.io' },
+    { title: 'Source', url: 'https://startups.gallery/companies/dagster' }
   ],
 };

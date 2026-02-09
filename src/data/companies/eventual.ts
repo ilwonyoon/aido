@@ -169,8 +169,8 @@ export const eventual: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Eventual', url: 'https://www.eventual.ai' },
-    { title: 'Eventual YC profile', url: 'https://www.ycombinator.com/companies/eventual' },
-    { title: 'Eventual on startups.gallery', url: 'https://startups.gallery/companies/eventual' },
+    { title: 'Source', url: 'https://www.eventual.ai' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/eventual' },
+    { title: 'Source', url: 'https://startups.gallery/companies/eventual' }
   ],
 };

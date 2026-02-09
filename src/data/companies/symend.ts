@@ -4,21 +4,21 @@ export const symend: Company = {
   id: 'symend',
   name: 'Symend',
   description:
-    'Behavioral engagement platform that combines behavioral science, AI, and data-driven insights to improve collections and customer engagement for enterprises.',
+    'Behavioral engagement platform that uses behavioral science, AI, and analytics to help enterprises personalize delinquency and collections experiences.',
   website: 'https://www.symend.com',
   headquarters: 'Calgary, AB, Canada',
   remote: 'Yes',
 
   // Multi-dimensional Tags
-  aiTypes: ['data-analysis', 'automation'],
-  markets: ['b2b', 'enterprise'],
-  category: 'enterprise-ops' as const,
+  aiTypes: ['automation', 'data-analysis'],
+  markets: ['enterprise', 'b2b'],
+  category: 'vertical-saas' as const,
   industries: ['fintech'],
 
   // Business
   stage: 'Series B',
   valuation: 'Not publicly disclosed',
-  totalFunding: '$100M+',
+  totalFunding: 'US$100M+',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -36,43 +36,43 @@ export const symend: Company = {
   revenue: 'Not publicly disclosed',
   growth: 'Not publicly disclosed',
   runway: 'Not publicly disclosed',
-  customers: 'Enterprise customers across financial services, telecom, utilities, and media',
+  customers: 'Serving 40M+ consumers annually for large enterprises',
 
   // Competition
   competitors: [
     {
-      name: 'TrueAccord',
-      description: 'Digital-first collections and recovery platform.',
-      whyTheyWin: 'Deep focus on automated collections workflows and compliance.',
+      name: 'Salesforce Marketing Cloud',
+      description: 'Enterprise customer engagement and journey orchestration platform.',
+      whyTheyWin: 'Large installed base with deep CRM integration and marketing suite breadth.',
     },
     {
-      name: 'Pair Finance',
-      description: 'Collections software combining automation and customer communication.',
-      whyTheyWin: 'Modern digital collections UX with analytics focus.',
+      name: 'Braze',
+      description: 'Customer engagement platform for personalized multi-channel messaging.',
+      whyTheyWin: 'Best-in-class mobile and lifecycle messaging tooling at scale.',
     },
     {
-      name: 'CollectAI',
-      description: 'AI-driven collections and payment engagement platform.',
-      whyTheyWin: 'AI-first approach to recovery optimization and personalization.',
+      name: 'Iterable',
+      description: 'Cross-channel customer engagement and personalization platform.',
+      whyTheyWin: 'Strong API-driven personalization and experimentation workflows.',
     },
   ],
-  marketPosition: 'Behavioral-science-driven engagement platform helping large enterprises improve collections outcomes with personalized journeys.',
+  marketPosition: 'Behavioral engagement SaaS for enterprises focused on delinquency and collections experiences.',
   moat: [
-    'Behavioral science expertise embedded into engagement workflows',
-    'Data-driven personalization across large-scale enterprise portfolios',
-    'Mission-driven positioning in a sensitive, high-regulation domain',
+    'Behavioral science + AI personalization tuned for sensitive financial engagement workflows',
+    'Enterprise-grade integrations for telecom, utilities, and financial services',
+    'Proven scale of customer interactions across millions of consumers',
   ],
   vsGiants:
-    'Competes with large collections and CRM suites by offering specialized behavioral-science personalization for delinquency engagement.',
+    'Competes by specializing in collections-focused engagement rather than broad CRM marketing suites from Salesforce or Adobe.',
 
   // AI-Native Level
   aiNativeLevel: 'B',
   aiNativeLevelDescription:
-    'AI and behavioral analytics are core to the product’s differentiation in optimizing collections engagement at scale.',
+    'AI and behavioral analytics are core to Symend’s engagement decisioning, but the product still centers on enterprise workflow adoption.',
   aiDesignChallenges: [
-    'Designing empathetic engagement journeys for sensitive financial situations',
-    'Balancing automation with human oversight and compliance requirements',
-    'Communicating AI-driven recommendations with trust and transparency',
+    'Designing trust and empathy in automated delinquency interactions',
+    'Explaining AI-driven recommendations to regulated enterprise users',
+    'Balancing personalization with compliance and fairness constraints',
   ],
 
   // Founders & Vision
@@ -80,23 +80,23 @@ export const symend: Company = {
     {
       name: 'Hanif Joshaghani',
       role: 'Co-founder & CEO',
-      background: 'Serial entrepreneur leading Symend’s mission to modernize collections with behavioral science and AI.',
+      background: 'Serial entrepreneur leading Symend’s behavioral engagement platform.',
     },
     {
       name: 'Tiffany Kaminsky',
       role: 'Co-founder & Chief Partnership Officer',
-      background: 'Consumer engagement expert focused on partnerships and social impact.',
+      background: 'Consumer engagement leader focused on go-to-market partnerships and growth.',
     },
   ],
   whyBuilding:
-    'Symend was founded to transform collections by replacing aggressive tactics with behavioral-science-driven, empathetic engagement.',
+    'Founded to transform debt collection by replacing aggressive tactics with behaviorally-informed, empathetic digital engagement.',
   beliefs: [
-    'Behavioral science can improve outcomes for both enterprises and consumers',
-    'Personalized digital journeys drive higher recovery rates and trust',
-    'Empathy and compliance are essential in financial engagement',
+    'Behavioral science can improve outcomes for both consumers and enterprises',
+    'Personalization and empathy drive better repayment and long-term relationships',
+    'AI should augment human decisioning with transparent recommendations',
   ],
-  greenFlags: ['Mission-driven differentiation in collections', 'Scaled enterprise focus with significant funding'],
-  redFlags: ['Regulatory sensitivity in financial services', 'Long enterprise sales cycles'],
+  greenFlags: ['$100M+ funding and tier-1 investor backing', 'Clear focus on fintech/collections pain points'],
+  redFlags: ['Highly regulated space with compliance risk', 'Enterprise sales cycles and procurement friction'],
 
   // Design Opportunity
   designTeam: {
@@ -106,25 +106,25 @@ export const symend: Company = {
     logicBehavior: {
       level: 'high',
       tasks: [
-        'Behavioral segmentation logic for outreach sequencing',
-        'Rules for multi-channel engagement and repayment flows',
-        'Compliance guardrails for collections communication',
+        'Behavioral segmentation and treatment logic for delinquent accounts',
+        'Rules for AI-driven message cadence and escalation workflows',
+        'Human-in-the-loop review for sensitive customer interactions',
       ],
     },
     evaluation: {
-      level: 'medium',
+      level: 'high',
       tasks: [
-        'Effectiveness scoring of engagement journeys',
-        'A/B testing and experimentation on messaging',
-        'Outcome tracking for recovery and customer satisfaction',
+        'Outcome measurement for repayment and customer satisfaction metrics',
+        'A/B testing and experimentation of engagement strategies',
+        'Bias and fairness auditing for behavioral models',
       ],
     },
     interface: {
       level: 'medium',
       tasks: [
-        'Enterprise dashboards for collections performance',
-        'Workflow configuration UIs for engagement journeys',
-        'Reporting and analytics surfaces for compliance teams',
+        'Enterprise dashboards for engagement performance and cohort insights',
+        'Configuration UI for messaging journeys and policy controls',
+        'Customer-facing payment and self-serve experiences',
       ],
     },
   },
@@ -132,14 +132,14 @@ export const symend: Company = {
 
   // User Context
   targetAudiences: {
-    primary: 'Enterprise collections and customer engagement teams',
-    secondary: 'Financial services operations leaders',
+    primary: 'Enterprise financial services, telecom, and utilities collections teams',
+    secondary: 'Customer success and compliance leaders managing delinquency programs',
   },
   userProblems: [
-    'Traditional collections tactics damage brand trust and customer relationships',
-    'Enterprises struggle to personalize engagement at scale',
-    'Compliance requirements make collections workflows complex to manage',
-    'Teams lack clear insight into behavioral drivers of repayment',
+    'Legacy collections tactics damage customer relationships and brand trust',
+    'Enterprises lack real-time behavioral insights to personalize outreach',
+    'Compliance and fairness requirements make automation risky without guardrails',
+    'Collections teams need measurable improvements in cure and recovery rates',
   ],
 
   // Designer Links
@@ -155,18 +155,19 @@ export const symend: Company = {
   tracking: {
     status: 'researching',
     fitScore: 6,
-    whyJoin: ['Behavioral-science product challenges', 'Enterprise-scale impact on collections'],
-    whyNot: ['Regulated domain with slower iteration cycles', 'Enterprise sales dependency'],
-    nextActions: ['Monitor hiring signals', 'Track product releases and customer wins'],
+    whyJoin: ['Fintech + behavioral AI challenges', 'Enterprise-scale impact on customer outcomes'],
+    whyNot: ['Long enterprise sales cycles', 'Regulatory and compliance constraints'],
+    nextActions: ['Monitor hiring for product design roles', 'Track expansion into new verticals'],
   },
 
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-    { title: 'Symend About', url: 'https://www.symend.com/company/about-symend/' },
-    { title: 'Symend headquarters (Contact)', url: 'https://www.symend.com/company/contact-us' },
-    { title: 'Symend Series B funding (Business Wire)', url: 'https://www.businesswire.com/news/home/20200507005202/en/Symend-Closes-%2452-Million-USD-Round-to-Deliver-on-Its-Mission-to-Digitally-Transform-the-Engagement-Experience-for-Financially-At-Risk-Customers' },
-    { title: 'Symend Series B extension (Business Wire)', url: 'https://www.businesswire.com/news/home/20210218005472/en/Symend-to-Accelerate-Global-Expansion-by-Bringing-Total-Funding-to-date-to-Over-US100-Million-Following-US43-Million-Series-B-Extension' },
-    { title: 'Symend careers (applytojob)', url: 'https://symend.applytojob.com/' },
+    { title: 'Source', url: 'https://www.symend.com/company/about-symend/' },
+    { title: 'Source', url: 'https://www.symend.com/news/symend-closes-52-million-usd-round-to-grow-market-presence-for-consumer-focused-platform' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20210209005423/en/Symend-to-Accelerate-Global-Expansion-by-Bringing-Total-Funding-to-date-to-Over-US%24100-Million-Following-US%2443-Million-Series-B-Extension' },
+    { title: 'Source', url: 'https://www.symend.com/news/symend-infuses-over-40m-in-growth-capital-to-transform-customer-engagement-with-behavioral-science' },
+    { title: 'Source', url: 'https://symend.applytojob.com/apply/mjtF0zUts7/People-Partner' },
+    { title: 'Source', url: 'https://www.g2.com/products/symend/competitors/alternatives' }
   ],
 };

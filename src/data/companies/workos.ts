@@ -98,7 +98,7 @@ export const workos: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'WorkOS', url: 'https://workos.com' },
-    { title: 'WorkOS on startups.gallery', url: 'https://startups.gallery/companies/workos' },
+    { title: 'Source', url: 'https://workos.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/workos' }
   ],
 };

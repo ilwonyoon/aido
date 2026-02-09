@@ -173,10 +173,10 @@ export const chroma: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'Chroma', url: 'https://www.trychroma.com' },
-    { title: 'Chroma Careers', url: 'https://careers.trychroma.com' },
-    { title: 'Chroma Product Designer (Ashby)', url: 'https://careers.trychroma.com/jobs/4447948005' },
-    { title: 'Chroma funding (SaaS News)', url: 'https://saasnews.com/news/chroma-raises-18m-seed-funding' },
-    { title: 'Chroma on startups.gallery', url: 'https://startups.gallery/companies/chroma' },
+    { title: 'Source', url: 'https://www.trychroma.com' },
+    { title: 'Source', url: 'https://careers.trychroma.com' },
+    { title: 'Source', url: 'https://careers.trychroma.com/jobs/4447948005' },
+    { title: 'Source', url: 'https://saasnews.com/news/chroma-raises-18m-seed-funding' },
+    { title: 'Source', url: 'https://startups.gallery/companies/chroma' }
   ],
 };

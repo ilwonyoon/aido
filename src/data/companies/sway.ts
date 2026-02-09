@@ -126,7 +126,7 @@ export const sway: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Sway', url: 'https://swaythefuture.com/' },
-    { title: 'Sway on startups.gallery', url: 'https://startups.gallery/companies/sway' },
+    { title: 'Source', url: 'https://swaythefuture.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sway' }
   ],
 };

@@ -185,8 +185,8 @@ export const zedDev: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:25:00',
   sources: [
-    { title: 'Zed', url: 'https://zed.dev' },
-    { title: 'Zed Product Designer', url: 'https://zed.dev/jobs/designer-who-codes' },
-    { title: 'Zed on startups.gallery', url: 'https://startups.gallery/companies/zed-dev' },
+    { title: 'Source', url: 'https://zed.dev' },
+    { title: 'Source', url: 'https://zed.dev/jobs/designer-who-codes' },
+    { title: 'Source', url: 'https://startups.gallery/companies/zed-dev' }
   ],
 };

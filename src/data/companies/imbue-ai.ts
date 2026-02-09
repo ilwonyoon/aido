@@ -126,7 +126,7 @@ export const imbueAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Imbue', url: 'https://imbue.com' },
-    { title: 'Imbue on startups.gallery', url: 'https://startups.gallery/companies/imbue-ai' },
+    { title: 'Source', url: 'https://imbue.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/imbue-ai' }
   ],
 };

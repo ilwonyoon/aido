@@ -154,7 +154,7 @@ export const orionSleep: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Orion Sleep', url: 'https://www.orionsleep.com' },
-    { title: 'Orion Sleep on startups.gallery', url: 'https://startups.gallery/companies/orion-sleep' },
+    { title: 'Source', url: 'https://www.orionsleep.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/orion-sleep' }
   ],
 };

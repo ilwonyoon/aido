@@ -126,8 +126,8 @@ export const writer: Company = {
     },
     lastUpdated: '2026-01-26T18:30:00',
     sources: [
-      { title: 'Writer Series C', url: 'https://writer.com/blog/series-c-funding-writer-press-release/' },
-      { title: 'Writer $1.9B Valuation', url: 'https://techcrunch.com/2024/11/12/generative-ai-startup-writer-raises-200m-at-a-1-9b-valuation/' },
-      { title: 'Writer on startups.gallery', url: 'https://startups.gallery/companies/writer' },
-    ],
+    { title: 'Source', url: 'https://writer.com/blog/series-c-funding-writer-press-release/' },
+    { title: 'Source', url: 'https://techcrunch.com/2024/11/12/generative-ai-startup-writer-raises-200m-at-a-1-9b-valuation/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/writer' }
+  ],
   };

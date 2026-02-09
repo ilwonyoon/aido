@@ -155,7 +155,7 @@ export const miter: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Miter', url: 'https://miter.co' },
-    { title: 'Miter on startups.gallery', url: 'https://startups.gallery/companies/miter' },
+    { title: 'Source', url: 'https://miter.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/miter' }
   ],
 };

@@ -118,7 +118,7 @@ export const recTechnologies: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Rec Technologies', url: 'https://rectech.ai' },
-    { title: 'Rec Technologies on startups.gallery', url: 'https://startups.gallery/companies/rec-technologies' },
+    { title: 'Source', url: 'https://rectech.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/rec-technologies' }
   ],
 };

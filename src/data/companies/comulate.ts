@@ -165,8 +165,8 @@ export const comulate: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Comulate', url: 'https://comulate.com' },
-    { title: 'Comulate Series B (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/comulate-raises-20m-series-b-to-transform-insurance-operations-302457978.html' },
-    { title: 'Comulate on startups.gallery', url: 'https://startups.gallery/companies/comulate' },
+    { title: 'Source', url: 'https://comulate.com' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/comulate-raises-20m-series-b-to-transform-insurance-operations-302457978.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/comulate' }
   ],
 };

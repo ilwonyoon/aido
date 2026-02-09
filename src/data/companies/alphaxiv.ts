@@ -162,8 +162,8 @@ export const alphaXiv: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'alphaXiv', url: 'https://alphaxiv.org' },
-    { title: 'alphaXiv Hiring', url: 'https://alphaxiv.org/careers' },
-    { title: 'alphaXiv on startups.gallery', url: 'https://startups.gallery/companies/alphaxiv' },
+    { title: 'Source', url: 'https://alphaxiv.org' },
+    { title: 'Source', url: 'https://alphaxiv.org/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/alphaxiv' }
   ],
 };

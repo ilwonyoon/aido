@@ -208,7 +208,7 @@ export const unlimitedIndustries: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Unlimited Industries website', url: 'https://unlimitedindustries.com/' },
-    { title: 'Unlimited Industries on startups.gallery', url: 'https://startups.gallery/companies/unlimited-industries' },
+    { title: 'Source', url: 'https://unlimitedindustries.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/unlimited-industries' }
   ],
 };

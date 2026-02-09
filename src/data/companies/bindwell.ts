@@ -205,9 +205,9 @@ export const bindwell: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Bindwell website', url: 'https://bindwell.ai/' },
-    { title: 'Bindwell YC profile', url: 'https://www.ycombinator.com/companies/bindwell' },
-    { title: 'Bindwell seed funding (Business Wire)', url: 'https://www.businesswire.com/news/home/20251103558856/en/Bindwell-Raises-%246M-to-Discover-New-Safer-Pesticides-with-AI' },
-    { title: 'Bindwell funding coverage (TechCrunch)', url: 'https://techcrunch.com/2025/11/13/teen-founders-raise-6m-to-reinvent-pesticides-using-ai-and-convince-paul-graham-to-join-in/' },
+    { title: 'Source', url: 'https://bindwell.ai/' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/bindwell' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20251103558856/en/Bindwell-Raises-%246M-to-Discover-New-Safer-Pesticides-with-AI' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/13/teen-founders-raise-6m-to-reinvent-pesticides-using-ai-and-convince-paul-graham-to-join-in/' }
   ],
 };

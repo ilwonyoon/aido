@@ -165,8 +165,8 @@ export const gigs: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Gigs', url: 'https://gigs.com' },
-    { title: 'Gigs Careers', url: 'https://gigs.com/careers' },
-    { title: 'Gigs on startups.gallery', url: 'https://startups.gallery/companies/gigs' },
+    { title: 'Source', url: 'https://gigs.com' },
+    { title: 'Source', url: 'https://gigs.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/gigs' }
   ],
 };

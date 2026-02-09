@@ -122,7 +122,7 @@ export const fermat: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Fermat', url: 'https://www.fermat.xyz' },
-    { title: 'Fermat on startups.gallery', url: 'https://startups.gallery/companies/fermat' },
+    { title: 'Source', url: 'https://www.fermat.xyz' },
+    { title: 'Source', url: 'https://startups.gallery/companies/fermat' }
   ],
 };

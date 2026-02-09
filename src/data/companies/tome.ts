@@ -93,17 +93,8 @@ export const tome: Company = {
     },
     lastUpdated: '2026-01-26T18:30:00',
     sources: [
-      {
-        title: 'Tome Series B',
-        url: 'https://www.globenewswire.com/news-release/2023/02/22/2613034/0/en/Tome-Is-Fastest-Productivity-Tool-To-Reach-1M-Users-Raises-43M-Series-B-to-Empower-All-Storytellers.html',
-      },
-      {
-        title: 'Tome Valuation',
-        url: 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/',
-      },
-      {
-        title: 'Tome on startups.gallery',
-        url: 'https://startups.gallery/companies/tome',
-      },
-    ],
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2023/02/22/2613034/0/en/Tome-Is-Fastest-Productivity-Tool-To-Reach-1M-Users-Raises-43M-Series-B-to-Empower-All-Storytellers.html' },
+    { title: 'Source', url: 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tome' }
+  ],
   };

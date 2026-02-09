@@ -118,7 +118,7 @@ export const osmind: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Osmind', url: 'https://www.osmind.org' },
-    { title: 'Osmind on startups.gallery', url: 'https://startups.gallery/companies/osmind' },
+    { title: 'Source', url: 'https://www.osmind.org' },
+    { title: 'Source', url: 'https://startups.gallery/companies/osmind' }
   ],
 };

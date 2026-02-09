@@ -194,7 +194,7 @@ export const micro1: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Micro1 website', url: 'https://micro1.ai/' },
-    { title: 'Micro1 on startups.gallery', url: 'https://startups.gallery/companies/micro1' },
+    { title: 'Source', url: 'https://micro1.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/micro1' }
   ],
 };

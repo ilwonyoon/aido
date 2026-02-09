@@ -191,7 +191,7 @@ export const rox: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Rox website', url: 'https://rox.com/' },
-    { title: 'Rox on startups.gallery', url: 'https://startups.gallery/companies/rox' },
+    { title: 'Source', url: 'https://rox.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/rox' }
   ],
 };

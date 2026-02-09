@@ -196,7 +196,7 @@ export const ditto: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Ditto website', url: 'https://www.ditto.live/' },
-    { title: 'Ditto on startups.gallery', url: 'https://startups.gallery/companies/ditto' },
+    { title: 'Source', url: 'https://www.ditto.live/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/ditto' }
   ],
 };

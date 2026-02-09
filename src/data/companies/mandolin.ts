@@ -169,9 +169,9 @@ export const mandolin: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'Mandolin', url: 'https://mandolin.com' },
-    { title: 'Mandolin Series A', url: 'https://mandolin.com/blog/mandolin-series-a' },
-    { title: 'Mandolin on startups.gallery', url: 'https://startups.gallery/companies/mandolin' },
-    { title: 'Mandolin careers (Ashby)', url: 'https://jobs.ashbyhq.com/mandolin' },
+    { title: 'Source', url: 'https://mandolin.com' },
+    { title: 'Source', url: 'https://mandolin.com/blog/mandolin-series-a' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mandolin' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/mandolin' }
   ],
 };

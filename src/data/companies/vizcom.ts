@@ -166,9 +166,9 @@ export const vizcom: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Vizcom Series B', url: 'https://www.vizcom.com/blog/announcing-our-series-b' },
-    { title: 'Vizcom Series A', url: 'https://www.vizcom.com/blog/vizcom-raises-series-a-funding' },
-    { title: 'Radical Ventures — Vizcom', url: 'https://radical.vc/building-the-future-of-industrial-design/' },
-    { title: 'Vizcom on Index Ventures', url: 'https://www.indexventures.com/companies/vizcom/' },
+    { title: 'Source', url: 'https://www.vizcom.com/blog/announcing-our-series-b' },
+    { title: 'Source', url: 'https://www.vizcom.com/blog/vizcom-raises-series-a-funding' },
+    { title: 'Source', url: 'https://radical.vc/building-the-future-of-industrial-design/' },
+    { title: 'Source', url: 'https://www.indexventures.com/companies/vizcom/' }
   ],
 };

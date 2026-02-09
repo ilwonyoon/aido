@@ -153,10 +153,10 @@ export const beautifulAi: Company = {
     },
     lastUpdated: '2026-01-26T23:50:00',
     sources: [
-      {'title': 'Beautiful.ai Funding', 'url': 'https://wellfound.com/company/beautifulai/funding'},
-      {'title': 'Beautiful.ai Overview', 'url': 'https://pitchbook.com/profiles/company/172306-18'},
-      {'title': 'Beautiful.ai About', 'url': 'https://www.beautiful.ai/about'},
-      {'title': 'Mitch Grasso LinkedIn', 'url': 'https://www.linkedin.com/in/mitchgrasso/'},
-      {'title': 'Names with stories: The story behind Beautiful.ai', 'url': 'https://smartbranding.com/names-with-stories-the-story-behind-beautiful-ai/'},
-    ],
+    { title: 'Source', url: 'https://wellfound.com/company/beautifulai/funding' },
+    { title: 'Source', url: 'https://pitchbook.com/profiles/company/172306-18' },
+    { title: 'Source', url: 'https://www.beautiful.ai/about' },
+    { title: 'Source', url: 'https://www.linkedin.com/in/mitchgrasso/' },
+    { title: 'Source', url: 'https://smartbranding.com/names-with-stories-the-story-behind-beautiful-ai/' }
+  ],
   };

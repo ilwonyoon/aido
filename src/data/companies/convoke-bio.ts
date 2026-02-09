@@ -131,7 +131,7 @@ export const convokeBio: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Convoke', url: 'https://www.convoke.bio' },
-    { title: 'Convoke on startups.gallery', url: 'https://startups.gallery/companies/convoke-bio' },
+    { title: 'Source', url: 'https://www.convoke.bio' },
+    { title: 'Source', url: 'https://startups.gallery/companies/convoke-bio' }
   ],
 };

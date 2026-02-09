@@ -151,7 +151,7 @@ export const warmer: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:30:00',
   sources: [
-    { title: 'Warmer', url: 'https://warmer.com' },
-    { title: 'Warmer on startups.gallery', url: 'https://startups.gallery/companies/warmer' },
+    { title: 'Source', url: 'https://warmer.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/warmer' }
   ],
 };

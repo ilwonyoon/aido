@@ -196,10 +196,10 @@ export const spiralDb: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'SpiralDB website', url: 'https://www.spiraldb.com/' },
-    { title: 'SpiralDB funding announcement', url: 'https://www.spiraldb.com/post/announcing-spiral' },
-    { title: 'SpiralDB careers', url: 'https://www.spiraldb.com/careers' },
-    { title: 'SpiralDB LinkedIn', url: 'https://www.linkedin.com/company/spiraldb/' },
-    { title: 'SpiralDB funding coverage (The SaaS News)', url: 'https://www.thesaasnews.com/news/spiral-raises-22m-for-large-data-infrastructure' },
+    { title: 'Source', url: 'https://www.spiraldb.com/' },
+    { title: 'Source', url: 'https://www.spiraldb.com/post/announcing-spiral' },
+    { title: 'Source', url: 'https://www.spiraldb.com/careers' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/spiraldb/' },
+    { title: 'Source', url: 'https://www.thesaasnews.com/news/spiral-raises-22m-for-large-data-infrastructure' }
   ],
 };

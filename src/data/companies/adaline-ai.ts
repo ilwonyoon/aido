@@ -121,7 +121,7 @@ export const adalineAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Adaline', url: 'https://adaline.ai' },
-    { title: 'Adaline on startups.gallery', url: 'https://startups.gallery/companies/adaline-ai' },
+    { title: 'Source', url: 'https://adaline.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/adaline-ai' }
   ],
 };

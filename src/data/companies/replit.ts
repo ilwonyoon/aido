@@ -287,21 +287,9 @@ export const replit: Company = {
     // Meta
     lastUpdated: '2026-01-26T11:40:00',
     sources: [
-      {
-        title: 'Replit Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Replit',
-      },
-      {
-        title: 'Replit raises $400M at $9B valuation',
-        url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/',
-      },
-      {
-        title: 'Replit founder profile',
-        url: 'https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/',
-      },
-      {
-        title: 'Amjad Masad Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Amjad_Masad',
-      },
-    ],
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Replit' },
+    { title: 'Source', url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/' },
+    { title: 'Source', url: 'https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Amjad_Masad' }
+  ],
   };

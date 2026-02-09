@@ -151,10 +151,10 @@ export const brex: Company = {
     },
     lastUpdated: '2026-01-27T00:05:00',
     sources: [
-      {'title': 'Brex AI Finance', 'url': 'https://www.brex.com/journal/rise-of-the-ai-first-financial-os'},
-      {'title': 'Brex Hiring', 'url': 'https://www.dice.com/job-detail/22a3f1c8-1b2b-4b33-8aef-7af070183269'},
-      {'title': 'Brex Founders Story', 'url': 'https://biz.bio/founders/henrique-dubugras-and-pedro-franceschi-the-young-founders-who-rebuilt-startup-finance-from-the-inside-out/'},
-      {'title': 'Brex Wikipedia', 'url': 'https://en.wikipedia.org/wiki/Brex'},
-      {'title': 'Henrique Dubugras Profile', 'url': 'https://fintechmagazine.com/articles/henrique-dubugras-the-27-year-old-billionaire-behind-brex'},
-    ],
+    { title: 'Source', url: 'https://www.brex.com/journal/rise-of-the-ai-first-financial-os' },
+    { title: 'Source', url: 'https://www.dice.com/job-detail/22a3f1c8-1b2b-4b33-8aef-7af070183269' },
+    { title: 'Source', url: 'https://biz.bio/founders/henrique-dubugras-and-pedro-franceschi-the-young-founders-who-rebuilt-startup-finance-from-the-inside-out/' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Brex' },
+    { title: 'Source', url: 'https://fintechmagazine.com/articles/henrique-dubugras-the-27-year-old-billionaire-behind-brex' }
+  ],
   };

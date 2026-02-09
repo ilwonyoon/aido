@@ -121,7 +121,7 @@ export const apothekary: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Apothekary', url: 'https://apothekary.co' },
-    { title: 'Apothekary on startups.gallery', url: 'https://startups.gallery/companies/apothekary' },
+    { title: 'Source', url: 'https://apothekary.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/apothekary' }
   ],
 };

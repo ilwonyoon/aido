@@ -212,11 +212,11 @@ export const trmLabs: Company = {
   // Meta
   lastUpdated: '2026-01-27T19:10:00',
   sources: [
-    { title: 'TRM Labs website', url: 'https://www.trmlabs.com/' },
-    { title: 'TRM Labs funding (Series B expansion)', url: 'https://www.businesswire.com/news/home/20221109005400/en/Leading-Blockchain-Intelligence-Company-TRM-Labs-Announces-%2470-Million-Series-B-Expansion-Led-by-Thoma-Bravo' },
-    { title: 'TRM Labs Series B (2021)', url: 'https://www.businesswire.com/news/home/20211207005367/en/Blockchain-Intelligence-Company-TRM-Labs-Announces-%2460-million-Series-B-Led-by-Tiger-Global' },
-    { title: 'TRM Labs blockchain coverage announcement', url: 'https://www.globenewswire.com/news-release/2025/02/13/3025837/0/en/TRM-Labs-Announces-Comprehensive-Blockchain-Intelligence-Coverage-for-TON.html' },
-    { title: 'TRM Labs CEO bio', url: 'https://www.trmlabs.com/about/esteban-castano' },
-    { title: 'TRM Labs careers', url: 'https://www.trmlabs.com/careers-list' },
+    { title: 'Source', url: 'https://www.trmlabs.com/' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20221109005400/en/Leading-Blockchain-Intelligence-Company-TRM-Labs-Announces-%2470-Million-Series-B-Expansion-Led-by-Thoma-Bravo' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20211207005367/en/Blockchain-Intelligence-Company-TRM-Labs-Announces-%2460-million-Series-B-Led-by-Tiger-Global' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/02/13/3025837/0/en/TRM-Labs-Announces-Comprehensive-Blockchain-Intelligence-Coverage-for-TON.html' },
+    { title: 'Source', url: 'https://www.trmlabs.com/about/esteban-castano' },
+    { title: 'Source', url: 'https://www.trmlabs.com/careers-list' }
   ],
 };

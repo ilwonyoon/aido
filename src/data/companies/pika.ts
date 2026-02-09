@@ -261,13 +261,7 @@ export const pika: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'Pika Series B - Washington Post',
-        url: 'https://www.washingtonpost.com/technology/2024/06/04/pika-funding-openai-sora-google-video/',
-      },
-      {
-        title: 'Sacra Profile',
-        url: 'https://sacra.com/c/pika/',
-      },
-    ],
+    { title: 'Source', url: 'https://www.washingtonpost.com/technology/2024/06/04/pika-funding-openai-sora-google-video/' },
+    { title: 'Source', url: 'https://sacra.com/c/pika/' }
+  ],
   };

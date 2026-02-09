@@ -210,7 +210,7 @@ export const alloy: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Alloy website', url: 'https://www.alloy.com/' },
-    { title: 'Alloy Series C (Business Wire)', url: 'https://www.businesswire.com/news/home/20230809005141/en/Alloy-Raises-52M-Series-C-to-Advance-Identity-and-Fraud-Prevention' },
+    { title: 'Source', url: 'https://www.alloy.com/' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20230809005141/en/Alloy-Raises-52M-Series-C-to-Advance-Identity-and-Fraud-Prevention' }
   ],
 };

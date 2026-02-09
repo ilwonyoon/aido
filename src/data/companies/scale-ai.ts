@@ -293,21 +293,9 @@ export const scaleAi: Company = {
     // Meta
     lastUpdated: '2026-01-26T11:20:00',
     sources: [
-      {
-        title: 'Scale AI Wikipedia',
-        url: 'https://en.wikipedia.org/wiki/Scale_AI',
-      },
-      {
-        title: 'Meta invests $14.3B in Scale AI',
-        url: 'https://www.entrepreneur.com/business-news/who-is-alexandr-wang-the-founder-of-scale-ai-joining-meta/493281',
-      },
-      {
-        title: 'Scale AI competitors after Meta deal',
-        url: 'https://labelyourdata.com/articles/scale-ai-competitors',
-      },
-      {
-        title: 'Alexandr Wang profile',
-        url: 'https://en.wikipedia.org/wiki/Alexandr_Wang',
-      },
-    ],
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Scale_AI' },
+    { title: 'Source', url: 'https://www.entrepreneur.com/business-news/who-is-alexandr-wang-the-founder-of-scale-ai-joining-meta/493281' },
+    { title: 'Source', url: 'https://labelyourdata.com/articles/scale-ai-competitors' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Alexandr_Wang' }
+  ],
   };

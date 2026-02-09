@@ -191,7 +191,7 @@ export const sauronSystems: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Sauron Systems website', url: 'https://www.sauron.systems/' },
-    { title: 'Sauron Systems on startups.gallery', url: 'https://startups.gallery/companies/sauron-systems' },
+    { title: 'Source', url: 'https://www.sauron.systems/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sauron-systems' }
   ],
 };

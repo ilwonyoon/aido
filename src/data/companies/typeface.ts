@@ -285,17 +285,8 @@ export const typeface: Company = {
     // Meta
     lastUpdated: '2026-01-26T11:00:00',
     sources: [
-      {
-        title: 'Typeface raises $100M at $1B valuation',
-        url: 'https://techcrunch.com/2023/06/29/typeface-which-is-building-generative-ai-for-brands-raises-100m-at-a-1b-valuation/',
-      },
-      {
-        title: 'Abhay Parasnis on Typeface',
-        url: 'https://www.linkedin.com/pulse/abhay-parasnis-typeface-1-billion-valuation-brett-stapper-uxake',
-      },
-      {
-        title: 'Typeface company profile',
-        url: 'https://tracxn.com/d/companies/typeface/__9jDBm6q1mJzBb-dsOYViFE4NRwFTNrCwreA895blLoM',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2023/06/29/typeface-which-is-building-generative-ai-for-brands-raises-100m-at-a-1b-valuation/' },
+    { title: 'Source', url: 'https://www.linkedin.com/pulse/abhay-parasnis-typeface-1-billion-valuation-brett-stapper-uxake' },
+    { title: 'Source', url: 'https://tracxn.com/d/companies/typeface/__9jDBm6q1mJzBb-dsOYViFE4NRwFTNrCwreA895blLoM' }
+  ],
   };

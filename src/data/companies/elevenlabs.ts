@@ -247,13 +247,7 @@ export const elevenlabs: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'ElevenLabs Series C - TechCrunch',
-        url: 'https://techcrunch.com/2025/01/30/elevenlabs-raises-180-million-series-c/',
-      },
-      {
-        title: 'Sacra Profile',
-        url: 'https://sacra.com/c/elevenlabs/',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/01/30/elevenlabs-raises-180-million-series-c/' },
+    { title: 'Source', url: 'https://sacra.com/c/elevenlabs/' }
+  ],
   };

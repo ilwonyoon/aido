@@ -258,13 +258,7 @@ export const openai: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'OpenAI $20B ARR - Sherwood News',
-        url: 'https://sherwood.news/business/openais-arr-reached-over-usd20-billion-in-2025-cfo-says/',
-      },
-      {
-        title: 'OpenAI Stats and Funding - Sacra',
-        url: 'https://sacra.com/c/openai/',
-      },
-    ],
+    { title: 'Source', url: 'https://sherwood.news/business/openais-arr-reached-over-usd20-billion-in-2025-cfo-says/' },
+    { title: 'Source', url: 'https://sacra.com/c/openai/' }
+  ],
   };

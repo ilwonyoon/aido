@@ -172,8 +172,8 @@ export const assortHealth: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Assort Health', url: 'https://assorthealth.com' },
-    { title: 'Assort Health Series B (MobiHealthNews)', url: 'https://www.mobihealthnews.com/news/assort-health-raises-76m-series-b-round' },
-    { title: 'Assort Health on startups.gallery', url: 'https://startups.gallery/companies/assort-health' },
+    { title: 'Source', url: 'https://assorthealth.com' },
+    { title: 'Source', url: 'https://www.mobihealthnews.com/news/assort-health-raises-76m-series-b-round' },
+    { title: 'Source', url: 'https://startups.gallery/companies/assort-health' }
   ],
 };

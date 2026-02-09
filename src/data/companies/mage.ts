@@ -99,7 +99,7 @@ export const mage: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Mage', url: 'https://www.mage.ai' },
-    { title: 'Mage on startups.gallery', url: 'https://startups.gallery/companies/mage' },
+    { title: 'Source', url: 'https://www.mage.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mage' }
   ],
 };

@@ -215,11 +215,11 @@ export const macroscope: Company = {
   // Meta
   lastUpdated: '2026-01-27T19:25:00',
   sources: [
-    { title: 'Macroscope website', url: 'https://macroscope.com/' },
-    { title: 'Macroscope blog (AI code intelligence)', url: 'https://macroscope.com/blog' },
-    { title: 'Macroscope Series A (Lightspeed)', url: 'https://lsvp.com/stories/macroscope/' },
-    { title: 'Macroscope funding (CNBC)', url: 'https://www.cnbc.com/2024/05/16/macroscope-ai-software-startup-raises-30-million-to-see-what-engineers-are-doing.html' },
-    { title: 'Macroscope on startups.gallery', url: 'https://startups.gallery/companies/macroscope' },
-    { title: 'Macroscope jobs (Ashby)', url: 'https://jobs.ashbyhq.com/macroscope' },
+    { title: 'Source', url: 'https://macroscope.com/' },
+    { title: 'Source', url: 'https://macroscope.com/blog' },
+    { title: 'Source', url: 'https://lsvp.com/stories/macroscope/' },
+    { title: 'Source', url: 'https://www.cnbc.com/2024/05/16/macroscope-ai-software-startup-raises-30-million-to-see-what-engineers-are-doing.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/macroscope' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/macroscope' }
   ],
 };

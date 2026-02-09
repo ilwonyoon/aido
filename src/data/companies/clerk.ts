@@ -177,10 +177,10 @@ export const clerk: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Clerk', url: 'https://clerk.com' },
-    { title: 'Clerk Careers', url: 'https://clerk.com/careers' },
-    { title: 'Clerk Series C', url: 'https://clerk.com/blog/series-c' },
-    { title: 'Clerk Product Designer (Ashby)', url: 'https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa' },
-    { title: 'Clerk on startups.gallery', url: 'https://startups.gallery/companies/clerk' },
+    { title: 'Source', url: 'https://clerk.com' },
+    { title: 'Source', url: 'https://clerk.com/careers' },
+    { title: 'Source', url: 'https://clerk.com/blog/series-c' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa' },
+    { title: 'Source', url: 'https://startups.gallery/companies/clerk' }
   ],
 };

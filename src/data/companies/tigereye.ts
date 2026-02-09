@@ -216,11 +216,10 @@ export const tigereye: Company = {
   // Meta
   lastUpdated: '2026-01-27T19:25:00',
   sources: [
-    { title: 'TigerEye website', url: 'https://tigereye.com/' },
-    { title: 'TigerEye about', url: 'https://tigereye.com/about' },
-    { title: 'TigerEye careers', url: 'https://tigereye.com/careers' },
-    { title: 'TigerEye acquisition announcement', url: 'https://tigereye.com/' },
-    { title: 'TigerEye funding (Axios)', url: 'https://www.axios.com/2022/09/08/tigereye-series-a' },
-    { title: 'TigerEye on startups.gallery', url: 'https://startups.gallery/companies/tigereye' },
+    { title: 'Source', url: 'https://tigereye.com/' },
+    { title: 'Source', url: 'https://tigereye.com/about' },
+    { title: 'Source', url: 'https://tigereye.com/careers' },
+    { title: 'Source', url: 'https://www.axios.com/2022/09/08/tigereye-series-a' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tigereye' }
   ],
 };

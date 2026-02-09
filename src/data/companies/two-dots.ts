@@ -97,7 +97,7 @@ export const twoDots: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Two Dots', url: 'https://twodots.com' },
-    { title: 'Two Dots on startups.gallery', url: 'https://startups.gallery/companies/two-dots' },
+    { title: 'Source', url: 'https://twodots.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/two-dots' }
   ],
 };

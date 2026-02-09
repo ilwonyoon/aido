@@ -121,7 +121,7 @@ export const edia: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Edia', url: 'https://edia.com' },
-    { title: 'Edia on startups.gallery', url: 'https://startups.gallery/companies/edia' },
+    { title: 'Source', url: 'https://edia.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/edia' }
   ],
 };

@@ -263,17 +263,8 @@ export const toma: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'TechCrunch: Toma AI voice agents',
-        url: 'https://techcrunch.com/2025/06/05/tomas-ai-voice-agents-have-taken-off-at-car-dealerships-and-attracted-funding-from-a16z/',
-      },
-      {
-        title: 'Y Combinator: Toma',
-        url: 'https://www.ycombinator.com/companies/toma',
-      },
-      {
-        title: 'Andreessen Horowitz: Investing in Toma',
-        url: 'https://a16z.com/announcement/investing-in-toma/',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/06/05/tomas-ai-voice-agents-have-taken-off-at-car-dealerships-and-attracted-funding-from-a16z/' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/toma' },
+    { title: 'Source', url: 'https://a16z.com/announcement/investing-in-toma/' }
+  ],
   };

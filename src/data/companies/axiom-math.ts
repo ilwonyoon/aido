@@ -203,10 +203,10 @@ export const axiomMath: Company = {
   // Meta
   lastUpdated: '2026-01-27T14:30:00',
   sources: [
-    { title: 'Axiom Math website', url: 'https://axiommath.ai' },
-    { title: 'Axiom Math Join Us', url: 'https://axiommath.ai/join-us' },
-    { title: 'Axiom (Math) on startups.gallery', url: 'https://startups.gallery/companies/axiom-math' },
-    { title: 'Axiom Math funding (Sacra)', url: 'https://sacra.com/c/axiom-math/' },
-    { title: 'Axiom Math founder background (Business Insider)', url: 'https://www.businessinsider.com/axiom-math-stanford-dropout-meta-ai-researchers-startup-2025-12' },
+    { title: 'Source', url: 'https://axiommath.ai' },
+    { title: 'Source', url: 'https://axiommath.ai/join-us' },
+    { title: 'Source', url: 'https://startups.gallery/companies/axiom-math' },
+    { title: 'Source', url: 'https://sacra.com/c/axiom-math/' },
+    { title: 'Source', url: 'https://www.businessinsider.com/axiom-math-stanford-dropout-meta-ai-researchers-startup-2025-12' }
   ],
 };

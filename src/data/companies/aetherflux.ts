@@ -98,7 +98,7 @@ export const aetherflux: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Aetherflux', url: 'https://aetherflux.com' },
-    { title: 'Aetherflux on startups.gallery', url: 'https://startups.gallery/companies/aetherflux' },
+    { title: 'Source', url: 'https://aetherflux.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/aetherflux' }
   ],
 };

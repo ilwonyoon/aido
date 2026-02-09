@@ -98,7 +98,7 @@ export const oway: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Oway', url: 'https://www.oway.com' },
-    { title: 'Oway on startups.gallery', url: 'https://startups.gallery/companies/oway' },
+    { title: 'Source', url: 'https://www.oway.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/oway' }
   ],
 };

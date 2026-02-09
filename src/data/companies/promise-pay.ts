@@ -118,7 +118,7 @@ export const promisePay: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Promise', url: 'https://www.promise.com' },
-    { title: 'Promise on startups.gallery', url: 'https://startups.gallery/companies/promise-pay' },
+    { title: 'Source', url: 'https://www.promise.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/promise-pay' }
   ],
 };

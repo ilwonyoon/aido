@@ -148,9 +148,9 @@ export const openOceanRobotics: Company = {
   // Meta
   lastUpdated: '2026-02-06T12:00:00',
   sources: [
-    { title: 'Open Ocean Robotics website', url: 'https://openoceanrobotics.com' },
-    { title: 'Open Ocean Robotics contact', url: 'https://openoceanrobotics.com/contact/' },
-    { title: 'Open Ocean Robotics story', url: 'https://openoceanrobotics.com/about/' },
-    { title: 'IEEE Spectrum - Open Ocean Robotics profile', url: 'https://spectrum.ieee.org/open-ocean-robotics' },
+    { title: 'Source', url: 'https://openoceanrobotics.com' },
+    { title: 'Source', url: 'https://openoceanrobotics.com/contact/' },
+    { title: 'Source', url: 'https://openoceanrobotics.com/about/' },
+    { title: 'Source', url: 'https://spectrum.ieee.org/open-ocean-robotics' }
   ],
 };

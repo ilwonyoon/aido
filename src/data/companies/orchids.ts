@@ -114,7 +114,7 @@ export const orchids: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Orchids', url: 'https://orchids.ai' },
-    { title: 'Orchids on startups.gallery', url: 'https://startups.gallery/companies/orchids' },
+    { title: 'Source', url: 'https://orchids.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/orchids' }
   ],
 };

@@ -220,13 +220,7 @@ export const hebbia: Company = {
     // Meta
     lastUpdated: '2026-01-26T14:20:00',
     sources: [
-      {
-        title: 'Hebbia Series B $130M at $700M valuation',
-        url: 'https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/',
-      },
-      {
-        title: 'Hebbia Product Designer job',
-        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/' },
+    { title: 'Source', url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005' }
+  ],
   };

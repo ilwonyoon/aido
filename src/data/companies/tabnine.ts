@@ -93,8 +93,8 @@ export const tabnine: Company = {
     },
     lastUpdated: '2026-01-26T18:30:00',
     sources: [
-      { title: 'Tabnine Series B', url: 'https://www.tabnine.com/blog/tabnine-series-b/' },
-      { title: 'Tabnine Funding', url: 'https://www.cbinsights.com/company/tabnine/financials' },
-      { title: 'Tabnine Careers', url: 'https://www.tabnine.com/careers' },
-    ],
+    { title: 'Source', url: 'https://www.tabnine.com/blog/tabnine-series-b/' },
+    { title: 'Source', url: 'https://www.cbinsights.com/company/tabnine/financials' },
+    { title: 'Source', url: 'https://www.tabnine.com/careers' }
+  ],
   };

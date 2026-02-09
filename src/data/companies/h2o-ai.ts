@@ -133,7 +133,7 @@ export const h2oAi: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:10:00',
   sources: [
-    { title: 'H2O.ai', url: 'https://h2o.ai' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://h2o.ai' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

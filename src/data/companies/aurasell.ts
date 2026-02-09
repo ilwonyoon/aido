@@ -107,7 +107,7 @@ export const aurasell: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Aurasell', url: 'https://www.aurasell.com' },
-    { title: 'Aurasell on startups.gallery', url: 'https://startups.gallery/companies/aurasell' },
+    { title: 'Source', url: 'https://www.aurasell.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/aurasell' }
   ],
 };

@@ -122,7 +122,7 @@ export const tealbook: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:45:00',
   sources: [
-    { title: 'TealBook', url: 'https://www.tealbook.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://www.tealbook.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

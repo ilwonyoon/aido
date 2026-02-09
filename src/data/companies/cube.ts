@@ -126,7 +126,7 @@ export const cube: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Cube', url: 'https://cube.dev' },
-    { title: 'Cube on startups.gallery', url: 'https://startups.gallery/companies/cube' },
+    { title: 'Source', url: 'https://cube.dev' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cube' }
   ],
 };

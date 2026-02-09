@@ -169,7 +169,7 @@ export const welltheory: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'WellTheory', url: 'https://www.welltheory.com' },
-    { title: 'WellTheory on startups.gallery', url: 'https://startups.gallery/companies/welltheory' },
+    { title: 'Source', url: 'https://www.welltheory.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/welltheory' }
   ],
 };

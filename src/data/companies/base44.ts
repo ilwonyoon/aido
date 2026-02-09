@@ -242,25 +242,10 @@ export const base44: Company = {
     // Meta
     lastUpdated: '2026-01-26T23:30:00',
     sources: [
-      {
-        title: 'Base44 Review 2026',
-        url: 'https://www.aixploria.com/en/base44-ai/',
-      },
-      {
-        title: 'Base44 Bootstrapped Story (Lenny\'s Podcast)',
-        url: 'https://www.lennysnewsletter.com/p/the-base44-bootstrapped-startup-success-story-maor-shlomo',
-      },
-      {
-        title: 'Base44 Acquired by Wix',
-        url: 'https://www.inc.com/ben-sherry/vibe-coding-base44-wix-avishai-abrahami-maor-shlomo/91267959',
-      },
-      {
-        title: 'Base44 vs Competitors Comparison',
-        url: 'https://base44.com/blog/base44-vs-replit',
-      },
-      {
-        title: 'Maor Shlomo LinkedIn',
-        url: 'https://il.linkedin.com/in/maor-shlomo-1088b4144',
-      },
-    ],
+    { title: 'Source', url: 'https://www.aixploria.com/en/base44-ai/' },
+    { title: 'Source', url: 'https://www.lennysnewsletter.com/p/the-base44-bootstrapped-startup-success-story-maor-shlomo' },
+    { title: 'Source', url: 'https://www.inc.com/ben-sherry/vibe-coding-base44-wix-avishai-abrahami-maor-shlomo/91267959' },
+    { title: 'Source', url: 'https://base44.com/blog/base44-vs-replit' },
+    { title: 'Source', url: 'https://il.linkedin.com/in/maor-shlomo-1088b4144' }
+  ],
   };

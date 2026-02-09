@@ -162,12 +162,12 @@ export const skyhive: Company = {
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-    { title: 'SkyHive official site (Cornerstone)', url: 'https://www.skyhive.ai' },
-    { title: 'SkyHive contact (HQ)', url: 'https://b2c.skyhive.io/contact' },
-    { title: 'SkyHive Series B funding (Business Wire)', url: 'https://www.businesswire.com/news/home/20220614005438/en/SkyHive-Raises-40-Million-Series-B-Round-to-Drive-the-Future-of-Workforce-Intelligence' },
-    { title: 'SkyHive overview and founders (Wikipedia)', url: 'https://en.wikipedia.org/wiki/SkyHive' },
-    { title: 'Cornerstone press release (acquisition)', url: 'https://www.cornerstoneondemand.com/company/news/press-releases/cornerstone-announces-ai-powered-workforce-innovations/' },
-    { title: 'G2 alternatives list (competitors)', url: 'https://www.g2.com/products/skyhive/competitors/alternatives' },
-    { title: 'SkyHive remote role listing (AllegisCyber)', url: 'https://allegiscyber.hire.trakstar.com/jobs/fk0vn2r/' },
+    { title: 'Source', url: 'https://www.skyhive.ai' },
+    { title: 'Source', url: 'https://b2c.skyhive.io/contact' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20220614005438/en/SkyHive-Raises-40-Million-Series-B-Round-to-Drive-the-Future-of-Workforce-Intelligence' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/SkyHive' },
+    { title: 'Source', url: 'https://www.cornerstoneondemand.com/company/news/press-releases/cornerstone-announces-ai-powered-workforce-innovations/' },
+    { title: 'Source', url: 'https://www.g2.com/products/skyhive/competitors/alternatives' },
+    { title: 'Source', url: 'https://allegiscyber.hire.trakstar.com/jobs/fk0vn2r/' }
   ],
 };

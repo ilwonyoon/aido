@@ -112,7 +112,7 @@ export const augment: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Augment', url: 'https://www.augmentcode.com' },
-    { title: 'Augment on startups.gallery', url: 'https://startups.gallery/companies/augment' },
+    { title: 'Source', url: 'https://www.augmentcode.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/augment' }
   ],
 };

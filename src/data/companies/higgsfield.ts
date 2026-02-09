@@ -151,11 +151,11 @@ export const higgsfield: Company = {
     // Meta
     lastUpdated: '2026-01-27T10:58:34',
     sources: [
-      { title: 'Higgsfield (startups.gallery)', url: 'https://startups.gallery/companies/higgsfield' },
-      { title: 'Higgsfield funding + run rate (FinSMEs)', url: 'https://www.finsmes.com/2026/01/higgsfield-raises-80m-in-series-a-extension-funding.html' },
-      { title: 'Higgsfield valuation + revenue (Reuters via Investing.com)', url: 'https://www.investing.com/news/stock-market-news/ai-video-startup-higgsfield-hits-13-billion-valuation-with-latest-funding-4449312' },
-      { title: 'Higgsfield Jobs (Ashby)', url: 'https://jobs.ashbyhq.com/higgsfieldai' },
-      { title: 'Runway', url: 'https://runwayml.com/' },
-      { title: 'Synthesia', url: 'https://www.synthesia.io/' },
-    ],
+    { title: 'Source', url: 'https://startups.gallery/companies/higgsfield' },
+    { title: 'Source', url: 'https://www.finsmes.com/2026/01/higgsfield-raises-80m-in-series-a-extension-funding.html' },
+    { title: 'Source', url: 'https://www.investing.com/news/stock-market-news/ai-video-startup-higgsfield-hits-13-billion-valuation-with-latest-funding-4449312' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/higgsfieldai' },
+    { title: 'Source', url: 'https://runwayml.com/' },
+    { title: 'Source', url: 'https://www.synthesia.io/' }
+  ],
   };

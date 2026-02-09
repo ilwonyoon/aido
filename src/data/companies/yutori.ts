@@ -209,10 +209,10 @@ export const yutori: Company = {
   // Meta
   lastUpdated: '2026-01-27T14:30:00',
   sources: [
-    { title: 'Yutori website', url: 'https://yutori.com' },
-    { title: 'Yutori company page', url: 'https://yutori.com/company' },
-    { title: 'Yutori founding announcement', url: 'https://yutori.com/blog/announcing-yutori' },
-    { title: 'Yutori seed round (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2025/03/11/3040153/0/en/Yutori-Raises-15M-to-Build-AI-Agents-for-Everyday-Tasks.html' },
-    { title: 'Yutori on startups.gallery', url: 'https://startups.gallery/companies/yutori' },
+    { title: 'Source', url: 'https://yutori.com' },
+    { title: 'Source', url: 'https://yutori.com/company' },
+    { title: 'Source', url: 'https://yutori.com/blog/announcing-yutori' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/03/11/3040153/0/en/Yutori-Raises-15M-to-Build-AI-Agents-for-Everyday-Tasks.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/yutori' }
   ],
 };

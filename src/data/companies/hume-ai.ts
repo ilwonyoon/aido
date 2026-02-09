@@ -184,14 +184,14 @@ export const humeAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T12:00:00',
   sources: [
-    { title: 'Hume AI About', url: 'https://www.hume.ai/about/' },
-    { title: 'Hume AI Contact (HQ)', url: 'https://www.hume.ai/contact' },
-    { title: 'Hume AI Careers', url: 'https://www.hume.ai/careers' },
-    { title: 'Hume AI Product Designer (Greenhouse)', url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008' },
-    { title: 'Hume AI Series B (Business Wire)', url: 'https://www.businesswire.com/news/home/20240326359639/en/Hume-AI-Announces-%2450-Million-Fundraise-and-Empathic-Voice-Interface' },
-    { title: 'Hume AI Series B (Hume Blog)', url: 'https://www.hume.ai/blog/series-b-evi-announcement' },
-    { title: 'OpenAI', url: 'https://openai.com' },
-    { title: 'ElevenLabs', url: 'https://elevenlabs.io' },
-    { title: 'Deepgram', url: 'https://deepgram.com' },
+    { title: 'Source', url: 'https://www.hume.ai/about/' },
+    { title: 'Source', url: 'https://www.hume.ai/contact' },
+    { title: 'Source', url: 'https://www.hume.ai/careers' },
+    { title: 'Source', url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20240326359639/en/Hume-AI-Announces-%2450-Million-Fundraise-and-Empathic-Voice-Interface' },
+    { title: 'Source', url: 'https://www.hume.ai/blog/series-b-evi-announcement' },
+    { title: 'Source', url: 'https://openai.com' },
+    { title: 'Source', url: 'https://elevenlabs.io' },
+    { title: 'Source', url: 'https://deepgram.com' }
   ],
 };

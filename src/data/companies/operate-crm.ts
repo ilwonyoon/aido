@@ -191,7 +191,7 @@ export const operateCrm: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Operate website', url: 'https://operate.so/' },
-    { title: 'Operate CRM on startups.gallery', url: 'https://startups.gallery/companies/operate-crm' },
+    { title: 'Source', url: 'https://operate.so/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/operate-crm' }
   ],
 };

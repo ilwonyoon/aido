@@ -244,13 +244,7 @@ export const granola: Company = {
 
     lastUpdated: '2025-01-24',
     sources: [
-      {
-        title: 'Granola Series B - TechCrunch',
-        url: 'https://techcrunch.com/2025/05/14/ai-note-taking-app-granola-raises-43m/',
-      },
-      {
-        title: 'Series A Announcement',
-        url: 'https://granola.ai/blog/series-a',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/05/14/ai-note-taking-app-granola-raises-43m/' },
+    { title: 'Source', url: 'https://granola.ai/blog/series-a' }
+  ],
   };

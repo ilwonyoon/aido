@@ -215,13 +215,13 @@ export const ambienceHealthcare: Company = {
     // Meta
     lastUpdated: '2026-01-26T20:00:00',
     sources: [
-      { title: 'Ambience Series C announcement', url: 'https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-build-the-first-ai-platform-for-clinical-workflows' },
-      { title: 'Ambience Series B (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/ambience-healthcare-raises-70m-series-b-led-by-kleiner-perkins-and-openai-startup-fund-to-scale-its-ai-platform-for-clinicians-302055520.html' },
-      { title: 'Ambience founder background (TechCrunch)', url: 'https://techcrunch.com/2025/07/15/ambience-healthcare-raises-243m-to-build-ai-operating-system-for-clinical-workflows/' },
-      { title: 'Ambience Careers', url: 'https://www.ambiencehealthcare.com/careers' },
-      { title: 'Ambience LinkedIn', url: 'https://www.linkedin.com/company/ambience-healthcare/' },
-      { title: 'Ambience Crunchbase', url: 'https://www.crunchbase.com/organization/ambience-healthcare' },
-      { title: 'Ambience funding + ARR estimates (Sacra)', url: 'https://sacra.com/c/ambience-healthcare/' },
-      { title: 'Clinical documentation improvement market size', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' },
-    ],
+    { title: 'Source', url: 'https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-build-the-first-ai-platform-for-clinical-workflows' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/ambience-healthcare-raises-70m-series-b-led-by-kleiner-perkins-and-openai-startup-fund-to-scale-its-ai-platform-for-clinicians-302055520.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/07/15/ambience-healthcare-raises-243m-to-build-ai-operating-system-for-clinical-workflows/' },
+    { title: 'Source', url: 'https://www.ambiencehealthcare.com/careers' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/ambience-healthcare/' },
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/ambience-healthcare' },
+    { title: 'Source', url: 'https://sacra.com/c/ambience-healthcare/' },
+    { title: 'Source', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' }
+  ],
   };

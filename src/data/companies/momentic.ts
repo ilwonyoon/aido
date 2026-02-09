@@ -190,6 +190,6 @@ export const momentic: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Momentic website', url: 'https://www.momentic.ai/' },
+    { title: 'Source', url: 'https://www.momentic.ai/' }
   ],
 };

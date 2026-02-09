@@ -100,7 +100,7 @@ export const superpower: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Superpower', url: 'https://www.superpower.com' },
-    { title: 'Superpower on startups.gallery', url: 'https://startups.gallery/companies/superpower' },
+    { title: 'Source', url: 'https://www.superpower.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/superpower' }
   ],
 };

@@ -149,7 +149,7 @@ export const pulley: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:10:00',
   sources: [
-    { title: 'Pulley', url: 'https://pulley.com' },
-    { title: 'Pulley on startups.gallery', url: 'https://startups.gallery/companies/pulley' },
+    { title: 'Source', url: 'https://pulley.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/pulley' }
   ],
 };

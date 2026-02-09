@@ -118,7 +118,7 @@ export const meter: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Meter', url: 'https://meter.com' },
-    { title: 'Meter on startups.gallery', url: 'https://startups.gallery/companies/meter' },
+    { title: 'Source', url: 'https://meter.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/meter' }
   ],
 };

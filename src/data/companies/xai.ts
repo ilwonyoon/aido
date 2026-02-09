@@ -324,53 +324,17 @@ export const xai: Company = {
     // Meta
     lastUpdated: '2026-01-27',
     sources: [
-      {
-        title: 'xAI Series E $20B Funding (CNBC)',
-        url: 'https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html',
-      },
-      {
-        title: 'xAI Series E Announcement (TechCrunch)',
-        url: 'https://techcrunch.com/2026/01/06/xai-says-it-raised-20b-in-series-e-funding/',
-      },
-      {
-        title: 'xAI Revenue & Valuation (Sacra)',
-        url: 'https://sacra.com/c/xai/',
-      },
-      {
-        title: 'xAI $230B Valuation Report (The Rundown)',
-        url: 'https://www.therundown.ai/p/xais-massive-new-20b-raise',
-      },
-      {
-        title: 'Grok Features Guide 2026 (Robylon)',
-        url: 'https://www.robylon.ai/blog/what-is-xai-grok-a-complete-guide-to-the-chatbot',
-      },
-      {
-        title: 'Grok Business & Enterprise Launch',
-        url: 'https://x.ai/news/grok-business',
-      },
-      {
-        title: 'xAI Founding Team (Wikipedia)',
-        url: 'https://en.wikipedia.org/wiki/XAI_(company)',
-      },
-      {
-        title: 'xAI Mission & Philosophy (CMSWire)',
-        url: 'https://www.cmswire.com/digital-experience/elon-musk-launches-xai-to-solve-the-universes-biggest-mysteries/',
-      },
-      {
-        title: 'Grok vs Competitors Comparison',
-        url: 'https://www.appypieautomate.ai/blog/comparison/grok-vs-deepseek-vs-openai-vs-claude-vs-qwen-vs-gemini',
-      },
-      {
-        title: 'xAI Glassdoor Reviews',
-        url: 'https://www.glassdoor.com/Reviews/xAI-Reviews-E10404667.htm',
-      },
-      {
-        title: 'xAI Blind Reviews',
-        url: 'https://www.teamblind.com/company/xAI/reviews',
-      },
-      {
-        title: 'Product Designer - Government Job Posting',
-        url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007',
-      },
-    ],
+    { title: 'Source', url: 'https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2026/01/06/xai-says-it-raised-20b-in-series-e-funding/' },
+    { title: 'Source', url: 'https://sacra.com/c/xai/' },
+    { title: 'Source', url: 'https://www.therundown.ai/p/xais-massive-new-20b-raise' },
+    { title: 'Source', url: 'https://www.robylon.ai/blog/what-is-xai-grok-a-complete-guide-to-the-chatbot' },
+    { title: 'Source', url: 'https://x.ai/news/grok-business' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/XAI_(company' },
+    { title: 'Source', url: 'https://www.cmswire.com/digital-experience/elon-musk-launches-xai-to-solve-the-universes-biggest-mysteries/' },
+    { title: 'Source', url: 'https://www.appypieautomate.ai/blog/comparison/grok-vs-deepseek-vs-openai-vs-claude-vs-qwen-vs-gemini' },
+    { title: 'Source', url: 'https://www.glassdoor.com/Reviews/xAI-Reviews-E10404667.htm' },
+    { title: 'Source', url: 'https://www.teamblind.com/company/xAI/reviews' },
+    { title: 'Source', url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007' }
+  ],
   };

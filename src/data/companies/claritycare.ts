@@ -161,7 +161,7 @@ export const claritycare: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'ClarityCare on startups.gallery', url: 'https://startups.gallery/companies/claritycare' },
-    { title: 'ClarityCare AI docs', url: 'https://docs.claritycare.ai/introduction' },
+    { title: 'Source', url: 'https://startups.gallery/companies/claritycare' },
+    { title: 'Source', url: 'https://docs.claritycare.ai/introduction' }
   ],
 };

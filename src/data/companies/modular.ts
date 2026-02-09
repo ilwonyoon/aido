@@ -118,7 +118,7 @@ export const modular: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Modular', url: 'https://modular.com' },
-    { title: 'Modular on startups.gallery', url: 'https://startups.gallery/companies/modular' },
+    { title: 'Source', url: 'https://modular.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/modular' }
   ],
 };

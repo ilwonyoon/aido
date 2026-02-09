@@ -203,9 +203,9 @@ export const onton: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Onton website', url: 'https://www.onton.com/' },
-    { title: 'Onton funding coverage (TechCrunch)', url: 'https://techcrunch.com/2025/11/11/onton-raises-7-5m-to-build-an-ai-based-shopping-platform/' },
-    { title: 'Onton funding press release (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2025/11/11/2988257/0/en/Onton-Raises-7-5M-for-AI-Shopping-Platform-Attracts-600K-Users.html' },
-    { title: 'Onton company profile (F6S)', url: 'https://www.f6s.com/company/onton' },
+    { title: 'Source', url: 'https://www.onton.com/' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/11/onton-raises-7-5m-to-build-an-ai-based-shopping-platform/' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2025/11/11/2988257/0/en/Onton-Raises-7-5M-for-AI-Shopping-Platform-Attracts-600K-Users.html' },
+    { title: 'Source', url: 'https://www.f6s.com/company/onton' }
   ],
 };

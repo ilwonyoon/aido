@@ -126,7 +126,7 @@ export const aquaVoice: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Aqua Voice', url: 'https://www.aquavoice.ai' },
-    { title: 'Aqua Voice on startups.gallery', url: 'https://startups.gallery/companies/aqua-voice' },
+    { title: 'Source', url: 'https://www.aquavoice.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/aqua-voice' }
   ],
 };

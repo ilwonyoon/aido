@@ -190,7 +190,7 @@ export const redQueenBio: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Red Queen Bio website', url: 'https://www.redqueen.bio/' },
-    { title: 'Red Queen Bio on startups.gallery', url: 'https://startups.gallery/companies/red-queen-bio' },
+    { title: 'Source', url: 'https://www.redqueen.bio/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/red-queen-bio' }
   ],
 };

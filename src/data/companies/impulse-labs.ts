@@ -157,7 +157,7 @@ export const impulseLabs: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Impulse Cooktop', url: 'https://www.impulselabs.com' },
-    { title: 'Impulse Labs on startups.gallery', url: 'https://startups.gallery/companies/impulse-labs' },
+    { title: 'Source', url: 'https://www.impulselabs.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/impulse-labs' }
   ],
 };

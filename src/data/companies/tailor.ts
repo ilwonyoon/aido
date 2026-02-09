@@ -198,7 +198,7 @@ export const tailor: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Tailor website', url: 'https://www.tailor.tech/' },
-    { title: 'Tailor on startups.gallery', url: 'https://startups.gallery/companies/tailor' },
+    { title: 'Source', url: 'https://www.tailor.tech/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tailor' }
   ],
 };

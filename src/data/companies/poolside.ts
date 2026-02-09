@@ -163,9 +163,9 @@ export const poolside: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Poolside', url: 'https://poolside.ai' },
-    { title: 'Poolside Series B (TechCrunch)', url: 'https://techcrunch.com/2024/10/02/poolside-raises-500m-series-b-at-3b-valuation-to-build-ai-coding-models/' },
-    { title: 'Nvidia investing $1B (TechCrunch)', url: 'https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/' },
-    { title: 'Poolside Wikipedia', url: 'https://en.wikipedia.org/wiki/Poolside_AI' },
+    { title: 'Source', url: 'https://poolside.ai' },
+    { title: 'Source', url: 'https://techcrunch.com/2024/10/02/poolside-raises-500m-series-b-at-3b-valuation-to-build-ai-coding-models/' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Poolside_AI' }
   ],
 };

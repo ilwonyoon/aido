@@ -203,6 +203,6 @@ export const lgnd: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'LGND website', url: 'https://www.lgnd.com/' },
+    { title: 'Source', url: 'https://www.lgnd.com/' }
   ],
 };

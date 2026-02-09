@@ -99,7 +99,7 @@ export const invertBio: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Invert', url: 'https://www.invert.bio' },
-    { title: 'Invert on startups.gallery', url: 'https://startups.gallery/companies/invert-bio' },
+    { title: 'Source', url: 'https://www.invert.bio' },
+    { title: 'Source', url: 'https://startups.gallery/companies/invert-bio' }
   ],
 };

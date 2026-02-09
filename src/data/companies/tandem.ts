@@ -131,7 +131,7 @@ export const tandem: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Tandem', url: 'https://tandemhealth.ai' },
-    { title: 'Tandem on startups.gallery', url: 'https://startups.gallery/companies/tandem' },
+    { title: 'Source', url: 'https://tandemhealth.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tandem' }
   ],
 };

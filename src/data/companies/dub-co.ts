@@ -98,7 +98,7 @@ export const dubCo: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Dub', url: 'https://dub.co' },
-    { title: 'Dub on startups.gallery', url: 'https://startups.gallery/companies/dub-co' },
+    { title: 'Source', url: 'https://dub.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/dub-co' }
   ],
 };

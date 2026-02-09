@@ -18,7 +18,7 @@ export const c2ro: Company = {
   // Business
   stage: 'Seed',
   valuation: 'Not publicly disclosed',
-  totalFunding: '$3.35M',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [
     {
       stage: 'Seed',
@@ -27,10 +27,10 @@ export const c2ro: Company = {
       leadInvestors: ['Harbor Street Ventures'],
     },
     {
-      stage: 'Seed',
+      stage: 'Unknown',
       amount: 'CAD$2.25M',
       date: '2019-06',
-      leadInvestors: ['Fonds Innovexport'],
+      leadInvestors: ['Fonds Innovexport', 'GCI Capital', 'Harbor Street Ventures', 'TandemLaunch'],
     },
   ],
   revenue: 'Not publicly disclosed',
@@ -162,10 +162,10 @@ export const c2ro: Company = {
   // Meta
   lastUpdated: '2026-02-07T13:30:00',
   sources: [
-    { title: 'C2RO About Us', url: 'https://www.c2ro.com/about-us' },
-    { title: 'C2RO Careers', url: 'https://www.c2ro.com/careers' },
-    { title: 'C2RO seed financing (GlobeNewswire)', url: 'https://www.globenewswire.com/news-release/2018/05/02/1495128/0/en/C2RO-Raises-1-1-M-Seed-Financing-to-Commercialize-Cloud-Based-Robotics-A-I-SaaS-Platform.html' },
-    { title: 'C2RO financing round (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/c2ro-raises-2-25-m-financing-to-commercialize-portfolio-of-enterprise-grade-cloud-ai-services-300875891.html' },
-    { title: 'C2RO founders (C2RO news)', url: 'https://www.c2ro.com/post/c2ro-news-indiana-university-s-prof-fox-partners-with-c2ro-to-create-intelligent-robotics' },
+    { title: 'Source', url: 'https://www.c2ro.com/about-us' },
+    { title: 'Source', url: 'https://www.c2ro.com/careers' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2018/05/02/1495128/0/en/C2RO-Raises-1-1-M-Seed-Financing-to-Commercialize-Cloud-Based-Robotics-A-I-SaaS-Platform.html' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/c2ro-raises-2-25-m-financing-to-commercialize-portfolio-of-enterprise-grade-cloud-ai-services-300875891.html' },
+    { title: 'Source', url: 'https://www.c2ro.com/post/c2ro-news-indiana-university-s-prof-fox-partners-with-c2ro-to-create-intelligent-robotics' }
   ],
 };

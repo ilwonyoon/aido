@@ -118,7 +118,7 @@ export const posthog: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'PostHog', url: 'https://posthog.com' },
-    { title: 'PostHog on startups.gallery', url: 'https://startups.gallery/companies/posthog' },
+    { title: 'Source', url: 'https://posthog.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/posthog' }
   ],
 };

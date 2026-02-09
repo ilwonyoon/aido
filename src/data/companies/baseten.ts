@@ -211,10 +211,10 @@ export const baseten: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:10:00',
   sources: [
-    { title: 'Baseten website', url: 'https://www.baseten.co/' },
-    { title: 'Baseten Series E announcement', url: 'https://www.baseten.co/blog/announcing-baseten-s-300m-series-e/' },
-    { title: 'Baseten careers', url: 'https://www.baseten.com/resources/careers/' },
-    { title: 'Baseten on startups.gallery', url: 'https://startups.gallery/companies/baseten' },
-    { title: 'Baseten founders (South Park Commons)', url: 'https://www.southparkcommons.com/companies/baseten' },
+    { title: 'Source', url: 'https://www.baseten.co/' },
+    { title: 'Source', url: 'https://www.baseten.co/blog/announcing-baseten-s-300m-series-e/' },
+    { title: 'Source', url: 'https://www.baseten.com/resources/careers/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/baseten' },
+    { title: 'Source', url: 'https://www.southparkcommons.com/companies/baseten' }
   ],
 };

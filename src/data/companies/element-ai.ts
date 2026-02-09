@@ -147,7 +147,7 @@ export const elementAi: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:35:00',
   sources: [
-    { title: 'ServiceNow to acquire Element AI (press)', url: 'https://www.servicenow.com/company/media/press-room/servicenow-to-acquire-element-ai.html' },
-    { title: 'Element AI (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Element_AI' },
+    { title: 'Source', url: 'https://www.servicenow.com/company/media/press-room/servicenow-to-acquire-element-ai.html' },
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Element_AI' }
   ],
 };

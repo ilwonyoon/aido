@@ -196,7 +196,7 @@ export const conductor: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Conductor website', url: 'https://www.conductor.build/' },
-    { title: 'Conductor on startups.gallery', url: 'https://startups.gallery/companies/conductor' },
+    { title: 'Source', url: 'https://www.conductor.build/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/conductor' }
   ],
 };

@@ -122,7 +122,7 @@ export const validere: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:55:00',
   sources: [
-    { title: 'Validere', url: 'https://validere.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://validere.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

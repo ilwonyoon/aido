@@ -212,13 +212,13 @@ export const suno: Company = {
     // Meta
     lastUpdated: '2026-01-27T10:00:00',
     sources: [
-      { title: 'Suno About', url: 'https://suno.com/about' },
-      { title: 'Suno Series C (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/suno-raises-250m-at-a-2-45b-valuation-302620166.html' },
-      { title: 'Suno Series C (TechCrunch)', url: 'https://techcrunch.com/2025/11/19/legally-embattled-ai-music-startup-suno-raises-at-2-45b-valuation-on-200m-revenue/' },
-      { title: 'Suno Staff Product Designer (Ashby)', url: 'https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3' },
-      { title: 'Udio', url: 'https://www.udio.com' },
-      { title: 'Stable Audio', url: 'https://stability.ai/news/stable-audio-2-0' },
-      { title: 'Boomy', url: 'https://boomy.com' },
-      { title: 'Soundraw', url: 'https://soundraw.io' },
-    ],
+    { title: 'Source', url: 'https://suno.com/about' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/suno-raises-250m-at-a-2-45b-valuation-302620166.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/19/legally-embattled-ai-music-startup-suno-raises-at-2-45b-valuation-on-200m-revenue/' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3' },
+    { title: 'Source', url: 'https://www.udio.com' },
+    { title: 'Source', url: 'https://stability.ai/news/stable-audio-2-0' },
+    { title: 'Source', url: 'https://boomy.com' },
+    { title: 'Source', url: 'https://soundraw.io' }
+  ],
   };

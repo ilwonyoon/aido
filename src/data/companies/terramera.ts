@@ -142,8 +142,8 @@ export const terramera: Company = {
   // Meta
   lastUpdated: '2026-02-06T12:00:00',
   sources: [
-    { title: 'Terramera website', url: 'https://www.terramera.com' },
-    { title: 'Terramera team', url: 'https://www.terramera.com/team' },
-    { title: 'BDC invests in Terramera', url: 'https://www.bdc.ca/en/about/mediaroom/news-releases/bdc-invests-10-million-terramera-sustainable-ag' },
+    { title: 'Source', url: 'https://www.terramera.com' },
+    { title: 'Source', url: 'https://www.terramera.com/team' },
+    { title: 'Source', url: 'https://www.bdc.ca/en/about/mediaroom/news-releases/bdc-invests-10-million-terramera-sustainable-ag' }
   ],
 };

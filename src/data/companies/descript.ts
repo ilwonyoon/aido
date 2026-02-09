@@ -87,5 +87,8 @@ export const descript: Company = {
       nextActions: ['Try Descript product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Descript Careers', 'url': 'https://www.descript.com/careers'}, {'title': 'Descript AI Features', 'url': 'https://www.g2.com/products/descript/reviews'}],
+    sources: [
+    { title: 'Source', url: 'https://www.descript.com/careers' },
+    { title: 'Source', url: 'https://www.g2.com/products/descript/reviews' }
+  ],
   };

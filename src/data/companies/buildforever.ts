@@ -160,8 +160,8 @@ export const buildForever: Company = {
   // Meta
   lastUpdated: '2026-02-04T18:40:00',
   sources: [
-    { title: 'BuildForever', url: 'https://buildforever.com' },
-    { title: 'BuildForever Careers', url: 'https://buildforever.com/careers' },
-    { title: 'BuildForever on startups.gallery', url: 'https://startups.gallery/companies/buildforever' },
+    { title: 'Source', url: 'https://buildforever.com' },
+    { title: 'Source', url: 'https://buildforever.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/buildforever' }
   ],
 };

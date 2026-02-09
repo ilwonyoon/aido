@@ -118,7 +118,7 @@ export const polycam: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Polycam', url: 'https://poly.cam' },
-    { title: 'Polycam on startups.gallery', url: 'https://startups.gallery/companies/polycam' },
+    { title: 'Source', url: 'https://poly.cam' },
+    { title: 'Source', url: 'https://startups.gallery/companies/polycam' }
   ],
 };

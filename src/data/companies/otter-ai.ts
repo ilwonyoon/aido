@@ -92,5 +92,8 @@ export const otterAi: Company = {
       nextActions: ['Try Otter.ai product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Otter.ai Overview', 'url': 'https://en.wikipedia.org/wiki/Otter.ai'}, {'title': 'Otter.ai Careers', 'url': 'https://otter.ai/careers'}],
+    sources: [
+    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Otter.ai' },
+    { title: 'Source', url: 'https://otter.ai/careers' }
+  ],
   };

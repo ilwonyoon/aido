@@ -118,7 +118,7 @@ export const primeIntellect: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Prime Intellect', url: 'https://www.primeintellect.ai' },
-    { title: 'Prime Intellect on startups.gallery', url: 'https://startups.gallery/companies/prime-intellect' },
+    { title: 'Source', url: 'https://www.primeintellect.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/prime-intellect' }
   ],
 };

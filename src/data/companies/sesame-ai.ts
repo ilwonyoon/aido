@@ -159,7 +159,7 @@ export const sesameAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Sesame AI on startups.gallery', url: 'https://startups.gallery/companies/sesameai' },
-    { title: 'Sesame funding (TechCrunch)', url: 'https://techcrunch.com/2025/10/03/former-openai-researchers-launch-sesame-an-ai-powered-voice-assistant/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sesameai' },
+    { title: 'Source', url: 'https://techcrunch.com/2025/10/03/former-openai-researchers-launch-sesame-an-ai-powered-voice-assistant/' }
   ],
 };

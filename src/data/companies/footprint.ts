@@ -99,7 +99,7 @@ export const footprint: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Footprint', url: 'https://footprint.us' },
-    { title: 'Footprint on startups.gallery', url: 'https://startups.gallery/companies/footprint' },
+    { title: 'Source', url: 'https://footprint.us' },
+    { title: 'Source', url: 'https://startups.gallery/companies/footprint' }
   ],
 };

@@ -173,8 +173,8 @@ export const tensormesh: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:55:00',
   sources: [
-    { title: 'Tensormesh', url: 'https://tensormesh.ai' },
-    { title: 'Tensormesh Seed (Tensormesh blog)', url: 'https://tensormesh.ai/blog/seed-round' },
-    { title: 'Tensormesh on startups.gallery', url: 'https://startups.gallery/companies/tensormesh' },
+    { title: 'Source', url: 'https://tensormesh.ai' },
+    { title: 'Source', url: 'https://tensormesh.ai/blog/seed-round' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tensormesh' }
   ],
 };

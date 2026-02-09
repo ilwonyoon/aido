@@ -113,7 +113,7 @@ export const openmind: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Openmind', url: 'https://openmind.space' },
-    { title: 'Openmind on startups.gallery', url: 'https://startups.gallery/companies/openmind' },
+    { title: 'Source', url: 'https://openmind.space' },
+    { title: 'Source', url: 'https://startups.gallery/companies/openmind' }
   ],
 };

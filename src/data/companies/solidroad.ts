@@ -197,8 +197,8 @@ export const solidroad: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Solidroad website', url: 'https://solidroad.com/' },
-    { title: 'Solidroad on startups.gallery', url: 'https://startups.gallery/companies/solidroad' },
-    { title: 'Solidroad job board (Ashby)', url: 'https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef' },
+    { title: 'Source', url: 'https://solidroad.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/solidroad' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef' }
   ],
 };

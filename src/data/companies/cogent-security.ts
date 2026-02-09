@@ -170,9 +170,9 @@ export const cogentSecurity: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:33:21',
   sources: [
-    { title: 'Cogent Security', url: 'https://www.cogent.security' },
-    { title: 'Cogent Security Careers', url: 'https://cogent.com/careers/' },
-    { title: 'Cogent Security on startups.gallery', url: 'https://startups.gallery/companies/cogent-security' },
-    { title: 'Cogent Security Seed (Business Wire)', url: 'https://www.businesswire.com/news/home/20240104379273/en/Cogent-Security-Announces-Seed-Funding-to-Scale-AI-Taskforce-for-Vulnerability-Management' },
+    { title: 'Source', url: 'https://www.cogent.security' },
+    { title: 'Source', url: 'https://cogent.com/careers/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cogent-security' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20240104379273/en/Cogent-Security-Announces-Seed-Funding-to-Scale-AI-Taskforce-for-Vulnerability-Management' }
   ],
 };

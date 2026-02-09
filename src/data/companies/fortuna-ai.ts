@@ -127,7 +127,7 @@ export const fortunaAi: Company = {
   // Meta
   lastUpdated: '2026-02-04T21:15:00',
   sources: [
-    { title: 'Fortuna.ai', url: 'https://fortuna.ai' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://fortuna.ai' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

@@ -99,7 +99,7 @@ export const freed: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Freed', url: 'https://www.getfreed.ai' },
-    { title: 'Freed on startups.gallery', url: 'https://startups.gallery/companies/freed' },
+    { title: 'Source', url: 'https://www.getfreed.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/freed' }
   ],
 };

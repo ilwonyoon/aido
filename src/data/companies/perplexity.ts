@@ -264,13 +264,7 @@ export const perplexity: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Perplexity $20B Valuation - TechCrunch',
-        url: 'https://techcrunch.com/2025/09/10/perplexity-reportedly-raised-200m-at-20b-valuation/',
-      },
-      {
-        title: 'Perplexity Revenue and Stats - Sacra',
-        url: 'https://sacra.com/c/perplexity/',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/09/10/perplexity-reportedly-raised-200m-at-20b-valuation/' },
+    { title: 'Source', url: 'https://sacra.com/c/perplexity/' }
+  ],
   };

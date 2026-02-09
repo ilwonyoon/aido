@@ -126,7 +126,7 @@ export const davidAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'David AI', url: 'https://www.withdavid.ai' },
-    { title: 'David AI on startups.gallery', url: 'https://startups.gallery/companies/david-ai' },
+    { title: 'Source', url: 'https://www.withdavid.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/david-ai' }
   ],
 };

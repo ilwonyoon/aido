@@ -131,7 +131,7 @@ export const willow: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Willow', url: 'https://willow.ai' },
-    { title: 'Willow on startups.gallery', url: 'https://startups.gallery/companies/willow' },
+    { title: 'Source', url: 'https://willow.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/willow' }
   ],
 };

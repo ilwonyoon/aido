@@ -121,7 +121,7 @@ export const comfyUi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Comfy', url: 'https://comfy.org' },
-    { title: 'Comfy on startups.gallery', url: 'https://startups.gallery/companies/comfy-ui' },
+    { title: 'Source', url: 'https://comfy.org' },
+    { title: 'Source', url: 'https://startups.gallery/companies/comfy-ui' }
   ],
 };

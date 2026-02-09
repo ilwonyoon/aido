@@ -126,7 +126,7 @@ export const symbiotic: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Symbiotic', url: 'https://symbiotic.fi' },
-    { title: 'Symbiotic on startups.gallery', url: 'https://startups.gallery/companies/symbiotic' },
+    { title: 'Source', url: 'https://symbiotic.fi' },
+    { title: 'Source', url: 'https://startups.gallery/companies/symbiotic' }
   ],
 };

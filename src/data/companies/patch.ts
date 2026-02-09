@@ -118,7 +118,7 @@ export const patch: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Patch', url: 'https://www.patch.io' },
-    { title: 'Patch on startups.gallery', url: 'https://startups.gallery/companies/patch' },
+    { title: 'Source', url: 'https://www.patch.io' },
+    { title: 'Source', url: 'https://startups.gallery/companies/patch' }
   ],
 };

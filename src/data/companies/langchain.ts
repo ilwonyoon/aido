@@ -167,9 +167,9 @@ export const langchain: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'LangChain Series B announcement', url: 'https://blog.langchain.com/series-b-announcement/' },
-    { title: 'LangChain $125M at $1.25B (Fortune)', url: 'https://fortune.com/2025/10/20/exclusive-early-ai-darling-langchain-is-now-a-unicorn-with-a-fresh-125-million-in-funding/' },
-    { title: 'LangChain careers', url: 'https://www.langchain.com/careers' },
-    { title: 'LangChain customer stories', url: 'https://www.langchain.com/customers' },
+    { title: 'Source', url: 'https://blog.langchain.com/series-b-announcement/' },
+    { title: 'Source', url: 'https://fortune.com/2025/10/20/exclusive-early-ai-darling-langchain-is-now-a-unicorn-with-a-fresh-125-million-in-funding/' },
+    { title: 'Source', url: 'https://www.langchain.com/careers' },
+    { title: 'Source', url: 'https://www.langchain.com/customers' }
   ],
 };

@@ -155,7 +155,7 @@ export const agora: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Agora', url: 'https://www.agora.xyz' },
-    { title: 'Agora on startups.gallery', url: 'https://startups.gallery/companies/agora' },
+    { title: 'Source', url: 'https://www.agora.xyz' },
+    { title: 'Source', url: 'https://startups.gallery/companies/agora' }
   ],
 };

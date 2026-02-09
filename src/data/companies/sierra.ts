@@ -204,7 +204,7 @@ export const sierra: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:40:00',
   sources: [
-    { title: 'Sierra website', url: 'https://www.sierra.ai/' },
-    { title: 'Sierra Series A (Business Wire)', url: 'https://www.businesswire.com/news/home/20241015005939/en/Sierra-Raises-110M-Series-A-at-4.5B-Valuation-to-Bring-AI-Customer-Service-to-Enterprises' },
+    { title: 'Source', url: 'https://www.sierra.ai/' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20241015005939/en/Sierra-Raises-110M-Series-A-at-4.5B-Valuation-to-Bring-AI-Customer-Service-to-Enterprises' }
   ],
 };

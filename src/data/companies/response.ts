@@ -189,8 +189,8 @@ export const response: Company = {
   // Meta
   lastUpdated: '2026-01-28T13:10:00',
   sources: [
-    { title: 'Response website', url: 'https://tryresponse.com/' },
-    { title: 'Response about', url: 'https://tryresponse.com/about' },
-    { title: 'Response company profile (SignalHire)', url: 'https://www.signalhire.com/companies/response' },
+    { title: 'Source', url: 'https://tryresponse.com/' },
+    { title: 'Source', url: 'https://tryresponse.com/about' },
+    { title: 'Source', url: 'https://www.signalhire.com/companies/response' }
   ],
 };

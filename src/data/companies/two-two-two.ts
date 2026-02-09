@@ -202,7 +202,7 @@ export const twoTwoTwo: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: '222 website', url: 'https://222.place/' },
-    { title: '222 on startups.gallery', url: 'https://startups.gallery/companies/222' },
+    { title: 'Source', url: 'https://222.place/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/222' }
   ],
 };

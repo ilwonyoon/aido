@@ -246,13 +246,7 @@ export const sourcegraph: Company = {
     // Meta
     lastUpdated: '2026-01-26T14:00:00',
     sources: [
-      {
-        title: 'Sourcegraph Series D $125M',
-        url: 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/',
-      },
-      {
-        title: 'Product Designer IC4 job posting',
-        url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/' },
+    { title: 'Source', url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004' }
+  ],
   };

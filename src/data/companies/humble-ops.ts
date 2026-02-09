@@ -191,7 +191,7 @@ export const humbleOps: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Humble Ops website', url: 'https://humbleops.ai/' },
-    { title: 'Humble Ops on startups.gallery', url: 'https://startups.gallery/companies/humble-ops' },
+    { title: 'Source', url: 'https://humbleops.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/humble-ops' }
   ],
 };

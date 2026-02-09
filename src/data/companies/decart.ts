@@ -180,10 +180,10 @@ export const decart: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Decart Company', url: 'https://decart.ai/company' },
-    { title: 'Decart About', url: 'https://about.decart.ai' },
-    { title: 'Decart seed round (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/decart-raises-21-million-seed-round-to-build-the-real-time-generative-ai-platform-302259619.html' },
-    { title: 'Decart Series A (TechCrunch)', url: 'https://techcrunch.com/2024/12/05/decart-raises-32m-as-it-releases-an-open-source-model-that-can-handle-large-data-sets/' },
-    { title: 'Decart on startups.gallery', url: 'https://startups.gallery/companies/decart' },
+    { title: 'Source', url: 'https://decart.ai/company' },
+    { title: 'Source', url: 'https://about.decart.ai' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/decart-raises-21-million-seed-round-to-build-the-real-time-generative-ai-platform-302259619.html' },
+    { title: 'Source', url: 'https://techcrunch.com/2024/12/05/decart-raises-32m-as-it-releases-an-open-source-model-that-can-handle-large-data-sets/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/decart' }
   ],
 };

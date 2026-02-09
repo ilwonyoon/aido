@@ -118,7 +118,7 @@ export const nexhealth: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'NexHealth', url: 'https://www.nexhealth.com' },
-    { title: 'NexHealth on startups.gallery', url: 'https://startups.gallery/companies/nexhealth' },
+    { title: 'Source', url: 'https://www.nexhealth.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nexhealth' }
   ],
 };

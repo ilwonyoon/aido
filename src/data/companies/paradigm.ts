@@ -98,7 +98,7 @@ export const paradigm: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Paradigm', url: 'https://www.paradigm.co' },
-    { title: 'Paradigm on startups.gallery', url: 'https://startups.gallery/companies/paradigm' },
+    { title: 'Source', url: 'https://www.paradigm.co' },
+    { title: 'Source', url: 'https://startups.gallery/companies/paradigm' }
   ],
 };

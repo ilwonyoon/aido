@@ -131,7 +131,7 @@ export const coderabbit: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'CodeRabbit', url: 'https://coderabbit.ai' },
-    { title: 'CodeRabbit on startups.gallery', url: 'https://startups.gallery/companies/coderabbit' },
+    { title: 'Source', url: 'https://coderabbit.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/coderabbit' }
   ],
 };

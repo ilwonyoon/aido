@@ -98,7 +98,7 @@ export const alix: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Alix', url: 'https://www.alix.com' },
-    { title: 'Alix on startups.gallery', url: 'https://startups.gallery/companies/alix' },
+    { title: 'Source', url: 'https://www.alix.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/alix' }
   ],
 };

@@ -253,11 +253,11 @@ export const terradot: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Terradot company site', url: 'https://terradot.earth/company' },
-    { title: 'Terradot Microsoft deal (BusinessWire)', url: 'https://www.businesswire.com/news/home/20250403593732/en/Microsoft-and-Terradot-announce-deal-for-12-000-tons-of-permanent-carbon-removal/' },
-    { title: 'Terradot launch + funding (BusinessWire)', url: 'https://www.businesswire.com/news/home/20241212309547/en/Terradot-Launches-Out-of-Stanford-to-Deliver-Permanent-Carbon-Removal/' },
-    { title: 'Terradot on startups.gallery', url: 'https://startups.gallery/companies/terradot' },
-    { title: 'Terradot Product Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0' },
-    { title: 'Terradot Senior Product Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc' },
+    { title: 'Source', url: 'https://terradot.earth/company' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20250403593732/en/Microsoft-and-Terradot-announce-deal-for-12-000-tons-of-permanent-carbon-removal/' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20241212309547/en/Terradot-Launches-Out-of-Stanford-to-Deliver-Permanent-Carbon-Removal/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/terradot' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc' }
   ],
 };

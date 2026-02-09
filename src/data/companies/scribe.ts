@@ -161,8 +161,8 @@ export const scribe: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Scribe', url: 'https://scribehow.com' },
-    { title: 'Scribe Jobs', url: 'https://scribehow.com/jobs' },
-    { title: 'Scribe on startups.gallery', url: 'https://startups.gallery/companies/scribe' },
+    { title: 'Source', url: 'https://scribehow.com' },
+    { title: 'Source', url: 'https://scribehow.com/jobs' },
+    { title: 'Source', url: 'https://startups.gallery/companies/scribe' }
   ],
 };

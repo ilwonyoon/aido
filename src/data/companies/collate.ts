@@ -131,7 +131,7 @@ export const collate: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Collate', url: 'https://collate.com' },
-    { title: 'Collate on startups.gallery', url: 'https://startups.gallery/companies/collate' },
+    { title: 'Source', url: 'https://collate.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/collate' }
   ],
 };

@@ -152,7 +152,7 @@ export const campfire: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:35:00',
   sources: [
-    { title: 'Campfire', url: 'https://campfire.ai' },
-    { title: 'Campfire on startups.gallery', url: 'https://startups.gallery/companies/campfire' },
+    { title: 'Source', url: 'https://campfire.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/campfire' }
   ],
 };

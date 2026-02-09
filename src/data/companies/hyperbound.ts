@@ -126,7 +126,7 @@ export const hyperbound: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Hyperbound', url: 'https://hyperbound.ai' },
-    { title: 'Hyperbound on startups.gallery', url: 'https://startups.gallery/companies/hyperbound' },
+    { title: 'Source', url: 'https://hyperbound.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/hyperbound' }
   ],
 };

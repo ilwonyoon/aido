@@ -217,9 +217,9 @@ export const parahelp: Company = {
   // Meta
   lastUpdated: '2026-01-27T15:25:00',
   sources: [
-    { title: 'Parahelp website', url: 'https://parahelp.com/' },
-    { title: 'Parahelp Series A and Seed', url: 'https://parahelp.com/blog/announcing-our-series-a-and-seed' },
-    { title: 'Parahelp careers', url: 'https://parahelp.com/careers' },
-    { title: 'Parahelp YC company page', url: 'https://www.ycombinator.com/companies/parahelp' },
+    { title: 'Source', url: 'https://parahelp.com/' },
+    { title: 'Source', url: 'https://parahelp.com/blog/announcing-our-series-a-and-seed' },
+    { title: 'Source', url: 'https://parahelp.com/careers' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/parahelp' }
   ],
 };

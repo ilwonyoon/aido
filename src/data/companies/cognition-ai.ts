@@ -131,7 +131,7 @@ export const cognitionAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: 'Cognition', url: 'https://cognition.ai' },
-    { title: 'Cognition on startups.gallery', url: 'https://startups.gallery/companies/cognition-ai' },
+    { title: 'Source', url: 'https://cognition.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cognition-ai' }
   ],
 };

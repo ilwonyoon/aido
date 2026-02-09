@@ -98,7 +98,7 @@ export const ranger: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Ranger', url: 'https://www.ranger.ai' },
-    { title: 'Ranger on startups.gallery', url: 'https://startups.gallery/companies/ranger' },
+    { title: 'Source', url: 'https://www.ranger.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/ranger' }
   ],
 };

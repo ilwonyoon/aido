@@ -102,7 +102,7 @@ export const cline: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Cline', url: 'https://cline.bot' },
-    { title: 'Cline on startups.gallery', url: 'https://startups.gallery/companies/cline' },
+    { title: 'Source', url: 'https://cline.bot' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cline' }
   ],
 };

@@ -160,9 +160,9 @@ export const deepgram: Company = {
     // Meta
     lastUpdated: '2026-01-27T10:58:34',
     sources: [
-      { title: 'Deepgram (startups.gallery)', url: 'https://startups.gallery/companies/deepgram' },
-      { title: 'Deepgram (Y Combinator)', url: 'https://www.ycombinator.com/companies/deepgram' },
-      { title: 'Deepgram Careers', url: 'https://deepgram.com/careers' },
-      { title: 'Deepgram Jobs (Ashby)', url: 'https://jobs.ashbyhq.com/Deepgram' },
-    ],
+    { title: 'Source', url: 'https://startups.gallery/companies/deepgram' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/deepgram' },
+    { title: 'Source', url: 'https://deepgram.com/careers' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/Deepgram' }
+  ],
   };

@@ -198,7 +198,7 @@ export const truemed: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Truemed website', url: 'https://www.truemed.com/' },
-    { title: 'Truemed on startups.gallery', url: 'https://startups.gallery/companies/truemed' },
+    { title: 'Source', url: 'https://www.truemed.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/truemed' }
   ],
 };

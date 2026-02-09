@@ -209,12 +209,12 @@ export const hightouch: Company = {
   // Meta
   lastUpdated: '2026-01-27T19:25:00',
   sources: [
-    { title: 'Hightouch website', url: 'https://hightouch.com/' },
-    { title: 'Hightouch Series C announcement', url: 'https://hightouch.com/blog/announcing-our-series-c' },
-    { title: 'Hightouch Series C (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/hightouch-raises-80m-series-c-at-1-2b-valuation-to-help-companies-launch-ai-decisioning-302373196.html' },
-    { title: 'Hightouch co-founder bio (Tejas)', url: 'https://hightouch.com/authors/tejas-manohar' },
-    { title: 'Hightouch co-founder bio (Kashish)', url: 'https://hightouch.com/authors/kashish-gupta' },
-    { title: 'Hightouch co-founder bio (Josh)', url: 'https://hightouch.com/authors/josh-curl' },
-    { title: 'Hightouch jobs (Greenhouse)', url: 'https://boards.greenhouse.io/hightouch' },
+    { title: 'Source', url: 'https://hightouch.com/' },
+    { title: 'Source', url: 'https://hightouch.com/blog/announcing-our-series-c' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/hightouch-raises-80m-series-c-at-1-2b-valuation-to-help-companies-launch-ai-decisioning-302373196.html' },
+    { title: 'Source', url: 'https://hightouch.com/authors/tejas-manohar' },
+    { title: 'Source', url: 'https://hightouch.com/authors/kashish-gupta' },
+    { title: 'Source', url: 'https://hightouch.com/authors/josh-curl' },
+    { title: 'Source', url: 'https://boards.greenhouse.io/hightouch' }
   ],
 };

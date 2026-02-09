@@ -166,8 +166,8 @@ export const airloom: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Airloom', url: 'https://www.airloom.energy' },
-    { title: 'Airloom funding (Globe Newswire)', url: 'https://www.globenewswire.com/news-release/2024/10/22/2966558/0/en/Airloom-Energy-Raises-7-5-Million-Seed-Round-and-Secures-5-Million-Wind-Prize-and-1-25-Million-State-Grant.html' },
-    { title: 'Airloom on startups.gallery', url: 'https://startups.gallery/companies/airloom' },
+    { title: 'Source', url: 'https://www.airloom.energy' },
+    { title: 'Source', url: 'https://www.globenewswire.com/news-release/2024/10/22/2966558/0/en/Airloom-Energy-Raises-7-5-Million-Seed-Round-and-Secures-5-Million-Wind-Prize-and-1-25-Million-State-Grant.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/airloom' }
   ],
 };

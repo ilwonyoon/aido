@@ -236,16 +236,16 @@ export const abridge: Company = {
     // Meta
     lastUpdated: '2026-01-26T20:00:00',
     sources: [
-      { title: 'Abridge Series E funding (TechCrunch)', url: 'https://techcrunch.com/2025/06/24/abridge-raises-300m-at-a-5-3b-valuation-to-grow-its-ai-powered-medical-transcription-tool/' },
-      { title: 'Abridge Series D (Press release)', url: 'https://www.abridge.com/press/abridge-raises-250-million-series-d-funding-to-fuel-expansion-of-generative-ai-platform-for-clinical-conversations' },
-      { title: 'Abridge Series C (Press release)', url: 'https://www.abridge.com/press/abridge-announces-150-million-series-c-funding-to-scale-generative-ai-platform-for-clinical-conversations' },
-      { title: 'Abridge Series B (BusinessWire)', url: 'https://www.businesswire.com/news/home/20231004012861/en/Abridge-Raises-%2430M-Series-B-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
-      { title: 'Abridge Series A-1 (BusinessWire)', url: 'https://www.businesswire.com/news/home/20220823005269/en/Abridge-Raises-%2412.5M-Series-A-1-Extension-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
-      { title: 'Abridge + UPMC partnership (Press release)', url: 'https://www.abridge.com/press/upmc-and-abridge-announce-strategic-partnership-to-expand-generative-ai-clinical-documentation-for-providers-and-patients' },
-      { title: 'Abridge Careers', url: 'https://www.abridge.com/careers' },
-      { title: 'Abridge LinkedIn', url: 'https://www.linkedin.com/company/abridge/' },
-      { title: 'Abridge funding total (Crunchbase News)', url: 'https://news.crunchbase.com/ai/abridge-funding-4-75b-valuation-sequoia-ai/' },
-      { title: 'Abridge Crunchbase', url: 'https://www.crunchbase.com/organization/abridge-d1a4' },
-      { title: 'Clinical documentation improvement market size', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/06/24/abridge-raises-300m-at-a-5-3b-valuation-to-grow-its-ai-powered-medical-transcription-tool/' },
+    { title: 'Source', url: 'https://www.abridge.com/press/abridge-raises-250-million-series-d-funding-to-fuel-expansion-of-generative-ai-platform-for-clinical-conversations' },
+    { title: 'Source', url: 'https://www.abridge.com/press/abridge-announces-150-million-series-c-funding-to-scale-generative-ai-platform-for-clinical-conversations' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20231004012861/en/Abridge-Raises-%2430M-Series-B-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20220823005269/en/Abridge-Raises-%2412.5M-Series-A-1-Extension-to-Scale-AI-Driven-Clinical-Documentation-Platform' },
+    { title: 'Source', url: 'https://www.abridge.com/press/upmc-and-abridge-announce-strategic-partnership-to-expand-generative-ai-clinical-documentation-for-providers-and-patients' },
+    { title: 'Source', url: 'https://www.abridge.com/careers' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/abridge/' },
+    { title: 'Source', url: 'https://news.crunchbase.com/ai/abridge-funding-4-75b-valuation-sequoia-ai/' },
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/abridge-d1a4' },
+    { title: 'Source', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' }
+  ],
   };

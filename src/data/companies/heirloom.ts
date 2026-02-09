@@ -203,7 +203,7 @@ export const heirloom: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Heirloom website', url: 'https://www.heirloomcarbon.com/' },
-    { title: 'Heirloom on startups.gallery', url: 'https://startups.gallery/companies/heirloom' },
+    { title: 'Source', url: 'https://www.heirloomcarbon.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/heirloom' }
   ],
 };

@@ -173,9 +173,9 @@ export const alexAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'Alex AI', url: 'https://www.alex.com' },
-    { title: 'Alex AI (A Priori) on YC', url: 'https://www.ycombinator.com/companies/apriora' },
-    { title: 'Alex AI Product Designer (YC Jobs)', url: 'https://www.ycombinator.com/companies/apriora/jobs/z1xuDyf-product-designer' },
-    { title: 'Alex AI on startups.gallery', url: 'https://startups.gallery/companies/alex-ai' },
+    { title: 'Source', url: 'https://www.alex.com' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/apriora' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/apriora/jobs/z1xuDyf-product-designer' },
+    { title: 'Source', url: 'https://startups.gallery/companies/alex-ai' }
   ],
 };

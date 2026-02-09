@@ -99,7 +99,7 @@ export const solaSecurity: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Sola Security', url: 'https://www.sola.security' },
-    { title: 'Sola Security on startups.gallery', url: 'https://startups.gallery/companies/sola-security' },
+    { title: 'Source', url: 'https://www.sola.security' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sola-security' }
   ],
 };

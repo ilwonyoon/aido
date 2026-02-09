@@ -113,7 +113,7 @@ export const vantageAnalytics: Company = {
 
   lastUpdated: '2026-02-04T21:35:00',
   sources: [
-    { title: 'Vantage Analytics', url: 'https://vantageanalytics.com' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://vantageanalytics.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

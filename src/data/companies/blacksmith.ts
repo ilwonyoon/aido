@@ -220,8 +220,8 @@ export const blacksmith: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Blacksmith company page', url: 'https://www.blacksmith.sh/company' },
-    { title: 'Blacksmith seed announcement', url: 'https://www.blacksmith.sh/blog/blacksmith-seed-announcement' },
-    { title: 'Blacksmith on startups.gallery', url: 'https://startups.gallery/companies/blacksmith' },
+    { title: 'Source', url: 'https://www.blacksmith.sh/company' },
+    { title: 'Source', url: 'https://www.blacksmith.sh/blog/blacksmith-seed-announcement' },
+    { title: 'Source', url: 'https://startups.gallery/companies/blacksmith' }
   ],
 };

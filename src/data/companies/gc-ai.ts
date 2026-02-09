@@ -198,8 +198,8 @@ export const gcAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'GC AI website', url: 'https://gc.ai/' },
-    { title: 'GC AI careers', url: 'https://gc.ai/careers' },
-    { title: 'GC AI on startups.gallery', url: 'https://startups.gallery/companies/gc-ai' },
+    { title: 'Source', url: 'https://gc.ai/' },
+    { title: 'Source', url: 'https://gc.ai/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/gc-ai' }
   ],
 };

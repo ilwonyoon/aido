@@ -188,7 +188,7 @@ export const nokken: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:40:00',
   sources: [
-    { title: 'Nokken website', url: 'https://the-nokken.com/' },
-    { title: 'Nokken on startups.gallery', url: 'https://startups.gallery/companies/nokken' },
+    { title: 'Source', url: 'https://the-nokken.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nokken' }
   ],
 };

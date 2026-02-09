@@ -117,7 +117,7 @@ export const paper: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Paper', url: 'https://paper.design' },
-    { title: 'Paper on startups.gallery', url: 'https://startups.gallery/companies/paper' },
+    { title: 'Source', url: 'https://paper.design' },
+    { title: 'Source', url: 'https://startups.gallery/companies/paper' }
   ],
 };

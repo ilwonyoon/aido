@@ -198,7 +198,7 @@ export const inngest: Company = {
   // Meta
   lastUpdated: '2026-01-27T21:15:00',
   sources: [
-    { title: 'Inngest website', url: 'https://www.inngest.com/' },
-    { title: 'Inngest on startups.gallery', url: 'https://startups.gallery/companies/inngest' },
+    { title: 'Source', url: 'https://www.inngest.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/inngest' }
   ],
 };

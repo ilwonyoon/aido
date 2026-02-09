@@ -121,7 +121,7 @@ export const elevenX: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:20:00',
   sources: [
-    { title: '11x', url: 'https://11x.ai' },
-    { title: '11x on startups.gallery', url: 'https://startups.gallery/companies/11x' },
+    { title: 'Source', url: 'https://11x.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/11x' }
   ],
 };

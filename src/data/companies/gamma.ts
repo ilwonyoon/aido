@@ -232,13 +232,7 @@ export const gamma: Company = {
     // Meta
     lastUpdated: '2026-01-26T14:30:00',
     sources: [
-      {
-        title: 'Gamma $2.1B valuation, $100M ARR',
-        url: 'https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/',
-      },
-      {
-        title: 'Grant Lee on Lenny\'s Podcast',
-        url: 'https://www.lennysnewsletter.com/p/how-50-people-built-a-profitable-ai-unicorn',
-      },
-    ],
+    { title: 'Source', url: 'https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/' },
+    { title: 'Source', url: 'https://www.lennysnewsletter.com/p/how-50-people-built-a-profitable-ai-unicorn' }
+  ],
   };

@@ -213,7 +213,7 @@ export const devAgents: Company = {
   // Meta
   lastUpdated: '2026-01-28T10:25:00',
   sources: [
-    { title: 'Dev Agents website', url: 'https://sdsa.ai/' },
-    { title: 'Dev Agents on startups.gallery', url: 'https://startups.gallery/companies/dev-agents' },
+    { title: 'Source', url: 'https://sdsa.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/dev-agents' }
   ],
 };

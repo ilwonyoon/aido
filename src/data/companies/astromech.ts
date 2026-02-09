@@ -107,7 +107,7 @@ export const astromech: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Astromech', url: 'https://www.astromech.bio' },
-    { title: 'Astromech on startups.gallery', url: 'https://startups.gallery/companies/astromech' },
+    { title: 'Source', url: 'https://www.astromech.bio' },
+    { title: 'Source', url: 'https://startups.gallery/companies/astromech' }
   ],
 };

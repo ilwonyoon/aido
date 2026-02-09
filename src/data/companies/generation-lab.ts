@@ -169,7 +169,7 @@ export const generationLab: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:55:00',
   sources: [
-    { title: 'Generation Lab', url: 'https://www.generationlab.com' },
-    { title: 'Generation Lab on startups.gallery', url: 'https://startups.gallery/companies/generation-lab' },
+    { title: 'Source', url: 'https://www.generationlab.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/generation-lab' }
   ],
 };

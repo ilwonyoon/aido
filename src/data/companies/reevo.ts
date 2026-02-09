@@ -220,10 +220,10 @@ export const reevo: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:55:00',
   sources: [
-    { title: 'Reevo website', url: 'https://reevo.ai/' },
-    { title: 'Reevo about', url: 'https://reevo.ai/about' },
-    { title: 'Reevo funding press release (Business Wire)', url: 'https://www.businesswire.com/news/home/20251105759977/en/Reevo-Debuts-with-%2480-Million-in-Funding-as-the-Only-AI-Native-GTM-Platform-Spanning-Marketing-Sales-and-Customer-Success' },
-    { title: 'Reevo careers', url: 'https://reevo.ai/careers' },
-    { title: 'Reevo Product Designer role (Ashby)', url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376' },
+    { title: 'Source', url: 'https://reevo.ai/' },
+    { title: 'Source', url: 'https://reevo.ai/about' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20251105759977/en/Reevo-Debuts-with-%2480-Million-in-Funding-as-the-Only-AI-Native-GTM-Platform-Spanning-Marketing-Sales-and-Customer-Success' },
+    { title: 'Source', url: 'https://reevo.ai/careers' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376' }
   ],
 };

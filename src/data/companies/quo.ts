@@ -157,8 +157,8 @@ export const quo: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:57:37',
   sources: [
-    { title: 'Quo', url: 'https://quo.com' },
-    { title: 'Quo Careers', url: 'https://quo.com/careers' },
-    { title: 'Quo on startups.gallery', url: 'https://startups.gallery/companies/quo' },
+    { title: 'Source', url: 'https://quo.com' },
+    { title: 'Source', url: 'https://quo.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/quo' }
   ],
 };

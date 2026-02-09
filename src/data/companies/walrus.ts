@@ -98,7 +98,7 @@ export const walrus: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Walrus', url: 'https://www.walrus.xyz' },
-    { title: 'Walrus on startups.gallery', url: 'https://startups.gallery/companies/walrus' },
+    { title: 'Source', url: 'https://www.walrus.xyz' },
+    { title: 'Source', url: 'https://startups.gallery/companies/walrus' }
   ],
 };

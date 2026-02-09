@@ -161,7 +161,7 @@ export const tempo: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Tempo launch', url: 'https://tempo.xyz/launch' },
-    { title: 'Tempo on startups.gallery', url: 'https://startups.gallery/companies/tempo' },
+    { title: 'Source', url: 'https://tempo.xyz/launch' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tempo' }
   ],
 };

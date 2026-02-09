@@ -126,7 +126,7 @@ export const calCom: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Cal.com', url: 'https://cal.com' },
-    { title: 'Cal.com on startups.gallery', url: 'https://startups.gallery/companies/cal-com' },
+    { title: 'Source', url: 'https://cal.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cal-com' }
   ],
 };

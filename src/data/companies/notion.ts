@@ -242,13 +242,7 @@ export const notion: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Notion $10B Valuation - SaaStr',
-        url: 'https://www.saastr.com/notion-and-growing-into-your-10b-valuation-a-masterclass-in-patience/',
-      },
-      {
-        title: 'Sacra Profile',
-        url: 'https://sacra.com/c/notion/',
-      },
-    ],
+    { title: 'Source', url: 'https://www.saastr.com/notion-and-growing-into-your-10b-valuation-a-masterclass-in-patience/' },
+    { title: 'Source', url: 'https://sacra.com/c/notion/' }
+  ],
   };

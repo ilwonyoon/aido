@@ -214,10 +214,10 @@ export const mytra: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Mytra homepage', url: 'https://mytra.ai/' },
-    { title: 'Mytra company page', url: 'https://mytra.ai/company' },
-    { title: 'Mytra Series C announcement', url: 'https://mytra.ai/news/series-c' },
-    { title: 'Mytra Series C (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/mytra-raises-120-million-series-c-to-scale-its-industrial-robotics-platform-302353228.html' },
-    { title: 'Mytra on startups.gallery', url: 'https://startups.gallery/companies/mytra' },
+    { title: 'Source', url: 'https://mytra.ai/' },
+    { title: 'Source', url: 'https://mytra.ai/company' },
+    { title: 'Source', url: 'https://mytra.ai/news/series-c' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/mytra-raises-120-million-series-c-to-scale-its-industrial-robotics-platform-302353228.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mytra' }
   ],
 };

@@ -173,8 +173,8 @@ export const furtherAi: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'FurtherAI', url: 'https://www.furtherai.com' },
-    { title: 'FurtherAI YC profile', url: 'https://www.ycombinator.com/companies/furtherai' },
-    { title: 'FurtherAI on startups.gallery', url: 'https://startups.gallery/companies/further-ai' },
+    { title: 'Source', url: 'https://www.furtherai.com' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/furtherai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/further-ai' }
   ],
 };

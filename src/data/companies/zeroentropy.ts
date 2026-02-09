@@ -126,7 +126,7 @@ export const zeroentropy: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'ZeroEntropy', url: 'https://zeroentropy.dev' },
-    { title: 'ZeroEntropy on startups.gallery', url: 'https://startups.gallery/companies/zeroentropy' },
+    { title: 'Source', url: 'https://zeroentropy.dev' },
+    { title: 'Source', url: 'https://startups.gallery/companies/zeroentropy' }
   ],
 };

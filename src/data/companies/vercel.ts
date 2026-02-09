@@ -256,13 +256,7 @@ export const vercel: Company = {
 
     lastUpdated: '2025-01-25',
     sources: [
-      {
-        title: 'Vercel Series F - Official Blog',
-        url: 'https://vercel.com/blog/series-f',
-      },
-      {
-        title: 'Vercel Revenue and Stats - Sacra',
-        url: 'https://sacra.com/c/vercel/',
-      },
-    ],
+    { title: 'Source', url: 'https://vercel.com/blog/series-f' },
+    { title: 'Source', url: 'https://sacra.com/c/vercel/' }
+  ],
   };

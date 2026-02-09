@@ -99,7 +99,7 @@ export const middesk: Company = {
   // Meta
   lastUpdated: '2026-02-01T14:20:00',
   sources: [
-    { title: 'Middesk', url: 'https://middesk.com' },
-    { title: 'Middesk on startups.gallery', url: 'https://startups.gallery/companies/middesk' },
+    { title: 'Source', url: 'https://middesk.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/middesk' }
   ],
 };

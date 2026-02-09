@@ -126,7 +126,7 @@ export const mem: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Mem', url: 'https://mem.ai' },
-    { title: 'Mem on startups.gallery', url: 'https://startups.gallery/companies/mem' },
+    { title: 'Source', url: 'https://mem.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/mem' }
   ],
 };

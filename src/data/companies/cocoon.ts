@@ -168,8 +168,8 @@ export const cocoon: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Cocoon', url: 'https://cocoon.com' },
-    { title: 'Cocoon Careers', url: 'https://cocoon.com/careers' },
-    { title: 'Cocoon on startups.gallery', url: 'https://startups.gallery/companies/cocoon' },
+    { title: 'Source', url: 'https://cocoon.com' },
+    { title: 'Source', url: 'https://cocoon.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/cocoon' }
   ],
 };

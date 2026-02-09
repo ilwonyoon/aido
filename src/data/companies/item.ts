@@ -198,8 +198,8 @@ export const item: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:10:00',
   sources: [
-    { title: 'Item YC page', url: 'https://www.ycombinator.com/companies/item' },
-    { title: 'Item website', url: 'https://www.item.app/' },
-    { title: 'Item on startups.gallery', url: 'https://startups.gallery/companies/item-app' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/item' },
+    { title: 'Source', url: 'https://www.item.app/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/item-app' }
   ],
 };

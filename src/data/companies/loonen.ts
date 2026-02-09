@@ -198,7 +198,7 @@ export const loonen: Company = {
   // Meta
   lastUpdated: '2026-01-27T21:15:00',
   sources: [
-    { title: 'Loonen website', url: 'https://loonen.com/' },
-    { title: 'Loonen on startups.gallery', url: 'https://startups.gallery/companies/loonen' },
+    { title: 'Source', url: 'https://loonen.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/loonen' }
   ],
 };

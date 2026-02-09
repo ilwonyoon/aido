@@ -173,8 +173,8 @@ export const contra: Company = {
   // Meta
   lastUpdated: '2026-01-28T16:20:00',
   sources: [
-    { title: 'Contra', url: 'https://contra.com' },
-    { title: 'Contra funding (Seedtable)', url: 'https://www.seedtable.com/startups-contra' },
-    { title: 'Contra on startups.gallery', url: 'https://startups.gallery/companies/contra' },
+    { title: 'Source', url: 'https://contra.com' },
+    { title: 'Source', url: 'https://www.seedtable.com/startups-contra' },
+    { title: 'Source', url: 'https://startups.gallery/companies/contra' }
   ],
 };

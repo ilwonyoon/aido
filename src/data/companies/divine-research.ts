@@ -121,7 +121,6 @@ export const divineResearch: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Divine', url: 'https://startups.gallery/companies/divine-research' },
-    { title: 'Divine on startups.gallery', url: 'https://startups.gallery/companies/divine-research' },
+    { title: 'Source', url: 'https://startups.gallery/companies/divine-research' }
   ],
 };

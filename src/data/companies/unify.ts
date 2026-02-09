@@ -126,7 +126,7 @@ export const unify: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Unify', url: 'https://www.unifygtm.com' },
-    { title: 'Unify on startups.gallery', url: 'https://startups.gallery/companies/unify' },
+    { title: 'Source', url: 'https://www.unifygtm.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/unify' }
   ],
 };

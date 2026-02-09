@@ -118,7 +118,7 @@ export const seedHealth: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Seed', url: 'https://seed.com' },
-    { title: 'Seed on startups.gallery', url: 'https://startups.gallery/companies/seed-health' },
+    { title: 'Source', url: 'https://seed.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/seed-health' }
   ],
 };

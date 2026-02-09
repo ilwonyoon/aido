@@ -157,8 +157,8 @@ export const unstructured: Company = {
   // Meta
   lastUpdated: '2026-02-05T22:30:00',
   sources: [
-    { title: 'Unstructured', url: 'https://unstructured.io' },
-    { title: 'Unstructured $40M Series B (BusinessWire)', url: 'https://www.businesswire.com/news/home/20240314620374/en/Unstructured-Raises-$40M-Series-B-From-Menlo-Ventures-Databricks-Ventures-IBM-Ventures-and-NVIDIA-to-Make-Enterprise-Data-LLM-ready' },
-    { title: 'Madrona — Unstructured', url: 'https://www.madrona.com/featuredleader/unstructured/' },
+    { title: 'Source', url: 'https://unstructured.io' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20240314620374/en/Unstructured-Raises-$40M-Series-B-From-Menlo-Ventures-Databricks-Ventures-IBM-Ventures-and-NVIDIA-to-Make-Enterprise-Data-LLM-ready' },
+    { title: 'Source', url: 'https://www.madrona.com/featuredleader/unstructured/' }
   ],
 };

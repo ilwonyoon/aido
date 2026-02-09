@@ -122,7 +122,7 @@ export const swae: Company = {
   // Meta
   lastUpdated: '2026-02-04T20:45:00',
   sources: [
-    { title: 'Swae', url: 'https://swae.io' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://swae.io' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

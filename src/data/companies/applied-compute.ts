@@ -174,7 +174,7 @@ export const appliedCompute: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Applied Compute', url: 'https://appliedcompute.com' },
-    { title: 'Applied Compute on startups.gallery', url: 'https://startups.gallery/companies/applied-compute' },
+    { title: 'Source', url: 'https://appliedcompute.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/applied-compute' }
   ],
 };

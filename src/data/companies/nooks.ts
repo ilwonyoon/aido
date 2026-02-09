@@ -162,8 +162,8 @@ export const nooks: Company = {
   // Meta
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
-    { title: 'Nooks', url: 'https://www.nooks.ai' },
-    { title: 'Nooks Series B (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/nooks-raises-43m-series-b-and-announces-noam-shazeer-of-nvidia-and-jaime-lichtenstein-joining-board-302254870.html' },
-    { title: 'Nooks on startups.gallery', url: 'https://startups.gallery/companies/nooks' },
+    { title: 'Source', url: 'https://www.nooks.ai' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/nooks-raises-43m-series-b-and-announces-noam-shazeer-of-nvidia-and-jaime-lichtenstein-joining-board-302254870.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nooks' }
   ],
 };

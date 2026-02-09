@@ -198,7 +198,7 @@ export const town: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Town website', url: 'https://town.com/' },
-    { title: 'Town on startups.gallery', url: 'https://startups.gallery/companies/town' },
+    { title: 'Source', url: 'https://town.com/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/town' }
   ],
 };

@@ -191,8 +191,8 @@ export const loop: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Loop website', url: 'https://loop.com/' },
-    { title: 'Loop careers', url: 'https://loop.com/careers' },
-    { title: 'Loop on startups.gallery', url: 'https://startups.gallery/companies/loop' },
+    { title: 'Source', url: 'https://loop.com/' },
+    { title: 'Source', url: 'https://loop.com/careers' },
+    { title: 'Source', url: 'https://startups.gallery/companies/loop' }
   ],
 };

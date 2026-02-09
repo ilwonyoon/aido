@@ -162,9 +162,9 @@ export const span: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Span', url: 'https://span.app' },
-    { title: 'Span Careers', url: 'https://span.app/careers' },
-    { title: 'Span funding (FinSMEs)', url: 'https://www.finsmes.com/2025/11/span-raises-25m-in-seed-and-series-a-funding.html' },
-    { title: 'Span on startups.gallery', url: 'https://startups.gallery/companies/span' },
+    { title: 'Source', url: 'https://span.app' },
+    { title: 'Source', url: 'https://span.app/careers' },
+    { title: 'Source', url: 'https://www.finsmes.com/2025/11/span-raises-25m-in-seed-and-series-a-funding.html' },
+    { title: 'Source', url: 'https://startups.gallery/companies/span' }
   ],
 };

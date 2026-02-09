@@ -126,7 +126,7 @@ export const untilLabs: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Until Labs', url: 'https://www.untillabs.com' },
-    { title: 'Until Labs on startups.gallery', url: 'https://startups.gallery/companies/until-labs' },
+    { title: 'Source', url: 'https://www.untillabs.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/until-labs' }
   ],
 };

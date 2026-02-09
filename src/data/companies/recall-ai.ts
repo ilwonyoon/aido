@@ -99,7 +99,7 @@ export const recallAi: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Recall.ai', url: 'https://www.recall.ai' },
-    { title: 'Recall.ai on startups.gallery', url: 'https://startups.gallery/companies/recall-ai' },
+    { title: 'Source', url: 'https://www.recall.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/recall-ai' }
   ],
 };

@@ -155,7 +155,7 @@ export const shortwave: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Shortwave AI Email', url: 'https://www.shortwave.com/ai-email/a' },
-    { title: 'Shortwave on startups.gallery', url: 'https://startups.gallery/companies/shortwave' },
+    { title: 'Source', url: 'https://www.shortwave.com/ai-email/a' },
+    { title: 'Source', url: 'https://startups.gallery/companies/shortwave' }
   ],
 };

@@ -157,7 +157,7 @@ export const trunk: Company = {
   // Meta
   lastUpdated: '2026-01-30T12:45:00',
   sources: [
-    { title: 'Trunk', url: 'https://trunk.io' },
-    { title: 'Trunk on startups.gallery', url: 'https://startups.gallery/companies/trunk' },
+    { title: 'Source', url: 'https://trunk.io' },
+    { title: 'Source', url: 'https://startups.gallery/companies/trunk' }
   ],
 };

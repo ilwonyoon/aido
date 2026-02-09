@@ -161,9 +161,9 @@ export const speakeasy: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Speakeasy', url: 'https://www.speakeasy.com' },
-    { title: 'Speakeasy Series A', url: 'https://www.speakeasy.com/blog/series-a' },
-    { title: 'Speakeasy Docs', url: 'https://www.speakeasy.com/docs' },
-    { title: 'Speakeasy on startups.gallery', url: 'https://startups.gallery/companies/speakeasy' },
+    { title: 'Source', url: 'https://www.speakeasy.com' },
+    { title: 'Source', url: 'https://www.speakeasy.com/blog/series-a' },
+    { title: 'Source', url: 'https://www.speakeasy.com/docs' },
+    { title: 'Source', url: 'https://startups.gallery/companies/speakeasy' }
   ],
 };

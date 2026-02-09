@@ -169,8 +169,8 @@ export const lightfield: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'Lightfield', url: 'https://lightfield.app' },
-    { title: 'Lightfield Help', url: 'https://support.lightfield.app' },
-    { title: 'Lightfield on startups.gallery', url: 'https://startups.gallery/companies/lightfield' },
+    { title: 'Source', url: 'https://lightfield.app' },
+    { title: 'Source', url: 'https://support.lightfield.app' },
+    { title: 'Source', url: 'https://startups.gallery/companies/lightfield' }
   ],
 };

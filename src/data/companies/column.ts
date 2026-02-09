@@ -126,7 +126,7 @@ export const column: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Column', url: 'https://column.com' },
-    { title: 'Column on startups.gallery', url: 'https://startups.gallery/companies/column' },
+    { title: 'Source', url: 'https://column.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/column' }
   ],
 };

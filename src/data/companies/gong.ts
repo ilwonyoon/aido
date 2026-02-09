@@ -92,5 +92,8 @@ export const gong: Company = {
       nextActions: ['Try Gong product', 'Research founders'],
     },
     lastUpdated: '2026-01-26T18:30:00',
-    sources: [{'title': 'Gong $300M ARR', 'url': 'https://www.gong.io/press/gong-surpasses-300m-arr-amid-increased-demand-for-ai-powered-revenue-solutions'}, {'title': 'Gong Funding History', 'url': 'https://www.gong.io/press/gong-raises-250-million-in-series-e-funding-at-7-25-billion-valuation'}],
+    sources: [
+    { title: 'Source', url: 'https://www.gong.io/press/gong-surpasses-300m-arr-amid-increased-demand-for-ai-powered-revenue-solutions' },
+    { title: 'Source', url: 'https://www.gong.io/press/gong-raises-250-million-in-series-e-funding-at-7-25-billion-valuation' }
+  ],
   };

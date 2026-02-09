@@ -118,7 +118,7 @@ export const owner: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:30:00',
   sources: [
-    { title: 'Owner', url: 'https://owner.com' },
-    { title: 'Owner on startups.gallery', url: 'https://startups.gallery/companies/owner' },
+    { title: 'Source', url: 'https://owner.com' },
+    { title: 'Source', url: 'https://startups.gallery/companies/owner' }
   ],
 };

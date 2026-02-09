@@ -121,7 +121,7 @@ export const framework: Company = {
   // Meta
   lastUpdated: '2026-02-01T12:45:00',
   sources: [
-    { title: 'Framework', url: 'https://frame.work' },
-    { title: 'Framework on startups.gallery', url: 'https://startups.gallery/companies/framework' },
+    { title: 'Source', url: 'https://frame.work' },
+    { title: 'Source', url: 'https://startups.gallery/companies/framework' }
   ],
 };

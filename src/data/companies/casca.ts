@@ -198,7 +198,7 @@ export const casca: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Casca website', url: 'https://www.cascading.ai/' },
-    { title: 'Casca on startups.gallery', url: 'https://startups.gallery/companies/casca' },
+    { title: 'Source', url: 'https://www.cascading.ai/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/casca' }
   ],
 };

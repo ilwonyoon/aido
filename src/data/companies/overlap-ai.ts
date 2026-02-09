@@ -193,8 +193,8 @@ export const overlapAi: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
-    { title: 'Overlap website', url: 'https://overlap.ai/' },
-    { title: 'Overlap YC profile', url: 'https://www.ycombinator.com/companies/overlap' },
-    { title: 'Overlap on startups.gallery', url: 'https://startups.gallery/companies/overlap-ai' },
+    { title: 'Source', url: 'https://overlap.ai/' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/overlap' },
+    { title: 'Source', url: 'https://startups.gallery/companies/overlap-ai' }
   ],
 };

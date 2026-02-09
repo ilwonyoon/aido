@@ -127,7 +127,7 @@ export const snaptravel: Company = {
   // Meta
   lastUpdated: '2026-02-04T19:35:00',
   sources: [
-    { title: 'Super.com press - Snaptravel Series A', url: 'https://www.super.com/press/snaptravel-raises-new-investment-closes-series-a-at-21-2-million' },
-    { title: 'Seedtable - Best AI Startups in North America (2026)', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://www.super.com/press/snaptravel-raises-new-investment-closes-series-a-at-21-2-million' },
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
   ],
 };

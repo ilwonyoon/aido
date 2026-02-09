@@ -118,7 +118,7 @@ export const midday: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
-    { title: 'Midday', url: 'https://midday.ai' },
-    { title: 'Midday on startups.gallery', url: 'https://startups.gallery/companies/midday' },
+    { title: 'Source', url: 'https://midday.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/midday' }
   ],
 };

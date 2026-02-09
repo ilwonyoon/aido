@@ -163,9 +163,9 @@ export const safetykit: Company = {
   // Meta
   lastUpdated: '2026-01-28T11:45:15',
   sources: [
-    { title: 'SafetyKit', url: 'https://www.safetykit.com' },
-    { title: 'SafetyKit Careers', url: 'https://www.safetykit.com/jobs' },
-    { title: 'SafetyKit Series A', url: 'https://www.safetykit.com/post/seriesa' },
-    { title: 'SafetyKit on startups.gallery', url: 'https://startups.gallery/companies/safetykit' },
+    { title: 'Source', url: 'https://www.safetykit.com' },
+    { title: 'Source', url: 'https://www.safetykit.com/jobs' },
+    { title: 'Source', url: 'https://www.safetykit.com/post/seriesa' },
+    { title: 'Source', url: 'https://startups.gallery/companies/safetykit' }
   ],
 };

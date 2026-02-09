@@ -164,8 +164,7 @@ export const wabi: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:05:37',
   sources: [
-    { title: 'Wabi', url: 'https://wabi.ai' },
-    { title: 'Wabi funding (Wabi site)', url: 'https://wabi.ai' },
-    { title: 'Wabi on startups.gallery', url: 'https://startups.gallery/companies/wabi' },
+    { title: 'Source', url: 'https://wabi.ai' },
+    { title: 'Source', url: 'https://startups.gallery/companies/wabi' }
   ],
 };

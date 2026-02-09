@@ -202,12 +202,12 @@ export const harmonic: Company = {
     // Meta
     lastUpdated: '2026-01-26T20:00:00',
     sources: [
-      { title: 'Harmonic Series B (BusinessWire)', url: 'https://www.businesswire.com/news/home/20250710118878/en/Harmonic-Raises-%24100-Million-Series-B-to-Accelerate-Development-of-Mathematical-Superintelligence' },
-      { title: 'Harmonic Series C (BusinessWire)', url: 'https://www.businesswire.com/news/home/20251125727962/en/Harmonic-Builds-Momentum-Towards-Mathematical-Superintelligence-with-%24120-Million-Series-C' },
-      { title: 'Harmonic IMO gold performance (BusinessWire)', url: 'https://www.businesswire.com/news/home/20250728394917/en/Harmonic-Announces-IMO-Gold-Medal-Level-Performance-Launch-of-First-Mathematical-Superintelligence-MSI-AI-App' },
-      { title: 'Harmonic website', url: 'https://harmonic.fun' },
-      { title: 'Harmonic LinkedIn', url: 'https://www.linkedin.com/company/harmonicmath' },
-      { title: 'Harmonic Crunchbase', url: 'https://www.crunchbase.com/organization/harmonic-ai-f3d1' },
-      { title: 'Testing software market size (2023)', url: 'https://www.prnewswire.com/news-releases/testing-software-market-overview-estimated-market-size-forecast-growth-rate-and-major-drivers--by-the-business-research-company-301950731.html' },
-    ],
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20250710118878/en/Harmonic-Raises-%24100-Million-Series-B-to-Accelerate-Development-of-Mathematical-Superintelligence' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20251125727962/en/Harmonic-Builds-Momentum-Towards-Mathematical-Superintelligence-with-%24120-Million-Series-C' },
+    { title: 'Source', url: 'https://www.businesswire.com/news/home/20250728394917/en/Harmonic-Announces-IMO-Gold-Medal-Level-Performance-Launch-of-First-Mathematical-Superintelligence-MSI-AI-App' },
+    { title: 'Source', url: 'https://harmonic.fun' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/harmonicmath' },
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/harmonic-ai-f3d1' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/testing-software-market-overview-estimated-market-size-forecast-growth-rate-and-major-drivers--by-the-business-research-company-301950731.html' }
+  ],
   };

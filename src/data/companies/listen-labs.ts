@@ -205,14 +205,14 @@ export const listenLabs: Company = {
     // Meta
     lastUpdated: '2026-01-26T20:00:00',
     sources: [
-      { title: 'Listen Labs website', url: 'https://listenlabs.ai' },
-      { title: 'Listen Labs Series B announcement (founders letter)', url: 'https://listenlabs.ai/founders-letter' },
-      { title: 'Listen Labs Series B (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html' },
-      { title: 'Listen Labs LinkedIn', url: 'https://www.linkedin.com/company/listenlabss' },
-      { title: 'Listen Labs revenue update (LinkedIn)', url: 'https://www.linkedin.com/posts/alfredwahlforss_1m-people-told-us-their-opinions-activity-7338255020802455552--xfu' },
-      { title: 'Listen Labs Series A (Crunchbase)', url: 'https://www.crunchbase.com/funding_round/listen-labs-series-a--76d4ebf6' },
-      { title: 'Listen Labs Crunchbase', url: 'https://www.crunchbase.com/organization/listen-labs' },
-      { title: 'Listen Labs Founding Product Designer', url: 'https://www.builtinseattle.com/job/founding-product-designer/6686342' },
-      { title: 'Global market research industry size (2023)', url: 'https://www.researchworld.com/global-insights-industry-sector-reaches-usd-150-billion-market-research-sector-at-usd-56-billion/' },
-    ],
+    { title: 'Source', url: 'https://listenlabs.ai' },
+    { title: 'Source', url: 'https://listenlabs.ai/founders-letter' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html' },
+    { title: 'Source', url: 'https://www.linkedin.com/company/listenlabss' },
+    { title: 'Source', url: 'https://www.linkedin.com/posts/alfredwahlforss_1m-people-told-us-their-opinions-activity-7338255020802455552--xfu' },
+    { title: 'Source', url: 'https://www.crunchbase.com/funding_round/listen-labs-series-a--76d4ebf6' },
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/listen-labs' },
+    { title: 'Source', url: 'https://www.builtinseattle.com/job/founding-product-designer/6686342' },
+    { title: 'Source', url: 'https://www.researchworld.com/global-insights-industry-sector-reaches-usd-150-billion-market-research-sector-at-usd-56-billion/' }
+  ],
   };

@@ -215,9 +215,9 @@ export const nexus: Company = {
   // Meta
   lastUpdated: '2026-01-27T20:45:00',
   sources: [
-    { title: 'Nexus website', url: 'https://nexus.xyz/' },
-    { title: 'Nexus on startups.gallery', url: 'https://startups.gallery/companies/nexus' },
-    { title: 'Nexus Series A (PRNewswire)', url: 'https://www.prnewswire.com/news-releases/nexus-closes-25m-series-a-to-enable-verifiable-computation-via-zero-knowledge-cryptography-302168070.html' },
-    { title: 'Nexus Senior Product Designer (Ashby)', url: 'https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36' },
+    { title: 'Source', url: 'https://nexus.xyz/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/nexus' },
+    { title: 'Source', url: 'https://www.prnewswire.com/news-releases/nexus-closes-25m-series-a-to-enable-verifiable-computation-via-zero-knowledge-cryptography-302168070.html' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36' }
   ],
 };

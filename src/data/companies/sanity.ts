@@ -162,8 +162,8 @@ export const sanity: Company = {
   // Meta
   lastUpdated: '2026-01-28T12:23:25',
   sources: [
-    { title: 'Sanity Series C announcement', url: 'https://www.sanity.io/blog/sanity-funding-round-series-c' },
-    { title: 'Sanity Series C (Bullhound)', url: 'https://www.bullhound.com/news/sanity-raises-85-million-series-c-funding-round' },
-    { title: 'Sanity on startups.gallery', url: 'https://startups.gallery/companies/sanity' },
+    { title: 'Source', url: 'https://www.sanity.io/blog/sanity-funding-round-series-c' },
+    { title: 'Source', url: 'https://www.bullhound.com/news/sanity-raises-85-million-series-c-funding-round' },
+    { title: 'Source', url: 'https://startups.gallery/companies/sanity' }
   ],
 };

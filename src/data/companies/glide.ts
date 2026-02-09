@@ -208,10 +208,10 @@ export const glide: Company = {
   // Meta
   lastUpdated: '2026-01-27T16:55:00',
   sources: [
-    { title: 'Glide YC profile', url: 'https://www.ycombinator.com/companies/glide' },
-    { title: 'Glide website', url: 'https://www.glideapps.com/' },
-    { title: 'Glide Series A (TechCrunch)', url: 'https://techcrunch.com/2022/04/20/glide-raises-20m-series-a-for-no-code-app-building/' },
-    { title: 'Glide on startups.gallery', url: 'https://startups.gallery/companies/glide' },
-    { title: 'Glide jobs page', url: 'https://www.glideapps.com/jobs' },
+    { title: 'Source', url: 'https://www.ycombinator.com/companies/glide' },
+    { title: 'Source', url: 'https://www.glideapps.com/' },
+    { title: 'Source', url: 'https://techcrunch.com/2022/04/20/glide-raises-20m-series-a-for-no-code-app-building/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/glide' },
+    { title: 'Source', url: 'https://www.glideapps.com/jobs' }
   ],
 };

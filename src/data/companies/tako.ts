@@ -99,7 +99,7 @@ export const tako: Company = {
   // Meta
   lastUpdated: '2026-02-01T13:35:00',
   sources: [
-    { title: 'Tako', url: 'https://www.tako.so' },
-    { title: 'Tako on startups.gallery', url: 'https://startups.gallery/companies/tako' },
+    { title: 'Source', url: 'https://www.tako.so' },
+    { title: 'Source', url: 'https://startups.gallery/companies/tako' }
   ],
 };

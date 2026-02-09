@@ -191,7 +191,7 @@ export const itemApp: Company = {
   // Meta
   lastUpdated: '2026-01-28T00:20:00',
   sources: [
-    { title: 'Item App website', url: 'https://item.app/' },
-    { title: 'Item App on startups.gallery', url: 'https://startups.gallery/companies/item-app' },
+    { title: 'Source', url: 'https://item.app/' },
+    { title: 'Source', url: 'https://startups.gallery/companies/item-app' }
   ],
 };

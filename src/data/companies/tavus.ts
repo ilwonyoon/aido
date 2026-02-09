@@ -254,13 +254,7 @@ export const tavus: Company = {
 
     lastUpdated: '2025-01-26',
     sources: [
-      {
-        title: 'Tavus Series B Funding',
-        url: 'https://www.crunchbase.com/organization/tavus',
-      },
-      {
-        title: 'Tavus Product Features',
-        url: 'https://tavus.io',
-      },
-    ],
+    { title: 'Source', url: 'https://www.crunchbase.com/organization/tavus' },
+    { title: 'Source', url: 'https://tavus.io' }
+  ],
   };
