@@ -131,11 +131,11 @@ IMPORTANT INSTRUCTIONS:
 - Output the research article to src/data/deep-research/${COMPANY_ID}.md
 - Complete the full research pipeline end-to-end without stopping."
 
-# 30 minute timeout (1800 seconds) — use background + kill instead of `timeout` (not available on macOS)
+# 45 minute timeout (2700 seconds) — use background + kill instead of `timeout` (not available on macOS)
 ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
 CLAUDE_PID=$!
 
-( sleep 1800; kill ${CLAUDE_PID} 2>/dev/null ) &
+( sleep 2700; kill ${CLAUDE_PID} 2>/dev/null ) &
 WATCHDOG_PID=$!
 
 if wait ${CLAUDE_PID} 2>/dev/null; then
@@ -145,7 +145,7 @@ else
   CLAUDE_EXIT=$?
   kill ${WATCHDOG_PID} 2>/dev/null || true
   if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
-    log "ERROR: Claude timed out after 30 minutes."
+    log "ERROR: Claude timed out after 45 minutes."
   else
     log "ERROR: Claude exited with code ${CLAUDE_EXIT}."
   fi
