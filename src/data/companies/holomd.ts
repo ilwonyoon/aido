@@ -3,50 +3,50 @@ import { Company } from '../types';
 export const holomd: Company = {
     id: 'holomd',
     name: 'HoloMD',
-    description: '정신과 의사 및 전문 간호사를 위한 AI 기반 원격 치료 모니터링(RTM) 플랫폼.',
+    description: 'AI-powered remote therapeutic monitoring (RTM) platform for psychiatrists and nurse practitioners.',
     website: 'https://holomd.ai',
     headquarters: 'Unknown',
     remote: 'Yes',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['healthcare'],
     stage: 'Early-Stage',
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage (Founded July 2024)',
-  competitors: [],
-  moat: [],
+  competitors: ['Microsoft HoloLens', 'Magic Leap', 'Medivis'],
+  moat: ['AI companion (Dr. Holo) for continuous mental health monitoring between visits', 'HIPAA-compliant remote therapeutic monitoring with clinician dashboards'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
       { name: 'Unknown', role: 'Co-founder', background: 'Unknown' }
     ],
-    whyBuilding: '진료 시간 외에도 환자를 지속적으로 케어하여 정신 건강 치료 성과를 개선하고 의료진의 번아웃을 줄인다.',
+    whyBuilding: 'Continuously caring for patients outside of appointment hours to improve mental health treatment outcomes and reduce clinician burnout.',
     beliefs: [
-            '정신 건강 치료는 병원 방문 순간뿐만 아니라 일상 생활 속에서도 지속적인 관리가 필요하다.',
-            'AI 컴패니언(Dr. Holo™)은 의료진을 대체하는 것이 아니라 그들의 케어 역량을 확장하는 도구다.',
+            'Mental health treatment requires continuous care in daily life, not just during hospital visits.',
+            'The AI companion (Dr. Holo) is a tool that extends clinicians\' care capacity, not a replacement for them.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '매일 환자의 상태를 체크하면서도 거부감을 주지 않는 친근하고 공감적인 AI 페르소나 디자인.',
-            '수집된 환자의 데이터를 의료진이 한눈에 파악하고 개입 시점을 놓치지 않도록 하는 대시보드 UX.',
+            'Designing a friendly, empathetic AI persona that checks in on patients daily without feeling intrusive.',
+            'Dashboard UX that lets clinicians quickly grasp patient data and never miss the right moment to intervene.',
         ],
     userProblems: [
-            '진료 간 공백 기간 동안 환자의 상태 악화를 조기에 발견하기 어려움.',
-            '정신과 의료진의 과중한 업무 부하 및 행정 업무 부담.',
+            'Difficulty detecting early signs of patient deterioration during gaps between appointments.',
+            'Heavy workload and administrative burden on psychiatric clinicians.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Empathy in AI, Clinician Support. Benefits: 정신 건강이라는 민감하고 중요한 분야에서의 기술적 기여, HIPAA 준수 등 높은 수준의 데이터 보안 및 윤리적 책임 경험.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Empathy in AI, Clinician Support. Benefits: Technical contribution in the sensitive and critical field of mental health, experience with high-level data security and ethical responsibility including HIPAA compliance.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI companion check-in conversation logic for mental health patients', 'Alert escalation rules when patient responses indicate deterioration'] },
+    evaluation: { level: 'medium', tasks: ['Measuring patient engagement and treatment adherence rates', 'Clinician satisfaction with AI-generated patient summaries'] },
+    interface: { level: 'medium', tasks: ['Clinician dashboard for remote therapeutic monitoring with intervention alerts', 'Patient-facing AI companion interface for daily mental health check-ins'] },
   },
   
   designerLinks: [],

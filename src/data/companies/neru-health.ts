@@ -3,21 +3,21 @@ import { Company } from '../types';
 export const neruHealth: Company = {
     id: 'neru-health',
     name: 'Neru Health',
-    description: '만성 질환 및 의료 기기(DME) 관리를 자동화하는 AI 기반 환자 지원 플랫폼.',
+    description: 'AI-powered patient support platform that automates chronic disease and durable medical equipment (DME) management.',
     website: 'https://neruhealth.com',
-    headquarters: 'New York, NY',
+    headquarters: 'Allston, MA',
     remote: 'Unknown',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['healthcare'],
     stage: 'Early-Stage',
   totalFunding: '$4M (Seed/Venture)',
     valuation: '$16M Cap (Venture Round)',
     growth: 'Early Stage',
-  competitors: [],
-  moat: [],
+  competitors: ['Big Health', 'Pear Therapeutics', 'Somryst'],
+  moat: ['Harvard spinout with clinical research foundation in sleep therapy', 'AI-trained on medical device adherence coaching for chronic conditions'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
@@ -25,30 +25,30 @@ export const neruHealth: Company = {
       { name: 'Maria Grebenshchikova', role: 'CTO', background: 'Unknown' },
       { name: 'Catherine Tadina', role: 'CPO', background: 'Unknown' }
     ],
-    whyBuilding: '수면 무호흡증 등 만성 질환 환자의 치료 순응도(Adherence)를 기술로 개선한다.',
+    whyBuilding: 'Improving treatment adherence for chronic disease patients such as sleep apnea through technology.',
     beliefs: [
-            '환자가 의료 기기를 지속적으로 사용하도록 돕는 것은 단순 알림이 아니라 정서적 지지와 24/7 코칭이다.',
-            '의료진 훈련을 받은 AI가 환자의 사소한 문제 해결을 도와 의료 시스템의 부담을 던다.',
+            'Helping patients consistently use medical devices requires emotional support and 24/7 coaching, not just reminders.',
+            'Clinically-trained AI that helps patients resolve minor issues reduces the burden on the healthcare system.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '환자의 치료 중단 징후를 조기에 발견하고 개입하는 선제적(Proactive) 알림 설계.',
-            '고령의 환자들도 쉽게 사용할 수 있는 음성 기반의 직관적인 인터페이스.',
+            'Proactive alert design that detects early signs of treatment dropout and intervenes.',
+            'Voice-based intuitive interface that is easy to use even for elderly patients.',
         ],
     userProblems: [
-            '복잡한 의료 기기 사용법과 관리의 어려움으로 인한 치료 중단.',
-            '소모품 재주문 시기를 놓쳐 치료가 끊기는 문제.',
+            'Treatment dropout due to complex medical device usage and management difficulties.',
+            'Treatment interruption from missing the timing for consumable reorders.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Patient Adherence, Tech-Enabled Care. Benefits: 여성 창업자 중심의 헬스케어 혁신 팀, 환자의 삶의 질을 직접적으로 개선하는 서비스.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Patient Adherence, Tech-Enabled Care. Benefits: Women-led healthcare innovation team, a service that directly improves patients\' quality of life.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI sleep therapy coaching conversation logic with adherence tracking', 'Proactive intervention triggers based on device usage patterns and dropout signals'] },
+    evaluation: { level: 'medium', tasks: ['Measuring patient treatment adherence rates and device usage consistency', 'Tracking consumable reorder timing accuracy and patient retention'] },
+    interface: { level: 'medium', tasks: ['Patient-facing sleep therapy companion with voice-first interaction for elderly users', 'Provider dashboard for patient adherence monitoring and DME management'] },
   },
   
   designerLinks: [],

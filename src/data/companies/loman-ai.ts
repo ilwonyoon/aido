@@ -3,50 +3,50 @@ import { Company } from '../types';
 export const lomanAi: Company = {
     id: 'loman-ai',
     name: 'Loman AI',
-    description: '레스토랑 운영을 혁신하는 24/7 AI 음성 에이전트 서비스.',
+    description: '24/7 AI voice agent service revolutionizing restaurant operations.',
     website: 'https://loman.ai',
     headquarters: 'Unknown',
     remote: 'Unknown',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['other'],
     stage: 'Early-Stage',
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage',
-  competitors: [],
-  moat: [],
+  competitors: ['Kea', 'ConverseNow', 'SoundHound'],
+  moat: ['Restaurant-specific AI voice agent trained on menu and ordering workflows', 'Deep POS and reservation system integrations for independent restaurants'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
       { name: 'Unknown', role: 'Co-founder', background: 'Unknown' }
     ],
-    whyBuilding: '독립 및 중소형 레스토랑이 대기업 수준의 고객 응대 시스템을 갖출 수 있도록 돕는다.',
+    whyBuilding: 'Helping independent and small-to-medium restaurants achieve enterprise-level customer service systems.',
     beliefs: [
-            '레스토랑 비즈니스에서 전화 응대는 고객 경험의 시작이자 핵심이다.',
-            'AI는 단순 주문 접수를 넘어 고객의 선호도를 기억하고 접객(Hospitality)을 제공해야 한다.',
+            'In the restaurant business, phone service is the starting point and core of the customer experience.',
+            'AI should go beyond simple order taking to remember customer preferences and provide hospitality.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '시끄러운 주방이나 매장 환경에서도 정확하게 주문을 인식하고 처리하는 음성 인식 기술.',
-            '단골 고객을 알아보고 개인화된 추천을 제공하는 AI 기억 메모리 설계.',
+            'Voice recognition that accurately captures and processes orders even in noisy kitchen or store environments.',
+            'AI memory design that recognizes repeat customers and provides personalized recommendations.',
         ],
     userProblems: [
-            '바쁜 피크 타임에 전화를 받지 못해 발생하는 매출 손실.',
-            '전화 응대로 인해 홀 서빙이나 조리 업무 흐름이 끊기는 문제.',
+            'Revenue loss from missed phone calls during busy peak hours.',
+            'Disruption to floor service and kitchen workflow due to phone answering duties.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Hospitality Tech, SMB Empowerment. Benefits: 소상공인을 위한 실질적인 AI 솔루션 개발, 음성 AI와 결제/예약 시스템의 통합 경험.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Hospitality Tech, SMB Empowerment. Benefits: Building practical AI solutions for small businesses, experience integrating voice AI with payment and reservation systems.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI phone ordering conversation flow with menu item recognition and modifiers', 'Order routing logic between AI agent, POS system, and kitchen display'] },
+    evaluation: { level: 'medium', tasks: ['Measuring order accuracy rates and customer satisfaction on AI calls', 'Tracking revenue captured from calls that would have been missed'] },
+    interface: { level: 'medium', tasks: ['Restaurant owner dashboard for call analytics and order management', 'Menu and AI agent configuration interface for restaurant staff'] },
   },
   
   designerLinks: [],
