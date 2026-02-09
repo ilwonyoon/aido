@@ -1,4 +1,5 @@
 import { Article } from './types';
+import { aiCareerIntelligenceGlassdoor } from './content/ai-career-intelligence-what-glassdoor-cant-tell-you';
 import { aiProductDesignInterviewGuide } from './content/ai-product-design-interview-guide';
 import { topTenFastestGrowingAiCompanies } from './content/top-10-fastest-growing-ai-companies';
 import { fastestSeedToSeriesB } from './content/fastest-seed-to-series-b';
@@ -8,8 +9,11 @@ import { anthropicDeepDiveDesignOpportunity } from './content/anthropic-deep-div
 import { foundationStackForAiAgents } from './content/foundation-stack-for-ai-agents';
 import { riseOfVerticalAiAgents } from './content/rise-of-vertical-ai-agents';
 import { hyperPersonalizationPersonalAgents } from './content/hyper-personalization-personal-agents-replace-apps';
+import { soloAiBusinessNoVcMoney } from './content/solo-ai-business-no-vc-money';
 
 export const articles: Article[] = [
+  aiCareerIntelligenceGlassdoor,
+  soloAiBusinessNoVcMoney,
   hyperPersonalizationPersonalAgents,
   riseOfVerticalAiAgents,
   foundationStackForAiAgents,
