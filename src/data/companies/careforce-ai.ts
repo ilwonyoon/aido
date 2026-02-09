@@ -16,7 +16,11 @@ export const careforceAi: Company = {
   totalFunding: '$500K (Accelerator/Incubator)',
     valuation: 'Unknown',
     growth: 'High (Twilio AI Startup Searchlight 2025 Honoree)',
-  competitors: ['CareRev', 'Hallmark Healthcare', 'AlayaCare'],
+  competitors: [
+    { name: 'CareRev', description: 'On-demand healthcare staffing marketplace connecting facilities with local professionals.' },
+    { name: 'Hallmark Healthcare', description: 'Healthcare workforce solutions provider specializing in staffing and recruitment.' },
+    { name: 'AlayaCare', description: 'End-to-end home care software platform for scheduling, billing, and clinical documentation.' },
+  ],
   moat: ['AI-first scheduling for home care workforce', 'YC-backed with domain-specific training data'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

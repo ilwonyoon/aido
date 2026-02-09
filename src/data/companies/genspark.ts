@@ -16,7 +16,11 @@ export const genspark: Company = {
   totalFunding: '$460M (Series B)',
     valuation: '$1.25B (Unicorn status)',
     growth: 'Explosive (Pivoted from Search to Autonomous super-agents)',
-  competitors: ['Perplexity', 'You.com', 'Google'],
+  competitors: [
+    { name: 'Perplexity', description: 'AI-powered answer engine combining real-time search with conversational AI.' },
+    { name: 'You.com', description: 'AI search engine offering personalized, source-cited answers and productivity agents.' },
+    { name: 'Google', description: 'Dominant global search engine integrating AI overviews into search results.' },
+  ],
   moat: ['Multi-agent search architecture', 'Sparkpage proprietary format', 'Custom AI models for search'],
     aiNativeLevel: 'A',
   aiNativeLevelDescription: 'AI Native description pending.',

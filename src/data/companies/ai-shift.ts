@@ -16,7 +16,11 @@ export const aiShift: Company = {
   totalFunding: 'Unknown (Subsidiary of CyberAgent)',
     valuation: 'Unknown',
     growth: 'High (Recognized by Twilio Searchlight Awards 2025)',
-  competitors: ['Zendesk', 'Intercom', 'PKSHA Technology'],
+  competitors: [
+    { name: 'Zendesk', description: 'Cloud-based customer service and support ticketing platform.' },
+    { name: 'Intercom', description: 'AI-first customer messaging platform for sales, marketing, and support.' },
+    { name: 'PKSHA Technology', description: 'Japanese AI company specializing in natural language processing and conversational AI.' },
+  ],
   moat: ['CyberAgent subsidiary backing', 'Japanese market specialization', 'NLP optimized for Japanese language'],
   aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

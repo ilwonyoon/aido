@@ -16,7 +16,11 @@ export const insightHealthAi: Company = {
   totalFunding: '$4.6M (Seed)',
     valuation: 'Unknown',
     growth: 'High (Backed by Kindred Ventures, RTP Global)',
-  competitors: ['Eko Health', 'Viz.ai', 'Cleerly'],
+  competitors: [
+    { name: 'Eko Health', description: 'AI-powered cardiac screening platform using digital stethoscopes and ECG analysis.' },
+    { name: 'Viz.ai', description: 'AI-driven clinical decision support platform for detecting strokes and other conditions.' },
+    { name: 'Cleerly', description: 'AI-based cardiac imaging analysis platform for non-invasive heart disease detection.' },
+  ],
   moat: ['AI agent Lumi trained on clinical workflows for automated patient intake', 'Co-founded by physicians with deep clinical domain expertise'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

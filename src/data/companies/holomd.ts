@@ -16,7 +16,11 @@ export const holomd: Company = {
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage (Founded July 2024)',
-  competitors: ['Microsoft HoloLens', 'Magic Leap', 'Medivis'],
+  competitors: [
+    { name: 'Microsoft HoloLens', description: 'Mixed reality headset platform used for enterprise spatial computing applications.' },
+    { name: 'Magic Leap', description: 'Augmented reality platform focused on enterprise visualization and spatial computing.' },
+    { name: 'Medivis', description: 'Surgical AR platform providing 3D anatomical visualization for medical procedures.' },
+  ],
   moat: ['AI companion (Dr. Holo) for continuous mental health monitoring between visits', 'HIPAA-compliant remote therapeutic monitoring with clinician dashboards'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

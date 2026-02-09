@@ -16,7 +16,11 @@ export const cekura: Company = {
   totalFunding: '$2.4M (Seed)',
     valuation: 'Unknown',
     growth: 'Early Stage (YC Backed)',
-  competitors: ['Braintrust', 'Patronus AI', 'Galileo AI'],
+  competitors: [
+    { name: 'Braintrust', description: 'Enterprise AI platform for evaluating, testing, and monitoring LLM applications.' },
+    { name: 'Patronus AI', description: 'AI evaluation and red-teaming platform for detecting hallucinations and safety issues.' },
+    { name: 'Galileo AI', description: 'ML observability and data intelligence platform for debugging and improving AI models.' },
+  ],
   moat: [],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

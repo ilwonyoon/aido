@@ -16,7 +16,11 @@ export const lomanAi: Company = {
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage',
-  competitors: ['Kea', 'ConverseNow', 'SoundHound'],
+  competitors: [
+    { name: 'Kea', description: 'AI ordering assistant for restaurants that automates phone and digital orders.' },
+    { name: 'ConverseNow', description: 'Voice AI platform for drive-thru and phone ordering at restaurant chains.' },
+    { name: 'SoundHound', description: 'Voice AI platform powering conversational interfaces for restaurants and automotive.' },
+  ],
   moat: ['Restaurant-specific AI voice agent trained on menu and ordering workflows', 'Deep POS and reservation system integrations for independent restaurants'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

@@ -16,7 +16,11 @@ export const consioAi: Company = {
   totalFunding: '$3.3M (Seed)',
     valuation: 'Unknown',
     growth: 'High (Founded by early Gorgias employees)',
-  competitors: ['Gorgias', 'Zendesk', 'Intercom'],
+  competitors: [
+    { name: 'Gorgias', description: 'Ecommerce-focused customer support helpdesk with deep Shopify integration.' },
+    { name: 'Zendesk', description: 'Cloud-based customer service and support ticketing platform.' },
+    { name: 'Intercom', description: 'AI-first customer messaging platform for sales, marketing, and support.' },
+  ],
   moat: ['Founded by early Gorgias employees with deep ecommerce CS domain expertise', 'Voice-first approach to ecommerce sales conversion'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

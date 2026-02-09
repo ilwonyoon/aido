@@ -16,7 +16,11 @@ export const neruHealth: Company = {
   totalFunding: '$4M (Seed/Venture)',
     valuation: '$16M Cap (Venture Round)',
     growth: 'Early Stage',
-  competitors: ['Big Health', 'Pear Therapeutics', 'Somryst'],
+  competitors: [
+    { name: 'Big Health', description: 'Digital therapeutics company offering FDA-authorized apps for insomnia and anxiety.' },
+    { name: 'Pear Therapeutics', description: 'Pioneer in prescription digital therapeutics for substance abuse and insomnia treatment.' },
+    { name: 'Somryst', description: 'FDA-authorized prescription digital therapeutic for chronic insomnia using CBT-I.' },
+  ],
   moat: ['Harvard spinout with clinical research foundation in sleep therapy', 'AI-trained on medical device adherence coaching for chronic conditions'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

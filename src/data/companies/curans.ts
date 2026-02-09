@@ -16,7 +16,11 @@ export const curans: Company = {
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage',
-  competitors: ['Luma Health', 'Phreesia', 'Relatient'],
+  competitors: [
+    { name: 'Luma Health', description: 'Patient engagement platform automating scheduling, referrals, and communication.' },
+    { name: 'Phreesia', description: 'Patient intake and registration software for healthcare organizations.' },
+    { name: 'Relatient', description: 'Patient relationship management platform for appointment reminders and messaging.' },
+  ],
   moat: ['AI-powered virtual patient simulation with realistic clinical scenarios', 'Voice and text-based interaction for clinical reasoning training'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',

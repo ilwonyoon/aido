@@ -16,7 +16,11 @@ export const ohmd: Company = {
   totalFunding: '$1.2M+ (Seed/Venture)',
     valuation: 'Unknown',
     growth: 'Moderate (Established player leveraging AI)',
-  competitors: ['Klara', 'Luma Health', 'Spruce Health'],
+  competitors: [
+    { name: 'Klara', description: 'Patient communication platform automating messaging, scheduling, and intake workflows.' },
+    { name: 'Luma Health', description: 'Patient engagement platform automating scheduling, referrals, and communication.' },
+    { name: 'Spruce Health', description: 'HIPAA-compliant communication platform for modern healthcare practices.' },
+  ],
   moat: [],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
