@@ -13,7 +13,7 @@ interface InsightsContentProps {
 const CATEGORY_ORDER: ArticleCategory[] = ['company', 'analysis', 'perspectives', 'guides'];
 
 export function InsightsContent({ articles }: InsightsContentProps) {
-  const [selectedCategories, setSelectedCategories] = useState<Set<ArticleCategory>>(new Set());
+  const [selectedCategory, setSelectedCategory] = useState<ArticleCategory | null>(null);
 
   const categoryCounts = useMemo(() => {
     const counts: Record<ArticleCategory, number> = {
@@ -29,32 +29,35 @@ export function InsightsContent({ articles }: InsightsContentProps) {
   }, [articles]);
 
   const filteredArticles = useMemo(() => {
-    if (selectedCategories.size === 0) return articles;
-    return articles.filter(article => selectedCategories.has(article.category));
-  }, [articles, selectedCategories]);
+    if (selectedCategory === null) return articles;
+    return articles.filter(article => article.category === selectedCategory);
+  }, [articles, selectedCategory]);
 
-  const toggleCategory = (category: ArticleCategory) => {
-    setSelectedCategories(prev => {
-      const next = new Set(prev);
-      if (next.has(category)) {
-        next.delete(category);
-      } else {
-        next.add(category);
-      }
-      return next;
-    });
+  const handleCategoryClick = (category: ArticleCategory) => {
+    setSelectedCategory(prev => prev === category ? null : category);
   };
 
   return (
     <>
       <div className="flex flex-wrap gap-2 mb-8">
+        <button
+          onClick={() => setSelectedCategory(null)}
+          className={`flex items-center gap-1.5 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap ${
+            selectedCategory === null
+              ? 'border-[var(--accent)] text-[var(--foreground)]'
+              : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+          }`}
+        >
+          All
+          <span className="opacity-50">({articles.length})</span>
+        </button>
         {CATEGORY_ORDER.map(category => {
-          const isActive = selectedCategories.has(category);
+          const isActive = selectedCategory === category;
           const count = categoryCounts[category];
           return (
             <button
               key={category}
-              onClick={() => toggleCategory(category)}
+              onClick={() => handleCategoryClick(category)}
               className={`flex items-center gap-1.5 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap ${
                 isActive
                   ? 'border-[var(--accent)] text-[var(--foreground)]'
@@ -106,7 +109,7 @@ export function InsightsContent({ articles }: InsightsContentProps) {
 
       {filteredArticles.length === 0 && (
         <div className="card p-8 text-center">
-          <p className="text-[var(--muted)]">No articles match the selected categories.</p>
+          <p className="text-[var(--muted)]">No articles match the selected category.</p>
         </div>
       )}
     </>

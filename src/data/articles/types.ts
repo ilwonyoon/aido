@@ -42,7 +42,7 @@ export interface Article {
 export type ArticleCategory = Article['category'];
 
 export const ARTICLE_CATEGORY_LABELS: Record<ArticleCategory, string> = {
-  company: 'Company',
+  company: 'Company Deep Dive',
   analysis: 'Analysis',
   perspectives: 'Perspectives',
   guides: 'Guides',
