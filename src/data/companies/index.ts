@@ -450,33 +450,7 @@ import { cline } from './cline';
 import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
-<<<<<<< HEAD
-import { jackAndJill } from './jack-and-jill';
-=======
-import { botpress } from './botpress';
-<<<<<<< HEAD
-import { symend } from './symend';
->>>>>>> 3c25a7f (Add C2RO and DarwinAI profiles)
-=======
-import { aiShift } from './ai-shift';
-import { genspark } from './genspark';
-import { careforceAi } from './careforce-ai';
-import { cekura } from './cekura';
-import { consioAi } from './consio-ai';
-import { curans } from './curans';
-import { holomd } from './holomd';
-import { insightHealthAi } from './insight-health-ai';
-import { lomanAi } from './loman-ai';
-import { mecanizou } from './mecanizou';
-import { neruHealth } from './neru-health';
-import { ohmd } from './ohmd';
-import { phonely } from './phonely';
-import { r2 } from './r2';
-import { strada } from './strada';
-import { subbyx } from './subbyx';
-import { vozy } from './vozy';
->>>>>>> 947d2f1 (feat: add 17 new AI companies and automated research workflow)
-
+import { jackAndJill } from "./jack-and-jill";
 export const companies: Company[] = [
   anthropic,
   leya,
@@ -530,7 +504,6 @@ export const companies: Company[] = [
   listenLabs,
   blossom,
 
-  symend,
   tavus,
   toma,
   shopify,
@@ -910,23 +883,7 @@ export const companies: Company[] = [
   swae,
   symend,
   resolver,
-  aiShift,
-  genspark,
-  careforceAi,
-  cekura,
-  consioAi,
-  curans,
-  holomd,
-  insightHealthAi,
-  lomanAi,
-  mecanizou,
-  neruHealth,
-  ohmd,
-  phonely,
-  r2,
-  strada,
-  subbyx,
-  vozy,
+
   granify,
   netramark,
   partnerstack,
