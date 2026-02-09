@@ -3,55 +3,64 @@ import { Company } from '../types';
 export const strada: Company = {
     id: 'strada',
     name: 'Strada',
-    description: '보험 산업의 고객 서비스 및 청구 처리를 자동화하는 24/7 AI 에이전트.',
-    website: 'Unknown (Distinct from Strada Logistics/Payroll)',
-    headquarters: 'Unknown',
+    description: '24/7 AI agent that automates customer service and claims processing in the insurance industry.',
+    website: 'https://www.getstrada.com',
+    headquarters: 'San Francisco, CA',
     remote: 'Unknown',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['sales-marketing'],
     stage: 'Early-Stage',
   totalFunding: 'Unknown (Twilio AI Startup Searchlight 2025 Honoree)',
     valuation: 'Unknown',
     growth: 'Early Stage',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Bold Penguin', description: 'Commercial insurance exchange and quoting platform.', whyTheyWin: 'Strong carrier network and established commercial lines marketplace.' },
+    { name: 'Zywave', description: 'Insurance technology platform for agencies and brokers.', whyTheyWin: 'Comprehensive agency management suite with deep industry relationships.' },
+    { name: 'Applied Epic', description: 'Agency management system for property and casualty insurance.', whyTheyWin: 'Industry-standard agency management with massive installed base.' },
+  ],
+  moat: [
+    'AI agents trained on insurance-specific workflows and claims language',
+    'Omnichannel automation combining Twilio Voice and Messaging APIs',
+    'Deep domain expertise in insurance claims and customer reassurance',
+  ],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
-      { name: 'Unknown', role: 'Co-founder', background: 'Unknown' }
+      { name: 'Arash Khazaei', role: 'Co-founder & CTO', background: 'Technical co-founder' },
+      { name: 'Amir Prodensky', role: 'Co-founder & CEO', background: 'Insurance technology entrepreneur' }
     ],
-    whyBuilding: '보험의 복잡한 절차를 AI로 간소화하여 고객에게 즉각적인 지원을 제공한다.',
+    whyBuilding: 'Simplifying the complex procedures of insurance with AI to provide immediate support to customers.',
     beliefs: [
-            '보험 청구와 같은 스트레스 상황에서 고객은 즉각적이고 정확한 응대를 원한다.',
-            'AI는 단순 통화뿐만 아니라 증거 수집(메시징)까지 통합적으로 처리해야 한다.',
+            'In stressful situations like insurance claims, customers want immediate and accurate responses.',
+            'AI must handle not just phone calls but also evidence collection (messaging) in an integrated way.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '사고 접수 등 긴급하고 불안한 상황의 고객을 안심시키는 톤앤매너(Tone & Manner) 설계.',
-            '복잡한 보험 약관과 절차를 일반인이 이해하기 쉬운 언어로 풀어주는 대화 엔진.',
+            'Designing tone and manner that reassures anxious customers during urgent situations like accident reporting.',
+            'Building a conversational engine that translates complex insurance terms and procedures into plain language.',
         ],
     userProblems: [
-            '사고 발생 시 보험사 연결까지의 긴 대기 시간.',
-            '반복적인 서류 제출 및 진행 상황 확인의 어려움.',
+            'Long wait times to reach an insurer after an accident.',
+            'Difficulty with repetitive document submissions and tracking claim progress.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Customer Reassurance, Process Automation. Benefits: 보수적인 보험 산업을 AI로 혁신하는 도전, Twilio의 Voice 및 Messaging API를 활용한 옴니채널 경험.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Customer Reassurance, Process Automation. Benefits: Challenging the conservative insurance industry with AI innovation, omnichannel experience leveraging Twilio Voice and Messaging APIs.' }
     ],
-    
+
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['Claims intake conversation flow and decision tree logic', 'Automated evidence collection and document routing workflows'] },
+    evaluation: { level: 'medium', tasks: ['Claims resolution time and accuracy tracking', 'Customer satisfaction scoring for AI-handled interactions'] },
+    interface: { level: 'medium', tasks: ['Policyholder-facing claims status and communication portal', 'Agent supervision dashboard for monitoring AI conversations'] },
   },
-  
+
   designerLinks: [],
   openRoles: [],
-    
+
   tracking: {
     status: 'researching',
     fitScore: 5,
@@ -59,7 +68,7 @@ export const strada: Company = {
     whyNot: [],
     nextActions: [],
   },
-  
+
   lastUpdated: '2026-02-09T18:12:58.343Z',
   sources: [
     { title: 'Source', url: 'https://www.twilio.com/blog/ai-startup-searchlight-honorees-2025' },

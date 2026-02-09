@@ -3,56 +3,64 @@ import { Company } from '../types';
 export const phonely: Company = {
     id: 'phonely',
     name: 'Phonely',
-    description: 'AI 기반의 인간과 유사한 전화 응대 서비스로 비즈니스의 고객 경험을 자동화.',
+    description: 'AI-powered human-like phone answering service that automates customer experience for businesses.',
     website: 'https://phonely.ai',
     headquarters: 'San Francisco, CA (Relocated from Melbourne)',
     remote: 'Unknown',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['sales-marketing'],
     stage: 'Early-Stage',
-  totalFunding: '$500K (YC W24)',
+  totalFunding: '$750K (YC S24)',
     valuation: 'Unknown',
     growth: 'Early Stage (YC Backed)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Smith.ai', description: 'Virtual receptionist and intake service combining AI with live agents.', whyTheyWin: 'Hybrid human+AI approach builds trust with professional services.' },
+    { name: 'Ruby Receptionists', description: 'Live virtual receptionist service for small businesses.', whyTheyWin: 'Established brand with loyal SMB customer base and human touch.' },
+    { name: 'Dialpad', description: 'AI-powered business communications platform with voice intelligence.', whyTheyWin: 'Full communications suite with enterprise-grade AI features.' },
+  ],
+  moat: [
+    'PhD-level AI research team focused on voice realism and low-latency response',
+    'YC S24 backing and network for rapid go-to-market',
+    'End-to-end AI phone agent with calendar booking and CRM integration',
+  ],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
       { name: 'Will Bodewes', role: 'Co-founder', background: 'Unknown' },
       { name: 'Nisal Ranasinghe', role: 'PhD AI Researchers', background: 'Unknown' }
     ],
-    whyBuilding: '모든 비즈니스가 24/7 완벽한 전화 응대 서비스를 제공할 수 있도록 음성 AI의 신뢰성을 확장한다.',
+    whyBuilding: 'Scaling the reliability of voice AI so every business can provide 24/7 perfect phone answering service.',
     beliefs: [
-            '전통적인 IVR(ARS) 시스템은 고객 경험을 해치며, AI가 이를 완전히 대체해야 한다.',
-            'AI는 단순 응대를 넘어 캘린더 예약, CRM 연동 등 실질적인 업무(Task)를 수행해야 한다.',
+            'Traditional IVR systems harm customer experience and AI should fully replace them.',
+            'AI must go beyond simple answering to perform real tasks like calendar booking and CRM integration.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            'AI가 대화의 맥락을 놓치지 않고 인간처럼 자연스럽게 텀(Turn-taking)을 조절하는 음성 UX.',
-            '사용자가 AI 에이전트의 성격과 응대 방식을 쉽게 커스터마이징할 수 있는 대시보드.',
+            'Voice UX where AI maintains conversation context and handles turn-taking as naturally as a human.',
+            'Dashboard for users to easily customize AI agent personality and call handling behavior.',
         ],
     userProblems: [
-            '전화를 받지 못해 놓치는 잠재 고객 및 비즈니스 기회.',
-            '기존 AI 음성 비서의 부자연스러운 목소리와 느린 반응 속도.',
+            'Lost potential customers and business opportunities from missed phone calls.',
+            'Unnatural voices and slow response times of existing AI voice assistants.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Voice Realism, Research-Driven. Benefits: AI 박사 출신 창업자들의 깊이 있는 기술적 리더십, YC 네트워크를 통한 빠른 글로벌 성장 기회.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Voice Realism, Research-Driven. Benefits: Deep technical leadership from PhD AI researcher founders, rapid global growth opportunity through YC network.' }
     ],
-    
+
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['Call flow logic and conversation branching for AI phone agents', 'Integration workflows for calendar booking and CRM updates during calls'] },
+    evaluation: { level: 'medium', tasks: ['Call quality scoring and voice naturalness metrics', 'Customer satisfaction tracking and call outcome analysis'] },
+    interface: { level: 'medium', tasks: ['Agent personality and behavior customization dashboard', 'Call analytics and real-time monitoring interface'] },
   },
-  
+
   designerLinks: [],
   openRoles: [],
-    
+
   tracking: {
     status: 'researching',
     fitScore: 5,
@@ -60,7 +68,7 @@ export const phonely: Company = {
     whyNot: [],
     nextActions: [],
   },
-  
+
   lastUpdated: '2026-02-09T18:12:58.333Z',
   sources: [
     { title: 'Source', url: 'https://phonely.ai' },

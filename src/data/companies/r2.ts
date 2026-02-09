@@ -3,55 +3,63 @@ import { Company } from '../types';
 export const r2: Company = {
     id: 'r2',
     name: 'R2',
-    description: '라틴 아메리카 중소기업(SMB)을 위한 임베디드 대출 인프라 및 AI 신용 평가 플랫폼.',
+    description: 'Embedded lending infrastructure and AI credit scoring platform for Latin American SMBs.',
     website: 'https://r2.co',
     headquarters: 'Mexico City, Mexico',
     remote: 'Hybrid',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['fintech'],
     stage: 'Early-Stage',
-  totalFunding: 'Unknown (Partnered with platforms like Uber Eats, Rappi)',
+  totalFunding: '$9M+ equity, $50M debt facility',
     valuation: 'Unknown',
     growth: 'High (Processing $200M+ in available credit)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Plaid', description: 'Financial data connectivity platform enabling apps to access bank data.', whyTheyWin: 'Dominant financial data API with massive developer adoption.' },
+    { name: 'Unit', description: 'Banking-as-a-service platform for embedding financial products.', whyTheyWin: 'Comprehensive embedded banking stack with strong US market presence.' },
+    { name: 'Bond', description: 'Embedded finance platform for cards, accounts, and lending.', whyTheyWin: 'Full-stack embedded finance with enterprise partnerships.' },
+  ],
+  moat: [
+    'Deep integration with major LatAm platforms like Uber Eats and Rappi',
+    'AI credit scoring using transaction data instead of traditional banking data',
+    'First-mover advantage in embedded lending for LatAm digital platforms',
+  ],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
       { name: 'Unknown', role: 'Co-founder', background: 'Unknown' }
     ],
-    whyBuilding: '라틴 아메리카의 모든 디지털 플랫폼이 중소기업에게 자본을 제공할 수 있도록 금융 인프라를 구축한다.',
+    whyBuilding: 'Building financial infrastructure so every digital platform in Latin America can provide capital to SMBs.',
     beliefs: [
-            '전통적인 은행 데이터가 아닌 거래 데이터와 AI를 활용해야 중소기업의 진짜 신용을 평가할 수 있다.',
-            '대출은 별도의 은행 방문 없이, 기업이 매일 사용하는 플랫폼 내에서 클릭 한 번으로 이루어져야 한다.',
+            'Transaction data and AI, not traditional bank data, are the key to truly assessing SMB creditworthiness.',
+            'Loans should happen with a single click within the platforms businesses use daily, without separate bank visits.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '복잡한 신용 평가 결과를 누구나 이해하기 쉬운 단순한 대출 제안 UI로 변환하는 것.',
-            'WhatsApp과 같은 채팅 인터페이스 내에서 안전하고 신뢰할 수 있는 대출 프로세스를 설계하는 것.',
+            'Translating complex credit scoring results into simple, easy-to-understand loan offer UI for anyone.',
+            'Designing a secure and trustworthy lending process within chat interfaces like WhatsApp.',
         ],
     userProblems: [
-            '라틴 아메리카 중소기업들의 만성적인 자금 조달 어려움 (Credit Gap).',
-            '기존 금융권의 느리고 복잡한 대출 심사 과정.',
+            'Chronic difficulty in accessing capital (Credit Gap) for Latin American SMBs.',
+            'Slow and complex loan approval processes from traditional financial institutions.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Financial Inclusion, Data-Driven Decisions. Benefits: 라틴 아메리카 핀테크 인프라 혁신의 중심, Uber, Rappi 등 글로벌 플랫폼과의 대규모 통합 경험.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Financial Inclusion, Data-Driven Decisions. Benefits: At the center of LatAm fintech infrastructure innovation, large-scale integration experience with global platforms like Uber and Rappi.' }
     ],
-    
+
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI credit scoring model output presentation and decision logic', 'Embedded loan application flow within partner platform UIs'] },
+    evaluation: { level: 'medium', tasks: ['Loan approval rate and default rate monitoring dashboards', 'Credit model fairness and accuracy feedback loops'] },
+    interface: { level: 'medium', tasks: ['Partner-facing lending widget and SDK design', 'SMB borrower dashboard for loan status and repayment tracking'] },
   },
-  
+
   designerLinks: [],
   openRoles: [],
-    
+
   tracking: {
     status: 'researching',
     fitScore: 5,
@@ -59,7 +67,7 @@ export const r2: Company = {
     whyNot: [],
     nextActions: [],
   },
-  
+
   lastUpdated: '2026-02-09T18:12:58.335Z',
   sources: [
     { title: 'Source', url: 'https://r2.co' },
