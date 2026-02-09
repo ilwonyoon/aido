@@ -4,8 +4,10 @@ import { topTenFastestGrowingAiCompanies } from './content/top-10-fastest-growin
 import { fastestSeedToSeriesB } from './content/fastest-seed-to-series-b';
 import { livekitVoiceAiInfrastructureDesign } from './content/livekit-voice-ai-infrastructure-design';
 import { delveAiComplianceDesignOpportunity } from './content/delve-ai-compliance-design-opportunity';
+import { anthropicDeepDiveDesignOpportunity } from './content/anthropic-deep-dive-design-opportunity';
 
 export const articles: Article[] = [
+  anthropicDeepDiveDesignOpportunity,
   delveAiComplianceDesignOpportunity,
   livekitVoiceAiInfrastructureDesign,
   aiProductDesignInterviewGuide,
