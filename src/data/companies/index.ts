@@ -1,906 +1,943 @@
 import { Company } from '../types';
 
-import { anthropic } from './anthropic';
-import { leya } from './leya';
-import { granola } from './granola';
-import { pika } from './pika';
-import { elevenlabs } from './elevenlabs';
-import { cognition } from './cognition';
-import { mercor } from './mercor';
-import { linear } from './linear';
-import { notion } from './notion';
-import { figma } from './figma';
-import { mistral } from './mistral';
-import { cursor } from './cursor';
-import { perplexity } from './perplexity';
-import { openai } from './openai';
-import { vercel } from './vercel';
-import { midjourney } from './midjourney';
-import { runway } from './runway';
-import { stabilityAi } from './stability-ai';
-import { harvey } from './harvey';
-import { characterAi } from './character-ai';
-import { typeface } from './typeface';
-import { scaleAi } from './scale-ai';
-import { replit } from './replit';
-import { cohere } from './cohere';
-import { jasper } from './jasper';
-import { sourcegraph } from './sourcegraph';
-import { superhuman } from './superhuman';
-import { hebbia } from './hebbia';
-import { gamma } from './gamma';
-import { ramp } from './ramp';
-import { lovable } from './lovable';
-import { codeium } from './codeium';
-import { heygen } from './heygen';
-import { gong } from './gong';
-import { intercomFin } from './intercom-fin';
-import { descript } from './descript';
-import { glean } from './glean';
-import { writer } from './writer';
-import { brex } from './brex';
-import { tome } from './tome';
-import { grammarly } from './grammarly';
-import { canva } from './canva';
-import { otterAi } from './otter-ai';
-import { copyAi } from './copy-ai';
-import { beautifulAi } from './beautiful-ai';
-import { tabnine } from './tabnine';
-import { h2oAi } from './h2o-ai';
-import { benchsci } from './benchsci';
-import { voiceflow } from './voiceflow';
-import { kindredSystems } from './kindred-systems';
-import { ada } from './ada';
-import { obieAi } from './obie-ai';
-import { elementAi } from './element-ai';
-import { snaptravel } from './snaptravel';
-import { xanadu } from './xanadu';
-import { bluedot } from './bluedot';
-import { validere } from './validere';
-import { kiite } from './kiite';
-import { interaction } from './interaction';
-import { klue } from './klue';
-import { invisionAi } from './invision-ai';
-import { hopper } from './hopper';
-import { fortyTwoTechnologies } from './forty-two-technologies';
-import { xpertsea } from './xpertsea';
-import { flybits } from './flybits';
-import { crowdriff } from './crowdriff';
-import { ecobee } from './ecobee';
-import { landr } from './landr';
-import { skyhive } from './skyhive';
-import { unbounce } from './unbounce';
-import { tealbook } from './tealbook';
-import { swae } from './swae';
-import { symend } from './symend';
-import { resolver } from './resolver';
-import { granify } from './granify';
-import { netramark } from './netramark';
-import { partnerstack } from './partnerstack';
-import { algolux } from './algolux';
-import { certn } from './certn';
-import { leddartech } from './leddartech';
-import { chillwallAi } from './chillwall-ai';
-import { fortunaAi } from './fortuna-ai';
-import { heyday } from './heyday';
-import { naborly } from './naborly';
-import { cerebriAi } from './cerebri-ai';
-import { vantageAnalytics } from './vantage-analytics';
-import { clearpathRobotics } from './clearpath-robotics';
-import { c2ro } from './c2ro';
-import { attabotics } from './attabotics';
-import { canvassAi } from './canvass-ai';
-import { sharpestminds } from './sharpestminds';
-import { finnAi } from './finn-ai';
-import { meya } from './meya';
-import { openOceanRobotics } from './open-ocean-robotics';
-import { pitstop } from './pitstop';
-import { harmonic } from './harmonic';
-import { ambienceHealthcare } from './ambience-healthcare';
 import { abridge } from './abridge';
-import { listenLabs } from './listen-labs';
-import { blossom } from './blossom';
-import { tavus } from './tavus';
-import { toma } from './toma';
-import { shopify } from './shopify';
-import { base44 } from './base44';
-import { xai } from './xai';
-import { suno } from './suno';
-import { higgsfield } from './higgsfield';
-import { inferact } from './inferact';
-import { humansand } from './humansand';
-import { subtleComputing } from './subtle-computing';
-import { deepgram } from './deepgram';
-import { darwinai } from './darwinai';
-import { letta } from './letta';
-import { llmarena } from './llmarena';
-import { mem0 } from './mem0';
-import { humeAi } from './hume-ai';
-import { ivo } from './ivo';
-import { surgeAi } from './surge-ai';
-import { factory } from './factory';
-import { axiomMath } from './axiom-math';
-import { extropic } from './extropic';
-import { yutori } from './yutori';
-import { resolveAi } from './resolve-ai';
-import { parahelp } from './parahelp';
-import { exa } from './exa';
-import { alphaXiv } from './alphaxiv';
-import { wisprFlow } from './wispr-flow';
-import { pallet } from './pallet';
-import { numeric } from './numeric';
-import { doppel } from './doppel';
-import { orionSleep } from './orion-sleep';
-import { buildForever } from './buildforever';
-import { sphere } from './sphere';
-import { cogentSecurity } from './cogent-security';
-import { wonder } from './wonder';
-import { span } from './span';
-import { safetykit } from './safetykit';
-import { eventual } from './eventual';
-import { dedalusLabs } from './dedalus-labs';
-import { clerk } from './clerk';
-import { gigaml } from './gigaml';
-import { worldLabs } from './world-labs';
-import { airloom } from './airloom';
-import { console } from './console';
-import { lightfield } from './lightfield';
-import { assortHealth } from './assort-health';
-import { netic } from './netic';
-import { numeral } from './numeral';
-import { gigs } from './gigs';
-import { magicPatterns } from './magic-patterns';
-import { airops } from './airops';
-import { quo } from './quo';
-import { scribe } from './scribe';
-import { ando } from './ando';
-import { fastino } from './fastino';
-import { shortwave } from './shortwave';
-import { highscore } from './highscore';
-import { teraAi } from './tera-ai';
-import { cocoon } from './cocoon';
-import { miter } from './miter';
-import { blazeAi } from './blaze-ai';
-import { chroma } from './chroma';
-import { legendXyz } from './legend-xyz';
-import { wabi } from './wabi';
-import { welltheory } from './welltheory';
-import { thinkingMachinesLab } from './thinking-machines-lab';
-import { impulseLabs } from './impulse-labs';
-import { decart } from './decart';
-import { lettuce } from './lettuce';
-import { sanity } from './sanity';
-import { relace } from './relace';
-import { speakeasy } from './speakeasy';
-import { mosey } from './mosey';
-import { brainfish } from './brainfish';
-import { poolside } from './poolside';
-import { catalyxSpace } from './catalyx-space';
-import { terramera } from './terramera';
-import { appliedCompute } from './applied-compute';
-import { vizcom } from './vizcom';
-import { cartesia } from './cartesia';
-import { generationLab } from './generation-lab';
-import { tensormesh } from './tensormesh';
-import { unstructured } from './unstructured';
-import { alexAi } from './alex-ai';
-import { contra } from './contra';
-import { livekit } from './livekit';
-import { mandolin } from './mandolin';
-import { furtherAi } from './further-ai';
-import { avidbots } from './avidbots';
-import { senecaSystems } from './seneca-systems';
-import { rivo } from './rivo';
-import { railway } from './railway';
-import { baseten } from './baseten';
-import { artie } from './artie';
-import { chaiDiscovery } from './chai-discovery';
-import { item } from './item';
-import { blacksmith } from './blacksmith';
-import { terradot } from './terradot';
-import { odyssey } from './odyssey';
-import { mytra } from './mytra';
-import { corgi } from './corgi';
-import { glide } from './glide';
-import { motif } from './motif';
-import { tigereye } from './tigereye';
-import { macroscope } from './macroscope';
-import { trmLabs } from './trm-labs';
-import { hightouch } from './hightouch';
-import { remofirst } from './remofirst';
-import { loop } from './loop';
-import { perleAi } from './perle-ai';
-import { flint } from './flint';
-import { overlapAi } from './overlap-ai';
-import { pacificFusion } from './pacific-fusion';
-import { ditto } from './ditto';
-import { truffleSecurity } from './truffle-security';
-import { lightpage } from './lightpage';
-import { conductor } from './conductor';
-import { arcadeDev } from './arcade-dev';
-import { layerFinancial } from './layer-financial';
-import { sauronSystems } from './sauron-systems';
-import { hummingbird } from './hummingbird';
-import { redQueenBio } from './red-queen-bio';
-import { nexus } from './nexus';
-import { casca } from './casca';
-import { twoTwoTwo } from './two-two-two';
-import { truemed } from './truemed';
-import { dittoLive } from './ditto-live';
-import { edisonScientific } from './edison-scientific';
-import { loonen } from './loonen';
-import { inngest } from './inngest';
-import { suger } from './suger';
-import { nokken } from './nokken';
-import { gcAi } from './gc-ai';
-import { anythingAi } from './anything-ai';
-import { medra } from './medra';
-import { serval } from './serval';
-import { anrok } from './anrok';
-import { fal } from './fal';
-import { town } from './town';
-import { itemApp } from './item-app';
-import { internetBackyard } from './internet-backyard';
-import { operateCrm } from './operate-crm';
-import { openrouter } from './openrouter';
-import { humbleOps } from './humble-ops';
-import { rox } from './rox';
-import { delve } from './delve';
-import { solidroad } from './solidroad';
-import { mutiny } from './mutiny';
-import { heirloom } from './heirloom';
-import { happyrobot } from './happyrobot';
-import { quanta } from './quanta';
-import { raindropAi } from './raindrop-ai';
-import { micro1 } from './micro1';
-import { unlimitedIndustries } from './unlimited-industries';
-import { metronome } from './metronome';
-import { doss } from './doss';
-import { devAgents } from './dev-agents';
-import { indexCompany } from './index-company';
-import { infisical } from './infisical';
-import { natural } from './natural';
-import { claritycare } from './claritycare';
+import { ada } from './ada';
+import { adalineAi } from './adaline-ai';
+import { aegisai } from './aegisai';
+import { aetherflux } from './aetherflux';
 import { agora } from './agora';
-import { nooks } from './nooks';
-import { sesameAi } from './sesame-ai';
-import { langchain } from './langchain';
-import { replicate } from './replicate';
-import { tempo } from './tempo';
-import { comulate } from './comulate';
-import { reevo } from './reevo';
-import { clickhouse } from './clickhouse';
-import { bindwell } from './bindwell';
-import { firecrawl } from './firecrawl';
-import { nuraline } from './nuraline';
-import { collective } from './collective';
-import { response } from './response';
-import { spiralDb } from './spiral-db';
-import { vapi } from './vapi';
-import { watershed } from './watershed';
-import { onton } from './onton';
-import { goodfire } from './goodfire';
+import { aiShift } from './ai-shift';
+import { airloom } from './airloom';
+import { airops } from './airops';
+import { alexAi } from './alex-ai';
+import { algolux } from './algolux';
+import { alix } from './alix';
 import { alloy } from './alloy';
-import { momentic } from './momentic';
-import { variant } from './variant';
-import { lgnd } from './lgnd';
-import { composite } from './composite';
-import { sonatic } from './sonatic';
-import { subtrate } from './subtrate';
-import { sierra } from './sierra';
-import { tailor } from './tailor';
-import { physicalIntelligence } from './physical-intelligence';
-import { pulley } from './pulley';
-import { lighthouse } from './lighthouse';
-import { osmosis } from './osmosis';
-import { zedDev } from './zed-dev';
-import { warmer } from './warmer';
-import { campfire } from './campfire';
-import { causalLabs } from './causal-labs';
-import { trunk } from './trunk';
-import { sentientLabs } from './sentient-labs';
-import { inferenceNet } from './inference-net';
-import { flowEngineering } from './flow-engineering';
-import { reducto } from './reducto';
-import { mintlify } from './mintlify';
-import { zeroentropy } from './zeroentropy';
-import { found } from './found';
-import { owner } from './owner';
-import { clockwise } from './clockwise';
-import { mainstay } from './mainstay';
+import { alphaXiv } from './alphaxiv';
+import { ambienceHealthcare } from './ambience-healthcare';
 import { anara } from './anara';
-import { kernel } from './kernel';
-import { mastra } from './mastra';
+import { ando } from './ando';
+import { anon } from './anon';
+import { anrok } from './anrok';
+import { anthropic } from './anthropic';
+import { anythingAi } from './anything-ai';
+import { apothekary } from './apothekary';
+import { appliedCompute } from './applied-compute';
+import { aquaVoice } from './aqua-voice';
+import { arc } from './arc';
+import { arcadeAi } from './arcade-ai';
+import { arcadeDev } from './arcade-dev';
+import { artie } from './artie';
+import { assortHealth } from './assort-health';
+import { astromech } from './astromech';
+import { attabotics } from './attabotics';
+import { augment } from './augment';
+import { aurasell } from './aurasell';
+import { avidbots } from './avidbots';
+import { axiom } from './axiom';
+import { axiomMath } from './axiom-math';
+import { base44 } from './base44';
+import { baseten } from './baseten';
+import { beautifulAi } from './beautiful-ai';
+import { bedrockRobotics } from './bedrock-robotics';
+import { bem } from './bem';
+import { benchsci } from './benchsci';
+import { bindwell } from './bindwell';
+import { blackbirdLabs } from './blackbird-labs';
+import { blacksmith } from './blacksmith';
+import { blazeAi } from './blaze-ai';
+import { blossom } from './blossom';
+import { bluedot } from './bluedot';
+import { botpress } from './botpress';
+import { brainfish } from './brainfish';
+import { brex } from './brex';
+import { browserbase } from './browserbase';
+import { buildForever } from './buildforever';
+import { c2ro } from './c2ro';
+import { calCom } from './cal-com';
+import { cambium } from './cambium';
+import { campfire } from './campfire';
+import { canva } from './canva';
+import { canvassAi } from './canvass-ai';
+import { cardless } from './cardless';
+import { careforceAi } from './careforce-ai';
+import { cartesia } from './cartesia';
+import { casca } from './casca';
+import { catalyxSpace } from './catalyx-space';
+import { causalLabs } from './causal-labs';
+import { cekura } from './cekura';
+import { centralHq } from './central-hq';
+import { cerebriAi } from './cerebri-ai';
+import { certn } from './certn';
+import { chaiDiscovery } from './chai-discovery';
+import { characterAi } from './character-ai';
+import { chillwallAi } from './chillwall-ai';
+import { chroma } from './chroma';
+import { chronicle } from './chronicle';
+import { claritycare } from './claritycare';
+import { clearpathRobotics } from './clearpath-robotics';
+import { clerk } from './clerk';
+import { clickhouse } from './clickhouse';
+import { cline } from './cline';
+import { clockwise } from './clockwise';
+import { cocoon } from './cocoon';
+import { codeium } from './codeium';
+import { coderabbit } from './coderabbit';
+import { coframe } from './coframe';
+import { cogentSecurity } from './cogent-security';
+import { cognition } from './cognition';
+import { cognitionAi } from './cognition-ai';
+import { cohere } from './cohere';
+import { collate } from './collate';
+import { collective } from './collective';
+import { column } from './column';
+import { comfyUi } from './comfy-ui';
+import { commonKnowledge } from './common-knowledge';
+import { composite } from './composite';
+import { comulate } from './comulate';
+import { conductor } from './conductor';
+import { consioAi } from './consio-ai';
+import { console } from './console';
+import { contra } from './contra';
+import { conversion } from './conversion';
+import { convokeBio } from './convoke-bio';
+import { copyAi } from './copy-ai';
+import { corgi } from './corgi';
+import { crowdriff } from './crowdriff';
+import { cube } from './cube';
+import { curans } from './curans';
+import { cursor } from './cursor';
+import { dagster } from './dagster';
+import { darwinai } from './darwinai';
 import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
-import { unify } from './unify';
-import { seso } from './seso';
-import { supermemory } from './supermemory';
-import { convokeBio } from './convoke-bio';
-import { paper } from './paper';
-import { mem } from './mem';
-import { calCom } from './cal-com';
-import { osmind } from './osmind';
-import { collate } from './collate';
-import { primeIntellect } from './prime-intellect';
-import { pierre } from './pierre';
-import { supabase } from './supabase';
-import { thinkingMachines } from './thinking-machines';
-import { promisePay } from './promise-pay';
-import { moonlakeAi } from './moonlake-ai';
-import { blackbirdLabs } from './blackbird-labs';
-import { framework } from './framework';
-import { posthog } from './posthog';
-import { nexhealth } from './nexhealth';
-import { fermat } from './fermat';
-import { patch } from './patch';
-import { newlimit } from './newlimit';
-import { polycam } from './polycam';
-import { slash } from './slash';
-import { hyperbolic } from './hyperbolic';
-import { podqi } from './podqi';
-import { parabola } from './parabola';
-import { modular } from './modular';
-import { imbueAi } from './imbue-ai';
-import { edia } from './edia';
-import { divineResearch } from './divine-research';
-import { juicebox } from './juicebox';
-import { nudge } from './nudge';
-import { manifest } from './manifest';
-import { neonPay } from './neon-pay';
-import { tolans } from './tolans';
-import { succint } from './succint';
-import { seedHealth } from './seed-health';
-import { martian } from './martian';
-import { coderabbit } from './coderabbit';
-import { cube } from './cube';
-import { greptile } from './greptile';
-import { kaedim } from './kaedim';
-import { cardless } from './cardless';
-import { radiantgraph } from './radiantgraph';
-import { untilLabs } from './until-labs';
-import { axiom } from './axiom';
-import { e2b } from './e2b';
-import { loyalDogs } from './loyal-dogs';
-import { anon } from './anon';
-import { arcadeAi } from './arcade-ai';
-import { bem } from './bem';
-import { bedrockRobotics } from './bedrock-robotics';
-import { tandem } from './tandem';
-import { stable } from './stable';
-import { midday } from './midday';
-import { sonder } from './sonder';
-import { subframe } from './subframe';
-import { column } from './column';
-import { openpay } from './openpay';
-import { langbase } from './langbase';
-import { adalineAi } from './adaline-ai';
-import { aquaVoice } from './aqua-voice';
-import { commonKnowledge } from './common-knowledge';
-import { recTechnologies } from './rec-technologies';
-import { apothekary } from './apothekary';
-import { hyperbound } from './hyperbound';
-import { sway } from './sway';
-import { arc } from './arc';
-import { orchids } from './orchids';
-import { comfyUi } from './comfy-ui';
-import { willow } from './willow';
-import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
-import { centralHq } from './central-hq';
-import { meter } from './meter';
-import { openmind } from './openmind';
-import { stackai } from './stackai';
-import { hedraAi } from './hedra-ai';
-import { greenlite } from './greenlite';
-import { aegisai } from './aegisai';
+import { decart } from './decart';
+import { dedalusLabs } from './dedalus-labs';
+import { deepgram } from './deepgram';
+import { delve } from './delve';
+import { descript } from './descript';
+import { devAgents } from './dev-agents';
 import { dimensionLabs } from './dimension-labs';
-import { symbiotic } from './symbiotic';
-import { farel } from './farel';
-import { kiteAi } from './kite-ai';
-import { humanBehavior } from './human-behavior';
-import { cognitionAi } from './cognition-ai';
-import { elevenX } from './11x';
-import { tako } from './tako';
-import { superpower } from './superpower';
-import { mural } from './mural';
-import { inkeep } from './inkeep';
-import { cambium } from './cambium';
-import { solaSecurity } from './sola-security';
-import { augment } from './augment';
-import { recallAi } from './recall-ai';
-import { aetherflux } from './aetherflux';
-import { ranger } from './ranger';
-import { interfere } from './interfere';
-import { sfcompute } from './sfcompute';
-import { astromech } from './astromech';
-import { aurasell } from './aurasell';
-import { hanomi } from './hanomi';
-import { things } from './things';
-import { medallion } from './medallion';
-import { dagster } from './dagster';
-import { browserbase } from './browserbase';
-import { freed } from './freed';
-import { twoDots } from './two-dots';
-import { invertBio } from './invert-bio';
-import { upwind } from './upwind';
-import { oway } from './oway';
-import { conversion } from './conversion';
-import { coframe } from './coframe';
-import { playbook } from './playbook';
-import { mage } from './mage';
-import { walrus } from './walrus';
-import { strideHealth } from './stride-health';
-import { merge } from './merge';
-import { instant } from './instant';
-import { wordware } from './wordware';
-import { roboflow } from './roboflow';
+import { ditto } from './ditto';
+import { dittoLive } from './ditto-live';
+import { divineResearch } from './divine-research';
+import { doppel } from './doppel';
+import { doss } from './doss';
 import { dubCo } from './dub-co';
-import { mail0 } from './mail0';
-import { middesk } from './middesk';
-import { thatch } from './thatch';
-import { onyx } from './onyx';
-import { pylon } from './pylon';
-import { nuvo } from './nuvo';
-import { paradigm } from './paradigm';
+import { e2b } from './e2b';
+import { ecobee } from './ecobee';
+import { edia } from './edia';
+import { edisonScientific } from './edison-scientific';
+import { elementAi } from './element-ai';
+import { elevenX } from './11x';
+import { elevenlabs } from './elevenlabs';
+import { eventual } from './eventual';
+import { exa } from './exa';
+import { extropic } from './extropic';
+import { factory } from './factory';
+import { fal } from './fal';
+import { farel } from './farel';
+import { fastino } from './fastino';
+import { fermat } from './fermat';
+import { figma } from './figma';
+import { finnAi } from './finn-ai';
+import { firecrawl } from './firecrawl';
+import { flint } from './flint';
+import { flowEngineering } from './flow-engineering';
+import { flybits } from './flybits';
 import { footprint } from './footprint';
+import { fortunaAi } from './fortuna-ai';
+import { fortyTwoTechnologies } from './forty-two-technologies';
+import { found } from './found';
+import { framework } from './framework';
+import { freed } from './freed';
+import { furtherAi } from './further-ai';
+import { gamma } from './gamma';
+import { gcAi } from './gc-ai';
+import { generationLab } from './generation-lab';
+import { genspark } from './genspark';
+import { gigaml } from './gigaml';
+import { gigs } from './gigs';
+import { glean } from './glean';
+import { glide } from './glide';
+import { gong } from './gong';
+import { goodfire } from './goodfire';
+import { grammarly } from './grammarly';
+import { granify } from './granify';
+import { granola } from './granola';
+import { greenlite } from './greenlite';
+import { greptile } from './greptile';
+import { h2oAi } from './h2o-ai';
+import { hanomi } from './hanomi';
+import { happyrobot } from './happyrobot';
+import { harmonic } from './harmonic';
+import { harvey } from './harvey';
+import { hebbia } from './hebbia';
+import { hedraAi } from './hedra-ai';
+import { heirloom } from './heirloom';
+import { heyday } from './heyday';
+import { heygen } from './heygen';
+import { higgsfield } from './higgsfield';
+import { highscore } from './highscore';
+import { hightouch } from './hightouch';
+import { holomd } from './holomd';
+import { hopper } from './hopper';
+import { humanBehavior } from './human-behavior';
+import { humansand } from './humansand';
+import { humbleOps } from './humble-ops';
+import { humeAi } from './hume-ai';
+import { hummingbird } from './hummingbird';
+import { hyperbolic } from './hyperbolic';
+import { hyperbound } from './hyperbound';
+import { imbueAi } from './imbue-ai';
+import { impulseLabs } from './impulse-labs';
 import { incidentIo } from './incident-io';
-import { workos } from './workos';
-import { chronicle } from './chronicle';
-import { cline } from './cline';
+import { inferact } from './inferact';
+import { inferenceNet } from './inference-net';
+import { infisical } from './infisical';
+import { inkeep } from './inkeep';
+import { inngest } from './inngest';
+import { insightHealthAi } from './insight-health-ai';
+import { instant } from './instant';
+import { interaction } from './interaction';
+import { intercomFin } from './intercom-fin';
+import { interfere } from './interfere';
+import { internetBackyard } from './internet-backyard';
+import { invertBio } from './invert-bio';
+import { invisionAi } from './invision-ai';
+import { item } from './item';
+import { itemApp } from './item-app';
+import { ivo } from './ivo';
+import { jackAndJill } from './jack-and-jill';
+import { jasper } from './jasper';
+import { juicebox } from './juicebox';
+import { kaedim } from './kaedim';
+import { kernel } from './kernel';
+import { kiite } from './kiite';
+import { kindredSystems } from './kindred-systems';
+import { kiteAi } from './kite-ai';
+import { klue } from './klue';
+import { landr } from './landr';
+import { langbase } from './langbase';
+import { langchain } from './langchain';
+import { layerFinancial } from './layer-financial';
+import { leddartech } from './leddartech';
+import { legendXyz } from './legend-xyz';
+import { letta } from './letta';
+import { lettuce } from './lettuce';
+import { leya } from './leya';
+import { lgnd } from './lgnd';
+import { lightfield } from './lightfield';
+import { lighthouse } from './lighthouse';
+import { lightpage } from './lightpage';
+import { linear } from './linear';
+import { listenLabs } from './listen-labs';
+import { livekit } from './livekit';
+import { llmarena } from './llmarena';
+import { lomanAi } from './loman-ai';
+import { loonen } from './loonen';
+import { loop } from './loop';
+import { lovable } from './lovable';
+import { loyalDogs } from './loyal-dogs';
+import { macroscope } from './macroscope';
+import { mage } from './mage';
+import { magicPatterns } from './magic-patterns';
+import { mail0 } from './mail0';
+import { mainstay } from './mainstay';
+import { mandolin } from './mandolin';
+import { manifest } from './manifest';
+import { martian } from './martian';
+import { mastra } from './mastra';
+import { mecanizou } from './mecanizou';
+import { medallion } from './medallion';
+import { medra } from './medra';
+import { mem } from './mem';
+import { mem0 } from './mem0';
+import { mercor } from './mercor';
+import { merge } from './merge';
+import { meter } from './meter';
+import { metronome } from './metronome';
+import { meya } from './meya';
+import { micro1 } from './micro1';
+import { midday } from './midday';
+import { middesk } from './middesk';
+import { midjourney } from './midjourney';
+import { mintlify } from './mintlify';
+import { mistral } from './mistral';
+import { miter } from './miter';
+import { modular } from './modular';
+import { momentic } from './momentic';
+import { moonlakeAi } from './moonlake-ai';
+import { mosey } from './mosey';
+import { motif } from './motif';
+import { mural } from './mural';
+import { mutiny } from './mutiny';
+import { mytra } from './mytra';
+import { naborly } from './naborly';
+import { natural } from './natural';
+import { neonPay } from './neon-pay';
+import { neruHealth } from './neru-health';
+import { netic } from './netic';
+import { netramark } from './netramark';
+import { newlimit } from './newlimit';
+import { nexhealth } from './nexhealth';
+import { nexus } from './nexus';
+import { nokken } from './nokken';
+import { nooks } from './nooks';
+import { notion } from './notion';
 import { nowadays } from './nowadays';
-import { alix } from './alix';
+import { nudge } from './nudge';
+import { numeral } from './numeral';
+import { numeric } from './numeric';
+import { nuraline } from './nuraline';
+import { nuvo } from './nuvo';
+import { obieAi } from './obie-ai';
+import { odyssey } from './odyssey';
+import { ohmd } from './ohmd';
+import { onton } from './onton';
+import { onyx } from './onyx';
+import { openOceanRobotics } from './open-ocean-robotics';
+import { openai } from './openai';
+import { openmind } from './openmind';
+import { openpay } from './openpay';
+import { openrouter } from './openrouter';
+import { operateCrm } from './operate-crm';
+import { orchids } from './orchids';
+import { orionSleep } from './orion-sleep';
+import { osmind } from './osmind';
+import { osmosis } from './osmosis';
+import { otterAi } from './otter-ai';
+import { overlapAi } from './overlap-ai';
+import { oway } from './oway';
+import { owner } from './owner';
+import { pacificFusion } from './pacific-fusion';
+import { pallet } from './pallet';
+import { paper } from './paper';
+import { parabola } from './parabola';
+import { paradigm } from './paradigm';
+import { parahelp } from './parahelp';
+import { partnerstack } from './partnerstack';
+import { patch } from './patch';
+import { perleAi } from './perle-ai';
+import { perplexity } from './perplexity';
+import { phonely } from './phonely';
+import { physicalIntelligence } from './physical-intelligence';
+import { pierre } from './pierre';
+import { pika } from './pika';
+import { pitstop } from './pitstop';
+import { playbook } from './playbook';
+import { podqi } from './podqi';
+import { polycam } from './polycam';
+import { poolside } from './poolside';
+import { posthog } from './posthog';
+import { primeIntellect } from './prime-intellect';
+import { promisePay } from './promise-pay';
+import { pulley } from './pulley';
+import { pylon } from './pylon';
+import { quanta } from './quanta';
+import { quo } from './quo';
+import { r2 } from './r2';
+import { radiantgraph } from './radiantgraph';
+import { railway } from './railway';
+import { raindropAi } from './raindrop-ai';
+import { ramp } from './ramp';
+import { ranger } from './ranger';
+import { recTechnologies } from './rec-technologies';
+import { recallAi } from './recall-ai';
+import { redQueenBio } from './red-queen-bio';
+import { reducto } from './reducto';
+import { reevo } from './reevo';
+import { relace } from './relace';
+import { remofirst } from './remofirst';
+import { replicate } from './replicate';
+import { replit } from './replit';
+import { resolveAi } from './resolve-ai';
+import { resolver } from './resolver';
+import { response } from './response';
+import { rivo } from './rivo';
+import { roboflow } from './roboflow';
+import { rox } from './rox';
+import { runway } from './runway';
+import { safetykit } from './safetykit';
+import { sanity } from './sanity';
+import { sauronSystems } from './sauron-systems';
+import { scaleAi } from './scale-ai';
+import { scribe } from './scribe';
+import { seedHealth } from './seed-health';
+import { senecaSystems } from './seneca-systems';
+import { sentientLabs } from './sentient-labs';
+import { serval } from './serval';
+import { sesameAi } from './sesame-ai';
+import { seso } from './seso';
+import { sfcompute } from './sfcompute';
+import { sharpestminds } from './sharpestminds';
+import { shopify } from './shopify';
+import { shortwave } from './shortwave';
+import { sierra } from './sierra';
+import { skyhive } from './skyhive';
+import { slash } from './slash';
+import { snaptravel } from './snaptravel';
+import { solaSecurity } from './sola-security';
+import { solidroad } from './solidroad';
+import { sonatic } from './sonatic';
+import { sonder } from './sonder';
+import { sourcegraph } from './sourcegraph';
+import { span } from './span';
+import { speakeasy } from './speakeasy';
+import { sphere } from './sphere';
+import { spiralDb } from './spiral-db';
+import { stabilityAi } from './stability-ai';
+import { stable } from './stable';
+import { stackai } from './stackai';
+import { strada } from './strada';
+import { strideHealth } from './stride-health';
 import { stytch } from './stytch';
-import { jackAndJill } from "./jack-and-jill";
-export const companies: Company[] = [
-  anthropic,
-  leya,
-  granola,
-  pika,
-  elevenlabs,
-  cognition,
-  mercor,
-  linear,
-  notion,
-  figma,
-  mistral,
-  cursor,
-  perplexity,
-  openai,
-  vercel,
-  midjourney,
-  runway,
-  stabilityAi,
-  harvey,
-  characterAi,
-  typeface,
-  scaleAi,
-  replit,
-  cohere,
-  jasper,
-  sourcegraph,
-  superhuman,
-  hebbia,
-  gamma,
-  ramp,
-  lovable,
-  codeium,
-  heygen,
-  gong,
-  intercomFin,
-  descript,
-  glean,
-  writer,
-  brex,
-  tome,
-  grammarly,
-  canva,
-  otterAi,
-  copyAi,
-  beautifulAi,
-  tabnine,
-  harmonic,
-  ambienceHealthcare,
-  abridge,
-  listenLabs,
-  blossom,
+import { subbyx } from './subbyx';
+import { subframe } from './subframe';
+import { subtleComputing } from './subtle-computing';
+import { subtrate } from './subtrate';
+import { succint } from './succint';
+import { suger } from './suger';
+import { suno } from './suno';
+import { supabase } from './supabase';
+import { superhuman } from './superhuman';
+import { supermemory } from './supermemory';
+import { superpower } from './superpower';
+import { surgeAi } from './surge-ai';
+import { swae } from './swae';
+import { sway } from './sway';
+import { symbiotic } from './symbiotic';
+import { symend } from './symend';
+import { tabnine } from './tabnine';
+import { tailor } from './tailor';
+import { tako } from './tako';
+import { tandem } from './tandem';
+import { tavus } from './tavus';
+import { tealbook } from './tealbook';
+import { tempo } from './tempo';
+import { tensormesh } from './tensormesh';
+import { teraAi } from './tera-ai';
+import { terradot } from './terradot';
+import { terramera } from './terramera';
+import { thatch } from './thatch';
+import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
+import { things } from './things';
+import { thinkingMachines } from './thinking-machines';
+import { thinkingMachinesLab } from './thinking-machines-lab';
+import { tigereye } from './tigereye';
+import { tolans } from './tolans';
+import { toma } from './toma';
+import { tome } from './tome';
+import { town } from './town';
+import { trmLabs } from './trm-labs';
+import { truemed } from './truemed';
+import { truffleSecurity } from './truffle-security';
+import { trunk } from './trunk';
+import { twoDots } from './two-dots';
+import { twoTwoTwo } from './two-two-two';
+import { typeface } from './typeface';
+import { unbounce } from './unbounce';
+import { unify } from './unify';
+import { unlimitedIndustries } from './unlimited-industries';
+import { unstructured } from './unstructured';
+import { untilLabs } from './until-labs';
+import { upwind } from './upwind';
+import { validere } from './validere';
+import { vantageAnalytics } from './vantage-analytics';
+import { vapi } from './vapi';
+import { variant } from './variant';
+import { vercel } from './vercel';
+import { vizcom } from './vizcom';
+import { voiceflow } from './voiceflow';
+import { vozy } from './vozy';
+import { wabi } from './wabi';
+import { walrus } from './walrus';
+import { warmer } from './warmer';
+import { watershed } from './watershed';
+import { welltheory } from './welltheory';
+import { willow } from './willow';
+import { wisprFlow } from './wispr-flow';
+import { wonder } from './wonder';
+import { wordware } from './wordware';
+import { workos } from './workos';
+import { worldLabs } from './world-labs';
+import { writer } from './writer';
+import { xai } from './xai';
+import { xanadu } from './xanadu';
+import { xpertsea } from './xpertsea';
+import { yutori } from './yutori';
+import { zedDev } from './zed-dev';
+import { zeroentropy } from './zeroentropy';
 
-  tavus,
-  toma,
-  shopify,
-  base44,
-  xai,
-  suno,
-  higgsfield,
-  inferact,
-  humansand,
-  subtleComputing,
-  deepgram,
-  darwinai,
-  letta,
-  llmarena,
-  mem0,
-  humeAi,
-  ivo,
-  surgeAi,
-  factory,
-  axiomMath,
-  extropic,
-  yutori,
-  resolveAi,
-  parahelp,
-  exa,
-  alphaXiv,
-  wisprFlow,
-  pallet,
-  numeric,
-  doppel,
-  orionSleep,
-  buildForever,
-  sphere,
-  cogentSecurity,
-  wonder,
-  span,
-  safetykit,
-  eventual,
-  dedalusLabs,
-  clerk,
-  gigaml,
-  worldLabs,
-  airloom,
-  console,
-  lightfield,
-  assortHealth,
-  netic,
-  numeral,
-  gigs,
-  magicPatterns,
-  airops,
-  quo,
-  scribe,
-  ando,
-  fastino,
-  shortwave,
-  highscore,
-  teraAi,
-  cocoon,
-  miter,
-  blazeAi,
-  chroma,
-  legendXyz,
-  wabi,
-  welltheory,
-  thinkingMachinesLab,
-  impulseLabs,
-  decart,
-  lettuce,
-  sanity,
-  relace,
-  speakeasy,
-  mosey,
-  brainfish,
-  poolside,
-  catalyxSpace,
-  terramera,
-  appliedCompute,
-  vizcom,
-  cartesia,
-  generationLab,
-  tensormesh,
-  unstructured,
-  alexAi,
-  contra,
-  livekit,
-  mandolin,
-  furtherAi,
-  avidbots,
-  senecaSystems,
-  rivo,
-  railway,
-  baseten,
-  artie,
-  chaiDiscovery,
-  item,
-  blacksmith,
-  terradot,
-  odyssey,
-  mytra,
-  corgi,
-  glide,
-  motif,
-  tigereye,
-  macroscope,
-  trmLabs,
-  hightouch,
-  remofirst,
-  loop,
-  perleAi,
-  flint,
-  overlapAi,
-  pacificFusion,
-  ditto,
-  truffleSecurity,
-  lightpage,
-  conductor,
-  arcadeDev,
-  layerFinancial,
-  sauronSystems,
-  hummingbird,
-  redQueenBio,
-  nexus,
-  casca,
-  twoTwoTwo,
-  truemed,
-  dittoLive,
-  edisonScientific,
-  loonen,
-  inngest,
-  suger,
-  nokken,
-  gcAi,
-  anythingAi,
-  medra,
-  serval,
-  anrok,
-  fal,
-  town,
-  itemApp,
-  internetBackyard,
-  operateCrm,
-  openrouter,
-  humbleOps,
-  rox,
-  delve,
-  solidroad,
-  mutiny,
-  heirloom,
-  happyrobot,
-  quanta,
-  raindropAi,
-  micro1,
-  unlimitedIndustries,
-  metronome,
-  doss,
-  devAgents,
-  indexCompany,
-  infisical,
-  natural,
-  claritycare,
+export const companies: Company[] = [
+  elevenX,
+  abridge,
+  ada,
+  adalineAi,
+  aegisai,
+  aetherflux,
   agora,
-  nooks,
-  sesameAi,
-  langchain,
-  replicate,
-  tempo,
-  comulate,
-  reevo,
-  clickhouse,
-  bindwell,
-  firecrawl,
-  nuraline,
-  collective,
-  response,
-  spiralDb,
-  vapi,
-  watershed,
-  onton,
-  goodfire,
+  aiShift,
+  airloom,
+  airops,
+  alexAi,
+  algolux,
+  alix,
   alloy,
-  momentic,
-  variant,
-  lgnd,
-  composite,
-  sonatic,
-  subtrate,
-  sierra,
-  tailor,
-  physicalIntelligence,
-  pulley,
-  lighthouse,
-  osmosis,
-  zedDev,
-  warmer,
-  campfire,
-  causalLabs,
-  trunk,
-  sentientLabs,
-  inferenceNet,
-  flowEngineering,
-  reducto,
-  mintlify,
-  zeroentropy,
-  found,
-  owner,
-  clockwise,
-  mainstay,
+  alphaXiv,
+  ambienceHealthcare,
   anara,
-  kernel,
-  mastra,
+  ando,
+  anon,
+  anrok,
+  anthropic,
+  anythingAi,
+  apothekary,
+  appliedCompute,
+  aquaVoice,
+  arc,
+  arcadeAi,
+  arcadeDev,
+  artie,
+  assortHealth,
+  astromech,
+  attabotics,
+  augment,
+  aurasell,
+  avidbots,
+  axiomMath,
+  axiom,
+  base44,
+  baseten,
+  beautifulAi,
+  bedrockRobotics,
+  bem,
+  benchsci,
+  bindwell,
+  blackbirdLabs,
+  blacksmith,
+  blazeAi,
+  blossom,
+  bluedot,
+  botpress,
+  brainfish,
+  brex,
+  browserbase,
+  buildForever,
+  c2ro,
+  calCom,
+  cambium,
+  campfire,
+  canva,
+  canvassAi,
+  cardless,
+  careforceAi,
+  cartesia,
+  casca,
+  catalyxSpace,
+  causalLabs,
+  cekura,
+  centralHq,
+  cerebriAi,
+  certn,
+  chaiDiscovery,
+  characterAi,
+  chillwallAi,
+  chroma,
+  chronicle,
+  claritycare,
+  clearpathRobotics,
+  clerk,
+  clickhouse,
+  cline,
+  clockwise,
+  cocoon,
+  codeium,
+  coderabbit,
+  coframe,
+  cogentSecurity,
+  cognitionAi,
+  cognition,
+  cohere,
+  collate,
+  collective,
+  column,
+  comfyUi,
+  commonKnowledge,
+  composite,
+  comulate,
+  conductor,
+  consioAi,
+  console,
+  contra,
+  conversion,
+  convokeBio,
+  copyAi,
+  corgi,
+  crowdriff,
+  cube,
+  curans,
+  cursor,
+  dagster,
+  darwinai,
   datacurve,
   davidAi,
-  unify,
-  seso,
-  supermemory,
-  convokeBio,
-  paper,
-  mem,
-  calCom,
-  osmind,
-  collate,
-  primeIntellect,
-  pierre,
-  supabase,
-  thinkingMachines,
-  promisePay,
-  moonlakeAi,
-  blackbirdLabs,
-  framework,
-  posthog,
-  nexhealth,
-  fermat,
-  patch,
-  newlimit,
-  polycam,
-  slash,
-  hyperbolic,
-  podqi,
-  parabola,
-  modular,
-  imbueAi,
-  edia,
-  divineResearch,
-  juicebox,
-  nudge,
-  manifest,
-  neonPay,
-  tolans,
-  succint,
-  seedHealth,
-  martian,
-  coderabbit,
-  cube,
-  greptile,
-  kaedim,
-  cardless,
-  radiantgraph,
-  untilLabs,
-  axiom,
-  e2b,
-  loyalDogs,
-  anon,
-  arcadeAi,
-  bem,
-  bedrockRobotics,
-  tandem,
-  stable,
-  midday,
-  sonder,
-  subframe,
-  column,
-  openpay,
-  langbase,
-  adalineAi,
-  aquaVoice,
-  commonKnowledge,
-  recTechnologies,
-  apothekary,
-  hyperbound,
-  sway,
-  arc,
-  orchids,
-  comfyUi,
-  willow,
-  theInteractionCompanyOfCalifornia,
-  centralHq,
-  meter,
-  openmind,
-  stackai,
-  hedraAi,
-  greenlite,
-  aegisai,
+  decart,
+  dedalusLabs,
+  deepgram,
+  delve,
+  descript,
+  devAgents,
   dimensionLabs,
-  symbiotic,
-  farel,
-  kiteAi,
-  humanBehavior,
-  cognitionAi,
-  elevenX,
-  tako,
-  superpower,
-  mural,
-  inkeep,
-  cambium,
-  solaSecurity,
-  augment,
-  recallAi,
-  aetherflux,
-  ranger,
-  interfere,
-  sfcompute,
-  astromech,
-  aurasell,
-  hanomi,
-  things,
-  medallion,
-  dagster,
-  browserbase,
-  freed,
-  twoDots,
-  invertBio,
-  upwind,
-  oway,
-  conversion,
-  coframe,
-  playbook,
-  mage,
-  walrus,
-  strideHealth,
-  merge,
-  instant,
-  wordware,
-  roboflow,
+  dittoLive,
+  ditto,
+  divineResearch,
+  doppel,
+  doss,
   dubCo,
-  mail0,
-  middesk,
-  thatch,
-  onyx,
-  pylon,
-  nuvo,
-  paradigm,
-  footprint,
-  incidentIo,
-  workos,
-  chronicle,
-  cline,
-  nowadays,
-  alix,
-  stytch,
-  jackAndJill,
-  h2oAi,
-  benchsci,
-  voiceflow,
-  kindredSystems,
-  ada,
-  obieAi,
-  elementAi,
-  snaptravel,
-  xanadu,
-  bluedot,
-  validere,
-  kiite,
-  interaction,
-  klue,
-  invisionAi,
-  hopper,
-  fortyTwoTechnologies,
-  xpertsea,
-  flybits,
-  crowdriff,
+  e2b,
   ecobee,
-  landr,
-  skyhive,
-  unbounce,
-  tealbook,
-  swae,
-  symend,
-  resolver,
-
-  granify,
-  netramark,
-  partnerstack,
-  algolux,
-  certn,
-  leddartech,
-  chillwallAi,
-  fortunaAi,
-  heyday,
-  naborly,
-  cerebriAi,
-  vantageAnalytics,
-  clearpathRobotics,
-  c2ro,
-  sharpestminds,
+  edia,
+  edisonScientific,
+  elementAi,
+  elevenlabs,
+  eventual,
+  exa,
+  extropic,
+  factory,
+  fal,
+  farel,
+  fastino,
+  fermat,
+  figma,
   finnAi,
+  firecrawl,
+  flint,
+  flowEngineering,
+  flybits,
+  footprint,
+  fortunaAi,
+  fortyTwoTechnologies,
+  found,
+  framework,
+  freed,
+  furtherAi,
+  gamma,
+  gcAi,
+  generationLab,
+  genspark,
+  gigaml,
+  gigs,
+  glean,
+  glide,
+  gong,
+  goodfire,
+  grammarly,
+  granify,
+  granola,
+  greenlite,
+  greptile,
+  h2oAi,
+  hanomi,
+  happyrobot,
+  harmonic,
+  harvey,
+  hebbia,
+  hedraAi,
+  heirloom,
+  heyday,
+  heygen,
+  higgsfield,
+  highscore,
+  hightouch,
+  holomd,
+  hopper,
+  humanBehavior,
+  humansand,
+  humbleOps,
+  humeAi,
+  hummingbird,
+  hyperbolic,
+  hyperbound,
+  imbueAi,
+  impulseLabs,
+  incidentIo,
+  inferact,
+  inferenceNet,
+  infisical,
+  inkeep,
+  inngest,
+  insightHealthAi,
+  instant,
+  interaction,
+  intercomFin,
+  interfere,
+  internetBackyard,
+  invertBio,
+  invisionAi,
+  itemApp,
+  item,
+  ivo,
+  jackAndJill,
+  jasper,
+  juicebox,
+  kaedim,
+  kernel,
+  kiite,
+  kindredSystems,
+  kiteAi,
+  klue,
+  landr,
+  langbase,
+  langchain,
+  layerFinancial,
+  leddartech,
+  legendXyz,
+  letta,
+  lettuce,
+  leya,
+  lgnd,
+  lightfield,
+  lighthouse,
+  lightpage,
+  linear,
+  listenLabs,
+  livekit,
+  llmarena,
+  lomanAi,
+  loonen,
+  loop,
+  lovable,
+  loyalDogs,
+  macroscope,
+  mage,
+  magicPatterns,
+  mail0,
+  mainstay,
+  mandolin,
+  manifest,
+  martian,
+  mastra,
+  mecanizou,
+  medallion,
+  medra,
+  mem,
+  mem0,
+  mercor,
+  merge,
+  meter,
+  metronome,
+  meya,
+  micro1,
+  midday,
+  middesk,
+  midjourney,
+  mintlify,
+  mistral,
+  miter,
+  modular,
+  momentic,
+  moonlakeAi,
+  mosey,
+  motif,
+  mural,
+  mutiny,
+  mytra,
+  naborly,
+  natural,
+  neonPay,
+  neruHealth,
+  netic,
+  netramark,
+  newlimit,
+  nexhealth,
+  nexus,
+  nokken,
+  nooks,
+  notion,
+  nowadays,
+  nudge,
+  numeral,
+  numeric,
+  nuraline,
+  nuvo,
+  obieAi,
+  odyssey,
+  ohmd,
+  onton,
+  onyx,
   openOceanRobotics,
+  openai,
+  openmind,
+  openpay,
+  openrouter,
+  operateCrm,
+  orchids,
+  orionSleep,
+  osmind,
+  osmosis,
+  otterAi,
+  overlapAi,
+  oway,
+  owner,
+  pacificFusion,
+  pallet,
+  paper,
+  parabola,
+  paradigm,
+  parahelp,
+  partnerstack,
+  patch,
+  perleAi,
+  perplexity,
+  phonely,
+  physicalIntelligence,
+  pierre,
+  pika,
+  pitstop,
+  playbook,
+  podqi,
+  polycam,
+  poolside,
+  posthog,
+  primeIntellect,
+  promisePay,
+  pulley,
+  pylon,
+  quanta,
+  quo,
+  r2,
+  radiantgraph,
+  railway,
+  raindropAi,
+  ramp,
+  ranger,
+  recTechnologies,
+  recallAi,
+  redQueenBio,
+  reducto,
+  reevo,
+  relace,
+  remofirst,
+  replicate,
+  replit,
+  resolveAi,
+  resolver,
+  response,
+  rivo,
+  roboflow,
+  rox,
+  runway,
+  safetykit,
+  sanity,
+  sauronSystems,
+  scaleAi,
+  scribe,
+  seedHealth,
+  senecaSystems,
+  sentientLabs,
+  serval,
+  sesameAi,
+  seso,
+  sfcompute,
+  sharpestminds,
+  shopify,
+  shortwave,
+  sierra,
+  skyhive,
+  slash,
+  snaptravel,
+  solaSecurity,
+  solidroad,
+  sonatic,
+  sonder,
+  sourcegraph,
+  span,
+  speakeasy,
+  sphere,
+  spiralDb,
+  stabilityAi,
+  stable,
+  stackai,
+  strada,
+  strideHealth,
+  stytch,
+  subbyx,
+  subframe,
+  subtleComputing,
+  subtrate,
+  succint,
+  suger,
+  suno,
+  supabase,
+  superhuman,
+  supermemory,
+  superpower,
+  surgeAi,
+  swae,
+  sway,
+  symbiotic,
+  symend,
+  tabnine,
+  tailor,
+  tako,
+  tandem,
+  tavus,
+  tealbook,
+  tempo,
+  tensormesh,
+  teraAi,
+  terradot,
+  terramera,
+  thatch,
+  theInteractionCompanyOfCalifornia,
+  things,
+  thinkingMachinesLab,
+  thinkingMachines,
+  tigereye,
+  tolans,
+  toma,
+  tome,
+  town,
+  trmLabs,
+  truemed,
+  truffleSecurity,
+  trunk,
+  twoDots,
+  twoTwoTwo,
+  typeface,
+  unbounce,
+  unify,
+  unlimitedIndustries,
+  unstructured,
+  untilLabs,
+  upwind,
+  validere,
+  vantageAnalytics,
+  vapi,
+  variant,
+  vercel,
+  vizcom,
+  voiceflow,
+  vozy,
+  wabi,
+  walrus,
+  warmer,
+  watershed,
+  welltheory,
+  willow,
+  wisprFlow,
+  wonder,
+  wordware,
+  workos,
+  worldLabs,
+  writer,
+  xai,
+  xanadu,
+  xpertsea,
+  yutori,
+  zedDev,
+  zeroentropy,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)
