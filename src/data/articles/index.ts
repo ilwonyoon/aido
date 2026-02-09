@@ -5,8 +5,12 @@ import { fastestSeedToSeriesB } from './content/fastest-seed-to-series-b';
 import { livekitVoiceAiInfrastructureDesign } from './content/livekit-voice-ai-infrastructure-design';
 import { delveAiComplianceDesignOpportunity } from './content/delve-ai-compliance-design-opportunity';
 import { anthropicDeepDiveDesignOpportunity } from './content/anthropic-deep-dive-design-opportunity';
+import { foundationStackForAiAgents } from './content/foundation-stack-for-ai-agents';
+import { riseOfVerticalAiAgents } from './content/rise-of-vertical-ai-agents';
 
 export const articles: Article[] = [
+  riseOfVerticalAiAgents,
+  foundationStackForAiAgents,
   anthropicDeepDiveDesignOpportunity,
   delveAiComplianceDesignOpportunity,
   livekitVoiceAiInfrastructureDesign,
