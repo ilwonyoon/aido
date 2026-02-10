@@ -374,6 +374,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [openRolesToggle, setOpenRolesToggle] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchExpanded, setSearchExpanded] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -753,18 +755,70 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       <div className="space-y-2 mb-6">
         {/* Row 1: Search + Filter chips */}
         <div className="flex items-center gap-1 overflow-x-auto overflow-y-hidden scrollbar-hide">
+          {/* Search: icon-only on mobile, inline input on desktop */}
           <div className="relative flex-shrink-0">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
-              <circle cx="11" cy="11" r="8"/>
-              <path d="m21 21-4.3-4.3"/>
-            </svg>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search..."
-              className="w-[140px] focus:w-[200px] transition-all bg-[var(--card)] border border-[var(--border)] rounded-full pl-8 pr-3 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
-            />
+            {/* Mobile: icon button or expanded input */}
+            <div className="md:hidden">
+              {searchExpanded ? (
+                <div className="flex items-center gap-1">
+                  <div className="relative">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="m21 21-4.3-4.3"/>
+                    </svg>
+                    <input
+                      ref={searchInputRef}
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
+                      placeholder="Search..."
+                      className="w-[180px] bg-[var(--card)] border border-[var(--accent)] rounded-full pl-8 pr-8 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none"
+                      autoFocus
+                    />
+                    {searchQuery && (
+                      <button
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={() => { setSearchQuery(''); searchInputRef.current?.focus(); }}
+                        className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
+                      >
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setSearchExpanded(true)}
+                  className={`flex items-center justify-center w-9 h-9 rounded-full border transition-colors ${
+                    searchQuery
+                      ? 'border-[var(--accent)] bg-[var(--card)]'
+                      : 'border-[var(--border)] bg-[var(--card)] hover:border-[var(--muted)]'
+                  }`}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--muted)]">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.3-4.3"/>
+                  </svg>
+                </button>
+              )}
+            </div>
+            {/* Desktop: always show input */}
+            <div className="hidden md:block relative">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search..."
+                className="w-[140px] focus:w-[200px] transition-all bg-[var(--card)] border border-[var(--border)] rounded-full pl-8 pr-3 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
+              />
+            </div>
           </div>
           <DropdownFilter
             label="Review Status"
