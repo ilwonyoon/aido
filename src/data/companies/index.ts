@@ -1,7 +1,7 @@
 import { Company } from '../types';
 
 import { anthropic } from './anthropic';
-import { leya } from './leya';
+import { legora } from './legora';
 import { granola } from './granola';
 import { pika } from './pika';
 import { elevenlabs } from './elevenlabs';
@@ -471,7 +471,7 @@ import { stytch } from './stytch';
 import { jackAndJill } from "./jack-and-jill";
 export const companies: Company[] = [
   anthropic,
-  leya,
+  legora,
   granola,
   pika,
   elevenlabs,
