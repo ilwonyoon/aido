@@ -368,7 +368,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [isMobile, setIsMobile] = useState(false);
-  const [reviewStatusFilter, setReviewStatusFilter] = useState('not_yet_reviewed');
+  const [reviewStatusFilter, setReviewStatusFilter] = useState('');
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [categoryFilter, setCategoryFilter] = useState<Category[]>([]);
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
@@ -526,9 +526,9 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     };
   }, [user, loading]);
 
-  // Auto-switch filter when user reviews a company from "Not Yet Reviewed"
+  // Auto-switch filter when user reviews a company (from unfiltered/all view)
   useEffect(() => {
-    if (reviewStatusFilter !== 'not_yet_reviewed') {
+    if (reviewStatusFilter !== '' && reviewStatusFilter !== 'all') {
       prevInterestStatusesRef.current = interestStatuses;
       return;
     }
@@ -614,7 +614,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!nameMatch && !descMatch && !hqMatch) return false;
       }
 
-      // Review Status Filter
+      // Review Status Filter (empty string or 'all' = show all)
       const status = interestStatuses[company.id];
       if (reviewStatusFilter === 'not_yet_reviewed' && status) return false;
       if (reviewStatusFilter === 'tier_0' && status !== 'tier_0') return false;
@@ -738,11 +738,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== 'not_yet_reviewed' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
+  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== '' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
 
   const clearFilters = () => {
     setSearchQuery('');
-    setReviewStatusFilter('not_yet_reviewed');
+    setReviewStatusFilter('');
     setFundingStageFilter([]);
     setCategoryFilter([]);
     setLocationFilter([]);
@@ -757,53 +757,56 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         <div className="flex items-center gap-1 overflow-x-auto overflow-y-hidden scrollbar-hide">
           {/* Search: icon-only on mobile, inline input on desktop */}
           <div className="relative flex-shrink-0">
-            {/* Mobile: icon button or expanded input */}
-            <div className="md:hidden">
-              {searchExpanded ? (
-                <div className="flex items-center gap-1">
-                  <div className="relative">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
-                      <circle cx="11" cy="11" r="8"/>
-                      <path d="m21 21-4.3-4.3"/>
+            {/* Mobile: animated icon → input expand */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => {
+                  if (!searchExpanded) {
+                    setSearchExpanded(true);
+                    setTimeout(() => searchInputRef.current?.focus(), 200);
+                  }
+                }}
+                className={`flex items-center justify-center w-9 h-9 rounded-full border transition-all duration-200 ${
+                  searchExpanded ? 'scale-0 w-0 h-0 opacity-0 border-0 p-0' : 'scale-100 opacity-100'
+                } ${
+                  searchQuery
+                    ? 'border-[var(--accent)] bg-[var(--card)]'
+                    : 'border-[var(--border)] bg-[var(--card)] hover:border-[var(--muted)]'
+                }`}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--muted)]">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.3-4.3"/>
+                </svg>
+              </button>
+              <div className={`relative overflow-hidden transition-all duration-200 ease-out ${
+                searchExpanded ? 'w-[180px] opacity-100' : 'w-0 opacity-0'
+              }`}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.3-4.3"/>
+                </svg>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
+                  placeholder="Search..."
+                  className="w-full bg-[var(--card)] border border-[var(--accent)] rounded-full pl-8 pr-8 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none"
+                />
+                {searchQuery && (
+                  <button
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => { setSearchQuery(''); searchInputRef.current?.focus(); }}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
+                  >
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                     </svg>
-                    <input
-                      ref={searchInputRef}
-                      type="text"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
-                      placeholder="Search..."
-                      className="w-[180px] bg-[var(--card)] border border-[var(--accent)] rounded-full pl-8 pr-8 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none"
-                      autoFocus
-                    />
-                    {searchQuery && (
-                      <button
-                        onMouseDown={(e) => e.preventDefault()}
-                        onClick={() => { setSearchQuery(''); searchInputRef.current?.focus(); }}
-                        className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
-                      >
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                        </svg>
-                      </button>
-                    )}
-                  </div>
-                </div>
-              ) : (
-                <button
-                  onClick={() => setSearchExpanded(true)}
-                  className={`flex items-center justify-center w-9 h-9 rounded-full border transition-colors ${
-                    searchQuery
-                      ? 'border-[var(--accent)] bg-[var(--card)]'
-                      : 'border-[var(--border)] bg-[var(--card)] hover:border-[var(--muted)]'
-                  }`}
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--muted)]">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="m21 21-4.3-4.3"/>
-                  </svg>
-                </button>
-              )}
+                  </button>
+                )}
+              </div>
             </div>
             {/* Desktop: always show input */}
             <div className="hidden md:block relative">
@@ -828,7 +831,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
               { value: 'tier_0', label: '🥇 Tier 0' },
               { value: 'tier_1', label: '🥈 Tier 1' },
               { value: 'not_interested', label: 'Not Interested' },
-              { value: 'all', label: 'All' },
             ]}
             onChange={setReviewStatusFilter}
           />
