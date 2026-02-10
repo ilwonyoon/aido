@@ -757,56 +757,49 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         <div className="flex items-center gap-1 overflow-x-auto overflow-y-hidden scrollbar-hide">
           {/* Search: icon-only on mobile, inline input on desktop */}
           <div className="relative flex-shrink-0">
-            {/* Mobile: animated icon → input expand */}
-            <div className="md:hidden flex items-center">
-              <button
-                onClick={() => {
-                  if (!searchExpanded) {
-                    setSearchExpanded(true);
-                    setTimeout(() => searchInputRef.current?.focus(), 200);
-                  }
-                }}
-                className={`flex items-center justify-center w-9 h-9 rounded-full border transition-all duration-200 ${
-                  searchExpanded ? 'scale-0 w-0 h-0 opacity-0 border-0 p-0' : 'scale-100 opacity-100'
-                } ${
-                  searchQuery
-                    ? 'border-[var(--accent)] bg-[var(--card)]'
-                    : 'border-[var(--border)] bg-[var(--card)] hover:border-[var(--muted)]'
+            {/* Mobile: single container, width animates from icon-size to full input */}
+            <div
+              className={`md:hidden relative overflow-hidden rounded-full bg-[var(--card)] border transition-all duration-200 ease-out cursor-text ${
+                searchExpanded
+                  ? 'w-[180px] border-[var(--accent)]'
+                  : searchQuery
+                    ? 'w-9 border-[var(--accent)]'
+                    : 'w-9 border-[var(--border)]'
+              }`}
+              style={{ height: '36px' }}
+              onClick={() => {
+                if (!searchExpanded) {
+                  setSearchExpanded(true);
+                  setTimeout(() => searchInputRef.current?.focus(), 200);
+                }
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-[11px] top-1/2 -translate-y-1/2 text-[var(--muted)] pointer-events-none">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
+                placeholder="Search..."
+                className={`absolute inset-0 bg-transparent pl-8 pr-8 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none transition-opacity duration-200 ${
+                  searchExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--muted)]">
-                  <circle cx="11" cy="11" r="8"/>
-                  <path d="m21 21-4.3-4.3"/>
-                </svg>
-              </button>
-              <div className={`relative overflow-hidden transition-all duration-200 ease-out ${
-                searchExpanded ? 'w-[180px] opacity-100' : 'w-0 opacity-0'
-              }`}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
-                  <circle cx="11" cy="11" r="8"/>
-                  <path d="m21 21-4.3-4.3"/>
-                </svg>
-                <input
-                  ref={searchInputRef}
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
-                  placeholder="Search..."
-                  className="w-full bg-[var(--card)] border border-[var(--accent)] rounded-full pl-8 pr-8 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none"
-                />
-                {searchQuery && (
-                  <button
-                    onMouseDown={(e) => e.preventDefault()}
-                    onClick={() => { setSearchQuery(''); searchInputRef.current?.focus(); }}
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
-                  >
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
-                  </button>
-                )}
-              </div>
+              />
+              {searchQuery && searchExpanded && (
+                <button
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={(e) => { e.stopPropagation(); setSearchQuery(''); searchInputRef.current?.focus(); }}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                  </svg>
+                </button>
+              )}
             </div>
             {/* Desktop: always show input */}
             <div className="hidden md:block relative">
