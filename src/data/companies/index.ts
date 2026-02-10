@@ -469,6 +469,7 @@ import { nowadays } from './nowadays';
 import { alix } from './alix';
 import { stytch } from './stytch';
 import { jackAndJill } from "./jack-and-jill";
+import { liquidAi } from './liquid-ai';
 export const companies: Company[] = [
   anthropic,
   legora,
@@ -873,6 +874,7 @@ export const companies: Company[] = [
   alix,
   stytch,
   jackAndJill,
+  liquidAi,
   h2oAi,
   benchsci,
   voiceflow,
