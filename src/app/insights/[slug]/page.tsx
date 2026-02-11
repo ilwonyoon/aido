@@ -189,6 +189,37 @@ export default async function ArticlePage({
         <ArticleVisualizations slug={article.slug} content={cleanContent} />
       </div>
 
+      {/* Sources */}
+      {article.sources && article.sources.length > 0 && (
+        <aside className="mt-12 pt-8 border-t border-[var(--border)]">
+          <h2 className="section-title mb-4">Sources</h2>
+          <div className="space-y-2">
+            {article.sources.map((source, i) => (
+              <div key={i} className="text-sm">
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent-light)] hover:underline"
+                >
+                  {source.title} ↗
+                </a>
+                {(source.publisher || source.date) && (
+                  <span className="text-[var(--muted)] ml-2">
+                    {source.publisher}
+                    {source.publisher && source.date && ' · '}
+                    {source.date && new Date(source.date).toLocaleDateString('en-US', {
+                      month: 'short',
+                      year: 'numeric',
+                    })}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </aside>
+      )}
+
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
         <aside className="mt-12 pt-8 border-t border-[var(--border)]">
