@@ -28,6 +28,35 @@
 
 ## Design System
 
+**구조**: 하나의 통합 시스템, 두 개 컨텍스트.
+- `globals.css` `:root` — 모든 CSS 변수 (colors, typography, content tokens)
+- `tokens.css` — primitive + semantic tokens (control heights, AI levels, text utilities)
+- `tokens.ts` — TypeScript helpers (aiLevels, badge variants)
+
+### MUST: 새 기능 개발 시 규칙
+
+1. **기존 토큰/변수 사용 필수**: `var(--foreground)`, `var(--card)` 등 CSS 변수 직접 사용. 하드코딩 금지.
+2. **기존 컴포넌트 재사용 필수**: 새 UI 만들기 전에 `src/components/ui/` 확인.
+3. **없으면 컴포넌트 생성**: 2회 이상 사용될 패턴은 `src/components/ui/`에 재사용 가능한 컴포넌트로 추출.
+4. **Content context 토큰**: Article/About 페이지의 spacing/sizing은 `--content-*` 토큰 사용.
+
+### UI 컴포넌트 (`src/components/ui/`)
+
+| Component | File | 용도 |
+|-----------|------|------|
+| Badge | `Badge.tsx` | 상태/카테고리 뱃지 (default, accent, success, warning) |
+| Button | `Button.tsx` | 액션 버튼 (primary, secondary, ghost) |
+| Card | `Card.tsx` | 카드 컨테이너 |
+| CitationChip | `CitationChip.tsx` | 인라인 소스 출처 링크 (article 내) |
+| Link | `Link.tsx` | 내비게이션 링크 |
+
+### Contexts
+
+| Context | 대상 페이지 | 특징 |
+|---------|-------------|------|
+| **Information** | Company List, Detail, Jobs, Requests | Dense UI, interactive, 4px grid |
+| **Content** | Articles, About | Long-form, `--content-*` tokens, relaxed line-height |
+
 ### Color usage rules
 - **Accent**: primary actions, key highlights, active states only
 - **Success**: positive status (e.g., roles open, good signal)
@@ -44,11 +73,6 @@
 - **Section gap**: use consistent vertical spacing between major blocks
 - **Card padding**: standard `p-5` for all cards
 - **List spacing**: tight but readable vertical rhythm for rows
-
-### Component patterns
-- **Card**: standard container for grouped content
-- **Badge**: status + category indicator
-- **Button**: only for actions, not for navigation
 
 ### Article Typography (`.article-content`)
 
