@@ -6,6 +6,7 @@ import { companies } from '@/data/companies';
 import { Company } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { CompanyLogo } from '@/components/CompanyLogo';
+import { Badge } from '@/components/ui/Badge';
 import { DesignFocus } from '@/components/DesignFocus';
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -213,12 +214,9 @@ function CompanyListRow({ company }: { company: Company }) {
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <h3 className="font-semibold text-[var(--foreground)]">{company.name}</h3>
-              <span
-                className={`badge ${config.badgeClass} flex-shrink-0`}
-                style={{ fontSize: '10px', padding: '1px 6px' }}
-              >
+              <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
-              </span>
+              </Badge>
               <span className="text-xs text-[var(--muted)]">
                 {company.headquarters} &middot; {company.stage}
                 {company.totalFunding && <> &middot; {company.totalFunding}</>}
@@ -317,12 +315,9 @@ function CompanyCard({ company }: { company: Company }) {
           <div className="min-w-0">
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-[var(--foreground)] truncate">{company.name}</h3>
-              <span
-                className={`badge ${config.badgeClass} flex-shrink-0`}
-                style={{ fontSize: '10px', padding: '1px 6px' }}
-              >
+              <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
-              </span>
+              </Badge>
             </div>
           </div>
         </div>

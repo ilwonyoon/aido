@@ -58,24 +58,28 @@ export const aiLevels = {
     label: 'AI-Native',
     color: colors.success,
     badgeClass: 'badge-success',
+    badgeVariant: 'success' as const,
     textClass: 'text-[var(--success)]',
   },
   B: {
     label: 'AI-Core',
     color: colors.accentLight,
     badgeClass: 'badge-accent',
+    badgeVariant: 'accent' as const,
     textClass: 'text-[var(--accent-light)]',
   },
   C: {
     label: 'AI Feature',
     color: colors.foreground,
     badgeClass: 'badge',
+    badgeVariant: 'default' as const,
     textClass: 'text-[var(--foreground)]',
   },
   D: {
     label: 'AI-Assisted',
     color: colors.muted,
     badgeClass: 'badge',
+    badgeVariant: 'default' as const,
     textClass: 'text-[var(--muted)]',
   },
 } as const;

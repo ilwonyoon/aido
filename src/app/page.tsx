@@ -8,6 +8,7 @@ import { CompanyFilters } from '@/components/CompanyFilters';
 import { CompanyDetail } from '@/components/CompanyDetail';
 import { getCompanyById } from '@/data/companies';
 import { Company } from '@/data/types';
+import { IconButton } from '@/components/ui/Button';
 
 // Memoized company list to prevent re-render
 const MemoizedCompanyList = memo(function MemoizedCompanyList({
@@ -281,20 +282,22 @@ function HomePageContent() {
         >
           {/* Header - Sticky */}
           <div className="sticky top-0 z-[110] h-14 bg-[var(--background)] border-b border-[var(--border)] flex items-center px-4 gap-3">
-            <button
+            <IconButton
+              size="sm"
+              label="Close (ESC)"
+              className="-ml-2"
               onClick={closePanel}
-              className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2 -ml-2"
-              title="Close (ESC)"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
-            </button>
-            <button
+            </IconButton>
+            <IconButton
+              size="sm"
+              label={isFullWidth ? "Exit full width" : "Expand to full width"}
+              className="hidden md:block"
               onClick={toggleFullWidth}
-              className="hidden md:block text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
-              title={isFullWidth ? "Exit full width" : "Expand to full width"}
             >
               {isFullWidth ? (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -311,7 +314,7 @@ function HomePageContent() {
                   <line x1="3" y1="21" x2="10" y2="14" />
                 </svg>
               )}
-            </button>
+            </IconButton>
             <div className="flex-1 min-w-0">
               <h2 className={`text-sm font-semibold truncate transition-opacity duration-200 ${
                 showCompanyNameInHeader ? 'opacity-100' : 'opacity-0'
@@ -320,17 +323,17 @@ function HomePageContent() {
               </h2>
             </div>
             <div className="relative">
-              <button
+              <IconButton
+                size="sm"
+                label="Share company page"
                 onClick={handleShare}
-                className="text-[var(--muted)] hover:text-[var(--foreground)] transition-colors p-2"
-                title="Share company page"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
                   <polyline points="16 6 12 2 8 6" />
                   <line x1="12" y1="2" x2="12" y2="15" />
                 </svg>
-              </button>
+              </IconButton>
               {showCopied && (
                 <div className="absolute right-0 top-full mt-2 px-3 py-2 text-xs bg-[var(--card)] border border-[var(--border)] rounded-lg whitespace-nowrap shadow-lg animate-toastIn">
                   🔗 Link copied to your clipboard!

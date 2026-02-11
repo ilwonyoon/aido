@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { DropdownFilter } from '@/components/ui/Dropdown';
+import { Button } from '@/components/ui/Button';
 
 export type MacroTypeFilter = 'all' | 'funding' | 'product_launch' | 'leadership' | 'acquisition' | 'layoff' | 'partnership';
 export type ImpactFilter = 'all' | '1' | '2' | '3';
@@ -51,12 +52,9 @@ export function MacroFilters({
       />
 
       {hasActiveFilters && (
-        <button
-          onClick={onClear}
-          className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-        >
+        <Button variant="ghost" size="sm" onClick={onClear}>
           Clear
-        </button>
+        </Button>
       )}
     </div>
   );

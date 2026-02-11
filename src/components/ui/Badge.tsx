@@ -7,12 +7,13 @@ export interface BadgeProps {
   variant?: BadgeVariant;
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export function Badge({ variant = 'default', children, className = '' }: BadgeProps) {
+export function Badge({ variant = 'default', children, className = '', style }: BadgeProps) {
   const variantClass = components.badge.variants[variant];
   return (
-    <span className={`${variantClass} ${className}`.trim()}>
+    <span className={`${variantClass} ${className}`.trim()} style={style}>
       {children}
     </span>
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import { Component, ReactNode } from 'react';
+import { Button } from '@/components/ui/Button';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -40,12 +41,12 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
             <p className="text-[var(--muted)] mb-6">
               We're sorry for the inconvenience. Please try refreshing the page.
             </p>
-            <button
+            <Button
+              variant="primary"
               onClick={() => this.setState({ hasError: false, error: undefined })}
-              className="px-4 py-2 bg-[var(--accent)] text-white rounded hover:opacity-90 transition-opacity"
             >
               Try again
-            </button>
+            </Button>
           </div>
         </div>
       );
