@@ -245,7 +245,7 @@ if [ "${PICK_RESULT}" = "NONE" ]; then
   # Still push Phase 1 if there were results
   if [ ${REQUEST_COUNT} -gt 0 ]; then
     cd "${WORKTREE_DIR}"
-    ${GIT} push origin "${BRANCH}" 2>/dev/null || true
+    ${GIT} push --force-with-lease origin "${BRANCH}" 2>/dev/null || true
   fi
 
   log "=== Daily Research Pipeline COMPLETE ==="
@@ -341,7 +341,10 @@ ${GIT} commit -m "${DATE_SHORT} | deep-research: ${COMPANY_NAME}
 Auto-generated deep research + article for ${COMPANY_NAME} (Tier ${TIER}).
 Pipeline: daily-research.sh (split invocation)"
 
-${GIT} push origin "${BRANCH}"
+# Force push needed: worktree was reset to origin/main, so the branch diverges
+# from the remote after previous PRs are merged. Safe because this branch is
+# pipeline-only and the old commits are already merged to main.
+${GIT} push --force-with-lease origin "${BRANCH}"
 
 # Create or update PR
 log "Creating/updating PR..."
