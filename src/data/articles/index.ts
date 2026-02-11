@@ -15,8 +15,10 @@ import { replitDeepDiveVibeCodingDesign } from './content/replit-deep-dive-vibe-
 import { cursorDeepDiveDesignOpportunity } from './content/cursor-deep-dive-fastest-growing-saas-design';
 import { gammaDeepDive100mArr52People } from './content/gamma-deep-dive-100m-arr-52-people';
 import { harveyDeepDiveLegalAiDesignOpportunity } from './content/harvey-deep-dive-legal-ai-design-opportunity';
+import { listenLabsDeepDiveFoundingDesignerZeroToOne } from './content/listen-labs-deep-dive-founding-designer-zero-to-one';
 
 export const articles: Article[] = [
+  listenLabsDeepDiveFoundingDesignerZeroToOne,
   harveyDeepDiveLegalAiDesignOpportunity,
   gammaDeepDive100mArr52People,
   cursorDeepDiveDesignOpportunity,
