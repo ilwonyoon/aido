@@ -115,12 +115,28 @@ The #1 cause of deployment issues is deploying without the latest `main`. The au
 6. **Run `npm run build`** to verify your changes compile
 7. **Create PRs to main** following the deployment workflow above
 
-## Branch Rules
+## Git Worktree 환경 (2026-02-10)
 
-- Work on `company-researching` branch
+로컬 환경이 git worktree로 분리되어 있습니다:
+
+| 디렉토리 | 브랜치 | 용도 |
+|-----------|--------|------|
+| `aido/` | `main` | UI/배포 (수동) |
+| `aido-codex/` | `company-researching` | Codex 데이터 리서치 |
+| `aido-daily-research/` | `daily-deep-research` | 자동 딥리서치 파이프라인 |
+
+### 브랜치 규칙
+- `company-researching` 브랜치에서만 작업
+- `daily-deep-research` 브랜치는 건드리지 말 것 — 자동 파이프라인 전용
+- `scripts/daily-research-log.json` 수정 금지 — 파이프라인이 관리
 - Always commit your work before finishing
 - When ready to deploy: merge main → verify build → push → create PR
 - Do NOT force push or rebase — use merge only
+
+### 자동 머지 조건
+- PR이 `company-researching` 또는 `daily-deep-research`에서 온 것
+- 변경 파일이 `src/data/`, `public/og-images/`, `scripts/daily-research-log.json`에만 해당
+- Firebase PR 빌드가 성공한 경우
 
 ## Auto-Sync (Background)
 
