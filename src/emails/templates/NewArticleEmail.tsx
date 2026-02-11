@@ -2,12 +2,12 @@ import {
   Body,
   Button,
   Container,
-  Head,
   Heading,
   Html,
   Preview,
   Text,
 } from '@react-email/components';
+import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
 import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
@@ -31,7 +31,7 @@ export function NewArticleEmail({
 }: Partial<NewArticleEmailProps> = {}) {
   return (
     <Html>
-      <Head />
+      <EmailHead />
       <Preview>{title}</Preview>
       <Body style={emailBodyStyle}>
         <Container style={emailContainerStyle}>

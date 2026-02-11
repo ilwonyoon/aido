@@ -2,12 +2,12 @@ import {
   Body,
   Button,
   Container,
-  Head,
   Heading,
   Html,
   Preview,
   Text,
 } from '@react-email/components';
+import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
 import { JobCard, type JobCardProps } from '../components/JobCard';
@@ -58,7 +58,7 @@ export function NewJobsDigest({
 
   return (
     <Html>
-      <Head />
+      <EmailHead />
       <Preview>{previewText}</Preview>
       <Body style={emailBodyStyle}>
         <Container style={emailContainerStyle}>

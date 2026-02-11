@@ -2,13 +2,13 @@ import {
   Body,
   Button,
   Container,
-  Head,
   Heading,
   Html,
   Link,
   Preview,
   Text,
 } from '@react-email/components';
+import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
 import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
@@ -24,7 +24,7 @@ export function WelcomeEmail({
 }: Partial<WelcomeEmailProps> = {}) {
   return (
     <Html>
-      <Head />
+      <EmailHead />
       <Preview>Welcome to AIDO — AI Design Opportunities</Preview>
       <Body style={emailBodyStyle}>
         <Container style={emailContainerStyle}>

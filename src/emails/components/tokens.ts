@@ -18,7 +18,7 @@ export const colors = {
 } as const;
 
 export const fonts = {
-  sans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  sans: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   mono: '"JetBrains Mono", "Geist Mono", monospace',
 } as const;
 
