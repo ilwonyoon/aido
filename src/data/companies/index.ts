@@ -46,7 +46,6 @@ import { bindwell } from './bindwell';
 import { blackbirdLabs } from './blackbird-labs';
 import { blacksmith } from './blacksmith';
 import { blazeAi } from './blaze-ai';
-import { blok } from './blok';
 import { blossom } from './blossom';
 import { bluedot } from './bluedot';
 import { botpress } from './botpress';
@@ -529,7 +528,6 @@ export const companies: Company[] = [
   blackbirdLabs,
   blacksmith,
   blazeAi,
-  blok,
   blossom,
   bluedot,
   botpress,
