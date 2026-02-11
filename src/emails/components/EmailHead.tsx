@@ -26,37 +26,38 @@ const responsiveStyles = `
   }
 `;
 
+// Each weight MUST use a different font file URL.
+// Using the same file for all weights causes faux-bold (browser synthesis),
+// which makes text look much heavier than the actual weight.
+const fontUrls = {
+  400: 'https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-400-normal.woff2',
+  500: 'https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-500-normal.woff2',
+  600: 'https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-600-normal.woff2',
+} as const;
+
 export function EmailHead() {
   return (
     <Head>
       {/* JetBrains Mono — primary font (matches AIDO site) */}
+      {/* Each weight loads a SEPARATE font file for correct rendering */}
       <Font
         fontFamily="JetBrains Mono"
         fallbackFontFamily="monospace"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2',
-          format: 'woff2',
-        }}
+        webFont={{ url: fontUrls[400], format: 'woff2' }}
         fontWeight={400}
         fontStyle="normal"
       />
       <Font
         fontFamily="JetBrains Mono"
         fallbackFontFamily="monospace"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2',
-          format: 'woff2',
-        }}
+        webFont={{ url: fontUrls[500], format: 'woff2' }}
         fontWeight={500}
         fontStyle="normal"
       />
       <Font
         fontFamily="JetBrains Mono"
         fallbackFontFamily="monospace"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2',
-          format: 'woff2',
-        }}
+        webFont={{ url: fontUrls[600], format: 'woff2' }}
         fontWeight={600}
         fontStyle="normal"
       />

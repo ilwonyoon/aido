@@ -15,8 +15,10 @@
 export const colors = {
   background: '#000000',
   foreground: '#ededed',
-  textBody: 'rgba(255, 255, 255, 0.82)',
-  textSecondary: 'rgba(255, 255, 255, 0.78)',
+  // rgba(255,255,255,0.82) on #000 = #d1d1d1 — email-safe hex equivalent
+  textBody: '#d1d1d1',
+  // rgba(255,255,255,0.78) on #000 = #c7c7c7
+  textSecondary: '#c7c7c7',
   muted: '#888888',
   mutedDim: '#444444',
   border: '#333333',
