@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import { ThemeToggle } from './ThemeToggle';
 import { AuthButton } from './AuthButton';
+import { IconButton } from '@/components/ui/Button';
 
 export function Navigation() {
   const pathname = usePathname();
@@ -47,10 +48,11 @@ export function Navigation() {
         <Link href="/" className="font-semibold tracking-tight">
           AIDO
         </Link>
-        <button
-          className="lg:hidden p-2"
+        <IconButton
+          size="sm"
+          label="Open menu"
+          className="lg:hidden"
           onClick={() => setIsMobileMenuOpen(true)}
-          aria-label="Open menu"
           data-tour="nav-menu-mobile"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -58,7 +60,7 @@ export function Navigation() {
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
-        </button>
+        </IconButton>
         <div className="hidden lg:flex items-center gap-4 text-sm">
           <Link
             href="/about"
@@ -136,16 +138,16 @@ export function Navigation() {
               <div className="font-semibold tracking-tight text-lg">AIDO</div>
               <div className="flex items-center gap-2">
                 <ThemeToggle />
-                <button
+                <IconButton
+                  size="sm"
+                  label="Close menu"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2"
-                  aria-label="Close menu"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <line x1="18" y1="6" x2="6" y2="18" />
                     <line x1="6" y1="6" x2="18" y2="18" />
                   </svg>
-                </button>
+                </IconButton>
               </div>
             </div>
 

@@ -22,13 +22,13 @@ function WorkTypeSection({
   level: 'high' | 'medium' | 'low';
   tasks: string[];
 }) {
-  const colors = { high: 'badge-success', medium: 'badge-accent', low: 'badge' };
+  const variants: Record<string, 'success' | 'accent' | 'default'> = { high: 'success', medium: 'accent', low: 'default' };
   const labels = { high: 'High', medium: 'Medium', low: 'Low' };
   return (
     <div className="mb-6 last:mb-0">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-medium">{title}</h3>
-        <span className={`badge ${colors[level]}`}>{labels[level]}</span>
+        <Badge variant={variants[level]}>{labels[level]}</Badge>
       </div>
       <ul className="space-y-2">
         {tasks.map((task, i) => (
@@ -410,14 +410,13 @@ export function CompanyDetail({ company }: { company: Company }) {
                     <div className="card p-5">
                       <h3 className="font-medium mb-3 flex items-center gap-2">
                         Current Growth
-                        <span className={`badge ${
-                          company.growthMetrics.stage === 'hypergrowth' ? 'badge-success' :
-                          company.growthMetrics.stage === 'high-growth' ? 'badge-accent' :
-                          company.growthMetrics.stage === 'steady' ? 'badge' :
-                          'badge'
-                        }`}>
+                        <Badge variant={
+                          company.growthMetrics.stage === 'hypergrowth' ? 'success' :
+                          company.growthMetrics.stage === 'high-growth' ? 'accent' :
+                          'default'
+                        }>
                           {company.growthMetrics.stage}
-                        </span>
+                        </Badge>
                       </h3>
 
                       <div className="space-y-3">

@@ -8,6 +8,7 @@ import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { useAuth } from '@/contexts/AuthContext';
 import { useIsTourActive } from '@/contexts/TourContext';
 import { CompanyLogo } from './CompanyLogo';
+import { Badge } from '@/components/ui/Badge';
 import { DesignFocus } from './DesignFocus';
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -80,16 +81,13 @@ export const CompanyListRow = memo(function CompanyListRow({
             <div className="flex items-center gap-2 flex-wrap">
               <h3 className="font-semibold text-[var(--foreground)]">{company.name}</h3>
               {pinnedLabel && (
-                <span className="badge badge-accent" style={{ fontSize: '10px', padding: '1px 6px' }}>
+                <Badge variant="accent" className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                   {pinnedLabel}
-                </span>
+                </Badge>
               )}
-              <span
-                className={`badge ${config.badgeClass} flex-shrink-0`}
-                style={{ fontSize: '10px', padding: '1px 6px' }}
-              >
+              <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
-              </span>
+              </Badge>
               <span className="text-xs text-[var(--muted)] truncate">
                 {company.headquarters} &middot; {company.stage}
                 {company.totalFunding && company.totalFunding !== 'Unknown' && <> &middot; {company.totalFunding}</>}
@@ -230,16 +228,13 @@ export const CompanyCard = memo(function CompanyCard({
             <div className="flex items-center gap-2 min-w-0">
               <h3 className="font-semibold text-[var(--foreground)] truncate min-w-[60px]">{company.name}</h3>
               {pinnedLabel && (
-                <span className="badge badge-accent flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
+                <Badge variant="accent" className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                   {pinnedLabel}
-                </span>
+                </Badge>
               )}
-              <span
-                className={`badge ${config.badgeClass} flex-shrink-0`}
-                style={{ fontSize: '10px', padding: '1px 6px' }}
-              >
+              <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
-              </span>
+              </Badge>
             </div>
           </div>
         </div>

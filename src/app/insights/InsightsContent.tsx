@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { Article } from '@/data/articles/types';
 import { ArticleCategory, ARTICLE_CATEGORY_LABELS } from '@/data/articles/types';
 import { Card } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/Badge';
 import { ViewCounter } from '@/components/article/ViewCounter';
 
 interface InsightsContentProps {
@@ -75,11 +76,11 @@ export function InsightsContent({ articles }: InsightsContentProps) {
         {filteredArticles.map((article) => (
           <Card key={article.slug} href={`/insights/${article.slug}`} className="p-6">
             <div className="flex items-center gap-2 mb-3">
-              <span className="badge badge-accent text-xs">
+              <Badge variant="accent" className="text-xs">
                 {ARTICLE_CATEGORY_LABELS[article.category]}
-              </span>
+              </Badge>
               {article.featured && (
-                <span className="badge badge-success text-xs">Featured</span>
+                <Badge variant="success" className="text-xs">Featured</Badge>
               )}
             </div>
             <h2 className="text-2xl font-semibold mb-2">{article.title}</h2>

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
 import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
 import type { BadgeVariant } from '@/design/tokens';
 import {
   createCompanyRequest,
@@ -139,17 +140,13 @@ export default function RequestsPage() {
               className="w-full bg-[var(--background)] border border-[var(--border)] rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-[var(--accent)]"
             />
           </div>
-          <button
+          <Button
             type="submit"
+            variant="primary"
             disabled={submitting || !formData.companyName.trim()}
-            className="px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
-            style={{
-              background: 'var(--accent)',
-              color: 'var(--background)',
-            }}
           >
             {submitting ? 'Submitting...' : 'Submit Request'}
-          </button>
+          </Button>
         </div>
 
         {message && (
