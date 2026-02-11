@@ -37,7 +37,7 @@ jobs:
 
           # Safety check: only auto-merge if ONLY data files changed
           CHANGED=$(gh pr diff "$PR_NUMBER" --name-only)
-          NON_DATA=$(echo "$CHANGED" | grep -vE '^(src/data/|public/og-images/)' || true)
+          NON_DATA=$(echo "$CHANGED" | grep -vE '^(src/data/|public/og-images/|scripts/daily-research-log\.json)' || true)
 
           if [ -n "$NON_DATA" ]; then
             echo "PR #$PR_NUMBER contains non-data file changes:"
