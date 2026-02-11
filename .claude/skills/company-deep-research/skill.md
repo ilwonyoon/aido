@@ -804,24 +804,24 @@ Options:
 
 #### Article Content Requirements
 
-1. **In-text citations**: 주요 데이터 포인트 옆에 출처 표기
+1. **Inline citation chips**: 주요 데이터 포인트 옆에 `[↗ Publisher](url)` 형식으로 출처 표기. MarkdownRenderer가 이 패턴을 감지하여 칩 형태로 렌더링함.
+
+   **CRITICAL**: 링크 텍스트는 반드시 `↗ ` (화살표 + 공백)으로 시작해야 citation chip으로 인식됨.
+
    ```markdown
-   Anthropic reached $7B ARR in October 2025, up from $1B earlier that year
-   ([TechCrunch](https://techcrunch.com/...)).
+   Anthropic reached $7B ARR in October 2025 [↗ The Information](https://www.theinformation.com/articles/anthropic-revenue-7b), up from $1B earlier that year [↗ TechCrunch](https://techcrunch.com/...).
    ```
 
-2. **Sources section at end**: 아티클 마지막에 전체 소스 리스트
-   ```markdown
-   ---
+   **렌더링 결과**: 텍스트 옆에 `[The Information ↗]` 칩이 인라인으로 표시됨.
 
-   ## Sources
+   **Citation 삽입 기준**:
+   - 구체적 숫자 (ARR, valuation, funding, 직원 수 등)
+   - 인용문 (CEO 발언, 인터뷰 등)
+   - 특정 이벤트 (Series B 발표, 제품 출시 등)
+   - 경쟁사 비교 데이터
+   - 일반적 사실이나 의견은 citation 불필요
 
-   - [Anthropic raises $2B at $60B valuation](https://techcrunch.com/...) — TechCrunch, Sept 2025
-   - [Crunchbase: Anthropic Company Profile](https://crunchbase.com/organization/anthropic) — Crunchbase
-   - [Claude reaches 200M weekly users](https://anthropic.com/blog/...) — Anthropic Blog, Oct 2025
-   ```
-
-3. **Article TypeScript file**: `sources` 필드에 모든 출처 배열로 포함
+2. **Article TypeScript file**: `sources` 필드에 모든 출처 배열로 포함 (하단 Sources 섹션 렌더링용)
    ```typescript
    sources: [
      {
@@ -833,6 +833,8 @@ Options:
      // ... more sources
    ],
    ```
+
+3. **Markdown content에 `## Sources` 섹션은 넣지 말 것** — `sources` 배열이 페이지 하단에 자동으로 렌더링됨
 
 #### Minimum Source Requirements
 
