@@ -526,15 +526,29 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - `app/company/[id]/page.tsx`: Dynamic metadata
 - `SEO_AEO_PLAN.md`: 전체 SEO 전략
 
-### 자동화 파이프라인 (운영 중)
+### 자동화 파이프라인 (안정화 진행 중)
+
+**⚠️ 현재 상태**: 파이프라인이 안정적으로 돌아가지 않음. 3회 실행 중 1회 실패(Cursor timeout), 1회 불완전(Lovable context overflow). 2026-02-11에 `--max-turns` + network warmup 패치 적용. 이후 결과 모니터링 필요.
 
 **Daily Research Pipeline** (`scripts/daily-research.sh`):
-- macOS launchd로 매일 자정 실행
+- macOS launchd로 매일 자정 실행 (`~/Library/LaunchAgents/com.aido.daily-research.plist`)
 - Git worktree 분리 (`aido-daily-research/` → `daily-deep-research` 브랜치)
-- Phase 1: 유저 요청 회사 리서치 (company-researcher)
-- Phase 2: Tier 0/1 회사 딥 리서치 (company-deep-research)
-- `--max-turns` 플래그로 context overflow 방지
+- Phase 1: 유저 요청 회사 리서치 (`/company-researcher`, 30분 timeout, `--max-turns 30`)
+- Phase 2: Tier 0/1 회사 딥 리서치 (`/company-deep-research`, 45분 timeout, `--max-turns 50`)
 - 완료 → PR 생성 → auto-merge → auto-deploy
+
+**과거 이슈 & 수정 내역**:
+| 날짜 | 회사 | 문제 | 원인 | 수정 |
+|------|------|------|------|------|
+| Feb 9 | Cursor | 45분 timeout, 파일 미생성 | git stash/checkout 방식이 느림 | worktree 모드로 전환 |
+| Feb 11 | Lovable | "Prompt is too long" exit code 1 | context window overflow | `--max-turns 50` 추가 |
+| Feb 11 | Lovable | "Pre-flight check taking longer" | launchd 환경에서 네트워크 미준비 | `wait_for_network()` 추가 |
+
+**로그 파일**:
+- 실행 기록: `scripts/daily-research-log.json`
+- 상세 로그: `scripts/daily-research-output.log`
+- launchd stdout: `scripts/launchd-stdout.log`
+- launchd stderr: `scripts/launchd-stderr.log`
 
 **GitHub Actions 자동화**:
 - `sync-branches.yml`: main push → company-researching 자동 sync
