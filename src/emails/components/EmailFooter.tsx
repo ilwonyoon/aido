@@ -1,4 +1,5 @@
 import { Hr, Link, Section, Text } from '@react-email/components';
+import { colors, fonts, typeScale, fontWeight } from './tokens';
 
 interface EmailFooterProps {
   readonly unsubscribeUrl: string;
@@ -22,26 +23,30 @@ export function EmailFooter({ unsubscribeUrl }: EmailFooterProps) {
 }
 
 const dividerStyle: React.CSSProperties = {
-  borderColor: '#333333',
+  borderColor: colors.border,
   margin: '32px 0 16px 0',
 };
 
+// xs scale: 12px, lh 1.5
 const footerTextStyle: React.CSSProperties = {
-  fontSize: '12px',
-  color: '#888888',
-  lineHeight: '1.4',
+  fontSize: typeScale.xs.fontSize,
+  lineHeight: typeScale.xs.lineHeight,
+  letterSpacing: typeScale.xs.letterSpacing,
+  color: colors.muted,
   margin: '0 0 8px 0',
 };
 
 const unsubscribeLinkStyle: React.CSSProperties = {
-  fontSize: '12px',
-  color: '#888888',
+  fontSize: typeScale.xs.fontSize,
+  color: colors.muted,
   textDecoration: 'underline',
 };
 
 const brandStyle: React.CSSProperties = {
-  fontSize: '12px',
-  fontFamily: '"JetBrains Mono", monospace',
-  color: '#444444',
+  fontSize: typeScale.xs.fontSize,
+  fontFamily: fonts.mono,
+  fontWeight: fontWeight.semibold,
+  letterSpacing: typeScale.xs.letterSpacing,
+  color: colors.mutedDim,
   margin: '16px 0 0 0',
 };

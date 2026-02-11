@@ -1,4 +1,5 @@
 import { Column, Link, Row, Section, Text } from '@react-email/components';
+import { colors, fonts, typeScale, fontWeight, radius, sectionTitleStyle } from './tokens';
 
 export interface JobCardProps {
   readonly companyName: string;
@@ -43,50 +44,51 @@ export function JobCard({
   );
 }
 
-// AIDO design tokens mapped to inline styles
-// --card: #111111, --border: #333333, --radius-lg: 8px, --card-padding: 16px
 const cardStyle: React.CSSProperties = {
-  backgroundColor: '#111111',
-  borderRadius: '8px',
+  backgroundColor: colors.card,
+  borderRadius: radius.lg,
   padding: '16px',
   marginBottom: '8px',
-  border: '1px solid #333333',
+  border: `1px solid ${colors.border}`,
 };
 
-// --type-section-title: 12px, uppercase, semibold, 0.05em tracking
+// Section title pattern: xs, semibold, uppercase, 0.08em tracking
 const companyLinkStyle: React.CSSProperties = {
-  fontSize: '12px',
-  color: '#888888',
+  ...sectionTitleStyle,
+  color: colors.muted,
   textDecoration: 'none',
-  textTransform: 'uppercase' as const,
-  letterSpacing: '0.05em',
-  fontWeight: 600,
 };
 
-// --type-body: 14px, --text-body: rgba(255,255,255,0.82)
 const titleStyle: React.CSSProperties = {
   margin: '4px 0 8px 0',
 };
 
-// --accent-light: #3291ff for links
+// base scale: 15px, medium weight (label pattern)
 const roleLinkStyle: React.CSSProperties = {
-  fontSize: '15px',
-  fontWeight: 600,
-  color: '#ededed',
+  fontSize: typeScale.base.fontSize,
+  fontWeight: fontWeight.medium,
+  lineHeight: typeScale.base.lineHeight,
+  letterSpacing: typeScale.base.letterSpacing,
+  color: colors.foreground,
   textDecoration: 'none',
 };
 
-// --muted: #888888, --type-caption: 12px
+// xs scale: 12px, lh 1.5
 const metaStyle: React.CSSProperties = {
-  fontSize: '12px',
-  color: '#888888',
+  fontSize: typeScale.xs.fontSize,
+  lineHeight: typeScale.xs.lineHeight,
+  letterSpacing: typeScale.xs.letterSpacing,
+  color: colors.muted,
   margin: '0',
 };
 
-// --success: #50e3c2 for compensation highlight
+// xs scale with mono font for numbers
 const compensationStyle: React.CSSProperties = {
-  fontSize: '12px',
-  color: '#50e3c2',
+  fontSize: typeScale.xs.fontSize,
+  lineHeight: typeScale.xs.lineHeight,
+  letterSpacing: typeScale.xs.letterSpacing,
+  color: colors.success,
   margin: '0',
-  fontFamily: '"JetBrains Mono", monospace',
+  fontFamily: fonts.mono,
+  fontWeight: fontWeight.semibold,
 };

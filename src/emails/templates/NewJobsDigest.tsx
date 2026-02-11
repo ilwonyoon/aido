@@ -11,7 +11,7 @@ import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
 import { JobCard, type JobCardProps } from '../components/JobCard';
-import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
+import { colors, typeScale, fontWeight, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
 
 export interface NewJobsDigestProps {
   readonly jobs: ReadonlyArray<JobCardProps>;
@@ -86,17 +86,22 @@ export function NewJobsDigest({
 
 export default NewJobsDigest;
 
+// 3xl scale: 22px, lh 1.2, ls -0.03em
 const headingStyle: React.CSSProperties = {
-  fontSize: '22px',
-  fontWeight: 600,
+  fontSize: typeScale['3xl'].fontSize,
+  fontWeight: fontWeight.semibold,
+  lineHeight: typeScale['3xl'].lineHeight,
+  letterSpacing: typeScale['3xl'].letterSpacing,
   color: colors.foreground,
   margin: '0 0 4px 0',
-  letterSpacing: '-0.02em',
 };
 
+// xs scale: 12px, lh 1.5, ls 0.01em
 const dateStyle: React.CSSProperties = {
-  fontSize: '12px',
+  fontSize: typeScale.xs.fontSize,
+  fontWeight: fontWeight.normal,
+  lineHeight: typeScale.xs.lineHeight,
+  letterSpacing: typeScale.xs.letterSpacing,
   color: colors.muted,
   margin: '0 0 24px 0',
-  letterSpacing: '0.01em',
 };

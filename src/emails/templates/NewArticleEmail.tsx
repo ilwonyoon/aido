@@ -10,7 +10,7 @@ import {
 import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
-import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
+import { colors, typeScale, fontWeight, sectionTitleStyle, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
 
 export interface NewArticleEmailProps {
   readonly title: string;
@@ -56,27 +56,29 @@ export function NewArticleEmail({
 
 export default NewArticleEmail;
 
+// Section title pattern: xs, semibold, uppercase, 0.08em — accent color
 const categoryStyle: React.CSSProperties = {
-  fontSize: '12px',
+  ...sectionTitleStyle,
   color: colors.accent,
-  textTransform: 'uppercase' as const,
-  letterSpacing: '0.05em',
-  fontWeight: 600,
   margin: '0 0 8px 0',
 };
 
+// 4xl scale: 24px, lh 1.15, ls -0.035em
 const titleStyle: React.CSSProperties = {
-  fontSize: '24px',
-  fontWeight: 600,
+  fontSize: typeScale['4xl'].fontSize,
+  fontWeight: fontWeight.semibold,
+  lineHeight: typeScale['4xl'].lineHeight,
+  letterSpacing: typeScale['4xl'].letterSpacing,
   color: colors.foreground,
   margin: '0 0 12px 0',
-  letterSpacing: '-0.02em',
-  lineHeight: '1.3',
 };
 
+// base scale: 15px, lh 1.7, ls -0.01em
 const excerptStyle: React.CSSProperties = {
-  fontSize: '15px',
+  fontSize: typeScale.base.fontSize,
+  fontWeight: fontWeight.normal,
+  lineHeight: typeScale.base.lineHeight,
+  letterSpacing: typeScale.base.letterSpacing,
   color: colors.textBody,
-  lineHeight: '1.6',
   margin: '0 0 24px 0',
 };

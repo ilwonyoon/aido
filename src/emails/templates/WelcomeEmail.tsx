@@ -11,7 +11,7 @@ import {
 import { EmailHead } from '../components/EmailHead';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
-import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
+import { colors, typeScale, fontWeight, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
 
 export interface WelcomeEmailProps {
   readonly unsubscribeUrl: string;
@@ -56,25 +56,32 @@ export function WelcomeEmail({
 
 export default WelcomeEmail;
 
+// 3xl scale: 22px, lh 1.2, ls -0.03em
 const headingStyle: React.CSSProperties = {
-  fontSize: '22px',
-  fontWeight: 600,
+  fontSize: typeScale['3xl'].fontSize,
+  fontWeight: fontWeight.semibold,
+  lineHeight: typeScale['3xl'].lineHeight,
+  letterSpacing: typeScale['3xl'].letterSpacing,
   color: colors.foreground,
   margin: '0 0 12px 0',
-  letterSpacing: '-0.02em',
 };
 
+// base scale: 15px, lh 1.7, ls -0.01em
 const bodyTextStyle: React.CSSProperties = {
-  fontSize: '15px',
+  fontSize: typeScale.base.fontSize,
+  fontWeight: fontWeight.normal,
+  lineHeight: typeScale.base.lineHeight,
+  letterSpacing: typeScale.base.letterSpacing,
   color: colors.textBody,
-  lineHeight: '1.6',
   margin: '0 0 24px 0',
 };
 
+// sm scale: 13px, lh 1.65
 const secondaryTextStyle: React.CSSProperties = {
-  fontSize: '14px',
+  fontSize: typeScale.sm.fontSize,
+  fontWeight: fontWeight.normal,
+  lineHeight: typeScale.sm.lineHeight,
   color: colors.muted,
-  lineHeight: '1.6',
   margin: '16px 0 0 0',
 };
 

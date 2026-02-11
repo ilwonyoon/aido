@@ -1,4 +1,5 @@
 import { Link, Section, Text } from '@react-email/components';
+import { colors, typeScale, fontWeight, radius, sectionTitleStyle } from './tokens';
 
 export interface ArticleCardProps {
   readonly title: string;
@@ -29,36 +30,38 @@ export function ArticleCard({
 }
 
 const cardStyle: React.CSSProperties = {
-  backgroundColor: '#111111',
-  borderRadius: '8px',
+  backgroundColor: colors.card,
+  borderRadius: radius.lg,
   padding: '20px',
   marginBottom: '8px',
-  border: '1px solid #333333',
+  border: `1px solid ${colors.border}`,
 };
 
+// Section title pattern: xs, semibold, uppercase, 0.08em — accent color
 const categoryStyle: React.CSSProperties = {
-  fontSize: '11px',
-  color: '#0070f3',
-  textTransform: 'uppercase' as const,
-  letterSpacing: '0.05em',
+  ...sectionTitleStyle,
+  color: colors.accent,
   margin: '0 0 8px 0',
-  fontWeight: 600,
 };
 
 const titleStyle: React.CSSProperties = {
   margin: '0 0 8px 0',
 };
 
+// xl scale: 18px for card title prominence
 const titleLinkStyle: React.CSSProperties = {
-  fontSize: '17px',
-  fontWeight: 600,
-  color: '#ededed',
+  fontSize: typeScale.xl.fontSize,
+  fontWeight: fontWeight.semibold,
+  lineHeight: typeScale.xl.lineHeight,
+  letterSpacing: typeScale.xl.letterSpacing,
+  color: colors.foreground,
   textDecoration: 'none',
 };
 
+// sm scale: 13px, lh 1.65
 const excerptStyle: React.CSSProperties = {
-  fontSize: '14px',
-  color: '#888888',
-  lineHeight: '1.5',
+  fontSize: typeScale.sm.fontSize,
+  lineHeight: typeScale.sm.lineHeight,
+  color: colors.muted,
   margin: '0',
 };
