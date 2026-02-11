@@ -522,32 +522,20 @@ a.card {
   border-color: rgba(217, 119, 6, 0.3);
 }
 
-/* Citation chip — inline source reference */
+/* Citation chip — inline source reference (subtle, text-level) */
 .citation-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.2rem;
-  padding: 0.1rem 0.45rem;
-  font-size: 0.6875rem;
-  font-weight: 500;
-  line-height: 1.4;
-  border-radius: 9999px;
-  background: var(--card);
-  border: 1px solid var(--border);
+  font-size: 0.625rem;
+  font-weight: 400;
   color: var(--muted);
+  opacity: 0.5;
   text-decoration: none !important;
-  transition: border-color 0.15s ease, color 0.15s ease;
-  vertical-align: baseline;
+  transition: opacity 0.15s ease, color 0.15s ease;
   white-space: nowrap;
 }
 
 .citation-chip:hover {
-  border-color: rgba(0, 112, 243, 0.4);
+  opacity: 1;
   color: var(--accent-light);
-}
-
-[data-theme="light"] .citation-chip:hover {
-  border-color: rgba(0, 112, 243, 0.5);
 }
 
 /* Section styles */
