@@ -18,6 +18,35 @@ GIT="/usr/bin/git"
 GH="/opt/homebrew/bin/gh"
 CLAUDE="/Users/ilwonyoon/.local/bin/claude"
 
+# --- Environment setup for launchd ---
+# launchd runs with minimal env; set PATH and HOME explicitly
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${HOME}/.local/bin"
+export HOME="/Users/ilwonyoon"
+export LANG="en_US.UTF-8"
+
+# Network warmup — launchd may start before network is fully ready
+wait_for_network() {
+  local max_attempts=10
+  local attempt=0
+  while [ $attempt -lt $max_attempts ]; do
+    if curl -sf --max-time 5 "https://api.anthropic.com" >/dev/null 2>&1; then
+      return 0
+    fi
+    attempt=$((attempt + 1))
+    sleep 3
+  done
+  return 1
+}
+
+# --- Claude CLI settings ---
+# --max-turns prevents context window overflow ("Prompt is too long")
+# Phase 1 (company-researcher): simpler task, fewer turns needed
+# Phase 2 (deep-research): complex multi-phase task, more turns needed
+CLAUDE_MAX_TURNS_PHASE1=30
+CLAUDE_MAX_TURNS_PHASE2=50
+# Retry settings for recoverable errors
+MAX_RETRIES=1
+
 PROJECT_DIR="/Users/ilwonyoon/Documents/AIDO/aido"
 WORKTREE_DIR="/Users/ilwonyoon/Documents/AIDO/aido-daily-research"
 LOG_FILE="${PROJECT_DIR}/scripts/daily-research-log.json"
@@ -57,9 +86,71 @@ update_log_file() {
 }
 
 # ============================================================
+# Helper: run Claude with timeout, max-turns, and retry
+# Usage: run_claude_with_retry <prompt> <max_turns> <timeout_sec> <label>
+# Returns: 0 on success, 1 on failure
+# ============================================================
+run_claude_with_retry() {
+  local prompt="$1"
+  local max_turns="$2"
+  local timeout_sec="$3"
+  local label="$4"
+  local attempt=0
+
+  while [ $attempt -le $MAX_RETRIES ]; do
+    if [ $attempt -gt 0 ]; then
+      log "Retry ${attempt}/${MAX_RETRIES} for ${label}..."
+    fi
+
+    ${CLAUDE} -p "${prompt}" \
+      --max-turns "${max_turns}" \
+      --dangerously-skip-permissions \
+      >> "${OUTPUT_LOG}" 2>&1 &
+    local CLAUDE_PID=$!
+
+    ( sleep ${timeout_sec}; kill ${CLAUDE_PID} 2>/dev/null ) &
+    local WATCHDOG_PID=$!
+
+    if wait ${CLAUDE_PID} 2>/dev/null; then
+      kill ${WATCHDOG_PID} 2>/dev/null || true
+      log "Claude completed successfully for ${label}."
+      return 0
+    else
+      local CLAUDE_EXIT=$?
+      kill ${WATCHDOG_PID} 2>/dev/null || true
+
+      if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
+        log "ERROR: Claude timed out after $((timeout_sec / 60)) minutes for ${label}."
+        return 1  # No retry on timeout — it won't get faster
+      fi
+
+      # Check if "Prompt is too long" in recent output
+      if tail -5 "${OUTPUT_LOG}" | grep -q "Prompt is too long"; then
+        log "ERROR: Context overflow (Prompt is too long) for ${label}."
+        # This is not retryable with same params
+        return 1
+      fi
+
+      log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${label}."
+      attempt=$((attempt + 1))
+    fi
+  done
+
+  log "ERROR: All retries exhausted for ${label}."
+  return 1
+}
+
+# ============================================================
 # Pipeline START
 # ============================================================
 log "=== Daily Research Pipeline START (worktree mode) ==="
+
+# Wait for network connectivity (launchd may start before network is ready)
+if ! wait_for_network; then
+  log "ERROR: Network not available after 30s. Aborting."
+  exit 1
+fi
+log "Network connectivity verified."
 
 # Sync worktree with latest main
 cd "${WORKTREE_DIR}"
@@ -103,20 +194,7 @@ IMPORTANT INSTRUCTIONS:
 
   log "Running company-researcher for ${REQUEST_COMPANY}..."
   cd "${WORKTREE_DIR}"
-  ${CLAUDE} -p "${REQ_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
-  CLAUDE_PID=$!
-
-  ( sleep 1800; kill ${CLAUDE_PID} 2>/dev/null ) &
-  WATCHDOG_PID=$!
-
-  if wait ${CLAUDE_PID} 2>/dev/null; then
-    kill ${WATCHDOG_PID} 2>/dev/null || true
-    log "Research completed for ${REQUEST_COMPANY}."
-  else
-    CLAUDE_EXIT=$?
-    kill ${WATCHDOG_PID} 2>/dev/null || true
-    log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${REQUEST_COMPANY}."
-  fi
+  run_claude_with_retry "${REQ_PROMPT}" "${CLAUDE_MAX_TURNS_PHASE1}" 1800 "company-researcher: ${REQUEST_COMPANY}"
 
   COMPANY_FILE="${WORKTREE_DIR}/src/data/companies/${COMPANY_ID}.ts"
   REQ_END=$(date +%s)
@@ -182,25 +260,8 @@ IMPORTANT INSTRUCTIONS:
 - Output the research article to src/data/deep-research/${COMPANY_ID}.md
 - Complete the full research pipeline end-to-end without stopping."
 
-# 60 minute timeout
-${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
-CLAUDE_PID=$!
-
-( sleep 3600; kill ${CLAUDE_PID} 2>/dev/null ) &
-WATCHDOG_PID=$!
-
-if wait ${CLAUDE_PID} 2>/dev/null; then
-  kill ${WATCHDOG_PID} 2>/dev/null || true
-  log "Claude research completed successfully."
-else
-  CLAUDE_EXIT=$?
-  kill ${WATCHDOG_PID} 2>/dev/null || true
-  if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
-    log "ERROR: Claude timed out after 60 minutes."
-  else
-    log "ERROR: Claude exited with code ${CLAUDE_EXIT}."
-  fi
-fi
+# 45 minute timeout (reduced from 60 — successful runs complete in ~15-20 min)
+run_claude_with_retry "${RESEARCH_PROMPT}" "${CLAUDE_MAX_TURNS_PHASE2}" 2700 "deep-research: ${COMPANY_NAME}"
 
 # Verify output
 RESEARCH_FILE="${WORKTREE_DIR}/src/data/deep-research/${COMPANY_ID}.md"
