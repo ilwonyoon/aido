@@ -225,7 +225,6 @@ export const livekit: Company = {
   // Meta
   lastUpdated: '2026-02-06T00:00:00',
   sources: [
-<<<<<<< HEAD
     { title: 'LiveKit website', url: 'https://livekit.io/' },
     { title: 'LiveKit Series C (TechCrunch)', url: 'https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/' },
     { title: 'LiveKit Series C blog', url: 'https://blog.livekit.io/livekit-series-c/' },
@@ -234,11 +233,5 @@ export const livekit: Company = {
     { title: 'LiveKit Design', url: 'https://design.livekit.io/' },
     { title: 'LiveKit Careers (Ashby)', url: 'https://jobs.ashbyhq.com/livekit' },
     { title: 'GetLatka revenue data', url: 'https://getlatka.com/companies/livekit.io' },
-=======
-    { title: 'Source', url: 'https://livekit.io/' },
-    { title: 'Source', url: 'https://www.finsmes.com/2026/01/livekit-raises-100m-in-series-c-funding-at-a-1-billion-valuation.html' },
-    { title: 'Source', url: 'https://startups.gallery/companies/livekit' },
-    { title: 'Source', url: 'https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth' }
->>>>>>> 947d2f1 (feat: add 17 new AI companies and automated research workflow)
   ],
 };

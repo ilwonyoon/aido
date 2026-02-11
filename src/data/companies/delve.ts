@@ -272,7 +272,6 @@ export const delve: Company = {
   // Meta
   lastUpdated: '2026-02-07T12:00:00',
   sources: [
-<<<<<<< HEAD
     { title: 'Delve website', url: 'https://delve.co/' },
     { title: 'TechCrunch: 21-year-old MIT dropouts raise $32M', url: 'https://techcrunch.com/2025/07/22/21-year-old-mit-dropouts-raise-32m-at-300m-valuation-led-by-insight/' },
     { title: 'Delve Series A blog post', url: 'https://delve.co/blog/series-a' },
@@ -291,10 +290,5 @@ export const delve: Company = {
     { title: 'PR Newswire Series A announcement', url: 'https://www.prnewswire.com/news-releases/delve-raises-32m-series-a-to-build-ai-agents-for-compliance-302510121.html' },
     { title: 'Delve pricing analysis (ComplyJet)', url: 'https://www.complyjet.com/blog/delve-pricing' },
     { title: 'SF Standard: AI founders starting younger', url: 'https://sfstandard.com/2025/02/13/founders-dropouts-ycombinator-aiboom-startups/' },
-=======
-    { title: 'Source', url: 'https://delve.co/' },
-    { title: 'Source', url: 'https://startups.gallery/companies/delve' },
-    { title: 'Source', url: 'https://jobs.ashbyhq.com/delve/15637a6e-cef3-405f-a7f4-bf26c8350160' }
->>>>>>> 947d2f1 (feat: add 17 new AI companies and automated research workflow)
   ],
 };
