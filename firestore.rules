@@ -40,6 +40,15 @@ service cloud.firestore {
       allow write: if true;
     }
 
+    // Newsletter subscribers - anyone can subscribe, admin can read all
+    match /newsletter_subscribers/{email} {
+      allow create: if true;
+      allow get: if true;
+      allow update: if request.resource.data.diff(resource.data).affectedKeys()
+        .hasOnly(['status', 'unsubscribedAt']);
+      allow list: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
+    }
+
     // Company research requests - admin only
     match /companyRequests/{requestId} {
       allow read: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
