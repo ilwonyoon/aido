@@ -24,8 +24,26 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - detect company links and render with favicon
+        // Links - detect citations, company links, and render accordingly
         a: ({ node, href, children, ...props }) => {
+          const text = String(children);
+
+          // Citation chip: [↗ Publisher](url)
+          if (text.startsWith('↗ ') && href?.startsWith('http')) {
+            const publisher = text.slice(2);
+            return (
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="citation-chip"
+                {...props}
+              >
+                {publisher} <span aria-hidden="true">↗</span>
+              </a>
+            );
+          }
+
           // Check if this is a company link
           if (href && href.startsWith('/company/')) {
             const companyId = href.replace('/company/', '');
