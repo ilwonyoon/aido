@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-02-11T14:40:00",
+  "batch": "seedtable-batch-02",
+  "count": 3,
+  "items": [
+    {
+      "name": "WeavAir",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "batch": "seedtable-batch-02",
+      "order": 1,
+      "resultCompanyId": "weavair"
+    },
+    {
+      "name": "PiinPoint",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "batch": "seedtable-batch-02",
+      "order": 2,
+      "resultCompanyId": "piinpoint"
+    },
+    {
+      "name": "dcbel",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Added to src/data/companies and index.ts",
+      "batch": "seedtable-batch-02",
+      "order": 3,
+      "resultCompanyId": "dcbel"
+    }
+  ]
+}

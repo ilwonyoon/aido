@@ -46,6 +46,7 @@ import { bindwell } from './bindwell';
 import { blackbirdLabs } from './blackbird-labs';
 import { blacksmith } from './blacksmith';
 import { blazeAi } from './blaze-ai';
+import { blok } from './blok';
 import { blossom } from './blossom';
 import { bluedot } from './bluedot';
 import { botpress } from './botpress';
@@ -109,6 +110,7 @@ import { curans } from './curans';
 import { cursor } from './cursor';
 import { dagster } from './dagster';
 import { darwinai } from './darwinai';
+import { dcbel } from './dcbel';
 import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
 import { decart } from './decart';
@@ -202,6 +204,7 @@ import { inngest } from './inngest';
 import { insightHealthAi } from './insight-health-ai';
 import { instant } from './instant';
 import { interaction } from './interaction';
+import { interaxon } from './interaxon';
 import { intercomFin } from './intercom-fin';
 import { interfere } from './interfere';
 import { internetBackyard } from './internet-backyard';
@@ -304,6 +307,7 @@ import { openai } from './openai';
 import { openmind } from './openmind';
 import { openpay } from './openpay';
 import { openrouter } from './openrouter';
+import { operantAi } from './operant-ai';
 import { operateCrm } from './operate-crm';
 import { orchids } from './orchids';
 import { orionSleep } from './orion-sleep';
@@ -327,6 +331,7 @@ import { perplexity } from './perplexity';
 import { phonely } from './phonely';
 import { physicalIntelligence } from './physical-intelligence';
 import { pierre } from './pierre';
+import { piinpoint } from './piinpoint';
 import { pika } from './pika';
 import { pitstop } from './pitstop';
 import { playbook } from './playbook';
@@ -335,6 +340,7 @@ import { polycam } from './polycam';
 import { poolside } from './poolside';
 import { posthog } from './posthog';
 import { primeIntellect } from './prime-intellect';
+import { privateAi } from './private-ai';
 import { promisePay } from './promise-pay';
 import { pulley } from './pulley';
 import { pylon } from './pylon';
@@ -410,6 +416,7 @@ import { superpower } from './superpower';
 import { surgeAi } from './surge-ai';
 import { swae } from './swae';
 import { sway } from './sway';
+import { swiftMedical } from './swift-medical';
 import { symbiotic } from './symbiotic';
 import { symend } from './symend';
 import { tabnine } from './tabnine';
@@ -457,6 +464,7 @@ import { vozy } from './vozy';
 import { wabi } from './wabi';
 import { walrus } from './walrus';
 import { warmer } from './warmer';
+import { weavAir } from './weavair';
 import { watershed } from './watershed';
 import { welltheory } from './welltheory';
 import { willow } from './willow';
@@ -521,6 +529,7 @@ export const companies: Company[] = [
   blackbirdLabs,
   blacksmith,
   blazeAi,
+  blok,
   blossom,
   bluedot,
   botpress,
@@ -584,6 +593,7 @@ export const companies: Company[] = [
   cursor,
   dagster,
   darwinai,
+  dcbel,
   datacurve,
   davidAi,
   decart,
@@ -676,6 +686,7 @@ export const companies: Company[] = [
   insightHealthAi,
   instant,
   interaction,
+  interaxon,
   intercomFin,
   interfere,
   internetBackyard,
@@ -778,6 +789,7 @@ export const companies: Company[] = [
   openmind,
   openpay,
   openrouter,
+  operantAi,
   operateCrm,
   orchids,
   orionSleep,
@@ -801,6 +813,7 @@ export const companies: Company[] = [
   phonely,
   physicalIntelligence,
   pierre,
+  piinpoint,
   pika,
   pitstop,
   playbook,
@@ -809,6 +822,7 @@ export const companies: Company[] = [
   poolside,
   posthog,
   primeIntellect,
+  privateAi,
   promisePay,
   pulley,
   pylon,
@@ -884,6 +898,7 @@ export const companies: Company[] = [
   surgeAi,
   swae,
   sway,
+  swiftMedical,
   symbiotic,
   symend,
   tabnine,
@@ -931,6 +946,7 @@ export const companies: Company[] = [
   wabi,
   walrus,
   warmer,
+  weavAir,
   watershed,
   welltheory,
   willow,
