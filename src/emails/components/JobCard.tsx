@@ -35,7 +35,7 @@ export function JobCard({
         </Column>
         {compensation && (
           <Column align="right">
-            <Text style={metaStyle}>{compensation}</Text>
+            <Text style={compensationStyle}>{compensation}</Text>
           </Column>
         )}
       </Row>
@@ -43,6 +43,8 @@ export function JobCard({
   );
 }
 
+// AIDO design tokens mapped to inline styles
+// --card: #111111, --border: #333333, --radius-lg: 8px, --card-padding: 16px
 const cardStyle: React.CSSProperties = {
   backgroundColor: '#111111',
   borderRadius: '8px',
@@ -51,18 +53,22 @@ const cardStyle: React.CSSProperties = {
   border: '1px solid #333333',
 };
 
+// --type-section-title: 12px, uppercase, semibold, 0.05em tracking
 const companyLinkStyle: React.CSSProperties = {
   fontSize: '12px',
   color: '#888888',
   textDecoration: 'none',
   textTransform: 'uppercase' as const,
   letterSpacing: '0.05em',
+  fontWeight: 600,
 };
 
+// --type-body: 14px, --text-body: rgba(255,255,255,0.82)
 const titleStyle: React.CSSProperties = {
   margin: '4px 0 8px 0',
 };
 
+// --accent-light: #3291ff for links
 const roleLinkStyle: React.CSSProperties = {
   fontSize: '15px',
   fontWeight: 600,
@@ -70,8 +76,17 @@ const roleLinkStyle: React.CSSProperties = {
   textDecoration: 'none',
 };
 
+// --muted: #888888, --type-caption: 12px
 const metaStyle: React.CSSProperties = {
-  fontSize: '13px',
+  fontSize: '12px',
   color: '#888888',
   margin: '0',
+};
+
+// --success: #50e3c2 for compensation highlight
+const compensationStyle: React.CSSProperties = {
+  fontSize: '12px',
+  color: '#50e3c2',
+  margin: '0',
+  fontFamily: '"JetBrains Mono", monospace',
 };

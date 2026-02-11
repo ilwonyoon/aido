@@ -11,6 +11,7 @@ import {
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
 import { JobCard, type JobCardProps } from '../components/JobCard';
+import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
 
 export interface NewJobsDigestProps {
   readonly jobs: ReadonlyArray<JobCardProps>;
@@ -20,21 +21,47 @@ export interface NewJobsDigestProps {
   readonly siteUrl?: string;
 }
 
+const previewJobs: ReadonlyArray<JobCardProps> = [
+  {
+    companyName: 'Anthropic',
+    companyId: 'anthropic',
+    title: 'Senior Product Designer, Claude',
+    location: 'San Francisco, CA',
+    url: 'https://anthropic.com/careers',
+    compensation: '$180K\u2013$250K + Equity',
+  },
+  {
+    companyName: 'Cursor',
+    companyId: 'cursor',
+    title: 'Product Designer',
+    location: 'San Francisco, CA',
+    url: 'https://cursor.com/careers',
+    compensation: '$160K\u2013$220K',
+  },
+  {
+    companyName: 'Perplexity',
+    companyId: 'perplexity',
+    title: 'Staff Product Designer',
+    location: 'San Francisco, CA',
+    url: 'https://perplexity.ai/careers',
+  },
+];
+
 export function NewJobsDigest({
-  jobs,
-  totalNewJobs,
-  dateRange,
-  unsubscribeUrl,
+  jobs = previewJobs,
+  totalNewJobs = 3,
+  dateRange = 'Feb 4 \u2014 Feb 11',
+  unsubscribeUrl = '#',
   siteUrl = 'https://aido-d2cc0.web.app',
-}: NewJobsDigestProps) {
+}: Partial<NewJobsDigestProps> = {}) {
   const previewText = `${totalNewJobs} new AI design ${totalNewJobs === 1 ? 'job' : 'jobs'} this week`;
 
   return (
     <Html>
       <Head />
       <Preview>{previewText}</Preview>
-      <Body style={bodyStyle}>
-        <Container style={containerStyle}>
+      <Body style={emailBodyStyle}>
+        <Container style={emailContainerStyle}>
           <EmailHeader />
 
           <Heading as="h2" style={headingStyle}>
@@ -46,7 +73,7 @@ export function NewJobsDigest({
             <JobCard key={index} {...job} siteUrl={siteUrl} />
           ))}
 
-          <Button href={`${siteUrl}/jobs/`} style={ctaButtonStyle}>
+          <Button href={`${siteUrl}/jobs/`} style={{ ...ctaButtonStyle, marginTop: '16px' }}>
             View All Jobs
           </Button>
 
@@ -59,41 +86,17 @@ export function NewJobsDigest({
 
 export default NewJobsDigest;
 
-const bodyStyle: React.CSSProperties = {
-  backgroundColor: '#000000',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-  margin: '0',
-  padding: '0',
-};
-
-const containerStyle: React.CSSProperties = {
-  maxWidth: '560px',
-  margin: '0 auto',
-  padding: '40px 20px',
-};
-
 const headingStyle: React.CSSProperties = {
   fontSize: '22px',
   fontWeight: 600,
-  color: '#ededed',
+  color: colors.foreground,
   margin: '0 0 4px 0',
   letterSpacing: '-0.02em',
 };
 
 const dateStyle: React.CSSProperties = {
-  fontSize: '13px',
-  color: '#888888',
+  fontSize: '12px',
+  color: colors.muted,
   margin: '0 0 24px 0',
-};
-
-const ctaButtonStyle: React.CSSProperties = {
-  backgroundColor: '#0070f3',
-  color: '#ffffff',
-  fontSize: '14px',
-  fontWeight: 600,
-  borderRadius: '8px',
-  padding: '12px 24px',
-  textDecoration: 'none',
-  display: 'inline-block',
-  marginTop: '16px',
+  letterSpacing: '0.01em',
 };

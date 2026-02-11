@@ -10,6 +10,7 @@ import {
 } from '@react-email/components';
 import { EmailHeader } from '../components/EmailHeader';
 import { EmailFooter } from '../components/EmailFooter';
+import { colors, emailBodyStyle, emailContainerStyle, ctaButtonStyle } from '../components/tokens';
 
 export interface NewArticleEmailProps {
   readonly title: string;
@@ -21,19 +22,19 @@ export interface NewArticleEmailProps {
 }
 
 export function NewArticleEmail({
-  title,
-  excerpt,
-  slug,
-  category,
-  unsubscribeUrl,
+  title = 'Why AI-Native Companies Need Designers Who Think in Systems',
+  excerpt = 'The best AI products aren\'t just well-designed interfaces. They\'re systems where design decisions compound. Here\'s what that means for your next role.',
+  slug = 'ai-native-design-systems',
+  category = 'insights',
+  unsubscribeUrl = '#',
   siteUrl = 'https://aido-d2cc0.web.app',
-}: NewArticleEmailProps) {
+}: Partial<NewArticleEmailProps> = {}) {
   return (
     <Html>
       <Head />
       <Preview>{title}</Preview>
-      <Body style={bodyStyle}>
-        <Container style={containerStyle}>
+      <Body style={emailBodyStyle}>
+        <Container style={emailContainerStyle}>
           <EmailHeader />
 
           <Text style={categoryStyle}>{category}</Text>
@@ -55,22 +56,9 @@ export function NewArticleEmail({
 
 export default NewArticleEmail;
 
-const bodyStyle: React.CSSProperties = {
-  backgroundColor: '#000000',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-  margin: '0',
-  padding: '0',
-};
-
-const containerStyle: React.CSSProperties = {
-  maxWidth: '560px',
-  margin: '0 auto',
-  padding: '40px 20px',
-};
-
 const categoryStyle: React.CSSProperties = {
   fontSize: '12px',
-  color: '#0070f3',
+  color: colors.accent,
   textTransform: 'uppercase' as const,
   letterSpacing: '0.05em',
   fontWeight: 600,
@@ -80,7 +68,7 @@ const categoryStyle: React.CSSProperties = {
 const titleStyle: React.CSSProperties = {
   fontSize: '24px',
   fontWeight: 600,
-  color: '#ededed',
+  color: colors.foreground,
   margin: '0 0 12px 0',
   letterSpacing: '-0.02em',
   lineHeight: '1.3',
@@ -88,18 +76,7 @@ const titleStyle: React.CSSProperties = {
 
 const excerptStyle: React.CSSProperties = {
   fontSize: '15px',
-  color: '#888888',
+  color: colors.textBody,
   lineHeight: '1.6',
   margin: '0 0 24px 0',
-};
-
-const ctaButtonStyle: React.CSSProperties = {
-  backgroundColor: '#0070f3',
-  color: '#ffffff',
-  fontSize: '14px',
-  fontWeight: 600,
-  borderRadius: '8px',
-  padding: '12px 24px',
-  textDecoration: 'none',
-  display: 'inline-block',
 };

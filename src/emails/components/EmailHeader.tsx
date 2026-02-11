@@ -13,10 +13,10 @@ export function EmailHeader() {
 
 const logoStyle: React.CSSProperties = {
   fontSize: '24px',
-  fontWeight: 700,
-  fontFamily: 'monospace',
+  fontWeight: 600,
+  fontFamily: '"JetBrains Mono", monospace',
   color: '#ededed',
-  letterSpacing: '-0.03em',
+  letterSpacing: '-0.02em',
   margin: '0 0 16px 0',
 };
 
