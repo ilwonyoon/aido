@@ -6,9 +6,15 @@
 # Uses a separate git worktree to avoid conflicts with Codex
 # and manual work on main/company-researching branches.
 #
-# 1. Processes ALL pending user requests (company-researcher)
-# 2. Picks the next Tier 0/1 company for deep research
-# 3. Commits to daily-deep-research branch → PR → auto-merge
+# Phase 1:  Process ALL pending user requests (company-researcher)
+# Phase 2a: Deep research Phases 1-8 (web search + analysis)
+# Phase 2b: Article writing Phase 9 (reads research from disk)
+#
+# Phase 2 is split into TWO separate Claude invocations to
+# prevent context window overflow ("Prompt is too long").
+# Each invocation starts with a fresh context.
+#
+# Commits to daily-deep-research branch → PR → auto-merge
 # ============================================================
 
 # --- Full binary paths (launchd does not source shell profile) ---
@@ -40,10 +46,13 @@ wait_for_network() {
 
 # --- Claude CLI settings ---
 # --max-turns prevents context window overflow ("Prompt is too long")
-# Phase 1 (company-researcher): simpler task, fewer turns needed
-# Phase 2 (deep-research): complex multi-phase task, more turns needed
+# Each phase gets its own Claude invocation with fresh context:
+# Phase 1 (company-researcher): simpler task, fewer turns
+# Phase 2a (deep-research): research Phases 1-8, most web searches
+# Phase 2b (article-writer): reads research from disk, writes article
 CLAUDE_MAX_TURNS_PHASE1=30
-CLAUDE_MAX_TURNS_PHASE2=50
+CLAUDE_MAX_TURNS_RESEARCH=35
+CLAUDE_MAX_TURNS_ARTICLE=20
 # Retry settings for recoverable errors
 MAX_RETRIES=1
 
@@ -248,22 +257,27 @@ log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
 
 START_TIME=$(date +%s)
 
-# Run Claude deep research in worktree
+# ============================================================
+# PHASE 2a: Deep Research (Phases 1-8 only)
+# Separate invocation to prevent context overflow.
+# Web searches + analysis accumulate ~40-50KB of context.
+# ============================================================
 cd "${WORKTREE_DIR}"
-log "Running deep research for ${COMPANY_NAME}..."
+log "Running deep research (Phase 1-8) for ${COMPANY_NAME}..."
 
 RESEARCH_PROMPT="/company-deep-research ${COMPANY_NAME}
 
 IMPORTANT INSTRUCTIONS:
-- Auto-approve the article when you reach Phase 9 (skip the review gate). Do NOT ask for confirmation.
+- STOP after Phase 8 (Decision Framework). Do NOT proceed to Phase 9 (article writing).
 - Do NOT run any git commands (no git add, git commit, git push, etc.). The orchestrator script handles git.
-- Output the research article to src/data/deep-research/${COMPANY_ID}.md
-- Complete the full research pipeline end-to-end without stopping."
+- Output the research report to src/data/deep-research/${COMPANY_ID}.md
+- Update the company data file at src/data/companies/${COMPANY_ID}.ts
+- Complete Phases 1-8 fully, then stop."
 
-# 45 minute timeout (reduced from 60 — successful runs complete in ~15-20 min)
-run_claude_with_retry "${RESEARCH_PROMPT}" "${CLAUDE_MAX_TURNS_PHASE2}" 2700 "deep-research: ${COMPANY_NAME}"
+# 30 minute timeout (research-only typically completes in 10-15 min)
+run_claude_with_retry "${RESEARCH_PROMPT}" "${CLAUDE_MAX_TURNS_RESEARCH}" 1800 "research: ${COMPANY_NAME}"
 
-# Verify output
+# Verify research output
 RESEARCH_FILE="${WORKTREE_DIR}/src/data/deep-research/${COMPANY_ID}.md"
 
 if [ ! -f "${RESEARCH_FILE}" ]; then
@@ -271,19 +285,61 @@ if [ ! -f "${RESEARCH_FILE}" ]; then
   DURATION=$((END_TIME - START_TIME))
   log "ERROR: Research file not found at ${RESEARCH_FILE}"
   update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "error" "${DURATION}" "Research file not generated"
-  log "=== Daily Research Pipeline COMPLETE (deep research failed) ==="
+  log "=== Daily Research Pipeline COMPLETE (research failed) ==="
   exit 0
 fi
 
 log "Research file verified: ${RESEARCH_FILE}"
 
-# Git add, commit, push from worktree
+# ============================================================
+# PHASE 2b: Article Writing (Phase 9)
+# Fresh Claude context — reads research from disk, writes article.
+# This prevents context overflow from accumulated web search results.
+# ============================================================
+log "Running article generation for ${COMPANY_NAME}..."
+
+ARTICLE_PROMPT="Write a deep-dive article about ${COMPANY_NAME} for the AIDO Insights blog.
+
+CONTEXT:
+- Read the deep research report at: src/data/deep-research/${COMPANY_ID}.md
+- Read the company data at: src/data/companies/${COMPANY_ID}.ts
+- Use these as your primary data sources for the article.
+
+INSTRUCTIONS:
+1. Read both files above first.
+2. Pick the most compelling angle from the research (unique design team story, dramatic growth, founder story, or competition landscape).
+3. Write the article following the /writer skill patterns:
+   - Data-Driven Analytical voice
+   - Lead with numbers and metrics
+   - Designer's lens perspective
+   - Include inline citation chips: [↗ Publisher](url) for key data points
+   - Company mentions use format: [Company Name](/company/id)
+4. Create the article TypeScript file at src/data/articles/content/[slug].ts
+5. Update src/data/articles/index.ts to include the new article.
+6. Do NOT run any git commands.
+7. Do NOT ask for confirmation — auto-approve everything.
+8. Verify the build passes: npm run build"
+
+# 20 minute timeout (article writing typically completes in 5-10 min)
+run_claude_with_retry "${ARTICLE_PROMPT}" "${CLAUDE_MAX_TURNS_ARTICLE}" 1200 "article: ${COMPANY_NAME}"
+
+# Check article output (non-fatal — research is the primary deliverable)
+ARTICLE_COUNT=$(find "${WORKTREE_DIR}/src/data/articles/content/" -name "*${COMPANY_ID}*" -newer "${RESEARCH_FILE}" 2>/dev/null | wc -l | tr -d ' ')
+if [ "${ARTICLE_COUNT}" -eq 0 ]; then
+  log "WARNING: Article file not generated for ${COMPANY_NAME}. Research report still available."
+else
+  log "Article file verified for ${COMPANY_NAME}."
+fi
+
+# ============================================================
+# Git commit, push, and PR
+# ============================================================
 cd "${WORKTREE_DIR}"
 ${GIT} add src/data/ scripts/ 2>/dev/null || true
 ${GIT} commit -m "${DATE_SHORT} | deep-research: ${COMPANY_NAME}
 
-Auto-generated deep research article for ${COMPANY_NAME} (Tier ${TIER}).
-Pipeline: daily-research.sh (worktree)"
+Auto-generated deep research + article for ${COMPANY_NAME} (Tier ${TIER}).
+Pipeline: daily-research.sh (split invocation)"
 
 ${GIT} push origin "${BRANCH}"
 
@@ -300,7 +356,7 @@ if [ -z "${EXISTING_PR}" ]; then
     --body "$(cat <<EOF
 ## Summary
 - Auto-generated deep research for **${COMPANY_NAME}** (Tier ${TIER})
-- Generated by \`scripts/daily-research.sh\` pipeline (worktree)
+- Generated by \`scripts/daily-research.sh\` pipeline (split invocation)
 - Research file: \`src/data/deep-research/${COMPANY_ID}.md\`
 
 ## Test plan
