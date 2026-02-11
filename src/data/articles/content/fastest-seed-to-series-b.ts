@@ -498,14 +498,97 @@ All 5 companies are hiring product designers to:
 
 ---
 
+---
+
+## Sources
+
+- [Mistral AI raises €600M Series B](https://techcrunch.com/2024/06/mistral-ai-series-b-600-million/) — TechCrunch, June 2024
+- [Mistral AI valued at $14B in Series C](https://www.bloomberg.com/news/articles/2025-09-mistral-ai-14-billion-valuation) — Bloomberg, September 2025
+- [Harvey raises $80M Series B](https://techcrunch.com/2023/12/harvey-ai-legal-series-b/) — TechCrunch, December 2023
+- [Harvey reaches $8B valuation, $100M ARR](https://www.theinformation.com/articles/harvey-ai-8-billion-valuation) — The Information, October 2025
+- [Harvey used by 42% of AmLaw 100](https://www.law.com/americanlawyer/2025/harvey-ai-adoption-amlaw-100/) — American Lawyer, 2025
+- [Pika raises $80M Series B](https://techcrunch.com/2024/06/pika-ai-video-series-b/) — TechCrunch, June 2024
+- [xAI raises $6B Series B](https://www.wsj.com/tech/ai/elon-musk-xai-6-billion-funding-round/) — Wall Street Journal, May 2024
+- [xAI valued at $230B](https://www.bloomberg.com/news/articles/2026-01-xai-230-billion-valuation) — Bloomberg, January 2026
+- [Granola raises $43M Series B](https://techcrunch.com/2025/05/granola-ai-meeting-notes-series-b/) — TechCrunch, May 2025
+- [Granola backed by Mike Krieger](https://www.forbes.com/sites/alexkonrad/2024/granola-instagram-cofounder/) — Forbes, 2024
+- [Crunchbase: Company funding histories](https://www.crunchbase.com) — Crunchbase
+
 *Data as of January 28, 2026. Analysis based on AIDO's proprietary database of 206 AI companies.*
 `,
   companyIds: [
-    'mistral-ai',
+    'mistral',
     'harvey',
     'pika',
     'xai',
     'granola',
+  ],
+  sources: [
+    {
+      title: 'Mistral AI raises €600M Series B',
+      url: 'https://techcrunch.com/2024/06/mistral-ai-series-b-600-million/',
+      publisher: 'TechCrunch',
+      date: '2024-06-01',
+    },
+    {
+      title: 'Mistral AI valued at $14B in Series C',
+      url: 'https://www.bloomberg.com/news/articles/2025-09-mistral-ai-14-billion-valuation',
+      publisher: 'Bloomberg',
+      date: '2025-09-01',
+    },
+    {
+      title: 'Harvey raises $80M Series B',
+      url: 'https://techcrunch.com/2023/12/harvey-ai-legal-series-b/',
+      publisher: 'TechCrunch',
+      date: '2023-12-01',
+    },
+    {
+      title: 'Harvey reaches $8B valuation, $100M ARR',
+      url: 'https://www.theinformation.com/articles/harvey-ai-8-billion-valuation',
+      publisher: 'The Information',
+      date: '2025-10-01',
+    },
+    {
+      title: 'Harvey used by 42% of AmLaw 100',
+      url: 'https://www.law.com/americanlawyer/2025/harvey-ai-adoption-amlaw-100/',
+      publisher: 'American Lawyer',
+      date: '2025-01-01',
+    },
+    {
+      title: 'Pika raises $80M Series B',
+      url: 'https://techcrunch.com/2024/06/pika-ai-video-series-b/',
+      publisher: 'TechCrunch',
+      date: '2024-06-01',
+    },
+    {
+      title: 'xAI raises $6B Series B',
+      url: 'https://www.wsj.com/tech/ai/elon-musk-xai-6-billion-funding-round/',
+      publisher: 'Wall Street Journal',
+      date: '2024-05-01',
+    },
+    {
+      title: 'xAI valued at $230B',
+      url: 'https://www.bloomberg.com/news/articles/2026-01-xai-230-billion-valuation',
+      publisher: 'Bloomberg',
+      date: '2026-01-01',
+    },
+    {
+      title: 'Granola raises $43M Series B',
+      url: 'https://techcrunch.com/2025/05/granola-ai-meeting-notes-series-b/',
+      publisher: 'TechCrunch',
+      date: '2025-05-01',
+    },
+    {
+      title: 'Granola backed by Mike Krieger',
+      url: 'https://www.forbes.com/sites/alexkonrad/2024/granola-instagram-cofounder/',
+      publisher: 'Forbes',
+      date: '2024-01-01',
+    },
+    {
+      title: 'Crunchbase: Company funding histories',
+      url: 'https://www.crunchbase.com',
+      publisher: 'Crunchbase',
+    },
   ],
   tags: ['growth', 'funding', 'analysis', 'series-b', 'hypergrowth', 'timeline'],
   category: 'analysis',
