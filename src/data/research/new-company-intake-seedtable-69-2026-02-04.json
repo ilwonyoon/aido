@@ -1,0 +1,597 @@
+{
+  "generatedAt": "2026-02-04T18:55:00",
+  "total": 69,
+  "p0": 20,
+  "p1": 43,
+  "p2": 6,
+  "items": [
+    {
+      "name": "H2O.ai",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of h2o-ai in repo",
+      "resultCompanyId": "h2o-ai",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "BenchSci",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Kindred AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of kindred-systems in repo",
+      "resultCompanyId": "kindred-systems",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Ada",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of ada in repo",
+      "resultCompanyId": "ada",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Obie.ai",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of obie-ai in repo",
+      "resultCompanyId": "obie-ai",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Element AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of element-ai in repo",
+      "resultCompanyId": "element-ai",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Xanadu",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Xpertsea",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "BlueDot",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Validere",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "InteraXon",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "interaxon",
+      "batch": "seedtable-hourly-2026-02-11",
+      "order": 4
+    },
+    {
+      "name": "Kiite",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Voiceflow",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of voiceflow in repo",
+      "resultCompanyId": "voiceflow",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "KLUE",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "42 Technologies",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of forty-two-technologies in repo",
+      "resultCompanyId": "forty-two-technologies",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Invision AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "SnapTravel",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of snaptravel in repo",
+      "resultCompanyId": "snaptravel",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Hopper",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Flybits, Inc",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Terrene",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Unbounce",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "NetraMark",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "tealbook",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of tealbook in repo",
+      "resultCompanyId": "tealbook",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Swae",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Automat (company)",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Resolver",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "duplicate",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Duplicate of resolver in repo",
+      "resultCompanyId": "resolver",
+      "batch": "seedtable-dedupe-2026-02-11"
+    },
+    {
+      "name": "Granify",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "OpenOcean Robotics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "ecobee (company)",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Certn",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "PartnerStack",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Algolux",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "LeddarTech",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Chillwall AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Fortuna.ai",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Heyday",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Cerebri AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Vantage Analytics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Clearpath Robotics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "SharpestMinds",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Finn AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Terramera",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "CrowdRiff",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Naborly",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Avidbots",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "SkyHive",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "LANDR",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "C2RO Robotics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Meya.ai",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "DarwinAI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Symend",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Canvass AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Botpress",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Pitstop",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "WeavAir",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "weavair",
+      "batch": "seedtable-hourly-2026-02-11",
+      "order": 5
+    },
+    {
+      "name": "Attabotics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "CryptoNumerics",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P2",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Sightline Innovation Inc.",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Swift Medical",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "swift-medical",
+      "batch": "seedtable-hourly-2026-02-11",
+      "order": 3
+    },
+    {
+      "name": "NextAI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "PiinPoint",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "piinpoint"
+    },
+    {
+      "name": "Private AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "private-ai",
+      "batch": "seedtable-hourly-2026-02-11",
+      "order": 1
+    },
+    {
+      "name": "Phenomic AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "reDock",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "dcbel",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Operant.AI",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P0",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo398": true,
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "operant-ai",
+      "batch": "seedtable-hourly-2026-02-11",
+      "order": 2
+    },
+    {
+      "name": "SortSpoke",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "UrbanLogiq",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    },
+    {
+      "name": "Aerial",
+      "source": "Seedtable North America AI 2026 (user-provided list)",
+      "priority": "P1",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo398": false,
+      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+    }
+  ]
+}
