@@ -694,8 +694,17 @@ const writerContext = {
   upsidePoints: string[],        // Phase 4 top insights
   downsidePoints: string[],       // Phase 5 top risks
   competitionInsights: string[],  // Phase 6 key findings
+  llmPosition: string,            // Phase 6 LLM relationship summary
   keyArticles: Article[],         // Phase 7 collected sources
   decisionScore: number,          // Phase 8 final score
+
+  // Sources for citation (REQUIRED)
+  sources: {
+    title: string,
+    url: string,
+    publisher: string,           // e.g., "TechCrunch", "Crunchbase", "Company Blog"
+    date?: string,               // ISO format
+  }[],
 
   // Suggested topic
   suggestedTopic: string,
@@ -785,6 +794,59 @@ Options:
 | 표면적 분석 | Upside/Downside 데이터 기반 심층 분석 |
 | 일반적 디자이너 관점 | 특정 회사에 대한 구체적 디자이너 인사이트 |
 | 소스 3-5개 | 소스 10-20개 (리서치에서 수집) |
+
+### 9.8 Article Source Citations (REQUIRED)
+
+**모든 아티클은 반드시 Sources 섹션을 포함해야 함.**
+
+#### Article Content Requirements
+
+1. **In-text citations**: 주요 데이터 포인트 옆에 출처 표기
+   ```markdown
+   Anthropic reached $7B ARR in October 2025, up from $1B earlier that year
+   ([TechCrunch](https://techcrunch.com/...)).
+   ```
+
+2. **Sources section at end**: 아티클 마지막에 전체 소스 리스트
+   ```markdown
+   ---
+
+   ## Sources
+
+   - [Anthropic raises $2B at $60B valuation](https://techcrunch.com/...) — TechCrunch, Sept 2025
+   - [Crunchbase: Anthropic Company Profile](https://crunchbase.com/organization/anthropic) — Crunchbase
+   - [Claude reaches 200M weekly users](https://anthropic.com/blog/...) — Anthropic Blog, Oct 2025
+   ```
+
+3. **Article TypeScript file**: `sources` 필드에 모든 출처 배열로 포함
+   ```typescript
+   sources: [
+     {
+       title: 'Anthropic raises $2B at $60B valuation',
+       url: 'https://techcrunch.com/...',
+       publisher: 'TechCrunch',
+       date: '2025-09-15',
+     },
+     // ... more sources
+   ],
+   ```
+
+#### Minimum Source Requirements
+
+| Article Type | Minimum Sources |
+|-------------|----------------|
+| Company deep dive | 10+ sources |
+| Comparison (A vs B) | 8+ sources (4+ per company) |
+| Top N list | 2+ sources per company |
+| Trend analysis | 8+ sources |
+
+#### Source Quality Standards
+
+- **Primary sources preferred**: Company blog, press releases, SEC filings
+- **Credible publishers**: TechCrunch, The Information, Bloomberg, Reuters
+- **Data sources**: Crunchbase, PitchBook, CB Insights, G2
+- **Recency**: Prefer sources from last 12 months
+- **No paywalled-only sources**: At least one free source for each major claim
 
 ---
 
