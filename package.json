@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@react-email/components": "^1.0.7",
+    "@react-email/preview-server": "^5.2.8",
     "@types/d3": "^7.4.3",
     "d3": "^7.9.0",
     "firebase": "^12.8.0",

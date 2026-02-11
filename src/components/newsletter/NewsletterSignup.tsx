@@ -43,9 +43,16 @@ export function NewsletterSignup({ source = 'footer' }: NewsletterSignupProps) {
             <path d="M13.5 4.5L6 12L2.5 8.5" stroke="var(--background)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <Text variant="body" color="muted">
-          {status === 'already' ? 'You\'re already subscribed!' : 'You\'re in! We\'ll keep you updated.'}
-        </Text>
+        <div>
+          <Text variant="body" color="muted">
+            {status === 'already' ? 'You\'re already subscribed!' : 'You\'re in! We\'ll keep you updated.'}
+          </Text>
+          {status === 'success' && (
+            <Text variant="caption" color="muted" className="mt-1">
+              A confirmation email will be sent within 15 minutes.
+            </Text>
+          )}
+        </div>
       </div>
     );
   }

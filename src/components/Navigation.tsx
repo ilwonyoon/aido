@@ -93,9 +93,9 @@ export function Navigation() {
             Insights
           </Link>
           <Link
-            href="/newsletter"
+            href="/subscribe"
             className={
-              isActive('/newsletter')
+              isActive('/subscribe')
                 ? 'text-[var(--foreground)] font-medium'
                 : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
             }
@@ -195,10 +195,10 @@ export function Navigation() {
                 Insights
               </Link>
               <Link
-                href="/newsletter"
+                href="/subscribe"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-3 px-4 rounded-lg ${
-                  isActive('/newsletter')
+                  isActive('/subscribe')
                     ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
                     : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
                 }`}
