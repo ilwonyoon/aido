@@ -224,12 +224,41 @@ export const [camelCaseSlug]: Article = {
   },
   content: `[generated-markdown-with-links]`,
   companyIds: ['id1', 'id2', ...],
+  sources: [
+    {
+      title: 'Article or report title',
+      url: 'https://...',
+      publisher: 'TechCrunch',
+      date: '2025-06-01',
+    },
+    // ... all cited sources
+  ],
   tags: ['tag1', 'tag2', ...],
   category: '[analysis|deep-dive|insights|trends|guides]',
   featured: false,
   readingTimeMinutes: [calculated],
 };
 ```
+
+---
+
+## Inline Source Citations
+
+데이터 포인트에 출처가 있을 때 인라인 citation 칩을 사용:
+
+```markdown
+Harvey reached $190M ARR by end of 2025 [↗ Sacra](https://sacra.com/c/harvey/).
+```
+
+**CRITICAL**: 링크 텍스트는 반드시 `↗ ` (화살표 + 공백)으로 시작해야 함.
+
+**Citation 삽입 기준**:
+- 구체적 숫자 (ARR, valuation, funding, 직원 수)
+- 인용문 (CEO 발언, 인터뷰)
+- 특정 이벤트 (Series B 발표, 제품 출시)
+- 일반적 사실이나 의견은 citation 불필요
+
+마크다운 content에 `## Sources` 섹션 넣지 말 것 — `sources` 배열이 페이지 하단에 자동 렌더링됨.
 
 ---
 
