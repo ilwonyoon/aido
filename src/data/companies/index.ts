@@ -110,6 +110,7 @@ import { curans } from './curans';
 import { cursor } from './cursor';
 import { dagster } from './dagster';
 import { darwinai } from './darwinai';
+import { dcbel } from './dcbel';
 import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
 import { decart } from './decart';
@@ -592,6 +593,7 @@ export const companies: Company[] = [
   cursor,
   dagster,
   darwinai,
+  dcbel,
   datacurve,
   davidAi,
   decart,

@@ -554,9 +554,10 @@
       "name": "dcbel",
       "source": "Seedtable North America AI 2026 (user-provided list)",
       "priority": "P1",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo398": false,
-      "notes": "Prioritize P0 (SF/US presence), then P1 (Canada with US adjacency), then P2."
+      "notes": "Added to src/data/companies and index.ts",
+      "resultCompanyId": "dcbel"
     },
     {
       "name": "Operant.AI",
