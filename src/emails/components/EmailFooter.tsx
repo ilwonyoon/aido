@@ -30,6 +30,7 @@ const dividerStyle: React.CSSProperties = {
 // xs scale: 12px, lh 1.5
 const footerTextStyle: React.CSSProperties = {
   fontSize: typeScale.xs.fontSize,
+  fontWeight: fontWeight.normal,
   lineHeight: typeScale.xs.lineHeight,
   letterSpacing: typeScale.xs.letterSpacing,
   color: colors.muted,
@@ -38,6 +39,7 @@ const footerTextStyle: React.CSSProperties = {
 
 const unsubscribeLinkStyle: React.CSSProperties = {
   fontSize: typeScale.xs.fontSize,
+  fontWeight: fontWeight.normal,
   color: colors.muted,
   textDecoration: 'underline',
 };

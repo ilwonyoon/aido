@@ -61,7 +61,7 @@ export function NewJobsDigest({
       <EmailHead />
       <Preview>{previewText}</Preview>
       <Body style={emailBodyStyle}>
-        <Container style={emailContainerStyle}>
+        <Container style={emailContainerStyle} className="email-container">
           <EmailHeader />
 
           <Heading as="h2" style={headingStyle}>
@@ -73,7 +73,7 @@ export function NewJobsDigest({
             <JobCard key={index} {...job} siteUrl={siteUrl} />
           ))}
 
-          <Button href={`${siteUrl}/jobs/`} style={{ ...ctaButtonStyle, marginTop: '16px' }}>
+          <Button href={`${siteUrl}/jobs/`} style={{ ...ctaButtonStyle, marginTop: '16px' }} className="email-cta-btn">
             View All Jobs
           </Button>
 

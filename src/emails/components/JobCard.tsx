@@ -76,6 +76,7 @@ const roleLinkStyle: React.CSSProperties = {
 // xs scale: 12px, lh 1.5
 const metaStyle: React.CSSProperties = {
   fontSize: typeScale.xs.fontSize,
+  fontWeight: fontWeight.normal,
   lineHeight: typeScale.xs.lineHeight,
   letterSpacing: typeScale.xs.letterSpacing,
   color: colors.muted,

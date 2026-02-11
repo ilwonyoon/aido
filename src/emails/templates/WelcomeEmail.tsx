@@ -27,7 +27,7 @@ export function WelcomeEmail({
       <EmailHead />
       <Preview>Welcome to AIDO — AI Design Opportunities</Preview>
       <Body style={emailBodyStyle}>
-        <Container style={emailContainerStyle}>
+        <Container style={emailContainerStyle} className="email-container">
           <EmailHeader />
 
           <Heading as="h2" style={headingStyle}>
@@ -38,7 +38,7 @@ export function WelcomeEmail({
             when we publish new insights. We keep it short and relevant.
           </Text>
 
-          <Button href={`${siteUrl}/jobs/`} style={ctaButtonStyle}>
+          <Button href={`${siteUrl}/jobs/`} style={ctaButtonStyle} className="email-cta-btn">
             Browse Jobs
           </Button>
 

@@ -34,7 +34,7 @@ export function NewArticleEmail({
       <EmailHead />
       <Preview>{title}</Preview>
       <Body style={emailBodyStyle}>
-        <Container style={emailContainerStyle}>
+        <Container style={emailContainerStyle} className="email-container">
           <EmailHeader />
 
           <Text style={categoryStyle}>{category}</Text>
@@ -43,7 +43,7 @@ export function NewArticleEmail({
           </Heading>
           <Text style={excerptStyle}>{excerpt}</Text>
 
-          <Button href={`${siteUrl}/insights/${slug}/`} style={ctaButtonStyle}>
+          <Button href={`${siteUrl}/insights/${slug}/`} style={ctaButtonStyle} className="email-cta-btn">
             Read Article
           </Button>
 

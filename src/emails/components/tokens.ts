@@ -71,6 +71,7 @@ export const sectionTitleStyle: React.CSSProperties = {
 export const emailBodyStyle: React.CSSProperties = {
   backgroundColor: colors.background,
   fontFamily: fonts.primary,
+  fontWeight: fontWeight.normal,
   fontSize: typeScale.base.fontSize,
   lineHeight: typeScale.base.lineHeight,
   letterSpacing: typeScale.base.letterSpacing,

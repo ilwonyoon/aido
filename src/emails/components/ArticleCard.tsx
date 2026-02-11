@@ -61,6 +61,7 @@ const titleLinkStyle: React.CSSProperties = {
 // sm scale: 13px, lh 1.65
 const excerptStyle: React.CSSProperties = {
   fontSize: typeScale.sm.fontSize,
+  fontWeight: fontWeight.normal,
   lineHeight: typeScale.sm.lineHeight,
   color: colors.muted,
   margin: '0',
