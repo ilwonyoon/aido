@@ -91,5 +91,5 @@ const compensationStyle: React.CSSProperties = {
   color: colors.success,
   margin: '0',
   fontFamily: fonts.mono,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
 };

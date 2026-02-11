@@ -47,7 +47,7 @@ const unsubscribeLinkStyle: React.CSSProperties = {
 const brandStyle: React.CSSProperties = {
   fontSize: typeScale.xs.fontSize,
   fontFamily: fonts.mono,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.normal,
   letterSpacing: typeScale.xs.letterSpacing,
   color: colors.mutedDim,
   margin: '16px 0 0 0',

@@ -48,10 +48,10 @@ const titleStyle: React.CSSProperties = {
   margin: '0 0 8px 0',
 };
 
-// xl scale: 18px for card title prominence
+// xl scale: 18px for card title — h3 level = medium (500)
 const titleLinkStyle: React.CSSProperties = {
   fontSize: typeScale.xl.fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   lineHeight: typeScale.xl.lineHeight,
   letterSpacing: typeScale.xl.letterSpacing,
   color: colors.foreground,

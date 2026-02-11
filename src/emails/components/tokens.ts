@@ -85,11 +85,12 @@ export const emailContainerStyle: React.CSSProperties = {
   padding: '40px 20px',
 };
 
+// Button uses font-medium (500) on AIDO site, not semibold
 export const ctaButtonStyle: React.CSSProperties = {
   backgroundColor: colors.accent,
   color: '#ffffff',
   fontSize: typeScale.sm.fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   lineHeight: typeScale.sm.lineHeight,
   borderRadius: radius.lg,
   padding: '12px 24px',
