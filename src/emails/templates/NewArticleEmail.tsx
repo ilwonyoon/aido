@@ -64,9 +64,10 @@ const categoryStyle: React.CSSProperties = {
 };
 
 // 4xl scale: 24px, lh 1.15, ls -0.035em
+// Uses medium (500) — visually matches site's 600 without antialiasing
 const titleStyle: React.CSSProperties = {
   fontSize: typeScale['4xl'].fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   lineHeight: typeScale['4xl'].lineHeight,
   letterSpacing: typeScale['4xl'].letterSpacing,
   color: colors.foreground,

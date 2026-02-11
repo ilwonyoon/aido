@@ -13,9 +13,11 @@ export function EmailHeader() {
 }
 
 // 4xl scale: 24px, lh 1.15, ls -0.035em
+// Uses medium (500) — site nav logo is semibold but antialiased;
+// email lacks antialiasing so 500 achieves visual parity
 const logoStyle: React.CSSProperties = {
   fontSize: typeScale['4xl'].fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   fontFamily: fonts.mono,
   color: colors.foreground,
   letterSpacing: typeScale['4xl'].letterSpacing,

@@ -60,10 +60,11 @@ export const radius = {
   full: '9999px',
 } as const;
 
-// Section title pattern: xs size, semibold, uppercase, wide tracking
+// Section title pattern: xs size, uppercase, wide tracking
+// Site uses 600 with antialiasing → 500 in email for visual parity
 export const sectionTitleStyle: React.CSSProperties = {
   fontSize: typeScale.xs.fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   lineHeight: typeScale.xs.lineHeight,
   letterSpacing: '0.08em',
   textTransform: 'uppercase' as const,

@@ -57,9 +57,11 @@ export function WelcomeEmail({
 export default WelcomeEmail;
 
 // 3xl scale: 22px, lh 1.2, ls -0.03em
+// Uses medium (500) — site uses 600 but with antialiased rendering;
+// email lacks antialiasing so 500 visually matches the site's 600
 const headingStyle: React.CSSProperties = {
   fontSize: typeScale['3xl'].fontSize,
-  fontWeight: fontWeight.semibold,
+  fontWeight: fontWeight.medium,
   lineHeight: typeScale['3xl'].lineHeight,
   letterSpacing: typeScale['3xl'].letterSpacing,
   color: colors.foreground,
