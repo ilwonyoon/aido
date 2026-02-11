@@ -2,9 +2,9 @@
 
 # ============================================================
 # Company Request Watcher
-# Polls Firestore every 30s for pending requests.
-# When found, runs company-researcher via Claude CLI.
-# Works on main branch (auto-merge pipeline handles the rest).
+# Polls Firestore every 6 hours for pending requests.
+# Processes ALL pending requests per cycle (inner loop).
+# Uses company-researcher via Claude CLI.
 # ============================================================
 
 NPX="/usr/local/bin/npx"
@@ -47,12 +47,25 @@ IMPORTANT INSTRUCTIONS:
 - Company website: ${WEBSITE}"
   fi
 
-  # Run Claude company-researcher (no timeout on macOS)
+  # Run Claude company-researcher with 30 min timeout (background + kill for macOS)
   log "Running company-researcher for ${COMPANY_NAME}..."
-  if ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1; then
+  ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
+  CLAUDE_PID=$!
+
+  ( sleep 1800; kill ${CLAUDE_PID} 2>/dev/null ) &
+  WATCHDOG_PID=$!
+
+  if wait ${CLAUDE_PID} 2>/dev/null; then
+    kill ${WATCHDOG_PID} 2>/dev/null || true
     log "Research completed for ${COMPANY_NAME}."
   else
-    log "WARNING: Claude exited with code $?."
+    CLAUDE_EXIT=$?
+    kill ${WATCHDOG_PID} 2>/dev/null || true
+    if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
+      log "WARNING: Claude timed out after 30 minutes for ${COMPANY_NAME}."
+    else
+      log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${COMPANY_NAME}."
+    fi
   fi
 
   # Check if company file was created
@@ -61,13 +74,13 @@ IMPORTANT INSTRUCTIONS:
   if [ -f "${COMPANY_FILE}" ]; then
     log "Company file created: ${COMPANY_FILE}"
 
-    # Commit and push on main
-    ${GIT} add src/data/
+    # Commit and push on current branch
+    ${GIT} add src/data/ public/ 2>/dev/null || true
     ${GIT} commit -m "${DATE_SHORT} | company-researcher: ${COMPANY_NAME}
 
 Auto-researched via watch-requests pipeline.
 Request ID: ${REQUEST_ID}" || true
-    ${GIT} push origin main || true
+    ${GIT} push origin HEAD || true
 
     # Mark as completed
     $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
@@ -82,15 +95,27 @@ Request ID: ${REQUEST_ID}" || true
 # ============================================================
 # Main loop
 # ============================================================
-log "=== Request Watcher STARTED (polling every ${POLL_INTERVAL}s) ==="
+log "=== Request Watcher STARTED (polling every ${POLL_INTERVAL}s / $(( POLL_INTERVAL / 3600 ))h) ==="
 
 while true; do
-  RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
+  # Inner loop: process ALL pending requests before sleeping
+  BATCH_COUNT=0
+  while true; do
+    RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
 
-  if [ "${RESULT}" != "NO_PENDING_REQUESTS" ]; then
+    if [ "${RESULT}" = "NO_PENDING_REQUESTS" ]; then
+      break
+    fi
+
     IFS='|' read -r REQUEST_ID COMPANY_NAME WEBSITE <<< "${RESULT}"
     process_request "${REQUEST_ID}" "${COMPANY_NAME}" "${WEBSITE}"
+    BATCH_COUNT=$((BATCH_COUNT + 1))
+  done
+
+  if [ ${BATCH_COUNT} -gt 0 ]; then
+    log "Processed ${BATCH_COUNT} request(s) this cycle."
   fi
 
+  log "Sleeping ${POLL_INTERVAL}s until next poll..."
   sleep ${POLL_INTERVAL}
 done

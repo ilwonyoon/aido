@@ -368,11 +368,14 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [isMobile, setIsMobile] = useState(false);
-  const [reviewStatusFilter, setReviewStatusFilter] = useState('not_yet_reviewed');
+  const [reviewStatusFilter, setReviewStatusFilter] = useState('');
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [categoryFilter, setCategoryFilter] = useState<Category[]>([]);
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [openRolesToggle, setOpenRolesToggle] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchExpanded, setSearchExpanded] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   // Store initial interest statuses for sorting (doesn't change until page reload)
   const [initialInterestStatuses, setInitialInterestStatuses] = useState<Record<string, InterestStatus>>({});
@@ -523,9 +526,9 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     };
   }, [user, loading]);
 
-  // Auto-switch filter when user reviews a company from "Not Yet Reviewed"
+  // Auto-switch filter when user reviews a company (from unfiltered/all view)
   useEffect(() => {
-    if (reviewStatusFilter !== 'not_yet_reviewed') {
+    if (reviewStatusFilter !== '' && reviewStatusFilter !== 'all') {
       prevInterestStatusesRef.current = interestStatuses;
       return;
     }
@@ -570,7 +573,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(30);
-  }, [reviewStatusFilter, fundingStageFilter, categoryFilter, locationFilter, openRolesToggle, sortBy]);
+  }, [reviewStatusFilter, fundingStageFilter, categoryFilter, locationFilter, openRolesToggle, sortBy, searchQuery]);
 
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
@@ -601,8 +604,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
   // Filter companies
   const filteredCompanies = useMemo(() => {
+    const query = searchQuery.toLowerCase().trim();
     return companies.filter((company) => {
-      // Review Status Filter
+      // Search Filter
+      if (query) {
+        const nameMatch = company.name.toLowerCase().includes(query);
+        const descMatch = company.description.toLowerCase().includes(query);
+        const hqMatch = company.headquarters.toLowerCase().includes(query);
+        if (!nameMatch && !descMatch && !hqMatch) return false;
+      }
+
+      // Review Status Filter (empty string or 'all' = show all)
       const status = interestStatuses[company.id];
       if (reviewStatusFilter === 'not_yet_reviewed' && status) return false;
       if (reviewStatusFilter === 'tier_0' && status !== 'tier_0') return false;
@@ -641,7 +653,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
       return true;
     });
-  }, [companies, reviewStatusFilter, interestStatuses, openRolesToggle, fundingStageFilter, categoryFilter, locationFilter]);
+  }, [companies, searchQuery, reviewStatusFilter, interestStatuses, openRolesToggle, fundingStageFilter, categoryFilter, locationFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -726,10 +738,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = reviewStatusFilter !== 'not_yet_reviewed' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
+  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== '' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
 
   const clearFilters = () => {
-    setReviewStatusFilter('not_yet_reviewed');
+    setSearchQuery('');
+    setReviewStatusFilter('');
     setFundingStageFilter([]);
     setCategoryFilter([]);
     setLocationFilter([]);
@@ -740,8 +753,69 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     <div>
       {/* Filter & Sort Bar */}
       <div className="space-y-2 mb-6">
-        {/* Row 1: Filter chips only */}
+        {/* Row 1: Search + Filter chips */}
         <div className="flex items-center gap-1 overflow-x-auto overflow-y-hidden scrollbar-hide">
+          {/* Search: icon-only on mobile, inline input on desktop */}
+          <div className="relative flex-shrink-0">
+            {/* Mobile: single container, width animates from icon-size to full input */}
+            <div
+              className={`md:hidden relative overflow-hidden rounded-full bg-[var(--card)] border transition-all duration-200 ease-out cursor-text ${
+                searchExpanded
+                  ? 'w-[180px] border-[var(--accent)]'
+                  : searchQuery
+                    ? 'w-9 border-[var(--accent)]'
+                    : 'w-9 border-[var(--border)]'
+              }`}
+              style={{ height: '36px' }}
+              onClick={() => {
+                if (!searchExpanded) {
+                  setSearchExpanded(true);
+                  setTimeout(() => searchInputRef.current?.focus(), 200);
+                }
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-[11px] top-1/2 -translate-y-1/2 text-[var(--muted)] pointer-events-none">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onBlur={() => { if (!searchQuery) setSearchExpanded(false); }}
+                placeholder="Search..."
+                className={`absolute inset-0 bg-transparent pl-8 pr-8 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none transition-opacity duration-200 ${
+                  searchExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
+              />
+              {searchQuery && searchExpanded && (
+                <button
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={(e) => { e.stopPropagation(); setSearchQuery(''); searchInputRef.current?.focus(); }}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--foreground)]"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                  </svg>
+                </button>
+              )}
+            </div>
+            {/* Desktop: always show input */}
+            <div className="hidden md:block relative">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search..."
+                className="w-[140px] focus:w-[200px] transition-all bg-[var(--card)] border border-[var(--border)] rounded-full pl-8 pr-3 py-1.5 text-sm text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
+              />
+            </div>
+          </div>
           <DropdownFilter
             label="Review Status"
             value={reviewStatusFilter}
@@ -750,7 +824,6 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
               { value: 'tier_0', label: '🥇 Tier 0' },
               { value: 'tier_1', label: '🥈 Tier 1' },
               { value: 'not_interested', label: 'Not Interested' },
-              { value: 'all', label: 'All' },
             ]}
             onChange={setReviewStatusFilter}
           />

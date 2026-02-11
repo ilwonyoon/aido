@@ -3,52 +3,54 @@ import { Company } from '../types';
 export const careforceAi: Company = {
     id: 'careforce-ai',
     name: 'CareForce AI',
-    description: '의료 조직을 위한 AI 워커를 개발하여 환자 아웃리치 및 스케줄링을 자동화하는 플랫폼.',
+    description: 'A platform that builds AI workers for healthcare organizations to automate patient outreach and scheduling.',
     website: 'https://careforce.ai',
     headquarters: 'New York, NY',
     remote: 'Unknown',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['healthcare'],
     stage: 'Early-Stage',
   totalFunding: '$500K (Accelerator/Incubator)',
     valuation: 'Unknown',
     growth: 'High (Twilio AI Startup Searchlight 2025 Honoree)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'CareRev', description: 'On-demand healthcare staffing marketplace connecting facilities with local professionals.' },
+    { name: 'Hallmark Healthcare', description: 'Healthcare workforce solutions provider specializing in staffing and recruitment.' },
+    { name: 'AlayaCare', description: 'End-to-end home care software platform for scheduling, billing, and clinical documentation.' },
+  ],
+  moat: ['AI-first scheduling for home care workforce', 'YC-backed with domain-specific training data'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
-      { name: 'Huzaifa', role: 'CEO', background: 'Unknown' },
-      { name: 'Sam Miller', role: 'Co-founder', background: 'Unknown' },
-      { name: 'Diedrich Meinken', role: 'Co-founder', background: 'Unknown' }
+      { name: 'Huzaifa Sial', role: 'Founder & CEO', background: 'YC-backed founder building AI for home care workforce management' }
     ],
-    whyBuilding: 'AI 워커를 통해 전 세계의 돌봄(Care) 역량을 확장하고 의료 행정 부담을 줄인다.',
+    whyBuilding: 'Scaling global care capacity through AI workers while reducing administrative burden on healthcare organizations.',
     beliefs: [
-            '환자 스케줄링과 같은 반복적인 행정 업무는 AI가 자율적으로 처리해야 한다.',
-            'AI 에이전트는 기존 시스템과의 통합 없이도 독립적으로 리치아웃을 수행할 수 있어야 한다.',
+            'Repetitive administrative tasks like patient scheduling should be handled autonomously by AI.',
+            'AI agents should be able to independently perform outreach without requiring integration with existing systems.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '환자와의 민감한 의료 커뮤니케이션에서 신뢰성을 유지하며 AI임을 적절히 드러내는 UX.',
-            '전화, 문자, 이메일 등 옴니채널에서 일관된 환자 경험을 제공하는 컨텍스트 유지.',
+            'UX that maintains trust in sensitive healthcare communication while appropriately disclosing AI identity.',
+            'Maintaining context across omnichannel (phone, text, email) to deliver a consistent patient experience.',
         ],
     userProblems: [
-            '의료진의 과도한 행정 업무로 인한 번아웃 및 환자 진료 시간 부족.',
-            '복잡한 스케줄링 절차로 인한 환자의 진료 접근성 저하.',
+            'Healthcare worker burnout from excessive administrative tasks, reducing time for patient care.',
+            'Reduced patient access to care due to complex scheduling procedures.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Operational Efficiency, Patient-centric Care. Benefits: Twilio 플랫폼 기반의 견고한 통신 인프라 활용, 글로벌 헬스케어 문제 해결 기여.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Operational Efficiency, Patient-centric Care. Benefits: Leveraging robust communication infrastructure on the Twilio platform, contributing to solving global healthcare problems.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI scheduling rules for caregiver-patient matching', 'Automated outreach workflow logic for home care visits'] },
+    evaluation: { level: 'medium', tasks: ['Measuring scheduling accuracy and patient satisfaction', 'Tracking caregiver utilization and no-show rates'] },
+    interface: { level: 'medium', tasks: ['Caregiver scheduling dashboard for home care agencies', 'Patient-facing appointment booking and confirmation UX'] },
   },
   
   designerLinks: [],

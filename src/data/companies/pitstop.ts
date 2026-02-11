@@ -18,12 +18,12 @@ export const pitstop: Company = {
   // Business
   stage: 'Series A',
   valuation: 'Not publicly disclosed',
-  totalFunding: '$12.5M',
+  totalFunding: '$5.47M',
   fundingHistory: [
     {
       stage: 'Series A',
-      amount: '$12.5M',
-      date: '2021-10',
+      amount: '$3.8M',
+      date: '2023-04',
     },
   ],
   revenue: 'Not publicly disclosed',
@@ -60,7 +60,7 @@ export const pitstop: Company = {
   // AI-Native Level
   aiNativeLevel: 'B',
   aiNativeLevelDescription:
-    'AI-driven predictive maintenance and failure forecasting are central to the product’s value.',
+    'AI-driven predictive maintenance and failure forecasting are central to the product\u2019s value.',
   aiDesignChallenges: [
     'Communicating AI predictions and confidence to fleet managers',
     'Designing workflows for proactive maintenance scheduling',
@@ -70,14 +70,9 @@ export const pitstop: Company = {
   // Founders & Vision
   founders: [
     {
-      name: 'Rahul Raj',
-      role: 'Co-founder & CEO',
-      background: 'Co-founder of Pitstop focused on applying AI to fleet maintenance and operations.',
-    },
-    {
-      name: 'Parth Mistry',
-      role: 'Co-founder & CTO',
-      background: 'Engineering leader and co-founder focused on Pitstop’s predictive maintenance platform.',
+      name: 'Shiva Bhardwaj',
+      role: 'Founder & CEO',
+      background: 'AI researcher focused on predictive fleet maintenance',
     },
   ],
   whyBuilding:
@@ -120,7 +115,7 @@ export const pitstop: Company = {
       ],
     },
   },
-  productStage: '1→10',
+  productStage: '1\u219210',
 
   // User Context
   targetAudiences: {
@@ -156,7 +151,5 @@ export const pitstop: Company = {
   lastUpdated: '2026-02-07T14:10:00',
   sources: [
     { title: 'Source', url: 'https://www.pitstopconnect.com' },
-    { title: 'Source', url: 'https://www.kitchener.ca/en/news/pitstop-secures-12-5m-series-a-funding.aspx' },
-    { title: 'Source', url: 'https://www.founderbio.com/rahul-raj/' }
   ],
 };

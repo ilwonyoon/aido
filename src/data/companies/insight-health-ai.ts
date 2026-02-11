@@ -3,21 +3,25 @@ import { Company } from '../types';
 export const insightHealthAi: Company = {
     id: 'insight-health-ai',
     name: 'Insight Health AI',
-    description: 'AI 에이전트 Lumi를 통해 환자와의 대화를 자동화하고 임상 업무 부담을 줄이는 헬스케어 솔루션.',
+    description: 'Healthcare solution that automates patient conversations through AI agent Lumi, reducing clinical workload.',
     website: 'https://insighthealth.ai',
     headquarters: 'San Francisco, CA',
     remote: 'Hybrid',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['healthcare'],
     stage: 'Early-Stage',
   totalFunding: '$4.6M (Seed)',
     valuation: 'Unknown',
     growth: 'High (Backed by Kindred Ventures, RTP Global)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Eko Health', description: 'AI-powered cardiac screening platform using digital stethoscopes and ECG analysis.' },
+    { name: 'Viz.ai', description: 'AI-driven clinical decision support platform for detecting strokes and other conditions.' },
+    { name: 'Cleerly', description: 'AI-based cardiac imaging analysis platform for non-invasive heart disease detection.' },
+  ],
+  moat: ['AI agent Lumi trained on clinical workflows for automated patient intake', 'Co-founded by physicians with deep clinical domain expertise'],
     aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
@@ -26,30 +30,30 @@ export const insightHealthAi: Company = {
       { name: 'Dr. Pankaj Gore', role: 'Co-founder', background: 'Unknown' },
       { name: 'Dr. Eric Stecker', role: 'Co-founder', background: 'Unknown' }
     ],
-    whyBuilding: '일상적인 임상 업무의 50%를 자동화하여 의료진이 환자 치료에 집중할 수 있는 환경을 만든다.',
+    whyBuilding: 'Automating 50% of routine clinical tasks so healthcare providers can focus on patient care.',
     beliefs: [
-            '의료 데이터 분석과 환자 커뮤니케이션의 자동화가 개인화된 헬스케어의 핵심이다.',
-            'AI는 의료진의 업무를 대체하는 것이 아니라 보조하여 효율성을 극대화해야 한다.',
+            'Automating medical data analysis and patient communication is the key to personalized healthcare.',
+            'AI should augment healthcare providers\' work to maximize efficiency, not replace them.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '환자의 질병별 특성을 고려하여 문진 및 약물 목록 업데이트를 자연스럽게 수행하는 대화 설계.',
-            '의료진에게 AI가 수집한 정보를 신뢰할 수 있는 형태로 요약하여 전달하는 인터페이스.',
+            'Conversation design that naturally handles intake questionnaires and medication list updates based on disease-specific characteristics.',
+            'Interface that summarizes AI-collected information in a trustworthy format for clinicians.',
         ],
     userProblems: [
-            '의료진이 환자 진료 외에 소모하는 방대한 행정 및 예진 시간.',
-            '환자의 병력 청취 및 팔로우업 과정에서의 비효율성.',
+            'Excessive time clinicians spend on administrative and pre-visit tasks outside of patient care.',
+            'Inefficiency in patient history intake and follow-up processes.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Clinical Excellence, Automation for Care. Benefits: 의사와 엔지니어가 함께 창업한 팀에서의 협업 경험, 실제 임상 현장의 문제를 기술로 해결하는 보람.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Clinical Excellence, Automation for Care. Benefits: Collaborative experience in a team co-founded by physicians and engineers, the reward of solving real clinical problems with technology.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['AI agent Lumi conversation flows for cardiac risk assessment intake', 'Automated follow-up logic based on patient risk scores and medication adherence'] },
+    evaluation: { level: 'medium', tasks: ['Measuring AI accuracy in patient data collection vs. manual intake', 'Tracking clinician time savings and patient satisfaction metrics'] },
+    interface: { level: 'medium', tasks: ['Clinician-facing dashboard summarizing AI-collected patient data', 'Patient-facing conversational interface for health history and symptom reporting'] },
   },
   
   designerLinks: [],

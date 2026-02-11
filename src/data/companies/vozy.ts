@@ -3,55 +3,63 @@ import { Company } from '../types';
 export const vozy: Company = {
     id: 'vozy',
     name: 'Vozy',
-    description: '라틴 아메리카 시장을 위한 AI 음성 고객 서비스 및 자동화 플랫폼 (7개 이상의 억양 지원).',
+    description: 'AI voice customer service and automation platform for the Latin American market (supporting 7+ accents).',
     website: 'https://vozy.co',
     headquarters: 'Medellin, Colombia / Miami, FL',
     remote: 'Hybrid',
     aiTypes: ['automation'],
     markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
     industries: ['sales-marketing'],
     stage: 'Early-Stage',
-  totalFunding: 'Unknown (AWS GenAI Accelerator, Twilio Partner)',
+  totalFunding: '$8.1M total',
     valuation: 'Unknown',
     growth: 'High (Operating in 5+ countries)',
-  competitors: [],
-  moat: [],
-    aiNativeLevel: 'A',
+  competitors: [
+    { name: 'Nuance', description: 'Enterprise AI-powered speech and language solutions for customer engagement.', whyTheyWin: 'Deep enterprise relationships and decades of speech recognition expertise.' },
+    { name: 'Replicant', description: 'Autonomous contact center AI that resolves customer service calls.', whyTheyWin: 'Strong US enterprise contact center presence with high automation rates.' },
+    { name: 'PolyAI', description: 'Conversational AI platform for customer-led voice assistants.', whyTheyWin: 'Advanced voice AI with natural conversation handling and enterprise scale.' },
+  ],
+  moat: [
+    'Specialized understanding of 7+ Latin American Spanish accents and dialects',
+    'Partnerships with AWS (GenAI Accelerator) and Twilio for regional deployment',
+    'First-mover advantage in LatAm voice AI with deep cultural and linguistic localization',
+  ],
+    aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
-      { name: 'Unknown', role: 'Co-founder', background: 'Unknown' }
+      { name: 'Humberto Pertuz', role: 'CEO & Co-founder', background: 'Colombian tech entrepreneur, voice AI pioneer in LatAm' }
     ],
-    whyBuilding: '언어적, 문화적 뉘앙스를 이해하는 AI를 통해 라틴 아메리카의 고객 경험을 혁신한다.',
+    whyBuilding: 'Revolutionizing customer experience in Latin America through AI that understands linguistic and cultural nuances.',
     beliefs: [
-            '음성 AI는 단순히 말을 알아듣는 것을 넘어, 지역별 억양(Accent)과 감정까지 이해해야 한다.',
-            '생성형 AI와 기존 컨택 센터(Twilio Flex)의 결합이 "거의 인간에 가까운" 경험을 만든다.',
+            'Voice AI must go beyond simply understanding speech to comprehend regional accents and emotions.',
+            'Combining generative AI with existing contact centers (Twilio Flex) creates a near-human experience.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '다양한 스페인어 방언과 억양을 정확하게 인식하고, 해당 지역에 맞는 어투로 응대하는 로컬라이제이션 UX.',
-            '음성 대화 중 고객의 감정 변화를 실시간으로 감지하여 상담원에게 에스컬레이션하거나 대응 톤을 바꾸는 인터랙션.',
+            'Localization UX that accurately recognizes diverse Spanish dialects and accents and responds in region-appropriate tone.',
+            'Real-time interaction design that detects customer emotion changes during voice conversations to escalate to agents or adjust response tone.',
         ],
     userProblems: [
-            '기존 챗봇/보이스봇이 지역 방언을 이해하지 못해 발생하는 소통의 답답함.',
-            '라틴 아메리카  고객 센터의 긴 대기 시간과 낮은 해결률.',
+            'Communication frustration from existing chatbots/voicebots failing to understand regional dialects.',
+            'Long wait times and low resolution rates at Latin American customer service centers.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Cultural Intelligence, Hyper-Localization. Benefits: AWS 및 Twilio와 같은 글로벌 테크 자이언트와의 긴밀한 파트너십, 라틴 아메리카 AI 스타트업 씬을 이끄는 리더십.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Cultural Intelligence, Hyper-Localization. Benefits: Close partnerships with global tech giants like AWS and Twilio, leadership driving the LatAm AI startup scene.' }
     ],
-    
+
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['Voice conversation flow logic with accent and dialect detection', 'Real-time emotion sensing and agent escalation decision rules'] },
+    evaluation: { level: 'medium', tasks: ['Accent recognition accuracy and dialect coverage metrics', 'Customer sentiment analysis and call resolution quality scoring'] },
+    interface: { level: 'medium', tasks: ['Contact center supervisor dashboard with live call monitoring', 'Voice agent configuration and dialect/accent tuning interface'] },
   },
-  
+
   designerLinks: [],
   openRoles: [],
-    
+
   tracking: {
     status: 'researching',
     fitScore: 5,
@@ -59,7 +67,7 @@ export const vozy: Company = {
     whyNot: [],
     nextActions: [],
   },
-  
+
   lastUpdated: '2026-02-09T18:12:58.352Z',
   sources: [
     { title: 'Source', url: 'https://vozy.co' },

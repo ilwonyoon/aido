@@ -1,1 +1,24 @@
-{ "version": 1, "lastRun": null, "runs": [] }
+{
+  "version": 1,
+  "lastRun": "2026-02-10T07:00:05",
+  "runs": [
+    {
+      "timestamp": "2026-02-09T07:00:05",
+      "companyName": "Cursor",
+      "companyId": "cursor",
+      "tier": 0,
+      "status": "error",
+      "durationSeconds": 2703,
+      "error": "Research file not generated"
+    },
+    {
+      "timestamp": "2026-02-10T07:00:05",
+      "companyName": "Linear",
+      "companyId": "linear",
+      "tier": "0",
+      "status": "success",
+      "durationSeconds": 1784,
+      "error": ""
+    }
+  ]
+}

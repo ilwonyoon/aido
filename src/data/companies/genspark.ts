@@ -3,21 +3,25 @@ import { Company } from '../types';
 export const genspark: Company = {
     id: 'genspark',
     name: 'Genspark',
-    description: 'AI 에이전트를 통해 지식 노동자의 복합적인 업무를 자동화하는 올인원 AI 워크스페이스.',
+    description: 'All-in-one AI workspace that automates complex tasks for knowledge workers through AI agents and multi-agent search.',
     website: 'https://www.genspark.ai',
     headquarters: 'Palo Alto, CA',
     remote: 'Hybrid',
     aiTypes: ['automation'],
     markets: ['b2c'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'productivity' as const,
     industries: ['productivity'],
     stage: 'Early-Stage',
   totalFunding: '$460M (Series B)',
     valuation: '$1.25B (Unicorn status)',
     growth: 'Explosive (Pivoted from Search to Autonomous super-agents)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Perplexity', description: 'AI-powered answer engine combining real-time search with conversational AI.' },
+    { name: 'You.com', description: 'AI search engine offering personalized, source-cited answers and productivity agents.' },
+    { name: 'Google', description: 'Dominant global search engine integrating AI overviews into search results.' },
+  ],
+  moat: ['Multi-agent search architecture', 'Sparkpage proprietary format', 'Custom AI models for search'],
     aiNativeLevel: 'A',
   aiNativeLevelDescription: 'AI Native description pending.',
     founders: [
@@ -25,30 +29,30 @@ export const genspark: Company = {
       { name: 'Wen Sang', role: 'COO', background: 'Unknown' },
       { name: 'Kay Zhu', role: 'CTO', background: 'Unknown' }
     ],
-    whyBuilding: '단순한 검색을 넘어, 복잡한 비즈니스 결과물을 스스로 생성하고 실행하는 슈퍼 에이전트의 실현.',
+    whyBuilding: 'Beyond simple search, realizing super agents that autonomously generate and execute complex business deliverables.',
     beliefs: [
-            '미래의 워크북은 정적인 문서가 아니라 지능적으로 변화하는 AI 에이전트의 집합체다.',
-            '검색은 결과(Outcome)를 위한 과정일 뿐이며, AI는 그 결과를 직접 제공해야 한다.',
+            'The future workbook is not a static document but a collection of intelligently evolving AI agents.',
+            'Search is merely a process toward outcomes, and AI should deliver those outcomes directly.',
         ],
   greenFlags: [],
   redFlags: [],
     aiDesignChallenges: [
-            '수많은 Sparkpages와 에이전트들 사이에서 사용자의 의도(Intent)를 일관되게 유지하는 아키텍처.',
-            '자율적으로 동작하는 AI 에이전트의 실행 과정을 실시간으로 모니터링하고 피드백을 주는 UI.',
+            'Architecture that maintains consistent user intent across numerous Sparkpages and agents.',
+            'UI for real-time monitoring and providing feedback on autonomously executing AI agents.',
         ],
     userProblems: [
-            '다양한 AI 툴(Copilot, Gemini 등) 사이에서 파편화된 워크플로우.',
-            '정보를 찾는 데 소요되는 시간보다 실제 결과물을 만드는 데 드는 높은 인지적 부하.',
+            'Fragmented workflows across various AI tools (Copilot, Gemini, etc.).',
+            'High cognitive load spent creating actual deliverables compared to time spent searching for information.',
         ],
     cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Outcome-oriented, Cross-functional Agentic Architecture. Benefits: MIT/Google/Baidu 출신의 최고수준 AI 인재와 협업, 자율적인 업무 환경 및 슈퍼 에이전트 개발 기회.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Outcome-oriented, Cross-functional Agentic Architecture. Benefits: Collaboration with top-tier AI talent from MIT/Google/Baidu, autonomous work environment and super agent development opportunities.' }
     ],
     
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['Multi-agent orchestration for search query decomposition', 'Sparkpage content generation and formatting logic'] },
+    evaluation: { level: 'medium', tasks: ['Search result quality and relevance scoring', 'Agent task completion and accuracy metrics'] },
+    interface: { level: 'medium', tasks: ['AI-powered search results and Sparkpage rendering UI', 'Agent workspace and task monitoring dashboard'] },
   },
   
   designerLinks: [],

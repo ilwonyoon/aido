@@ -1,10 +1,10 @@
 #!/bin/bash
-set -e
+# NOTE: No `set -e` — one failed request should not kill the entire pipeline.
 
 # ============================================================
 # Daily Auto Research Pipeline
-# Picks the next Tier 0/1 company, runs deep research via
-# Claude CLI, commits the result, and opens/updates a PR.
+# 1. Processes ALL pending user requests (company-researcher, fast)
+# 2. Then picks the next Tier 0/1 company for deep research
 # ============================================================
 
 # --- Full binary paths (launchd does not source shell profile) ---
@@ -35,7 +35,7 @@ update_log_file() {
   local error_msg="${6:-}"
 
   # Build the new run entry (pure bash, no jq dependency)
-  local entry="{\"timestamp\":\"${TIMESTAMP}\",\"companyName\":\"${company_name}\",\"companyId\":\"${company_id}\",\"tier\":${tier},\"status\":\"${status}\",\"durationSeconds\":${duration},\"error\":\"${error_msg}\"}"
+  local entry="{\"timestamp\":\"${TIMESTAMP}\",\"companyName\":\"${company_name}\",\"companyId\":\"${company_id}\",\"tier\":\"${tier}\",\"status\":\"${status}\",\"durationSeconds\":${duration},\"error\":\"${error_msg}\"}"
 
   # Read existing log, insert new run, update lastRun
   local tmp_file="${LOG_FILE}.tmp"
@@ -59,55 +59,112 @@ update_log_file() {
 log "=== Daily Research Pipeline START ==="
 
 cd "${PROJECT_DIR}"
-IS_USER_REQUEST=false
-REQUEST_ID=""
 
 # ============================================================
-# Step 0: Check for pending user-submitted company requests
+# PHASE 1: Process ALL pending user requests (company-researcher)
+# Uses the lighter company-researcher skill for speed.
+# Loops until no more pending requests remain.
 # ============================================================
-log "Step 0: Checking for pending company requests..."
+log "=== Phase 1: Processing pending user requests ==="
 
-REQUEST_RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
+REQUEST_COUNT=0
 
-if [ "${REQUEST_RESULT}" != "NO_PENDING_REQUESTS" ]; then
+while true; do
+  REQUEST_RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
+
+  if [ "${REQUEST_RESULT}" = "NO_PENDING_REQUESTS" ]; then
+    break
+  fi
+
   IFS='|' read -r REQUEST_ID REQUEST_COMPANY REQUEST_WEBSITE <<< "${REQUEST_RESULT}"
   log "Found user request: ${REQUEST_COMPANY} (ID: ${REQUEST_ID})"
 
   # Mark as researching
   $NPX tsx scripts/process-company-requests.ts --start "${REQUEST_ID}" 2>/dev/null || true
 
-  COMPANY_NAME="${REQUEST_COMPANY}"
   COMPANY_ID=$(echo "${REQUEST_COMPANY}" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
-  TIER="request"
-  IS_USER_REQUEST=true
+  REQ_START=$(date +%s)
+  REQ_DATE=$(date '+%d/%m/%y - %H:%M:%S')
 
-  log "Processing user-requested company: ${COMPANY_NAME} (${COMPANY_ID})"
-else
-  log "No pending user requests."
+  # Build prompt for company-researcher (lighter than deep-research)
+  REQ_PROMPT="/company-researcher ${REQUEST_COMPANY}
 
-  # ============================================================
-  # Step 1: Pick the next company from tier list
-  # ============================================================
-  log "Step 1: Picking next company..."
+IMPORTANT INSTRUCTIONS:
+- Do NOT run any git commands (no git add, git commit, git push). The pipeline script handles git.
+- Complete the full research pipeline end-to-end without stopping."
 
-  PICK_RESULT=$($NPX tsx scripts/pick-next-research.ts)
-
-  if [ "${PICK_RESULT}" = "NONE" ]; then
-    log "All companies completed. Nothing to do."
-    exit 0
+  if [ -n "${REQUEST_WEBSITE}" ]; then
+    REQ_PROMPT="${REQ_PROMPT}
+- Company website: ${REQUEST_WEBSITE}"
   fi
 
-  # Parse: "CompanyName|company-id|tier"
-  IFS='|' read -r COMPANY_NAME COMPANY_ID TIER <<< "${PICK_RESULT}"
-  log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
+  # Run with 30 min timeout (1800s) — background + kill pattern for macOS
+  log "Running company-researcher for ${REQUEST_COMPANY}..."
+  ${CLAUDE} -p "${REQ_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
+  CLAUDE_PID=$!
+
+  ( sleep 1800; kill ${CLAUDE_PID} 2>/dev/null ) &
+  WATCHDOG_PID=$!
+
+  if wait ${CLAUDE_PID} 2>/dev/null; then
+    kill ${WATCHDOG_PID} 2>/dev/null || true
+    log "Research completed for ${REQUEST_COMPANY}."
+  else
+    CLAUDE_EXIT=$?
+    kill ${WATCHDOG_PID} 2>/dev/null || true
+    log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${REQUEST_COMPANY}."
+  fi
+
+  # Check result and update Firestore
+  COMPANY_FILE="${PROJECT_DIR}/src/data/companies/${COMPANY_ID}.ts"
+  REQ_END=$(date +%s)
+  REQ_DURATION=$((REQ_END - REQ_START))
+
+  if [ -f "${COMPANY_FILE}" ]; then
+    log "Company file created: ${COMPANY_FILE}"
+    $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
+    update_log_file "${COMPANY_ID}" "${REQUEST_COMPANY}" "request" "success" "${REQ_DURATION}" ""
+    REQUEST_COUNT=$((REQUEST_COUNT + 1))
+  else
+    log "WARNING: File not generated for ${REQUEST_COMPANY}."
+    $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Company file not generated" 2>/dev/null || true
+    update_log_file "${COMPANY_ID}" "${REQUEST_COMPANY}" "request" "error" "${REQ_DURATION}" "Company file not generated"
+  fi
+done
+
+log "Phase 1 complete: processed ${REQUEST_COUNT} user request(s)."
+
+# Commit all request results if any were processed
+if [ ${REQUEST_COUNT} -gt 0 ]; then
+  ${GIT} add src/data/ public/ scripts/daily-research-log.json 2>/dev/null || true
+  ${GIT} commit -m "${DATE_SHORT} | company-researcher: ${REQUEST_COUNT} user request(s)
+
+Auto-researched via daily-research.sh Phase 1 (user requests)." 2>/dev/null || true
+  ${GIT} push origin HEAD 2>/dev/null || true
 fi
+
+# ============================================================
+# PHASE 2: Deep research for next Tier 0/1 company
+# Uses heavier company-deep-research skill.
+# ============================================================
+log "=== Phase 2: Tier list deep research ==="
+
+PICK_RESULT=$($NPX tsx scripts/pick-next-research.ts 2>/dev/null || echo "NONE")
+
+if [ "${PICK_RESULT}" = "NONE" ]; then
+  log "All tier list companies completed. Nothing to do."
+  log "=== Daily Research Pipeline COMPLETE ==="
+  exit 0
+fi
+
+# Parse: "CompanyName|company-id|tier"
+IFS='|' read -r COMPANY_NAME COMPANY_ID TIER <<< "${PICK_RESULT}"
+log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
 
 START_TIME=$(date +%s)
 
-# ============================================================
-# Step 2: Switch to company-researching branch
-# ============================================================
-log "Step 2: Switching to ${BRANCH} branch..."
+# Switch to company-researching branch
+log "Switching to ${BRANCH} branch..."
 
 ${GIT} stash --include-untracked 2>/dev/null || true
 ${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
@@ -118,10 +175,8 @@ else
 fi
 ${GIT} pull origin "${BRANCH}" --rebase 2>/dev/null || true
 
-# ============================================================
-# Step 3: Run Claude deep research
-# ============================================================
-log "Step 3: Running deep research for ${COMPANY_NAME}..."
+# Run Claude deep research
+log "Running deep research for ${COMPANY_NAME}..."
 
 RESEARCH_PROMPT="/company-deep-research ${COMPANY_NAME}
 
@@ -131,11 +186,11 @@ IMPORTANT INSTRUCTIONS:
 - Output the research article to src/data/deep-research/${COMPANY_ID}.md
 - Complete the full research pipeline end-to-end without stopping."
 
-# 45 minute timeout (2700 seconds) — use background + kill instead of `timeout` (not available on macOS)
+# 60 minute timeout (3600 seconds) — background + kill pattern for macOS
 ${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
 CLAUDE_PID=$!
 
-( sleep 2700; kill ${CLAUDE_PID} 2>/dev/null ) &
+( sleep 3600; kill ${CLAUDE_PID} 2>/dev/null ) &
 WATCHDOG_PID=$!
 
 if wait ${CLAUDE_PID} 2>/dev/null; then
@@ -145,17 +200,13 @@ else
   CLAUDE_EXIT=$?
   kill ${WATCHDOG_PID} 2>/dev/null || true
   if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
-    log "ERROR: Claude timed out after 45 minutes."
+    log "ERROR: Claude timed out after 60 minutes."
   else
     log "ERROR: Claude exited with code ${CLAUDE_EXIT}."
   fi
 fi
 
-# ============================================================
-# Step 4: Verify output exists
-# ============================================================
-log "Step 4: Verifying research output..."
-
+# Verify output exists
 RESEARCH_FILE="${PROJECT_DIR}/src/data/deep-research/${COMPANY_ID}.md"
 
 if [ ! -f "${RESEARCH_FILE}" ]; then
@@ -163,15 +214,15 @@ if [ ! -f "${RESEARCH_FILE}" ]; then
   DURATION=$((END_TIME - START_TIME))
   log "ERROR: Research file not found at ${RESEARCH_FILE}"
   update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "error" "${DURATION}" "Research file not generated"
-  exit 1
+  # Don't exit — pipeline already processed user requests above
+  log "=== Daily Research Pipeline COMPLETE (deep research failed) ==="
+  exit 0
 fi
 
 log "Research file verified: ${RESEARCH_FILE}"
 
-# ============================================================
-# Step 5: Git add, commit, push
-# ============================================================
-log "Step 5: Committing and pushing..."
+# Git add, commit, push
+log "Committing and pushing..."
 
 ${GIT} add src/data/
 ${GIT} commit -m "${DATE_SHORT} | deep-research: ${COMPANY_NAME}
@@ -181,10 +232,8 @@ Pipeline: daily-research.sh"
 
 ${GIT} push origin "${BRANCH}"
 
-# ============================================================
-# Step 6: Create or update PR
-# ============================================================
-log "Step 6: Creating/updating PR..."
+# Create or update PR
+log "Creating/updating PR..."
 
 EXISTING_PR=$(${GH} pr list --head "${BRANCH}" --state open --json number --jq '.[0].number' 2>/dev/null || echo "")
 
@@ -210,32 +259,16 @@ else
   log "PR #${EXISTING_PR} already exists. Push updated the PR."
 fi
 
-# ============================================================
-# Step 7: Update log file
-# ============================================================
+# Update log file
 END_TIME=$(date +%s)
 DURATION=$((END_TIME - START_TIME))
 
-log "Step 7: Updating log file..."
 update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "success" "${DURATION}" ""
 
 # Commit the updated log
 ${GIT} add scripts/daily-research-log.json
 ${GIT} commit -m "${DATE_SHORT} | log: ${COMPANY_NAME} research complete (${DURATION}s)"
 ${GIT} push origin "${BRANCH}"
-
-# ============================================================
-# Step 8: Update request status (if user-requested)
-# ============================================================
-if [ "${IS_USER_REQUEST}" = "true" ]; then
-  if [ -f "${RESEARCH_FILE}" ]; then
-    $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
-    log "Request ${REQUEST_ID} marked as completed."
-  else
-    $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Research file not generated" 2>/dev/null || true
-    log "Request ${REQUEST_ID} marked as failed."
-  fi
-fi
 
 log "=== Daily Research Pipeline COMPLETE ==="
 log "Company: ${COMPANY_NAME} | Duration: ${DURATION}s | Status: success"

@@ -3,50 +3,54 @@ import { Company } from '../types';
 export const aiShift: Company = {
   id: 'ai-shift',
   name: 'AI Shift',
-  description: '일본의 콜센터 산업을 혁신하는 24/7 지능형 음성 AI 에이전트 솔루션.',
+  description: 'Intelligent voice AI agent solution revolutionizing Japan\'s call center industry with 24/7 automated customer service.',
   website: 'https://www.ai-shift.co.jp',
-  headquarters: '도쿄, 일본',
+  headquarters: 'Tokyo, Japan',
   remote: 'Hybrid',
   aiTypes: ['automation'],
   markets: ['b2b'],
   productStage: '1→10',
-  category: 'vertical-saas',
+  category: 'vertical-saas' as const,
   industries: ['sales-marketing'],
   stage: 'Early-Stage',
   totalFunding: 'Unknown (Subsidiary of CyberAgent)',
     valuation: 'Unknown',
     growth: 'High (Recognized by Twilio Searchlight Awards 2025)',
-  competitors: [],
-  moat: [],
+  competitors: [
+    { name: 'Zendesk', description: 'Cloud-based customer service and support ticketing platform.' },
+    { name: 'Intercom', description: 'AI-first customer messaging platform for sales, marketing, and support.' },
+    { name: 'PKSHA Technology', description: 'Japanese AI company specializing in natural language processing and conversational AI.' },
+  ],
+  moat: ['CyberAgent subsidiary backing', 'Japanese market specialization', 'NLP optimized for Japanese language'],
   aiNativeLevel: 'B',
   aiNativeLevelDescription: 'AI Native description pending.',
   founders: [
       { name: 'Yuto Yoneyama', role: 'President', background: 'Unknown' }
     ],
-    whyBuilding: '사람과 AI의 협업을 실현하여 인류의 생산성 혁명을 가져온다.',
+    whyBuilding: 'Realizing human-AI collaboration to bring a productivity revolution for humanity.',
     beliefs: [
-      '음성 AI는 단순히 전화를 받는 도구가 아니라 상담원의 업무 생산성을 혁신하는 파트너다.',
-      '24시간 끊김 없는 고객 대응을 통해 서비스 품질과 운영 효율의 균형을 맞춘다.',
+      'Voice AI is not merely a tool for answering calls but a partner that transforms agent productivity.',
+      'Balancing service quality and operational efficiency through seamless 24/7 customer support.',
     ],
   greenFlags: [],
   redFlags: [],
   aiDesignChallenges: [
-      '음성 대화 시 발생하는 지연 시간(Latency) 최소화와 자연스러운 Barge-in(끼어들기) 처리.',
-      '복잡한 비즈니스 로직을 음성 인터페이스로 단순화하여 전달하는 UX 설계.',
+      'Minimizing latency in voice conversations and handling natural barge-in (interruption) processing.',
+      'UX design that simplifies complex business logic for delivery through a voice interface.',
     ],
     userProblems: [
-      '콜센터 상담원의 단순 반복 업무로 인한 스트레스와 높은 퇴사율.',
-      '업무 시간 외 고객 문의에 대한 대응 지연으로 인한 고객 만족도 저하.',
+      'High stress and turnover rates among call center agents due to repetitive tasks.',
+      'Decreased customer satisfaction from delayed responses to inquiries outside business hours.',
     ],
   cultureInsights: [
-      { source: 'careers', sentiment: 'positive', content: 'Values: Settlement (AI 솔루션이 일상 업무에 완전히 정착되는 것), Human-AI Collaboration. Benefits: 전문적인 생성 AI 도입 컨설팅 지원, CyberAgent 그룹의 기술 리소스 활용.' }
+      { source: 'careers', sentiment: 'positive', content: 'Values: Settlement (AI solutions fully integrated into daily operations), Human-AI Collaboration. Benefits: Professional generative AI consulting support, access to CyberAgent group technology resources.' }
     ],
   
   designTeam: {},
   designWorkType: {
-    logicBehavior: { level: 'medium', tasks: [' specialized logic'] },
-    evaluation: { level: 'medium', tasks: [''] },
-    interface: { level: 'medium', tasks: [''] },
+    logicBehavior: { level: 'medium', tasks: ['Voice AI conversation flow design and barge-in handling', 'Call routing logic between AI agent and human operators'] },
+    evaluation: { level: 'medium', tasks: ['Customer satisfaction scoring for AI-handled calls', 'Voice recognition accuracy monitoring for Japanese language'] },
+    interface: { level: 'medium', tasks: ['Call center operator dashboard for AI-human handoff', 'Real-time voice conversation monitoring UI'] },
   },
   
   designerLinks: [],
