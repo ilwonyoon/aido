@@ -6,7 +6,7 @@
       "timestamp": "2026-02-09T07:00:05",
       "companyName": "Cursor",
       "companyId": "cursor",
-      "tier": 0,
+      "tier": "0",
       "status": "error",
       "durationSeconds": 2703,
       "error": "Research file not generated"

@@ -13,10 +13,12 @@
 
 ## 기술 스택
 
-- Next.js 15 (App Router)
+- Next.js 16 (App Router)
 - TypeScript
 - Tailwind CSS v4
-- 데이터: JSON 파일 (`src/data/companies.ts`)
+- Firebase Hosting (static export)
+- 데이터: 398+ 회사 파일 (`src/data/companies/*.ts`)
+- 배포: `main` push → GitHub Actions → Firebase auto-deploy
 
 ## 디자인 원칙
 
@@ -25,6 +27,35 @@
 - 미니멀, 정보 중심
 
 ## Design System
+
+**구조**: 하나의 통합 시스템, 두 개 컨텍스트.
+- `globals.css` `:root` — 모든 CSS 변수 (colors, typography, content tokens)
+- `tokens.css` — primitive + semantic tokens (control heights, AI levels, text utilities)
+- `tokens.ts` — TypeScript helpers (aiLevels, badge variants)
+
+### MUST: 새 기능 개발 시 규칙
+
+1. **기존 토큰/변수 사용 필수**: `var(--foreground)`, `var(--card)` 등 CSS 변수 직접 사용. 하드코딩 금지.
+2. **기존 컴포넌트 재사용 필수**: 새 UI 만들기 전에 `src/components/ui/` 확인.
+3. **없으면 컴포넌트 생성**: 2회 이상 사용될 패턴은 `src/components/ui/`에 재사용 가능한 컴포넌트로 추출.
+4. **Content context 토큰**: Article/About 페이지의 spacing/sizing은 `--content-*` 토큰 사용.
+
+### UI 컴포넌트 (`src/components/ui/`)
+
+| Component | File | 용도 |
+|-----------|------|------|
+| Badge | `Badge.tsx` | 상태/카테고리 뱃지 (default, accent, success, warning) |
+| Button | `Button.tsx` | 액션 버튼 (primary, secondary, ghost) |
+| Card | `Card.tsx` | 카드 컨테이너 |
+| CitationChip | `CitationChip.tsx` | 인라인 소스 출처 링크 (article 내) |
+| Link | `Link.tsx` | 내비게이션 링크 |
+
+### Contexts
+
+| Context | 대상 페이지 | 특징 |
+|---------|-------------|------|
+| **Information** | Company List, Detail, Jobs, Requests | Dense UI, interactive, 4px grid |
+| **Content** | Articles, About | Long-form, `--content-*` tokens, relaxed line-height |
 
 ### Color usage rules
 - **Accent**: primary actions, key highlights, active states only
@@ -42,11 +73,6 @@
 - **Section gap**: use consistent vertical spacing between major blocks
 - **Card padding**: standard `p-5` for all cards
 - **List spacing**: tight but readable vertical rhythm for rows
-
-### Component patterns
-- **Card**: standard container for grouped content
-- **Badge**: status + category indicator
-- **Button**: only for actions, not for navigation
 
 ### Article Typography (`.article-content`)
 
@@ -309,15 +335,24 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 
 ### Branch 전략
 
-- `main`: Production (항상 deploy 가능 상태)
-- `feature/[name]`: 새 기능 개발
-- `fix/[name]`: 버그 수정
-- `refactor/[name]`: 리팩토링
+| 브랜치 | 용도 | 배포 |
+|--------|------|------|
+| `main` | Production | push → GitHub Actions → Firebase auto-deploy |
+| `company-researching` | Codex 데이터 리서치 | PR → auto-merge (데이터만) → auto-deploy |
+| `daily-deep-research` | 자동 딥리서치 파이프라인 | PR → auto-merge → auto-deploy |
+| `feature/*` | Claude Code UI/기능 작업 | PR 또는 main 직접 merge |
+
+**Git Worktree 구조:**
+| 디렉토리 | 브랜치 | 용도 |
+|-----------|--------|------|
+| `aido/` | `main` | UI/배포 (수동) |
+| `aido-daily-research/` | `daily-deep-research` | 자동 딥리서치 |
 
 **규칙:**
 - Main branch에 직접 push OK (개인 프로젝트)
 - 큰 변경사항은 feature branch + PR
-- Merge 후 feature branch 삭제
+- `company-researching`은 Codex 전용 — 직접 수정 금지
+- `daily-deep-research`는 파이프라인 전용 — 직접 수정 금지
 
 ---
 
@@ -381,7 +416,8 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - Tier 0/1 회사에 대한 VC + Product Design 관점 딥 리서치
 - 디자인팀 전원 LinkedIn 매핑, 비즈니스 모델 딥다이브
 - Upside/Downside/Competition 분석, Decision Framework
-- Output: `src/data/deep-research/[company-id].md`
+- 인라인 citation 자동 생성 (`[↗ Publisher](url)` 패턴)
+- Output: deep research report + company data update + article with sources
 
 **writer**
 - 위치: `.claude/skills/writer/`
@@ -514,36 +550,65 @@ WebSearch: Anthropic "Product Designer" job site:anthropic.com/careers 2025
 - `app/company/[id]/page.tsx`: Dynamic metadata
 - `SEO_AEO_PLAN.md`: 전체 SEO 전략
 
-### Cron 자동화 (향후)
+### 자동화 파이프라인 (안정화 진행 중)
 
-**Daily 6am PST:**
-- SF Bay Area 신규 회사 발견 (startups.gallery)
-- Company researcher skill 실행
-- Job postings 업데이트
-- Git commit + Firebase deploy
+**⚠️ 현재 상태**: 파이프라인이 안정적으로 돌아가지 않음. 3회 실행 중 1회 실패(Cursor timeout), 1회 불완전(Lovable context overflow). 2026-02-11에 `--max-turns` + network warmup 패치 적용. 이후 결과 모니터링 필요.
 
-**Weekly Sunday 3am:**
-- Funding/valuation 데이터 갱신
-- Job postings 유효성 검증
-- Analytics 리포트 생성
+**Daily Research Pipeline** (`scripts/daily-research.sh`):
+- macOS launchd로 매일 자정 실행 (`~/Library/LaunchAgents/com.aido.daily-research.plist`)
+- Git worktree 분리 (`aido-daily-research/` → `daily-deep-research` 브랜치)
+- Phase 1: 유저 요청 회사 리서치 (`/company-researcher`, 30분 timeout, `--max-turns 30`)
+- Phase 2: Tier 0/1 회사 딥 리서치 (`/company-deep-research`, 45분 timeout, `--max-turns 50`)
+- 완료 → PR 생성 → auto-merge → auto-deploy
+
+**과거 이슈 & 수정 내역**:
+| 날짜 | 회사 | 문제 | 원인 | 수정 |
+|------|------|------|------|------|
+| Feb 9 | Cursor | 45분 timeout, 파일 미생성 | git stash/checkout 방식이 느림 | worktree 모드로 전환 |
+| Feb 11 | Lovable | "Prompt is too long" exit code 1 | context window overflow | `--max-turns 50` 추가 |
+| Feb 11 | Lovable | "Pre-flight check taking longer" | launchd 환경에서 네트워크 미준비 | `wait_for_network()` 추가 |
+
+**로그 파일**:
+- 실행 기록: `scripts/daily-research-log.json`
+- 상세 로그: `scripts/daily-research-output.log`
+- launchd stdout: `scripts/launchd-stdout.log`
+- launchd stderr: `scripts/launchd-stderr.log`
+
+**GitHub Actions 자동화**:
+- `sync-branches.yml`: main push → company-researching 자동 sync
+- `auto-merge-data-pr.yml`: 데이터 전용 PR 자동 머지
+- `firebase-hosting-merge.yml`: main merge → Firebase 자동 배포
+
+**Codex (company-researching 브랜치)**:
+- 데이터 리서치 전용 (UI 수정 금지)
+- 설정: `.codex/instructions.md`
 
 ---
 
-## 다음 할 것들
+## Article Inline Citations
 
-### SEO 구축 (진행 중)
-- [ ] Meta tags + OG images
-- [ ] `/jobs` 집계 페이지
-- [ ] JobPosting schema
-- [ ] FAQ 페이지
+아티클에서 데이터 포인트의 출처를 인라인으로 표시하는 시스템.
 
-### Automation
-- [ ] Firebase Functions + Cron setup
-- [ ] Company discovery (startups.gallery)
-- [ ] Daily job scraper
+### Citation Chip 패턴
 
-### Content
-- [ ] 회사 추가: 100+ 목표 (현재 57)
-- [ ] SF Bay Area 집중
-- [ ] Notes 편집 기능
-- [ ] 검색 기능
+마크다운에서 `[↗ Publisher](url)` 패턴 사용:
+```markdown
+Harvey reached $190M ARR [↗ Sacra](https://sacra.com/c/harvey/).
+```
+
+**렌더링**: 텍스트 옆에 작은 회색 칩으로 표시, hover 시 밝아짐.
+
+### 동작 원리
+- `MarkdownRenderer.tsx`: 링크 텍스트가 `↗ `로 시작하면 `.citation-chip` 클래스 적용
+- `globals.css`: `.article-content .citation-chip`으로 article link 스타일 override
+- 칩 텍스트는 white scale (blue 아님), hover 시 `var(--foreground)`
+
+### Citation 삽입 기준
+- 구체적 숫자 (ARR, valuation, funding, 직원 수)
+- 인용문 (CEO 발언, 인터뷰)
+- 특정 이벤트 (Series B 발표, 제품 출시)
+- 일반적 사실이나 의견은 citation 불필요
+
+### Article `sources` 배열
+TypeScript 파일에 `sources` 배열 포함 → 페이지 하단에 Sources 섹션 자동 렌더링.
+마크다운 content에 `## Sources` 넣지 말 것.

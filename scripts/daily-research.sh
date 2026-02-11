@@ -2,9 +2,13 @@
 # NOTE: No `set -e` — one failed request should not kill the entire pipeline.
 
 # ============================================================
-# Daily Auto Research Pipeline
-# 1. Processes ALL pending user requests (company-researcher, fast)
-# 2. Then picks the next Tier 0/1 company for deep research
+# Daily Auto Research Pipeline (Worktree Edition)
+# Uses a separate git worktree to avoid conflicts with Codex
+# and manual work on main/company-researching branches.
+#
+# 1. Processes ALL pending user requests (company-researcher)
+# 2. Picks the next Tier 0/1 company for deep research
+# 3. Commits to daily-deep-research branch → PR → auto-merge
 # ============================================================
 
 # --- Full binary paths (launchd does not source shell profile) ---
@@ -14,10 +18,40 @@ GIT="/usr/bin/git"
 GH="/opt/homebrew/bin/gh"
 CLAUDE="/Users/ilwonyoon/.local/bin/claude"
 
+# --- Environment setup for launchd ---
+# launchd runs with minimal env; set PATH and HOME explicitly
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${HOME}/.local/bin"
+export HOME="/Users/ilwonyoon"
+export LANG="en_US.UTF-8"
+
+# Network warmup — launchd may start before network is fully ready
+wait_for_network() {
+  local max_attempts=10
+  local attempt=0
+  while [ $attempt -lt $max_attempts ]; do
+    if curl -sf --max-time 5 "https://api.anthropic.com" >/dev/null 2>&1; then
+      return 0
+    fi
+    attempt=$((attempt + 1))
+    sleep 3
+  done
+  return 1
+}
+
+# --- Claude CLI settings ---
+# --max-turns prevents context window overflow ("Prompt is too long")
+# Phase 1 (company-researcher): simpler task, fewer turns needed
+# Phase 2 (deep-research): complex multi-phase task, more turns needed
+CLAUDE_MAX_TURNS_PHASE1=30
+CLAUDE_MAX_TURNS_PHASE2=50
+# Retry settings for recoverable errors
+MAX_RETRIES=1
+
 PROJECT_DIR="/Users/ilwonyoon/Documents/AIDO/aido"
+WORKTREE_DIR="/Users/ilwonyoon/Documents/AIDO/aido-daily-research"
 LOG_FILE="${PROJECT_DIR}/scripts/daily-research-log.json"
 OUTPUT_LOG="${PROJECT_DIR}/scripts/daily-research-output.log"
-BRANCH="company-researching"
+BRANCH="daily-deep-research"
 
 TIMESTAMP=$(date '+%Y-%m-%dT%H:%M:%S')
 DATE_SHORT=$(date '+%d/%m/%y - %H:%M:%S')
@@ -34,10 +68,8 @@ update_log_file() {
   local duration="$5"
   local error_msg="${6:-}"
 
-  # Build the new run entry (pure bash, no jq dependency)
   local entry="{\"timestamp\":\"${TIMESTAMP}\",\"companyName\":\"${company_name}\",\"companyId\":\"${company_id}\",\"tier\":\"${tier}\",\"status\":\"${status}\",\"durationSeconds\":${duration},\"error\":\"${error_msg}\"}"
 
-  # Read existing log, insert new run, update lastRun
   local tmp_file="${LOG_FILE}.tmp"
   ${NODE} -e "
     const fs = require('fs');
@@ -54,23 +86,88 @@ update_log_file() {
 }
 
 # ============================================================
+# Helper: run Claude with timeout, max-turns, and retry
+# Usage: run_claude_with_retry <prompt> <max_turns> <timeout_sec> <label>
+# Returns: 0 on success, 1 on failure
+# ============================================================
+run_claude_with_retry() {
+  local prompt="$1"
+  local max_turns="$2"
+  local timeout_sec="$3"
+  local label="$4"
+  local attempt=0
+
+  while [ $attempt -le $MAX_RETRIES ]; do
+    if [ $attempt -gt 0 ]; then
+      log "Retry ${attempt}/${MAX_RETRIES} for ${label}..."
+    fi
+
+    ${CLAUDE} -p "${prompt}" \
+      --max-turns "${max_turns}" \
+      --dangerously-skip-permissions \
+      >> "${OUTPUT_LOG}" 2>&1 &
+    local CLAUDE_PID=$!
+
+    ( sleep ${timeout_sec}; kill ${CLAUDE_PID} 2>/dev/null ) &
+    local WATCHDOG_PID=$!
+
+    if wait ${CLAUDE_PID} 2>/dev/null; then
+      kill ${WATCHDOG_PID} 2>/dev/null || true
+      log "Claude completed successfully for ${label}."
+      return 0
+    else
+      local CLAUDE_EXIT=$?
+      kill ${WATCHDOG_PID} 2>/dev/null || true
+
+      if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
+        log "ERROR: Claude timed out after $((timeout_sec / 60)) minutes for ${label}."
+        return 1  # No retry on timeout — it won't get faster
+      fi
+
+      # Check if "Prompt is too long" in recent output
+      if tail -5 "${OUTPUT_LOG}" | grep -q "Prompt is too long"; then
+        log "ERROR: Context overflow (Prompt is too long) for ${label}."
+        # This is not retryable with same params
+        return 1
+      fi
+
+      log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${label}."
+      attempt=$((attempt + 1))
+    fi
+  done
+
+  log "ERROR: All retries exhausted for ${label}."
+  return 1
+}
+
+# ============================================================
 # Pipeline START
 # ============================================================
-log "=== Daily Research Pipeline START ==="
+log "=== Daily Research Pipeline START (worktree mode) ==="
 
-cd "${PROJECT_DIR}"
+# Wait for network connectivity (launchd may start before network is ready)
+if ! wait_for_network; then
+  log "ERROR: Network not available after 30s. Aborting."
+  exit 1
+fi
+log "Network connectivity verified."
+
+# Sync worktree with latest main
+cd "${WORKTREE_DIR}"
+${GIT} fetch origin main 2>/dev/null || true
+${GIT} reset --hard origin/main 2>/dev/null || true
+
+log "Worktree synced to latest main."
 
 # ============================================================
 # PHASE 1: Process ALL pending user requests (company-researcher)
-# Uses the lighter company-researcher skill for speed.
-# Loops until no more pending requests remain.
 # ============================================================
 log "=== Phase 1: Processing pending user requests ==="
 
 REQUEST_COUNT=0
 
 while true; do
-  REQUEST_RESULT=$($NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
+  REQUEST_RESULT=$(cd "${PROJECT_DIR}" && $NPX tsx scripts/process-company-requests.ts --next 2>/dev/null || echo "NO_PENDING_REQUESTS")
 
   if [ "${REQUEST_RESULT}" = "NO_PENDING_REQUESTS" ]; then
     break
@@ -79,14 +176,11 @@ while true; do
   IFS='|' read -r REQUEST_ID REQUEST_COMPANY REQUEST_WEBSITE <<< "${REQUEST_RESULT}"
   log "Found user request: ${REQUEST_COMPANY} (ID: ${REQUEST_ID})"
 
-  # Mark as researching
-  $NPX tsx scripts/process-company-requests.ts --start "${REQUEST_ID}" 2>/dev/null || true
+  cd "${PROJECT_DIR}" && $NPX tsx scripts/process-company-requests.ts --start "${REQUEST_ID}" 2>/dev/null || true
 
   COMPANY_ID=$(echo "${REQUEST_COMPANY}" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
   REQ_START=$(date +%s)
-  REQ_DATE=$(date '+%d/%m/%y - %H:%M:%S')
 
-  # Build prompt for company-researcher (lighter than deep-research)
   REQ_PROMPT="/company-researcher ${REQUEST_COMPANY}
 
 IMPORTANT INSTRUCTIONS:
@@ -98,84 +192,64 @@ IMPORTANT INSTRUCTIONS:
 - Company website: ${REQUEST_WEBSITE}"
   fi
 
-  # Run with 30 min timeout (1800s) — background + kill pattern for macOS
   log "Running company-researcher for ${REQUEST_COMPANY}..."
-  ${CLAUDE} -p "${REQ_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
-  CLAUDE_PID=$!
+  cd "${WORKTREE_DIR}"
+  run_claude_with_retry "${REQ_PROMPT}" "${CLAUDE_MAX_TURNS_PHASE1}" 1800 "company-researcher: ${REQUEST_COMPANY}"
 
-  ( sleep 1800; kill ${CLAUDE_PID} 2>/dev/null ) &
-  WATCHDOG_PID=$!
-
-  if wait ${CLAUDE_PID} 2>/dev/null; then
-    kill ${WATCHDOG_PID} 2>/dev/null || true
-    log "Research completed for ${REQUEST_COMPANY}."
-  else
-    CLAUDE_EXIT=$?
-    kill ${WATCHDOG_PID} 2>/dev/null || true
-    log "WARNING: Claude exited with code ${CLAUDE_EXIT} for ${REQUEST_COMPANY}."
-  fi
-
-  # Check result and update Firestore
-  COMPANY_FILE="${PROJECT_DIR}/src/data/companies/${COMPANY_ID}.ts"
+  COMPANY_FILE="${WORKTREE_DIR}/src/data/companies/${COMPANY_ID}.ts"
   REQ_END=$(date +%s)
   REQ_DURATION=$((REQ_END - REQ_START))
 
   if [ -f "${COMPANY_FILE}" ]; then
     log "Company file created: ${COMPANY_FILE}"
-    $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
+    cd "${PROJECT_DIR}" && $NPX tsx scripts/process-company-requests.ts --complete "${REQUEST_ID}" "${COMPANY_ID}" 2>/dev/null || true
     update_log_file "${COMPANY_ID}" "${REQUEST_COMPANY}" "request" "success" "${REQ_DURATION}" ""
     REQUEST_COUNT=$((REQUEST_COUNT + 1))
   else
     log "WARNING: File not generated for ${REQUEST_COMPANY}."
-    $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Company file not generated" 2>/dev/null || true
+    cd "${PROJECT_DIR}" && $NPX tsx scripts/process-company-requests.ts --fail "${REQUEST_ID}" "Company file not generated" 2>/dev/null || true
     update_log_file "${COMPANY_ID}" "${REQUEST_COMPANY}" "request" "error" "${REQ_DURATION}" "Company file not generated"
   fi
 done
 
 log "Phase 1 complete: processed ${REQUEST_COUNT} user request(s)."
 
-# Commit all request results if any were processed
+# Commit Phase 1 results if any
 if [ ${REQUEST_COUNT} -gt 0 ]; then
-  ${GIT} add src/data/ public/ scripts/daily-research-log.json 2>/dev/null || true
+  cd "${WORKTREE_DIR}"
+  ${GIT} add src/data/ public/ 2>/dev/null || true
   ${GIT} commit -m "${DATE_SHORT} | company-researcher: ${REQUEST_COUNT} user request(s)
 
 Auto-researched via daily-research.sh Phase 1 (user requests)." 2>/dev/null || true
-  ${GIT} push origin HEAD 2>/dev/null || true
 fi
 
 # ============================================================
 # PHASE 2: Deep research for next Tier 0/1 company
-# Uses heavier company-deep-research skill.
 # ============================================================
 log "=== Phase 2: Tier list deep research ==="
 
-PICK_RESULT=$($NPX tsx scripts/pick-next-research.ts 2>/dev/null || echo "NONE")
+PICK_RESULT=$(cd "${PROJECT_DIR}" && $NPX tsx scripts/pick-next-research.ts 2>/dev/null || echo "NONE")
 
 if [ "${PICK_RESULT}" = "NONE" ]; then
   log "All tier list companies completed. Nothing to do."
+
+  # Still push Phase 1 if there were results
+  if [ ${REQUEST_COUNT} -gt 0 ]; then
+    cd "${WORKTREE_DIR}"
+    ${GIT} push origin "${BRANCH}" 2>/dev/null || true
+  fi
+
   log "=== Daily Research Pipeline COMPLETE ==="
   exit 0
 fi
 
-# Parse: "CompanyName|company-id|tier"
 IFS='|' read -r COMPANY_NAME COMPANY_ID TIER <<< "${PICK_RESULT}"
 log "Selected: ${COMPANY_NAME} (${COMPANY_ID}) — Tier ${TIER}"
 
 START_TIME=$(date +%s)
 
-# Switch to company-researching branch
-log "Switching to ${BRANCH} branch..."
-
-${GIT} stash --include-untracked 2>/dev/null || true
-${GIT} fetch origin "${BRANCH}" 2>/dev/null || true
-if ${GIT} show-ref --verify --quiet "refs/heads/${BRANCH}"; then
-  ${GIT} checkout "${BRANCH}"
-else
-  ${GIT} checkout -b "${BRANCH}" "origin/${BRANCH}" 2>/dev/null || ${GIT} checkout -b "${BRANCH}"
-fi
-${GIT} pull origin "${BRANCH}" --rebase 2>/dev/null || true
-
-# Run Claude deep research
+# Run Claude deep research in worktree
+cd "${WORKTREE_DIR}"
 log "Running deep research for ${COMPANY_NAME}..."
 
 RESEARCH_PROMPT="/company-deep-research ${COMPANY_NAME}
@@ -186,49 +260,30 @@ IMPORTANT INSTRUCTIONS:
 - Output the research article to src/data/deep-research/${COMPANY_ID}.md
 - Complete the full research pipeline end-to-end without stopping."
 
-# 60 minute timeout (3600 seconds) — background + kill pattern for macOS
-${CLAUDE} -p "${RESEARCH_PROMPT}" --dangerously-skip-permissions >> "${OUTPUT_LOG}" 2>&1 &
-CLAUDE_PID=$!
+# 45 minute timeout (reduced from 60 — successful runs complete in ~15-20 min)
+run_claude_with_retry "${RESEARCH_PROMPT}" "${CLAUDE_MAX_TURNS_PHASE2}" 2700 "deep-research: ${COMPANY_NAME}"
 
-( sleep 3600; kill ${CLAUDE_PID} 2>/dev/null ) &
-WATCHDOG_PID=$!
-
-if wait ${CLAUDE_PID} 2>/dev/null; then
-  kill ${WATCHDOG_PID} 2>/dev/null || true
-  log "Claude research completed successfully."
-else
-  CLAUDE_EXIT=$?
-  kill ${WATCHDOG_PID} 2>/dev/null || true
-  if [ ${CLAUDE_EXIT} -eq 137 ] || [ ${CLAUDE_EXIT} -eq 143 ]; then
-    log "ERROR: Claude timed out after 60 minutes."
-  else
-    log "ERROR: Claude exited with code ${CLAUDE_EXIT}."
-  fi
-fi
-
-# Verify output exists
-RESEARCH_FILE="${PROJECT_DIR}/src/data/deep-research/${COMPANY_ID}.md"
+# Verify output
+RESEARCH_FILE="${WORKTREE_DIR}/src/data/deep-research/${COMPANY_ID}.md"
 
 if [ ! -f "${RESEARCH_FILE}" ]; then
   END_TIME=$(date +%s)
   DURATION=$((END_TIME - START_TIME))
   log "ERROR: Research file not found at ${RESEARCH_FILE}"
   update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "error" "${DURATION}" "Research file not generated"
-  # Don't exit — pipeline already processed user requests above
   log "=== Daily Research Pipeline COMPLETE (deep research failed) ==="
   exit 0
 fi
 
 log "Research file verified: ${RESEARCH_FILE}"
 
-# Git add, commit, push
-log "Committing and pushing..."
-
-${GIT} add src/data/
+# Git add, commit, push from worktree
+cd "${WORKTREE_DIR}"
+${GIT} add src/data/ scripts/ 2>/dev/null || true
 ${GIT} commit -m "${DATE_SHORT} | deep-research: ${COMPANY_NAME}
 
 Auto-generated deep research article for ${COMPANY_NAME} (Tier ${TIER}).
-Pipeline: daily-research.sh"
+Pipeline: daily-research.sh (worktree)"
 
 ${GIT} push origin "${BRANCH}"
 
@@ -245,7 +300,7 @@ if [ -z "${EXISTING_PR}" ]; then
     --body "$(cat <<EOF
 ## Summary
 - Auto-generated deep research for **${COMPANY_NAME}** (Tier ${TIER})
-- Generated by \`scripts/daily-research.sh\` pipeline
+- Generated by \`scripts/daily-research.sh\` pipeline (worktree)
 - Research file: \`src/data/deep-research/${COMPANY_ID}.md\`
 
 ## Test plan
@@ -259,16 +314,11 @@ else
   log "PR #${EXISTING_PR} already exists. Push updated the PR."
 fi
 
-# Update log file
+# Update log
 END_TIME=$(date +%s)
 DURATION=$((END_TIME - START_TIME))
 
 update_log_file "${COMPANY_ID}" "${COMPANY_NAME}" "${TIER}" "success" "${DURATION}" ""
-
-# Commit the updated log
-${GIT} add scripts/daily-research-log.json
-${GIT} commit -m "${DATE_SHORT} | log: ${COMPANY_NAME} research complete (${DURATION}s)"
-${GIT} push origin "${BRANCH}"
 
 log "=== Daily Research Pipeline COMPLETE ==="
 log "Company: ${COMPANY_NAME} | Duration: ${DURATION}s | Status: success"

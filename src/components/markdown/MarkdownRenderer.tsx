@@ -3,6 +3,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getCompanyDomain } from '@/utils/companyDomains';
+import { CitationChip } from '@/components/ui/CitationChip';
 
 interface MarkdownRendererProps {
   content: string;
@@ -24,8 +25,15 @@ export function MarkdownRenderer({
         h3: ({ node, ...props }) => <h3 {...props} />,
         h4: ({ node, ...props }) => <h4 {...props} />,
 
-        // Links - detect company links and render with favicon
+        // Links - detect citations, company links, and render accordingly
         a: ({ node, href, children, ...props }) => {
+          const text = String(children);
+
+          // Citation chip: [↗ Publisher](url)
+          if (text.startsWith('↗ ') && href?.startsWith('http')) {
+            return <CitationChip href={href} publisher={text.slice(2)} />;
+          }
+
           // Check if this is a company link
           if (href && href.startsWith('/company/')) {
             const companyId = href.replace('/company/', '');

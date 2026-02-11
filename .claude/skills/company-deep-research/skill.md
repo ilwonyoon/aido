@@ -696,8 +696,17 @@ const writerContext = {
   upsidePoints: string[],        // Phase 4 top insights
   downsidePoints: string[],       // Phase 5 top risks
   competitionInsights: string[],  // Phase 6 key findings
+  llmPosition: string,            // Phase 6 LLM relationship summary
   keyArticles: Article[],         // Phase 7 collected sources
   decisionScore: number,          // Phase 8 final score
+
+  // Sources for citation (REQUIRED)
+  sources: {
+    title: string,
+    url: string,
+    publisher: string,           // e.g., "TechCrunch", "Crunchbase", "Company Blog"
+    date?: string,               // ISO format
+  }[],
 
   // Suggested topic
   suggestedTopic: string,
@@ -788,6 +797,61 @@ Options:
 | 일반적 디자이너 관점 | 특정 회사에 대한 구체적 디자이너 인사이트 |
 | 소스 3-5개 | 소스 10-20개 (리서치에서 수집) |
 | 회사 링크만 | 회사 로고 아이콘과 함께 링크 렌더링 |
+
+### 9.8 Article Source Citations (REQUIRED)
+
+**모든 아티클은 반드시 Sources 섹션을 포함해야 함.**
+
+#### Article Content Requirements
+
+1. **Inline citation chips**: 주요 데이터 포인트 옆에 `[↗ Publisher](url)` 형식으로 출처 표기. MarkdownRenderer가 이 패턴을 감지하여 칩 형태로 렌더링함.
+
+   **CRITICAL**: 링크 텍스트는 반드시 `↗ ` (화살표 + 공백)으로 시작해야 citation chip으로 인식됨.
+
+   ```markdown
+   Anthropic reached $7B ARR in October 2025 [↗ The Information](https://www.theinformation.com/articles/anthropic-revenue-7b), up from $1B earlier that year [↗ TechCrunch](https://techcrunch.com/...).
+   ```
+
+   **렌더링 결과**: 텍스트 옆에 `[The Information ↗]` 칩이 인라인으로 표시됨.
+
+   **Citation 삽입 기준**:
+   - 구체적 숫자 (ARR, valuation, funding, 직원 수 등)
+   - 인용문 (CEO 발언, 인터뷰 등)
+   - 특정 이벤트 (Series B 발표, 제품 출시 등)
+   - 경쟁사 비교 데이터
+   - 일반적 사실이나 의견은 citation 불필요
+
+2. **Article TypeScript file**: `sources` 필드에 모든 출처 배열로 포함 (하단 Sources 섹션 렌더링용)
+   ```typescript
+   sources: [
+     {
+       title: 'Anthropic raises $2B at $60B valuation',
+       url: 'https://techcrunch.com/...',
+       publisher: 'TechCrunch',
+       date: '2025-09-15',
+     },
+     // ... more sources
+   ],
+   ```
+
+3. **Markdown content에 `## Sources` 섹션은 넣지 말 것** — `sources` 배열이 페이지 하단에 자동으로 렌더링됨
+
+#### Minimum Source Requirements
+
+| Article Type | Minimum Sources |
+|-------------|----------------|
+| Company deep dive | 10+ sources |
+| Comparison (A vs B) | 8+ sources (4+ per company) |
+| Top N list | 2+ sources per company |
+| Trend analysis | 8+ sources |
+
+#### Source Quality Standards
+
+- **Primary sources preferred**: Company blog, press releases, SEC filings
+- **Credible publishers**: TechCrunch, The Information, Bloomberg, Reuters
+- **Data sources**: Crunchbase, PitchBook, CB Insights, G2
+- **Recency**: Prefer sources from last 12 months
+- **No paywalled-only sources**: At least one free source for each major claim
 
 ---
 

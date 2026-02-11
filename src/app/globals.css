@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
 
+/* ================================================================
+   AIDO Design System
+   Single source of truth for all visual decisions.
+
+   Contexts:
+   1. Information (Company List, Detail, Jobs, Requests)
+      — Dense UI, interactive elements, 4px grid spacing
+   2. Content (Articles, About)
+      — Long-form readability, relaxed line-height, proximity-based spacing
+
+   Both contexts share the same color + typography scale tokens.
+   Content context adds --content-* tokens for reading-specific values.
+   ================================================================ */
+
 /* Dark theme (default) */
 :root {
   --background: #000000;
@@ -43,6 +57,26 @@
   --text-xs: 0.706rem;
   --text-xs--line-height: 1.5;
   --text-xs--letter-spacing: 0.01em;
+
+  /* Content context tokens (Articles, About) */
+  --content-line-height: 1.778;
+  --content-paragraph-spacing: 1.667em;
+  --content-h1-size: 2rem;
+  --content-h1-weight: 800;
+  --content-h2-size: 1.75rem;
+  --content-h2-weight: 700;
+  --content-h3-size: 1.375rem;
+  --content-h3-weight: 600;
+  --content-h4-size: 1.125rem;
+  --content-h4-weight: 600;
+  --content-h1-gap: 4rem;
+  --content-h2-gap: 10rem;
+  --content-h3-gap: 6rem;
+  --content-h4-gap: 3.5rem;
+  --content-h1-bottom: 0.75rem;
+  --content-h2-bottom: 1.25rem;
+  --content-h3-bottom: 0.875rem;
+  --content-h4-bottom: 0.625rem;
 }
 
 /* Light theme */
@@ -262,74 +296,62 @@ a.card {
 }
 
 /* ================================================================
-   Article Design System v2.0
+   Content Context — Articles, About pages
+   Uses --content-* tokens from :root for all spacing/sizing values.
+   Change tokens in :root to update all content pages at once.
 
-   Spacing scale (rem, base unit 0.25rem at 17px):
-     0.25rem (4px)   micro      subtitle→list family bond
-     0.5rem  (9px)   tight      heading→content proximity
-     0.75rem (13px)  small      heading margin-bottom
-     1rem    (17px)  base
-     1.25rem (21px)  medium     blockquote indent
-     1.5rem  (26px)  indent     list padding, table cell
-     2rem    (34px)  group      h4 section gap
-     2.5rem  (43px)  section    h3 gap, hr
-     4rem    (68px)  page       h1 gap
-     7rem    (119px) major      h2 section gap (acts as visual divider)
-   Exception: 1.333em for paragraph flow (= 0.75 × line-height 1.778)
-
-   Typography: h1(2rem/800) h2(1.75rem/700) h3(1.375rem/600) h4(1.125rem/600)
-   Colors: --foreground (headings) > --text-body (paragraphs) > --text-secondary (lists)
-   Proximity: heading top:bottom ratio ≈ 5:1
+   Color hierarchy: --foreground (headings) > --text-body (paragraphs) > --text-secondary (lists)
+   Proximity principle: heading top:bottom ratio ≈ 5:1
    ================================================================ */
 
 /* --- Container --- */
 .article-content {
   color: var(--foreground);
-  line-height: 1.778;
+  line-height: var(--content-line-height);
 }
 
 /* --- Headings ---
-   margin-top hierarchy: h2(7rem) > h1(4rem) > h3(2.5rem) > h4(2rem)
+   margin-top hierarchy: h2 > h3 > h1 > h4
    margin-bottom is small for proximity to owned content */
 
 .article-content h1 {
   color: var(--foreground);
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: var(--content-h1-size);
+  font-weight: var(--content-h1-weight);
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-top: 4rem;
-  margin-bottom: 0.75rem;
+  margin-top: var(--content-h1-gap);
+  margin-bottom: var(--content-h1-bottom);
 }
 
 .article-content h2 {
   color: var(--foreground);
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: var(--content-h2-size);
+  font-weight: var(--content-h2-weight);
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-top: 10rem;
-  margin-bottom: 1.25rem;
+  margin-top: var(--content-h2-gap);
+  margin-bottom: var(--content-h2-bottom);
 }
 
 .article-content h3 {
   color: var(--foreground);
-  font-size: 1.375rem;
-  font-weight: 600;
+  font-size: var(--content-h3-size);
+  font-weight: var(--content-h3-weight);
   line-height: 1.3;
   letter-spacing: -0.01em;
-  margin-top: 6rem;
-  margin-bottom: 0.875rem;
+  margin-top: var(--content-h3-gap);
+  margin-bottom: var(--content-h3-bottom);
 }
 
 .article-content h4 {
   color: var(--foreground);
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: var(--content-h4-size);
+  font-weight: var(--content-h4-weight);
   line-height: 1.4;
   letter-spacing: -0.005em;
-  margin-top: 3.5rem;
-  margin-bottom: 0.625rem;
+  margin-top: var(--content-h4-gap);
+  margin-bottom: var(--content-h4-bottom);
 }
 
 /* --- First heading: suppress top margin --- */
@@ -347,17 +369,17 @@ a.card {
 /* --- Adjacent heading pairs: tighter coupling ---
    When headings are consecutive, the child heading's margin-top
    is reduced since the parent heading already provides separation. */
-.article-content h2 + h3 { margin-top: 1.25rem; }
+.article-content h2 + h3 { margin-top: var(--content-h2-bottom); }
 .article-content h3 + h4,
-.article-content h3 + p  { margin-top: 0.875rem; }
-.article-content h4 + p  { margin-top: 0.625rem; }
+.article-content h3 + p  { margin-top: var(--content-h3-bottom); }
+.article-content h4 + p  { margin-top: var(--content-h4-bottom); }
 
 /* --- Body text --- */
 .article-content p {
   color: var(--text-body);
-  line-height: 1.778;
+  line-height: var(--content-line-height);
   margin-top: 0;
-  margin-bottom: 1.667em;
+  margin-bottom: var(--content-paragraph-spacing);
 }
 
 /* --- Paragraph → List transitions ---
@@ -399,7 +421,7 @@ a.card {
 .article-content li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  line-height: 1.778;
+  line-height: var(--content-line-height);
   padding-left: 0.25rem;
   display: list-item;
 }
@@ -520,6 +542,41 @@ a.card {
 [data-theme="light"] .badge-warning {
   background: rgba(217, 119, 6, 0.1);
   border-color: rgba(217, 119, 6, 0.3);
+}
+
+/* Citation chip — inline source reference */
+.citation-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  border-radius: 9999px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none !important;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.citation-chip:hover {
+  border-color: var(--muted);
+  color: var(--foreground);
+}
+
+/* Override .article-content a styles for citation chips */
+.article-content .citation-chip {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.article-content .citation-chip:hover {
+  color: var(--foreground);
 }
 
 /* Section styles */

@@ -128,8 +128,12 @@ export const replit: Company = {
 
     // Design Opportunity
     designTeam: {
-      cpo: 'Haya Odeh (Co-founder, Design & UX)',
-      teamSize: '~50-100 (estimated)',
+      cpo: 'Haya Odeh (Co-founder & VP of Design)',
+      teamSize: '~10-15 designers (estimated for 335 employees)',
+      notableMembers: [
+        { name: 'Zade Kaylani', role: 'Product Designer' },
+        { name: 'Aman Mathur', role: 'Product Manager & Designer (Product Lead, Agent)' },
+      ],
     },
     designWorkType: {
       logicBehavior: {
@@ -180,10 +184,38 @@ export const replit: Company = {
     designerLinks: [
       {
         name: 'Haya Odeh',
-        role: 'Co-founder (Design & UX)',
+        role: 'Co-founder & VP of Design',
         platform: 'twitter',
         url: 'https://twitter.com/hayaodeh',
-        description: 'Haya leads design at Replit. Wife of CEO Amjad Masad.',
+        description: 'Co-founder leading design at Replit. 2024 ASU+GSV Power of Women awardee.',
+      },
+      {
+        name: 'Haya Odeh',
+        role: 'Co-founder & VP of Design',
+        platform: 'linkedin',
+        url: 'https://www.linkedin.com/in/haya-odeh-b0725928/',
+        description: 'Co-founder & VP of Design since 2015.',
+      },
+      {
+        name: 'Zade Kaylani',
+        role: 'Product Designer',
+        platform: 'linkedin',
+        url: 'https://www.linkedin.com/in/zadekaylani/',
+        description: 'Product designer at Replit. USC Astronautical Engineering grad. Portfolio: zade.design',
+      },
+      {
+        name: 'Aman Mathur',
+        role: 'Product Manager & Designer',
+        platform: 'linkedin',
+        url: 'https://www.linkedin.com/in/aman-mathur/',
+        description: 'Product lead for Replit Agent. 8 years AI product experience.',
+      },
+      {
+        name: 'Replit Design Blog',
+        role: 'Design Team',
+        platform: 'blog',
+        url: 'https://blog.replit.com/category/design',
+        description: 'Replit design blog with posts on RUI design system, tokens, and design mode.',
       },
     ],
 
@@ -223,12 +255,31 @@ export const replit: Company = {
         content: 'Founder-led, product-obsessed culture. Amjad is extremely public about product decisions on Twitter.',
         url: 'https://twitter.com/amasad',
       },
+      {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        rating: 4.2,
+        content: 'Incredible autonomy and ownership. Remote-oriented culture with international team. High agency, smart coworkers, management encourages career-building projects.',
+        url: 'https://www.glassdoor.com/Reviews/Replit-Reviews-E1519977.htm',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'negative',
+        content: 'Disorganized, excessive hours expected. Leadership described as out of touch, culture of intimidation. Terminations regularly threatened. "Go fast and break things" mentality.',
+        url: 'https://www.glassdoor.com/Reviews/Employee-Review-Replit-E1519977-RVW101157872.htm',
+      },
+      {
+        source: 'levels.fyi',
+        sentiment: 'neutral',
+        content: 'Software Engineer total comp: $150K-$205K. Product Designer comp data limited. Competitive but below FAANG levels.',
+        url: 'https://www.levels.fyi/companies/replit/salaries',
+      },
     ],
 
     growthMetrics: {
       stage: 'hypergrowth',
-      revenueGrowth: "$300M+ ARR (estimated 2025), 5x+ YoY",
-      userGrowth: "30M+ users, millions of apps deployed",
+      revenueGrowth: "$253M ARR (Oct 2025), 2,352% YoY. $10M -> $100M in 5.5 months.",
+      userGrowth: "40M+ users across 200+ countries, 2M+ apps created by Agent",
       signals: [
         "$9B valuation (3x from $3B in 4 months after Replit Agent launch)",
         "$630M Series D funding",
@@ -275,21 +326,34 @@ export const replit: Company = {
         'Intense competition: Cursor, Windsurf, Lovable',
         'Founder controversy: Masad called "terrorist sympathizer"',
         'In-office 3x/week: Mon/Wed/Fri in Foster City',
+        'Design team turnover: key designers (Barron, Tyler, Omar) all left',
+        'Glassdoor: culture of intimidation, excessive hours cited',
       ],
       nextActions: [
-        'Use Replit Agent extensively',
+        'Use Replit Agent extensively — build 2-3 projects',
         'Follow Amjad Masad and Haya Odeh on Twitter',
         'Apply for Product Designer, B2B role',
-        'Research Replit\'s design system (Replit UI)',
+        'Study RUI design system blog posts for interview prep',
+        'Research Replit Design Mode (Gemini 3 powered)',
+        'Network with Zade Kaylani or Barron Webster for insider perspective',
       ],
+      notes: 'Deep research completed 2026-02-11. See src/data/deep-research/replit.md for full report. Decision score: 7.65/10.',
     },
 
     // Meta
-    lastUpdated: '2026-01-26T11:40:00',
+    lastUpdated: '2026-02-11T12:00:00',
     sources: [
-    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Replit' },
-    { title: 'Source', url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/' },
-    { title: 'Source', url: 'https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/' },
-    { title: 'Source', url: 'https://en.wikipedia.org/wiki/Amjad_Masad' }
+    { title: 'Wikipedia: Replit', url: 'https://en.wikipedia.org/wiki/Replit' },
+    { title: 'Replit $400M Series D', url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/' },
+    { title: 'Amjad Masad Controversy', url: 'https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/' },
+    { title: 'Wikipedia: Amjad Masad', url: 'https://en.wikipedia.org/wiki/Amjad_Masad' },
+    { title: 'Sacra: Replit at $253M ARR', url: 'https://sacra.com/research/replit-at-253m-arr-growing-2352-yoy/' },
+    { title: 'SaaStr: $10M to $100M in 5.5 Months', url: 'https://www.saastr.com/100mreplit/' },
+    { title: 'Replit $250M Series C', url: 'https://replit.com/news/funding-announcement' },
+    { title: 'TechCrunch: Replit found its market', url: 'https://techcrunch.com/2025/10/02/after-nine-years-of-grinding-replit-finally-found-its-market-can-it-keep-it/' },
+    { title: 'Replit Design System (RUI)', url: 'https://blog.replit.com/rui-eng' },
+    { title: 'Glassdoor Reviews', url: 'https://www.glassdoor.com/Reviews/Replit-Reviews-E1519977.htm' },
+    { title: 'Replit Usage Statistics 2026', url: 'https://www.index.dev/blog/replit-usage-statistics' },
+    { title: 'Vibe Coding TAM', url: 'https://www.saastr.com/the-vibe-coding-tam-how-big-can-this-market-really-get/' },
   ],
   };

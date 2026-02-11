@@ -34,24 +34,29 @@ export const cursor: Company = {
     revenue: '~$1B+ ARR (Dec 2025)',
     growth: 'Fastest SaaS ever: $1M→$1B ARR in ~2 years',
     runway: 'Strong — profitable, $2.3B cash',
-    customers: 'Millions of developers globally',
+    customers: '1M+ daily active users, 50,000+ teams, 50% of Fortune 500 (including Nvidia, Uber, Adobe, Stripe)',
 
     // Competition
     competitors: [
       {
         name: 'GitHub Copilot',
-        description: 'Microsoft-backed AI coding assistant, integrated in VS Code',
-        whyTheyWin: 'Distribution through GitHub/VS Code, enterprise adoption',
+        description: 'Microsoft-backed AI coding assistant, integrated in VS Code. 20M+ users, 40% market share',
+        whyTheyWin: 'Distribution through GitHub (130M+ devs) / VS Code, enterprise bundle, all major AI models (GPT-5, Claude, o1)',
+      },
+      {
+        name: 'Claude Code',
+        description: 'Anthropic terminal-native AI coding agent. Growing rapidly',
+        whyTheyWin: 'Best AI model for coding (Claude), no IDE overhead, autonomous agent capabilities',
+      },
+      {
+        name: 'Google Gemini Code Assist',
+        description: 'Google AI coding assistant. Hired Windsurf CEO + founders ($2.4B deal)',
+        whyTheyWin: 'Gemini models, Windsurf talent acquisition, Google Cloud distribution',
       },
       {
         name: 'Replit',
         description: 'Browser-based IDE with AI features',
-        whyTheyWin: 'No setup required, strong education market',
-      },
-      {
-        name: 'Codeium',
-        description: 'Free AI code completion',
-        whyTheyWin: 'Free tier, enterprise deployment options',
+        whyTheyWin: 'No setup required, strong education market, browser-native',
       },
     ],
     marketPosition: '#1 in AI Code Editors',
@@ -87,8 +92,8 @@ export const cursor: Company = {
       },
       {
         name: 'Arvid Lunnemark',
-        role: 'CTO',
-        background: 'MIT CSAIL research, ML infrastructure',
+        role: 'Former CTO (Left Oct 2025)',
+        background: 'MIT CSAIL research, ML infrastructure. Left to found Integrous Research (AI safety lab).',
       },
       {
         name: 'Aman Sanger',
@@ -109,19 +114,26 @@ export const cursor: Company = {
     greenFlags: [
       'Founders are 25-year-old billionaires who still code',
       'Product-obsessed culture, ship extremely fast',
-      'Small team (< 50) at $29B valuation',
-      'Design roles report to Engineering — integrated',
+      'Ryo Lu (ex-Notion, Stripe) hired as Head of Design Jan 2025',
+      'Flat org, no PM layer — designers own product decisions',
+      '300+ employees at $29B valuation = extreme efficiency',
+      'Acquired Graphite (code review) and Supermaven — building platform',
     ],
     redFlags: [
-      'No dedicated design leadership yet',
-      'Hypergrowth may change culture rapidly',
+      'Engineering-dominated: <5 designers in 300+ person company',
+      'CTO co-founder Arvid Lunnemark departed Oct 2025',
+      'Hypergrowth (60 → 300+ in 9 months) changing culture rapidly',
       'In-person only (SF/NY)',
+      'Pricing backlash: credit-based billing change frustrated users (Jun 2025)',
     ],
 
     // Design Opportunity
     designTeam: {
+      designHead: 'Ryo Lu (Head of Design, ex-Notion, Stripe, Asana)',
       teamSize: 'Small (< 5 designers)',
-      notableMembers: [],
+      notableMembers: [
+        { name: 'Ryo Lu', role: 'Head of Design' },
+      ],
     },
     designWorkType: {
       logicBehavior: {
@@ -167,7 +179,11 @@ export const cursor: Company = {
     ],
 
     // Designer Links
-    designerLinks: [],
+    designerLinks: [
+      { name: 'Ryo Lu', role: 'Head of Design', platform: 'linkedin', url: 'https://www.linkedin.com/in/ryo-lu-7060b534/' },
+      { name: 'Ryo Lu', role: 'Head of Design', platform: 'twitter', url: 'https://x.com/ryolu_' },
+      { name: 'Ryo Lu', role: 'Head of Design', platform: 'blog', url: 'https://ryo.lu/' },
+    ],
 
     // Open Roles
     openRoles: [
@@ -180,31 +196,41 @@ export const cursor: Company = {
 
     cultureInsights: [
       {
+        source: 'glassdoor',
+        sentiment: 'positive',
+        content: 'Glassdoor review: "Best place I\'ve ever worked. Exceptionally high level of trust and autonomy. Humble, kind, motivated, incredibly talented people. Very high bar but zero ego."',
+      },
+      {
+        source: 'glassdoor',
+        sentiment: 'neutral',
+        content: 'Glassdoor review: "Pace faster than anything I\'ve ever experienced. Rapid change can feel a bit thrashy. Leadership sometimes makes rash decisions."',
+      },
+      {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Four MIT friends, all 25, now billionaires. Still code daily. Extremely flat organization.',
+        content: 'Ryo Lu (Head of Design): "At Cursor the roles between designers, PMs, engineers are really muddy. We just do what it takes based on each person\'s unique strengths."',
       },
       {
         source: 'twitter',
         sentiment: 'positive',
-        content: 'Ship velocity is legendary. Multiple major features per month. Product quality obsession.',
+        content: 'Ship velocity is legendary. Releases every 2-4 weeks. Launched Cursor 2.0, visual editor, background agents, web/mobile agents in 2025.',
       },
       {
         source: 'blind',
         sentiment: 'neutral',
-        content: 'Small team, intense pace. In-person required. Strong equity upside.',
+        content: 'Small team, intense pace. In-person required. Strong equity upside at $29.3B valuation.',
       },
       {
         source: 'levels.fyi',
         sentiment: 'neutral',
-        content: 'Limited salary data. Strong equity packages given valuation trajectory.',
+        content: 'Limited salary data (updated Feb 2026). Strong equity packages given $400M → $29.3B valuation trajectory in under 2 years.',
       },
     ],
 
     growthMetrics: {
       stage: 'hypergrowth',
       revenueGrowth: "~$1B+ ARR (Dec 2025), 10x+ YoY (fastest SaaS ever: $1M→$1B in ~2 years)",
-      userGrowth: "Millions of developers globally, 30,000+ teams",
+      userGrowth: "1M+ daily active users, 50,000+ teams, 50% Fortune 500 customers. 300+ employees (up from 60 in Mar 2025)",
       signals: [
         "$29.3B valuation at Series D (11x from $2.5B in 11 months)",
         "$1B+ ARR = fastest SaaS ever to $1B",
@@ -221,12 +247,12 @@ export const cursor: Company = {
         "Tab completion creates switching costs (habit formation)",
         "Claude partnership = best-in-class model access",
         "Developer word-of-mouth drives viral growth",
-        "Small team (<50) at $29B = extreme efficiency",
+        "Acquisitions (Supermaven, Graphite) building end-to-end platform",
       ],
       headwinds: [
         "GitHub Copilot has Microsoft distribution (bundled with GitHub)",
         "VS Code could integrate AI features natively",
-        "Replit, Codeium, and others competing for market",
+        "Windsurf CEO + founders joined Google DeepMind ($2.4B deal) — Google investing heavily in AI coding",
         "Model providers (Anthropic, OpenAI) could build own editors",
         "In-person only limits talent pool",
       ],
@@ -239,22 +265,35 @@ export const cursor: Company = {
       status: 'interested',
       fitScore: 9,
       whyJoin: [
-        'Frontier AI coding UX — defining the future',
-        'Tiny team, massive valuation = huge ownership potential',
-        'Product-obsessed founders who ship fast',
+        'Frontier AI coding UX — defining the future of software development',
+        'Tiny design team (<5) at $29.3B company = massive ownership potential',
+        'Ryo Lu (ex-Notion, Stripe) building elite design team from scratch',
+        'Product-obsessed founders who ship fast, $1B+ ARR in 24 months',
       ],
       whyNot: [
-        'No design leadership — you must be self-directed',
+        'Engineering-dominated: <5 designers in 300+ person org',
         'In-person only (SF/NY)',
-        'Hypergrowth culture may not suit everyone',
+        'Hypergrowth culture — pace faster than anything, potential burnout',
+        'No PM layer — designers must be self-directed and own PM responsibilities',
       ],
-      nextActions: ['Apply to Product Designer role', 'Try Cursor extensively first'],
-      notes: 'Most exciting AI code editor. Design role could shape entire industry.',
+      nextActions: [
+        'Apply to Product Designer role',
+        'Use Cursor intensively for 2+ weeks',
+        'Study Ryo Lu public content (a16z, YC, Substack)',
+        'Prepare product critique for interview',
+      ],
+      notes: 'Deep research completed 2026-02-11. See src/data/deep-research/cursor.md for full report. Score: 8.75/10.',
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-11',
     sources: [
-    { title: 'Source', url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html' },
-    { title: 'Source', url: 'https://sacra.com/c/cursor/' }
-  ],
+      { title: 'CNBC: Cursor Series D', url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html' },
+      { title: 'Sacra: Cursor Revenue & Funding', url: 'https://sacra.com/c/cursor/' },
+      { title: 'Contrary Research: Anysphere Breakdown', url: 'https://research.contrary.com/company/anysphere' },
+      { title: 'Lenny: Rise of Cursor', url: 'https://www.lennysnewsletter.com/p/the-rise-of-cursor-michael-truell' },
+      { title: 'Ryo Lu: Soulful Design', url: 'https://jdahl.substack.com/p/cursors-ryo-lu-on-soulful-design' },
+      { title: 'Fortune: Cursor Acquires Graphite', url: 'https://fortune.com/2025/12/19/cursor-ai-coding-startup-graphite-competition-heats-up/' },
+      { title: 'TechCrunch: Competition', url: 'https://techcrunch.com/2025/12/09/why-cursors-ceo-believes-openai-anthropic-competition-wont-crush-his-startup/' },
+      { title: 'Glassdoor: Anysphere Reviews', url: 'https://www.glassdoor.com/Reviews/Anysphere-Reviews-E10847804.htm' },
+    ],
   };

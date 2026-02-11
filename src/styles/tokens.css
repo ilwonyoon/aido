@@ -3,13 +3,11 @@
  *
  * Token Architecture:
  * 1. Primitive tokens: Raw values (--primitive-*)
- * 2. Semantic tokens: Purpose-based (--color-*, --space-*, --radius-*, etc.)
- * 3. Component tokens: Component-specific (--card-*, --badge-*, --control-*)
+ * 2. Semantic tokens: Purpose-based (--color-*, --control-*)
  *
  * Usage Rules:
- * - Components should only use semantic or component tokens
+ * - Components use semantic tokens or globals.css CSS variables
  * - Never use primitive tokens directly in components
- * - All values based on 4px baseline grid
  */
 
 :root {
@@ -18,51 +16,19 @@
    * Raw values - do not use directly in components
    * ============================================ */
 
-  /* Spacing Scale (4px baseline) */
-  --primitive-space-0: 0px;
-  --primitive-space-1: 4px;
-  --primitive-space-2: 8px;
-  --primitive-space-3: 12px;
-  --primitive-space-4: 16px;
-  --primitive-space-5: 20px;
-  --primitive-space-6: 24px;
-  --primitive-space-8: 32px;
-  --primitive-space-10: 40px;
-  --primitive-space-12: 48px;
-  --primitive-space-16: 64px;
-
-  /* Radius Scale */
-  --primitive-radius-0: 0px;
-  --primitive-radius-1: 4px;
-  --primitive-radius-2: 6px;
-  --primitive-radius-3: 8px;
-  --primitive-radius-4: 12px;
-  --primitive-radius-full: 9999px;
-
-  /* Font Family */
-  --font-jb-mono: var(--font-jb-mono);
-
   /* Font Size Scale (17px base) */
   --primitive-font-size-xs: 0.706rem;   /* 12px */
   --primitive-font-size-sm: 0.824rem;   /* 14px */
-  --primitive-font-size-base: 1rem;     /* 17px */
-  --primitive-font-size-lg: 1.059rem;   /* 18px */
-  --primitive-font-size-xl: 1.176rem;   /* 20px */
-  --primitive-font-size-2xl: 1.412rem;  /* 24px */
-  --primitive-font-size-3xl: 1.765rem;  /* 30px */
-  --primitive-font-size-4xl: 2.118rem;  /* 36px */
 
-  /* Line Height (4px grid aligned) */
+  /* Line Height */
   --primitive-line-height-tight: 1.2;   /* For headings */
   --primitive-line-height-snug: 1.4;    /* For UI text */
   --primitive-line-height-normal: 1.6;  /* For body text */
-  --primitive-line-height-relaxed: 1.8; /* For long-form content */
 
   /* Font Weight */
   --primitive-font-weight-normal: 400;
   --primitive-font-weight-medium: 500;
   --primitive-font-weight-semibold: 600;
-  --primitive-font-weight-bold: 700;
 
   /* Control Heights */
   --primitive-control-height-sm: 32px;
@@ -73,209 +39,24 @@
    * SEMANTIC COLOR TOKENS
    * ============================================ */
 
-  /* Background */
-  --color-bg-base: var(--background);
-  --color-bg-elevated: var(--card);
-  --color-bg-elevated-hover: var(--card-hover);
-  --color-bg-overlay: rgba(0, 0, 0, 0.5);
-
   /* Foreground / Text */
   --color-fg-default: var(--foreground);
   --color-fg-muted: var(--muted);
-  --color-fg-subtle: var(--border);
 
-  /* Border */
-  --color-border-default: var(--border);
-  --color-border-muted: var(--border);
-  --color-border-hover: var(--muted);
-
-  /* Interactive */
-  --color-interactive-primary: var(--accent);
-  --color-interactive-primary-hover: var(--accent-light);
-  --color-interactive-link: var(--accent-light);
-
-  /* Feedback */
-  --color-feedback-success: var(--success);
-  --color-feedback-success-muted: var(--positive);
-  --color-feedback-warning: var(--warning);
-  --color-feedback-error: var(--error);
-  --color-feedback-info: var(--accent-light);
-
-  /* AI Level Colors (semantic) */
+  /* AI Level Colors */
   --color-level-a: var(--success);
   --color-level-b: var(--accent-light);
   --color-level-c: var(--foreground);
   --color-level-d: var(--muted);
 
-  /* Focus */
-  --color-focus-ring: var(--accent);
-
-  /* ============================================
-   * SEMANTIC SPACING TOKENS
-   * ============================================ */
-
-  /* Layout Spacing */
-  --space-layout-xs: var(--primitive-space-2);   /* 8px */
-  --space-layout-sm: var(--primitive-space-4);   /* 16px */
-  --space-layout-md: var(--primitive-space-6);   /* 24px */
-  --space-layout-lg: var(--primitive-space-8);   /* 32px */
-  --space-layout-xl: var(--primitive-space-12);  /* 48px */
-  --space-layout-2xl: var(--primitive-space-16); /* 64px */
-
-  /* Component Spacing */
-  --space-component-xs: var(--primitive-space-1);  /* 4px */
-  --space-component-sm: var(--primitive-space-2);  /* 8px */
-  --space-component-md: var(--primitive-space-3);  /* 12px */
-  --space-component-lg: var(--primitive-space-4);  /* 16px */
-
-  /* Text Spacing (for typography pairing) */
-  --space-text-inline: var(--primitive-space-1);   /* 4px - same line elements */
-  --space-text-stacked: var(--primitive-space-2);  /* 8px - label to input */
-  --space-text-paragraph: var(--primitive-space-4); /* 16px - paragraphs */
-  --space-text-section: var(--primitive-space-6);  /* 24px - section gaps */
-
-  /* ============================================
-   * SEMANTIC RADIUS TOKENS
-   * ============================================ */
-
-  --radius-none: var(--primitive-radius-0);
-  --radius-sm: var(--primitive-radius-1);    /* 4px - small controls */
-  --radius-md: var(--primitive-radius-2);    /* 6px - buttons, inputs */
-  --radius-lg: var(--primitive-radius-3);    /* 8px - cards, modals */
-  --radius-xl: var(--primitive-radius-4);    /* 12px - large surfaces */
-  --radius-full: var(--primitive-radius-full); /* pills, avatars */
-
-  /* ============================================
-   * TYPOGRAPHY ROLE TOKENS
-   * ============================================ */
-
-  /* Caption - metadata, timestamps, labels */
-  --type-caption-size: var(--primitive-font-size-xs);
-  --type-caption-weight: var(--primitive-font-weight-normal);
-  --type-caption-line-height: var(--primitive-line-height-snug);
-  --type-caption-tracking: 0.01em;
-
-  /* Label - form labels, small UI text */
-  --type-label-size: var(--primitive-font-size-sm);
-  --type-label-weight: var(--primitive-font-weight-medium);
-  --type-label-line-height: var(--primitive-line-height-snug);
-  --type-label-tracking: 0;
-
-  /* Body - default reading text */
-  --type-body-size: var(--primitive-font-size-sm);
-  --type-body-weight: var(--primitive-font-weight-normal);
-  --type-body-line-height: var(--primitive-line-height-normal);
-  --type-body-tracking: 0;
-
-  /* Body Strong - emphasized body text */
-  --type-body-strong-size: var(--primitive-font-size-sm);
-  --type-body-strong-weight: var(--primitive-font-weight-medium);
-  --type-body-strong-line-height: var(--primitive-line-height-normal);
-
-  /* Body Large - intro text, descriptions */
-  --type-body-lg-size: var(--primitive-font-size-base);
-  --type-body-lg-weight: var(--primitive-font-weight-normal);
-  --type-body-lg-line-height: var(--primitive-line-height-normal);
-
-  /* Title - card titles, section headers */
-  --type-title-size: var(--primitive-font-size-lg);
-  --type-title-weight: var(--primitive-font-weight-medium);
-  --type-title-line-height: var(--primitive-line-height-tight);
-  --type-title-tracking: -0.01em;
-
-  /* Headline - page section headers */
-  --type-headline-size: var(--primitive-font-size-2xl);
-  --type-headline-weight: var(--primitive-font-weight-semibold);
-  --type-headline-line-height: var(--primitive-line-height-tight);
-  --type-headline-tracking: -0.02em;
-
-  /* Display - page titles */
-  --type-display-size: var(--primitive-font-size-3xl);
-  --type-display-weight: var(--primitive-font-weight-semibold);
-  --type-display-line-height: var(--primitive-line-height-tight);
-  --type-display-tracking: -0.02em;
-
-  /* Section Title - uppercase labels */
-  --type-section-title-size: var(--primitive-font-size-xs);
-  --type-section-title-weight: var(--primitive-font-weight-semibold);
-  --type-section-title-line-height: var(--primitive-line-height-snug);
-  --type-section-title-tracking: 0.05em;
-  --type-section-title-transform: uppercase;
-
   /* ============================================
    * COMPONENT TOKENS
    * ============================================ */
 
-  /* Card */
-  --card-bg: var(--color-bg-elevated);
-  --card-bg-hover: var(--color-bg-elevated-hover);
-  --card-border: var(--color-border-default);
-  --card-border-hover: var(--color-border-hover);
-  --card-radius: var(--radius-lg);
-  --card-padding: var(--primitive-space-4);  /* 16px - base padding */
-  --card-padding-lg: var(--primitive-space-5); /* 20px - larger cards */
-
-  /* Badge */
-  --badge-padding-x: var(--primitive-space-2);  /* 8px → 10px (0.625rem) */
-  --badge-padding-y: var(--primitive-space-1);  /* 4px */
-  --badge-radius: var(--radius-full);
-  --badge-font-size: var(--primitive-font-size-xs);
-  --badge-font-weight: var(--primitive-font-weight-medium);
-
-  /* Control (buttons, inputs, selects) */
+  /* Control (buttons, inputs) */
   --control-height-sm: var(--primitive-control-height-sm);
   --control-height-md: var(--primitive-control-height-md);
   --control-height-lg: var(--primitive-control-height-lg);
-  --control-height-default: var(--control-height-md);
-  --control-padding-x: var(--primitive-space-4);
-  --control-padding-x-sm: var(--primitive-space-3);
-  --control-radius: var(--radius-lg);
-  --control-border: var(--color-border-default);
-  --control-border-hover: var(--color-border-hover);
-  --control-border-focus: var(--color-focus-ring);
-
-  /* Button */
-  --button-padding-x: var(--primitive-space-4);  /* 16px */
-  --button-padding-y: var(--primitive-space-2);  /* 8px */
-  --button-radius: var(--radius-lg);
-  --button-font-size: var(--primitive-font-size-sm);
-  --button-font-weight: var(--primitive-font-weight-medium);
-
-  /* Filter Chip */
-  --chip-height: var(--primitive-control-height-sm);  /* 32px */
-  --chip-padding-x: var(--primitive-space-4);
-  --chip-radius: var(--radius-full);
-  --chip-font-size: var(--primitive-font-size-sm);
-  --chip-gap: var(--primitive-space-1);  /* 4px between chips */
-
-  /* Navigation */
-  --nav-height: 56px;
-  --nav-item-padding-x: var(--primitive-space-4);
-  --nav-item-padding-y: var(--primitive-space-2);
-
-  /* List */
-  --list-item-gap: var(--primitive-space-2);  /* 8px */
-  --list-bullet-gap: var(--primitive-space-2); /* 8px */
-
-  /* ============================================
-   * TRANSITION TOKENS
-   * ============================================ */
-
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.2s ease;
-  --transition-slow: 0.3s ease;
-
-  /* ============================================
-   * Z-INDEX SCALE
-   * ============================================ */
-
-  --z-base: 0;
-  --z-dropdown: 40;
-  --z-sticky: 50;
-  --z-overlay: 60;
-  --z-modal: 70;
-  --z-popover: 80;
-  --z-toast: 90;
 }
 
 /* ============================================
@@ -284,55 +65,22 @@
 
 /* Typography Utilities */
 .text-caption {
-  font-size: var(--type-caption-size);
-  font-weight: var(--type-caption-weight);
-  line-height: var(--type-caption-line-height);
-  letter-spacing: var(--type-caption-tracking);
+  font-size: var(--primitive-font-size-xs);
+  font-weight: var(--primitive-font-weight-normal);
+  line-height: var(--primitive-line-height-snug);
+  letter-spacing: 0.01em;
 }
 
 .text-label {
-  font-size: var(--type-label-size);
-  font-weight: var(--type-label-weight);
-  line-height: var(--type-label-line-height);
+  font-size: var(--primitive-font-size-sm);
+  font-weight: var(--primitive-font-weight-medium);
+  line-height: var(--primitive-line-height-snug);
 }
 
 .text-body {
-  font-size: var(--type-body-size);
-  font-weight: var(--type-body-weight);
-  line-height: var(--type-body-line-height);
-}
-
-.text-body-strong {
-  font-size: var(--type-body-strong-size);
-  font-weight: var(--type-body-strong-weight);
-  line-height: var(--type-body-strong-line-height);
-}
-
-.text-body-lg {
-  font-size: var(--type-body-lg-size);
-  font-weight: var(--type-body-lg-weight);
-  line-height: var(--type-body-lg-line-height);
-}
-
-.text-title {
-  font-size: var(--type-title-size);
-  font-weight: var(--type-title-weight);
-  line-height: var(--type-title-line-height);
-  letter-spacing: var(--type-title-tracking);
-}
-
-.text-headline {
-  font-size: var(--type-headline-size);
-  font-weight: var(--type-headline-weight);
-  line-height: var(--type-headline-line-height);
-  letter-spacing: var(--type-headline-tracking);
-}
-
-.text-display {
-  font-size: var(--type-display-size);
-  font-weight: var(--type-display-weight);
-  line-height: var(--type-display-line-height);
-  letter-spacing: var(--type-display-tracking);
+  font-size: var(--primitive-font-size-sm);
+  font-weight: var(--primitive-font-weight-normal);
+  line-height: var(--primitive-line-height-normal);
 }
 
 /* AI Level Text Colors */
@@ -340,9 +88,3 @@
 .text-level-b { color: var(--color-level-b); }
 .text-level-c { color: var(--color-level-c); }
 .text-level-d { color: var(--color-level-d); }
-
-/* Feedback Colors */
-.text-success { color: var(--color-feedback-success); }
-.text-warning { color: var(--color-feedback-warning); }
-.text-error { color: var(--color-feedback-error); }
-.text-info { color: var(--color-feedback-info); }

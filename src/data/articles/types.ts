@@ -25,6 +25,14 @@ export interface Article {
   // Data links
   companyIds?: string[]; // Referenced company IDs for auto-linking
 
+  // Sources & Citations
+  sources?: {
+    title: string;
+    url: string;
+    publisher?: string; // e.g., "TechCrunch", "Crunchbase", "Company Blog"
+    date?: string; // ISO format for publication date
+  }[];
+
   // Categorization
   tags: string[];
   category: 'company' | 'analysis' | 'perspectives' | 'guides';

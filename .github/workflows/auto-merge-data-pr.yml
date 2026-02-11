@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Auto-merge data-only PRs from company-researching
+      - name: Auto-merge data-only PRs from research branches
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -28,16 +28,16 @@ jobs:
             exit 0
           fi
 
-          # Check if PR is from company-researching branch
+          # Check if PR is from an auto-research branch
           HEAD_BRANCH=$(gh pr view "$PR_NUMBER" --json headRefName -q '.headRefName')
-          if [ "$HEAD_BRANCH" != "company-researching" ]; then
-            echo "PR #$PR_NUMBER is not from company-researching, skipping"
+          if [ "$HEAD_BRANCH" != "company-researching" ] && [ "$HEAD_BRANCH" != "daily-deep-research" ]; then
+            echo "PR #$PR_NUMBER is not from a research branch ($HEAD_BRANCH), skipping"
             exit 0
           fi
 
           # Safety check: only auto-merge if ONLY data files changed
           CHANGED=$(gh pr diff "$PR_NUMBER" --name-only)
-          NON_DATA=$(echo "$CHANGED" | grep -vE '^(src/data/|public/og-images/)' || true)
+          NON_DATA=$(echo "$CHANGED" | grep -vE '^(src/data/|public/og-images/|scripts/daily-research-log\.json)' || true)
 
           if [ -n "$NON_DATA" ]; then
             echo "PR #$PR_NUMBER contains non-data file changes:"
