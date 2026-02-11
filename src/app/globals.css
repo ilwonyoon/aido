@@ -522,19 +522,19 @@ a.card {
   border-color: rgba(217, 119, 6, 0.3);
 }
 
-/* Citation chip — inline source reference (subtle, text-level) */
+/* Citation chip — inline source reference (near-invisible until hover) */
 .citation-chip {
-  font-size: 0.625rem;
+  font-size: 0.5625rem;
   font-weight: 400;
   color: var(--muted);
-  opacity: 0.5;
+  opacity: 0.3;
   text-decoration: none !important;
   transition: opacity 0.15s ease, color 0.15s ease;
   white-space: nowrap;
 }
 
 .citation-chip:hover {
-  opacity: 1;
+  opacity: 0.8;
   color: var(--accent-light);
 }
 
