@@ -15,46 +15,136 @@ Lovable is the Stockholm-based AI-native app builder that turned the "vibe codin
 
 ## Design Team Intelligence
 
-### Leadership
+> Last updated: 2026-02-11
+
+### Design Leadership
+
+- **Nad Chishtie** -- Founding Designer & Head of Design -- [LinkedIn](https://uk.linkedin.com/in/nad-chishtie) | [X/Twitter](https://x.com/nadonomy) | [Website](https://nad.is/)
+  - 20+ years experience as a design and product leader. Based in London.
+  - **Previous**: VP of Design at Element/Matrix.org (decentralized comms platform, 2018-2024), Designer at Haiku (design-to-code tool, 2017-2018), Cmune (real-time 3D gaming platform, 50M+ users, 2011-2017), Play Music Today (UK's largest instrument retailer, 2008-2011).
+  - **Education**: Design & Technology (New Media), University of Leeds (2006-2008).
+  - Founding designer at Lovable -- designed the product from the ground up. Leads design vision and hiring.
+  - Design philosophy: "Designing design" -- elevating "simply useable to irresistibly desirable."
+  - Key product contributions: Visual editing panel, design panel, visual edits floating controls, Figma-to-Lovable integration.
+  - **Public content**: Dive Club podcast (2 episodes: "A new way to design and build with AI" + "How to get hired as a designer at Lovable"), Hatch Conference 2025 panelist ("Is vibe-coding and AI prompting the future of product design?"), Bridge Summit speaker, Apple Podcasts, LinkedIn thought leadership.
+  - **Hiring signal**: Actively scaling design team via Dive Talent Network. Leads all design hiring.
 
 - **Anton Osika** -- CEO & Co-Founder -- [LinkedIn](https://se.linkedin.com/in/antonosika) | [X/Twitter](https://x.com/antonosika)
   - KTH Royal Institute of Technology. Previously first hire at Sana Labs (enterprise AI), worked at CERN on particle physics. Founded GPT-Engineer (52K GitHub stars) which became Lovable.
   - Design philosophy: "We're not building magic. We're building a partner that helps you express yourself through technology." Believes product taste and user understanding are becoming more valuable than coding skills.
-  - On Lenny's Podcast: emphasized small, tightly aligned teams over sprawling organizations. Every decision must serve a single purpose -- helping people create faster.
+  - Personally announces design hires on X -- signals design is a leadership-level priority.
 
-- **Fabian Hedin** -- CTO & Co-Founder
-  - Technical co-founder. Leads engineering and infrastructure.
+- **Fabian Hedin** -- CTO & Co-Founder -- [LinkedIn](https://se.linkedin.com/in/fabian-hedin-2377b0144)
+  - Technical co-founder. Previously front-end engineering lead at Depict, built proptech firm TenFAST. Named Top 30 CTOs in EMEA 2025.
 
-### Design Team Members
+### Product Team (Design-Adjacent Leadership)
 
-- **Design team size**: Very small. Lovable is hiring its "second design hire" as of early 2026.
-- **Current team**: Estimated 1-2 designers for 500-750 employees.
-- **Open role**: [Product Designer](https://thehub.io/jobs/67b207810cadb233181fde65) -- "second design hire, lead design projects end-to-end"
-  - Requirements: Broad design skills, exceptional taste, strong prototyping, fluency with design systems, outstanding visual design
-  - Location: Stockholm (preferred), London (with regular travel)
-  - Compensation: "Top of market cash and equity, better than any other company in Sweden on a performance basis"
+- **Kristian Ruiz Kyvik** -- Product Manager -- [LinkedIn](https://se.linkedin.com/in/kristianruizkyvik) | [X/Twitter](https://x.com/kkyvik)
+  - Engineer turned product leader. MSc Industrial Economics & Technology Management (NTNU, Norway). Previously senior PM at Otovo and Belvo.
+  - Based in Stockholm.
+
+- **Elena Verna** -- Head of Growth -- [LinkedIn](https://www.linkedin.com/in/elenaverna/)
+  - 15+ years in growth and PLG. Previously interim Head of Growth at Dropbox & Amplitude, SVP Growth at SurveyMonkey, interim CMO at Miro. Partner at Reforge.
+  - Significant design-adjacent influence: operationalizes product quality, experimentation, and retention.
+
+- **Romain Laffitau** -- Product Manager & Builder -- [LinkedIn](https://www.linkedin.com/in/laffitau/)
+  - Based in Bordeaux. Background in no-code development (since 2020). Certified in Product Psychology (Growth.Design).
+
+### Design Team -- IC Designers
+
+- **Niklas Muhs** -- Designer -- [LinkedIn](https://www.linkedin.com/in/niklasmuhs/) | [X/Twitter](https://x.com/nklsmhs) | [Website](https://www.niklas.space/)
+  - Based in Stockholm. Designs and develops Lovable's core interface.
+  - **Previous**: First designer at Mistral AI (created Canvas interface, 2024), MIT Media Lab researcher (AI & cognitive science, 2023), Design Engineer at Intuity (2023), Product Designer at Fraunhofer (2022), Creative Technologist at Intuity Media Lab (2022).
+  - **Education**: MFA in Advanced Product Design, Umea Institute of Design.
+  - **Awards**: James Dyson Award National Winner (2023), IF Design Award (2023), UX Design Award Gold (2023), multiple Core77 runner-ups, Green Concept Award (2022), Braun Prize shortlisted (2021). 8 design awards total.
+  - **Research**: Published papers on AI supporting design processes in collaboration with MIT Media Lab.
+  - Grew up in Berlin; lived in Stockholm, Paris, Umea, and the Bay Area.
+  - Announced by Anton Osika on X as "Lovable's newest designer" (Jun 2025).
+
+- **Felix Haas** -- Designer + Angel Investor -- [LinkedIn](https://de.linkedin.com/in/felixhhaas) | [X/Twitter](https://x.com/felixhhaas) | [Website](https://fh.design/) | [Substack](https://designplusai.com/)
+  - Based in Berlin. Leads growth design at Lovable. Also a Scout Investor at Sequoia Capital and Designer in Residence at Creandum (VC).
+  - **Previous**: Founder & Creative Director at Blossom Design (acquired by Sonic), co-founded Mapify (acquired by Home2Go).
+  - **Education**: Harvard University.
+  - Angel investor in 20+ early-stage companies (including Maisa, Zauber, Superscale).
+  - **Public content**: "Design + AI" Substack newsletter, "Quick Coffee" podcast host, IdeaLab! 2024 speaker, "Mastering Lovable Playbook" series.
+  - Unique dual role: design execution + investor/advisor lens. Splits time between Stockholm and Berlin.
+
+### Design-Adjacent: Design Engineers
+
+- **Oluwaseyi Oluwadare** -- Design Engineer -- [LinkedIn](https://www.linkedin.com/in/oluwadareseyi/) | [Website](https://www.seyi.dev/) | [GitHub](https://github.com/oluwadareseyi)
+  - Based in United Kingdom. Builds interactive web experiences and design systems.
+  - **Previous**: Freelance creative developer. Awwwards Jury Member (2023). Won 2x Awwwards Site of the Month, Site of the Day, and Developer Award. Collaborated with Niccolo Miranda and OFF+BRAND.
+  - **Education**: Lead City University (Nigeria).
+  - Expertise: Art Direction, Brand Strategy, Creative Development, Webflow, 3D/AR, animations, micro-interactions.
+  - Designed and built MoMoney museum site (Awwwards Site of the Year nominee).
+
+### Design-Adjacent: Product Experience
+
+- **Joel Samuelson** -- Product Experience Specialist -- [LinkedIn](https://www.linkedin.com/in/joel-samuelson/)
+  - Based in Stockholm. Delivers user support and captures high-signal product insights.
+  - **Education**: Stockholm School of Economics.
+  - Bridges user feedback with product/design improvements -- a voice-of-customer role.
+
+### Open Design Roles (as of Feb 2026)
+
+1. **Product Designer** -- Stockholm (onsite) -- [Apply](https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543)
+   - Lead design projects end-to-end. Craft user flows and high-fidelity mockups. Establish scalable design processes.
+   - Requirements: Fast-paced startup experience, strong portfolio, prototyping skills, design systems fluency, exceptional visual design.
+   - Bonus: Production implementation with AI assistance; experience designing AI products.
+   - Hiring process: Application -> Exploratory call -> Take-home assignment + video -> In-depth interviews -> 1-2 day trial.
+
+2. **Brand Designer** -- Stockholm (onsite)
+   - Define and evolve Lovable's brand, voice, visual language, and positioning across all channels.
+
+3. **Design Engineer** -- Stockholm (onsite), secondary: London
+   - Build landing pages and web interactions. React/TypeScript. Performance and responsiveness focus.
+
+4. **Design Engineer (Web & Brand)** -- Stockholm (onsite), secondary: London / Remote Sweden
+   - Own and elevate landing pages and web experiences. 5+ years experience required. Micro-animations, reusable components.
+
+5. **Motion Designer** -- Stockholm (onsite)
+   - First motion design hire.
 
 ### Team Dynamics Assessment
 
-- **Total designers**: ~1-2 [Estimated] -- extremely lean for a $6.6B company
-- **Ratio**: 1 designer per 300-750 employees -- abnormally low, indicating massive design surface area per designer
-- **Designer:Revenue**: Each designer influences $100M+ in ARR
+- **Total design team**: ~4-5 confirmed members (Nad Chishtie, Niklas Muhs, Felix Haas, Oluwaseyi Oluwadare + Joel Samuelson in design-adjacent)
+- **Hiring aggressively**: 5 open design roles signals rapid scaling from ~4 to ~9+ designers
+- **Company size**: ~748 employees (Jan 2026)
+- **Current ratio**: ~1 designer per 150-187 employees -- still very lean for a $6.6B company
+- **Target ratio**: With 5 open roles, heading toward ~1 designer per 80-85 employees -- still lean but improving
+- **Designer:Revenue**: Each designer currently influences ~$50M in ARR
 - **Design maturity signals**:
-  - [ ] Dedicated Head of Design -- no evidence of one
-  - [ ] Design system exists -- uses Tailwind CSS + React component library, but no public design system
-  - [ ] Design blog/public content -- no dedicated design blog
-  - [ ] Designers speak at conferences -- no visible design thought leadership
-  - [x] CEO values design taste (stated in Lenny's Podcast, Accel podcast)
-  - [ ] Research/UXR function exists -- no evidence
-- **Growth ceiling**: No VP/Head of Design means this role could be created for the right hire. Enormous growth potential.
-- **Key risk**: Engineering-dominated culture. Design may be treated as execution rather than strategy.
+  - [x] Dedicated Head of Design -- Nad Chishtie (Founding Designer, 20yr experience)
+  - [ ] Design system exists -- uses Tailwind CSS + ShadCN + React, built-in design panel, but no public design system
+  - [ ] Design blog/public content -- no dedicated design blog, but Nad + Felix are active on podcasts/Substack
+  - [x] Designers speak at conferences -- Nad at Hatch Conference 2025, Bridge Summit; Felix at IdeaLab! 2024
+  - [x] CEO values design taste (stated in Lenny's Podcast, Accel podcast; personally announces design hires)
+  - [ ] Research/UXR function exists -- no evidence of dedicated UX research
+  - [x] Design hiring pipeline active -- 5 open design roles, Dive Talent Network partnership
+  - [x] Design Engineer role exists -- signals design-engineering integration maturity
+- **Team structure**: Flat. Nad leads design, reports likely to Anton or product leadership. No design managers yet.
+- **Geographic distribution**: Stockholm (HQ), London (Nad, secondary for some roles), Berlin (Felix), UK (Seyi)
+- **Design culture signals**: Extreme ownership, high velocity, low-ego collaboration. Designers are expected to be "full-stack" -- from concept to production. AI-assisted implementation is encouraged.
+- **Key strength**: Nad Chishtie is a genuine 20-year design veteran with VP-level experience. Having a Founding Designer with this caliber is unusual for a hypergrowth startup.
+- **Key risk**: Still very design-lean for the company size. Engineering-dominant culture may limit design's strategic influence until team scales.
+
+### Team Growth Trajectory
+
+| Period | Headcount | Design Team | Ratio |
+|--------|-----------|-------------|-------|
+| Nov 2024 (launch) | 15 | 1 (Nad) | 1:15 |
+| Jul 2025 | 45 | ~2 | 1:22 |
+| Nov 2025 | 100+ | ~3 | 1:33 |
+| Jan 2026 | 748 | ~4-5 | 1:150-187 |
+| Target 2026 | 1000+ | ~9-10 (with open roles) | 1:100-110 |
 
 ### My Fit Assessment
 
-- **Seniority match**: Mid-to-senior IC would have enormous scope. As the second designer, you'd shape everything.
-- **Growth opportunity**: Could grow into Head of Design as the team scales. Company went from 15 to 748 employees in a year -- design team will need to scale proportionally.
-- **Mentorship**: Limited. No established design leadership to learn from. Self-directed growth required.
-- **Portfolio impact**: "I was the second designer at a $6.6B AI company used by 8M people" is an extraordinarily strong portfolio narrative.
+- **Seniority match**: Mid-to-senior IC would have enormous scope. Still an early team -- significant influence on design direction.
+- **Growth opportunity**: Head of Design exists (Nad), but design management roles will open as team scales to 10+. Could become a design lead for a specific product area.
+- **Mentorship**: Nad Chishtie is a 20-year veteran with VP-level experience -- genuine design mentorship available. Felix Haas brings startup/investor perspective.
+- **Portfolio impact**: "I helped build the visual editing experience at a $6.6B AI company used by 8M+ people" is an extraordinarily strong portfolio narrative.
+- **Culture fit considerations**: Must be comfortable with extreme velocity, ambiguity, and wearing many hats. AI product design experience is a strong differentiator.
 
 ---
 
