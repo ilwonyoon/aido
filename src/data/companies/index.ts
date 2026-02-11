@@ -114,6 +114,7 @@ import { davidAi } from './david-ai';
 import { decart } from './decart';
 import { dedalusLabs } from './dedalus-labs';
 import { deepgram } from './deepgram';
+import { delphi } from './delphi';
 import { delve } from './delve';
 import { descript } from './descript';
 import { devAgents } from './dev-agents';
@@ -131,6 +132,7 @@ import { edisonScientific } from './edison-scientific';
 import { elementAi } from './element-ai';
 import { elevenX } from './11x';
 import { elevenlabs } from './elevenlabs';
+import { eternal } from './eternal';
 import { eventual } from './eventual';
 import { exa } from './exa';
 import { extropic } from './extropic';
@@ -207,6 +209,7 @@ import { invertBio } from './invert-bio';
 import { invisionAi } from './invision-ai';
 import { item } from './item';
 import { itemApp } from './item-app';
+import { juliusAi } from './julius-ai';
 import { ivo } from './ivo';
 import { jackAndJill } from './jack-and-jill';
 import { jasper } from './jasper';
@@ -315,6 +318,7 @@ import { pallet } from './pallet';
 import { paper } from './paper';
 import { parabola } from './parabola';
 import { paradigm } from './paradigm';
+import { paraform } from './paraform';
 import { parahelp } from './parahelp';
 import { partnerstack } from './partnerstack';
 import { patch } from './patch';
@@ -585,6 +589,7 @@ export const companies: Company[] = [
   decart,
   dedalusLabs,
   deepgram,
+  delphi,
   delve,
   descript,
   devAgents,
@@ -601,6 +606,7 @@ export const companies: Company[] = [
   edisonScientific,
   elementAi,
   elevenlabs,
+  eternal,
   eventual,
   exa,
   extropic,
@@ -677,6 +683,7 @@ export const companies: Company[] = [
   invisionAi,
   itemApp,
   item,
+  juliusAi,
   ivo,
   jackAndJill,
   jasper,
@@ -785,6 +792,7 @@ export const companies: Company[] = [
   paper,
   parabola,
   paradigm,
+  paraform,
   parahelp,
   partnerstack,
   patch,
