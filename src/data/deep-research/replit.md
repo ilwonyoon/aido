@@ -4,6 +4,7 @@
 > Tier: 0
 > Overall Score: 8.4/10
 > Reading time: ~10 min
+> Article: /insights/replit-deep-dive-vibe-coding-design
 
 ---
 
