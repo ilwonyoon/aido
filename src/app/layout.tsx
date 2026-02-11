@@ -7,6 +7,8 @@ import { Navigation } from "@/components/Navigation";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageBackground } from "@/components/PageBackground";
 import { MobileTypographyEditor } from "@/components/MobileTypographyEditor";
+import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
+import { Text } from "@/components/ui/Text";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -103,7 +105,17 @@ export default function RootLayout({
                 <main className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16">
                   {children}
                 </main>
-                <footer className="py-6" />
+                <footer className="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-[var(--border)]">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                    <div className="flex-1 max-w-md">
+                      <Text variant="title" className="mb-1">Stay updated</Text>
+                      <Text variant="body" color="muted">
+                        Get notified about new AI design jobs and insights.
+                      </Text>
+                    </div>
+                    <NewsletterSignup source="footer" />
+                  </div>
+                </footer>
               </div>
               {/* <MobileTypographyEditor /> */}
             </ErrorBoundary>
