@@ -92,6 +92,16 @@ export function Navigation() {
           >
             Insights
           </Link>
+          <Link
+            href="/newsletter"
+            className={
+              isActive('/newsletter')
+                ? 'text-[var(--foreground)] font-medium'
+                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+            }
+          >
+            Subscribe
+          </Link>
 
           {/* Admin only */}
           {isAdmin && (
@@ -183,6 +193,17 @@ export function Navigation() {
                 }`}
               >
                 Insights
+              </Link>
+              <Link
+                href="/newsletter"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block py-3 px-4 rounded-lg ${
+                  isActive('/newsletter')
+                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                }`}
+              >
+                Subscribe
               </Link>
 
               {isAdmin && (
