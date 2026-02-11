@@ -11,8 +11,14 @@ import { riseOfVerticalAiAgents } from './content/rise-of-vertical-ai-agents';
 import { hyperPersonalizationPersonalAgents } from './content/hyper-personalization-personal-agents-replace-apps';
 import { soloAiBusinessNoVcMoney } from './content/solo-ai-business-no-vc-money';
 import { linearDeepDiveDesignerCeoCraft } from './content/linear-deep-dive-designer-ceo-craft';
+import { replitDeepDiveVibeCodingDesign } from './content/replit-deep-dive-vibe-coding-design';
+import { cursorDeepDiveDesignOpportunity } from './content/cursor-deep-dive-fastest-growing-saas-design';
+import { gammaDeepDive100mArr52People } from './content/gamma-deep-dive-100m-arr-52-people';
 
 export const articles: Article[] = [
+  gammaDeepDive100mArr52People,
+  cursorDeepDiveDesignOpportunity,
+  replitDeepDiveVibeCodingDesign,
   linearDeepDiveDesignerCeoCraft,
   aiCareerIntelligenceGlassdoor,
   soloAiBusinessNoVcMoney,
