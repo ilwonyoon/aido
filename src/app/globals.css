@@ -546,6 +546,17 @@ a.card {
   color: var(--foreground);
 }
 
+/* Override .article-content a styles for citation chips */
+.article-content .citation-chip {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.article-content .citation-chip:hover {
+  color: var(--foreground);
+}
+
 /* Section styles */
 .section-title {
   font-size: 0.75rem;
