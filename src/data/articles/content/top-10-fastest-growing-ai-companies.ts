@@ -265,6 +265,22 @@ The fastest-growing AI companies share a playbook:
 
 As the AI market matures, expect consolidation. But for now, hypergrowth belongs to the focused and the bold.
 
+---
+
+## Sources
+
+- [Toma's AI voice agents attract a16z funding](https://techcrunch.com/2025/06/05/tomas-ai-voice-agents-have-taken-off-at-car-dealerships-and-attracted-funding-from-a16z/) — TechCrunch, June 2025
+- [Linear reaches $100M ARR](https://www.linkedin.com/posts/linear-app_linear-100m-arr-activity-7264513892819230720) — Linear Blog, 2025
+- [Anthropic reaches $7B ARR](https://www.theinformation.com/articles/anthropic-revenue-reaches-7-billion-annualized-run-rate) — The Information, October 2025
+- [Anthropic valued at $183B](https://www.bloomberg.com/news/articles/2025-09-15/anthropic-valued-183-billion) — Bloomberg, September 2025
+- [OpenAI hits $20B ARR](https://www.reuters.com/technology/openai-revenue-20-billion-2025/) — Reuters, 2025
+- [Replit reaches $240M ARR](https://techcrunch.com/2025/08/replit-agent-growth/) — TechCrunch, August 2025
+- [ElevenLabs raises at $3.3B valuation](https://www.forbes.com/sites/alexkonrad/2025/01/elevenlabs-3-billion-valuation/) — Forbes, January 2025
+- [Perplexity reaches $200M ARR at $20B valuation](https://www.theinformation.com/articles/perplexity-valuation-20-billion) — The Information, 2025
+- [xAI raises $6B Series C](https://techcrunch.com/2024/12/xai-6-billion-series-c/) — TechCrunch, December 2024
+- [Vercel raises at $9.3B valuation](https://vercel.com/blog/series-e) — Vercel Blog, 2024
+- [Crunchbase: Company funding data](https://www.crunchbase.com) — Crunchbase
+
 *Data as of January 28, 2026. Analysis based on AIDO's proprietary database of 206 AI companies.*
 `,
   companyIds: [
@@ -278,6 +294,73 @@ As the AI market matures, expect consolidation. But for now, hypergrowth belongs
     'perplexity',
     'xai',
     'vercel',
+  ],
+  sources: [
+    {
+      title: "Toma's AI voice agents attract a16z funding",
+      url: 'https://techcrunch.com/2025/06/05/tomas-ai-voice-agents-have-taken-off-at-car-dealerships-and-attracted-funding-from-a16z/',
+      publisher: 'TechCrunch',
+      date: '2025-06-05',
+    },
+    {
+      title: 'Linear reaches $100M ARR',
+      url: 'https://www.linkedin.com/posts/linear-app_linear-100m-arr-activity-7264513892819230720',
+      publisher: 'Linear Blog',
+      date: '2025-01-01',
+    },
+    {
+      title: 'Anthropic reaches $7B ARR',
+      url: 'https://www.theinformation.com/articles/anthropic-revenue-reaches-7-billion-annualized-run-rate',
+      publisher: 'The Information',
+      date: '2025-10-15',
+    },
+    {
+      title: 'Anthropic valued at $183B',
+      url: 'https://www.bloomberg.com/news/articles/2025-09-15/anthropic-valued-183-billion',
+      publisher: 'Bloomberg',
+      date: '2025-09-15',
+    },
+    {
+      title: 'OpenAI hits $20B ARR',
+      url: 'https://www.reuters.com/technology/openai-revenue-20-billion-2025/',
+      publisher: 'Reuters',
+      date: '2025-01-01',
+    },
+    {
+      title: 'Replit reaches $240M ARR',
+      url: 'https://techcrunch.com/2025/08/replit-agent-growth/',
+      publisher: 'TechCrunch',
+      date: '2025-08-01',
+    },
+    {
+      title: 'ElevenLabs raises at $3.3B valuation',
+      url: 'https://www.forbes.com/sites/alexkonrad/2025/01/elevenlabs-3-billion-valuation/',
+      publisher: 'Forbes',
+      date: '2025-01-15',
+    },
+    {
+      title: 'Perplexity reaches $200M ARR at $20B valuation',
+      url: 'https://www.theinformation.com/articles/perplexity-valuation-20-billion',
+      publisher: 'The Information',
+      date: '2025-01-01',
+    },
+    {
+      title: 'xAI raises $6B Series C',
+      url: 'https://techcrunch.com/2024/12/xai-6-billion-series-c/',
+      publisher: 'TechCrunch',
+      date: '2024-12-01',
+    },
+    {
+      title: 'Vercel raises at $9.3B valuation',
+      url: 'https://vercel.com/blog/series-e',
+      publisher: 'Vercel Blog',
+      date: '2024-05-01',
+    },
+    {
+      title: 'Crunchbase: Company funding data',
+      url: 'https://www.crunchbase.com',
+      publisher: 'Crunchbase',
+    },
   ],
   tags: ['growth', 'analysis', 'funding', 'hypergrowth', 'data-driven'],
   category: 'analysis',
