@@ -115,18 +115,19 @@ The #1 cause of deployment issues is deploying without the latest `main`. The au
 6. **Run `npm run build`** to verify your changes compile
 7. **Create PRs to main** following the deployment workflow above
 
-## Git Worktree 환경 (2026-02-10)
+## Git Worktree 환경
 
 로컬 환경이 git worktree로 분리되어 있습니다:
 
 | 디렉토리 | 브랜치 | 용도 |
 |-----------|--------|------|
-| `aido/` | `main` | UI/배포 (수동) |
-| `aido-codex/` | `company-researching` | Codex 데이터 리서치 |
-| `aido-daily-research/` | `daily-deep-research` | 자동 딥리서치 파이프라인 |
+| `aido/` | `main` | UI/배포 — **Codex 작업 금지** |
+| `aido-company-researching/` | `company-researching` | **Codex 데이터 리서치 (여기서 작업)** |
+| `aido-daily-research/` | `daily-deep-research` | 자동 딥리서치 파이프라인 — 건드리지 말 것 |
 
-### 브랜치 규칙
-- `company-researching` 브랜치에서만 작업
+### ⚠️ 절대 규칙
+- **`aido-company-researching/` 에서만 작업** — `aido/` (main)에서 절대 데이터 작업하지 말 것
+- 현재 작업 디렉토리가 `company-researching` 브랜치인지 항상 확인: `git branch --show-current`
 - `daily-deep-research` 브랜치는 건드리지 말 것 — 자동 파이프라인 전용
 - `scripts/daily-research-log.json` 수정 금지 — 파이프라인이 관리
 - Always commit your work before finishing
@@ -187,6 +188,12 @@ export const companyName: Company = {
 After adding a company file, add it to `src/data/companies/index.ts`:
 1. Add the import at the correct alphabetical position
 2. Add the variable to the `companies` array
+3. **CRITICAL**: Run `npm run build` to verify the import works. If the file doesn't exist, the build WILL FAIL and break production deployment.
+
+### ⚠️ index.ts 수정 시 필수 체크
+- import 추가 전에 해당 `.ts` 파일이 실제로 존재하는지 확인
+- 파일이 없는 회사를 index에 추가하면 **빌드가 깨져서 전체 배포가 실패함**
+- 작업 완료 후 반드시 `npm run build` 실행하여 빌드 확인
 
 ## OG Images (Required for Every New Company)
 
