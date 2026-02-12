@@ -40,6 +40,11 @@ service cloud.firestore {
       allow write: if true;
     }
 
+    // Newsletter subscribers
+    match /newsletter_subscribers/{email} {
+      allow read, write: if true;
+    }
+
     // Company research requests - admin only
     match /companyRequests/{requestId} {
       allow read: if request.auth != null && request.auth.token.email == 'ilwonyoon@gmail.com';
