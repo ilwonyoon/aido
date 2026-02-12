@@ -2,7 +2,6 @@
 
 import { useState, type FormEvent } from 'react';
 import { Button } from '@/components/ui/Button';
-import { Text } from '@/components/ui/Text';
 import { subscribeToNewsletter } from '@/lib/firebase/newsletter';
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'already' | 'error';
@@ -44,13 +43,13 @@ export function NewsletterSignup({ source = 'footer' }: NewsletterSignupProps) {
           </svg>
         </div>
         <div>
-          <Text variant="body" color="muted">
+          <p className="text-sm text-[var(--muted)]">
             {status === 'already' ? 'You\'re already subscribed!' : 'You\'re in! We\'ll keep you updated.'}
-          </Text>
+          </p>
           {status === 'success' && (
-            <Text variant="caption" color="muted" className="mt-1">
+            <p className="text-xs text-[var(--muted)] mt-1">
               A confirmation email will be sent within 15 minutes.
-            </Text>
+            </p>
           )}
         </div>
       </div>
@@ -90,9 +89,9 @@ export function NewsletterSignup({ source = 'footer' }: NewsletterSignupProps) {
         {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
       </Button>
       {status === 'error' && (
-        <Text variant="caption" color="error" className="sm:absolute sm:mt-12">
+        <p className="text-xs text-[var(--warning)] sm:absolute sm:mt-12">
           {errorMessage}
-        </Text>
+        </p>
       )}
     </form>
   );

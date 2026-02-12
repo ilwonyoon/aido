@@ -1,4 +1,3 @@
-import { Text } from '@/components/ui/Text';
 import { NewsletterSignup } from '@/components/newsletter/NewsletterSignup';
 
 export const metadata = {
@@ -9,13 +8,13 @@ export const metadata = {
 export default function SubscribePage() {
   return (
     <div className="max-w-lg mx-auto py-16 sm:py-24">
-      <Text variant="display" className="mb-3">
+      <h1 className="text-2xl font-semibold mb-3">
         Stay updated
-      </Text>
-      <Text variant="body-lg" color="muted" className="mb-8">
+      </h1>
+      <p className="text-body text-[var(--muted)] mb-8">
         Get notified when new AI design jobs are posted and when we publish new insights.
         No spam, unsubscribe anytime.
-      </Text>
+      </p>
       <NewsletterSignup source="newsletter-page" />
     </div>
   );

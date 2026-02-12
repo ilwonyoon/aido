@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Text } from '@/components/ui/Text';
 import { Button } from '@/components/ui/Button';
 import { unsubscribeFromNewsletter } from '@/lib/firebase/newsletter';
 
@@ -41,8 +40,8 @@ function UnsubscribeContent() {
       <div className="max-w-md w-full text-center">
         {status === 'loading' && (
           <>
-            <Text variant="title" className="mb-2">Unsubscribing...</Text>
-            <Text variant="body" color="muted">Please wait.</Text>
+            <h2 className="text-xl font-semibold mb-2">Unsubscribing...</h2>
+            <p className="text-sm text-[var(--muted)]">Please wait.</p>
           </>
         )}
 
@@ -53,10 +52,10 @@ function UnsubscribeContent() {
                 <path d="M20 6L9 17L4 12" stroke="var(--background)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <Text variant="title" className="mb-2">You&apos;ve been unsubscribed</Text>
-            <Text variant="body" color="muted" className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">You&apos;ve been unsubscribed</h2>
+            <p className="text-sm text-[var(--muted)] mb-6">
               You will no longer receive emails from AIDO.
-            </Text>
+            </p>
             <Button variant="secondary" onClick={() => window.location.href = '/'}>
               Back to AIDO
             </Button>
@@ -65,10 +64,10 @@ function UnsubscribeContent() {
 
         {status === 'error' && (
           <>
-            <Text variant="title" className="mb-2">Something went wrong</Text>
-            <Text variant="body" color="muted" className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">Something went wrong</h2>
+            <p className="text-sm text-[var(--muted)] mb-4">
               {errorMessage}
-            </Text>
+            </p>
             <Button variant="secondary" onClick={processUnsubscribe}>
               Try again
             </Button>
@@ -77,10 +76,10 @@ function UnsubscribeContent() {
 
         {status === 'invalid' && (
           <>
-            <Text variant="title" className="mb-2">Invalid unsubscribe link</Text>
-            <Text variant="body" color="muted" className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">Invalid unsubscribe link</h2>
+            <p className="text-sm text-[var(--muted)] mb-6">
               This link appears to be broken or expired.
-            </Text>
+            </p>
             <Button variant="secondary" onClick={() => window.location.href = '/'}>
               Back to AIDO
             </Button>
@@ -95,7 +94,7 @@ export default function UnsubscribePage() {
   return (
     <Suspense fallback={
       <div className="min-h-[60vh] flex items-center justify-center">
-        <Text variant="body" color="muted">Loading...</Text>
+        <p className="text-sm text-[var(--muted)]">Loading...</p>
       </div>
     }>
       <UnsubscribeContent />
