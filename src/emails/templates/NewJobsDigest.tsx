@@ -25,6 +25,7 @@ const previewJobs: ReadonlyArray<JobCardProps> = [
   {
     companyName: 'Anthropic',
     companyId: 'anthropic',
+    companyWebsite: 'anthropic.com',
     title: 'Senior Product Designer, Claude',
     location: 'San Francisco, CA',
     url: 'https://anthropic.com/careers',
@@ -33,6 +34,7 @@ const previewJobs: ReadonlyArray<JobCardProps> = [
   {
     companyName: 'Cursor',
     companyId: 'cursor',
+    companyWebsite: 'cursor.com',
     title: 'Product Designer',
     location: 'San Francisco, CA',
     url: 'https://cursor.com/careers',
@@ -41,6 +43,7 @@ const previewJobs: ReadonlyArray<JobCardProps> = [
   {
     companyName: 'Perplexity',
     companyId: 'perplexity',
+    companyWebsite: 'perplexity.ai',
     title: 'Staff Product Designer',
     location: 'San Francisco, CA',
     url: 'https://perplexity.ai/careers',
