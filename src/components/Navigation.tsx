@@ -94,18 +94,19 @@ export function Navigation() {
           >
             Insights
           </Link>
-          <Link
-            href="/subscribe"
-            className={
-              isActive('/subscribe')
-                ? 'text-[var(--foreground)] font-medium'
-                : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
-            }
-          >
-            Subscribe
-          </Link>
-
           {/* Admin only */}
+          {isAdmin && (
+            <Link
+              href="/subscribe"
+              className={
+                isActive('/subscribe')
+                  ? 'text-[var(--foreground)] font-medium'
+                  : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+              }
+            >
+              Subscribe
+            </Link>
+          )}
           {isAdmin && (
             <Link
               href="/analytics"
@@ -196,18 +197,19 @@ export function Navigation() {
               >
                 Insights
               </Link>
-              <Link
-                href="/subscribe"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block py-3 px-4 rounded-lg ${
-                  isActive('/subscribe')
-                    ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
-                    : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
-                }`}
-              >
-                Subscribe
-              </Link>
-
+              {isAdmin && (
+                <Link
+                  href="/subscribe"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block py-3 px-4 rounded-lg ${
+                    isActive('/subscribe')
+                      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                  }`}
+                >
+                  Subscribe
+                </Link>
+              )}
               {isAdmin && (
                 <Link
                   href="/analytics"
