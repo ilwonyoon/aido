@@ -40,7 +40,7 @@ jobs:
       - name: Send newsletter
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIDO_D2CC0 }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           SITE_URL: 'https://aido-d2cc0.web.app'
         run: |
           ARGS=""
