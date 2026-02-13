@@ -261,24 +261,30 @@ GitHub Actions will:
 
 ---
 
-## Git Worktree 환경
+## Git 환경
 
-로컬 환경이 git worktree로 분리되어 있습니다:
-
-| 디렉토리 | 브랜치 | 용도 |
-|-----------|--------|------|
-| `aido/` | `main` | UI/배포 — **Codex 작업 금지** |
-| `aido-company-researching/` | `company-researching` | **Codex 데이터 리서치 (여기서 작업)** |
-| `aido-daily-research/` | `daily-deep-research` | 자동 딥리서치 파이프라인 — 건드리지 말 것 |
+Codex는 `aido/` 레포에서 작업하며, **직접 새 브랜치를 생성**합니다.
 
 ### ⚠️ 절대 규칙
-- **`aido-company-researching/` 에서만 작업** — `aido/` (main)에서 절대 데이터 작업하지 말 것
-- 현재 작업 디렉토리가 `company-researching` 브랜치인지 항상 확인: `git branch --show-current`
+- **`main` 브랜치에서 직접 작업하지 말 것** — 항상 새 브랜치 생성 후 작업
+- 브랜치명 형식: `company-research-MMDD` (예: `company-research-0213`)
 - `daily-deep-research` 브랜치는 건드리지 말 것 — 자동 파이프라인 전용
 - `scripts/daily-research-log.json` 수정 금지 — 파이프라인이 관리
 - Always commit your work before finishing
 - When ready to deploy: merge main → verify build → push → create PR
 - Do NOT force push or rebase — use merge only
+
+### 작업 시작 시 환경 확인
+```bash
+# 1. 현재 브랜치 확인
+git branch --show-current
+
+# 2. main이면 새 브랜치 생성
+git checkout -b company-research-$(date +%m%d)
+
+# 3. 최신 main과 동기화
+git fetch origin main && git merge origin/main --no-edit
+```
 
 ### 자동 머지 조건
 - PR이 `company-researching` 또는 `daily-deep-research`에서 온 것

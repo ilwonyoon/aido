@@ -142,6 +142,24 @@ markets: ['enterprise'],
 industries: ['healthcare'],
 ```
 
+**Industries-Category Alignment Rule (CRITICAL):**
+
+`industries` 필드는 반드시 `category`와 `aiTypes`에 맞게 설정해야 합니다:
+
+| category | 올바른 industries | 잘못된 industries |
+|----------|------------------|------------------|
+| `'ai-models'` | `['infrastructure']` | |
+| `'developer-tools'` | `['developer-tools']` | `['infrastructure']` (unless building AI infra) |
+| `'creative-media'` | `['creative-media']` | `['infrastructure']` |
+| `'productivity'` | `['productivity']` | |
+| `'sales-marketing'` | `['sales-marketing']` | |
+| `'enterprise-ops'` | varies by domain | |
+| `'vertical-saas'` | `['healthcare']`, `['legal']`, `['fintech']` etc. | `['infrastructure']` |
+
+**핵심 규칙**: `industries: ['infrastructure']`는 LLM/기반모델 개발사 또는 AI 개발도구(MLOps) 회사에만 사용. 오디오/이미지/비디오 생성, 코드 어시스턴트, 텍스트 어시스턴트 등 **애플리케이션 레이어** 회사에는 해당 도메인 industry 사용.
+
+**Self-check**: `category`와 `industries`가 같은 도메인을 가리키는지 확인. 예: `category: 'creative-media'`인데 `industries: ['infrastructure']`이면 잘못됨.
+
 **Sources (필수 우선순위):**
 - 1차: Company website(About/Product/Careers/Blog), 공식 보도자료
 - 2차: Crunchbase, PitchBook, Dealroom, YC/Winter/Summer batch pages
@@ -263,6 +281,22 @@ moat: [
 ---
 
 #### 2.3 Growth Metrics (Optional but recommended)
+
+**Growth Stage Definitions (metric-based):**
+
+| Stage | Revenue Growth | User Growth | Typical Signals |
+|-------|---------------|-------------|-----------------|
+| `'hypergrowth'` | 3x+ YoY or 50%+ quarterly | 5x+ YoY users | Massive funding rounds, rapid hiring (100+ in 6mo), valuation jumps 3x+ between rounds |
+| `'high-growth'` | 100-200% YoY | 2-5x YoY users | Series B/C, expanding markets, hiring 50+ per year |
+| `'early-growth'` | 50-100% YoY | Steady user increase | Series A/B, product-market fit found, beginning to scale |
+| `'mature-growth'` | 20-50% YoY | Stable with gradual increase | Late-stage or pre-IPO, established market position |
+| `'steady'` | 10-20% YoY | Stable | Profitable or near-profitable, optimizing not expanding |
+| `'plateau'` | <10% YoY or declining | Flat or declining | Market saturation, pivoting, or struggling |
+
+**ElevenLabs Example**: >$200M → >$330M ARR in ~3 months = **65%+ quarterly growth** = `'hypergrowth'` (NOT 'steady')
+
+**Self-check**: If a company raised $500M+ at $10B+ valuation with 50%+ quarterly revenue growth, it is NEVER 'steady' or 'plateau'.
+
 ```typescript
 growthMetrics: {
   stage: 'hypergrowth' | 'high-growth' | 'early-growth' | 'mature-growth' | 'steady' | 'plateau',
@@ -532,11 +566,21 @@ designerLinks: [
 ]
 ```
 
+**Minimum Requirement: 2+ actual designer profiles**
+
+회사 공식 블로그만 넣는 것은 불충분. 실제 디자이너 개인 프로필을 최소 2개 이상 찾아야 함:
+- 회사 블로그만 있는 경우: 1/2 — 추가 검색 필요
+- 디자이너 1명 + 블로그: 2/2 — OK
+- 디자이너 2명 이상: OK
+
 **How to Find:**
-- LinkedIn: "[company] product designer"
-- Twitter: Search "[company] designer"
-- Company blog: Design team posts
+- LinkedIn: "[company] product designer" → 실제 이름, 역할 확인
+- Twitter/X: Search "[company] designer" → 개인 계정 찾기
+- Company blog: Design team posts (팀 블로그는 개인이 아님)
 - Dribbble, Behance: Designers mentioning the company
+- Medium/Substack: 디자이너 개인 블로그
+
+**정보를 찾을 수 없는 경우**: designerLinks를 빈 배열로 두되, sources에 "Searched LinkedIn/Twitter/Dribbble for [company] designers — limited public presence" 기록
 
 ---
 
@@ -927,3 +971,59 @@ await Promise.all([
 ---
 
 This skill ensures every company in AIDO has rich, accurate, up-to-date information for designer decision-making.
+
+---
+
+## Code Formatting Rules (MUST follow)
+
+### Indentation
+- **2-space indentation** throughout the entire file (NO 4-space, NO tabs)
+- Nested objects follow 2-space increments consistently
+
+### String Quotes
+- Single quotes for all string values: `'value'`
+- Double quotes only for strings containing apostrophes: `"Mother Nature's farmacy"`
+
+### Trailing Commas
+- Always use trailing commas in arrays and objects
+
+### Property Order
+Follow this exact order in the Company object:
+```
+id → name → description → website → screenshot → headquarters → remote →
+ogImage → aiTypes → markets → category → industries →
+stage → valuation → totalFunding → fundingHistory → revenue → growth → runway → customers →
+competitors → marketPosition → moat → vsGiants →
+aiNativeLevel → aiNativeLevelDescription → aiDesignChallenges →
+founders → whyBuilding → beliefs → greenFlags → redFlags →
+designTeam → designWorkType → productStage →
+targetAudiences → userProblems →
+designerLinks → openRoles → cultureInsights →
+growthMetrics → tracking → lastUpdated → sources
+```
+
+---
+
+## Self-Verification Checklist (MANDATORY before commit)
+
+파일 작성 완료 후, 커밋 전에 반드시 아래 항목을 하나씩 체크:
+
+### Data Accuracy
+- [ ] `industries`가 `category`와 같은 도메인을 가리키는가?
+- [ ] `growthMetrics.stage`가 실제 매출 성장률/펀딩 시그널과 맞는가? (메트릭 테이블 참조)
+- [ ] `aiNativeLevel`이 'A' 또는 'B' 표기법인가? (Level 4/3 사용 금지)
+- [ ] `tracking.whyJoin`에서 Level 표기가 'Level A/B' 형식인가? (Level 4/3 사용 금지)
+- [ ] Founder role이 정확한가? (CEO/CTO/CPO 등 — 웹사이트에서 직접 확인)
+
+### Completeness
+- [ ] `designerLinks`에 실제 디자이너 개인 프로필이 2개 이상 있는가? (회사 블로그만으로는 부족)
+- [ ] `openRoles`가 job-scraper를 통해 검증되었는가?
+- [ ] `sources`가 3개 이상인가?
+- [ ] `fundingHistory`의 모든 라운드에 date, amount, leadInvestors가 있는가?
+
+### Formatting
+- [ ] 2-space 인덴테이션이 전체 파일에서 일관적인가?
+- [ ] `category`에 `as const`가 붙어있는가?
+- [ ] `lastUpdated`가 오늘 날짜인가?
+
+**하나라도 NO가 있으면 수정 후 커밋.**

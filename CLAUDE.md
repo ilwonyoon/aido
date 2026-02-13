@@ -6,7 +6,7 @@
 
 > "이 회사에 들어가면 나한테 좋은가?"를 판단하기 위한 도구
 
-- Level 3-4 AI-native 회사 중심
+- Level A-B AI-native 회사 중심
 - 디자이너 관점의 회사 분석 프레임
 - 파운더 비전/철학 중시
 - Job hunting용 개인 대시보드
@@ -151,7 +151,7 @@ All article content is wrapped in `.article-content` and rendered via `<Markdown
 ### Company 평가 프레임
 
 1. **Business**: Stage, Valuation, Revenue, Moat, 경쟁사
-2. **AI-Native Level** (1-4): AI가 제품의 핵심인 정도
+2. **AI-Native Level** (A-D): AI가 제품의 핵심인 정도
 3. **Founders & Vision**: 배경, 철학, 디자인에 대한 관점
 4. **Design Work Type**:
    - Logic/Behavior Design (AI 행동 설계)
@@ -162,10 +162,10 @@ All article content is wrapped in `.article-content` and rendered via `<Markdown
 
 ### AI-Native Level 정의
 
-- **Level 4**: AI is the product (Anthropic, OpenAI)
-- **Level 3**: AI is core differentiator (Cursor, Perplexity)
-- **Level 2**: AI is major feature (Notion AI, Figma AI)
-- **Level 1**: AI is minor feature
+- **Level A (AI-Native)**: AI IS the product. Zero-to-one innovation. (Anthropic, OpenAI, Cursor, Perplexity)
+- **Level B (AI-Core)**: AI is core differentiator. Proven workflow enhanced by AI. (Glean, Harvey, ElevenLabs)
+- **Level C (AI Feature)**: AI is major feature but not core. (Notion AI, Figma AI)
+- **Level D (AI Minor)**: AI is minor feature. (Traditional SaaS with AI add-on)
 
 ## 파일 구조
 
