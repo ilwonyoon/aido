@@ -188,6 +188,7 @@ import { hopper } from './hopper';
 import { humanBehavior } from './human-behavior';
 import { humansand } from './humansand';
 import { humbleOps } from './humble-ops';
+import { huggingFace } from './hugging-face';
 import { humeAi } from './hume-ai';
 import { hummingbird } from './hummingbird';
 import { hyperbolic } from './hyperbolic';
@@ -669,6 +670,7 @@ export const companies: Company[] = [
   humanBehavior,
   humansand,
   humbleOps,
+  huggingFace,
   humeAi,
   hummingbird,
   hyperbolic,
