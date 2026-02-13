@@ -15,18 +15,18 @@ export const granola: Company = {
 
   // Multi-dimensional Tags
   aiTypes: ['conversation-ai'],
-  markets: ['b2b'],
-  category: 'sales-marketing' as const,
+  markets: ['prosumer', 'b2b'],
+  category: 'productivity' as const,
 
   industries: ['productivity'],
 
     stage: 'Series B',
-    valuation: '$250M',
+    valuation: '$250M (May 2025)',
     totalFunding: '$67M',
     fundingHistory: [
-      { stage: 'Seed', amount: '$4M', date: '2024-02', leadInvestors: ['Craft Ventures'] },
+      { stage: 'Seed', amount: '$4.25M', date: '2023-05', leadInvestors: ['Lightspeed Venture Partners', 'betaworks', 'Firstminute Capital'] },
       { stage: 'Series A', amount: '$20M', date: '2024-10', valuation: '$100M', leadInvestors: ['Spark Capital'] },
-      { stage: 'Series B', amount: '$43M', date: '2025-05', valuation: '$250M', leadInvestors: ['a]6z'] },
+      { stage: 'Series B', amount: '$43M', date: '2025-05', valuation: '$250M', leadInvestors: ['NFDG Ventures'] },
     ],
     revenue: 'Growing (exact N/A)',
     growth: '10% WoW user growth since launch',
@@ -72,12 +72,12 @@ export const granola: Company = {
       {
         name: 'Chris Pedregal',
         role: 'CEO',
-        background: 'Ex-Google PM',
+        background: 'Ex-Google PM (Gmail, Search, Maps); founded Socratic (acquired by Google).',
       },
       {
         name: 'Sam Stephenson',
         role: 'CTO',
-        background: 'Technical co-founder',
+        background: 'Design-oriented cofounder; product/design background across startup and agency work.',
       },
     ],
     whyBuilding:
@@ -157,13 +157,7 @@ export const granola: Company = {
         description: 'Product updates and philosophy',
       },
     ],
-    openRoles: [
-      {
-        title: 'Design Engineer',
-        location: 'London, UK (In-person)',
-        url: 'https://www.granola.ai/jobs/design-engineer',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -242,9 +236,13 @@ export const granola: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-24',
+    lastUpdated: '2026-02-13',
     sources: [
-    { title: 'Source', url: 'https://techcrunch.com/2025/05/14/ai-note-taking-app-granola-raises-43m/' },
-    { title: 'Source', url: 'https://granola.ai/blog/series-a' }
+    { title: 'Granola Company Website', url: 'https://www.granola.ai/' },
+    { title: 'Granola Careers (No Product Design role listed as of Feb 2026)', url: 'https://www.granola.ai/jobs' },
+    { title: 'LinkedIn Jobs - Granola (cross-check for Product Design openings)', url: 'https://www.linkedin.com/company/meetgranola/jobs/' },
+    { title: 'TechCrunch - Granola raises $43M at $250M valuation', url: 'https://techcrunch.com/2025/05/14/ai-note-taking-app-granola-raises-43m-at-250m-valuation-launches-collaborative-features/' },
+    { title: 'Business Wire - Granola launches team workspace and raises $43M Series B', url: 'https://www.businesswire.com/news/home/20250514342646/en/Granola-Launches-AI-Workspace-for-Teams-and-Raises-%2443M-Series-B' },
+    { title: 'Crunchbase - Granola company financials', url: 'https://www.crunchbase.com/organization/granola/company_financials' }
   ],
   };

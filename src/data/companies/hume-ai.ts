@@ -3,7 +3,7 @@ import { Company } from '../types';
 export const humeAi: Company = {
   id: 'hume-ai',
   name: 'Hume AI',
-  description: 'Research lab and technology company building empathic AI and voice interfaces optimized for human well-being.',
+  description: 'Voice AI research lab and platform building empathic speech-language models and real-time voice interfaces.',
   website: 'https://www.hume.ai',
     screenshot: '/screenshots/hume-ai-screenshot.png',
   headquarters: 'New York, NY',
@@ -14,16 +14,16 @@ export const humeAi: Company = {
 
 
   // Multi-dimensional Tags
-  aiTypes: ['audio-generation', 'search-retrieval'],
-  markets: ['b2b'],
-  category: 'creative-media' as const,
+  aiTypes: ['conversation-ai', 'audio-generation'],
+  markets: ['b2b', 'enterprise'],
+  category: 'ai-models' as const,
 
-  industries: ['other'],
+  industries: ['infrastructure'],
 
   // Business
   stage: 'Series B',
-  valuation: 'Unknown',
-  totalFunding: '$50M',
+  valuation: 'Not publicly disclosed (Series B announced Mar 2024)',
+  totalFunding: '$50M Series B disclosed; ~$74M cumulative reported (Jan 2026)',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -32,10 +32,10 @@ export const humeAi: Company = {
       leadInvestors: ['EQT Ventures'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Projected ~$100M revenue in 2026 (reported Jan 2026)',
+  growth: 'Leadership transition announced Jan 2026 with continued model launch plan',
+  runway: 'Improved by Series B capital; exact runway not disclosed',
+  customers: 'Developers and enterprises in customer service, healthcare, wellness, and voice-enabled applications',
 
   // Competition
   competitors: [
@@ -55,7 +55,7 @@ export const humeAi: Company = {
       whyTheyWin: 'Developer-first APIs and enterprise adoption.',
     },
   ],
-  marketPosition: 'Empathic voice AI platform focused on emotional understanding and response quality.',
+  marketPosition: 'Empathic voice AI platform focused on emotional intelligence, turn-taking, and low-latency conversational speech.',
   moat: [
     'Emotion-focused models and datasets rooted in scientific research',
     'Empathic Voice Interface (EVI) as a differentiated product surface',
@@ -76,7 +76,7 @@ export const humeAi: Company = {
   founders: [
     {
       name: 'Alan Cowen',
-      role: 'Founder',
+      role: 'Founder (former CEO)',
       background: 'Former Google researcher and scientist focused on emotional expression and semantic space theory.',
     },
   ],
@@ -86,7 +86,7 @@ export const humeAi: Company = {
     'Emotionally aware interfaces enable more natural human-computer interaction',
     'Scientific rigor should drive product quality in AI',
   ],
-  designPhilosophy: 'Unknown',
+  designPhilosophy: 'Design for emotionally aware, low-latency voice experiences that feel natural while preserving user trust and control.',
   greenFlags: [
     '$50M Series B led by EQT Ventures (Mar 2024)',
     'Clear differentiation via empathic voice interface (EVI)',
@@ -94,11 +94,12 @@ export const humeAi: Company = {
   redFlags: [
     'Crowded voice AI market with well-funded incumbents',
     'High expectations for safety and privacy in emotion-aware AI',
+    'Leadership transition risk after CEO change in Jan 2026',
   ],
 
   // Design Opportunity
   designTeam: {
-    teamSize: '51-200 employees (startups.gallery)',
+    teamSize: '~35+ in 2024 announcement; current size not officially disclosed',
   },
   designWorkType: {
     logicBehavior: {
@@ -163,12 +164,31 @@ export const humeAi: Company = {
   ],
 
   // Culture Insights
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'careers',
+      sentiment: 'positive',
+      content: 'Mission-driven culture centered on human well-being and responsible AI development.',
+      url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008',
+    },
+    {
+      source: 'techcrunch',
+      sentiment: 'neutral',
+      content: 'Market sees voice as strategic AI interface, but competition for talent and model quality is intense.',
+      url: 'https://www.wired.com/story/google-hires-hume-ai-ceo-licensing-deal-gemini',
+    },
+    {
+      source: 'linkedin',
+      sentiment: 'neutral',
+      content: 'Post-Series B and CEO transition phase suggests scaling from research-heavy org toward commercialization.',
+      url: 'https://www.prnewswire.com/news-releases/hume-ai-appoints-new-ceo-302668103.html',
+    },
+  ],
 
   // My Tracking
   tracking: {
-    status: 'researching',
-    fitScore: 6,
+      status: 'watching',
+    fitScore: 7,
     whyJoin: [
       'Empathic voice AI product with deep UX challenges',
       'Remote-friendly with hubs in NYC and San Jose',
@@ -177,21 +197,20 @@ export const humeAi: Company = {
       'Crowded voice AI market',
     ],
     nextActions: [
-      'Monitor design leadership openings',
+      'Monitor post-transition product roadmap updates',
+      'Track Product Designer opening status and location flexibility',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-01-27T12:00:00',
+  lastUpdated: '2026-02-13',
   sources: [
-    { title: 'Source', url: 'https://www.hume.ai/about/' },
-    { title: 'Source', url: 'https://www.hume.ai/contact' },
-    { title: 'Source', url: 'https://www.hume.ai/careers' },
-    { title: 'Source', url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008' },
-    { title: 'Source', url: 'https://www.businesswire.com/news/home/20240326359639/en/Hume-AI-Announces-%2450-Million-Fundraise-and-Empathic-Voice-Interface' },
-    { title: 'Source', url: 'https://www.hume.ai/blog/series-b-evi-announcement' },
-    { title: 'Source', url: 'https://openai.com' },
-    { title: 'Source', url: 'https://elevenlabs.io' },
-    { title: 'Source', url: 'https://deepgram.com' }
+    { title: 'Hume AI About', url: 'https://www.hume.ai/about/' },
+    { title: 'Hume AI Careers', url: 'https://www.hume.ai/careers' },
+    { title: 'Hume AI Product Designer role (Greenhouse)', url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008' },
+    { title: 'Business Wire - Hume AI announces $50M Series B and EVI', url: 'https://www.businesswire.com/news/home/20240326359639/en/Hume-AI-Announces-%2450-Million-Fundraise-and-Empathic-Voice-Interface' },
+    { title: 'Hume Blog - Series B and EVI announcement', url: 'https://www.hume.ai/blog/series-b-evi-announcement' },
+    { title: 'PR Newswire - Hume AI appoints new CEO (Jan 22, 2026)', url: 'https://www.prnewswire.com/news-releases/hume-ai-appoints-new-ceo-302668103.html' },
+    { title: 'WIRED - Google hires former Hume AI CEO and engineers (Jan 2026)', url: 'https://www.wired.com/story/google-hires-hume-ai-ceo-licensing-deal-gemini' }
   ],
 };

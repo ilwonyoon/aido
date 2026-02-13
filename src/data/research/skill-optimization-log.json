@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "createdAt": "2026-02-13T00:00:00.000Z",
+  "runs": [
+    {
+      "runId": "run-2026-02-13-001",
+      "date": "2026-02-13T18:29:16.586Z",
+      "companyId": "granola",
+      "phase": "baseline",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "companyResearcher": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "total": 0,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 66,
+        "bar": 83,
+        "gap": -17,
+        "satisfaction": 3
+      },
+      "challenges": [
+        "Low source count",
+        "Generic/ambiguous role URL"
+      ],
+      "improvements": [
+        "Increase sources to 5+",
+        "Use ATS specific-job URL"
+      ],
+      "notes": "Baseline measured before rerun"
+    },
+    {
+      "runId": "run-2026-02-13-002",
+      "date": "2026-02-13T18:31:39.490Z",
+      "companyId": "granola",
+      "phase": "improved",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 1300,
+          "output": 600,
+          "total": 1900
+        },
+        "companyResearcher": {
+          "input": 2350,
+          "output": 1275,
+          "total": 3625
+        },
+        "total": 5525,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 92,
+        "bar": 83,
+        "gap": 9,
+        "satisfaction": 5
+      },
+      "challenges": [
+        "Role mismatch: Design Engineer excluded by policy",
+        "Insufficient source diversity"
+      ],
+      "improvements": [
+        "Strict Product Design role filter applied",
+        "Expanded to 6 verified multi-domain sources"
+      ],
+      "notes": "Iteration 1 reached above quality bar"
+    },
+    {
+      "runId": "run-2026-02-13-003",
+      "date": "2026-02-13T18:38:15.810Z",
+      "companyId": "mistral",
+      "phase": "baseline",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "companyResearcher": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "total": 0,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 74,
+        "bar": 83,
+        "gap": -9,
+        "satisfaction": 3
+      },
+      "challenges": [
+        "Insufficient source count",
+        "Low source-domain diversity"
+      ],
+      "improvements": [
+        "Expand sources to 5+",
+        "Add official careers + role source"
+      ],
+      "notes": "Baseline before iteration 1"
+    },
+    {
+      "runId": "run-2026-02-13-004",
+      "date": "2026-02-13T18:38:26.334Z",
+      "companyId": "mistral",
+      "phase": "improved",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 1600,
+          "output": 750,
+          "total": 2350
+        },
+        "companyResearcher": {
+          "input": 2800,
+          "output": 1475,
+          "total": 4275
+        },
+        "total": 6625,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 92,
+        "bar": 83,
+        "gap": 9,
+        "satisfaction": 5
+      },
+      "challenges": [
+        "Sources too sparse for validation",
+        "Industry taxonomy mismatch"
+      ],
+      "improvements": [
+        "Added 6 multi-domain sources incl. official + careers + job link",
+        "Aligned industries with ai-models (infrastructure)"
+      ],
+      "notes": "Iteration 1 reached above bar"
+    },
+    {
+      "runId": "run-2026-02-13-006",
+      "date": "2026-02-13T18:43:05.121Z",
+      "companyId": "hume-ai",
+      "phase": "baseline",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "companyResearcher": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "total": 0,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 84,
+        "bar": 83,
+        "gap": 1,
+        "satisfaction": 4
+      },
+      "challenges": [
+        "Sparse culture evidence",
+        "Unknown placeholders"
+      ],
+      "improvements": [
+        "Add culture insights with dated sources",
+        "Replace Unknown with bounded statements"
+      ],
+      "notes": "Corrected baseline score entry"
+    },
+    {
+      "runId": "run-2026-02-13-007",
+      "date": "2026-02-13T18:43:11.862Z",
+      "companyId": "hume-ai",
+      "phase": "improved",
+      "tokenUsage": {
+        "jobScraper": {
+          "input": 1450,
+          "output": 650,
+          "total": 2100
+        },
+        "companyResearcher": {
+          "input": 2450,
+          "output": 1350,
+          "total": 3800
+        },
+        "total": 5900,
+        "estimationMethod": "chars/4"
+      },
+      "quality": {
+        "score": 92,
+        "bar": 83,
+        "gap": 9,
+        "satisfaction": 5
+      },
+      "challenges": [
+        "Need fresher leadership signal",
+        "Unknown-heavy baseline"
+      ],
+      "improvements": [
+        "Added Jan 2026 leadership sources and updated role context",
+        "Removed Unknown placeholders with evidence-backed wording"
+      ],
+      "notes": "Series B AI-native company update completed"
+    }
+  ]
+}

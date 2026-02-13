@@ -126,6 +126,31 @@ Before adding any company to the codebase, verify:
 
 ---
 
+## Skill Optimization Loop (MUST for iterative improvement)
+
+When improving skill performance across multiple companies, run this loop for each company:
+
+1. Baseline score:
+```bash
+node scripts/score-company-quality.mjs <company-id>
+```
+2. Run `/job-scraper` then `/company-researcher`
+3. Improve file based on score issues (sources, role URL quality, taxonomy consistency)
+4. Re-score:
+```bash
+node scripts/score-company-quality.mjs <company-id>
+```
+5. Log iteration:
+```bash
+node scripts/log-skill-iteration.mjs --company <company-id> --phase <baseline|improved|validated> ...
+```
+
+Exit criteria for one company iteration:
+- `Score >= Quality Bar`, and
+- No critical issues in output (role mismatch, missing key fields, weak source diversity).
+
+---
+
 ## Workflow: Adding a New Company (Step by Step)
 
 ### 1. Select target company
