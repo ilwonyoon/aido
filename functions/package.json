@@ -1,0 +1,24 @@
+{
+  "name": "aido-functions",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.6.1",
+    "firebase-functions": "^6.3.0",
+    "resend": "^6.9.2",
+    "@react-email/components": "^1.0.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/react": "^19.0.0"
+  }
+}

@@ -48,7 +48,7 @@ export function NewsletterSignup({ source = 'footer' }: NewsletterSignupProps) {
           </p>
           {status === 'success' && (
             <p className="text-xs text-[var(--muted)] mt-1">
-              A confirmation email will be sent within 15 minutes.
+              Check your inbox for a welcome email!
             </p>
           )}
         </div>

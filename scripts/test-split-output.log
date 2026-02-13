@@ -1,0 +1,53 @@
+[15:29:20] === TEST: Split Deep Research for Listen Labs ===
+[15:29:21] Worktree synced to latest main.
+[15:29:21] === Phase 2a: Deep research (Phases 1-8) ===
+Deep research for Listen Labs is complete (Phases 1-8). Here's a summary:
+
+---
+
+**Listen Labs — Deep Research Complete**
+
+**Report**: `src/data/deep-research/listen-labs.md`
+**Company data updated**: `src/data/companies/listen-labs.ts`
+**Build**: Verified passing
+
+**Key Findings:**
+- **Score**: 7.15/10 (Tier 1)
+- **Valuation**: $500M (Series B, Jan 2026)
+- **Funding**: $100M total (Sequoia + Ribbit Capital)
+- **Revenue**: 15x growth to 8-figure ARR in 9 months
+- **Team**: ~45 employees, **0 designers** — hiring first founding product designer
+- **Founders**: Alfred Wahlforss (Swedish serial entrepreneur, Harvard, SoundCloud family) + Florian Juengermann (IOI medalist, ex-Tesla Autopilot, Harvard)
+- **Key opportunity**: Founding designer building design from zero at a Sequoia-backed rocket ship with genuinely novel AI conversation design challenges
+- **Key risk**: Lone designer in an engineering-dominant culture with no design mentorship, below-market base comp ($120-150K), and intense competition (Outset, Aaru, Keplar)
+- **Competition**: Outset ($51M), Aaru ($1B val), Keplar (Kleiner Perkins) — market is heating up fast
+
+**Stopped after Phase 8 as instructed. No git commands executed.**
+[15:37:37] Phase 2a completed successfully.
+[15:37:37] Phase 2a duration: 496s
+[15:37:37] Research file verified: 20679 bytes
+[15:37:37] === Phase 2b: Article generation (fresh context) ===
+Done. Here's a summary of what was created:
+
+**Article**: "Listen Labs Deep Dive: The $500M AI Company With Zero Designers"
+
+**Angle**: The founding designer opportunity — a $500M Sequoia-backed company that has never employed a single product designer, now hiring its first.
+
+**Key sections**:
+- **The Business**: Harvard co-founders (SoundCloud family + Tesla Autopilot IOI medalist), $100M raised, 15x revenue growth, $500M valuation
+- **The Product**: AI that automates qualitative research — interview design, participant recruitment, AI moderation, analysis, and delivery
+- **The Design Vacuum**: Zero designers, zero design system, 1:10+ designer-to-engineer ratio, novel AI conversation design challenges
+- **The Competition**: Outset ($51M), Aaru ($1B synthetic research), Keplar (Kleiner Perkins), plus foundation model risk
+- **Upside-Downside Ledger**: Unbeatable portfolio story vs. lone designer in engineering-dominant culture
+- **Verdict**: 7.15/10 — Tier 1 for a specific profile (solo builder who thrives without design peers)
+
+**15 inline citation chips** linking to VentureBeat, Fortune, Sequoia, Pear VC, eWeek, TechCrunch, and more. Company mentions linked to AIDO profiles. Build verified clean with 504 static pages generated.
+[15:40:52] Phase 2b completed successfully.
+[15:40:52] Phase 2b duration: 195s
+[15:40:52] Article file verified.
+[15:40:56] PR created.
+[15:40:56] === TEST COMPLETE ===
+[15:40:56] Phase 2a (research): 496s
+[15:40:56] Phase 2b (article): 195s
+[15:40:56] Total: 691s
+[15:40:56] Result: research OK / article OK

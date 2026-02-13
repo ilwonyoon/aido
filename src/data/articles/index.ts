@@ -17,8 +17,10 @@ import { gammaDeepDive100mArr52People } from './content/gamma-deep-dive-100m-arr
 import { harveyDeepDiveLegalAiDesignOpportunity } from './content/harvey-deep-dive-legal-ai-design-opportunity';
 import { listenLabsDeepDiveFoundingDesignerZeroToOne } from './content/listen-labs-deep-dive-founding-designer-zero-to-one';
 import { writerDeepDiveEnterpriseAiPlatformDesign } from './content/writer-deep-dive-enterprise-ai-platform-design';
+import { huggingFaceDeepDiveGithubOfMlDesign } from './content/hugging-face-deep-dive-github-of-ml-design';
 
 export const articles: Article[] = [
+  huggingFaceDeepDiveGithubOfMlDesign,
   writerDeepDiveEnterpriseAiPlatformDesign,
   listenLabsDeepDiveFoundingDesignerZeroToOne,
   harveyDeepDiveLegalAiDesignOpportunity,

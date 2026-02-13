@@ -1,0 +1,36 @@
+[15:29:20] === TEST: Split Deep Research for Listen Labs ===
+HEAD is now at 4c8f8e8 11/02/26 - 23:15:00 | fix: split deep research into two Claude invocations
+[15:29:21] Worktree synced to latest main.
+[15:29:21] === Phase 2a: Deep research (Phases 1-8) ===
+[15:37:37] Phase 2a completed successfully.
+/Users/ilwonyoon/Documents/AIDO/aido/scripts/test-split-research.sh: line 27: 81384 Terminated: 15          ( sleep 1800; kill ${CLAUDE_PID} 2> /dev/null )
+[15:37:37] Phase 2a duration: 496s
+[15:37:37] Research file verified: 20679 bytes
+[15:37:37] === Phase 2b: Article generation (fresh context) ===
+[15:40:52] Phase 2b completed successfully.
+/Users/ilwonyoon/Documents/AIDO/aido/scripts/test-split-research.sh: line 27: 87880 Terminated: 15          ( sleep 1200; kill ${CLAUDE_PID} 2> /dev/null )
+[15:40:52] Phase 2b duration: 195s
+[15:40:52] Article file verified.
+ ...labs-deep-dive-founding-designer-zero-to-one.ts | 268 ++++++++++++++++
+ src/data/articles/index.ts                         |   2 +
+ src/data/companies/listen-labs.ts                  | 221 ++++++++-----
+ src/data/deep-research/listen-labs.md              | 343 +++++++++++++++++++++
+ 4 files changed, 753 insertions(+), 81 deletions(-)
+[daily-deep-research 4cb9f9c] 11/02/26 - 15:40:52 | deep-research: Listen Labs (test)
+ 4 files changed, 753 insertions(+), 81 deletions(-)
+ create mode 100644 src/data/articles/content/listen-labs-deep-dive-founding-designer-zero-to-one.ts
+ create mode 100644 src/data/deep-research/listen-labs.md
+To https://github.com/ilwonyoon/aido
+ ! [rejected]        daily-deep-research -> daily-deep-research (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ilwonyoon/aido'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+https://github.com/ilwonyoon/aido/pull/14
+[15:40:56] PR created.
+[15:40:56] === TEST COMPLETE ===
+[15:40:56] Phase 2a (research): 496s
+[15:40:56] Phase 2b (article): 195s
+[15:40:56] Total: 691s
+[15:40:56] Result: research OK / article OK
