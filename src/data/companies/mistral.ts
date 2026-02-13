@@ -26,7 +26,7 @@ export const mistral: Company = {
     fundingHistory: [
       { stage: 'Seed', amount: '€105M', date: '2023-06', leadInvestors: ['Lightspeed'] },
       { stage: 'Series A', amount: '€385M', date: '2023-12', leadInvestors: ['a16z'] },
-      { stage: 'Series B', amount: '€600M', date: '2024-06', valuation: '$6.2B', leadInvestors: ['General Catalyst'] },
+      { stage: 'Series B', amount: '€600M', date: '2024-06', valuation: '€5.8B (~$6.2B)', leadInvestors: ['General Catalyst'] },
       { stage: 'Series C', amount: '€1.7B', date: '2025-09', valuation: '€11.7B', leadInvestors: ['ASML'] },
     ],
     revenue: 'Growing (not disclosed)',
@@ -227,11 +227,11 @@ export const mistral: Company = {
       status: 'interested',
       fitScore: 8,
       whyJoin: [
-        'L4 AI-native company',
+        'Level A AI-native company',
         'World-class founding team',
         'Remote Europe option',
         'Open-weight philosophy',
-        '$14B but still early-stage feel',
+        '€11.7B valuation but still early-stage feel',
       ],
       whyNot: [
         'Paris-based (timezone)',

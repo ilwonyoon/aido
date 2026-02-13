@@ -23,8 +23,20 @@ export const humeAi: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Not publicly disclosed (Series B announced Mar 2024)',
-  totalFunding: '$50M Series B disclosed; ~$74M cumulative reported (Jan 2026)',
+  totalFunding: '~$74M cumulative (Jan 2026)',
   fundingHistory: [
+    {
+      stage: 'Seed',
+      amount: '$5M',
+      date: '2022-09',
+      leadInvestors: ['Comcast Ventures'],
+    },
+    {
+      stage: 'Series A',
+      amount: '$19M',
+      date: '2023-03',
+      leadInvestors: ['Union Square Ventures'],
+    },
     {
       stage: 'Series B',
       amount: '$50M',
@@ -76,8 +88,13 @@ export const humeAi: Company = {
   founders: [
     {
       name: 'Alan Cowen',
-      role: 'Founder (former CEO)',
+      role: 'Founder (former CEO, joined Google DeepMind Jan 2026)',
       background: 'Former Google researcher and scientist focused on emotional expression and semantic space theory.',
+    },
+    {
+      name: 'Andrew Ettinger',
+      role: 'CEO (appointed Jan 2026)',
+      background: 'Former COO at Hume AI; led commercialization and enterprise strategy.',
     },
   ],
   whyBuilding: 'Build AI systems that measure and optimize for human emotional well-being.',
@@ -99,7 +116,7 @@ export const humeAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '~35+ in 2024 announcement; current size not officially disclosed',
+    teamSize: '~1-3 (1 PD role open + Head of Design mentioned in job posting)',
   },
   designWorkType: {
     logicBehavior: {
@@ -187,7 +204,7 @@ export const humeAi: Company = {
 
   // My Tracking
   tracking: {
-      status: 'watching',
+    status: 'watching',
     fitScore: 7,
     whyJoin: [
       'Empathic voice AI product with deep UX challenges',

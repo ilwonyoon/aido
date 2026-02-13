@@ -168,7 +168,7 @@ export const granola: Company = {
       {
         source: 'linkedin',
         sentiment: 'positive',
-        content: 'Ex-Palantir, ex-Apple founders. London-based, design-first culture.',
+        content: 'Ex-Google PM founder (Socratic, acquired by Google). London-based, design-first culture.',
       },
       {
         source: 'glassdoor',

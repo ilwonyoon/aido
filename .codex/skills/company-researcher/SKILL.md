@@ -225,6 +225,37 @@ fundingHistory: [
 ]
 ```
 
+**Currency Consistency Rule (CRITICAL):**
+
+하나의 파일 안에서 **통화 단위를 통일**해야 합니다:
+- 회사 본사가 **미국**: USD 기준 (`$50M`)
+- 회사 본사가 **유럽**: EUR 기준, USD 병기 (`€600M (~$650M)`)
+- `fundingHistory`, `valuation`, `totalFunding`, `tracking.whyJoin`, `growthMetrics.signals`에서 같은 통화 사용
+
+```typescript
+// ✅ 올바른 예 (Mistral — Paris 본사, EUR 통일)
+valuation: '€11.7B (~$13.8B)',
+fundingHistory: [
+  { stage: 'Series B', amount: '€600M', valuation: '€5.8B (~$6.2B)' },
+  { stage: 'Series C', amount: '€1.7B', valuation: '€11.7B (~$13.8B)' },
+],
+tracking: { whyJoin: ['€11.7B valuation but still early-stage feel'] },
+
+// ❌ 잘못된 예 (통화 혼재)
+fundingHistory: [
+  { stage: 'Series B', valuation: '$6.2B' },     // USD
+  { stage: 'Series C', valuation: '€11.7B' },    // EUR ← 같은 파일에서 혼재!
+],
+```
+
+**Funding Sum Check Rule:**
+
+`totalFunding` ≈ `fundingHistory` 각 라운드 amount 합산. 차이가 크면 누락된 라운드를 리서치:
+```typescript
+// totalFunding: '$74M' 인데 fundingHistory에 Series B $50M만 있으면
+// → $24M 차이 → Seed + Series A 라운드 누락 → 리서치 필수
+```
+
 ---
 
 #### 1.3 AI-Native Level (필수)
@@ -356,6 +387,33 @@ founders: [
 ]
 ```
 
+**Leadership Change Rule (CRITICAL):**
+
+CEO/CTO가 교체된 경우, **전임자 + 신임자 모두** 기록:
+```typescript
+// ✅ 올바른 예
+founders: [
+  {
+    name: 'Alan Cowen',
+    role: 'Founder (former CEO, joined Google DeepMind Jan 2026)',
+    background: 'Former Google researcher focused on emotional expression.',
+  },
+  {
+    name: 'Andrew Ettinger',
+    role: 'CEO (appointed Jan 2026)',
+    background: 'Former COO at Hume AI; led commercialization.',
+  },
+],
+
+// ❌ 잘못된 예 — 신임 CEO 누락
+founders: [
+  {
+    name: 'Alan Cowen',
+    role: 'Founder (former CEO)',  // 전임자만 있고 신임자 없음!
+  },
+],
+```
+
 **Research Sources:**
 - LinkedIn profiles
 - Company about page
@@ -413,6 +471,24 @@ designTeam: {
     { name: string, role: string }
   ],
 }
+```
+
+**⚠️ CRITICAL: `teamSize`는 디자인팀 규모만 기재. 전체 직원 수(headcount)가 아님.**
+
+추론 방법 (확인 불가 시):
+- LinkedIn에서 "[company] product designer" 검색 → 인원 수 세기
+- openRoles에 디자인 역할이 있으면 채용 중 = 팀 확대 시그널
+- Head of Design 존재 여부 → 최소 2-3명 팀 추정
+- 추론 근거를 괄호 안에 표기: `'~2-3 (1 PD role open + Head of Design)'`
+
+```typescript
+// ✅ 올바른 예
+teamSize: '~2-3 (1 PD role open + Head of Design)',
+teamSize: '~10-15 (LinkedIn search: 12 designers found)',
+
+// ❌ 잘못된 예
+teamSize: '~35+ in 2024 announcement',  // 이건 전체 직원 수!
+teamSize: '51-200 employees',            // 전체 headcount!
 ```
 
 **Research:**
@@ -1106,7 +1182,7 @@ growthMetrics → tracking → lastUpdated → sources
 
 ---
 
-## Self-Verification Checklist (MANDATORY before commit, 15 items)
+## Self-Verification Checklist (MANDATORY before commit, 21 items)
 
 파일 작성 완료 후, 커밋 전에 반드시 아래 항목을 하나씩 체크:
 
@@ -1121,6 +1197,10 @@ growthMetrics → tracking → lastUpdated → sources
 - [ ] `designerLinks`의 모든 URL이 **개인 프로필** 페이지인가? (회사 페이지 `/company/` URL 금지)
 - [ ] `cultureInsights`의 founders 관련 언급이 `founders` 섹션과 일치하는가?
 - [ ] `cultureInsights`의 위치/규모 관련 언급이 `headquarters`/`stage`와 일치하는가?
+- [ ] **통화 일관성**: 한 파일 안에서 `fundingHistory`, `valuation`, `tracking`, `growthMetrics`의 통화 단위가 통일되어 있는가? (회사 본사 네이티브 통화 기준, USD 병기 시 `(~$X)` 포맷)
+- [ ] **수치 동기화**: `valuation`/`totalFunding` 수정 시 `tracking.whyJoin`, `growthMetrics.signals`에서 같은 수치를 참조하는 부분도 함께 갱신했는가?
+- [ ] **리더십 변경 반영**: CEO/CTO가 바뀐 경우, `founders` 배열에 전임자 역할 업데이트 + 신임자 추가까지 완료했는가?
+- [ ] **fundingHistory 합산 검증**: `totalFunding` 금액 ≈ `fundingHistory` 각 라운드 amount 합산인가? 차이가 크면 누락된 라운드 리서치 필수
 
 ### Completeness
 - [ ] `designerLinks`에 실제 디자이너 개인 프로필이 2개 이상 있는가? (회사 블로그만으로는 부족)
@@ -1129,8 +1209,12 @@ growthMetrics → tracking → lastUpdated → sources
 - [ ] `fundingHistory`의 모든 라운드에 date, amount, leadInvestors가 있는가?
 
 ### Formatting
-- [ ] 2-space 인덴테이션이 전체 파일에서 일관적인가?
+- [ ] 2-space 인덴테이션이 전체 파일에서 일관적인가? (수정 전후 주변 코드 인덴트 확인)
 - [ ] `category`에 `as const`가 붙어있는가?
 - [ ] `lastUpdated`가 오늘 날짜인가?
+
+### Design Team Accuracy (NEW)
+- [ ] `designTeam.teamSize`는 **디자인팀 규모**만 기재했는가? (전체 직원 수 ≠ 디자인팀)
+- [ ] 디자인팀 규모 확인 불가 시, openRoles/Head of Design 존재 여부에서 추론하고 괄호 안에 근거 표기했는가?
 
 **하나라도 NO가 있으면 수정 후 커밋.**
