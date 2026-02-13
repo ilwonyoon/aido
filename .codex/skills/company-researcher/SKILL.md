@@ -38,11 +38,23 @@ node scripts/log-skill-iteration.mjs --company <company-id> --phase improved ...
 
 ## 핵심 원칙 (매우 중요)
 
-1. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
-2. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
-3. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
-4. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
-5. **Unknown 사용 시 근거 기록**: sources에 "무엇을 어디서 확인했는데 없었는지"를 남김.
+1. **간결성 우선 (3-4개 규칙)**: 모든 배열 필드는 **3-4개 max**. 양보다 질. 핵심만 추려서 적는다.
+   - `competitors`: **3개** (가장 직접적인 경쟁사만)
+   - `moat`: 3-4개
+   - `beliefs`: 3-4개
+   - `greenFlags` / `redFlags`: 3-4개
+   - `cultureInsights`: 3개 max
+   - `designerLinks`: 3-4개 max
+   - `sources`: 3-5개 (핵심 출처만)
+   - `aiDesignChallenges`: 3개
+   - `userProblems`: 3-4개
+   - `growthMetrics.signals` / `tailwinds` / `headwinds`: 각 3-4개
+2. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
+3. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
+4. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
+5. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
+6. **Unknown 사용 시 근거 기록**: sources에 "무엇을 어디서 확인했는데 없었는지"를 남김.
+7. **데이터 값은 간결하게**: 필드 값은 데이터 포인트이지 설명문이 아님. `'$74M'` O, `'$50M Series B disclosed; ~$74M cumulative reported (Jan 2026)'` X.
 
 ---
 
@@ -294,7 +306,7 @@ aiDesignChallenges: [
 
 ### Phase 2: Competition & Market (중요)
 
-#### 2.1 Competitors
+#### 2.1 Competitors (3개 max)
 ```typescript
 competitors: [
   {
@@ -302,9 +314,11 @@ competitors: [
     description: 'Brief description',
     whyTheyWin: 'Their competitive advantage',
   },
-  // 3-5 competitors
+  // 3개만 — 가장 직접적인 경쟁사만 선택
 ]
 ```
+
+**3개 선택 기준**: 같은 시장에서 직접 경쟁하는 회사만. 간접 경쟁사(AWS, Google 등 빅테크)는 `vsGiants`에서 다룸.
 
 **Research Sources:**
 - Company blog (competitor comparisons)
@@ -653,47 +667,64 @@ node scripts/fetch-og-single.mjs new-company https://newcompany.com
 
 ### Phase 7: Designer Links & Open Roles
 
-#### 7.1 Designer Links
+#### 7.1 Designer Links & Insights (3-4개 max)
+
+**목적**: 단순 링크 나열이 아니라, **이 회사 디자이너들이 어떤 생각을 하는지** 파악하는 것.
+
 ```typescript
 designerLinks: [
   {
     name: 'Designer Name',
     role: 'Product Designer' | 'Head of Design',
-    platform: 'twitter' | 'linkedin' | 'blog' | 'substack' | 'threads',
+    platform: 'twitter' | 'linkedin' | 'blog' | 'substack' | 'threads' | 'podcast',
     url: string,
-    description?: string,
+    description: string,  // ⭐ 핵심: 이 사람이 뭘 썼는지, 핵심 인사이트가 뭔지
   },
 ]
 ```
 
-**Minimum Requirement: 2+ actual designer profiles**
+**⚠️ description은 필수이고, 인사이트를 담아야 함:**
 
-회사 공식 블로그만 넣는 것은 불충분. 실제 디자이너 개인 프로필을 최소 2개 이상 찾아야 함:
-- 회사 블로그만 있는 경우: 1/2 — 추가 검색 필요
-- 디자이너 1명 + 블로그: 2/2 — OK
-- 디자이너 2명 이상: OK
+```typescript
+// ✅ 올바른 예 — 인사이트 포함
+{
+  name: 'Joel Lewenstein',
+  role: 'Head of Design',
+  platform: 'podcast',
+  url: 'https://www.lennyspodcast.com/...',
+  description: 'Lenny 팟캐스트에서 "AI 제품은 유저 신뢰가 핵심, 에러를 숨기지 말고 투명하게 보여줘야 한다" 강조',
+},
+{
+  name: 'Nev Flynn',
+  role: 'Design Lead',
+  platform: 'blog',
+  url: 'https://nevflynn.com/...',
+  description: 'Voice UI에서 latency를 디자인으로 해결하는 패턴에 대한 글 — "기다림을 경험으로 바꾸기"',
+},
 
-**URL Validation Rule (CRITICAL):**
+// ❌ 잘못된 예 — 링크만 나열
+{
+  name: 'Nev Flynn',
+  role: 'Design Lead',
+  platform: 'blog',
+  url: 'https://nevflynn.com/',
+  description: 'Design collaborator referenced in job posting',  // 인사이트 없음!
+},
+```
 
-`designerLinks`의 `url`은 반드시 **해당 사람의 개인 프로필 페이지**여야 합니다:
+**찾는 방법:**
+1. LinkedIn에서 디자이너 이름 확인
+2. 그 디자이너의 Medium/Substack/X에서 **실제 글이나 발언** 찾기
+3. `description`에 글 제목 + 핵심 인사이트 1줄 요약
+4. 글/발언이 없으면 해당 디자이너는 포함하지 않음 (링크만 있는 항목은 가치 없음)
 
-| 올바른 URL | 잘못된 URL |
-|-----------|-----------|
-| `linkedin.com/in/john-doe-12345/` | `linkedin.com/company/meetgranola/` (회사 페이지) |
-| `x.com/jane_designer` | `x.com/companyname` (회사 계정) |
-| `johndoe.com` (개인 사이트) | `company.com/blog` (회사 블로그) |
+**3-4개 max.** 인사이트가 풍부한 것만 엄선. 7개 나열하지 말 것.
 
-**Self-check**: URL에 `/company/`가 포함되어 있으면 회사 페이지일 가능성 높음 → 개인 URL로 교체. 개인 URL을 찾을 수 없으면 해당 항목을 제거.
-또한 `linkedin.com/company/`, `x.com/[company-brand-account]` 형태는 개인 프로필로 간주하지 않는다.
+**URL Validation Rule:**
+- URL은 **개인 프로필/글 페이지**만 허용 (회사 페이지 `/company/` 금지)
+- 개인 URL을 찾을 수 없으면 해당 항목을 제거
 
-**How to Find:**
-- LinkedIn: "[company] product designer" → 실제 이름, 역할 확인 → **개인 프로필 URL** 복사
-- Twitter/X: Search "[company] designer" → 개인 계정 찾기
-- Company blog: Design team posts (팀 블로그는 개인이 아님)
-- Dribbble, Behance: Designers mentioning the company
-- Medium/Substack: 디자이너 개인 블로그
-
-**정보를 찾을 수 없는 경우**: designerLinks를 빈 배열로 두되, sources에 "Searched LinkedIn/Twitter/Dribbble for [company] designers — limited public presence" 기록
+**정보를 찾을 수 없는 경우**: designerLinks를 빈 배열로 두되, sources에 "Searched LinkedIn/Twitter for [company] designers — no public writing found" 기록
 
 ---
 
@@ -731,7 +762,7 @@ sources: [
 
 ---
 
-### Phase 8: Culture Insights
+### Phase 8: Culture Insights (3개 max)
 
 #### 7.1 Culture Sources
 ```typescript
@@ -743,8 +774,16 @@ cultureInsights: [
     content: string,
     url?: string,
   },
+  // 3개 max — 가장 의미 있는 인사이트만 선별
 ]
 ```
+
+**3개 선택 기준** (우선순위):
+1. Glassdoor/Blind — 실제 직원 리뷰 (가장 가치 있음)
+2. 디자이너/PM의 개인 발언 — X, LinkedIn 포스트
+3. levels.fyi — 보상 데이터가 있을 때만
+
+**"No reviews", "No data", "Limited info" 같은 빈 인사이트는 포함하지 말 것.** 정보가 없으면 항목을 줄이는 게 낫다.
 
 **Research:**
 - Glassdoor (company reviews)
