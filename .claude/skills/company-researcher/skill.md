@@ -1,3 +1,8 @@
+---
+name: company-researcher
+description: "Research and synthesize AIDO company profiles into complete Company objects. Use when adding or updating company data, including openRoles via job-scraper and sources verification."
+---
+
 # Company Researcher Skill
 
 AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함께 작동하여 완전한 회사 프로필 생성.
@@ -12,13 +17,44 @@ AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함�
 
 회사에 대한 모든 정보를 체계적으로 수집하여 `Company` 타입의 완전한 TypeScript 객체 생성.
 
+## 반복 최적화 모드 (성능 튜닝용)
+
+회사별 iteration에서 아래를 추가로 실행:
+
+1. Baseline 점수 측정
+```bash
+node scripts/score-company-quality.mjs <company-id>
+```
+2. 개선 반영 후 재측정
+3. iteration 로그 기록
+```bash
+node scripts/log-skill-iteration.mjs --company <company-id> --phase improved ...
+```
+
+권장 목표:
+- Score가 quality bar 이상
+- sources 5개 이상 + 3개 이상 도메인
+- openRoles 정책 위반(Design Engineer 등) 0건
+
 ## 핵심 원칙 (매우 중요)
 
-1. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
-2. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
-3. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
-4. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
-5. **Unknown 사용 시 근거 기록**: sources에 “무엇을 어디서 확인했는데 없었는지”를 남김.
+1. **간결성 우선 (3-4개 규칙)**: 모든 배열 필드는 **3-4개 max**. 양보다 질. 핵심만 추려서 적는다.
+   - `competitors`: **3개** (가장 직접적인 경쟁사만)
+   - `moat`: 3-4개
+   - `beliefs`: 3-4개
+   - `greenFlags` / `redFlags`: 3-4개
+   - `cultureInsights`: 3개 max
+   - `designerLinks`: 3-4개 max
+   - `sources`: 3-5개 (핵심 출처만)
+   - `aiDesignChallenges`: 3개
+   - `userProblems`: 3-4개
+   - `growthMetrics.signals` / `tailwinds` / `headwinds`: 각 3-4개
+2. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
+3. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
+4. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
+5. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
+6. **Unknown 사용 시 근거 기록**: sources에 "무엇을 어디서 확인했는데 없었는지"를 남김.
+7. **데이터 값은 간결하게**: 필드 값은 데이터 포인트이지 설명문이 아님. `'$74M'` O, `'$50M Series B disclosed; ~$74M cumulative reported (Jan 2026)'` X.
 
 ---
 
@@ -201,6 +237,37 @@ fundingHistory: [
 ]
 ```
 
+**Currency Consistency Rule (CRITICAL):**
+
+하나의 파일 안에서 **통화 단위를 통일**해야 합니다:
+- 회사 본사가 **미국**: USD 기준 (`$50M`)
+- 회사 본사가 **유럽**: EUR 기준, USD 병기 (`€600M (~$650M)`)
+- `fundingHistory`, `valuation`, `totalFunding`, `tracking.whyJoin`, `growthMetrics.signals`에서 같은 통화 사용
+
+```typescript
+// ✅ 올바른 예 (Mistral — Paris 본사, EUR 통일)
+valuation: '€11.7B (~$13.8B)',
+fundingHistory: [
+  { stage: 'Series B', amount: '€600M', valuation: '€5.8B (~$6.2B)' },
+  { stage: 'Series C', amount: '€1.7B', valuation: '€11.7B (~$13.8B)' },
+],
+tracking: { whyJoin: ['€11.7B valuation but still early-stage feel'] },
+
+// ❌ 잘못된 예 (통화 혼재)
+fundingHistory: [
+  { stage: 'Series B', valuation: '$6.2B' },     // USD
+  { stage: 'Series C', valuation: '€11.7B' },    // EUR ← 같은 파일에서 혼재!
+],
+```
+
+**Funding Sum Check Rule:**
+
+`totalFunding` ≈ `fundingHistory` 각 라운드 amount 합산. 차이가 크면 누락된 라운드를 리서치:
+```typescript
+// totalFunding: '$74M' 인데 fundingHistory에 Series B $50M만 있으면
+// → $24M 차이 → Seed + Series A 라운드 누락 → 리서치 필수
+```
+
 ---
 
 #### 1.3 AI-Native Level (필수)
@@ -239,7 +306,7 @@ aiDesignChallenges: [
 
 ### Phase 2: Competition & Market (중요)
 
-#### 2.1 Competitors
+#### 2.1 Competitors (3개 max)
 ```typescript
 competitors: [
   {
@@ -247,9 +314,11 @@ competitors: [
     description: 'Brief description',
     whyTheyWin: 'Their competitive advantage',
   },
-  // 3-5 competitors
+  // 3개만 — 가장 직접적인 경쟁사만 선택
 ]
 ```
+
+**3개 선택 기준**: 같은 시장에서 직접 경쟁하는 회사만. 간접 경쟁사(AWS, Google 등 빅테크)는 `vsGiants`에서 다룸.
 
 **Research Sources:**
 - Company blog (competitor comparisons)
@@ -332,6 +401,33 @@ founders: [
 ]
 ```
 
+**Leadership Change Rule (CRITICAL):**
+
+CEO/CTO가 교체된 경우, **전임자 + 신임자 모두** 기록:
+```typescript
+// ✅ 올바른 예
+founders: [
+  {
+    name: 'Alan Cowen',
+    role: 'Founder (former CEO, joined Google DeepMind Jan 2026)',
+    background: 'Former Google researcher focused on emotional expression.',
+  },
+  {
+    name: 'Andrew Ettinger',
+    role: 'CEO (appointed Jan 2026)',
+    background: 'Former COO at Hume AI; led commercialization.',
+  },
+],
+
+// ❌ 잘못된 예 — 신임 CEO 누락
+founders: [
+  {
+    name: 'Alan Cowen',
+    role: 'Founder (former CEO)',  // 전임자만 있고 신임자 없음!
+  },
+],
+```
+
 **Research Sources:**
 - LinkedIn profiles
 - Company about page
@@ -389,6 +485,24 @@ designTeam: {
     { name: string, role: string }
   ],
 }
+```
+
+**⚠️ CRITICAL: `teamSize`는 디자인팀 규모만 기재. 전체 직원 수(headcount)가 아님.**
+
+추론 방법 (확인 불가 시):
+- LinkedIn에서 "[company] product designer" 검색 → 인원 수 세기
+- openRoles에 디자인 역할이 있으면 채용 중 = 팀 확대 시그널
+- Head of Design 존재 여부 → 최소 2-3명 팀 추정
+- 추론 근거를 괄호 안에 표기: `'~2-3 (1 PD role open + Head of Design)'`
+
+```typescript
+// ✅ 올바른 예
+teamSize: '~2-3 (1 PD role open + Head of Design)',
+teamSize: '~10-15 (LinkedIn search: 12 designers found)',
+
+// ❌ 잘못된 예
+teamSize: '~35+ in 2024 announcement',  // 이건 전체 직원 수!
+teamSize: '51-200 employees',            // 전체 headcount!
 ```
 
 **Research:**
@@ -553,46 +667,64 @@ node scripts/fetch-og-single.mjs new-company https://newcompany.com
 
 ### Phase 7: Designer Links & Open Roles
 
-#### 7.1 Designer Links
+#### 7.1 Designer Links & Insights (3-4개 max)
+
+**목적**: 단순 링크 나열이 아니라, **이 회사 디자이너들이 어떤 생각을 하는지** 파악하는 것.
+
 ```typescript
 designerLinks: [
   {
     name: 'Designer Name',
     role: 'Product Designer' | 'Head of Design',
-    platform: 'twitter' | 'linkedin' | 'blog' | 'substack' | 'threads',
+    platform: 'twitter' | 'linkedin' | 'blog' | 'substack' | 'threads' | 'podcast',
     url: string,
-    description?: string,
+    description: string,  // ⭐ 핵심: 이 사람이 뭘 썼는지, 핵심 인사이트가 뭔지
   },
 ]
 ```
 
-**Minimum Requirement: 2+ actual designer profiles**
+**⚠️ description은 필수이고, 인사이트를 담아야 함:**
 
-회사 공식 블로그만 넣는 것은 불충분. 실제 디자이너 개인 프로필을 최소 2개 이상 찾아야 함:
-- 회사 블로그만 있는 경우: 1/2 — 추가 검색 필요
-- 디자이너 1명 + 블로그: 2/2 — OK
-- 디자이너 2명 이상: OK
+```typescript
+// ✅ 올바른 예 — 인사이트 포함
+{
+  name: 'Joel Lewenstein',
+  role: 'Head of Design',
+  platform: 'podcast',
+  url: 'https://www.lennyspodcast.com/...',
+  description: 'Lenny 팟캐스트에서 "AI 제품은 유저 신뢰가 핵심, 에러를 숨기지 말고 투명하게 보여줘야 한다" 강조',
+},
+{
+  name: 'Nev Flynn',
+  role: 'Design Lead',
+  platform: 'blog',
+  url: 'https://nevflynn.com/...',
+  description: 'Voice UI에서 latency를 디자인으로 해결하는 패턴에 대한 글 — "기다림을 경험으로 바꾸기"',
+},
 
-**URL Validation Rule (CRITICAL):**
+// ❌ 잘못된 예 — 링크만 나열
+{
+  name: 'Nev Flynn',
+  role: 'Design Lead',
+  platform: 'blog',
+  url: 'https://nevflynn.com/',
+  description: 'Design collaborator referenced in job posting',  // 인사이트 없음!
+},
+```
 
-`designerLinks`의 `url`은 반드시 **해당 사람의 개인 프로필 페이지**여야 합니다:
+**찾는 방법:**
+1. LinkedIn에서 디자이너 이름 확인
+2. 그 디자이너의 Medium/Substack/X에서 **실제 글이나 발언** 찾기
+3. `description`에 글 제목 + 핵심 인사이트 1줄 요약
+4. 글/발언이 없으면 해당 디자이너는 포함하지 않음 (링크만 있는 항목은 가치 없음)
 
-| 올바른 URL | 잘못된 URL |
-|-----------|-----------|
-| `linkedin.com/in/john-doe-12345/` | `linkedin.com/company/meetgranola/` (회사 페이지) |
-| `x.com/jane_designer` | `x.com/companyname` (회사 계정) |
-| `johndoe.com` (개인 사이트) | `company.com/blog` (회사 블로그) |
+**3-4개 max.** 인사이트가 풍부한 것만 엄선. 7개 나열하지 말 것.
 
-**Self-check**: URL에 `/company/`가 포함되어 있으면 회사 페이지일 가능성 높음 → 개인 URL로 교체. 개인 URL을 찾을 수 없으면 해당 항목을 제거.
+**URL Validation Rule:**
+- URL은 **개인 프로필/글 페이지**만 허용 (회사 페이지 `/company/` 금지)
+- 개인 URL을 찾을 수 없으면 해당 항목을 제거
 
-**How to Find:**
-- LinkedIn: "[company] product designer" → 실제 이름, 역할 확인 → **개인 프로필 URL** 복사
-- Twitter/X: Search "[company] designer" → 개인 계정 찾기
-- Company blog: Design team posts (팀 블로그는 개인이 아님)
-- Dribbble, Behance: Designers mentioning the company
-- Medium/Substack: 디자이너 개인 블로그
-
-**정보를 찾을 수 없는 경우**: designerLinks를 빈 배열로 두되, sources에 "Searched LinkedIn/Twitter/Dribbble for [company] designers — limited public presence" 기록
+**정보를 찾을 수 없는 경우**: designerLinks를 빈 배열로 두되, sources에 "Searched LinkedIn/Twitter for [company] designers — no public writing found" 기록
 
 ---
 
@@ -619,10 +751,18 @@ sources: [
 ```
 
 **확인하지 않고 `[]`로 두는 것은 금지**. job-scraper를 실행하고, 결과가 없을 때만 빈 배열 사용.
+가능하면 ATS/LinkedIn 검증도 함께 남긴다:
+```typescript
+sources: [
+  { title: '[Company] Careers - no Product Design roles found', url: 'https://company.com/careers' },
+  { title: '[Company] ATS board - no Product Design roles found', url: 'https://jobs.ashbyhq.com/company' },
+  { title: '[Company] LinkedIn Jobs - no Product Design roles found', url: 'https://www.linkedin.com/company/company/jobs/' },
+]
+```
 
 ---
 
-### Phase 8: Culture Insights
+### Phase 8: Culture Insights (3개 max)
 
 #### 7.1 Culture Sources
 ```typescript
@@ -634,8 +774,16 @@ cultureInsights: [
     content: string,
     url?: string,
   },
+  // 3개 max — 가장 의미 있는 인사이트만 선별
 ]
 ```
+
+**3개 선택 기준** (우선순위):
+1. Glassdoor/Blind — 실제 직원 리뷰 (가장 가치 있음)
+2. 디자이너/PM의 개인 발언 — X, LinkedIn 포스트
+3. levels.fyi — 보상 데이터가 있을 때만
+
+**"No reviews", "No data", "Limited info" 같은 빈 인사이트는 포함하지 말 것.** 정보가 없으면 항목을 줄이는 게 낫다.
 
 **Research:**
 - Glassdoor (company reviews)
@@ -655,6 +803,7 @@ cultureInsights: [
 | **stage와 일치** | "Seed stage startup"이라고 했으면, stage가 실제로 Seed여야 함 |
 
 **Self-check**: cultureInsights 작성 후, founders/headquarters/stage 섹션과 대조. 모순 발견 시 cultureInsights 내용 수정 또는 삭제.
+문서 내 모순(예: founders는 전원 유럽 경력인데 cultureInsights에 "SF-native founding team")이 있으면 cultureInsights를 우선 수정한다.
 
 ---
 
@@ -1042,7 +1191,37 @@ growthMetrics → tracking → lastUpdated → sources
 
 ---
 
-## Self-Verification Checklist (MANDATORY before commit)
+## Post-Run Self-Reflection Loop (MANDATORY)
+
+회사 1개 리서치 완료 후 반드시 아래를 실행:
+
+1. **Execution Metrics**
+- start/end time, total duration
+- token usage (exact if available, otherwise estimated level + main drivers)
+2. **Challenge Points**
+- 실행 중 병목/실패/혼동 지점 1~3개
+3. **Improvement Actions**
+- 재발 방지용 개선안 1~3개
+4. **Skill Update**
+- 재사용 가능한 개선은 같은 세션에서 이 `SKILL.md`에 즉시 반영
+- 즉시 반영 불가 시, 이유와 TODO를 남김
+
+권장 출력 포맷:
+```markdown
+## Self-Reflection
+- Time: 6m 20s
+- Tokens: medium (Playwright snapshot-heavy)
+- Challenges:
+  - LinkedIn job page blocks anonymous fetch
+  - Designer profile URL ambiguity
+- Improvements:
+  - Prefer evaluate() extraction before full snapshot
+  - Enforce personal-profile URL patterns in checklist
+```
+
+---
+
+## Self-Verification Checklist (MANDATORY before commit, 21 items)
 
 파일 작성 완료 후, 커밋 전에 반드시 아래 항목을 하나씩 체크:
 
@@ -1057,6 +1236,10 @@ growthMetrics → tracking → lastUpdated → sources
 - [ ] `designerLinks`의 모든 URL이 **개인 프로필** 페이지인가? (회사 페이지 `/company/` URL 금지)
 - [ ] `cultureInsights`의 founders 관련 언급이 `founders` 섹션과 일치하는가?
 - [ ] `cultureInsights`의 위치/규모 관련 언급이 `headquarters`/`stage`와 일치하는가?
+- [ ] **통화 일관성**: 한 파일 안에서 `fundingHistory`, `valuation`, `tracking`, `growthMetrics`의 통화 단위가 통일되어 있는가? (회사 본사 네이티브 통화 기준, USD 병기 시 `(~$X)` 포맷)
+- [ ] **수치 동기화**: `valuation`/`totalFunding` 수정 시 `tracking.whyJoin`, `growthMetrics.signals`에서 같은 수치를 참조하는 부분도 함께 갱신했는가?
+- [ ] **리더십 변경 반영**: CEO/CTO가 바뀐 경우, `founders` 배열에 전임자 역할 업데이트 + 신임자 추가까지 완료했는가?
+- [ ] **fundingHistory 합산 검증**: `totalFunding` 금액 ≈ `fundingHistory` 각 라운드 amount 합산인가? 차이가 크면 누락된 라운드 리서치 필수
 
 ### Completeness
 - [ ] `designerLinks`에 실제 디자이너 개인 프로필이 2개 이상 있는가? (회사 블로그만으로는 부족)
@@ -1065,8 +1248,12 @@ growthMetrics → tracking → lastUpdated → sources
 - [ ] `fundingHistory`의 모든 라운드에 date, amount, leadInvestors가 있는가?
 
 ### Formatting
-- [ ] 2-space 인덴테이션이 전체 파일에서 일관적인가?
+- [ ] 2-space 인덴테이션이 전체 파일에서 일관적인가? (수정 전후 주변 코드 인덴트 확인)
 - [ ] `category`에 `as const`가 붙어있는가?
 - [ ] `lastUpdated`가 오늘 날짜인가?
+
+### Design Team Accuracy (NEW)
+- [ ] `designTeam.teamSize`는 **디자인팀 규모**만 기재했는가? (전체 직원 수 ≠ 디자인팀)
+- [ ] 디자인팀 규모 확인 불가 시, openRoles/Head of Design 존재 여부에서 추론하고 괄호 안에 근거 표기했는가?
 
 **하나라도 NO가 있으면 수정 후 커밋.**

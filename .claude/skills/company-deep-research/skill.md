@@ -1,3 +1,8 @@
+---
+name: company-deep-research
+description: "Deep-dive research for AIDO company analysis: founders, product, market, design team, and evidence-backed insights. Use for comprehensive long-form company research beyond the baseline profile."
+---
+
 # Company Deep Research Skill
 
 Tier 0/1 회사에 대한 VC-level 비즈니스 분석 + Product Design 팀 인텔리전스를 결합한 딥 리서치 도구.
@@ -363,12 +368,12 @@ WebSearch: "[problem domain]" how people currently solve
 - Press/mindshare: [미디어 노출, 개발자 커뮤니티]
 
 ### Designer-Specific Upside
-- 🎯 Design influence on product: [디자인이 제품 방향에 미치는 영향력]
-- 🎯 Novel design challenges: [다른 곳에서 못하는 디자인 문제]
-- 🎯 Career growth: [이 회사에서의 성장 경로]
-- 🎯 Portfolio value: [이 경험이 이력서에 미치는 가치]
-- 🎯 Equity upside: [스톡옵션/RSU 가치 전망]
-- 🎯 Learning from leadership: [디자인 리더십에서 배울 수 있는 것]
+- Design influence on product: [디자인이 제품 방향에 미치는 영향력]
+- Novel design challenges: [다른 곳에서 못하는 디자인 문제]
+- Career growth: [이 회사에서의 성장 경로]
+- Portfolio value: [이 경험이 이력서에 미치는 가치]
+- Equity upside: [스톡옵션/RSU 가치 전망]
+- Learning from leadership: [디자인 리더십에서 배울 수 있는 것]
 ```
 
 ---
@@ -387,13 +392,13 @@ WebSearch: "[problem domain]" how people currently solve
 - Technology risk: [기술 commodity화, 플랫폼 의존]
 
 ### Design-Specific Risks
-- ⚠️ Design influence: [디자인이 무시되는 환경인가]
-- ⚠️ Team stability: [디자이너 이직률, 리더십 변동]
-- ⚠️ Growth ceiling: [시니어 이상으로 성장 가능한가]
-- ⚠️ Scope of work: [실제 디자인 업무 범위 — 폭넓은 vs 좁은]
-- ⚠️ Engineering-driven culture: [엔지니어 중심 의사결정 vs 디자인 참여]
-- ⚠️ Work-life balance: [번아웃 리스크, 야근 문화]
-- ⚠️ Remote vs In-person: [내 근무 선호와 맞는가]
+- Design influence: [디자인이 무시되는 환경인가]
+- Team stability: [디자이너 이직률, 리더십 변동]
+- Growth ceiling: [시니어 이상으로 성장 가능한가]
+- Scope of work: [실제 디자인 업무 범위 — 폭넓은 vs 좁은]
+- Engineering-driven culture: [엔지니어 중심 의사결정 vs 디자인 참여]
+- Work-life balance: [번아웃 리스크, 야근 문화]
+- Remote vs In-person: [내 근무 선호와 맞는가]
 
 ### Worst Case Scenario
 - Company fails: [가장 현실적인 실패 시나리오]
@@ -434,10 +439,10 @@ WebSearch: "[problem domain]" how people currently solve
 > 이 관계가 **공생**인지 **의존**인지 **경쟁**인지가 핵심.
 
 - **Relationship type**:
-  - 🔗 **Infrastructure dependency**: LLM API 위에 빌드 (대부분의 AI 스타트업)
-  - 🤝 **Symbiosis**: LLM과 상호보완 (e.g., Cursor는 Claude/GPT가 좋을수록 좋아짐)
-  - ⚔️ **Competition**: LLM 자체와 경쟁 (e.g., 검색 스타트업 vs Gemini 검색)
-  - 🏗️ **Building the LLM**: 직접 파운데이션 모델 개발 (Anthropic, OpenAI, Mistral)
+  - **Infrastructure dependency**: LLM API 위에 빌드 (대부분의 AI 스타트업)
+  - **Symbiosis**: LLM과 상호보완 (e.g., Cursor는 Claude/GPT가 좋을수록 좋아짐)
+  - **Competition**: LLM 자체와 경쟁 (e.g., 검색 스타트업 vs Gemini 검색)
+  - **Building the LLM**: 직접 파운데이션 모델 개발 (Anthropic, OpenAI, Mistral)
 
 - **Key questions**:
   - 어떤 LLM에 의존하는가? (단일 vs 멀티 모델)

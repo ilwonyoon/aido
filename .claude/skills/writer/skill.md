@@ -1,3 +1,8 @@
+---
+name: writer
+description: "Generate data-driven analytical articles for AIDO Insights blog. Auto-selects companies, creates SEO metadata, and produces TypeScript article files ready for deployment."
+---
+
 # AIDO Insights Writer
 
 Data-driven analytical article generator for AIDO Insights blog.
@@ -35,12 +40,12 @@ Given just a topic, this skill will:
 
 ### Writing Patterns
 
-**❌ Avoid:**
+**Avoid:**
 - "AI is revolutionizing everything!"
 - "Cursor is an amazing code editor!"
 - "Anthropic has incredible growth"
 
-**✅ Prefer:**
+**Prefer:**
 - "The AI industry added 15 new unicorns in 2025 alone, but not all growth is created equal."
 - "Cursor reached $1B ARR faster than any SaaS in history. Here's why."
 - "Anthropic went from $1B to $7B ARR in a single year—a 7x growth rate"
@@ -151,7 +156,7 @@ Calculate comparative stats:
 Show complete article:
 
 ```
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: [Generated title]
 Slug: [generated-slug]
@@ -159,7 +164,7 @@ Excerpt: [Generated excerpt]
 
 Companies featured: Anthropic, OpenAI, Linear, ...
 Reading time: 8 minutes
-Category: [analysis|insights|trends|guides]
+Category: [analysis|deep-dive|insights|trends|guides]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -167,10 +172,10 @@ Category: [analysis|insights|trends|guides]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Approve and create file
-✏️  Edit SEO metadata
-🔄 Regenerate article
-❌ Cancel
+Approve and create file
+Edit SEO metadata
+Regenerate article
+Cancel
 ```
 
 ### Step 6: Create Files (if approved)
@@ -405,7 +410,7 @@ Generating article in Data-Driven Analytical voice...
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "5 Best AI Companies for Product Designers in 2026"
 Slug: best-ai-companies-for-designers-2026
@@ -457,7 +462,7 @@ Generating comparison...
 ✓ Designer culture analysis
 ✓ Role opportunities
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "Anthropic vs OpenAI: Product Designer Perspective 2026"
 Slug: anthropic-vs-openai-product-designers-2026
@@ -485,7 +490,7 @@ Analyzing pattern...
 ✓ Insight: 6 of top 10 fastest-growing build for developers
 ✓ Data: Bottom-up adoption, PLG motion, faster developer adoption
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "Developer Tools Dominate AI Hypergrowth: Here's Why"
 Slug: developer-tools-ai-hypergrowth-2026
