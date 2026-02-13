@@ -589,6 +589,7 @@ designerLinks: [
 | `johndoe.com` (개인 사이트) | `company.com/blog` (회사 블로그) |
 
 **Self-check**: URL에 `/company/`가 포함되어 있으면 회사 페이지일 가능성 높음 → 개인 URL로 교체. 개인 URL을 찾을 수 없으면 해당 항목을 제거.
+또한 `linkedin.com/company/`, `x.com/[company-brand-account]` 형태는 개인 프로필로 간주하지 않는다.
 
 **How to Find:**
 - LinkedIn: "[company] product designer" → 실제 이름, 역할 확인 → **개인 프로필 URL** 복사
@@ -624,6 +625,14 @@ sources: [
 ```
 
 **확인하지 않고 `[]`로 두는 것은 금지**. job-scraper를 실행하고, 결과가 없을 때만 빈 배열 사용.
+가능하면 ATS/LinkedIn 검증도 함께 남긴다:
+```typescript
+sources: [
+  { title: '[Company] Careers - no Product Design roles found', url: 'https://company.com/careers' },
+  { title: '[Company] ATS board - no Product Design roles found', url: 'https://jobs.ashbyhq.com/company' },
+  { title: '[Company] LinkedIn Jobs - no Product Design roles found', url: 'https://www.linkedin.com/company/company/jobs/' },
+]
+```
 
 ---
 
@@ -660,6 +669,7 @@ cultureInsights: [
 | **stage와 일치** | "Seed stage startup"이라고 했으면, stage가 실제로 Seed여야 함 |
 
 **Self-check**: cultureInsights 작성 후, founders/headquarters/stage 섹션과 대조. 모순 발견 시 cultureInsights 내용 수정 또는 삭제.
+문서 내 모순(예: founders는 전원 유럽 경력인데 cultureInsights에 "SF-native founding team")이 있으면 cultureInsights를 우선 수정한다.
 
 ---
 
@@ -1047,7 +1057,37 @@ growthMetrics → tracking → lastUpdated → sources
 
 ---
 
-## Self-Verification Checklist (MANDATORY before commit)
+## Post-Run Self-Reflection Loop (MANDATORY)
+
+회사 1개 리서치 완료 후 반드시 아래를 실행:
+
+1. **Execution Metrics**
+- start/end time, total duration
+- token usage (exact if available, otherwise estimated level + main drivers)
+2. **Challenge Points**
+- 실행 중 병목/실패/혼동 지점 1~3개
+3. **Improvement Actions**
+- 재발 방지용 개선안 1~3개
+4. **Skill Update**
+- 재사용 가능한 개선은 같은 세션에서 이 `SKILL.md`에 즉시 반영
+- 즉시 반영 불가 시, 이유와 TODO를 남김
+
+권장 출력 포맷:
+```markdown
+## Self-Reflection
+- Time: 6m 20s
+- Tokens: medium (Playwright snapshot-heavy)
+- Challenges:
+  - LinkedIn job page blocks anonymous fetch
+  - Designer profile URL ambiguity
+- Improvements:
+  - Prefer evaluate() extraction before full snapshot
+  - Enforce personal-profile URL patterns in checklist
+```
+
+---
+
+## Self-Verification Checklist (MANDATORY before commit, 15 items)
 
 파일 작성 완료 후, 커밋 전에 반드시 아래 항목을 하나씩 체크:
 

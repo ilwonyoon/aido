@@ -344,6 +344,7 @@ openRoles: [
 - [ ] All URLs validated (not 404)
 - [ ] Posted dates verified (within 60 days)
 - [ ] Playwright used for JS-rendered pages (if needed)
+- [ ] If no Product Design roles found, evidence URLs were recorded for `openRoles: []` (careers + ATS/LinkedIn)
 
 ---
 
@@ -356,10 +357,18 @@ openRoles: [
 **Verification:**
 - ✅ Company career page checked (no design roles)
 - ✅ LinkedIn checked (no active postings)
+- ✅ ATS checked (no active product design postings)
 - ✅ Last checked: 2026-01-27
 
 **Recommendation:**
 Set `openRoles: []` in company data.
+```
+
+**MANDATORY evidence for downstream company file (`sources`):**
+```typescript
+{ title: '[Company] Careers - no Product Design roles found', url: 'https://company.com/careers' }
+{ title: '[Company] ATS - no Product Design roles found', url: 'https://jobs.ashbyhq.com/company' }
+{ title: '[Company] LinkedIn Jobs - no Product Design roles found', url: 'https://www.linkedin.com/company/company/jobs/' }
 ```
 
 ### 2. Career Page Down / Not Found
@@ -532,6 +541,7 @@ npm run verify-jobs
 - **모든 URL이 HTTP 200 반환 (verified)**
 - **모든 URL이 specific job posting URL (generic careers page 아님)**
 - **robot fail 발생 시 fallback ladder(Phase 4.5) 적용 기록**
+- **`openRoles: []`인 경우 no-role evidence URL 기록**
 - 정확한 TypeScript object 생성
 
 ❌ **불완전한 수집**
@@ -555,6 +565,31 @@ npm run verify-jobs
 | 있는 포지션이 없다고 표시 | Career page JS 렌더링 실패 | Playwright + 교차 검증 |
 | 잘못된 URL | WebSearch 캐시된 결과 사용 | curl로 실시간 검증 |
 | ATS URL 인코딩 문제 | URL 수동 구성 | ATS 검색 결과에서 직접 복사 |
+
+---
+
+## Post-Run Self-Reflection Loop (MANDATORY)
+
+job-scraper 실행 후 반드시 기록:
+
+1. Time: start/end, total duration
+2. Token usage: exact or estimated level + heavy steps
+3. Challenge points: blocked pages, ambiguous titles, URL instability 등
+4. Improvement actions: 다음 실행부터 적용할 규칙/자동화
+5. Skill update: 반복 가능한 개선이면 즉시 `SKILL.md` 업데이트
+
+예시:
+```markdown
+## Job Scraper Reflection
+- Time: 3m 40s
+- Tokens: high (full-page snapshots on JS-heavy board)
+- Challenges:
+  - ATS board rendered lazily
+  - LinkedIn blocks anonymous scraping
+- Improvements:
+  - Prefer evaluate() extraction before snapshot
+  - Add fallback ATS endpoint checks first
+```
 
 ---
 

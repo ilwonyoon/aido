@@ -66,6 +66,25 @@ Output: TypeScript article file + index update
 
 ---
 
+## 🔁 Mandatory Skill Self-Reflection Loop
+
+모든 스킬 실행(Job Scraper / Company Researcher / Deep Research / Writer) 후, 반드시 아래를 수행:
+
+1. **Execution metrics 기록**
+- Start/End time, 총 소요 시간
+- 토큰 사용량(가능하면 정확값, 불가하면 high/medium/low + 원인)
+2. **Challenge points 기록**
+- 실행 중 막혔던 지점(예: robot fail, URL 404, 타입 제약, source mismatch)
+3. **Improvement 제안**
+- 같은 문제를 다시 막기 위한 스킬 개선안 1~3개
+4. **Skill update loop 실행**
+- 반복 가능한 개선이면 같은 세션에서 `.codex/skills/*/SKILL.md`에 반영
+- 반영이 어려우면 이유와 TODO를 남김
+
+**기본 원칙:** “리서치 완료”는 데이터 파일 업데이트 + 스킬 개선 회고까지 마쳐야 완료로 간주.
+
+---
+
 ## 🎯 Target Company Criteria (MUST FOLLOW)
 
 ### What to research
@@ -183,6 +202,7 @@ git commit -m "feat: add <Company Name> (Level <A/B>, <stage>)"
 4. Update `lastUpdated` field
 5. Run `npm run build`
 6. Commit with descriptive message
+7. Run Skill Self-Reflection Loop and apply reusable skill improvements
 
 ---
 
