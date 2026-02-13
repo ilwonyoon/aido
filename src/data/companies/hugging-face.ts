@@ -3,8 +3,7 @@ import { Company } from '../types';
 export const huggingFace: Company = {
   id: 'hugging-face',
   name: 'Hugging Face',
-  description:
-    'Open-source AI platform democratizing machine learning by hosting models, datasets, and collaborative tools for the global ML community.',
+  description: 'Open-source AI platform democratizing machine learning by hosting models, datasets, and collaborative tools for the global ML community — the "GitHub of machine learning."',
   website: 'https://huggingface.co',
   headquarters: 'New York, NY',
   remote: 'Yes',
@@ -66,84 +65,69 @@ export const huggingFace: Company = {
   ],
   revenue: '~$130M ARR (2024)',
   growth: '~86% YoY ($70M 2023 to $130M 2024)',
-  runway: 'Strong — $395M raised, revenue growing rapidly',
-  customers: '50,000+ organizations, 2,000+ Enterprise Hub customers, 10,000+ companies using platform',
+  runway: 'Strong — $395M raised, revenue growing rapidly, enterprise revenue expanding',
+  customers: '50,000+ organizations, 2,000+ Enterprise Hub paying customers, 5M+ registered users',
 
   // Growth & Potential
   growthMetrics: {
     stage: 'high-growth',
     revenueGrowth: '86% YoY ($70M 2023 to $130M 2024)',
-    userGrowth: '5M+ registered users, 18M+ monthly visitors, 10M+ developers',
+    userGrowth: '5M+ registered users, 18M+ monthly visitors, 2.4M+ hosted models',
     signals: [
-      '$4.5B valuation with $395M total funding',
+      '$4.5B valuation with strategic investors (Google, Amazon, Nvidia, Salesforce)',
       '2.4M+ models hosted, 730K+ datasets, 500K+ Spaces apps',
       'LeRobot robotics platform launched — expanding into physical AI',
       'Acquired Pollen Robotics — entering affordable robotics hardware',
       '~600 employees as of early 2026',
     ],
-
     tam: '$153B (AI platforms software market by 2028)',
-    marketShare: 'Dominant open-source ML hub — 1M+ models, no direct equivalent at scale',
-    ceiling:
-      'Mid-innings: Platform network effects growing but monetization rate still low vs platform value',
+    marketShare: 'Dominant open-source ML hub — no direct equivalent at scale',
+    ceiling: 'Mid-innings: Platform network effects growing but monetization rate still low relative to platform value',
     tailwinds: [
       'Open-source AI movement gaining momentum vs proprietary models',
-      'Enterprise adoption of ML accelerating across industries',
+      'Enterprise adoption of ML accelerating across all industries',
       'Expanding into robotics (LeRobot) opens massive new TAM',
-      'Model-agnostic position benefits from all foundation model advances',
+      'Model-agnostic position benefits from every foundation model advance',
     ],
     headwinds: [
       'Low monetization rate relative to platform usage',
       'Cloud giants (AWS SageMaker, Google Vertex AI, Azure ML) compete on enterprise',
-      'Open-source model quality gap narrowing may reduce platform stickiness',
+      'Compensation below top-tier tech — may struggle to retain top talent',
       'Revenue-to-valuation ratio demands significant growth acceleration',
     ],
-
     moatType: 'platform-ecosystem',
-    moatStrength:
-      'Strong: 2.4M+ models and 730K+ datasets create massive network effects. Community contributions compound value daily.',
+    moatStrength: 'Strong: 2.4M+ models and 730K+ datasets create massive network effects. Community contributions compound value daily. Model-agnostic stance makes HF the neutral ground for all AI development.',
   },
 
   // Competition
   competitors: [
     {
       name: 'GitHub (Microsoft)',
-      description:
-        'GitHub Models and Codespaces offering ML model hosting and development',
-      whyTheyWin:
-        'Massive existing developer base (100M+), deep Microsoft integration, familiar workflows',
+      description: 'GitHub Models and Codespaces offering ML model hosting and development',
+      whyTheyWin: 'Massive existing developer base (100M+), deep Microsoft integration, familiar workflows',
     },
     {
       name: 'Replicate',
-      description:
-        'Cloud platform for running and deploying ML models via API',
-      whyTheyWin:
-        'Simpler deployment experience, pay-per-use pricing, faster time to production',
+      description: 'Cloud platform for running and deploying ML models via API',
+      whyTheyWin: 'Simpler deployment experience, pay-per-use pricing, faster time to production',
     },
     {
       name: 'AWS SageMaker',
-      description:
-        'End-to-end ML platform for building, training, and deploying models',
-      whyTheyWin:
-        'Enterprise infrastructure dominance, integrated with AWS ecosystem, massive compute resources',
+      description: 'End-to-end ML platform for building, training, and deploying models',
+      whyTheyWin: 'Enterprise infrastructure dominance, integrated with AWS ecosystem, massive compute resources',
     },
     {
       name: 'Weights & Biases',
-      description:
-        'ML experiment tracking, model versioning, and collaboration platform',
-      whyTheyWin:
-        'Best-in-class experiment tracking UX, deep integrations with training frameworks',
+      description: 'ML experiment tracking, model versioning, and collaboration platform',
+      whyTheyWin: 'Best-in-class experiment tracking UX, deep integrations with training frameworks',
     },
     {
       name: 'Databricks',
-      description:
-        'Unified data and AI platform for enterprise data pipelines and model development',
-      whyTheyWin:
-        'End-to-end data-to-model pipeline, $100B+ valuation, strong enterprise relationships',
+      description: 'Unified data and AI platform for enterprise data pipelines and model development',
+      whyTheyWin: 'End-to-end data-to-model pipeline, $100B+ valuation, strong enterprise relationships',
     },
   ],
-  marketPosition:
-    'Dominant open-source ML platform — the "GitHub of machine learning" with 2.4M+ models',
+  marketPosition: 'Dominant open-source ML platform — the "GitHub of machine learning" with 2.4M+ models, 730K+ datasets',
   moat: [
     'Largest open-source model repository (2.4M+ models) with unmatched network effects',
     'Community flywheel: researchers publish models, developers consume them, more researchers join',
@@ -151,18 +135,16 @@ export const huggingFace: Company = {
     'Open-source Transformers library is industry standard for NLP/ML development',
     'Expanding into robotics (LeRobot + Pollen Robotics acquisition) creates new ecosystem lock-in',
   ],
-  vsGiants:
-    'Unlike cloud giants (AWS, Google, Azure) that lock users into proprietary ecosystems, Hugging Face is model-agnostic and open-source. This positions them as the neutral platform where all models can be hosted, shared, and deployed — similar to how GitHub won by being language-agnostic.',
+  vsGiants: 'Unlike cloud giants (AWS, Google, Azure) that lock users into proprietary ecosystems, Hugging Face is model-agnostic and open-source. Positions as the neutral platform where all models can be hosted, shared, and deployed — similar to how GitHub won by being language-agnostic. Strategic investments from Google, Amazon, and Nvidia validate this approach.',
 
   // AI-Native Level
   aiNativeLevel: 'A',
-  aiNativeLevelDescription:
-    'AI-Native/Platform: AI IS the product. Hugging Face is the infrastructure layer for the entire open-source AI ecosystem. Without AI/ML, the platform has no reason to exist.',
+  aiNativeLevelDescription: 'AI-Native/Platform: AI IS the product. Hugging Face is the infrastructure layer for the entire open-source AI ecosystem. Without AI/ML, the platform has no reason to exist. Every feature revolves around model hosting, training, deployment, and collaboration.',
   aiDesignChallenges: [
-    'Model discovery UX: Helping users find the right model among 2.4M+ options',
+    'Model discovery UX: Helping users find the right model among 2.4M+ options with meaningful filters and comparisons',
     'Complex ML workflow design: Training, fine-tuning, deployment pipelines for diverse technical skill levels',
-    'Community platform design: Balancing developer tools with social collaboration features',
-    'Inference playground design: Interactive model testing and comparison interfaces',
+    'Community platform design: Balancing developer tools with social collaboration features (Spaces, discussions)',
+    'Inference playground design: Interactive model testing and comparison interfaces across modalities',
     'Documentation as product: Making technical ML concepts accessible through design',
   ],
 
@@ -171,82 +153,80 @@ export const huggingFace: Company = {
     {
       name: 'Clement Delangue',
       role: 'CEO',
-      background:
-        'Ex-Product & CMO at Mention, ex-Product at Moodstocks (acquired by Google). ESCP Business School, Stanford courses. French entrepreneur.',
+      background: 'French entrepreneur. Previously Product & CMO at Mention, Product at Moodstocks (acquired by Google). Master in Management from ESCP Business School, studied at Stanford. Named TIME100 AI 2023.',
     },
     {
       name: 'Julien Chaumond',
       role: 'CTO',
-      background:
-        'Ex-engineer at French Ministry of Economy. Co-founder of Glose. Ecole Polytechnique background. Elite mathematician.',
+      background: 'Computer engineer. Previously advisor at French Ministry of Finance, co-founded Glose (reading app). Background in electrical engineering and CS from Ecole Polytechnique and Stanford.',
     },
     {
       name: 'Thomas Wolf',
-      role: 'Chief Science Officer',
-      background:
-        'Trained scientist turned patent lawyer. Created Hugging Face Transformers and Datasets libraries. Author of "Natural Language Processing with Transformers" (O\'Reilly).',
+      role: 'CSO (Chief Science Officer)',
+      background: 'Trained scientist turned patent lawyer. Ph.D. in physics, authored ML research papers. Bandmate of Julien. Leads scientific direction and open-source community strategy.',
     },
   ],
-  whyBuilding:
-    'Started as a teenage chatbot app in 2016, pivoted to open-source ML infrastructure in 2019 after recognizing the need to democratize AI tools. Believes the most advanced AI should be accessible to everyone, not just Big Tech.',
+  whyBuilding: 'Started as a chatbot app for teenagers in 2016, pivoted when they realized the NLP models they built were more valuable than the chatbot itself. Believe AI should be open and democratized, not monopolized by a few tech giants.',
   beliefs: [
-    'Open source and open science are essential for AI progress',
-    'Democratizing AI means making it accessible to all skill levels and organizations',
-    'Community-driven development produces better outcomes than closed research',
-    'Model-agnostic platforms create more value than proprietary model providers',
-    'Good AI requires transparency, collaboration, and shared resources',
+    'Open source is essential for the future of AI — transparency and accessibility over proprietary lock-in',
+    'Thousands of companies will have their own specialized AI models, not just a few foundation model providers',
+    'Democratizing AI means empowering individuals, researchers, nonprofits, and enterprises equally',
+    'Community-driven development produces better outcomes than closed corporate labs',
+    'The work itself matters more than financial returns — building community is self-expression',
   ],
-  designPhilosophy:
-    'Developer-first platform design with emphasis on discoverability and collaboration. The Hub interface draws inspiration from GitHub with model cards, discussions, and versioning — treating ML artifacts as first-class collaborative objects.',
+  designPhilosophy: 'Developer-first, community-centric design. Platform UX prioritizes making complex ML workflows accessible to diverse skill levels. Strong emphasis on collaboration features (Spaces, model cards, discussions) that turn a tool into a community.',
   greenFlags: [
-    'Dominant market position as the "GitHub of ML" with massive network effects',
-    'Strong open-source community (2.4M+ models, 730K+ datasets) creating defensible moat',
-    'Revenue growing rapidly ($70M to $130M in one year) with huge untapped monetization potential',
-    'Expanding into robotics (LeRobot) shows bold vision and new growth vectors',
-    'Remote-first culture with global team and flexible work environment',
+    'Strategic investors (Google, Amazon, Nvidia, Salesforce) validate the platform approach',
+    'Open-source mission creates genuine community loyalty and network effects',
+    'Model-agnostic position means they win regardless of which AI company dominates',
+    'Remote-first culture with extreme flexibility and autonomy',
+    'Expanding into robotics (LeRobot) shows long-term vision beyond current AI hype',
   ],
   redFlags: [
-    'Low monetization rate — vast majority of users on free tier, revenue/valuation ratio needs improvement',
-    'Compensation below market (Glassdoor and Levels.fyi data confirm lower-than-average pay)',
-    'Some cultural concerns on Glassdoor (blame culture, communication issues in some teams)',
-    'Cloud giants (AWS, Google, Azure) can replicate platform features with bigger budgets',
-    'No open Product Design roles — design team appears very small',
+    'Compensation significantly below top-tier tech (Product Designer $74-105K vs $200K+ at FAANG)',
+    'Low monetization rate relative to platform scale — business model still maturing',
+    'Engineering-dominant culture — design team is very small, may lack design influence',
+    'No current Product Design job openings — unclear investment in design',
+    'Decentralized direction can lead to misaligned objectives',
   ],
 
   // Design Opportunity
   designTeam: {
-    teamSize: 'Very small (~2-4 designers estimated)',
+    designHead: 'Victor Mustar (Head of Product Design, Paris)',
+    teamSize: '2-3 designers among ~636 employees (designer:engineer ratio ~1:150-225)',
     notableMembers: [
+      { name: 'Victor Mustar', role: 'Head of Product Design' },
       { name: 'Chun Te Lee', role: 'Product Designer' },
-      { name: 'Amelie Viallet', role: 'Design Engineer' },
+      { name: 'Amelie Viallet', role: 'Design Engineer / Product Lead (Argilla)' },
     ],
   },
   designWorkType: {
     logicBehavior: {
       level: 'high',
       tasks: [
-        'Model discovery and recommendation system design',
-        'ML pipeline workflow orchestration (training, fine-tuning, deployment)',
-        'Permission and access control for enterprise model governance',
-        'Inference API playground interaction patterns',
+        'Model discovery and recommendation logic across 2.4M+ models',
+        'Spaces app deployment and configuration workflows',
+        'Dataset versioning and collaboration permissions',
+        'Inference API behavior design and error handling',
       ],
     },
     evaluation: {
       level: 'medium',
       tasks: [
-        'Model evaluation and benchmarking dashboard design',
-        'Community contribution quality signals (model cards, usage metrics)',
-        'User feedback loops for model recommendations',
+        'Model comparison and benchmarking interfaces',
+        'Community feedback and model quality signals',
+        'Usage analytics for Enterprise Hub customers',
+        'Open LLM Leaderboard ranking and evaluation criteria',
       ],
     },
     interface: {
       level: 'high',
       tasks: [
-        'Hub interface: model/dataset/space browsing and management',
-        'Spaces: interactive ML app hosting and showcasing',
-        'HuggingChat: conversational AI interface',
-        'Enterprise dashboard and team management',
-        'Documentation and onboarding experience',
+        'Model cards and documentation pages',
+        'Spaces (interactive ML app hosting) UI',
+        'Hub navigation, search, and filtering across millions of assets',
+        'Enterprise Hub dashboard and admin tools',
+        'Inference playground and API explorer',
       ],
     },
   },
@@ -254,35 +234,67 @@ export const huggingFace: Company = {
 
   // Product & User Context
   targetAudiences: {
-    primary:
-      'ML engineers, data scientists, and AI researchers who need to discover, share, and deploy models',
-    secondary:
-      'Enterprise teams adopting ML for business applications who need managed infrastructure and governance',
+    primary: 'ML engineers, data scientists, and AI researchers building and deploying machine learning models',
+    secondary: 'Enterprise AI teams seeking collaborative ML infrastructure and private model deployment',
   },
   userProblems: [
-    'Finding the right pre-trained model among millions of options is overwhelming and time-consuming',
-    'Setting up ML infrastructure for training, fine-tuning, and deployment requires deep DevOps expertise',
-    'Collaborating on ML projects across teams lacks standardized tools and workflows',
-    'Enterprise ML adoption is blocked by security, compliance, and governance requirements',
-    'Transitioning from research prototype to production deployment is a complex, error-prone process',
+    'Difficulty sharing and discovering pre-trained models across the fragmented ML community',
+    'Complex infrastructure setup required for ML model training, fine-tuning, and deployment',
+    'Lack of collaborative tools for ML model development, versioning, and reproducibility',
+    'Fragmented ecosystem across different ML frameworks, model formats, and hardware targets',
+    'Challenges in deploying and scaling ML inference in production environments cost-effectively',
   ],
 
   // Designer Links
   designerLinks: [
     {
+      name: 'Victor Mustar',
+      role: 'Head of Product Design',
+      platform: 'linkedin',
+      url: 'https://www.linkedin.com/in/victor-mustar-22466951/',
+      description: 'Head of Product Design at Hugging Face, Paris — most senior design leader',
+    },
+    {
       name: 'Chun Te Lee',
       role: 'Product Designer',
       platform: 'linkedin',
       url: 'https://www.linkedin.com/in/chuntelee/',
-      description: 'Product design at Hugging Face, SF Bay Area',
+      description: 'Product Designer at Hugging Face, SF — SVA-trained, 6+ years UI/UX',
     },
     {
       name: 'Amelie Viallet',
-      role: 'Design Engineer',
+      role: 'Design Engineer / Product Lead (Argilla)',
       platform: 'linkedin',
       url: 'https://www.linkedin.com/in/amelieviallet/',
-      description:
-        'Design Engineer at Hugging Face, building AI Sheets and data interaction tools',
+      description: 'Co-founder of Argilla (acquired by HF), hybrid design-engineering role, leads AI Sheets',
+    },
+    {
+      name: 'Victor Mustar',
+      role: 'Head of Product Design',
+      platform: 'blog',
+      url: 'https://gary149.github.io/',
+      description: 'Personal portfolio site showcasing design work',
+    },
+    {
+      name: 'Clement Delangue',
+      role: 'CEO',
+      platform: 'podcast',
+      url: 'https://www.acquired.fm/episodes/building-the-open-source-ai-revolution-with-hugging-face-ceo-clem-delangue',
+      description: 'Acquired podcast: Building the Open Source AI Revolution — company history and vision',
+    },
+    {
+      name: 'Thomas Wolf',
+      role: 'CSO',
+      platform: 'podcast',
+      url: 'https://sequoiacap.com/podcast/training-data-thomas-wolf/',
+      description: 'Sequoia podcast: App Store for Robots — LeRobot vision and open-source robotics strategy',
+    },
+    {
+      name: 'Hugging Face Careers',
+      role: 'Design Team',
+      platform: 'careers',
+      url: 'https://apply.workable.com/huggingface/',
+      description: 'Workable ATS — check for future design roles',
     },
   ],
 
@@ -294,117 +306,153 @@ export const huggingFace: Company = {
     {
       source: 'glassdoor',
       sentiment: 'positive',
-      rating: 4.3,
-      content:
-        'Strong open-source culture with very transparent communication. Extreme responsibility early on, ability to define your own projects, full remote working, very little hierarchy.',
-      url: 'https://www.glassdoor.com/Reviews/Hugging-Face-Reviews-E6487302.htm',
-    },
-    {
-      source: 'glassdoor',
-      sentiment: 'negative',
-      content:
-        'Some teams report blame culture and communication issues. Compensation tends to be lower than market. Equity offerings are modest.',
+      rating: 4.4,
+      content: '4.4/5 overall from 55 reviews. 86% recommend to a friend, 85% positive business outlook. Culture & values 4.3, career opportunities 4.4, work-life balance 4.1. Compensation rated lowest at 3.9/5.',
       url: 'https://www.glassdoor.com/Reviews/Hugging-Face-Reviews-E6487302.htm',
     },
     {
       source: 'blind',
       sentiment: 'positive',
       rating: 4.9,
-      content:
-        'Company culture rated 4.9/5 on Blind. High freedom for work hours, location, and project selection. Deeply technical work with constant interaction across the AI field.',
+      content: 'Blind: 4.9/5 Company Culture (highest), 4.5 Career Growth, 4.4 Work-Life Balance, 4.3 Management. Compensation rated 3.6/5. ML Engineer: "Very high freedom: work hours, location, projects, no meetings. Extremely high impact per individual."',
       url: 'https://www.teamblind.com/company/Hugging-Face',
     },
     {
-      source: 'levels.fyi',
+      source: 'glassdoor',
       sentiment: 'neutral',
-      content:
-        'Product Designer compensation: $73.8K-$105K. Software Engineer: $100K-$228K. Median total comp $92.6K. Below market compared to peers.',
-      url: 'https://www.levels.fyi/companies/hugging-face/salaries',
+      content: 'Remote-first with real unlimited PTO, but workload can encourage weekend work. "Autonomy for days" but also "decentralized direction" as double-edged sword. Feb 2026 layoff of 4% (10 GTM team members) signals burn rate pressure.',
+      url: 'https://www.glassdoor.com/Reviews/Hugging-Face-Reviews-E6487302.htm',
+    },
+    {
+      source: 'levels.fyi',
+      sentiment: 'negative',
+      content: 'Product Designer: $74K-$105K total comp (30-50% below market). Median company-wide: $93K. Software Engineer: $120K median USA. Significantly below FAANG ($200K+) and top AI companies ($150-250K).',
+      url: 'https://www.levels.fyi/companies/hugging-face/salaries/product-designer',
+    },
+    {
+      source: 'glassdoor',
+      sentiment: 'negative',
+      content: 'Negative reviews cite "salary is bad compared to top tech companies", and more critically "a well-made facade with a terrible work environment" and "the biggest mirage since Theranos." Design team is 0.5% of workforce with no executive-level advocate.',
+      url: 'https://www.glassdoor.com/Reviews/Hugging-Face-Reviews-E6487302.htm',
+    },
+    {
+      source: 'linkedin',
+      sentiment: 'positive',
+      content: 'Open-source community-driven culture. Cofounders (Delangue, Chaumond, Wolf) highly visible and accessible. Victor Mustar actively shares product milestones. Extreme autonomy — designers self-direct and ship with minimal review.',
+      url: 'https://www.linkedin.com/company/huggingface/',
     },
   ],
 
   // My Tracking
   tracking: {
-    status: 'watching',
-    fitScore: 5,
+    status: 'researching',
+    fitScore: 7,
     whyJoin: [
-      'Dominant open-source AI platform with massive community impact',
-      'Level A AI-native: design challenges at the frontier of ML tooling',
-      'Remote-first culture with global team and high autonomy',
-      'Expanding into robotics (LeRobot) adds exciting new design surface area',
-      'Mission-driven: democratizing AI aligns with positive impact goals',
+      'Level A AI-native — at the center of the open-source AI revolution with 2.4M+ models',
+      'Category-defining design problems: model evaluation UX, prompt versioning, ML governance — 50% novel, no precedent exists',
+      'Enormous scope: 2-3 designers for 10+ product lines means your work ships to 5M+ users immediately',
+      'Mission-driven: CEO testified before Congress on open-source AI, TIME100 AI honoree, genuine community loyalty',
+      'Remote-first with extreme autonomy (Blind: 4.9/5 culture score), cofounders highly visible and accessible',
+      'Career capital: ML/AI UX expertise is rare, transferable to any top AI company, strong exit network',
     ],
     whyNot: [
-      'No open Product Design roles — design team is fully staffed (0 openings)',
-      'Very small design team (~2-4 people) may mean limited design culture and mentorship',
-      'Below-market compensation ($73K-$105K for Product Designer per Levels.fyi)',
-      'Engineer-heavy culture — designers may have less influence',
-      'Platform is highly technical — steep learning curve for ML domain knowledge',
+      'Compensation 30-50% below market ($74-105K vs $120-250K at peers) — $100-150K foregone over 2-3 years',
+      'Ultra-lean design team (1:150-225 designer:engineer ratio) — no design peer learning, no design exec advocate',
+      'Feb 2026 4% layoff signals burn rate pressure; small design team is vulnerable to further cuts',
+      'Engineering-dominant culture: design may be overridden when conflicting with shipping speed',
+      '60x revenue multiple ($7.75B / $130M) creates down-round risk; inference commoditization headwinds',
+      'Cloud giants (AWS, Azure, GCP) are both investors AND existential competitive threats',
     ],
     nextActions: [
-      'Monitor careers page for future Product Design openings',
-      'Explore Hugging Face Hub and Spaces to understand product deeply',
-      'Follow Hugging Face on Twitter for hiring announcements',
-      'Connect with Chun Te Lee on LinkedIn to learn about design team experience',
+      'Request conversations with Victor Mustar and Amelie Viallet to understand design team growth plans',
+      'Negotiate aggressively on equity (0.02-0.05%) and title (Senior/Staff) given salary discount',
+      'Monitor Hugging Face careers page — no current design openings but team is critically understaffed',
     ],
-    notes:
-      'Baseline A/B test measurement (2026-02-12). No design roles open. Design team exists but is very small. Company is highly engineering-focused with strong open-source community.',
+    notes: 'Deep research score: 6.85/10 weighted. Exceptional learning (8/10) and influence (7/10) but business health (6/10) and equity (5/10) are concerns. Best for early-to-mid career designer prioritizing mission and portfolio-defining work. Not for someone needing financial stability or design mentorship. Most likely outcome: acquisition by Amazon or Google at $4-8B (55% probability).',
   },
 
   // Meta
-  lastUpdated: '2026-02-12',
+  lastUpdated: '2026-02-13T21:30:00',
   sources: [
-    {
-      title: 'Hugging Face Series C Announcement (Blog)',
-      url: 'https://huggingface.co/blog/series-c',
-    },
     {
       title: 'Hugging Face Series D - TechCrunch',
       url: 'https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/',
-    },
-    {
-      title: 'Hugging Face Business Breakdown - Contrary Research',
-      url: 'https://research.contrary.com/company/hugging-face',
     },
     {
       title: 'Hugging Face Revenue & Valuation - Sacra',
       url: 'https://sacra.com/c/hugging-face/',
     },
     {
+      title: 'Hugging Face Business Breakdown - Contrary Research',
+      url: 'https://research.contrary.com/company/hugging-face',
+    },
+    {
+      title: 'Hugging Face Revenue - Latka',
+      url: 'https://getlatka.com/companies/hugging-face',
+    },
+    {
       title: 'Hugging Face 2026 Stats - Fueler',
       url: 'https://fueler.io/blog/hugging-face-usage-revenue-valuation-growth-statistics',
     },
     {
-      title: 'Hugging Face Glassdoor Reviews',
+      title: 'Clement Delangue - TIME100 AI',
+      url: 'https://time.com/collection/time100-ai/6308994/clement-delangue/',
+    },
+    {
+      title: 'Acquired Podcast: Hugging Face CEO Interview',
+      url: 'https://www.acquired.fm/episodes/building-the-open-source-ai-revolution-with-hugging-face-ceo-clem-delangue',
+    },
+    {
+      title: 'Sequoia Spotlight: Clem Delangue',
+      url: 'https://sequoiacap.com/article/clem-delangue-spotlight/',
+    },
+    {
+      title: 'Hugging Face Glassdoor Reviews (4.4/5, 55 reviews)',
       url: 'https://www.glassdoor.com/Reviews/Hugging-Face-Reviews-E6487302.htm',
     },
     {
       title: 'Hugging Face Salaries - Levels.fyi',
-      url: 'https://www.levels.fyi/companies/hugging-face/salaries',
+      url: 'https://www.levels.fyi/companies/hugging-face/salaries/product-designer',
     },
     {
-      title: 'Thomas Wolf - Sequoia Spotlight',
-      url: 'https://sequoiacap.com/founder/thomas-wolf/',
-    },
-    {
-      title: 'Clement Delangue - Sequoia Spotlight',
-      url: 'https://sequoiacap.com/article/clem-delangue-spotlight/',
-    },
-    {
-      title: 'Hugging Face Blind Reviews',
+      title: 'Hugging Face Blind Reviews (4.9/5 culture)',
       url: 'https://www.teamblind.com/company/Hugging-Face',
     },
     {
-      title: 'Hugging Face LeRobot Robotics - TechCrunch',
-      url: 'https://techcrunch.com/2025/05/29/hugging-face-unveils-two-new-humanoid-robots/',
+      title: 'Victor Mustar - Head of Product Design - LinkedIn',
+      url: 'https://www.linkedin.com/in/victor-mustar-22466951/',
+    },
+    {
+      title: 'Amelie Viallet - Design Engineer - LinkedIn',
+      url: 'https://www.linkedin.com/in/amelieviallet/',
+    },
+    {
+      title: 'Hugging Face Layoffs (Feb 2026) - The Information',
+      url: 'https://www.theinformation.com/briefings/hugging-face-lays-off-4-of-staff',
+    },
+    {
+      title: 'GitHub Models vs Hugging Face - GitHub Discussion',
+      url: 'https://github.com/orgs/community/discussions/167169',
+    },
+    {
+      title: 'Cloudflare Acquires Replicate (Nov 2025)',
+      url: 'https://www.cloudflare.com/press/press-releases/2025/cloudflare-to-acquire-replicate-to-build-the-most-seamless-ai-cloud-for-developers/',
+    },
+    {
+      title: 'Hugging Face Pre-IPO Valuation - UpMarket',
+      url: 'https://www.upmarket.co/private-markets/pre-ipo/hugging-face/',
+    },
+    {
+      title: 'ML Market Size $1.7T by 2035 - Precedence Research',
+      url: 'https://www.precedenceresearch.com/machine-learning-market',
+    },
+    {
+      title: 'TED AI: Thomas Wolf on Open-Source AI',
+      url: 'https://shows.acast.com/ted-ai/episodes/6758565abd3c99689c123d23',
     },
     {
       title: 'Hugging Face Wikipedia',
       url: 'https://en.wikipedia.org/wiki/Hugging_Face',
-    },
-    {
-      title: 'Hugging Face Careers (Workable)',
-      url: 'https://apply.workable.com/huggingface/',
     },
   ],
 };
