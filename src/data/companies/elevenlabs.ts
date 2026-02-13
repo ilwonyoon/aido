@@ -3,7 +3,7 @@ import { Company } from '../types';
 export const elevenlabs: Company = {
     id: 'elevenlabs',
     name: 'ElevenLabs',
-    description: 'AI voice platform. Text-to-speech, voice cloning, dubbing.',
+    description: 'AI audio platform for speech generation, voice agents, dubbing, and developer APIs.',
     website: 'https://elevenlabs.io',
     screenshot: '/screenshots/elevenlabs-screenshot.png',
     headquarters: 'New York, NY',
@@ -15,24 +15,25 @@ export const elevenlabs: Company = {
 
   // Multi-dimensional Tags
   aiTypes: ['audio-generation'],
-  markets: ['b2b'],
+  markets: ['b2b', 'enterprise', 'prosumer'],
   category: 'creative-media' as const,
 
   industries: ['infrastructure'],
 
-    stage: 'Series C',
-    valuation: '$3.3B',
-    totalFunding: '$281M',
+    stage: 'Series D',
+    valuation: '$11B (Feb 2026)',
+    totalFunding: '$781M',
     fundingHistory: [
-      { stage: 'Seed', amount: '$2M', date: '2022-07', leadInvestors: ['Credo Ventures'] },
-      { stage: 'Series A', amount: '$19M', date: '2023-01', leadInvestors: ['Nat Friedman', 'Daniel Gross'] },
+      { stage: 'Seed', amount: '$2M', date: '2023-01', leadInvestors: ['Credo Ventures'] },
+      { stage: 'Series A', amount: '$19M', date: '2023-06', leadInvestors: ['Nat Friedman', 'Daniel Gross'] },
       { stage: 'Series B', amount: '$80M', date: '2024-01', valuation: '$1.1B', leadInvestors: ['a16z', 'Sequoia'] },
       { stage: 'Series C', amount: '$180M', date: '2025-01', valuation: '$3.3B', leadInvestors: ['a16z'] },
+      { stage: 'Series D', amount: '$500M', date: '2026-02', valuation: '$11B', leadInvestors: ['Sequoia Capital'] },
     ],
-    revenue: '~$330M ARR (2025)',
-    growth: '260% growth in 9 months (2024)',
+    revenue: '>$330M ARR (end of 2025)',
+    growth: 'From >$200M ARR (Sep 2025) to >$330M ARR (Dec 2025)',
     runway: 'Strong',
-    customers: 'Publishers, game studios, content creators',
+    customers: 'Millions of users; enterprise customers include Deutsche Telekom, Square, Meta, and Revolut',
 
     competitors: [
       {
@@ -160,8 +161,8 @@ export const elevenlabs: Company = {
     openRoles: [
       {
         title: 'Product Designer',
-        location: 'Remote, London',
-        url: 'https://elevenlabs.io/careers/a4a9cda2-c5d8-47f0-989d-21617b58ab39',
+        location: 'Remote, London (+1 more)',
+        url: 'https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer',
       },
     ],
 
@@ -193,14 +194,14 @@ export const elevenlabs: Company = {
 
     growthMetrics: {
       stage: 'steady',
-      revenueGrowth: "$80M ARR (2024), targeting $100M+ (2025) = ~1.5x YoY",
-      userGrowth: "1M+ users, 100+ enterprise customers",
+      revenueGrowth: ">$200M ARR by Sep 2025 and >$330M ARR by end of 2025",
+      userGrowth: "Millions of users and thousands of business customers",
       signals: [
-        "$80M ARR with profitability path",
-        "$1.1B valuation (Series B)",
-        "1M+ registered users across creators, enterprises, publishers",
-        "100+ enterprise customers including publishers, game studios",
-        "Andreessen Horowitz backing",
+        "Series D: $500M at $11B valuation (Feb 2026)",
+        "Total funding reached $781M",
+        ">$330M ARR by end of 2025",
+        "Thousands of businesses and millions of end users",
+        "Top-tier investor base (Sequoia, a16z, ICONIQ)",
       ],
 
       tam: "$15B+ (Voice AI for audiobooks, gaming, content, accessibility)",
@@ -245,9 +246,12 @@ export const elevenlabs: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-24',
+    lastUpdated: '2026-02-13',
     sources: [
-    { title: 'Source', url: 'https://techcrunch.com/2025/01/30/elevenlabs-raises-180-million-series-c/' },
-    { title: 'Source', url: 'https://sacra.com/c/elevenlabs/' }
+    { title: 'ElevenLabs Series D Announcement', url: 'https://elevenlabs.io/blog/series-d' },
+    { title: 'TechCrunch - ElevenLabs raises $500M at $11B valuation', url: 'https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/' },
+    { title: 'ElevenLabs Careers', url: 'https://elevenlabs.io/careers' },
+    { title: 'ElevenLabs Product Designer role', url: 'https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer' },
+    { title: 'LinkedIn Jobs - ElevenLabs', url: 'https://www.linkedin.com/company/elevenlabsio/jobs' }
   ],
   };
