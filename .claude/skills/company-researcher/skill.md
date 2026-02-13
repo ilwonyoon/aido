@@ -573,8 +573,20 @@ designerLinks: [
 - 디자이너 1명 + 블로그: 2/2 — OK
 - 디자이너 2명 이상: OK
 
+**URL Validation Rule (CRITICAL):**
+
+`designerLinks`의 `url`은 반드시 **해당 사람의 개인 프로필 페이지**여야 합니다:
+
+| 올바른 URL | 잘못된 URL |
+|-----------|-----------|
+| `linkedin.com/in/john-doe-12345/` | `linkedin.com/company/meetgranola/` (회사 페이지) |
+| `x.com/jane_designer` | `x.com/companyname` (회사 계정) |
+| `johndoe.com` (개인 사이트) | `company.com/blog` (회사 블로그) |
+
+**Self-check**: URL에 `/company/`가 포함되어 있으면 회사 페이지일 가능성 높음 → 개인 URL로 교체. 개인 URL을 찾을 수 없으면 해당 항목을 제거.
+
 **How to Find:**
-- LinkedIn: "[company] product designer" → 실제 이름, 역할 확인
+- LinkedIn: "[company] product designer" → 실제 이름, 역할 확인 → **개인 프로필 URL** 복사
 - Twitter/X: Search "[company] designer" → 개인 계정 찾기
 - Company blog: Design team posts (팀 블로그는 개인이 아님)
 - Dribbble, Behance: Designers mentioning the company
@@ -593,6 +605,20 @@ openRoles: [
   // From /job-scraper output
 ]
 ```
+
+**openRoles가 빈 배열 `[]`인 경우 (REQUIRED):**
+
+빈 배열은 "역할이 없다"가 아니라 **"확인했는데 없었다"**를 의미해야 합니다.
+반드시 `sources`에 검증 기록을 남기세요:
+
+```typescript
+sources: [
+  // ... 다른 소스들
+  { title: '[Company] Careers - no Product Design roles found', url: 'https://company.com/careers' },
+]
+```
+
+**확인하지 않고 `[]`로 두는 것은 금지**. job-scraper를 실행하고, 결과가 없을 때만 빈 배열 사용.
 
 ---
 
@@ -617,6 +643,18 @@ cultureInsights: [
 - levels.fyi (compensation + culture)
 - LinkedIn (employee posts)
 - Twitter (designer tweets)
+
+**Cross-Validation Rule (CRITICAL):**
+
+`cultureInsights`의 내용은 같은 파일의 다른 섹션과 모순되면 안 됩니다:
+
+| 체크 항목 | 예시 |
+|----------|------|
+| **founders 배경과 일치** | cultureInsights에서 "Ex-Palantir founders"라고 했으면, founders 섹션에도 Palantir 경력이 있어야 함 |
+| **headquarters와 일치** | "SF-based team"이라고 했으면, headquarters가 San Francisco여야 함 |
+| **stage와 일치** | "Seed stage startup"이라고 했으면, stage가 실제로 Seed여야 함 |
+
+**Self-check**: cultureInsights 작성 후, founders/headquarters/stage 섹션과 대조. 모순 발견 시 cultureInsights 내용 수정 또는 삭제.
 
 ---
 
@@ -1015,9 +1053,14 @@ growthMetrics → tracking → lastUpdated → sources
 - [ ] `tracking.whyJoin`에서 Level 표기가 'Level A/B' 형식인가? (Level 4/3 사용 금지)
 - [ ] Founder role이 정확한가? (CEO/CTO/CPO 등 — 웹사이트에서 직접 확인)
 
+### Cross-Validation
+- [ ] `designerLinks`의 모든 URL이 **개인 프로필** 페이지인가? (회사 페이지 `/company/` URL 금지)
+- [ ] `cultureInsights`의 founders 관련 언급이 `founders` 섹션과 일치하는가?
+- [ ] `cultureInsights`의 위치/규모 관련 언급이 `headquarters`/`stage`와 일치하는가?
+
 ### Completeness
 - [ ] `designerLinks`에 실제 디자이너 개인 프로필이 2개 이상 있는가? (회사 블로그만으로는 부족)
-- [ ] `openRoles`가 job-scraper를 통해 검증되었는가?
+- [ ] `openRoles`가 job-scraper를 통해 검증되었는가? (빈 배열이면 sources에 검증 기록 필수)
 - [ ] `sources`가 3개 이상인가?
 - [ ] `fundingHistory`의 모든 라운드에 date, amount, leadInvestors가 있는가?
 
