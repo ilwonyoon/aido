@@ -17,6 +17,25 @@ AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함�
 
 회사에 대한 모든 정보를 체계적으로 수집하여 `Company` 타입의 완전한 TypeScript 객체 생성.
 
+## 반복 최적화 모드 (성능 튜닝용)
+
+회사별 iteration에서 아래를 추가로 실행:
+
+1. Baseline 점수 측정
+```bash
+node scripts/score-company-quality.mjs <company-id>
+```
+2. 개선 반영 후 재측정
+3. iteration 로그 기록
+```bash
+node scripts/log-skill-iteration.mjs --company <company-id> --phase improved ...
+```
+
+권장 목표:
+- Score가 quality bar 이상
+- sources 5개 이상 + 3개 이상 도메인
+- openRoles 정책 위반(Design Engineer 등) 0건
+
 ## 핵심 원칙 (매우 중요)
 
 1. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.

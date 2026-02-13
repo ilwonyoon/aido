@@ -7,7 +7,7 @@ export const mistral: Company = {
     website: 'https://mistral.ai',
     screenshot: '/screenshots/mistral-screenshot.png',
     headquarters: 'Paris, France',
-    remote: 'Yes',
+    remote: 'Hybrid',
 
     // OG Image
     ogImage: '/og-images/mistral-og.webp',
@@ -15,22 +15,22 @@ export const mistral: Company = {
 
   // Multi-dimensional Tags
   aiTypes: ['foundation-model'],
-  markets: ['b2b'],
+  markets: ['enterprise', 'b2b'],
   category: 'ai-models' as const,
 
-  industries: ['other'],
+  industries: ['infrastructure'],
 
     stage: 'Series C',
-    valuation: '$14B (Sept 2025)',
-    totalFunding: '$3.05B',
+    valuation: '€11.7B (~$13.8B) (Sep 2025)',
+    totalFunding: '€2.79B+ (~$3.0B+)',
     fundingHistory: [
       { stage: 'Seed', amount: '€105M', date: '2023-06', leadInvestors: ['Lightspeed'] },
       { stage: 'Series A', amount: '€385M', date: '2023-12', leadInvestors: ['a16z'] },
       { stage: 'Series B', amount: '€600M', date: '2024-06', valuation: '$6.2B', leadInvestors: ['General Catalyst'] },
-      { stage: 'Series C', amount: '€1.7B', date: '2025-09', valuation: '$14B', leadInvestors: ['ASML'] },
+      { stage: 'Series C', amount: '€1.7B', date: '2025-09', valuation: '€11.7B', leadInvestors: ['ASML'] },
     ],
     revenue: 'Growing (not disclosed)',
-    growth: 'Fastest European AI unicorn — $14B in 29 months',
+    growth: 'Reached €11.7B valuation in ~2 years after founding',
     customers: 'Enterprises, developers, European companies',
 
     competitors: [
@@ -161,8 +161,8 @@ export const mistral: Company = {
     openRoles: [
       {
         title: 'Product Designer, Web apps',
-        location: 'Paris, France',
-        url: 'https://jobs.lever.co/mistral/7d41ad25-c536-492d-b06c-5a74ce16c163',
+        location: 'Paris / London / New York / Berlin / Barcelona / Amsterdam / Luxembourg / Brussels',
+        url: 'https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c',
       },
     ],
 
@@ -194,9 +194,9 @@ export const mistral: Company = {
       revenueGrowth: "$100M ARR (estimated 2025), ~3x YoY",
       userGrowth: "Developers globally, enterprise adoption growing",
       signals: [
-        "$6.2B valuation at Series C (10x from $600M in 12 months)",
-        "$1.17B raised in 18 months",
-        "Fastest European AI startup to $6B+ valuation",
+        "Series C announced at €11.7B post-money valuation (Sep 2025)",
+        "Total disclosed funding reached at least €2.79B",
+        "One of the highest-valued AI startups in Europe",
         "DeepMind/Meta AI research talent founders",
         "European open-weight AI champion",
       ],
@@ -245,9 +245,13 @@ export const mistral: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-13',
     sources: [
-    { title: 'Source', url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai' },
-    { title: 'Source', url: 'https://techfundingnews.com/mistral-ai-raises-2-billion-valuation-europe-ai-frontrunner/' }
+    { title: 'Mistral AI Series C announcement (official)', url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai' },
+    { title: 'Mistral AI Careers', url: 'https://mistral.ai/careers' },
+    { title: 'Mistral AI Product Designer, Web apps (Lever)', url: 'https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c' },
+    { title: 'TechCrunch - Mistral on cusp of $14B valuation (reporting context)', url: 'https://techcrunch.com/2025/09/03/mistral-the-french-ai-giant-is-reportedly-on-the-cusp-of-securing-a-14-billion-valuation/' },
+    { title: 'Bloomberg - Mistral set for €12B ($14B) valuation (reporting context)', url: 'https://www.bloomberg.com/news/articles/2025-09-03/mistral-set-for-14-billion-valuation-with-new-funding-round' },
+    { title: 'Crunchbase - Mistral AI company financials', url: 'https://www.crunchbase.com/organization/mistral-ai/company_financials' }
   ],
   };

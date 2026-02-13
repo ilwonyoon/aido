@@ -12,6 +12,13 @@
 
 회사의 Product Design 관련 오픈 포지션을 **빠짐없이** 수집하고 검증하여 정확한 정보를 제공합니다.
 
+## 품질 체크 (반드시 통과)
+
+1. `Design Engineer`, `Brand`, `Visual`, `Content`, `Marketing` 직군은 `openRoles`에 넣지 않는다.
+2. `openRoles.url`은 가능하면 job-specific URL(ATS job id 포함)을 사용한다.
+3. generic careers URL만 확보된 경우 role을 추가하지 말고 company `sources`에 검증 경로를 남긴다.
+4. role이 `[]`여도 반드시 careers/LinkedIn/ATS를 확인한 뒤에만 빈 배열로 둔다.
+
 ---
 
 ## 워크플로우
