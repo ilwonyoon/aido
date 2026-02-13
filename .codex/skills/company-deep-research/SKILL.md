@@ -368,12 +368,12 @@ WebSearch: "[problem domain]" how people currently solve
 - Press/mindshare: [미디어 노출, 개발자 커뮤니티]
 
 ### Designer-Specific Upside
-- 🎯 Design influence on product: [디자인이 제품 방향에 미치는 영향력]
-- 🎯 Novel design challenges: [다른 곳에서 못하는 디자인 문제]
-- 🎯 Career growth: [이 회사에서의 성장 경로]
-- 🎯 Portfolio value: [이 경험이 이력서에 미치는 가치]
-- 🎯 Equity upside: [스톡옵션/RSU 가치 전망]
-- 🎯 Learning from leadership: [디자인 리더십에서 배울 수 있는 것]
+- Design influence on product: [디자인이 제품 방향에 미치는 영향력]
+- Novel design challenges: [다른 곳에서 못하는 디자인 문제]
+- Career growth: [이 회사에서의 성장 경로]
+- Portfolio value: [이 경험이 이력서에 미치는 가치]
+- Equity upside: [스톡옵션/RSU 가치 전망]
+- Learning from leadership: [디자인 리더십에서 배울 수 있는 것]
 ```
 
 ---
@@ -392,13 +392,13 @@ WebSearch: "[problem domain]" how people currently solve
 - Technology risk: [기술 commodity화, 플랫폼 의존]
 
 ### Design-Specific Risks
-- ⚠️ Design influence: [디자인이 무시되는 환경인가]
-- ⚠️ Team stability: [디자이너 이직률, 리더십 변동]
-- ⚠️ Growth ceiling: [시니어 이상으로 성장 가능한가]
-- ⚠️ Scope of work: [실제 디자인 업무 범위 — 폭넓은 vs 좁은]
-- ⚠️ Engineering-driven culture: [엔지니어 중심 의사결정 vs 디자인 참여]
-- ⚠️ Work-life balance: [번아웃 리스크, 야근 문화]
-- ⚠️ Remote vs In-person: [내 근무 선호와 맞는가]
+- Design influence: [디자인이 무시되는 환경인가]
+- Team stability: [디자이너 이직률, 리더십 변동]
+- Growth ceiling: [시니어 이상으로 성장 가능한가]
+- Scope of work: [실제 디자인 업무 범위 — 폭넓은 vs 좁은]
+- Engineering-driven culture: [엔지니어 중심 의사결정 vs 디자인 참여]
+- Work-life balance: [번아웃 리스크, 야근 문화]
+- Remote vs In-person: [내 근무 선호와 맞는가]
 
 ### Worst Case Scenario
 - Company fails: [가장 현실적인 실패 시나리오]
@@ -439,10 +439,10 @@ WebSearch: "[problem domain]" how people currently solve
 > 이 관계가 **공생**인지 **의존**인지 **경쟁**인지가 핵심.
 
 - **Relationship type**:
-  - 🔗 **Infrastructure dependency**: LLM API 위에 빌드 (대부분의 AI 스타트업)
-  - 🤝 **Symbiosis**: LLM과 상호보완 (e.g., Cursor는 Claude/GPT가 좋을수록 좋아짐)
-  - ⚔️ **Competition**: LLM 자체와 경쟁 (e.g., 검색 스타트업 vs Gemini 검색)
-  - 🏗️ **Building the LLM**: 직접 파운데이션 모델 개발 (Anthropic, OpenAI, Mistral)
+  - **Infrastructure dependency**: LLM API 위에 빌드 (대부분의 AI 스타트업)
+  - **Symbiosis**: LLM과 상호보완 (e.g., Cursor는 Claude/GPT가 좋을수록 좋아짐)
+  - **Competition**: LLM 자체와 경쟁 (e.g., 검색 스타트업 vs Gemini 검색)
+  - **Building the LLM**: 직접 파운데이션 모델 개발 (Anthropic, OpenAI, Mistral)
 
 - **Key questions**:
   - 어떤 LLM에 의존하는가? (단일 vs 멀티 모델)
@@ -659,6 +659,7 @@ Proceed with this topic? (or type a different topic)
 1. `/writer` 스킬이 딥 리서치 데이터를 input으로 받아 아티클 초안 작성
 2. 리서치에서 수집한 데이터 포인트, 인사이트, 소스를 아티클에 자동 반영
 3. Data-Driven Analytical voice로 작성
+4. 회사 언급 시 `[Company Name](/company/id)` 형식 사용 → 자동으로 회사 로고 아이콘과 함께 렌더링
 
 ### 9.4 Writer Input: Deep Research Data
 
@@ -700,8 +701,17 @@ const writerContext = {
   upsidePoints: string[],        // Phase 4 top insights
   downsidePoints: string[],       // Phase 5 top risks
   competitionInsights: string[],  // Phase 6 key findings
+  llmPosition: string,            // Phase 6 LLM relationship summary
   keyArticles: Article[],         // Phase 7 collected sources
   decisionScore: number,          // Phase 8 final score
+
+  // Sources for citation (REQUIRED)
+  sources: {
+    title: string,
+    url: string,
+    publisher: string,           // e.g., "TechCrunch", "Crunchbase", "Company Blog"
+    date?: string,               // ISO format
+  }[],
 
   // Suggested topic
   suggestedTopic: string,
@@ -719,7 +729,7 @@ Article Draft Ready for Review
 
 Title: "Inside Anthropic's 7x Growth: What 50+ Designers Are Building"
 Slug: inside-anthropic-growth-designers
-Category: analysis
+Category: deep-dive
 Reading time: 8 minutes
 Companies featured: Anthropic (+ OpenAI, Cursor as comparison)
 
@@ -791,6 +801,62 @@ Options:
 | 표면적 분석 | Upside/Downside 데이터 기반 심층 분석 |
 | 일반적 디자이너 관점 | 특정 회사에 대한 구체적 디자이너 인사이트 |
 | 소스 3-5개 | 소스 10-20개 (리서치에서 수집) |
+| 회사 링크만 | 회사 로고 아이콘과 함께 링크 렌더링 |
+
+### 9.8 Article Source Citations (REQUIRED)
+
+**모든 아티클은 반드시 Sources 섹션을 포함해야 함.**
+
+#### Article Content Requirements
+
+1. **Inline citation chips**: 주요 데이터 포인트 옆에 `[↗ Publisher](url)` 형식으로 출처 표기. MarkdownRenderer가 이 패턴을 감지하여 칩 형태로 렌더링함.
+
+   **CRITICAL**: 링크 텍스트는 반드시 `↗ ` (화살표 + 공백)으로 시작해야 citation chip으로 인식됨.
+
+   ```markdown
+   Anthropic reached $7B ARR in October 2025 [↗ The Information](https://www.theinformation.com/articles/anthropic-revenue-7b), up from $1B earlier that year [↗ TechCrunch](https://techcrunch.com/...).
+   ```
+
+   **렌더링 결과**: 텍스트 옆에 `[The Information ↗]` 칩이 인라인으로 표시됨.
+
+   **Citation 삽입 기준**:
+   - 구체적 숫자 (ARR, valuation, funding, 직원 수 등)
+   - 인용문 (CEO 발언, 인터뷰 등)
+   - 특정 이벤트 (Series B 발표, 제품 출시 등)
+   - 경쟁사 비교 데이터
+   - 일반적 사실이나 의견은 citation 불필요
+
+2. **Article TypeScript file**: `sources` 필드에 모든 출처 배열로 포함 (하단 Sources 섹션 렌더링용)
+   ```typescript
+   sources: [
+     {
+       title: 'Anthropic raises $2B at $60B valuation',
+       url: 'https://techcrunch.com/...',
+       publisher: 'TechCrunch',
+       date: '2025-09-15',
+     },
+     // ... more sources
+   ],
+   ```
+
+3. **Markdown content에 `## Sources` 섹션은 넣지 말 것** — `sources` 배열이 페이지 하단에 자동으로 렌더링됨
+
+#### Minimum Source Requirements
+
+| Article Type | Minimum Sources |
+|-------------|----------------|
+| Company deep dive | 10+ sources |
+| Comparison (A vs B) | 8+ sources (4+ per company) |
+| Top N list | 2+ sources per company |
+| Trend analysis | 8+ sources |
+
+#### Source Quality Standards
+
+- **Primary sources preferred**: Company blog, press releases, SEC filings
+- **Credible publishers**: TechCrunch, The Information, Bloomberg, Reuters
+- **Data sources**: Crunchbase, PitchBook, CB Insights, G2
+- **Recency**: Prefer sources from last 12 months
+- **No paywalled-only sources**: At least one free source for each major claim
 
 ---
 

@@ -17,6 +17,14 @@ AI 회사 데이터를 체계적으로 수집하는 스킬. Job Scraper와 함�
 
 회사에 대한 모든 정보를 체계적으로 수집하여 `Company` 타입의 완전한 TypeScript 객체 생성.
 
+## 핵심 원칙 (매우 중요)
+
+1. **특정 디렉토리 단일 의존 금지**: `startups.gallery`는 보조 시드 데이터로만 사용. 단독 소스로 데이터 확정 금지.
+2. **필드별 다중 검증**: 핵심 필드(펀딩/밸류에이션/리모트 정책/창업자)는 최소 2개 이상 출처로 교차 검증.
+3. **공식/1차 소스 우선**: 회사 공식 사이트, 공식 보도자료, SEC/기업 공시, 투자사 발표를 최우선 사용.
+4. **Unknown 최소화가 기본 목표**: 가능한 항목은 끝까지 찾아 채우고, 정말 없을 때만 `Unknown`.
+5. **Unknown 사용 시 근거 기록**: sources에 "무엇을 어디서 확인했는데 없었는지"를 남김.
+
 ---
 
 ## 워크플로우
@@ -139,10 +147,11 @@ markets: ['enterprise'],
 industries: ['healthcare'],
 ```
 
-**Sources:**
-- Company website → About 페이지
-- LinkedIn company page
-- Crunchbase
+**Sources (필수 우선순위):**
+- 1차: Company website(About/Product/Careers/Blog), 공식 보도자료
+- 2차: Crunchbase, PitchBook, Dealroom, YC/Winter/Summer batch pages
+- 3차: TechCrunch/Reuters/Forbes 등 신뢰 가능한 미디어
+- 보조: startups.gallery (슬러그/요약/힌트 확인용)
 
 ---
 
@@ -446,9 +455,76 @@ userProblems: [
 
 ---
 
-### Phase 6: Designer Links & Open Roles
+### Phase 6: Visual Assets Collection (OG Images & Screenshots)
 
-#### 6.1 Designer Links
+#### 6.1 Automatic Image Collection
+
+**CRITICAL**: OG 이미지는 company 데이터의 필수 부분입니다. Company 파일 생성 후 반드시 자동으로 수집하세요.
+
+**실행 방법:**
+
+Company TypeScript 파일을 생성한 직후, 다음 스크립트를 **반드시** 실행:
+
+```bash
+node scripts/fetch-og-single.mjs <company-id> <company-website>
+```
+
+**예시:**
+```bash
+# Anthropic 회사 추가 후
+node scripts/fetch-og-single.mjs anthropic https://anthropic.com
+
+# Cursor 회사 추가 후
+node scripts/fetch-og-single.mjs cursor https://cursor.sh
+```
+
+**스크립트가 자동으로 수행하는 작업:**
+1. Microlink API로 OG image URL 추출 (무료, API 키 불필요)
+2. 이미지 다운로드 및 최적화:
+   - 최대 너비: 1440px
+   - WebP 포맷, 90% 품질
+   - 저장 위치: `/public/og-images/{company-id}-og.webp`
+3. Company 파일에 `ogImage` 필드 자동 추가:
+   ```typescript
+   {
+     ogImage: '/og-images/{company-id}-og.webp',
+   }
+   ```
+
+**워크플로우:**
+```bash
+# 1. Company 파일 생성
+cat > src/data/companies/new-company.ts << 'EOF'
+export const newCompany: Company = {
+  id: 'new-company',
+  name: 'New Company',
+  website: 'https://newcompany.com',
+  // ... 나머지 필드
+};
+EOF
+
+# 2. OG 이미지 자동 수집 (필수!)
+node scripts/fetch-og-single.mjs new-company https://newcompany.com
+
+# 3. 확인
+# - public/og-images/new-company-og.webp 생성됨 ✓
+# - src/data/companies/new-company.ts에 ogImage 필드 추가됨 ✓
+```
+
+**실패 시 대응:**
+- OG 이미지가 없으면 스크립트가 경고 표시
+- 이미지가 없어도 company 파일은 유효함 (fallback UI 있음)
+- 나중에 다시 실행 가능
+
+**주의사항:**
+- ⚠️ Company 파일에 `remote` 필드가 반드시 있어야 함 (insertion point)
+- ⚠️ 스크립트는 이미 `ogImage` 필드가 있으면 skip함
+
+---
+
+### Phase 7: Designer Links & Open Roles
+
+#### 7.1 Designer Links
 ```typescript
 designerLinks: [
   {
@@ -469,7 +545,7 @@ designerLinks: [
 
 ---
 
-#### 6.2 Open Roles
+#### 7.2 Open Roles
 **이미 `/job-scraper`에서 수집 완료**
 
 Job scraper 결과를 그대로 사용:
@@ -481,40 +557,7 @@ openRoles: [
 
 ---
 
-### Phase 7: Media Assets (OG + Screenshot)
-
-**목표:** 회사 페이지 메타데이터와 상세 페이지에 사용할 OG 이미지 + 제품 스크린샷 확보.
-
-#### 7.1 OG Image
-1. 홈페이지/블로그에서 `og:image` 메타 태그 확인
-2. 이미지 URL HTTP 200 확인
-3. 가능하면 로컬 저장:
-   - `public/og/[company-id].png`
-   - `company.media.ogImage = "/og/[company-id].png"`
-4. 로컬 저장이 어려우면 원본 URL 사용:
-   - `company.media.ogImage = "https://..."`
-5. `company.media.ogImageSource`에 출처 URL 기록
-
-#### 7.2 Product Screenshot
-1. 제품 페이지/대시보드/앱 UI에서 대표 화면 캡처
-2. 가능하면 로컬 저장:
-   - `public/screenshots/[company-id].png`
-   - `company.media.screenshot = "/screenshots/[company-id].png"`
-3. `company.media.screenshotSource`에 캡처한 페이지 URL 기록
-
-#### 7.3 필드 예시
-```ts
-media: {
-  ogImage: '/og/anthropic.png',
-  ogImageSource: 'https://www.anthropic.com',
-  screenshot: '/screenshots/anthropic.png',
-  screenshotSource: 'https://www.anthropic.com/product',
-}
-```
-
----
-
-### Phase 7: Culture Insights
+### Phase 8: Culture Insights
 
 #### 7.1 Culture Sources
 ```typescript
@@ -538,7 +581,7 @@ cultureInsights: [
 
 ---
 
-### Phase 8: Tracking & Meta
+### Phase 9: Tracking & Meta
 
 #### 8.1 Personal Tracking
 ```typescript
@@ -821,11 +864,11 @@ Before outputting final TypeScript object:
 
 ### 1. Start with Best Sources
 ```
-1. Company website (About, Blog, Careers)
-2. Crunchbase (Business metrics)
-3. LinkedIn (Founders, team)
-4. TechCrunch (Funding news)
-5. Glassdoor/Blind (Culture)
+1. Company website + 공식 보도자료 (최우선)
+2. Crunchbase/PitchBook/Dealroom (펀딩/밸류에이션)
+3. LinkedIn (Founders, 팀 구성, 채용 시그널)
+4. 신뢰 매체(TechCrunch/Reuters 등)로 교차검증
+5. startups.gallery는 보조 시드 데이터로만 사용
 ```
 
 ### 2. Use Parallel WebFetch
@@ -845,8 +888,9 @@ await Promise.all([
 
 ### 4. When Data is Missing
 - Don't guess or hallucinate
-- Mark as 'Unknown' or leave empty
-- Add to sources: "Limited public information available"
+- 먼저 공식/투자/뉴스 소스를 추가로 2-3회 더 탐색
+- 그래도 없으면 `Unknown` 또는 빈값 처리
+- sources에 `Limited public information available` + 시도한 출처를 함께 기록
 
 ---
 
@@ -855,6 +899,7 @@ await Promise.all([
 ### ❌ Don't:
 - Skip /job-scraper (always run it first)
 - Copy-paste from other companies without verification
+- startups.gallery 단일 소스로 필드를 확정
 - Use old funding data (check dates)
 - Ignore culture insights (very important for fit)
 - Leave competitors empty (always find 3-5)

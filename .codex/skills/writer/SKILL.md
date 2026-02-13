@@ -1,3 +1,8 @@
+---
+name: writer
+description: "Generate data-driven analytical articles for AIDO Insights blog. Auto-selects companies, creates SEO metadata, and produces TypeScript article files ready for deployment."
+---
+
 # AIDO Insights Writer
 
 Data-driven analytical article generator for AIDO Insights blog.
@@ -35,12 +40,12 @@ Given just a topic, this skill will:
 
 ### Writing Patterns
 
-**❌ Avoid:**
+**Avoid:**
 - "AI is revolutionizing everything!"
 - "Cursor is an amazing code editor!"
 - "Anthropic has incredible growth"
 
-**✅ Prefer:**
+**Prefer:**
 - "The AI industry added 15 new unicorns in 2025 alone, but not all growth is created equal."
 - "Cursor reached $1B ARR faster than any SaaS in history. Here's why."
 - "Anthropic went from $1B to $7B ARR in a single year—a 7x growth rate"
@@ -151,7 +156,7 @@ Calculate comparative stats:
 Show complete article:
 
 ```
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: [Generated title]
 Slug: [generated-slug]
@@ -159,7 +164,7 @@ Excerpt: [Generated excerpt]
 
 Companies featured: Anthropic, OpenAI, Linear, ...
 Reading time: 8 minutes
-Category: [analysis|insights|trends|guides]
+Category: [analysis|deep-dive|insights|trends|guides]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -167,10 +172,10 @@ Category: [analysis|insights|trends|guides]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Approve and create file
-✏️  Edit SEO metadata
-🔄 Regenerate article
-❌ Cancel
+Approve and create file
+Edit SEO metadata
+Regenerate article
+Cancel
 ```
 
 ### Step 6: Create Files (if approved)
@@ -224,12 +229,41 @@ export const [camelCaseSlug]: Article = {
   },
   content: `[generated-markdown-with-links]`,
   companyIds: ['id1', 'id2', ...],
+  sources: [
+    {
+      title: 'Article or report title',
+      url: 'https://...',
+      publisher: 'TechCrunch',
+      date: '2025-06-01',
+    },
+    // ... all cited sources
+  ],
   tags: ['tag1', 'tag2', ...],
-  category: '[analysis|insights|trends|guides]',
+  category: '[analysis|deep-dive|insights|trends|guides]',
   featured: false,
   readingTimeMinutes: [calculated],
 };
 ```
+
+---
+
+## Inline Source Citations
+
+데이터 포인트에 출처가 있을 때 인라인 citation 칩을 사용:
+
+```markdown
+Harvey reached $190M ARR by end of 2025 [↗ Sacra](https://sacra.com/c/harvey/).
+```
+
+**CRITICAL**: 링크 텍스트는 반드시 `↗ ` (화살표 + 공백)으로 시작해야 함.
+
+**Citation 삽입 기준**:
+- 구체적 숫자 (ARR, valuation, funding, 직원 수)
+- 인용문 (CEO 발언, 인터뷰)
+- 특정 이벤트 (Series B 발표, 제품 출시)
+- 일반적 사실이나 의견은 citation 불필요
+
+마크다운 content에 `## Sources` 섹션 넣지 말 것 — `sources` 배열이 페이지 하단에 자동 렌더링됨.
 
 ---
 
@@ -376,7 +410,7 @@ Generating article in Data-Driven Analytical voice...
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "5 Best AI Companies for Product Designers in 2026"
 Slug: best-ai-companies-for-designers-2026
@@ -428,7 +462,7 @@ Generating comparison...
 ✓ Designer culture analysis
 ✓ Role opportunities
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "Anthropic vs OpenAI: Product Designer Perspective 2026"
 Slug: anthropic-vs-openai-product-designers-2026
@@ -456,7 +490,7 @@ Analyzing pattern...
 ✓ Insight: 6 of top 10 fastest-growing build for developers
 ✓ Data: Bottom-up adoption, PLG motion, faster developer adoption
 
-📝 Article Draft Ready
+Article Draft Ready
 
 Title: "Developer Tools Dominate AI Hypergrowth: Here's Why"
 Slug: developer-tools-ai-hypergrowth-2026
@@ -489,9 +523,18 @@ Excerpt: 6 of the 10 fastest-growing AI companies build for developers. Analysis
 
 Map topic to category:
 - "Top N", "fastest", "best", rankings → `analysis`
+- Company-specific deep research, "[Company] deep dive" → `deep-dive`
 - "trend", "why", "pattern" → `insights`
 - "how to", "guide", "evaluate" → `guides`
 - Other → `trends`
+
+### Content Rules (CRITICAL)
+
+- **Never start markdown content with `# Title`** — the page header already renders the title
+- Content should start directly with the first paragraph or h2 section
+- `stripLeadingH1()` exists as a safety net but do NOT rely on it
+- All articles use the same full-width card layout on the list page (no grid)
+- Articles are sorted by publishedDate descending (newest first)
 
 ---
 
