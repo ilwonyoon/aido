@@ -142,6 +142,7 @@ import { fal } from './fal';
 import { farel } from './farel';
 import { fastino } from './fastino';
 import { fermat } from './fermat';
+import { fieldAi } from './field-ai';
 import { figma } from './figma';
 import { finnAi } from './finn-ai';
 import { firecrawl } from './firecrawl';
@@ -624,6 +625,7 @@ export const companies: Company[] = [
   farel,
   fastino,
   fermat,
+  fieldAi,
   figma,
   finnAi,
   firecrawl,
