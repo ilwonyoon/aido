@@ -39,6 +39,8 @@ This is not a story about "AI features in sales tools." It's about a structural 
 
 ## The Old World: How GTM Worked Before AI
 
+<!-- viz:gtm-pipeline -->
+
 ### The Assembly Line
 
 The modern B2B sales machine was built on specialization. Aaron Ross's *Predictable Revenue* (2011) codified what Salesforce had pioneered: split the sales process into discrete roles, each optimized for one stage of the funnel [↗ SaaStr](https://www.saastr.com/the-great-sdr-downsizing-36-of-b2b-companies-cut-sales-development-teams-in-2025/).

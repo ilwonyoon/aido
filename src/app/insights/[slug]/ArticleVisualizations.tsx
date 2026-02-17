@@ -3,7 +3,7 @@
 import { ReactNode } from 'react';
 import { ArticleWithVisualizations } from '@/components/article/ArticleWithVisualizations';
 import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
-import { FundingTimeline, ComparisonChart } from '@/components/visualizations';
+import { FundingTimeline, ComparisonChart, GtmPipeline } from '@/components/visualizations';
 import {
   fundingData,
   industryAverage,
@@ -29,8 +29,15 @@ function getFastestSeedVizMap(): Record<string, ReactNode> {
   };
 }
 
+function getGtmAiVizMap(): Record<string, ReactNode> {
+  return {
+    'gtm-pipeline': <GtmPipeline />,
+  };
+}
+
 const ARTICLE_VIZ_MAP: Record<string, () => Record<string, ReactNode>> = {
   'fastest-seed-to-series-b-ai-companies-2026': getFastestSeedVizMap,
+  'gtm-ai-before-and-after': getGtmAiVizMap,
 };
 
 interface Props {
