@@ -45,6 +45,7 @@ import { beautifulAi } from './beautiful-ai';
 import { bedrockRobotics } from './bedrock-robotics';
 import { bem } from './bem';
 import { benchsci } from './benchsci';
+import { betterAuth } from './better-auth';
 import { bindwell } from './bindwell';
 import { blackbirdLabs } from './blackbird-labs';
 import { blacksmith } from './blacksmith';
@@ -118,6 +119,7 @@ import { darwinai } from './darwinai';
 import { dcbel } from './dcbel';
 import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
+import { dayAi } from './day-ai';
 import { decart } from './decart';
 import { dedalusLabs } from './dedalus-labs';
 import { density } from './density';
@@ -562,6 +564,7 @@ export const companies: Company[] = [
   bedrockRobotics,
   bem,
   benchsci,
+  betterAuth,
   bindwell,
   blackbirdLabs,
   blacksmith,
@@ -635,6 +638,7 @@ export const companies: Company[] = [
   dcbel,
   datacurve,
   davidAi,
+  dayAi,
   decart,
   dedalusLabs,
   density,
