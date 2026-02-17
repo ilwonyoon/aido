@@ -422,6 +422,7 @@ import { skyhive } from './skyhive';
 import { slash } from './slash';
 import { snaptravel } from './snaptravel';
 import { solaSecurity } from './sola-security';
+import { slope } from './slope';
 import { solidroad } from './solidroad';
 import { sonatic } from './sonatic';
 import { sonder } from './sonder';
@@ -941,6 +942,7 @@ export const companies: Company[] = [
   slash,
   snaptravel,
   solaSecurity,
+  slope,
   solidroad,
   sonatic,
   sonder,
