@@ -65,8 +65,8 @@ export function GtmPipeline() {
       style={{
         background: 'var(--card)',
         border: '1px solid var(--border)',
-        borderRadius: '12px',
-        padding: '1.5rem',
+        borderRadius: '10px',
+        padding: '1rem 1.125rem',
         fontFamily: 'var(--font-sans, system-ui)',
       }}
     >
@@ -74,10 +74,10 @@ export function GtmPipeline() {
       <div style={{ marginBottom: '0.5rem' }}>
         <span
           style={{
-            fontSize: '0.6875rem',
+            fontSize: '0.625rem',
             fontWeight: 600,
             textTransform: 'uppercase' as const,
-            letterSpacing: '0.05em',
+            letterSpacing: '0.06em',
             color: 'var(--muted)',
           }}
         >
@@ -90,7 +90,7 @@ export function GtmPipeline() {
         style={{
           display: 'flex',
           gap: '2px',
-          marginBottom: '1.25rem',
+          marginBottom: activeStage !== null ? '0.625rem' : '0.25rem',
         }}
       >
         {stages.map((stage, i) => {
@@ -110,29 +110,29 @@ export function GtmPipeline() {
                 border: isActive
                   ? `1px solid ${stage.color}40`
                   : '1px solid var(--border)',
-                borderRadius: i === 0 ? '8px 0 0 8px' : i === stages.length - 1 ? '0 8px 8px 0' : '0',
-                padding: '0.875rem 0.75rem',
+                borderRadius: i === 0 ? '6px 0 0 6px' : i === stages.length - 1 ? '0 6px 6px 0' : '0',
+                padding: '0.625rem 0.5rem',
                 cursor: 'pointer',
-                opacity: isDimmed ? 0.4 : 1,
-                transition: 'all 0.2s ease',
+                opacity: isDimmed ? 0.35 : 1,
+                transition: 'all 0.15s ease',
                 textAlign: 'center' as const,
                 position: 'relative' as const,
               }}
             >
               <div
                 style={{
-                  fontSize: '0.9375rem',
+                  fontSize: '0.875rem',
                   fontWeight: 700,
                   color: isActive ? stage.color : 'var(--foreground)',
-                  marginBottom: '0.25rem',
-                  transition: 'color 0.2s ease',
+                  marginBottom: '0.125rem',
+                  transition: 'color 0.15s ease',
                 }}
               >
                 {stage.role}
               </div>
               <div
                 style={{
-                  fontSize: '0.6875rem',
+                  fontSize: '0.625rem',
                   color: 'var(--muted)',
                   lineHeight: 1.3,
                 }}
@@ -144,12 +144,13 @@ export function GtmPipeline() {
                 <div
                   style={{
                     position: 'absolute' as const,
-                    right: '-8px',
+                    right: '-7px',
                     top: '50%',
                     transform: 'translateY(-50%)',
                     zIndex: 1,
                     color: 'var(--muted)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.6875rem',
+                    opacity: 0.5,
                   }}
                 >
                   →
@@ -166,24 +167,23 @@ export function GtmPipeline() {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr 1fr',
-            gap: '1rem',
-            padding: '1rem',
+            gap: '0.75rem',
+            padding: '0.75rem',
             background: 'var(--background)',
-            borderRadius: '8px',
+            borderRadius: '6px',
             border: '1px solid var(--border)',
-            animation: 'fadeIn 0.2s ease',
           }}
         >
           {/* Pre-AI Tasks */}
           <div>
             <div
               style={{
-                fontSize: '0.6875rem',
+                fontSize: '0.5625rem',
                 fontWeight: 600,
                 textTransform: 'uppercase' as const,
-                letterSpacing: '0.05em',
+                letterSpacing: '0.06em',
                 color: 'var(--muted)',
-                marginBottom: '0.5rem',
+                marginBottom: '0.375rem',
               }}
             >
               Human Tasks
@@ -192,10 +192,10 @@ export function GtmPipeline() {
               <div
                 key={task}
                 style={{
-                  fontSize: '0.8125rem',
+                  fontSize: '0.75rem',
                   color: 'var(--foreground)',
-                  padding: '0.25rem 0',
-                  lineHeight: 1.4,
+                  padding: '0.125rem 0',
+                  lineHeight: 1.5,
                 }}
               >
                 {task}
@@ -207,12 +207,12 @@ export function GtmPipeline() {
           <div>
             <div
               style={{
-                fontSize: '0.6875rem',
+                fontSize: '0.5625rem',
                 fontWeight: 600,
                 textTransform: 'uppercase' as const,
-                letterSpacing: '0.05em',
+                letterSpacing: '0.06em',
                 color: 'var(--muted)',
-                marginBottom: '0.5rem',
+                marginBottom: '0.375rem',
               }}
             >
               Legacy Tools
@@ -221,10 +221,10 @@ export function GtmPipeline() {
               <div
                 key={tool}
                 style={{
-                  fontSize: '0.8125rem',
+                  fontSize: '0.75rem',
                   color: 'var(--text-secondary, var(--muted))',
-                  padding: '0.25rem 0',
-                  lineHeight: 1.4,
+                  padding: '0.125rem 0',
+                  lineHeight: 1.5,
                 }}
               >
                 {tool}
@@ -236,12 +236,12 @@ export function GtmPipeline() {
           <div>
             <div
               style={{
-                fontSize: '0.6875rem',
+                fontSize: '0.5625rem',
                 fontWeight: 600,
                 textTransform: 'uppercase' as const,
-                letterSpacing: '0.05em',
+                letterSpacing: '0.06em',
                 color: 'var(--muted)',
-                marginBottom: '0.5rem',
+                marginBottom: '0.375rem',
               }}
             >
               AI Status
@@ -249,13 +249,13 @@ export function GtmPipeline() {
             <div
               style={{
                 display: 'inline-block',
-                fontSize: '0.6875rem',
+                fontSize: '0.625rem',
                 fontWeight: 600,
                 color: aiImpactLabel[stages[activeStage].aiReplacement].color,
-                background: `${aiImpactLabel[stages[activeStage].aiReplacement].color}18`,
-                padding: '0.2rem 0.5rem',
-                borderRadius: '4px',
-                marginBottom: '0.5rem',
+                background: `${aiImpactLabel[stages[activeStage].aiReplacement].color}15`,
+                padding: '0.125rem 0.375rem',
+                borderRadius: '3px',
+                marginBottom: '0.25rem',
               }}
             >
               {aiImpactLabel[stages[activeStage].aiReplacement].text}
@@ -264,10 +264,10 @@ export function GtmPipeline() {
               <div
                 key={player}
                 style={{
-                  fontSize: '0.8125rem',
+                  fontSize: '0.75rem',
                   color: stages[activeStage].color,
-                  padding: '0.25rem 0',
-                  lineHeight: 1.4,
+                  padding: '0.125rem 0',
+                  lineHeight: 1.5,
                   fontWeight: 500,
                 }}
               >
@@ -283,12 +283,13 @@ export function GtmPipeline() {
         <div
           style={{
             textAlign: 'center' as const,
-            fontSize: '0.75rem',
+            fontSize: '0.6875rem',
             color: 'var(--muted)',
-            padding: '0.5rem 0',
+            padding: '0.25rem 0',
+            opacity: 0.6,
           }}
         >
-          Click a stage to see the pre-AI workflow and AI replacement
+          Click a stage to explore
         </div>
       )}
     </div>
