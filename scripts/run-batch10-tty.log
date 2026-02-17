@@ -1,0 +1,136 @@
+[2026-02-13 22:19:17] === Batch 1 START (10 companies) ===
+[2026-02-13 22:19:17] RUN: R1 
+[2026-02-13 22:19:30] === Batch 1 START (10 companies) ===
+[2026-02-13 22:19:30] RUN: R1 Terrene
+Error: Reached max turns (14)[2026-02-13 22:21:44] OK: R1 Terrene
+[2026-02-13 22:21:44] RUN: R1 OpenOcean Robotics
+Error: Reached max turns (14)[2026-02-13 22:23:20] OK: R1 OpenOcean Robotics
+[2026-02-13 22:23:20] RUN: R1 C2RO Robotics
+Error: Reached max turns (14)[2026-02-13 22:25:08] OK: R1 C2RO Robotics
+[2026-02-13 22:25:08] RUN: R1 Meya.ai
+Error: Reached max turns (14)[2026-02-13 22:28:14] OK: R1 Meya.ai
+[2026-02-13 22:28:14] RUN: R1 Sightline Innovation Inc.
+Error: Reached max turns (14)[2026-02-13 22:31:48] OK: R1 Sightline Innovation Inc.
+[2026-02-13 22:31:48] RUN: R1 NextAI
+Based on my research, here's the situation:
+
+**There is no single notable "NextAI" that fits the AIDO company profile well.** The entities I found are:
+
+1. **NEXT AI (nextcanada.com)** — An accelerator program in Canada, not a product company
+2. **NEXT AI (nextapp.co)** — A customer intelligence platform (could be a fit, but very small/early with no public funding data)
+3. **Next AI (en-nextai.com)** — A low-cost bundled AI tool suite ($14.95), not a serious AI-native startup
+4. **NextAI Studios (Kenya)** — Very early-stage, founded 2023
+5. **NextAI (Bengaluru)** — No-code GenAI tools, very small
+
+**None of these qualify as a notable AI-native startup worth profiling in AIDO.** The most interesting one might be the customer intelligence platform at nextapp.co, but it has:
+- No public funding data
+- No known founders
+- No Crunchbase/PitchBook presence
+- No press coverage
+- No open design roles
+
+Would you like me to:
+1. **Profile the NEXT AI customer intelligence platform (nextapp.co)** with whatever limited data is available?
+2. **Skip this company** — it doesn't meet the AIDO quality bar for profiling?
+3. **Try a different company name** — did you mean a different company?
+
+If you can share the specific website URL for the "NextAI" you had in mind, I can research that exact company.
+[2026-02-13 22:32:39] OK: R1 NextAI
+[2026-02-13 22:32:39] RUN: R1 UrbanLogiq
+Error: Reached max turns (14)[2026-02-13 22:36:59] OK: R1 UrbanLogiq
+[2026-02-13 22:36:59] RUN: R1 Aerial
+Error: Reached max turns (14)[2026-02-13 22:39:48] OK: R1 Aerial
+[2026-02-13 22:39:48] RUN: R1 Composio
+[2026-02-13 22:45:48] FAIL: R1 Composio (exit 143 or timeout)
+[2026-02-13 22:45:48] RUN: R1 Blok
+Error: Reached max turns (14)[2026-02-13 22:48:23] OK: R1 Blok
+[2026-02-13 22:48:23] RUN: R2 Batch 1
+## Batch Verification Summary
+
+### 7 Files Verified (PASS with fixes)
+
+| Company | File | Status | Issues Found |
+|---------|------|--------|-------------|
+| **Terrene** | `terrene.ts` | PASS | No issues. Dates `2017-07` valid. `leadInvestors: ['Techstars', 'Right Side Capital Management']` verified. |
+| **OpenOcean Robotics** | `open-ocean-robotics.ts` | PASS | No issues. Dates `2021-12`, `2024-10` valid. First round has `leadInvestors: []` (unknown) — correct. |
+| **C2RO** | `c2ro.ts` | PASS | No issues. Dates `2018-05`, `2019-07` valid. Lead investors named. |
+| **Meya** | `meya.ts` | PASS | No issues. Dates valid. Pre-seed round has `leadInvestors: []` — correct (Kickstarter-like). |
+| **UrbanLogiq** | `urbanlogiq.ts` | PASS | No issues. Date `2018-01` valid. `leadInvestors: ['500 Startups']` verified. |
+| **Aerial** | `aerial.ts` | PASS | Dates valid. `leadInvestors: []` for first round (unknown) — correct. |
+| **SortSpoke** | `sortspoke.ts` | PASS | (Not in original 10 but reviewed.) Clean. |
+
+### 2 Fixes Applied
+
+| Fix | File | Change |
+|-----|------|--------|
+| **Missing fundingHistory** | `sightline-innovation.ts` | Added `fundingHistory` array with seed round `CAD $4.5M`, date `2016`, `leadInvestors: []` (no known lead) |
+| **Missing from index array** | `index.ts` | Added `aerial` to the `companies[]` array (was imported but not included) |
+
+### 3 Files DO NOT EXIST
+
+| Company | Expected File | Status |
+|---------|--------------|--------|
+| **NextAI** | `src/data/companies/nextai.ts` | NOT FOUND — no file, not in index |
+| **Composio** | `src/data/companies/composio.ts` | NOT FOUND — `composite.ts` exists but is a different company |
+| **Blok** | `src/data/companies/blok.ts` | NOT FOUND — no file, not in index |
+
+These 3 companies need to be researched and created from scratch (out of scope for verification pass).
+
+### Visual Assets Check
+- `ogImage` set on: OpenOcean Robotics, C2RO, Meya, UrbanLogiq, SortSpoke — all reference existing files in `public/og-images/`
+- No `screenshot` fields found on any of the 10 target companies (Automat had one but is not in scope)
+[2026-02-13 22:49:53] OK: R2 Batch 1
+[2026-02-13 22:49:53] === Batch 1 END ===
+[2026-02-14 00:26:55] === Batch 2 START (10 companies) ===
+[2026-02-14 00:26:55] RUN: R1 Lindy
+Error: Reached max turns (14)[2026-02-14 00:32:27] OK: R1 Lindy
+[2026-02-14 00:32:27] RUN: R1 Nexad
+Error: Reached max turns (14)[2026-02-14 00:34:59] OK: R1 Nexad
+[2026-02-14 00:34:59] RUN: R1 Roadway
+Error: Reached max turns (14)[2026-02-14 00:37:30] OK: R1 Roadway
+[2026-02-14 00:37:30] RUN: R1 Lightsource
+[2026-02-14 00:43:30] FAIL: R1 Lightsource (exit 143 or timeout)
+[2026-02-14 00:43:30] RUN: R1 Backflip AI
+Error: Reached max turns (14)[2026-02-14 00:47:06] OK: R1 Backflip AI
+[2026-02-14 00:47:06] RUN: R1 Oxide Computer Company
+Error: Reached max turns (14)[2026-02-14 00:50:29] OK: R1 Oxide Computer Company
+[2026-02-14 00:50:29] RUN: R1 Ashby
+Error: Reached max turns (14)[2026-02-14 00:54:16] OK: R1 Ashby
+[2026-02-14 00:54:16] RUN: R1 Power
+Error: Reached max turns (14)[2026-02-14 00:56:47] OK: R1 Power
+[2026-02-14 00:56:47] RUN: R1 Salient
+Error: Reached max turns (14)[2026-02-14 00:59:30] OK: R1 Salient
+[2026-02-14 00:59:30] RUN: R1 Arcade
+Error: Reached max turns (14)[2026-02-14 01:02:21] OK: R1 Arcade
+[2026-02-14 01:02:21] RUN: R2 Batch 2
+## Batch Verification Complete
+
+### 7/10 Companies Verified Clean
+| Company | File | Status |
+|---------|------|--------|
+| Lindy | `lindy.ts` | Clean |
+| Nexad | `nexad.ts` | Clean |
+| Roadway | `roadway.ts` | Clean |
+| Backflip AI | `backflip-ai.ts` | Clean |
+| Oxide Computer | `oxide-computer.ts` | Clean |
+| Ashby | `ashby.ts` | Clean |
+| Salient | `salient.ts` | Clean |
+
+### 3 Companies NOT FOUND
+| Company | Issue |
+|---------|-------|
+| **Lightsource** | No file exists. Closest: `lightfield.ts`, `lighthouse.ts`, `lightpage.ts` |
+| **Power** | No file exists. No similar files found. |
+| **Arcade** | Ambiguous — two files: `arcade-ai.ts` and `arcade-dev.ts` |
+
+### Patches Applied (Arcade AI + Dev)
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `arcade-dev.ts:32` | Missing `leadInvestors` on Seed round | Added `leadInvestors: []` |
+| `arcade-ai.ts` | Missing `fundingHistory` entirely | Added `fundingHistory` array with `leadInvestors: []` |
+| `arcade-ai.ts:13` | `ogImage` was external URL (not local asset) | Removed `ogImage` field |
+| `arcade-ai.ts` | `lastUpdated` had datetime format `T13:05:00` | Normalized to `YYYY-MM-DD` |
+| `arcade-dev.ts` | `lastUpdated` had datetime format `T20:05:00` | Normalized to `YYYY-MM-DD` |
+[2026-02-14 01:04:11] OK: R2 Batch 2
+[2026-02-14 01:04:11] === Batch 2 END ===

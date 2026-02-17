@@ -1,0 +1,83 @@
+{
+  "updatedAt": "2026-02-14T09:04:11.528Z",
+  "batch": 2,
+  "total": 10,
+  "passed": 3,
+  "failed": 7,
+  "results": [
+    {
+      "name": "Lindy",
+      "companyId": "lindy",
+      "exists": true,
+      "issues": []
+    },
+    {
+      "name": "Nexad",
+      "companyId": "nexad",
+      "exists": true,
+      "issues": []
+    },
+    {
+      "name": "Roadway",
+      "companyId": "roadway",
+      "exists": true,
+      "issues": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "name": "Lightsource",
+      "companyId": "lightsource",
+      "exists": false,
+      "issues": [
+        "missing file"
+      ]
+    },
+    {
+      "name": "Backflip AI",
+      "companyId": "backflip-ai",
+      "exists": true,
+      "issues": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "name": "Oxide Computer Company",
+      "companyId": "oxide-computer",
+      "exists": true,
+      "issues": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "name": "Ashby",
+      "companyId": "ashby",
+      "exists": true,
+      "issues": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "name": "Power",
+      "companyId": "power",
+      "exists": false,
+      "issues": [
+        "missing file"
+      ]
+    },
+    {
+      "name": "Salient",
+      "companyId": "salient",
+      "exists": true,
+      "issues": []
+    },
+    {
+      "name": "Arcade",
+      "companyId": "arcade",
+      "exists": false,
+      "issues": [
+        "missing file"
+      ]
+    }
+  ]
+}

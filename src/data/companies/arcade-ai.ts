@@ -9,7 +9,6 @@ export const arcadeAi: Company = {
   remote: 'No',
 
   // Visual Assets
-  ogImage: 'https://www.arcade.ai/_next/static/media/arcade-word.0a3bb62b.svg',
   screenshot: 'https://iad.microlink.io/XEO9Xgv_8TloLjUTyzdKXmBsVwfVVREyX_kyCUXNRknd72LTfxZzp_vnh0ufq_NsyyXTCxh2wSsNeui0ZOFrRA.png',
 
   // Multi-dimensional Tags
@@ -23,6 +22,9 @@ export const arcadeAi: Company = {
   stage: 'Series A',
   valuation: 'Unknown',
   totalFunding: '$25M',
+  fundingHistory: [
+    { stage: 'Series A', amount: '$25M', date: 'Unknown', leadInvestors: [] },
+  ],
   revenue: 'Unknown',
   growth: 'Unknown',
   runway: 'Unknown',
@@ -119,7 +121,7 @@ export const arcadeAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T13:05:00',
+  lastUpdated: '2026-02-01',
   sources: [
     { title: 'Source', url: 'https://arcade.ai' },
     { title: 'Source', url: 'https://startups.gallery/companies/arcade-ai' }

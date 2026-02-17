@@ -1,7 +1,7 @@
 import { Company } from '../types';
 
-export const meya: Company = {
-  id: 'meya',
+export const meyaAi: Company = {
+  id: 'meya-ai',
   name: 'Meya',
   description:
     'Developer-first conversational AI platform for building, training, and deploying custom chatbots across messaging channels with Python/BFML scripting.',
@@ -214,7 +214,7 @@ export const meya: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-13',
+  lastUpdated: '2026-02-14',
   sources: [
     { title: 'Meya Official Website', url: 'https://www.meya.ai/' },
     { title: 'Meya Crunchbase Profile', url: 'https://www.crunchbase.com/organization/meya-ai' },

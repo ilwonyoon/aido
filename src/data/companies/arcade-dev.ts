@@ -28,7 +28,7 @@ export const arcadeDev: Company = {
   valuation: 'Unknown',
   totalFunding: '$12M',
   fundingHistory: [
-    { stage: 'Seed', amount: '$12M', date: '2025-03' },
+    { stage: 'Seed', amount: '$12M', date: '2025-03', leadInvestors: [] },
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
@@ -203,7 +203,7 @@ export const arcadeDev: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T20:05:00',
+  lastUpdated: '2026-01-27',
   sources: [
     { title: 'Source', url: 'https://www.arcade.dev/' },
     { title: 'Source', url: 'https://startups.gallery/companies/arcade-dev' }

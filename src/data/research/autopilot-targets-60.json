@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2026-02-14T03:59:17.686Z",
+  "total": 60,
+  "items": [
+    {
+      "name": "Terrene",
+      "companyId": "terrene",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "OpenOcean Robotics",
+      "companyId": "openocean-robotics",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "C2RO Robotics",
+      "companyId": "c2ro-robotics",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "Meya.ai",
+      "companyId": "meya-ai",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "Sightline Innovation Inc.",
+      "companyId": "sightline-innovation",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "NextAI",
+      "companyId": "nextai",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "UrbanLogiq",
+      "companyId": "urbanlogiq",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "Aerial",
+      "companyId": "aerial",
+      "source": "seedtable-69-queued"
+    },
+    {
+      "name": "Composio",
+      "companyId": "composio",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Blok",
+      "companyId": "blok",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Lindy",
+      "companyId": "lindy",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Nexad",
+      "companyId": "nexad",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Roadway",
+      "companyId": "roadway",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Lightsource",
+      "companyId": "lightsource",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Backflip AI",
+      "companyId": "backflip-ai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Oxide Computer Company",
+      "companyId": "oxide-computer",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Ashby",
+      "companyId": "ashby",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Power",
+      "companyId": "power",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Salient",
+      "companyId": "salient",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Arcade",
+      "companyId": "arcade",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Atob",
+      "companyId": "atob",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Pocus",
+      "companyId": "pocus",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Endeavor",
+      "companyId": "endeavor",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Armada",
+      "companyId": "armada",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Vanta",
+      "companyId": "vanta",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Density",
+      "companyId": "density",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Momentum",
+      "companyId": "momentum",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Deepnote",
+      "companyId": "deepnote",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Fireflies",
+      "companyId": "fireflies",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Hex",
+      "companyId": "hex",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Dakota",
+      "companyId": "dakota",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Shepherd",
+      "companyId": "shepherd",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Bland",
+      "companyId": "bland",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Orchid",
+      "companyId": "orchid",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Magic",
+      "companyId": "magic",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Jam",
+      "companyId": "jam",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Olipop",
+      "companyId": "olipop",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Dotwork",
+      "companyId": "dotwork",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Stable Sea",
+      "companyId": "stable-sea",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Laurel",
+      "companyId": "laurel",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Krea AI",
+      "companyId": "krea-ai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Prismax",
+      "companyId": "prismax",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Nile",
+      "companyId": "nile",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Finix",
+      "companyId": "finix",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Resend",
+      "companyId": "resend",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Genesis AI",
+      "companyId": "genesis-ai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Palmstreet",
+      "companyId": "palmstreet",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Pally",
+      "companyId": "pally",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Superlinked",
+      "companyId": "superlinked",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Leen",
+      "companyId": "leen",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Better Auth",
+      "companyId": "better-auth",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Day AI",
+      "companyId": "day-ai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Decagon",
+      "companyId": "decagon",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Lumos",
+      "companyId": "lumos",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Seriesai",
+      "companyId": "seriesai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Kindred",
+      "companyId": "kindred",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Slope",
+      "companyId": "slope",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Assembled",
+      "companyId": "assembled",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Assemblyai",
+      "companyId": "assemblyai",
+      "source": "startups-gallery-San Francisco"
+    },
+    {
+      "name": "Beacons",
+      "companyId": "beacons",
+      "source": "startups-gallery-San Francisco"
+    }
+  ]
+}

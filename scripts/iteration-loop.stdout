@@ -1,0 +1,3 @@
+[2026-02-17T18:10:53.354Z] START iteration loop | phases=A,B,C | targets=60
+[2026-02-17T18:10:53.382Z] PHASE A candidates=35
+[2026-02-17T18:10:53.383Z] RUN A nextai

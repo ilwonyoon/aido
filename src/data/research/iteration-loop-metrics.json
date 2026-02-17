@@ -1,0 +1,392 @@
+{
+  "startedAt": "2026-02-14T16:48:10Z",
+  "entries": [
+    {
+      "at": "2026-02-14T16:49:18.895Z",
+      "pass": "A",
+      "companyId": "nextai",
+      "ok": true,
+      "durationSec": 69,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-14T16:51:21.610Z",
+      "pass": "A",
+      "companyId": "composio",
+      "ok": true,
+      "durationSec": 123,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T16:53:17.658Z",
+      "pass": "A",
+      "companyId": "blok",
+      "ok": true,
+      "durationSec": 116,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T16:56:05.782Z",
+      "pass": "A",
+      "companyId": "lightsource",
+      "ok": true,
+      "durationSec": 168,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T16:56:30.589Z",
+      "pass": "B",
+      "companyId": "sightline-innovation",
+      "ok": true,
+      "durationSec": 25,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-14T16:57:37.681Z",
+      "pass": "B",
+      "companyId": "nextai",
+      "ok": true,
+      "durationSec": 67,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-14T16:58:24.875Z",
+      "pass": "B",
+      "companyId": "aerial",
+      "ok": true,
+      "durationSec": 47,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T16:59:03.818Z",
+      "pass": "B",
+      "companyId": "roadway",
+      "ok": true,
+      "durationSec": 39,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T16:59:43.077Z",
+      "pass": "B",
+      "companyId": "backflip-ai",
+      "ok": true,
+      "durationSec": 39,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T17:01:07.469Z",
+      "pass": "B",
+      "companyId": "oxide-computer",
+      "ok": true,
+      "durationSec": 84,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T17:02:53.654Z",
+      "pass": "B",
+      "companyId": "ashby",
+      "ok": true,
+      "durationSec": 106,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-14T17:03:14.502Z",
+      "pass": "B",
+      "companyId": "power",
+      "ok": true,
+      "durationSec": 21,
+      "issuesAfter": [
+        "fundingHistory missing"
+      ]
+    },
+    {
+      "at": "2026-02-14T17:04:02.557Z",
+      "pass": "C",
+      "companyId": "sightline-innovation",
+      "ok": true,
+      "durationSec": 48,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-14T17:05:20.867Z",
+      "pass": "C",
+      "companyId": "nextai",
+      "ok": true,
+      "durationSec": 78,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-14T17:08:37.837Z",
+      "pass": "C",
+      "companyId": "power",
+      "ok": true,
+      "durationSec": 197,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:27:50.023Z",
+      "pass": "A",
+      "companyId": "atob",
+      "ok": true,
+      "durationSec": 157,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:31:39.408Z",
+      "pass": "A",
+      "companyId": "pocus",
+      "ok": true,
+      "durationSec": 229,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:33:42.054Z",
+      "pass": "A",
+      "companyId": "endeavor",
+      "ok": true,
+      "durationSec": 123,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-17T22:35:54.744Z",
+      "pass": "A",
+      "companyId": "density",
+      "ok": true,
+      "durationSec": 133,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:39:17.161Z",
+      "pass": "A",
+      "companyId": "momentum",
+      "ok": true,
+      "durationSec": 202,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:43:50.420Z",
+      "pass": "A",
+      "companyId": "deepnote",
+      "ok": true,
+      "durationSec": 273,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:45:58.922Z",
+      "pass": "A",
+      "companyId": "fireflies",
+      "ok": true,
+      "durationSec": 128,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:48:17.871Z",
+      "pass": "A",
+      "companyId": "hex",
+      "ok": true,
+      "durationSec": 139,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:50:34.461Z",
+      "pass": "A",
+      "companyId": "dakota",
+      "ok": true,
+      "durationSec": 137,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:52:15.876Z",
+      "pass": "A",
+      "companyId": "shepherd",
+      "ok": true,
+      "durationSec": 101,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-17T22:54:36.736Z",
+      "pass": "A",
+      "companyId": "bland",
+      "ok": true,
+      "durationSec": 141,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T22:56:57.509Z",
+      "pass": "A",
+      "companyId": "jam",
+      "ok": true,
+      "durationSec": 141,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:00:35.656Z",
+      "pass": "A",
+      "companyId": "olipop",
+      "ok": true,
+      "durationSec": 218,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:02:49.692Z",
+      "pass": "A",
+      "companyId": "dotwork",
+      "ok": true,
+      "durationSec": 134,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:05:23.792Z",
+      "pass": "A",
+      "companyId": "laurel",
+      "ok": true,
+      "durationSec": 154,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:07:37.378Z",
+      "pass": "A",
+      "companyId": "krea-ai",
+      "ok": true,
+      "durationSec": 134,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:09:49.617Z",
+      "pass": "A",
+      "companyId": "prismax",
+      "ok": true,
+      "durationSec": 132,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:12:11.015Z",
+      "pass": "A",
+      "companyId": "nile",
+      "ok": true,
+      "durationSec": 141,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:16:03.707Z",
+      "pass": "A",
+      "companyId": "finix",
+      "ok": true,
+      "durationSec": 233,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:18:29.952Z",
+      "pass": "A",
+      "companyId": "resend",
+      "ok": true,
+      "durationSec": 146,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:20:42.004Z",
+      "pass": "A",
+      "companyId": "genesis-ai",
+      "ok": true,
+      "durationSec": 132,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:22:02.969Z",
+      "pass": "A",
+      "companyId": "palmstreet",
+      "ok": true,
+      "durationSec": 81,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:23:46.091Z",
+      "pass": "A",
+      "companyId": "pally",
+      "ok": true,
+      "durationSec": 103,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:27:26.361Z",
+      "pass": "A",
+      "companyId": "superlinked",
+      "ok": true,
+      "durationSec": 220,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:29:44.940Z",
+      "pass": "A",
+      "companyId": "leen",
+      "ok": true,
+      "durationSec": 139,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:32:02.266Z",
+      "pass": "A",
+      "companyId": "better-auth",
+      "ok": true,
+      "durationSec": 137,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:36:37.999Z",
+      "pass": "A",
+      "companyId": "day-ai",
+      "ok": true,
+      "durationSec": 276,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:40:52.307Z",
+      "pass": "A",
+      "companyId": "decagon",
+      "ok": true,
+      "durationSec": 254,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:45:12.179Z",
+      "pass": "A",
+      "companyId": "lumos",
+      "ok": true,
+      "durationSec": 260,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:46:50.478Z",
+      "pass": "A",
+      "companyId": "seriesai",
+      "ok": true,
+      "durationSec": 98,
+      "issuesAfter": [
+        "missing file"
+      ]
+    }
+  ],
+  "updatedAt": "2026-02-17T23:46:50.478Z"
+}

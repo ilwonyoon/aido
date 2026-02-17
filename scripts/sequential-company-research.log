@@ -1,0 +1,14 @@
+[2026-02-14T08:21:26.584Z] START sequential mode | targets=10 | batch=1 | retryFailedOnly=true
+[2026-02-14T08:21:26.588Z] SKIP non-failed terrene
+[2026-02-14T08:21:26.588Z] SKIP non-failed openocean-robotics
+[2026-02-14T08:21:26.588Z] SKIP non-failed c2ro-robotics
+[2026-02-14T08:21:26.588Z] SKIP non-failed meya-ai
+[2026-02-14T08:21:26.588Z] SKIP non-failed sightline-innovation
+[2026-02-14T08:21:26.588Z] SKIP non-failed nextai
+[2026-02-14T08:21:26.588Z] SKIP non-failed urbanlogiq
+[2026-02-14T08:21:26.588Z] SKIP non-failed aerial
+[2026-02-14T08:21:26.588Z] SKIP non-failed composio
+[2026-02-14T08:21:26.588Z] SKIP non-failed blok
+[2026-02-14T08:21:26.588Z] SUMMARY done=0 failed=0 running=0 totalTracked=0
+[2026-02-14T08:21:35.351Z] START sequential mode | targets=10 | batch=1
+[2026-02-14T08:21:35.354Z] RUN R1 Terrene

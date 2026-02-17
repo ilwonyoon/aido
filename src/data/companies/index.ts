@@ -120,6 +120,7 @@ import { dcbel } from './dcbel';
 import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
 import { dayAi } from './day-ai';
+import { decagon } from './decagon';
 import { decart } from './decart';
 import { dedalusLabs } from './dedalus-labs';
 import { density } from './density';
@@ -263,6 +264,7 @@ import { livekit } from './livekit';
 import { llmarena } from './llmarena';
 import { lomanAi } from './loman-ai';
 import { loonen } from './loonen';
+import { lumos } from './lumos';
 import { loop } from './loop';
 import { lovable } from './lovable';
 import { loyalDogs } from './loyal-dogs';
@@ -639,6 +641,7 @@ export const companies: Company[] = [
   datacurve,
   davidAi,
   dayAi,
+  decagon,
   decart,
   dedalusLabs,
   density,
@@ -781,6 +784,7 @@ export const companies: Company[] = [
   llmarena,
   lomanAi,
   loonen,
+  lumos,
   loop,
   lovable,
   loyalDogs,
