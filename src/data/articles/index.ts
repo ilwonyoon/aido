@@ -19,8 +19,10 @@ import { listenLabsDeepDiveFoundingDesignerZeroToOne } from './content/listen-la
 import { writerDeepDiveEnterpriseAiPlatformDesign } from './content/writer-deep-dive-enterprise-ai-platform-design';
 import { huggingFaceDeepDiveGithubOfMlDesign } from './content/hugging-face-deep-dive-github-of-ml-design';
 import { gtmAiBeforeAndAfter } from './content/gtm-ai-before-and-after';
+import { sierraDeepDiveAiCustomerExperienceDesign } from './content/sierra-deep-dive-ai-customer-experience-design';
 
 export const articles: Article[] = [
+  sierraDeepDiveAiCustomerExperienceDesign,
   gtmAiBeforeAndAfter,
   huggingFaceDeepDiveGithubOfMlDesign,
   writerDeepDiveEnterpriseAiPlatformDesign,
