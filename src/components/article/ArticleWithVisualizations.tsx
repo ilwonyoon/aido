@@ -48,7 +48,7 @@ export function ArticleWithVisualizations({ content, visualizations = {} }: Prop
         }
         if (section.type === 'visualization' && section.vizId && visualizations[section.vizId]) {
           return (
-            <div key={i} style={{ margin: '1.5rem 0' }}>
+            <div key={i} style={{ margin: '2.5rem 0' }}>
               {visualizations[section.vizId]}
             </div>
           );
