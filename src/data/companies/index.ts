@@ -4,6 +4,7 @@ import { abridge } from './abridge';
 import { ada } from './ada';
 import { adalineAi } from './adaline-ai';
 import { aegisai } from './aegisai';
+import { aerial } from './aerial';
 import { aetherflux } from './aetherflux';
 import { agora } from './agora';
 import { aiShift } from './ai-shift';
@@ -27,6 +28,7 @@ import { aquaVoice } from './aqua-voice';
 import { arc } from './arc';
 import { arcadeAi } from './arcade-ai';
 import { arcadeDev } from './arcade-dev';
+import { ashby } from './ashby';
 import { artie } from './artie';
 import { assortHealth } from './assort-health';
 import { astromech } from './astromech';
@@ -36,6 +38,7 @@ import { aurasell } from './aurasell';
 import { avidbots } from './avidbots';
 import { axiom } from './axiom';
 import { axiomMath } from './axiom-math';
+import { backflipAi } from './backflip-ai';
 import { base44 } from './base44';
 import { baseten } from './baseten';
 import { beautifulAi } from './beautiful-ai';
@@ -46,6 +49,8 @@ import { bindwell } from './bindwell';
 import { blackbirdLabs } from './blackbird-labs';
 import { blacksmith } from './blacksmith';
 import { blazeAi } from './blaze-ai';
+import { bland } from './bland';
+import { blok } from './blok';
 import { blossom } from './blossom';
 import { bluedot } from './bluedot';
 import { botpress } from './botpress';
@@ -104,6 +109,7 @@ import { convokeBio } from './convoke-bio';
 import { copyAi } from './copy-ai';
 import { corgi } from './corgi';
 import { crowdriff } from './crowdriff';
+import { cryptonumerics } from './cryptonumerics';
 import { cube } from './cube';
 import { curans } from './curans';
 import { cursor } from './cursor';
@@ -114,7 +120,9 @@ import { datacurve } from './datacurve';
 import { davidAi } from './david-ai';
 import { decart } from './decart';
 import { dedalusLabs } from './dedalus-labs';
+import { density } from './density';
 import { deepgram } from './deepgram';
+import { deepnote } from './deepnote';
 import { delphi } from './delphi';
 import { delve } from './delve';
 import { descript } from './descript';
@@ -144,8 +152,10 @@ import { fastino } from './fastino';
 import { fermat } from './fermat';
 import { fieldAi } from './field-ai';
 import { figma } from './figma';
+import { finix } from './finix';
 import { finnAi } from './finn-ai';
 import { firecrawl } from './firecrawl';
+import { fireflies } from './fireflies';
 import { flint } from './flint';
 import { flowEngineering } from './flow-engineering';
 import { flybits } from './flybits';
@@ -160,6 +170,7 @@ import { gamma } from './gamma';
 import { gcAi } from './gc-ai';
 import { generationLab } from './generation-lab';
 import { genspark } from './genspark';
+import { genesisAi } from './genesis-ai';
 import { gigaml } from './gigaml';
 import { gigs } from './gigs';
 import { glean } from './glean';
@@ -178,6 +189,7 @@ import { harmonic } from './harmonic';
 import { harvey } from './harvey';
 import { hebbia } from './hebbia';
 import { hedraAi } from './hedra-ai';
+import { hex } from './hex';
 import { heirloom } from './heirloom';
 import { heyday } from './heyday';
 import { heygen } from './heygen';
@@ -216,6 +228,7 @@ import { itemApp } from './item-app';
 import { juliusAi } from './julius-ai';
 import { ivo } from './ivo';
 import { jackAndJill } from './jack-and-jill';
+import { jam } from './jam';
 import { jasper } from './jasper';
 import { juicebox } from './juicebox';
 import { kaedim } from './kaedim';
@@ -227,9 +240,11 @@ import { klue } from './klue';
 import { landr } from './landr';
 import { langbase } from './langbase';
 import { langchain } from './langchain';
+import { laurel } from './laurel';
 import { layerFinancial } from './layer-financial';
 import { leddartech } from './leddartech';
 import { legendXyz } from './legend-xyz';
+import { legora } from './legora';
 import { letta } from './letta';
 import { lettuce } from './lettuce';
 import { leya } from './leya';
@@ -237,7 +252,10 @@ import { lgnd } from './lgnd';
 import { lightfield } from './lightfield';
 import { lighthouse } from './lighthouse';
 import { lightpage } from './lightpage';
+import { lightsource } from './lightsource';
+import { lindy } from './lindy';
 import { linear } from './linear';
+import { liquidAi } from './liquid-ai';
 import { listenLabs } from './listen-labs';
 import { livekit } from './livekit';
 import { llmarena } from './llmarena';
@@ -265,6 +283,7 @@ import { merge } from './merge';
 import { meter } from './meter';
 import { metronome } from './metronome';
 import { meya } from './meya';
+import { meyaAi } from './meya-ai';
 import { micro1 } from './micro1';
 import { midday } from './midday';
 import { middesk } from './middesk';
@@ -274,6 +293,7 @@ import { mistral } from './mistral';
 import { miter } from './miter';
 import { modular } from './modular';
 import { momentic } from './momentic';
+import { momentum } from './momentum';
 import { moonlakeAi } from './moonlake-ai';
 import { mosey } from './mosey';
 import { motif } from './motif';
@@ -287,8 +307,10 @@ import { neruHealth } from './neru-health';
 import { netic } from './netic';
 import { netramark } from './netramark';
 import { newlimit } from './newlimit';
+import { nexad } from './nexad';
 import { nexhealth } from './nexhealth';
 import { nexus } from './nexus';
+import { nile } from './nile';
 import { nokken } from './nokken';
 import { nooks } from './nooks';
 import { notion } from './notion';
@@ -301,6 +323,7 @@ import { nuvo } from './nuvo';
 import { obieAi } from './obie-ai';
 import { odyssey } from './odyssey';
 import { ohmd } from './ohmd';
+import { olipop } from './olipop';
 import { onton } from './onton';
 import { onyx } from './onyx';
 import { openOceanRobotics } from './open-ocean-robotics';
@@ -315,6 +338,7 @@ import { orionSleep } from './orion-sleep';
 import { osmind } from './osmind';
 import { osmosis } from './osmosis';
 import { otterAi } from './otter-ai';
+import { overjet } from './overjet';
 import { overlapAi } from './overlap-ai';
 import { oway } from './oway';
 import { owner } from './owner';
@@ -329,6 +353,7 @@ import { partnerstack } from './partnerstack';
 import { patch } from './patch';
 import { perleAi } from './perle-ai';
 import { perplexity } from './perplexity';
+import { phenomicAi } from './phenomic-ai';
 import { phonely } from './phonely';
 import { physicalIntelligence } from './physical-intelligence';
 import { pierre } from './pierre';
@@ -336,11 +361,13 @@ import { piinpoint } from './piinpoint';
 import { pika } from './pika';
 import { pitstop } from './pitstop';
 import { playbook } from './playbook';
+import { pocus } from './pocus';
 import { podqi } from './podqi';
 import { polycam } from './polycam';
 import { poolside } from './poolside';
 import { posthog } from './posthog';
 import { primeIntellect } from './prime-intellect';
+import { prismax } from './prismax';
 import { privateAi } from './private-ai';
 import { promisePay } from './promise-pay';
 import { pulley } from './pulley';
@@ -370,6 +397,7 @@ import { roboflow } from './roboflow';
 import { rox } from './rox';
 import { runway } from './runway';
 import { safetykit } from './safetykit';
+import { salient } from './salient';
 import { sanity } from './sanity';
 import { sauronSystems } from './sauron-systems';
 import { scaleAi } from './scale-ai';
@@ -385,6 +413,7 @@ import { sharpestminds } from './sharpestminds';
 import { shopify } from './shopify';
 import { shortwave } from './shortwave';
 import { sierra } from './sierra';
+import { sightlineInnovation } from './sightline-innovation';
 import { skyhive } from './skyhive';
 import { slash } from './slash';
 import { snaptravel } from './snaptravel';
@@ -392,6 +421,7 @@ import { solaSecurity } from './sola-security';
 import { solidroad } from './solidroad';
 import { sonatic } from './sonatic';
 import { sonder } from './sonder';
+import { sortspoke } from './sortspoke';
 import { sourcegraph } from './sourcegraph';
 import { span } from './span';
 import { speakeasy } from './speakeasy';
@@ -414,6 +444,7 @@ import { supabase } from './supabase';
 import { superhuman } from './superhuman';
 import { supermemory } from './supermemory';
 import { superpower } from './superpower';
+import { superlinked } from './superlinked';
 import { surgeAi } from './surge-ai';
 import { swae } from './swae';
 import { sway } from './sway';
@@ -431,6 +462,7 @@ import { tensormesh } from './tensormesh';
 import { teraAi } from './tera-ai';
 import { terradot } from './terradot';
 import { terramera } from './terramera';
+import { terrene } from './terrene';
 import { thatch } from './thatch';
 import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
 import { things } from './things';
@@ -454,6 +486,7 @@ import { unlimitedIndustries } from './unlimited-industries';
 import { unstructured } from './unstructured';
 import { untilLabs } from './until-labs';
 import { upwind } from './upwind';
+import { urbanlogiq } from './urbanlogiq';
 import { validere } from './validere';
 import { vantageAnalytics } from './vantage-analytics';
 import { vapi } from './vapi';
@@ -487,6 +520,7 @@ export const companies: Company[] = [
   abridge,
   ada,
   adalineAi,
+  aerial,
   aegisai,
   aetherflux,
   agora,
@@ -511,6 +545,7 @@ export const companies: Company[] = [
   arc,
   arcadeAi,
   arcadeDev,
+  ashby,
   artie,
   assortHealth,
   astromech,
@@ -520,6 +555,7 @@ export const companies: Company[] = [
   avidbots,
   axiomMath,
   axiom,
+  backflipAi,
   base44,
   baseten,
   beautifulAi,
@@ -530,6 +566,8 @@ export const companies: Company[] = [
   blackbirdLabs,
   blacksmith,
   blazeAi,
+  bland,
+  blok,
   blossom,
   bluedot,
   botpress,
@@ -588,6 +626,7 @@ export const companies: Company[] = [
   copyAi,
   corgi,
   crowdriff,
+  cryptonumerics,
   cube,
   curans,
   cursor,
@@ -598,7 +637,9 @@ export const companies: Company[] = [
   davidAi,
   decart,
   dedalusLabs,
+  density,
   deepgram,
+  deepnote,
   delphi,
   delve,
   descript,
@@ -627,8 +668,10 @@ export const companies: Company[] = [
   fermat,
   fieldAi,
   figma,
+  finix,
   finnAi,
   firecrawl,
+  fireflies,
   flint,
   flowEngineering,
   flybits,
@@ -643,6 +686,7 @@ export const companies: Company[] = [
   gcAi,
   generationLab,
   genspark,
+  genesisAi,
   gigaml,
   gigs,
   glean,
@@ -661,6 +705,7 @@ export const companies: Company[] = [
   harvey,
   hebbia,
   hedraAi,
+  hex,
   heirloom,
   heyday,
   heygen,
@@ -699,6 +744,7 @@ export const companies: Company[] = [
   juliusAi,
   ivo,
   jackAndJill,
+  jam,
   jasper,
   juicebox,
   kaedim,
@@ -710,9 +756,11 @@ export const companies: Company[] = [
   landr,
   langbase,
   langchain,
+  laurel,
   layerFinancial,
   leddartech,
   legendXyz,
+  legora,
   letta,
   lettuce,
   leya,
@@ -720,7 +768,10 @@ export const companies: Company[] = [
   lightfield,
   lighthouse,
   lightpage,
+  lightsource,
+  lindy,
   linear,
+  liquidAi,
   listenLabs,
   livekit,
   llmarena,
@@ -748,6 +799,7 @@ export const companies: Company[] = [
   meter,
   metronome,
   meya,
+  meyaAi,
   micro1,
   midday,
   middesk,
@@ -757,6 +809,7 @@ export const companies: Company[] = [
   miter,
   modular,
   momentic,
+  momentum,
   moonlakeAi,
   mosey,
   motif,
@@ -770,8 +823,10 @@ export const companies: Company[] = [
   netic,
   netramark,
   newlimit,
+  nexad,
   nexhealth,
   nexus,
+  nile,
   nokken,
   nooks,
   notion,
@@ -798,6 +853,7 @@ export const companies: Company[] = [
   osmind,
   osmosis,
   otterAi,
+  overjet,
   overlapAi,
   oway,
   owner,
@@ -812,6 +868,7 @@ export const companies: Company[] = [
   patch,
   perleAi,
   perplexity,
+  phenomicAi,
   phonely,
   physicalIntelligence,
   pierre,
@@ -819,11 +876,13 @@ export const companies: Company[] = [
   pika,
   pitstop,
   playbook,
+  pocus,
   podqi,
   polycam,
   poolside,
   posthog,
   primeIntellect,
+  prismax,
   privateAi,
   promisePay,
   pulley,
@@ -853,6 +912,7 @@ export const companies: Company[] = [
   rox,
   runway,
   safetykit,
+  salient,
   sanity,
   sauronSystems,
   scaleAi,
@@ -868,6 +928,7 @@ export const companies: Company[] = [
   shopify,
   shortwave,
   sierra,
+  sightlineInnovation,
   skyhive,
   slash,
   snaptravel,
@@ -875,6 +936,7 @@ export const companies: Company[] = [
   solidroad,
   sonatic,
   sonder,
+  sortspoke,
   sourcegraph,
   span,
   speakeasy,
@@ -897,6 +959,7 @@ export const companies: Company[] = [
   superhuman,
   supermemory,
   superpower,
+  superlinked,
   surgeAi,
   swae,
   sway,
@@ -914,6 +977,7 @@ export const companies: Company[] = [
   teraAi,
   terradot,
   terramera,
+  terrene,
   thatch,
   theInteractionCompanyOfCalifornia,
   things,
@@ -937,6 +1001,7 @@ export const companies: Company[] = [
   unstructured,
   untilLabs,
   upwind,
+  urbanlogiq,
   validere,
   vantageAnalytics,
   vapi,
