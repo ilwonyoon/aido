@@ -28,7 +28,10 @@ import { aquaVoice } from './aqua-voice';
 import { arc } from './arc';
 import { arcadeAi } from './arcade-ai';
 import { arcadeDev } from './arcade-dev';
+import { armada } from './armada';
 import { ashby } from './ashby';
+import { assembled } from './assembled';
+import { assemblyai } from './assemblyai';
 import { artie } from './artie';
 import { assortHealth } from './assort-health';
 import { astromech } from './astromech';
@@ -41,6 +44,7 @@ import { axiomMath } from './axiom-math';
 import { backflipAi } from './backflip-ai';
 import { base44 } from './base44';
 import { baseten } from './baseten';
+import { beacons } from './beacons';
 import { beautifulAi } from './beautiful-ai';
 import { bedrockRobotics } from './bedrock-robotics';
 import { bem } from './bem';
@@ -348,6 +352,7 @@ import { oway } from './oway';
 import { owner } from './owner';
 import { pacificFusion } from './pacific-fusion';
 import { pallet } from './pallet';
+import { pally } from './pally';
 import { paper } from './paper';
 import { parabola } from './parabola';
 import { paradigm } from './paradigm';
@@ -493,6 +498,7 @@ import { untilLabs } from './until-labs';
 import { upwind } from './upwind';
 import { urbanlogiq } from './urbanlogiq';
 import { validere } from './validere';
+import { vanta } from './vanta';
 import { vantageAnalytics } from './vantage-analytics';
 import { vapi } from './vapi';
 import { variant } from './variant';
@@ -551,6 +557,8 @@ export const companies: Company[] = [
   arcadeAi,
   arcadeDev,
   ashby,
+  assembled,
+  assemblyai,
   artie,
   assortHealth,
   astromech,
@@ -1013,6 +1021,7 @@ export const companies: Company[] = [
   upwind,
   urbanlogiq,
   validere,
+  vanta,
   vantageAnalytics,
   vapi,
   variant,

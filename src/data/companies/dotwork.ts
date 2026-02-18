@@ -15,7 +15,7 @@ export const dotwork: Company = {
   category: 'enterprise-ops' as const,
   industries: ['productivity'],
   stage: 'Series A',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$12M',
   fundingHistory: [
     {
@@ -135,6 +135,13 @@ export const dotwork: Company = {
       source: 'linkedin',
       sentiment: 'positive',
       content: 'Small, tight-knit team of 9 with deep enterprise SaaS experience from AgileCraft/Atlassian era. Founder-led with strong product vision.',
+      url: 'https://www.linkedin.com/company/dotwork/',
+    },
+    {
+      source: 'company',
+      sentiment: 'neutral',
+      content: 'Early-stage operating cadence centers on partner/channel expansion alongside AI-native product delivery.',
+      url: 'https://www.dotwork.com/post/introducing-dotwork-partners',
     },
   ],
   growthMetrics: {
@@ -185,5 +192,6 @@ export const dotwork: Company = {
     { title: 'Dotwork Series A Announcement', url: 'https://www.dotwork.com/post/dotwork-raises-12m-series-a-launches-early-access-to-strategic-alignment-platform' },
     { title: 'Dotwork Careers — no Product Design roles found', url: 'https://www.dotwork.com/apply' },
     { title: 'Dotwork — Crunchbase', url: 'https://www.crunchbase.com/organization/dotwork' },
+    { title: 'Dotwork LinkedIn Company Profile', url: 'https://www.linkedin.com/company/dotwork/' },
   ],
 };

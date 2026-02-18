@@ -17,10 +17,10 @@ export const dakota: Company = {
   industries: ['fintech'],
 
   stage: 'Private (Bootstrapped/Growth)',
-  valuation: 'Unknown',
-  totalFunding: 'Unknown',
+  valuation: 'Not publicly disclosed',
+  totalFunding: 'Not publicly disclosed',
   fundingHistory: [],
-  revenue: 'Unknown',
+  revenue: 'Not publicly disclosed',
   growth: '5,000+ marketplace customers; $40B+ raised for partners since 2006',
   runway: 'Established (operating since 2006)',
   customers: '5,000+ fundraisers and leading global investment firms',
@@ -126,7 +126,20 @@ export const dakota: Company = {
 
   openRoles: [],
 
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'company',
+      sentiment: 'positive',
+      content: 'Long operating history since 2006 and practitioner-led positioning point to a sales-operations culture with strong domain expertise.',
+      url: 'https://www.dakota.com/about-dakota',
+    },
+    {
+      source: 'media',
+      sentiment: 'neutral',
+      content: 'Advisory board formation in 2025 signals an explicit push toward formalized strategic governance and product scaling.',
+      url: 'https://www.businesswire.com/news/home/20250701617282/en/Dakota-Announces-Formation-of-Advisory-Board-to-Accelerate-Strategic-Growth-and-Product-Evolution',
+    },
+  ],
 
   growthMetrics: {
     stage: 'mature-growth',
@@ -176,5 +189,6 @@ export const dakota: Company = {
     { title: 'Dakota AI Features Blog (2026)', url: 'https://www.dakota.com/resources/blog/new-dakota-marketplace-features-ai-tools-that-make-fundraising-faster-in-2026' },
     { title: 'Dakota Advisory Board Announcement (BusinessWire)', url: 'https://www.businesswire.com/news/home/20250701617282/en/Dakota-Announces-Formation-of-Advisory-Board-to-Accelerate-Strategic-Growth-and-Product-Evolution' },
     { title: 'Dakota Careers — no Product Design roles found', url: 'https://www.dakota.com/team' },
+    { title: 'Dakota Crunchbase Profile', url: 'https://www.crunchbase.com/organization/dakota-funds-group' },
   ],
 };

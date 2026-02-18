@@ -19,15 +19,15 @@ export const jam: Company = {
 
   // Business
   stage: 'Series A',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$12.4M',
   fundingHistory: [
     { stage: 'Seed', amount: '$3.5M', date: '2020-10', leadInvestors: ['Union Square Ventures'] },
     { stage: 'Series A', amount: '$8.9M', date: '2024-02', leadInvestors: ['GGV Capital'] },
   ],
   revenue: '~$2.4M ARR',
-  growth: 'Unknown',
-  runway: 'Unknown',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
   customers: '200K+ users, 75K+ at Series A; Salesforce, Unilever, Autodesk, Toast',
 
   // Competition
@@ -96,7 +96,7 @@ export const jam: Company = {
 
   // Design
   designTeam: {
-    teamSize: '~1-2 (1 Principal Designer role open)',
+    teamSize: '~1-2 (no verified Product Design role currently listed)',
   },
   designWorkType: {
     logicBehavior: {
@@ -140,15 +140,7 @@ export const jam: Company = {
 
   // Links & Roles
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Principal Designer (Product/Brand)',
-      location: 'SF or Remote (US/EU timezones)',
-      url: 'https://jam.dev/careers',
-      team: 'Design',
-      type: 'full-time',
-    },
-  ],
+  openRoles: [],
 
   // Culture
   cultureInsights: [
@@ -159,12 +151,18 @@ export const jam: Company = {
       content: 'Small senior team that works well together. Fast-paced startup culture.',
       url: 'https://www.glassdoor.com/Overview/Working-at-Jam-EI_IE7863503.11,14.htm',
     },
+    {
+      source: 'company',
+      sentiment: 'positive',
+      content: 'Series A messaging emphasizes rapid iteration and deep integration into existing engineering workflows.',
+      url: 'https://jam.dev/blog/jam-raises-8-9m-series-a-led-by-ggv-capital/',
+    },
   ],
 
   // Growth
   growthMetrics: {
     stage: 'early-growth',
-    revenueGrowth: 'Unknown',
+    revenueGrowth: 'Not publicly disclosed',
     userGrowth: '75K → 200K+ users (2024-2026)',
     signals: [
       '$8.9M Series A from GGV Capital + Figma Ventures (Feb 2024)',

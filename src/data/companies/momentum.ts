@@ -20,7 +20,7 @@ export const momentum: Company = {
 
   // Business
   stage: 'Series A',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$18M',
   fundingHistory: [
     {
@@ -36,15 +36,15 @@ export const momentum: Company = {
       leadInvestors: ['FirstMark Capital', 'Stage 2 Capital'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
+  revenue: 'Not publicly disclosed',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
   customers: '1Password, Ramp, zScaler, Postman, Alation, Demandbase',
 
   // Growth & Potential
   growthMetrics: {
     stage: 'early-growth',
-    revenueGrowth: 'Unknown',
+    revenueGrowth: 'Not publicly disclosed',
     signals: [
       '$13M Series A led by FirstMark Capital (Jul 2024)',
       'Notable customers: Ramp, 1Password, zScaler',
@@ -189,7 +189,20 @@ export const momentum: Company = {
   openRoles: [],
 
   // Culture Insights
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'company',
+      sentiment: 'positive',
+      content: 'Team positioning emphasizes shipping agentic revenue workflows that execute inside existing Salesforce and Slack processes.',
+      url: 'https://www.momentum.io/blog/announcing-our-13m-series-a-led-by-firstmark-capital-and-stage-2-capital',
+    },
+    {
+      source: 'careers',
+      sentiment: 'neutral',
+      content: 'Hiring footprint across GTM and engineering indicates a build-heavy, cross-functional operating culture typical of Series A execution.',
+      url: 'https://jobs.ashbyhq.com/momentum.io',
+    },
+  ],
 
   // My Tracking
   tracking: {
@@ -218,5 +231,6 @@ export const momentum: Company = {
     { title: 'Momentum Series A Announcement', url: 'https://www.momentum.io/blog/announcing-our-13m-series-a-led-by-firstmark-capital-and-stage-2-capital' },
     { title: 'SiliconANGLE - Momentum raises $13M', url: 'https://siliconangle.com/2024/07/23/momentum-raises-13m-enhance-ai-driven-customer-intelligence-platform/' },
     { title: 'Momentum Careers - no Product Design roles found', url: 'https://jobs.ashbyhq.com/momentum.io' },
+    { title: 'Momentum Crunchbase Profile', url: 'https://www.crunchbase.com/organization/momentum-io' },
   ],
 };

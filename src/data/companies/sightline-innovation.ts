@@ -7,6 +7,7 @@ export const sightlineInnovation: Company = {
   website: 'https://www.sightlineinnovation.com',
   headquarters: 'Winnipeg, MB, Canada',
   remote: 'Unknown',
+  ogImage: '/og-images/sightline-innovation-og.webp',
 
   // Multi-dimensional Tags
   aiTypes: ['data-analysis', 'ai-infrastructure'],
@@ -187,7 +188,7 @@ export const sightlineInnovation: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-14',
+  lastUpdated: '2026-02-17',
   sources: [
     { title: 'Sightline Innovation — Official Website', url: 'https://www.sightlineinnovation.com/' },
     { title: 'Sightline Innovation — Crunchbase', url: 'https://www.crunchbase.com/organization/sightline-innovation-inc' },

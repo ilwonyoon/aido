@@ -6,7 +6,7 @@ export const terrene: Company = {
   description: 'Big data simplification platform that automates training and deployment of deep learning neural networks for business analytics.',
   website: 'https://terrene.co',
   headquarters: 'Waterloo, ON, Canada',
-  remote: 'Unknown',
+  remote: 'No',
   ogImage: '/og-images/terrene-og.webp',
 
   category: 'enterprise-ops' as const,
@@ -15,7 +15,7 @@ export const terrene: Company = {
   industries: ['productivity'],
 
   stage: 'Pre-seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$60K',
   fundingHistory: [
     {
@@ -25,10 +25,10 @@ export const terrene: Company = {
       leadInvestors: ['Techstars', 'Right Side Capital Management'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Not publicly disclosed',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
+  customers: 'Not publicly disclosed',
 
   competitors: [
     {
@@ -103,7 +103,7 @@ export const terrene: Company = {
   ],
 
   designTeam: {
-    teamSize: 'Unknown (2 total employees reported)',
+    teamSize: 'Not publicly disclosed (2 total employees reported)',
   },
   designWorkType: {
     logicBehavior: {
@@ -143,7 +143,20 @@ export const terrene: Company = {
 
   designerLinks: [],
   openRoles: [],
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'company',
+      sentiment: 'neutral',
+      content: 'Public messaging emphasized no-code ML accessibility for non-data-science teams with rapid setup claims.',
+      url: 'https://www.investontario.ca/success-stories/terrene-brings-machine-learning-dorm-room-boardroom',
+    },
+    {
+      source: 'investor',
+      sentiment: 'neutral',
+      content: 'Techstars-backed early-stage company profile suggested an accelerator-style, execution-focused founding culture.',
+      url: 'https://www.crunchbase.com/organization/terrene',
+    },
+  ],
 
   tracking: {
     status: 'dead',
@@ -166,5 +179,6 @@ export const terrene: Company = {
     { title: 'Terrene - PitchBook Profile', url: 'https://pitchbook.com/profiles/company/177206-32' },
     { title: 'Invest Ontario - Terrene Success Story', url: 'https://www.investontario.ca/success-stories/terrene-brings-machine-learning-dorm-room-boardroom' },
     { title: 'Terrene Careers - no Product Design roles found (company inactive)', url: 'https://terrene.co' },
+    { title: 'Terrene LinkedIn Company Profile', url: 'https://www.linkedin.com/company/terrene/' },
   ],
 };

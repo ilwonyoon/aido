@@ -13,7 +13,7 @@ export const resend: Company = {
   category: 'developer-tools' as const,
   industries: ['developer-tools'],
   stage: 'Series A',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$21M',
   fundingHistory: [
     {
@@ -29,7 +29,7 @@ export const resend: Company = {
       leadInvestors: ['Andreessen Horowitz'],
     },
   ],
-  revenue: 'Unknown (5x growth in 2025)',
+  revenue: 'Not publicly disclosed (5x growth in 2025)',
   growth: '4x users YoY (249K → 1M in 2025)',
   customers: '1M+ developers, including Warner Bros, Decathlon, Raycast',
   competitors: [
@@ -220,5 +220,6 @@ export const resend: Company = {
     { title: 'Resend 1 Million Users Blog', url: 'https://resend.com/blog/1-million-users' },
     { title: 'TechCrunch: Resend raises $3M seed', url: 'https://techcrunch.com/2023/07/18/developer-focused-email-platform-resend-raises-3m/' },
     { title: 'Resend Careers - no Product Design roles found', url: 'https://resend.com/careers' },
+    { title: 'Resend YC Company Profile', url: 'https://www.ycombinator.com/companies/resend' },
   ],
 };

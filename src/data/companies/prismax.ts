@@ -6,7 +6,7 @@ export const prismax: Company = {
   description: 'Decentralized robotics intelligence platform that scales teleoperation data collection and foundation models for physical AI, powered by crypto incentive mechanisms.',
   website: 'https://prismax.ai',
   headquarters: 'San Francisco, CA',
-  remote: 'Unknown',
+  remote: 'Hybrid',
 
     // OG Image
     ogImage: '/og-images/prismax-og.webp',
@@ -15,7 +15,7 @@ export const prismax: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['infrastructure'],
   stage: 'Seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$11M',
   fundingHistory: [
     {
@@ -25,10 +25,10 @@ export const prismax: Company = {
       leadInvestors: ['a16z CSX'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Unknown',
+  revenue: 'Not publicly disclosed',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
+  customers: 'Not publicly disclosed',
   competitors: [
     {
       name: 'Olis Robotics',
@@ -89,7 +89,7 @@ export const prismax: Company = {
     'Robotics foundation models are extremely hard to build and validate',
   ],
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: 'Not publicly disclosed',
   },
   designWorkType: {
     logicBehavior: {
@@ -129,7 +129,20 @@ export const prismax: Company = {
   ],
   designerLinks: [],
   openRoles: [],
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'company',
+      sentiment: 'positive',
+      content: 'Public narrative centers on mission-driven physical AI data infrastructure and contributor incentives, indicating a research-forward builder culture.',
+      url: 'https://blog.prismax.ai/prismax-raises-11m-ai-robotics-teleoperation',
+    },
+    {
+      source: 'media',
+      sentiment: 'neutral',
+      content: 'Launch coverage highlights early-stage execution with teleoperation and dataset scale as the core operating focus.',
+      url: 'https://www.therobotreport.com/prismax-launches-with-11m-to-scale-virtual-datasets-for-robotics-foundation-models/',
+    },
+  ],
   growthMetrics: {
     stage: 'early-growth',
     signals: [
@@ -176,5 +189,6 @@ export const prismax: Company = {
     { title: 'The Robot Report — PrismaX Launches', url: 'https://www.therobotreport.com/prismax-launches-with-11m-to-scale-virtual-datasets-for-robotics-foundation-models/' },
     { title: 'Crunchbase — PrismaX Company Profile', url: 'https://www.crunchbase.com/organization/prismax' },
     { title: 'PrismaX Careers — No Product Design roles found', url: 'https://www.prismax.ai/careers' },
+    { title: 'a16z CSX Portfolio Context', url: 'https://a16z.com/portfolio/' },
   ],
 };

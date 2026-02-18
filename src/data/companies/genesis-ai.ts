@@ -6,7 +6,7 @@ export const genesisAi: Company = {
   description: 'Global physical AI laboratory building universal robotics foundation models and simulation infrastructure for general-purpose robots.',
   website: 'https://genesis-ai.company',
   headquarters: 'Palo Alto, CA',
-  remote: 'Unknown',
+  remote: 'Hybrid',
 
     // OG Image
     ogImage: '/og-images/genesis-ai-og.webp',
@@ -17,7 +17,7 @@ export const genesisAi: Company = {
   industries: ['infrastructure'],
 
   stage: 'Seed',
-  valuation: 'Unknown',
+  valuation: 'Not publicly disclosed',
   totalFunding: '$105M',
   fundingHistory: [
     {
@@ -28,8 +28,8 @@ export const genesisAi: Company = {
     },
   ],
   revenue: 'Pre-revenue',
-  growth: 'Unknown',
-  runway: 'Unknown',
+  growth: 'Not publicly disclosed',
+  runway: 'Not publicly disclosed',
   customers: 'Pre-product (research stage)',
 
   competitors: [
@@ -96,7 +96,7 @@ export const genesisAi: Company = {
   ],
 
   designTeam: {
-    teamSize: 'Unknown (research-heavy lab, ~40+ total staff, design team likely minimal or nonexistent)',
+    teamSize: 'Not publicly disclosed (research-heavy lab, ~40+ total staff, design team likely minimal or nonexistent)',
   },
   designWorkType: {
     logicBehavior: {
@@ -145,6 +145,12 @@ export const genesisAi: Company = {
       sentiment: 'positive',
       content: 'Flat org structure, massive ownership, full transparency, everyone is an IC first. Voice in company direction.',
       url: 'https://genesis-ai.company/join-us/',
+    },
+    {
+      source: 'media',
+      sentiment: 'neutral',
+      content: 'Stealth-to-launch timeline and heavy research hiring suggest an execution model optimized for deep technical milestones over broad GTM.',
+      url: 'https://techcrunch.com/2025/07/01/genesis-ai-launches-with-105m-seed-funding-from-eclipse-khosla-to-build-ai-models-for-robots/',
     },
   ],
 
@@ -196,5 +202,6 @@ export const genesisAi: Company = {
     { title: 'TechCrunch - Genesis AI launches with $105M seed funding', url: 'https://techcrunch.com/2025/07/01/genesis-ai-launches-with-105m-seed-funding-from-eclipse-khosla-to-build-ai-models-for-robots/' },
     { title: 'PR Newswire - Genesis AI emerges from stealth', url: 'https://www.prnewswire.com/news-releases/genesis-ai-emerges-from-stealth-with-105m-to-build-universal-robotics-foundation-model-and-horizontal-platform-for-general-purpose-physical-ai-302495016.html' },
     { title: 'Genesis AI Careers - no Product Design roles found', url: 'https://genesis-ai.company/join-us/' },
+    { title: 'Genesis AI Crunchbase Profile', url: 'https://www.crunchbase.com/organization/genesis-ai' },
   ],
 };

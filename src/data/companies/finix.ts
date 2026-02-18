@@ -40,7 +40,7 @@ export const finix: Company = {
       leadInvestors: ['Acrew Capital'],
     },
   ],
-  revenue: 'Unknown',
+  revenue: 'Not publicly disclosed',
   growth: '4x YoY (CEO stated at Series C)',
   customers: 'Lunchbox, AgVend, Clubessential, Passport, Beyond Pricing',
   competitors: [
@@ -103,7 +103,7 @@ export const finix: Company = {
     'AI Level D — limited design innovation opportunity for AI-focused designers',
   ],
   designTeam: {
-    teamSize: 'Unknown',
+    teamSize: 'Not publicly disclosed',
   },
   designWorkType: {
     logicBehavior: {
@@ -149,6 +149,13 @@ export const finix: Company = {
       sentiment: 'negative',
       rating: 3.2,
       content: 'Mixed reviews citing fast pace and talented team but concerns about work-life balance (2.5/5) and leadership favoritism.',
+      url: 'https://www.glassdoor.com/Reviews/Finix-Reviews-E1731427.htm',
+    },
+    {
+      source: 'company',
+      sentiment: 'neutral',
+      content: 'Recent expansion messaging emphasizes operational scale, compliance rigor, and enterprise execution discipline.',
+      url: 'https://finix.com/press/announcing-finix-series-c',
     },
   ],
   growthMetrics: {
@@ -198,5 +205,6 @@ export const finix: Company = {
     { title: 'Finix Series A Launch', url: 'https://finix.com/press/finix-launches-with-usd17-5-million-series-a-to-power-the-next-generation-of' },
     { title: 'Finix Series B — TechCrunch', url: 'https://techcrunch.com/2020/02/04/payments-infra-startup-finix-closes-35m-series-b-led-by-sequoia/' },
     { title: 'Finix Careers — no Product Design roles found', url: 'https://finix.com/careers' },
+    { title: 'Finix Crunchbase Profile', url: 'https://www.crunchbase.com/organization/finix-payments' },
   ],
 };

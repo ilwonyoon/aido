@@ -386,7 +386,183 @@
       "issuesAfter": [
         "missing file"
       ]
+    },
+    {
+      "at": "2026-02-17T23:51:05.010Z",
+      "pass": "A",
+      "companyId": "slope",
+      "ok": true,
+      "durationSec": 255,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:54:58.983Z",
+      "pass": "A",
+      "companyId": "assembled",
+      "ok": true,
+      "durationSec": 234,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:56:59.218Z",
+      "pass": "A",
+      "companyId": "assemblyai",
+      "ok": true,
+      "durationSec": 120,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-17T23:58:20.072Z",
+      "pass": "A",
+      "companyId": "beacons",
+      "ok": true,
+      "durationSec": 81,
+      "issuesAfter": [
+        "missing file"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:58:55.488Z",
+      "pass": "B",
+      "companyId": "sightline-innovation",
+      "ok": true,
+      "durationSec": 35,
+      "issuesAfter": [
+        "visual asset missing"
+      ]
+    },
+    {
+      "at": "2026-02-17T23:59:37.281Z",
+      "pass": "B",
+      "companyId": "endeavor",
+      "ok": true,
+      "durationSec": 42,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:06:46.944Z",
+      "pass": "A",
+      "companyId": "shepherd",
+      "ok": true,
+      "durationSec": 177,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:09:11.381Z",
+      "pass": "A",
+      "companyId": "palmstreet",
+      "ok": true,
+      "durationSec": 144,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:11:21.941Z",
+      "pass": "A",
+      "companyId": "pally",
+      "ok": true,
+      "durationSec": 131,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:13:53.761Z",
+      "pass": "A",
+      "companyId": "seriesai",
+      "ok": true,
+      "durationSec": 152,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:20:21.583Z",
+      "pass": "A",
+      "companyId": "beacons",
+      "ok": true,
+      "durationSec": 388,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:21:05.091Z",
+      "pass": "B",
+      "companyId": "sightline-innovation",
+      "ok": true,
+      "durationSec": 43,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:23:47.627Z",
+      "pass": "B",
+      "companyId": "armada",
+      "ok": true,
+      "durationSec": 163,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:29:38.909Z",
+      "pass": "B",
+      "companyId": "vanta",
+      "ok": true,
+      "durationSec": 351,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:32:19.475Z",
+      "pass": "B",
+      "companyId": "orchid",
+      "ok": true,
+      "durationSec": 161,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:33:32.707Z",
+      "pass": "B",
+      "companyId": "olipop",
+      "ok": true,
+      "durationSec": 73,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:35:39.033Z",
+      "pass": "B",
+      "companyId": "stable-sea",
+      "ok": true,
+      "durationSec": 126,
+      "issuesAfter": [
+        "fundingHistory missing"
+      ]
+    },
+    {
+      "at": "2026-02-18T00:36:25.870Z",
+      "pass": "B",
+      "companyId": "better-auth",
+      "ok": true,
+      "durationSec": 47,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:38:48.318Z",
+      "pass": "B",
+      "companyId": "kindred",
+      "ok": true,
+      "durationSec": 142,
+      "issuesAfter": [
+        "fundingHistory missing"
+      ]
+    },
+    {
+      "at": "2026-02-18T00:41:11.933Z",
+      "pass": "C",
+      "companyId": "stable-sea",
+      "ok": true,
+      "durationSec": 144,
+      "issuesAfter": []
+    },
+    {
+      "at": "2026-02-18T00:43:32.970Z",
+      "pass": "C",
+      "companyId": "kindred",
+      "ok": true,
+      "durationSec": 141,
+      "issuesAfter": []
     }
   ],
-  "updatedAt": "2026-02-17T23:46:50.478Z"
+  "updatedAt": "2026-02-18T00:43:32.970Z"
 }
