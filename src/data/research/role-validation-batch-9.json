@@ -1,0 +1,208 @@
+{
+  "batch": 9,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "fireflies",
+    "krea-ai",
+    "laurel",
+    "lumos",
+    "shepherd",
+    "vanta",
+    "mercor",
+    "pika"
+  ],
+  "checked": [
+    {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.khoslaventures.com/companies/fireflies-ai/jobs/60169928-product-designer",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://jobs.khoslaventures.com/companies/fireflies-ai/jobs/60169928-product-designer"
+        }
+      ]
+    },
+    {
+      "id": "krea-ai",
+      "name": "Krea",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/krea/",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/krea/"
+        }
+      ]
+    },
+    {
+      "id": "laurel",
+      "name": "Laurel",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/laurel/b4a6682b-e77f-43e2-a421-bd1e7a311df6",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/laurel/b4a6682b-e77f-43e2-a421-bd1e7a311df6"
+        }
+      ]
+    },
+    {
+      "id": "lumos",
+      "name": "Lumos",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Lead Product Designer",
+          "url": "https://job-boards.greenhouse.io/lumos/jobs/6244735003",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://job-boards.greenhouse.io/lumos?error=true"
+        }
+      ]
+    },
+    {
+      "id": "shepherd",
+      "name": "Shepherd",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Design Lead",
+          "url": "https://jobs.ashbyhq.com/shepherd/fc564f9a-4da3-4086-92bc-7d88036fe48c",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/shepherd/fc564f9a-4da3-4086-92bc-7d88036fe48c"
+        }
+      ]
+    },
+    {
+      "id": "vanta",
+      "name": "Vanta",
+      "before": 8,
+      "after": 0,
+      "removed": 8,
+      "roleChecks": [
+        {
+          "title": "Staff Product Designer, AI Powered Workflows",
+          "url": "https://jobs.ashbyhq.com/vanta/bd35a80e-f596-4f0b-b92e-0ff49e0f35c0",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/bd35a80e-f596-4f0b-b92e-0ff49e0f35c0"
+        },
+        {
+          "title": "Staff Product Designer, GRC",
+          "url": "https://jobs.ashbyhq.com/vanta/3c9e7e35-1a93-4a36-8db9-48aee332ca57",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/3c9e7e35-1a93-4a36-8db9-48aee332ca57"
+        },
+        {
+          "title": "Staff Product Designer, Platform",
+          "url": "https://jobs.ashbyhq.com/vanta/2c5defaf-1673-4206-8235-fbe721e8e7d2",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/2c5defaf-1673-4206-8235-fbe721e8e7d2"
+        },
+        {
+          "title": "Staff Product Designer, TPRM",
+          "url": "https://jobs.ashbyhq.com/vanta/2992de92-9906-487f-a4c9-e2380b363d2a",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/2992de92-9906-487f-a4c9-e2380b363d2a"
+        },
+        {
+          "title": "Senior Product Designer, GRC",
+          "url": "https://jobs.ashbyhq.com/vanta/8de8cbab-e3b7-46c2-92b4-0dbcc234a8dc",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/8de8cbab-e3b7-46c2-92b4-0dbcc234a8dc"
+        },
+        {
+          "title": "Senior Product Designer, Vendor Risk Management",
+          "url": "https://jobs.ashbyhq.com/vanta/c2b2518d-071c-4ac1-be6b-02ff690a92fb",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/c2b2518d-071c-4ac1-be6b-02ff690a92fb"
+        },
+        {
+          "title": "Senior Product Designer, Product Platform",
+          "url": "https://jobs.ashbyhq.com/vanta/ca9fe540-ced6-4409-84f0-c354aab6f8f8",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/ca9fe540-ced6-4409-84f0-c354aab6f8f8"
+        },
+        {
+          "title": "Senior Product Designer, Personnel & Access Management",
+          "url": "https://jobs.ashbyhq.com/vanta/987d7bce-4049-4695-b47a-de096aaea24f",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/vanta/987d7bce-4049-4695-b47a-de096aaea24f"
+        }
+      ]
+    },
+    {
+      "id": "mercor",
+      "name": "Mercor",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/mercor/f8f1ef53-1f58-4fda-a208-1d4a1c5b7e2a",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/mercor/f8f1ef53-1f58-4fda-a208-1d4a1c5b7e2a"
+        }
+      ]
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 15,
+  "totalRolesAfter": 0,
+  "totalRemoved": 15,
+  "changedFiles": [
+    "src/data/companies/fireflies.ts",
+    "src/data/companies/krea-ai.ts",
+    "src/data/companies/laurel.ts",
+    "src/data/companies/lumos.ts",
+    "src/data/companies/shepherd.ts",
+    "src/data/companies/vanta.ts",
+    "src/data/companies/mercor.ts",
+    "src/data/companies/pika.ts"
+  ]
+}

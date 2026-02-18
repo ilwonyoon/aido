@@ -133,29 +133,7 @@ export const fireflies: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'Remote (Manila, Lisbon, São Paulo, Buenos Aires, Jakarta, Cape Town, Budapest)',
-      url: 'https://jobs.khoslaventures.com/companies/fireflies-ai/jobs/60169928-product-designer',
-      level: 'Mid-Senior',
-      type: 'full-time',
-      aboutRole: 'Own end-to-end design initiatives from exploration through final implementation across web and mobile platforms.',
-      responsibilities: [
-        'Own end-to-end design projects from exploration to polished implementation',
-        'Maintain Fireflies Essential Design System',
-        'Use user data to identify pain points and drive design improvements',
-        'Collaborate with engineering and cross-functional teams',
-      ],
-      requirements: [
-        '3+ years product design experience',
-        'Proficiency in UI design, interaction design, and copywriting',
-        'Expertise with Figma (Auto-Layout, Variables, Components, Prototypes)',
-        'Experience applying design systems across multiple products',
-      ],
-      whyInteresting: 'Rare chance to shape design at a profitable AI unicorn with 20M+ users and a small, autonomous design team.',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -217,7 +195,7 @@ export const fireflies: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Fireflies $1B Valuation Announcement', url: 'https://fireflies.ai/blog/fireflies-1-billion-valuation/' },
     { title: 'TechCrunch - Fireflies $14M Series A', url: 'https://techcrunch.com/2021/05/24/fireflies-ai-raises-14m-for-its-meeting-transcription-and-automation-service/' },

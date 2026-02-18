@@ -138,22 +138,7 @@ export const lumos: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Lead Product Designer',
-      location: 'Remote (US)',
-      url: 'https://job-boards.greenhouse.io/lumos/jobs/6244735003',
-      level: 'Lead',
-      type: 'full-time',
-      compensation: '$145K-$190K',
-      requirements: [
-        '4+ years of B2B product design experience',
-        'Ownership of complex product areas',
-        'Experience mentoring designers and shaping design processes',
-      ],
-      whyInteresting: 'Lead-level role at a Series B company with AI-native product direction. Opportunity to shape design team and processes early.',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -222,7 +207,7 @@ export const lumos: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Lumos Official Website', url: 'https://www.lumos.com' },
     { title: 'Lumos Series B Announcement — BusinessWire', url: 'https://www.businesswire.com/news/home/20240523314788/en/Lumos-Secures-35M-Series-B-Funding' },

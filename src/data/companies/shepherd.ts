@@ -146,26 +146,7 @@ export const shepherd: Company = {
     'Compliance verification is manual, error-prone, and slow',
   ],
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Product Design Lead',
-      url: 'https://jobs.ashbyhq.com/shepherd/fc564f9a-4da3-4086-92bc-7d88036fe48c',
-      location: 'San Francisco, CA (On-site)',
-      compensation: '$200K-$220K + equity',
-      responsibilities: [
-        'Own design across customer-facing and internal platforms',
-        'Establish design language, branding, and UX standards',
-        'Create design and review processes with engineering',
-        'Conduct customer research and iterate on prototypes',
-      ],
-      requirements: [
-        '5+ years of design experience, ideally in SaaS',
-        'Track record shipping complete products or major features',
-        'Proficiency with Figma and prototyping tools',
-        'Understanding of web interface technical constraints',
-      ],
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'linkedin',
@@ -215,7 +196,7 @@ export const shepherd: Company = {
       'Research construction insurance design patterns',
     ],
   },
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Shepherd Official Website', url: 'https://shepherdinsurance.com' },
     { title: 'Shepherd Careers - Product Design Lead', url: 'https://jobs.ashbyhq.com/shepherd/fc564f9a-4da3-4086-92bc-7d88036fe48c' },

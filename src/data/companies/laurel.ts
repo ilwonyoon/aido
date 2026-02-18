@@ -191,21 +191,7 @@ export const laurel: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Staff Product Designer',
-      location: 'San Francisco, CA (Hybrid)',
-      url: 'https://jobs.ashbyhq.com/laurel/b4a6682b-e77f-43e2-a421-bd1e7a311df6',
-      level: 'Staff',
-      type: 'full-time',
-      aboutRole: 'Own the design process from research to polished UI, collaborating closely with AI team to design smart, intuitive interactions.',
-      requirements: [
-        '5+ years of product design at early-stage startups (Series B-F)',
-        'Strong point of view on where UX and AI are headed',
-      ],
-      whyInteresting: 'Rare Staff-level IC role at an AI-native enterprise company with clear product-market fit and strong funding.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -243,7 +229,7 @@ export const laurel: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Laurel Official Website', url: 'https://www.laurel.ai' },
     { title: 'Fortune - Laurel raises $100M Series C', url: 'https://fortune.com/2025/06/10/exclusive-laurel-raises-100-series-c-to-map-where-the-time-goes/' },

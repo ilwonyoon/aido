@@ -154,33 +154,7 @@ export const pika: Company = {
         description: 'Product updates and demos',
       },
     ],
-    openRoles: [
-      {
-              title: 'Senior Product Designer',
-              location: 'Palo Alto, CA',
-              type: 'full-time',
-              url: 'https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541',
-              aboutRole: 'Lead design for AI video creation experiences across mobile and web',
-              responsibilities: [
-                'Lead design from concept to polished execution',
-                'Develop product strategies and transform bold ideas into shipped features',
-                'Balance systematic design thinking with meticulous craft',
-                'Advocate for end-users through user flows, typography, color, spacing, animation',
-              ],
-              requirements: [
-                '4-8 years product design (UI/UX) experience',
-                'Multiple shipped mobile applications',
-                'Proficiency with Apple Human Interface Guidelines',
-                'Rapid prototyping and iteration skills',
-              ],
-              preferred: [
-                'Background designing creation tools, social platforms, or games',
-                'Design-engineering or high-fidelity prototype animation skills',
-                'Local to Palo Alto area',
-              ],
-              whyInteresting: 'On-site 5 days/week. Small energetic team building AI video creation tools. Focus on democratizing video production. Emphasis on craft and user-centered design.',
-            }
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {

@@ -167,14 +167,7 @@ export const kreaAi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      url: 'https://jobs.ashbyhq.com/krea/',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -237,7 +230,7 @@ export const kreaAi: Company = {
       'Monitor hiring pipeline for senior design roles',
     ],
   },
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'TechCrunch — Krea raises $83M Series B', url: 'https://techcrunch.com/2025/04/07/kreas-founders-snubbed-postgrad-grants-from-the-king-of-spain-to-build-their-ai-startup-now-its-valued-at-500m/' },
     { title: 'Contrary Research — Krea Business Breakdown', url: 'https://research.contrary.com/company/krea' },
