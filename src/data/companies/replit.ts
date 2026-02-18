@@ -220,32 +220,7 @@ export const replit: Company = {
     ],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Product Designer, B2B',
-        location: 'Foster City, CA (Hybrid: Mon/Wed/Fri in-office)',
-        url: 'https://jobs.ashbyhq.com/replit/dc5d7a26-29fe-44eb-9378-c1aace110aab',
-        type: 'full-time',
-        aboutRole: 'Help make software creation more accessible for everyone, working on AI features, collaboration tools, and software creation & deployment capabilities.',
-        responsibilities: [
-          'Drive product design from concept to delivery (sketches, user flows, prototypes, final implementation)',
-          'Test and validate ideas through user interviews, prototypes, concept testing',
-          'Design improvements for Replit AI through Chat and other interfaces',
-          'Lead design workshops on AI feature integration across Replit platform',
-          'Contribute to and enhance Replit\'s Design System (Replit UI)',
-        ],
-        requirements: [
-          'Ownership across all design levels—from strategy to UI details',
-          'Experience designing AI-native interfaces',
-          'Strong portfolio of product design work',
-        ],
-        preferred: [
-          'Experience with design systems',
-          'Understanding of developer workflows',
-        ],
-        whyInteresting: 'Designing Replit Agent — one of the fastest-growing AI products. Working with co-founder Haya Odeh on design team. Building the future of AI-native coding.',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [
@@ -341,7 +316,7 @@ export const replit: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-02-11T12:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Wikipedia: Replit', url: 'https://en.wikipedia.org/wiki/Replit' },
     { title: 'Replit $400M Series D', url: 'https://techfundingnews.com/replit-grabs-400m-at-9b-valuation-in-the-ai-coding-race-with-openai-and-cursor/' },

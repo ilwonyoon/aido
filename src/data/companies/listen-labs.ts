@@ -207,15 +207,7 @@ export const listenLabs: Company = {
     ],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Founding Product Designer',
-        location: 'San Francisco, CA (Onsite)',
-        url: 'https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b',
-        level: 'Founding',
-        type: 'full-time',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [
@@ -255,7 +247,7 @@ export const listenLabs: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-02-11T00:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
       { title: 'Listen Labs Website', url: 'https://listenlabs.ai' },
       { title: 'Founders Letter', url: 'https://listenlabs.ai/founders-letter' },

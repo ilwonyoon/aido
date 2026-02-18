@@ -1,0 +1,209 @@
+{
+  "batch": 7,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "liquid-ai",
+    "overjet",
+    "delphi",
+    "julius-ai",
+    "cursor",
+    "listen-labs",
+    "gamma",
+    "replit",
+    "writer",
+    "automat"
+  ],
+  "checked": [
+    {
+      "id": "liquid-ai",
+      "name": "Liquid AI",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Member of Technical Staff - Product Designer",
+          "url": "https://jobs.ashbyhq.com/liquid-ai/5ffdf938-a578-4c72-a7bb-f4152b7be45a",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/liquid-ai/5ffdf938-a578-4c72-a7bb-f4152b7be45a"
+        }
+      ]
+    },
+    {
+      "id": "overjet",
+      "name": "Overjet",
+      "before": 2,
+      "after": 0,
+      "removed": 2,
+      "roleChecks": [
+        {
+          "title": "Lead AI Product Designer, Flagship Product",
+          "url": "https://jobs.ashbyhq.com/Overjet/c76fd02b-11e1-4630-bfb1-2f5fedb82295",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/Overjet/c76fd02b-11e1-4630-bfb1-2f5fedb82295"
+        },
+        {
+          "title": "Lead AI Product Designer, New Product",
+          "url": "https://jobs.ashbyhq.com/Overjet/d34856aa-2e72-4a96-9e12-dece535938ae",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/Overjet/d34856aa-2e72-4a96-9e12-dece535938ae"
+        }
+      ]
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/Delphi/e09394b6-5d77-4006-a57e-4b9222757481",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/Delphi/e09394b6-5d77-4006-a57e-4b9222757481"
+        }
+      ]
+    },
+    {
+      "id": "julius-ai",
+      "name": "Julius AI",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.ycombinator.com/companies/julius/jobs/KqL43wN-product-designer",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.ycombinator.com/companies/julius/jobs/KqL43wN-product-designer"
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://cursor.com/careers/product-designer",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://cursor.com/careers/product-designer"
+        }
+      ]
+    },
+    {
+      "id": "listen-labs",
+      "name": "Listen Labs",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b"
+        }
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer"
+        }
+      ]
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer, B2B",
+          "url": "https://jobs.ashbyhq.com/replit/dc5d7a26-29fe-44eb-9378-c1aace110aab",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/replit/dc5d7a26-29fe-44eb-9378-c1aace110aab"
+        }
+      ]
+    },
+    {
+      "id": "writer",
+      "name": "Writer",
+      "before": 2,
+      "after": 0,
+      "removed": 2,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/writer/19e8f173-5af9-4ddf-9b72-74cea606bd8d",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/writer/19e8f173-5af9-4ddf-9b72-74cea606bd8d"
+        },
+        {
+          "title": "Senior Brand Designer",
+          "url": "https://jobs.ashbyhq.com/writer",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/writer"
+        }
+      ]
+    },
+    {
+      "id": "automat",
+      "name": "Automat",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 12,
+  "totalRolesAfter": 1,
+  "totalRemoved": 11,
+  "changedFiles": [
+    "src/data/companies/liquid-ai.ts",
+    "src/data/companies/overjet.ts",
+    "src/data/companies/delphi.ts",
+    "src/data/companies/julius-ai.ts",
+    "src/data/companies/cursor.ts",
+    "src/data/companies/listen-labs.ts",
+    "src/data/companies/gamma.ts",
+    "src/data/companies/replit.ts",
+    "src/data/companies/writer.ts",
+    "src/data/companies/automat.ts"
+  ]
+}

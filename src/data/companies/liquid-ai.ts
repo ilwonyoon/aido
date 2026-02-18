@@ -233,38 +233,7 @@ export const liquidAi: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Member of Technical Staff - Product Designer',
-      location: 'San Francisco, CA | Boston, MA (Remote US considered)',
-      url: 'https://jobs.ashbyhq.com/liquid-ai/5ffdf938-a578-4c72-a7bb-f4152b7be45a',
-      team: 'Product',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: 'Competitive base salary + equity in unicorn-stage company',
-      aboutRole: 'Shape how enterprises experience the LEAP platform and Apollo mobile app. Design intuitive workflows for model customization, deployment, and evaluation.',
-      responsibilities: [
-        'Design intuitive workflows for model customization, deployment, and evaluation',
-        'Translate complex ML operations into accessible experiences for non-technical enterprise users',
-        'Enhance Apollo mobile application UI/UX',
-        'Analyze user feedback and usage metrics to prioritize improvements',
-        'Maintain and develop design systems and component libraries',
-        'Collaborate with engineers on implementation fidelity',
-      ],
-      requirements: [
-        '4+ years designing complex platforms (developer tools, AI interfaces, enterprise software)',
-        'Portfolio demonstrating systems thinking and interaction design excellence',
-        'Track record translating technical complexity into intuitive products',
-        'Experience in fast-moving, iterative environments',
-      ],
-      preferred: [
-        'Frontend skills (Tailwind, React)',
-        'AI/ML product experience',
-        'Background spanning both consumer and enterprise applications',
-      ],
-      whyInteresting: 'Potential founding designer role at a unicorn. Work on both enterprise platform (LEAP) and consumer mobile app (Apollo). Shape design culture from scratch at an MIT-spinoff redefining AI architecture.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -318,7 +287,7 @@ export const liquidAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-10',
+  lastUpdated: '2026-02-18',
   sources: [
     {
       title: 'Liquid AI Official Website',

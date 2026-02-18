@@ -140,16 +140,7 @@ export const delphi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/Delphi/e09394b6-5d77-4006-a57e-4b9222757481',
-      aboutRole: 'Design core experiences for building and deploying Delphi digital minds.',
-      whyInteresting: 'Join an in-person San Francisco team building creator-first AI products.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -164,7 +155,7 @@ export const delphi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-10T00:00:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Delphi - Official Website', url: 'https://www.delphi.ai' },
     { title: 'Delphi About', url: 'https://www.delphi.ai/about' },

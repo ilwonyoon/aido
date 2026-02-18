@@ -186,13 +186,7 @@ export const cursor: Company = {
     ],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'San Francisco or New York City',
-        url: 'https://cursor.com/careers/product-designer',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -285,7 +279,7 @@ export const cursor: Company = {
       notes: 'Deep research completed 2026-02-11. See src/data/deep-research/cursor.md for full report. Score: 8.75/10.',
     },
 
-    lastUpdated: '2026-02-11',
+    lastUpdated: '2026-02-18',
     sources: [
       { title: 'CNBC: Cursor Series D', url: 'https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html' },
       { title: 'Sacra: Cursor Revenue & Funding', url: 'https://sacra.com/c/cursor/' },

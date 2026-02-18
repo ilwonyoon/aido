@@ -236,49 +236,7 @@ export const writer: Company = {
     },
   ],
 
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA or New York City, NY',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/writer/19e8f173-5af9-4ddf-9b72-74cea606bd8d',
-      compensation: '$157,700-$250,000 + equity',
-      team: 'Engineering, Product & Design (reports to Director of Product Design)',
-      aboutRole: 'Own end-to-end design for high-impact product areas in enterprise AI, converting complex AI capabilities into intuitive, delightful designs.',
-      responsibilities: [
-        'Lead user research and translate insights into design decisions',
-        'Convert complex AI capabilities into intuitive, delightful designs',
-        'Prototype and validate solutions at multiple fidelity levels',
-        'Build design system components and patterns',
-        'Shape product roadmap through cross-functional partnerships',
-        'Gather customer feedback to refine shipped experiences',
-        'Elevate design processes, tooling, and culture',
-      ],
-      requirements: [
-        '5+ years UX/UI or product design experience with shipped products',
-        'Proficiency designing complex desktop experiences and design systems',
-        'Technical or B2B SaaS product background',
-        'Portfolio demonstrating strategic thinking, visual craft, business results',
-        'Strong cross-functional collaboration and stakeholder influence',
-      ],
-      preferred: [
-        'AI/ML experience',
-        'Exceptional taste and keen eye for aesthetics',
-        'Comfort navigating ambiguity in emerging AI product design',
-        'Track record influencing product decisions',
-      ],
-      whyInteresting: 'Hybrid work. $1.9B valuation. Enterprise clients: Mars, Marriott, Uber, Vanguard. PST timezone overlap required. Company values: Connect, Challenge, Own. Offices in SF, NYC, London, Singapore, Dublin.',
-    },
-    {
-      title: 'Senior Brand Designer',
-      location: 'San Francisco, CA or New York City, NY',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/writer',
-      compensation: '$134,300-$160,000 + equity',
-      team: 'Marketing (Brand marketing team)',
-      aboutRole: 'Shape Writer\'s visual identity and brand experience across all touchpoints.',
-    },
-  ],
+  openRoles: [],
 
   cultureInsights: [
     {
@@ -335,7 +293,7 @@ export const writer: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-12T22:00:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Writer Series C Press Release', url: 'https://writer.com/blog/series-c-funding-writer-press-release/' },
     { title: 'TechCrunch: Writer $200M at $1.9B', url: 'https://techcrunch.com/2024/11/12/generative-ai-startup-writer-raises-200m-at-a-1-9b-valuation/' },

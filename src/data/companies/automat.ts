@@ -158,30 +158,7 @@ export const automat: Company = {
       description: 'Feature on how Ochoa and Bose applied CMU design training to build Automat — credits collaborative studio culture as foundation for their AI product vision.',
     },
   ],
-  openRoles: [
-    {
-      title: 'Founding Designer',
-      location: 'San Francisco, CA (On-site)',
-      url: 'https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0',
-      team: 'Design',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: '$140K-$225K + 0.05%-0.20% equity',
-      aboutRole: 'First design hire. Build Automat\'s platform experience and brand language from the ground up, reporting directly to CEO Lucas Ochoa.',
-      responsibilities: [
-        'Design the core platform experience end-to-end',
-        'Develop comprehensive brand language and visual systems',
-        'Create product experiences balancing aesthetic refinement with engineering excellence',
-      ],
-      preferred: [
-        'Strong writing skills and award recognition for design work',
-        'Full-stack application development experience and Git proficiency',
-        'Deep familiarity with Apple product design philosophy',
-      ],
-      teamInfo: 'Work directly with the CEO and a team of robotics/AI engineers and operations specialists in SF\'s Mission District.',
-      whyInteresting: 'Rare Founding Designer opportunity at a well-funded YC/Felicis-backed startup with designer-founder CEO — ground-floor impact on brand and product.',
-    },
-  ],
+  openRoles: [],
 
   cultureInsights: [
     {
@@ -251,7 +228,7 @@ export const automat: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-13',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Automat Official Website', url: 'https://www.runautomat.com/' },
     { title: 'Automat About Page', url: 'https://www.runautomat.com/about' },

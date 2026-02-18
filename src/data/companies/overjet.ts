@@ -225,64 +225,7 @@ export const overjet: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Lead AI Product Designer, Flagship Product',
-      location: 'San Mateo, CA (Hybrid)',
-      url: 'https://jobs.ashbyhq.com/Overjet/c76fd02b-11e1-4630-bfb1-2f5fedb82295',
-      team: 'IRIS Flagship Product',
-      level: 'Lead',
-      type: 'full-time',
-      aboutRole: 'Lead design for IRIS, Overjet\'s flagship diagnostic AI product used by thousands of clinicians daily. Scale the core experience powering Overjet\'s mission to improve patient care.',
-      responsibilities: [
-        'Define and evangelize design principles and practices across the organization',
-        'Lead user research to inform UX strategy',
-        'Simplify complex dental workflows and regulatory requirements into intuitive experiences',
-        'Partner cross-functionally with PMs, engineers, data scientists, CSMs, and clinical researchers',
-        'Mature Overjet\'s design function through best practices and design system development',
-      ],
-      requirements: [
-        '10+ years product design experience at high-growth B2B SaaS companies',
-        'Strong portfolio demonstrating personal and collaborative work',
-        'User-centered design thinking proficiency',
-        'Outstanding visual design combined with holistic UX approach',
-        'Strong AI-first mindset with daily AI tool leverage',
-      ],
-      preferred: [
-        'Prior diagnostic imaging experience',
-        'Design system creation background',
-      ],
-      whyInteresting: 'Shape the AI diagnostic experience used by thousands of dentists daily. High-impact healthcare product with real clinical outcomes.',
-    },
-    {
-      title: 'Lead AI Product Designer, New Product',
-      location: 'San Mateo, CA (Hybrid)',
-      url: 'https://jobs.ashbyhq.com/Overjet/d34856aa-2e72-4a96-9e12-dece535938ae',
-      team: 'Revenue Cycle Management (RCM)',
-      level: 'Lead',
-      type: 'full-time',
-      aboutRole: '0-to-1 initiative: define the product experience for a Revenue Cycle Management tool that bridges clinicians and insurance organizations. Greenfield opportunity to establish vision for an entirely new category.',
-      responsibilities: [
-        'Establish and champion design principles and practices at Overjet',
-        'Lead user research initiatives to inform UX decisions',
-        'Transform intricate dental practices and regulatory requirements into streamlined experiences',
-        'Collaborate with Product Managers, Engineers, Data Scientists, and Clinical Researchers',
-        'Mentor and inspire product teams toward UX vision achievement',
-      ],
-      requirements: [
-        '10+ years product design experience at high-growth B2B SaaS companies',
-        'Strong portfolio demonstrating individual and collaborative work',
-        'Proficiency in user-centered design methodologies',
-        'Data-informed design and conversion/acquisition knowledge',
-        'Strong AI-first mindset and experience leveraging AI tools',
-      ],
-      preferred: [
-        'Diagnostic imaging background',
-        'Design System development experience',
-      ],
-      whyInteresting: 'Rare 0-to-1 opportunity at a well-funded company. Define a new product category in dental revenue cycle management from scratch.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -334,7 +277,7 @@ export const overjet: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-10',
+  lastUpdated: '2026-02-18',
   sources: [
     {
       title: 'Overjet Careers Page',

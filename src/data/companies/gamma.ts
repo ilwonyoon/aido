@@ -197,17 +197,7 @@ export const gamma: Company = {
     ],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Staff Product Designer',
-        location: 'San Francisco, CA (Remote-friendly)',
-        url: 'https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer',
-        level: 'Staff',
-        type: 'full-time',
-        aboutRole: 'Join a lean team transforming presentations with AI. Design for 30M+ users.',
-        whyInteresting: 'Designer CEO. $100M ARR with 52 people. Profitable. AI-first product. High craft bar.',
-      },
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [
@@ -285,7 +275,7 @@ export const gamma: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-02-11T12:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'TechCrunch: AI PowerPoint-killer Gamma hits $2.1B', url: 'https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/' },
     { title: 'Lenny\'s Podcast: Grant Lee on building Gamma', url: 'https://www.lennysnewsletter.com/p/how-50-people-built-a-profitable-ai-unicorn' },
