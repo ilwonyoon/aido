@@ -181,12 +181,12 @@ export const exa: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Designer',
-      location: 'San Francisco, CA (In-person)',
-      url: 'https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35',
-      type: 'full-time',
-      aboutRole: 'Design product interfaces, developer-facing tools, and brand experience for Exa.',
-    },
+          title: 'Designer',
+          location: 'San Francisco, CA (In-person)',
+          url: 'https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35',
+          type: 'full-time',
+          aboutRole: 'Design product interfaces, developer-facing tools, and brand experience for Exa.',
+        }
   ],
 
   // Culture Insights
@@ -218,7 +218,7 @@ export const exa: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T15:25:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://exa.ai/' },
     { title: 'Source', url: 'https://www.finsmes.com/2025/09/exa-raises-85m-in-series-b-funding.html' },

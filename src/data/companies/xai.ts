@@ -223,41 +223,41 @@ export const xai: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer - Government',
-        location: 'Palo Alto, CA',
-        type: 'full-time',
-        url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007',
-        compensation: '$180K-$440K',
-        level: 'Senior',
-        aboutRole: 'Design mission-critical AI products for federal government and enterprise partners, focusing on secure and compliant interfaces in regulated environments.',
-        responsibilities: [
-          'Convert user insights and government requirements into product strategies while maintaining compliance',
-          'Create and prototype interfaces for secure government platforms with emphasis on usability',
-          'Collaborate with research teams to assess and refine AI model performance',
-          'Iteratively enhance user experiences through design refinement and prompt optimization',
-          'Review user feedback and system logs to support reliable, mission-focused workflows',
-          'Develop internal design tools to improve team efficiency in secure environments',
-          'Update design guidelines based on stakeholder input from government/enterprise clients',
-        ],
-        requirements: [
-          'Active U.S. security clearance (Top Secret, Top Secret SCI, or equivalent) - MANDATORY',
-          '6+ years design experience in high-reliability or security-focused environments',
-          'Proven success with government agencies, DoD, or federal contractors',
-          'Strong documentation and communication capabilities',
-          'Experience implementing AI/ML interfaces with APIs and back-end systems',
-          'Deep understanding of secure design principles for regulated contexts',
-        ],
-        preferred: [
-          'Background in Interaction Design, UX Design, or Computer Science',
-          'Experience evaluating AI designs in high-stakes, regulated settings',
-          'Proficiency with machine learning fundamentals and production deployments',
-          'Portfolio demonstrating work in fast-paced, collaborative environments',
-          'Experience designing for both web and mobile platforms in regulated industries',
-          'Technical design documentation skills for government audiences',
-        ],
-        teamInfo: 'Reports directly to founding team. Flat structure where leadership is earned through initiative and excellence.',
-        whyInteresting: 'On-site 5 days/week. DoD integration just announced. Designing first AI for classified government environments. $230B valuation. Equity + comprehensive benefits. Interview process completes within 1 week.',
-      },
+              title: 'Product Designer - Government',
+              location: 'Palo Alto, CA',
+              type: 'full-time',
+              url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007',
+              compensation: '$180K-$440K',
+              level: 'Senior',
+              aboutRole: 'Design mission-critical AI products for federal government and enterprise partners, focusing on secure and compliant interfaces in regulated environments.',
+              responsibilities: [
+                'Convert user insights and government requirements into product strategies while maintaining compliance',
+                'Create and prototype interfaces for secure government platforms with emphasis on usability',
+                'Collaborate with research teams to assess and refine AI model performance',
+                'Iteratively enhance user experiences through design refinement and prompt optimization',
+                'Review user feedback and system logs to support reliable, mission-focused workflows',
+                'Develop internal design tools to improve team efficiency in secure environments',
+                'Update design guidelines based on stakeholder input from government/enterprise clients',
+              ],
+              requirements: [
+                'Active U.S. security clearance (Top Secret, Top Secret SCI, or equivalent) - MANDATORY',
+                '6+ years design experience in high-reliability or security-focused environments',
+                'Proven success with government agencies, DoD, or federal contractors',
+                'Strong documentation and communication capabilities',
+                'Experience implementing AI/ML interfaces with APIs and back-end systems',
+                'Deep understanding of secure design principles for regulated contexts',
+              ],
+              preferred: [
+                'Background in Interaction Design, UX Design, or Computer Science',
+                'Experience evaluating AI designs in high-stakes, regulated settings',
+                'Proficiency with machine learning fundamentals and production deployments',
+                'Portfolio demonstrating work in fast-paced, collaborative environments',
+                'Experience designing for both web and mobile platforms in regulated industries',
+                'Technical design documentation skills for government audiences',
+              ],
+              teamInfo: 'Reports directly to founding team. Flat structure where leadership is earned through initiative and excellence.',
+              whyInteresting: 'On-site 5 days/week. DoD integration just announced. Designing first AI for classified government environments. $230B valuation. Equity + comprehensive benefits. Interview process completes within 1 week.',
+            }
     ],
 
     // Culture Insights
@@ -322,7 +322,7 @@ export const xai: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-27',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html' },
     { title: 'Source', url: 'https://techcrunch.com/2026/01/06/xai-says-it-raised-20b-in-series-e-funding/' },

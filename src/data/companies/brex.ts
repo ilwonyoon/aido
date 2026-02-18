@@ -140,7 +140,7 @@ export const brex: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.brex.com/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -149,7 +149,7 @@ export const brex: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Brex product', 'Research founders'],
     },
-    lastUpdated: '2026-01-27T00:05:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.brex.com/journal/rise-of-the-ai-first-financial-os' },
     { title: 'Source', url: 'https://www.dice.com/job-detail/22a3f1c8-1b2b-4b33-8aef-7af070183269' },

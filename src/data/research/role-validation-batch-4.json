@@ -1,0 +1,202 @@
+{
+  "batch": 4,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "codeium",
+    "beautiful-ai",
+    "xai",
+    "brex",
+    "suno",
+    "ivo",
+    "exa",
+    "artie",
+    "chai-discovery",
+    "railway"
+  ],
+  "checked": [
+    {
+      "id": "codeium",
+      "name": "Codeium (now Windsurf)",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://codeium.com/careers",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/cognition"
+        }
+      ]
+    },
+    {
+      "id": "beautiful-ai",
+      "name": "Beautiful.ai",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.beautiful.ai/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.beautiful.ai/careers"
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer - Government",
+          "url": "https://job-boards.greenhouse.io/xai/jobs/4876452007",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/xai/jobs/4876452007"
+        }
+      ]
+    },
+    {
+      "id": "brex",
+      "name": "Brex",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.brex.com/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.brex.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3"
+        }
+      ]
+    },
+    {
+      "id": "ivo",
+      "name": "Ivo",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9"
+        },
+        {
+          "title": "Senior Product Designer (Design Systems)",
+          "url": "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd"
+        }
+      ]
+    },
+    {
+      "id": "exa",
+      "name": "Exa",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Designer",
+          "url": "https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35"
+        }
+      ]
+    },
+    {
+      "id": "artie",
+      "name": "Artie",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.artie.com/careers/product-designer",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://artie.com/careers/product-designer"
+        }
+      ]
+    },
+    {
+      "id": "chai-discovery",
+      "name": "Chai Discovery",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/chaidiscovery",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/chaidiscovery"
+        }
+      ]
+    },
+    {
+      "id": "railway",
+      "name": "Railway",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://railway.com/careers/product-designer",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://railway.com/careers/product-designer"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 11,
+  "totalRolesAfter": 7,
+  "totalRemoved": 4,
+  "changedFiles": [
+    "src/data/companies/codeium.ts",
+    "src/data/companies/beautiful-ai.ts",
+    "src/data/companies/xai.ts",
+    "src/data/companies/brex.ts",
+    "src/data/companies/suno.ts",
+    "src/data/companies/ivo.ts",
+    "src/data/companies/exa.ts",
+    "src/data/companies/artie.ts",
+    "src/data/companies/chai-discovery.ts",
+    "src/data/companies/railway.ts"
+  ]
+}

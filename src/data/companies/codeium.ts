@@ -145,7 +145,9 @@ export const codeium: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://codeium.com/careers', type: 'full-time' }],
+    openRoles: [
+      { title: 'Product Designer', location: 'Mountain View, CA (Hybrid)', url: 'https://codeium.com/careers', type: 'full-time' }
+    ],
     cultureInsights: [
       {
         source: 'techcrunch',
@@ -161,7 +163,7 @@ export const codeium: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Codeium product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T23:40:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2025/02/19/ai-coding-startup-codeium-in-talks-to-raise-at-an-almost-3b-valuation-sources-say/' },
     { title: 'Source', url: 'https://fueler.io/blog/codeium-usage-revenue-valuation-growth-statistics' },

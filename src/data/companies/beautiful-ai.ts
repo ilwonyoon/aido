@@ -142,7 +142,7 @@ export const beautifulAi: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.beautiful.ai/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -151,7 +151,7 @@ export const beautifulAi: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Beautiful.ai product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T23:50:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://wellfound.com/company/beautifulai/funding' },
     { title: 'Source', url: 'https://pitchbook.com/profiles/company/172306-18' },

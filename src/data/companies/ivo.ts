@@ -187,53 +187,53 @@ export const ivo: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Product Designer',
-      location: 'San Francisco, CA (Onsite)',
-      url: 'https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9',
-      type: 'full-time',
-      compensation: '$120K-$200K base (excluding equity)',
-      level: 'Mid',
-      aboutRole: 'Own end-to-end product and brand design for Ivo in an early-stage, fast-iterating team.',
-      responsibilities: [
-        'Lead the entire design and creative process',
-        'Work directly with founders to define interactions and product strategy',
-        'Own design across web, marketing, brand, and product',
-        'Optimize for speed, usability, and accessibility',
-      ],
-      requirements: [
-        '3+ years of product design experience',
-        '0-1 product design experience with fast shipping cycles',
-        'Strong portfolio demonstrating user-centered outcomes',
-      ],
-      whyInteresting:
-        'Early-stage scope, direct founder collaboration, strong growth momentum, and clear AI-native workflow.',
-    },
+          title: 'Product Designer',
+          location: 'San Francisco, CA (Onsite)',
+          url: 'https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9',
+          type: 'full-time',
+          compensation: '$120K-$200K base (excluding equity)',
+          level: 'Mid',
+          aboutRole: 'Own end-to-end product and brand design for Ivo in an early-stage, fast-iterating team.',
+          responsibilities: [
+            'Lead the entire design and creative process',
+            'Work directly with founders to define interactions and product strategy',
+            'Own design across web, marketing, brand, and product',
+            'Optimize for speed, usability, and accessibility',
+          ],
+          requirements: [
+            '3+ years of product design experience',
+            '0-1 product design experience with fast shipping cycles',
+            'Strong portfolio demonstrating user-centered outcomes',
+          ],
+          whyInteresting:
+            'Early-stage scope, direct founder collaboration, strong growth momentum, and clear AI-native workflow.',
+        },
     {
-      title: 'Senior Product Designer (Design Systems)',
-      location: 'San Francisco, CA (Onsite)',
-      url: 'https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd',
-      type: 'full-time',
-      level: 'Senior',
-      aboutRole:
-        "Own and scale Ivo's design system to enable rapid iteration and consistent product craft.",
-      responsibilities: [
-        'Create and scale component libraries, tokens, and interaction patterns',
-        'Define design system vision, strategy, and roadmap',
-        'Partner with engineering to ensure adoption and implementation quality',
-        'Improve design-dev workflows and documentation standards',
-      ],
-      requirements: [
-        '6+ years product design or design systems experience',
-        '2+ years of people or cross-functional team leadership',
-        'Expertise in Figma, tokens, and scalable component libraries',
-      ],
-      preferred: [
-        'Experience building design systems for SaaS products',
-        'Comfort in fast-paced, high-ownership environments',
-      ],
-      whyInteresting:
-        'Rare opportunity to define a system from scratch at an AI-native legal workflow company.',
-    },
+          title: 'Senior Product Designer (Design Systems)',
+          location: 'San Francisco, CA (Onsite)',
+          url: 'https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd',
+          type: 'full-time',
+          level: 'Senior',
+          aboutRole:
+            "Own and scale Ivo's design system to enable rapid iteration and consistent product craft.",
+          responsibilities: [
+            'Create and scale component libraries, tokens, and interaction patterns',
+            'Define design system vision, strategy, and roadmap',
+            'Partner with engineering to ensure adoption and implementation quality',
+            'Improve design-dev workflows and documentation standards',
+          ],
+          requirements: [
+            '6+ years product design or design systems experience',
+            '2+ years of people or cross-functional team leadership',
+            'Expertise in Figma, tokens, and scalable component libraries',
+          ],
+          preferred: [
+            'Experience building design systems for SaaS products',
+            'Comfort in fast-paced, high-ownership environments',
+          ],
+          whyInteresting:
+            'Rare opportunity to define a system from scratch at an AI-native legal workflow company.',
+        }
   ],
 
   // Culture Insights
@@ -259,7 +259,7 @@ export const ivo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T12:30:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.ivo.ai/' },
     { title: 'Source', url: 'https://startups.gallery/companies/ivo' },
