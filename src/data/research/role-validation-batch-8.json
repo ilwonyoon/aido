@@ -1,0 +1,202 @@
+{
+  "batch": 8,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "elevenlabs",
+    "hume-ai",
+    "mistral",
+    "ashby",
+    "lightsource",
+    "superpower",
+    "armada",
+    "atob",
+    "decagon",
+    "deepnote"
+  ],
+  "checked": [
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer"
+        }
+      ]
+    },
+    {
+      "id": "hume-ai",
+      "name": "Hume AI",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://job-boards.greenhouse.io/humeai/jobs/4004597008",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://job-boards.greenhouse.io/humeai/jobs/4004597008"
+        }
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer, Web apps",
+          "url": "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c"
+        }
+      ]
+    },
+    {
+      "id": "ashby",
+      "name": "Ashby",
+      "before": 2,
+      "after": 0,
+      "removed": 2,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1"
+        }
+      ]
+    },
+    {
+      "id": "lightsource",
+      "name": "LightSource",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/lightsource/4481e5d2-40d5-4c71-a500-7d3b71c5bc13",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/lightsource/4481e5d2-40d5-4c71-a500-7d3b71c5bc13"
+        }
+      ]
+    },
+    {
+      "id": "superpower",
+      "name": "Superpower",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/superpower/c2fac79c-0d12-4f27-8602-d17c928d704c",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/superpower/c2fac79c-0d12-4f27-8602-d17c928d704c"
+        }
+      ]
+    },
+    {
+      "id": "armada",
+      "name": "Armada",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior UI/UX Designer",
+          "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://job-boards.greenhouse.io/armada/jobs/5080694008"
+        }
+      ]
+    },
+    {
+      "id": "atob",
+      "name": "AtoB",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/atob/8e97c4dc-0e49-4753-8277-ca8778c60e6c",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/atob/8e97c4dc-0e49-4753-8277-ca8778c60e6c"
+        }
+      ]
+    },
+    {
+      "id": "decagon",
+      "name": "Decagon",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719"
+        }
+      ]
+    },
+    {
+      "id": "deepnote",
+      "name": "Deepnote",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior/Staff Product Designer — Notebook & AI Interfaces",
+          "url": "https://jobs.ashbyhq.com/Deepnote/9e108713-10a4-4b0f-807c-49a22ad34720",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/Deepnote/9e108713-10a4-4b0f-807c-49a22ad34720"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 11,
+  "totalRolesAfter": 0,
+  "totalRemoved": 11,
+  "changedFiles": [
+    "src/data/companies/elevenlabs.ts",
+    "src/data/companies/hume-ai.ts",
+    "src/data/companies/mistral.ts",
+    "src/data/companies/ashby.ts",
+    "src/data/companies/lightsource.ts",
+    "src/data/companies/superpower.ts",
+    "src/data/companies/armada.ts",
+    "src/data/companies/atob.ts",
+    "src/data/companies/decagon.ts",
+    "src/data/companies/deepnote.ts"
+  ]
+}

@@ -158,13 +158,7 @@ export const mistral: Company = {
         description: 'Model releases and research',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer, Web apps',
-        location: 'Paris / London / New York / Berlin / Barcelona / Amsterdam / Luxembourg / Brussels',
-        url: 'https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -245,7 +239,7 @@ export const mistral: Company = {
       ],
     },
 
-    lastUpdated: '2026-02-13',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Mistral AI Series C announcement (official)', url: 'https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai' },
     { title: 'Mistral AI Careers', url: 'https://mistral.ai/careers' },

@@ -158,27 +158,7 @@ export const humeAi: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'NYC, San Jose, or Remote',
-      type: 'full-time',
-      url: 'https://job-boards.greenhouse.io/humeai/jobs/4004597008',
-      compensation: '$120K-$170K',
-      aboutRole: 'Design cross-platform voice AI product experiences with the Head of Design.',
-      responsibilities: [
-        'Create user flows and visual designs for a cross-platform consumer interface',
-        'Collaborate with AI research, engineering, and product teams',
-        'Translate complex AI capabilities into clear product experiences',
-      ],
-      requirements: [
-        '2+ years of relevant design experience',
-        'Expertise in cross-platform applications and interaction design',
-        'Proficiency with Figma, Sketch, and Adobe Creative Suite',
-        'Familiarity with frontend libraries such as React',
-      ],
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -220,7 +200,7 @@ export const humeAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-13',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Hume AI About', url: 'https://www.hume.ai/about/' },
     { title: 'Hume AI Careers', url: 'https://www.hume.ai/careers' },

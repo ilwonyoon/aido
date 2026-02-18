@@ -146,42 +146,7 @@ export const ashby: Company = {
       description: 'Weekly product design insights — trained senior PDs at Apple & Meta. Medium article "Two Fundamental Approaches to Designing UX" reached 30K views.',
     },
   ],
-  openRoles: [
-    {
-      title: 'Senior Product Designer',
-      location: 'Remote - North America (SF/NYC preferred)',
-      url: 'https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: '$150K-$210K (location-tiered) + equity (10-year exercise window)',
-      requirements: [
-        '4+ years desktop SaaS product design experience',
-        'First-principles thinking, not formulaic UX processes',
-        'Strong layout, navigation, information architecture skills',
-      ],
-      preferred: [
-        'Early-stage startup or solo designer experience',
-      ],
-      whyInteresting: 'Own features end-to-end in a small design team with high autonomy. Minimal meetings, written-first communication culture.',
-    },
-    {
-      title: 'Staff Product Designer',
-      location: 'Remote - North America',
-      url: 'https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1',
-      level: 'Staff',
-      type: 'full-time',
-      compensation: '$180K-$240K (location-tiered) + equity (10-year exercise window)',
-      requirements: [
-        '10+ years product design experience, primarily desktop SaaS',
-        'Decompose ambiguous projects into actionable parts',
-        'Expertise in layout, navigation, information architecture',
-      ],
-      preferred: [
-        'Early-stage startup or solo designer experience',
-      ],
-      whyInteresting: 'Staff-level IC role with significant product influence. Company treats designers as "part designer, part PM, part consultant, part design system manager".',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -251,7 +216,7 @@ export const ashby: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-14',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Ashby Official Website', url: 'https://www.ashbyhq.com' },
     { title: 'Ashby Series D Announcement', url: 'https://www.ashbyhq.com/blog/culture/series-d' },

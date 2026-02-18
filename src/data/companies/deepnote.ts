@@ -173,23 +173,7 @@ export const deepnote: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Senior/Staff Product Designer — Notebook & AI Interfaces',
-      location: 'Prague / Remote (EU timezone)',
-      url: 'https://jobs.ashbyhq.com/Deepnote/9e108713-10a4-4b0f-807c-49a22ad34720',
-      team: 'Core Notebook Team',
-      level: 'Senior/Staff',
-      type: 'full-time',
-      aboutRole: 'Lead AI interface design (AIUI) for the core notebook product. Run product discovery, contribute to design system, collaborate cross-functionally.',
-      requirements: [
-        'Senior/Staff/Principal level experience',
-        'Background in data, dev tools, or productivity',
-        'Code or CS background highly desirable',
-      ],
-      whyInteresting: 'Rare opportunity to define AI notebook UX at a small team with outsized impact. Design-founder DNA in the company.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -254,7 +238,7 @@ export const deepnote: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Deepnote Official Website', url: 'https://deepnote.com' },
     { title: 'Deepnote Series A Announcement — TechCrunch', url: 'https://techcrunch.com/2022/01/31/deepnote-raises-20m-for-its-collaborative-data-science-notebooks/' },

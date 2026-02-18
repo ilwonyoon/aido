@@ -152,35 +152,7 @@ export const armada: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Senior UI/UX Designer',
-      location: 'San Francisco, CA / Bellevue, WA / Los Angeles, CA (Hybrid)',
-      url: 'https://job-boards.greenhouse.io/armada/jobs/5080694008',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: '$139,000 - $174,200 + Equity',
-      aboutRole: 'Create intuitive, engaging user interfaces across Armada digital products including website and Growth products.',
-      responsibilities: [
-        'Conduct user research and usability testing',
-        'Create personas, journey maps, wireframes, prototypes, and high-fidelity mockups',
-        'Design intuitive interfaces across web and mobile platforms',
-        'Maintain design systems and style guides',
-      ],
-      requirements: [
-        '8+ years UI/UX, Product Design, or similar experience',
-        'Strong portfolio showcasing web and mobile work',
-        'Proficiency in Figma, Sketch, or Adobe XD',
-        'Cross-functional collaboration experience',
-      ],
-      preferred: [
-        'Degree in Design, HCI, or Computer Science',
-        'Front-end development experience (HTML/CSS/JavaScript)',
-        'AI tools proficiency for design acceleration',
-      ],
-      whyInteresting: 'Early design hire shaping enterprise monitoring and AI infrastructure products from the ground up.',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'linkedin',
@@ -239,7 +211,7 @@ export const armada: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Armada Official Website - About', url: 'https://www.armada.ai/about' },
     { title: 'Armada $131M Funding Announcement', url: 'https://www.prnewswire.com/news-releases/armada-announces-131m-strategic-funding-round-launch-of-megawatt-scale-modular-ai-data-centers-to-accelerate-american-energy-and-ai-dominance-302513137.html' },

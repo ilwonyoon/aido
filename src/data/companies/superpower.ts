@@ -166,18 +166,7 @@ export const superpower: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Senior Product Designer',
-      location: 'San Francisco, CA (On-site)',
-      url: 'https://jobs.ashbyhq.com/superpower/c2fac79c-0d12-4f27-8602-d17c928d704c',
-      team: 'Design',
-      level: 'Senior',
-      type: 'full-time',
-      postedDate: '2026-02',
-      whyInteresting: 'Chance to shape the consumer health experience for an Awwwards-winning product at high growth stage',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -249,7 +238,7 @@ export const superpower: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-14',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Superpower Series A Announcement', url: 'https://superpower.com/series-a' },
     { title: 'TechCrunch — Superpower preventative health', url: 'https://techcrunch.com/2025/04/22/superpower-wants-to-help-people-detect-and-address-health-issues-before-symptoms-appear/' },

@@ -161,30 +161,7 @@ export const atob: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA (Hybrid)',
-      url: 'https://jobs.ashbyhq.com/atob/8e97c4dc-0e49-4753-8277-ca8778c60e6c',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: '$170K-$200K',
-      aboutRole: 'Lead design process for mobile and web applications, collaborating with PMs and engineers to ship high-quality experiences.',
-      responsibilities: [
-        'Direct design initiatives for new products and major features across web and mobile',
-        'Develop user flows, wireframes, prototypes, and high-fidelity mockups',
-        'Conduct user research and usability testing',
-        'Establish design standards and promote design systems',
-      ],
-      requirements: [
-        '5+ years product design experience',
-        'Strong portfolio with end-to-end design work across platforms',
-        'Proficient in Figma with design systems experience',
-        'User-centered design methodology expertise',
-      ],
-      whyInteresting: 'Greenfield opportunity to shape the design system and product experience for a fast-growing fintech serving an underserved market.',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -244,7 +221,7 @@ export const atob: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'AtoB Official Website', url: 'https://www.atob.com' },
     { title: 'AtoB Series C Announcement — BusinessWire', url: 'https://www.businesswire.com/news/home/20240919045000/en/AtoB-Announces-New-Funding-and-Growth-Milestones' },

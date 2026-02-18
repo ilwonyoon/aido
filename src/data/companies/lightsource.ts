@@ -131,32 +131,7 @@ export const lightsource: Company = {
     'Tribal knowledge loss when procurement staff turns over',
   ],
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA (On-site)',
-      url: 'https://jobs.ashbyhq.com/lightsource/4481e5d2-40d5-4c71-a500-7d3b71c5bc13',
-      team: 'Engineering',
-      level: 'Mid-Senior',
-      compensation: '$140K-$180K base + equity',
-      postedDate: '2024-11-27',
-      aboutRole: 'Feature design for enterprise web app, reporting to Lead Product Designer. Figma prototyping, design system contributions, cross-functional collaboration with engineering.',
-      responsibilities: [
-        'Design intuitive enterprise application features',
-        'Deliver developer-ready Figma prototypes',
-        'Contribute to design system improvements',
-        'Collaborate with engineering through build and QA',
-        'Support marketing and brand projects',
-      ],
-      requirements: [
-        '4+ years product design experience',
-        'Figma mastery (components, autolayout, prototyping)',
-        'Design systems experience',
-        'Strong interaction and visual design skills',
-        'Front-end development familiarity (CSS, responsiveness)',
-      ],
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'linkedin',
@@ -206,7 +181,7 @@ export const lightsource: Company = {
       'Research Lead Product Designer background',
     ],
   },
-  lastUpdated: '2026-02-14',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'LightSource Official Website', url: 'https://lightsource.ai' },
     { title: 'BusinessWire — LightSource Emerges From Stealth With $33M', url: 'https://www.businesswire.com/news/home/20250415296434/en/LightSource-Emerges-From-Stealth-With-33M-to-Modernize-Sourcing-and-Procurement-With-AI' },

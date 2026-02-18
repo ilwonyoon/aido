@@ -138,18 +138,7 @@ export const decagon: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA (In-person)',
-      url: 'https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719',
-      level: 'Mid-Senior',
-      type: 'full-time',
-      compensation: '$160K-$210K',
-      aboutRole: 'First designer hire — own the design system from zero, shape product UX at category-defining scale, work directly with founding team.',
-      whyInteresting: 'Foundational role: first designer at a $4.5B company serving Duolingo, Notion, Rippling. Enormous ownership and influence.',
-    },
-  ],
+  openRoles: [],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -217,7 +206,7 @@ export const decagon: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-17',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Decagon Official Website', url: 'https://decagon.ai' },
     { title: 'Decagon Series D Announcement', url: 'https://decagon.ai/resources/series-d-announcement' },
