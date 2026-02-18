@@ -152,7 +152,7 @@ export const jam: Company = {
       url: 'https://www.glassdoor.com/Overview/Working-at-Jam-EI_IE7863503.11,14.htm',
     },
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'positive',
       content: 'Series A messaging emphasizes rapid iteration and deep integration into existing engineering workflows.',
       url: 'https://jam.dev/blog/jam-raises-8-9m-series-a-led-by-ggv-capital/',

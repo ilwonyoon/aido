@@ -206,6 +206,8 @@ export const magicPatterns: Company = {
       'Figma AI entering the prompt-to-design space natively',
       'Risk of commoditization as LLMs improve at code generation',
     ],
+    tam: '$10B+ (UI/UX design tools and prototyping software)',
+    ceiling: 'Design-to-code automation market expanding but crowded with well-funded competitors like Figma, v0, and Vercel',
   },
 
   // My Tracking

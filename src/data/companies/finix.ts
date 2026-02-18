@@ -152,7 +152,7 @@ export const finix: Company = {
       url: 'https://www.glassdoor.com/Reviews/Finix-Reviews-E1731427.htm',
     },
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'neutral',
       content: 'Recent expansion messaging emphasizes operational scale, compliance rigor, and enterprise execution discipline.',
       url: 'https://finix.com/press/announcing-finix-series-c',

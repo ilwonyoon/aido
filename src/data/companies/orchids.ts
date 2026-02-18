@@ -145,13 +145,13 @@ export const orchids: Company = {
 
   cultureInsights: [
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'positive',
       content: 'Founding narrative emphasizes rapid shipping and benchmark-driven iteration as core product culture.',
       url: 'https://www.ycombinator.com/companies/orchids',
     },
     {
-      source: 'social',
+      source: 'twitter',
       sentiment: 'neutral',
       content: 'Public launch communication focuses on measurable UI benchmark outcomes and fast community feedback loops.',
       url: 'https://x.com/kevinlu625/status/1967983134311600440',

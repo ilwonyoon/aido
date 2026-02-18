@@ -191,7 +191,7 @@ export const momentum: Company = {
   // Culture Insights
   cultureInsights: [
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'positive',
       content: 'Team positioning emphasizes shipping agentic revenue workflows that execute inside existing Salesforce and Slack processes.',
       url: 'https://www.momentum.io/blog/announcing-our-13m-series-a-led-by-firstmark-capital-and-stage-2-capital',

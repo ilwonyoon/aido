@@ -145,13 +145,13 @@ export const terrene: Company = {
   openRoles: [],
   cultureInsights: [
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'neutral',
       content: 'Public messaging emphasized no-code ML accessibility for non-data-science teams with rapid setup claims.',
       url: 'https://www.investontario.ca/success-stories/terrene-brings-machine-learning-dorm-room-boardroom',
     },
     {
-      source: 'investor',
+      source: 'techcrunch',
       sentiment: 'neutral',
       content: 'Techstars-backed early-stage company profile suggested an accelerator-style, execution-focused founding culture.',
       url: 'https://www.crunchbase.com/organization/terrene',

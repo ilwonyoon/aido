@@ -147,7 +147,7 @@ export const genesisAi: Company = {
       url: 'https://genesis-ai.company/join-us/',
     },
     {
-      source: 'media',
+      source: 'techcrunch',
       sentiment: 'neutral',
       content: 'Stealth-to-launch timeline and heavy research hiring suggest an execution model optimized for deep technical milestones over broad GTM.',
       url: 'https://techcrunch.com/2025/07/01/genesis-ai-launches-with-105m-seed-funding-from-eclipse-khosla-to-build-ai-models-for-robots/',

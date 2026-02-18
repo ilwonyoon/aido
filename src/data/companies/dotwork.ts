@@ -138,7 +138,7 @@ export const dotwork: Company = {
       url: 'https://www.linkedin.com/company/dotwork/',
     },
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'neutral',
       content: 'Early-stage operating cadence centers on partner/channel expansion alongside AI-native product delivery.',
       url: 'https://www.dotwork.com/post/introducing-dotwork-partners',

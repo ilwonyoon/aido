@@ -131,13 +131,13 @@ export const prismax: Company = {
   openRoles: [],
   cultureInsights: [
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'positive',
       content: 'Public narrative centers on mission-driven physical AI data infrastructure and contributor incentives, indicating a research-forward builder culture.',
       url: 'https://blog.prismax.ai/prismax-raises-11m-ai-robotics-teleoperation',
     },
     {
-      source: 'media',
+      source: 'techcrunch',
       sentiment: 'neutral',
       content: 'Launch coverage highlights early-stage execution with teleoperation and dataset scale as the core operating focus.',
       url: 'https://www.therobotreport.com/prismax-launches-with-11m-to-scale-virtual-datasets-for-robotics-foundation-models/',

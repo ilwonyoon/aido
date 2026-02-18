@@ -128,13 +128,13 @@ export const dakota: Company = {
 
   cultureInsights: [
     {
-      source: 'company',
+      source: 'careers',
       sentiment: 'positive',
       content: 'Long operating history since 2006 and practitioner-led positioning point to a sales-operations culture with strong domain expertise.',
       url: 'https://www.dakota.com/about-dakota',
     },
     {
-      source: 'media',
+      source: 'techcrunch',
       sentiment: 'neutral',
       content: 'Advisory board formation in 2025 signals an explicit push toward formalized strategic governance and product scaling.',
       url: 'https://www.businesswire.com/news/home/20250701617282/en/Dakota-Announces-Formation-of-Advisory-Board-to-Accelerate-Strategic-Growth-and-Product-Evolution',

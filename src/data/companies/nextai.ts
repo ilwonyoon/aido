@@ -51,7 +51,7 @@ export const nextai: Company = {
       'Crowded category with incumbent analytics and feedback tools',
       'Data quality and trust requirements for automated insights',
     ],
-    moatType: 'workflow-automation',
+    moatType: 'technology',
     moatStrength: 'Early: differentiation depends on insight quality and team workflow integration',
   },
 
