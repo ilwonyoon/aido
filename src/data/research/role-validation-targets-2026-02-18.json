@@ -1,0 +1,1086 @@
+[
+  {
+    "id": "delve",
+    "name": "Delve",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Founding Product Designer",
+        "url": "https://www.ycombinator.com/companies/delve/jobs"
+      },
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer"
+      }
+    ]
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Product Designer - Design, Dev, & AI Tools",
+        "url": "https://job-boards.greenhouse.io/figma/jobs/5711468004"
+      },
+      {
+        "title": "Product Designer, AI Models",
+        "url": "https://job-boards.greenhouse.io/figma/jobs/5711913004"
+      }
+    ]
+  },
+  {
+    "id": "harvey",
+    "name": "Harvey",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Director, Product Design",
+        "url": "https://jobs.ashbyhq.com/harvey"
+      },
+      {
+        "title": "Head of UX Research",
+        "url": "https://jobs.ashbyhq.com/harvey"
+      }
+    ]
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Product Designer, ChatGPT",
+        "url": "https://openai.com/careers/product-designer-chatgpt-san-francisco/"
+      },
+      {
+        "title": "Product Designer, Platform & Tools",
+        "url": "https://openai.com/careers/product-designer-platform-and-tools-san-francisco/"
+      }
+    ]
+  },
+  {
+    "id": "ramp",
+    "name": "Ramp",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Principal Product Designer",
+        "url": "https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf"
+      },
+      {
+        "title": "Staff Product Designer",
+        "url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5"
+      }
+    ]
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Design Apprentice, Product Design",
+        "url": "https://www.shopify.com/careers"
+      },
+      {
+        "title": "Staff Product Designer",
+        "url": "https://www.shopify.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "sierra",
+    "name": "Sierra",
+    "roleCount": 2,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/sierra"
+      },
+      {
+        "title": "Agent Experience Designer, Voice (Multilingual)",
+        "url": "https://jobs.ashbyhq.com/sierra"
+      }
+    ]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "roleCount": 1,
+    "lastUpdated": "2025-01-26",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.midjourney.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "tavus",
+    "name": "Tavus",
+    "roleCount": 1,
+    "lastUpdated": "2025-01-26",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/tavus"
+      }
+    ]
+  },
+  {
+    "id": "toma",
+    "name": "Toma",
+    "roleCount": 1,
+    "lastUpdated": "2025-01-26",
+    "roles": [
+      {
+        "title": "Designer of Everything",
+        "url": "https://www.toma.com/jobs"
+      }
+    ]
+  },
+  {
+    "id": "character-ai",
+    "name": "Character.AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T10:45:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/character/"
+      }
+    ]
+  },
+  {
+    "id": "typeface",
+    "name": "Typeface",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T11:00:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://job-boards.greenhouse.io/typeface/jobs/4616989007"
+      }
+    ]
+  },
+  {
+    "id": "scale-ai",
+    "name": "Scale AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T11:20:00",
+    "roles": [
+      {
+        "title": "Product Designer, Enterprise",
+        "url": "https://scale.com/careers/4623277005"
+      }
+    ]
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T12:10:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/cohere"
+      }
+    ]
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T12:25:00",
+    "roles": [
+      {
+        "title": "Principal Product Designer",
+        "url": "https://jobs.ashbyhq.com/Jasper%20AI"
+      }
+    ]
+  },
+  {
+    "id": "sourcegraph",
+    "name": "Sourcegraph",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T14:00:00",
+    "roles": [
+      {
+        "title": "Product Designer [IC4]",
+        "url": "https://boards.greenhouse.io/sourcegraph91/jobs/5198247004"
+      }
+    ]
+  },
+  {
+    "id": "superhuman",
+    "name": "Superhuman",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T14:10:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc"
+      }
+    ]
+  },
+  {
+    "id": "hebbia",
+    "name": "Hebbia",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T14:20:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://boards.greenhouse.io/hebbia/jobs/4150321005"
+      }
+    ]
+  },
+  {
+    "id": "lovable",
+    "name": "Lovable",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:00:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543"
+      }
+    ]
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.canva.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.copy.ai/careers"
+      }
+    ]
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.descript.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "gong",
+    "name": "Gong",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://gong.io/careers"
+      }
+    ]
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.grammarly.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://heygen.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "intercom-fin",
+    "name": "Intercom (Fin)",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.intercom.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://otter.ai/careers"
+      }
+    ]
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.tabnine.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T18:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://tome.app/careers"
+      }
+    ]
+  },
+  {
+    "id": "ambience-healthcare",
+    "name": "Ambience Healthcare",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T20:00:00",
+    "roles": [
+      {
+        "title": "Staff Product Designer",
+        "url": "https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65"
+      }
+    ]
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium (now Windsurf)",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T23:40:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://codeium.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-26T23:50:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.beautiful.ai/careers"
+      }
+    ]
+  },
+  {
+    "id": "xai",
+    "name": "xAI",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27",
+    "roles": [
+      {
+        "title": "Product Designer - Government",
+        "url": "https://job-boards.greenhouse.io/xai/jobs/4876452007"
+      }
+    ]
+  },
+  {
+    "id": "brex",
+    "name": "Brex",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T00:05:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.brex.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T10:00:00",
+    "roles": [
+      {
+        "title": "Staff Product Designer",
+        "url": "https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3"
+      }
+    ]
+  },
+  {
+    "id": "ivo",
+    "name": "Ivo",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T12:30:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9"
+      }
+    ]
+  },
+  {
+    "id": "exa",
+    "name": "Exa",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T15:25:00",
+    "roles": [
+      {
+        "title": "Designer",
+        "url": "https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35"
+      }
+    ]
+  },
+  {
+    "id": "artie",
+    "name": "Artie",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T16:10:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.artie.com/careers/product-designer"
+      }
+    ]
+  },
+  {
+    "id": "chai-discovery",
+    "name": "Chai Discovery",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T16:10:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/chaidiscovery"
+      }
+    ]
+  },
+  {
+    "id": "railway",
+    "name": "Railway",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T16:10:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://railway.com/careers/product-designer"
+      }
+    ]
+  },
+  {
+    "id": "terradot",
+    "name": "Terradot",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T16:55:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0"
+      }
+    ]
+  },
+  {
+    "id": "remofirst",
+    "name": "RemoFirst",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T19:25:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08"
+      }
+    ]
+  },
+  {
+    "id": "layer-financial",
+    "name": "Layer Financial",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T20:30:00",
+    "roles": [
+      {
+        "title": "Founding Designer",
+        "url": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62"
+      }
+    ]
+  },
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-27T20:45:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36"
+      }
+    ]
+  },
+  {
+    "id": "mutiny",
+    "name": "Mutiny",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T00:20:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://boards.greenhouse.io/mutinyhq/jobs/7855143002"
+      }
+    ]
+  },
+  {
+    "id": "solidroad",
+    "name": "Solidroad",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T00:20:00",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef"
+      }
+    ]
+  },
+  {
+    "id": "numeric",
+    "name": "Numeric",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T11:33:21",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2"
+      }
+    ]
+  },
+  {
+    "id": "clerk",
+    "name": "Clerk",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T11:45:15",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa"
+      }
+    ]
+  },
+  {
+    "id": "console",
+    "name": "Console",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T11:45:15",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://console.com/careers"
+      }
+    ]
+  },
+  {
+    "id": "reevo",
+    "name": "Reevo",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T12:55:00",
+    "roles": [
+      {
+        "title": "Builder - Product Designer",
+        "url": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376"
+      }
+    ]
+  },
+  {
+    "id": "alex-ai",
+    "name": "Alex AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T16:20:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.ycombinator.com/companies/apriora/jobs/z1xuDyf-product-designer"
+      }
+    ]
+  },
+  {
+    "id": "further-ai",
+    "name": "FurtherAI",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T16:20:00",
+    "roles": [
+      {
+        "title": "Founding Product Designer",
+        "url": "https://www.ycombinator.com/companies/furtherai"
+      }
+    ]
+  },
+  {
+    "id": "natural",
+    "name": "Natural",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-28T17:10:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.natural.co/careers/product-designer"
+      }
+    ]
+  },
+  {
+    "id": "lighthouse",
+    "name": "Lighthouse",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-30T12:15:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://careers.lighthousehq.com/product-designer.html"
+      }
+    ]
+  },
+  {
+    "id": "zed-dev",
+    "name": "Zed",
+    "roleCount": 1,
+    "lastUpdated": "2026-01-30T12:25:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://zed.dev/jobs/designer-who-codes"
+      }
+    ]
+  },
+  {
+    "id": "chroma",
+    "name": "Chroma",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-04T18:40:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://careers.trychroma.com/jobs/4447948005"
+      }
+    ]
+  },
+  {
+    "id": "wonder",
+    "name": "Wonder",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-04T18:40:00",
+    "roles": [
+      {
+        "title": "Founding Designer",
+        "url": "https://wonder.so/jobs"
+      }
+    ]
+  },
+  {
+    "id": "livekit",
+    "name": "LiveKit",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-06T00:00:00",
+    "roles": [
+      {
+        "title": "Product Designer, Growth",
+        "url": "https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth"
+      }
+    ]
+  },
+  {
+    "id": "jack-and-jill",
+    "name": "Jack & Jill",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-08T18:00:00",
+    "roles": [
+      {
+        "title": "Founding Product Designer",
+        "url": "https://uk.talent.com/view?id=5f3dae973243"
+      }
+    ]
+  },
+  {
+    "id": "legora",
+    "name": "Legora",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-10",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/legora/89073502-e8e3-49d9-ba4b-5642ef1a933d"
+      }
+    ]
+  },
+  {
+    "id": "liquid-ai",
+    "name": "Liquid AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-10",
+    "roles": [
+      {
+        "title": "Member of Technical Staff - Product Designer",
+        "url": "https://jobs.ashbyhq.com/liquid-ai/5ffdf938-a578-4c72-a7bb-f4152b7be45a"
+      }
+    ]
+  },
+  {
+    "id": "overjet",
+    "name": "Overjet",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-10",
+    "roles": [
+      {
+        "title": "Lead AI Product Designer, Flagship Product",
+        "url": "https://jobs.ashbyhq.com/Overjet/c76fd02b-11e1-4630-bfb1-2f5fedb82295"
+      }
+    ]
+  },
+  {
+    "id": "delphi",
+    "name": "Delphi",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-10T00:00:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/Delphi/e09394b6-5d77-4006-a57e-4b9222757481"
+      }
+    ]
+  },
+  {
+    "id": "julius-ai",
+    "name": "Julius AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-10T00:00:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://www.ycombinator.com/companies/julius/jobs/KqL43wN-product-designer"
+      }
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-11",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://cursor.com/careers/product-designer"
+      }
+    ]
+  },
+  {
+    "id": "listen-labs",
+    "name": "Listen Labs",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-11T00:00:00",
+    "roles": [
+      {
+        "title": "Founding Product Designer",
+        "url": "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b"
+      }
+    ]
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-11T12:00:00",
+    "roles": [
+      {
+        "title": "Staff Product Designer",
+        "url": "https://www.woodyjobs.com/blog/422-gamma-careers-join-an-ai-start-up-as-a-product-designer"
+      }
+    ]
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-11T12:00:00",
+    "roles": [
+      {
+        "title": "Product Designer, B2B",
+        "url": "https://jobs.ashbyhq.com/replit/dc5d7a26-29fe-44eb-9378-c1aace110aab"
+      }
+    ]
+  },
+  {
+    "id": "writer",
+    "name": "Writer",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-12T22:00:00",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/writer/19e8f173-5af9-4ddf-9b72-74cea606bd8d"
+      }
+    ]
+  },
+  {
+    "id": "automat",
+    "name": "Automat",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-13",
+    "roles": [
+      {
+        "title": "Founding Designer",
+        "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0"
+      }
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-13",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer"
+      }
+    ]
+  },
+  {
+    "id": "hume-ai",
+    "name": "Hume AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-13",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://job-boards.greenhouse.io/humeai/jobs/4004597008"
+      }
+    ]
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-13",
+    "roles": [
+      {
+        "title": "Product Designer, Web apps",
+        "url": "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c"
+      }
+    ]
+  },
+  {
+    "id": "ashby",
+    "name": "Ashby",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-14",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183"
+      }
+    ]
+  },
+  {
+    "id": "lightsource",
+    "name": "LightSource",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-14",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/lightsource/4481e5d2-40d5-4c71-a500-7d3b71c5bc13"
+      }
+    ]
+  },
+  {
+    "id": "superpower",
+    "name": "Superpower",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-14",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/superpower/c2fac79c-0d12-4f27-8602-d17c928d704c"
+      }
+    ]
+  },
+  {
+    "id": "armada",
+    "name": "Armada",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Senior UI/UX Designer",
+        "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008"
+      }
+    ]
+  },
+  {
+    "id": "atob",
+    "name": "AtoB",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/atob/8e97c4dc-0e49-4753-8277-ca8778c60e6c"
+      }
+    ]
+  },
+  {
+    "id": "decagon",
+    "name": "Decagon",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719"
+      }
+    ]
+  },
+  {
+    "id": "deepnote",
+    "name": "Deepnote",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Senior/Staff Product Designer — Notebook & AI Interfaces",
+        "url": "https://jobs.ashbyhq.com/Deepnote/9e108713-10a4-4b0f-807c-49a22ad34720"
+      }
+    ]
+  },
+  {
+    "id": "fireflies",
+    "name": "Fireflies.ai",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.khoslaventures.com/companies/fireflies-ai/jobs/60169928-product-designer"
+      }
+    ]
+  },
+  {
+    "id": "krea-ai",
+    "name": "Krea",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/krea/"
+      }
+    ]
+  },
+  {
+    "id": "laurel",
+    "name": "Laurel",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Staff Product Designer",
+        "url": "https://jobs.ashbyhq.com/laurel/b4a6682b-e77f-43e2-a421-bd1e7a311df6"
+      }
+    ]
+  },
+  {
+    "id": "lumos",
+    "name": "Lumos",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Lead Product Designer",
+        "url": "https://job-boards.greenhouse.io/lumos/jobs/6244735003"
+      }
+    ]
+  },
+  {
+    "id": "shepherd",
+    "name": "Shepherd",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Product Design Lead",
+        "url": "https://jobs.ashbyhq.com/shepherd/fc564f9a-4da3-4086-92bc-7d88036fe48c"
+      }
+    ]
+  },
+  {
+    "id": "vanta",
+    "name": "Vanta",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-17",
+    "roles": [
+      {
+        "title": "Staff Product Designer, AI Powered Workflows",
+        "url": "https://jobs.ashbyhq.com/vanta/bd35a80e-f596-4f0b-b92e-0ff49e0f35c0"
+      }
+    ]
+  },
+  {
+    "id": "mercor",
+    "name": "Mercor",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Product Designer",
+        "url": "https://jobs.ashbyhq.com/mercor/f8f1ef53-1f58-4fda-a208-1d4a1c5b7e2a"
+      }
+    ]
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "roleCount": 1,
+    "lastUpdated": "2026-02-18",
+    "roles": [
+      {
+        "title": "Senior Product Designer",
+        "url": "https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541"
+      }
+    ]
+  }
+]

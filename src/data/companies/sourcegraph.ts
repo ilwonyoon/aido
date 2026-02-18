@@ -163,24 +163,24 @@ export const sourcegraph: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer [IC4]',
-        location: 'San Francisco, CA (Required)',
-        url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
-        level: 'IC4',
-        type: 'full-time',
-        aboutRole: 'Design features for Cody and search teams, crafting solutions that make developers more productive with AI-powered tools.',
-        responsibilities: [
-          'Collaborate with teammates to define the future of AI in developer tools',
-          'Design for complex developer tools and IDE-like applications',
-          'Conduct user research and lead customer calls',
-        ],
-        requirements: [
-          '8+ years designing complex B2B or B2C web applications',
-          'Experience with user research and usability testing',
-          '3+ years writing and shipping JavaScript, TypeScript, or Python code',
-        ],
-        whyInteresting: 'Work on cutting-edge AI coding tools. Shape the future of developer productivity. Strong technical founders.',
-      },
+              title: 'Product Designer [IC4]',
+              location: 'San Francisco, CA (Required)',
+              url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004',
+              level: 'IC4',
+              type: 'full-time',
+              aboutRole: 'Design features for Cody and search teams, crafting solutions that make developers more productive with AI-powered tools.',
+              responsibilities: [
+                'Collaborate with teammates to define the future of AI in developer tools',
+                'Design for complex developer tools and IDE-like applications',
+                'Conduct user research and lead customer calls',
+              ],
+              requirements: [
+                '8+ years designing complex B2B or B2C web applications',
+                'Experience with user research and usability testing',
+                '3+ years writing and shipping JavaScript, TypeScript, or Python code',
+              ],
+              whyInteresting: 'Work on cutting-edge AI coding tools. Shape the future of developer productivity. Strong technical founders.',
+            }
     ],
 
     // Culture Insights
@@ -244,7 +244,7 @@ export const sourcegraph: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T14:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/' },
     { title: 'Source', url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004' }

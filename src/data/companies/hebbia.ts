@@ -162,18 +162,18 @@ export const hebbia: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer',
-        location: 'New York, NY',
-        url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
-        type: 'full-time',
-        aboutRole: 'Create innovative AI interaction designs for finance-focused SaaS platform. Lead end-to-end user experience.',
-        responsibilities: [
-          'Lead design of product features and UX',
-          'Ensure product is intuitive and visually appealing',
-          'Collaborate with cross-functional teams',
-        ],
-        whyInteresting: 'Work with genius founder. Profitable startup. 40% of largest asset managers use your product.',
-      },
+              title: 'Product Designer',
+              location: 'New York, NY',
+              url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005',
+              type: 'full-time',
+              aboutRole: 'Create innovative AI interaction designs for finance-focused SaaS platform. Lead end-to-end user experience.',
+              responsibilities: [
+                'Lead design of product features and UX',
+                'Ensure product is intuitive and visually appealing',
+                'Collaborate with cross-functional teams',
+              ],
+              whyInteresting: 'Work with genius founder. Profitable startup. 40% of largest asset managers use your product.',
+            }
     ],
 
     // Culture Insights
@@ -218,7 +218,7 @@ export const hebbia: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T14:20:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/' },
     { title: 'Source', url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005' }

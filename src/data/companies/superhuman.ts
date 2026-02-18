@@ -172,20 +172,20 @@ export const superhuman: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Senior Product Designer',
-        location: 'Remote, North America',
-        url: 'https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc',
-        level: 'Senior',
-        type: 'full-time',
-        compensation: '$155,000 – $240,000/year (USD)',
-        aboutRole: 'Partner with product managers to set vision and build roadmap. Elevate design culture at Superhuman.',
-        requirements: [
-          '5+ years of relevant product design experience',
-          'Mastery of prototyping, visual and interaction design, typography, layout',
-          'Strong portfolio',
-        ],
-        whyInteresting: 'Work with Rahul Vohra. Obsessive craft culture. Now part of Grammarly AI suite.',
-      },
+              title: 'Senior Product Designer',
+              location: 'Remote, North America',
+              url: 'https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc',
+              level: 'Senior',
+              type: 'full-time',
+              compensation: '$155,000 – $240,000/year (USD)',
+              aboutRole: 'Partner with product managers to set vision and build roadmap. Elevate design culture at Superhuman.',
+              requirements: [
+                '5+ years of relevant product design experience',
+                'Mastery of prototyping, visual and interaction design, typography, layout',
+                'Strong portfolio',
+              ],
+              whyInteresting: 'Work with Rahul Vohra. Obsessive craft culture. Now part of Grammarly AI suite.',
+            }
     ],
 
     // Culture Insights
@@ -250,7 +250,7 @@ export const superhuman: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T14:10:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/' },
     { title: 'Source', url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra' }

@@ -177,46 +177,24 @@ export const scaleAi: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer, Enterprise',
-        location: 'San Francisco, CA (Hybrid)',
-        url: 'https://scale.com/careers/4623277005',
-        type: 'full-time',
-        aboutRole: 'Build AI-powered applications that redefine enterprise workflows, working on cutting-edge customer-facing AI and internal SaaS products.',
-        responsibilities: [
-          'Design enterprise applications for AI data workflows',
-          'Work on mix of customer-facing AI and internal tools',
-          'Collaborate with ML engineers and product teams',
-          'Build zero-to-one products in fast-paced environment',
-        ],
-        requirements: [
-          'Experience building complex, technical products from zero to one',
-          'Thrives in fast-paced environments',
-          'Strong portfolio of enterprise product design',
-        ],
-        whyInteresting: 'Designing the data infrastructure powering GPT-4, Claude, Gemini. Working on AI training at scale.',
-      },
-      {
-        title: 'Senior Product Designer, GenAI Marketplace',
-        location: 'San Francisco, CA (Hybrid)',
-        url: 'https://scale.com/careers/4490106005',
-        level: 'Senior',
-        type: 'full-time',
-        aboutRole: 'Develop a first-class experience for vetted high-quality GenAI contributors, attracting the best experts across all relevant fields.',
-        responsibilities: [
-          'Design marketplace for AI contributors',
-          'Build contributor onboarding and workflows',
-          'Create quality vetting systems',
-        ],
-        whyInteresting: 'Building a marketplace for AI expertise. Two-sided marketplace design challenge.',
-      },
-      {
-        title: 'Product Designer, Generative AI',
-        location: 'San Francisco, CA (Hybrid)',
-        url: 'https://scale.com/careers/4404072005',
-        type: 'full-time',
-        aboutRole: 'Design generative AI products and features for Scale\'s platform.',
-        whyInteresting: 'Working on Scale\'s GenAI products.',
-      },
+              title: 'Product Designer, Enterprise',
+              location: 'San Francisco, CA (Hybrid)',
+              url: 'https://scale.com/careers/4623277005',
+              type: 'full-time',
+              aboutRole: 'Build AI-powered applications that redefine enterprise workflows, working on cutting-edge customer-facing AI and internal SaaS products.',
+              responsibilities: [
+                'Design enterprise applications for AI data workflows',
+                'Work on mix of customer-facing AI and internal tools',
+                'Collaborate with ML engineers and product teams',
+                'Build zero-to-one products in fast-paced environment',
+              ],
+              requirements: [
+                'Experience building complex, technical products from zero to one',
+                'Thrives in fast-paced environments',
+                'Strong portfolio of enterprise product design',
+              ],
+              whyInteresting: 'Designing the data infrastructure powering GPT-4, Claude, Gemini. Working on AI training at scale.',
+            }
     ],
 
     // Culture Insights
@@ -291,7 +269,7 @@ export const scaleAi: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T11:20:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Scale_AI' },
     { title: 'Source', url: 'https://www.entrepreneur.com/business-news/who-is-alexandr-wang-the-founder-of-scale-ai-joining-meta/493281' },

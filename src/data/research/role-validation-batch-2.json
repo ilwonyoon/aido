@@ -1,0 +1,216 @@
+{
+  "batch": 2,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "character-ai",
+    "typeface",
+    "scale-ai",
+    "cohere",
+    "jasper",
+    "sourcegraph",
+    "superhuman",
+    "hebbia",
+    "lovable",
+    "canva"
+  ],
+  "checked": [
+    {
+      "id": "character-ai",
+      "name": "Character.AI",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/character/",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/character/"
+        }
+      ]
+    },
+    {
+      "id": "typeface",
+      "name": "Typeface",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://job-boards.greenhouse.io/typeface/jobs/4616989007",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/typeface?error=true"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://job-boards.greenhouse.io/typeface/jobs/4617046007",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/typeface/jobs/4617046007"
+        }
+      ]
+    },
+    {
+      "id": "scale-ai",
+      "name": "Scale AI",
+      "before": 3,
+      "after": 1,
+      "removed": 2,
+      "roleChecks": [
+        {
+          "title": "Product Designer, Enterprise",
+          "url": "https://scale.com/careers/4623277005",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://scale.com/careers/4623277005"
+        },
+        {
+          "title": "Senior Product Designer, GenAI Marketplace",
+          "url": "https://scale.com/careers/4490106005",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://scale.com/careers"
+        },
+        {
+          "title": "Product Designer, Generative AI",
+          "url": "https://scale.com/careers/4404072005",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://scale.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/cohere",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/cohere"
+        }
+      ]
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Principal Product Designer",
+          "url": "https://jobs.ashbyhq.com/Jasper%20AI",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/Jasper%20AI"
+        }
+      ]
+    },
+    {
+      "id": "sourcegraph",
+      "name": "Sourcegraph",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer [IC4]",
+          "url": "https://boards.greenhouse.io/sourcegraph91/jobs/5198247004",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/sourcegraph91?error=true"
+        }
+      ]
+    },
+    {
+      "id": "superhuman",
+      "name": "Superhuman",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc"
+        }
+      ]
+    },
+    {
+      "id": "hebbia",
+      "name": "Hebbia",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://boards.greenhouse.io/hebbia/jobs/4150321005",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/hebbia?error=true"
+        }
+      ]
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543"
+        }
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.canva.com/careers",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://www.canva.com/careers"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 13,
+  "totalRolesAfter": 11,
+  "totalRemoved": 2,
+  "changedFiles": [
+    "src/data/companies/character-ai.ts",
+    "src/data/companies/typeface.ts",
+    "src/data/companies/scale-ai.ts",
+    "src/data/companies/cohere.ts",
+    "src/data/companies/jasper.ts",
+    "src/data/companies/sourcegraph.ts",
+    "src/data/companies/superhuman.ts",
+    "src/data/companies/hebbia.ts",
+    "src/data/companies/lovable.ts",
+    "src/data/companies/canva.ts"
+  ]
+}

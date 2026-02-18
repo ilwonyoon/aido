@@ -89,7 +89,9 @@ export const canva: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Sydney, Australia (Hybrid)', url: 'https://www.canva.com/careers', type: 'full-time' }],
+    openRoles: [
+      { title: 'Product Designer', location: 'Sydney, Australia (Hybrid)', url: 'https://www.canva.com/careers', type: 'full-time' }
+    ],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -98,7 +100,7 @@ export const canva: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Canva product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2025/10/30/canva-launches-its-own-design-model-adds-new-ai-features-to-the-platform/' },
     { title: 'Source', url: 'https://www.inc.com/jennifer-conrad/how-ai-is-powering-canva-to-a-42-billion-valuation-and-a-future-ipo/91267864' }

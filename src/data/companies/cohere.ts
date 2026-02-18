@@ -174,26 +174,26 @@ export const cohere: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Senior Product Designer',
-        location: 'Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/cohere',
-        level: 'Senior',
-        type: 'full-time',
-        aboutRole: 'Lead the design process for AI-powered user experiences, conducting research, collaborating with teams, and ensuring high-quality design across platforms.',
-        responsibilities: [
-          'Design AI-powered user experiences',
-          'Conduct user research and usability testing',
-          'Collaborate with product, engineering, and research teams',
-          'Ensure high-quality design across all platforms',
-          'Build design systems for enterprise AI products',
-        ],
-        requirements: [
-          'Experience designing enterprise products',
-          'Strong portfolio of product design work',
-          'Understanding of AI/ML products',
-        ],
-        whyInteresting: 'Designing with Transformer co-author. Building enterprise AI for regulated industries. IPO-bound company.',
-      },
+              title: 'Senior Product Designer',
+              location: 'Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)',
+              url: 'https://jobs.ashbyhq.com/cohere',
+              level: 'Senior',
+              type: 'full-time',
+              aboutRole: 'Lead the design process for AI-powered user experiences, conducting research, collaborating with teams, and ensuring high-quality design across platforms.',
+              responsibilities: [
+                'Design AI-powered user experiences',
+                'Conduct user research and usability testing',
+                'Collaborate with product, engineering, and research teams',
+                'Ensure high-quality design across all platforms',
+                'Build design systems for enterprise AI products',
+              ],
+              requirements: [
+                'Experience designing enterprise products',
+                'Strong portfolio of product design work',
+                'Understanding of AI/ML products',
+              ],
+              whyInteresting: 'Designing with Transformer co-author. Building enterprise AI for regulated industries. IPO-bound company.',
+            }
     ],
 
     // Culture Insights
@@ -245,7 +245,7 @@ export const cohere: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T12:10:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Cohere' },
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Aidan_Gomez' },

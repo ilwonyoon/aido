@@ -170,27 +170,27 @@ export const jasper: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Principal Product Designer',
-        location: 'Austin, TX / Remote',
-        url: 'https://jobs.ashbyhq.com/Jasper%20AI',
-        level: 'Principal',
-        type: 'full-time',
-        aboutRole: 'Shape Jasper\'s AI tools\' user experience, mentor designers, and prototype workflows, collaborating closely with PMs and engineers.',
-        responsibilities: [
-          'Lead design of AI-powered marketing tools',
-          'Mentor junior designers',
-          'Prototype workflows for AI content creation',
-          'Collaborate with PMs, engineers, and marketers',
-          'Simplify complex AI features',
-        ],
-        requirements: [
-          'Principal-level experience (10+ years)',
-          'Experience designing AI/ML products',
-          'Strong portfolio of enterprise design',
-          'Understanding of marketing workflows',
-        ],
-        whyInteresting: 'Fixing Jasper\'s overwhelming UI problem. Designing for 100,000+ customers. Working with new CEO from Dropbox.',
-      },
+              title: 'Principal Product Designer',
+              location: 'Austin, TX / Remote',
+              url: 'https://jobs.ashbyhq.com/Jasper%20AI',
+              level: 'Principal',
+              type: 'full-time',
+              aboutRole: 'Shape Jasper\'s AI tools\' user experience, mentor designers, and prototype workflows, collaborating closely with PMs and engineers.',
+              responsibilities: [
+                'Lead design of AI-powered marketing tools',
+                'Mentor junior designers',
+                'Prototype workflows for AI content creation',
+                'Collaborate with PMs, engineers, and marketers',
+                'Simplify complex AI features',
+              ],
+              requirements: [
+                'Principal-level experience (10+ years)',
+                'Experience designing AI/ML products',
+                'Strong portfolio of enterprise design',
+                'Understanding of marketing workflows',
+              ],
+              whyInteresting: 'Fixing Jasper\'s overwhelming UI problem. Designing for 100,000+ customers. Working with new CEO from Dropbox.',
+            }
     ],
 
     // Culture Insights
@@ -262,7 +262,7 @@ export const jasper: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T12:25:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.jasper.ai/blog/jasper-announces-125m-series-a-funding' },
     { title: 'Source', url: 'https://getlatka.com/companies/jasper.ai' },

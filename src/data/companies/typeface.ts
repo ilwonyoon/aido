@@ -171,48 +171,48 @@ export const typeface: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer',
-        location: 'Palo Alto, CA (Hybrid)',
-        url: 'https://job-boards.greenhouse.io/typeface/jobs/4616989007',
-        type: 'full-time',
-        aboutRole: 'Create and execute design solutions for generative AI tools that empower marketing teams to create personalized content at scale.',
-        responsibilities: [
-          'Design user-friendly, visually appealing products',
-          'Work with cross-functional teams to ensure products meet customer needs',
-          'Build design systems for AI-powered marketing tools',
-        ],
-        whyInteresting: 'Designing for Fortune 500 marketing teams. Building enterprise AI tools with massive scale impact.',
-      },
+              title: 'Product Designer',
+              location: 'Palo Alto, CA (Hybrid)',
+              url: 'https://job-boards.greenhouse.io/typeface/jobs/4616989007',
+              type: 'full-time',
+              aboutRole: 'Create and execute design solutions for generative AI tools that empower marketing teams to create personalized content at scale.',
+              responsibilities: [
+                'Design user-friendly, visually appealing products',
+                'Work with cross-functional teams to ensure products meet customer needs',
+                'Build design systems for AI-powered marketing tools',
+              ],
+              whyInteresting: 'Designing for Fortune 500 marketing teams. Building enterprise AI tools with massive scale impact.',
+            },
       {
-        title: 'Staff Product Designer',
-        location: 'Palo Alto, CA',
-        url: 'https://job-boards.greenhouse.io/typeface/jobs/4617046007',
-        level: 'Staff',
-        type: 'full-time',
-        compensation: '$175K-$240K',
-        aboutRole: 'Lead end-to-end design for multiple product areas and features in AI-powered marketing platform.',
-        responsibilities: [
-          'Lead end-to-end design for multiple product areas',
-          'Create design solutions and coordinate cross-functional shipping',
-          'Ensure products are user-friendly and visually appealing',
-          'Mentor junior designers',
-          'Work independently with minimal guidance',
-        ],
-        requirements: [
-          '10+ years experience with Bachelor\'s degree',
-          'Strong portfolio demonstrating design skills and attention to detail',
-          'Generative AI experience with AI tools',
-          'Ability to thrive in fast-paced, high-change environments',
-          'Proficiency with Figma',
-        ],
-        preferred: [
-          'B2B/SaaS product design experience',
-          'AI product design experience',
-          'HTML/CSS and front-end development knowledge',
-        ],
-        teamInfo: 'Design team with veterans from Adobe, Microsoft, Google, and top AI companies.',
-        whyInteresting: 'Hybrid 3 days/week. Leadership role in enterprise AI marketing design. Working with ex-Adobe CTO (Abhay Parasnis). $165M raised from Microsoft, GV, Salesforce Ventures. Competitive equity, flexible PTO, daily meals, mentorship with AI leaders.',
-      },
+              title: 'Staff Product Designer',
+              location: 'Palo Alto, CA',
+              url: 'https://job-boards.greenhouse.io/typeface/jobs/4617046007',
+              level: 'Staff',
+              type: 'full-time',
+              compensation: '$175K-$240K',
+              aboutRole: 'Lead end-to-end design for multiple product areas and features in AI-powered marketing platform.',
+              responsibilities: [
+                'Lead end-to-end design for multiple product areas',
+                'Create design solutions and coordinate cross-functional shipping',
+                'Ensure products are user-friendly and visually appealing',
+                'Mentor junior designers',
+                'Work independently with minimal guidance',
+              ],
+              requirements: [
+                '10+ years experience with Bachelor\'s degree',
+                'Strong portfolio demonstrating design skills and attention to detail',
+                'Generative AI experience with AI tools',
+                'Ability to thrive in fast-paced, high-change environments',
+                'Proficiency with Figma',
+              ],
+              preferred: [
+                'B2B/SaaS product design experience',
+                'AI product design experience',
+                'HTML/CSS and front-end development knowledge',
+              ],
+              teamInfo: 'Design team with veterans from Adobe, Microsoft, Google, and top AI companies.',
+              whyInteresting: 'Hybrid 3 days/week. Leadership role in enterprise AI marketing design. Working with ex-Adobe CTO (Abhay Parasnis). $165M raised from Microsoft, GV, Salesforce Ventures. Competitive equity, flexible PTO, daily meals, mentorship with AI leaders.',
+            }
     ],
 
     // Culture Insights
@@ -283,7 +283,7 @@ export const typeface: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T11:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2023/06/29/typeface-which-is-building-generative-ai-for-brands-raises-100m-at-a-1b-valuation/' },
     { title: 'Source', url: 'https://www.linkedin.com/pulse/abhay-parasnis-typeface-1-billion-valuation-brett-stapper-uxake' },

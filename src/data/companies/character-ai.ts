@@ -165,19 +165,19 @@ export const characterAi: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Product Designer',
-        location: 'Menlo Park, CA (Hybrid)',
-        url: 'https://jobs.ashbyhq.com/character/',
-        type: 'full-time',
-        aboutRole: 'Create user-centered designs for AI entertainment products, crafting interfaces that spark curiosity and offer endless ways to explore.',
-        responsibilities: [
-          'Collaborate with product, engineering, and AI teams',
-          'Design immersive experiences at the intersection of storytelling, gaming, and social connection',
-          'Create interfaces for millions of users',
-          'Build design systems for character-based AI',
-        ],
-        whyInteresting: 'Designing for 208M monthly users. Building the future of AI entertainment. Working on parasocial AI relationships.',
-      },
+              title: 'Product Designer',
+              location: 'Menlo Park, CA (Hybrid)',
+              url: 'https://jobs.ashbyhq.com/character/',
+              type: 'full-time',
+              aboutRole: 'Create user-centered designs for AI entertainment products, crafting interfaces that spark curiosity and offer endless ways to explore.',
+              responsibilities: [
+                'Collaborate with product, engineering, and AI teams',
+                'Design immersive experiences at the intersection of storytelling, gaming, and social connection',
+                'Create interfaces for millions of users',
+                'Build design systems for character-based AI',
+              ],
+              whyInteresting: 'Designing for 208M monthly users. Building the future of AI entertainment. Working on parasocial AI relationships.',
+            }
     ],
 
     // Culture Insights
@@ -248,7 +248,7 @@ export const characterAi: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T10:45:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Character.ai' },
     { title: 'Source', url: 'https://techcrunch.com/2024/08/02/character-ai-ceo-noam-shazeer-returns-to-google/' },
