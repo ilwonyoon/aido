@@ -12,7 +12,7 @@ export const palmstreet: Company = {
     ogImage: '/og-images/palmstreet-og.webp',
   aiTypes: ['image-generation', 'automation'],
   markets: ['b2c', 'prosumer'],
-  category: 'enterprise-ops' as const,
+  category: 'creative-media' as const,
   industries: ['other'],
   stage: 'Series A',
   valuation: 'Unknown',

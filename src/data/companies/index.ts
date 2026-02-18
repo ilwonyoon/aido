@@ -331,7 +331,6 @@ import { nuvo } from './nuvo';
 import { obieAi } from './obie-ai';
 import { odyssey } from './odyssey';
 import { ohmd } from './ohmd';
-import { olipop } from './olipop';
 import { onton } from './onton';
 import { onyx } from './onyx';
 import { openOceanRobotics } from './open-ocean-robotics';
@@ -438,7 +437,6 @@ import { speakeasy } from './speakeasy';
 import { sphere } from './sphere';
 import { spiralDb } from './spiral-db';
 import { stabilityAi } from './stability-ai';
-import { stable } from './stable';
 import { stackai } from './stackai';
 import { strada } from './strada';
 import { strideHealth } from './stride-health';
@@ -472,7 +470,6 @@ import { tensormesh } from './tensormesh';
 import { teraAi } from './tera-ai';
 import { terradot } from './terradot';
 import { terramera } from './terramera';
-import { terrene } from './terrene';
 import { thatch } from './thatch';
 import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
 import { things } from './things';
@@ -961,7 +958,6 @@ export const companies: Company[] = [
   sphere,
   spiralDb,
   stabilityAi,
-  stable,
   stackai,
   strada,
   strideHealth,
@@ -995,7 +991,6 @@ export const companies: Company[] = [
   teraAi,
   terradot,
   terramera,
-  terrene,
   thatch,
   theInteractionCompanyOfCalifornia,
   things,
