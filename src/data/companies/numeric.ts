@@ -135,12 +135,12 @@ export const numeric: Company = {
   // Open Roles (Product Design only)
   openRoles: [
     {
-      title: 'Senior Product Designer',
-      location: 'San Francisco, CA or New York, NY',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2',
-      aboutRole: 'Design product experiences for an AI accounting automation platform.',
-    },
+          title: 'Senior Product Designer',
+          location: 'San Francisco, CA or New York, NY',
+          type: 'full-time',
+          url: 'https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2',
+          aboutRole: 'Design product experiences for an AI accounting automation platform.',
+        }
   ],
 
   // Culture Insights
@@ -164,7 +164,7 @@ export const numeric: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T11:33:21',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.numeric.io' },
     { title: 'Source', url: 'https://www.numeric.io/careers' },

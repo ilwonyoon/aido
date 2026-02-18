@@ -178,55 +178,55 @@ export const terradot: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Product Designer',
-      location: 'Sao Paulo (On-site)',
-      url: 'https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0',
-      type: 'full-time',
-      aboutRole:
-        "Own end-to-end design of Terradot's ERW execution platform across planning, operations, and MRV workflows.",
-      responsibilities: [
-        'Lead end-to-end product design from research to iteration',
-        'Partner with product and engineering to refine solutions',
-        'Design workflows that bridge physical and digital operations',
-        'Translate complex processes into clear user flows',
-        'Facilitate user research and design workshops',
-      ],
-      requirements: [
-        'Experience designing complex operational software',
-        'Comfort with technical or scientific workflows',
-        'Strong portfolio and prototyping skills',
-        'Skilled in user research and testing',
-      ],
-      preferred: [
-        'Experience in data-heavy domains (agriculture, logistics, healthcare)',
-        'Interest in climate solutions and ERW',
-      ],
-    },
+          title: 'Product Designer',
+          location: 'Sao Paulo (On-site)',
+          url: 'https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0',
+          type: 'full-time',
+          aboutRole:
+            "Own end-to-end design of Terradot's ERW execution platform across planning, operations, and MRV workflows.",
+          responsibilities: [
+            'Lead end-to-end product design from research to iteration',
+            'Partner with product and engineering to refine solutions',
+            'Design workflows that bridge physical and digital operations',
+            'Translate complex processes into clear user flows',
+            'Facilitate user research and design workshops',
+          ],
+          requirements: [
+            'Experience designing complex operational software',
+            'Comfort with technical or scientific workflows',
+            'Strong portfolio and prototyping skills',
+            'Skilled in user research and testing',
+          ],
+          preferred: [
+            'Experience in data-heavy domains (agriculture, logistics, healthcare)',
+            'Interest in climate solutions and ERW',
+          ],
+        },
     {
-      title: 'Senior Product Designer',
-      location: 'Sao Paulo (On-site)',
-      url: 'https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc',
-      type: 'full-time',
-      aboutRole:
-        "Lead design of Terradot's ERW software platform with significant ownership over workflows and UX quality.",
-      responsibilities: [
-        "Own end-to-end design across Terradot's platform",
-        'Collaborate with product and engineering leads',
-        'Translate operational complexity into intuitive workflows',
-        'Run research sessions and design workshops',
-        'Maintain high usability and accessibility standards',
-      ],
-      requirements: [
-        '5+ years designing web and mobile products',
-        'Experience with operational or data-intensive workflows',
-        'Strong portfolio and communication skills',
-        'Proficient in modern design and prototyping tools',
-      ],
-      preferred: [
-        'Experience in operational, scientific, or logistics domains',
-        'Passion for climate solutions',
-      ],
-    },
+          title: 'Senior Product Designer',
+          location: 'Sao Paulo (On-site)',
+          url: 'https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc',
+          type: 'full-time',
+          aboutRole:
+            "Lead design of Terradot's ERW software platform with significant ownership over workflows and UX quality.",
+          responsibilities: [
+            "Own end-to-end design across Terradot's platform",
+            'Collaborate with product and engineering leads',
+            'Translate operational complexity into intuitive workflows',
+            'Run research sessions and design workshops',
+            'Maintain high usability and accessibility standards',
+          ],
+          requirements: [
+            '5+ years designing web and mobile products',
+            'Experience with operational or data-intensive workflows',
+            'Strong portfolio and communication skills',
+            'Proficient in modern design and prototyping tools',
+          ],
+          preferred: [
+            'Experience in operational, scientific, or logistics domains',
+            'Passion for climate solutions',
+          ],
+        }
   ],
 
   // Culture Insights
@@ -251,7 +251,7 @@ export const terradot: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T16:55:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://terradot.earth/company' },
     { title: 'Source', url: 'https://www.businesswire.com/news/home/20250403593732/en/Microsoft-and-Terradot-announce-deal-for-12-000-tons-of-permanent-carbon-removal/' },

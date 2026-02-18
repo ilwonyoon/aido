@@ -179,29 +179,29 @@ export const remofirst: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Senior Product Designer',
-      location: 'Remote (Poland, Spain, Kyiv, Portugal, South Africa, Hungary, Georgia, Germany, Romania, Estonia, Albania)',
-      url: 'https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08',
-      type: 'full-time',
-      aboutRole: 'Design onboarding journeys and AI-enabled interactions across RemoFirst products.',
-      responsibilities: [
-        'Conduct user and business research to inform interface decisions',
-        'Create wireframes, layouts, and high-fidelity UI designs',
-        'Build interactive prototypes and run usability tests',
-        'Define navigation flows and interaction patterns',
-        'Collaborate with developers and product managers to ensure feasibility',
-      ],
-      requirements: [
-        '3+ years of product design experience (tech startups preferred)',
-        'Strong portfolio of user-centered design work',
-        'Proficiency in Figma or similar design tools',
-        'User research and analytical skills',
-      ],
-      preferred: [
-        'Comfort working across cultures and time zones',
-        'Strong time management in a remote setting',
-      ],
-    },
+          title: 'Senior Product Designer',
+          location: 'Remote (Poland, Spain, Kyiv, Portugal, South Africa, Hungary, Georgia, Germany, Romania, Estonia, Albania)',
+          url: 'https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08',
+          type: 'full-time',
+          aboutRole: 'Design onboarding journeys and AI-enabled interactions across RemoFirst products.',
+          responsibilities: [
+            'Conduct user and business research to inform interface decisions',
+            'Create wireframes, layouts, and high-fidelity UI designs',
+            'Build interactive prototypes and run usability tests',
+            'Define navigation flows and interaction patterns',
+            'Collaborate with developers and product managers to ensure feasibility',
+          ],
+          requirements: [
+            '3+ years of product design experience (tech startups preferred)',
+            'Strong portfolio of user-centered design work',
+            'Proficiency in Figma or similar design tools',
+            'User research and analytical skills',
+          ],
+          preferred: [
+            'Comfort working across cultures and time zones',
+            'Strong time management in a remote setting',
+          ],
+        }
   ],
 
   // Culture Insights
@@ -233,7 +233,7 @@ export const remofirst: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T19:25:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://remofirst.com/' },
     { title: 'Source', url: 'https://remofirst.com/about-us' },

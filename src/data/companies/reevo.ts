@@ -189,11 +189,11 @@ export const reevo: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Builder - Product Designer',
-      location: 'Unknown',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376',
-    },
+          title: 'Builder - Product Designer',
+          location: 'Unknown',
+          type: 'full-time',
+          url: 'https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376',
+        }
   ],
 
   // Culture Insights
@@ -218,7 +218,7 @@ export const reevo: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T12:55:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://reevo.ai/' },
     { title: 'Source', url: 'https://reevo.ai/about' },

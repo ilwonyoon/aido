@@ -170,25 +170,25 @@ export const nexus: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Senior Product Designer',
-      location: 'Argentina (Remote)',
-      url: 'https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36',
-      type: 'full-time',
-      aboutRole:
-        'Lead end-to-end design for complex Web3 and financial infrastructure products with high user trust requirements.',
-      responsibilities: [
-        'Lead design for major product areas from discovery to launch',
-        'Translate complex Web3 concepts into intuitive experiences',
-        'Set a high bar for usability, quality, and user trust',
-        'Partner with product, engineering, and founders',
-      ],
-      requirements: [
-        '6+ years of product design experience',
-        'Portfolio demonstrating complex systems design',
-        'Strong proficiency with Figma',
-        'Experience in fintech, crypto, or trust-critical products',
-      ],
-    },
+          title: 'Senior Product Designer',
+          location: 'Argentina (Remote)',
+          url: 'https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36',
+          type: 'full-time',
+          aboutRole:
+            'Lead end-to-end design for complex Web3 and financial infrastructure products with high user trust requirements.',
+          responsibilities: [
+            'Lead design for major product areas from discovery to launch',
+            'Translate complex Web3 concepts into intuitive experiences',
+            'Set a high bar for usability, quality, and user trust',
+            'Partner with product, engineering, and founders',
+          ],
+          requirements: [
+            '6+ years of product design experience',
+            'Portfolio demonstrating complex systems design',
+            'Strong proficiency with Figma',
+            'Experience in fintech, crypto, or trust-critical products',
+          ],
+        }
   ],
 
   // Culture Insights
@@ -213,7 +213,7 @@ export const nexus: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T20:45:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://nexus.xyz/' },
     { title: 'Source', url: 'https://startups.gallery/companies/nexus' },

@@ -146,12 +146,12 @@ export const clerk: Company = {
   // Open Roles (Product Design only)
   openRoles: [
     {
-      title: 'Product Designer',
-      location: 'Remote',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa',
-      aboutRole: 'Design product experiences for developer authentication workflows.',
-    },
+          title: 'Product Designer',
+          location: 'Remote',
+          type: 'full-time',
+          url: 'https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa',
+          aboutRole: 'Design product experiences for developer authentication workflows.',
+        }
   ],
 
   // Culture Insights
@@ -175,7 +175,7 @@ export const clerk: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T11:45:15',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://clerk.com' },
     { title: 'Source', url: 'https://clerk.com/careers' },

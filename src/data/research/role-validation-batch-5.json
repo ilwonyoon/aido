@@ -1,0 +1,202 @@
+{
+  "batch": 5,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "terradot",
+    "remofirst",
+    "layer-financial",
+    "nexus",
+    "mutiny",
+    "solidroad",
+    "numeric",
+    "clerk",
+    "console",
+    "reevo"
+  ],
+  "checked": [
+    {
+      "id": "terradot",
+      "name": "Terradot",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc"
+        }
+      ]
+    },
+    {
+      "id": "remofirst",
+      "name": "RemoFirst",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08"
+        }
+      ]
+    },
+    {
+      "id": "layer-financial",
+      "name": "Layer Financial",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62"
+        }
+      ]
+    },
+    {
+      "id": "nexus",
+      "name": "Nexus",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36"
+        }
+      ]
+    },
+    {
+      "id": "mutiny",
+      "name": "Mutiny",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://boards.greenhouse.io/mutinyhq/jobs/7855143002",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://job-boards.greenhouse.io/mutinyhq?error=true"
+        }
+      ]
+    },
+    {
+      "id": "solidroad",
+      "name": "Solidroad",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef"
+        }
+      ]
+    },
+    {
+      "id": "numeric",
+      "name": "Numeric",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2"
+        }
+      ]
+    },
+    {
+      "id": "clerk",
+      "name": "Clerk",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa"
+        }
+      ]
+    },
+    {
+      "id": "console",
+      "name": "Console",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://console.com/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.console.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "reevo",
+      "name": "Reevo",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Builder - Product Designer",
+          "url": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 11,
+  "totalRolesAfter": 9,
+  "totalRemoved": 2,
+  "changedFiles": [
+    "src/data/companies/terradot.ts",
+    "src/data/companies/remofirst.ts",
+    "src/data/companies/layer-financial.ts",
+    "src/data/companies/nexus.ts",
+    "src/data/companies/mutiny.ts",
+    "src/data/companies/solidroad.ts",
+    "src/data/companies/numeric.ts",
+    "src/data/companies/clerk.ts",
+    "src/data/companies/console.ts",
+    "src/data/companies/reevo.ts"
+  ]
+}

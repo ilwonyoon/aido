@@ -166,11 +166,11 @@ export const solidroad: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Senior Product Designer',
-      location: 'Remote',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef',
-    },
+          title: 'Senior Product Designer',
+          location: 'Remote',
+          type: 'full-time',
+          url: 'https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef',
+        }
   ],
 
   // Culture Insights
@@ -195,7 +195,7 @@ export const solidroad: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T00:20:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://solidroad.com/' },
     { title: 'Source', url: 'https://startups.gallery/companies/solidroad' },

@@ -162,14 +162,7 @@ export const mutiny: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Senior Product Designer',
-      location: 'New York City, NY',
-      type: 'full-time',
-      url: 'https://boards.greenhouse.io/mutinyhq/jobs/7855143002',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -193,7 +186,7 @@ export const mutiny: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T00:20:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.mutinyhq.com/' },
     { title: 'Source', url: 'https://startups.gallery/companies/mutiny' },
