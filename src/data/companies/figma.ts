@@ -167,15 +167,15 @@ export const figma: Company = {
     ],
     openRoles: [
       {
-        title: 'Product Designer - Design, Dev, & AI Tools',
-        location: 'San Francisco, CA • New York, NY • United States',
-        url: 'https://job-boards.greenhouse.io/figma/jobs/5711468004',
-      },
+              title: 'Product Designer - Design, Dev, & AI Tools',
+              location: 'San Francisco, CA • New York, NY • United States',
+              url: 'https://job-boards.greenhouse.io/figma/jobs/5711468004',
+            },
       {
-        title: 'Product Designer, AI Models',
-        location: 'San Francisco, CA • New York, NY • United States',
-        url: 'https://job-boards.greenhouse.io/figma/jobs/5711913004',
-      },
+              title: 'Product Designer, AI Models',
+              location: 'San Francisco, CA • New York, NY • United States',
+              url: 'https://job-boards.greenhouse.io/figma/jobs/5711913004',
+            }
     ],
 
     cultureInsights: [
@@ -254,7 +254,7 @@ export const figma: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.cnbc.com/2024/05/16/figma-tender-offer-values-company-at-12point5-billion.html' },
     { title: 'Source', url: 'https://getlatka.com/blog/figma-revenue/' }

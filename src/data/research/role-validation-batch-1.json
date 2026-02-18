@@ -1,0 +1,231 @@
+{
+  "batch": 1,
+  "size": 10,
+  "date": "2026-02-18",
+  "checked": [
+    {
+      "id": "delve",
+      "name": "Delve",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://www.ycombinator.com/companies/delve/jobs",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.ycombinator.com/companies/delve/jobs"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer"
+        }
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer - Design, Dev, & AI Tools",
+          "url": "https://job-boards.greenhouse.io/figma/jobs/5711468004",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/figma/jobs/5711468004"
+        },
+        {
+          "title": "Product Designer, AI Models",
+          "url": "https://job-boards.greenhouse.io/figma/jobs/5711913004",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/figma/jobs/5711913004"
+        }
+      ]
+    },
+    {
+      "id": "harvey",
+      "name": "Harvey",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Director, Product Design",
+          "url": "https://jobs.ashbyhq.com/harvey",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/harvey"
+        },
+        {
+          "title": "Head of UX Research",
+          "url": "https://jobs.ashbyhq.com/harvey",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/harvey"
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer, ChatGPT",
+          "url": "https://openai.com/careers/product-designer-chatgpt-san-francisco/",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://openai.com/careers/product-designer-chatgpt-san-francisco/"
+        },
+        {
+          "title": "Product Designer, Platform & Tools",
+          "url": "https://openai.com/careers/product-designer-platform-and-tools-san-francisco/",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://openai.com/careers/product-designer-platform-and-tools-san-francisco/"
+        }
+      ]
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Principal Product Designer",
+          "url": "https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5"
+        }
+      ]
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Design Apprentice, Product Design",
+          "url": "https://www.shopify.com/careers",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.shopify.com/careers"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://www.shopify.com/careers",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.shopify.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "sierra",
+      "name": "Sierra",
+      "before": 2,
+      "after": 2,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/sierra",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/sierra"
+        },
+        {
+          "title": "Agent Experience Designer, Voice (Multilingual)",
+          "url": "https://jobs.ashbyhq.com/sierra",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/sierra"
+        }
+      ]
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://jobs.ashbyhq.com/pika/cc4dffe4-2cad-4287-a28b-b875ee35b541"
+        }
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://job-boards.greenhouse.io/notion/jobs/6325053003",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://job-boards.greenhouse.io/notion?error=true"
+        }
+      ]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://vercel.com/careers/senior-product-designer-us-5735407004",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://vercel.com/careers/senior-product-designer-us-5735407004"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 17,
+  "totalRolesAfter": 15,
+  "totalRemoved": 2,
+  "changedFiles": [
+    "src/data/companies/delve.ts",
+    "src/data/companies/figma.ts",
+    "src/data/companies/harvey.ts",
+    "src/data/companies/openai.ts",
+    "src/data/companies/ramp.ts",
+    "src/data/companies/shopify.ts",
+    "src/data/companies/sierra.ts",
+    "src/data/companies/pika.ts",
+    "src/data/companies/notion.ts",
+    "src/data/companies/vercel.ts"
+  ]
+}

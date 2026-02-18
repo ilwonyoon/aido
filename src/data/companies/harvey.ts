@@ -227,48 +227,25 @@ export const harvey: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Director, Product Design',
-        location: 'San Francisco / New York / Remote',
-        url: 'https://jobs.ashbyhq.com/harvey',
-        level: 'Lead',
-        type: 'full-time',
-        postedDate: '2026-02',
-        aboutRole: 'Lead and scale Harvey\'s product design function across the organization.',
-        whyInteresting: 'Building the design org from the ground up at an $11B legal AI company. High influence on design culture and process.',
-      },
+              title: 'Director, Product Design',
+              location: 'San Francisco / New York / Remote',
+              url: 'https://jobs.ashbyhq.com/harvey',
+              level: 'Lead',
+              type: 'full-time',
+              postedDate: '2026-02',
+              aboutRole: 'Lead and scale Harvey\'s product design function across the organization.',
+              whyInteresting: 'Building the design org from the ground up at an $11B legal AI company. High influence on design culture and process.',
+            },
       {
-        title: 'Head of UX Research',
-        location: 'San Francisco / New York / Remote',
-        url: 'https://jobs.ashbyhq.com/harvey',
-        level: 'Lead',
-        type: 'full-time',
-        postedDate: '2026-02',
-        aboutRole: 'Establish and lead UX research function at Harvey.',
-        whyInteresting: 'Building UXR from scratch at a company with 100,000+ lawyer users. Unprecedented access to high-stakes professional workflows.',
-      },
-      {
-        title: 'Staff Product Designer',
-        location: 'San Francisco, CA (Hybrid)',
-        url: 'https://www.harvey.ai/brand/company/careers/24616c39-e293-4bcc-a3dd-e6f33a71c8ee',
-        level: 'Staff',
-        type: 'full-time',
-        aboutRole: 'Lead the design of end-to-end product experiences for Harvey\'s AI-powered legal tools, from concept to polished execution.',
-        responsibilities: [
-          'Manage multiple projects from ideation to launch',
-          'Create high-quality designs, interactions, and prototypes that transform complex problems into intuitive solutions',
-          'Collaborate with engineers, AI researchers, product managers, and lawyers',
-          'Design interfaces that help users understand, trust, and guide AI outputs',
-          'Promote and develop best practices in designing with AI',
-        ],
-        requirements: [
-          '8+ years of experience designing products in a fast-paced environment',
-          'Portfolio demonstrating best work',
-          'Ability to tackle complex challenges and transform them into simple, intuitive experiences',
-          'Deep understanding of design systems and strong sense of visual/interaction design',
-          'Experience conducting user research and applying insights to design decisions',
-        ],
-        whyInteresting: 'Designing AI for high-stakes legal work. Extremely complex problem space with massive impact. Working with elite law firms.',
-      },
+              title: 'Head of UX Research',
+              location: 'San Francisco / New York / Remote',
+              url: 'https://jobs.ashbyhq.com/harvey',
+              level: 'Lead',
+              type: 'full-time',
+              postedDate: '2026-02',
+              aboutRole: 'Establish and lead UX research function at Harvey.',
+              whyInteresting: 'Building UXR from scratch at a company with 100,000+ lawyer users. Unprecedented access to high-stakes professional workflows.',
+            }
     ],
 
     // Culture Insights
@@ -370,7 +347,7 @@ export const harvey: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-02-11T15:00:00',
+    lastUpdated: '2026-02-18',
     sources: [
       { title: 'Harvey reportedly raising at $11B valuation', url: 'https://techcrunch.com/2026/02/09/harvey-reportedly-raising-at-11b-valuation-just-months-after-it-hit-8b/' },
       { title: 'Legal AI startup Harvey confirms $8B valuation', url: 'https://techcrunch.com/2025/12/04/legal-ai-startup-harvey-confirms-8b-valuation/' },

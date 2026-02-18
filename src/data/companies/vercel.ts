@@ -171,13 +171,7 @@ export const vercel: Company = {
     ],
 
     // Open Roles
-    openRoles: [
-      {
-        title: 'Senior Product Designer',
-        location: 'Remote (US)',
-        url: 'https://vercel.com/careers/senior-product-designer-us-5735407004',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -254,7 +248,7 @@ export const vercel: Company = {
       notes: 'Best of both worlds: AI features + proven business. Remote OK is huge plus.',
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://vercel.com/blog/series-f' },
     { title: 'Source', url: 'https://sacra.com/c/vercel/' }

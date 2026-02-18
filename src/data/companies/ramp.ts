@@ -170,23 +170,23 @@ export const ramp: Company = {
     // Open Roles
     openRoles: [
       {
-        title: 'Principal Product Designer',
-        location: 'New York, NY',
-        url: 'https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf',
-        level: 'Principal',
-        type: 'full-time',
-        aboutRole: 'Lead design for AI-powered finance automation. Design for 50,000+ businesses.',
-        whyInteresting: 'Work with repeat founders. $1B ARR, 100% growth. Autonomous finance vision.',
-      },
+              title: 'Principal Product Designer',
+              location: 'New York, NY',
+              url: 'https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf',
+              level: 'Principal',
+              type: 'full-time',
+              aboutRole: 'Lead design for AI-powered finance automation. Design for 50,000+ businesses.',
+              whyInteresting: 'Work with repeat founders. $1B ARR, 100% growth. Autonomous finance vision.',
+            },
       {
-        title: 'Staff Product Designer',
-        location: 'New York, NY',
-        url: 'https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5',
-        level: 'Staff',
-        type: 'full-time',
-        aboutRole: 'Design for AI-powered finance platform. High-growth, high-impact role.',
-        whyInteresting: '$32B valuation. Fastest-growing fintech. AI-first approach.',
-      },
+              title: 'Staff Product Designer',
+              location: 'New York, NY',
+              url: 'https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5',
+              level: 'Staff',
+              type: 'full-time',
+              aboutRole: 'Design for AI-powered finance platform. High-growth, high-impact role.',
+              whyInteresting: '$32B valuation. Fastest-growing fintech. AI-first approach.',
+            }
     ],
 
     // Culture Insights
@@ -231,7 +231,7 @@ export const ramp: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-01-26T14:40:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techstartups.com/2025/11/17/ramp-hits-32b-valuation-with-new-300m-funding-round-as-investors-double-down-on-autonomous-finance/' },
     { title: 'Source', url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/' }

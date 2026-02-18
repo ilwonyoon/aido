@@ -156,13 +156,7 @@ export const notion: Company = {
         description: 'Design and product updates',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'San Francisco, California; New York, New York',
-        url: 'https://job-boards.greenhouse.io/notion/jobs/6325053003',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -240,7 +234,7 @@ export const notion: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.saastr.com/notion-and-growing-into-your-10b-valuation-a-masterclass-in-patience/' },
     { title: 'Source', url: 'https://sacra.com/c/notion/' }
