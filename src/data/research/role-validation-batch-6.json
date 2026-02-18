@@ -1,0 +1,195 @@
+{
+  "batch": 6,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "alex-ai",
+    "further-ai",
+    "natural",
+    "lighthouse",
+    "zed-dev",
+    "chroma",
+    "wonder",
+    "livekit",
+    "jack-and-jill",
+    "legora"
+  ],
+  "checked": [
+    {
+      "id": "alex-ai",
+      "name": "Alex AI",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.ycombinator.com/companies/apriora/jobs/z1xuDyf-product-designer",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://www.ycombinator.com/companies/alex-com/jobs/z1xuDyf-product-designer"
+        }
+      ]
+    },
+    {
+      "id": "further-ai",
+      "name": "FurtherAI",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://www.ycombinator.com/companies/furtherai",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.ycombinator.com/companies/furtherai"
+        }
+      ]
+    },
+    {
+      "id": "natural",
+      "name": "Natural",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.natural.co/careers/product-designer",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://www.natural.co/careers/product-designer"
+        }
+      ]
+    },
+    {
+      "id": "lighthouse",
+      "name": "Lighthouse",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://careers.lighthousehq.com/product-designer.html",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://careers.lighthousehq.com/product-designer.html"
+        }
+      ]
+    },
+    {
+      "id": "zed-dev",
+      "name": "Zed",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://zed.dev/jobs/designer-who-codes",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://zed.dev/jobs/product-designer"
+        }
+      ]
+    },
+    {
+      "id": "chroma",
+      "name": "Chroma",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://careers.trychroma.com/jobs/4447948005",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.trychroma.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "wonder",
+      "name": "Wonder",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Founding Designer",
+          "url": "https://wonder.so/jobs",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://wonder.so/jobs"
+        }
+      ]
+    },
+    {
+      "id": "livekit",
+      "name": "LiveKit",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer, Growth",
+          "url": "https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth"
+        }
+      ]
+    },
+    {
+      "id": "jack-and-jill",
+      "name": "Jack & Jill",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://uk.talent.com/view?id=5f3dae973243",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://uk.talent.com/view?id=5f3dae973243"
+        }
+      ]
+    },
+    {
+      "id": "legora",
+      "name": "Legora",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/legora/89073502-e8e3-49d9-ba4b-5642ef1a933d",
+          "active": false,
+          "reason": "fallback:search-no-match",
+          "finalUrl": "https://jobs.ashbyhq.com/legora/89073502-e8e3-49d9-ba4b-5642ef1a933d"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 10,
+  "totalRolesAfter": 3,
+  "totalRemoved": 7,
+  "changedFiles": [
+    "src/data/companies/alex-ai.ts",
+    "src/data/companies/further-ai.ts",
+    "src/data/companies/natural.ts",
+    "src/data/companies/lighthouse.ts",
+    "src/data/companies/zed-dev.ts",
+    "src/data/companies/chroma.ts",
+    "src/data/companies/wonder.ts",
+    "src/data/companies/livekit.ts",
+    "src/data/companies/jack-and-jill.ts",
+    "src/data/companies/legora.ts"
+  ]
+}

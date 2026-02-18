@@ -128,12 +128,12 @@ export const natural: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Product Designer',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-      url: 'https://www.natural.co/careers/product-designer',
-      aboutRole: 'Craft the early product design language and design system for Natural.',
-    },
+          title: 'Product Designer',
+          location: 'San Francisco, CA',
+          type: 'full-time',
+          url: 'https://www.natural.co/careers/product-designer',
+          aboutRole: 'Craft the early product design language and design system for Natural.',
+        }
   ],
 
   // Designer Links
@@ -167,7 +167,7 @@ export const natural: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T17:10:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://startups.gallery/companies/natural' },
     { title: 'Source', url: 'https://www.natural.co/careers/product-designer' }

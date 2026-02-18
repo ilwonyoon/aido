@@ -133,15 +133,7 @@ export const wonder: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [
-    {
-      title: 'Founding Designer',
-      location: 'San Francisco, CA (in-person)',
-      type: 'full-time',
-      url: 'https://wonder.so/jobs',
-      aboutRole: 'Own early product and visual design for an AI-first canvas.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -164,7 +156,7 @@ export const wonder: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-04T18:40:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://wonder.so' },
     { title: 'Source', url: 'https://wonder.so/jobs' },

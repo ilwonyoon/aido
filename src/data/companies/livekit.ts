@@ -180,23 +180,7 @@ export const livekit: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer, Growth',
-      location: 'Remote, U.S.',
-      url: 'https://careers.redpoint.com/companies/livekit/jobs/65837351-product-designer-growth',
-      type: 'full-time',
-      aboutRole:
-        'Design product-led growth initiatives and onboarding experiences for the LiveKit Cloud dashboard and developer surfaces.',
-      responsibilities: [
-        'Design and ship product-led growth initiatives focused on activation and retention',
-        'Own and evolve onboarding and early product experiences',
-        'Identify developer drop-off points and turn insights into improvements',
-        'Partner with Product, Engineering, and Docs to ship iterations',
-        'Design across dashboard, onboarding flows, and documentation surfaces',
-      ],
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -223,7 +207,7 @@ export const livekit: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-06T00:00:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'LiveKit website', url: 'https://livekit.io/' },
     { title: 'LiveKit Series C (TechCrunch)', url: 'https://techcrunch.com/2026/01/22/voice-ai-engine-and-openai-partner-livekit-hits-1b-valuation/' },

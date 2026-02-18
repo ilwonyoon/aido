@@ -131,30 +131,7 @@ export const zedDev: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'Remote (US/EU time zones) or Boulder, CO',
-      type: 'full-time',
-      url: 'https://zed.dev/jobs/designer-who-codes',
-      aboutRole: 'Design the next-generation developer experience and editor UI.',
-      responsibilities: [
-        'Own product design across core editor experiences',
-        'Collaborate closely with engineering and product',
-        'Prototype and iterate on interaction details',
-      ],
-      requirements: [
-        'Strong product design craft and attention to detail',
-        'Comfort working in a highly technical product',
-        'Ability to collaborate deeply with engineers',
-      ],
-      preferred: [
-        'Experience with developer tools',
-        'Ability to read or write code',
-      ],
-      whyInteresting: 'Core design role at a fast-moving developer tools company.',
-    },
-  ],
+  openRoles: [],
 
   cultureInsights: [],
 
@@ -183,7 +160,7 @@ export const zedDev: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-30T12:25:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://zed.dev' },
     { title: 'Source', url: 'https://zed.dev/jobs/designer-who-codes' },

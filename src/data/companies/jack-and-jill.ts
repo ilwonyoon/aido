@@ -211,32 +211,7 @@ export const jackAndJill: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Founding Product Designer',
-      location: 'London, UK',
-      url: 'https://uk.talent.com/view?id=5f3dae973243',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: '£180K+ total comp (cash + equity)',
-      aboutRole: 'First design hire. Take ownership of how users interact with Jack & Jill through voice, written, and visual mediums. Shape the product direction from inception.',
-      responsibilities: [
-        'Own the end-to-end user experience for both Jack (job seekers) and Jill (employers)',
-        'Design voice conversation flows and multimodal interaction patterns',
-        'Conduct user research and shape overall design strategy',
-        'Define product feel and behavior for AI agent interactions',
-        'Collaborate directly with founders on product direction',
-      ],
-      requirements: [
-        'Extensive product design experience',
-        'Deep empathy and understanding of user needs',
-        'Ability to innovate in fast-paced startup environment',
-        'Experience designing for conversational or voice-based interfaces preferred',
-      ],
-      teamInfo: 'You would be the first design hire, collaborating with a 12-person founding team of engineers and operators',
-      whyInteresting: 'Rare 0→1 founding designer role at a well-funded AI startup. Shape the UX of voice-first AI recruitment from scratch with £180K+ comp.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -289,7 +264,7 @@ export const jackAndJill: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-08T18:00:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Jack & Jill website', url: 'https://jackandjill.ai' },
     { title: 'TechCrunch: Jack & Jill raises $20M', url: 'https://techcrunch.com/2025/10/16/jack-jill-raises-20-million-to-bring-conversational-ai-to-job-hunting/' },

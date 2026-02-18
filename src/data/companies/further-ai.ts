@@ -131,13 +131,13 @@ export const furtherAi: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Founding Product Designer',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-      url: 'https://www.ycombinator.com/companies/furtherai',
-      compensation: '$150K-$220K + 0.15-0.35% equity',
-      aboutRole: 'Lead product design for AI insurance operations workflows.',
-    },
+          title: 'Founding Product Designer',
+          location: 'San Francisco, CA',
+          type: 'full-time',
+          url: 'https://www.ycombinator.com/companies/furtherai',
+          compensation: '$150K-$220K + 0.15-0.35% equity',
+          aboutRole: 'Lead product design for AI insurance operations workflows.',
+        }
   ],
 
   // Designer Links
@@ -171,7 +171,7 @@ export const furtherAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T16:20:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.furtherai.com' },
     { title: 'Source', url: 'https://www.ycombinator.com/companies/furtherai' },

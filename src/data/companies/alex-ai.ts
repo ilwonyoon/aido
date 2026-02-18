@@ -139,16 +139,7 @@ export const alexAi: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-      url: 'https://www.ycombinator.com/companies/apriora/jobs/z1xuDyf-product-designer',
-      compensation: '$110K-$170K + 0.25-0.75% equity',
-      aboutRole: 'Design the core recruiting automation experience for Alex AI.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -171,7 +162,7 @@ export const alexAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T16:20:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.alex.com' },
     { title: 'Source', url: 'https://www.ycombinator.com/companies/apriora' },

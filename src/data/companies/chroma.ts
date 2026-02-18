@@ -140,15 +140,7 @@ export const chroma: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'Remote',
-      type: 'full-time',
-      url: 'https://careers.trychroma.com/jobs/4447948005',
-      aboutRole: 'Design product experiences for the Chroma developer platform.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -171,7 +163,7 @@ export const chroma: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-04T18:40:00',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Source', url: 'https://www.trychroma.com' },
     { title: 'Source', url: 'https://careers.trychroma.com' },

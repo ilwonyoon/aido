@@ -202,35 +202,7 @@ export const legora: Company = {
   ],
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Senior Product Designer',
-      location: 'Stockholm, Sweden (On-site)',
-      url: 'https://jobs.ashbyhq.com/legora/89073502-e8e3-49d9-ba4b-5642ef1a933d',
-      team: 'Design (Engineering & Product)',
-      level: 'Senior',
-      type: 'full-time',
-      compensation: 'Competitive salary + equity options (not disclosed)',
-      postedDate: '2025-10',
-      aboutRole: 'Design user flows, interactions, and interfaces for AI-powered legal tools. Transform complex legal workflows into straightforward, high-quality product experiences.',
-      responsibilities: [
-        'Design user flows, interactions, and interfaces for AI-powered tools',
-        'Transform complex problems into straightforward, high-quality product experiences',
-        'Collaborate directly with engineering teams to implement designs',
-        'Use Figma for rapid design iteration and documentation',
-        'Build and scale the design system',
-        'Ensure clarity, consistency, and quality throughout the product',
-      ],
-      requirements: [
-        'Proven end-to-end digital product design experience',
-        'Portfolio demonstrating clear thinking, polished UI, and shipped work',
-        'Strong visual design skills and attention to detail',
-        'Understanding of how AI influences user behavior and interface patterns',
-        'Pragmatism and a bias toward shipping over theorizing',
-      ],
-      whyInteresting: 'Early design team at a legal AI unicorn. Shape design culture with a Head of Design from Shopify/Tictail. High-impact role transforming complex legal workflows into AI-native experiences across 40+ markets.',
-    },
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -325,7 +297,7 @@ export const legora: Company = {
     notes: 'Formerly known as Leya (rebranded Feb 2025). Fastest-growing legal AI company in Europe. Strong design leadership hire signals investment in design. Culture concerns are a key consideration.',
   },
 
-  lastUpdated: '2026-02-10',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Legora Official Website', url: 'https://legora.com' },
     { title: 'YC Company Profile', url: 'https://www.ycombinator.com/companies/legora' },
