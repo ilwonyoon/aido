@@ -170,23 +170,7 @@ export const perplexity: Company = {
     designerLinks: [],
 
     // Open Roles - NONE CURRENTLY
-    openRoles: [
-      {
-        title: 'Product Designer - Enterprise Lead',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4865846007',
-      },
-      {
-        title: 'Product Designer - Growth',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4865806007',
-      },
-      {
-        title: 'AI Interaction Designer',
-        location: 'San Francisco, CA',
-        url: 'https://job-boards.greenhouse.io/perplexityai/jobs/4848736007',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -262,7 +246,7 @@ export const perplexity: Company = {
       notes: 'Great product but no design openings. Keep watching.',
     },
 
-    lastUpdated: '2025-01-25',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2025/09/10/perplexity-reportedly-raised-200m-at-20b-valuation/' },
     { title: 'Source', url: 'https://sacra.com/c/perplexity/' }

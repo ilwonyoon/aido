@@ -244,18 +244,7 @@ export const linear: Company = {
         description: 'Official methodology and design process documentation',
       },
     ],
-    openRoles: [
-      {
-        title: 'Senior / Staff Product Designer',
-        location: 'North America',
-        url: 'https://linear.app/careers/a039835d-cde7-42ef-8250-80c3dc0ed9cf',
-      },
-      {
-        title: 'Designer (Web & Brand)',
-        location: 'North America / Europe',
-        url: 'https://linear.app/careers/4f10c2ca-d19a-42b5-9e1f-d1794c43dd89',
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -361,7 +350,7 @@ export const linear: Company = {
       notes: 'Deep research completed 2026-02-10. See src/data/deep-research/linear.md for full report. Score: 9.0/10.',
     },
 
-    lastUpdated: '2026-02-10',
+    lastUpdated: '2026-02-18',
     sources: [
       { title: 'TechCrunch — Series C ($82M at $1.25B)', url: 'https://techcrunch.com/2025/06/10/atlassian-rival-linear-raises-82m-at-1-25b-valuation/' },
       { title: 'Linear Blog — Building Our Way (Series C)', url: 'https://linear.app/now/building-our-way' },

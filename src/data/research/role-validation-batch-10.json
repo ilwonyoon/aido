@@ -1,0 +1,32 @@
+{
+  "batch": 10,
+  "size": 10,
+  "targets": "manual-tail",
+  "date": "2026-02-18",
+  "selectedIds": ["perplexity", "linear"],
+  "checked": [
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "before": 3,
+      "after": 0,
+      "removed": 3,
+      "notes": "Greenhouse job URLs returned 404/error board"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "before": 2,
+      "after": 0,
+      "removed": 2,
+      "notes": "Specific careers URLs returned 404/closed signal"
+    }
+  ],
+  "totalRolesBefore": 5,
+  "totalRolesAfter": 0,
+  "totalRemoved": 5,
+  "changedFiles": [
+    "src/data/companies/perplexity.ts",
+    "src/data/companies/linear.ts"
+  ]
+}
