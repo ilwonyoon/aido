@@ -1,0 +1,195 @@
+{
+  "batch": 3,
+  "size": 10,
+  "targets": "src/data/research/role-validation-targets-2026-02-18.json",
+  "date": "2026-02-18",
+  "selectedIds": [
+    "copy-ai",
+    "descript",
+    "gong",
+    "grammarly",
+    "heygen",
+    "intercom-fin",
+    "otter-ai",
+    "tabnine",
+    "tome",
+    "ambience-healthcare"
+  ],
+  "checked": [
+    {
+      "id": "copy-ai",
+      "name": "Copy.ai",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.copy.ai/careers",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://www.copy.ai/careers"
+        }
+      ]
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.descript.com/careers",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.descript.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "gong",
+      "name": "Gong",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://gong.io/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.gong.io/careers"
+        }
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.grammarly.com/careers",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://www.grammarly.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://heygen.com/careers",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://job-boards.greenhouse.io/heygen"
+        }
+      ]
+    },
+    {
+      "id": "intercom-fin",
+      "name": "Intercom (Fin)",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.intercom.com/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.intercom.com/careers"
+        }
+      ]
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://otter.ai/careers",
+          "active": true,
+          "reason": "url-active",
+          "finalUrl": "https://otter.ai/careers"
+        }
+      ]
+    },
+    {
+      "id": "tabnine",
+      "name": "Tabnine",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.tabnine.com/careers",
+          "active": false,
+          "reason": "closed-signal",
+          "finalUrl": "https://www.tabnine.com/careers/"
+        }
+      ]
+    },
+    {
+      "id": "tome",
+      "name": "Tome",
+      "before": 1,
+      "after": 0,
+      "removed": 1,
+      "roleChecks": [
+        {
+          "title": "Product Designer",
+          "url": "https://tome.app/careers",
+          "active": false,
+          "reason": "http-404",
+          "finalUrl": "https://tome.app/careers"
+        }
+      ]
+    },
+    {
+      "id": "ambience-healthcare",
+      "name": "Ambience Healthcare",
+      "before": 1,
+      "after": 1,
+      "removed": 0,
+      "roleChecks": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65",
+          "active": true,
+          "reason": "fallback:search-match",
+          "finalUrl": "https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65"
+        }
+      ]
+    }
+  ],
+  "totalRolesBefore": 10,
+  "totalRolesAfter": 5,
+  "totalRemoved": 5,
+  "changedFiles": [
+    "src/data/companies/copy-ai.ts",
+    "src/data/companies/descript.ts",
+    "src/data/companies/gong.ts",
+    "src/data/companies/grammarly.ts",
+    "src/data/companies/heygen.ts",
+    "src/data/companies/intercom-fin.ts",
+    "src/data/companies/otter-ai.ts",
+    "src/data/companies/tabnine.ts",
+    "src/data/companies/tome.ts",
+    "src/data/companies/ambience-healthcare.ts"
+  ]
+}

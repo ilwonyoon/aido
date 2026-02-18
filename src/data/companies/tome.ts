@@ -82,7 +82,7 @@ export const tome: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://tome.app/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -91,7 +91,7 @@ export const tome: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Tome product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.globenewswire.com/news-release/2023/02/22/2613034/0/en/Tome-Is-Fastest-Productivity-Tool-To-Reach-1M-Users-Raises-43M-Series-B-to-Empower-All-Storytellers.html' },
     { title: 'Source', url: 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/' },

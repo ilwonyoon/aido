@@ -92,7 +92,7 @@ export const intercomFin: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.intercom.com/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -101,7 +101,7 @@ export const intercomFin: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Intercom (Fin) product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.intercom.com/blog/our-next-research-and-development-hub-berlin/' },
     { title: 'Source', url: 'https://www.growthunhinged.com/p/intercoms-bet-on-ai' }

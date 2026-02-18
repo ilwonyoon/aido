@@ -77,7 +77,9 @@ export const descript: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }],
+    openRoles: [
+      { title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }
+    ],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -86,7 +88,7 @@ export const descript: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Descript product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.descript.com/careers' },
     { title: 'Source', url: 'https://www.g2.com/products/descript/reviews' }

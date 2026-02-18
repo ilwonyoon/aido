@@ -82,7 +82,7 @@ export const tabnine: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Tel Aviv, Israel (Hybrid)', url: 'https://www.tabnine.com/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -91,7 +91,7 @@ export const tabnine: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Tabnine product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://www.tabnine.com/blog/tabnine-series-b/' },
     { title: 'Source', url: 'https://www.cbinsights.com/company/tabnine/financials' },

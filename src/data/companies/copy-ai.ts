@@ -82,7 +82,7 @@ export const copyAi: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [{ title: 'Product Designer', location: 'Remote (Yes)', url: 'https://www.copy.ai/careers', type: 'full-time' }],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -91,7 +91,7 @@ export const copyAi: Company = {
       whyNot: ['Yes work policy', 'Unknown design culture'],
       nextActions: ['Try Copy.ai product', 'Research founders'],
     },
-    lastUpdated: '2026-01-26T18:30:00',
+    lastUpdated: '2026-02-18',
     sources: [
     { title: 'Source', url: 'https://getlatka.com/companies/copyai' },
     { title: 'Source', url: 'https://www.linkedin.com/jobs/view/senior-product-designer-at-copy-ai-3050055207' }
