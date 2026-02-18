@@ -91,25 +91,25 @@ Output: TypeScript article file + index update
 
 | Criteria | Required |
 |----------|----------|
-| **AI-Native Level** | **A or B only** — C and D are out of scope |
+| **Industry** | **Must be a tech/software company** — no CPG, beverage, retail, manufacturing, etc. |
+| **AI-Native Level** | A, B, C, or D — all levels OK as long as it's a tech company |
 | **Stage** | Seed or later (skip pre-product stealth companies) |
-| **Total Funding** | $5M+ minimum (skip micro-funded companies) |
 | **Product** | Must have a shipped product (not just research/consulting) |
 | **Design Relevance** | Must have or plausibly need Product Designers |
+| **Status** | Must be an active, independent company (not acquired, shut down, or defunct) |
 
 ### Level definitions
 
 - **Level A (AI-Native)**: AI IS the product. Zero-to-one innovation. (Anthropic, Cursor, Perplexity, Midjourney)
 - **Level B (AI-Core)**: AI is the core differentiator. (Glean, Harvey, Superhuman, ElevenLabs)
-- **Level C (AI Feature)**: AI is a major feature but not core. **→ DO NOT ADD**
-- **Level D (AI Minor)**: AI is a minor add-on. **→ DO NOT ADD**
+- **Level C (AI Feature)**: AI is a major feature but not core. (Notion AI, Figma AI)
+- **Level D (AI Minor)**: AI is a minor add-on. (Traditional SaaS with AI features)
 
 ### What NOT to research
 
-- Companies with < $5M funding
-- Companies that are acquired, shut down, or pre-product
-- Level C/D companies (AI is not their core)
-- Companies outside AI/tech (even if they use AI internally)
+- **Non-tech companies** (CPG brands, beverage companies, retail, manufacturing — even if they use AI internally)
+- Companies that are acquired, shut down, or defunct (check domain, last funding date, founder status)
+- Pre-product stealth companies with no shipped product
 - Duplicate/overlapping companies already in the database
 
 ### How to find target companies
@@ -131,12 +131,13 @@ Before adding any company to the codebase, verify:
 
 | Check | Requirement |
 |-------|-------------|
-| **AI Level** | Must be A or B — if C or D, do not add |
+| **Tech company** | Must be a tech/software company — reject CPG, beverage, retail, manufacturing, etc. |
+| **Active company** | Must be active — reject defunct, acquired, or shut down companies |
 | **openRoles** | Job scraper must have been run (empty `[]` is OK if verified no roles exist) |
 | **Funding data** | `totalFunding` and `stage` must be filled from Crunchbase or equivalent |
 | **Founders** | At least 1 founder with name, role, and background |
 | **Description** | Must accurately describe the product in 1-2 sentences |
-| **Category** | Must be set with `as const` — valid values in types.ts |
+| **Category** | Must be set with `as const` — pick the MOST ACCURATE value from the list below. Do NOT guess. |
 | **Sources** | At least 3 verified sources with URLs |
 | **OG Image** | Must run `fetch-og-single.mjs` — set `ogImage: ''` only if script fails |
 | **Build** | `npm run build` must pass after adding the company |
@@ -286,7 +287,7 @@ gh pr create --title "Company data update: [brief summary]" --body "$(cat <<'EOF
 - [List companies added/updated with AI Level]
 
 ## Quality checks
-- All companies Level A or B
+- All companies are tech/software companies (no non-tech)
 - Job scraper run for each company
 - OG images fetched
 - Build verified: passes
@@ -373,24 +374,36 @@ export const companyName: Company = {
 };
 ```
 
-**IMPORTANT**: The `category` field is REQUIRED. Valid values:
-- `'ai-models'` — Foundation models, AI research (Anthropic, OpenAI)
-- `'developer-tools'` — Code assistants, dev infra (Cursor, Replit)
-- `'creative-media'` — Image/video/audio gen, design tools (Midjourney, Runway)
-- `'productivity'` — Writing, notes, search (Notion, Perplexity)
-- `'sales-marketing'` — CRM, marketing (Gong, Intercom)
-- `'enterprise-ops'` — Business automation, data (Ramp, Scale AI)
-- `'vertical-saas'` — Healthcare, legal, fintech (Harvey, Abridge)
+**IMPORTANT**: The `category` field is REQUIRED. Pick the ONE most accurate category based on the company's PRIMARY product:
+
+| Category | When to use | Examples |
+|----------|------------|---------|
+| `'ai-models'` | Foundation models, AI research labs | Anthropic, OpenAI, Mistral |
+| `'developer-tools'` | Code assistants, dev infra, APIs, SDKs | Cursor, Replit, Vercel |
+| `'creative-media'` | Image/video/audio gen, design tools, live commerce | Midjourney, Runway, ElevenLabs |
+| `'productivity'` | Writing, notes, search, collaboration | Notion, Perplexity, Glean |
+| `'sales-marketing'` | CRM, marketing, customer engagement | Gong, Intercom, Apollo |
+| `'enterprise-ops'` | Business automation, data ops, internal tools | Ramp, Scale AI, Palantir |
+| `'vertical-saas'` | Domain-specific SaaS (healthcare, legal, fintech, insurance) | Harvey, Abridge, Vanta |
+
+**Category accuracy rules:**
+- Match based on what the company SELLS, not who they sell to
+- A live commerce marketplace = `'creative-media'`, NOT `'enterprise-ops'`
+- A payments API = `'developer-tools'` or `'vertical-saas'`, NOT `'enterprise-ops'`
+- An auth framework = `'developer-tools'`, NOT `'vertical-saas'`
+- If unsure, check 2-3 similar companies in the codebase for consistency
 
 ### AI-Native Level (REQUIRED)
 
 ```typescript
-aiNativeLevel: 'A' | 'B',  // Only A or B — do NOT add C or D companies
+aiNativeLevel: 'A' | 'B' | 'C' | 'D',  // All levels OK for tech companies
 aiNativeLevelDescription: string,  // Explain why this level
 ```
 
 - **A**: AI IS the product (Anthropic, Cursor, Perplexity)
 - **B**: AI is the core differentiator (Glean, Harvey, ElevenLabs)
+- **C**: AI is a major feature but not core (Notion AI, Figma AI)
+- **D**: AI is a minor add-on (Traditional SaaS with AI features)
 
 After adding a company file, add it to `src/data/companies/index.ts`:
 1. Add the import at the correct alphabetical position
