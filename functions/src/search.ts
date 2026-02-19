@@ -229,15 +229,20 @@ function filterByIntent(
 
 // ── SSE Helpers ────────────────────────────────────────────────────
 
-function ssePhase(res: import('firebase-functions/v2/https').Response, phase: string) {
+type SseResponse = {
+  write: (chunk: string) => void;
+  end: () => void;
+};
+
+function ssePhase(res: SseResponse, phase: string) {
   res.write(`data: ${JSON.stringify({ phase })}\n\n`);
 }
 
-function sseText(res: import('firebase-functions/v2/https').Response, text: string) {
+function sseText(res: SseResponse, text: string) {
   res.write(`data: ${JSON.stringify({ text })}\n\n`);
 }
 
-function sseDone(res: import('firebase-functions/v2/https').Response) {
+function sseDone(res: SseResponse) {
   res.write('data: [DONE]\n\n');
   res.end();
 }
