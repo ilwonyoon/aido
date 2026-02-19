@@ -9,6 +9,8 @@ type Message = {
   content: string;
 };
 
+type Phase = 'analyzing' | 'searching' | null;
+
 const API_URL =
   process.env.NEXT_PUBLIC_AI_SEARCH_API_URL ??
   'https://us-central1-aido-d2cc0.cloudfunctions.net/search';
@@ -17,6 +19,7 @@ export function ChatPanel() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [phase, setPhase] = useState<Phase>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -28,7 +31,6 @@ export function ChatPanel() {
     });
   };
 
-  // Auto-resize textarea
   useEffect(() => {
     const el = textareaRef.current;
     if (!el) return;
@@ -44,6 +46,7 @@ export function ChatPanel() {
     setMessages([...history, { role: 'user', content: prompt }, { role: 'assistant', content: '' }]);
     setInput('');
     setIsLoading(true);
+    setPhase(null);
     scrollToBottom();
 
     try {
@@ -81,7 +84,12 @@ export function ChatPanel() {
           if (payload === '[DONE]') continue;
 
           try {
-            const parsed = JSON.parse(payload) as { text?: string; error?: string };
+            const parsed = JSON.parse(payload) as { text?: string; error?: string; phase?: string };
+
+            if (parsed.phase) {
+              setPhase(parsed.phase as Phase);
+              continue;
+            }
 
             if (parsed.error) {
               setMessages((prev) => {
@@ -93,6 +101,7 @@ export function ChatPanel() {
             }
 
             if (parsed.text) {
+              setPhase(null);
               setMessages((prev) => {
                 const updated = [...prev];
                 const last = updated[updated.length - 1];
@@ -115,6 +124,7 @@ export function ChatPanel() {
       });
     } finally {
       setIsLoading(false);
+      setPhase(null);
       scrollToBottom();
       textareaRef.current?.focus();
     }
@@ -149,6 +159,7 @@ export function ChatPanel() {
               role={message.role}
               content={message.content}
               isStreaming={isLoading && idx === messages.length - 1 && message.role === 'assistant'}
+              phase={isLoading && idx === messages.length - 1 && message.role === 'assistant' ? phase : null}
             />
           ))
         )}

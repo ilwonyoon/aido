@@ -4,29 +4,42 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
+type Phase = 'analyzing' | 'searching' | null;
+
 type ChatMessageProps = {
   role: 'user' | 'assistant';
   content: string;
   isStreaming?: boolean;
+  phase?: Phase;
 };
 
-function TypingDots() {
+const PHASE_LABELS: Record<string, string> = {
+  analyzing: 'Analyzing your query...',
+  searching: 'Finding matches...',
+};
+
+function TypingIndicator({ phase }: { phase: Phase }) {
   return (
-    <div className="flex gap-1 items-center h-5">
-      {[0, 150, 300].map((delay) => (
-        <span
-          key={delay}
-          className="w-1.5 h-1.5 rounded-full bg-[var(--muted)] animate-bounce"
-          style={{ animationDelay: `${delay}ms`, animationDuration: '1s' }}
-        />
-      ))}
+    <div className="flex items-center gap-2">
+      <div className="flex gap-1 items-center">
+        {[0, 150, 300].map((delay) => (
+          <span
+            key={delay}
+            className="w-1.5 h-1.5 rounded-full bg-[var(--muted)] animate-bounce"
+            style={{ animationDelay: `${delay}ms`, animationDuration: '1s' }}
+          />
+        ))}
+      </div>
+      {phase && (
+        <span className="text-xs text-[var(--muted)]">{PHASE_LABELS[phase]}</span>
+      )}
     </div>
   );
 }
 
-export function ChatMessage({ role, content, isStreaming }: ChatMessageProps) {
+export function ChatMessage({ role, content, isStreaming, phase }: ChatMessageProps) {
   const isUser = role === 'user';
-  const isEmpty = content === '' && !isUser;
+  const showTyping = !isUser && content === '' && isStreaming;
 
   return (
     <div className={`flex gap-2 ${isUser ? 'justify-end' : 'justify-start'}`}>
@@ -43,8 +56,8 @@ export function ChatMessage({ role, content, isStreaming }: ChatMessageProps) {
             : 'bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-bl-sm'
         }`}
       >
-        {isEmpty ? (
-          <TypingDots />
+        {showTyping ? (
+          <TypingIndicator phase={phase ?? null} />
         ) : isUser ? (
           <p className="whitespace-pre-wrap">{content}</p>
         ) : (

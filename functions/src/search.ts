@@ -1,27 +1,13 @@
 import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
 import Anthropic from '@anthropic-ai/sdk';
+import { z } from 'zod';
 import * as fs from 'fs';
 import * as path from 'path';
 
 const anthropicApiKey = defineSecret('ANTHROPIC_API_KEY');
 
-const SYSTEM_PROMPT = `You are Upcider, an AI career advisor for product designers at AI companies.
-
-Given a filtered list of relevant companies, recommend the best matches for the user's query.
-
-RULES:
-- Always respond in the same language the user uses (Korean or English)
-- Recommend 3-5 companies with specific reasons
-- Reference actual data from the company list (stage, region, remote, open roles)
-- Be honest about data gaps
-- Format company names as links: [Company Name](/company/{id})
-- Keys in company data: id, name, desc (description), level (AI-native level A-D), cat (category), stage (funding stage), region, remote, roles (open role count), titles (role titles)`;
-
-type ChatMessage = {
-  role: 'user' | 'assistant';
-  content: string;
-};
+// ── Types ──────────────────────────────────────────────────────────
 
 type CompactCompany = {
   id: string;
@@ -35,6 +21,68 @@ type CompactCompany = {
   roles: number;
   titles?: string[];
 };
+
+type ChatMessage = {
+  role: 'user' | 'assistant';
+  content: string;
+};
+
+// ── Intent Schema ──────────────────────────────────────────────────
+
+const IntentSchema = z.object({
+  region: z.array(z.string()).default([]),
+  stage: z.array(z.string()).default([]),
+  level: z.array(z.string()).default([]),
+  cat: z.array(z.string()).default([]),
+  remote: z.enum(['yes', 'no', 'any']).default('any'),
+  hasRoles: z.enum(['required', 'preferred', 'any']).default('preferred'),
+  companies: z.array(z.string()).default([]),
+  follow_up: z.boolean().default(false),
+  needs_clarification: z.boolean().default(false),
+  clarification_question: z.string().nullable().default(null),
+});
+
+type Intent = z.infer<typeof IntentSchema>;
+
+// ── Prompts ────────────────────────────────────────────────────────
+
+const INTENT_PROMPT = `Extract search filters from the user query. Return ONLY valid JSON matching this schema:
+{
+  "region": string[],     // sf-bay-area, nyc, seattle, boston, austin, la, toronto, london, remote-only, other-us, other-intl
+  "stage": string[],      // pre-seed, seed, series-a, series-b, series-c, series-d-plus, growth, other
+  "level": string[],      // A, B, C, D
+  "cat": string[],        // ai-models, developer-tools, creative-media, productivity, sales-marketing, enterprise-ops, vertical-saas, healthcare, fintech, security, robotics, data-infrastructure, hr-recruiting, legal, education, climate-energy, biotech
+  "remote": "yes"|"no"|"any",
+  "hasRoles": "required"|"preferred"|"any",
+  "companies": string[],  // company names mentioned by user (exact as typed)
+  "follow_up": boolean,   // true if referencing previous conversation
+  "needs_clarification": boolean,
+  "clarification_question": string|null
+}
+
+Rules:
+- "0→1" or "early stage" → stage: ["seed","pre-seed","series-a"]
+- "growth" or "late stage" → stage: ["series-c","series-d-plus","growth"]
+- If query is too vague to filter (e.g. "추천해줘", "help"), set needs_clarification=true
+- For clarification_question, respond in the SAME LANGUAGE as the query
+- Return ONLY JSON. No markdown fences. No explanation.`;
+
+const RECOMMEND_PROMPT = `You are Upcider, an AI career advisor for product designers at AI companies.
+
+Given a filtered list of relevant companies, recommend the best matches.
+
+RULES:
+- Respond in the same language the user uses
+- Recommend 3-5 companies with specific reasons
+- Reference actual data from the list (stage, region, remote, open roles)
+- Be honest about data gaps
+- Format company names as links: [Company Name](/company/{id})
+- Data keys: id, name, desc, level (AI-native A-D), cat, stage, region, remote, roles (count), titles (role names)`;
+
+// ── Module-level Cache ─────────────────────────────────────────────
+
+let cachedIndex: Record<string, CompactCompany> | null = null;
+let cachedLookup: Record<string, string> | null = null;
 
 function loadSearchIndex(): Record<string, CompactCompany> {
   const candidates = [
@@ -52,43 +100,125 @@ function loadSearchIndex(): Record<string, CompactCompany> {
   throw new Error('search-index.json not found');
 }
 
-function filterCompanies(
-  index: Record<string, CompactCompany>,
-  query: string,
-  limit = 40
+function getSearchData(): { index: Record<string, CompactCompany>; lookup: Record<string, string> } {
+  if (!cachedIndex) {
+    cachedIndex = loadSearchIndex();
+    cachedLookup = buildNameLookup(cachedIndex);
+  }
+  return { index: cachedIndex, lookup: cachedLookup! };
+}
+
+// ── Name Lookup ────────────────────────────────────────────────────
+
+function buildNameLookup(index: Record<string, CompactCompany>): Record<string, string> {
+  const lookup: Record<string, string> = {};
+  for (const [id, company] of Object.entries(index)) {
+    lookup[company.name.toLowerCase()] = id;
+    lookup[id.toLowerCase()] = id;
+  }
+  return lookup;
+}
+
+function resolveCompanyNames(
+  names: string[],
+  lookup: Record<string, string>,
+  index: Record<string, CompactCompany>
 ): CompactCompany[] {
-  const q = query.toLowerCase();
+  const resolved: CompactCompany[] = [];
+  const seen = new Set<string>();
+
+  for (const name of names) {
+    const key = name.toLowerCase();
+
+    // Exact match by name or ID
+    const exactId = lookup[key];
+    if (exactId && index[exactId] && !seen.has(exactId)) {
+      resolved.push(index[exactId]);
+      seen.add(exactId);
+      continue;
+    }
+
+    // Fuzzy: company name includes query or vice versa
+    const match = Object.values(index).find(
+      (c) =>
+        !seen.has(c.id) &&
+        (c.name.toLowerCase().includes(key) || key.includes(c.name.toLowerCase()))
+    );
+    if (match) {
+      resolved.push(match);
+      seen.add(match.id);
+    }
+  }
+
+  return resolved;
+}
+
+// ── Intent Extraction (Call 1) ─────────────────────────────────────
+
+async function extractIntent(client: Anthropic, message: string): Promise<Intent> {
+  const response = await client.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 300,
+    system: INTENT_PROMPT,
+    messages: [{ role: 'user', content: message }],
+  });
+
+  const text = response.content[0]?.type === 'text' ? response.content[0].text : '';
+
+  // Layer 1: direct parse
+  try {
+    return IntentSchema.parse(JSON.parse(text));
+  } catch { /* fall through */ }
+
+  // Layer 2: regex extract
+  const match = text.match(/\{[\s\S]*\}/);
+  if (match) {
+    try {
+      return IntentSchema.parse(JSON.parse(match[0]));
+    } catch { /* fall through */ }
+  }
+
+  // Layer 3: fallback to empty intent (matches everything)
+  return IntentSchema.parse({});
+}
+
+// ── Intent-based Filtering ─────────────────────────────────────────
+
+function filterByIntent(
+  index: Record<string, CompactCompany>,
+  intent: Intent,
+  limit = 15
+): CompactCompany[] {
   const entries = Object.values(index);
 
   const scored = entries.map((company) => {
     let score = 0;
-    const text = `${company.name} ${company.desc} ${company.cat} ${(company.titles ?? []).join(' ')}`.toLowerCase();
 
-    // keyword match in name/desc/cat
-    const words = q.split(/\s+/).filter((w) => w.length > 2);
-    for (const word of words) {
-      if (text.includes(word)) score += 5;
+    if (intent.region.length > 0) {
+      score += intent.region.includes(company.region) ? 20 : -5;
     }
 
-    // region
-    if ((q.includes('sf') || q.includes('san francisco') || q.includes('bay area')) && company.region === 'sf-bay-area') score += 15;
-    if ((q.includes('nyc') || q.includes('new york')) && company.region === 'nyc') score += 15;
-    if (q.includes('remote') && company.remote === 'Yes') score += 15;
-    if (q.includes('hybrid') && company.remote === 'Hybrid') score += 10;
+    if (intent.stage.length > 0) {
+      score += intent.stage.includes(company.stage) ? 20 : -5;
+    }
 
-    // stage
-    if ((q.includes('series a') || q.includes('series-a')) && company.stage === 'series-a') score += 15;
-    if ((q.includes('series b') || q.includes('series-b')) && company.stage === 'series-b') score += 15;
-    if ((q.includes('series c') || q.includes('series-c')) && company.stage === 'series-c') score += 15;
-    if ((q.includes('seed') || q.includes('early')) && (company.stage === 'seed' || company.stage === 'pre-seed')) score += 15;
-    if ((q.includes('0→1') || q.includes('0-1') || q.includes('early stage')) && ['seed', 'pre-seed', 'series-a'].includes(company.stage)) score += 10;
+    if (intent.level.length > 0) {
+      score += intent.level.includes(company.level) ? 15 : -3;
+    }
 
-    // AI level
-    if ((q.includes('level a') || q.includes('ai native') || q.includes('ai-native')) && company.level === 'A') score += 10;
+    if (intent.cat.length > 0) {
+      score += intent.cat.includes(company.cat) ? 15 : -3;
+    }
 
-    // has open roles
-    if (company.roles > 0) score += 3;
-    if ((q.includes('hiring') || q.includes('open role') || q.includes('role') || q.includes('job')) && company.roles > 0) score += 10;
+    if (intent.remote === 'yes' && (company.remote === 'Yes' || company.region === 'remote-only')) {
+      score += 15;
+    }
+
+    if (company.roles > 0) {
+      score += intent.hasRoles === 'required' ? 20 : intent.hasRoles === 'preferred' ? 10 : 3;
+    } else if (intent.hasRoles === 'required') {
+      score -= 50;
+    }
 
     return { company, score };
   });
@@ -96,6 +226,23 @@ function filterCompanies(
   scored.sort((a, b) => b.score - a.score);
   return scored.slice(0, limit).map((s) => s.company);
 }
+
+// ── SSE Helpers ────────────────────────────────────────────────────
+
+function ssePhase(res: import('firebase-functions/v2/https').Response, phase: string) {
+  res.write(`data: ${JSON.stringify({ phase })}\n\n`);
+}
+
+function sseText(res: import('firebase-functions/v2/https').Response, text: string) {
+  res.write(`data: ${JSON.stringify({ text })}\n\n`);
+}
+
+function sseDone(res: import('firebase-functions/v2/https').Response) {
+  res.write('data: [DONE]\n\n');
+  res.end();
+}
+
+// ── Main Handler ───────────────────────────────────────────────────
 
 export const search = onRequest(
   {
@@ -123,17 +270,18 @@ export const search = onRequest(
       return;
     }
 
-    let searchIndex: Record<string, CompactCompany>;
+    let index: Record<string, CompactCompany>;
+    let lookup: Record<string, string>;
     try {
-      searchIndex = loadSearchIndex();
+      const data = getSearchData();
+      index = data.index;
+      lookup = data.lookup;
     } catch (error) {
       console.error('Failed to load search index:', error);
       res.status(500).send('Search index unavailable');
       return;
     }
 
-    // Filter to top ~40 relevant companies instead of sending all 500+
-    const relevant = filterCompanies(searchIndex, message);
     const client = new Anthropic({ apiKey: anthropicApiKey.value() });
 
     res.setHeader('Content-Type', 'text/event-stream');
@@ -141,7 +289,34 @@ export const search = onRequest(
     res.setHeader('Connection', 'keep-alive');
 
     try {
-      const userMessageWithContext = `Relevant companies (${relevant.length} of ${Object.keys(searchIndex).length} total, pre-filtered for your query):\n${JSON.stringify(relevant)}\n\nQuery: ${message}`;
+      // ── Call 1: Intent extraction (no company data) ──
+      ssePhase(res, 'analyzing');
+      const intent = await extractIntent(client, message);
+
+      // ── Branch: Clarification needed ──
+      if (intent.needs_clarification && intent.clarification_question) {
+        sseText(res, intent.clarification_question);
+        sseDone(res);
+        return;
+      }
+
+      // ── Server-side filter ──
+      ssePhase(res, 'searching');
+      let filtered: CompactCompany[];
+
+      if (intent.companies.length > 0) {
+        // Specific companies mentioned → resolve by name
+        filtered = resolveCompanyNames(intent.companies, lookup, index);
+        // If resolution failed, fallback to intent filter
+        if (filtered.length === 0) {
+          filtered = filterByIntent(index, intent);
+        }
+      } else {
+        filtered = filterByIntent(index, intent);
+      }
+
+      // ── Call 2: Recommendation (filtered companies only) ──
+      const companyContext = `Matching companies (${filtered.length} of ${Object.keys(index).length}):\n${JSON.stringify(filtered)}`;
 
       const stream = await client.messages.stream({
         model: 'claude-haiku-4-5-20251001',
@@ -149,27 +324,26 @@ export const search = onRequest(
         system: [
           {
             type: 'text' as const,
-            text: SYSTEM_PROMPT,
+            text: RECOMMEND_PROMPT,
             cache_control: { type: 'ephemeral' as const },
           },
         ],
         messages: [
           ...history
             .filter((h) => (h.role === 'user' || h.role === 'assistant') && typeof h.content === 'string')
-            .slice(-6) // last 3 exchanges only
+            .slice(-6)
             .map((h) => ({ role: h.role, content: h.content })),
-          { role: 'user', content: userMessageWithContext },
+          { role: 'user', content: `${companyContext}\n\nQuery: ${message}` },
         ],
       });
 
       for await (const event of stream) {
         if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
-          res.write(`data: ${JSON.stringify({ text: event.delta.text })}\n\n`);
+          sseText(res, event.delta.text);
         }
       }
 
-      res.write('data: [DONE]\n\n');
-      res.end();
+      sseDone(res);
     } catch (error) {
       console.error('Search error:', error);
       res.write(`data: ${JSON.stringify({ error: 'Search failed' })}\n\n`);
