@@ -232,16 +232,23 @@ git commit -m "feat: add <Company Name> (Level <A/B>, <stage>)"
 
 ---
 
-## NEVER Modify UI Files
+## UI File Modification Rules
 
+### Data Research 작업 시 (company-researcher, job-scraper, deep-research)
 Do NOT edit files in these directories:
-
 - `src/app/` (pages, layouts)
 - `src/components/` (UI components)
 - `src/app/globals.css` (styles)
 - `src/design/` (design tokens)
 - `src/contexts/` (React contexts)
 - `src/lib/` (Firebase, utilities)
+
+### Feature Development 작업 시 (`.codex/tasks/` 태스크 파일 실행)
+위 디렉토리 수정 **허용**. 단, 반드시:
+- `feature/*` 브랜치에서 작업 (main 직접 수정 금지)
+- 기존 페이지/컴포넌트 동작이 깨지지 않도록 검증
+- `npm run build` 통과 필수
+- 기존 디자인 시스템 토큰/변수 사용 (하드코딩 금지)
 
 ---
 
