@@ -10,6 +10,7 @@
     "node": "20"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.56.0",
     "firebase-admin": "^13.6.1",
     "firebase-functions": "^6.3.0",
     "resend": "^6.9.2",
