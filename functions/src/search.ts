@@ -77,6 +77,12 @@ RULES:
 - Reference actual data from the list (stage, region, remote, open roles)
 - Be honest about data gaps
 - Format company names as links: [Company Name](/company/{id})
+- For every recommended company, include this link line:
+  [Company](/company/{id}) · [Jobs](/jobs) · [Insights](/insights)
+- Use this structure:
+  1) short summary
+  2) "### [Company Name](/company/{id})" sections (one company per section)
+  3) concise next-step suggestions
 - Data keys: id, name, desc, level (AI-native A-D), cat, stage, region, remote, roles (count), titles (role names)`;
 
 // ── Module-level Cache ─────────────────────────────────────────────
@@ -155,12 +161,71 @@ function resolveCompanyNames(
 
 // ── Intent Extraction (Call 1) ─────────────────────────────────────
 
-async function extractIntent(client: Anthropic, message: string): Promise<Intent> {
+function buildHistoryContext(history: ChatMessage[], maxMessages = 4): string {
+  const recent = history
+    .filter((h) => (h.role === 'user' || h.role === 'assistant') && typeof h.content === 'string')
+    .slice(-maxMessages)
+    .map((h) => `${h.role.toUpperCase()}: ${h.content.slice(0, 240)}`);
+
+  return recent.join('\n');
+}
+
+function inferCompaniesFromHistory(
+  history: ChatMessage[],
+  lookup: Record<string, string>,
+  index: Record<string, CompactCompany>
+): string[] {
+  const inferred: string[] = [];
+  const seen = new Set<string>();
+  const recent = history
+    .filter((h) => typeof h.content === 'string')
+    .slice(-8)
+    .reverse();
+
+  for (const item of recent) {
+    const content = item.content;
+    const idMatches = content.matchAll(/\(\/company\/([a-z0-9-]+)\)/g);
+    for (const m of idMatches) {
+      const id = m[1];
+      if (index[id] && !seen.has(id)) {
+        seen.add(id);
+        inferred.push(id);
+      }
+    }
+
+    if (inferred.length >= 3) break;
+
+    const tokens = content
+      .toLowerCase()
+      .split(/[^a-z0-9-]+/)
+      .filter(Boolean);
+
+    for (const token of tokens) {
+      const hit = lookup[token];
+      if (hit && index[hit] && !seen.has(hit)) {
+        seen.add(hit);
+        inferred.push(hit);
+      }
+      if (inferred.length >= 3) break;
+    }
+
+    if (inferred.length >= 3) break;
+  }
+
+  return inferred;
+}
+
+async function extractIntent(client: Anthropic, message: string, history: ChatMessage[]): Promise<Intent> {
+  const historyContext = buildHistoryContext(history);
+  const contextMessage = historyContext
+    ? `Conversation context:\n${historyContext}\n\nCurrent user query:\n${message}`
+    : message;
+
   const response = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
     max_tokens: 300,
     system: INTENT_PROMPT,
-    messages: [{ role: 'user', content: message }],
+    messages: [{ role: 'user', content: contextMessage }],
   });
 
   const text = response.content[0]?.type === 'text' ? response.content[0].text : '';
@@ -296,7 +361,22 @@ export const search = onRequest(
     try {
       // ── Call 1: Intent extraction (no company data) ──
       ssePhase(res, 'analyzing');
-      const intent = await extractIntent(client, message);
+      let intent = await extractIntent(client, message, history);
+
+      const looksLikeFollowUp = /\b(them|they|it|that company|that one)\b/i.test(message)
+        || /(그 회사|그곳|거기|걔네|거긴)/.test(message);
+
+      if (intent.companies.length === 0 && (intent.follow_up || looksLikeFollowUp)) {
+        const inferredCompanyIds = inferCompaniesFromHistory(history, lookup, index);
+        if (inferredCompanyIds.length > 0) {
+          intent = {
+            ...intent,
+            companies: inferredCompanyIds,
+            needs_clarification: false,
+            clarification_question: null,
+          };
+        }
+      }
 
       // ── Branch: Clarification needed ──
       if (intent.needs_clarification && intent.clarification_question) {

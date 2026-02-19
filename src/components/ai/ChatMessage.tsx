@@ -18,6 +18,31 @@ const PHASE_LABELS: Record<string, string> = {
   searching: 'Finding matches...',
 };
 
+function splitAssistantSections(content: string): string[] {
+  const normalized = content.trim();
+  if (!normalized) return [];
+
+  const lines = normalized.split('\n');
+  const parts: string[] = [];
+  let buffer: string[] = [];
+
+  for (const line of lines) {
+    const isSectionStart = /^###\s+\[.+\]\(\/company\/[a-z0-9-]+\)/i.test(line);
+    if (isSectionStart && buffer.length > 0) {
+      parts.push(buffer.join('\n').trim());
+      buffer = [line];
+    } else {
+      buffer.push(line);
+    }
+  }
+
+  if (buffer.length > 0) {
+    parts.push(buffer.join('\n').trim());
+  }
+
+  return parts.filter(Boolean);
+}
+
 function TypingIndicator({ phase }: { phase: Phase }) {
   return (
     <div className="flex items-center gap-2">
@@ -40,6 +65,7 @@ function TypingIndicator({ phase }: { phase: Phase }) {
 export function ChatMessage({ role, content, isStreaming, phase }: ChatMessageProps) {
   const isUser = role === 'user';
   const showTyping = !isUser && content === '' && isStreaming;
+  const assistantSections = !isUser ? splitAssistantSections(content) : [];
 
   return (
     <div className={`flex gap-2 ${isUser ? 'justify-end' : 'justify-start'}`}>
@@ -60,6 +86,42 @@ export function ChatMessage({ role, content, isStreaming, phase }: ChatMessagePr
           <TypingIndicator phase={phase ?? null} />
         ) : isUser ? (
           <p className="whitespace-pre-wrap">{content}</p>
+        ) : assistantSections.length > 1 ? (
+          <div className="space-y-2">
+            {assistantSections.map((section, idx) => (
+              <div
+                key={`${idx}-${section.slice(0, 24)}`}
+                className={idx === 0 ? '' : 'rounded-xl border border-[var(--border)] bg-[var(--background)] p-3'}
+              >
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    a: ({ href, children }) => {
+                      if (href?.startsWith('/')) {
+                        return (
+                          <Link href={href} className="text-[var(--accent)] hover:underline underline-offset-4">
+                            {children}
+                          </Link>
+                        );
+                      }
+                      return (
+                        <a href={href} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:underline underline-offset-4">
+                          {children}
+                        </a>
+                      );
+                    },
+                    p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                    ul: ({ children }) => <ul className="list-disc pl-4 mb-2 space-y-0.5">{children}</ul>,
+                    ol: ({ children }) => <ol className="list-decimal pl-4 mb-2 space-y-0.5">{children}</ol>,
+                    li: ({ children }) => <li className="text-sm">{children}</li>,
+                    strong: ({ children }) => <strong className="font-semibold text-[var(--foreground)]">{children}</strong>,
+                  }}
+                >
+                  {section}
+                </ReactMarkdown>
+              </div>
+            ))}
+          </div>
         ) : (
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
