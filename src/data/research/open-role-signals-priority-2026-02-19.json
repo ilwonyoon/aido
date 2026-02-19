@@ -1,0 +1,187 @@
+{
+  "date": "2026-02-19T08:35:42.401Z",
+  "batches": [
+    "src/data/research/open-role-signals-batch-1.json",
+    "src/data/research/open-role-signals-batch-2.json"
+  ],
+  "totals": {
+    "checked": 20,
+    "high": 4,
+    "medium": 6,
+    "low": 10
+  },
+  "highPriority": [
+    {
+      "companyId": "anara",
+      "companyName": "Anara",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://anara.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://anara.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://anara.com/jobs",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "armada",
+      "companyName": "Armada",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://www.armada.ai/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "ashby",
+      "companyName": "Ashby",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.ashbyhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.ashbyhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/ashby",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "atob",
+      "companyName": "AtoB",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://builtin.com/job/product-designer/2882762",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://builtin.com/job/product-designer/2882762",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/atob",
+          "source": "careers-page"
+        }
+      ]
+    }
+  ],
+  "mediumWatch": [
+    {
+      "companyId": "11x",
+      "companyName": "11x",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.11x.ai/about-us",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.11x.ai/about-us",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "aetherflux",
+      "companyName": "Aetherflux",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/aetherflux",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "aqua-voice",
+      "companyName": "Aqua Voice",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/aqua-voice",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "arc",
+      "companyName": "Arc",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.joinarc.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "arcade-ai",
+      "companyName": "Arcade AI",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/arcade-ai",
+          "source": "ats"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/arcadeai",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "augment",
+      "companyName": "Augment",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.augmentcode.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    }
+  ]
+}

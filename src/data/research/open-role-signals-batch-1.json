@@ -1,0 +1,206 @@
+{
+  "date": "2026-02-19",
+  "batch": 1,
+  "size": 10,
+  "targetsSource": "src/data/research/open-role-signals-targets-2026-02-18.json",
+  "selectedCount": 10,
+  "selectedIds": [
+    "11x",
+    "ada",
+    "adaline-ai",
+    "aegisai",
+    "aerial",
+    "aetherflux",
+    "ai-shift",
+    "algolux",
+    "alix",
+    "anara"
+  ],
+  "summary": {
+    "high": 1,
+    "medium": 2,
+    "low": 7
+  },
+  "results": [
+    {
+      "companyId": "11x",
+      "companyName": "11x",
+      "website": "https://11x.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.11x.ai/about-us",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.11x.ai/about-us",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:33:36.752Z"
+    },
+    {
+      "companyId": "ada",
+      "companyName": "Ada",
+      "website": "https://www.ada.cx",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Ada%22%20%22product%20designer%22%20site%3Aada.cx%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:33:39.984Z"
+    },
+    {
+      "companyId": "adaline-ai",
+      "companyName": "Adaline",
+      "website": "https://adaline.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Adaline%22%20%22product%20designer%22%20site%3Aadaline.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:33:55.343Z"
+    },
+    {
+      "companyId": "aegisai",
+      "companyName": "Aegis AI",
+      "website": "https://aegisai.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Aegis%20AI%22%20%22product%20designer%22%20site%3Aaegisai.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:01.030Z"
+    },
+    {
+      "companyId": "aerial",
+      "companyName": "Aerial Technologies",
+      "website": "https://aerial.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Aerial%20Technologies%22%20%22product%20designer%22%20site%3Aaerial.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:04.156Z"
+    },
+    {
+      "companyId": "aetherflux",
+      "companyName": "Aetherflux",
+      "website": "https://aetherflux.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/aetherflux",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:34:07.298Z"
+    },
+    {
+      "companyId": "ai-shift",
+      "companyName": "AI Shift",
+      "website": "https://www.ai-shift.co.jp",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22AI%20Shift%22%20%22product%20designer%22%20site%3Aai-shift.co.jp%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:13.783Z"
+    },
+    {
+      "companyId": "algolux",
+      "companyName": "Algolux",
+      "website": "https://algolux.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Algolux%22%20%22product%20designer%22%20site%3Aalgolux.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:17.018Z"
+    },
+    {
+      "companyId": "alix",
+      "companyName": "Alix",
+      "website": "https://www.alix.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Alix%22%20%22product%20designer%22%20site%3Aalix.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:19.874Z"
+    },
+    {
+      "companyId": "anara",
+      "companyName": "Anara",
+      "website": "https://anara.com",
+      "signalLevel": "HIGH",
+      "evidenceCount": 4,
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://anara.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://anara.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://anara.com/jobs",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/anara",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:34:22.603Z"
+    }
+  ]
+}

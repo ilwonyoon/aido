@@ -1,0 +1,1664 @@
+[
+  {
+    "id": "11x",
+    "name": "11x",
+    "website": "https://11x.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "ada",
+    "name": "Ada",
+    "website": "https://www.ada.cx",
+    "lastUpdated": "2026-02-04T19:35:00"
+  },
+  {
+    "id": "adaline-ai",
+    "name": "Adaline",
+    "website": "https://adaline.ai",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "aegisai",
+    "name": "Aegis AI",
+    "website": "https://aegisai.com",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "aerial",
+    "name": "Aerial Technologies",
+    "website": "https://aerial.ai",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "aetherflux",
+    "name": "Aetherflux",
+    "website": "https://aetherflux.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "ai-shift",
+    "name": "AI Shift",
+    "website": "https://www.ai-shift.co.jp",
+    "lastUpdated": "2026-02-09T18:12:58.278Z"
+  },
+  {
+    "id": "algolux",
+    "name": "Algolux",
+    "website": "https://algolux.com",
+    "lastUpdated": "2026-02-04T21:00:00"
+  },
+  {
+    "id": "alix",
+    "name": "Alix",
+    "website": "https://www.alix.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "anara",
+    "name": "Anara",
+    "website": "https://anara.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "anon",
+    "name": "Anon",
+    "website": "https://anon.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "apothekary",
+    "name": "Apothekary",
+    "website": "https://apothekary.co",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "aqua-voice",
+    "name": "Aqua Voice",
+    "website": "https://www.aquavoice.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "arc",
+    "name": "Arc",
+    "website": "https://arc.tech",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "arcade-ai",
+    "name": "Arcade AI",
+    "website": "https://arcade.ai",
+    "lastUpdated": "2026-02-01"
+  },
+  {
+    "id": "armada",
+    "name": "Armada",
+    "website": "https://www.armada.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "ashby",
+    "name": "Ashby",
+    "website": "https://www.ashbyhq.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "astromech",
+    "name": "Astromech",
+    "website": "https://www.astromech.bio",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "atob",
+    "name": "AtoB",
+    "website": "https://www.atob.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "augment",
+    "name": "Augment",
+    "website": "https://www.augmentcode.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "aurasell",
+    "name": "Aurasell",
+    "website": "https://www.aurasell.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "automat",
+    "name": "Automat",
+    "website": "https://www.runautomat.com/",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "axiom",
+    "name": "Axiom",
+    "website": "https://axiom.co",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "backflip-ai",
+    "name": "Backflip AI",
+    "website": "https://www.backflip.ai",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "website": "https://www.beautiful.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "bedrock-robotics",
+    "name": "Bedrock Robotics",
+    "website": "https://bedrockrobotics.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "bem",
+    "name": "Bem",
+    "website": "https://startups.gallery/companies/bem",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "benchsci",
+    "name": "BenchSci",
+    "website": "https://www.benchsci.com",
+    "lastUpdated": "2026-02-04T19:10:00"
+  },
+  {
+    "id": "better-auth",
+    "name": "Better Auth",
+    "website": "https://better-auth.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "blackbird-labs",
+    "name": "Blackbird",
+    "website": "https://startups.gallery/companies/blackbird-labs",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "bland",
+    "name": "Bland AI",
+    "website": "https://www.bland.ai",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "blok",
+    "name": "Blok",
+    "website": "https://www.joinblok.co",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "bluedot",
+    "name": "BlueDot",
+    "website": "https://bluedot.global",
+    "lastUpdated": "2026-02-04T19:55:00"
+  },
+  {
+    "id": "brex",
+    "name": "Brex",
+    "website": "https://www.brex.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "browserbase",
+    "name": "Browserbase",
+    "website": "https://www.browserbase.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "website": "https://cal.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "cambium",
+    "name": "Cambium",
+    "website": "https://www.cambiumcarbon.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "campfire",
+    "name": "Campfire",
+    "website": "https://campfire.ai",
+    "lastUpdated": "2026-01-30T12:35:00"
+  },
+  {
+    "id": "cardless",
+    "name": "Cardless",
+    "website": "https://www.cardless.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "careforce-ai",
+    "name": "CareForce AI",
+    "website": "https://careforce.ai",
+    "lastUpdated": "2026-02-09T18:12:58.290Z"
+  },
+  {
+    "id": "causal-labs",
+    "name": "Causal Labs",
+    "website": "https://www.getcausal.ai",
+    "lastUpdated": "2026-01-30T12:40:00"
+  },
+  {
+    "id": "cekura",
+    "name": "Cekura",
+    "website": "https://cekura.ai",
+    "lastUpdated": "2026-02-09T18:12:58.291Z"
+  },
+  {
+    "id": "central-hq",
+    "name": "Central",
+    "website": "https://centralhq.com",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "cerebri-ai",
+    "name": "Cerebri AI",
+    "website": "https://cerebriai.com",
+    "lastUpdated": "2026-02-04T21:35:00"
+  },
+  {
+    "id": "certn",
+    "name": "Certn",
+    "website": "https://certn.co",
+    "lastUpdated": "2026-02-04T21:00:00"
+  },
+  {
+    "id": "chillwall-ai",
+    "name": "Chillwall AI",
+    "website": "https://chillwall.ai",
+    "lastUpdated": "2026-02-04T21:15:00"
+  },
+  {
+    "id": "chronicle",
+    "name": "Chronicle",
+    "website": "https://chroniclehq.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "clearpath-robotics",
+    "name": "Clearpath Robotics",
+    "website": "https://clearpathrobotics.com",
+    "lastUpdated": "2026-02-04T21:35:00"
+  },
+  {
+    "id": "cline",
+    "name": "Cline",
+    "website": "https://cline.bot",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "clockwise",
+    "name": "Clockwise",
+    "website": "https://www.getclockwise.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "coderabbit",
+    "name": "CodeRabbit",
+    "website": "https://coderabbit.ai",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "coframe",
+    "name": "Coframe",
+    "website": "https://www.coframe.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "cognition",
+    "name": "Cognition",
+    "website": "https://cognition.ai",
+    "lastUpdated": "2025-01-24"
+  },
+  {
+    "id": "cognition-ai",
+    "name": "Cognition",
+    "website": "https://cognition.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "collate",
+    "name": "Collate",
+    "website": "https://collate.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "column",
+    "name": "Column",
+    "website": "https://column.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "comfy-ui",
+    "name": "Comfy",
+    "website": "https://comfy.org",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "common-knowledge",
+    "name": "Common Knowledge",
+    "website": "https://commonknowledge.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "composio",
+    "name": "Composio",
+    "website": "https://composio.dev",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "consio-ai",
+    "name": "ConsioAI",
+    "website": "https://www.consio.ai",
+    "lastUpdated": "2026-02-09T18:12:58.296Z"
+  },
+  {
+    "id": "conversion",
+    "name": "Conversion",
+    "website": "https://www.conversion.ai",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "convoke-bio",
+    "name": "Convoke",
+    "website": "https://www.convoke.bio",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "website": "https://www.copy.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "cryptonumerics",
+    "name": "CryptoNumerics",
+    "website": "https://cryptonumerics.com",
+    "lastUpdated": "2026-02-13"
+  },
+  {
+    "id": "cube",
+    "name": "Cube",
+    "website": "https://cube.dev",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "curans",
+    "name": "Curans",
+    "website": "https://curans.org",
+    "lastUpdated": "2026-02-09T18:12:58.297Z"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "website": "https://cursor.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "dagster",
+    "name": "Dagster",
+    "website": "https://dagster.io",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "dakota",
+    "name": "Dakota",
+    "website": "https://www.dakota.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "datacurve",
+    "name": "Datacurve",
+    "website": "https://datacurve.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "david-ai",
+    "name": "David AI",
+    "website": "https://www.withdavid.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "day-ai",
+    "name": "Day AI",
+    "website": "https://day.ai",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "decagon",
+    "name": "Decagon",
+    "website": "https://decagon.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "density",
+    "name": "Density",
+    "website": "https://density.io",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "dimension-labs",
+    "name": "Dimension Labs",
+    "website": "https://dimension.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "divine-research",
+    "name": "Divine",
+    "website": "https://startups.gallery/companies/divine-research",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "dotwork",
+    "name": "Dotwork",
+    "website": "https://dotwork.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "dub-co",
+    "name": "Dub",
+    "website": "https://dub.co",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "e2b",
+    "name": "E2B",
+    "website": "https://e2b.dev",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "edia",
+    "name": "Edia",
+    "website": "https://edia.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "element-ai",
+    "name": "Element AI",
+    "website": "https://www.elementai.com",
+    "lastUpdated": "2026-02-04T19:35:00"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "website": "https://elevenlabs.io",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "endeavor",
+    "name": "Endeavor",
+    "website": "https://www.endeavor.ai",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "farel",
+    "name": "Farel",
+    "website": "https://farel.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "fermat",
+    "name": "Fermat",
+    "website": "https://www.fermat.xyz",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "field-ai",
+    "name": "Field AI",
+    "website": "https://field.ai/",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "finix",
+    "name": "Finix",
+    "website": "https://finix.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "finn-ai",
+    "name": "Finn AI",
+    "website": "https://finn.ai",
+    "lastUpdated": "2026-02-04T21:35:00"
+  },
+  {
+    "id": "fireflies",
+    "name": "Fireflies.ai",
+    "website": "https://fireflies.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "flow-engineering",
+    "name": "Flow",
+    "website": "https://flowengineering.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "flybits",
+    "name": "Flybits",
+    "website": "https://flybits.com",
+    "lastUpdated": "2026-02-04T20:30:00"
+  },
+  {
+    "id": "footprint",
+    "name": "Footprint",
+    "website": "https://footprint.us",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "fortuna-ai",
+    "name": "Fortuna.ai",
+    "website": "https://fortuna.ai",
+    "lastUpdated": "2026-02-04T21:15:00"
+  },
+  {
+    "id": "forty-two-technologies",
+    "name": "42 Technologies",
+    "website": "https://42technologies.com",
+    "lastUpdated": "2026-02-04T20:30:00"
+  },
+  {
+    "id": "found",
+    "name": "Found",
+    "website": "https://found.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "framework",
+    "name": "Framework",
+    "website": "https://frame.work",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "freed",
+    "name": "Freed",
+    "website": "https://www.getfreed.ai",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "genesis-ai",
+    "name": "Genesis AI",
+    "website": "https://genesis-ai.company",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "genspark",
+    "name": "Genspark",
+    "website": "https://www.genspark.ai",
+    "lastUpdated": "2026-02-09T18:12:58.304Z"
+  },
+  {
+    "id": "glean",
+    "name": "Glean",
+    "website": "https://www.glean.com",
+    "lastUpdated": "2026-01-26T18:30:00"
+  },
+  {
+    "id": "gong",
+    "name": "Gong",
+    "website": "https://gong.io",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "granify",
+    "name": "Granify",
+    "website": "https://granify.com",
+    "lastUpdated": "2026-02-04T20:45:00"
+  },
+  {
+    "id": "granola",
+    "name": "Granola",
+    "website": "https://granola.ai",
+    "lastUpdated": "2026-02-13"
+  },
+  {
+    "id": "greenlite",
+    "name": "Greenlite",
+    "website": "https://greenlite.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "greptile",
+    "name": "Greptile",
+    "website": "https://greptile.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "h2o-ai",
+    "name": "H2O.ai",
+    "website": "https://h2o.ai",
+    "lastUpdated": "2026-02-04T19:10:00"
+  },
+  {
+    "id": "hanomi",
+    "name": "Hanomi",
+    "website": "https://www.hanomi.design",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "hedra-ai",
+    "name": "Hedra",
+    "website": "https://hedra.com",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "heyday",
+    "name": "Heyday",
+    "website": "https://www.heyday.ai",
+    "lastUpdated": "2026-02-04T21:15:00"
+  },
+  {
+    "id": "holomd",
+    "name": "HoloMD",
+    "website": "https://holomd.ai",
+    "lastUpdated": "2026-02-09T18:12:58.308Z"
+  },
+  {
+    "id": "hopper",
+    "name": "Hopper",
+    "website": "https://hopper.com",
+    "lastUpdated": "2026-02-04T20:10:00"
+  },
+  {
+    "id": "human-behavior",
+    "name": "Human Behavior",
+    "website": "https://humanbehavior.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "hyperbolic",
+    "name": "Hyperbolic",
+    "website": "https://hyperbolic.xyz",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "hyperbound",
+    "name": "Hyperbound",
+    "website": "https://hyperbound.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "imbue-ai",
+    "name": "Imbue",
+    "website": "https://imbue.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "incident-io",
+    "name": "incident.io",
+    "website": "https://incident.io",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "inference-net",
+    "name": "Inference",
+    "website": "https://www.inference.net",
+    "lastUpdated": "2026-01-30T12:55:00"
+  },
+  {
+    "id": "inkeep",
+    "name": "Inkeep",
+    "website": "https://www.inkeep.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "insight-health-ai",
+    "name": "Insight Health AI",
+    "website": "https://insighthealth.ai",
+    "lastUpdated": "2026-02-09T18:12:58.310Z"
+  },
+  {
+    "id": "instant",
+    "name": "Instant",
+    "website": "https://www.instantdb.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "interaction",
+    "name": "InteraXon",
+    "website": "https://choosemuse.com",
+    "lastUpdated": "2026-02-04T20:10:00"
+  },
+  {
+    "id": "intercom-fin",
+    "name": "Intercom (Fin)",
+    "website": "https://www.intercom.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "interfere",
+    "name": "Interfere",
+    "website": "https://www.interfere.ai",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "invert-bio",
+    "name": "Invert",
+    "website": "https://www.invert.bio",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "invision-ai",
+    "name": "Invision AI",
+    "website": "https://invision.ai",
+    "lastUpdated": "2026-02-04T20:10:00"
+  },
+  {
+    "id": "juicebox",
+    "name": "Juicebox",
+    "website": "https://www.juicebox.ai",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "kaedim",
+    "name": "Kaedim",
+    "website": "https://www.kaedim3d.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "kernel",
+    "name": "Kernel",
+    "website": "https://kernel.sh",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "kiite",
+    "name": "Kiite",
+    "website": "https://www.kiite.ai",
+    "lastUpdated": "2026-02-04T19:55:00"
+  },
+  {
+    "id": "kindred-systems",
+    "name": "Kindred Systems",
+    "website": "https://kindred.ai",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "kite-ai",
+    "name": "Kite AI",
+    "website": "https://kite.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "klue",
+    "name": "Klue",
+    "website": "https://klue.com",
+    "lastUpdated": "2026-02-04T20:10:00"
+  },
+  {
+    "id": "langbase",
+    "name": "Langbase",
+    "website": "https://langbase.com",
+    "lastUpdated": "2026-02-04T18:40:00"
+  },
+  {
+    "id": "leddartech",
+    "name": "LeddarTech",
+    "website": "https://leddartech.com",
+    "lastUpdated": "2026-02-04T21:15:00"
+  },
+  {
+    "id": "leen",
+    "name": "Leen",
+    "website": "https://www.leen.dev",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "leya",
+    "name": "Leya",
+    "website": "https://leya.law",
+    "lastUpdated": "2025-01-24"
+  },
+  {
+    "id": "lightsource",
+    "name": "LightSource",
+    "website": "https://lightsource.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "lindy",
+    "name": "Lindy",
+    "website": "https://www.lindy.ai",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "website": "https://linear.app",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "loman-ai",
+    "name": "Loman AI",
+    "website": "https://loman.ai",
+    "lastUpdated": "2026-02-09T18:12:58.317Z"
+  },
+  {
+    "id": "loyal-dogs",
+    "name": "Loyal",
+    "website": "https://loyal.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "lumos",
+    "name": "Lumos",
+    "website": "https://www.lumos.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "mage",
+    "name": "Mage",
+    "website": "https://www.mage.ai",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "mail0",
+    "name": "Mail0",
+    "website": "https://mail0.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "mainstay",
+    "name": "Mainstay",
+    "website": "https://mainstay.io",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "manifest",
+    "name": "Manifest",
+    "website": "https://manifest.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "martian",
+    "name": "Martian",
+    "website": "https://startups.gallery/companies/martian",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "mastra",
+    "name": "Mastra",
+    "website": "https://mastra.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "mecanizou",
+    "name": "Mecanizou",
+    "website": "https://mecanizou.com",
+    "lastUpdated": "2026-02-09T18:12:58.320Z"
+  },
+  {
+    "id": "medallion",
+    "name": "Medallion",
+    "website": "https://www.medallion.co",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "mem",
+    "name": "Mem",
+    "website": "https://mem.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "mercor",
+    "name": "Mercor",
+    "website": "https://mercor.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "merge",
+    "name": "Merge",
+    "website": "https://www.merge.dev",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "meter",
+    "name": "Meter",
+    "website": "https://meter.com",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "midday",
+    "name": "Midday",
+    "website": "https://midday.ai",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "middesk",
+    "name": "Middesk",
+    "website": "https://middesk.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "mintlify",
+    "name": "Mintlify",
+    "website": "https://mintlify.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "website": "https://mistral.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "modular",
+    "name": "Modular",
+    "website": "https://modular.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "moonlake-ai",
+    "name": "Moonlake",
+    "website": "https://startups.gallery/companies/moonlake-ai",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "mural",
+    "name": "Mural",
+    "website": "https://www.mural.co",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "neon-pay",
+    "name": "Neon Pay",
+    "website": "https://startups.gallery/companies/neon-pay",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "neru-health",
+    "name": "Neru Health",
+    "website": "https://neruhealth.com",
+    "lastUpdated": "2026-02-09T18:12:58.326Z"
+  },
+  {
+    "id": "netramark",
+    "name": "NetraMark",
+    "website": "https://netramark.com",
+    "lastUpdated": "2026-02-04T21:00:00"
+  },
+  {
+    "id": "newlimit",
+    "name": "NewLimit",
+    "website": "https://newlimit.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "nexhealth",
+    "name": "NexHealth",
+    "website": "https://www.nexhealth.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "nextai",
+    "name": "NextAI",
+    "website": "https://nextapp.co",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "website": "https://notion.so",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "nowadays",
+    "name": "Nowadays",
+    "website": "https://www.nowadays.ai",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "nudge",
+    "name": "Nudge",
+    "website": "https://nudge.ai",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "nuvo",
+    "name": "Nuvo",
+    "website": "https://nuvo.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "obie-ai",
+    "name": "Obie.ai",
+    "website": "https://www.obie.ai",
+    "lastUpdated": "2026-02-04T19:35:00"
+  },
+  {
+    "id": "ohmd",
+    "name": "OhMD",
+    "website": "https://ohmd.com",
+    "lastUpdated": "2026-02-09T18:12:58.328Z"
+  },
+  {
+    "id": "onyx",
+    "name": "Onyx",
+    "website": "https://www.onyx.app",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "openmind",
+    "name": "Openmind",
+    "website": "https://openmind.space",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "openpay",
+    "name": "Openpay",
+    "website": "https://openpay.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "operant-ai",
+    "name": "Operant AI",
+    "website": "https://www.operant.ai",
+    "lastUpdated": "2026-02-11T17:00:52Z"
+  },
+  {
+    "id": "orchids",
+    "name": "Orchids",
+    "website": "https://orchids.app",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "osmind",
+    "name": "Osmind",
+    "website": "https://www.osmind.org",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "osmosis",
+    "name": "Osmosis",
+    "website": "https://osmosis.ai",
+    "lastUpdated": "2026-01-30T12:20:00"
+  },
+  {
+    "id": "oway",
+    "name": "Oway",
+    "website": "https://www.oway.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "owner",
+    "name": "Owner",
+    "website": "https://owner.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "oxide-computer",
+    "name": "Oxide Computer Company",
+    "website": "https://oxide.computer",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "palmstreet",
+    "name": "Palmstreet",
+    "website": "https://palmstreet.app",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "paper",
+    "name": "Paper",
+    "website": "https://paper.design",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "parabola",
+    "name": "Parabola",
+    "website": "https://parabola.io",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "paradigm",
+    "name": "Paradigm",
+    "website": "https://www.paradigm.co",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "partnerstack",
+    "name": "PartnerStack",
+    "website": "https://partnerstack.com",
+    "lastUpdated": "2026-02-04T21:00:00"
+  },
+  {
+    "id": "patch",
+    "name": "Patch",
+    "website": "https://www.patch.io",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "website": "https://perplexity.ai",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "phenomic-ai",
+    "name": "Phenomic AI",
+    "website": "https://phenomic.ai",
+    "lastUpdated": "2026-02-13"
+  },
+  {
+    "id": "phonely",
+    "name": "Phonely",
+    "website": "https://phonely.ai",
+    "lastUpdated": "2026-02-09T18:12:58.333Z"
+  },
+  {
+    "id": "pierre",
+    "name": "Pierre",
+    "website": "https://heypierre.app",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "pika",
+    "name": "Pika",
+    "website": "https://pika.art",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "playbook",
+    "name": "Playbook",
+    "website": "https://www.playbook.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "pocus",
+    "name": "Pocus",
+    "website": "https://www.pocus.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "podqi",
+    "name": "Podqi",
+    "website": "https://startups.gallery/companies/podqi",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "polycam",
+    "name": "Polycam",
+    "website": "https://poly.cam",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog",
+    "website": "https://posthog.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "prime-intellect",
+    "name": "Prime Intellect",
+    "website": "https://www.primeintellect.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "prismax",
+    "name": "PrismaX",
+    "website": "https://prismax.ai",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "private-ai",
+    "name": "Private AI",
+    "website": "https://www.private-ai.com",
+    "lastUpdated": "2026-02-11T17:00:52Z"
+  },
+  {
+    "id": "promise-pay",
+    "name": "Promise",
+    "website": "https://www.promise.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "pulley",
+    "name": "Pulley",
+    "website": "https://pulley.com",
+    "lastUpdated": "2026-01-30T12:10:00"
+  },
+  {
+    "id": "pylon",
+    "name": "Pylon",
+    "website": "https://usepylon.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "r2",
+    "name": "R2",
+    "website": "https://r2.co",
+    "lastUpdated": "2026-02-09T18:12:58.335Z"
+  },
+  {
+    "id": "radiantgraph",
+    "name": "Radiantgraph",
+    "website": "https://radiantgraph.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "website": "https://www.ranger.ai",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "rec-technologies",
+    "name": "Rec Technologies",
+    "website": "https://rectech.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "recall-ai",
+    "name": "Recall.ai",
+    "website": "https://www.recall.ai",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "reducto",
+    "name": "Reducto",
+    "website": "https://reducto.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "website": "https://resend.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "resolver",
+    "name": "Resolver",
+    "website": "https://www.resolver.com",
+    "lastUpdated": "2026-02-04T20:45:00"
+  },
+  {
+    "id": "roboflow",
+    "name": "Roboflow",
+    "website": "https://roboflow.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "website": "https://runwayml.com/",
+    "lastUpdated": "2025-01-26"
+  },
+  {
+    "id": "salient",
+    "name": "Salient",
+    "website": "https://trysalient.com",
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "id": "seed-health",
+    "name": "Seed",
+    "website": "https://seed.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "sentient-labs",
+    "name": "Sentient Labs",
+    "website": "https://sentient.foundation",
+    "lastUpdated": "2026-01-30T12:50:00"
+  },
+  {
+    "id": "seriesai",
+    "name": "Series Entertainment",
+    "website": "https://series.inc",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "seso",
+    "name": "Seso",
+    "website": "https://www.sesolabor.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "sfcompute",
+    "name": "San Francisco Compute Company",
+    "website": "https://www.sfcompute.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "sharpestminds",
+    "name": "SharpestMinds",
+    "website": "https://www.sharpestminds.com",
+    "lastUpdated": "2026-02-04T21:35:00"
+  },
+  {
+    "id": "shepherd",
+    "name": "Shepherd",
+    "website": "https://shepherdinsurance.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "slash",
+    "name": "Slash",
+    "website": "https://slash.com",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "slope",
+    "name": "Slope",
+    "website": "https://www.slopepay.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "snaptravel",
+    "name": "SnapTravel",
+    "website": "https://www.super.com",
+    "lastUpdated": "2026-02-04T19:35:00"
+  },
+  {
+    "id": "sola-security",
+    "name": "Sola Security",
+    "website": "https://www.sola.security",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "sonder",
+    "name": "Sonder",
+    "website": "https://sonder.ai",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "sortspoke",
+    "name": "SortSpoke",
+    "website": "https://sortspoke.com",
+    "lastUpdated": "2026-02-13"
+  },
+  {
+    "id": "stability-ai",
+    "name": "Stability AI",
+    "website": "https://stability.ai/",
+    "lastUpdated": "2025-01-26"
+  },
+  {
+    "id": "stackai",
+    "name": "StackAI",
+    "website": "https://stackai.com",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "strada",
+    "name": "Strada",
+    "website": "https://www.getstrada.com",
+    "lastUpdated": "2026-02-09T18:12:58.343Z"
+  },
+  {
+    "id": "stride-health",
+    "name": "Stride Health",
+    "website": "https://www.stridehealth.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "stytch",
+    "name": "Stytch",
+    "website": "https://stytch.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "subbyx",
+    "name": "Subbyx",
+    "website": "https://subbyx.com",
+    "lastUpdated": "2026-02-09T18:12:58.343Z"
+  },
+  {
+    "id": "subframe",
+    "name": "Subframe",
+    "website": "https://subframe.com",
+    "lastUpdated": "2026-02-04T18:40:00"
+  },
+  {
+    "id": "succint",
+    "name": "Succinct",
+    "website": "https://succinct.xyz",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "website": "https://supabase.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "superlinked",
+    "name": "Superlinked",
+    "website": "https://superlinked.com",
+    "lastUpdated": "2026-02-17"
+  },
+  {
+    "id": "supermemory",
+    "name": "Supermemory",
+    "website": "https://supermemory.ai",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "swae",
+    "name": "Swae",
+    "website": "https://swae.io",
+    "lastUpdated": "2026-02-04T20:45:00"
+  },
+  {
+    "id": "sway",
+    "name": "Sway",
+    "website": "https://swaythefuture.com/",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "swift-medical",
+    "name": "Swift Medical",
+    "website": "https://swiftmedical.com",
+    "lastUpdated": "2026-02-11T17:00:52Z"
+  },
+  {
+    "id": "symbiotic",
+    "name": "Symbiotic",
+    "website": "https://symbiotic.fi",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "website": "https://www.tabnine.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "tako",
+    "name": "Tako",
+    "website": "https://www.tako.so",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "tandem",
+    "name": "Tandem",
+    "website": "https://tandemhealth.ai",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "tealbook",
+    "name": "TealBook",
+    "website": "https://www.tealbook.com",
+    "lastUpdated": "2026-02-04T20:45:00"
+  },
+  {
+    "id": "thatch",
+    "name": "Thatch",
+    "website": "https://thatch.ai",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "the-interaction-company-of-california",
+    "name": "The Interaction Company Of California",
+    "website": "https://poke.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "things",
+    "name": "Things",
+    "website": "https://www.things.inc",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "thinking-machines",
+    "name": "Thinking Machines",
+    "website": "https://startups.gallery/companies/thinking-machines",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "tolans",
+    "name": "Tolans",
+    "website": "https://startups.gallery/companies/tolans",
+    "lastUpdated": "2026-02-01T12:45:00"
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "website": "https://tome.app",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "trunk",
+    "name": "Trunk",
+    "website": "https://trunk.io",
+    "lastUpdated": "2026-01-30T12:45:00"
+  },
+  {
+    "id": "two-dots",
+    "name": "Two Dots",
+    "website": "https://twodots.com",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "unbounce",
+    "name": "Unbounce",
+    "website": "https://unbounce.com",
+    "lastUpdated": "2026-02-04T20:30:00"
+  },
+  {
+    "id": "unify",
+    "name": "Unify",
+    "website": "https://www.unifygtm.com",
+    "lastUpdated": "2026-02-01T12:30:00"
+  },
+  {
+    "id": "until-labs",
+    "name": "Until Labs",
+    "website": "https://www.untillabs.com",
+    "lastUpdated": "2026-02-01T13:05:00"
+  },
+  {
+    "id": "upwind",
+    "name": "Upwind",
+    "website": "https://www.upwind.io",
+    "lastUpdated": "2026-02-01T13:35:00"
+  },
+  {
+    "id": "urbanlogiq",
+    "name": "UrbanLogiq",
+    "website": "https://urbanlogiq.com",
+    "lastUpdated": "2026-02-13"
+  },
+  {
+    "id": "validere",
+    "name": "Validere",
+    "website": "https://validere.com",
+    "lastUpdated": "2026-02-04T19:55:00"
+  },
+  {
+    "id": "vanta",
+    "name": "Vanta",
+    "website": "https://vanta.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "vantage-analytics",
+    "name": "Vantage Analytics",
+    "website": "https://vantageanalytics.com",
+    "lastUpdated": "2026-02-04T21:35:00"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "website": "https://vercel.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "voiceflow",
+    "name": "Voiceflow",
+    "website": "https://www.voiceflow.com",
+    "lastUpdated": "2026-02-04T19:10:00"
+  },
+  {
+    "id": "vozy",
+    "name": "Vozy",
+    "website": "https://vozy.co",
+    "lastUpdated": "2026-02-09T18:12:58.352Z"
+  },
+  {
+    "id": "walrus",
+    "name": "Walrus",
+    "website": "https://www.walrus.xyz",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "warmer",
+    "name": "Warmer",
+    "website": "https://warmer.com",
+    "lastUpdated": "2026-01-30T12:30:00"
+  },
+  {
+    "id": "willow",
+    "name": "Willow",
+    "website": "https://willow.ai",
+    "lastUpdated": "2026-02-01T13:20:00"
+  },
+  {
+    "id": "wordware",
+    "name": "Wordware",
+    "website": "https://www.wordware.ai",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "workos",
+    "name": "WorkOS",
+    "website": "https://workos.com",
+    "lastUpdated": "2026-02-01T14:20:00"
+  },
+  {
+    "id": "writer",
+    "name": "Writer",
+    "website": "https://writer.com",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "xanadu",
+    "name": "Xanadu",
+    "website": "https://xanadu.ai",
+    "lastUpdated": "2026-02-04T19:55:00"
+  },
+  {
+    "id": "xpertsea",
+    "name": "Xpertsea",
+    "website": "https://xpertsea.com",
+    "lastUpdated": "2026-02-04T20:30:00"
+  },
+  {
+    "id": "zed-dev",
+    "name": "Zed",
+    "website": "https://zed.dev",
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "id": "zeroentropy",
+    "name": "ZeroEntropy",
+    "website": "https://zeroentropy.dev",
+    "lastUpdated": "2026-02-01T12:30:00"
+  }
+]

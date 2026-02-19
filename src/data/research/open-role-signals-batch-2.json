@@ -1,0 +1,231 @@
+{
+  "date": "2026-02-19",
+  "batch": 2,
+  "size": 10,
+  "targetsSource": "src/data/research/open-role-signals-targets-2026-02-18.json",
+  "selectedCount": 10,
+  "selectedIds": [
+    "anon",
+    "apothekary",
+    "aqua-voice",
+    "arc",
+    "arcade-ai",
+    "armada",
+    "ashby",
+    "astromech",
+    "atob",
+    "augment"
+  ],
+  "summary": {
+    "high": 3,
+    "medium": 4,
+    "low": 3
+  },
+  "results": [
+    {
+      "companyId": "anon",
+      "companyName": "Anon",
+      "website": "https://anon.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Anon%22%20%22product%20designer%22%20site%3Aanon.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:33.603Z"
+    },
+    {
+      "companyId": "apothekary",
+      "companyName": "Apothekary",
+      "website": "https://apothekary.co",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Apothekary%22%20%22product%20designer%22%20site%3Aapothekary.co%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:34:36.720Z"
+    },
+    {
+      "companyId": "aqua-voice",
+      "companyName": "Aqua Voice",
+      "website": "https://www.aquavoice.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/aqua-voice",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:34:41.897Z"
+    },
+    {
+      "companyId": "arc",
+      "companyName": "Arc",
+      "website": "https://arc.tech",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.joinarc.com/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:34:59.617Z"
+    },
+    {
+      "companyId": "arcade-ai",
+      "companyName": "Arcade AI",
+      "website": "https://arcade.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/arcade-ai",
+          "source": "ats"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/arcadeai",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:35:05.149Z"
+    },
+    {
+      "companyId": "armada",
+      "companyName": "Armada",
+      "website": "https://www.armada.ai",
+      "signalLevel": "HIGH",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://job-boards.greenhouse.io/armada/jobs/5080694008",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://www.armada.ai/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:35:11.941Z"
+    },
+    {
+      "companyId": "ashby",
+      "companyName": "Ashby",
+      "website": "https://www.ashbyhq.com",
+      "signalLevel": "HIGH",
+      "evidenceCount": 4,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.ashbyhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.ashbyhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/ashby",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/ashby",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:35:18.791Z"
+    },
+    {
+      "companyId": "astromech",
+      "companyName": "Astromech",
+      "website": "https://www.astromech.bio",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Astromech%22%20%22product%20designer%22%20site%3Aastromech.bio%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:35:22.257Z"
+    },
+    {
+      "companyId": "atob",
+      "companyName": "AtoB",
+      "website": "https://www.atob.com",
+      "signalLevel": "HIGH",
+      "evidenceCount": 4,
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://builtin.com/job/product-designer/2882762",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://builtin.com/job/product-designer/2882762",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/atob",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/atob",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:35:26.569Z"
+    },
+    {
+      "companyId": "augment",
+      "companyName": "Augment",
+      "website": "https://www.augmentcode.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.augmentcode.com/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:35:31.472Z"
+    }
+  ]
+}
