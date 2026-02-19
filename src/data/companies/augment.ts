@@ -6,6 +6,7 @@ export const augment: Company = {
   description: 'AI teammate for logistics.',
   website: 'https://www.augmentcode.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const augment: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$85M',
   revenue: 'Unknown',

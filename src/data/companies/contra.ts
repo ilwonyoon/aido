@@ -7,6 +7,7 @@ export const contra: Company = {
   website: 'https://contra.com',
     screenshot: '/screenshots/contra-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const contra: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$44.5M',
   fundingHistory: [

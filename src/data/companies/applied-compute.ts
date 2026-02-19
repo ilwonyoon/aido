@@ -6,6 +6,7 @@ export const appliedCompute: Company = {
   description: 'Enterprise AI company building specific intelligence systems for production use.',
   website: 'https://appliedcompute.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const appliedCompute: Company = {
 
   // Business
   stage: 'Venture',
+  normalizedStage: 'other' as const,
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [

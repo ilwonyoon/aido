@@ -7,6 +7,7 @@ export const harvey: Company = {
     website: 'https://harvey.ai',
     screenshot: '/screenshots/harvey-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,7 @@ export const harvey: Company = {
 
     // Business
     stage: 'Series F',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$8B (Dec 2025), reportedly raising at $11B (Feb 2026)',
     totalFunding: '$1.02B',
     fundingHistory: [
@@ -362,4 +364,4 @@ export const harvey: Company = {
       { title: 'Harvey acquires Hexus', url: 'https://techcrunch.com/2026/01/23/legal-ai-giant-harvey-acquires-hexus-as-competition-heats-up-in-legal-tech/' },
       { title: 'Glassdoor: HARVEY Reviews', url: 'https://www.glassdoor.com/Reviews/HARVEY-Reviews-E8126873.htm' },
     ],
-  };
+};

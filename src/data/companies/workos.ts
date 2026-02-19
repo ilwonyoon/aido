@@ -6,6 +6,7 @@ export const workos: Company = {
   description: 'Dev platform to implement enterprise-grade features.',
   website: 'https://workos.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const workos: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$80M',
   revenue: 'Unknown',

@@ -7,6 +7,7 @@ export const delphi: Company = {
     'Platform for building "digital minds" that let experts, creators, and businesses deliver conversational versions of their knowledge across channels.',
   website: 'https://www.delphi.ai',
   headquarters: 'San Francisco, CA, USA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const delphi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$16M',
   fundingHistory: [

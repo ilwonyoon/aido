@@ -7,6 +7,7 @@ export const subtleComputing: Company = {
     website: 'https://www.subtle.co',
   screenshot: '/screenshots/subtle-computing-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const subtleComputing: Company = {
 
     // Business
     stage: 'Seed',
+    normalizedStage: 'seed' as const,
     valuation: 'Unknown',
     totalFunding: '$6M',
     fundingHistory: [

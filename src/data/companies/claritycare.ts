@@ -7,6 +7,7 @@ export const claritycare: Company = {
   website: 'https://docs.claritycare.ai',
     screenshot: '/screenshots/claritycare-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const claritycare: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$3.5M',
   fundingHistory: [

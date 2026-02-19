@@ -7,6 +7,7 @@ export const thinkingMachinesLab: Company = {
   website: 'https://thinkingmachines.ai',
   screenshot: '/screenshots/thinking-machines-lab-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Unknown',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const thinkingMachinesLab: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: '$12B (Jul 2025)',
   totalFunding: '$2B',
   fundingHistory: [

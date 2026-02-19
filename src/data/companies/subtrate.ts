@@ -7,6 +7,7 @@ export const subtrate: Company = {
     'AI infrastructure platform focused on accelerating model training and deployment.',
   website: 'https://substrate.com/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
 
@@ -23,6 +24,7 @@ export const subtrate: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$100M',
   fundingHistory: [

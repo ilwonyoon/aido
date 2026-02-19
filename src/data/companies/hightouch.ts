@@ -8,6 +8,7 @@ export const hightouch: Company = {
   website: 'https://hightouch.com/',
     screenshot: '/screenshots/hightouch-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const hightouch: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$1.2B (Feb 2025)',
   totalFunding: '$80M',
   fundingHistory: [

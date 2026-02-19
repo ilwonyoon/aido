@@ -6,6 +6,7 @@ export const clearpathRobotics: Company = {
   description: 'Autonomous robotics company building robot platforms and autonomy systems for industrial applications.',
   website: 'https://clearpathrobotics.com',
   headquarters: 'Kitchener, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   aiTypes: ['automation'],
@@ -14,6 +15,8 @@ export const clearpathRobotics: Company = {
   industries: ['other'],
 
   stage: 'Private',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$79.1M',
   revenue: 'Not publicly disclosed',

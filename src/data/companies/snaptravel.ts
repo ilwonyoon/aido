@@ -6,6 +6,7 @@ export const snaptravel: Company = {
   description: 'AI-powered travel assistant that enables booking hotels through messaging channels.',
   website: 'https://www.super.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const snaptravel: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$21.2M (Series A total, 2018)',
   revenue: 'Not publicly disclosed',

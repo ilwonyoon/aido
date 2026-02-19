@@ -8,6 +8,7 @@ export const factory: Company = {
   website: 'https://factory.ai',
     screenshot: '/screenshots/factory-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const factory: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$300M (Sept 2025)',
   totalFunding: '$50M (Series B announced)',
   fundingHistory: [

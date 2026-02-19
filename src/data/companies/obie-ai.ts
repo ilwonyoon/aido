@@ -6,6 +6,7 @@ export const obieAi: Company = {
   description: 'AI knowledge base platform that delivers answers to internal FAQs across workplace tools.',
   website: 'https://www.obie.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const obieAi: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$765K',
   revenue: 'Not publicly disclosed',

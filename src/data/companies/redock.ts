@@ -6,6 +6,7 @@ export const redock: Company = {
   description: 'AI-powered proposal search engine that finds and surfaces content from existing document management systems.',
   website: 'https://www.redock.com',
   headquarters: 'Ottawa, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const redock: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: '~$1M',
   fundingHistory: [
     {

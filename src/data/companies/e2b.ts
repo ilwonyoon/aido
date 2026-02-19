@@ -6,6 +6,7 @@ export const e2b: Company = {
   description: 'Open-source cloud for AI agents.',
   website: 'https://e2b.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const e2b: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$21M',
   revenue: 'Unknown',

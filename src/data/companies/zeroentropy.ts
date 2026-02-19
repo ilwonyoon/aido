@@ -6,6 +6,7 @@ export const zeroentropy: Company = {
   description: 'World-class agentic retrieval on autopilot.',
   website: 'https://zeroentropy.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const zeroentropy: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.2M',
   revenue: 'Unknown',

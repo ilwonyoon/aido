@@ -6,6 +6,7 @@ export const prismax: Company = {
   description: 'Decentralized robotics intelligence platform that scales teleoperation data collection and foundation models for physical AI, powered by crypto incentive mechanisms.',
   website: 'https://prismax.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -15,6 +16,7 @@ export const prismax: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['infrastructure'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$11M',
   fundingHistory: [

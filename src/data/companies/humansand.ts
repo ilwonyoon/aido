@@ -7,6 +7,7 @@ export const humansand: Company = {
     website: 'https://humansand.ai',
     screenshot: '/screenshots/humansand-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const humansand: Company = {
 
     // Business
     stage: 'Seed',
+    normalizedStage: 'seed' as const,
     valuation: '$4.48B (Jan 2026)',
     totalFunding: '$480M',
     fundingHistory: [

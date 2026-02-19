@@ -6,6 +6,7 @@ export const walrus: Company = {
   description: 'Scalable, onchain storage.',
   website: 'https://www.walrus.xyz',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const walrus: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$140M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const aurasell: Company = {
   description: 'AI-native CRM.',
   website: 'https://www.aurasell.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const aurasell: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   revenue: 'Unknown',

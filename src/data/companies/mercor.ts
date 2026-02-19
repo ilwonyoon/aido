@@ -7,6 +7,7 @@ export const mercor: Company = {
     website: 'https://mercor.com',
     screenshot: '/screenshots/mercor-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -21,6 +22,8 @@ export const mercor: Company = {
   industries: ['infrastructure'],
 
     stage: 'Series A → C (rapid growth)',
+
+    normalizedStage: 'series-a' as const,
     valuation: '$10B (Oct 2025)',
     totalFunding: '$480M+',
     fundingHistory: [
@@ -241,4 +244,4 @@ export const mercor: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b/' },
     { title: 'Source', url: 'https://sacra.com/c/mercor/' }
   ],
-  };
+};

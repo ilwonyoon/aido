@@ -6,6 +6,7 @@ export const agora: Company = {
   description: 'Governance platform for onchain communities and DAOs.',
   website: 'https://www.agora.xyz',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const agora: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5M',
   fundingHistory: [],

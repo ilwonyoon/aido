@@ -6,6 +6,7 @@ export const brainfish: Company = {
   description: 'Ambient AI agents for customer support and help centers.',
   website: 'https://www.brainfish.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const brainfish: Company = {
 
   // Business
   stage: 'Pre-Series A',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$10M',
   fundingHistory: [

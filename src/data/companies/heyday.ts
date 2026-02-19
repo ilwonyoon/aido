@@ -6,6 +6,7 @@ export const heyday: Company = {
   description: 'Conversational AI platform for e-commerce customer service and shopping assistance.',
   website: 'https://www.heyday.ai',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const heyday: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$184.7M',
   revenue: 'Not publicly disclosed',

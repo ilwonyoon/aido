@@ -6,6 +6,7 @@ export const meter: Company = {
   description: 'Internet infrastructure for the enterprise.',
   website: 'https://meter.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const meter: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$170M',
   revenue: 'Unknown',

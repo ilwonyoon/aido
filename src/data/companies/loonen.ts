@@ -8,6 +8,7 @@ export const loonen: Company = {
   website: 'https://loonen.com/',
     screenshot: '/screenshots/loonen-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const loonen: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6M',
   fundingHistory: [

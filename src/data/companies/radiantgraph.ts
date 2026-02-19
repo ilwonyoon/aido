@@ -6,6 +6,7 @@ export const radiantgraph: Company = {
   description: 'Intelligent personalization for healthcare.',
   website: 'https://radiantgraph.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const radiantgraph: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$11M',
   revenue: 'Unknown',

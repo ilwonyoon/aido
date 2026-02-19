@@ -6,6 +6,7 @@ export const buildForever: Company = {
   description: 'Consumer brand and product studio focused on building "BuildForever."',
   website: 'https://buildforever.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const buildForever: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],

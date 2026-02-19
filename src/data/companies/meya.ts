@@ -7,6 +7,7 @@ export const meya: Company = {
     'Developer-first conversational AI platform for building, training, and deploying custom chatbots across messaging channels with Python/BFML scripting.',
   website: 'https://www.meya.ai',
   headquarters: 'Kitchener, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
   ogImage: '/og-images/meya-og.webp',
 
@@ -18,6 +19,7 @@ export const meya: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: '$5M',
   totalFunding: '$1.01M',
   fundingHistory: [

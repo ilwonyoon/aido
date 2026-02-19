@@ -7,6 +7,7 @@ export const c2ro: Company = {
     'Privacy-first AI video analytics platform providing GDPR-compliant, biometric-free behavioral insights for retail, malls, and commercial real estate using existing camera infrastructure.',
   website: 'https://www.c2ro.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
 
   ogImage: '/og-images/c2ro-og.webp',
@@ -19,6 +20,7 @@ export const c2ro: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   totalFunding: 'CAD ~$3.8M',
   fundingHistory: [
     {

@@ -6,6 +6,7 @@ export const legora: Company = {
   description: 'AI-native workspace for legal professionals. Empowers lawyers to review and research faster, draft smarter, and advise with precision using collaborative AI.',
   website: 'https://legora.com',
   headquarters: 'Stockholm, Sweden',
+  region: 'other-intl' as const,
   remote: 'No',
 
     // OG Image
@@ -21,6 +22,7 @@ export const legora: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$1.8B (Oct 2025)',
   totalFunding: '$266M',
   fundingHistory: [

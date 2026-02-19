@@ -7,6 +7,7 @@ export const characterAi: Company = {
     website: 'https://character.ai',
     screenshot: '/screenshots/character-ai-screenshot.png',
     headquarters: 'Menlo Park, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const characterAi: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: '$5B (Sept 2024, post-Google deal)',
     totalFunding: '$193M',
     fundingHistory: [
@@ -254,4 +256,4 @@ export const characterAi: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2024/08/02/character-ai-ceo-noam-shazeer-returns-to-google/' },
     { title: 'Source', url: 'https://www.oreateai.com/blog/characterais-bold-return-to-google-a-25-billion-acquisition/fa44e864e4e84a728d18224c87276e52' }
   ],
-  };
+};

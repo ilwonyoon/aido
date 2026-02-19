@@ -6,6 +6,7 @@ export const theInteractionCompanyOfCalifornia: Company = {
   description: 'Interaction Company of California Building Poke.',
   website: 'https://poke.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const theInteractionCompanyOfCalifornia: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   revenue: 'Unknown',

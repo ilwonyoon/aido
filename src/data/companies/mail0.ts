@@ -6,6 +6,7 @@ export const mail0: Company = {
   description: 'AI native email client.',
   website: 'https://mail0.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mail0: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2M',
   revenue: 'Unknown',

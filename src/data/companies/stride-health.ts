@@ -6,6 +6,7 @@ export const strideHealth: Company = {
   description: 'Portable benefits for small business.',
   website: 'https://www.stridehealth.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const strideHealth: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$47M',
   revenue: 'Unknown',

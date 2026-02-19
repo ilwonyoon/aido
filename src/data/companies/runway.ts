@@ -7,6 +7,7 @@ export const runway: Company = {
     website: 'https://runwayml.com/',
     screenshot: '/screenshots/runway-screenshot.png',
     headquarters: 'New York City, NY',
+    region: 'nyc' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const runway: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: 'Unknown',
     totalFunding: '$536.5M (as of Apr 2025)',
     fundingHistory: [
@@ -192,4 +194,4 @@ export const runway: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/04/03/runway-best-known-for-its-video-generating-models-raises-308m/' },
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Runway_(company' }
   ],
-  };
+};

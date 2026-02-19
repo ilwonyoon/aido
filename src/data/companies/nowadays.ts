@@ -6,6 +6,7 @@ export const nowadays: Company = {
   description: 'AI for corporate events.',
   website: 'https://www.nowadays.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const nowadays: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2M',
   revenue: 'Unknown',

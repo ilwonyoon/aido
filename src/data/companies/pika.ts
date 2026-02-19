@@ -7,6 +7,7 @@ export const pika: Company = {
     website: 'https://pika.art',
     screenshot: '/screenshots/pika-screenshot.png',
     headquarters: 'Palo Alto, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -21,6 +22,8 @@ export const pika: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: '$470M',
     totalFunding: '$115M',
     fundingHistory: [
@@ -238,4 +241,4 @@ export const pika: Company = {
     { title: 'Source', url: 'https://www.washingtonpost.com/technology/2024/06/04/pika-funding-openai-sora-google-video/' },
     { title: 'Source', url: 'https://sacra.com/c/pika/' }
   ],
-  };
+};

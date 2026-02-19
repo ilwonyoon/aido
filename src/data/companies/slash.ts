@@ -6,6 +6,7 @@ export const slash: Company = {
   description: 'Business banking for internet entrepreneurs.',
   website: 'https://slash.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const slash: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$41M',
   revenue: 'Unknown',

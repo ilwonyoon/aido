@@ -6,6 +6,7 @@ export const genesisAi: Company = {
   description: 'Global physical AI laboratory building universal robotics foundation models and simulation infrastructure for general-purpose robots.',
   website: 'https://genesis-ai.company',
   headquarters: 'Palo Alto, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -17,6 +18,8 @@ export const genesisAi: Company = {
   industries: ['infrastructure'],
 
   stage: 'Seed',
+
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$105M',
   fundingHistory: [

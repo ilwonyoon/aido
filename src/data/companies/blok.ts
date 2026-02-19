@@ -6,6 +6,7 @@ export const blok: Company = {
   description: 'AI-powered product experimentation platform that uses synthetic user personas to simulate real-world app usage and predict user reactions before launch.',
   website: 'https://www.joinblok.co',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Unknown',
   ogImage: '/og-images/blok-og.webp',
 
@@ -15,6 +16,8 @@ export const blok: Company = {
   industries: ['developer-tools'],
 
   stage: 'Seed',
+
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$7.5M',
   fundingHistory: [

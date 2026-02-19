@@ -7,6 +7,7 @@ export const tensormesh: Company = {
   website: 'https://tensormesh.ai',
   screenshot: '/screenshots/tensormesh-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const tensormesh: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.5M',
   fundingHistory: [

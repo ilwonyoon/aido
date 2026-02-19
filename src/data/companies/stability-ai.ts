@@ -7,6 +7,7 @@ export const stabilityAi: Company = {
     website: 'https://stability.ai/',
   screenshot: '/screenshots/stability-ai-screenshot.png',
     headquarters: 'London, UK',
+    region: 'london' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const stabilityAi: Company = {
 
     // Business
     stage: 'Private',
+    normalizedStage: 'growth' as const,
     valuation: 'Unknown',
     totalFunding: 'Not publicly disclosed',
     fundingHistory: [
@@ -190,4 +192,4 @@ export const stabilityAi: Company = {
     { title: 'Source', url: 'https://stability.ai/news/stability-ai-announces-investment-from-wpp-and-new-partnership-to-shape-the-future-of-media-and-entertainment-production' },
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Stability_AI' }
   ],
-  };
+};

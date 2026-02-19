@@ -6,6 +6,7 @@ export const granify: Company = {
   description: 'AI personalization platform for e-commerce retailers that optimizes conversion and search experiences.',
   website: 'https://granify.com',
   headquarters: 'Edmonton, AB, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const granify: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$12.6M',
   revenue: 'Not publicly disclosed',

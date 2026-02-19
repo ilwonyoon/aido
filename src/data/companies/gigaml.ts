@@ -7,6 +7,7 @@ export const gigaml: Company = {
   website: 'https://giga.ai',
     screenshot: '/screenshots/gigaml-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const gigaml: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$61M',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const openai: Company = {
     website: 'https://openai.com',
     screenshot: '/screenshots/openai-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const openai: Company = {
 
     // Business
     stage: 'Series F',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$300B+ (2025)',
     totalFunding: '$57.9B+',
     fundingHistory: [
@@ -261,4 +263,4 @@ export const openai: Company = {
     { title: 'Source', url: 'https://sherwood.news/business/openais-arr-reached-over-usd20-billion-in-2025-cfo-says/' },
     { title: 'Source', url: 'https://sacra.com/c/openai/' }
   ],
-  };
+};

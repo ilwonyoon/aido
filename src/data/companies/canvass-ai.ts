@@ -7,6 +7,7 @@ export const canvassAi: Company = {
     'Industrial AI software platform that helps asset-intensive enterprises improve reliability, yield, and energy efficiency with predictive analytics.',
   website: 'https://www.canvass.io',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const canvassAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [

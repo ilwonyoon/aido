@@ -8,6 +8,7 @@ export const hummingbird: Company = {
   website: 'https://www.hummingbird.co/',
     screenshot: '/screenshots/hummingbird-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const hummingbird: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   fundingHistory: [],

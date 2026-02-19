@@ -7,6 +7,7 @@ export const jasper: Company = {
     website: 'https://jasper.ai',
     screenshot: '/screenshots/jasper-screenshot.png',
     headquarters: 'Austin, TX',
+    region: 'austin' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const jasper: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: '$1.2B (2024, post-layoffs)',
     totalFunding: '$131M',
     fundingHistory: [
@@ -269,4 +271,4 @@ export const jasper: Company = {
     { title: 'Source', url: 'https://www.jasper.ai/blog/jasper-new-ceo' },
     { title: 'Source', url: 'https://sqmagazine.co.uk/jasper-ai-statistics/' }
   ],
-  };
+};

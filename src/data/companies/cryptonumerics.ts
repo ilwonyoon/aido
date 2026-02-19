@@ -6,6 +6,7 @@ export const cryptonumerics: Company = {
   description: 'AI-powered data privacy platform enabling enterprises to create privacy-protected datasets while maintaining analytical quality for machine learning.',
   website: 'https://cryptonumerics.com',
   headquarters: 'Toronto, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   category: 'enterprise-ops' as const,
@@ -14,6 +15,8 @@ export const cryptonumerics: Company = {
   industries: ['security'],
 
   stage: 'Acquired',
+
+  normalizedStage: 'other' as const,
   valuation: '$7.1M (acquisition price)',
   totalFunding: '$2.5M',
   fundingHistory: [

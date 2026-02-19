@@ -6,6 +6,7 @@ export const stackai: Company = {
   description: 'No-code platform to build AI agents.',
   website: 'https://stackai.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const stackai: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$16M',
   revenue: 'Unknown',

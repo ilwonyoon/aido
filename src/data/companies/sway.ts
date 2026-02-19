@@ -6,6 +6,7 @@ export const sway: Company = {
   description: 'Seaweed as replacement for plastic.',
   website: 'https://swaythefuture.com/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const sway: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$8.5M',
   revenue: 'Unknown',

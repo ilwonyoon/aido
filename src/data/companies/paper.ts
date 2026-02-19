@@ -6,6 +6,7 @@ export const paper: Company = {
   description: 'The new home for designers.',
   website: 'https://paper.design',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const paper: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.2M',
   revenue: 'Unknown',

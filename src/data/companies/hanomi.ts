@@ -6,6 +6,7 @@ export const hanomi: Company = {
   description: 'Reimagining hardware design.',
   website: 'https://www.hanomi.design',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const hanomi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$3M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const kiite: Company = {
   description: 'AI-enabled sales enablement and knowledge management platform for revenue teams.',
   website: 'https://www.kiite.ai',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const kiite: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$3.5M',
   revenue: 'Not publicly disclosed',

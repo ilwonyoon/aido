@@ -7,6 +7,7 @@ export const codeium: Company = {
     website: 'https://codeium.com',
     screenshot: '/screenshots/codeium-screenshot.png',
     headquarters: 'Mountain View, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const codeium: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series C',
+
+    normalizedStage: 'series-c' as const,
     valuation: '$2.9B (Feb 2025, in talks)',
     totalFunding: '$215M',
     revenue: '$40M ARR (Feb 2025)',
@@ -172,4 +175,4 @@ export const codeium: Company = {
     { title: 'Source', url: 'https://www.lennysnewsletter.com/p/the-untold-story-of-windsurf-varun-mohan' },
     { title: 'Source', url: 'https://www.business-standard.com/technology/tech-news/google-hires-windsurf-ceo-varun-mohan-gemini-ai-project-openai-douglas-chen-125071200543_1.html' }
   ],
-  };
+};

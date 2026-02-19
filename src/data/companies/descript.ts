@@ -7,6 +7,7 @@ export const descript: Company = {
     website: 'https://www.descript.com',
     screenshot: '/screenshots/descript-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const descript: Company = {
   industries: ['developer-tools', 'creative-media'],
 
     stage: 'Series C',
+
+    normalizedStage: 'series-c' as const,
     valuation: 'Unknown',
     totalFunding: '$100M+',
     revenue: 'Unknown',
@@ -93,4 +96,4 @@ export const descript: Company = {
     { title: 'Source', url: 'https://www.descript.com/careers' },
     { title: 'Source', url: 'https://www.g2.com/products/descript/reviews' }
   ],
-  };
+};

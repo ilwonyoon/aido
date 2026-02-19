@@ -7,6 +7,7 @@ export const replit: Company = {
     website: 'https://replit.com',
     screenshot: '/screenshots/replit-screenshot.png',
     headquarters: 'Foster City, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const replit: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$9B (Jan 2026)',
     totalFunding: '$650M+',
     fundingHistory: [
@@ -331,4 +333,4 @@ export const replit: Company = {
     { title: 'Replit Usage Statistics 2026', url: 'https://www.index.dev/blog/replit-usage-statistics' },
     { title: 'Vibe Coding TAM', url: 'https://www.saastr.com/the-vibe-coding-tam-how-big-can-this-market-really-get/' },
   ],
-  };
+};

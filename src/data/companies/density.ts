@@ -6,6 +6,7 @@ export const density: Company = {
   description: 'Privacy-first occupancy sensors and analytics platform that measures how people use physical spaces, enabling enterprises to optimize real estate and workplace design.',
   website: 'https://density.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/density-og.webp',
   aiTypes: ['data-analysis'],
@@ -13,6 +14,7 @@ export const density: Company = {
   category: 'enterprise-ops' as const,
   industries: ['other'],
   stage: 'Series D',
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$1.05B (Nov 2021)',
   totalFunding: '$225M+',
   fundingHistory: [

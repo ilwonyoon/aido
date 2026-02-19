@@ -7,6 +7,7 @@ export const netic: Company = {
   website: 'https://netic.ai',
     screenshot: '/screenshots/netic-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const netic: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$23M',
   fundingHistory: [

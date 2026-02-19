@@ -6,6 +6,7 @@ export const aegisai: Company = {
   description: 'AI AI native email security.',
   website: 'https://aegisai.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const aegisai: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$13M',
   revenue: 'Unknown',

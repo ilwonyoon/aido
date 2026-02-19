@@ -6,6 +6,7 @@ export const convokeBio: Company = {
   description: 'AI-native OS for drug development.',
   website: 'https://www.convoke.bio',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const convokeBio: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$8.6M',
   revenue: 'Unknown',

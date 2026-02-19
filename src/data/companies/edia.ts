@@ -6,6 +6,7 @@ export const edia: Company = {
   description: 'The AI platform for K-12.',
   website: 'https://edia.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const edia: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$9.4M',
   revenue: 'Unknown',

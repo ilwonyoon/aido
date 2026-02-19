@@ -6,6 +6,7 @@ export const parabola: Company = {
   description: 'Turn messy data into AI workflows.',
   website: 'https://parabola.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const parabola: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$24M',
   revenue: 'Unknown',

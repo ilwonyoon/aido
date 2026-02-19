@@ -6,6 +6,7 @@ export const ada: Company = {
   description: 'AI customer service platform that automates support conversations with chatbots and automation.',
   website: 'https://www.ada.cx',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const ada: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$56M+ (as of 2020)',
   revenue: 'Not publicly disclosed',

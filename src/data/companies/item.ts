@@ -8,6 +8,7 @@ export const item: Company = {
   website: 'https://www.item.app/',
     screenshot: '/screenshots/item-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const item: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

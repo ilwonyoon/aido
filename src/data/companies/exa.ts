@@ -8,6 +8,7 @@ export const exa: Company = {
   website: 'https://exa.ai',
     screenshot: '/screenshots/exa-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const exa: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$700M (Sept 2025)',
   totalFunding: '$85M',
   fundingHistory: [

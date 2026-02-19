@@ -6,6 +6,7 @@ export const incidentIo: Company = {
   description: 'Incident management platform.',
   website: 'https://incident.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const incidentIo: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$62M',
   revenue: 'Unknown',

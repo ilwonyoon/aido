@@ -6,6 +6,7 @@ export const dimensionLabs: Company = {
   description: 'Labs Unstructured conversation analytics platform.',
   website: 'https://dimension.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const dimensionLabs: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$6M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const nexhealth: Company = {
   description: 'Real-time patient booking platform.',
   website: 'https://www.nexhealth.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const nexhealth: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$125M',
   revenue: 'Unknown',

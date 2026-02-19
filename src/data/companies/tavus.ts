@@ -7,6 +7,7 @@ export const tavus: Company = {
     website: 'https://tavus.io',
   screenshot: '/screenshots/tavus-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const tavus: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: '$80M',
     totalFunding: '$64.2M',
     fundingHistory: [
@@ -257,4 +260,4 @@ export const tavus: Company = {
     { title: 'Source', url: 'https://www.crunchbase.com/organization/tavus' },
     { title: 'Source', url: 'https://tavus.io' }
   ],
-  };
+};

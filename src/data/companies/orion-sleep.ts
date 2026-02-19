@@ -7,6 +7,7 @@ export const orionSleep: Company = {
   website: 'https://www.orionsleep.com',
     screenshot: '/screenshots/orion-sleep-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const orionSleep: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$18M',
   fundingHistory: [],

@@ -7,6 +7,7 @@ export const llmarena: Company = {
     website: 'https://lmarena.ai',
     screenshot: '/screenshots/llmarena-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const llmarena: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: '$1.7B (Jan 2026)',
     totalFunding: '$150M',
     fundingHistory: [
@@ -165,4 +167,4 @@ export const llmarena: Company = {
     { title: 'Source', url: 'https://research.contrary.com/company/lmarena' },
     { title: 'Source', url: 'https://lmarena.ai/' }
   ],
-  };
+};

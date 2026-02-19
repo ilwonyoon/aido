@@ -7,6 +7,7 @@ export const typeface: Company = {
     website: 'https://typeface.ai',
   screenshot: '/screenshots/typeface-screenshot.png',
     headquarters: 'Palo Alto, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const typeface: Company = {
 
     // Business
     stage: 'Series B',
+    normalizedStage: 'series-b' as const,
     valuation: '$1B (Jun 2023)',
     totalFunding: '$206M',
     fundingHistory: [
@@ -289,4 +291,4 @@ export const typeface: Company = {
     { title: 'Source', url: 'https://www.linkedin.com/pulse/abhay-parasnis-typeface-1-billion-valuation-brett-stapper-uxake' },
     { title: 'Source', url: 'https://tracxn.com/d/companies/typeface/__9jDBm6q1mJzBb-dsOYViFE4NRwFTNrCwreA895blLoM' }
   ],
-  };
+};

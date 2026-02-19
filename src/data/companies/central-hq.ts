@@ -6,6 +6,7 @@ export const centralHq: Company = {
   description: 'Payroll, benefits and gov compliance for startups.',
   website: 'https://centralhq.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const centralHq: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$8.6M',
   revenue: 'Unknown',

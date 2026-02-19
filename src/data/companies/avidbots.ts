@@ -7,6 +7,7 @@ export const avidbots: Company = {
     'Autonomous robotics company building AI-powered floor cleaning robots for commercial and industrial facilities.',
   website: 'https://www.avidbots.com',
   headquarters: 'Kitchener, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const avidbots: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$107M+',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const bem: Company = {
   description: 'The AI data interface.',
   website: 'https://startups.gallery/companies/bem',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const bem: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$3.7M',
   revenue: 'Unknown',

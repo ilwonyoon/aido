@@ -7,6 +7,7 @@ export const wabi: Company = {
   website: 'https://wabi.ai',
   screenshot: '/screenshots/wabi-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const wabi: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [

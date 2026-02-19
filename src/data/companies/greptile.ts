@@ -6,6 +6,7 @@ export const greptile: Company = {
   description: 'Using AI to catch bugs.',
   website: 'https://greptile.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const greptile: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   revenue: 'Unknown',

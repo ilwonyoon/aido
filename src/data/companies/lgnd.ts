@@ -8,6 +8,7 @@ export const lgnd: Company = {
   website: 'https://www.lgnd.com/',
     screenshot: '/screenshots/lgnd-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const lgnd: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$9M',
   fundingHistory: [

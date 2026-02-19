@@ -6,6 +6,7 @@ export const lumos: Company = {
   description: 'Autonomous identity platform unifying SaaS management and identity governance with AI-driven access reviews, provisioning, and least-privilege enforcement.',
   website: 'https://www.lumos.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   ogImage: '/og-images/lumos-og.webp',
 
@@ -15,6 +16,8 @@ export const lumos: Company = {
   industries: ['security'],
 
   stage: 'Series B',
+
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$65M+',
   fundingHistory: [

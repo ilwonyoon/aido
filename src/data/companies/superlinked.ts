@@ -6,6 +6,7 @@ export const superlinked: Company = {
   description: 'Python framework and cloud infrastructure for building high-performance vector search and recommendation systems from complex enterprise data.',
   website: 'https://superlinked.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -15,6 +16,7 @@ export const superlinked: Company = {
   category: 'developer-tools' as const,
   industries: ['developer-tools'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: '$9.5M+',
   fundingHistory: [
     {

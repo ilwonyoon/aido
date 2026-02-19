@@ -6,6 +6,7 @@ export const supabase: Company = {
   description: 'Open-source Firebase alternative.',
   website: 'https://supabase.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const supabase: Company = {
 
   // Business
   stage: 'Series E',
+  normalizedStage: 'series-d-plus' as const,
   valuation: 'Unknown',
   totalFunding: '$100M',
   revenue: 'Unknown',

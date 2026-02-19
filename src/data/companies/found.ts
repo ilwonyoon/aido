@@ -6,6 +6,7 @@ export const found: Company = {
   description: 'Banking for the self-employed.',
   website: 'https://found.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const found: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const seriesai: Company = {
   description: 'AI-native game development platform building the Rho Engine — a multimodal full-stack game creation suite powered by generative AI.',
   website: 'https://series.inc',
   headquarters: 'Rocklin, CA',
+  region: 'other-us' as const,
   remote: 'Yes',
 
     // OG Image
@@ -15,6 +16,7 @@ export const seriesai: Company = {
   category: 'creative-media' as const,
   industries: ['creative-media'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '$190M (post-money, 2024)',
   totalFunding: '$35.9M',
   fundingHistory: [

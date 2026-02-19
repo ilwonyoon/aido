@@ -7,6 +7,7 @@ export const numeric: Company = {
   website: 'https://www.numeric.io',
     screenshot: '/screenshots/numeric-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const numeric: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$51M',
   fundingHistory: [

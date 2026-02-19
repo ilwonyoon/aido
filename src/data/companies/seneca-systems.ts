@@ -7,6 +7,7 @@ export const senecaSystems: Company = {
   website: 'https://seneca.com',
     screenshot: '/screenshots/seneca-systems-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const senecaSystems: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$60M',
   fundingHistory: [

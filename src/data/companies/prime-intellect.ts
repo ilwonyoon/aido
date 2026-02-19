@@ -6,6 +6,7 @@ export const primeIntellect: Company = {
   description: 'Intellect Commoditizing compute and intelligence.',
   website: 'https://www.primeintellect.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const primeIntellect: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const podqi: Company = {
   description: 'AI-Powered IP protection.',
   website: 'https://startups.gallery/companies/podqi',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const podqi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$3.25M',
   revenue: 'Unknown',

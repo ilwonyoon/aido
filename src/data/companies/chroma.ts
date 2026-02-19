@@ -7,6 +7,7 @@ export const chroma: Company = {
   website: 'https://www.trychroma.com',
     screenshot: '/screenshots/chroma-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const chroma: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$18M',
   fundingHistory: [

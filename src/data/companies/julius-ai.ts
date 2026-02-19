@@ -7,6 +7,7 @@ export const juliusAi: Company = {
     'AI data analyst that connects data sources so teams can ask questions in natural language and get analysis, charts, and reports without coding.',
   website: 'https://julius.ai',
   headquarters: 'San Francisco, CA, USA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const juliusAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$10M',
   fundingHistory: [

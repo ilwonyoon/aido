@@ -7,6 +7,7 @@ export const shortwave: Company = {
   website: 'https://www.shortwave.com',
     screenshot: '/screenshots/shortwave-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const shortwave: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$9M',
   fundingHistory: [],

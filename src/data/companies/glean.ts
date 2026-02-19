@@ -7,6 +7,7 @@ export const glean: Company = {
     website: 'https://www.glean.com',
     screenshot: '/screenshots/glean-screenshot.png',
     headquarters: 'Palo Alto, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const glean: Company = {
   industries: ['other'],
 
     stage: 'Series F',
+
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$7.2B (2025)',
     totalFunding: '$410M',
     revenue: 'Unknown',

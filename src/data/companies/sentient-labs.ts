@@ -7,6 +7,7 @@ export const sentientLabs: Company = {
   website: 'https://sentient.foundation',
     screenshot: '/screenshots/sentient-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const sentientLabs: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$85M',
   revenue: 'Unknown',

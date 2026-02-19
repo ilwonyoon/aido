@@ -7,6 +7,7 @@ export const openOceanRobotics: Company = {
     'Autonomous solar-powered surface vehicle company building the DataXplorer USV for persistent ocean monitoring, maritime security, and marine carbon removal verification.',
   website: 'https://openoceanrobotics.com',
   headquarters: 'Victoria, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'No',
 
   ogImage: '/og-images/open-ocean-robotics-og.webp',
@@ -19,6 +20,7 @@ export const openOceanRobotics: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'CA$6M (4 rounds)',
   fundingHistory: [

@@ -8,6 +8,7 @@ export const variant: Company = {
   website: 'https://variant.ai/',
   screenshot: '/screenshots/variant-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const variant: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5.9M',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const linear: Company = {
     website: 'https://linear.app',
     screenshot: '/screenshots/linear-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -21,6 +22,8 @@ export const linear: Company = {
   industries: ['productivity'],
 
     stage: 'Series C',
+
+    normalizedStage: 'series-c' as const,
     valuation: '$1.25B (June 2025)',
     totalFunding: '$134M',
     fundingHistory: [
@@ -363,4 +366,4 @@ export const linear: Company = {
       { title: 'Linear for Agents (May 2025)', url: 'https://linear.app/changelog/2025-05-20-linear-for-agents' },
       { title: 'Deep Research Report', url: 'src/data/deep-research/linear.md' },
     ],
-  };
+};

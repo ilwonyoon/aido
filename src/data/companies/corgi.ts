@@ -8,6 +8,7 @@ export const corgi: Company = {
   website: 'https://www.corgi.insure/',
     screenshot: '/screenshots/corgi-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const corgi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$108M',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const sphere: Company = {
   website: 'https://getsphere.com',
   screenshot: '/screenshots/sphere-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const sphere: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$21M',
   fundingHistory: [

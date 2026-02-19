@@ -6,6 +6,7 @@ export const armada: Company = {
   description: 'Full-stack edge computing platform delivering AI, compute, and connectivity to remote and rugged environments worldwide.',
   website: 'https://www.armada.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/armada-og.webp',
   category: 'enterprise-ops' as const,
@@ -14,6 +15,8 @@ export const armada: Company = {
   industries: ['infrastructure'],
 
   stage: 'Series B',
+
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$226M+',
   fundingHistory: [
@@ -152,7 +155,15 @@ export const armada: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Senior UI/UX Designer',
+      location: 'Los Angeles, CA (Remote)',
+      url: 'https://job-boards.greenhouse.io/armada/jobs/5080694008',
+      type: 'full-time',
+      level: 'Senior',
+    },
+  ],
   cultureInsights: [
     {
       source: 'linkedin',
@@ -211,7 +222,7 @@ export const armada: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'Armada Official Website - About', url: 'https://www.armada.ai/about' },
     { title: 'Armada $131M Funding Announcement', url: 'https://www.prnewswire.com/news-releases/armada-announces-131m-strategic-funding-round-launch-of-megawatt-scale-modular-ai-data-centers-to-accelerate-american-energy-and-ai-dominance-302513137.html' },

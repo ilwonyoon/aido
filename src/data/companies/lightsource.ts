@@ -6,6 +6,7 @@ export const lightsource: Company = {
   description: 'AI-native operating system for direct materials procurement, enabling enterprise buyers to discover suppliers, manage RFQs, compare bids, and track costs.',
   website: 'https://lightsource.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -15,6 +16,7 @@ export const lightsource: Company = {
   category: 'enterprise-ops' as const,
   industries: ['other'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '$130M',
   totalFunding: '$33M',
   fundingHistory: [

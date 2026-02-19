@@ -7,6 +7,7 @@ export const cocoon: Company = {
   website: 'https://cocoon.com',
     screenshot: '/screenshots/cocoon-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const cocoon: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [],

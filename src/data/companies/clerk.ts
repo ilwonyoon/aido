@@ -7,6 +7,7 @@ export const clerk: Company = {
   website: 'https://clerk.com',
     screenshot: '/screenshots/clerk-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const clerk: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$105M',
   fundingHistory: [

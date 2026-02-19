@@ -6,6 +6,7 @@ export const salient: Company = {
   description: 'AI workflow automation platform for auto lenders, automating collections, payment processing, and loan servicing with compliance-first AI agents.',
   website: 'https://trysalient.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/salient-og.webp',
 
@@ -15,6 +16,8 @@ export const salient: Company = {
   industries: ['fintech'],
 
   stage: 'Series A',
+
+  normalizedStage: 'series-a' as const,
   valuation: '~$500M (Dec 2025)',
   totalFunding: '~$70M',
   fundingHistory: [

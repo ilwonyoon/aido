@@ -6,6 +6,7 @@ export const dakota: Company = {
   description: 'Investment sales intelligence platform providing institutional investor data, AI-powered reports, and fundraising tools for asset managers.',
   website: 'https://www.dakota.com',
   headquarters: 'Bryn Mawr, PA',
+  region: 'other-us' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -17,6 +18,8 @@ export const dakota: Company = {
   industries: ['fintech'],
 
   stage: 'Private (Bootstrapped/Growth)',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],

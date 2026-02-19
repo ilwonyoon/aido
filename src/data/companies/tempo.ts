@@ -7,6 +7,7 @@ export const tempo: Company = {
   website: 'https://tempo.xyz',
   screenshot: '/screenshots/tempo-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const tempo: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$500M',
   fundingHistory: [

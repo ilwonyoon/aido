@@ -8,6 +8,8 @@ export const automat: Company = {
   screenshot: '',
 
   headquarters: 'San Francisco, CA',
+
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   aiTypes: ['automation'],
@@ -16,6 +18,8 @@ export const automat: Company = {
   industries: ['productivity'],
 
   stage: 'Series A',
+
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$19.25M',
   fundingHistory: [
@@ -158,7 +162,14 @@ export const automat: Company = {
       description: 'Feature on how Ochoa and Bose applied CMU design training to build Automat — credits collaborative studio culture as foundation for their AI product vision.',
     },
   ],
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Designer',
+      location: 'San Francisco, CA (On-site)',
+      url: 'https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0',
+      type: 'full-time',
+    },
+  ],
 
   cultureInsights: [
     {
@@ -228,7 +239,7 @@ export const automat: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'Automat Official Website', url: 'https://www.runautomat.com/' },
     { title: 'Automat About Page', url: 'https://www.runautomat.com/about' },

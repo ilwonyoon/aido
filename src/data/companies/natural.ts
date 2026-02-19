@@ -7,6 +7,7 @@ export const natural: Company = {
   website: 'https://www.natural.co',
     screenshot: '/screenshots/natural-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const natural: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$9.8M',
   fundingHistory: [

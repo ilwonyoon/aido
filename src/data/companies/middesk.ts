@@ -6,6 +6,7 @@ export const middesk: Company = {
   description: 'Business identity platform.',
   website: 'https://middesk.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const middesk: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$57M',
   revenue: 'Unknown',

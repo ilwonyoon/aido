@@ -7,6 +7,7 @@ export const welltheory: Company = {
   website: 'https://www.welltheory.com',
   screenshot: '/screenshots/welltheory-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -21,6 +22,7 @@ export const welltheory: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$14M',
   fundingHistory: [

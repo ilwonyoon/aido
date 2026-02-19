@@ -7,6 +7,7 @@ export const bindwell: Company = {
     'Agriculture biotech company using AI models to discover safer, more effective pesticides.',
   website: 'https://bindwell.ai/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const bindwell: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6M',
   fundingHistory: [

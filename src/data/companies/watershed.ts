@@ -8,6 +8,7 @@ export const watershed: Company = {
   website: 'https://www.watershed.com/',
   screenshot: '/screenshots/watershed-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const watershed: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$100M',
   fundingHistory: [],
