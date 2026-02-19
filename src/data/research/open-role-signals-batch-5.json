@@ -1,0 +1,211 @@
+{
+  "date": "2026-02-19",
+  "batch": 5,
+  "size": 10,
+  "targetsSource": "src/data/research/open-role-signals-targets-2026-02-18.json",
+  "selectedCount": 10,
+  "selectedIds": [
+    "causal-labs",
+    "cekura",
+    "central-hq",
+    "cerebri-ai",
+    "certn",
+    "chillwall-ai",
+    "chronicle",
+    "clearpath-robotics",
+    "cline",
+    "clockwise"
+  ],
+  "summary": {
+    "high": 0,
+    "medium": 6,
+    "low": 4
+  },
+  "results": [
+    {
+      "companyId": "causal-labs",
+      "companyName": "Causal Labs",
+      "website": "https://www.getcausal.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Causal%20Labs%22%20%22product%20designer%22%20site%3Agetcausal.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:38:07.601Z"
+    },
+    {
+      "companyId": "cekura",
+      "companyName": "Cekura",
+      "website": "https://cekura.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Cekura%22%20%22product%20designer%22%20site%3Acekura.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:38:10.486Z"
+    },
+    {
+      "companyId": "central-hq",
+      "companyName": "Central",
+      "website": "https://centralhq.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://centralhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/centralhq",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:15.402Z"
+    },
+    {
+      "companyId": "cerebri-ai",
+      "companyName": "Cerebri AI",
+      "website": "https://cerebriai.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.cerebriai.com/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:20.690Z"
+    },
+    {
+      "companyId": "certn",
+      "companyName": "Certn",
+      "website": "https://certn.co",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://certn.co/careers/",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://certn.co/careers/",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/certn",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:24.002Z"
+    },
+    {
+      "companyId": "chillwall-ai",
+      "companyName": "Chillwall AI",
+      "website": "https://chillwall.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Chillwall%20AI%22%20%22product%20designer%22%20site%3Achillwall.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:38:29.390Z"
+    },
+    {
+      "companyId": "chronicle",
+      "companyName": "Chronicle",
+      "website": "https://chroniclehq.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Chronicle%22%20%22product%20designer%22%20site%3Achroniclehq.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:38:32.747Z"
+    },
+    {
+      "companyId": "clearpath-robotics",
+      "companyName": "Clearpath Robotics",
+      "website": "https://clearpathrobotics.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://clearpathrobotics.com/robotics-careers/",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://clearpathrobotics.com/robotics-careers/",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:38.690Z"
+    },
+    {
+      "companyId": "cline",
+      "companyName": "Cline",
+      "website": "https://cline.bot",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cline.bot/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:41.506Z"
+    },
+    {
+      "companyId": "clockwise",
+      "companyName": "Clockwise",
+      "website": "https://www.getclockwise.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.getclockwise.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.getclockwise.com/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:44.718Z"
+    }
+  ]
+}

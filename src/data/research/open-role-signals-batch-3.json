@@ -1,0 +1,226 @@
+{
+  "date": "2026-02-19",
+  "batch": 3,
+  "size": 10,
+  "targetsSource": "src/data/research/open-role-signals-targets-2026-02-18.json",
+  "selectedCount": 10,
+  "selectedIds": [
+    "aurasell",
+    "automat",
+    "axiom",
+    "backflip-ai",
+    "beautiful-ai",
+    "bedrock-robotics",
+    "bem",
+    "benchsci",
+    "better-auth",
+    "blackbird-labs"
+  ],
+  "summary": {
+    "high": 2,
+    "medium": 5,
+    "low": 3
+  },
+  "results": [
+    {
+      "companyId": "aurasell",
+      "companyName": "Aurasell",
+      "website": "https://www.aurasell.com",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Aurasell%22%20%22product%20designer%22%20site%3Aaurasell.com%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:36:37.459Z"
+    },
+    {
+      "companyId": "automat",
+      "companyName": "Automat",
+      "website": "https://www.runautomat.com/",
+      "signalLevel": "HIGH",
+      "evidenceCount": 4,
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://www.runautomat.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/automat",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:36:43.452Z"
+    },
+    {
+      "companyId": "axiom",
+      "companyName": "Axiom",
+      "website": "https://axiom.co",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://axiom.co/company",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/axiom",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:36:47.898Z"
+    },
+    {
+      "companyId": "backflip-ai",
+      "companyName": "Backflip AI",
+      "website": "https://www.backflip.ai",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Backflip%20AI%22%20%22product%20designer%22%20site%3Abackflip.ai%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:36:53.480Z"
+    },
+    {
+      "companyId": "beautiful-ai",
+      "companyName": "Beautiful.ai",
+      "website": "https://www.beautiful.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.beautiful.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.beautiful.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://job-boards.greenhouse.io/beautifulai",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:36:58.841Z"
+    },
+    {
+      "companyId": "bedrock-robotics",
+      "companyName": "Bedrock Robotics",
+      "website": "https://bedrockrobotics.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://bedrockrobotics.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bedrock-robotics",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:04.118Z"
+    },
+    {
+      "companyId": "bem",
+      "companyName": "Bem",
+      "website": "https://startups.gallery/companies/bem",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bem",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:06.893Z"
+    },
+    {
+      "companyId": "benchsci",
+      "companyName": "BenchSci",
+      "website": "https://www.benchsci.com",
+      "signalLevel": "HIGH",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.benchsci.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.lever.co/benchsci",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:37:10.326Z"
+    },
+    {
+      "companyId": "better-auth",
+      "companyName": "Better Auth",
+      "website": "https://better-auth.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.ycombinator.com/companies/better-auth/jobs",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:15.534Z"
+    },
+    {
+      "companyId": "blackbird-labs",
+      "companyName": "Blackbird",
+      "website": "https://startups.gallery/companies/blackbird-labs",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Blackbird%22%20%22product%20designer%22%20site%3Astartups.gallery%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:37:20.865Z"
+    }
+  ]
+}

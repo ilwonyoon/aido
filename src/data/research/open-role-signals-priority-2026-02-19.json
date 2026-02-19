@@ -1,14 +1,17 @@
 {
-  "date": "2026-02-19T08:35:42.401Z",
+  "date": "2026-02-19T08:38:52.432Z",
   "batches": [
     "src/data/research/open-role-signals-batch-1.json",
-    "src/data/research/open-role-signals-batch-2.json"
+    "src/data/research/open-role-signals-batch-2.json",
+    "src/data/research/open-role-signals-batch-3.json",
+    "src/data/research/open-role-signals-batch-4.json",
+    "src/data/research/open-role-signals-batch-5.json"
   ],
   "totals": {
-    "checked": 20,
-    "high": 4,
-    "medium": 6,
-    "low": 10
+    "checked": 50,
+    "high": 7,
+    "medium": 25,
+    "low": 18
   },
   "highPriority": [
     {
@@ -98,6 +101,57 @@
           "source": "careers-page"
         }
       ]
+    },
+    {
+      "companyId": "automat",
+      "companyName": "Automat",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+          "source": "careers-page"
+        },
+        {
+          "type": "hiring-signal",
+          "url": "https://www.runautomat.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "benchsci",
+      "companyName": "BenchSci",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.benchsci.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "design-role",
+          "url": "https://jobs.lever.co/benchsci",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "brex",
+      "companyName": "Brex",
+      "nextAction": "run-job-scraper",
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://www.brex.com/careers",
+          "source": "careers-page"
+        }
+      ]
     }
   ],
   "mediumWatch": [
@@ -179,6 +233,289 @@
         {
           "type": "hiring-signal",
           "url": "https://www.augmentcode.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "axiom",
+      "companyName": "Axiom",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://axiom.co/company",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/axiom",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "beautiful-ai",
+      "companyName": "Beautiful.ai",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.beautiful.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.beautiful.ai/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "bedrock-robotics",
+      "companyName": "Bedrock Robotics",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://bedrockrobotics.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bedrock-robotics",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "bem",
+      "companyName": "Bem",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bem",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "better-auth",
+      "companyName": "Better Auth",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.ycombinator.com/companies/better-auth/jobs",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "bland",
+      "companyName": "Bland AI",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bland",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "bluedot",
+      "companyName": "BlueDot",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://bluedot.global/careers/",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "browserbase",
+      "companyName": "Browserbase",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.browserbase.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.browserbase.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "cal-com",
+      "companyName": "Cal.com",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cal.com/careers/apply?user=careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "cambium",
+      "companyName": "Cambium",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cambiumcarbon.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/cambium",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "campfire",
+      "companyName": "Campfire",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://campfire.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://campfire.ai/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "cardless",
+      "companyName": "Cardless",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.cardless.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.cardless.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "careforce-ai",
+      "companyName": "CareForce AI",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://careforce.ai/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "central-hq",
+      "companyName": "Central",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://centralhq.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/centralhq",
+          "source": "ats"
+        }
+      ]
+    },
+    {
+      "companyId": "cerebri-ai",
+      "companyName": "Cerebri AI",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.cerebriai.com/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "certn",
+      "companyName": "Certn",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://certn.co/careers/",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://certn.co/careers/",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "clearpath-robotics",
+      "companyName": "Clearpath Robotics",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://clearpathrobotics.com/robotics-careers/",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://clearpathrobotics.com/robotics-careers/",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "cline",
+      "companyName": "Cline",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cline.bot/careers",
+          "source": "careers-page"
+        }
+      ]
+    },
+    {
+      "companyId": "clockwise",
+      "companyName": "Clockwise",
+      "nextAction": "manual-verify-careers",
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.getclockwise.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.getclockwise.com/careers",
           "source": "careers-page"
         }
       ]

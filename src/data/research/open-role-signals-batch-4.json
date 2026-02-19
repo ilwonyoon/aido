@@ -1,0 +1,221 @@
+{
+  "date": "2026-02-19",
+  "batch": 4,
+  "size": 10,
+  "targetsSource": "src/data/research/open-role-signals-targets-2026-02-18.json",
+  "selectedCount": 10,
+  "selectedIds": [
+    "bland",
+    "blok",
+    "bluedot",
+    "brex",
+    "browserbase",
+    "cal-com",
+    "cambium",
+    "campfire",
+    "cardless",
+    "careforce-ai"
+  ],
+  "summary": {
+    "high": 1,
+    "medium": 8,
+    "low": 1
+  },
+  "results": [
+    {
+      "companyId": "bland",
+      "companyName": "Bland AI",
+      "website": "https://www.bland.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/bland",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:24.304Z"
+    },
+    {
+      "companyId": "blok",
+      "companyName": "Blok",
+      "website": "https://www.joinblok.co",
+      "signalLevel": "LOW",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://duckduckgo.com/html/?q=%22Blok%22%20%22product%20designer%22%20site%3Ajoinblok.co%202026",
+          "source": "search-fallback"
+        }
+      ],
+      "nextAction": "defer",
+      "checkedAt": "2026-02-19T08:37:27.652Z"
+    },
+    {
+      "companyId": "bluedot",
+      "companyName": "BlueDot",
+      "website": "https://bluedot.global",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://bluedot.global/careers/",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:32.036Z"
+    },
+    {
+      "companyId": "brex",
+      "companyName": "Brex",
+      "website": "https://www.brex.com",
+      "signalLevel": "HIGH",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "design-role",
+          "url": "https://www.brex.com/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "run-job-scraper",
+      "checkedAt": "2026-02-19T08:37:38.687Z"
+    },
+    {
+      "companyId": "browserbase",
+      "companyName": "Browserbase",
+      "website": "https://www.browserbase.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.browserbase.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.browserbase.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/browserbase",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:42.818Z"
+    },
+    {
+      "companyId": "cal-com",
+      "companyName": "Cal.com",
+      "website": "https://cal.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cal.com/careers/apply?user=careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:48.043Z"
+    },
+    {
+      "companyId": "cambium",
+      "companyName": "Cambium",
+      "website": "https://www.cambiumcarbon.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 2,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://cambiumcarbon.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/cambium",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:50.822Z"
+    },
+    {
+      "companyId": "campfire",
+      "companyName": "Campfire",
+      "website": "https://campfire.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://campfire.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://campfire.ai/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/campfire",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:53.808Z"
+    },
+    {
+      "companyId": "cardless",
+      "companyName": "Cardless",
+      "website": "https://www.cardless.com",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 3,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://www.cardless.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://www.cardless.com/careers",
+          "source": "careers-page"
+        },
+        {
+          "type": "ats-board",
+          "url": "https://jobs.ashbyhq.com/cardless",
+          "source": "ats"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:37:56.822Z"
+    },
+    {
+      "companyId": "careforce-ai",
+      "companyName": "CareForce AI",
+      "website": "https://careforce.ai",
+      "signalLevel": "MEDIUM",
+      "evidenceCount": 1,
+      "evidenceUrls": [
+        {
+          "type": "hiring-signal",
+          "url": "https://careforce.ai/careers",
+          "source": "careers-page"
+        }
+      ],
+      "nextAction": "manual-verify-careers",
+      "checkedAt": "2026-02-19T08:38:01.768Z"
+    }
+  ]
+}
