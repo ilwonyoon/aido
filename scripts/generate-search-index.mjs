@@ -26,32 +26,26 @@ function loadCompanyFromTs(filePath) {
 
 function compactCompany(company) {
   const openRoles = Array.isArray(company.openRoles) ? company.openRoles : [];
+  const titles = openRoles
+    .slice(0, 2)
+    .map((r) => String(r?.title || '').slice(0, 35))
+    .filter(Boolean);
 
-  return {
+  const entry = {
     id: company.id,
     name: company.name,
-    description: company.description,
-    aiNativeLevel: company.aiNativeLevel,
-    category: company.category,
-    normalizedStage: company.normalizedStage,
+    desc: String(company.description || '').slice(0, 60),
+    level: company.aiNativeLevel,
+    cat: company.category,
+    stage: company.normalizedStage,
     region: company.region,
     remote: company.remote,
-    productStage: company.productStage,
-    totalFunding: company.totalFunding,
-    hasOpenRoles: openRoles.length > 0,
-    roleCount: openRoles.length,
-    roleTitles: openRoles.map((r) => r?.title).filter(Boolean),
-    designTeamSize: company.designTeam?.teamSize || 'Unknown',
-    designWorkType: {
-      logic: company.designWorkType?.logicBehavior?.level,
-      evaluation: company.designWorkType?.evaluation?.level,
-      interface: company.designWorkType?.interface?.level,
-    },
-    designPhilosophy: company.designPhilosophy || '',
-    greenFlags: Array.isArray(company.greenFlags) ? company.greenFlags.slice(0, 3) : [],
-    redFlags: Array.isArray(company.redFlags) ? company.redFlags.slice(0, 2) : [],
-    fitScore: company.tracking?.fitScore || 0,
+    roles: openRoles.length,
   };
+
+  if (titles.length > 0) entry.titles = titles;
+
+  return entry;
 }
 
 const files = fs

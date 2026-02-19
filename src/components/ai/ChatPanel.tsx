@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent, useMemo, useRef, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { ChatMessage } from './ChatMessage';
 import { StarterPrompts } from './StarterPrompts';
 
@@ -18,6 +18,7 @@ export function ChatPanel() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const canSubmit = useMemo(() => input.trim().length > 0 && !isLoading, [input, isLoading]);
 
@@ -27,13 +28,20 @@ export function ChatPanel() {
     });
   };
 
+  // Auto-resize textarea
+  useEffect(() => {
+    const el = textareaRef.current;
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = `${Math.min(el.scrollHeight, 120)}px`;
+  }, [input]);
+
   const runChat = async (text: string) => {
     const prompt = text.trim();
     if (!prompt || isLoading) return;
 
     const history = [...messages];
-    const nextMessages = [...history, { role: 'user' as const, content: prompt }, { role: 'assistant' as const, content: '' }];
-    setMessages(nextMessages);
+    setMessages([...history, { role: 'user', content: prompt }, { role: 'assistant', content: '' }]);
     setInput('');
     setIsLoading(true);
     scrollToBottom();
@@ -48,9 +56,7 @@ export function ChatPanel() {
         }),
       });
 
-      if (!res.ok || !res.body) {
-        throw new Error('Search request failed');
-      }
+      if (!res.ok || !res.body) throw new Error('Request failed');
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -80,10 +86,7 @@ export function ChatPanel() {
             if (parsed.error) {
               setMessages((prev) => {
                 const updated = [...prev];
-                updated[updated.length - 1] = {
-                  role: 'assistant',
-                  content: `Error: ${parsed.error}`,
-                };
+                updated[updated.length - 1] = { role: 'assistant', content: `Error: ${parsed.error}` };
                 return updated;
               });
               continue;
@@ -94,10 +97,7 @@ export function ChatPanel() {
                 const updated = [...prev];
                 const last = updated[updated.length - 1];
                 if (!last || last.role !== 'assistant') return prev;
-                updated[updated.length - 1] = {
-                  role: 'assistant',
-                  content: last.content + parsed.text,
-                };
+                updated[updated.length - 1] = { role: 'assistant', content: last.content + parsed.text };
                 return updated;
               });
               scrollToBottom();
@@ -110,15 +110,13 @@ export function ChatPanel() {
     } catch {
       setMessages((prev) => {
         const updated = [...prev];
-        updated[updated.length - 1] = {
-          role: 'assistant',
-          content: 'Something went wrong. Please try again.',
-        };
+        updated[updated.length - 1] = { role: 'assistant', content: 'Something went wrong. Please try again.' };
         return updated;
       });
     } finally {
       setIsLoading(false);
       scrollToBottom();
+      textareaRef.current?.focus();
     }
   };
 
@@ -127,34 +125,57 @@ export function ChatPanel() {
     await runChat(input);
   };
 
+  const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      runChat(input);
+    }
+  };
+
   return (
-    <div className="space-y-4">
+    <div className="flex flex-col gap-3">
       {messages.length === 0 && <StarterPrompts onSelect={runChat} />}
 
-      <div ref={listRef} className="card p-5 min-h-[360px] max-h-[62vh] overflow-y-auto space-y-3">
+      <div
+        ref={listRef}
+        className="card p-4 min-h-[360px] max-h-[60vh] overflow-y-auto flex flex-col gap-3"
+      >
         {messages.length === 0 ? (
-          <p className="text-sm text-[var(--muted)]">Ask about roles, stage, region, compensation, or interview prep.</p>
+          <p className="text-sm text-[var(--muted)] m-auto">Ask about companies, roles, compensation, or interview prep.</p>
         ) : (
           messages.map((message, idx) => (
-            <ChatMessage key={`${message.role}-${idx}`} role={message.role} content={message.content} />
+            <ChatMessage
+              key={`${message.role}-${idx}`}
+              role={message.role}
+              content={message.content}
+              isStreaming={isLoading && idx === messages.length - 1 && message.role === 'assistant'}
+            />
           ))
         )}
       </div>
 
-      <form onSubmit={onSubmit} className="card p-4">
-        <div className="flex flex-col sm:flex-row gap-2">
-          <input
+      <form onSubmit={onSubmit} className="card p-3">
+        <div className="flex items-end gap-2">
+          <textarea
+            ref={textareaRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask about AI companies and design roles..."
-            className="flex-1 bg-[var(--card)] border border-[var(--border)] rounded-lg px-3 py-2 text-sm"
+            onKeyDown={onKeyDown}
+            rows={1}
+            placeholder="Ask anything... (Enter to send, Shift+Enter for new line)"
+            style={{
+              fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+              resize: 'none',
+              overflow: 'hidden',
+            }}
+            className="flex-1 bg-transparent border-0 outline-none text-sm py-1.5 text-[var(--foreground)] placeholder:text-[var(--muted)]"
           />
           <button
             type="submit"
             disabled={!canSubmit}
-            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-[var(--background)] text-sm font-medium disabled:opacity-50"
+            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-medium disabled:opacity-40 shrink-0 transition-opacity"
           >
-            Send
+            {isLoading ? '...' : 'Send'}
           </button>
         </div>
       </form>
