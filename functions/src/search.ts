@@ -89,15 +89,18 @@ export const search = onRequest(
       const systemText = SYSTEM_PROMPT
         .replace('{count}', String(companyCount))
         .replace('{searchIndex}', JSON.stringify(searchIndex));
+      const systemBlocks = [
+        {
+          type: 'text' as const,
+          text: systemText,
+          cache_control: { type: 'ephemeral' as const },
+        },
+      ];
 
       const stream = await client.messages.stream({
         model: 'claude-sonnet-4-6',
         max_tokens: 2000,
-        system: [{
-          type: 'text',
-          text: systemText,
-          cache_control: { type: 'ephemeral' },
-        }] as any,
+        system: systemBlocks,
         messages: [
           ...history
             .filter((h) => (h.role === 'user' || h.role === 'assistant') && typeof h.content === 'string')
