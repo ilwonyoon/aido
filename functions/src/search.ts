@@ -28,6 +28,7 @@ type ChatMessage = {
 
 function loadSearchIndex() {
   const candidates = [
+    path.join(__dirname, '../data/search-index.json'),
     path.join(__dirname, '../../src/data/search-index.json'),
     path.join(process.cwd(), '../src/data/search-index.json'),
     path.join(process.cwd(), 'src/data/search-index.json'),
@@ -45,7 +46,11 @@ function loadSearchIndex() {
 export const search = onRequest(
   {
     secrets: [anthropicApiKey],
-    cors: ['https://aido-d2cc0.web.app', 'http://localhost:3000'],
+    cors: [
+      'https://aido-d2cc0.web.app',
+      /https:\/\/aido-d2cc0--.*\.web\.app$/,
+      'http://localhost:3000',
+    ],
     timeoutSeconds: 120,
     memory: '512MiB',
   },
@@ -81,12 +86,18 @@ export const search = onRequest(
     res.setHeader('Connection', 'keep-alive');
 
     try {
+      const systemText = SYSTEM_PROMPT
+        .replace('{count}', String(companyCount))
+        .replace('{searchIndex}', JSON.stringify(searchIndex));
+
       const stream = await client.messages.stream({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 2000,
-        system: SYSTEM_PROMPT
-          .replace('{count}', String(companyCount))
-          .replace('{searchIndex}', JSON.stringify(searchIndex)),
+        system: [{
+          type: 'text',
+          text: systemText,
+          cache_control: { type: 'ephemeral' },
+        }] as any,
         messages: [
           ...history
             .filter((h) => (h.role === 'user' || h.role === 'assistant') && typeof h.content === 'string')

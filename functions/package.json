@@ -3,7 +3,7 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node -e \"const fs=require('fs');const src='../src/data/search-index.json';if(fs.existsSync(src)){fs.mkdirSync('./data',{recursive:true});fs.copyFileSync(src,'./data/search-index.json');}\" && tsc",
     "build:watch": "tsc --watch"
   },
   "engines": {

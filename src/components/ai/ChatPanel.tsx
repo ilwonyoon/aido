@@ -112,7 +112,7 @@ export function ChatPanel() {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: 'assistant',
-          content: '요청 처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.',
+          content: 'Something went wrong. Please try again.',
         };
         return updated;
       });

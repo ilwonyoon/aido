@@ -5,10 +5,10 @@ type StarterPromptsProps = {
 };
 
 const PROMPTS = [
-  '0→1 AI product design 하고 싶어, SF 선호',
-  'Series A-B에서 디자인 리더십 있는 회사 추천해줘',
-  'Remote OK이고 보상 좋은 AI 스타트업은?',
-  'Anthropic vs Cursor 비교해줘',
+  'I want 0→1 AI product design roles, preferably in SF.',
+  'Recommend Series A-B companies with strong design leadership.',
+  'Which AI startups are remote-friendly with good compensation?',
+  'Compare Anthropic vs Cursor for a product designer.',
 ];
 
 export function StarterPrompts({ onSelect }: StarterPromptsProps) {
