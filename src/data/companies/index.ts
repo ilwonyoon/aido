@@ -155,6 +155,7 @@ import { extropic } from './extropic';
 import { factory } from './factory';
 import { fal } from './fal';
 import { farel } from './farel';
+import { faunaRobotics } from './fauna-robotics';
 import { fastino } from './fastino';
 import { fermat } from './fermat';
 import { fieldAi } from './field-ai';
@@ -677,6 +678,7 @@ export const companies: Company[] = [
   factory,
   fal,
   farel,
+  faunaRobotics,
   fastino,
   fermat,
   fieldAi,
