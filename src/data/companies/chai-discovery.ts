@@ -7,6 +7,7 @@ export const chaiDiscovery: Company = {
   website: 'https://www.chaidiscovery.com/',
     screenshot: '/screenshots/chai-discovery-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const chaiDiscovery: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$1.3B (Dec 2025)',
   totalFunding: '$225M (reported)',
   fundingHistory: [

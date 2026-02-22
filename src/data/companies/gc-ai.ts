@@ -8,6 +8,7 @@ export const gcAi: Company = {
   website: 'https://gc.ai/',
     screenshot: '/screenshots/gc-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const gcAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$60M',
   fundingHistory: [

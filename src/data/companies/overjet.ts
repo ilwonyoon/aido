@@ -6,6 +6,7 @@ export const overjet: Company = {
   description: 'AI-powered dental diagnostics platform that analyzes dental X-rays to detect cavities, bone loss, and periodontal disease, serving both dental providers and insurance payers.',
   website: 'https://www.overjet.com',
   headquarters: 'Boston, MA',
+  region: 'boston' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,7 @@ export const overjet: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$550M (Mar 2024)',
   totalFunding: '$133M+',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const osmosis: Company = {
   website: 'https://osmosis.ai',
     screenshot: '/screenshots/osmosis-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const osmosis: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6.3M',
   revenue: 'Unknown',

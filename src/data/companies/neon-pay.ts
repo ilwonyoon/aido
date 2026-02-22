@@ -6,6 +6,7 @@ export const neonPay: Company = {
   description: 'Pay Commerce and payment tools for games.',
   website: 'https://startups.gallery/companies/neon-pay',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const neonPay: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$14M',
   revenue: 'Unknown',

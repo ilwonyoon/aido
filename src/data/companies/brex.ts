@@ -6,6 +6,7 @@ export const brex: Company = {
     description: 'AI-powered spend platform. Corporate cards, banking, travel, expense automation.',
     website: 'https://www.brex.com',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
   // Visual Assets
@@ -22,6 +23,8 @@ export const brex: Company = {
   industries: ['infrastructure', 'fintech'],
 
     stage: 'Series E+',
+
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$12.3B',
     totalFunding: '$1.2B',
     revenue: 'Unknown',

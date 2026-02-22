@@ -6,6 +6,7 @@ export const cline: Company = {
   description: 'Open source AI coding.',
   website: 'https://cline.bot',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const cline: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$27M',
   revenue: 'Unknown',

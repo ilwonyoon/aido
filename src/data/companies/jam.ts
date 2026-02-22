@@ -6,6 +6,7 @@ export const jam: Company = {
   description: 'Bug reporting platform that auto-captures technical context — console logs, network requests, repro steps — in one-click reports for engineering teams.',
   website: 'https://jam.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -19,6 +20,7 @@ export const jam: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$12.4M',
   fundingHistory: [

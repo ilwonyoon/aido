@@ -7,6 +7,7 @@ export const fastino: Company = {
   website: 'https://fastino.ai',
     screenshot: '/screenshots/fastino-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const fastino: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

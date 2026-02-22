@@ -204,6 +204,7 @@ export interface Company {
 
   // Location
   headquarters: string; // e.g., "San Francisco, CA"
+  region?: 'sf-bay-area' | 'nyc' | 'la' | 'seattle' | 'austin' | 'boston' | 'london' | 'toronto' | 'other-us' | 'other-intl' | 'remote-only';
   remote?: 'Yes' | 'Hybrid' | 'No' | 'Unknown';
 
   // Category
@@ -216,6 +217,7 @@ export interface Company {
 
   // Business
   stage: string;
+  normalizedStage?: FundingStageCategory;
   valuation?: string;
   totalFunding?: string;
   fundingHistory?: FundingRound[]; // All funding rounds with dates

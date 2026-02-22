@@ -6,6 +6,7 @@ export const beacons: Company = {
   description: 'AI-powered all-in-one creator platform combining link-in-bio, online store, email marketing, media kit, and brand deal tools.',
   website: 'https://beacons.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -19,6 +20,7 @@ export const beacons: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$29.8M',
   fundingHistory: [

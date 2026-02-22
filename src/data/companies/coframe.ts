@@ -6,6 +6,7 @@ export const coframe: Company = {
   description: 'Bringing user experiences to life.',
   website: 'https://www.coframe.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const coframe: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$9.3M',
   revenue: 'Unknown',

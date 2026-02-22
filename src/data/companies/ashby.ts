@@ -6,6 +6,7 @@ export const ashby: Company = {
   description: 'All-in-one recruiting platform combining ATS, CRM, scheduling, and analytics with AI-native automation for ambitious hiring teams.',
   website: 'https://www.ashbyhq.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   ogImage: '/og-images/ashby-og.webp',
 
@@ -15,6 +16,8 @@ export const ashby: Company = {
   industries: ['productivity'],
 
   stage: 'Series D',
+
+  normalizedStage: 'series-d-plus' as const,
   valuation: 'Unknown (2x Series C valuation)',
   totalFunding: '$128M',
   fundingHistory: [
@@ -146,7 +149,22 @@ export const ashby: Company = {
       description: 'Weekly product design insights — trained senior PDs at Apple & Meta. Medium article "Two Fundamental Approaches to Designing UX" reached 30K views.',
     },
   ],
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Senior Product Designer',
+      location: 'Remote - North America',
+      url: 'https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183',
+      type: 'full-time',
+      level: 'Senior',
+    },
+    {
+      title: 'Staff Product Designer',
+      location: 'Remote - North America',
+      url: 'https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1',
+      type: 'full-time',
+      level: 'Staff',
+    },
+  ],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -216,7 +234,7 @@ export const ashby: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'Ashby Official Website', url: 'https://www.ashbyhq.com' },
     { title: 'Ashby Series D Announcement', url: 'https://www.ashbyhq.com/blog/culture/series-d' },
@@ -226,5 +244,7 @@ export const ashby: Company = {
     { title: 'Ashby Careers — Senior & Staff PD roles verified', url: 'https://jobs.ashbyhq.com/ashby' },
     { title: 'Ashby Design Team Page', url: 'https://www.ashbyhq.com/team/design' },
     { title: 'Glassdoor: Ashby Reviews', url: 'https://www.glassdoor.com/Reviews/Ashby-Reviews-E6016688.htm' },
+    { title: 'Ashby Senior Product Designer Role', url: 'https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183' },
+    { title: 'Ashby Staff Product Designer Role', url: 'https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1' },
   ],
 };

@@ -6,6 +6,7 @@ export const succint: Company = {
   description: 'Making cryptography easier.',
   website: 'https://succinct.xyz',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const succint: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$55M',
   revenue: 'Unknown',

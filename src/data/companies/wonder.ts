@@ -7,6 +7,7 @@ export const wonder: Company = {
   website: 'https://wonder.so',
   screenshot: '/screenshots/wonder-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const wonder: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],

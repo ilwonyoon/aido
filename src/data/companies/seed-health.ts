@@ -6,6 +6,7 @@ export const seedHealth: Company = {
   description: 'Microbes for human and planetary health Health & Wellness.',
   website: 'https://seed.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const seedHealth: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

@@ -8,6 +8,7 @@ export const surgeAi: Company = {
   website: 'https://surgehq.ai',
   screenshot: '/screenshots/surge-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const surgeAi: Company = {
 
   // Business
   stage: 'Bootstrapped',
+  normalizedStage: 'growth' as const,
   valuation: 'Unknown',
   totalFunding: 'Bootstrapped (no venture funding disclosed)',
   revenue: 'Unknown',

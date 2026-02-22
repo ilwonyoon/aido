@@ -7,6 +7,7 @@ export const perplexity: Company = {
     website: 'https://perplexity.ai',
     screenshot: '/screenshots/perplexity-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const perplexity: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$20B (Sept 2025)',
     totalFunding: '$1.5B+',
     fundingHistory: [
@@ -251,4 +253,4 @@ export const perplexity: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/09/10/perplexity-reportedly-raised-200m-at-20b-valuation/' },
     { title: 'Source', url: 'https://sacra.com/c/perplexity/' }
   ],
-  };
+};

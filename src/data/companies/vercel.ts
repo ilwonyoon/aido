@@ -7,6 +7,7 @@ export const vercel: Company = {
     website: 'https://vercel.com',
   screenshot: '/screenshots/vercel-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const vercel: Company = {
 
     // Business
     stage: 'Series F',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$9.3B (Sept 2025)',
     totalFunding: '$863M',
     fundingHistory: [
@@ -253,4 +255,4 @@ export const vercel: Company = {
     { title: 'Source', url: 'https://vercel.com/blog/series-f' },
     { title: 'Source', url: 'https://sacra.com/c/vercel/' }
   ],
-  };
+};

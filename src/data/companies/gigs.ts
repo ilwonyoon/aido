@@ -7,6 +7,7 @@ export const gigs: Company = {
   website: 'https://gigs.com',
     screenshot: '/screenshots/gigs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const gigs: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$73M',
   fundingHistory: [

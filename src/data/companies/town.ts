@@ -8,6 +8,7 @@ export const town: Company = {
   website: 'https://town.com/',
   screenshot: '/screenshots/town-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const town: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$18M',
   fundingHistory: [

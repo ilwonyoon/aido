@@ -8,6 +8,7 @@ export const tailor: Company = {
   website: 'https://www.tailor.tech/',
   screenshot: '/screenshots/tailor-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const tailor: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$37M',
   fundingHistory: [

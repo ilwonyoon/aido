@@ -7,6 +7,7 @@ export const sesameAi: Company = {
   website: 'https://www.sesame.com',
     screenshot: '/screenshots/sesame-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const sesameAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$250M',
   fundingHistory: [

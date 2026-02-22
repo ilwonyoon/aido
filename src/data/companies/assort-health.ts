@@ -6,6 +6,7 @@ export const assortHealth: Company = {
   description: 'Agentic AI platform for healthcare call centers and patient engagement.',
   website: 'https://assorthealth.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const assortHealth: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$102M',
   fundingHistory: [

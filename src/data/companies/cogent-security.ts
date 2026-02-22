@@ -7,6 +7,7 @@ export const cogentSecurity: Company = {
   website: 'https://www.cogent.security',
     screenshot: '/screenshots/cogent-security-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const cogentSecurity: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$11M',
   fundingHistory: [

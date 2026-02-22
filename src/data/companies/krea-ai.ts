@@ -6,6 +6,7 @@ export const kreaAi: Company = {
   description: 'AI creative suite for real-time image, video, and 3D generation — a one-stop platform for visual creatives.',
   website: 'https://www.krea.ai/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -19,6 +20,7 @@ export const kreaAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$500M (Apr 2025)',
   totalFunding: '$83M',
   fundingHistory: [

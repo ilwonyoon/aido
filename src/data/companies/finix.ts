@@ -6,6 +6,7 @@ export const finix: Company = {
   description: 'Full-stack payments infrastructure enabling software platforms to embed payment processing, merchant onboarding, and risk management via PayFac-as-a-Service.',
   website: 'https://finix.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/finix-og.webp',
   category: 'vertical-saas' as const,
@@ -13,6 +14,7 @@ export const finix: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['fintech'],
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   totalFunding: '~$170M',
   fundingHistory: [
     {

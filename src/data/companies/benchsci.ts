@@ -6,6 +6,7 @@ export const benchsci: Company = {
   description: 'Biotech AI platform that helps researchers find evidence and accelerate preclinical research decisions.',
   website: 'https://www.benchsci.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const benchsci: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$83.3M',
   revenue: 'Not publicly disclosed',
@@ -102,7 +104,14 @@ export const benchsci: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'Toronto, ON, Canada (Hybrid)',
+      url: 'https://jobs.lever.co/benchsci/5dac2ae0-514f-4bfe-92de-69eecbda6dfd',
+      type: 'full-time',
+    },
+  ],
 
   cultureInsights: [],
 
@@ -131,9 +140,10 @@ export const benchsci: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-04T19:10:00',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'Source', url: 'https://www.benchsci.com' },
-    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' }
+    { title: 'Source', url: 'https://www.seedtable.com/best-ai-startups-in-north-america' },
+    { title: 'Source', url: 'https://jobs.lever.co/benchsci/5dac2ae0-514f-4bfe-92de-69eecbda6dfd' }
   ],
 };

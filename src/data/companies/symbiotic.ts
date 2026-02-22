@@ -6,6 +6,7 @@ export const symbiotic: Company = {
   description: 'Universal staking platform.',
   website: 'https://symbiotic.fi',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const symbiotic: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$29M',
   revenue: 'Unknown',

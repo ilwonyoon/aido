@@ -7,6 +7,7 @@ export const pallet: Company = {
   website: 'https://pallet.com',
     screenshot: '/screenshots/pallet-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const pallet: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$27M',
   fundingHistory: [

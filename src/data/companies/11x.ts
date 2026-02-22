@@ -6,6 +6,7 @@ export const elevenX: Company = {
   description: 'AI digital workers platform.',
   website: 'https://11x.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const elevenX: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

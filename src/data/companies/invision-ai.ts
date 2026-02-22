@@ -6,6 +6,7 @@ export const invisionAi: Company = {
   description: 'Computer vision company focused on image recognition and monitoring for industrial and security use cases.',
   website: 'https://invision.ai',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const invisionAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$1.1M',
   revenue: 'Not publicly disclosed',

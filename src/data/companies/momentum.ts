@@ -7,6 +7,7 @@ export const momentum: Company = {
     'AI revenue orchestration platform that captures signals from customer interactions, automates CRM updates, and routes insights via Slack.',
   website: 'https://www.momentum.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -20,6 +21,7 @@ export const momentum: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$18M',
   fundingHistory: [

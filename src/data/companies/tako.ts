@@ -6,6 +6,7 @@ export const tako: Company = {
   description: 'AI search engine to visualize knowledge.',
   website: 'https://www.tako.so',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const tako: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5.75M',
   revenue: 'Unknown',

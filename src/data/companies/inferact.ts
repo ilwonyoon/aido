@@ -7,6 +7,7 @@ export const inferact: Company = {
     website: 'https://inferact.ai',
     screenshot: '/screenshots/inferact-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const inferact: Company = {
 
     // Business
     stage: 'Seed',
+    normalizedStage: 'seed' as const,
     valuation: '$800M (Jan 2026)',
     totalFunding: '$150M',
     fundingHistory: [

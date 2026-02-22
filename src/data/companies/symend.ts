@@ -7,6 +7,7 @@ export const symend: Company = {
     'Behavioral engagement platform that uses behavioral science, AI, and analytics to help enterprises personalize delinquency and collections experiences.',
   website: 'https://www.symend.com',
   headquarters: 'Calgary, AB, Canada',
+  region: 'other-intl' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const symend: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'US$100M+',
   fundingHistory: [

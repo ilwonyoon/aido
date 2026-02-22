@@ -8,6 +8,7 @@ export const layerFinancial: Company = {
   website: 'https://www.layerfi.com/',
     screenshot: '/screenshots/layer-financial-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const layerFinancial: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6.6M',
   fundingHistory: [

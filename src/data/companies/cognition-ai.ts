@@ -6,6 +6,7 @@ export const cognitionAi: Company = {
   description: 'The first software engineer.',
   website: 'https://cognition.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const cognitionAi: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$400M',
   revenue: 'Unknown',

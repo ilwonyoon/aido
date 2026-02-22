@@ -7,6 +7,7 @@ export const scaleAi: Company = {
     website: 'https://scale.com',
     screenshot: '/screenshots/scale-ai-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const scaleAi: Company = {
 
     // Business
     stage: 'Meta Partnership (49% stake)',
+    normalizedStage: 'other' as const,
     valuation: '$29B (Jun 2025, after Meta deal)',
     totalFunding: '$1B+ (pre-Meta)',
     fundingHistory: [
@@ -276,4 +278,4 @@ export const scaleAi: Company = {
     { title: 'Source', url: 'https://labelyourdata.com/articles/scale-ai-competitors' },
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Alexandr_Wang' }
   ],
-  };
+};

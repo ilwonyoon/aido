@@ -9,6 +9,7 @@ export const hebbia: Company = {
 
     // Location
     headquarters: 'New York, NY',
+    region: 'nyc' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -24,6 +25,7 @@ export const hebbia: Company = {
 
     // Business
     stage: 'Series B',
+    normalizedStage: 'series-b' as const,
     valuation: '$700M',
     totalFunding: '$130M',
     fundingHistory: [
@@ -223,4 +225,4 @@ export const hebbia: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue/' },
     { title: 'Source', url: 'https://boards.greenhouse.io/hebbia/jobs/4150321005' }
   ],
-  };
+};

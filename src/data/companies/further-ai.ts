@@ -7,6 +7,7 @@ export const furtherAi: Company = {
   website: 'https://www.furtherai.com',
     screenshot: '/screenshots/further-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const furtherAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

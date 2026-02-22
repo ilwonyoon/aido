@@ -6,6 +6,7 @@ export const invertBio: Company = {
   description: 'Modern software for bioprocess data.',
   website: 'https://www.invert.bio',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const invertBio: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$20.1M',
   revenue: 'Unknown',

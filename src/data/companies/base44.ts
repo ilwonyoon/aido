@@ -6,6 +6,7 @@ export const base44: Company = {
     description: 'AI-powered no-code app builder that turns natural language into fully functional web applications.',
     website: 'https://base44.com',
     headquarters: 'Tel Aviv, Israel',
+    region: 'other-intl' as const,
     remote: 'Yes',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const base44: Company = {
 
     // Business
     stage: 'Acquired',
+    normalizedStage: 'other' as const,
     valuation: '$80M (acquisition by Wix, Jun 2025)',
     totalFunding: '$0 (bootstrapped)',
     fundingHistory: [
@@ -248,4 +250,4 @@ export const base44: Company = {
     { title: 'Source', url: 'https://base44.com/blog/base44-vs-replit' },
     { title: 'Source', url: 'https://il.linkedin.com/in/maor-shlomo-1088b4144' }
   ],
-  };
+};

@@ -6,6 +6,7 @@ export const bland: Company = {
   description: 'Enterprise platform for AI phone calls — builds hyper-realistic voice agents that automate inbound and outbound calls at scale.',
   website: 'https://www.bland.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -17,6 +18,8 @@ export const bland: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Series B',
+
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$65M',
   fundingHistory: [

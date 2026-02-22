@@ -6,6 +6,7 @@ export const kaedim: Company = {
   description: 'Production ready on-demand 3D models.',
   website: 'https://www.kaedim3d.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const kaedim: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   revenue: 'Unknown',

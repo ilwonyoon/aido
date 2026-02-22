@@ -7,6 +7,7 @@ export const alloy: Company = {
     'Identity and fraud prevention platform for financial services and fintech companies.',
   website: 'https://www.alloy.com/',
   headquarters: 'New York, NY',
+  region: 'nyc' as const,
   remote: 'No',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const alloy: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$150M+',
   fundingHistory: [

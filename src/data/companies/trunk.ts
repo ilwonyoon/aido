@@ -7,6 +7,7 @@ export const trunk: Company = {
   website: 'https://trunk.io',
   screenshot: '/screenshots/trunk-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const trunk: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   revenue: 'Unknown',

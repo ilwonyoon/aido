@@ -6,6 +6,7 @@ export const unbounce: Company = {
   description: 'Landing page builder and conversion platform for marketers with AI-assisted optimization.',
   website: 'https://unbounce.com',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const unbounce: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$39.3M',
   revenue: 'Not publicly disclosed',

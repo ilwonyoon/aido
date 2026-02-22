@@ -7,6 +7,7 @@ export const intercomFin: Company = {
     website: 'https://www.intercom.com',
     screenshot: '/screenshots/intercom-fin-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const intercomFin: Company = {
   industries: ['infrastructure', 'sales-marketing'],
 
     stage: 'Private',
+
+    normalizedStage: 'growth' as const,
     valuation: 'Unknown',
     totalFunding: '$250M',
     revenue: '$343M (2024)',
@@ -106,4 +109,4 @@ export const intercomFin: Company = {
     { title: 'Source', url: 'https://www.intercom.com/blog/our-next-research-and-development-hub-berlin/' },
     { title: 'Source', url: 'https://www.growthunhinged.com/p/intercoms-bet-on-ai' }
   ],
-  };
+};

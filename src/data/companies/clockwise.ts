@@ -6,6 +6,7 @@ export const clockwise: Company = {
   description: 'AI-powered scheduling for a better workday.',
   website: 'https://www.getclockwise.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const clockwise: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$45M',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const langchain: Company = {
   description: 'Open-source framework and platform for building applications with LLMs and agents.',
   website: 'https://langchain.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
 
@@ -18,6 +19,7 @@ export const langchain: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$1.25B (Oct 2025)',
   totalFunding: '$260M+',
   fundingHistory: [

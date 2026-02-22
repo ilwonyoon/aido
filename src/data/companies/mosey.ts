@@ -7,6 +7,7 @@ export const mosey: Company = {
   website: 'https://www.mosey.com',
     screenshot: '/screenshots/mosey-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mosey: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$21M',
   fundingHistory: [

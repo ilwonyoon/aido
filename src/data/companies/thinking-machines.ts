@@ -6,6 +6,7 @@ export const thinkingMachines: Company = {
   description: 'Machines Building Tinker.',
   website: 'https://startups.gallery/companies/thinking-machines',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const thinkingMachines: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2B',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const aerial: Company = {
   description: 'AI-powered WiFi motion sensing platform that detects and classifies human activity through existing wireless infrastructure, without cameras, sensors, or wearables.',
   website: 'https://aerial.ai',
   headquarters: 'Montreal, QC',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/aerial-og.webp',
   category: 'vertical-saas' as const,
@@ -13,6 +14,7 @@ export const aerial: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['healthcare', 'security'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6.8M',
   fundingHistory: [

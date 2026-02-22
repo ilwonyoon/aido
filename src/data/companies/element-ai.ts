@@ -6,6 +6,7 @@ export const elementAi: Company = {
   description: 'Canadian AI company focused on enterprise AI services and research, acquired by ServiceNow.',
   website: 'https://www.elementai.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const elementAi: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$102M',
   revenue: 'Not publicly disclosed',

@@ -6,6 +6,7 @@ export const certn: Company = {
   description: 'Background screening and risk monitoring platform for global hiring and contractor checks.',
   website: 'https://certn.co',
   headquarters: 'Victoria, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const certn: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$115.8M',
   revenue: 'Not publicly disclosed',

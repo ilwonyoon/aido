@@ -6,6 +6,7 @@ export const reducto: Company = {
   description: 'Document ingestion API.',
   website: 'https://reducto.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const reducto: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$75M',
   revenue: 'Unknown',

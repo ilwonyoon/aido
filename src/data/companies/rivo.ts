@@ -7,6 +7,7 @@ export const rivo: Company = {
   website: 'https://rivo.io',
     screenshot: '/screenshots/rivo-screenshot.png',
   headquarters: 'Las Vegas, NV',
+  region: 'other-us' as const,
   remote: 'Unknown',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const rivo: Company = {
 
   // Business
   stage: 'Unknown',
+  normalizedStage: 'other' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

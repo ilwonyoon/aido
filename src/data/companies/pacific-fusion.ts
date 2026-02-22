@@ -8,6 +8,7 @@ export const pacificFusion: Company = {
   website: 'https://pacificfusion.com/',
     screenshot: '/screenshots/pacific-fusion-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const pacificFusion: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$900M',
   fundingHistory: [],

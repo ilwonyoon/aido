@@ -6,6 +6,7 @@ export const laurel: Company = {
   description: 'AI time intelligence platform that automatically captures and categorizes professional work activities, turning time data into business insights for law, accounting, and consulting firms.',
   website: 'https://www.laurel.ai',
   headquarters: 'Los Angeles, CA',
+  region: 'la' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -19,6 +20,7 @@ export const laurel: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$510M (Jun 2025)',
   totalFunding: '$156M',
   fundingHistory: [

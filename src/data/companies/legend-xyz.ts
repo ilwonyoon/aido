@@ -7,6 +7,7 @@ export const legendXyz: Company = {
   website: 'https://legend.xyz',
     screenshot: '/screenshots/legend-xyz-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const legendXyz: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   fundingHistory: [],

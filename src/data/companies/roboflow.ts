@@ -6,6 +6,7 @@ export const roboflow: Company = {
   description: 'Computer vision tools for developers and enterprises.',
   website: 'https://roboflow.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const roboflow: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

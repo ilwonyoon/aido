@@ -6,6 +6,7 @@ export const unify: Company = {
   description: 'Transform growth into a science.',
   website: 'https://www.unifygtm.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const unify: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

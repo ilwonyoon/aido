@@ -6,6 +6,7 @@ export const hopper: Company = {
   description: 'Travel app using AI and data science to predict prices and help consumers book trips.',
   website: 'https://hopper.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const hopper: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$633.6M',
   revenue: 'Not publicly disclosed',

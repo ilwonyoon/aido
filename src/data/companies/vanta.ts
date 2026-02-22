@@ -6,6 +6,7 @@ export const vanta: Company = {
   description: 'AI-powered trust management platform that automates compliance (SOC 2, ISO 27001, HIPAA, GDPR) and continuous security monitoring.',
   website: 'https://vanta.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   ogImage: '/og-images/vanta-og.webp',
 
@@ -15,6 +16,8 @@ export const vanta: Company = {
   industries: ['security'],
 
   stage: 'Series D',
+
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$4.15B (Jul 2025)',
   totalFunding: '$504M',
   fundingHistory: [

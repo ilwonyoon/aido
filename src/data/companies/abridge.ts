@@ -6,6 +6,7 @@ export const abridge: Company = {
     description: 'AI platform for medical conversation capture, summarization, and clinical documentation.',
     website: 'https://www.abridge.com',
     headquarters: 'Pittsburgh, PA',
+    region: 'other-us' as const,
     remote: 'Unknown',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const abridge: Company = {
 
     // Business
     stage: 'Series E',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$5.3B (Jun 2025)',
     totalFunding: '$757.5M (reported)',
     fundingHistory: [
@@ -248,4 +250,4 @@ export const abridge: Company = {
     { title: 'Source', url: 'https://www.crunchbase.com/organization/abridge-d1a4' },
     { title: 'Source', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' }
   ],
-  };
+};

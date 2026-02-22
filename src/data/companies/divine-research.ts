@@ -6,6 +6,7 @@ export const divineResearch: Company = {
   description: 'Undercollateralized lending system.',
   website: 'https://startups.gallery/companies/divine-research',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const divineResearch: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6.6M',
   revenue: 'Unknown',

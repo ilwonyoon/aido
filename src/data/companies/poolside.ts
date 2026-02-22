@@ -6,6 +6,7 @@ export const poolside: Company = {
   description: 'Frontier AI company building foundation models for software development.',
   website: 'https://poolside.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   // Note: Remote-first, 80% Europe-based, monthly 3-day in-person meetups
 
@@ -18,6 +19,7 @@ export const poolside: Company = {
 
   // Business
   stage: 'Series B+',
+  normalizedStage: 'series-b' as const,
   valuation: '$12B (Oct 2025, raising $2B)',
   totalFunding: '$626M (raising to $2.6B)',
   fundingHistory: [

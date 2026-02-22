@@ -6,6 +6,7 @@ export const roadway: Company = {
   description: 'AI-powered growth marketing platform providing cross-channel attribution and AI coworkers that help teams measure, monitor, and scale ad campaigns.',
   website: 'https://www.roadwayai.com',
   headquarters: 'San Rafael, CA',
+  region: 'other-us' as const,
   remote: 'Unknown',
   ogImage: '/og-images/roadway-og.webp',
 
@@ -17,6 +18,7 @@ export const roadway: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: '$3.2M',
   fundingHistory: [
     {

@@ -7,6 +7,7 @@ export const decart: Company = {
   website: 'https://decart.ai',
     screenshot: '/screenshots/decart-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const decart: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: '$3.1B (Aug 2025)',
   totalFunding: '$100M',
   fundingHistory: [

@@ -8,6 +8,7 @@ export const clickhouse: Company = {
   website: 'https://clickhouse.com/',
     screenshot: '/screenshots/clickhouse-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const clickhouse: Company = {
 
   // Business
   stage: 'Series D',
+  normalizedStage: 'series-d-plus' as const,
   valuation: 'Unknown',
   totalFunding: '$1.05B+ (disclosed rounds)',
   fundingHistory: [

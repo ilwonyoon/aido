@@ -7,6 +7,7 @@ export const attabotics: Company = {
     'Robotics and software platform for automated storage and retrieval systems that modernizes fulfillment centers with vertical warehouse technology.',
   website: 'https://attabotics.com',
   headquarters: 'Calgary, AB, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const attabotics: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'US$165M+',
   fundingHistory: [

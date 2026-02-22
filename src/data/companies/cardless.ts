@@ -6,6 +6,7 @@ export const cardless: Company = {
   description: 'Embedded credit card platform.',
   website: 'https://www.cardless.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const cardless: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$60M',
   revenue: 'Unknown',

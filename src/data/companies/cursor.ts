@@ -7,6 +7,7 @@ export const cursor: Company = {
     website: 'https://cursor.com',
     screenshot: '/screenshots/cursor-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const cursor: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$29.3B (Nov 2025)',
     totalFunding: '$3.6B+',
     fundingHistory: [
@@ -290,4 +292,4 @@ export const cursor: Company = {
       { title: 'TechCrunch: Competition', url: 'https://techcrunch.com/2025/12/09/why-cursors-ceo-believes-openai-anthropic-competition-wont-crush-his-startup/' },
       { title: 'Glassdoor: Anysphere Reviews', url: 'https://www.glassdoor.com/Reviews/Anysphere-Reviews-E10847804.htm' },
     ],
-  };
+};

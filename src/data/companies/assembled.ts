@@ -6,6 +6,7 @@ export const assembled: Company = {
   description: 'Workforce management and AI agents platform for customer support teams, unifying human and AI agent scheduling, forecasting, and performance analytics.',
   website: 'https://www.assembled.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,7 @@ export const assembled: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$70.7M',
   fundingHistory: [

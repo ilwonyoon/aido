@@ -6,6 +6,7 @@ export const modular: Company = {
   description: 'VMware for the AI era.',
   website: 'https://modular.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const modular: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$250M',
   revenue: 'Unknown',

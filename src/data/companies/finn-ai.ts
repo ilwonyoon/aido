@@ -6,6 +6,7 @@ export const finnAi: Company = {
   description: 'Conversational AI assistant platform for banks and credit unions.',
   website: 'https://finn.ai',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   aiTypes: ['conversation-ai', 'automation'],
@@ -14,6 +15,8 @@ export const finnAi: Company = {
   industries: ['fintech'],
 
   stage: 'Private',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$210.0K',
   revenue: 'Not publicly disclosed',

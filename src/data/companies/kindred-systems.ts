@@ -6,6 +6,7 @@ export const kindredSystems: Company = {
   description: 'AI-powered robotics company building piece-picking systems for e-commerce and fulfillment operations. Acquired by Ocado Group in 2020.',
   website: 'https://kindred.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/kindred-systems-og.webp',
 
@@ -17,6 +18,7 @@ export const kindredSystems: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: '$262M (acquisition price)',
   totalFunding: '~$44M',
   fundingHistory: [

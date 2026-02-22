@@ -6,6 +6,7 @@ export const hedraAi: Company = {
   description: 'The generative media creation platform.',
   website: 'https://hedra.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const hedraAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$32M',
   revenue: 'Unknown',

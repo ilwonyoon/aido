@@ -6,6 +6,7 @@ export const commonKnowledge: Company = {
   description: 'Knowledge Reinventing the document in the age of AI.',
   website: 'https://commonknowledge.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const commonKnowledge: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

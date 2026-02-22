@@ -8,6 +8,7 @@ export const ditto: Company = {
   website: 'https://www.ditto.live/',
     screenshot: '/screenshots/ditto-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const ditto: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$1.5M',
   fundingHistory: [],

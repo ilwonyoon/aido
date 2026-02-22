@@ -8,6 +8,7 @@ export const redQueenBio: Company = {
   website: 'https://www.redqueen.bio/',
     screenshot: '/screenshots/red-queen-bio-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const redQueenBio: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   fundingHistory: [

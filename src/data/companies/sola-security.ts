@@ -6,6 +6,7 @@ export const solaSecurity: Company = {
   description: 'The no-BS security app studio.',
   website: 'https://www.sola.security',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const solaSecurity: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$35M',
   revenue: 'Unknown',

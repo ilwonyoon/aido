@@ -7,6 +7,7 @@ export const xai: Company = {
     website: 'https://x.ai',
   screenshot: '/screenshots/xai-screenshot.png',
     headquarters: 'Palo Alto, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const xai: Company = {
 
     // Business
     stage: 'Series E',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$230B (Jan 2026)',
     totalFunding: '$42.73B',
     fundingHistory: [
@@ -337,4 +339,4 @@ export const xai: Company = {
     { title: 'Source', url: 'https://www.teamblind.com/company/xAI/reviews' },
     { title: 'Source', url: 'https://job-boards.greenhouse.io/xai/jobs/4876452007' }
   ],
-  };
+};

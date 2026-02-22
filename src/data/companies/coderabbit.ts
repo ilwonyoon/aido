@@ -6,6 +6,7 @@ export const coderabbit: Company = {
   description: 'AI code reviews.',
   website: 'https://coderabbit.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const coderabbit: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$60M',
   revenue: 'Unknown',

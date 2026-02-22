@@ -7,6 +7,7 @@ export const piinpoint: Company = {
     'Location intelligence and site selection platform that combines analytics, demographics, and retail data to guide expansion decisions.',
   website: 'https://www.piinpoint.com',
   headquarters: 'Kitchener, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const piinpoint: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$1.4M',
   revenue: 'Not publicly disclosed',

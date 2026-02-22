@@ -7,6 +7,7 @@ export const toma: Company = {
     website: 'https://www.toma.com',
   screenshot: '/screenshots/toma-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -21,6 +22,8 @@ export const toma: Company = {
   industries: ['sales-marketing'],
 
     stage: 'Series A',
+
+    normalizedStage: 'series-a' as const,
     valuation: 'N/A',
     totalFunding: '$17M',
     fundingHistory: [
@@ -267,4 +270,4 @@ export const toma: Company = {
     { title: 'Source', url: 'https://www.ycombinator.com/companies/toma' },
     { title: 'Source', url: 'https://a16z.com/announcement/investing-in-toma/' }
   ],
-  };
+};

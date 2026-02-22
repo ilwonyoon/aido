@@ -6,6 +6,7 @@ export const axiom: Company = {
   description: 'Logging, re-invented.',
   website: 'https://axiom.co',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const axiom: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   revenue: 'Unknown',

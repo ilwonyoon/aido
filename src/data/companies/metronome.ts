@@ -8,6 +8,7 @@ export const metronome: Company = {
   website: 'https://metronome.com/',
     screenshot: '/screenshots/metronome-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const metronome: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   fundingHistory: [

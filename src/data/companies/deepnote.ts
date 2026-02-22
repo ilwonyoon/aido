@@ -6,6 +6,7 @@ export const deepnote: Company = {
   description: 'Collaborative, AI-powered data science notebook platform — Jupyter-compatible with real-time multiplayer, SQL integration, and agentic AI workflows.',
   website: 'https://deepnote.com',
   headquarters: 'Prague, Czech Republic',
+  region: 'other-intl' as const,
   remote: 'Yes',
 
     // OG Image
@@ -19,6 +20,7 @@ export const deepnote: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$23.8M',
   fundingHistory: [

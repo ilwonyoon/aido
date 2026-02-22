@@ -7,6 +7,7 @@ export const worldLabs: Company = {
   website: 'https://worldlabs.ai',
   screenshot: '/screenshots/world-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const worldLabs: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$230M',
   fundingHistory: [

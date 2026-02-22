@@ -8,6 +8,7 @@ export const composite: Company = {
   website: 'https://www.composite.ai/',
     screenshot: '/screenshots/composite-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const composite: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5.6M',
   fundingHistory: [

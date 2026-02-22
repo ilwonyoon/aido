@@ -6,6 +6,7 @@ export const blackbirdLabs: Company = {
   description: 'Crypto restaurant rewards app.',
   website: 'https://startups.gallery/companies/blackbird-labs',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const blackbirdLabs: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

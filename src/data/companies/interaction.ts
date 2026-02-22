@@ -6,6 +6,7 @@ export const interaction: Company = {
   description: 'Neurotechnology company behind Muse, a brain-sensing wearable for meditation and mental wellness.',
   website: 'https://choosemuse.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const interaction: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$28.8M',
   revenue: 'Not publicly disclosed',

@@ -8,6 +8,7 @@ export const terradot: Company = {
   website: 'https://terradot.earth/',
   screenshot: '/screenshots/terradot-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const terradot: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$58.2M',
   fundingHistory: [],

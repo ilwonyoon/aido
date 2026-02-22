@@ -8,6 +8,7 @@ export const reevo: Company = {
   website: 'https://reevo.ai/',
     screenshot: '/screenshots/reevo-screenshot.png',
   headquarters: 'Santa Clara, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const reevo: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$80M',
   fundingHistory: [

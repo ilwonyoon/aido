@@ -7,6 +7,7 @@ export const listenLabs: Company = {
     website: 'https://listenlabs.ai',
     screenshot: '/screenshots/listen-labs-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const listenLabs: Company = {
 
     // Business
     stage: 'Series B',
+    normalizedStage: 'series-b' as const,
     valuation: '$500M (Jan 2026)',
     totalFunding: '$100M',
     fundingHistory: [
@@ -266,4 +268,4 @@ export const listenLabs: Company = {
       { title: 'Emeritus Case Study', url: 'https://listenlabs.ai/case-studies/emeritus' },
       { title: 'Tracxn Profile', url: 'https://tracxn.com/d/companies/listen-labs/__rC3UmpAr-lCC4lE6RAaV1NUQOhLYTZulJHaLc6vs_zI' },
     ],
-  };
+};

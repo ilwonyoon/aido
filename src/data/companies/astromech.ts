@@ -6,6 +6,7 @@ export const astromech: Company = {
   description: 'Navigating the code of life.',
   website: 'https://www.astromech.bio',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const astromech: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   revenue: 'Unknown',

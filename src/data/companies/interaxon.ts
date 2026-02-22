@@ -7,6 +7,7 @@ export const interaxon: Company = {
     'Neurotechnology company behind the Muse brain-sensing headband, providing meditation and sleep insights using EEG data and AI-driven neurofeedback.',
   website: 'https://choosemuse.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const interaxon: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$21.1M',
   fundingHistory: [

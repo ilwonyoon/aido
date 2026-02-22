@@ -6,6 +6,7 @@ export const beautifulAi: Company = {
     description: 'AI-powered presentation software. Smart templates and design automation.',
     website: 'https://www.beautiful.ai',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
   // Visual Assets
@@ -22,6 +23,8 @@ export const beautifulAi: Company = {
   industries: ['developer-tools', 'creative-media'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: 'Unknown',
     totalFunding: '$17M',
     revenue: 'Unknown',
@@ -159,4 +162,4 @@ export const beautifulAi: Company = {
     { title: 'Source', url: 'https://www.linkedin.com/in/mitchgrasso/' },
     { title: 'Source', url: 'https://smartbranding.com/names-with-stories-the-story-behind-beautiful-ai/' }
   ],
-  };
+};

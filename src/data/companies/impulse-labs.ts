@@ -7,6 +7,7 @@ export const impulseLabs: Company = {
   website: 'https://www.impulselabs.com',
     screenshot: '/screenshots/impulse-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const impulseLabs: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [],

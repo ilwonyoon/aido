@@ -6,6 +6,7 @@ export const sharpestminds: Company = {
   description: 'Mentorship and project-based platform connecting aspiring data scientists with industry practitioners.',
   website: 'https://www.sharpestminds.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Yes',
 
   aiTypes: ['data-analysis'],
@@ -14,6 +15,8 @@ export const sharpestminds: Company = {
   industries: ['education'],
 
   stage: 'Private',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$120.0K',
   revenue: 'Not publicly disclosed',

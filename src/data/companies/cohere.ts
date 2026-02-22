@@ -7,6 +7,7 @@ export const cohere: Company = {
     website: 'https://cohere.com',
     screenshot: '/screenshots/cohere-screenshot.png',
     headquarters: 'Toronto, Canada',
+    region: 'toronto' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const cohere: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$7B (Sept 2025)',
     totalFunding: '$1.54B',
     fundingHistory: [

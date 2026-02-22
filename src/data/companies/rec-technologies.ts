@@ -6,6 +6,7 @@ export const recTechnologies: Company = {
   description: 'Tech to power the future of recreation.',
   website: 'https://rectech.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const recTechnologies: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$11M',
   revenue: 'Unknown',

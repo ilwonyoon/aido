@@ -8,6 +8,7 @@ export const lettuce: Company = {
     screenshot: '/screenshots/lettuce-screenshot.png',
     ogImage: '/screenshots/lettuce-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -19,6 +20,7 @@ export const lettuce: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   fundingHistory: [

@@ -8,6 +8,7 @@ export const twoDots: Company = {
     screenshot: '/screenshots/two-dots-screenshot.png',
     ogImage: '/screenshots/two-dots-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -19,6 +20,7 @@ export const twoDots: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$10.5M',
   revenue: 'Unknown',

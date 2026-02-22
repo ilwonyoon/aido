@@ -8,6 +8,7 @@ export const edisonScientific: Company = {
   website: 'https://edisonscientific.com/',
     screenshot: '/screenshots/edison-scientific-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const edisonScientific: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$70M',
   fundingHistory: [

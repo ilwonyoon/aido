@@ -6,6 +6,7 @@ export const cerebriAi: Company = {
   description: 'Enterprise AI decision intelligence platform focused on customer and revenue optimization use cases.',
   website: 'https://cerebriai.com',
   headquarters: 'Austin, TX',
+  region: 'austin' as const,
   remote: 'Unknown',
 
   aiTypes: ['data-analysis'],
@@ -14,6 +15,8 @@ export const cerebriAi: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Private',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$16.5M',
   revenue: 'Not publicly disclosed',

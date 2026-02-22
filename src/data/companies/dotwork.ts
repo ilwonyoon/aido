@@ -6,6 +6,7 @@ export const dotwork: Company = {
   description: 'AI-native strategy and portfolio platform that connects goals, work, finance, and outcomes so leaders can align and steer with confidence across product-led enterprises.',
   website: 'https://dotwork.com',
   headquarters: 'Georgetown, TX',
+  region: 'other-us' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -15,6 +16,7 @@ export const dotwork: Company = {
   category: 'enterprise-ops' as const,
   industries: ['productivity'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$12M',
   fundingHistory: [

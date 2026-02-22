@@ -6,6 +6,7 @@ export const anara: Company = {
   description: 'AI for researchers.',
   website: 'https://anara.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const anara: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2.4M',
   revenue: 'Unknown',
@@ -90,7 +92,14 @@ export const anara: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'San Francisco, CA',
+      url: 'https://jobs.ashbyhq.com/anara/4e660933-c8aa-4344-9a33-25968dd28255',
+      type: 'full-time',
+    },
+  ],
 
   cultureInsights: [],
 
@@ -119,9 +128,10 @@ export const anara: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T12:30:00',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'Source', url: 'https://anara.com' },
-    { title: 'Source', url: 'https://startups.gallery/companies/anara' }
+    { title: 'Source', url: 'https://startups.gallery/companies/anara' },
+    { title: 'Source', url: 'https://jobs.ashbyhq.com/anara/4e660933-c8aa-4344-9a33-25968dd28255' }
   ],
 };

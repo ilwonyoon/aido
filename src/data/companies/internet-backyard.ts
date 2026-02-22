@@ -8,6 +8,7 @@ export const internetBackyard: Company = {
   website: 'https://internetbackyard.com/',
     screenshot: '/screenshots/internet-backyard-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const internetBackyard: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.5M',
   fundingHistory: [

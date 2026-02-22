@@ -7,6 +7,7 @@ export const sanity: Company = {
   website: 'https://www.sanity.io',
     screenshot: '/screenshots/sanity-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const sanity: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$85M',
   fundingHistory: [

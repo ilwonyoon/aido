@@ -6,6 +6,7 @@ export const promisePay: Company = {
   description: 'Streamlining government payments and benefits.',
   website: 'https://www.promise.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const promisePay: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   revenue: 'Unknown',

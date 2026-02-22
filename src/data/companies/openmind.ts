@@ -6,6 +6,7 @@ export const openmind: Company = {
   description: 'Building Android for robots.',
   website: 'https://openmind.space',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const openmind: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   revenue: 'Unknown',

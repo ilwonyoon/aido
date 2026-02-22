@@ -8,6 +8,7 @@ export const humbleOps: Company = {
   website: 'https://humbleops.ai/',
     screenshot: '/screenshots/humble-ops-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const humbleOps: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

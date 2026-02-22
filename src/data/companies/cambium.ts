@@ -6,6 +6,7 @@ export const cambium: Company = {
   description: 'Where timber meets tech.',
   website: 'https://www.cambiumcarbon.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const cambium: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$18.5M',
   revenue: 'Unknown',

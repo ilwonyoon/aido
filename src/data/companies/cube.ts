@@ -6,6 +6,7 @@ export const cube: Company = {
   description: 'The semantic layer for every data app.',
   website: 'https://cube.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const cube: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   revenue: 'Unknown',

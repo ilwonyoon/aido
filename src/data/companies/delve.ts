@@ -8,6 +8,7 @@ export const delve: Company = {
   website: 'https://delve.co/',
   screenshot: '/screenshots/delve-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // OG Image
@@ -22,6 +23,7 @@ export const delve: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '$300M (Jul 2025)',
   totalFunding: '$35.3M',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const leya: Company = {
     website: 'https://leya.law',
     screenshot: '/screenshots/leya-screenshot.png',
     headquarters: 'Stockholm, Sweden',
+    region: 'other-intl' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const leya: Company = {
   industries: ['productivity', 'legal'],
 
     stage: 'Series A',
+
+    normalizedStage: 'series-a' as const,
     valuation: '~$100M (estimated)',
     totalFunding: '$35.5M',
     fundingHistory: [
@@ -226,4 +229,4 @@ export const leya: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2024/07/17/leya-raises-25m-series-a/' },
     { title: 'Source', url: 'https://www.ycombinator.com/companies/legora' }
   ],
-  };
+};

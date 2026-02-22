@@ -6,6 +6,7 @@ export const framework: Company = {
   description: 'Consumer electronics to respect people and the planet.',
   website: 'https://frame.work',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const framework: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$17M',
   revenue: 'Unknown',

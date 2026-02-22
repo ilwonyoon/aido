@@ -6,6 +6,7 @@ export const playbook: Company = {
   description: 'Cloud storage for creatives.',
   website: 'https://www.playbook.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const playbook: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$18M',
   revenue: 'Unknown',

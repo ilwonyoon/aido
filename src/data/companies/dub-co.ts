@@ -6,6 +6,7 @@ export const dubCo: Company = {
   description: 'The modern link attribution platform.',
   website: 'https://dub.co',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const dubCo: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2M',
   revenue: 'Unknown',

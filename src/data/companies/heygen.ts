@@ -7,6 +7,7 @@ export const heygen: Company = {
     website: 'https://heygen.com',
     screenshot: '/screenshots/heygen-screenshot.png',
     headquarters: 'Los Angeles, CA',
+    region: 'la' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const heygen: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series A',
+
+    normalizedStage: 'series-a' as const,
     valuation: '$500M (2024)',
     totalFunding: '$60M',
     revenue: '$35M+ ARR (2024)',
@@ -98,4 +101,4 @@ export const heygen: Company = {
     { title: 'Source', url: 'https://www.heygen.com/blog/announcing-our-series-a' },
     { title: 'Source', url: 'https://www.aibase.com/news/9839' }
   ],
-  };
+};

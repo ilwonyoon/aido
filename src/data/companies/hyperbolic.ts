@@ -6,6 +6,7 @@ export const hyperbolic: Company = {
   description: 'Building the open-access AI cloud.',
   website: 'https://hyperbolic.xyz',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const hyperbolic: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$12M',
   revenue: 'Unknown',

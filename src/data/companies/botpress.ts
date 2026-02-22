@@ -7,6 +7,7 @@ export const botpress: Company = {
     'AI agent platform that provides infrastructure to build, deploy, and monitor agentic AI systems in production.',
   website: 'https://www.botpress.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const botpress: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$40M',
   fundingHistory: [

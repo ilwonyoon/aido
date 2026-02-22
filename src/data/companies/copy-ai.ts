@@ -7,6 +7,7 @@ export const copyAi: Company = {
     website: 'https://www.copy.ai',
     screenshot: '/screenshots/copy-ai-screenshot.png',
     headquarters: 'Remote',
+    region: 'remote-only' as const,
     remote: 'Yes',
 
     // OG Image
@@ -20,6 +21,8 @@ export const copyAi: Company = {
   industries: ['sales-marketing'],
 
     stage: 'Series A',
+
+    normalizedStage: 'series-a' as const,
     valuation: 'Acquired by Fullcast (Oct 2025)',
     totalFunding: '$14M',
     revenue: '$23.7M ARR (2024)',
@@ -96,4 +99,4 @@ export const copyAi: Company = {
     { title: 'Source', url: 'https://getlatka.com/companies/copyai' },
     { title: 'Source', url: 'https://www.linkedin.com/jobs/view/senior-product-designer-at-copy-ai-3050055207' }
   ],
-  };
+};

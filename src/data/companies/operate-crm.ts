@@ -8,6 +8,7 @@ export const operateCrm: Company = {
   website: 'https://operate.so/',
     screenshot: '/screenshots/operate-crm-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const operateCrm: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

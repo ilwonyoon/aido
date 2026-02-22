@@ -8,6 +8,7 @@ export const spiralDb: Company = {
   website: 'https://www.spiraldb.com/',
   screenshot: '/screenshots/spiral-db-screenshot.png',
   headquarters: 'New York, NY',
+  region: 'nyc' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const spiralDb: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$22M',
   fundingHistory: [

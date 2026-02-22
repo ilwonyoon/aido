@@ -6,6 +6,7 @@ export const netramark: Company = {
   description: 'AI platform for drug development and precision medicine insights from clinical data.',
   website: 'https://netramark.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const netramark: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Not publicly disclosed',

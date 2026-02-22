@@ -7,6 +7,7 @@ export const lovable: Company = {
     website: 'https://lovable.dev',
     screenshot: '/screenshots/lovable-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -20,6 +21,8 @@ export const lovable: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: '$6.6B (Dec 2025)',
     totalFunding: '$653M',
     revenue: '$200M ARR (2025)',
@@ -132,4 +135,4 @@ export const lovable: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees/' },
     { title: 'Source', url: 'https://thecreatorsai.com/p/lovable-growth-secrets-and-costs' }
   ],
-  };
+};

@@ -8,6 +8,7 @@ export const response: Company = {
   website: 'https://tryresponse.com/',
     screenshot: '/screenshots/response-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const response: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4M (announced)',
   fundingHistory: [],

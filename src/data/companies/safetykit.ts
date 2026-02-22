@@ -7,6 +7,7 @@ export const safetykit: Company = {
   website: 'https://www.safetykit.com',
     screenshot: '/screenshots/safetykit-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const safetykit: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$27M',
   fundingHistory: [

@@ -7,6 +7,7 @@ export const humeAi: Company = {
   website: 'https://www.hume.ai',
     screenshot: '/screenshots/hume-ai-screenshot.png',
   headquarters: 'New York, NY',
+  region: 'nyc' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const humeAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed (Series B announced Mar 2024)',
   totalFunding: '~$74M cumulative (Jan 2026)',
   fundingHistory: [

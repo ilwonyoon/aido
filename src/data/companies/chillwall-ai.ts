@@ -6,6 +6,7 @@ export const chillwallAi: Company = {
   description: 'Deep learning company focused on analytics for event management and big data use cases.',
   website: 'https://chillwall.ai',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const chillwallAi: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$87.2K',
   revenue: 'Not publicly disclosed',

@@ -6,6 +6,7 @@ export const assemblyai: Company = {
   description: 'Speech AI platform providing state-of-the-art transcription, speech understanding, and audio intelligence APIs for developers and enterprises.',
   website: 'https://www.assemblyai.com',
   headquarters: 'San Francisco, CA (Remote-first)',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -21,6 +22,7 @@ export const assemblyai: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '~$385M',
   totalFunding: '$115M',
   fundingHistory: [

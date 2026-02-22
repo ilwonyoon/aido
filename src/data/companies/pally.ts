@@ -6,6 +6,7 @@ export const pally: Company = {
   description: 'AI-powered relationship management platform that unifies contacts across iMessage, WhatsApp, LinkedIn, email, and calendar with AI agents that research contacts and automate action items.',
   website: 'https://www.pally.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -21,6 +22,7 @@ export const pally: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2.1M',
   fundingHistory: [
