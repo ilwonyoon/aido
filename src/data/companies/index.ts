@@ -38,6 +38,7 @@ import { astromech } from './astromech';
 import { attabotics } from './attabotics';
 import { augment } from './augment';
 import { aurasell } from './aurasell';
+import { avoca } from './avoca';
 import { avidbots } from './avidbots';
 import { axiom } from './axiom';
 import { axiomMath } from './axiom-math';
@@ -235,6 +236,7 @@ import { itemApp } from './item-app';
 import { juliusAi } from './julius-ai';
 import { ivo } from './ivo';
 import { jackAndJill } from './jack-and-jill';
+import { joyfulHealth } from './joyful-health';
 import { jam } from './jam';
 import { jasper } from './jasper';
 import { juicebox } from './juicebox';
@@ -331,6 +333,7 @@ import { nuvo } from './nuvo';
 import { obieAi } from './obie-ai';
 import { odyssey } from './odyssey';
 import { ohmd } from './ohmd';
+import { omnea } from './omnea';
 import { onton } from './onton';
 import { onyx } from './onyx';
 import { openOceanRobotics } from './open-ocean-robotics';
@@ -470,6 +473,7 @@ import { tempo } from './tempo';
 import { tensormesh } from './tensormesh';
 import { teraAi } from './tera-ai';
 import { terradot } from './terradot';
+import { tennr } from './tennr';
 import { terramera } from './terramera';
 import { thatch } from './thatch';
 import { theInteractionCompanyOfCalifornia } from './the-interaction-company-of-california';
@@ -481,6 +485,7 @@ import { tolans } from './tolans';
 import { toma } from './toma';
 import { tome } from './tome';
 import { town } from './town';
+import { traba } from './traba';
 import { trmLabs } from './trm-labs';
 import { truemed } from './truemed';
 import { truffleSecurity } from './truffle-security';
@@ -563,6 +568,7 @@ export const companies: Company[] = [
   attabotics,
   augment,
   aurasell,
+  avoca,
   avidbots,
   axiomMath,
   axiom,
@@ -758,6 +764,7 @@ export const companies: Company[] = [
   juliusAi,
   ivo,
   jackAndJill,
+  joyfulHealth,
   jam,
   jasper,
   juicebox,
@@ -854,6 +861,7 @@ export const companies: Company[] = [
   obieAi,
   odyssey,
   ohmd,
+  omnea,
   onton,
   onyx,
   openOceanRobotics,
@@ -992,6 +1000,7 @@ export const companies: Company[] = [
   tensormesh,
   teraAi,
   terradot,
+  tennr,
   terramera,
   thatch,
   theInteractionCompanyOfCalifornia,
@@ -1003,6 +1012,7 @@ export const companies: Company[] = [
   toma,
   tome,
   town,
+  traba,
   trmLabs,
   truemed,
   truffleSecurity,

@@ -10,56 +10,61 @@
       "name": "Omnea",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-14",
       "order": 1,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "omnea"
     },
     {
       "name": "Joyful Health",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-14",
       "order": 2,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "joyful-health"
     },
     {
       "name": "Avoca",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-14",
       "order": 3,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "avoca"
     },
     {
       "name": "Traba",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-14",
       "order": 4,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "traba"
     },
     {
       "name": "Tennr",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-14",
       "order": 5,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "tennr"
     },
     {
       "name": "XBOW",
@@ -111,7 +116,7 @@
       "priority": "P1",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Prezent raises $30 million to acquire AI services firms — starting with founder’s other company",
+      "notes": "Prezent raises $30 million to acquire AI services firms \u2014 starting with founder\u2019s other company",
       "batch": "discovery-2026-04-14",
       "order": 10,
       "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/"
@@ -133,7 +138,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: RunAnywhere (YC W26) – Faster AI Inference on Apple Silicon",
+      "notes": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
       "batch": "discovery-2026-04-14",
       "order": 12,
       "discoveryUrl": "https://github.com/RunanywhereAI/rcli"
@@ -144,7 +149,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: OctaPulse (YC W26) – Robotics and computer vision for fish farming",
+      "notes": "Launch HN: OctaPulse (YC W26) \u2013 Robotics and computer vision for fish farming",
       "batch": "discovery-2026-04-14",
       "order": 13,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47220320"
@@ -155,7 +160,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Voltair (YC W26) – Drone and charging network for power utilities",
+      "notes": "Launch HN: Voltair (YC W26) \u2013 Drone and charging network for power utilities",
       "batch": "discovery-2026-04-14",
       "order": 14,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47442452"
@@ -166,7 +171,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Voygr (YC W26) – A better maps API for agents and AI apps",
+      "notes": "Launch HN: Voygr (YC W26) \u2013 A better maps API for agents and AI apps",
       "batch": "discovery-2026-04-14",
       "order": 15,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47401042"
@@ -177,7 +182,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Vela (YC W26) – AI for complex scheduling",
+      "notes": "Launch HN: Vela (YC W26) \u2013 AI for complex scheduling",
       "batch": "discovery-2026-04-14",
       "order": 16,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47264741"
@@ -188,7 +193,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Canary (YC W26) – AI QA that understands your code",
+      "notes": "Launch HN: Canary (YC W26) \u2013 AI QA that understands your code",
       "batch": "discovery-2026-04-14",
       "order": 17,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47441629"
@@ -199,7 +204,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Captain (YC W26) – Automated RAG for Files",
+      "notes": "Launch HN: Captain (YC W26) \u2013 Automated RAG for Files",
       "batch": "discovery-2026-04-14",
       "order": 18,
       "discoveryUrl": "https://www.runcaptain.com/"
@@ -210,7 +215,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Sitefire (YC W26) – Automating actions to improve AI visibility",
+      "notes": "Launch HN: Sitefire (YC W26) \u2013 Automating actions to improve AI visibility",
       "batch": "discovery-2026-04-14",
       "order": 19,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47457472"
@@ -221,7 +226,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Sentrial (YC W26) – Catch AI agent failures before your users do",
+      "notes": "Launch HN: Sentrial (YC W26) \u2013 Catch AI agent failures before your users do",
       "batch": "discovery-2026-04-14",
       "order": 20,
       "discoveryUrl": "https://www.sentrial.com/"
@@ -232,7 +237,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
+      "notes": "Launch HN: Sonarly (YC W26) \u2013 AI agent to triage and fix your production alerts",
       "batch": "discovery-2026-04-14",
       "order": 21,
       "discoveryUrl": "https://sonarly.com/"
@@ -243,7 +248,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Chamber (YC W26) – An AI Teammate for GPU Infrastructure",
+      "notes": "Launch HN: Chamber (YC W26) \u2013 An AI Teammate for GPU Infrastructure",
       "batch": "discovery-2026-04-14",
       "order": 22,
       "discoveryUrl": "https://www.usechamber.io/"
@@ -265,7 +270,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Constellation Space (YC W26) – AI for satellite mission assurance",
+      "notes": "Launch HN: Constellation Space (YC W26) \u2013 AI for satellite mission assurance",
       "batch": "discovery-2026-04-14",
       "order": 24,
       "discoveryUrl": "https://news.ycombinator.com/item?id=46721933"
@@ -276,7 +281,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Cardboard (YC W26) – Agentic video editor",
+      "notes": "Launch HN: Cardboard (YC W26) \u2013 Agentic video editor",
       "batch": "discovery-2026-04-14",
       "order": 25,
       "discoveryUrl": "https://www.usecardboard.com/"
@@ -287,7 +292,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Didit (YC W26) – Stripe for Identity Verification",
+      "notes": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
       "batch": "discovery-2026-04-14",
       "order": 26,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47324296"
@@ -298,7 +303,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: IonRouter (YC W26) – High-throughput, low-cost inference",
+      "notes": "Launch HN: IonRouter (YC W26) \u2013 High-throughput, low-cost inference",
       "batch": "discovery-2026-04-14",
       "order": 27,
       "discoveryUrl": "https://ionrouter.io"
@@ -309,7 +314,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Kita (YC W26) – Automate credit review in emerging markets",
+      "notes": "Launch HN: Kita (YC W26) \u2013 Automate credit review in emerging markets",
       "batch": "discovery-2026-04-14",
       "order": 28,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47417335"
@@ -320,7 +325,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+      "notes": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
       "batch": "discovery-2026-04-14",
       "order": 29,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47311657"

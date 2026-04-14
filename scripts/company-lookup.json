@@ -2698,5 +2698,30 @@
     "id": "zeroentropy",
     "name": "ZeroEntropy",
     "website": "https://zeroentropy.dev"
+  },
+  {
+    "id": "avoca",
+    "name": "Avoca",
+    "website": "https://www.avoca.ai"
+  },
+  {
+    "id": "joyful-health",
+    "name": "Joyful Health",
+    "website": "https://www.joyfulhealth.com"
+  },
+  {
+    "id": "omnea",
+    "name": "Omnea",
+    "website": "https://www.omnea.co"
+  },
+  {
+    "id": "tennr",
+    "name": "Tennr",
+    "website": "https://www.tennr.com"
+  },
+  {
+    "id": "traba",
+    "name": "Traba",
+    "website": "https://traba.work"
   }
 ]
