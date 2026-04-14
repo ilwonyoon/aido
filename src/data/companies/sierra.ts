@@ -214,11 +214,11 @@ export const sierra: Company = {
   // Open Roles
   openRoles: [
     {
-              title: 'Product Designer',
-              url: 'https://jobs.ashbyhq.com/sierra',
-              location: 'San Francisco, CA',
-              type: 'full-time',
-            }
+                  title: 'Product Designer',
+                  url: 'https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3',
+                  location: 'San Francisco, CA',
+                  type: 'full-time',
+                }
   ],
 
   // Culture Insights

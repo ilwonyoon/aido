@@ -12,6 +12,7 @@
     "audit:open-roles": "npx tsx scripts/audit-open-roles.ts",
     "plan:open-role-queue": "npx tsx scripts/plan-open-role-queue.ts",
     "repair:open-roles": "npx tsx scripts/apply-open-role-audit.ts",
+    "refresh:open-roles": "npx tsx scripts/refresh-open-role-links.ts",
     "export-companies": "node scripts/export-companies.mjs",
     "fetch-og-images": "node scripts/fetch-og-images.mjs",
     "populate-og-data": "node scripts/populate-og-data.mjs",

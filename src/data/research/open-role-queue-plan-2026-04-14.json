@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-14T18:22:11.015Z",
+  "generatedAt": "2026-04-14T22:10:41.358Z",
   "sourceAuditReport": "src/data/research/open-role-audit-2026-04-14.json",
   "batchSize": 5,
   "summary": {
-    "repairCompanies": 15,
+    "repairCompanies": 2,
     "refreshCompanies": 2,
     "reviewCompanies": 5
   },
@@ -21,112 +21,9 @@
             "roleCount": 1
           },
           {
-            "companyId": "tavus",
-            "companyName": "Tavus",
-            "companyFile": "src/data/companies/tavus.ts",
-            "lastUpdated": "2025-01-26",
-            "roleCount": 1
-          },
-          {
-            "companyId": "toma",
-            "companyName": "Toma",
-            "companyFile": "src/data/companies/toma.ts",
-            "lastUpdated": "2025-01-26",
-            "roleCount": 1
-          },
-          {
-            "companyId": "canva",
-            "companyName": "Canva",
-            "companyFile": "src/data/companies/canva.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "chai-discovery",
-            "companyName": "Chai Discovery",
-            "companyFile": "src/data/companies/chai-discovery.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          }
-        ]
-      },
-      {
-        "batch": 2,
-        "focus": "repair",
-        "companies": [
-          {
-            "companyId": "character-ai",
-            "companyName": "Character.AI",
-            "companyFile": "src/data/companies/character-ai.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "cohere",
-            "companyName": "Cohere",
-            "companyFile": "src/data/companies/cohere.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "descript",
-            "companyName": "Descript",
-            "companyFile": "src/data/companies/descript.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "grammarly",
-            "companyName": "Grammarly",
-            "companyFile": "src/data/companies/grammarly.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "heygen",
-            "companyName": "HeyGen",
-            "companyFile": "src/data/companies/heygen.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          }
-        ]
-      },
-      {
-        "batch": 3,
-        "focus": "repair",
-        "companies": [
-          {
-            "companyId": "jasper",
-            "companyName": "Jasper",
-            "companyFile": "src/data/companies/jasper.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
-            "companyId": "otter-ai",
-            "companyName": "Otter.ai",
-            "companyFile": "src/data/companies/otter-ai.ts",
-            "lastUpdated": "2026-02-18",
-            "roleCount": 1
-          },
-          {
             "companyId": "harvey",
             "companyName": "Harvey",
             "companyFile": "src/data/companies/harvey.ts",
-            "lastUpdated": "2026-04-14",
-            "roleCount": 1
-          },
-          {
-            "companyId": "shopify",
-            "companyName": "Shopify",
-            "companyFile": "src/data/companies/shopify.ts",
-            "lastUpdated": "2026-04-14",
-            "roleCount": 1
-          },
-          {
-            "companyId": "sierra",
-            "companyName": "Sierra",
-            "companyFile": "src/data/companies/sierra.ts",
             "lastUpdated": "2026-04-14",
             "roleCount": 1
           }
@@ -139,11 +36,11 @@
         "focus": "refresh",
         "companies": [
           {
-            "companyId": "ambience-healthcare",
-            "companyName": "Ambience Healthcare",
-            "companyFile": "src/data/companies/ambience-healthcare.ts",
+            "companyId": "ivo",
+            "companyName": "Ivo",
+            "companyFile": "src/data/companies/ivo.ts",
             "lastUpdated": "2026-02-18",
-            "roleCount": 1
+            "roleCount": 2
           },
           {
             "companyId": "scale-ai",

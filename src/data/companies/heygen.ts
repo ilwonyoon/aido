@@ -82,9 +82,7 @@ export const heygen: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [
-      { title: 'Product Designer', location: 'Los Angeles, CA (Hybrid)', url: 'https://heygen.com/careers', type: 'full-time' }
-    ],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -93,7 +91,7 @@ export const heygen: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try HeyGen product', 'Research founders'],
     },
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://www.heygen.com/blog/announcing-our-series-a' },
     { title: 'Source', url: 'https://www.aibase.com/news/9839' }

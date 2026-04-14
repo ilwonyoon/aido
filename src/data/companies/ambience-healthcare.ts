@@ -181,15 +181,7 @@ export const ambienceHealthcare: Company = {
     designerLinks: [],
 
     // Open Roles
-    openRoles: [
-      {
-              title: 'Staff Product Designer',
-              location: 'San Francisco, CA (Onsite)',
-              url: 'https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65',
-              level: 'Staff',
-              type: 'full-time',
-            }
-    ],
+    openRoles: [],
 
     // Culture Insights
     cultureInsights: [],
@@ -213,7 +205,7 @@ export const ambienceHealthcare: Company = {
     },
 
     // Meta
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-build-the-first-ai-platform-for-clinical-workflows' },
     { title: 'Source', url: 'https://www.prnewswire.com/news-releases/ambience-healthcare-raises-70m-series-b-led-by-kleiner-perkins-and-openai-startup-fund-to-scale-its-ai-platform-for-clinicians-302055520.html' },

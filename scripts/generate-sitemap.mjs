@@ -9,9 +9,9 @@ const __dirname = path.dirname(__filename);
 const companiesIndexPath = path.join(__dirname, '../src/data/companies/index.ts');
 const indexContent = fs.readFileSync(companiesIndexPath, 'utf-8');
 
-// Extract company variable names from the companies array
-// The array looks like: export const companies: Company[] = [ anthropic, leya, ... ];
-const arrayMatch = indexContent.match(/export const companies[^[]*\[([\s\S]*?)\];/);
+// Extract company variable names from the companies array.
+// Match the array assignment itself, not the [] in the Company[] type annotation.
+const arrayMatch = indexContent.match(/export const companies:[^=]*=\s*\[([\s\S]*?)\];/);
 if (!arrayMatch) {
   console.error('Could not find companies array');
   process.exit(1);

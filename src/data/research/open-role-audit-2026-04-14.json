@@ -1,68 +1,55 @@
 {
-  "generatedAt": "2026-04-14T18:21:25.798Z",
+  "generatedAt": "2026-04-14T22:10:34.245Z",
   "scope": {
-    "companiesWithOpenRoles": 41,
-    "totalRoles": 46,
-    "selectedCompanies": 41,
+    "companiesWithOpenRoles": 34,
+    "totalRoles": 39,
+    "selectedCompanies": 34,
     "policy": "Audit existing openRoles only. Keep Product Designer IC roles and Product Design leadership roles, require job-specific URLs when possible, and flag blocked or ambiguous cases for follow-up."
   },
   "summary": {
     "rolesByScope": {
-      "in-scope": 43,
+      "in-scope": 37,
       "out-of-scope": 0,
-      "needs-review": 3
+      "needs-review": 2
     },
     "rolesByUrlType": {
-      "specific-job": 28,
-      "generic-careers": 15,
+      "specific-job": 34,
+      "generic-careers": 2,
       "ambiguous": 3
     },
     "rolesByStatus": {
-      "ok": 42,
+      "ok": 36,
       "broken": 0,
       "redirect": 0,
-      "blocked": 4,
-      "timeout": 0,
+      "blocked": 2,
+      "timeout": 1,
       "error": 0
     },
     "rolesByQueue": {
-      "queue-a-repair": 15,
+      "queue-a-repair": 2,
       "queue-b-refresh": 2,
       "queue-c-review": 5,
-      "queue-d-stable": 24
+      "queue-d-stable": 30
     },
     "titleEvidence": {
-      "matched": 21,
+      "matched": 23,
       "not-matched": 1,
-      "unknown": 24
+      "unknown": 15
     },
     "companiesByQueue": {
-      "queue-a-repair": 15,
+      "queue-a-repair": 2,
       "queue-b-refresh": 2,
       "queue-c-review": 5,
-      "queue-d-stable": 19
+      "queue-d-stable": 25
     }
   },
   "queues": {
     "repair": [
       "midjourney",
-      "tavus",
-      "toma",
-      "canva",
-      "chai-discovery",
-      "character-ai",
-      "cohere",
-      "descript",
-      "grammarly",
-      "heygen",
-      "jasper",
-      "otter-ai",
-      "harvey",
-      "shopify",
-      "sierra"
+      "harvey"
     ],
     "refresh": [
-      "ambience-healthcare",
+      "ivo",
       "scale-ai"
     ],
     "review": [
@@ -74,7 +61,6 @@
     ],
     "stable": [
       "figma",
-      "ivo",
       "ramp",
       "terradot",
       "typeface",
@@ -90,8 +76,15 @@
       "suno",
       "xai",
       "serval",
+      "chai-discovery",
+      "character-ai",
       "delve",
-      "openai"
+      "descript",
+      "jasper",
+      "openai",
+      "sierra",
+      "omnea",
+      "tennr"
     ]
   },
   "companies": [
@@ -121,65 +114,6 @@
           "reasons": [
             "URL points to a generic careers page instead of a job-specific posting",
             "URL blocked automated verification (HTTP 403)"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "tavus",
-      "companyName": "Tavus",
-      "companyFile": "src/data/companies/tavus.ts",
-      "lastUpdated": "2025-01-26",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "tavus",
-          "companyName": "Tavus",
-          "companyFile": "src/data/companies/tavus.ts",
-          "lastUpdated": "2025-01-26",
-          "title": "Product Designer",
-          "location": "San Francisco, CA",
-          "url": "https://jobs.ashbyhq.com/tavus",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/tavus",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "toma",
-      "companyName": "Toma",
-      "companyFile": "src/data/companies/toma.ts",
-      "lastUpdated": "2025-01-26",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "toma",
-          "companyName": "Toma",
-          "companyFile": "src/data/companies/toma.ts",
-          "lastUpdated": "2025-01-26",
-          "title": "Designer of Everything",
-          "location": "San Francisco, CA",
-          "url": "https://www.toma.com/jobs",
-          "scope": "needs-review",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://www.toma.com/jobs",
-          "titleEvidence": "matched",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "title needs manual review before keeping in Product Design tracking",
-            "URL points to a generic careers page instead of a job-specific posting"
           ]
         }
       ]
@@ -238,7 +172,7 @@
       "companyFile": "src/data/companies/ivo.ts",
       "lastUpdated": "2026-02-18",
       "roleCount": 2,
-      "queue": "queue-d-stable",
+      "queue": "queue-b-refresh",
       "roles": [
         {
           "companyId": "ivo",
@@ -250,13 +184,11 @@
           "url": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
           "scope": "in-scope",
           "urlType": "specific-job",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
-          "titleEvidence": "matched",
-          "queue": "queue-d-stable",
+          "status": "timeout",
+          "titleEvidence": "unknown",
+          "queue": "queue-b-refresh",
           "reasons": [
-            "role passed the current audit checks"
+            "URL timed out during verification"
           ]
         },
         {
@@ -425,123 +357,6 @@
       ]
     },
     {
-      "companyId": "ambience-healthcare",
-      "companyName": "Ambience Healthcare",
-      "companyFile": "src/data/companies/ambience-healthcare.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-b-refresh",
-      "roles": [
-        {
-          "companyId": "ambience-healthcare",
-          "companyName": "Ambience Healthcare",
-          "companyFile": "src/data/companies/ambience-healthcare.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Staff Product Designer",
-          "location": "San Francisco, CA (Onsite)",
-          "url": "https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65",
-          "scope": "in-scope",
-          "urlType": "specific-job",
-          "status": "blocked",
-          "httpStatus": 403,
-          "finalUrl": "https://www.monster.com/job-openings/staff-designer-san-francisco-ca--820b0d57-9c92-447b-b2ea-2c4244a58e65",
-          "titleEvidence": "unknown",
-          "queue": "queue-b-refresh",
-          "reasons": [
-            "URL blocked automated verification (HTTP 403)"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "canva",
-      "companyName": "Canva",
-      "companyFile": "src/data/companies/canva.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "canva",
-          "companyName": "Canva",
-          "companyFile": "src/data/companies/canva.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "Sydney, Australia (Hybrid)",
-          "url": "https://www.canva.com/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "blocked",
-          "httpStatus": 403,
-          "finalUrl": "https://www.canva.com/careers",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting",
-            "URL blocked automated verification (HTTP 403)"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "chai-discovery",
-      "companyName": "Chai Discovery",
-      "companyFile": "src/data/companies/chai-discovery.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "chai-discovery",
-          "companyName": "Chai Discovery",
-          "companyFile": "src/data/companies/chai-discovery.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "San Francisco, CA (In-person)",
-          "url": "https://jobs.ashbyhq.com/chaidiscovery",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/chaidiscovery",
-          "titleEvidence": "matched",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "character-ai",
-      "companyName": "Character.AI",
-      "companyFile": "src/data/companies/character-ai.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "character-ai",
-          "companyName": "Character.AI",
-          "companyFile": "src/data/companies/character-ai.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "Menlo Park, CA (Hybrid)",
-          "url": "https://jobs.ashbyhq.com/character/",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/character/",
-          "titleEvidence": "matched",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
       "companyId": "clerk",
       "companyName": "Clerk",
       "companyFile": "src/data/companies/clerk.ts",
@@ -566,64 +381,6 @@
           "queue": "queue-d-stable",
           "reasons": [
             "role passed the current audit checks"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "cohere",
-      "companyName": "Cohere",
-      "companyFile": "src/data/companies/cohere.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "cohere",
-          "companyName": "Cohere",
-          "companyFile": "src/data/companies/cohere.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Senior Product Designer",
-          "location": "Toronto, Canada / San Francisco, CA / New York, NY / Paris, France (Hybrid)",
-          "url": "https://jobs.ashbyhq.com/cohere",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/cohere",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "descript",
-      "companyName": "Descript",
-      "companyFile": "src/data/companies/descript.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "descript",
-          "companyName": "Descript",
-          "companyFile": "src/data/companies/descript.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "San Francisco, CA (Hybrid)",
-          "url": "https://www.descript.com/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://www.descript.com/careers",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
           ]
         }
       ]
@@ -687,35 +444,6 @@
       ]
     },
     {
-      "companyId": "grammarly",
-      "companyName": "Grammarly",
-      "companyFile": "src/data/companies/grammarly.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "grammarly",
-          "companyName": "Grammarly",
-          "companyFile": "src/data/companies/grammarly.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "San Francisco, CA (Hybrid)",
-          "url": "https://www.grammarly.com/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://superhuman.com/company/careers",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
       "companyId": "hebbia",
       "companyName": "Hebbia",
       "companyFile": "src/data/companies/hebbia.ts",
@@ -740,64 +468,6 @@
           "queue": "queue-d-stable",
           "reasons": [
             "role passed the current audit checks"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "heygen",
-      "companyName": "HeyGen",
-      "companyFile": "src/data/companies/heygen.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "heygen",
-          "companyName": "HeyGen",
-          "companyFile": "src/data/companies/heygen.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "Los Angeles, CA (Hybrid)",
-          "url": "https://heygen.com/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://job-boards.greenhouse.io/heygen",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "jasper",
-      "companyName": "Jasper",
-      "companyFile": "src/data/companies/jasper.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "jasper",
-          "companyName": "Jasper",
-          "companyFile": "src/data/companies/jasper.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Principal Product Designer",
-          "location": "Austin, TX / Remote",
-          "url": "https://jobs.ashbyhq.com/Jasper%20AI",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/Jasper%20AI",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
           ]
         }
       ]
@@ -943,35 +613,6 @@
           "queue": "queue-d-stable",
           "reasons": [
             "role passed the current audit checks"
-          ]
-        }
-      ]
-    },
-    {
-      "companyId": "otter-ai",
-      "companyName": "Otter.ai",
-      "companyFile": "src/data/companies/otter-ai.ts",
-      "lastUpdated": "2026-02-18",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "otter-ai",
-          "companyName": "Otter.ai",
-          "companyFile": "src/data/companies/otter-ai.ts",
-          "lastUpdated": "2026-02-18",
-          "title": "Product Designer",
-          "location": "Mountain View, CA (Hybrid)",
-          "url": "https://otter.ai/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://otter.ai/careers",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
           ]
         }
       ]
@@ -1239,6 +880,64 @@
       ]
     },
     {
+      "companyId": "chai-discovery",
+      "companyName": "Chai Discovery",
+      "companyFile": "src/data/companies/chai-discovery.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "chai-discovery",
+          "companyName": "Chai Discovery",
+          "companyFile": "src/data/companies/chai-discovery.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer",
+          "location": "San Francisco, CA (In-person)",
+          "url": "https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "character-ai",
+      "companyName": "Character.AI",
+      "companyFile": "src/data/companies/character-ai.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "character-ai",
+          "companyName": "Character.AI",
+          "companyFile": "src/data/companies/character-ai.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer",
+          "location": "Menlo Park, CA (Hybrid)",
+          "url": "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
       "companyId": "delve",
       "companyName": "Delve",
       "companyFile": "src/data/companies/delve.ts",
@@ -1259,6 +958,35 @@
           "status": "ok",
           "httpStatus": 200,
           "finalUrl": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "descript",
+      "companyName": "Descript",
+      "companyFile": "src/data/companies/descript.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "descript",
+          "companyName": "Descript",
+          "companyFile": "src/data/companies/descript.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer, Growth & Monetization",
+          "location": "San Francisco, CA (Hybrid)",
+          "url": "https://boards.greenhouse.io/descript/jobs/7660020003?gh_jid=7660020003",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/descript/jobs/7660020003?gh_jid=7660020003",
           "titleEvidence": "matched",
           "queue": "queue-d-stable",
           "reasons": [
@@ -1297,6 +1025,35 @@
       ]
     },
     {
+      "companyId": "jasper",
+      "companyName": "Jasper",
+      "companyFile": "src/data/companies/jasper.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "jasper",
+          "companyName": "Jasper",
+          "companyFile": "src/data/companies/jasper.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Staff Product Designer",
+          "location": "Austin, TX / Remote",
+          "url": "https://jobs.ashbyhq.com/Jasper%20AI/a1347de0-541f-4ab1-a8ad-80b21ec339bc",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/Jasper%20AI/a1347de0-541f-4ab1-a8ad-80b21ec339bc",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
       "companyId": "openai",
       "companyName": "OpenAI",
       "companyFile": "src/data/companies/openai.ts",
@@ -1326,41 +1083,12 @@
       ]
     },
     {
-      "companyId": "shopify",
-      "companyName": "Shopify",
-      "companyFile": "src/data/companies/shopify.ts",
-      "lastUpdated": "2026-04-14",
-      "roleCount": 1,
-      "queue": "queue-a-repair",
-      "roles": [
-        {
-          "companyId": "shopify",
-          "companyName": "Shopify",
-          "companyFile": "src/data/companies/shopify.ts",
-          "lastUpdated": "2026-04-14",
-          "title": "Staff Product Designer",
-          "location": "Remote (global)",
-          "url": "https://www.shopify.com/careers",
-          "scope": "in-scope",
-          "urlType": "generic-careers",
-          "status": "ok",
-          "httpStatus": 200,
-          "finalUrl": "https://www.shopify.com/careers",
-          "titleEvidence": "unknown",
-          "queue": "queue-a-repair",
-          "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
-          ]
-        }
-      ]
-    },
-    {
       "companyId": "sierra",
       "companyName": "Sierra",
       "companyFile": "src/data/companies/sierra.ts",
       "lastUpdated": "2026-04-14",
       "roleCount": 1,
-      "queue": "queue-a-repair",
+      "queue": "queue-d-stable",
       "roles": [
         {
           "companyId": "sierra",
@@ -1369,16 +1097,74 @@
           "lastUpdated": "2026-04-14",
           "title": "Product Designer",
           "location": "San Francisco, CA",
-          "url": "https://jobs.ashbyhq.com/sierra",
+          "url": "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
           "scope": "in-scope",
-          "urlType": "generic-careers",
+          "urlType": "specific-job",
           "status": "ok",
           "httpStatus": 200,
-          "finalUrl": "https://jobs.ashbyhq.com/sierra",
+          "finalUrl": "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
           "titleEvidence": "matched",
-          "queue": "queue-a-repair",
+          "queue": "queue-d-stable",
           "reasons": [
-            "URL points to a generic careers page instead of a job-specific posting"
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "omnea",
+      "companyName": "Omnea",
+      "companyFile": "src/data/companies/omnea.ts",
+      "lastUpdated": "2026-04-14T00:00:00",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "omnea",
+          "companyName": "Omnea",
+          "companyFile": "src/data/companies/omnea.ts",
+          "lastUpdated": "2026-04-14T00:00:00",
+          "title": "Product Design Lead",
+          "location": "London, Hybrid",
+          "url": "https://www.thesaasjobs.com/jobs/428317074-product-design-lead",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thesaasjobs.com/jobs/428317074-product-design-lead",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "tennr",
+      "companyName": "Tennr",
+      "companyFile": "src/data/companies/tennr.ts",
+      "lastUpdated": "2026-04-14T00:00:00",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "tennr",
+          "companyName": "Tennr",
+          "companyFile": "src/data/companies/tennr.ts",
+          "lastUpdated": "2026-04-14T00:00:00",
+          "title": "Product Designer",
+          "location": "New York, NY (Chelsea office 4 days/week preferred)",
+          "url": "https://jobs.ashbyhq.com/tennr/dd5ef69b-8066-4cc1-9892-71c7c2e80237",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/tennr/dd5ef69b-8066-4cc1-9892-71c7c2e80237",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
           ]
         }
       ]
