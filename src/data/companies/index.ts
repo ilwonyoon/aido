@@ -334,6 +334,7 @@ import { ohmd } from './ohmd';
 import { onton } from './onton';
 import { onyx } from './onyx';
 import { openOceanRobotics } from './open-ocean-robotics';
+import { openEvidence } from './open-evidence';
 import { openai } from './openai';
 import { openmind } from './openmind';
 import { openpay } from './openpay';
@@ -856,6 +857,7 @@ export const companies: Company[] = [
   onton,
   onyx,
   openOceanRobotics,
+  openEvidence,
   openai,
   openmind,
   openpay,

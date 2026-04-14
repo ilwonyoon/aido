@@ -1,11 +1,110 @@
 {
-  "generatedAt": "2026-04-14T10:25:28.795195",
+  "generatedAt": "2026-04-14T10:58:46.276135",
   "batch": "discovery-2026-04-14",
-  "count": 20,
-  "p0": 18,
+  "count": 29,
+  "p0": 27,
   "p1": 2,
   "p2": 0,
   "items": [
+    {
+      "name": "Omnea",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 1,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Joyful Health",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 2,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Avoca",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 3,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Traba",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 4,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Tennr",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 5,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "XBOW",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 6,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Vivodyne",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 7,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Prepared",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 8,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
+    {
+      "name": "Ataraxis",
+      "source": "topstartups.io",
+      "priority": "P0",
+      "status": "queued",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "",
+      "batch": "discovery-2026-04-14",
+      "order": 9,
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+    },
     {
       "name": "Prezent",
       "source": "TechCrunch Funding",
@@ -14,7 +113,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Prezent raises $30 million to acquire AI services firms — starting with founder’s other company",
       "batch": "discovery-2026-04-14",
-      "order": 1,
+      "order": 10,
       "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/"
     },
     {
@@ -25,7 +124,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Converge Bio raises $25M, backed by Bessemer and execs from Meta, OpenAI, Wiz",
       "batch": "discovery-2026-04-14",
-      "order": 2,
+      "order": 11,
       "discoveryUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/"
     },
     {
@@ -36,7 +135,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: RunAnywhere (YC W26) – Faster AI Inference on Apple Silicon",
       "batch": "discovery-2026-04-14",
-      "order": 3,
+      "order": 12,
       "discoveryUrl": "https://github.com/RunanywhereAI/rcli"
     },
     {
@@ -47,7 +146,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: OctaPulse (YC W26) – Robotics and computer vision for fish farming",
       "batch": "discovery-2026-04-14",
-      "order": 4,
+      "order": 13,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47220320"
     },
     {
@@ -58,7 +157,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Voltair (YC W26) – Drone and charging network for power utilities",
       "batch": "discovery-2026-04-14",
-      "order": 5,
+      "order": 14,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47442452"
     },
     {
@@ -69,7 +168,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Voygr (YC W26) – A better maps API for agents and AI apps",
       "batch": "discovery-2026-04-14",
-      "order": 6,
+      "order": 15,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47401042"
     },
     {
@@ -80,7 +179,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Vela (YC W26) – AI for complex scheduling",
       "batch": "discovery-2026-04-14",
-      "order": 7,
+      "order": 16,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47264741"
     },
     {
@@ -91,7 +190,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Canary (YC W26) – AI QA that understands your code",
       "batch": "discovery-2026-04-14",
-      "order": 8,
+      "order": 17,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47441629"
     },
     {
@@ -102,7 +201,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Captain (YC W26) – Automated RAG for Files",
       "batch": "discovery-2026-04-14",
-      "order": 9,
+      "order": 18,
       "discoveryUrl": "https://www.runcaptain.com/"
     },
     {
@@ -113,7 +212,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Sitefire (YC W26) – Automating actions to improve AI visibility",
       "batch": "discovery-2026-04-14",
-      "order": 10,
+      "order": 19,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47457472"
     },
     {
@@ -124,7 +223,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Sentrial (YC W26) – Catch AI agent failures before your users do",
       "batch": "discovery-2026-04-14",
-      "order": 11,
+      "order": 20,
       "discoveryUrl": "https://www.sentrial.com/"
     },
     {
@@ -135,7 +234,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
       "batch": "discovery-2026-04-14",
-      "order": 12,
+      "order": 21,
       "discoveryUrl": "https://sonarly.com/"
     },
     {
@@ -146,7 +245,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Chamber (YC W26) – An AI Teammate for GPU Infrastructure",
       "batch": "discovery-2026-04-14",
-      "order": 13,
+      "order": 22,
       "discoveryUrl": "https://www.usechamber.io/"
     },
     {
@@ -157,7 +256,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Palus Finance (YC W26): Better yields on idle cash for startups, SMBs",
       "batch": "discovery-2026-04-14",
-      "order": 14,
+      "order": 23,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47278980"
     },
     {
@@ -168,7 +267,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Constellation Space (YC W26) – AI for satellite mission assurance",
       "batch": "discovery-2026-04-14",
-      "order": 15,
+      "order": 24,
       "discoveryUrl": "https://news.ycombinator.com/item?id=46721933"
     },
     {
@@ -179,7 +278,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Cardboard (YC W26) – Agentic video editor",
       "batch": "discovery-2026-04-14",
-      "order": 16,
+      "order": 25,
       "discoveryUrl": "https://www.usecardboard.com/"
     },
     {
@@ -190,7 +289,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Didit (YC W26) – Stripe for Identity Verification",
       "batch": "discovery-2026-04-14",
-      "order": 17,
+      "order": 26,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47324296"
     },
     {
@@ -201,7 +300,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: IonRouter (YC W26) – High-throughput, low-cost inference",
       "batch": "discovery-2026-04-14",
-      "order": 18,
+      "order": 27,
       "discoveryUrl": "https://ionrouter.io"
     },
     {
@@ -212,7 +311,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Kita (YC W26) – Automate credit review in emerging markets",
       "batch": "discovery-2026-04-14",
-      "order": 19,
+      "order": 28,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47417335"
     },
     {
@@ -223,7 +322,7 @@
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
       "batch": "discovery-2026-04-14",
-      "order": 20,
+      "order": 29,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47311657"
     }
   ]
