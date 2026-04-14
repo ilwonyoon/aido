@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-04-14T18:22:11.015Z",
+  "sourceAuditReport": "src/data/research/open-role-audit-2026-04-14.json",
+  "batchSize": 5,
+  "summary": {
+    "repairCompanies": 15,
+    "refreshCompanies": 2,
+    "reviewCompanies": 5
+  },
+  "batches": {
+    "repair": [
+      {
+        "batch": 1,
+        "focus": "repair",
+        "companies": [
+          {
+            "companyId": "midjourney",
+            "companyName": "Midjourney",
+            "companyFile": "src/data/companies/midjourney.ts",
+            "lastUpdated": "2025-01-26",
+            "roleCount": 1
+          },
+          {
+            "companyId": "tavus",
+            "companyName": "Tavus",
+            "companyFile": "src/data/companies/tavus.ts",
+            "lastUpdated": "2025-01-26",
+            "roleCount": 1
+          },
+          {
+            "companyId": "toma",
+            "companyName": "Toma",
+            "companyFile": "src/data/companies/toma.ts",
+            "lastUpdated": "2025-01-26",
+            "roleCount": 1
+          },
+          {
+            "companyId": "canva",
+            "companyName": "Canva",
+            "companyFile": "src/data/companies/canva.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "chai-discovery",
+            "companyName": "Chai Discovery",
+            "companyFile": "src/data/companies/chai-discovery.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      },
+      {
+        "batch": 2,
+        "focus": "repair",
+        "companies": [
+          {
+            "companyId": "character-ai",
+            "companyName": "Character.AI",
+            "companyFile": "src/data/companies/character-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "cohere",
+            "companyName": "Cohere",
+            "companyFile": "src/data/companies/cohere.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "descript",
+            "companyName": "Descript",
+            "companyFile": "src/data/companies/descript.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "grammarly",
+            "companyName": "Grammarly",
+            "companyFile": "src/data/companies/grammarly.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "heygen",
+            "companyName": "HeyGen",
+            "companyFile": "src/data/companies/heygen.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      },
+      {
+        "batch": 3,
+        "focus": "repair",
+        "companies": [
+          {
+            "companyId": "jasper",
+            "companyName": "Jasper",
+            "companyFile": "src/data/companies/jasper.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "otter-ai",
+            "companyName": "Otter.ai",
+            "companyFile": "src/data/companies/otter-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "harvey",
+            "companyName": "Harvey",
+            "companyFile": "src/data/companies/harvey.ts",
+            "lastUpdated": "2026-04-14",
+            "roleCount": 1
+          },
+          {
+            "companyId": "shopify",
+            "companyName": "Shopify",
+            "companyFile": "src/data/companies/shopify.ts",
+            "lastUpdated": "2026-04-14",
+            "roleCount": 1
+          },
+          {
+            "companyId": "sierra",
+            "companyName": "Sierra",
+            "companyFile": "src/data/companies/sierra.ts",
+            "lastUpdated": "2026-04-14",
+            "roleCount": 1
+          }
+        ]
+      }
+    ],
+    "refresh": [
+      {
+        "batch": 1,
+        "focus": "refresh",
+        "companies": [
+          {
+            "companyId": "ambience-healthcare",
+            "companyName": "Ambience Healthcare",
+            "companyFile": "src/data/companies/ambience-healthcare.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "scale-ai",
+            "companyName": "Scale AI",
+            "companyFile": "src/data/companies/scale-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      }
+    ],
+    "review": [
+      {
+        "batch": 1,
+        "focus": "review",
+        "companies": [
+          {
+            "companyId": "exa",
+            "companyName": "Exa",
+            "companyFile": "src/data/companies/exa.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "further-ai",
+            "companyName": "FurtherAI",
+            "companyFile": "src/data/companies/further-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "layer-financial",
+            "companyName": "Layer Financial",
+            "companyFile": "src/data/companies/layer-financial.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "natural",
+            "companyName": "Natural",
+            "companyFile": "src/data/companies/natural.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "superhuman",
+            "companyName": "Superhuman",
+            "companyFile": "src/data/companies/superhuman.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

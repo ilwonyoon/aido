@@ -121,30 +121,7 @@ export const lighthouse: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-          title: 'Product Designer',
-          location: 'San Francisco, CA (Hybrid)',
-          type: 'full-time',
-          url: 'https://careers.lighthousehq.com/product-designer.html',
-          aboutRole: 'First product design hire to craft interfaces across the visa workflow.',
-          responsibilities: [
-            'Design end-to-end visa workflow experiences',
-            'Collaborate with engineering and legal teams',
-            'Ship user-facing features quickly in a lean team',
-          ],
-          requirements: [
-            '2+ years designing and shipping product experiences',
-            'Strong interaction and visual design skills',
-            'Comfortable working in fast-moving startup environments',
-          ],
-          preferred: [
-            'Experience with complex workflows or fintech/legal products',
-            'Ability to prototype quickly',
-          ],
-          whyInteresting: 'Own product design at an early-stage company modernizing visa sponsorship.',
-        }
-  ],
+  openRoles: [],
 
   cultureInsights: [],
 
@@ -173,7 +150,7 @@ export const lighthouse: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-04-14',
   sources: [
     { title: 'Source', url: 'https://www.lighthousehq.com' },
     { title: 'Source', url: 'https://careers.lighthousehq.com/product-designer.html' },

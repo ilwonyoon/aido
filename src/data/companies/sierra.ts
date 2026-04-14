@@ -214,17 +214,11 @@ export const sierra: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Product Designer',
-          url: 'https://jobs.ashbyhq.com/sierra',
-          location: 'San Francisco, CA',
-          type: 'full-time',
-        },
-    {
-          title: 'Agent Experience Designer, Voice (Multilingual)',
-          url: 'https://jobs.ashbyhq.com/sierra',
-          location: 'San Francisco, CA',
-          type: 'full-time',
-        }
+              title: 'Product Designer',
+              url: 'https://jobs.ashbyhq.com/sierra',
+              location: 'San Francisco, CA',
+              type: 'full-time',
+            }
   ],
 
   // Culture Insights
@@ -273,7 +267,7 @@ export const sierra: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-04-14',
   sources: [
     { title: 'Sierra Official Website', url: 'https://sierra.ai/' },
     { title: 'Sierra Blog — $100M ARR Milestone', url: 'https://sierra.ai/blog/100m-arr' },
