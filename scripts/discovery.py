@@ -5,10 +5,10 @@ AIDO Company Discovery Engine
 새로운 AI 스타트업을 무료 소스에서 발견하고, 기존 DB와 대조해 신규 후보만 추출.
 
 소스:
-  - TechCrunch AI RSS
-  - VentureBeat AI RSS
-  - Y Combinator (최신 배치)
-  - Hacker News "Who's Hiring" (매월 1일)
+  - topstartups.io AI (Series A~E 큐레이션 리스트 — 핵심)
+  - TechCrunch AI RSS + 펀딩 검색
+  - Y Combinator 최신 배치 (HN Launch HN)
+  - Hacker News "Who's Hiring" (--monthly)
 
 사용법:
   python3 scripts/discovery.py              # 주간 스캔
@@ -472,6 +472,38 @@ def scan_hn_hiring() -> list[dict]:
 
 
 # ─── 메인 ───────────────────────────────────────────────────────────────────
+def scan_topstartups() -> list[dict]:
+    """
+    topstartups.io AI 섹션 스캔.
+    Series A~E 큐레이션 리스트 — YC보다 성숙한 회사들.
+    """
+    print("  → topstartups.io AI 스캔 중...")
+    url = "https://topstartups.io/?industries=Artificial+Intelligence"
+    content = fetch_url_with_redirect(url)
+    if not content:
+        return []
+
+    candidates = []
+    seen = set()
+
+    # topstartups.io는 로고 alt 태그에 "CompanyName startup company logo" 형식으로 회사명 포함
+    for m in re.finditer(r'alt="([^"]+) startup company logo"', content):
+        name = m.group(1).strip()
+        if name in seen or not is_valid_company_name(name):
+            continue
+        seen.add(name)
+        candidates.append({
+            "name": name,
+            "source": "topstartups.io",
+            "url": "https://topstartups.io/?industries=Artificial+Intelligence",
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "confidence": "high",  # 큐레이션 리스트 (Series A~E)
+        })
+
+    print(f"     → {len(candidates)}개 후보 발견")
+    return candidates
+
+
 def run_discovery(monthly: bool = False, yc_only: bool = False) -> list[dict]:
     """전체 discovery 실행"""
     existing = load_existing_companies()
@@ -484,11 +516,14 @@ def run_discovery(monthly: bool = False, yc_only: bool = False) -> list[dict]:
         all_candidates += scan_yc()
     else:
         print("🔍 주간 스캔:")
+
+        # topstartups.io — Series A~E 큐레이션 (핵심 소스)
+        all_candidates += scan_topstartups()
+
         all_candidates += scan_rss(
             "https://techcrunch.com/category/artificial-intelligence/feed/",
             "TechCrunch AI"
         )
-        # TechCrunch 펀딩 전용 검색 RSS
         all_candidates += scan_rss(
             "https://techcrunch.com/?s=AI+startup+raises&feed=rss",
             "TechCrunch Funding"
