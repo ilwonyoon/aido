@@ -210,6 +210,11 @@
     "website": "https://www.avidbots.com"
   },
   {
+    "id": "avoca",
+    "name": "Avoca",
+    "website": "https://www.avoca.ai"
+  },
+  {
     "id": "axiom-math",
     "name": "Axiom (Math)",
     "website": "https://axiommath.ai"
@@ -1215,6 +1220,11 @@
     "website": "https://jasper.ai"
   },
   {
+    "id": "joyful-health",
+    "name": "Joyful Health",
+    "website": "https://www.joyfulhealth.com"
+  },
+  {
     "id": "juicebox",
     "name": "Juicebox",
     "website": "https://www.juicebox.ai"
@@ -1705,6 +1715,11 @@
     "website": "https://ohmd.com"
   },
   {
+    "id": "omnea",
+    "name": "Omnea",
+    "website": "https://www.omnea.co"
+  },
+  {
     "id": "onton",
     "name": "Onton",
     "website": "https://www.onton.com/"
@@ -1715,14 +1730,14 @@
     "website": "https://www.onyx.app"
   },
   {
-    "id": "open-ocean-robotics",
-    "name": "Open Ocean Robotics",
-    "website": "https://openoceanrobotics.com"
-  },
-  {
     "id": "open-evidence",
     "name": "OpenEvidence",
     "website": "https://www.openevidence.com"
+  },
+  {
+    "id": "open-ocean-robotics",
+    "name": "Open Ocean Robotics",
+    "website": "https://openoceanrobotics.com"
   },
   {
     "id": "openai",
@@ -2420,6 +2435,11 @@
     "website": "https://tempo.xyz"
   },
   {
+    "id": "tennr",
+    "name": "Tennr",
+    "website": "https://www.tennr.com"
+  },
+  {
     "id": "tensormesh",
     "name": "Tensormesh",
     "website": "https://tensormesh.ai"
@@ -2488,6 +2508,11 @@
     "id": "town",
     "name": "Town",
     "website": "https://town.com/"
+  },
+  {
+    "id": "traba",
+    "name": "Traba",
+    "website": "https://traba.work"
   },
   {
     "id": "trm-labs",
@@ -2700,28 +2725,23 @@
     "website": "https://zeroentropy.dev"
   },
   {
-    "id": "avoca",
-    "name": "Avoca",
-    "website": "https://www.avoca.ai"
+    "id": "ataraxis",
+    "name": "Ataraxis AI",
+    "website": "https://ataraxisai.com"
   },
   {
-    "id": "joyful-health",
-    "name": "Joyful Health",
-    "website": "https://www.joyfulhealth.com"
+    "id": "prepared",
+    "name": "Prepared",
+    "website": "https://www.prepared911.com"
   },
   {
-    "id": "omnea",
-    "name": "Omnea",
-    "website": "https://www.omnea.co"
+    "id": "vivodyne",
+    "name": "Vivodyne",
+    "website": "https://www.vivodyne.com"
   },
   {
-    "id": "tennr",
-    "name": "Tennr",
-    "website": "https://www.tennr.com"
-  },
-  {
-    "id": "traba",
-    "name": "Traba",
-    "website": "https://traba.work"
+    "id": "xbow",
+    "name": "XBOW",
+    "website": "https://xbow.com"
   }
 ]

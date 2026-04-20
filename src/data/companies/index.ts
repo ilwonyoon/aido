@@ -23,6 +23,7 @@ import { anrok } from './anrok';
 import { anthropic } from './anthropic';
 import { anythingAi } from './anything-ai';
 import { apothekary } from './apothekary';
+import { ataraxis } from './ataraxis';
 import { appliedCompute } from './applied-compute';
 import { aquaVoice } from './aqua-voice';
 import { arc } from './arc';
@@ -382,6 +383,7 @@ import { primeIntellect } from './prime-intellect';
 import { prismax } from './prismax';
 import { privateAi } from './private-ai';
 import { promisePay } from './promise-pay';
+import { prepared } from './prepared';
 import { pulley } from './pulley';
 import { pylon } from './pylon';
 import { quanta } from './quanta';
@@ -503,6 +505,7 @@ import { urbanlogiq } from './urbanlogiq';
 import { validere } from './validere';
 import { vanta } from './vanta';
 import { vantageAnalytics } from './vantage-analytics';
+import { vivodyne } from './vivodyne';
 import { vapi } from './vapi';
 import { variant } from './variant';
 import { vercel } from './vercel';
@@ -523,6 +526,7 @@ import { workos } from './workos';
 import { worldLabs } from './world-labs';
 import { writer } from './writer';
 import { xai } from './xai';
+import { xbow } from './xbow';
 import { xanadu } from './xanadu';
 import { xpertsea } from './xpertsea';
 import { yutori } from './yutori';
@@ -554,6 +558,7 @@ export const companies: Company[] = [
   anthropic,
   anythingAi,
   apothekary,
+  ataraxis,
   appliedCompute,
   aquaVoice,
   arc,
@@ -909,6 +914,7 @@ export const companies: Company[] = [
   prismax,
   privateAi,
   promisePay,
+  prepared,
   pulley,
   pylon,
   quanta,
@@ -1030,6 +1036,7 @@ export const companies: Company[] = [
   validere,
   vanta,
   vantageAnalytics,
+  vivodyne,
   vapi,
   variant,
   vercel,
@@ -1050,6 +1057,7 @@ export const companies: Company[] = [
   worldLabs,
   writer,
   xai,
+  xbow,
   xanadu,
   xpertsea,
   yutori,
