@@ -2743,5 +2743,25 @@
     "id": "xbow",
     "name": "XBOW",
     "website": "https://xbow.com"
+  },
+  {
+    "id": "auctor",
+    "name": "Auctor",
+    "website": "https://www.getauctor.com"
+  },
+  {
+    "id": "runanywhere",
+    "name": "RunAnywhere",
+    "website": "https://www.runanywhere.ai"
+  },
+  {
+    "id": "octapulse",
+    "name": "OctaPulse",
+    "website": "https://www.tryoctapulse.com"
+  },
+  {
+    "id": "voltair",
+    "name": "Voltair",
+    "website": "https://www.voltairlabs.com"
   }
 ]

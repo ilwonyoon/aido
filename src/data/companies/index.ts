@@ -37,6 +37,7 @@ import { artie } from './artie';
 import { assortHealth } from './assort-health';
 import { astromech } from './astromech';
 import { attabotics } from './attabotics';
+import { auctor } from './auctor';
 import { augment } from './augment';
 import { aurasell } from './aurasell';
 import { avoca } from './avoca';
@@ -332,6 +333,7 @@ import { numeric } from './numeric';
 import { nuraline } from './nuraline';
 import { nuvo } from './nuvo';
 import { obieAi } from './obie-ai';
+import { octapulse } from './octapulse';
 import { odyssey } from './odyssey';
 import { ohmd } from './ohmd';
 import { omnea } from './omnea';
@@ -408,6 +410,7 @@ import { resolver } from './resolver';
 import { response } from './response';
 import { rivo } from './rivo';
 import { roboflow } from './roboflow';
+import { runanywhere } from './runanywhere';
 import { rox } from './rox';
 import { runway } from './runway';
 import { safetykit } from './safetykit';
@@ -511,6 +514,7 @@ import { variant } from './variant';
 import { vercel } from './vercel';
 import { vizcom } from './vizcom';
 import { voiceflow } from './voiceflow';
+import { voltair } from './voltair';
 import { vozy } from './vozy';
 import { wabi } from './wabi';
 import { walrus } from './walrus';
@@ -571,6 +575,7 @@ export const companies: Company[] = [
   assortHealth,
   astromech,
   attabotics,
+  auctor,
   augment,
   aurasell,
   avoca,
@@ -864,6 +869,7 @@ export const companies: Company[] = [
   nuraline,
   nuvo,
   obieAi,
+  octapulse,
   odyssey,
   ohmd,
   omnea,
@@ -939,6 +945,7 @@ export const companies: Company[] = [
   response,
   rivo,
   roboflow,
+  runanywhere,
   rox,
   runway,
   safetykit,
@@ -1042,6 +1049,7 @@ export const companies: Company[] = [
   vercel,
   vizcom,
   voiceflow,
+  voltair,
   vozy,
   wabi,
   walrus,
