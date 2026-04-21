@@ -140,34 +140,37 @@
       "name": "RunAnywhere",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
       "batch": "discovery-2026-04-14",
       "order": 12,
-      "discoveryUrl": "https://github.com/RunanywhereAI/rcli"
+      "discoveryUrl": "https://github.com/RunanywhereAI/rcli",
+      "resultCompanyId": "runanywhere"
     },
     {
       "name": "OctaPulse",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: OctaPulse (YC W26) \u2013 Robotics and computer vision for fish farming",
       "batch": "discovery-2026-04-14",
       "order": 13,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47220320"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47220320",
+      "resultCompanyId": "octapulse"
     },
     {
       "name": "Voltair",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Voltair (YC W26) \u2013 Drone and charging network for power utilities",
       "batch": "discovery-2026-04-14",
       "order": 14,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47442452"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47442452",
+      "resultCompanyId": "voltair"
     },
     {
       "name": "Voygr",

@@ -48,3 +48,9 @@ next-env.d.ts
 scripts/launchd-stdout.log
 scripts/launchd-stderr.log
 scripts/daily-research-output.log
+scripts/discovery-log.json
+
+# local automation caches
+.playwright-cli/
+__pycache__/
+scripts/__pycache__/

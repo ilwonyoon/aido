@@ -22,45 +22,49 @@
       "name": "XBOW",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-20",
       "order": 2,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "xbow"
     },
     {
       "name": "Vivodyne",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-20",
       "order": 3,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "vivodyne"
     },
     {
       "name": "Prepared",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-20",
       "order": 4,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "prepared"
     },
     {
       "name": "Ataraxis",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-20",
       "order": 5,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "ataraxis"
     },
     {
       "name": "Prezent",

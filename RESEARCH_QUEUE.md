@@ -152,3 +152,10 @@
 | **IonRouter** | YC W26 | [https://ionrouter.io](https://ionrouter.io) | high |
 | **Kita** | YC W26 | [https://news.ycombinator.com/item?id=47417335](https://news.ycombinator.com/item?id=47417335) | high |
 | **Terminal Use** | YC W26 | [https://news.ycombinator.com/item?id=47311657](https://news.ycombinator.com/item?id=47311657) | high |
+
+
+## 🆕 Discovery 2026-04-20 (1개 신규 미처리)
+
+| Company | Source | URL | Confidence |
+|---------|--------|-----|------------|
+| **Kampala** | YC W26 | [https://www.zatanna.ai/kampala](https://www.zatanna.ai/kampala) | high |
