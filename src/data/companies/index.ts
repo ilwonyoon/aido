@@ -72,6 +72,7 @@ import { cambium } from './cambium';
 import { campfire } from './campfire';
 import { canva } from './canva';
 import { canvassAi } from './canvass-ai';
+import { canary } from './canary';
 import { cardless } from './cardless';
 import { careforceAi } from './careforce-ai';
 import { cartesia } from './cartesia';
@@ -508,6 +509,7 @@ import { urbanlogiq } from './urbanlogiq';
 import { validere } from './validere';
 import { vanta } from './vanta';
 import { vantageAnalytics } from './vantage-analytics';
+import { vela } from './vela';
 import { vivodyne } from './vivodyne';
 import { vapi } from './vapi';
 import { variant } from './variant';
@@ -515,6 +517,7 @@ import { vercel } from './vercel';
 import { vizcom } from './vizcom';
 import { voiceflow } from './voiceflow';
 import { voltair } from './voltair';
+import { voygr } from './voygr';
 import { vozy } from './vozy';
 import { wabi } from './wabi';
 import { walrus } from './walrus';
@@ -609,6 +612,7 @@ export const companies: Company[] = [
   campfire,
   canva,
   canvassAi,
+  canary,
   cardless,
   careforceAi,
   cartesia,
@@ -1043,6 +1047,7 @@ export const companies: Company[] = [
   validere,
   vanta,
   vantageAnalytics,
+  vela,
   vivodyne,
   vapi,
   variant,
@@ -1050,6 +1055,7 @@ export const companies: Company[] = [
   vizcom,
   voiceflow,
   voltair,
+  voygr,
   vozy,
   wabi,
   walrus,

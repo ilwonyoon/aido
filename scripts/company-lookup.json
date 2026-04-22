@@ -2763,5 +2763,20 @@
     "id": "voltair",
     "name": "Voltair",
     "website": "https://www.voltairlabs.com"
+  },
+  {
+    "id": "canary",
+    "name": "Canary",
+    "website": "https://www.runcanary.ai"
+  },
+  {
+    "id": "vela",
+    "name": "Vela",
+    "website": "https://tryvela.ai"
+  },
+  {
+    "id": "voygr",
+    "name": "Voygr",
+    "website": "https://voygr.tech"
   }
 ]

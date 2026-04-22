@@ -128,34 +128,37 @@
       "name": "Voygr",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Voygr (YC W26) \u2013 A better maps API for agents and AI apps",
       "batch": "discovery-2026-04-20",
       "order": 11,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47401042"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47401042",
+      "resultCompanyId": "voygr"
     },
     {
       "name": "Vela",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Vela (YC W26) \u2013 AI for complex scheduling",
       "batch": "discovery-2026-04-20",
       "order": 12,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47264741"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47264741",
+      "resultCompanyId": "vela"
     },
     {
       "name": "Canary",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Canary (YC W26) \u2013 AI QA that understands your code",
       "batch": "discovery-2026-04-20",
       "order": 13,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47441629"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47441629",
+      "resultCompanyId": "canary"
     },
     {
       "name": "Captain",
