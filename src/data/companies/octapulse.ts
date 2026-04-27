@@ -8,6 +8,11 @@ export const octapulse: Company = {
   headquarters: 'Unknown',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'data-analysis'],
+  markets: ['b2b', 'enterprise'],
+  category: 'vertical-saas' as const,
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

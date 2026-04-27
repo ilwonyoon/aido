@@ -8,6 +8,11 @@ export const runanywhere: Company = {
   headquarters: 'Unknown',
   remote: 'Unknown',
 
+  aiTypes: ['ai-infrastructure', 'model-platform'],
+  markets: ['b2b', 'enterprise'],
+  category: 'developer-tools' as const,
+  industries: ['infrastructure', 'developer-tools'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

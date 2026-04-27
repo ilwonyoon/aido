@@ -73,6 +73,7 @@ import { campfire } from './campfire';
 import { canva } from './canva';
 import { canvassAi } from './canvass-ai';
 import { canary } from './canary';
+import { captain } from './captain';
 import { cardless } from './cardless';
 import { careforceAi } from './careforce-ai';
 import { cartesia } from './cartesia';
@@ -84,6 +85,7 @@ import { centralHq } from './central-hq';
 import { cerebriAi } from './cerebri-ai';
 import { certn } from './certn';
 import { chaiDiscovery } from './chai-discovery';
+import { chamber } from './chamber';
 import { characterAi } from './character-ai';
 import { chillwallAi } from './chillwall-ai';
 import { chroma } from './chroma';
@@ -423,6 +425,7 @@ import { scribe } from './scribe';
 import { seedHealth } from './seed-health';
 import { senecaSystems } from './seneca-systems';
 import { sentientLabs } from './sentient-labs';
+import { sentrial } from './sentrial';
 import { serval } from './serval';
 import { sesameAi } from './sesame-ai';
 import { seso } from './seso';
@@ -432,12 +435,14 @@ import { shopify } from './shopify';
 import { shortwave } from './shortwave';
 import { sierra } from './sierra';
 import { sightlineInnovation } from './sightline-innovation';
+import { sitefire } from './sitefire';
 import { skyhive } from './skyhive';
 import { slash } from './slash';
 import { snaptravel } from './snaptravel';
 import { solaSecurity } from './sola-security';
 import { slope } from './slope';
 import { solidroad } from './solidroad';
+import { sonarly } from './sonarly';
 import { sonatic } from './sonatic';
 import { sonder } from './sonder';
 import { sortspoke } from './sortspoke';
@@ -613,6 +618,7 @@ export const companies: Company[] = [
   canva,
   canvassAi,
   canary,
+  captain,
   cardless,
   careforceAi,
   cartesia,
@@ -624,6 +630,7 @@ export const companies: Company[] = [
   cerebriAi,
   certn,
   chaiDiscovery,
+  chamber,
   characterAi,
   chillwallAi,
   chroma,
@@ -961,6 +968,7 @@ export const companies: Company[] = [
   seedHealth,
   senecaSystems,
   sentientLabs,
+  sentrial,
   serval,
   sesameAi,
   seso,
@@ -970,12 +978,14 @@ export const companies: Company[] = [
   shortwave,
   sierra,
   sightlineInnovation,
+  sitefire,
   skyhive,
   slash,
   snaptravel,
   solaSecurity,
   slope,
   solidroad,
+  sonarly,
   sonatic,
   sonder,
   sortspoke,

@@ -8,6 +8,11 @@ export const voygr: Company = {
   headquarters: 'Unknown',
   remote: 'Unknown',
 
+  aiTypes: ['search-retrieval', 'data-analysis'],
+  markets: ['enterprise', 'b2b'],
+  category: 'developer-tools' as const,
+  industries: ['infrastructure'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

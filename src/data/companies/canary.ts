@@ -8,6 +8,11 @@ export const canary: Company = {
   headquarters: 'Unknown',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'code-assistant'],
+  markets: ['b2b', 'enterprise'],
+  category: 'developer-tools' as const,
+  industries: ['developer-tools'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

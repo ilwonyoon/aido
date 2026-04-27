@@ -8,6 +8,11 @@ export const auctor: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'text-assistant'],
+  markets: ['enterprise', 'b2b'],
+  category: 'enterprise-ops' as const,
+  industries: ['productivity'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

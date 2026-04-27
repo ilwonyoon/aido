@@ -8,6 +8,11 @@ export const ataraxis: Company = {
   headquarters: 'New York, NY',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'data-analysis'],
+  markets: ['enterprise', 'b2b'],
+  category: 'vertical-saas' as const,
+  industries: ['healthcare'],
+
   // Business
   stage: 'Series A',
   valuation: 'Unknown',

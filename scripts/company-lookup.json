@@ -180,6 +180,11 @@
     "website": "https://www.astromech.bio"
   },
   {
+    "id": "ataraxis",
+    "name": "Ataraxis AI",
+    "website": "https://ataraxisai.com"
+  },
+  {
     "id": "atob",
     "name": "AtoB",
     "website": "https://www.atob.com"
@@ -188,6 +193,11 @@
     "id": "attabotics",
     "name": "Attabotics",
     "website": "https://attabotics.com"
+  },
+  {
+    "id": "auctor",
+    "name": "Auctor",
+    "website": "https://www.getauctor.com"
   },
   {
     "id": "augment",
@@ -355,6 +365,11 @@
     "website": "https://campfire.ai"
   },
   {
+    "id": "canary",
+    "name": "Canary",
+    "website": "https://www.runcanary.ai"
+  },
+  {
     "id": "canva",
     "name": "Canva",
     "website": "https://www.canva.com"
@@ -363,6 +378,11 @@
     "id": "canvass-ai",
     "name": "Canvass AI",
     "website": "https://www.canvass.io"
+  },
+  {
+    "id": "captain",
+    "name": "Captain",
+    "website": "https://www.runcaptain.com"
   },
   {
     "id": "cardless",
@@ -1705,6 +1725,11 @@
     "website": "https://www.obie.ai"
   },
   {
+    "id": "octapulse",
+    "name": "OctaPulse",
+    "website": "https://www.tryoctapulse.com"
+  },
+  {
     "id": "odyssey",
     "name": "Odyssey",
     "website": "https://odyssey.ml/"
@@ -1950,6 +1975,11 @@
     "website": "https://posthog.com"
   },
   {
+    "id": "prepared",
+    "name": "Prepared",
+    "website": "https://www.prepared911.com"
+  },
+  {
     "id": "prime-intellect",
     "name": "Prime Intellect",
     "website": "https://www.primeintellect.ai"
@@ -2110,6 +2140,11 @@
     "website": "https://rox.com/"
   },
   {
+    "id": "runanywhere",
+    "name": "RunAnywhere",
+    "website": "https://www.runanywhere.ai"
+  },
+  {
     "id": "runway",
     "name": "Runway",
     "website": "https://runwayml.com/"
@@ -2158,6 +2193,11 @@
     "id": "sentient-labs",
     "name": "Sentient Labs",
     "website": "https://sentient.foundation"
+  },
+  {
+    "id": "sentrial",
+    "name": "Sentrial",
+    "website": "https://sentrial.com"
   },
   {
     "id": "seriesai",
@@ -2213,6 +2253,11 @@
     "id": "sightline-innovation",
     "name": "Sightline Innovation",
     "website": "https://www.sightlineinnovation.com"
+  },
+  {
+    "id": "sitefire",
+    "name": "Sitefire",
+    "website": "https://sitefire.ai"
   },
   {
     "id": "skyhive",
@@ -2610,9 +2655,19 @@
     "website": "https://variant.ai/"
   },
   {
+    "id": "vela",
+    "name": "Vela",
+    "website": "https://tryvela.ai"
+  },
+  {
     "id": "vercel",
     "name": "Vercel",
     "website": "https://vercel.com"
+  },
+  {
+    "id": "vivodyne",
+    "name": "Vivodyne",
+    "website": "https://www.vivodyne.com"
   },
   {
     "id": "vizcom",
@@ -2623,6 +2678,16 @@
     "id": "voiceflow",
     "name": "Voiceflow",
     "website": "https://www.voiceflow.com"
+  },
+  {
+    "id": "voltair",
+    "name": "Voltair",
+    "website": "https://www.voltairlabs.com"
+  },
+  {
+    "id": "voygr",
+    "name": "Voygr",
+    "website": "https://voygr.tech"
   },
   {
     "id": "vozy",
@@ -2705,6 +2770,11 @@
     "website": "https://xanadu.ai"
   },
   {
+    "id": "xbow",
+    "name": "XBOW",
+    "website": "https://xbow.com"
+  },
+  {
     "id": "xpertsea",
     "name": "Xpertsea",
     "website": "https://xpertsea.com"
@@ -2725,58 +2795,13 @@
     "website": "https://zeroentropy.dev"
   },
   {
-    "id": "ataraxis",
-    "name": "Ataraxis AI",
-    "website": "https://ataraxisai.com"
+    "id": "sonarly",
+    "name": "Sonarly",
+    "website": "https://sonarly.com"
   },
   {
-    "id": "prepared",
-    "name": "Prepared",
-    "website": "https://www.prepared911.com"
-  },
-  {
-    "id": "vivodyne",
-    "name": "Vivodyne",
-    "website": "https://www.vivodyne.com"
-  },
-  {
-    "id": "xbow",
-    "name": "XBOW",
-    "website": "https://xbow.com"
-  },
-  {
-    "id": "auctor",
-    "name": "Auctor",
-    "website": "https://www.getauctor.com"
-  },
-  {
-    "id": "runanywhere",
-    "name": "RunAnywhere",
-    "website": "https://www.runanywhere.ai"
-  },
-  {
-    "id": "octapulse",
-    "name": "OctaPulse",
-    "website": "https://www.tryoctapulse.com"
-  },
-  {
-    "id": "voltair",
-    "name": "Voltair",
-    "website": "https://www.voltairlabs.com"
-  },
-  {
-    "id": "canary",
-    "name": "Canary",
-    "website": "https://www.runcanary.ai"
-  },
-  {
-    "id": "vela",
-    "name": "Vela",
-    "website": "https://tryvela.ai"
-  },
-  {
-    "id": "voygr",
-    "name": "Voygr",
-    "website": "https://voygr.tech"
+    "id": "chamber",
+    "name": "Chamber",
+    "website": "https://www.usechamber.io"
   }
 ]

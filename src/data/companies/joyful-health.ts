@@ -15,16 +15,17 @@ export const joyfulHealth: Company = {
   industries: ['healthcare', 'fintech'],
 
   // Business
-  stage: 'Seed',
+  stage: 'Series A',
   valuation: 'Unknown',
-  totalFunding: '$5.1M',
+  totalFunding: '$22M',
   fundingHistory: [
     { stage: 'Seed', amount: '$5.1M', date: '2025-01', leadInvestors: ['Designer Fund', 'Inflect Capital', 'The Council'] },
+    { stage: 'Series A', amount: '$17M', date: '2026-04', leadInvestors: ['CRV'] },
   ],
-  revenue: 'Unknown (early-stage, zero upfront cost model)',
-  growth: 'Early stage — launched 2024/2025',
-  runway: 'Seed-stage',
-  customers: 'Private healthcare practices (small to mid-size)',
+  revenue: 'Unknown',
+  growth: 'Processed $1.4B+ in transactions and reports 95%+ recovery rate across specialties',
+  runway: 'Strong (Series A led by CRV, Apr 2026)',
+  customers: 'Healthcare practices, digital health organizations, practice management groups, hospitals and health systems',
 
   // Growth & Potential
   growthMetrics: {
@@ -32,7 +33,9 @@ export const joyfulHealth: Company = {
     revenueGrowth: 'Unknown',
     userGrowth: 'Unknown — early customer acquisition phase',
     signals: [
-      '$5.1M seed from Designer Fund + Inflect Capital',
+      '$17M Series A led by CRV (Apr 2026), bringing total funding to $22M',
+      'Processed $1.4B+ in transactions',
+      'Reports 95%+ recovery rate across specialties',
       'Founded by former PM at Charlie Health (mental health unicorn)',
       'Zero upfront cost model reduces friction for adoption',
     ],
@@ -47,7 +50,7 @@ export const joyfulHealth: Company = {
     ],
     headwinds: [
       'RCM is commoditized with hundreds of offshore billing services as alternatives',
-      'Small practices are price-sensitive and slow to adopt new software',
+      'Healthcare providers are slow to adopt new financial infrastructure without clear proof of ROI',
       'Healthcare billing requires payer-specific expertise that AI alone cannot replace',
       'Regulatory complexity (HIPAA, payer contracts) increases compliance burden',
     ],
@@ -95,6 +98,11 @@ export const joyfulHealth: Company = {
       role: 'CEO & Co-founder',
       background: 'Former PM at Charlie Health (mental health unicorn). Discovered healthcare practices were losing 10-30% of revenue in denied claims without realizing it.',
     },
+    {
+      name: 'Warren Green',
+      role: 'CTO & Co-founder',
+      background: 'Co-founder building Joyful Health\'s AI financial infrastructure and denial intelligence platform.',
+    },
   ],
   whyBuilding: 'Saw firsthand at Charlie Health how practices struggle with billing complexity. Built Joyful Health to give solo and small practices the financial operations infrastructure that only large health systems can afford.',
   beliefs: [
@@ -106,12 +114,14 @@ export const joyfulHealth: Company = {
 
   greenFlags: [
     'Designer Fund backing = design-first company culture from inception',
+    'CRV-led Series A validates demand beyond seed-stage signal',
+    '$1.4B+ processed with 95%+ recovery rate indicates real operating traction',
     'Clear 10-30% revenue recovery opportunity for every customer (concrete ROI)',
     'Founder has direct domain experience (Charlie Health PM)',
     'Zero upfront cost model removes biggest adoption barrier',
   ],
   redFlags: [
-    'Very early stage — small team (25 people), limited proof of scale',
+    'Still early stage despite Series A — public customer logos and revenue remain limited',
     'Crowded RCM market with many legacy players',
     'Healthcare AI has long sales cycles and high compliance overhead',
     'Single founder identified — co-founder unknown from public sources',
@@ -172,15 +182,18 @@ export const joyfulHealth: Company = {
       'Small practice market = potential ceiling on TAM captured',
     ],
     nextActions: [
-      'Watch for Series A announcement as signal of growth',
+      'Watch for design hiring after Series A team expansion',
       'Check careers page for design roles',
       'Review joyfulhealth.com product for design quality signal',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-04-14T00:00:00',
+  lastUpdated: '2026-04-27T00:00:00',
   sources: [
+    { title: 'Joyful Health raises $22M — company blog', url: 'https://www.joyfulhealth.com/post/joyful-health-raises-22m-to-build-denial-intelligence-recovery-infrastructure' },
+    { title: 'Joyful Health raises $22M — PRNewswire', url: 'https://www.prnewswire.com/news-releases/joyful-health-raises-22m-to-help-healthcare-providers-recover-billions-in-unpaid-insurance-claims-302743785.html' },
+    { title: 'Joyful Health careers', url: 'https://www.joyfulhealth.io/careers' },
     { title: 'Joyful Health website', url: 'https://www.joyfulhealth.com' },
     { title: 'Eliana Berger — Stedi Spotlight', url: 'https://www.stedi.com/blog/spotlight-eliana-berger-joyful-health' },
     { title: 'Joyful Health — f4.fund', url: 'https://f4.fund/startups/joyfulhealth' },

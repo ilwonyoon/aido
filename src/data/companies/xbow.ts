@@ -8,6 +8,11 @@ export const xbow: Company = {
   headquarters: 'Seattle, WA',
   remote: 'Hybrid',
 
+  aiTypes: ['automation'],
+  markets: ['enterprise', 'b2b'],
+  category: 'vertical-saas' as const,
+  industries: ['security'],
+
   // Business
   stage: 'Series C',
   valuation: '$1B+ (Mar 2026)',
@@ -100,7 +105,7 @@ export const xbow: Company = {
     'Security should be continuous, not annual',
     'AI can reduce security testing cost 10x while improving coverage',
   ],
-  designPhilososophy: 'Unknown',
+  designPhilosophy: 'Unknown',
   greenFlags: [
     'Founded by Copilot/GitHub Advanced Security creator',
     'Series C at $1B+ valuation (hypergrowth)',

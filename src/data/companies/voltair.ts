@@ -8,6 +8,11 @@ export const voltair: Company = {
   headquarters: 'San Francisco, CA',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'data-analysis'],
+  markets: ['enterprise', 'b2b'],
+  category: 'vertical-saas' as const,
+  industries: ['other'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

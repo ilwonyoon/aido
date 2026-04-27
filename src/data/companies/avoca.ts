@@ -15,17 +15,18 @@ export const avoca: Company = {
   industries: ['other'],
 
   // Business
-  stage: 'Series A',
-  valuation: 'Unknown',
-  totalFunding: '$47.8M',
+  stage: 'Series B',
+  valuation: '$1B (Apr 2026)',
+  totalFunding: '$125M+',
   fundingHistory: [
     { stage: 'Seed', amount: '$500K', date: '2022-01', leadInvestors: ['Pioneer Fund', 'Outbound Capital'] },
     { stage: 'Seed', amount: '~$10M', date: '2024-10', leadInvestors: ['Y Combinator'] },
-    { stage: 'Series A', amount: '$37M', date: '2025-06', leadInvestors: ['Alt Capital'] },
+    { stage: 'Series A', amount: 'Undisclosed', date: '2025-06', leadInvestors: ['Kleiner Perkins'] },
+    { stage: 'Series B', amount: '$125M+ total raised across Seed-Series B', date: '2026-04', valuation: '$1B', leadInvestors: ['Meritech', 'General Catalyst'] },
   ],
   revenue: 'Unknown',
-  growth: 'Grew to ~100 employees in 3 years; in Harmonic Hot 25 Q1 2026',
-  runway: 'Strong (Series A Jun 2025)',
+  growth: 'On track to book $1B in jobs in 2026; grew to ~100 employees in 3 years; Harmonic Hot 25 Q1 2026',
+  runway: 'Very strong (Series B / $1B valuation, Apr 2026)',
   customers: 'Home services contractors: HVAC, plumbing, electrical, roofing businesses',
 
   // Growth & Potential
@@ -34,7 +35,9 @@ export const avoca: Company = {
     revenueGrowth: 'Unknown',
     userGrowth: '100 employees by Q1 2026 (from ~10 in 2022); Harmonic Hot 25 Q1 2026 signal',
     signals: [
-      '$37M Series A (Jun 2025) to expand AI workforce platform',
+      '$125M+ raised across Seed, Series A, and Series B at $1B valuation (Apr 2026)',
+      'Series B led by Meritech and General Catalyst; Series A led by Kleiner Perkins',
+      'On track to book $1B in jobs in 2026',
       'Named to Harmonic Hot 25 Q1 2026 — momentum signal',
       'YC-backed (S22) with strong operator pedigree',
     ],
@@ -115,8 +118,9 @@ export const avoca: Company = {
 
   greenFlags: [
     'Trades-vertical focus is a moat vs. general voice AI competitors',
-    '$37M Series A from established investors signals strong growth trajectory',
+    '$125M+ raised at $1B valuation from Meritech, General Catalyst, Kleiner Perkins, Amplify, Alt Capital, BoxGroup, Nexus, and YC',
     'Harmonic Hot 25 Q1 2026 — independent signal of growth momentum',
+    'On track to book $1B in jobs in 2026 — unusually strong vertical AI operating signal',
     'Two-product model (Responder + Coach) = multiple revenue streams and customer lock-in',
     'MIT + BCG + Nuro pedigree for both founders = strong operator-researcher combo',
   ],
@@ -160,7 +164,15 @@ export const avoca: Company = {
   productStage: '1→10',
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'New York, NY',
+      url: 'https://www.avoca.ai/careers?ashby_jid=fd85e19f-12cf-421e-9ef5-afc4997c071e',
+      type: 'full-time',
+      aboutRole: 'Design Avoca\'s AI-powered conversational platform and core B2B SaaS workflows for service businesses.',
+    },
+  ],
   designerLinks: [],
   cultureInsights: [],
 
@@ -171,23 +183,25 @@ export const avoca: Company = {
     whyJoin: [
       'AI IS the product (Level A) = frontier AI UX design challenges every day',
       'Real-time coaching UI is one of the most novel AI interaction design problems',
-      'High-growth with strong signal (Harmonic Hot 25, Series A)',
+      'High-growth with strong signal (Harmonic Hot 25, Series B, $1B valuation)',
       'Vertical AI approach = clear product differentiation and design focus',
     ],
     whyNot: [
       'Trades/home services is a narrow vertical — design portfolio may not be broadly recognized',
-      'Revenue and PMF depth unknown — risk assessment difficult',
+      'High valuation may compress equity upside from here',
       'NYC but remote policy unclear — office days unknown',
     ],
     nextActions: [
-      'Check avoca.ai/careers for open design roles',
+      'Review and apply to open Product Designer role',
       'Review product screenshots/demos to assess design quality',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-04-14T00:00:00',
+  lastUpdated: '2026-04-27T00:00:00',
   sources: [
+    { title: 'Avoca raises $125M+ at $1B valuation — PRNewswire', url: 'https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html' },
+    { title: 'Avoca careers', url: 'https://www.avoca.ai/careers?ashby_jid=fd85e19f-12cf-421e-9ef5-afc4997c071e' },
     { title: 'Avoca — YC company profile', url: 'https://www.ycombinator.com/companies/avoca' },
     { title: 'Avoca officially launches — Homepros', url: 'https://homepros.news/home-services-startup-avoca-lands-investment-officially-launches/' },
     { title: 'Avoca — Harmonic Hot 25 Q1 2026', url: 'https://www.harmonic.ai/hot-25-companies/q1-2026' },

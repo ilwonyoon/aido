@@ -159,3 +159,23 @@
 | Company | Source | URL | Confidence |
 |---------|--------|-----|------------|
 | **Kampala** | YC W26 | [https://www.zatanna.ai/kampala](https://www.zatanna.ai/kampala) | high |
+
+
+## 🆕 Discovery 2026-04-27 (14개 신규)
+
+| Company | Source | URL | Confidence |
+|---------|--------|-----|------------|
+| **Scalify** | topstartups.io | [https://topstartups.io/?industries=Artificial+Inte](https://topstartups.io/?industries=Artificial+Intelligence) | high |
+| **DeepMind’s David Silver just** | TechCrunch AI | [https://techcrunch.com/2026/04/27/deepminds-david-](https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/) | medium |
+| **Prezent** | TechCrunch Funding | [https://techcrunch.com/2025/10/10/prezent-raises-3](https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/) | medium |
+| **Converge Bio** | TechCrunch Funding | [https://techcrunch.com/2026/01/13/ai-drug-discover](https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/) | medium |
+| **Sonarly** | YC W26 | [https://sonarly.com/](https://sonarly.com/) | high |
+| **Chamber** | YC W26 | [https://www.usechamber.io/](https://www.usechamber.io/) | high |
+| **Palus Finance** | YC W26 | [https://news.ycombinator.com/item?id=47278980](https://news.ycombinator.com/item?id=47278980) | high |
+| **Constellation Space** | YC W26 | [https://news.ycombinator.com/item?id=46721933](https://news.ycombinator.com/item?id=46721933) | high |
+| **Cardboard** | YC W26 | [https://www.usecardboard.com/](https://www.usecardboard.com/) | high |
+| **Kampala** | YC W26 | [https://www.zatanna.ai/kampala](https://www.zatanna.ai/kampala) | high |
+| **Didit** | YC W26 | [https://news.ycombinator.com/item?id=47324296](https://news.ycombinator.com/item?id=47324296) | high |
+| **IonRouter** | YC W26 | [https://ionrouter.io](https://ionrouter.io) | high |
+| **Kita** | YC W26 | [https://news.ycombinator.com/item?id=47417335](https://news.ycombinator.com/item?id=47417335) | high |
+| **Terminal Use** | YC W26 | [https://news.ycombinator.com/item?id=47311657](https://news.ycombinator.com/item?id=47311657) | high |

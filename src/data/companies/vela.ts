@@ -8,6 +8,11 @@ export const vela: Company = {
   headquarters: 'Unknown',
   remote: 'Unknown',
 
+  aiTypes: ['automation', 'conversation-ai'],
+  markets: ['b2b', 'enterprise'],
+  category: 'productivity' as const,
+  industries: ['productivity'],
+
   // Business
   stage: 'Seed',
   valuation: 'Unknown',

@@ -8,6 +8,11 @@ export const prepared: Company = {
   headquarters: 'New York, NY',
   remote: 'Hybrid',
 
+  aiTypes: ['automation', 'conversation-ai'],
+  markets: ['enterprise', 'b2b'],
+  category: 'vertical-saas' as const,
+  industries: ['other'],
+
   // Business
   stage: 'Series C',
   valuation: 'Unknown',
