@@ -3,7 +3,19 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Company, InterestStatus, Category, CATEGORY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
+import {
+  Company,
+  InterestStatus,
+  Category,
+  CategorySubcategory,
+  CATEGORY_LABELS,
+  CATEGORY_SUBCATEGORY_LABELS,
+  CATEGORY_TREE,
+  FundingStageCategory,
+  FUNDING_STAGE_LABELS,
+  getCompanySubcategories,
+  normalizeFundingStage,
+} from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
 import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
@@ -12,6 +24,7 @@ import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/Co
 import { getCompanyQualityScore, parseFundingAmount } from '@/lib/companyScoring';
 
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'fundingSize' | 'aiLevel';
+type CategoryFilterValue = `category:${Category}` | `subcategory:${CategorySubcategory}`;
 
 function AiLevelText({ level }: { level: AiLevel }) {
   const config = getAiLevelConfig(level);
@@ -104,7 +117,7 @@ function SortDropdown({
   onChange,
 }: {
   value: string;
-  options: { value: string; label: string }[];
+  options: { value: string; label: string; depth?: number }[];
   onChange: (value: string) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -153,7 +166,7 @@ function DropdownFilter({
 }: {
   label: string;
   value: string;
-  options: { value: string; label: string }[];
+  options: { value: string; label: string; depth?: number }[];
   onChange: (value: string) => void;
   infoTooltip?: React.ReactNode;
 }) {
@@ -169,10 +182,6 @@ function DropdownFilter({
         top: rect.bottom + 4,
         left: rect.left,
       });
-
-      const handleScroll = () => setIsOpen(false);
-      window.addEventListener('scroll', handleScroll, true);
-      return () => window.removeEventListener('scroll', handleScroll, true);
     }
   }, [isOpen]);
 
@@ -249,7 +258,7 @@ function MultiSelectFilter({
 }: {
   label: string;
   values: string[];
-  options: { value: string; label: string }[];
+  options: { value: string; label: string; depth?: number }[];
   onChange: (values: string[]) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -270,10 +279,6 @@ function MultiSelectFilter({
         top: rect.bottom + 4,
         left: Math.max(16, left), // Ensure at least 16px from left edge
       });
-
-      const handleScroll = () => setIsOpen(false);
-      window.addEventListener('scroll', handleScroll, true);
-      return () => window.removeEventListener('scroll', handleScroll, true);
     }
   }, [isOpen]);
 
@@ -332,6 +337,7 @@ function MultiSelectFilter({
                   className={`w-full text-left px-4 py-2 text-sm hover:bg-[var(--card-hover)] transition-colors whitespace-nowrap flex items-center gap-2.5 ${
                     isSelected ? 'text-[var(--accent-light)]' : 'text-[var(--foreground)]'
                   }`}
+                  style={opt.depth ? { paddingLeft: `${16 + opt.depth * 16}px` } : undefined}
                 >
                   <span className={`w-4 h-4 flex-shrink-0 rounded border flex items-center justify-center ${
                     isSelected
@@ -370,7 +376,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [isMobile, setIsMobile] = useState(false);
   const [reviewStatusFilter, setReviewStatusFilter] = useState('');
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
-  const [categoryFilter, setCategoryFilter] = useState<Category[]>([]);
+  const [categoryFilter, setCategoryFilter] = useState<CategoryFilterValue[]>([]);
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [openRolesToggle, setOpenRolesToggle] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -457,17 +463,39 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return sorted;
   }, [companies]);
 
-  // Get Category options with counts
+  // Get nested category options with counts
   const categoryOptions = useMemo(() => {
-    const counts: Record<Category, number> = {} as Record<Category, number>;
+    const categoryCounts: Record<Category, number> = {} as Record<Category, number>;
+    const subcategoryCounts: Record<CategorySubcategory, number> = {} as Record<CategorySubcategory, number>;
+
     companies.forEach(c => {
       if (c.category) {
-        counts[c.category] = (counts[c.category] || 0) + 1;
+        categoryCounts[c.category] = (categoryCounts[c.category] || 0) + 1;
+        getCompanySubcategories(c)
+          .filter(subcategory => CATEGORY_TREE[c.category].includes(subcategory))
+          .forEach(subcategory => {
+            subcategoryCounts[subcategory] = (subcategoryCounts[subcategory] || 0) + 1;
+          });
       }
     });
-    return (Object.keys(CATEGORY_LABELS) as Category[])
-      .filter(cat => counts[cat] > 0)
-      .map(cat => ({ value: cat, label: `${CATEGORY_LABELS[cat]} (${counts[cat]})` }));
+
+    return (Object.keys(CATEGORY_LABELS) as Category[]).flatMap((category) => {
+      if (!categoryCounts[category]) return [];
+
+      const parent = {
+        value: `category:${category}`,
+        label: `${CATEGORY_LABELS[category]} (${categoryCounts[category]})`,
+      };
+      const children = CATEGORY_TREE[category]
+        .filter(subcategory => subcategoryCounts[subcategory] > 0)
+        .map(subcategory => ({
+          value: `subcategory:${subcategory}`,
+          label: `${CATEGORY_SUBCATEGORY_LABELS[subcategory]} (${subcategoryCounts[subcategory]})`,
+          depth: 1,
+        }));
+
+      return [parent, ...children];
+    });
   }, [companies]);
 
   // Get Funding Stage options with counts
@@ -632,7 +660,13 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
       // Category Filter
       if (categoryFilter.length > 0) {
-        if (!categoryFilter.includes(company.category)) return false;
+        const companyCategoryKeys = new Set<CategoryFilterValue>([
+          `category:${company.category}`,
+          ...getCompanySubcategories(company)
+            .filter(subcategory => CATEGORY_TREE[company.category].includes(subcategory))
+            .map(subcategory => `subcategory:${subcategory}` as CategoryFilterValue),
+        ]);
+        if (!categoryFilter.some(filter => companyCategoryKeys.has(filter))) return false;
       }
 
       // Location Filter with Remote, Hybrid, SF Bay Area, and New York handling
@@ -837,7 +871,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             label="Category"
             values={categoryFilter}
             options={categoryOptions}
-            onChange={(vals) => setCategoryFilter(vals as Category[])}
+            onChange={(vals) => setCategoryFilter(vals as CategoryFilterValue[])}
           />
           <MultiSelectFilter
             label="Location"

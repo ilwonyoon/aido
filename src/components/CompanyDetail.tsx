@@ -2,7 +2,13 @@
 
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { Company, CATEGORY_LABELS } from '@/data/types';
+import {
+  Company,
+  CATEGORY_LABELS,
+  CATEGORY_SUBCATEGORY_LABELS,
+  CATEGORY_TREE,
+  getCompanySubcategories,
+} from '@/data/types';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyLogo } from './CompanyLogo';
 import { CompanyOGImage } from './CompanyOGImage';
@@ -44,6 +50,12 @@ function WorkTypeSection({
 
 export function CompanyDetail({ company }: { company: Company }) {
   const router = useRouter();
+  const subcategory = getCompanySubcategories(company).find((sub) =>
+    CATEGORY_TREE[company.category].includes(sub)
+  );
+  const categoryDisplay = subcategory
+    ? `${CATEGORY_LABELS[company.category]} / ${CATEGORY_SUBCATEGORY_LABELS[subcategory]}`
+    : CATEGORY_LABELS[company.category];
 
   return (
     <div className="w-full overflow-x-hidden">
@@ -78,7 +90,7 @@ export function CompanyDetail({ company }: { company: Company }) {
             {/* Category */}
             {company.category && (
               <div className="text-sm text-[var(--muted)] mt-2">
-                {CATEGORY_LABELS[company.category]}
+                {categoryDisplay}
               </div>
             )}
             <div className="flex items-center gap-4 mt-4 text-sm">

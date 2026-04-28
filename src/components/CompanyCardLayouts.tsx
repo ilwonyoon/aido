@@ -2,7 +2,13 @@
 
 import { useState, memo } from 'react';
 import Link from 'next/link';
-import { Company, CATEGORY_LABELS } from '@/data/types';
+import {
+  Company,
+  CATEGORY_LABELS,
+  CATEGORY_SUBCATEGORY_LABELS,
+  CATEGORY_TREE,
+  getCompanySubcategories,
+} from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { useAuth } from '@/contexts/AuthContext';
@@ -10,6 +16,16 @@ import { useIsTourActive } from '@/contexts/TourContext';
 import { CompanyLogo } from './CompanyLogo';
 import { Badge } from '@/components/ui/Badge';
 import { DesignFocus } from './DesignFocus';
+
+function getCategoryDisplay(company: Company): string {
+  const subcategory = getCompanySubcategories(company).find((sub) =>
+    CATEGORY_TREE[company.category].includes(sub)
+  );
+
+  if (!subcategory) return CATEGORY_LABELS[company.category];
+
+  return `${CATEGORY_LABELS[company.category]} / ${CATEGORY_SUBCATEGORY_LABELS[subcategory]}`;
+}
 
 // ────────────────────────────────────────────────────────────────────────────
 // View Toggle Icons
@@ -112,7 +128,7 @@ export const CompanyListRow = memo(function CompanyListRow({
       {company.category && (
         <div className="flex flex-wrap gap-1 mb-4">
           <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-            {CATEGORY_LABELS[company.category]}
+            {getCategoryDisplay(company)}
           </span>
         </div>
       )}
@@ -251,7 +267,7 @@ export const CompanyCard = memo(function CompanyCard({
       {company.category && (
         <div className="flex flex-wrap gap-1 mb-3">
           <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--card-hover)] text-[var(--muted)]">
-            {CATEGORY_LABELS[company.category]}
+            {getCategoryDisplay(company)}
           </span>
         </div>
       )}

@@ -10,6 +10,7 @@ import { agora } from './agora';
 import { aiShift } from './ai-shift';
 import { airloom } from './airloom';
 import { airops } from './airops';
+import { akur8 } from './akur8';
 import { alexAi } from './alex-ai';
 import { algolux } from './algolux';
 import { alix } from './alix';
@@ -115,6 +116,7 @@ import { conductor } from './conductor';
 import { consioAi } from './consio-ai';
 import { console } from './console';
 import { contra } from './contra';
+import { counterforceHealth } from './counterforce-health';
 import { conversion } from './conversion';
 import { convokeBio } from './convoke-bio';
 import { copyAi } from './copy-ai';
@@ -124,6 +126,7 @@ import { cryptonumerics } from './cryptonumerics';
 import { cube } from './cube';
 import { curans } from './curans';
 import { cursor } from './cursor';
+import { cytora } from './cytora';
 import { dagster } from './dagster';
 import { darwinai } from './darwinai';
 import { dcbel } from './dcbel';
@@ -156,12 +159,14 @@ import { elevenX } from './11x';
 import { elevenlabs } from './elevenlabs';
 import { eternal } from './eternal';
 import { eventual } from './eventual';
+import { evolutioniq } from './evolutioniq';
 import { exa } from './exa';
 import { extropic } from './extropic';
 import { factory } from './factory';
 import { fal } from './fal';
 import { farel } from './farel';
 import { fastino } from './fastino';
+import { federato } from './federato';
 import { fermat } from './fermat';
 import { fieldAi } from './field-ai';
 import { figma } from './figma';
@@ -190,6 +195,7 @@ import { glean } from './glean';
 import { glide } from './glide';
 import { gong } from './gong';
 import { goodfire } from './goodfire';
+import { gradientAi } from './gradient-ai';
 import { grammarly } from './grammarly';
 import { granify } from './granify';
 import { granola } from './granola';
@@ -222,6 +228,7 @@ import { hyperbound } from './hyperbound';
 import { imbueAi } from './imbue-ai';
 import { impulseLabs } from './impulse-labs';
 import { incidentIo } from './incident-io';
+import { indicoData } from './indico-data';
 import { inferact } from './inferact';
 import { inferenceNet } from './inference-net';
 import { infisical } from './infisical';
@@ -413,6 +420,7 @@ import { resolver } from './resolver';
 import { response } from './response';
 import { rivo } from './rivo';
 import { roboflow } from './roboflow';
+import { rootsAutomation } from './roots-automation';
 import { runanywhere } from './runanywhere';
 import { rox } from './rox';
 import { runway } from './runway';
@@ -432,8 +440,10 @@ import { seso } from './seso';
 import { sfcompute } from './sfcompute';
 import { sharpestminds } from './sharpestminds';
 import { shopify } from './shopify';
+import { shiftTechnology } from './shift-technology';
 import { shortwave } from './shortwave';
 import { sierra } from './sierra';
+import { sixfold } from './sixfold';
 import { sightlineInnovation } from './sightline-innovation';
 import { sitefire } from './sitefire';
 import { skyhive } from './skyhive';
@@ -451,6 +461,7 @@ import { span } from './span';
 import { speakeasy } from './speakeasy';
 import { sphere } from './sphere';
 import { spiralDb } from './spiral-db';
+import { sproutAi } from './sprout-ai';
 import { stabilityAi } from './stability-ai';
 import { stackai } from './stackai';
 import { strada } from './strada';
@@ -496,6 +507,7 @@ import { tolans } from './tolans';
 import { toma } from './toma';
 import { tome } from './tome';
 import { town } from './town';
+import { tractable } from './tractable';
 import { traba } from './traba';
 import { trmLabs } from './trm-labs';
 import { truemed } from './truemed';
@@ -544,6 +556,7 @@ import { xpertsea } from './xpertsea';
 import { yutori } from './yutori';
 import { zedDev } from './zed-dev';
 import { zeroentropy } from './zeroentropy';
+import { zestyai } from './zestyai';
 
 export const companies: Company[] = [
   elevenX,
@@ -557,6 +570,7 @@ export const companies: Company[] = [
   aiShift,
   airloom,
   airops,
+  akur8,
   alexAi,
   algolux,
   alix,
@@ -660,6 +674,7 @@ export const companies: Company[] = [
   consioAi,
   console,
   contra,
+  counterforceHealth,
   conversion,
   convokeBio,
   copyAi,
@@ -669,6 +684,7 @@ export const companies: Company[] = [
   cube,
   curans,
   cursor,
+  cytora,
   dagster,
   darwinai,
   dcbel,
@@ -700,12 +716,14 @@ export const companies: Company[] = [
   elevenlabs,
   eternal,
   eventual,
+  evolutioniq,
   exa,
   extropic,
   factory,
   fal,
   farel,
   fastino,
+  federato,
   fermat,
   fieldAi,
   figma,
@@ -734,6 +752,7 @@ export const companies: Company[] = [
   glide,
   gong,
   goodfire,
+  gradientAi,
   grammarly,
   granify,
   granola,
@@ -766,6 +785,7 @@ export const companies: Company[] = [
   imbueAi,
   impulseLabs,
   incidentIo,
+  indicoData,
   inferact,
   inferenceNet,
   infisical,
@@ -956,6 +976,7 @@ export const companies: Company[] = [
   response,
   rivo,
   roboflow,
+  rootsAutomation,
   runanywhere,
   rox,
   runway,
@@ -975,8 +996,10 @@ export const companies: Company[] = [
   sfcompute,
   sharpestminds,
   shopify,
+  shiftTechnology,
   shortwave,
   sierra,
+  sixfold,
   sightlineInnovation,
   sitefire,
   skyhive,
@@ -994,6 +1017,7 @@ export const companies: Company[] = [
   speakeasy,
   sphere,
   spiralDb,
+  sproutAi,
   stabilityAi,
   stackai,
   strada,
@@ -1039,6 +1063,7 @@ export const companies: Company[] = [
   toma,
   tome,
   town,
+  tractable,
   traba,
   trmLabs,
   truemed,
@@ -1087,6 +1112,7 @@ export const companies: Company[] = [
   yutori,
   zedDev,
   zeroentropy,
+  zestyai,
 ];
 
 // Individual company exports removed (unused - companies array is sufficient)

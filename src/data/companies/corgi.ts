@@ -6,20 +6,21 @@ export const corgi: Company = {
   description:
     'AI-native full-stack insurance carrier focused on startups and high-growth companies.',
   website: 'https://www.corgi.insure/',
-    screenshot: '/screenshots/corgi-screenshot.png',
+  screenshot: '/screenshots/corgi-screenshot.png',
   headquarters: 'San Francisco, CA',
   remote: 'No',
 
-    // OG Image
-    ogImage: '/og-images/corgi-og.webp',
+  // OG Image
+  ogImage: '/og-images/corgi-og.webp',
 
 
   // Multi-dimensional Tags
-  aiTypes: ['text-assistant'],
-  markets: ['smb'],
-  category: 'creative-media' as const,
+  aiTypes: ['automation', 'data-analysis'],
+  markets: ['smb', 'b2b'],
+  category: 'vertical-saas' as const,
+  subcategories: ['insurance'],
 
-  industries: ['creative-media'],
+  industries: ['fintech'],
 
   // Business
   stage: 'Series A',
@@ -29,7 +30,7 @@ export const corgi: Company = {
     { stage: 'Series A', amount: '$108M', date: '2026-01' },
   ],
   revenue: 'Unknown',
-  growth: 'Unknown',
+  growth: 'Raised $108M in January 2026 to launch an AI-native full-stack insurance carrier.',
   runway: 'Unknown',
   customers: 'Startups and high-growth companies (per YC profile).',
 
@@ -196,7 +197,7 @@ export const corgi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-27T16:55:00',
+  lastUpdated: '2026-04-28T00:00:00',
   sources: [
     { title: 'Source', url: 'https://www.ycombinator.com/companies/corgi' },
     { title: 'Source', url: 'https://www.prnewswire.com/news-releases/corgi-raises-108-million-to-launch-its-ai-native-full-stack-insurance-carrier-302346204.html' },
