@@ -10,20 +10,21 @@
       "name": "Scalify",
       "source": "topstartups.io",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "",
       "batch": "discovery-2026-04-27",
       "order": 1,
-      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence"
+      "discoveryUrl": "https://topstartups.io/?industries=Artificial+Intelligence",
+      "resultCompanyId": "scalify"
     },
     {
-      "name": "DeepMind’s David Silver just",
+      "name": "DeepMind\u2019s David Silver just",
       "source": "TechCrunch AI",
       "priority": "P1",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "DeepMind’s David Silver just raised $1.1B to build an AI that learns without human data",
+      "notes": "DeepMind\u2019s David Silver just raised $1.1B to build an AI that learns without human data",
       "batch": "discovery-2026-04-27",
       "order": 2,
       "discoveryUrl": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
@@ -34,7 +35,7 @@
       "priority": "P1",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Prezent raises $30 million to acquire AI services firms — starting with founder’s other company",
+      "notes": "Prezent raises $30 million to acquire AI services firms \u2014 starting with founder\u2019s other company",
       "batch": "discovery-2026-04-27",
       "order": 3,
       "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/"
@@ -56,7 +57,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
+      "notes": "Launch HN: Sonarly (YC W26) \u2013 AI agent to triage and fix your production alerts",
       "batch": "discovery-2026-04-27",
       "order": 5,
       "discoveryUrl": "https://sonarly.com/"
@@ -67,7 +68,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Chamber (YC W26) – An AI Teammate for GPU Infrastructure",
+      "notes": "Launch HN: Chamber (YC W26) \u2013 An AI Teammate for GPU Infrastructure",
       "batch": "discovery-2026-04-27",
       "order": 6,
       "discoveryUrl": "https://www.usechamber.io/"
@@ -76,12 +77,13 @@
       "name": "Palus Finance",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Palus Finance (YC W26): Better yields on idle cash for startups, SMBs",
       "batch": "discovery-2026-04-27",
       "order": 7,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47278980"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47278980",
+      "resultCompanyId": "palus-finance"
     },
     {
       "name": "Constellation Space",
@@ -89,7 +91,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Constellation Space (YC W26) – AI for satellite mission assurance",
+      "notes": "Launch HN: Constellation Space (YC W26) \u2013 AI for satellite mission assurance",
       "batch": "discovery-2026-04-27",
       "order": 8,
       "discoveryUrl": "https://news.ycombinator.com/item?id=46721933"
@@ -100,7 +102,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Cardboard (YC W26) – Agentic video editor",
+      "notes": "Launch HN: Cardboard (YC W26) \u2013 Agentic video editor",
       "batch": "discovery-2026-04-27",
       "order": 9,
       "discoveryUrl": "https://www.usecardboard.com/"
@@ -111,7 +113,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs",
+      "notes": "Launch HN: Kampala (YC W26) \u2013 Reverse-Engineer Apps into APIs",
       "batch": "discovery-2026-04-27",
       "order": 10,
       "discoveryUrl": "https://www.zatanna.ai/kampala"
@@ -122,7 +124,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Didit (YC W26) – Stripe for Identity Verification",
+      "notes": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
       "batch": "discovery-2026-04-27",
       "order": 11,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47324296"
@@ -133,7 +135,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: IonRouter (YC W26) – High-throughput, low-cost inference",
+      "notes": "Launch HN: IonRouter (YC W26) \u2013 High-throughput, low-cost inference",
       "batch": "discovery-2026-04-27",
       "order": 12,
       "discoveryUrl": "https://ionrouter.io"
@@ -144,7 +146,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Kita (YC W26) – Automate credit review in emerging markets",
+      "notes": "Launch HN: Kita (YC W26) \u2013 Automate credit review in emerging markets",
       "batch": "discovery-2026-04-27",
       "order": 13,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47417335"
@@ -155,7 +157,7 @@
       "priority": "P0",
       "status": "queued",
       "dedupeCheckedAgainstRepo": true,
-      "notes": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+      "notes": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
       "batch": "discovery-2026-04-27",
       "order": 14,
       "discoveryUrl": "https://news.ycombinator.com/item?id=47311657"

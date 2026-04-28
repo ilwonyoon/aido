@@ -2803,5 +2803,15 @@
     "id": "chamber",
     "name": "Chamber",
     "website": "https://www.usechamber.io"
+  },
+  {
+    "id": "scalify",
+    "name": "Scalify",
+    "website": "https://scalify.com"
+  },
+  {
+    "id": "palus-finance",
+    "name": "Palus Finance",
+    "website": "https://www.palus.finance"
   }
 ]

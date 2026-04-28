@@ -369,6 +369,7 @@ import { owner } from './owner';
 import { pacificFusion } from './pacific-fusion';
 import { pallet } from './pallet';
 import { pally } from './pally';
+import { palusFinance } from './palus-finance';
 import { paper } from './paper';
 import { parabola } from './parabola';
 import { paradigm } from './paradigm';
@@ -429,6 +430,7 @@ import { salient } from './salient';
 import { sanity } from './sanity';
 import { sauronSystems } from './sauron-systems';
 import { scaleAi } from './scale-ai';
+import { scalify } from './scalify';
 import { scribe } from './scribe';
 import { seedHealth } from './seed-health';
 import { senecaSystems } from './seneca-systems';
@@ -925,6 +927,7 @@ export const companies: Company[] = [
   owner,
   pacificFusion,
   pallet,
+  palusFinance,
   paper,
   parabola,
   paradigm,
@@ -985,6 +988,7 @@ export const companies: Company[] = [
   sanity,
   sauronSystems,
   scaleAi,
+  scalify,
   scribe,
   seedHealth,
   senecaSystems,
