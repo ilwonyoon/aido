@@ -56,6 +56,7 @@ import { benchsci } from './benchsci';
 import { betterAuth } from './better-auth';
 import { bindwell } from './bindwell';
 import { blackbirdLabs } from './blackbird-labs';
+import { blackForestLabs } from './black-forest-labs';
 import { blacksmith } from './blacksmith';
 import { blazeAi } from './blaze-ai';
 import { bland } from './bland';
@@ -243,6 +244,7 @@ import { interfere } from './interfere';
 import { internetBackyard } from './internet-backyard';
 import { invertBio } from './invert-bio';
 import { invisionAi } from './invision-ai';
+import { invokeAi } from './invoke-ai';
 import { item } from './item';
 import { itemApp } from './item-app';
 import { juliusAi } from './julius-ai';
@@ -352,6 +354,7 @@ import { onyx } from './onyx';
 import { openOceanRobotics } from './open-ocean-robotics';
 import { openEvidence } from './open-evidence';
 import { openai } from './openai';
+import { openart } from './openart';
 import { openmind } from './openmind';
 import { openpay } from './openpay';
 import { openrouter } from './openrouter';
@@ -425,10 +428,12 @@ import { rootsAutomation } from './roots-automation';
 import { runanywhere } from './runanywhere';
 import { rox } from './rox';
 import { runway } from './runway';
+import { runware } from './runware';
 import { safetykit } from './safetykit';
 import { salient } from './salient';
 import { sanity } from './sanity';
 import { sauronSystems } from './sauron-systems';
+import { scenario } from './scenario';
 import { scaleAi } from './scale-ai';
 import { scalify } from './scalify';
 import { scribe } from './scribe';
@@ -616,6 +621,7 @@ export const companies: Company[] = [
   betterAuth,
   bindwell,
   blackbirdLabs,
+  blackForestLabs,
   blacksmith,
   blazeAi,
   bland,
@@ -802,6 +808,7 @@ export const companies: Company[] = [
   internetBackyard,
   invertBio,
   invisionAi,
+  invokeAi,
   itemApp,
   item,
   juliusAi,
@@ -911,6 +918,7 @@ export const companies: Company[] = [
   openOceanRobotics,
   openEvidence,
   openai,
+  openart,
   openmind,
   openpay,
   openrouter,
@@ -983,10 +991,12 @@ export const companies: Company[] = [
   runanywhere,
   rox,
   runway,
+  runware,
   safetykit,
   salient,
   sanity,
   sauronSystems,
+  scenario,
   scaleAi,
   scalify,
   scribe,
