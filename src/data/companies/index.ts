@@ -76,6 +76,7 @@ import { canva } from './canva';
 import { canvassAi } from './canvass-ai';
 import { canary } from './canary';
 import { captain } from './captain';
+import { cardboard } from './cardboard';
 import { cardless } from './cardless';
 import { careforceAi } from './careforce-ai';
 import { cartesia } from './cartesia';
@@ -114,6 +115,7 @@ import { commonKnowledge } from './common-knowledge';
 import { composite } from './composite';
 import { comulate } from './comulate';
 import { conductor } from './conductor';
+import { constellationSpace } from './constellation-space';
 import { consioAi } from './consio-ai';
 import { console } from './console';
 import { contra } from './contra';
@@ -641,6 +643,7 @@ export const companies: Company[] = [
   canvassAi,
   canary,
   captain,
+  cardboard,
   cardless,
   careforceAi,
   cartesia,
@@ -679,6 +682,7 @@ export const companies: Company[] = [
   composite,
   comulate,
   conductor,
+  constellationSpace,
   consioAi,
   console,
   contra,

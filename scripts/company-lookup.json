@@ -2813,5 +2813,15 @@
     "id": "palus-finance",
     "name": "Palus Finance",
     "website": "https://www.palus.finance"
+  },
+  {
+    "id": "constellation-space",
+    "name": "Constellation Space",
+    "website": "https://www.constellationspace.ai"
+  },
+  {
+    "id": "cardboard",
+    "name": "Cardboard",
+    "website": "https://www.usecardboard.com"
   }
 ]

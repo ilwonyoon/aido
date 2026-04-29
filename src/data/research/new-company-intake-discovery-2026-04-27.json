@@ -55,23 +55,25 @@
       "name": "Sonarly",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Sonarly (YC W26) \u2013 AI agent to triage and fix your production alerts",
       "batch": "discovery-2026-04-27",
       "order": 5,
-      "discoveryUrl": "https://sonarly.com/"
+      "discoveryUrl": "https://sonarly.com/",
+      "resultCompanyId": "sonarly"
     },
     {
       "name": "Chamber",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Chamber (YC W26) \u2013 An AI Teammate for GPU Infrastructure",
       "batch": "discovery-2026-04-27",
       "order": 6,
-      "discoveryUrl": "https://www.usechamber.io/"
+      "discoveryUrl": "https://www.usechamber.io/",
+      "resultCompanyId": "chamber"
     },
     {
       "name": "Palus Finance",
@@ -89,23 +91,25 @@
       "name": "Constellation Space",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Constellation Space (YC W26) \u2013 AI for satellite mission assurance",
       "batch": "discovery-2026-04-27",
       "order": 8,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=46721933"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=46721933",
+      "resultCompanyId": "constellation-space"
     },
     {
       "name": "Cardboard",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Cardboard (YC W26) \u2013 Agentic video editor",
       "batch": "discovery-2026-04-27",
       "order": 9,
-      "discoveryUrl": "https://www.usecardboard.com/"
+      "discoveryUrl": "https://www.usecardboard.com/",
+      "resultCompanyId": "cardboard"
     },
     {
       "name": "Kampala",
