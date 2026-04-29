@@ -174,7 +174,7 @@ export const scalify: Company = {
 
   // My Tracking
   tracking: {
-    status: 'not_interested',
+    status: 'watching',
     fitScore: 3,
     whyJoin: [
       'Early-stage with full ownership of product design',

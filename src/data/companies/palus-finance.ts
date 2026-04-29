@@ -15,12 +15,12 @@ export const palusFinance: Company = {
   industries: ['fintech'],
 
   // Business
-  stage: 'Pre-Seed',
+  stage: 'Pre-seed',
   valuation: 'Unknown',
   totalFunding: '$500K (estimated YC standard deal)',
   fundingHistory: [
     {
-      stage: 'Pre-Seed',
+      stage: 'Pre-seed',
       amount: '$500K (estimated)',
       date: '2026-01',
       leadInvestors: ['Y Combinator'],
@@ -190,7 +190,7 @@ export const palusFinance: Company = {
 
   // My Tracking
   tracking: {
-    status: 'not_interested',
+    status: 'watching',
     fitScore: 3,
     whyJoin: [
       '0→1 product with full design ownership',
