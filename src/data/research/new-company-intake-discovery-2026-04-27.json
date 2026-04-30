@@ -115,23 +115,25 @@
       "name": "Kampala",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Kampala (YC W26) \u2013 Reverse-Engineer Apps into APIs",
       "batch": "discovery-2026-04-27",
       "order": 10,
-      "discoveryUrl": "https://www.zatanna.ai/kampala"
+      "discoveryUrl": "https://www.zatanna.ai/kampala",
+      "resultCompanyId": "kampala"
     },
     {
       "name": "Didit",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
       "batch": "discovery-2026-04-27",
       "order": 11,
-      "discoveryUrl": "https://news.ycombinator.com/item?id=47324296"
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47324296",
+      "resultCompanyId": "didit"
     },
     {
       "name": "IonRouter",

@@ -148,6 +148,7 @@ import { delve } from './delve';
 import { descript } from './descript';
 import { devAgents } from './dev-agents';
 import { dimensionLabs } from './dimension-labs';
+import { didit } from './didit';
 import { ditto } from './ditto';
 import { dittoLive } from './ditto-live';
 import { divineResearch } from './divine-research';
@@ -258,6 +259,7 @@ import { jam } from './jam';
 import { jasper } from './jasper';
 import { juicebox } from './juicebox';
 import { kaedim } from './kaedim';
+import { kampala } from './kampala';
 import { kernel } from './kernel';
 import { kiite } from './kiite';
 import { kindredSystems } from './kindred-systems';
@@ -716,6 +718,7 @@ export const companies: Company[] = [
   descript,
   devAgents,
   dimensionLabs,
+  didit,
   dittoLive,
   ditto,
   divineResearch,
@@ -825,6 +828,7 @@ export const companies: Company[] = [
   jasper,
   juicebox,
   kaedim,
+  kampala,
   kernel,
   kiite,
   kindredSystems,

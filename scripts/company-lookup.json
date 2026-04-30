@@ -2823,5 +2823,15 @@
     "id": "cardboard",
     "name": "Cardboard",
     "website": "https://www.usecardboard.com"
+  },
+  {
+    "id": "kampala",
+    "name": "Kampala (by Zatanna)",
+    "website": "https://www.zatanna.ai"
+  },
+  {
+    "id": "didit",
+    "name": "Didit",
+    "website": "https://didit.me"
   }
 ]
