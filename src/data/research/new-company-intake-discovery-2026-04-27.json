@@ -139,12 +139,13 @@
       "name": "IonRouter",
       "source": "YC W26",
       "priority": "P0",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Launch HN: IonRouter (YC W26) \u2013 High-throughput, low-cost inference",
       "batch": "discovery-2026-04-27",
       "order": 12,
-      "discoveryUrl": "https://ionrouter.io"
+      "discoveryUrl": "https://ionrouter.io",
+      "resultCompanyId": "ionrouter"
     },
     {
       "name": "Kita",

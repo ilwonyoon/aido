@@ -2833,5 +2833,10 @@
     "id": "didit",
     "name": "Didit",
     "website": "https://didit.me"
+  },
+  {
+    "id": "ionrouter",
+    "name": "IonRouter",
+    "website": "https://ionrouter.io"
   }
 ]

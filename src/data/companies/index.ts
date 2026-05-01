@@ -248,6 +248,7 @@ import { interfere } from './interfere';
 import { internetBackyard } from './internet-backyard';
 import { invertBio } from './invert-bio';
 import { invisionAi } from './invision-ai';
+import { ionrouter } from './ionrouter';
 import { invokeAi } from './invoke-ai';
 import { item } from './item';
 import { itemApp } from './item-app';
@@ -817,6 +818,7 @@ export const companies: Company[] = [
   internetBackyard,
   invertBio,
   invisionAi,
+  ionrouter,
   invokeAi,
   itemApp,
   item,
