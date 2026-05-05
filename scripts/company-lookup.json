@@ -55,6 +55,11 @@
     "website": "https://www.airops.com"
   },
   {
+    "id": "akur8",
+    "name": "Akur8",
+    "website": "https://www.akur8.com/"
+  },
+  {
     "id": "alex-ai",
     "name": "Alex AI",
     "website": "https://www.alex.com"
@@ -285,6 +290,11 @@
     "website": "https://bindwell.ai/"
   },
   {
+    "id": "black-forest-labs",
+    "name": "Black Forest Labs",
+    "website": "https://blackforestlabs.ai/"
+  },
+  {
     "id": "blackbird-labs",
     "name": "Blackbird",
     "website": "https://startups.gallery/companies/blackbird-labs"
@@ -385,6 +395,11 @@
     "website": "https://www.runcaptain.com"
   },
   {
+    "id": "cardboard",
+    "name": "Cardboard",
+    "website": "https://www.usecardboard.com"
+  },
+  {
     "id": "cardless",
     "name": "Cardless",
     "website": "https://www.cardless.com"
@@ -438,6 +453,11 @@
     "id": "chai-discovery",
     "name": "Chai Discovery",
     "website": "https://www.chaidiscovery.com/"
+  },
+  {
+    "id": "chamber",
+    "name": "Chamber",
+    "website": "https://www.usechamber.io"
   },
   {
     "id": "character-ai",
@@ -547,7 +567,7 @@
   {
     "id": "comfy-ui",
     "name": "Comfy",
-    "website": "https://comfy.org"
+    "website": "https://www.comfy.org/"
   },
   {
     "id": "common-knowledge",
@@ -585,6 +605,11 @@
     "website": "https://console.co"
   },
   {
+    "id": "constellation-space",
+    "name": "Constellation Space",
+    "website": "https://www.constellationspace.ai"
+  },
+  {
     "id": "contra",
     "name": "Contra",
     "website": "https://contra.com"
@@ -610,6 +635,11 @@
     "website": "https://www.corgi.insure/"
   },
   {
+    "id": "counterforce-health",
+    "name": "Counterforce Health",
+    "website": "https://www.counterforcehealth.org/"
+  },
+  {
     "id": "crowdriff",
     "name": "CrowdRiff",
     "website": "https://crowdriff.com"
@@ -633,6 +663,11 @@
     "id": "cursor",
     "name": "Cursor",
     "website": "https://cursor.com"
+  },
+  {
+    "id": "cytora",
+    "name": "Cytora",
+    "website": "https://www.cytora.com"
   },
   {
     "id": "dagster",
@@ -720,6 +755,11 @@
     "website": "https://sdsa.ai/"
   },
   {
+    "id": "didit",
+    "name": "Didit",
+    "website": "https://didit.me"
+  },
+  {
     "id": "dimension-labs",
     "name": "Dimension Labs",
     "website": "https://dimension.ai"
@@ -805,6 +845,11 @@
     "website": "https://www.eventual.ai"
   },
   {
+    "id": "evolutioniq",
+    "name": "EvolutionIQ",
+    "website": "https://www.evolutioniq.com/"
+  },
+  {
     "id": "exa",
     "name": "Exa",
     "website": "https://exa.ai"
@@ -833,6 +878,11 @@
     "id": "fastino",
     "name": "Fastino",
     "website": "https://fastino.ai"
+  },
+  {
+    "id": "federato",
+    "name": "Federato",
+    "website": "https://www.federato.ai/"
   },
   {
     "id": "fermat",
@@ -973,6 +1023,11 @@
     "id": "goodfire",
     "name": "Goodfire",
     "website": "https://www.goodfire.ai/"
+  },
+  {
+    "id": "gradient-ai",
+    "name": "Gradient AI",
+    "website": "https://www.gradientai.com/"
   },
   {
     "id": "grammarly",
@@ -1140,6 +1195,11 @@
     "website": "https://index.com/"
   },
   {
+    "id": "indico-data",
+    "name": "Indico Data",
+    "website": "https://indicodata.ai"
+  },
+  {
     "id": "inferact",
     "name": "Inferact",
     "website": "https://inferact.ai"
@@ -1210,6 +1270,16 @@
     "website": "https://invision.ai"
   },
   {
+    "id": "invoke-ai",
+    "name": "Invoke",
+    "website": "https://www.invoke.com/"
+  },
+  {
+    "id": "ionrouter",
+    "name": "IonRouter",
+    "website": "https://ionrouter.io"
+  },
+  {
     "id": "item-app",
     "name": "Item App",
     "website": "https://item.app/"
@@ -1260,6 +1330,11 @@
     "website": "https://www.kaedim3d.com"
   },
   {
+    "id": "kampala",
+    "name": "Kampala (by Zatanna)",
+    "website": "https://www.zatanna.ai"
+  },
+  {
     "id": "kernel",
     "name": "Kernel",
     "website": "https://kernel.sh"
@@ -1273,6 +1348,11 @@
     "id": "kindred-systems",
     "name": "Kindred Systems",
     "website": "https://kindred.ai"
+  },
+  {
+    "id": "kita",
+    "name": "Kita",
+    "website": "https://www.usekita.com"
   },
   {
     "id": "kite-ai",
@@ -1770,6 +1850,11 @@
     "website": "https://openai.com"
   },
   {
+    "id": "openart",
+    "name": "OpenArt",
+    "website": "https://openart.dev/"
+  },
+  {
     "id": "openmind",
     "name": "Openmind",
     "website": "https://openmind.space"
@@ -1863,6 +1948,11 @@
     "id": "palmstreet",
     "name": "Palmstreet",
     "website": "https://palmstreet.app"
+  },
+  {
+    "id": "palus-finance",
+    "name": "Palus Finance",
+    "website": "https://www.palus.finance"
   },
   {
     "id": "paper",
@@ -2135,6 +2225,11 @@
     "website": "https://roboflow.com"
   },
   {
+    "id": "roots-automation",
+    "name": "Roots Automation",
+    "website": "https://www.roots.ai"
+  },
+  {
     "id": "rox",
     "name": "Rox",
     "website": "https://rox.com/"
@@ -2143,6 +2238,11 @@
     "id": "runanywhere",
     "name": "RunAnywhere",
     "website": "https://www.runanywhere.ai"
+  },
+  {
+    "id": "runware",
+    "name": "Runware",
+    "website": "https://runware.ai/"
   },
   {
     "id": "runway",
@@ -2173,6 +2273,16 @@
     "id": "scale-ai",
     "name": "Scale AI",
     "website": "https://scale.com"
+  },
+  {
+    "id": "scalify",
+    "name": "Scalify",
+    "website": "https://scalify.com"
+  },
+  {
+    "id": "scenario",
+    "name": "Scenario",
+    "website": "https://www.scenario.com/"
   },
   {
     "id": "scribe",
@@ -2235,6 +2345,11 @@
     "website": "https://shepherdinsurance.com"
   },
   {
+    "id": "shift-technology",
+    "name": "Shift Technology",
+    "website": "https://www.shift-technology.com/"
+  },
+  {
     "id": "shopify",
     "name": "Shopify",
     "website": "https://www.shopify.com"
@@ -2258,6 +2373,11 @@
     "id": "sitefire",
     "name": "Sitefire",
     "website": "https://sitefire.ai"
+  },
+  {
+    "id": "sixfold",
+    "name": "Sixfold",
+    "website": "https://www.sixfold.ai"
   },
   {
     "id": "skyhive",
@@ -2288,6 +2408,11 @@
     "id": "solidroad",
     "name": "Solidroad",
     "website": "https://solidroad.com/"
+  },
+  {
+    "id": "sonarly",
+    "name": "Sonarly",
+    "website": "https://sonarly.com"
   },
   {
     "id": "sonatic",
@@ -2328,6 +2453,11 @@
     "id": "spiral-db",
     "name": "SpiralDB",
     "website": "https://www.spiraldb.com/"
+  },
+  {
+    "id": "sprout-ai",
+    "name": "Sprout.ai",
+    "website": "https://sprout.ai/"
   },
   {
     "id": "stability-ai",
@@ -2558,6 +2688,11 @@
     "id": "traba",
     "name": "Traba",
     "website": "https://traba.work"
+  },
+  {
+    "id": "tractable",
+    "name": "Tractable",
+    "website": "https://tractable.ai/"
   },
   {
     "id": "trm-labs",
@@ -2795,48 +2930,13 @@
     "website": "https://zeroentropy.dev"
   },
   {
-    "id": "sonarly",
-    "name": "Sonarly",
-    "website": "https://sonarly.com"
+    "id": "zestyai",
+    "name": "ZestyAI",
+    "website": "https://zesty.ai/"
   },
   {
-    "id": "chamber",
-    "name": "Chamber",
-    "website": "https://www.usechamber.io"
-  },
-  {
-    "id": "scalify",
-    "name": "Scalify",
-    "website": "https://scalify.com"
-  },
-  {
-    "id": "palus-finance",
-    "name": "Palus Finance",
-    "website": "https://www.palus.finance"
-  },
-  {
-    "id": "constellation-space",
-    "name": "Constellation Space",
-    "website": "https://www.constellationspace.ai"
-  },
-  {
-    "id": "cardboard",
-    "name": "Cardboard",
-    "website": "https://www.usecardboard.com"
-  },
-  {
-    "id": "kampala",
-    "name": "Kampala (by Zatanna)",
-    "website": "https://www.zatanna.ai"
-  },
-  {
-    "id": "didit",
-    "name": "Didit",
-    "website": "https://didit.me"
-  },
-  {
-    "id": "ionrouter",
-    "name": "IonRouter",
-    "website": "https://ionrouter.io"
+    "id": "terminal-use",
+    "name": "Terminal Use",
+    "website": "https://www.terminaluse.com"
   }
 ]

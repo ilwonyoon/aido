@@ -261,6 +261,7 @@ import { jasper } from './jasper';
 import { juicebox } from './juicebox';
 import { kaedim } from './kaedim';
 import { kampala } from './kampala';
+import { kita } from './kita';
 import { kernel } from './kernel';
 import { kiite } from './kiite';
 import { kindredSystems } from './kindred-systems';
@@ -506,6 +507,7 @@ import { tavus } from './tavus';
 import { tealbook } from './tealbook';
 import { tempo } from './tempo';
 import { tensormesh } from './tensormesh';
+import { terminalUse } from './terminal-use';
 import { teraAi } from './tera-ai';
 import { terradot } from './terradot';
 import { tennr } from './tennr';
@@ -831,6 +833,7 @@ export const companies: Company[] = [
   juicebox,
   kaedim,
   kampala,
+  kita,
   kernel,
   kiite,
   kindredSystems,
@@ -1075,6 +1078,7 @@ export const companies: Company[] = [
   tealbook,
   tempo,
   tensormesh,
+  terminalUse,
   teraAi,
   terradot,
   tennr,
