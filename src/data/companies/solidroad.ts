@@ -166,11 +166,17 @@ export const solidroad: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Senior Product Designer',
-          location: 'Remote',
-          type: 'full-time',
-          url: 'https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef',
-        }
+      title: "Founding Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/solidroad/139448a7-bed6-45c2-92b4-4e7b37d3b6cd",
+      roleFamily: "product-design",
+      roleSignal: "founding",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Founding design role verified on Ashby.",
+    }
   ],
 
   // Culture Insights

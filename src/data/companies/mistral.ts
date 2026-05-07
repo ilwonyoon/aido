@@ -158,7 +158,47 @@ export const mistral: Company = {
         description: 'Model releases and research',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Product Designer - Documentation",
+        location: "Paris",
+        type: "full-time",
+        url: "https://jobs.lever.co/mistral/d67de1b6-2cb3-4afb-b2a6-5e4901dce408",
+        roleFamily: "product-design",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "lever",
+        lastVerifiedAt: "2026-05-07",
+        team: "Product",
+        whyInteresting: "Product Designer role on developer documentation, verified from Mistral Lever.",
+      },
+      {
+        title: "Product Designer - Mistral Cloud",
+        location: "Paris",
+        type: "full-time",
+        url: "https://jobs.lever.co/mistral/7ed4baa4-9323-4c5e-96eb-732a92257474",
+        roleFamily: "product-design",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "lever",
+        lastVerifiedAt: "2026-05-07",
+        team: "Product",
+        whyInteresting: "Product Designer role on Mistral Cloud, verified from Mistral Lever.",
+      },
+      {
+        title: "Product Designer - Observability",
+        location: "Paris",
+        type: "full-time",
+        url: "https://jobs.lever.co/mistral/b161e4b7-001c-4b91-8396-b3f38aff919b",
+        roleFamily: "product-design",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "lever",
+        lastVerifiedAt: "2026-05-07",
+        team: "Product",
+        whyInteresting: "Product Designer role on observability, verified from Mistral Lever.",
+      }
+    ],
 
     cultureInsights: [
       {

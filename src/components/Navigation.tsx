@@ -7,6 +7,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { ThemeToggle } from './ThemeToggle';
 import { AuthButton } from './AuthButton';
 import { IconButton } from '@/components/ui/Button';
+import { isPrivateAppUser } from '@/lib/auth/private-access';
 
 export function Navigation() {
   const pathname = usePathname();
@@ -15,6 +16,7 @@ export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
 
   const isAdmin = user?.email === 'ilwonyoon@gmail.com';
+  const isPrivateUser = isPrivateAppUser(user?.email);
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -29,8 +31,11 @@ export function Navigation() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    const frame = requestAnimationFrame(handleScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [handleScroll]);
 
   return (
@@ -94,6 +99,18 @@ export function Navigation() {
           >
             Insights
           </Link>
+          {isPrivateUser && (
+            <Link
+              href="/applications"
+              className={
+                isActive('/applications')
+                  ? 'text-[var(--foreground)] font-medium'
+                  : 'text-[var(--muted-dim)] hover:text-[var(--foreground)]'
+              }
+            >
+              Applications
+            </Link>
+          )}
           {/* Admin only */}
           {isAdmin && (
             <Link
@@ -234,6 +251,19 @@ export function Navigation() {
                   }`}
                 >
                   Requests
+                </Link>
+              )}
+              {isPrivateUser && (
+                <Link
+                  href="/applications"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block py-3 px-4 rounded-lg ${
+                    isActive('/applications')
+                      ? 'bg-[var(--card)] text-[var(--foreground)] border-l-2 border-[var(--foreground)]'
+                      : 'text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)] border-l-2 border-transparent'
+                  }`}
+                >
+                  Applications
                 </Link>
               )}
             </nav>

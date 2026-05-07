@@ -167,32 +167,7 @@ export const tennr: Company = {
   productStage: '1→10',
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'New York, NY (Chelsea office 4 days/week preferred)',
-      url: 'https://jobs.ashbyhq.com/tennr/dd5ef69b-8066-4cc1-9892-71c7c2e80237',
-      team: 'Product',
-      level: 'Mid–Senior',
-      compensation: '$150,000 - $180,000',
-      aboutRole: 'Early designer role. Take full design ownership across multiple project streams, from research to development handoff and post-release. Leverage design expertise to reduce patient delays across the US healthcare system.',
-      responsibilities: [
-        'Full design ownership across multiple concurrent project streams',
-        'Lead design from user research through development handoff and post-release iteration',
-        'Design systems and component work (separate Design Systems Operations role also open)',
-      ],
-      requirements: [
-        'Strong ambition to tackle high-impact, complex problem spaces',
-        'Ability to thrive in fast-paced startup environment',
-        'Strong product design fundamentals with healthcare or enterprise SaaS preferred',
-      ],
-      preferred: [
-        'Experience designing for clinical or administrative healthcare workflows',
-        'Background in data-heavy enterprise product design',
-      ],
-      whyInteresting: 'Early designer on a $605M healthcare AI platform processing 10M+ documents/month. CPO is a co-founder with design background. High ownership, direct patient impact, top-tier VC backing.',
-    },
-  ],
+  openRoles: [],
 
   designerLinks: [],
   cultureInsights: [

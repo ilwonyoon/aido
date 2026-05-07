@@ -68,7 +68,22 @@ export const conversion: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Product Designer',
+      location: 'San Francisco Office',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://jobs.ashbyhq.com/conversion/e8cfbab1-d619-44fe-a2de-0d6d888daa1b',
+      compensation: '$150K-$300K + equity',
+      aboutRole: 'Own end-to-end product design across web app, email editor, marketing surfaces, and design systems.',
+      whyInteresting: 'AI-native marketing automation platform with a live founding product design role and strong GTM workflow UX surface.',
+    },
+  ],
 
   cultureInsights: [],
 

@@ -416,16 +416,37 @@ export default function JobsPage() {
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [designFocusFilter, setDesignFocusFilter] = useState('');
+  const [foundingOnly, setFoundingOnly] = useState(false);
+  const [firstDesignHireOnly, setFirstDesignHireOnly] = useState(false);
+  const [aiNativeOnly, setAiNativeOnly] = useState(false);
+  const [includeDesignEngineering, setIncludeDesignEngineering] = useState(false);
 
   const companiesWithRoles = useMemo(() => {
     const levelOrder: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
     return companies
+      .map(company => {
+        let roles = company.openRoles.filter(role => role.verificationStatus !== 'closed');
+
+        if (!includeDesignEngineering) {
+          roles = roles.filter(role => role.roleFamily !== 'design-engineering');
+        }
+
+        if (foundingOnly || firstDesignHireOnly) {
+          roles = roles.filter(role =>
+            (foundingOnly && role.roleSignal === 'founding') ||
+            (firstDesignHireOnly && role.roleSignal === 'first-design-hire')
+          );
+        }
+
+        return { ...company, openRoles: roles };
+      })
       .filter(c => c.openRoles.length > 0)
+      .filter(c => !aiNativeOnly || c.aiNativeLevel === 'A' || c.aiNativeLevel === 'B')
       .sort((a, b) => {
         const diff = (levelOrder[a.aiNativeLevel] ?? 4) - (levelOrder[b.aiNativeLevel] ?? 4);
         return diff !== 0 ? diff : b.openRoles.length - a.openRoles.length;
       });
-  }, []);
+  }, [foundingOnly, firstDesignHireOnly, aiNativeOnly, includeDesignEngineering]);
 
   const filtered = useMemo(() => {
     return companiesWithRoles.filter(company => {
@@ -457,12 +478,23 @@ export default function JobsPage() {
   const totalCompanies = companiesWithRoles.length;
   const totalRoles = companiesWithRoles.reduce((sum, c) => sum + c.openRoles.length, 0);
   const filteredRoles = filtered.reduce((sum, c) => sum + c.openRoles.length, 0);
-  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '';
+  const hasActiveFilters =
+    aiLevelFilter !== '' ||
+    locationFilter.length > 0 ||
+    designFocusFilter !== '' ||
+    foundingOnly ||
+    firstDesignHireOnly ||
+    aiNativeOnly ||
+    includeDesignEngineering;
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setLocationFilter([]);
     setDesignFocusFilter('');
+    setFoundingOnly(false);
+    setFirstDesignHireOnly(false);
+    setAiNativeOnly(false);
+    setIncludeDesignEngineering(false);
   };
 
   return (
@@ -510,6 +542,46 @@ export default function JobsPage() {
             ]}
             onChange={setDesignFocusFilter}
           />
+          <button
+            onClick={() => setFoundingOnly(!foundingOnly)}
+            className={`bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+              foundingOnly
+                ? 'border-[var(--accent)] text-[var(--foreground)]'
+                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+            }`}
+          >
+            Founding design
+          </button>
+          <button
+            onClick={() => setFirstDesignHireOnly(!firstDesignHireOnly)}
+            className={`bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+              firstDesignHireOnly
+                ? 'border-[var(--accent)] text-[var(--foreground)]'
+                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+            }`}
+          >
+            First design hire
+          </button>
+          <button
+            onClick={() => setAiNativeOnly(!aiNativeOnly)}
+            className={`bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+              aiNativeOnly
+                ? 'border-[var(--accent)] text-[var(--foreground)]'
+                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+            }`}
+          >
+            AI-native A/B
+          </button>
+          <button
+            onClick={() => setIncludeDesignEngineering(!includeDesignEngineering)}
+            className={`bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+              includeDesignEngineering
+                ? 'border-[var(--accent)] text-[var(--foreground)]'
+                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+            }`}
+          >
+            Include design engineering
+          </button>
           {hasActiveFilters && (
             <button
               onClick={clearFilters}

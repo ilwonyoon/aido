@@ -162,26 +162,17 @@ export const omnea: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Product Design Lead',
-      location: 'London, Hybrid',
-      url: 'https://www.thesaasjobs.com/jobs/428317074-product-design-lead',
-      team: 'Product',
-      level: 'Lead',
-      compensation: 'Unknown',
-      aboutRole: 'First design leader hire. Own the full design system and product UX across the procurement platform.',
-      responsibilities: [
-        'Lead product design from scoping to delivery across complex B2B workflows',
-        'Build and maintain design system for a multi-product procurement suite',
-        'Collaborate with engineering and product on AI-powered features',
-      ],
-      requirements: [
-        '7-8+ years of product design experience in B2B SaaS',
-        'Strong portfolio of complex workflow/enterprise product design',
-        'Figma expert, experience building design systems',
-      ],
-      preferred: [],
-      whyInteresting: 'First design lead at a fast-growing enterprise AI platform. Define the design culture and system from scratch with high-profile named customers already using the product.',
-    },
+      title: "Senior Product Designer",
+      location: "London",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/omnea/f23a08f1-23d4-42e0-9b32-061ad1fb2b5e",
+      roleFamily: "product-design",
+      roleSignal: "senior",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
   ],
 
   designerLinks: [],

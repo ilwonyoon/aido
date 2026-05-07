@@ -54,3 +54,6 @@ scripts/discovery-log.json
 .playwright-cli/
 __pycache__/
 scripts/__pycache__/
+
+# private application automation inputs
+/private/

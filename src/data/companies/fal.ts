@@ -167,7 +167,20 @@ export const fal: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Senior Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://job-boards.greenhouse.io/fal/jobs/4105054009",
+      roleFamily: "product-design",
+      roleSignal: "senior",
+      verificationStatus: "confirmed",
+      sourceType: "greenhouse",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Senior Product Designer role verified from fal Greenhouse.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],

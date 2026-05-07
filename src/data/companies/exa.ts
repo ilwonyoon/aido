@@ -181,12 +181,17 @@ export const exa: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Designer',
-          location: 'San Francisco, CA (In-person)',
-          url: 'https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35',
-          type: 'full-time',
-          aboutRole: 'Design product interfaces, developer-facing tools, and brand experience for Exa.',
-        }
+      title: "Design Engineer",
+      location: "San Francisco, California",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/exa/237cc096-2234-48ee-9c98-8c7221845484",
+      roleFamily: "design-engineering",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
   ],
 
   // Culture Insights

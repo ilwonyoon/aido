@@ -191,7 +191,34 @@ export const anthropic: Company = {
     ],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Product Designer, Claude Code",
+        location: "San Francisco, CA | New York City, NY | Seattle, WA",
+        type: "full-time",
+        url: "https://job-boards.greenhouse.io/anthropic/jobs/5104689008",
+        roleFamily: "product-design",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "greenhouse",
+        lastVerifiedAt: "2026-05-07",
+        team: "Claude Code",
+        whyInteresting: "Design role on Claude Code, verified from Anthropic Greenhouse.",
+      },
+      {
+        title: "Design Engineer, AI Capability Development (Education Labs)",
+        location: "San Francisco, CA | New York City, NY",
+        type: "full-time",
+        url: "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+        roleFamily: "design-engineering",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "greenhouse",
+        lastVerifiedAt: "2026-05-07",
+        team: "AI Capability Development / Education Labs",
+        whyInteresting: "Design engineering role on AI education capability development, verified from Anthropic Greenhouse.",
+      }
+    ],
 
     // Culture Insights
     cultureInsights: [

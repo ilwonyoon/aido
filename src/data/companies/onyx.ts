@@ -68,7 +68,21 @@ export const onyx: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Designer',
+      location: 'San Francisco',
+      type: 'full-time',
+      roleFamily: 'other-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://jobs.ashbyhq.com/onyx-dot-app/68c29928-b9e8-4c1c-b76e-26a9cdd1df81',
+      aboutRole: 'Own core UX, visual systems, and early design culture for an AI knowledge and search product.',
+      whyInteresting: 'Founding design ownership on an AI knowledge workflow surface.',
+    },
+  ],
 
   cultureInsights: [],
 

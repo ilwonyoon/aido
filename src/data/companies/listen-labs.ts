@@ -207,7 +207,21 @@ export const listenLabs: Company = {
     ],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Founding Product Designer",
+        location: "San Francisco, CA",
+        type: "full-time",
+        roleFamily: "product-design",
+        roleSignal: "founding",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        url: "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b",
+        aboutRole: "Turn complex consulting-style research projects into elegant AI-powered research product experiences.",
+        whyInteresting: "Live Ashby founding product design role at a high-growth AI research platform.",
+      }
+    ],
 
     // Culture Insights
     cultureInsights: [

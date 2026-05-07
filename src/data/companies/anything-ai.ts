@@ -174,7 +174,21 @@ export const anythingAi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'UX/UI Designer',
+      location: 'San Francisco',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'standard',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c',
+      aboutRole: 'Design UX/UI for an AI app builder with early foundational product scope.',
+      whyInteresting: 'Not titled founding, but relevant adjacent AI-native product design opportunity.',
+    },
+  ],
 
   // Culture Insights
   cultureInsights: [],

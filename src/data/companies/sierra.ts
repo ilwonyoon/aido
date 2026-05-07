@@ -214,11 +214,17 @@ export const sierra: Company = {
   // Open Roles
   openRoles: [
     {
-                  title: 'Product Designer',
-                  url: 'https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3',
-                  location: 'San Francisco, CA',
-                  type: 'full-time',
-                }
+      title: "Product Designer",
+      url: "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+      location: "San Francisco, CA",
+      type: "full-time",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
   ],
 
   // Culture Insights

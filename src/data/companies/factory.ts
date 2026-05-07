@@ -174,7 +174,20 @@ export const factory: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Product Designer",
+      location: "San Francisco, CA",
+      type: "full-time",
+      url: "https://factory.ai/careers/product-designer",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "company",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Product Designer role verified from Factory careers.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],

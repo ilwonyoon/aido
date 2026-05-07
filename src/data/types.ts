@@ -209,6 +209,11 @@ export interface OpenRole {
   title: string;
   location: string;
   url: string;
+  roleFamily?: 'product-design' | 'design-engineering' | 'brand-design' | 'other-design';
+  roleSignal?: 'founding' | 'first-design-hire' | 'senior' | 'staff' | 'lead' | 'head' | 'standard';
+  verificationStatus?: 'confirmed' | 'needs_review' | 'closed';
+  sourceType?: 'yc' | 'ashby' | 'lever' | 'greenhouse' | 'company' | 'other';
+  lastVerifiedAt?: string;
   // Enhanced job description fields
   team?: string; // e.g., "Claude Code Team", "Growth Team"
   level?: string; // e.g., "Senior", "Staff", "Lead"

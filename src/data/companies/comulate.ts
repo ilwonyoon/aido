@@ -130,7 +130,22 @@ export const comulate: Company = {
   ],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'San Francisco',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17',
+      compensation: '$160K-$210K + equity',
+      aboutRole: 'Own product design for AI insurance back-office workflows.',
+      whyInteresting: 'Listing title is Product Designer, but role body indicates founding Product Designer scope.',
+    },
+  ],
 
   // Designer Links
   designerLinks: [],

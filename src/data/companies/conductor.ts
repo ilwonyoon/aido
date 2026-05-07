@@ -170,7 +170,22 @@ export const conductor: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://www.ycombinator.com/companies/conductor/jobs/gBFwivG-product-designer',
+      compensation: '$175K-$300K',
+      aboutRole: 'Founding product designer for an AI coding-agent orchestrator and next-generation IDE interface.',
+      whyInteresting: 'Title is Product Designer, but YC listing explicitly says founding product designer.',
+    },
+  ],
 
   // Culture Insights
   cultureInsights: [],

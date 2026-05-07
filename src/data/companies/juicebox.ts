@@ -95,7 +95,21 @@ export const juicebox: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'standard',
+      verificationStatus: 'confirmed',
+      sourceType: 'company',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://www.ycombinator.com/companies/juicebox/jobs',
+      aboutRole: 'Product design role at an AI-powered recruiting platform.',
+      whyInteresting: 'Current role is not founding, but the company remains relevant for the recruiting AI research queue.',
+    },
+  ],
 
   cultureInsights: [],
 

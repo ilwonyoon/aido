@@ -138,7 +138,20 @@ export const decagon: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
   cultureInsights: [
     {
       source: 'glassdoor',

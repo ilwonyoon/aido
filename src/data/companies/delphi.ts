@@ -140,7 +140,32 @@ export const delphi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Design Engineer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Delphi/81a220c3-1338-426f-ba34-5d77753add24",
+      roleFamily: "design-engineering",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    },
+    {
+      title: "Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Delphi/9e2040f8-ecbf-4192-85b9-02e08a20675f",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],

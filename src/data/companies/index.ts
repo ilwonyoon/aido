@@ -1,5 +1,6 @@
 import { Company } from '../types';
 
+import { foundingDesignBatch } from './founding-design-batch';
 import { abridge } from './abridge';
 import { ada } from './ada';
 import { adalineAi } from './adaline-ai';
@@ -568,6 +569,7 @@ import { zeroentropy } from './zeroentropy';
 import { zestyai } from './zestyai';
 
 export const companies: Company[] = [
+  ...foundingDesignBatch,
   elevenX,
   abridge,
   ada,

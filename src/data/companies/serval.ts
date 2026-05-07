@@ -199,34 +199,49 @@ export const serval: Company = {
   ],
   openRoles: [
     {
-      title: 'Product Designer',
-      location: 'San Francisco, CA',
-      type: 'full-time',
-      url: 'https://jobs.ashbyhq.com/Serval/f71a1d3f-9c1b-485e-964b-58e071510eac',
-      team: 'Product',
-      compensation: '$175K-$300K + equity',
-      postedDate: '2026-02',
-      aboutRole:
-        'Work with the founding team to shape Serval’s platform from the ground up, focusing on intuitive interfaces for powerful automation workflows.',
+      title: "Design Engineer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Serval/581f8b72-9a8c-46d2-9bf7-7fddad5d8750",
+      roleFamily: "design-engineering",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    },
+    {
+      title: "Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Serval/f71a1d3f-9c1b-485e-964b-58e071510eac",
+      team: "Product",
+      compensation: "$175K-$300K + equity",
+      postedDate: "2026-02",
+      aboutRole: "Work with the founding team to shape Serval’s platform from the ground up, focusing on intuitive interfaces for powerful automation workflows.",
       responsibilities: [
-        'Turn a complex operational domain into simple, elegant product flows',
-        'Explore ideas through mockups, prototypes, and customer usability testing',
-        'Partner with engineering on pragmatic tradeoffs from concept through shipped UI',
-        'Build the foundations of a flexible, scalable design system',
+        "Turn a complex operational domain into simple, elegant product flows",
+        "Explore ideas through mockups, prototypes, and customer usability testing",
+        "Partner with engineering on pragmatic tradeoffs from concept through shipped UI",
+        "Build the foundations of a flexible, scalable design system"
       ],
       requirements: [
-        '5+ years of in-house product design experience building end-to-end applications',
-        'Experience with Figma and interactive prototyping',
-        'Comfort with ambiguity, complex B2B workflows, and fast iteration',
-        'Strong craft and willingness to make product tradeoffs to ship',
+        "5+ years of in-house product design experience building end-to-end applications",
+        "Experience with Figma and interactive prototyping",
+        "Comfort with ambiguity, complex B2B workflows, and fast iteration",
+        "Strong craft and willingness to make product tradeoffs to ship"
       ],
       preferred: [
-        'Experience as a founding or early product designer at a startup',
-        'Experience with B2B SaaS tools',
+        "Experience as a founding or early product designer at a startup",
+        "Experience with B2B SaaS tools"
       ],
-      whyInteresting:
-        'Early design ownership on an AI-native enterprise platform where design influences workflow logic, system foundations, and brand expression.',
-    },
+      whyInteresting: "Early design ownership on an AI-native enterprise platform where design influences workflow logic, system foundations, and brand expression.",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+    }
   ],
 
   cultureInsights: [

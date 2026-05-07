@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   Company,
+  OpenRole,
   InterestStatus,
   Category,
   CategorySubcategory,
@@ -25,6 +26,73 @@ import { getCompanyQualityScore, parseFundingAmount } from '@/lib/companyScoring
 
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'fundingSize' | 'aiLevel';
 type CategoryFilterValue = `category:${Category}` | `subcategory:${CategorySubcategory}`;
+type HiringFilterValue = 'any' | 'founding-design' | 'first-design-hire' | 'product-design' | 'design-engineering';
+
+function isActiveRole(role: OpenRole): boolean {
+  return role.verificationStatus !== 'closed';
+}
+
+function getRoleSearchText(role: OpenRole): string {
+  return [
+    role.title,
+    role.level,
+    role.team,
+    role.aboutRole,
+    role.whyInteresting,
+  ].filter(Boolean).join(' ').toLowerCase();
+}
+
+function isDesignEngineeringRole(role: OpenRole): boolean {
+  const text = getRoleSearchText(role);
+  return role.roleFamily === 'design-engineering' || text.includes('design engineer');
+}
+
+function isProductDesignRole(role: OpenRole): boolean {
+  if (role.roleFamily === 'product-design') return true;
+  if (isDesignEngineeringRole(role)) return false;
+
+  const text = getRoleSearchText(role);
+  return (
+    text.includes('product designer') ||
+    text.includes('product design') ||
+    text.includes('founding designer') ||
+    text.includes('ux designer') ||
+    text.includes('ui/ux') ||
+    text.includes('ux/ui')
+  );
+}
+
+function matchesHiringFilter(role: OpenRole, filter: HiringFilterValue): boolean {
+  if (!isActiveRole(role)) return false;
+  const text = getRoleSearchText(role);
+
+  switch (filter) {
+    case 'any':
+      return true;
+    case 'founding-design':
+      return (
+        (role.roleSignal === 'founding' && isProductDesignRole(role)) ||
+        ((text.includes('founding designer') || text.includes('founding product designer')) && !isDesignEngineeringRole(role))
+      );
+    case 'first-design-hire':
+      return (
+        role.roleSignal === 'first-design-hire' ||
+        text.includes('first design hire') ||
+        text.includes('first designer')
+      );
+    case 'product-design':
+      return isProductDesignRole(role);
+    case 'design-engineering':
+      return isDesignEngineeringRole(role);
+    default:
+      return true;
+  }
+}
+
+function companyMatchesHiringFilters(company: Company, filters: HiringFilterValue[]): boolean {
+  if (filters.length === 0) return true;
+  return company.openRoles.some(role => filters.some(filter => matchesHiringFilter(role, filter)));
+}
 
 function AiLevelText({ level }: { level: AiLevel }) {
   const config = getAiLevelConfig(level);
@@ -173,14 +241,17 @@ function DropdownFilter({
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
 
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
+      const dropdownWidth = Math.min(Math.max(buttonRef.current.offsetWidth, 220), window.innerWidth - 32);
+      const left = Math.min(rect.left, window.innerWidth - dropdownWidth - 16);
       setDropdownStyle({
         top: rect.bottom + 4,
-        left: rect.left,
+        left: Math.max(16, left),
+        width: dropdownWidth,
       });
     }
   }, [isOpen]);
@@ -220,6 +291,7 @@ function DropdownFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
+              width: `${dropdownStyle.width}px`,
               minWidth: `${buttonRef.current.offsetWidth}px`,
               maxWidth: 'calc(100vw - 2rem)'
             }}
@@ -263,13 +335,13 @@ function MultiSelectFilter({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
   const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
 
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 180);
+      const dropdownWidth = Math.min(Math.max(buttonRef.current.offsetWidth, 260), window.innerWidth - 32);
       const spaceOnRight = window.innerWidth - rect.left;
 
       // If dropdown would overflow on right, align to button's right edge
@@ -278,6 +350,7 @@ function MultiSelectFilter({
       setDropdownStyle({
         top: rect.bottom + 4,
         left: Math.max(16, left), // Ensure at least 16px from left edge
+        width: dropdownWidth,
       });
     }
   }, [isOpen]);
@@ -315,7 +388,7 @@ function MultiSelectFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${Math.max(buttonRef.current.offsetWidth, 200)}px`,
+              width: `${dropdownStyle.width}px`,
               maxWidth: 'calc(100vw - 2rem)',
               maxHeight: '320px'
             }}
@@ -378,7 +451,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilterValue[]>([]);
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
-  const [openRolesToggle, setOpenRolesToggle] = useState(false);
+  const [hiringFilters, setHiringFilters] = useState<HiringFilterValue[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchExpanded, setSearchExpanded] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -510,6 +583,21 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       .map(cat => ({ value: cat, label: `${FUNDING_STAGE_LABELS[cat]} (${counts[cat]})` }));
   }, [companies]);
 
+  const hiringOptions = useMemo(() => {
+    const options: { value: HiringFilterValue; label: string }[] = [
+      { value: 'any', label: 'Any design role' },
+      { value: 'founding-design', label: 'Founding design' },
+      { value: 'first-design-hire', label: 'First design hire' },
+      { value: 'product-design', label: 'Product design' },
+      { value: 'design-engineering', label: 'Design engineering' },
+    ];
+
+    return options.map(option => ({
+      value: option.value,
+      label: `${option.label} (${companies.filter(company => companyMatchesHiringFilters(company, [option.value])).length})`,
+    }));
+  }, [companies]);
+
   // Load interest statuses from Firestore (per user)
   useEffect(() => {
     if (loading) return;
@@ -601,7 +689,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(30);
-  }, [reviewStatusFilter, fundingStageFilter, categoryFilter, locationFilter, openRolesToggle, sortBy, searchQuery]);
+  }, [reviewStatusFilter, fundingStageFilter, categoryFilter, locationFilter, hiringFilters, sortBy, searchQuery]);
 
   // Update interest status
   const updateInterestStatus = async (companyId: string, newStatus: InterestStatus) => {
@@ -649,8 +737,8 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       if (reviewStatusFilter === 'tier_1' && status !== 'tier_1') return false;
       if (reviewStatusFilter === 'not_interested' && status !== 'not_interested') return false;
 
-      // Open Roles Toggle
-      if (openRolesToggle && company.openRoles.length === 0) return false;
+      // Hiring Filter
+      if (!companyMatchesHiringFilters(company, hiringFilters)) return false;
 
       // Funding Stage Filter
       if (fundingStageFilter.length > 0) {
@@ -687,7 +775,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
       return true;
     });
-  }, [companies, searchQuery, reviewStatusFilter, interestStatuses, openRolesToggle, fundingStageFilter, categoryFilter, locationFilter]);
+  }, [companies, searchQuery, reviewStatusFilter, interestStatuses, hiringFilters, fundingStageFilter, categoryFilter, locationFilter]);
 
   // Parse team size to number for sorting
   const parseTeamSize = (size?: string): number => {
@@ -772,7 +860,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== '' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || openRolesToggle;
+  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== '' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || hiringFilters.length > 0;
 
   const clearFilters = () => {
     setSearchQuery('');
@@ -780,7 +868,20 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     setFundingStageFilter([]);
     setCategoryFilter([]);
     setLocationFilter([]);
-    setOpenRolesToggle(false);
+    setHiringFilters([]);
+  };
+
+  const handleHiringFilterChange = (values: string[]) => {
+    const nextValues = values as HiringFilterValue[];
+    const hadAny = hiringFilters.includes('any');
+    const hasAny = nextValues.includes('any');
+
+    if (hasAny && !hadAny) {
+      setHiringFilters(['any']);
+      return;
+    }
+
+    setHiringFilters(nextValues.filter(value => value !== 'any'));
   };
 
   return (
@@ -879,16 +980,12 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
             options={locations.map(loc => ({ value: loc, label: loc }))}
             onChange={setLocationFilter}
           />
-          <button
-            onClick={() => setOpenRolesToggle(prev => !prev)}
-            className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
-              openRolesToggle
-                ? 'border-[var(--accent)] text-[var(--foreground)]'
-                : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
-            }`}
-          >
-            Hiring
-          </button>
+          <MultiSelectFilter
+            label="Hiring"
+            values={hiringFilters}
+            options={hiringOptions}
+            onChange={handleHiringFilterChange}
+          />
           {hasActiveFilters && (
             <button
               onClick={clearFilters}

@@ -164,15 +164,7 @@ export const avoca: Company = {
   productStage: '1→10',
 
   // Open Roles
-  openRoles: [
-    {
-      title: 'Product Designer',
-      location: 'New York, NY',
-      url: 'https://www.avoca.ai/careers?ashby_jid=fd85e19f-12cf-421e-9ef5-afc4997c071e',
-      type: 'full-time',
-      aboutRole: 'Design Avoca\'s AI-powered conversational platform and core B2B SaaS workflows for service businesses.',
-    },
-  ],
+  openRoles: [],
   designerLinks: [],
   cultureInsights: [],
 
