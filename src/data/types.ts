@@ -32,6 +32,13 @@ export type CategorySubcategory =
   | 'productivity'
   | 'sales-marketing'
   | 'education'
+  | 'consumer-ai'
+  | 'govtech'
+  | 'public-safety'
+  | 'real-estate'
+  | 'voice-ai'
+  | 'life-sciences'
+  | 'regulatory'
   | 'other-vertical';
 
 export const CATEGORY_SUBCATEGORY_LABELS: Record<CategorySubcategory, string> = {
@@ -46,6 +53,13 @@ export const CATEGORY_SUBCATEGORY_LABELS: Record<CategorySubcategory, string> = 
   productivity: 'Productivity',
   'sales-marketing': 'Sales & Marketing',
   education: 'Education',
+  'consumer-ai': 'Consumer AI',
+  govtech: 'Govtech',
+  'public-safety': 'Public Safety',
+  'real-estate': 'Real Estate',
+  'voice-ai': 'Voice AI',
+  'life-sciences': 'Life Sciences',
+  regulatory: 'Regulatory',
   'other-vertical': 'Other Vertical',
 };
 
@@ -56,7 +70,22 @@ export const CATEGORY_TREE: Record<Category, CategorySubcategory[]> = {
   productivity: ['productivity'],
   'sales-marketing': ['sales-marketing'],
   'enterprise-ops': ['productivity', 'fintech', 'security', 'infrastructure'],
-  'vertical-saas': ['insurance', 'healthcare', 'legal', 'fintech', 'security', 'education', 'other-vertical'],
+  'vertical-saas': [
+    'insurance',
+    'healthcare',
+    'legal',
+    'fintech',
+    'security',
+    'education',
+    'consumer-ai',
+    'govtech',
+    'public-safety',
+    'real-estate',
+    'voice-ai',
+    'life-sciences',
+    'regulatory',
+    'other-vertical',
+  ],
 };
 
 // Multi-dimensional tagging system (legacy, kept for data compatibility)
@@ -229,7 +258,7 @@ export interface OpenRole {
 }
 
 export interface CultureInsight {
-  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi' | 'careers' | 'inc.com' | 'ycombinator' | 'techcrunch';
+  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi' | 'careers' | 'company' | 'inc.com' | 'ycombinator' | 'techcrunch';
   sentiment: 'positive' | 'neutral' | 'negative';
   rating?: number; // e.g., 4.2 out of 5
   content: string;
@@ -285,7 +314,7 @@ export interface Company {
     headwinds: string[]; // ["GitHub Copilot competition", "Commoditization risk"]
 
     // Competitive moat
-    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'platform-ecosystem' | 'vertical-specialization' | 'none';
+    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'platform-ecosystem' | 'vertical-specialization' | 'product-experience' | 'none';
     moatStrength?: string; // "Strong: 10M+ users generate training data"
   };
 
@@ -309,6 +338,8 @@ export interface Company {
     name: string;
     role: string;
     background: string;
+    whyBuilding?: string;
+    beliefs?: string[];
   }[];
   whyBuilding: string;
   beliefs: string[];

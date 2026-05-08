@@ -104,7 +104,6 @@ export const terminalUse: Company = {
         name: 'Vivek Raja',
         role: 'Co-founder',
         background: 'Ex-Palantir; led technical delivery of one of the largest agent use cases at Palantir, including deployment across US hospital networks.',
-        whyBuilding: 'Saw firsthand at Palantir how painful it is to deploy large-scale agents in production and decided to build the missing infrastructure layer.',
       },
       {
         name: 'Filip Balucha',
@@ -190,9 +189,21 @@ export const terminalUse: Company = {
 
     // Culture Insights
     cultureInsights: [
-      'Tiny team (4 people), high ownership expected',
-      'Terminal-aesthetic brand suggests engineering-first, minimalist culture',
-      'San Francisco based (in-person likely given team size)',
+      {
+        source: 'ycombinator',
+        sentiment: 'neutral',
+        content: 'Tiny team (4 people), high ownership expected.',
+      },
+      {
+        source: 'careers',
+        sentiment: 'neutral',
+        content: 'Terminal-aesthetic brand suggests engineering-first, minimalist culture.',
+      },
+      {
+        source: 'linkedin',
+        sentiment: 'neutral',
+        content: 'San Francisco based, likely in-person given team size.',
+      },
     ],
 
     // My Tracking

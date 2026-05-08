@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-05-06T10:45:00-07:00",
+  "scope": "Second-pass sweep for SF Bay Area founding product design and first design hire roles at AI-native or AI-core startups.",
+  "methodology": [
+    "Checked YC live role pages, Ashby direct posting pages, official company role pages, LinkedIn-indexed roles, Wellfound/indexed job pages, and aggregator leads.",
+    "Accepted only specific live role URLs with HTTP 200 and clear founding product design or first design hire signal.",
+    "Excluded indexed roles when the official ATS returned posting:null, direct role URL returned 404, or only an aggregator source existed."
+  ],
+  "newLiveCandidatesToAdd": [
+    {
+      "companyName": "Parrot",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/parrot/jobs/DCavRV9-founding-product-designer",
+      "compensation": "$120K-$180K + 0.50%-2.00%",
+      "whyRelevant": "YC live role; first Founding Product Designer for an AI-enhanced short-form video language learning product."
+    },
+    {
+      "companyName": "Wayline",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/wayline/jobs/d6ugYvj-founding-product-designer",
+      "compensation": "$150K-$250K + 1.00%-3.00%",
+      "whyRelevant": "YC live role; AI voice and text operator for property managers with product ownership across voice, UI, and workflows."
+    },
+    {
+      "companyName": "Closure",
+      "roleTitle": "Founding Product Designer",
+      "location": "New York, NY / San Francisco, CA / Palo Alto, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/closure/jobs/z5WK1E2-founding-product-designer",
+      "compensation": "$125K-$185K",
+      "whyRelevant": "YC live role; SF Bay Area is listed as a secondary option. AI evidence search for law enforcement, with high-stakes trust and provenance UX."
+    },
+    {
+      "companyName": "Peer AI",
+      "roleTitle": "Founding Product Designer - Enterprise AI Platform",
+      "location": "SF Bay Area (Remote)",
+      "sourceType": "company",
+      "verificationStatus": "confirmed",
+      "url": "https://getpeer.ai/careers/founding-product-designer",
+      "whyRelevant": "Official live company role; first designer for AI regulatory submission workflows. Remote-first, but Bay Area based strongly preferred."
+    },
+    {
+      "companyName": "Listen Labs",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b",
+      "whyRelevant": "Ashby direct role is live with posting:present; AI research platform role turns consulting-style research projects into AI-powered product experiences."
+    },
+    {
+      "companyName": "Keeper",
+      "roleTitle": "Senior Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/keeper-2/jobs/lNB2zsC-senior-product-designer",
+      "compensation": "$150K-$180K + 0.15%-0.25%",
+      "whyRelevant": "Not titled founding, but YC live role explicitly says this is the first design hire for AI tax filing."
+    }
+  ],
+  "adjacentOnly": [
+    {
+      "companyName": "Capy",
+      "roleTitle": "Founding Design Engineer",
+      "location": "SF",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/capy/jobs/FBbRyVg-founding-design-engineer",
+      "whyRelevant": "First design hire signal, but title and YC role family are engineering/full-stack. Keep behind Include design engineering, not strict product design."
+    }
+  ],
+  "excludedOrStale": [
+    {
+      "companyName": "TierZero",
+      "roleTitle": "Founding Product Designer",
+      "location": "SF HQ",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/tierzero/0eeb3b73-2f11-45f8-b737-8d84d6ff1619",
+      "note": "Search indexes and aggregators show the role, but direct Ashby posting returned posting:null on 2026-05-06."
+    },
+    {
+      "companyName": "TierZero",
+      "roleTitle": "Founding Product Designer",
+      "location": "SF HQ",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/tierzero/4c46f735-e467-4d75-b022-c4767c11bba8",
+      "note": "Alternate Ashby URL also returned posting:null on 2026-05-06."
+    },
+    {
+      "companyName": "Chalk",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "company",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://chalk.ai/careers",
+      "note": "Indexed role appears stale; current official careers page did not show Founding Product Designer and Ashby board returned posting:null."
+    },
+    {
+      "companyName": "ArgusEye",
+      "roleTitle": "Founding Product Designer (UX/UI)",
+      "location": "San Ramon, CA / Remote",
+      "sourceType": "other",
+      "verificationStatus": "needs_review",
+      "url": "https://bebee.com/us/jobs/founding-product-designer-ux-ui-arguseye--theirstack-666095411",
+      "note": "AI cybersecurity company is relevant and East Bay adjacent, but only aggregator source found. Do not add until official company or ATS role URL is found."
+    },
+    {
+      "companyName": "NetworkPedia",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "other",
+      "verificationStatus": "needs_review",
+      "url": "https://findmejobs.co/roles/founding-product-designer",
+      "note": "Appears in aggregator indexes, but no official company or ATS source found in this sweep."
+    },
+    {
+      "companyName": "BizTrip.ai",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "other",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://builtin.com/job/founding-product-designer-biztripai/4738455",
+      "note": "BuiltIn states the job was removed on 2025-06-09. Do not add."
+    }
+  ],
+  "localUpdateStatus": {
+    "newCompanyFilesCreated": [
+      "src/data/companies/parrot.ts",
+      "src/data/companies/wayline.ts",
+      "src/data/companies/closure.ts",
+      "src/data/companies/peer-ai.ts"
+    ],
+    "blockedFiles": [
+      "src/data/companies/index.ts",
+      "scripts/company-lookup.json",
+      "src/data/companies/listen-labs.ts",
+      "existing Keeper company file"
+    ],
+    "blocker": "Existing repo files under /Users/ilwonyoon/Documents/aido/aido are currently unreadable/unmodifiable from shell and apply_patch with Operation not permitted / com.apple.provenance, so index wiring, build, and deploy could not be completed in this pass."
+  }
+}

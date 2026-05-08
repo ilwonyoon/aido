@@ -25,6 +25,11 @@
     "website": "https://aegisai.com"
   },
   {
+    "id": "agave",
+    "name": "Agave",
+    "website": "https://www.useagave.com/"
+  },
+  {
     "id": "aerial",
     "name": "Aerial Technologies",
     "website": "https://aerial.ai"
@@ -125,6 +130,11 @@
     "website": "https://apothekary.co"
   },
   {
+    "id": "arnata",
+    "name": "arnata",
+    "website": "https://www.arnata.com/"
+  },
+  {
     "id": "applied-compute",
     "name": "Applied Compute",
     "website": "https://appliedcompute.com"
@@ -148,6 +158,11 @@
     "id": "arcade-dev",
     "name": "Arcade.dev",
     "website": "https://www.arcade.dev/"
+  },
+  {
+    "id": "arkham-technologies",
+    "name": "Arkham Technologies",
+    "website": "https://www.arkham.tech/"
   },
   {
     "id": "armada",
@@ -308,6 +323,11 @@
     "id": "bland",
     "name": "Bland AI",
     "website": "https://www.bland.ai"
+  },
+  {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "website": "https://blueberrysocial.com/"
   },
   {
     "id": "blaze-ai",
@@ -498,6 +518,11 @@
     "id": "clickhouse",
     "name": "ClickHouse",
     "website": "https://clickhouse.com/"
+  },
+  {
+    "id": "claren",
+    "name": "Claren",
+    "website": "https://www.claren.law/"
   },
   {
     "id": "cline",
@@ -865,6 +890,11 @@
     "website": "https://factory.ai"
   },
   {
+    "id": "fabrion",
+    "name": "Fabrion",
+    "website": "https://fabrion.ai/"
+  },
+  {
     "id": "fal",
     "name": "fal",
     "website": "https://fal.ai/"
@@ -983,6 +1013,11 @@
     "id": "generation-lab",
     "name": "Generation Lab",
     "website": "https://www.generationlab.com"
+  },
+  {
+    "id": "genmo",
+    "name": "Genmo",
+    "website": "https://www.genmo.ai/"
   },
   {
     "id": "genesis-ai",
@@ -1113,6 +1148,11 @@
     "id": "higgsfield",
     "name": "Higgsfield",
     "website": "https://higgsfield.ai"
+  },
+  {
+    "id": "hockeystack",
+    "name": "HockeyStack",
+    "website": "https://www.hockeystack.com/"
   },
   {
     "id": "highscore",
@@ -1320,6 +1360,11 @@
     "website": "https://www.juicebox.ai"
   },
   {
+    "id": "jinba",
+    "name": "Jinba.io",
+    "website": "https://jinba.io/"
+  },
+  {
     "id": "julius-ai",
     "name": "Julius AI",
     "website": "https://julius.ai"
@@ -1523,6 +1568,11 @@
     "id": "mage",
     "name": "Mage",
     "website": "https://www.mage.ai"
+  },
+  {
+    "id": "mage-legal",
+    "name": "Mage Legal",
+    "website": "https://www.magelegal.com/"
   },
   {
     "id": "magic-patterns",
@@ -1930,6 +1980,11 @@
     "website": "https://oxide.computer"
   },
   {
+    "id": "p-1-ai",
+    "name": "P-1 AI",
+    "website": "https://p-1.ai/"
+  },
+  {
     "id": "pacific-fusion",
     "name": "Pacific Fusion",
     "website": "https://pacificfusion.com/"
@@ -2285,6 +2340,11 @@
     "website": "https://www.scenario.com/"
   },
   {
+    "id": "scout",
+    "name": "Scout",
+    "website": "https://cpgscout.ai/"
+  },
+  {
     "id": "scribe",
     "name": "Scribe",
     "website": "https://scribehow.com"
@@ -2303,6 +2363,11 @@
     "id": "sentient-labs",
     "name": "Sentient Labs",
     "website": "https://sentient.foundation"
+  },
+  {
+    "id": "sentra",
+    "name": "Sentra",
+    "website": "https://www.sentra.app/"
   },
   {
     "id": "sentrial",
@@ -2363,6 +2428,11 @@
     "id": "sierra",
     "name": "Sierra",
     "website": "https://www.sierra.ai/"
+  },
+  {
+    "id": "simple-ai",
+    "name": "Simple AI",
+    "website": "https://usesimple.ai/"
   },
   {
     "id": "sightline-innovation",
@@ -2680,6 +2750,11 @@
     "website": "https://tome.app"
   },
   {
+    "id": "tomo-ai",
+    "name": "Tomo",
+    "website": "https://www.tomo.ai/"
+  },
+  {
     "id": "town",
     "name": "Town",
     "website": "https://town.com/"
@@ -2728,6 +2803,11 @@
     "id": "typeface",
     "name": "Typeface",
     "website": "https://typeface.ai"
+  },
+  {
+    "id": "typesafe-ai",
+    "name": "TypeSafe AI",
+    "website": "https://www.typesafe.ai/"
   },
   {
     "id": "unbounce",
@@ -2938,5 +3018,20 @@
     "id": "terminal-use",
     "name": "Terminal Use",
     "website": "https://www.terminaluse.com"
+  },
+  {
+    "id": "prezent",
+    "name": "Prezent",
+    "website": "https://www.prezent.ai"
+  },
+  {
+    "id": "converge-bio",
+    "name": "Converge Bio",
+    "website": "https://converge-bio.com"
+  },
+  {
+    "id": "ineffable-intelligence",
+    "name": "Ineffable Intelligence",
+    "website": "https://ineffable.ai"
   }
 ]

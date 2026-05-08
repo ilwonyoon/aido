@@ -4,6 +4,7 @@ import { useState, memo } from 'react';
 import Link from 'next/link';
 import {
   Company,
+  OpenRole,
   CATEGORY_LABELS,
   CATEGORY_SUBCATEGORY_LABELS,
   CATEGORY_TREE,
@@ -62,17 +63,19 @@ export const CompanyListRow = memo(function CompanyListRow({
   isHighlighted,
   pinnedLabel,
   dataTour,
+  rolesOverride,
 }: {
   company: Company;
   onCompanyClick?: (companyId: string) => void;
   isHighlighted?: boolean;
   pinnedLabel?: string;
   dataTour?: string;
+  rolesOverride?: OpenRole[];
 }) {
   const { user } = useAuth();
   const isTourActive = useIsTourActive();
   const config = getAiLevelConfig(company.aiNativeLevel);
-  const roles = company.openRoles;
+  const roles = rolesOverride ?? company.openRoles;
 
   const handleClick = (e: React.MouseEvent) => {
     if (onCompanyClick) {
@@ -207,19 +210,21 @@ export const CompanyCard = memo(function CompanyCard({
   isHighlighted,
   pinnedLabel,
   dataTour,
+  rolesOverride,
 }: {
   company: Company;
   onCompanyClick?: (companyId: string) => void;
   isHighlighted?: boolean;
   pinnedLabel?: string;
   dataTour?: string;
+  rolesOverride?: OpenRole[];
 }) {
   const { user } = useAuth();
   const isTourActive = useIsTourActive();
   const config = getAiLevelConfig(company.aiNativeLevel);
   const whyJoin = company.tracking.whyJoin.slice(0, 3);
   const topWhyNot = company.tracking.whyNot[0];
-  const roles = company.openRoles;
+  const roles = rolesOverride ?? company.openRoles;
 
   const handleClick = (e: React.MouseEvent) => {
     if (onCompanyClick) {

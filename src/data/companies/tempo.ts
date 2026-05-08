@@ -126,7 +126,22 @@ export const tempo: Company = {
   ],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Product Designer',
+      location: 'Toronto, Canada',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-05',
+      url: 'https://www.ycombinator.com/companies/tempo-2/jobs/Hia3MVk-founding-product-designer',
+      compensation: '$125K-$200K CAD + 0.25%-1.00%',
+      aboutRole: 'Design a visual editor for React powered by AI.',
+      whyInteresting: 'Founding product design role for an AI-native visual builder with design-engineering overlap.',
+    },
+  ],
 
   // Designer Links
   designerLinks: [],
@@ -162,6 +177,7 @@ export const tempo: Company = {
   lastUpdated: '2026-01-28T17:10:00',
   sources: [
     { title: 'Source', url: 'https://tempo.xyz/launch' },
-    { title: 'Source', url: 'https://startups.gallery/companies/tempo' }
+    { title: 'Source', url: 'https://startups.gallery/companies/tempo' },
+    { title: 'Founding Product Designer at Tempo', url: 'https://www.ycombinator.com/companies/tempo-2/jobs/Hia3MVk-founding-product-designer' }
   ],
 };

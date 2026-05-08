@@ -10,23 +10,25 @@
       "name": "Prezent",
       "source": "TechCrunch Funding",
       "priority": "P1",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Prezent raises $30 million to acquire AI services firms — starting with founder’s other company",
       "batch": "discovery-2026-05-04",
       "order": 1,
-      "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/"
+      "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/",
+      "resultCompanyId": "prezent"
     },
     {
       "name": "Converge Bio",
       "source": "TechCrunch Funding",
       "priority": "P1",
-      "status": "queued",
+      "status": "completed",
       "dedupeCheckedAgainstRepo": true,
       "notes": "Converge Bio raises $25M, backed by Bessemer and execs from Meta, OpenAI, Wiz",
       "batch": "discovery-2026-05-04",
       "order": 2,
-      "discoveryUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/"
+      "discoveryUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
+      "resultCompanyId": "converge-bio"
     },
     {
       "name": "Terminal Use",

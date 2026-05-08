@@ -128,7 +128,7 @@ export const anythingAi: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '11-50 employees (startups.gallery)',
+    teamSize: '11-50 employees; current UX/UI Designer role sits on the Founding Team',
   },
   designWorkType: {
     logicBehavior: {
@@ -177,7 +177,7 @@ export const anythingAi: Company = {
   openRoles: [
     {
       title: 'UX/UI Designer',
-      location: 'San Francisco',
+      location: 'San Francisco, CA',
       type: 'full-time',
       roleFamily: 'product-design',
       roleSignal: 'standard',
@@ -185,13 +185,23 @@ export const anythingAi: Company = {
       sourceType: 'ashby',
       lastVerifiedAt: '2026-05-06',
       url: 'https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c',
-      aboutRole: 'Design UX/UI for an AI app builder with early foundational product scope.',
-      whyInteresting: 'Not titled founding, but relevant adjacent AI-native product design opportunity.',
+      compensation: '$125K-$200K + 0.25%-0.75%',
+      aboutRole:
+        'Shape the product look and feel, UX, interaction patterns, design systems, and premium visual identity for an AI app builder.',
+      whyInteresting:
+        'Not titled founding, but the role is in the Founding Team department and describes foundational design ownership for an AI app builder.',
     },
   ],
 
   // Culture Insights
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'careers',
+      sentiment: 'neutral',
+      content: 'UX/UI Designer role is in the Founding Team department and emphasizes autonomy, design systems, research, and product craft.',
+      url: 'https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c',
+    },
+  ],
 
   // My Tracking
   tracking: {
@@ -200,21 +210,24 @@ export const anythingAi: Company = {
     whyJoin: [
       'AI-native product building workflows',
       'High leverage product design challenges',
+      'Current UX/UI Designer role has foundational design scope and meaningful equity',
     ],
     whyNot: [
       'Competition from established developer tools',
       'High bar for quality and delivery trust',
+      'Role is not titled Founding Designer or Founding Product Designer',
     ],
     nextActions: [
       'Track product launches and customer traction',
-      'Monitor hiring signals',
+      'Review current UX/UI Designer posting and decide whether to treat it as adjacent or strict',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-01-27T16:40:00',
+  lastUpdated: '2026-05-06',
   sources: [
     { title: 'Source', url: 'https://createanything.com/' },
+    { title: 'UX/UI Designer at Anything', url: 'https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c' },
     { title: 'Source', url: 'https://jobs.ashbyhq.com/anything' },
     { title: 'Source', url: 'https://startups.gallery/companies/anything-ai' }
   ],

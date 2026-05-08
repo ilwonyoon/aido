@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-05-05T00:00:00-07:00",
+  "scope": "Founding design opportunities at AI-native or AI-core startups",
+  "filters": {
+    "roleSignals": ["founding"],
+    "roleFamilies": ["product-design", "design-engineering"],
+    "preferredAiNativeLevels": ["A", "B"],
+    "sources": ["yc", "ashby"]
+  },
+  "sfBayAreaOnly": {
+    "lastVerifiedAt": "2026-05-05",
+    "scope": "SF Bay Area only; strict list prioritizes Founding Product Designer / Founding Designer openings at AI-native or AI-core startups.",
+    "inAidoStrictProductDesign": [
+      "FurtherAI",
+      "Automat",
+      "Delve",
+      "E2B",
+      "Layer Financial",
+      "Nowadays",
+      "Conductor",
+      "P-1 AI"
+    ],
+    "notYetInAidoStrictProductDesign": [
+      {
+        "companyName": "Peer AI",
+        "roleTitle": "Founding Product Designer",
+        "roleFamily": "product-design",
+        "location": "SF Bay Area (remote)",
+        "sourceType": "company",
+        "verificationStatus": "confirmed",
+        "url": "https://getpeer.ai/careers/founding-product-designer"
+      },
+      {
+        "companyName": "Mage Legal",
+        "roleTitle": "Founding Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/mage-legal/jobs/HQwuocB-founding-designer"
+      },
+      {
+        "companyName": "Parrot",
+        "roleTitle": "Founding Product Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/parrot/jobs/DCavRV9-founding-product-designer"
+      },
+      {
+        "companyName": "Moss",
+        "roleTitle": "Founding Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco, CA / Remote US; company location San Mateo, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/moss/jobs/Bwe6aHo-founding-designer"
+      },
+      {
+        "companyName": "Agave",
+        "roleTitle": "Founding Product Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/agave/jobs/Wr9IXT8-founding-product-designer"
+      },
+      {
+        "companyName": "Closure",
+        "roleTitle": "Founding Product Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco Bay Area secondary option",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/closure/jobs/z5WK1E2-founding-product-designer"
+      }
+    ],
+    "sfBayAreaDesignEngineeringAdjacent": [
+      {
+        "companyName": "Capy",
+        "roleTitle": "Founding Design Engineer",
+        "roleFamily": "design-engineering",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/capy/jobs/FBbRyVg-founding-design-engineer"
+      },
+      {
+        "companyName": "Ocular AI",
+        "roleTitle": "Member of Technical Staff, Founding Design Engineer",
+        "roleFamily": "design-engineering",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/ocular-ai/jobs/GWPuqvr-member-of-technical-staff-founding-design-engineer"
+      },
+      {
+        "companyName": "Weave",
+        "roleTitle": "Founding Design Engineer",
+        "roleFamily": "design-engineering",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "url": "https://www.ycombinator.com/companies/weave-3/jobs/bgZcAi9-founding-design-engineer"
+      }
+    ],
+    "sfBayAreaNonFoundingDesignTrackedInAido": [
+      {
+        "companyId": "juicebox",
+        "companyName": "Juicebox",
+        "roleTitle": "Product Designer",
+        "roleFamily": "product-design",
+        "location": "San Francisco, CA",
+        "sourceType": "yc",
+        "verificationStatus": "confirmed",
+        "note": "Not a founding design role; tracked because the current Product Designer opening has strong AI-native workflow ownership.",
+        "url": "https://www.ycombinator.com/companies/juicebox/jobs/4w5CBLL-product-designer"
+      }
+    ],
+    "sfBayAreaInterestingCompanyQueue": [
+      {
+        "companyName": "Wrangle",
+        "reason": "AI sourcing/outbound/CRM product looks relevant to Juicebox/Paraform recruiting-tool landscape, but the Founding Product Designer page returned 404 on 2026-05-05.",
+        "website": "https://wrangle.ai/",
+        "staleRoleUrl": "https://wrangle.ai/career/founding-product-designer"
+      }
+    ],
+    "sfBayAreaExcludedAfterLiveCheck": [
+      {
+        "companyName": "Infisical",
+        "roleTitle": "Founding Product Designer",
+        "reason": "YC role URL returned 404 on 2026-05-05.",
+        "url": "https://www.ycombinator.com/companies/infisical/jobs/zXqcmYx-founding-product-designer-san-francisco"
+      },
+      {
+        "companyName": "Bland AI",
+        "roleTitle": "Founding Product Designer",
+        "reason": "YC role URL returned 404 on 2026-05-05.",
+        "url": "https://www.ycombinator.com/companies/bland-ai/jobs/Do85ri6-founding-product-designer"
+      },
+      {
+        "companyName": "Juicebox",
+        "roleTitle": "Founding Product Designer",
+        "reason": "Founding Product Designer URL returned 404 on 2026-05-05; current non-founding Product Designer role is tracked separately.",
+        "url": "https://www.ycombinator.com/companies/juicebox/jobs/eLWJZLr-founding-product-designer"
+      },
+      {
+        "companyName": "HireGlide",
+        "roleTitle": "Founding Designer",
+        "reason": "YC role URL redirected to tryprism and returned 404 on 2026-05-05.",
+        "url": "https://www.ycombinator.com/companies/hireglide/jobs/6v68Xhj-founding-designer"
+      },
+      {
+        "companyName": "Circleback",
+        "roleTitle": "Founding Designer",
+        "reason": "YC role URL returned 404 on 2026-05-05.",
+        "url": "https://www.ycombinator.com/companies/circleback/jobs/Ocx8Os2-founding-designer"
+      },
+      {
+        "companyName": "Wrangle",
+        "roleTitle": "Founding Product Designer",
+        "reason": "Company role URL returned 404 on 2026-05-05.",
+        "url": "https://wrangle.ai/career/founding-product-designer"
+      },
+      {
+        "companyName": "Sentra",
+        "roleTitle": "Founding Product Designer",
+        "reason": "Ashby role returned closed/no longer available signal on 2026-05-05.",
+        "url": "https://jobs.ashbyhq.com/sentra/9717d4c7-7500-47af-a5f5-964ae51c1258"
+      }
+    ]
+  },
+  "inAido": [
+    {
+      "companyId": "further-ai",
+      "companyName": "FurtherAI",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/furtherai/jobs/rVO1Ds6-founding-product-designer"
+    },
+    {
+      "companyId": "automat",
+      "companyName": "Automat",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/automat/jobs/uu4bBiz-founding-designer"
+    },
+    {
+      "companyId": "delve",
+      "companyName": "Delve",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/delve/15637a6e-cef3-405f-a7f4-bf26c8350160"
+    },
+    {
+      "companyId": "e2b",
+      "companyName": "E2B",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/e2b/e5f9f727-b02c-40cc-95b5-d036b38e7088"
+    },
+    {
+      "companyId": "layer-financial",
+      "companyName": "Layer Financial",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "verificationStatus": "needs_review",
+      "url": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62"
+    },
+    {
+      "companyId": "tempo",
+      "companyName": "Tempo",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/tempo-2/jobs/Hia3MVk-founding-product-designer"
+    },
+    {
+      "companyId": "nowadays",
+      "companyName": "Nowadays",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/nowadays/jobs/hrkGPy8-founding-product-designer"
+    },
+    {
+      "companyId": "conductor",
+      "companyName": "Conductor",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/conductor/jobs/gBFwivG-product-designer"
+    },
+    {
+      "companyId": "p-1-ai",
+      "companyName": "P-1 AI",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/P-1%20AI/cfbb66d3-0088-4f31-a63f-d5bed860ce10"
+    }
+  ],
+  "inAidoButNotStrictFounding": [
+    {
+      "companyId": "conductor",
+      "companyName": "Conductor",
+      "roleTitle": "Founding Design Engineer",
+      "roleFamily": "design-engineering",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "note": "Included only when the Jobs page design-engineering toggle is enabled.",
+      "url": "https://www.ycombinator.com/companies/conductor/jobs/cMJKjGy-design-engineer"
+    }
+  ],
+  "closedOrExcluded": [
+    {
+      "companyId": "juicebox",
+      "companyName": "Juicebox",
+      "roleTitle": "Founding Product Designer",
+      "verificationStatus": "closed",
+      "note": "Founding Product Designer URL returned 404 on 2026-05-05; current non-founding Product Designer role is tracked in the Juicebox company profile.",
+      "url": "https://www.ycombinator.com/companies/juicebox/jobs/eLWJZLr-founding-product-designer"
+    },
+    {
+      "companyId": "bland",
+      "companyName": "Bland AI",
+      "roleTitle": "Founding Product Designer",
+      "verificationStatus": "closed",
+      "note": "YC role URL returned 404 on 2026-05-05.",
+      "url": "https://www.ycombinator.com/companies/bland-ai/jobs/Do85ri6-founding-product-designer"
+    }
+  ],
+  "notYetInAido": [
+    {
+      "companyName": "Peer AI",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "company",
+      "url": "https://getpeer.ai/careers/founding-product-designer"
+    },
+    {
+      "companyName": "Mage Legal",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/mage-legal/jobs/HQwuocB-founding-designer"
+    },
+    {
+      "companyName": "Moss",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/moss/jobs/Bwe6aHo-founding-designer"
+    },
+    {
+      "companyName": "Simple AI",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "url": "https://jobs.ashbyhq.com/simple-ai/bf145877-af7d-4d16-8feb-5f3b62b3abc7"
+    },
+    {
+      "companyName": "TypeSafe AI",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/5b6c4a51-c4c7-4598-9e74-8cb45b17044e"
+    },
+    {
+      "companyName": "Mercura",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "url": "https://jobs.ashbyhq.com/mercura/fa365110-8aaf-4ce8-b2dd-501ed4554245"
+    },
+    {
+      "companyName": "HockeyStack",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "ashby",
+      "url": "https://jobs.ashbyhq.com/hockeystack/ece59ab1-bf38-480f-80f6-96db5def25b6/"
+    },
+    {
+      "companyName": "Closure",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/closure/jobs/z5WK1E2-founding-product-designer"
+    },
+    {
+      "companyName": "Deep24",
+      "roleTitle": "Founding Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/deep24/jobs/C5hvWWw-founding-designer"
+    },
+    {
+      "companyName": "Agave",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/agave/jobs/Wr9IXT8-founding-product-designer"
+    },
+    {
+      "companyName": "arnata",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/arnata/jobs/WHv3neF-founding-product-designer"
+    },
+    {
+      "companyName": "Archer",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/archer/jobs/Lsre6O7-founding-product-designer"
+    },
+    {
+      "companyName": "Parrot",
+      "roleTitle": "Founding Product Designer",
+      "roleFamily": "product-design",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/parrot/jobs/DCavRV9-founding-product-designer"
+    },
+    {
+      "companyName": "Ocular AI",
+      "roleTitle": "Founding Design Engineer",
+      "roleFamily": "design-engineering",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/ocular-ai/jobs/GWPuqvr-member-of-technical-staff-founding-design-engineer"
+    },
+    {
+      "companyName": "Capy",
+      "roleTitle": "Founding Design Engineer",
+      "roleFamily": "design-engineering",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/capy/jobs/FBbRyVg-founding-design-engineer"
+    },
+    {
+      "companyName": "Weave",
+      "roleTitle": "Founding Design Engineer",
+      "roleFamily": "design-engineering",
+      "sourceType": "yc",
+      "url": "https://www.ycombinator.com/companies/weave-3/jobs/bgZcAi9-founding-design-engineer"
+    },
+    {
+      "companyName": "Solve Intelligence",
+      "roleTitle": "Founding Designer / Design Engineer",
+      "roleFamily": "design-engineering",
+      "sourceType": "ashby",
+      "url": "https://jobs.ashbyhq.com/solve-intelligence/iqdSLOh-founding-designer-design-engineer"
+    }
+  ]
+}

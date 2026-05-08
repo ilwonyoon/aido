@@ -172,18 +172,32 @@ export const conductor: Company = {
   // Open Roles
   openRoles: [
     {
-      title: 'Product Designer',
+      title: 'Founding Product Designer',
       location: 'San Francisco, CA',
       type: 'full-time',
       roleFamily: 'product-design',
       roleSignal: 'founding',
       verificationStatus: 'confirmed',
       sourceType: 'yc',
-      lastVerifiedAt: '2026-05-06',
+      lastVerifiedAt: '2026-05-05',
       url: 'https://www.ycombinator.com/companies/conductor/jobs/gBFwivG-product-designer',
       compensation: '$175K-$300K',
-      aboutRole: 'Founding product designer for an AI coding-agent orchestrator and next-generation IDE interface.',
-      whyInteresting: 'Title is Product Designer, but YC listing explicitly says founding product designer.',
+      aboutRole: 'Design product experiences for running coding agents on Mac.',
+      whyInteresting: 'YC’s job detail describes this as a founding product designer role shaping the next generation of IDEs and Conductor’s brand.',
+    },
+    {
+      title: 'Founding Design Engineer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'design-engineering',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-05',
+      url: 'https://www.ycombinator.com/companies/conductor/jobs/cMJKjGy-design-engineer',
+      compensation: '$175K-$300K',
+      aboutRole: 'Bridge product design and implementation for Conductor’s AI coding-agent interface.',
+      whyInteresting: 'Founding design-engineering path for a tiny AI-native developer tools team; hidden by default unless design engineering is included.',
     },
   ],
 
@@ -212,6 +226,8 @@ export const conductor: Company = {
   lastUpdated: '2026-01-27T20:05:00',
   sources: [
     { title: 'Source', url: 'https://www.conductor.build/' },
-    { title: 'Source', url: 'https://startups.gallery/companies/conductor' }
+    { title: 'Source', url: 'https://startups.gallery/companies/conductor' },
+    { title: 'Founding Product Designer at Conductor', url: 'https://www.ycombinator.com/companies/conductor/jobs/gBFwivG-product-designer' },
+    { title: 'Founding Design Engineer at Conductor', url: 'https://www.ycombinator.com/companies/conductor/jobs/cMJKjGy-design-engineer' }
   ],
 };

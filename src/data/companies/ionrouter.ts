@@ -20,11 +20,11 @@ export const ionrouter: Company = {
     industries: ['infrastructure'],
 
     // Business
-    stage: 'Pre-Seed',
+    stage: 'Pre-seed',
     valuation: 'Unknown',
     totalFunding: 'YC W26 ($500K standard)',
     fundingHistory: [
-      { stage: 'Pre-Seed', amount: '~$500K', date: '2026-01', leadInvestors: ['Y Combinator'] },
+      { stage: 'Pre-seed', amount: '~$500K', date: '2026-01', leadInvestors: ['Y Combinator'] },
     ],
     revenue: 'Unknown (early revenue, launched early 2026)',
     growth: 'Newly launched; YC W26 batch',

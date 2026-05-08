@@ -8,7 +8,7 @@ export const comulate: Company = {
     screenshot: '/screenshots/comulate-screenshot.png',
     ogImage: '/screenshots/comulate-screenshot.png',
   headquarters: 'San Francisco, CA',
-  remote: 'Yes',
+  remote: 'No',
 
 
   // Multi-dimensional Tags
@@ -21,7 +21,7 @@ export const comulate: Company = {
   // Business
   stage: 'Series B',
   valuation: 'Unknown',
-  totalFunding: '$20M',
+  totalFunding: '$20M+',
   fundingHistory: [
     {
       stage: 'Series B',
@@ -30,8 +30,8 @@ export const comulate: Company = {
       leadInvestors: ['Felicis'],
     },
   ],
-  revenue: 'Unknown',
-  growth: 'Unknown',
+  revenue: '8-figure ARR cited in current Product Designer role',
+  growth: 'Record growth from zero to 8-figure ARR within three years of founding cited in current role listing.',
   runway: 'Unknown',
   customers: 'Insurers and brokers (per company positioning)',
 
@@ -92,6 +92,8 @@ export const comulate: Company = {
   greenFlags: [
     'Series B funding announced with Felicis participation',
     'Clear focus on insurance ops efficiency',
+    'Current Product Designer role describes founding Product Designer scope',
+    '8-figure ARR and strong customer love cited in role listing',
   ],
   redFlags: [
     'Long enterprise sales cycles',
@@ -100,7 +102,7 @@ export const comulate: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '11-50 employees (startups.gallery)',
+    teamSize: 'Lean design function; current Product Designer role has founding Product Designer scope',
   },
   designWorkType: {
     logicBehavior: {
@@ -133,7 +135,7 @@ export const comulate: Company = {
   openRoles: [
     {
       title: 'Product Designer',
-      location: 'San Francisco',
+      location: 'San Francisco, CA',
       type: 'full-time',
       roleFamily: 'product-design',
       roleSignal: 'founding',
@@ -142,8 +144,10 @@ export const comulate: Company = {
       lastVerifiedAt: '2026-05-06',
       url: 'https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17',
       compensation: '$160K-$210K + equity',
-      aboutRole: 'Own product design for AI insurance back-office workflows.',
-      whyInteresting: 'Listing title is Product Designer, but role body indicates founding Product Designer scope.',
+      aboutRole:
+        'Founding Product Designer scope reimagining insurance back-office workflows, design language, visual systems, interaction patterns, and user research.',
+      whyInteresting:
+        'The listing title is Product Designer, but the role body explicitly calls it a founding Product Designer role for a high-growth AI insurance operations platform.',
     },
   ],
 
@@ -151,23 +155,42 @@ export const comulate: Company = {
   designerLinks: [],
 
   // Culture Insights
-  cultureInsights: [],
+  cultureInsights: [
+    {
+      source: 'careers',
+      sentiment: 'positive',
+      content: 'Role listing says Comulate is hiring predominantly in San Francisco and emphasizes in-person collaboration for velocity and culture.',
+      url: 'https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17',
+    },
+  ],
 
   // My Tracking
   tracking: {
     status: 'researching',
-    fitScore: 5,
-    whyJoin: ['AI automation in insurance', 'Enterprise workflow design'],
-    whyNot: ['Regulated domain complexity', 'Long implementation cycles'],
-    nextActions: ['Monitor for product design openings'],
+    fitScore: 8,
+    whyJoin: [
+      'Founding Product Designer scope in a high-growth vertical AI company',
+      'Complex insurance operations workflows with strong product design surface',
+      '8-figure ARR and Series B backing cited in public sources/listing',
+    ],
+    whyNot: ['Regulated domain complexity', 'Long implementation cycles', 'On-site San Francisco expectation'],
+    nextActions: [
+      'Review Comulate insurance accounting workflow examples',
+      'Clarify design team size and whether this is truly first/sole product designer',
+      'Compare role scope against Agave and FurtherAI vertical workflow opportunities',
+    ],
   },
 
   // Growth Metrics
   growthMetrics: {
     stage: 'early-growth',
-    revenueGrowth: 'Unknown',
+    revenueGrowth: '8-figure ARR within three years of founding cited in current role listing',
     userGrowth: 'Unknown',
-    signals: ['Series B funding announced'],
+    signals: [
+      'Series B funding announced',
+      'Live Product Designer role with founding Product Designer scope',
+      'Record growth and 8-figure ARR cited in role listing',
+    ],
     tam: 'Unknown',
     marketShare: 'Unknown',
     ceiling: 'Insurance operations automation remains early-stage.',
@@ -178,9 +201,10 @@ export const comulate: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-01-28T17:10:00',
+  lastUpdated: '2026-05-06',
   sources: [
     { title: 'Source', url: 'https://comulate.com' },
+    { title: 'Product Designer at Comulate', url: 'https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17' },
     { title: 'Source', url: 'https://www.prnewswire.com/news-releases/comulate-raises-20m-series-b-to-transform-insurance-operations-302457978.html' },
     { title: 'Source', url: 'https://startups.gallery/companies/comulate' }
   ],

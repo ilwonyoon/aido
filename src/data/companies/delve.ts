@@ -166,7 +166,7 @@ export const delve: Company = {
 
   // Design Opportunity
   designTeam: {
-    teamSize: '33 total employees. No dedicated design team yet - hiring Founding Product Designer to own design. Senior Product Designer role also listed (7+ years, IA-focused).',
+    teamSize: '33 total employees. Prior Founding Product Designer listing was marked stale on 2026-05-06 after Ashby returned posting:null.',
   },
   designWorkType: {
     logicBehavior: {
@@ -218,14 +218,7 @@ export const delve: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-              title: 'Senior Product Designer',
-              location: 'San Francisco, CA (on-site)',
-              type: 'full-time',
-              url: 'https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer',
-            }
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [
@@ -264,7 +257,7 @@ export const delve: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-04-14',
+  lastUpdated: '2026-05-06',
   sources: [
     { title: 'Delve website', url: 'https://delve.co/' },
     { title: 'TechCrunch: 21-year-old MIT dropouts raise $32M', url: 'https://techcrunch.com/2025/07/22/21-year-old-mit-dropouts-raise-32m-at-300m-valuation-led-by-insight/' },

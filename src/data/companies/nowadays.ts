@@ -68,7 +68,22 @@ export const nowadays: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Product Designer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-06',
+      url: 'https://www.ycombinator.com/companies/nowadays/jobs/hrkGPy8-founding-product-designer',
+      compensation: '$100K-$150K + 0.25%-1.25%',
+      aboutRole: 'Shape product design for an AI co-pilot for corporate retreats and event planning.',
+      whyInteresting: 'Founding design role with high ownership across agentic planning workflows and operational interfaces.',
+    },
+  ],
 
   cultureInsights: [],
 
@@ -97,9 +112,10 @@ export const nowadays: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-01T14:20:00',
+  lastUpdated: '2026-05-06',
   sources: [
     { title: 'Source', url: 'https://www.nowadays.ai' },
-    { title: 'Source', url: 'https://startups.gallery/companies/nowadays' }
+    { title: 'Source', url: 'https://startups.gallery/companies/nowadays' },
+    { title: 'Founding Product Designer at Nowadays', url: 'https://www.ycombinator.com/companies/nowadays/jobs/hrkGPy8-founding-product-designer' }
   ],
 };

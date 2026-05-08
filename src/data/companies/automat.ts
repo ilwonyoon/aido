@@ -158,7 +158,22 @@ export const automat: Company = {
       description: 'Feature on how Ochoa and Bose applied CMU design training to build Automat — credits collaborative studio culture as foundation for their AI product vision.',
     },
   ],
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Designer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-05',
+      url: 'https://www.ycombinator.com/companies/automat/jobs/uu4bBiz-founding-designer',
+      compensation: '$140K-$225K + 0.05%-0.20%',
+      aboutRole: 'Own early product and visual design for AI-enabled RPA workflows.',
+      whyInteresting: 'First design hire at a founder-led AI automation company with unusually strong craft signals and direct founder access.',
+    },
+  ],
 
   cultureInsights: [
     {

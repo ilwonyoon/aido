@@ -178,7 +178,7 @@ export const furtherAi: Company = {
         'Experience working directly with founders',
         'Portfolio showing systems thinking and consumer-grade visual craft',
       ],
-      whyInteresting: 'Founding designer role at a post-PMF insurance AI startup with a16z backing, $225K-$325K comp signal, and hard AI trust/auditability design problems. Requires 5 days/week onsite in San Francisco.',
+      whyInteresting: 'Founding designer role at a post-PMF insurance AI startup with a16z backing and hard AI trust/auditability design problems. Requires onsite work in San Francisco.',
     },
   ],
 
@@ -241,13 +241,14 @@ export const furtherAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-04-27',
+  lastUpdated: '2026-05-06',
   sources: [
     { title: 'FurtherAI company website', url: 'https://www.furtherai.com' },
     { title: 'FurtherAI Series A announcement', url: 'https://www.furtherai.com/blog/%20furtherai-announces-25m-series-a-from-andreessen-horowitz-to-transform-insurance-workflows-with-ai-automating-busywork' },
     { title: 'FurtherAI founder letter', url: 'https://www.furtherai.com/blog/built-on-a-box-of-donuts-a-letter-from-our-founders' },
     { title: 'FurtherAI YC profile', url: 'https://www.ycombinator.com/companies/furtherai' },
     { title: 'Founding Product Designer at FurtherAI', url: 'https://www.ycombinator.com/companies/furtherai/jobs/rVO1Ds6-founding-product-designer' },
+    { title: 'Founding Product Designer at FurtherAI — Ashby', url: 'https://jobs.ashbyhq.com/furtherai/21b369d5-801a-4f2e-8ad8-9b20d494648c' },
     { title: 'Founding Product Designer at FurtherAI — Paraform referral page', url: 'https://www.paraform.com/share/furtherai/cmmjot633001g0cjotd1elvq1' },
     { title: 'FurtherAI South Park Commons profile', url: 'https://www.southparkcommons.com/companies/further-ai/' },
   ],
