@@ -50,7 +50,11 @@ function compactCompany(company) {
 
 const files = fs
   .readdirSync(companiesDir)
-  .filter((f) => f.endsWith('.ts') && f !== 'index.ts')
+  .filter((f) => {
+    if (!f.endsWith('.ts') || f === 'index.ts') return false;
+    const source = fs.readFileSync(path.join(companiesDir, f), 'utf-8');
+    return /export\s+const\s+\w+\s*:\s*Company\s*=/.test(source);
+  })
   .sort();
 
 const index = {};

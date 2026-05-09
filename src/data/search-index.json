@@ -30,7 +30,11 @@
     "stage": "series-d-plus",
     "region": "other-us",
     "remote": "Unknown",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Senior Product Designer",
+      "Staff Product Designer"
+    ]
   },
   "ada": {
     "id": "ada",
@@ -87,6 +91,18 @@
     "remote": "Yes",
     "roles": 0
   },
+  "agave": {
+    "id": "agave",
+    "name": "Agave",
+    "desc": "AI financial operations platform for construction companies,",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
   "agora": {
     "id": "agora",
     "name": "Agora",
@@ -129,6 +145,15 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "akur8": {
+    "id": "akur8",
+    "name": "Akur8",
+    "desc": "Transparent AI platform for insurance pricing, reserving, an",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
     "roles": 0
   },
   "alex-ai": {
@@ -195,10 +220,7 @@
     "stage": "series-c",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 1,
-    "titles": [
-      "Staff Product Designer"
-    ]
+    "roles": 0
   },
   "anara": {
     "id": "anara",
@@ -256,7 +278,11 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Product Designer, Claude Code",
+      "Design Engineer, AI Capability Deve"
+    ]
   },
   "anything-ai": {
     "id": "anything-ai",
@@ -267,7 +293,10 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "UX/UI Designer"
+    ]
   },
   "apothekary": {
     "id": "apothekary",
@@ -315,10 +344,10 @@
   },
   "arcade-ai": {
     "id": "arcade-ai",
-    "name": "Arcade AI",
-    "desc": "AI product creation platform.",
-    "level": "D",
-    "cat": "enterprise-ops",
+    "name": "Arcade",
+    "desc": "AI product creation platform enabling anyone to design, purc",
+    "level": "B",
+    "cat": "creative-media",
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
@@ -335,6 +364,18 @@
     "remote": "No",
     "roles": 0
   },
+  "arkham-technologies": {
+    "id": "arkham-technologies",
+    "name": "Arkham Technologies",
+    "desc": "Data and AI platform helping large enterprises unify fragmen",
+    "level": "A",
+    "cat": "enterprise-ops",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
   "armada": {
     "id": "armada",
     "name": "Armada",
@@ -347,6 +388,18 @@
     "roles": 1,
     "titles": [
       "Senior UI/UX Designer"
+    ]
+  },
+  "arnata": {
+    "id": "arnata",
+    "name": "arnata",
+    "desc": "AI workers for logistics operations, automating repetitive s",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
     ]
   },
   "artie": {
@@ -366,13 +419,11 @@
     "desc": "All-in-one recruiting platform combining ATS, CRM, schedulin",
     "level": "B",
     "cat": "enterprise-ops",
-    "stage": "series-d-plus",
-    "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 2,
+    "roles": 6,
     "titles": [
-      "Senior Product Designer",
-      "Staff Product Designer"
+      "Design Engineer, Americas",
+      "Design Engineer, Canada"
     ]
   },
   "assembled": {
@@ -419,6 +470,15 @@
     "remote": "Yes",
     "roles": 0
   },
+  "ataraxis": {
+    "id": "ataraxis",
+    "name": "Ataraxis AI",
+    "desc": "AI-powered cancer diagnostics company developing personalize",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "atob": {
     "id": "atob",
     "name": "AtoB",
@@ -442,6 +502,15 @@
     "stage": "series-c",
     "region": "other-intl",
     "remote": "Hybrid",
+    "roles": 0
+  },
+  "auctor": {
+    "id": "auctor",
+    "name": "Auctor",
+    "desc": "AI system of action for enterprise software implementations ",
+    "level": "A",
+    "cat": "enterprise-ops",
+    "remote": "Unknown",
     "roles": 0
   },
   "augment": {
@@ -472,8 +541,6 @@
     "desc": "AI-powered enterprise automation platform that replaces lega",
     "level": "B",
     "cat": "enterprise-ops",
-    "stage": "series-a",
-    "region": "sf-bay-area",
     "remote": "No",
     "roles": 1,
     "titles": [
@@ -489,6 +556,15 @@
     "stage": "series-c",
     "region": "other-intl",
     "remote": "No",
+    "roles": 0
+  },
+  "avoca": {
+    "id": "avoca",
+    "name": "Avoca",
+    "desc": "AI voice agent and coaching platform exclusively for home se",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
     "roles": 0
   },
   "axiom-math": {
@@ -626,6 +702,15 @@
     "remote": "No",
     "roles": 0
   },
+  "black-forest-labs": {
+    "id": "black-forest-labs",
+    "name": "Black Forest Labs",
+    "desc": "Frontier visual intelligence lab behind the FLUX image model",
+    "level": "A",
+    "cat": "ai-models",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "blackbird-labs": {
     "id": "blackbird-labs",
     "name": "Blackbird",
@@ -691,6 +776,18 @@
     "region": "nyc",
     "remote": "No",
     "roles": 0
+  },
+  "blueberry": {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "desc": "AI marketing platform for consumer brands that turns social ",
+    "level": "A",
+    "cat": "sales-marketing",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
   },
   "bluedot": {
     "id": "bluedot",
@@ -802,6 +899,15 @@
     "remote": "Yes",
     "roles": 0
   },
+  "canary": {
+    "id": "canary",
+    "name": "Canary",
+    "desc": "AI QA engineer that understands your codebase — reads PR dif",
+    "level": "B",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "canva": {
     "id": "canva",
     "name": "Canva",
@@ -811,10 +917,7 @@
     "stage": "growth",
     "region": "other-intl",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "canvass-ai": {
     "id": "canvass-ai",
@@ -825,6 +928,24 @@
     "stage": "series-a",
     "region": "toronto",
     "remote": "Yes",
+    "roles": 0
+  },
+  "captain": {
+    "id": "captain",
+    "name": "Captain",
+    "desc": "API-first unified data layer for enterprise RAG pipelines — ",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "cardboard": {
+    "id": "cardboard",
+    "name": "Cardboard",
+    "desc": "Agentic video editor that lives in your browser. Upload raw ",
+    "level": "A",
+    "cat": "creative-media",
+    "remote": "Unknown",
     "roles": 0
   },
   "cardless": {
@@ -858,7 +979,10 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Design Engineer"
+    ]
   },
   "casca": {
     "id": "casca",
@@ -951,6 +1075,15 @@
       "Product Designer"
     ]
   },
+  "chamber": {
+    "id": "chamber",
+    "name": "Chamber",
+    "desc": "AIOps agent for GPU infrastructure: autonomously monitors, r",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "character-ai": {
     "id": "character-ai",
     "name": "Character.AI",
@@ -997,6 +1130,18 @@
     "region": "sf-bay-area",
     "remote": "Yes",
     "roles": 0
+  },
+  "claren": {
+    "id": "claren",
+    "name": "Claren",
+    "desc": "AI contract assistant for legal teams, formerly WilsonAI, he",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
   },
   "claritycare": {
     "id": "claritycare",
@@ -1067,6 +1212,18 @@
     "remote": "No",
     "roles": 0
   },
+  "closure": {
+    "id": "closure",
+    "name": "Closure",
+    "desc": "AI-powered evidence search and investigation platform helpin",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
   "cocoon": {
     "id": "cocoon",
     "name": "Cocoon",
@@ -1087,10 +1244,7 @@
     "stage": "series-c",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "coderabbit": {
     "id": "coderabbit",
@@ -1156,10 +1310,7 @@
     "stage": "series-d-plus",
     "region": "toronto",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Senior Product Designer"
-    ]
+    "roles": 0
   },
   "collate": {
     "id": "collate",
@@ -1197,13 +1348,15 @@
   "comfy-ui": {
     "id": "comfy-ui",
     "name": "Comfy",
-    "desc": "Building ComfyUI.",
-    "level": "D",
-    "cat": "enterprise-ops",
-    "stage": "series-a",
-    "region": "sf-bay-area",
+    "desc": "Open-source, node-based \"Operating System for Generative AI\"",
+    "level": "A",
+    "cat": "creative-media",
     "remote": "No",
-    "roles": 0
+    "roles": 3,
+    "titles": [
+      "Senior Product Designer",
+      "Senior Product Designer - Craft"
+    ]
   },
   "common-knowledge": {
     "id": "common-knowledge",
@@ -1244,10 +1397,11 @@
     "desc": "AI-powered platform for insurance operations and servicing w",
     "level": "B",
     "cat": "vertical-saas",
-    "stage": "series-b",
-    "region": "sf-bay-area",
-    "remote": "Yes",
-    "roles": 0
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "conductor": {
     "id": "conductor",
@@ -1258,7 +1412,11 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Founding Product Designer",
+      "Founding Design Engineer"
+    ]
   },
   "consio-ai": {
     "id": "consio-ai",
@@ -1282,6 +1440,15 @@
     "remote": "No",
     "roles": 0
   },
+  "constellation-space": {
+    "id": "constellation-space",
+    "name": "Constellation Space",
+    "desc": "AI operating system for mega-scale satellite networks. Const",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "contra": {
     "id": "contra",
     "name": "Contra",
@@ -1293,16 +1460,28 @@
     "remote": "No",
     "roles": 0
   },
+  "converge-bio": {
+    "id": "converge-bio",
+    "name": "Converge Bio",
+    "desc": "Generative AI lab for life sciences — building AI systems fo",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "conversion": {
     "id": "conversion",
     "name": "Conversion",
-    "desc": "AI-native marketing automation.",
-    "level": "D",
+    "desc": "AI-native marketing automation platform helping modern softw",
+    "level": "B",
     "cat": "enterprise-ops",
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "convoke-bio": {
     "id": "convoke-bio",
@@ -1331,10 +1510,19 @@
     "name": "Corgi",
     "desc": "AI-native full-stack insurance carrier focused on startups a",
     "level": "B",
-    "cat": "creative-media",
+    "cat": "vertical-saas",
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "counterforce-health": {
+    "id": "counterforce-health",
+    "name": "Counterforce Health",
+    "desc": "AI patient advocacy platform that helps patients and clinici",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
     "roles": 0
   },
   "crowdriff": {
@@ -1390,6 +1578,15 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "cytora": {
+    "id": "cytora",
+    "name": "Cytora",
+    "desc": "Risk digitization and automation platform for commercial ins",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
     "roles": 0
   },
   "dagster": {
@@ -1478,7 +1675,10 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "decart": {
     "id": "decart",
@@ -1533,7 +1733,11 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Design Engineer",
+      "Product Designer"
+    ]
   },
   "delve": {
     "id": "delve",
@@ -1544,11 +1748,7 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 2,
-    "titles": [
-      "Founding Product Designer",
-      "Senior Product Designer"
-    ]
+    "roles": 0
   },
   "density": {
     "id": "density",
@@ -1572,7 +1772,7 @@
     "remote": "Hybrid",
     "roles": 1,
     "titles": [
-      "Product Designer"
+      "Product Designer, Growth & Monetiza"
     ]
   },
   "dev-agents": {
@@ -1584,6 +1784,15 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "didit": {
+    "id": "didit",
+    "name": "Didit",
+    "desc": "All-in-one identity verification platform — ID check, biomet",
+    "level": "B",
+    "cat": "productivity",
+    "remote": "Unknown",
     "roles": 0
   },
   "dimension-labs": {
@@ -1683,7 +1892,10 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
   },
   "ecobee": {
     "id": "ecobee",
@@ -1738,7 +1950,10 @@
     "stage": "series-d-plus",
     "region": "nyc",
     "remote": "Yes",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "endeavor": {
     "id": "endeavor",
@@ -1773,6 +1988,15 @@
     "remote": "No",
     "roles": 0
   },
+  "evolutioniq": {
+    "id": "evolutioniq",
+    "name": "EvolutionIQ",
+    "desc": "AI claims guidance platform for disability, injury, workers ",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "exa": {
     "id": "exa",
     "name": "Exa",
@@ -1784,7 +2008,7 @@
     "remote": "No",
     "roles": 1,
     "titles": [
-      "Designer"
+      "Design Engineer"
     ]
   },
   "extropic": {
@@ -1798,6 +2022,18 @@
     "remote": "No",
     "roles": 0
   },
+  "fabrion": {
+    "id": "fabrion",
+    "name": "Fabrion",
+    "desc": "AI operating system for industrial enterprises, helping manu",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
+  },
   "factory": {
     "id": "factory",
     "name": "Factory",
@@ -1807,7 +2043,10 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "fal": {
     "id": "fal",
@@ -1818,7 +2057,10 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Senior Product Designer"
+    ]
   },
   "farel": {
     "id": "farel",
@@ -1840,6 +2082,25 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "Yes",
+    "roles": 0
+  },
+  "fauna-robotics": {
+    "id": "fauna-robotics",
+    "name": "Fauna Robotics",
+    "desc": "Robotics company building Sprout, a safe and lightweight hum",
+    "level": "B",
+    "cat": "developer-tools",
+    "region": "nyc",
+    "remote": "No",
+    "roles": 0
+  },
+  "federato": {
+    "id": "federato",
+    "name": "Federato",
+    "desc": "AI-native RiskOps platform for insurance carriers, combining",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
     "roles": 0
   },
   "fermat": {
@@ -2025,12 +2286,11 @@
   "further-ai": {
     "id": "further-ai",
     "name": "FurtherAI",
-    "desc": "AI agents that automate insurance operations across intake, ",
+    "desc": "Insurance-native AI workspace that automates submissions int",
     "level": "B",
     "cat": "vertical-saas",
-    "stage": "series-a",
     "region": "sf-bay-area",
-    "remote": "Hybrid",
+    "remote": "No",
     "roles": 1,
     "titles": [
       "Founding Product Designer"
@@ -2079,6 +2339,18 @@
     "region": "sf-bay-area",
     "remote": "Hybrid",
     "roles": 0
+  },
+  "genmo": {
+    "id": "genmo",
+    "name": "Genmo",
+    "desc": "AI video generation research lab building open video generat",
+    "level": "A",
+    "cat": "creative-media",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "genspark": {
     "id": "genspark",
@@ -2157,6 +2429,15 @@
     "remote": "No",
     "roles": 0
   },
+  "gradient-ai": {
+    "id": "gradient-ai",
+    "name": "Gradient AI",
+    "desc": "AI platform for insurance underwriting, risk selection, clai",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "grammarly": {
     "id": "grammarly",
     "name": "Grammarly",
@@ -2166,10 +2447,7 @@
     "stage": "growth",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "granify": {
     "id": "granify",
@@ -2191,7 +2469,10 @@
     "stage": "series-b",
     "region": "london",
     "remote": "Hybrid",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Design Engineer"
+    ]
   },
   "greenlite": {
     "id": "greenlite",
@@ -2268,10 +2549,10 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 2,
+    "roles": 6,
     "titles": [
-      "Director, Product Design",
-      "Head of UX Research"
+      "Director, Product Design, Core Prod",
+      "Director, Product Design, Core Prod"
     ]
   },
   "hebbia": {
@@ -2341,10 +2622,7 @@
     "stage": "series-a",
     "region": "la",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "higgsfield": {
     "id": "higgsfield",
@@ -2378,6 +2656,18 @@
     "region": "sf-bay-area",
     "remote": "Yes",
     "roles": 0
+  },
+  "hockeystack": {
+    "id": "hockeystack",
+    "name": "HockeyStack",
+    "desc": "Enterprise Revenue Agent platform that learns go-to-market p",
+    "level": "A",
+    "cat": "sales-marketing",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "holomd": {
     "id": "holomd",
@@ -2531,6 +2821,24 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "indico-data": {
+    "id": "indico-data",
+    "name": "Indico Data",
+    "desc": "Agentic intake and orchestration platform that automates und",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "ineffable-intelligence": {
+    "id": "ineffable-intelligence",
+    "name": "Ineffable Intelligence",
+    "desc": "AI research lab building a \"superlearner\" — an AI system tha",
+    "level": "A",
+    "cat": "ai-models",
+    "remote": "Hybrid",
     "roles": 0
   },
   "inferact": {
@@ -2687,6 +2995,24 @@
     "remote": "Unknown",
     "roles": 0
   },
+  "invoke-ai": {
+    "id": "invoke-ai",
+    "name": "Invoke",
+    "desc": "AI image generation platform for controlled creative product",
+    "level": "A",
+    "cat": "creative-media",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "ionrouter": {
+    "id": "ionrouter",
+    "name": "IonRouter",
+    "desc": "High-throughput, low-cost AI inference API built on a custom",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "item-app": {
     "id": "item-app",
     "name": "Item App",
@@ -2757,19 +3083,42 @@
     "remote": "Yes",
     "roles": 1,
     "titles": [
-      "Principal Product Designer"
+      "Staff Product Designer"
     ]
+  },
+  "jinba": {
+    "id": "jinba",
+    "name": "Jinba.io",
+    "desc": "Enterprise AI workflow builder that turns natural-language i",
+    "level": "A",
+    "cat": "enterprise-ops",
+    "remote": "Hybrid",
+    "roles": 2,
+    "titles": [
+      "Product Designer",
+      "Founding Design Engineer"
+    ]
+  },
+  "joyful-health": {
+    "id": "joyful-health",
+    "name": "Joyful Health",
+    "desc": "AI-powered financial operating system for healthcare practic",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
   },
   "juicebox": {
     "id": "juicebox",
     "name": "Juicebox",
-    "desc": "AI-powered recruiting platform.",
-    "level": "D",
+    "desc": "AI recruiting platform that combines search, CRM, outreach, ",
+    "level": "B",
     "cat": "enterprise-ops",
-    "stage": "series-a",
-    "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "julius-ai": {
     "id": "julius-ai",
@@ -2780,10 +3129,7 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "kaedim": {
     "id": "kaedim",
@@ -2794,6 +3140,15 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "kampala": {
+    "id": "kampala",
+    "name": "Kampala (by Zatanna)",
+    "desc": "Reverse-engineers websites, mobile apps, and desktop apps in",
+    "level": "B",
+    "cat": "productivity",
+    "remote": "Unknown",
     "roles": 0
   },
   "kernel": {
@@ -2828,6 +3183,18 @@
     "region": "sf-bay-area",
     "remote": "No",
     "roles": 0
+  },
+  "kita": {
+    "id": "kita",
+    "name": "Kita",
+    "desc": "AI-native document intelligence platform for credit underwri",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 1,
+    "titles": [
+      "ML Engineer Intern"
+    ]
   },
   "kite-ai": {
     "id": "kite-ai",
@@ -3028,10 +3395,7 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "lightpage": {
     "id": "lightpage",
@@ -3075,7 +3439,11 @@
     "stage": "series-c",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Senior / Staff Product Designer",
+      "Senior / Staff Product Designer"
+    ]
   },
   "liquid-ai": {
     "id": "liquid-ai",
@@ -3097,7 +3465,10 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "livekit": {
     "id": "livekit",
@@ -3163,9 +3534,10 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 1,
+    "roles": 5,
     "titles": [
-      "Product Designer"
+      "Design Engineer",
+      "Design Engineer (Web & Brand)"
     ]
   },
   "loyal-dogs": {
@@ -3200,6 +3572,18 @@
     "region": "sf-bay-area",
     "remote": "No",
     "roles": 0
+  },
+  "mage-legal": {
+    "id": "mage-legal",
+    "name": "Mage Legal",
+    "desc": "AI-native legal diligence platform building trusted AI syste",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
   },
   "mage": {
     "id": "mage",
@@ -3452,10 +3836,7 @@
     "stage": "growth",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "mintlify": {
     "id": "mintlify",
@@ -3477,7 +3858,11 @@
     "stage": "series-c",
     "region": "other-intl",
     "remote": "Hybrid",
-    "roles": 0
+    "roles": 3,
+    "titles": [
+      "Product Designer - Documentation",
+      "Product Designer - Mistral Cloud"
+    ]
   },
   "miter": {
     "id": "miter",
@@ -3769,7 +4154,10 @@
     "stage": "pre-seed",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "nudge": {
     "id": "nudge",
@@ -3840,6 +4228,15 @@
     "remote": "Unknown",
     "roles": 0
   },
+  "octapulse": {
+    "id": "octapulse",
+    "name": "OctaPulse",
+    "desc": "Robotics and computer vision platform automating fish inspec",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "odyssey": {
     "id": "odyssey",
     "name": "Odyssey",
@@ -3862,6 +4259,18 @@
     "remote": "Unknown",
     "roles": 0
   },
+  "omnea": {
+    "id": "omnea",
+    "name": "Omnea",
+    "desc": "AI-native procurement orchestration platform that streamline",
+    "level": "B",
+    "cat": "enterprise-ops",
+    "remote": "Hybrid",
+    "roles": 1,
+    "titles": [
+      "Senior Product Designer"
+    ]
+  },
   "onton": {
     "id": "onton",
     "name": "Onton",
@@ -3876,12 +4285,24 @@
   "onyx": {
     "id": "onyx",
     "name": "Onyx",
-    "desc": "Open source AI connected to your work.",
-    "level": "D",
+    "desc": "Open-source enterprise AI search and knowledge platform that",
+    "level": "B",
     "cat": "enterprise-ops",
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
+  },
+  "open-evidence": {
+    "id": "open-evidence",
+    "name": "OpenEvidence",
+    "desc": "AI-powered medical information platform that synthesizes pee",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
     "roles": 0
   },
   "open-ocean-robotics": {
@@ -3904,10 +4325,21 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 2,
+    "roles": 1,
     "titles": [
-      "Product Designer, ChatGPT",
-      "Product Designer, Platform & Tools"
+      "Product Designer, ChatGPT"
+    ]
+  },
+  "openart": {
+    "id": "openart",
+    "name": "OpenArt",
+    "desc": "AI storytelling and visual creation platform for turning ide",
+    "level": "A",
+    "cat": "creative-media",
+    "remote": "Hybrid",
+    "roles": 1,
+    "titles": [
+      "Senior Product UI/UX Designer"
     ]
   },
   "openmind": {
@@ -4018,10 +4450,7 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "overjet": {
     "id": "overjet",
@@ -4078,6 +4507,18 @@
     "remote": "Hybrid",
     "roles": 0
   },
+  "p-1-ai": {
+    "id": "p-1-ai",
+    "name": "P-1 AI",
+    "desc": "Engineering AGI startup building Archie, an AI engineer for ",
+    "level": "A",
+    "cat": "ai-models",
+    "remote": "Hybrid",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
   "pacific-fusion": {
     "id": "pacific-fusion",
     "name": "Pacific Fusion",
@@ -4120,6 +4561,15 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "Hybrid",
+    "roles": 0
+  },
+  "palus-finance": {
+    "id": "palus-finance",
+    "name": "Palus Finance",
+    "desc": "Treasury management platform for startups and SMBs. Replaces",
+    "level": "D",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
     "roles": 0
   },
   "paper": {
@@ -4177,6 +4627,18 @@
     "remote": "No",
     "roles": 0
   },
+  "parrot": {
+    "id": "parrot",
+    "name": "Parrot",
+    "desc": "AI-enhanced language learning app that turns short-form nati",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
   "partnerstack": {
     "id": "partnerstack",
     "name": "PartnerStack",
@@ -4198,6 +4660,18 @@
     "region": "sf-bay-area",
     "remote": "No",
     "roles": 0
+  },
+  "peer-ai": {
+    "id": "peer-ai",
+    "name": "Peer AI",
+    "desc": "AI platform for life sciences regulatory submissions, helpin",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "Yes",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer - Enterpr"
+    ]
   },
   "perle-ai": {
     "id": "perle-ai",
@@ -4364,6 +4838,24 @@
     "remote": "Yes",
     "roles": 0
   },
+  "prepared": {
+    "id": "prepared",
+    "name": "Prepared",
+    "desc": "AI-powered emergency response platform that modernizes 911 d",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
+  "prezent": {
+    "id": "prezent",
+    "name": "Prezent",
+    "desc": "AI-powered enterprise business communication platform that h",
+    "level": "B",
+    "cat": "productivity",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "prime-intellect": {
     "id": "prime-intellect",
     "name": "Prime Intellect",
@@ -4505,10 +4997,10 @@
     "stage": "series-d-plus",
     "region": "nyc",
     "remote": "Hybrid",
-    "roles": 2,
+    "roles": 3,
     "titles": [
-      "Principal Product Designer",
-      "Staff Product Designer"
+      "Design Engineer",
+      "Design Engineer, Brand"
     ]
   },
   "ranger": {
@@ -4636,7 +5128,11 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 0
+    "roles": 4,
+    "titles": [
+      "Design Engineer",
+      "Staff Product Designer"
+    ]
   },
   "resend": {
     "id": "resend",
@@ -4658,7 +5154,10 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
   },
   "resolver": {
     "id": "resolver",
@@ -4715,6 +5214,15 @@
     "remote": "Yes",
     "roles": 0
   },
+  "roots-automation": {
+    "id": "roots-automation",
+    "name": "Roots Automation",
+    "desc": "Insurance-only AI agent platform whose Digital Coworkers and",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "rox": {
     "id": "rox",
     "name": "Rox",
@@ -4724,6 +5232,24 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "runanywhere": {
+    "id": "runanywhere",
+    "name": "RunAnywhere",
+    "desc": "On-device AI platform and SDK for iOS, Android, and edge dev",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "runware": {
+    "id": "runware",
+    "name": "Runware",
+    "desc": "One API for AI generation across image, video, audio, LLM, 3",
+    "level": "B",
+    "cat": "developer-tools",
+    "remote": "Unknown",
     "roles": 0
   },
   "runway": {
@@ -4795,6 +5321,36 @@
       "Product Designer, Enterprise"
     ]
   },
+  "scalify": {
+    "id": "scalify",
+    "name": "Scalify",
+    "desc": "AI-powered ad management platform for Meta and TikTok. Helps",
+    "level": "C",
+    "cat": "sales-marketing",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "scenario": {
+    "id": "scenario",
+    "name": "Scenario",
+    "desc": "Creative AI infrastructure for teams to train custom models ",
+    "level": "A",
+    "cat": "creative-media",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "scout": {
+    "id": "scout",
+    "name": "Scout",
+    "desc": "AI insights platform for consumer products companies, turnin",
+    "level": "B",
+    "cat": "sales-marketing",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Designer"
+    ]
+  },
   "scribe": {
     "id": "scribe",
     "name": "Scribe",
@@ -4839,6 +5395,27 @@
     "remote": "Yes",
     "roles": 0
   },
+  "sentra": {
+    "id": "sentra",
+    "name": "Sentra",
+    "desc": "AI company memory system that turns a startup’s collective k",
+    "level": "A",
+    "cat": "productivity",
+    "remote": "Hybrid",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
+  "sentrial": {
+    "id": "sentrial",
+    "name": "Sentrial",
+    "desc": "Observability platform for AI agents — detects when agents l",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "seriesai": {
     "id": "seriesai",
     "name": "Series Entertainment",
@@ -4853,13 +5430,15 @@
   "serval": {
     "id": "serval",
     "name": "Serval",
-    "desc": "AI agents for IT teams to automate service operations and re",
+    "desc": "AI-native enterprise automation and IT service management pl",
     "level": "A",
-    "cat": "developer-tools",
-    "stage": "series-b",
-    "region": "sf-bay-area",
+    "cat": "enterprise-ops",
     "remote": "No",
-    "roles": 0
+    "roles": 2,
+    "titles": [
+      "Design Engineer",
+      "Product Designer"
+    ]
   },
   "sesame-ai": {
     "id": "sesame-ai",
@@ -4916,6 +5495,15 @@
     "remote": "No",
     "roles": 0
   },
+  "shift-technology": {
+    "id": "shift-technology",
+    "name": "Shift Technology",
+    "desc": "AI decision automation platform for insurers, best known for",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "shopify": {
     "id": "shopify",
     "name": "Shopify",
@@ -4925,11 +5513,7 @@
     "stage": "growth",
     "region": "other-intl",
     "remote": "Hybrid",
-    "roles": 2,
-    "titles": [
-      "Design Apprentice, Product Design",
-      "Staff Product Designer"
-    ]
+    "roles": 0
   },
   "shortwave": {
     "id": "shortwave",
@@ -4951,10 +5535,9 @@
     "stage": "series-c",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 2,
+    "roles": 1,
     "titles": [
-      "Product Designer",
-      "Agent Experience Designer, Voice (M"
+      "Product Designer"
     ]
   },
   "sightline-innovation": {
@@ -4965,6 +5548,36 @@
     "cat": "enterprise-ops",
     "stage": "seed",
     "region": "other-intl",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "simple-ai": {
+    "id": "simple-ai",
+    "name": "Simple AI",
+    "desc": "Voice AI agent platform helping consumer brands automate inb",
+    "level": "A",
+    "cat": "sales-marketing",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
+  "sitefire": {
+    "id": "sitefire",
+    "name": "Sitefire",
+    "desc": "Marketing suite for the agentic web — helps brands improve A",
+    "level": "A",
+    "cat": "sales-marketing",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "sixfold": {
+    "id": "sixfold",
+    "name": "Sixfold",
+    "desc": "AI underwriting brain for insurers that triages submissions,",
+    "level": "B",
+    "cat": "vertical-saas",
     "remote": "Unknown",
     "roles": 0
   },
@@ -5034,8 +5647,17 @@
     "remote": "Yes",
     "roles": 1,
     "titles": [
-      "Senior Product Designer"
+      "Founding Product Designer"
     ]
+  },
+  "sonarly": {
+    "id": "sonarly",
+    "name": "Sonarly",
+    "desc": "AI engineer for production: autonomously triages alerts, ded",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
+    "roles": 0
   },
   "sonatic": {
     "id": "sonatic",
@@ -5126,6 +5748,15 @@
     "stage": "series-a",
     "region": "nyc",
     "remote": "No",
+    "roles": 0
+  },
+  "sprout-ai": {
+    "id": "sprout-ai",
+    "name": "Sprout.ai",
+    "desc": "AI claims automation platform that extracts claim data, dete",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
     "roles": 0
   },
   "stability-ai": {
@@ -5258,8 +5889,9 @@
     "stage": "series-c",
     "region": "boston",
     "remote": "No",
-    "roles": 1,
+    "roles": 2,
     "titles": [
+      "Head of Product Design",
       "Staff Product Designer"
     ]
   },
@@ -5283,10 +5915,7 @@
     "stage": "other",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 1,
-    "titles": [
-      "Senior Product Designer"
-    ]
+    "roles": 0
   },
   "superlinked": {
     "id": "superlinked",
@@ -5440,10 +6069,7 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "Hybrid",
-    "roles": 1,
-    "titles": [
-      "Product Designer"
-    ]
+    "roles": 0
   },
   "tealbook": {
     "id": "tealbook",
@@ -5464,6 +6090,18 @@
     "cat": "vertical-saas",
     "stage": "series-a",
     "region": "sf-bay-area",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
+  },
+  "tennr": {
+    "id": "tennr",
+    "name": "Tennr",
+    "desc": "AI platform automating patient referral workflows and health",
+    "level": "A",
+    "cat": "vertical-saas",
     "remote": "No",
     "roles": 0
   },
@@ -5487,6 +6125,15 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "terminal-use": {
+    "id": "terminal-use",
+    "name": "Terminal Use",
+    "desc": "Applied research lab building frontier agentic systems to ru",
+    "level": "A",
+    "cat": "developer-tools",
+    "remote": "Unknown",
     "roles": 0
   },
   "terradot": {
@@ -5601,10 +6248,7 @@
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
-    "roles": 1,
-    "titles": [
-      "Designer of Everything"
-    ]
+    "roles": 0
   },
   "tome": {
     "id": "tome",
@@ -5617,6 +6261,18 @@
     "remote": "Hybrid",
     "roles": 0
   },
+  "tomo-ai": {
+    "id": "tomo-ai",
+    "name": "Tomo",
+    "desc": "Consumer AI personal agent that learns what people care abou",
+    "level": "A",
+    "cat": "productivity",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Product Designer"
+    ]
+  },
   "town": {
     "id": "town",
     "name": "Town",
@@ -5628,6 +6284,24 @@
     "remote": "No",
     "roles": 0
   },
+  "traba": {
+    "id": "traba",
+    "name": "Traba",
+    "desc": "AI-powered light industrial staffing marketplace connecting ",
+    "level": "C",
+    "cat": "enterprise-ops",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "tractable": {
+    "id": "tractable",
+    "name": "Tractable",
+    "desc": "Computer vision AI platform for auto and property damage ass",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "trm-labs": {
     "id": "trm-labs",
     "name": "TRM Labs",
@@ -5637,7 +6311,10 @@
     "stage": "series-b",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 0
+    "roles": 1,
+    "titles": [
+      "Senior Product Designer"
+    ]
   },
   "truemed": {
     "id": "truemed",
@@ -5696,6 +6373,18 @@
     "titles": [
       "Product Designer",
       "Staff Product Designer"
+    ]
+  },
+  "typesafe-ai": {
+    "id": "typesafe-ai",
+    "name": "TypeSafe AI",
+    "desc": "Frontier model lab building reliable general AI systems for ",
+    "level": "A",
+    "cat": "ai-models",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
     ]
   },
   "unbounce": {
@@ -5795,7 +6484,11 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Yes",
-    "roles": 0
+    "roles": 4,
+    "titles": [
+      "Senior Product Designer, CTM",
+      "Senior Product Designer, GRC"
+    ]
   },
   "vantage-analytics": {
     "id": "vantage-analytics",
@@ -5830,6 +6523,15 @@
     "remote": "No",
     "roles": 0
   },
+  "vela": {
+    "id": "vela",
+    "name": "Vela",
+    "desc": "AI agents for complex scheduling coordination — handles outr",
+    "level": "B",
+    "cat": "productivity",
+    "remote": "Unknown",
+    "roles": 0
+  },
   "vercel": {
     "id": "vercel",
     "name": "Vercel",
@@ -5839,6 +6541,15 @@
     "stage": "series-d-plus",
     "region": "sf-bay-area",
     "remote": "Hybrid",
+    "roles": 0
+  },
+  "vivodyne": {
+    "id": "vivodyne",
+    "name": "Vivodyne",
+    "desc": "Biotechnology company using robots and AI to grow and test l",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
     "roles": 0
   },
   "vizcom": {
@@ -5861,6 +6572,24 @@
     "stage": "growth",
     "region": "toronto",
     "remote": "Yes",
+    "roles": 0
+  },
+  "voltair": {
+    "id": "voltair",
+    "name": "Voltair",
+    "desc": "Self-charging autonomous drones that perch on power lines to",
+    "level": "C",
+    "cat": "vertical-saas",
+    "remote": "Unknown",
+    "roles": 0
+  },
+  "voygr": {
+    "id": "voygr",
+    "name": "Voygr",
+    "desc": "Real-world place intelligence API for AI apps and agents — v",
+    "level": "B",
+    "cat": "developer-tools",
+    "remote": "Unknown",
     "roles": 0
   },
   "vozy": {
@@ -5917,6 +6646,18 @@
     "region": "sf-bay-area",
     "remote": "Yes",
     "roles": 0
+  },
+  "wayline": {
+    "id": "wayline",
+    "name": "Wayline",
+    "desc": "AI voice and text operator for property managers, automating",
+    "level": "A",
+    "cat": "vertical-saas",
+    "remote": "No",
+    "roles": 1,
+    "titles": [
+      "Founding Product Designer"
+    ]
   },
   "weavair": {
     "id": "weavair",
@@ -6042,6 +6783,15 @@
     "remote": "Unknown",
     "roles": 0
   },
+  "xbow": {
+    "id": "xbow",
+    "name": "XBOW",
+    "desc": "AI-powered autonomous security testing platform that identif",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
+    "roles": 0
+  },
   "xpertsea": {
     "id": "xpertsea",
     "name": "Xpertsea",
@@ -6084,6 +6834,15 @@
     "stage": "seed",
     "region": "sf-bay-area",
     "remote": "No",
+    "roles": 0
+  },
+  "zestyai": {
+    "id": "zestyai",
+    "name": "ZestyAI",
+    "desc": "AI property risk analytics platform using computer vision, a",
+    "level": "B",
+    "cat": "vertical-saas",
+    "remote": "Hybrid",
     "roles": 0
   }
 }
