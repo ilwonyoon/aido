@@ -3,11 +3,13 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { companies } from '@/data/companies';
-import { Company, OpenRole } from '@/data/types';
+import { Company, InterestStatus, OpenRole } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { CompanyLogo } from '@/components/CompanyLogo';
 import { Badge } from '@/components/ui/Badge';
 import { DesignFocus } from '@/components/DesignFocus';
+import { useAuth } from '@/contexts/AuthContext';
+import { getAllUserTracking } from '@/lib/firebase/tracking';
 
 // ────────────────────────────────────────────────────────────────────────────
 // Filter Components
@@ -27,12 +29,12 @@ function DropdownFilter({
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
 
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      setDropdownStyle({ top: rect.bottom + 4, left: rect.left });
+      setDropdownStyle({ top: rect.bottom + 4, left: rect.left, width: buttonRef.current.offsetWidth });
     }
   }, [isOpen]);
 
@@ -52,12 +54,12 @@ function DropdownFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, minWidth: `${buttonRef.current.offsetWidth}px`, maxWidth: 'calc(100vw - 2rem)' }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, minWidth: `${dropdownStyle.width}px`, maxWidth: 'calc(100vw - 2rem)' }}
           >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
@@ -94,7 +96,7 @@ function MultiSelectFilter({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
   const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
 
   useEffect(() => {
@@ -103,7 +105,7 @@ function MultiSelectFilter({
       const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 180);
       const spaceOnRight = window.innerWidth - rect.left;
       const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
-      setDropdownStyle({ top: rect.bottom + 4, left: Math.max(16, left) });
+      setDropdownStyle({ top: rect.bottom + 4, left: Math.max(16, left), width: dropdownWidth });
     }
   }, [isOpen]);
 
@@ -131,12 +133,12 @@ function MultiSelectFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`, maxWidth: 'calc(100vw - 2rem)', maxHeight: '320px' }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, width: `${dropdownStyle.width}px`, maxWidth: 'calc(100vw - 2rem)', maxHeight: '320px' }}
           >
             {values.length > 0 && (
               <button
@@ -481,6 +483,7 @@ function isSFBayArea(hq: string): boolean {
 // ────────────────────────────────────────────────────────────────────────────
 
 export default function JobsPage() {
+  const { user, loading } = useAuth();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
@@ -489,16 +492,44 @@ export default function JobsPage() {
   const [firstDesignHireOnly, setFirstDesignHireOnly] = useState(false);
   const [includeDesignEngineering, setIncludeDesignEngineering] = useState(false);
   const [aiNativeOnly, setAiNativeOnly] = useState(false);
+  const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
+  const [trackingLoaded, setTrackingLoaded] = useState(false);
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return;
+
+    let isActive = true;
+    const load = async () => {
+      setTrackingLoaded(false);
+      const tracking = await getAllUserTracking(user.uid);
+      if (!isActive) return;
+      const statuses: Record<string, InterestStatus> = {};
+      tracking.forEach((item) => {
+        if (item.status === 'tier_0' || item.status === 'tier_1' || item.status === 'not_interested') {
+          statuses[item.companyId] = item.status;
+        }
+      });
+      setInterestStatuses(statuses);
+      setTrackingLoaded(true);
+    };
+
+    void load();
+
+    return () => {
+      isActive = false;
+    };
+  }, [loading, user]);
 
   const companiesWithRoles = useMemo(() => {
     const levelOrder: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
     return companies
-      .filter(c => c.openRoles.length > 0)
+      .filter(c => c.openRoles.length > 0 && interestStatuses[c.id] !== 'not_interested')
       .sort((a, b) => {
         const diff = (levelOrder[a.aiNativeLevel] ?? 4) - (levelOrder[b.aiNativeLevel] ?? 4);
         return diff !== 0 ? diff : b.openRoles.length - a.openRoles.length;
       });
-  }, []);
+  }, [interestStatuses]);
 
   const filtered = useMemo(() => {
     return companiesWithRoles.filter(company => {
@@ -550,6 +581,16 @@ export default function JobsPage() {
     setIncludeDesignEngineering(false);
     setAiNativeOnly(false);
   };
+
+  const shouldWaitForTracking = loading || (Boolean(user) && !trackingLoaded);
+
+  if (shouldWaitForTracking) {
+    return (
+      <div className="card p-8 text-center text-[var(--muted)]">
+        Loading hiring filters...
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -666,14 +707,14 @@ export default function JobsPage() {
         </div>
       ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {filtered.map(company => (
-            <CompanyCard key={company.id} company={company} roles={rolesForCompany(company)} />
+          {filtered.map((company, index) => (
+            <CompanyCard key={`${company.id}-${index}`} company={company} roles={rolesForCompany(company)} />
           ))}
         </div>
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {filtered.map(company => (
-            <div key={company.id} className="px-5">
+          {filtered.map((company, index) => (
+            <div key={`${company.id}-${index}`} className="px-5">
               <CompanyListRow company={company} roles={rolesForCompany(company)} />
             </div>
           ))}

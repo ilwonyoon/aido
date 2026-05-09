@@ -158,7 +158,7 @@ export const genmo: Company = {
   ],
 
   tracking: {
-    status: 'interested',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Creative AI role with a broad and novel interaction surface',
@@ -171,10 +171,12 @@ export const genmo: Company = {
       'Potentially research-led roadmap may shift quickly',
     ],
     nextActions: [
+      'Track application response and recruiter follow-up',
       'Try Genmo / Mochi product surfaces and inspect creator workflow',
       'Compare product UX against Runway, Pika, Luma, and Sora-adjacent tools',
       'Assess whether role is mostly product UI or also model interaction design',
     ],
+    notes: 'Applied to Founding Product Designer role on 2026-05-09.',
   },
 
   growthMetrics: {
@@ -203,7 +205,7 @@ export const genmo: Company = {
     moatStrength: 'Medium if open model quality and ecosystem adoption compound.',
   },
 
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Genmo Website', url: 'https://www.genmo.ai/' },
     { title: 'Genmo About', url: 'https://www.genmo.ai/about' },

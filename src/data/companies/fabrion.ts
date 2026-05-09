@@ -153,7 +153,7 @@ export const fabrion: Company = {
   ],
 
   tracking: {
-    status: 'interested',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Confirmed founding product design role with AI-agent workflow scope',
@@ -166,10 +166,11 @@ export const fabrion: Company = {
       'On-site Bay Area expectation',
     ],
     nextActions: [
-      'Review Fabrion product messaging and industrial workflow examples',
-      'Map portfolio examples to data-heavy B2B and operational UX',
-      'Clarify stage, founders, and customer traction before outreach',
+      'Track application response and recruiter follow-up',
+      'Map portfolio examples to data-heavy B2B, operational UX, and AI workflow oversight',
+      'Clarify stage, founders, and customer traction if they respond',
     ],
+    notes: 'Applied to Founding Designer role on 2026-05-09.',
   },
 
   growthMetrics: {
@@ -198,7 +199,7 @@ export const fabrion: Company = {
     moatStrength: 'Medium if industrial workflow data and customer-specific deployments compound.',
   },
 
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Fabrion Website', url: 'https://fabrion.ai/' },
     { title: 'Founding Designer at Fabrion', url: 'https://jobs.ashbyhq.com/fabrion/dad50bef-5190-46a3-aa2d-2dc7af5cfa9a' },

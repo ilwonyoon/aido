@@ -191,7 +191,7 @@ export const juicebox: Company = {
 
   // My Tracking
   tracking: {
-    status: 'interested',
+    status: 'applied',
     fitScore: 7,
     whyJoin: [
       'Senior product design role with ownership over agentic AI recruiting workflows',
@@ -204,10 +204,12 @@ export const juicebox: Company = {
       'On-site San Francisco expectation',
     ],
     nextActions: [
-      'Review Product Designer listing and map portfolio examples to agentic workflow / PLG onboarding problems',
+      'Track application response and recruiter follow-up',
+      'Map portfolio examples to agentic workflow / PLG onboarding problems',
       'Compare against Wrangle, Paraform, Ashby, Gem, and LinkedIn Recruiter for market positioning',
       'Monitor whether a true founding/head of design role opens later',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   // Growth Metrics
@@ -239,7 +241,7 @@ export const juicebox: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-05-05',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Juicebox Official Website', url: 'https://www.juicebox.ai' },
     { title: 'Juicebox Careers', url: 'https://juicebox.ai/careers' },

@@ -27,6 +27,7 @@ import { getCompanyQualityScore, parseFundingAmount } from '@/lib/companyScoring
 type SortOption = 'recommended' | 'teamSize' | 'fundingStage' | 'fundingSize' | 'aiLevel';
 type CategoryFilterValue = `category:${Category}` | `subcategory:${CategorySubcategory}`;
 type HiringFilterValue = 'any' | 'founding-design' | 'first-design-hire' | 'product-design' | 'design-engineering';
+type ReviewStatusFilterValue = 'not_yet_reviewed' | NonNullable<InterestStatus>;
 
 function isActiveRole(role: OpenRole): boolean {
   return role.verificationStatus !== 'closed';
@@ -283,7 +284,7 @@ function DropdownFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
@@ -292,7 +293,6 @@ function DropdownFilter({
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
               width: `${dropdownStyle.width}px`,
-              minWidth: `${buttonRef.current.offsetWidth}px`,
               maxWidth: 'calc(100vw - 2rem)'
             }}
           >
@@ -380,7 +380,7 @@ function MultiSelectFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
@@ -447,7 +447,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
   const [sortBy, setSortBy] = useState<SortOption>('recommended');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [isMobile, setIsMobile] = useState(false);
-  const [reviewStatusFilter, setReviewStatusFilter] = useState('');
+  const [reviewStatusFilter, setReviewStatusFilter] = useState<ReviewStatusFilterValue[]>([]);
   const [fundingStageFilter, setFundingStageFilter] = useState<FundingStageCategory[]>([]);
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilterValue[]>([]);
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
@@ -644,7 +644,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
   // Auto-switch filter when user reviews a company (from unfiltered/all view)
   useEffect(() => {
-    if (reviewStatusFilter !== '' && reviewStatusFilter !== 'all') {
+    if (reviewStatusFilter.length > 0) {
       prevInterestStatusesRef.current = interestStatuses;
       return;
     }
@@ -660,7 +660,7 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     if (changedCompanies.length === 1) {
       const newStatus = changedCompanies[0][1];
       if (newStatus) {
-        setReviewStatusFilter(newStatus);
+        setReviewStatusFilter([newStatus]);
       }
     }
 
@@ -730,12 +730,17 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
         if (!nameMatch && !descMatch && !hqMatch) return false;
       }
 
-      // Review Status Filter (empty string or 'all' = show all)
-      const status = interestStatuses[company.id];
-      if (reviewStatusFilter === 'not_yet_reviewed' && status) return false;
-      if (reviewStatusFilter === 'tier_0' && status !== 'tier_0') return false;
-      if (reviewStatusFilter === 'tier_1' && status !== 'tier_1') return false;
-      if (reviewStatusFilter === 'not_interested' && status !== 'not_interested') return false;
+      // Review Status Filter
+      const status = interestStatuses[company.id] ?? null;
+      if (reviewStatusFilter.length > 0) {
+        const matchesReviewStatus = reviewStatusFilter.some((filter) => {
+          if (filter === 'not_yet_reviewed') return status === null;
+          return status === filter;
+        });
+        if (!matchesReviewStatus) return false;
+      } else if (hiringFilters.length > 0 && status === 'not_interested') {
+        return false;
+      }
 
       // Hiring Filter
       if (!companyMatchesHiringFilters(company, hiringFilters)) return false;
@@ -860,11 +865,11 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
     return companies.filter(c => !interestStatuses[c.id]).length;
   }, [companies, interestStatuses]);
 
-  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter !== '' || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || hiringFilters.length > 0;
+  const hasActiveFilters = searchQuery !== '' || reviewStatusFilter.length > 0 || fundingStageFilter.length > 0 || categoryFilter.length > 0 || locationFilter.length > 0 || hiringFilters.length > 0;
 
   const clearFilters = () => {
     setSearchQuery('');
-    setReviewStatusFilter('');
+    setReviewStatusFilter([]);
     setFundingStageFilter([]);
     setCategoryFilter([]);
     setLocationFilter([]);
@@ -951,16 +956,16 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
               />
             </div>
           </div>
-          <DropdownFilter
+          <MultiSelectFilter
             label="Review Status"
-            value={reviewStatusFilter}
+            values={reviewStatusFilter}
             options={[
               { value: 'not_yet_reviewed', label: 'Not Yet Reviewed' },
               { value: 'tier_0', label: '🥇 Tier 0' },
               { value: 'tier_1', label: '🥈 Tier 1' },
               { value: 'not_interested', label: 'Not Interested' },
             ]}
-            onChange={setReviewStatusFilter}
+            onChange={(vals) => setReviewStatusFilter(vals as ReviewStatusFilterValue[])}
           />
           <MultiSelectFilter
             label="Funding Stage"

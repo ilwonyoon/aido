@@ -172,15 +172,16 @@ export const delphi: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 7,
     whyJoin: ['Creator-focused AI product', 'Sequoia-backed Series A with strong momentum'],
     whyNot: ['Authenticity risks in AI persona space', 'Competitive consumer AI market'],
-    nextActions: ['Monitor product releases and creator partnerships'],
+    nextActions: ['Track application response and recruiter follow-up', 'Monitor product releases and creator partnerships'],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Delphi - Official Website', url: 'https://www.delphi.ai' },
     { title: 'Delphi About', url: 'https://www.delphi.ai/about' },

@@ -269,7 +269,7 @@ export const serval: Company = {
   ],
 
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'The open Product Designer role owns workflow-builder UX, systems foundations, and early brand expression',
@@ -282,12 +282,13 @@ export const serval: Company = {
       'Enterprise trust and security constraints can slow iteration and raise the quality bar',
     ],
     nextActions: [
-      'Monitor whether the Product Designer role remains open and whether a broader product design team forms',
-      'Track additional customer stories outside IT to validate horizontal expansion',
+      'Track application response and recruiter follow-up',
+      'Prepare examples around complex B2B workflow design, automation builders, and design system foundations',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
-  lastUpdated: '2026-04-13T11:05:00',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Serval Official Website', url: 'https://www.serval.com' },
     {

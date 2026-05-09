@@ -248,7 +248,7 @@ export const sierra: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Level A AI-native with $100M ARR in 21 months — proven product-market fit',
@@ -267,13 +267,13 @@ export const sierra: Company = {
     nextActions: [
       'Try Sierra product demo or customer case studies',
       'Research design team leads on LinkedIn',
-      'Apply to Product Designer role if interested',
+      'Track application response and recruiter follow-up',
       'Monitor for Design leadership hires (Head of Design, Design Director)',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-04-14',
+  lastUpdated: '2026-05-08',
   sources: [
     { title: 'Sierra Official Website', url: 'https://sierra.ai/' },
     { title: 'Sierra Blog — $100M ARR Milestone', url: 'https://sierra.ai/blog/100m-arr' },

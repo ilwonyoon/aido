@@ -227,7 +227,7 @@ export const comfyUi: Company = {
   ],
 
   tracking: {
-    status: 'interested',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Directly relevant to AI-native creative tooling and product design systems.',
@@ -241,10 +241,11 @@ export const comfyUi: Company = {
       'The product is technically dense, so onboarding ramp may be steep.',
     ],
     nextActions: [
-      'Try ComfyUI desktop and build a simple image workflow.',
-      'Compare Comfy UX against Krea, Invoke, Scenario, and OpenArt.',
-      'Prepare interview notes on node graphs, workflow debugging, and progressive disclosure.',
+      'Prepare for Comfy interview scheduled on 2026-05-13.',
+      'Try ComfyUI desktop and build a simple image workflow before the interview.',
+      'Prepare interview notes on node graphs, workflow debugging, progressive disclosure, and AI creative-tool UX.',
     ],
+    notes: 'Comfy reached out and interview is scheduled for Wednesday, 2026-05-13.',
   },
 
   growthMetrics: {
@@ -274,7 +275,7 @@ export const comfyUi: Company = {
     moatStrength: 'Strong: community nodes, workflow templates, technical-artist skill adoption, and open-source distribution compound together.',
   },
 
-  lastUpdated: '2026-04-28T00:00:00',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Comfy official site', url: 'https://www.comfy.org/' },
     { title: 'ComfyUI turns 2: OS for Gen AI vision', url: 'https://blog.comfy.org/p/comfyui-turns-2-a-journey-and-call' },

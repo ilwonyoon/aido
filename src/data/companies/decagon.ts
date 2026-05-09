@@ -199,7 +199,7 @@ export const decagon: Company = {
   },
 
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Level A AI-native — designing entirely new agent interaction paradigms',
@@ -214,12 +214,13 @@ export const decagon: Company = {
       'Intense culture with below-average work-life balance',
     ],
     nextActions: [
-      'Apply for Product Designer role on Ashby',
+      'Track application response and recruiter follow-up',
       'Research AOP system deeper to prepare for portfolio alignment',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Decagon Official Website', url: 'https://decagon.ai' },
     { title: 'Decagon Series D Announcement', url: 'https://decagon.ai/resources/series-d-announcement' },

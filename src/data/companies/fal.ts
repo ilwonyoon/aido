@@ -187,7 +187,7 @@ export const fal: Company = {
 
   // My Tracking
   tracking: {
-    status: 'watching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Developer infrastructure + AI design challenges',
@@ -198,13 +198,14 @@ export const fal: Company = {
       'Competitive infrastructure landscape',
     ],
     nextActions: [
-      'Track developer adoption and platform usage',
-      'Monitor hiring signals',
+      'Track application response and recruiter follow-up',
+      'Prepare examples around creative AI, developer platforms, and product systems',
     ],
+    notes: 'Applied to Senior Product Designer role on 2026-05-09.',
   },
 
   // Meta
-  lastUpdated: '2026-01-27T16:40:00',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Source', url: 'https://fal.ai/' },
     { title: 'Source', url: 'https://fal.ai/careers' },

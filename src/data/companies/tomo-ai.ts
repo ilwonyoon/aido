@@ -153,7 +153,7 @@ export const tomoAi: Company = {
   ],
 
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Founding Product Designer signal in a true consumer AI product',
@@ -166,10 +166,12 @@ export const tomoAi: Company = {
       'Need to clarify product direction, team, and funding',
     ],
     nextActions: [
+      'Track application response and recruiter follow-up',
       'Try Tomo via SMS onboarding',
       'Find founders and funding details',
       'Map portfolio case studies to generated UI and personal-agent UX',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   growthMetrics: {
@@ -198,7 +200,7 @@ export const tomoAi: Company = {
     moatStrength: 'Medium if personal context and usage feedback compound.',
   },
 
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Tomo Website', url: 'https://www.tomo.ai/' },
     { title: 'Product Designer at Tomo', url: 'https://jobs.ashbyhq.com/tomo.ai/f77a861f-acdc-4ae4-b88e-bde4e33ebc12' },

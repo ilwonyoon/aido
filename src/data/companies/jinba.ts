@@ -168,7 +168,7 @@ export const jinba: Company = {
   ],
 
   tracking: {
-    status: 'interested',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'First design hire on an AI-native enterprise workflow product',
@@ -181,10 +181,11 @@ export const jinba: Company = {
       'Enterprise workflow builders are a crowded market',
     ],
     nextActions: [
+      'Track application response and recruiter follow-up',
       'Review Jinba demo and docs for workflow-building depth',
-      'Decide whether to pursue Product Designer or Founding Design Engineer path',
       'Prepare portfolio examples around complex workflow and AI UX',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   growthMetrics: {
@@ -213,7 +214,7 @@ export const jinba: Company = {
     moatStrength: 'Medium if enterprise workflow data and deployment patterns compound.',
   },
 
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Jinba Website', url: 'https://jinba.io/' },
     { title: 'Product Designer at Jinba.io', url: 'https://jobs.ashbyhq.com/carnot-ai/38a7a3ff-eea9-473a-8ad3-cc3581c20715' },

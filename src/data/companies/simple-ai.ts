@@ -169,7 +169,7 @@ export const simpleAi: Company = {
   ],
 
   tracking: {
-    status: 'interested',
+    status: 'rejected',
     fitScore: 8,
     whyJoin: [
       'Founding product design role in a Level A AI-native voice product',
@@ -182,10 +182,11 @@ export const simpleAi: Company = {
       'Crowded AI voice agent market',
     ],
     nextActions: [
-      'Review voice-agent dashboard examples and likely portfolio mapping',
+      'Archive rejected application email',
       'Compare against Bland AI and Sierra for voice-agent UX differentiation',
-      'Assess how much of the role is product UI vs. conversation design',
+      'Capture any useful lessons for future voice-agent applications',
     ],
+    notes: 'Rejected by email on 2026-05-09.',
   },
 
   growthMetrics: {
@@ -215,7 +216,7 @@ export const simpleAi: Company = {
     moatStrength: 'Medium if low-latency voice stack and customer-specific training data compound.',
   },
 
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Simple AI Website', url: 'https://usesimple.ai/' },
     { title: 'Simple AI YC Profile', url: 'https://www.ycombinator.com/companies/simple-ai' },

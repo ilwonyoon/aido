@@ -120,7 +120,7 @@ export const conversion: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 7,
     whyJoin: [
       'Founding Product Designer role with clear product ownership',
@@ -132,7 +132,12 @@ export const conversion: Company = {
       'Potentially campaign-heavy rather than deep AI interaction design',
       'On-site San Francisco expectation',
     ],
-    nextActions: ['Review product demo and campaign workflow surfaces', 'Compare against Mutiny, Qualified, Clay, and HockeyStack'],
+    nextActions: [
+      'Prepare recruiter screen notes for May 14, 2026',
+      'Clarify role scope, design team setup, and onsite expectations',
+      'Prepare GTM workflow, campaign tooling, and AI product design examples',
+    ],
+    notes: 'Recruiter reached out quickly; recruiter call scheduled for 2026-05-14.',
   },
 
   // Growth Metrics
@@ -151,7 +156,7 @@ export const conversion: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Conversion Website', url: 'https://www.conversion.ai' },
     { title: 'Founding Product Designer at Conversion', url: 'https://jobs.ashbyhq.com/conversion/e8cfbab1-d619-44fe-a2de-0d6d888daa1b' },

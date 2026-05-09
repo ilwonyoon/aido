@@ -166,7 +166,7 @@ export const comulate: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Founding Product Designer scope in a high-growth vertical AI company',
@@ -175,10 +175,11 @@ export const comulate: Company = {
     ],
     whyNot: ['Regulated domain complexity', 'Long implementation cycles', 'On-site San Francisco expectation'],
     nextActions: [
-      'Review Comulate insurance accounting workflow examples',
-      'Clarify design team size and whether this is truly first/sole product designer',
-      'Compare role scope against Agave and FurtherAI vertical workflow opportunities',
+      'Track application response and recruiter follow-up',
+      'Prepare examples around AI workflow automation, vertical SaaS, and operational UX',
+      'Clarify design team size and whether this is truly first/sole product designer if they respond',
     ],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   // Growth Metrics
@@ -201,7 +202,7 @@ export const comulate: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Source', url: 'https://comulate.com' },
     { title: 'Product Designer at Comulate', url: 'https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17' },

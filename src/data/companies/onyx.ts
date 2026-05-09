@@ -123,7 +123,7 @@ export const onyx: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 7,
     whyJoin: [
       'Founding design role at an open-source enterprise AI company',
@@ -135,7 +135,12 @@ export const onyx: Company = {
       'Role may include broad brand/web ownership in addition to product',
       'Enterprise search UX can be admin-heavy',
     ],
-    nextActions: ['Review Onyx open-source product and docs', 'Compare against Glean and Danswer-era positioning'],
+    nextActions: [
+      'Track application response and recruiter follow-up',
+      'Review Onyx open-source product and docs',
+      'Compare against Glean and Danswer-era positioning',
+    ],
+    notes: 'Applied to Founding Designer role on 2026-05-09.',
   },
 
   // Growth Metrics
@@ -154,7 +159,7 @@ export const onyx: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-05-06',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Onyx Website', url: 'https://www.onyx.app' },
     { title: 'Founding Designer at Onyx', url: 'https://jobs.ashbyhq.com/onyx/35d0ed7f-2c6a-46d6-9e6e-b4ce4a1b2650' },
