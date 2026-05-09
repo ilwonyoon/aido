@@ -209,7 +209,21 @@ export const listenLabs: Company = {
     ],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Founding Product Designer",
+        location: "San Francisco, CA",
+        type: "full-time",
+        roleFamily: "product-design",
+        roleSignal: "founding",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        url: "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b",
+        aboutRole: "Turn complex consulting-style research projects into elegant AI-powered research product experiences.",
+        whyInteresting: "Live Ashby founding product design role at a high-growth AI research platform.",
+      }
+    ],
 
     // Culture Insights
     cultureInsights: [
@@ -222,7 +236,7 @@ export const listenLabs: Company = {
 
     // My Tracking
     tracking: {
-      status: 'watching',
+      status: 'applied',
       fitScore: 8,
       whyJoin: [
         'Founding product designer at $500M Sequoia-backed AI company',
@@ -239,17 +253,17 @@ export const listenLabs: Company = {
         'Foundation model dependency risk',
       ],
       nextActions: [
-        'Apply for Founding Product Designer role on Ashby',
+        'Track application response and recruiter follow-up',
         'Request call with Alfred Wahlforss to assess design culture openness',
         'Try product demo to evaluate current UX quality',
         'Ask about design headcount growth plan',
         'Negotiate equity carefully — founding designer at $500M is valuable',
       ],
-      notes: 'Deep research completed 2026-02-11. Score: 7.15/10. See src/data/deep-research/listen-labs.md for full report.',
+      notes: 'Applied to Founding Product Designer role on 2026-05-07. Deep research completed 2026-02-11. Score: 7.15/10. See src/data/deep-research/listen-labs.md for full report.',
     },
 
     // Meta
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-05-09',
     sources: [
       { title: 'Listen Labs Website', url: 'https://listenlabs.ai' },
       { title: 'Founders Letter', url: 'https://listenlabs.ai/founders-letter' },

@@ -1,0 +1,1173 @@
+{
+  "generatedAt": "2026-04-14T22:10:34.245Z",
+  "scope": {
+    "companiesWithOpenRoles": 34,
+    "totalRoles": 39,
+    "selectedCompanies": 34,
+    "policy": "Audit existing openRoles only. Keep Product Designer IC roles and Product Design leadership roles, require job-specific URLs when possible, and flag blocked or ambiguous cases for follow-up."
+  },
+  "summary": {
+    "rolesByScope": {
+      "in-scope": 37,
+      "out-of-scope": 0,
+      "needs-review": 2
+    },
+    "rolesByUrlType": {
+      "specific-job": 34,
+      "generic-careers": 2,
+      "ambiguous": 3
+    },
+    "rolesByStatus": {
+      "ok": 36,
+      "broken": 0,
+      "redirect": 0,
+      "blocked": 2,
+      "timeout": 1,
+      "error": 0
+    },
+    "rolesByQueue": {
+      "queue-a-repair": 2,
+      "queue-b-refresh": 2,
+      "queue-c-review": 5,
+      "queue-d-stable": 30
+    },
+    "titleEvidence": {
+      "matched": 23,
+      "not-matched": 1,
+      "unknown": 15
+    },
+    "companiesByQueue": {
+      "queue-a-repair": 2,
+      "queue-b-refresh": 2,
+      "queue-c-review": 5,
+      "queue-d-stable": 25
+    }
+  },
+  "queues": {
+    "repair": [
+      "midjourney",
+      "harvey"
+    ],
+    "refresh": [
+      "ivo",
+      "scale-ai"
+    ],
+    "review": [
+      "exa",
+      "further-ai",
+      "layer-financial",
+      "natural",
+      "superhuman"
+    ],
+    "stable": [
+      "figma",
+      "ramp",
+      "terradot",
+      "typeface",
+      "clerk",
+      "hebbia",
+      "lovable",
+      "nexus",
+      "numeric",
+      "reevo",
+      "remofirst",
+      "solidroad",
+      "sourcegraph",
+      "suno",
+      "xai",
+      "serval",
+      "chai-discovery",
+      "character-ai",
+      "delve",
+      "descript",
+      "jasper",
+      "openai",
+      "sierra",
+      "omnea",
+      "tennr"
+    ]
+  },
+  "companies": [
+    {
+      "companyId": "midjourney",
+      "companyName": "Midjourney",
+      "companyFile": "src/data/companies/midjourney.ts",
+      "lastUpdated": "2025-01-26",
+      "roleCount": 1,
+      "queue": "queue-a-repair",
+      "roles": [
+        {
+          "companyId": "midjourney",
+          "companyName": "Midjourney",
+          "companyFile": "src/data/companies/midjourney.ts",
+          "lastUpdated": "2025-01-26",
+          "title": "Product Designer",
+          "location": "Remote (Bay Area and London preferred)",
+          "url": "https://www.midjourney.com/careers",
+          "scope": "in-scope",
+          "urlType": "generic-careers",
+          "status": "blocked",
+          "httpStatus": 403,
+          "finalUrl": "https://www.midjourney.com/careers",
+          "titleEvidence": "unknown",
+          "queue": "queue-a-repair",
+          "reasons": [
+            "URL points to a generic careers page instead of a job-specific posting",
+            "URL blocked automated verification (HTTP 403)"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "figma",
+      "companyName": "Figma",
+      "companyFile": "src/data/companies/figma.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 2,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "figma",
+          "companyName": "Figma",
+          "companyFile": "src/data/companies/figma.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer - Design, Dev, & AI Tools",
+          "location": "San Francisco, CA • New York, NY • United States",
+          "url": "https://job-boards.greenhouse.io/figma/jobs/5711468004",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/figma/jobs/5711468004",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        },
+        {
+          "companyId": "figma",
+          "companyName": "Figma",
+          "companyFile": "src/data/companies/figma.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer, AI Models",
+          "location": "San Francisco, CA • New York, NY • United States",
+          "url": "https://job-boards.greenhouse.io/figma/jobs/5711913004",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/figma/jobs/5711913004",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "ivo",
+      "companyName": "Ivo",
+      "companyFile": "src/data/companies/ivo.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 2,
+      "queue": "queue-b-refresh",
+      "roles": [
+        {
+          "companyId": "ivo",
+          "companyName": "Ivo",
+          "companyFile": "src/data/companies/ivo.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "San Francisco, CA (Onsite)",
+          "url": "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "timeout",
+          "titleEvidence": "unknown",
+          "queue": "queue-b-refresh",
+          "reasons": [
+            "URL timed out during verification"
+          ]
+        },
+        {
+          "companyId": "ivo",
+          "companyName": "Ivo",
+          "companyFile": "src/data/companies/ivo.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer (Design Systems)",
+          "location": "San Francisco, CA (Onsite)",
+          "url": "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "ramp",
+      "companyName": "Ramp",
+      "companyFile": "src/data/companies/ramp.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 2,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "ramp",
+          "companyName": "Ramp",
+          "companyFile": "src/data/companies/ramp.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Principal Product Designer",
+          "location": "New York, NY",
+          "url": "https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/ramp/6e7b0226-d806-4efb-972c-1e7d0e1690cf",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        },
+        {
+          "companyId": "ramp",
+          "companyName": "Ramp",
+          "companyFile": "src/data/companies/ramp.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Staff Product Designer",
+          "location": "New York, NY",
+          "url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "terradot",
+      "companyName": "Terradot",
+      "companyFile": "src/data/companies/terradot.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 2,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "terradot",
+          "companyName": "Terradot",
+          "companyFile": "src/data/companies/terradot.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "Sao Paulo (On-site)",
+          "url": "https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/terradot/4dee088e-c21f-4a76-983c-3c950f10f8d0",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        },
+        {
+          "companyId": "terradot",
+          "companyName": "Terradot",
+          "companyFile": "src/data/companies/terradot.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "Sao Paulo (On-site)",
+          "url": "https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/terradot/fea44e1d-b335-47fc-bc55-1fe08470c9bc",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "typeface",
+      "companyName": "Typeface",
+      "companyFile": "src/data/companies/typeface.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 2,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "typeface",
+          "companyName": "Typeface",
+          "companyFile": "src/data/companies/typeface.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "Palo Alto, CA (Hybrid)",
+          "url": "https://job-boards.greenhouse.io/typeface/jobs/4616989007",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/typeface?error=true",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        },
+        {
+          "companyId": "typeface",
+          "companyName": "Typeface",
+          "companyFile": "src/data/companies/typeface.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Staff Product Designer",
+          "location": "Palo Alto, CA",
+          "url": "https://job-boards.greenhouse.io/typeface/jobs/4617046007",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/typeface/jobs/4617046007",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "clerk",
+      "companyName": "Clerk",
+      "companyFile": "src/data/companies/clerk.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "clerk",
+          "companyName": "Clerk",
+          "companyFile": "src/data/companies/clerk.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "Remote",
+          "url": "https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/clerk/0c35b81a-76c9-4d6b-ab1e-e13b9112f4fa",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "exa",
+      "companyName": "Exa",
+      "companyFile": "src/data/companies/exa.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-c-review",
+      "roles": [
+        {
+          "companyId": "exa",
+          "companyName": "Exa",
+          "companyFile": "src/data/companies/exa.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Designer",
+          "location": "San Francisco, CA (In-person)",
+          "url": "https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35",
+          "scope": "needs-review",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/exa/10444567-e515-4504-9d7d-54a273625b35",
+          "titleEvidence": "unknown",
+          "queue": "queue-c-review",
+          "reasons": [
+            "title needs manual review before keeping in Product Design tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "further-ai",
+      "companyName": "FurtherAI",
+      "companyFile": "src/data/companies/further-ai.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-c-review",
+      "roles": [
+        {
+          "companyId": "further-ai",
+          "companyName": "FurtherAI",
+          "companyFile": "src/data/companies/further-ai.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Founding Product Designer",
+          "location": "San Francisco, CA",
+          "url": "https://www.ycombinator.com/companies/furtherai",
+          "scope": "in-scope",
+          "urlType": "ambiguous",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ycombinator.com/companies/furtherai",
+          "titleEvidence": "matched",
+          "queue": "queue-c-review",
+          "reasons": [
+            "URL pattern is ambiguous and may not point to a durable job detail page"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "hebbia",
+      "companyName": "Hebbia",
+      "companyFile": "src/data/companies/hebbia.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "hebbia",
+          "companyName": "Hebbia",
+          "companyFile": "src/data/companies/hebbia.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "New York, NY",
+          "url": "https://boards.greenhouse.io/hebbia/jobs/4150321005",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/hebbia?error=true",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "layer-financial",
+      "companyName": "Layer Financial",
+      "companyFile": "src/data/companies/layer-financial.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-c-review",
+      "roles": [
+        {
+          "companyId": "layer-financial",
+          "companyName": "Layer Financial",
+          "companyFile": "src/data/companies/layer-financial.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Founding Designer",
+          "location": "San Francisco, CA (On-site)",
+          "url": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62",
+          "scope": "needs-review",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62",
+          "titleEvidence": "unknown",
+          "queue": "queue-c-review",
+          "reasons": [
+            "title needs manual review before keeping in Product Design tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "lovable",
+      "companyName": "Lovable",
+      "companyFile": "src/data/companies/lovable.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "lovable",
+          "companyName": "Lovable",
+          "companyFile": "src/data/companies/lovable.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "Stockholm, Sweden",
+          "url": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "natural",
+      "companyName": "Natural",
+      "companyFile": "src/data/companies/natural.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-c-review",
+      "roles": [
+        {
+          "companyId": "natural",
+          "companyName": "Natural",
+          "companyFile": "src/data/companies/natural.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer",
+          "location": "San Francisco, CA",
+          "url": "https://www.natural.co/careers/product-designer",
+          "scope": "in-scope",
+          "urlType": "ambiguous",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://www.natural.co/careers/product-designer",
+          "titleEvidence": "matched",
+          "queue": "queue-c-review",
+          "reasons": [
+            "URL pattern is ambiguous and may not point to a durable job detail page"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "nexus",
+      "companyName": "Nexus",
+      "companyFile": "src/data/companies/nexus.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "nexus",
+          "companyName": "Nexus",
+          "companyFile": "src/data/companies/nexus.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "Argentina (Remote)",
+          "url": "https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/nexus.xyz/854e629c-9916-4c93-a106-a062c0e0eb36",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "numeric",
+      "companyName": "Numeric",
+      "companyFile": "src/data/companies/numeric.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "numeric",
+          "companyName": "Numeric",
+          "companyFile": "src/data/companies/numeric.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "San Francisco, CA or New York, NY",
+          "url": "https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/numeric/5c0435f6-1a75-4f6a-ae4c-6040d2f56ac2",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "reevo",
+      "companyName": "Reevo",
+      "companyFile": "src/data/companies/reevo.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "reevo",
+          "companyName": "Reevo",
+          "companyFile": "src/data/companies/reevo.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Builder - Product Designer",
+          "location": "Unknown",
+          "url": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "remofirst",
+      "companyName": "RemoFirst",
+      "companyFile": "src/data/companies/remofirst.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "remofirst",
+          "companyName": "RemoFirst",
+          "companyFile": "src/data/companies/remofirst.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "Remote (Poland, Spain, Kyiv, Portugal, South Africa, Hungary, Georgia, Germany, Romania, Estonia, Albania)",
+          "url": "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "scale-ai",
+      "companyName": "Scale AI",
+      "companyFile": "src/data/companies/scale-ai.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-b-refresh",
+      "roles": [
+        {
+          "companyId": "scale-ai",
+          "companyName": "Scale AI",
+          "companyFile": "src/data/companies/scale-ai.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer, Enterprise",
+          "location": "San Francisco, CA (Hybrid)",
+          "url": "https://scale.com/careers/4623277005",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://scale.com/careers/4623277005",
+          "titleEvidence": "not-matched",
+          "queue": "queue-b-refresh",
+          "reasons": [
+            "job title was not found in the fetched page body"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "solidroad",
+      "companyName": "Solidroad",
+      "companyFile": "src/data/companies/solidroad.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "solidroad",
+          "companyName": "Solidroad",
+          "companyFile": "src/data/companies/solidroad.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "Remote",
+          "url": "https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/solidroad/74ac0af1-d1bd-45e1-b8d0-7f3c5a0201ef",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "sourcegraph",
+      "companyName": "Sourcegraph",
+      "companyFile": "src/data/companies/sourcegraph.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "sourcegraph",
+          "companyName": "Sourcegraph",
+          "companyFile": "src/data/companies/sourcegraph.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer [IC4]",
+          "location": "San Francisco, CA (Required)",
+          "url": "https://boards.greenhouse.io/sourcegraph91/jobs/5198247004",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/sourcegraph91?error=true",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "suno",
+      "companyName": "Suno",
+      "companyFile": "src/data/companies/suno.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "suno",
+          "companyName": "Suno",
+          "companyFile": "src/data/companies/suno.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Staff Product Designer",
+          "location": "New York City, NY; Boston, MA; Los Angeles, CA (Onsite)",
+          "url": "https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3",
+          "titleEvidence": "unknown",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "superhuman",
+      "companyName": "Superhuman",
+      "companyFile": "src/data/companies/superhuman.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-c-review",
+      "roles": [
+        {
+          "companyId": "superhuman",
+          "companyName": "Superhuman",
+          "companyFile": "src/data/companies/superhuman.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Senior Product Designer",
+          "location": "Remote, North America",
+          "url": "https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc",
+          "scope": "in-scope",
+          "urlType": "ambiguous",
+          "status": "blocked",
+          "httpStatus": 403,
+          "finalUrl": "https://www.ziprecruiter.com/c/Superhuman/Job/Senior-Product-Designer/-in-Remote,US?jid=35e67684977e99fc",
+          "titleEvidence": "unknown",
+          "queue": "queue-c-review",
+          "reasons": [
+            "URL pattern is ambiguous and may not point to a durable job detail page",
+            "URL blocked automated verification (HTTP 403)"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "xai",
+      "companyName": "xAI",
+      "companyFile": "src/data/companies/xai.ts",
+      "lastUpdated": "2026-02-18",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "xai",
+          "companyName": "xAI",
+          "companyFile": "src/data/companies/xai.ts",
+          "lastUpdated": "2026-02-18",
+          "title": "Product Designer - Government",
+          "location": "Palo Alto, CA",
+          "url": "https://job-boards.greenhouse.io/xai/jobs/4876452007",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/xai?error=true",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "serval",
+      "companyName": "Serval",
+      "companyFile": "src/data/companies/serval.ts",
+      "lastUpdated": "2026-04-13T11:05:00",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "serval",
+          "companyName": "Serval",
+          "companyFile": "src/data/companies/serval.ts",
+          "lastUpdated": "2026-04-13T11:05:00",
+          "title": "Product Designer",
+          "location": "San Francisco, CA",
+          "url": "https://jobs.ashbyhq.com/Serval/f71a1d3f-9c1b-485e-964b-58e071510eac",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/Serval/f71a1d3f-9c1b-485e-964b-58e071510eac",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "chai-discovery",
+      "companyName": "Chai Discovery",
+      "companyFile": "src/data/companies/chai-discovery.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "chai-discovery",
+          "companyName": "Chai Discovery",
+          "companyFile": "src/data/companies/chai-discovery.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer",
+          "location": "San Francisco, CA (In-person)",
+          "url": "https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "character-ai",
+      "companyName": "Character.AI",
+      "companyFile": "src/data/companies/character-ai.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "character-ai",
+          "companyName": "Character.AI",
+          "companyFile": "src/data/companies/character-ai.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer",
+          "location": "Menlo Park, CA (Hybrid)",
+          "url": "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/character/344e6351-d8c1-4bfa-8672-f9f2faf5a1c6",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "delve",
+      "companyName": "Delve",
+      "companyFile": "src/data/companies/delve.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "delve",
+          "companyName": "Delve",
+          "companyFile": "src/data/companies/delve.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Senior Product Designer",
+          "location": "San Francisco, CA (on-site)",
+          "url": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "descript",
+      "companyName": "Descript",
+      "companyFile": "src/data/companies/descript.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "descript",
+          "companyName": "Descript",
+          "companyFile": "src/data/companies/descript.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer, Growth & Monetization",
+          "location": "San Francisco, CA (Hybrid)",
+          "url": "https://boards.greenhouse.io/descript/jobs/7660020003?gh_jid=7660020003",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://job-boards.greenhouse.io/descript/jobs/7660020003?gh_jid=7660020003",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "harvey",
+      "companyName": "Harvey",
+      "companyFile": "src/data/companies/harvey.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-a-repair",
+      "roles": [
+        {
+          "companyId": "harvey",
+          "companyName": "Harvey",
+          "companyFile": "src/data/companies/harvey.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Director, Product Design",
+          "location": "San Francisco / New York / Remote",
+          "url": "https://jobs.ashbyhq.com/harvey",
+          "scope": "in-scope",
+          "urlType": "generic-careers",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/harvey",
+          "titleEvidence": "matched",
+          "queue": "queue-a-repair",
+          "reasons": [
+            "URL points to a generic careers page instead of a job-specific posting"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "jasper",
+      "companyName": "Jasper",
+      "companyFile": "src/data/companies/jasper.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "jasper",
+          "companyName": "Jasper",
+          "companyFile": "src/data/companies/jasper.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Staff Product Designer",
+          "location": "Austin, TX / Remote",
+          "url": "https://jobs.ashbyhq.com/Jasper%20AI/a1347de0-541f-4ab1-a8ad-80b21ec339bc",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/Jasper%20AI/a1347de0-541f-4ab1-a8ad-80b21ec339bc",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "openai",
+      "companyName": "OpenAI",
+      "companyFile": "src/data/companies/openai.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "openai",
+          "companyName": "OpenAI",
+          "companyFile": "src/data/companies/openai.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer, ChatGPT",
+          "location": "San Francisco, CA",
+          "url": "https://openai.com/careers/product-designer-chatgpt-san-francisco/",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://openai.com/careers/product-designer-chatgpt-san-francisco/",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "sierra",
+      "companyName": "Sierra",
+      "companyFile": "src/data/companies/sierra.ts",
+      "lastUpdated": "2026-04-14",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "sierra",
+          "companyName": "Sierra",
+          "companyFile": "src/data/companies/sierra.ts",
+          "lastUpdated": "2026-04-14",
+          "title": "Product Designer",
+          "location": "San Francisco, CA",
+          "url": "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "omnea",
+      "companyName": "Omnea",
+      "companyFile": "src/data/companies/omnea.ts",
+      "lastUpdated": "2026-04-14T00:00:00",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "omnea",
+          "companyName": "Omnea",
+          "companyFile": "src/data/companies/omnea.ts",
+          "lastUpdated": "2026-04-14T00:00:00",
+          "title": "Product Design Lead",
+          "location": "London, Hybrid",
+          "url": "https://www.thesaasjobs.com/jobs/428317074-product-design-lead",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://www.thesaasjobs.com/jobs/428317074-product-design-lead",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    },
+    {
+      "companyId": "tennr",
+      "companyName": "Tennr",
+      "companyFile": "src/data/companies/tennr.ts",
+      "lastUpdated": "2026-04-14T00:00:00",
+      "roleCount": 1,
+      "queue": "queue-d-stable",
+      "roles": [
+        {
+          "companyId": "tennr",
+          "companyName": "Tennr",
+          "companyFile": "src/data/companies/tennr.ts",
+          "lastUpdated": "2026-04-14T00:00:00",
+          "title": "Product Designer",
+          "location": "New York, NY (Chelsea office 4 days/week preferred)",
+          "url": "https://jobs.ashbyhq.com/tennr/dd5ef69b-8066-4cc1-9892-71c7c2e80237",
+          "scope": "in-scope",
+          "urlType": "specific-job",
+          "status": "ok",
+          "httpStatus": 200,
+          "finalUrl": "https://jobs.ashbyhq.com/tennr/dd5ef69b-8066-4cc1-9892-71c7c2e80237",
+          "titleEvidence": "matched",
+          "queue": "queue-d-stable",
+          "reasons": [
+            "role passed the current audit checks"
+          ]
+        }
+      ]
+    }
+  ]
+}

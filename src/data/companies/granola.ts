@@ -160,7 +160,20 @@ export const granola: Company = {
         description: 'Product updates and philosophy',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Design Engineer",
+        location: "London",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/granola/77cf40dd-0a11-4b23-ab9d-ff9d9d1e5f41",
+        roleFamily: "design-engineering",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      }
+    ],
 
     cultureInsights: [
       {

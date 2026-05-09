@@ -211,7 +211,20 @@ export const elevenlabs: Company = {
       description: 'Product and research updates',
     },
   ],
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Product Designer",
+      location: "London | New York",
+      type: "full-time",
+      url: "https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "company",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Product Designer role verified from ElevenLabs careers.",
+    }
+  ],
 
   cultureInsights: [
     {

@@ -9,9 +9,9 @@ const __dirname = path.dirname(__filename);
 const companiesIndexPath = path.join(__dirname, '../src/data/companies/index.ts');
 const indexContent = fs.readFileSync(companiesIndexPath, 'utf-8');
 
-// Extract company variable names from the companies array
-// The array looks like: export const companies: Company[] = [ anthropic, leya, ... ];
-const arrayMatch = indexContent.match(/export const companies[^[]*\[([\s\S]*?)\];/);
+// Extract company variable names from the companies array.
+// Match the array assignment itself, not the [] in the Company[] type annotation.
+const arrayMatch = indexContent.match(/export const companies:[^=]*=\s*\[([\s\S]*?)\];/);
 if (!arrayMatch) {
   console.error('Could not find companies array');
   process.exit(1);
@@ -24,9 +24,16 @@ const companyVars = arrayMatch[1]
   .filter(v => v && !v.startsWith('//'));
 
 // Convert camelCase variable names to kebab-case IDs
-// (e.g., physicalIntelligence -> physical-intelligence)
-const companyIds = companyVars.map(varName => {
-  return varName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+// (e.g., physicalIntelligence -> physical-intelligence). Expand batch arrays
+// that store explicit company IDs.
+const companyIds = companyVars.flatMap(varName => {
+  if (varName === '...foundingDesignBatch') {
+    const batchPath = path.join(__dirname, '../src/data/companies/founding-design-batch.ts');
+    const batchContent = fs.readFileSync(batchPath, 'utf-8');
+    return Array.from(batchContent.matchAll(/id:\s*'([^']+)'/g)).map(match => match[1]);
+  }
+
+  return [varName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()];
 });
 
 // Read articles data

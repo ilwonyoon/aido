@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-04-14T22:10:41.358Z",
+  "sourceAuditReport": "src/data/research/open-role-audit-2026-04-14.json",
+  "batchSize": 5,
+  "summary": {
+    "repairCompanies": 2,
+    "refreshCompanies": 2,
+    "reviewCompanies": 5
+  },
+  "batches": {
+    "repair": [
+      {
+        "batch": 1,
+        "focus": "repair",
+        "companies": [
+          {
+            "companyId": "midjourney",
+            "companyName": "Midjourney",
+            "companyFile": "src/data/companies/midjourney.ts",
+            "lastUpdated": "2025-01-26",
+            "roleCount": 1
+          },
+          {
+            "companyId": "harvey",
+            "companyName": "Harvey",
+            "companyFile": "src/data/companies/harvey.ts",
+            "lastUpdated": "2026-04-14",
+            "roleCount": 1
+          }
+        ]
+      }
+    ],
+    "refresh": [
+      {
+        "batch": 1,
+        "focus": "refresh",
+        "companies": [
+          {
+            "companyId": "ivo",
+            "companyName": "Ivo",
+            "companyFile": "src/data/companies/ivo.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 2
+          },
+          {
+            "companyId": "scale-ai",
+            "companyName": "Scale AI",
+            "companyFile": "src/data/companies/scale-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      }
+    ],
+    "review": [
+      {
+        "batch": 1,
+        "focus": "review",
+        "companies": [
+          {
+            "companyId": "exa",
+            "companyName": "Exa",
+            "companyFile": "src/data/companies/exa.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "further-ai",
+            "companyName": "FurtherAI",
+            "companyFile": "src/data/companies/further-ai.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "layer-financial",
+            "companyName": "Layer Financial",
+            "companyFile": "src/data/companies/layer-financial.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "natural",
+            "companyName": "Natural",
+            "companyFile": "src/data/companies/natural.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          },
+          {
+            "companyId": "superhuman",
+            "companyName": "Superhuman",
+            "companyFile": "src/data/companies/superhuman.ts",
+            "lastUpdated": "2026-02-18",
+            "roleCount": 1
+          }
+        ]
+      }
+    ]
+  }
+}

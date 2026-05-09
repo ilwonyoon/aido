@@ -155,31 +155,46 @@ export const suno: Company = {
     // Open Roles
     openRoles: [
       {
-              title: 'Staff Product Designer',
-              location: 'New York City, NY; Boston, MA; Los Angeles, CA (Onsite)',
-              url: 'https://jobs.ashbyhq.com/suno/350abb93-94b0-44e1-9f40-362736bbd9ed?departmentId=a35a807e-03df-4167-a8a2-d0e85fa7dfb3',
-              level: 'Staff',
-              type: 'full-time',
-              compensation: '$200K-$280K + equity',
-              postedDate: '2025-11',
-              aboutRole:
-                'Drive end-to-end design for the web app across desktop and mobile, shaping core user flows and interaction details for music creation and listening.',
-              responsibilities: [
-                'Elevate the design of the web and mobile experience across platforms.',
-                'Collaborate closely with Product, Engineering, Research, and Data.',
-                'Maintain a high bar for craft, microinteractions, and motion design.',
-                'Push UI/UX boundaries while keeping the experience intuitive.',
-              ],
-              requirements: [
-                'Experience crafting delightful consumer product design.',
-                'Bias for action in fast-paced, ambiguous environments.',
-                'Comfort bringing clarity to fast-moving problem spaces.',
-                'Expertise in Figma; bonus for animation prototyping and design systems.',
-                'Love of music (listening, exploring, or making).',
-              ],
-              whyInteresting:
-                'High-craft consumer product with strong design emphasis, onsite collaboration in major creative hubs, and significant company equity and benefits.',
-            }
+        title: "Head of Product Design",
+        location: "Los Angeles",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/suno/54273783-a31a-4406-951f-2487ec77fb4b",
+        roleFamily: "product-design",
+        roleSignal: "head",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Staff Product Designer",
+        location: "NYC",
+        url: "https://jobs.ashbyhq.com/suno/6b7837b7-72ec-46a3-9b21-74c1dfa997b6",
+        level: "Staff",
+        type: "full-time",
+        compensation: "$200K-$280K + equity",
+        postedDate: "2025-11",
+        aboutRole: "Drive end-to-end design for the web app across desktop and mobile, shaping core user flows and interaction details for music creation and listening.",
+        responsibilities: [
+          "Elevate the design of the web and mobile experience across platforms.",
+          "Collaborate closely with Product, Engineering, Research, and Data.",
+          "Maintain a high bar for craft, microinteractions, and motion design.",
+          "Push UI/UX boundaries while keeping the experience intuitive."
+        ],
+        requirements: [
+          "Experience crafting delightful consumer product design.",
+          "Bias for action in fast-paced, ambiguous environments.",
+          "Comfort bringing clarity to fast-moving problem spaces.",
+          "Expertise in Figma; bonus for animation prototyping and design systems.",
+          "Love of music (listening, exploring, or making)."
+        ],
+        whyInteresting: "High-craft consumer product with strong design emphasis, onsite collaboration in major creative hubs, and significant company equity and benefits.",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+      }
     ],
 
     // Culture Insights

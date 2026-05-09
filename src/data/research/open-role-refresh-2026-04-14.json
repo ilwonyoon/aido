@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-04-14T22:10:37.399Z",
+  "sourceAuditReport": "src/data/research/open-role-audit-2026-04-14.json",
+  "summary": {
+    "totalDecisions": 4,
+    "replaced": 0,
+    "removed": 1,
+    "skipped": 3,
+    "changedCompanies": 0
+  },
+  "decisions": [
+    {
+      "companyId": "midjourney",
+      "companyName": "Midjourney",
+      "companyFile": "src/data/companies/midjourney.ts",
+      "previousTitle": "Product Designer",
+      "previousLocation": "Remote (Bay Area and London preferred)",
+      "previousUrl": "https://www.midjourney.com/careers",
+      "action": "skip",
+      "provider": "unknown",
+      "reason": "browser fallback confirmed Midjourney still has a Product Designer opening, but only as a generic section without a durable job-specific URL",
+      "discoveryUrl": "https://www.midjourney.com/careers"
+    },
+    {
+      "companyId": "grammarly",
+      "companyName": "Grammarly",
+      "companyFile": "src/data/companies/grammarly.ts",
+      "previousTitle": "Product Designer",
+      "previousLocation": "San Francisco, CA (Hybrid)",
+      "previousUrl": "https://www.grammarly.com/careers",
+      "action": "remove",
+      "provider": "unknown",
+      "reason": "official careers URL redirected off-domain to https://superhuman.com/company/careers without a supported ATS role listing",
+      "discoveryUrl": "https://www.grammarly.com/careers"
+    },
+    {
+      "companyId": "scale-ai",
+      "companyName": "Scale AI",
+      "companyFile": "src/data/companies/scale-ai.ts",
+      "previousTitle": "Product Designer, Enterprise",
+      "previousLocation": "San Francisco, CA (Hybrid)",
+      "previousUrl": "https://scale.com/careers/4623277005",
+      "action": "skip",
+      "provider": "unknown",
+      "reason": "No supported ATS provider could be discovered from the current role or source URLs"
+    },
+    {
+      "companyId": "harvey",
+      "companyName": "Harvey",
+      "companyFile": "src/data/companies/harvey.ts",
+      "previousTitle": "Director, Product Design",
+      "previousLocation": "San Francisco / New York / Remote",
+      "previousUrl": "https://jobs.ashbyhq.com/harvey",
+      "action": "skip",
+      "provider": "ashby",
+      "reason": "ashby board has multiple or ambiguous design roles that still need review",
+      "discoveryUrl": "https://jobs.ashbyhq.com/harvey"
+    }
+  ],
+  "changes": []
+}

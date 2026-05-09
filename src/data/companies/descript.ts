@@ -81,7 +81,7 @@ export const descript: Company = {
 
     designerLinks: [],
     openRoles: [
-      { title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.descript.com/careers', type: 'full-time' }
+      { title: 'Product Designer, Growth & Monetization', location: 'San Francisco, CA (Hybrid)', url: 'https://boards.greenhouse.io/descript/jobs/7660020003?gh_jid=7660020003', type: 'full-time' }
     ],
     cultureInsights: [],
     tracking: {
@@ -91,7 +91,7 @@ export const descript: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Descript product', 'Research founders'],
     },
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://www.descript.com/careers' },
     { title: 'Source', url: 'https://www.g2.com/products/descript/reviews' }

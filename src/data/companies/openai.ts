@@ -170,15 +170,10 @@ export const openai: Company = {
     // Open Roles
     openRoles: [
       {
-              title: 'Product Designer, ChatGPT',
-              location: 'San Francisco, CA',
-              url: 'https://openai.com/careers/product-designer-chatgpt-san-francisco/',
-            },
-      {
-              title: 'Product Designer, Platform & Tools',
-              location: 'San Francisco, CA',
-              url: 'https://openai.com/careers/product-designer-platform-and-tools-san-francisco/',
-            }
+                    title: 'Product Designer, ChatGPT',
+                    location: 'San Francisco, CA',
+                    url: 'https://openai.com/careers/product-designer-chatgpt-san-francisco/',
+                  }
     ],
 
     cultureInsights: [
@@ -258,7 +253,7 @@ export const openai: Company = {
       notes: 'Biggest name in AI. Design investment increasing. Consider which team matters most.',
     },
 
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://sherwood.news/business/openais-arr-reached-over-usd20-billion-in-2025-cfo-says/' },
     { title: 'Source', url: 'https://sacra.com/c/openai/' }

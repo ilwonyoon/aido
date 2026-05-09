@@ -176,30 +176,35 @@ export const layerFinancial: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Founding Designer',
-          location: 'San Francisco, CA (On-site)',
-          url: 'https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62',
-          type: 'full-time',
-          aboutRole:
-            "Own design for embedded accounting products and evolve Layer's brand and design system.",
-          responsibilities: [
-            'Lead end-to-end product design from discovery to launch',
-            'Design embedded UI patterns for SMB platforms',
-            'Evolve the design system in partnership with engineering',
-            'Partner with customers on onboarding and launch UX',
-          ],
-          requirements: [
-            'Excellent visual design craft',
-            'Systems thinking and design system experience',
-            'Deep Figma fluency',
-            'Strong communication and collaboration skills',
-          ],
-          preferred: [
-            '5+ years of product design experience',
-            'Experience as an early designer at a startup',
-            'Background in SaaS or fintech for SMBs',
-          ],
-        }
+      title: 'Founding Designer',
+      location: 'San Francisco, CA (on-site)',
+      url: 'https://jobs.ashbyhq.com/layerfi/caabdf27-0b83-4ca8-b8c9-56c0a4d53a62',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'needs_review',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-05',
+      aboutRole:
+        "Own design for embedded accounting products and evolve Layer's brand and design system.",
+      responsibilities: [
+        'Lead end-to-end product design from discovery to launch',
+        'Design embedded UI patterns for SMB platforms',
+        'Evolve the design system in partnership with engineering',
+        'Partner with customers on onboarding and launch UX',
+      ],
+      requirements: [
+        'Excellent visual design craft',
+        'Systems thinking and design system experience',
+        'Deep Figma fluency',
+        'Strong communication and collaboration skills',
+      ],
+      preferred: [
+        '5+ years of product design experience',
+        'Experience as an early designer at a startup',
+        'Background in SaaS or fintech for SMBs',
+      ],
+    }
   ],
 
   // Culture Insights

@@ -8,8 +8,6 @@ export const automat: Company = {
   screenshot: '',
 
   headquarters: 'San Francisco, CA',
-
-  region: 'sf-bay-area' as const,
   remote: 'No',
 
   aiTypes: ['automation'],
@@ -18,8 +16,6 @@ export const automat: Company = {
   industries: ['productivity'],
 
   stage: 'Series A',
-
-  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$19.25M',
   fundingHistory: [
@@ -165,9 +161,17 @@ export const automat: Company = {
   openRoles: [
     {
       title: 'Founding Designer',
-      location: 'San Francisco, CA (On-site)',
-      url: 'https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0',
+      location: 'San Francisco, CA',
       type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'yc',
+      lastVerifiedAt: '2026-05-05',
+      url: 'https://www.ycombinator.com/companies/automat/jobs/uu4bBiz-founding-designer',
+      compensation: '$140K-$225K + 0.05%-0.20%',
+      aboutRole: 'Own early product and visual design for AI-enabled RPA workflows.',
+      whyInteresting: 'First design hire at a founder-led AI automation company with unusually strong craft signals and direct founder access.',
     },
   ],
 
@@ -239,7 +243,7 @@ export const automat: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-19',
+  lastUpdated: '2026-02-18',
   sources: [
     { title: 'Automat Official Website', url: 'https://www.runautomat.com/' },
     { title: 'Automat About Page', url: 'https://www.runautomat.com/about' },

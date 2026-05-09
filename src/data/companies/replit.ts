@@ -222,7 +222,56 @@ export const replit: Company = {
     ],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Design Engineer",
+        location: "Foster City, CA (Hybrid) In office M,W,F",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/replit/2f1de5f1-48c2-4104-a697-a51fe1620508",
+        roleFamily: "design-engineering",
+        roleSignal: "standard",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Staff Product Designer",
+        location: "Foster City, CA (Hybrid) In office M,W,F",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/replit/32468016-3602-43a3-8860-7ddb47827814",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Staff Product Designer, Design System",
+        location: "Foster City, CA (Hybrid) In office M,W,F",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/replit/955b73a9-4aec-456d-876b-38ac98cbdecd",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Staff Product Designer, Visual Design",
+        location: "Foster City, CA (Hybrid) In office M,W,F",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/replit/1baa97c3-46e0-497f-bd30-05a926162e07",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      }
+    ],
 
     // Culture Insights
     cultureInsights: [

@@ -168,20 +168,7 @@ export const toma: Company = {
         description: 'Founder insights',
       },
     ],
-    openRoles: [
-      {
-        title: 'Designer of Everything',
-        location: 'San Francisco, CA',
-        type: 'full-time',
-        url: 'https://www.toma.com/jobs',
-        requirements: [
-          '3+ years digital product design',
-          'Figma expertise',
-          'AI prototyping tools (Lovable, Replit)',
-          'Ownership mindset',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -264,7 +251,7 @@ export const toma: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-26',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://techcrunch.com/2025/06/05/tomas-ai-voice-agents-have-taken-off-at-car-dealerships-and-attracted-funding-from-a16z/' },
     { title: 'Source', url: 'https://www.ycombinator.com/companies/toma' },

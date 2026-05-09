@@ -3,7 +3,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { companies } from '@/data/companies';
-import { Company } from '@/data/types';
+import { Company, InterestStatus, OpenRole } from '@/data/types';
 import { getAiLevelConfig } from '@/design/tokens';
 import { CompanyLogo } from '@/components/CompanyLogo';
 import { Badge } from '@/components/ui/Badge';
@@ -254,17 +254,89 @@ function ListIcon({ active }: { active: boolean }) {
 // Company List Row (full-width, all data)
 // ────────────────────────────────────────────────────────────────────────────
 
+function ToggleFilter({
+  label,
+  active,
+  onChange,
+}: {
+  label: string;
+  active: boolean;
+  onChange: (active: boolean) => void;
+}) {
+  return (
+    <button
+      onClick={() => onChange(!active)}
+      className={`flex items-center gap-2 bg-[var(--card)] border rounded-full px-4 py-1.5 text-sm cursor-pointer transition-colors whitespace-nowrap flex-shrink-0 ${
+        active
+          ? 'border-[var(--accent)] text-[var(--foreground)]'
+          : 'border-[var(--border)] text-[var(--muted)] hover:border-[var(--muted)]'
+      }`}
+    >
+      <span className={`w-3.5 h-3.5 rounded border flex items-center justify-center ${active ? 'bg-[var(--accent)] border-[var(--accent)]' : 'border-[var(--border)]'}`}>
+        {active && (
+          <svg width="9" height="9" viewBox="0 0 16 16" fill="white">
+            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
+          </svg>
+        )}
+      </span>
+      {label}
+    </button>
+  );
+}
+
+function getRoleFamily(role: OpenRole): NonNullable<OpenRole['roleFamily']> {
+  if (role.roleFamily) return role.roleFamily;
+  const title = role.title.toLowerCase();
+  if (title.includes('design engineer')) return 'design-engineering';
+  if (title.includes('brand')) return 'brand-design';
+  if (title.includes('designer') || title.includes('product design')) return 'product-design';
+  return 'other-design';
+}
+
+function getRoleSignal(role: OpenRole): NonNullable<OpenRole['roleSignal']> {
+  if (role.roleSignal) return role.roleSignal;
+  const title = role.title.toLowerCase();
+  if (title.includes('founding')) return 'founding';
+  if (title.includes('first design hire') || title.includes('first designer')) return 'first-design-hire';
+  if (title.includes('principal') || title.includes('staff')) return 'staff';
+  if (title.includes('senior')) return 'senior';
+  if (title.includes('lead')) return 'lead';
+  if (title.includes('head') || title.includes('director') || title.includes('vp')) return 'head';
+  return 'standard';
+}
+
+function matchesRoleFilters(
+  role: OpenRole,
+  foundingOnly: boolean,
+  firstDesignHireOnly: boolean,
+  includeDesignEngineering: boolean
+): boolean {
+  if (!foundingOnly && !firstDesignHireOnly) return true;
+  if (role.verificationStatus === 'closed') return false;
+  const signal = getRoleSignal(role);
+  const selectedSignals = [
+    ...(foundingOnly ? ['founding'] : []),
+    ...(firstDesignHireOnly ? ['first-design-hire'] : []),
+  ];
+  if (!selectedSignals.includes(signal)) return false;
+
+  const family = getRoleFamily(role);
+  if (family === 'design-engineering') return includeDesignEngineering;
+  return family === 'product-design' || family === 'brand-design' || family === 'other-design';
+}
+
 function CompanyListRow({
   company,
+  roles,
   applicationStatus,
   onApplicationStatusChange,
 }: {
   company: Company;
+  roles: OpenRole[];
   applicationStatus: ApplicationStatus | null;
   onApplicationStatusChange?: (status: ApplicationStatus | null) => void;
 }) {
   const config = getAiLevelConfig(company.aiNativeLevel);
-  const roles = company.openRoles;
 
   return (
     <div className="py-6">
@@ -372,17 +444,18 @@ function CompanyListRow({
 
 function CompanyCard({
   company,
+  roles,
   applicationStatus,
   onApplicationStatusChange,
 }: {
   company: Company;
+  roles: OpenRole[];
   applicationStatus: ApplicationStatus | null;
   onApplicationStatusChange?: (status: ApplicationStatus | null) => void;
 }) {
   const config = getAiLevelConfig(company.aiNativeLevel);
   const whyJoin = company.tracking.whyJoin.slice(0, 3);
   const topWhyNot = company.tracking.whyNot[0];
-  const roles = company.openRoles;
 
   return (
     <div className="card p-5 flex flex-col">
@@ -504,49 +577,54 @@ export default function JobsPage() {
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [designFocusFilter, setDesignFocusFilter] = useState('');
+  const [foundingDesignOnly, setFoundingDesignOnly] = useState(false);
+  const [firstDesignHireOnly, setFirstDesignHireOnly] = useState(false);
+  const [includeDesignEngineering, setIncludeDesignEngineering] = useState(false);
+  const [aiNativeOnly, setAiNativeOnly] = useState(false);
   const [applicationStatusFilter, setApplicationStatusFilter] = useState<ApplicationStatusFilter>('');
+  const [interestStatuses, setInterestStatuses] = useState<Record<string, InterestStatus>>({});
   const [applicationStatuses, setApplicationStatuses] = useState<Record<string, ApplicationStatus | null>>({});
+  const [trackingLoaded, setTrackingLoaded] = useState(false);
 
   useEffect(() => {
     if (loading) return;
     if (!user) {
       queueMicrotask(() => {
+        setInterestStatuses({});
         setApplicationStatuses({});
         setApplicationStatusFilter('');
+        setTrackingLoaded(false);
       });
       return;
     }
 
     let isActive = true;
     const load = async () => {
+      setTrackingLoaded(false);
       const tracking = await getAllUserTracking(user.uid);
       if (!isActive) return;
-      const statuses: Record<string, ApplicationStatus | null> = {};
+      const statuses: Record<string, InterestStatus> = {};
+      const applicationStatuses: Record<string, ApplicationStatus | null> = {};
       tracking.forEach((item) => {
+        const status = item.interestStatus ?? item.status;
+        if (status === 'tier_0' || status === 'tier_1' || status === 'not_interested') {
+          statuses[item.companyId] = status;
+        }
         if (item.applicationStatus) {
-          statuses[item.companyId] = item.applicationStatus;
+          applicationStatuses[item.companyId] = item.applicationStatus;
         }
       });
-      setApplicationStatuses(statuses);
+      setInterestStatuses(statuses);
+      setApplicationStatuses(applicationStatuses);
+      setTrackingLoaded(true);
     };
 
-    load();
-
-    let lastLoadTime = Date.now();
-    const handleVisibilityChange = () => {
-      if (!document.hidden && Date.now() - lastLoadTime > 5000) {
-        lastLoadTime = Date.now();
-        load();
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    void load();
 
     return () => {
       isActive = false;
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
-  }, [user, loading]);
+  }, [loading, user]);
 
   const updateApplicationStatus = async (
     companyId: string,
@@ -565,16 +643,17 @@ export default function JobsPage() {
   const companiesWithRoles = useMemo(() => {
     const levelOrder: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
     return companies
-      .filter(c => c.openRoles.length > 0)
+      .filter(c => c.openRoles.length > 0 && interestStatuses[c.id] !== 'not_interested')
       .sort((a, b) => {
         const diff = (levelOrder[a.aiNativeLevel] ?? 4) - (levelOrder[b.aiNativeLevel] ?? 4);
         return diff !== 0 ? diff : b.openRoles.length - a.openRoles.length;
       });
-  }, []);
+  }, [interestStatuses]);
 
   const filtered = useMemo(() => {
     return companiesWithRoles.filter(company => {
       if (aiLevelFilter && company.aiNativeLevel !== aiLevelFilter) return false;
+      if (aiNativeOnly && !['A', 'B'].includes(company.aiNativeLevel)) return false;
 
       if (locationFilter.length > 0) {
         const hq = company.headquarters;
@@ -595,6 +674,11 @@ export default function JobsPage() {
         if (designFocusFilter === 'interface' && dwt.interface.level !== 'high') return false;
       }
 
+      const visibleRoles = company.openRoles.filter(role =>
+        matchesRoleFilters(role, foundingDesignOnly, firstDesignHireOnly, includeDesignEngineering)
+      );
+      if (visibleRoles.length === 0) return false;
+
       if (applicationStatusFilter) {
         const status = applicationStatuses[company.id] ?? null;
         if (applicationStatusFilter === 'not_applied' && status !== null) return false;
@@ -603,19 +687,36 @@ export default function JobsPage() {
 
       return true;
     });
-  }, [companiesWithRoles, aiLevelFilter, locationFilter, designFocusFilter, applicationStatusFilter, applicationStatuses]);
+  }, [companiesWithRoles, aiLevelFilter, locationFilter, designFocusFilter, foundingDesignOnly, firstDesignHireOnly, includeDesignEngineering, aiNativeOnly, applicationStatusFilter, applicationStatuses]);
+
+  const rolesForCompany = (company: Company) =>
+    company.openRoles.filter(role => matchesRoleFilters(role, foundingDesignOnly, firstDesignHireOnly, includeDesignEngineering));
 
   const totalCompanies = companiesWithRoles.length;
   const totalRoles = companiesWithRoles.reduce((sum, c) => sum + c.openRoles.length, 0);
-  const filteredRoles = filtered.reduce((sum, c) => sum + c.openRoles.length, 0);
-  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '' || applicationStatusFilter !== '';
+  const filteredRoles = filtered.reduce((sum, c) => sum + rolesForCompany(c).length, 0);
+  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '' || foundingDesignOnly || firstDesignHireOnly || includeDesignEngineering || aiNativeOnly || applicationStatusFilter !== '';
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setLocationFilter([]);
     setDesignFocusFilter('');
+    setFoundingDesignOnly(false);
+    setFirstDesignHireOnly(false);
+    setIncludeDesignEngineering(false);
+    setAiNativeOnly(false);
     setApplicationStatusFilter('');
   };
+
+  const shouldWaitForTracking = loading || (Boolean(user) && !trackingLoaded);
+
+  if (shouldWaitForTracking) {
+    return (
+      <div className="card p-8 text-center text-[var(--muted)]">
+        Loading hiring filters...
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -661,6 +762,26 @@ export default function JobsPage() {
               { value: 'interface', label: 'Interface \u2014 High' },
             ]}
             onChange={setDesignFocusFilter}
+          />
+          <ToggleFilter
+            label="Founding design"
+            active={foundingDesignOnly}
+            onChange={setFoundingDesignOnly}
+          />
+          <ToggleFilter
+            label="First design hire"
+            active={firstDesignHireOnly}
+            onChange={setFirstDesignHireOnly}
+          />
+          <ToggleFilter
+            label="AI-native A/B"
+            active={aiNativeOnly}
+            onChange={setAiNativeOnly}
+          />
+          <ToggleFilter
+            label="Include design engineering"
+            active={includeDesignEngineering}
+            onChange={setIncludeDesignEngineering}
           />
           {user && (
             <DropdownFilter
@@ -727,10 +848,11 @@ export default function JobsPage() {
         </div>
       ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {filtered.map(company => (
+          {filtered.map((company, index) => (
             <CompanyCard
-              key={company.id}
+              key={`${company.id}-${index}`}
               company={company}
+              roles={rolesForCompany(company)}
               applicationStatus={applicationStatuses[company.id] ?? null}
               onApplicationStatusChange={
                 user
@@ -742,15 +864,16 @@ export default function JobsPage() {
         </div>
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {filtered.map(company => {
+          {filtered.map((company, index) => {
             const applicationStatus = applicationStatuses[company.id] ?? null;
             return (
               <div
-                key={company.id}
+                key={`${company.id}-${index}`}
                 className={`px-5 ${applicationStatus ? 'bg-[var(--card-hover)]' : ''}`}
               >
                 <CompanyListRow
                   company={company}
+                  roles={rolesForCompany(company)}
                   applicationStatus={applicationStatus}
                   onApplicationStatusChange={
                     user

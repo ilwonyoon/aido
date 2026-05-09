@@ -1,0 +1,3946 @@
+{
+  "generatedAt": "2026-05-07T03:42:21.622Z",
+  "sourceReport": "src/data/research/ashby-priority-role-scan-2026-05-07.json",
+  "updateOpenRoles": [
+    {
+      "rank": 2,
+      "band": "P0",
+      "id": "lovable",
+      "name": "Lovable",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/lovable/49281e88-9484-4371-84bb-458e50eb517f",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Stockholm"
+        },
+        {
+          "title": "Design Engineer (Web & Brand)",
+          "url": "https://jobs.ashbyhq.com/lovable/e5b0769c-168f-4a7b-a749-7ba8ea5e0c9e",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Stockholm"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "Stockholm"
+        },
+        {
+          "title": "Staff / Principal Design Engineer (Web & Brand)",
+          "url": "https://jobs.ashbyhq.com/lovable/51885ae5-4f4c-46c4-abd3-d7aad1c8d9c0",
+          "roleFamily": "design-engineering",
+          "roleSignal": "staff",
+          "location": "Stockholm"
+        },
+        {
+          "title": "Staff / Principal Product Designer",
+          "url": "https://jobs.ashbyhq.com/lovable/5635b88f-a361-4f5f-8209-ca343a003947",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Stockholm"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "band": "P0",
+      "id": "replit",
+      "name": "Replit",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/replit/2f1de5f1-48c2-4104-a697-a51fe1620508",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Foster City, CA (Hybrid) In office M,W,F"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/replit/32468016-3602-43a3-8860-7ddb47827814",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Foster City, CA (Hybrid) In office M,W,F"
+        },
+        {
+          "title": "Staff Product Designer, Design System",
+          "url": "https://jobs.ashbyhq.com/replit/955b73a9-4aec-456d-876b-38ac98cbdecd",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Foster City, CA (Hybrid) In office M,W,F"
+        },
+        {
+          "title": "Staff Product Designer, Visual Design",
+          "url": "https://jobs.ashbyhq.com/replit/1baa97c3-46e0-497f-bd30-05a926162e07",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Foster City, CA (Hybrid) In office M,W,F"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "band": "P0",
+      "id": "linear",
+      "name": "Linear",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior / Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/Linear/a264869e-f058-487c-ab7f-9b77dffa427c",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "North America"
+        },
+        {
+          "title": "Senior / Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/Linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Europe"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "band": "P0",
+      "id": "sierra",
+      "name": "Sierra",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Agent Experience Designer, Voice (Multilingual)",
+          "url": "https://jobs.ashbyhq.com/sierra/1a0e307f-7f02-4971-820c-a244ad909617",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco, CA"
+        },
+        {
+          "title": "Agent Experience Designer, Voice (Multilingual)",
+          "url": "https://jobs.ashbyhq.com/sierra/5ea8d56f-09b5-4113-9929-a3ef42d010ef",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "London"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "band": "P0",
+      "id": "harvey",
+      "name": "Harvey",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Director, Product Design, Core Product",
+          "url": "https://jobs.ashbyhq.com/harvey/7f07817e-31e4-44e8-be95-0aa5e1271bb9",
+          "roleFamily": "product-design",
+          "roleSignal": "head",
+          "location": "New York"
+        },
+        {
+          "title": "Director, Product Design, Core Product",
+          "url": "https://jobs.ashbyhq.com/harvey/e96d8ab4-a149-48d9-928e-7719e7018554",
+          "roleFamily": "product-design",
+          "roleSignal": "head",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/93268ee0-0192-45e2-aa68-e2eccd9f8459",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "New York"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/c7e0635d-0b26-4f94-a6f7-023d03a3b4b2",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Staff Design Systems Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/9814b9ca-5917-43f8-8f76-6df7aa7e2be3",
+          "roleFamily": "other-design",
+          "roleSignal": "staff",
+          "location": "New York"
+        },
+        {
+          "title": "Staff Design Systems Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/aede4098-91f4-44f5-9d53-27c15cb2bae7",
+          "roleFamily": "other-design",
+          "roleSignal": "staff",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/d527a336-24e3-46ef-8d05-1da557c7bff4",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "New York"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/harvey/24616c39-e293-4bcc-a3dd-e6f33a71c8ee",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "band": "P0",
+      "id": "serval",
+      "name": "Serval",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/Serval/581f8b72-9a8c-46d2-9bf7-7fddad5d8750",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/Serval/f71a1d3f-9c1b-485e-964b-58e071510eac",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "band": "P0",
+      "id": "listen-labs",
+      "name": "Listen Labs",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/listenlabs/a8d40c4f-2367-493e-bd41-f3987abb4d4b",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco, CA"
+        },
+        {
+          "title": "Member of Technical Staff, Design Engineering",
+          "url": "https://jobs.ashbyhq.com/listenlabs/bcd4d6d7-053b-4bba-be2c-8970e9795c58",
+          "roleFamily": "other-design",
+          "roleSignal": "staff",
+          "location": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "band": "P0",
+      "id": "decagon",
+      "name": "Decagon",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/decagon/1117aac8-58b5-4b24-bc82-849317a52719",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "band": "P0",
+      "id": "suno",
+      "name": "Suno",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Head of Product Design",
+          "url": "https://jobs.ashbyhq.com/suno/54273783-a31a-4406-951f-2487ec77fb4b",
+          "roleFamily": "product-design",
+          "roleSignal": "head",
+          "location": "Los Angeles"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/suno/6b7837b7-72ec-46a3-9b21-74c1dfa997b6",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "NYC"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "band": "P0",
+      "id": "vanta",
+      "name": "Vanta",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer, CTM",
+          "url": "https://jobs.ashbyhq.com/vanta/2992de92-9906-487f-a4c9-e2380b363d2a",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Remote U.S."
+        },
+        {
+          "title": "Senior Product Designer, GRC",
+          "url": "https://jobs.ashbyhq.com/vanta/3c9e7e35-1a93-4a36-8db9-48aee332ca57",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Remote U.S."
+        },
+        {
+          "title": "Staff Product Designer, AI Platform",
+          "url": "https://jobs.ashbyhq.com/vanta/ed294035-b450-428b-b1d9-7843cbde9621",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Remote U.S."
+        },
+        {
+          "title": "Staff Product Designer, AI Powered Workflows",
+          "url": "https://jobs.ashbyhq.com/vanta/bd35a80e-f596-4f0b-b92e-0ff49e0f35c0",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Remote U.S."
+        }
+      ]
+    },
+    {
+      "rank": 28,
+      "band": "P0",
+      "id": "resolve-ai",
+      "name": "Resolve AI",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer ",
+          "url": "https://jobs.ashbyhq.com/Resolve%20AI/e5d71d91-c69a-4894-ad42-b1009a97f4f4",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 33,
+      "band": "P1",
+      "id": "abridge",
+      "name": "Abridge",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Imagineer",
+          "url": "https://jobs.ashbyhq.com/Abridge/d6baf8ee-02f8-41d2-a6e8-46fd31401350",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "SF Office"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/Abridge/6aab826b-a60a-434e-889d-e4648f289305",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "SF Office"
+        },
+        {
+          "title": "Staff Designer, Art Direction",
+          "url": "https://jobs.ashbyhq.com/Abridge/fa37e174-023b-4c8b-b827-2c15fc7b8960",
+          "roleFamily": "other-design",
+          "roleSignal": "staff",
+          "location": "SF Office"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/Abridge/d48553c1-a360-4509-a1e0-9df6d8b480f6",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "SF Office"
+        }
+      ]
+    },
+    {
+      "rank": 37,
+      "band": "P1",
+      "id": "granola",
+      "name": "Granola",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/granola/77cf40dd-0a11-4b23-ab9d-ff9d9d1e5f41",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "London"
+        }
+      ]
+    },
+    {
+      "rank": 46,
+      "band": "P1",
+      "id": "exa",
+      "name": "Exa",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/exa/237cc096-2234-48ee-9c98-8c7221845484",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco, California"
+        }
+      ]
+    },
+    {
+      "rank": 48,
+      "band": "P1",
+      "id": "solidroad",
+      "name": "Solidroad",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/solidroad/139448a7-bed6-45c2-92b4-4e7b37d3b6cd",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 59,
+      "band": "P1",
+      "id": "blueberry",
+      "name": "Blueberry",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/pear-vc/be379450-38d0-44c1-928e-d8603c6923f7",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        },
+        {
+          "title": "UI/UX Designer",
+          "url": "https://jobs.ashbyhq.com/pear-vc/90055fa9-ef39-4049-b1c6-b1c0766da5de",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 64,
+      "band": "P1",
+      "id": "jinba",
+      "name": "Jinba.io",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Design Engineer",
+          "url": "https://jobs.ashbyhq.com/carnot-ai/f8e9170f-e276-47e8-b7b8-a74e906f0ed3",
+          "roleFamily": "design-engineering",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/carnot-ai/38a7a3ff-eea9-473a-8ad3-cc3581c20715",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 74,
+      "band": "P1",
+      "id": "cartesia",
+      "name": "Cartesia",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/cartesia/30dd64e9-178e-43d8-afaa-13bb97baf45d",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "*HQ - San Francisco, CA"
+        },
+        {
+          "title": "Product Design Lead",
+          "url": "https://jobs.ashbyhq.com/cartesia/6d525670-4509-4039-9a00-1b58ca0db1f4",
+          "roleFamily": "other-design",
+          "roleSignal": "lead",
+          "location": "*HQ - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "rank": 76,
+      "band": "P1",
+      "id": "ramp",
+      "name": "Ramp",
+      "currentOpenRoles": 2,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/ramp/3d81a24f-cca4-4b2b-9478-cf422adc8237",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "New York, NY (HQ)"
+        },
+        {
+          "title": "Design Engineer, Brand ",
+          "url": "https://jobs.ashbyhq.com/ramp/b67f938f-b966-4d56-83d5-71db39c22474",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "New York, NY (HQ)"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "New York, NY (HQ)"
+        }
+      ]
+    },
+    {
+      "rank": 78,
+      "band": "P1",
+      "id": "ashby",
+      "name": "Ashby",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer, Americas",
+          "url": "https://jobs.ashbyhq.com/ashby/cc846e56-27dd-41b5-bf5b-64d5eeb5ff1a",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Remote - US"
+        },
+        {
+          "title": "Design Engineer, Canada",
+          "url": "https://jobs.ashbyhq.com/ashby/97c6542c-7ff9-43e5-ac54-b77b45fc7378",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Remote - Canada"
+        },
+        {
+          "title": "Design Engineer, EU",
+          "url": "https://jobs.ashbyhq.com/ashby/87b96eef-edc1-4de4-adb6-d460126d02f8",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Portugal"
+        },
+        {
+          "title": "Design Engineer, UK",
+          "url": "https://jobs.ashbyhq.com/ashby/306a353b-aab5-49d6-a711-a77aa0f5a660",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "United Kingdom"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/ashby/f40ef345-82a8-4956-9150-193b4fdf8183",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Remote - US"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/ashby/2373fcd5-144b-4d66-a98b-dd0efb4eb9d1",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "Remote - US"
+        }
+      ]
+    },
+    {
+      "rank": 85,
+      "band": "P1",
+      "id": "medra",
+      "name": "Medra",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Designer",
+          "url": "https://jobs.ashbyhq.com/medraai/157476f2-45e5-4702-a46e-e085cf0b2384",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 96,
+      "band": "P1",
+      "id": "delphi",
+      "name": "Delphi",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/Delphi/81a220c3-1338-426f-ba34-5d77753add24",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/Delphi/9e2040f8-ecbf-4192-85b9-02e08a20675f",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 102,
+      "band": "P1",
+      "id": "trm-labs",
+      "name": "TRM Labs",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/trm-labs/16660699-5a97-42da-a8b7-9b91f81cf199",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "North America"
+        }
+      ]
+    },
+    {
+      "rank": 103,
+      "band": "P1",
+      "id": "notion",
+      "name": "Notion",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "AI Conversation Designer, Customer Support",
+          "url": "https://jobs.ashbyhq.com/notion/753883ee-23a9-4150-804f-342d32743d56",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco, California"
+        },
+        {
+          "title": "Interactive Designer, Brand",
+          "url": "https://jobs.ashbyhq.com/notion/1ead3ae1-7854-4968-adc8-773747352bd1",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "New York, New York"
+        }
+      ]
+    },
+    {
+      "rank": 104,
+      "band": "P1",
+      "id": "omnea",
+      "name": "Omnea",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Design Director",
+          "url": "https://jobs.ashbyhq.com/omnea/4a267bbc-881c-4729-9c00-d82741e13893",
+          "roleFamily": "other-design",
+          "roleSignal": "head",
+          "location": "London"
+        },
+        {
+          "title": "Product Design Lead",
+          "url": "https://jobs.ashbyhq.com/omnea/16c48cd1-9f40-415d-a0af-a9b8cd17f78c",
+          "roleFamily": "other-design",
+          "roleSignal": "lead",
+          "location": "London"
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/omnea/f23a08f1-23d4-42e0-9b32-061ad1fb2b5e",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "London"
+        },
+        {
+          "title": "Solutions Design Consultant",
+          "url": "https://jobs.ashbyhq.com/omnea/23eb57e6-8e37-4239-ac74-8ce0ea4d5a9e",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "London"
+        }
+      ]
+    },
+    {
+      "rank": 110,
+      "band": "P1",
+      "id": "legora",
+      "name": "Legora",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Brand Design Director",
+          "url": "https://jobs.ashbyhq.com/legora/4df9c123-f313-4b95-a4d3-1234bbe2cb50",
+          "roleFamily": "other-design",
+          "roleSignal": "head",
+          "location": "Stockholm HQ"
+        }
+      ]
+    },
+    {
+      "rank": 119,
+      "band": "P1",
+      "id": "zed-dev",
+      "name": "Zed",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Designer",
+          "url": "https://jobs.ashbyhq.com/zed/6871e6ed-0358-4d36-b666-d10e6b3c31cf",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "The Americas (North, Central, South)"
+        }
+      ]
+    },
+    {
+      "rank": 128,
+      "band": "P2",
+      "id": "jack-and-jill",
+      "name": "Jack & Jill",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer ($150k-$200k + Equity) at Aranya.tech",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/fb4371b2-a903-4d74-8bcc-ee5670db1736",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Jose"
+        },
+        {
+          "title": "Design Engineer (£70k - £130k + Equity) at Architect",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/8ce13953-278e-4f39-9a72-9b5db22375a4",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "London UK"
+        },
+        {
+          "title": "Design Engineer at high-end product design studio",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/f6f44cc9-13a7-4b14-90f0-028a861421a4",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco, CA"
+        },
+        {
+          "title": "Design Engineer at Venture-backed AI startup",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/a6d4d4c0-38ed-42bf-96ff-86242837b206",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco, CA"
+        },
+        {
+          "title": "Design (Frontend) Engineer at Bound.co",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/136385a5-3ee4-4f0a-9c25-daccc76a9f33",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "London UK"
+        },
+        {
+          "title": "Founding Designer (£180k+)",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/dfa2e8e3-f676-4705-8e5a-5a88465fc4d4",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "London UK"
+        },
+        {
+          "title": "Founding Designer at Design-forward travel tech startup",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/22f58d24-fa8a-4847-8ec3-fba9afd3c90c",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco, CA"
+        },
+        {
+          "title": "Founding Game Designer (£80k-110k + Equity) at Pebble",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/31e1044a-c0d2-47d8-a1d5-2d38d1cc699b",
+          "roleFamily": "other-design",
+          "roleSignal": "founding",
+          "location": "London UK"
+        },
+        {
+          "title": "Founding Product Designer (£80-110K) at Chalkie",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/eae557e2-68c5-4c9c-9158-5d40408d65d3",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "London UK"
+        },
+        {
+          "title": "Head of Design at Fanvue.com",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/7e064722-582c-4aa6-a7ef-927eef3e30d5",
+          "roleFamily": "other-design",
+          "roleSignal": "head",
+          "location": "London UK"
+        },
+        {
+          "title": "Lead Product Designer (£90k-£105k + Equity) at rapidly growing healthtech platform",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/5644998b-07bf-4485-b814-2b23f35bb0c5",
+          "roleFamily": "product-design",
+          "roleSignal": "lead",
+          "location": "London"
+        },
+        {
+          "title": "Senior Electrical Design Engineer (£80k–£100k + Equity) at Rivan Industries",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/b5ec746e-ef67-4780-94c5-4a74b6905b9f",
+          "roleFamily": "design-engineering",
+          "roleSignal": "senior",
+          "location": "London UK"
+        },
+        {
+          "title": "Senior Product Designer (£150k) at Deducta",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/120aaeb8-ca29-4b47-b150-22877d59cbaa",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "London UK"
+        },
+        {
+          "title": "Senior Product Designer ($170k-$200k + Equity) at zaimler.ai",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/e25cb838-d63e-4d4e-be37-d7f118e4e33d",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Mateo"
+        },
+        {
+          "title": "UX Designer at HOAi",
+          "url": "https://jobs.ashbyhq.com/jack-jill-external-ats/205687b9-9d99-42b5-b54a-62e4de5e2167",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "United States"
+        }
+      ]
+    },
+    {
+      "rank": 133,
+      "band": "P2",
+      "id": "mutiny",
+      "name": "Mutiny",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/Mutiny/c676aecb-8d8b-469f-8afa-057834dee11b",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Mutiny HQ "
+        }
+      ]
+    },
+    {
+      "rank": 149,
+      "band": "P2",
+      "id": "numeric",
+      "name": "Numeric",
+      "currentOpenRoles": 1,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/numeric/c7b5b94b-f44a-4042-b32e-a12337f49047",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/numeric/577ea5d6-de7e-4459-aa1c-357483b93e26",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 150,
+      "band": "P2",
+      "id": "lindy",
+      "name": "Lindy",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/lindy/4258e967-8a1a-48b0-84d7-c9764521201a",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 153,
+      "band": "P2",
+      "id": "sesame-ai",
+      "name": "Sesame AI",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Eyewear Designer",
+          "url": "https://jobs.ashbyhq.com/sesame/f5c7e2d7-628f-449a-bcc3-94dfe92209f3",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Industrial Designer",
+          "url": "https://jobs.ashbyhq.com/sesame/3806c7e9-727e-46d9-a020-508e6c123124",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        },
+        {
+          "title": "Mechanical Engineer, Product Design ",
+          "url": "https://jobs.ashbyhq.com/sesame/12d7b079-5fc3-4178-a785-ae3f924e884b",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "Bellevue"
+        },
+        {
+          "title": "Product Designer ",
+          "url": "https://jobs.ashbyhq.com/sesame/430ccfb7-2358-4ce9-9e00-fd84d4e28332",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 155,
+      "band": "P2",
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/higgsfieldai/f7d841b9-cd29-46b1-99f4-e3b7ca78663b",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "Almaty"
+        }
+      ]
+    },
+    {
+      "rank": 162,
+      "band": "P2",
+      "id": "assort-health",
+      "name": "Assort Health",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/assorthealth/37e3a179-e08d-43ba-b8d3-2314358a6674",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco (HQ)"
+        }
+      ]
+    },
+    {
+      "rank": 169,
+      "band": "P2",
+      "id": "collective",
+      "name": "Collective",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Design Lead",
+          "url": "https://jobs.ashbyhq.com/collective/8318f814-9871-4648-b471-3de1e0c06d6a",
+          "roleFamily": "other-design",
+          "roleSignal": "lead",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 176,
+      "band": "P2",
+      "id": "lumos",
+      "name": "Lumos",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/lumos/f3756857-cc8c-4719-b3f6-985ac15bb298",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Lumos HQ"
+        }
+      ]
+    },
+    {
+      "rank": 189,
+      "band": "P2",
+      "id": "mercor",
+      "name": "Mercor",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/mercor/fa165009-f687-48da-a141-ca49593336e5",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 203,
+      "band": "P2",
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/firecrawl/d30cfdff-dc2f-4f6f-8b6b-7118c2080a9f",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco, CA (Hybrid) OR Remote (Americas, UTC-3 to UTC-10)"
+        }
+      ]
+    },
+    {
+      "rank": 206,
+      "band": "P2",
+      "id": "superpower",
+      "name": "Superpower",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Designer (Generalist)",
+          "url": "https://jobs.ashbyhq.com/superpower/95ec432c-fb28-4163-b25f-b58de7efdd2d",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco "
+        },
+        {
+          "title": "Growth/Digital Designer",
+          "url": "https://jobs.ashbyhq.com/superpower/2fe817bb-7c6d-4d9a-b05f-f43a0e967223",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "San Francisco "
+        },
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/superpower/c2fac79c-0d12-4f27-8602-d17c928d704c",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "San Francisco "
+        }
+      ]
+    },
+    {
+      "rank": 215,
+      "band": "P2",
+      "id": "subtrate",
+      "name": "Subtrate",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Standard Cell Design Lead",
+          "url": "https://jobs.ashbyhq.com/substrate/841eb0ed-8c0c-4fbb-ad2b-e14a7b760232",
+          "roleFamily": "other-design",
+          "roleSignal": "lead",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 230,
+      "band": "P2",
+      "id": "auctor",
+      "name": "Auctor",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/auctor/adbce9bf-eed9-47af-805c-294e14cecbb0",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "New York"
+        }
+      ]
+    },
+    {
+      "rank": 241,
+      "band": "P2",
+      "id": "laurel",
+      "name": "Laurel",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/laurel/bf99a75e-a467-4460-94ec-f62820136e9c",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "rank": 244,
+      "band": "P2",
+      "id": "infisical",
+      "name": "Infisical",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer, Platform (Americas)",
+          "url": "https://jobs.ashbyhq.com/infisical/ee25fbbb-c3c6-4c51-a664-1539350616b9",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "North to South America"
+        },
+        {
+          "title": "Design Engineer, Site (Americas)",
+          "url": "https://jobs.ashbyhq.com/infisical/558d171f-9730-47d6-8d35-1026c2c3e316",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "North to South America"
+        }
+      ]
+    },
+    {
+      "rank": 279,
+      "band": "P3",
+      "id": "traba",
+      "name": "Traba",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/traba/db4f54f3-9d5a-4927-9a55-edc1c3c55c19",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "New York City, NY"
+        },
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/traba/538e5544-a3a5-4ec4-9567-01466a0ff927",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "New York City, NY"
+        }
+      ]
+    },
+    {
+      "rank": 296,
+      "band": "P3",
+      "id": "safetykit",
+      "name": "SafetyKit",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/safetykit/0b13ebad-119e-4b7a-8964-faea712a0b08",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 301,
+      "band": "P3",
+      "id": "netic",
+      "name": "Netic",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/netic/2b65d752-605f-4ccc-a25e-c7a8b18c191e",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 307,
+      "band": "P3",
+      "id": "console",
+      "name": "Console",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/console/158ec72f-61b6-4701-b952-b2a230e957af",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco (On-site)"
+        },
+        {
+          "title": "Sr. Product Designer",
+          "url": "https://jobs.ashbyhq.com/console/765f867f-cfda-419e-a493-ac3f897d1dad",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco (On-site)"
+        }
+      ]
+    },
+    {
+      "rank": 310,
+      "band": "P3",
+      "id": "airops",
+      "name": "Airops",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Lead Product Designer",
+          "url": "https://jobs.ashbyhq.com/airops/74341d78-7a8c-462d-93bf-648472710b43",
+          "roleFamily": "product-design",
+          "roleSignal": "lead",
+          "location": "New York City or San Francisco (Onsite)"
+        }
+      ]
+    },
+    {
+      "rank": 324,
+      "band": "P3",
+      "id": "supabase",
+      "name": "Supabase",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/supabase/2e6ee4b3-6573-477f-9c95-d1221cd9f9f9",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Remote"
+        }
+      ]
+    },
+    {
+      "rank": 331,
+      "band": "P3",
+      "id": "mural",
+      "name": "Mural",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Lead Product Designer, AI & Agentic Workflows",
+          "url": "https://jobs.ashbyhq.com/mural/95841fa7-6ff1-4d29-848d-af545726ac7f",
+          "roleFamily": "product-design",
+          "roleSignal": "lead",
+          "location": "United States Remote"
+        },
+        {
+          "title": "Principal Product Designer, Integrated Workflows",
+          "url": "https://jobs.ashbyhq.com/mural/11cf1105-f7f3-43b1-9daa-64c665ae5877",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "Canada Remote"
+        },
+        {
+          "title": "Product Designer, Digital (LUMA)",
+          "url": "https://jobs.ashbyhq.com/mural/26574d02-1d75-433b-bd9b-9218366ea5bf",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "United States Remote"
+        },
+        {
+          "title": "Product Designer, Services (LUMA)",
+          "url": "https://jobs.ashbyhq.com/mural/a61e4f71-a2b1-4be0-bc27-375cd792861b",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "United States Remote"
+        },
+        {
+          "title": "Senior Product Designer, Customer Insights",
+          "url": "https://jobs.ashbyhq.com/mural/27046011-ac8d-41d7-838e-954c2f0ad8dc",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Canada Remote"
+        },
+        {
+          "title": "Senior Product Designer, Growth (Upper Funnel)",
+          "url": "https://jobs.ashbyhq.com/mural/450cd3e0-f8db-4ea0-a946-9323d8890bbf",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Canada Remote"
+        },
+        {
+          "title": "Senior Visual Systems Designer",
+          "url": "https://jobs.ashbyhq.com/mural/9274e122-b4fb-4a8f-b32c-0af8db5c647c",
+          "roleFamily": "other-design",
+          "roleSignal": "senior",
+          "location": "Canada Remote"
+        }
+      ]
+    },
+    {
+      "rank": 337,
+      "band": "P3",
+      "id": "span",
+      "name": "Span",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/span.app/a04a2e37-6b17-4e97-9845-e55e82783a12",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "Remote (USA)"
+        }
+      ]
+    },
+    {
+      "rank": 354,
+      "band": "P3",
+      "id": "workos",
+      "name": "WorkOS",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Design",
+          "url": "https://jobs.ashbyhq.com/workos/bd5dab2b-fa93-4441-9ca0-558593f02b9a",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "United States"
+        }
+      ]
+    },
+    {
+      "rank": 357,
+      "band": "P3",
+      "id": "patch",
+      "name": "Patch",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/patch.io/84da9a54-c3b7-40c8-851b-a4718323165f",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 380,
+      "band": "P3",
+      "id": "browserbase",
+      "name": "Browserbase",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer (Web & Brand)",
+          "url": "https://jobs.ashbyhq.com/browserbase/e5437e00-4afb-4d39-8f30-0e04bf2080d0",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 384,
+      "band": "P3",
+      "id": "unify",
+      "name": "Unify",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Staff Product Designer ",
+          "url": "https://jobs.ashbyhq.com/unify/dc490a9f-b28a-4da4-848a-1c68f8ea4b55",
+          "roleFamily": "product-design",
+          "roleSignal": "staff",
+          "location": "New York Office"
+        }
+      ]
+    },
+    {
+      "rank": 396,
+      "band": "P3",
+      "id": "datacurve",
+      "name": "Datacurve",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Design Engineer",
+          "url": "https://jobs.ashbyhq.com/datacurve/3b95550f-4e50-418b-9e6b-8ddd62367efe",
+          "roleFamily": "design-engineering",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 397,
+      "band": "P3",
+      "id": "inkeep",
+      "name": "Inkeep",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Member of Technical Staff, Design & Frontend Engineer",
+          "url": "https://jobs.ashbyhq.com/inkeep/dbc4fd6d-72c6-42b0-bc1a-01bb38710bd1",
+          "roleFamily": "other-design",
+          "roleSignal": "staff",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 406,
+      "band": "P3",
+      "id": "e2b",
+      "name": "E2B",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/e2b/e5f9f727-b02c-40cc-95b5-d036b38e7088",
+          "roleFamily": "product-design",
+          "roleSignal": "founding",
+          "location": "San Francisco"
+        }
+      ]
+    },
+    {
+      "rank": 415,
+      "band": "P3",
+      "id": "the-interaction-company-of-california",
+      "name": "The Interaction Company Of California",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Design Engineer",
+          "url": "https://jobs.ashbyhq.com/interaction/4fe12bf3-33e9-4a3e-8e15-965f33dbf7b5",
+          "roleFamily": "design-engineering",
+          "roleSignal": "standard",
+          "location": "Palo Alto, California"
+        }
+      ]
+    },
+    {
+      "rank": 452,
+      "band": "P3",
+      "id": "anara",
+      "name": "Anara",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/anara/4e660933-c8aa-4344-9a33-25968dd28255",
+          "roleFamily": "product-design",
+          "roleSignal": "standard",
+          "location": "San Francisco or Remote (North America, Europe)"
+        }
+      ]
+    },
+    {
+      "rank": 460,
+      "band": "P3",
+      "id": "coframe",
+      "name": "Coframe",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/Coframe/29a944ba-7cae-429e-84e3-32f047d21c4a",
+          "roleFamily": "product-design",
+          "roleSignal": "senior",
+          "location": "SF Bay Area"
+        }
+      ]
+    },
+    {
+      "rank": 473,
+      "band": "P3",
+      "id": "cytora",
+      "name": "Cytora",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Webflow Developer and Designer",
+          "url": "https://jobs.ashbyhq.com/cytora.com/f23a0935-fd42-46e5-9f44-42d7a27f5aeb",
+          "roleFamily": "other-design",
+          "roleSignal": "standard",
+          "location": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "rank": 475,
+      "band": "P3",
+      "id": "sfcompute",
+      "name": "San Francisco Compute Company",
+      "currentOpenRoles": 0,
+      "ashbyDesignPostings": [
+        {
+          "title": "Director of Design & Engineering, Data Centers",
+          "url": "https://jobs.ashbyhq.com/sfcompute/e1654846-916f-4825-b05a-8d34e7798ace",
+          "roleFamily": "other-design",
+          "roleSignal": "head",
+          "location": "San Francisco, CA"
+        }
+      ]
+    }
+  ],
+  "removeStaleOpenRoles": [
+    {
+      "rank": 5,
+      "band": "P0",
+      "id": "tennr",
+      "name": "Tennr",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "tennr"
+      ],
+      "notes": [
+        "current roles: Product Designer"
+      ]
+    },
+    {
+      "rank": 61,
+      "band": "P1",
+      "id": "claren",
+      "name": "Claren / WilsonAI",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "wilsonai"
+      ],
+      "notes": [
+        "current roles: Founding Design Engineer"
+      ]
+    },
+    {
+      "rank": 90,
+      "band": "P1",
+      "id": "nexus",
+      "name": "Nexus",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "nexus.xyz"
+      ],
+      "notes": [
+        "current roles: Senior Product Designer"
+      ]
+    },
+    {
+      "rank": 91,
+      "band": "P1",
+      "id": "terradot",
+      "name": "Terradot",
+      "currentOpenRoles": 2,
+      "knownAshbySlugs": [
+        "terradot"
+      ],
+      "notes": [
+        "current roles: Product Designer; Senior Product Designer"
+      ]
+    },
+    {
+      "rank": 123,
+      "band": "P1",
+      "id": "layer-financial",
+      "name": "Layer Financial",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "layerfi"
+      ],
+      "notes": [
+        "current roles: Founding Designer"
+      ]
+    },
+    {
+      "rank": 146,
+      "band": "P2",
+      "id": "character-ai",
+      "name": "Character.AI",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "character"
+      ],
+      "notes": [
+        "current roles: Product Designer"
+      ]
+    },
+    {
+      "rank": 170,
+      "band": "P2",
+      "id": "clerk",
+      "name": "Clerk",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "clerk"
+      ],
+      "notes": [
+        "current roles: Product Designer"
+      ]
+    },
+    {
+      "rank": 314,
+      "band": "P3",
+      "id": "onyx",
+      "name": "Onyx",
+      "currentOpenRoles": 1,
+      "knownAshbySlugs": [
+        "onyx-dot-app"
+      ],
+      "notes": [
+        "current roles: Founding Designer"
+      ]
+    }
+  ],
+  "runJobScraper": [
+    {
+      "rank": 1,
+      "band": "P0",
+      "id": "anthropic",
+      "name": "Anthropic",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/4980436008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/4951814008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/4532887008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5023394008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5030244008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5183051008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5183052008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5183053008",
+        "https://job-boards.greenhouse.io/anthropic/jobs/5189848008"
+      ],
+      "designSignalUrls": [
+        "https://www.anthropic.com/careers/jobs"
+      ]
+    },
+    {
+      "rank": 3,
+      "band": "P0",
+      "id": "cursor",
+      "name": "Cursor",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cursor/61e4677d-cf3d-458a-bf6c-02287d5d2c39",
+        "https://jobs.ashbyhq.com/cursor/61e4677d-cf3d-458a-bf6c-02287d5d2c39/application",
+        "https://jobs.ashbyhq.com/cursor/1240b4aa-8074-4afb-ae36-a690869c8233",
+        "https://jobs.ashbyhq.com/cursor/1240b4aa-8074-4afb-ae36-a690869c8233/application",
+        "https://jobs.ashbyhq.com/cursor/193c326d-2ffc-4c11-8bba-73d243fd178b",
+        "https://jobs.ashbyhq.com/cursor/193c326d-2ffc-4c11-8bba-73d243fd178b/application",
+        "https://jobs.ashbyhq.com/cursor/01fdd3d5-be8c-47d5-a317-bfe797739670",
+        "https://jobs.ashbyhq.com/cursor/01fdd3d5-be8c-47d5-a317-bfe797739670/application",
+        "https://jobs.ashbyhq.com/cursor/70822054-6883-4a15-8daf-430e76cba26d",
+        "https://jobs.ashbyhq.com/cursor/70822054-6883-4a15-8daf-430e76cba26d/application"
+      ],
+      "designSignalUrls": [
+        "https://cursor.com/careers"
+      ]
+    },
+    {
+      "rank": 17,
+      "band": "P0",
+      "id": "ivo",
+      "name": "Ivo",
+      "atsHints": [
+        "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
+        "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9/apply",
+        "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd",
+        "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd/apply"
+      ],
+      "designSignalUrls": [
+        "https://jobs.lever.co/ivo/7f29a899-83a2-45d7-a4eb-72e5a950ffd9",
+        "https://jobs.lever.co/ivo/9abfc2d7-6b14-4ad4-a57d-25ada05af4cd"
+      ]
+    },
+    {
+      "rank": 23,
+      "band": "P0",
+      "id": "ambience-healthcare",
+      "name": "Ambience Healthcare",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/ambiencehealthcare/e3689211-e008-48f7-b82d-c2cea4e283d3",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/2ecdc1b0-d4a6-462b-9ef1-a9fc790e1a46",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/42b8ea23-5583-420b-9dc0-5e90054b018b",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/4e6521e4-fa41-46f3-88c4-0435ea7467b6",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/3adb42ca-6695-48ce-96a3-b288fd1ac145",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/d4e6fc62-117a-4fc5-a1c1-f6c7d7474ad7",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/167c30e8-25ee-475a-88ef-d1cb15fc4d76",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/2c014d0c-2a7e-4095-b86d-9439dade6f62",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/a8b59898-34b0-4272-83a0-d530af467004",
+        "https://jobs.ashbyhq.com/ambiencehealthcare/ef7ec50a-e69b-4e20-bb95-f4786ca81656"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 24,
+      "band": "P0",
+      "id": "factory",
+      "name": "Factory",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://factory.ai/company"
+      ]
+    },
+    {
+      "rank": 25,
+      "band": "P0",
+      "id": "cohere",
+      "name": "Cohere",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cohere"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 26,
+      "band": "P0",
+      "id": "fal",
+      "name": "fal",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/fal"
+      ],
+      "designSignalUrls": [
+        "https://fal.ai/careers"
+      ]
+    },
+    {
+      "rank": 27,
+      "band": "P0",
+      "id": "mistral",
+      "name": "Mistral AI",
+      "atsHints": [
+        "https://jobs.lever.co/mistral?utm_source=website&amp;utm_medium=header_cta",
+        "https://jobs.lever.co/mistral",
+        "https://jobs.lever.co/mistral?team=Research",
+        "https://jobs.lever.co/mistral?team=Engineering%20%26%20Infra",
+        "https://jobs.lever.co/mistral?team=Business",
+        "https://jobs.lever.co/mistral?team=Corporate",
+        "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c",
+        "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c/apply",
+        "https://jobs.lever.co/mistral/2a357282-9d44-4b41-a249-c75ffe878ce2",
+        "https://jobs.lever.co/mistral/7894fd8a-ffc9-4c89-87f0-f8a7b695cf01"
+      ],
+      "designSignalUrls": [
+        "https://jobs.lever.co/mistral/282e0150-5664-48e4-aa41-843493efdd4c",
+        "https://jobs.lever.co/mistral"
+      ]
+    },
+    {
+      "rank": 29,
+      "band": "P0",
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://elevenlabs.io/careers",
+        "https://elevenlabs.io/careers/89da00ec-11b0-4359-913b-c3a89c1013bc/product-designer"
+      ]
+    },
+    {
+      "rank": 30,
+      "band": "P1",
+      "id": "vercel",
+      "name": "Vercel",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/vercel/jobs/5624231004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5752956004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5789770004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5843010004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5846178004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5820658004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5980496004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5968713004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5968725004",
+        "https://job-boards.greenhouse.io/vercel/jobs/5709080004"
+      ],
+      "designSignalUrls": [
+        "https://vercel.com/careers"
+      ]
+    },
+    {
+      "rank": 32,
+      "band": "P1",
+      "id": "superhuman",
+      "name": "Superhuman",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/grammarly"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 36,
+      "band": "P1",
+      "id": "grammarly",
+      "name": "Grammarly",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/grammarly"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 41,
+      "band": "P1",
+      "id": "sourcegraph",
+      "name": "Sourcegraph",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/sourcegraph91?error=true",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/5855148004",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/5973079004",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/5822678004",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/5973064004",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/5823076004",
+        "https://job-boards.greenhouse.io/sourcegraph91/jobs/4621149004",
+        "https://job-boards.greenhouse.io/sourcegraph91"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 42,
+      "band": "P1",
+      "id": "heygen",
+      "name": "HeyGen",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/heygen",
+        "https://job-boards.greenhouse.io/heygen?sid=no_sid"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 45,
+      "band": "P1",
+      "id": "delve",
+      "name": "Delve",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/delve/15637a6e-cef3-405f-a7f4-bf26c8350160",
+        "https://jobs.ashbyhq.com/delve/embed"
+      ],
+      "designSignalUrls": [
+        "https://jobs.insightpartners.com/companies/delve-yc-w24-2-becfbef0-bbf1-47f4-943d-1b32a2f42d3d/jobs/63414923-senior-product-designer"
+      ]
+    },
+    {
+      "rank": 47,
+      "band": "P1",
+      "id": "writer",
+      "name": "Writer",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/writer"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 51,
+      "band": "P1",
+      "id": "codeium",
+      "name": "Codeium (now Windsurf)",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cognition"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 52,
+      "band": "P1",
+      "id": "cognition",
+      "name": "Cognition",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cognition"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 53,
+      "band": "P1",
+      "id": "thinking-machines-lab",
+      "name": "Thinking Machines Lab",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/thinkingmachines",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5164607008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5159119008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5202370008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5105846008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5156656008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5149860008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5166366008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5164518008",
+        "https://job-boards.greenhouse.io/thinkingmachines/jobs/5165725008"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 56,
+      "band": "P1",
+      "id": "agave",
+      "name": "Agave",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/agave/jobs/Wr9IXT8-founding-product-designer",
+        "https://useagave.com/careers"
+      ]
+    },
+    {
+      "rank": 58,
+      "band": "P1",
+      "id": "arnata",
+      "name": "arnata",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/arnata/jobs/WHv3neF-founding-product-designer"
+      ]
+    },
+    {
+      "rank": 65,
+      "band": "P1",
+      "id": "mage-legal",
+      "name": "Mage Legal",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/mage-legal/jobs/HQwuocB-founding-designer"
+      ]
+    },
+    {
+      "rank": 66,
+      "band": "P1",
+      "id": "parrot",
+      "name": "Parrot",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/parrot/jobs/DCavRV9-founding-product-designer"
+      ]
+    },
+    {
+      "rank": 67,
+      "band": "P1",
+      "id": "peer-ai",
+      "name": "Peer AI",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://getpeer.ai/careers/founding-product-designer",
+        "https://getpeer.ai/careers"
+      ]
+    },
+    {
+      "rank": 72,
+      "band": "P1",
+      "id": "wayline",
+      "name": "Wayline",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/wayline/jobs/d6ugYvj-founding-product-designer"
+      ]
+    },
+    {
+      "rank": 75,
+      "band": "P1",
+      "id": "pika",
+      "name": "Pika",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/pika"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 79,
+      "band": "P1",
+      "id": "harmonic",
+      "name": "Harmonic",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Harmonic/c6a0e6de-5d0f-49d7-8869-e962ea69dcca",
+        "https://jobs.ashbyhq.com/Harmonic/c6a0e6de-5d0f-49d7-8869-e962ea69dcca/application",
+        "https://jobs.ashbyhq.com/Harmonic/42cfb051-0311-4e69-af19-dc868012e3ac",
+        "https://jobs.ashbyhq.com/Harmonic/42cfb051-0311-4e69-af19-dc868012e3ac/application",
+        "https://jobs.ashbyhq.com/Harmonic/700d7dd6-db2b-4693-9e11-40fb755a54c4",
+        "https://jobs.ashbyhq.com/Harmonic/700d7dd6-db2b-4693-9e11-40fb755a54c4/application",
+        "https://jobs.ashbyhq.com/Harmonic/a057aec5-eecc-4ec8-a1b2-ef93a418d88d",
+        "https://jobs.ashbyhq.com/Harmonic/a057aec5-eecc-4ec8-a1b2-ef93a418d88d/application",
+        "https://jobs.ashbyhq.com/Harmonic/288d8cce-929a-4ed6-920e-4e80ecaf457a",
+        "https://jobs.ashbyhq.com/Harmonic/288d8cce-929a-4ed6-920e-4e80ecaf457a/application"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 80,
+      "band": "P1",
+      "id": "baseten",
+      "name": "Baseten",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/baseten/form/open-talent-community"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 81,
+      "band": "P1",
+      "id": "odyssey",
+      "name": "Odyssey",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/odysseyml/2db04ba2-0de6-4cb0-a5a1-0602f77d89ad",
+        "https://jobs.ashbyhq.com/odysseyml/2db04ba2-0de6-4cb0-a5a1-0602f77d89ad/application",
+        "https://jobs.ashbyhq.com/odysseyml/28c99a01-1e1a-498c-adca-f2271656e824",
+        "https://jobs.ashbyhq.com/odysseyml/28c99a01-1e1a-498c-adca-f2271656e824/application",
+        "https://jobs.ashbyhq.com/odysseyml/d1f279e2-9dfd-4bac-b65d-d41b43bd4211",
+        "https://jobs.ashbyhq.com/odysseyml/d1f279e2-9dfd-4bac-b65d-d41b43bd4211/application",
+        "https://jobs.ashbyhq.com/odysseyml/a63ab9cd-8236-4928-a969-f0914d9d2d43",
+        "https://jobs.ashbyhq.com/odysseyml/a63ab9cd-8236-4928-a969-f0914d9d2d43/application",
+        "https://jobs.ashbyhq.com/odysseyml/87a6e1e6-7e71-4b05-be51-f6704dfadd19",
+        "https://jobs.ashbyhq.com/odysseyml/87a6e1e6-7e71-4b05-be51-f6704dfadd19/application"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 84,
+      "band": "P1",
+      "id": "descript",
+      "name": "Descript",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=descript"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 86,
+      "band": "P1",
+      "id": "hightouch",
+      "name": "Hightouch",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/hightouch",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5982446004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5823552004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5618829004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5699984004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5770046004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5597121004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5762547004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5796608004",
+        "https://job-boards.greenhouse.io/hightouch/jobs/5806403004"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 89,
+      "band": "P1",
+      "id": "langchain",
+      "name": "LangChain",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/langchain/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 93,
+      "band": "P1",
+      "id": "federato",
+      "name": "Federato",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/federato",
+        "https://job-boards.greenhouse.io/federato/jobs/5211152008",
+        "https://job-boards.greenhouse.io/federato/jobs/5109700008",
+        "https://job-boards.greenhouse.io/federato/jobs/5158494008",
+        "https://job-boards.greenhouse.io/federato/jobs/5204058008",
+        "https://job-boards.greenhouse.io/federato/jobs/5134331008",
+        "https://job-boards.greenhouse.io/federato/jobs/5019876008",
+        "https://job-boards.greenhouse.io/federato/jobs/5206958008",
+        "https://job-boards.greenhouse.io/federato/jobs/5076797008",
+        "https://job-boards.greenhouse.io/federato/jobs/5012570008"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 94,
+      "band": "P1",
+      "id": "vapi",
+      "name": "Vapi",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/vapi/d270d613-30b8-4fdc-96e0-514993ca7a82",
+        "https://jobs.ashbyhq.com/vapi/295f5269-1bb5-4740-81fa-9716adc32ad5",
+        "https://jobs.ashbyhq.com/vapi/50d82ec9-720a-4aea-9a2d-c502786f737e",
+        "https://jobs.ashbyhq.com/vapi/6c313f2f-5287-4e51-a0a4-a38cda6f79dc",
+        "https://jobs.ashbyhq.com/vapi/e7c7a40d-4fa9-4f26-8517-343c2e0daa8b",
+        "https://jobs.ashbyhq.com/vapi/d270d613-30b8-4fdc-96e0-514993ca7a82/application",
+        "https://jobs.ashbyhq.com/vapi/295f5269-1bb5-4740-81fa-9716adc32ad5/application",
+        "https://jobs.ashbyhq.com/vapi/50d82ec9-720a-4aea-9a2d-c502786f737e/application",
+        "https://jobs.ashbyhq.com/vapi/6c313f2f-5287-4e51-a0a4-a38cda6f79dc/application",
+        "https://jobs.ashbyhq.com/vapi/e7c7a40d-4fa9-4f26-8517-343c2e0daa8b/application"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 95,
+      "band": "P1",
+      "id": "axiom-math",
+      "name": "Axiom (Math)",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/axiommath/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 97,
+      "band": "P1",
+      "id": "brex",
+      "name": "Brex",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.brex.com/careers"
+      ]
+    },
+    {
+      "rank": 98,
+      "band": "P1",
+      "id": "hebbia",
+      "name": "Hebbia",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/hebbia?error=true",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4640379005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4614766005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4670226005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4683103005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4683104005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4671837005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4605886005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4670491005",
+        "https://job-boards.greenhouse.io/hebbia/jobs/4585152005"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 99,
+      "band": "P1",
+      "id": "remofirst",
+      "name": "RemoFirst",
+      "atsHints": [
+        "https://jobs.lever.co/remofirst/",
+        "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08",
+        "https://jobs.lever.co/remofirst",
+        "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08/apply",
+        "https://jobs.lever.co/remofirst/69191118-29b3-4f7a-9d6e-7109e5fc37a7",
+        "https://jobs.lever.co/remofirst/73b4ed64-6f4e-4414-8b64-65dc3fec2e92",
+        "https://jobs.lever.co/remofirst/8e905023-deef-4edb-a42f-b4a2841540af",
+        "https://jobs.lever.co/remofirst/f4583678-22d8-4427-bd2c-367333510727",
+        "https://jobs.lever.co/remofirst/938872cc-a348-4595-97f1-9fe0279b2498",
+        "https://jobs.lever.co/remofirst/b989cdde-e986-4e9c-95a1-f772ffb2ff39"
+      ],
+      "designSignalUrls": [
+        "https://jobs.lever.co/remofirst/9f5e8ec1-5a4a-49ad-a5a5-aa8ab9189f08"
+      ]
+    },
+    {
+      "rank": 108,
+      "band": "P1",
+      "id": "intercom-fin",
+      "name": "Intercom (Fin)",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/intercom/jobs/7247950",
+        "https://job-boards.greenhouse.io/intercom/jobs/7254820",
+        "https://job-boards.greenhouse.io/intercom/jobs/7408013",
+        "https://job-boards.greenhouse.io/intercom/jobs/7591182",
+        "https://job-boards.greenhouse.io/intercom/jobs/7603334",
+        "https://job-boards.greenhouse.io/intercom/jobs/7583124",
+        "https://job-boards.greenhouse.io/intercom/jobs/7838601",
+        "https://job-boards.greenhouse.io/intercom/jobs/7395357",
+        "https://job-boards.greenhouse.io/intercom/jobs/7296732",
+        "https://job-boards.greenhouse.io/intercom/jobs/7335309"
+      ],
+      "designSignalUrls": [
+        "https://www.intercom.com/careers"
+      ]
+    },
+    {
+      "rank": 109,
+      "band": "P1",
+      "id": "xai",
+      "name": "xAI",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/xai?error=true",
+        "https://job-boards.greenhouse.io/xai/jobs/5077876007",
+        "https://job-boards.greenhouse.io/xai/jobs/5123063007",
+        "https://job-boards.greenhouse.io/xai/jobs/5119679007",
+        "https://job-boards.greenhouse.io/xai/jobs/5055751007",
+        "https://job-boards.greenhouse.io/xai/jobs/5123051007",
+        "https://job-boards.greenhouse.io/xai/jobs/5123837007",
+        "https://job-boards.greenhouse.io/xai/jobs/5123845007",
+        "https://job-boards.greenhouse.io/xai/jobs/5124647007",
+        "https://job-boards.greenhouse.io/xai/jobs/5124669007"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 113,
+      "band": "P1",
+      "id": "closure",
+      "name": "Closure",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.ycombinator.com/companies/closure/jobs/z5WK1E2-founding-product-designer"
+      ]
+    },
+    {
+      "rank": 115,
+      "band": "P1",
+      "id": "motif",
+      "name": "Motif",
+      "atsHints": [
+        "https://jobs.lever.co/motifsystems",
+        "https://jobs.lever.co/motifsystems/bda1c572-4a10-46ff-9c54-ac88849625ed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 117,
+      "band": "P1",
+      "id": "artie",
+      "name": "Artie",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/artie/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 118,
+      "band": "P1",
+      "id": "hume-ai",
+      "name": "Hume AI",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/humeai/jobs/4775962008",
+        "https://job-boards.greenhouse.io/humeai/jobs/4948192008",
+        "https://job-boards.greenhouse.io/humeai/jobs/4004597008",
+        "https://job-boards.greenhouse.io/humeai/jobs/4856037008",
+        "https://job-boards.greenhouse.io/humeai/jobs/5064248008",
+        "https://job-boards.greenhouse.io/humeai/jobs/4003488008",
+        "https://job-boards.greenhouse.io/humeai/jobs/4003656008",
+        "http://job-boards.greenhouse.io/humeai/jobs/4004597008",
+        "https://job-boards.greenhouse.io/humeai",
+        "https://boards.greenhouse.io/humeai/jobs/4004597008"
+      ],
+      "designSignalUrls": [
+        "https://www.hume.ai/careers",
+        "https://job-boards.greenhouse.io/humeai/jobs/4004597008"
+      ]
+    },
+    {
+      "rank": 122,
+      "band": "P1",
+      "id": "field-ai",
+      "name": "Field AI",
+      "atsHints": [
+        "https://jobs.lever.co/field-ai",
+        "https://jobs.lever.co/field-ai/57c9955b-d089-4709-bf6c-d81e486d1798",
+        "https://jobs.lever.co/field-ai/0da632ff-114e-4c30-b7f0-a8c53f50061f",
+        "https://jobs.lever.co/field-ai/bbdb07f3-4e7c-4872-aafe-dc48de14c12f",
+        "https://jobs.lever.co/field-ai/740972be-d76a-49d3-9a74-28ba02ed6336",
+        "https://jobs.lever.co/field-ai/27f09bd8-8f29-41e0-a0db-b6238221d670",
+        "https://jobs.lever.co/field-ai/2e5fa569-403a-4163-944a-aa05558d7b1c",
+        "https://jobs.lever.co/field-ai/223d880e-f32b-4779-934d-ec30dbfc12c4",
+        "https://jobs.lever.co/field-ai/88669af3-55e6-48a5-afd4-46b20d88773d",
+        "https://jobs.lever.co/field-ai/d02a6b00-c3c7-4ad2-bec9-8ae12c9339dd"
+      ],
+      "designSignalUrls": [
+        "https://jobs.lever.co/field-ai"
+      ]
+    },
+    {
+      "rank": 125,
+      "band": "P2",
+      "id": "operant-ai",
+      "name": "Operant AI",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/operantai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 131,
+      "band": "P2",
+      "id": "cardboard",
+      "name": "Cardboard",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.usecardboard.com/careers"
+      ]
+    },
+    {
+      "rank": 132,
+      "band": "P2",
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Blacksmith/604cabdf-a54d-4dba-8dee-904e88ed5f16",
+        "https://jobs.ashbyhq.com/Blacksmith/7f13567d-a9ab-4231-b439-99b84584257f",
+        "https://jobs.ashbyhq.com/Blacksmith/6b096838-3ef8-4c32-a869-e0274e74d954",
+        "https://jobs.ashbyhq.com/Blacksmith/087f0427-662b-4d09-8097-58df5013101b",
+        "https://jobs.ashbyhq.com/Blacksmith/9ad6d1bc-6b2c-4b5c-82d9-7ec3b2476471",
+        "https://jobs.ashbyhq.com/Blacksmith/edd1de13-1460-46c0-a0e8-a229edd92119",
+        "https://jobs.ashbyhq.com/Blacksmith/449afcae-57c9-4f94-a086-88b6677fad1d",
+        "https://jobs.ashbyhq.com/Blacksmith/b0f0ae2f-a006-40f6-a80c-6e56bdfb0e42",
+        "https://jobs.ashbyhq.com/Blacksmith/915282a3-c12a-4ae8-9483-3f4b02a2e8ff",
+        "https://jobs.ashbyhq.com/Blacksmith/f452a378-71b8-4f39-83b4-5f9acd2ed562"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 134,
+      "band": "P2",
+      "id": "railway",
+      "name": "Railway",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://railway.com/careers"
+      ]
+    },
+    {
+      "rank": 139,
+      "band": "P2",
+      "id": "sixfold",
+      "name": "Sixfold",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/sixfold/jobs/5166155008",
+        "https://job-boards.greenhouse.io/sixfold/jobs/5152002008",
+        "https://job-boards.greenhouse.io/sixfold/jobs/5151262008",
+        "https://job-boards.greenhouse.io/sixfold/jobs/4929355008",
+        "https://job-boards.greenhouse.io/sixfold/jobs/5072713008"
+      ],
+      "designSignalUrls": [
+        "https://www.sixfold.ai/careers"
+      ]
+    },
+    {
+      "rank": 140,
+      "band": "P2",
+      "id": "copy-ai",
+      "name": "Copy.ai",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.linkedin.com/jobs/senior-user-experience-designer-jobs?trk=expired_jd_redirect"
+      ]
+    },
+    {
+      "rank": 145,
+      "band": "P2",
+      "id": "figma",
+      "name": "Figma",
+      "atsHints": [
+        "https://boards.greenhouse.io/figma/jobs/5813967004?gh_jid=5813967004",
+        "https://boards.greenhouse.io/figma/jobs/5660873004?gh_jid=5660873004",
+        "https://boards.greenhouse.io/figma/jobs/5756184004?gh_jid=5756184004",
+        "https://boards.greenhouse.io/figma/jobs/5724297004?gh_jid=5724297004",
+        "https://boards.greenhouse.io/figma/jobs/5822583004?gh_jid=5822583004",
+        "https://boards.greenhouse.io/figma/jobs/5699991004?gh_jid=5699991004",
+        "https://boards.greenhouse.io/figma/jobs/5850497004?gh_jid=5850497004",
+        "https://boards.greenhouse.io/figma/jobs/5848022004?gh_jid=5848022004",
+        "https://boards.greenhouse.io/figma/jobs/5835172004?gh_jid=5835172004",
+        "https://boards.greenhouse.io/figma/jobs/5982531004?gh_jid=5982531004"
+      ],
+      "designSignalUrls": [
+        "https://www.figma.com/careers/"
+      ]
+    },
+    {
+      "rank": 148,
+      "band": "P2",
+      "id": "blossom",
+      "name": "Blossom Health",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Blossom-Health"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 151,
+      "band": "P2",
+      "id": "poolside",
+      "name": "Poolside",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://poolside.ai/careers"
+      ]
+    },
+    {
+      "rank": 156,
+      "band": "P2",
+      "id": "hex",
+      "name": "Hex",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://hex.tech/careers/"
+      ]
+    },
+    {
+      "rank": 157,
+      "band": "P2",
+      "id": "tavus",
+      "name": "Tavus",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/tavus"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 158,
+      "band": "P2",
+      "id": "llmarena",
+      "name": "LLMArena",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/arena"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 159,
+      "band": "P2",
+      "id": "black-forest-labs",
+      "name": "Black Forest Labs",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/blackforestlabs",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/4925659008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/5019171008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/4132230008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/5142062008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/5014658008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/5014558008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/4642947008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/5099226008",
+        "https://job-boards.greenhouse.io/blackforestlabs/jobs/4132217008"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 164,
+      "band": "P2",
+      "id": "vizcom",
+      "name": "Vizcom",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/vizcom/089c7d84-d8d5-499f-8101-07df436b2747",
+        "https://jobs.ashbyhq.com/vizcom/8a4dae00-8b1a-4440-9c9f-38ca3ce135f5",
+        "https://jobs.ashbyhq.com/vizcom/4519bc38-4139-4a54-82a1-5463fb10247b",
+        "https://jobs.ashbyhq.com/vizcom/f5a3de83-74da-4758-a455-41f1643b589c",
+        "https://jobs.ashbyhq.com/vizcom/40eba7ac-d55c-4e74-a311-48d12d1df663",
+        "https://jobs.ashbyhq.com/vizcom/embed?version=2"
+      ],
+      "designSignalUrls": [
+        "https://vizcom.com/careers"
+      ]
+    },
+    {
+      "rank": 165,
+      "band": "P2",
+      "id": "natural",
+      "name": "Natural",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.natural.co/careers/product-designer",
+        "https://www.natural.co/careers"
+      ]
+    },
+    {
+      "rank": 171,
+      "band": "P2",
+      "id": "mem0",
+      "name": "Mem0",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/mem0/226109bd-d9e8-4389-81d5-4c23e24f30fa",
+        "https://jobs.ashbyhq.com/mem0/3cabf3f2-c545-4bc7-8561-3aee304d00c5",
+        "https://jobs.ashbyhq.com/mem0/642f00ec-c220-48a5-9a4d-4af67875032c",
+        "https://jobs.ashbyhq.com/mem0/63632678-661b-41d1-9cbd-ad91361bc956"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 174,
+      "band": "P2",
+      "id": "momentic",
+      "name": "Momentic",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/momentic"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 177,
+      "band": "P2",
+      "id": "magic-patterns",
+      "name": "Magic Patterns",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/magicpatterns"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 181,
+      "band": "P2",
+      "id": "campfire",
+      "name": "Campfire",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/campfire/embed?version=2",
+        "https://jobs.ashbyhq.com/campfire"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 185,
+      "band": "P2",
+      "id": "unstructured",
+      "name": "Unstructured",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/unstructured/8ab839b1-176c-4178-9996-7ce453497b6f",
+        "https://jobs.ashbyhq.com/unstructured/ab7ca6ff-a951-4aec-928b-82cad430f92a",
+        "https://jobs.ashbyhq.com/unstructured/d0c516ec-cbb2-4560-99d9-abdc535ed645",
+        "https://jobs.ashbyhq.com/unstructured/8f1faf0b-f644-47ec-a138-8c58874b7db2",
+        "https://jobs.ashbyhq.com/unstructured/3d7142c3-fe9a-4a89-97a4-f0e9b2a45733",
+        "https://jobs.ashbyhq.com/unstructured/bd134ad8-e5a1-43ff-929c-6e97b2bd9b27",
+        "https://jobs.ashbyhq.com/unstructured/e9b2d2e3-28a5-4957-a415-46b11c071e1c",
+        "https://jobs.ashbyhq.com/unstructured/8db76ba9-7c3a-451c-8e6d-c3447e6cbe75",
+        "https://jobs.ashbyhq.com/unstructured/9ab3162f-3e17-4702-b50a-542eac652477",
+        "https://jobs.ashbyhq.com/unstructured/9df95483-7177-4f98-850e-4abbdf530434"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 188,
+      "band": "P2",
+      "id": "onton",
+      "name": "Onton",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/onton/46a504b2-0c36-43c2-899f-8c3a2d207c0c",
+        "https://jobs.ashbyhq.com/onton/3ebb3e05-5050-4cf3-90b8-37490c015340",
+        "https://jobs.ashbyhq.com/onton/9b9c457f-8d94-465c-80e9-d9ef7fa42c05"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 190,
+      "band": "P2",
+      "id": "zestyai",
+      "name": "ZestyAI",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/zestyai",
+        "https://boards.greenhouse.io/embed/job_board/js?for=zestyai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 205,
+      "band": "P2",
+      "id": "overjet",
+      "name": "Overjet",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Overjet/482071c4-40ac-4e53-94dc-f6c4f451b0a7",
+        "https://jobs.ashbyhq.com/Overjet/888cce07-b8d6-4ff9-b616-a62a1de0e97a",
+        "https://jobs.ashbyhq.com/Overjet/5c4dc505-218c-4918-9694-51015b9d1496",
+        "https://jobs.ashbyhq.com/Overjet/f707a4b4-867d-4f36-941a-2ba4aad75f35",
+        "https://jobs.ashbyhq.com/Overjet/a9ecf336-3901-46ab-bac2-8f40547c9d28",
+        "https://jobs.ashbyhq.com/Overjet/25075014-6c88-4752-a9e8-5e60430e1719",
+        "https://jobs.ashbyhq.com/Overjet/bbe883a2-6a84-44e6-9e1c-fe9a5d76e66c",
+        "https://jobs.ashbyhq.com/Overjet/93a4ee68-d7c0-456c-84f9-82783ea7b2c7",
+        "https://jobs.ashbyhq.com/Overjet/1e120a5f-cf9b-4849-9c2c-9b3309e44a76",
+        "https://jobs.ashbyhq.com/Overjet/d740dc23-dcb7-4f57-b2c5-1a39b0168e92"
+      ],
+      "designSignalUrls": [
+        "https://www.overjet.com/careers"
+      ]
+    },
+    {
+      "rank": 210,
+      "band": "P2",
+      "id": "speakeasy",
+      "name": "Speakeasy",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Speakeasy/b0c122c2-f0db-46ed-8c43-7bb72a4638a0",
+        "https://jobs.ashbyhq.com/Speakeasy/def210b2-b6aa-421b-84c4-dcd278f95db9",
+        "https://jobs.ashbyhq.com/Speakeasy/f6ad191d-7364-4635-a52e-62b455c61580",
+        "https://jobs.ashbyhq.com/Speakeasy/a8b1a36c-c7e1-48d8-a0c9-f80cf7771d6c",
+        "https://jobs.ashbyhq.com/Speakeasy/b0ee37af-fc9e-45f2-808e-7727e058939f",
+        "https://jobs.ashbyhq.com/Speakeasy/85aed4ce-93a0-4a9e-b4e5-bac5108db415"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 212,
+      "band": "P2",
+      "id": "paraform",
+      "name": "Paraform",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/paraform/d5830af7-2ee4-441f-baf8-8acdae9afd1d",
+        "https://jobs.ashbyhq.com/paraform/9814a8cf-97ef-46e2-85eb-54475f250269",
+        "https://jobs.ashbyhq.com/paraform/0452adfa-0a67-4570-943d-092bafd8e391",
+        "https://jobs.ashbyhq.com/paraform/63816c16-a462-4e84-95ce-1939e29b96e1",
+        "https://jobs.ashbyhq.com/paraform/73415756-9236-4208-ae12-dc4cd62bf566",
+        "https://jobs.ashbyhq.com/paraform/017a307d-2a00-4e11-8043-d57dd612a519",
+        "https://jobs.ashbyhq.com/paraform/b6502710-b7c5-46ee-b15a-ac9c4093b6d1",
+        "https://jobs.ashbyhq.com/paraform/ed192d51-74e9-4712-89a6-4503967c4184",
+        "https://jobs.ashbyhq.com/paraform/fe217f70-ce42-4065-add1-0db13b87ce86",
+        "https://jobs.ashbyhq.com/paraform/72707490-efd3-4d19-90ba-71af769e1bce"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 213,
+      "band": "P2",
+      "id": "edison-scientific",
+      "name": "Edison Scientific",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Edison%20Scientific/ba4ce9e2-972a-4a3d-8f1e-010e62999bf2",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/d2648ea8-ff5c-494e-8805-7b462fda5061",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/cdfbe662-209b-4ab2-bf69-4d7a71b0c9b6",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/ed239f55-e8d0-40a9-ac2f-4ef6a565d793",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/f5b6b824-9237-47df-8613-9499b610f180",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/ab7e85c8-3172-4765-afcf-e177443ffa1d",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/0d208029-1d9d-4919-a5bf-5bbcdc678868",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/1c98a151-4677-4084-a944-1ca49201aa60",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/09593327-a1cf-48a9-9e17-8020853f32aa",
+        "https://jobs.ashbyhq.com/Edison%20Scientific/ef7cf9f7-bdcc-4591-a939-929ecdf6d597"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 217,
+      "band": "P2",
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://jobs.khoslaventures.com/companies/fireflies-ai/jobs/60169928-product-designer"
+      ]
+    },
+    {
+      "rank": 221,
+      "band": "P2",
+      "id": "unlimited-industries",
+      "name": "Unlimited Industries",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/unlimitedindustries"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 224,
+      "band": "P2",
+      "id": "trunk",
+      "name": "Trunk",
+      "atsHints": [
+        "https://jobs.lever.co/trunkio",
+        "https://jobs.lever.co/trunkio/e30405bf-8ade-48d3-86b0-e6e937227ba1",
+        "https://jobs.lever.co/trunkio/43b778ae-e2b0-472c-8316-a079da4e54da",
+        "https://jobs.lever.co/trunkio/32921dae-d3b1-4771-bb09-cac8a3b14d0c",
+        "https://jobs.lever.co/trunkio/f32d28f4-0509-436c-a218-1eaa553c7b1d"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 225,
+      "band": "P2",
+      "id": "shift-technology",
+      "name": "Shift Technology",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=shifttechnology"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 229,
+      "band": "P2",
+      "id": "chroma",
+      "name": "Chroma",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.trychroma.com/careers"
+      ]
+    },
+    {
+      "rank": 231,
+      "band": "P2",
+      "id": "tractable",
+      "name": "Tractable",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/tractable"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 236,
+      "band": "P2",
+      "id": "beautiful-ai",
+      "name": "Beautiful.ai",
+      "atsHints": [
+        "https://boards.greenhouse.io/beautifulai",
+        "https://boards.greenhouse.io/embed/job_board/js?for=beautifulai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 237,
+      "band": "P2",
+      "id": "anrok",
+      "name": "Anrok",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/anrok/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 246,
+      "band": "P2",
+      "id": "heirloom",
+      "name": "Heirloom",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/heirloomcarbon?utm_source=vrMJrWO2aM"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 248,
+      "band": "P2",
+      "id": "terramera",
+      "name": "Terramera",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=terramera"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 253,
+      "band": "P2",
+      "id": "gradient-ai",
+      "name": "Gradient AI",
+      "atsHints": [
+        "https://boards.greenhouse.io/gradientai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 254,
+      "band": "P2",
+      "id": "inngest",
+      "name": "Inngest",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/inngest"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 256,
+      "band": "P2",
+      "id": "truffle-security",
+      "name": "Truffle Security",
+      "atsHints": [
+        "https://boards.greenhouse.io/trufflesecurity",
+        "https://boards.greenhouse.io/embed/job_board/js?for=trufflesecurity"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 257,
+      "band": "P2",
+      "id": "roots-automation",
+      "name": "Roots Automation",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Roots-Automation?embed=js"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 259,
+      "band": "P2",
+      "id": "sprout-ai",
+      "name": "Sprout.ai",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/sprout-ai",
+        "https://jobs.ashbyhq.com/sprout-ai/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 261,
+      "band": "P2",
+      "id": "suger",
+      "name": "Suger",
+      "atsHints": [
+        "https://jobs.lever.co/suger"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 263,
+      "band": "P2",
+      "id": "joyful-health",
+      "name": "Joyful Health",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/joyfulhealth/79d31dbc-da96-4124-96e8-d260afa6de92",
+        "https://jobs.ashbyhq.com/joyfulhealth/73c903d1-5d43-4cce-8e68-4fd3a4388b53",
+        "https://jobs.ashbyhq.com/joyfulhealth/fc2d9d84-aab9-4e27-b6c4-cc8b5daac09d",
+        "https://jobs.ashbyhq.com/joyfulhealth/94c3f54f-04a2-4fcb-9ba5-aeb28198b654",
+        "https://jobs.ashbyhq.com/joyfulhealth/cfb4de9b-e768-4a2a-be39-fc78523917d2",
+        "https://jobs.ashbyhq.com/joyfulhealth/905a5238-fcb4-4f72-8d96-4502c43e95a6",
+        "https://jobs.ashbyhq.com/joyfulhealth/a0175ded-43ec-4f38-8d58-af792c102104",
+        "https://jobs.ashbyhq.com/joyfulhealth/54369fa1-f939-4865-9b89-9d543ed9bfe0",
+        "https://jobs.ashbyhq.com/joyfulhealth/a715253c-b1bf-4ea9-8503-52e872c4d339",
+        "https://jobs.ashbyhq.com/joyfulhealth/74d22f6d-12f7-42c0-9db0-ea011c314f08"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 272,
+      "band": "P3",
+      "id": "evolutioniq",
+      "name": "EvolutionIQ",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=evolutioniq"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 282,
+      "band": "P3",
+      "id": "assemblyai",
+      "name": "AssemblyAI",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/assemblyai/jobs/4613277005",
+        "https://job-boards.greenhouse.io/assemblyai/jobs/4613233005",
+        "https://boards.greenhouse.io/embed/job_board/js?for=assemblyai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 284,
+      "band": "P3",
+      "id": "density",
+      "name": "Density",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=density"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 285,
+      "band": "P3",
+      "id": "gigaml",
+      "name": "GigaML",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/gigaml/96f0c2f8-3d97-4763-ab46-b6af6ad8b2e7",
+        "https://jobs.ashbyhq.com/gigaml/cbe0ddad-a47c-420b-bf77-73721959d4fa",
+        "https://jobs.ashbyhq.com/gigaml/0bd3cb15-811f-4a6b-ac12-781f24735a86",
+        "https://jobs.ashbyhq.com/gigaml/16876587-6ea6-4312-bf38-f62de6941626",
+        "https://jobs.ashbyhq.com/gigaml/0356bbca-0bc4-4463-8ca6-ea2db04c0d83",
+        "https://jobs.ashbyhq.com/gigaml/0877d6bc-af0a-4fe4-8289-db2bd75c195d",
+        "https://jobs.ashbyhq.com/gigaml/80155607-2f92-4175-8d64-b5abed0c0dbf",
+        "https://jobs.ashbyhq.com/gigaml/7a389cb7-245e-46da-a015-65de172ca32f",
+        "https://jobs.ashbyhq.com/gigaml/a25b1e9b-d003-4953-8941-1a5e0a04234b",
+        "https://jobs.ashbyhq.com/gigaml/16bd9cf6-aa06-4518-a5f2-84d00673345c"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 290,
+      "band": "P3",
+      "id": "toma",
+      "name": "Toma",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/toma/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 292,
+      "band": "P3",
+      "id": "lightfield",
+      "name": "Lightfield",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Lightfield"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 300,
+      "band": "P3",
+      "id": "pallet",
+      "name": "Pallet",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/pallet",
+        "https://job-boards.greenhouse.io/pallet/jobs/4741534007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5065850007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5072543007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5107230007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5072547007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5072549007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5035890007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5090017007",
+        "https://job-boards.greenhouse.io/pallet/jobs/5096750007"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 306,
+      "band": "P3",
+      "id": "alex-ai",
+      "name": "Alex AI",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/alexai/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 312,
+      "band": "P3",
+      "id": "seneca-systems",
+      "name": "Seneca Systems",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/seneca/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 315,
+      "band": "P3",
+      "id": "cogent-security",
+      "name": "Cogent Security",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cogent-security"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 316,
+      "band": "P3",
+      "id": "scribe",
+      "name": "Scribe",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/scribe/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 317,
+      "band": "P3",
+      "id": "cognition-ai",
+      "name": "Cognition",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cognition"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 319,
+      "band": "P3",
+      "id": "imbue-ai",
+      "name": "Imbue",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/imbue/jobs/4202485009&quot;],&quot;data_compliance&quot;:[1,[[0,{&quot;type&quot;:[0,&quot;gdpr&quot;],&quot;requires_consent&quot;:[0,false],&quot;requires_processing_consent&quot;:[0,false],&quot;requires_retention_consent&quot;:[0,false],&quot;retention_period&quot;:[0,null],&quot;demographic_data_consent_applies&quot;:[0,false]}]]],&quot;internal_job_id&quot;:[0,4118218009],&quot;location&quot;:[0,{&quot;name&quot;:[0,&quot;San",
+        "https://job-boards.greenhouse.io/imbue/jobs/4129428009&quot;],&quot;data_compliance&quot;:[1,[[0,{&quot;type&quot;:[0,&quot;gdpr&quot;],&quot;requires_consent&quot;:[0,false],&quot;requires_processing_consent&quot;:[0,false],&quot;requires_retention_consent&quot;:[0,false],&quot;retention_period&quot;:[0,null],&quot;demographic_data_consent_applies&quot;:[0,false]}]]],&quot;internal_job_id&quot;:[0,4085256009],&quot;location&quot;:[0,{&quot;name&quot;:[0,&quot;San",
+        "https://job-boards.greenhouse.io/imbue/jobs/4010186009&quot;],&quot;data_compliance&quot;:[1,[[0,{&quot;type&quot;:[0,&quot;gdpr&quot;],&quot;requires_consent&quot;:[0,false],&quot;requires_processing_consent&quot;:[0,false],&quot;requires_retention_consent&quot;:[0,false],&quot;retention_period&quot;:[0,null],&quot;demographic_data_consent_applies&quot;:[0,false]}]]],&quot;internal_job_id&quot;:[0,4008254009],&quot;location&quot;:[0,{&quot;name&quot;:[0,&quot;San",
+        "https://job-boards.greenhouse.io/imbue/jobs/4202485009",
+        "https://job-boards.greenhouse.io/imbue/jobs/4129428009",
+        "https://job-boards.greenhouse.io/imbue/jobs/4010186009"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 321,
+      "band": "P3",
+      "id": "newlimit",
+      "name": "NewLimit",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/newlimit/jobs/5792659004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5653024004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5798299004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5874818004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5988743004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5986881004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5979490004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5770148004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5969886004",
+        "https://job-boards.greenhouse.io/newlimit/jobs/5819398004"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 323,
+      "band": "P3",
+      "id": "found",
+      "name": "Found",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/found/e4bca10f-655a-46fd-9685-1d47c4f415ca",
+        "https://jobs.ashbyhq.com/found/271bb999-f2bf-43ff-8fff-9c052dbf317f",
+        "https://jobs.ashbyhq.com/found/9d31df05-8818-49b3-9647-d492ce1f2a1f"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 325,
+      "band": "P3",
+      "id": "posthog",
+      "name": "PostHog",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://posthog.com/careers"
+      ]
+    },
+    {
+      "rank": 326,
+      "band": "P3",
+      "id": "david-ai",
+      "name": "David AI",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/david-ai",
+        "https://jobs.ashbyhq.com/david-ai/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 328,
+      "band": "P3",
+      "id": "loyal-dogs",
+      "name": "Loyal",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/loyal36/jobs/5181580008",
+        "https://job-boards.greenhouse.io/loyal36/jobs/5097308008",
+        "https://job-boards.greenhouse.io/loyal36/jobs/5210384008",
+        "https://job-boards.greenhouse.io/loyal36/jobs/5196505008",
+        "https://job-boards.greenhouse.io/loyal36/jobs/5194796008"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 333,
+      "band": "P3",
+      "id": "cardless",
+      "name": "Cardless",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/cardless/ec958053-8692-4548-9f7b-3c13e203cd10",
+        "https://jobs.ashbyhq.com/cardless/a37e662f-c1ef-4c27-9805-a4a4c22e0fee",
+        "https://jobs.ashbyhq.com/cardless/6b2f1983-a7ba-4733-9299-967d25a09aa2",
+        "https://jobs.ashbyhq.com/cardless/5b75215a-b0c7-4760-a54c-d88b5aa36d8e",
+        "https://jobs.ashbyhq.com/cardless/b095c3b3-78e9-4219-8c2e-6878888fe961",
+        "https://jobs.ashbyhq.com/cardless/91940d95-ee52-42c9-8844-46d6c10567f3",
+        "https://jobs.ashbyhq.com/cardless/96da510b-1af6-42ed-aabf-7cbf730cc9a8",
+        "https://jobs.ashbyhq.com/cardless/7c09e6dd-7d12-44e7-9380-32f57ad3283b",
+        "https://jobs.ashbyhq.com/cardless/a923057d-75d4-4ce6-8769-01990ab3ee3e",
+        "https://jobs.ashbyhq.com/cardless/89e91e96-f111-4d60-ba44-c26c08377a7b"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 345,
+      "band": "P3",
+      "id": "phonely",
+      "name": "Phonely",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/phonely/embed?version=2",
+        "https://jobs.ashbyhq.com/phonely"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 346,
+      "band": "P3",
+      "id": "pacific-fusion",
+      "name": "Pacific Fusion",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4155757009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4118964009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4050457009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4207823009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4215052009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4050459009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4219344009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4048816009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4234949009",
+        "https://job-boards.greenhouse.io/pacificfusion/jobs/4234890009"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 348,
+      "band": "P3",
+      "id": "coderabbit",
+      "name": "CodeRabbit",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/coderabbit"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 350,
+      "band": "P3",
+      "id": "upwind",
+      "name": "Upwind",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.upwind.io/careers"
+      ]
+    },
+    {
+      "rank": 352,
+      "band": "P3",
+      "id": "middesk",
+      "name": "Middesk",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/middesk"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 353,
+      "band": "P3",
+      "id": "thatch",
+      "name": "Thatch",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://thatch.com/jobs"
+      ]
+    },
+    {
+      "rank": 358,
+      "band": "P3",
+      "id": "slash",
+      "name": "Slash",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/slash-financial/face8136-1e14-49f9-aea1-8435698fe4e8",
+        "https://jobs.ashbyhq.com/slash-financial/2c54ef2c-da99-4ef1-a5c8-e0fba803e219",
+        "https://jobs.ashbyhq.com/slash-financial/3a0b7c7b-2cb5-4914-baa8-d89e17c11bf9",
+        "https://jobs.ashbyhq.com/slash-financial/ddfdb655-0fd2-4e02-bf0f-4add83b461dd",
+        "https://jobs.ashbyhq.com/slash-financial/a9e83a17-d9f4-4604-ab6b-9620acb48e5b",
+        "https://jobs.ashbyhq.com/slash-financial/77521da6-5a0a-44bf-b434-6947f345c970",
+        "https://jobs.ashbyhq.com/slash-financial/d2ed5148-a4b2-43f3-8b38-3f8809cf4c21",
+        "https://jobs.ashbyhq.com/slash-financial/bfa9b735-db9b-4ad5-b9e2-c235c0a6f0fd",
+        "https://jobs.ashbyhq.com/slash-financial/ecf21aa4-adfc-477b-a5e3-eb99fbee2c8f",
+        "https://jobs.ashbyhq.com/slash-financial/b0a03a71-d592-4fe4-b52c-47880fdae6a3"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 365,
+      "band": "P3",
+      "id": "stride-health",
+      "name": "Stride Health",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=stridehealth"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 366,
+      "band": "P3",
+      "id": "attabotics",
+      "name": "Attabotics",
+      "atsHints": [
+        "https://jobs.lever.co/attabotics/"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 367,
+      "band": "P3",
+      "id": "collate",
+      "name": "Collate",
+      "atsHints": [
+        "https://jobs.lever.co/collate/377f2cf3-6285-42c1-8130-dd3dd2c866cb",
+        "https://jobs.lever.co/collate/e2d6a632-127a-409d-818b-d465f95bda0a",
+        "https://jobs.lever.co/collate/c100114a-e908-4184-9b43-13d89795401d",
+        "https://jobs.lever.co/collate/1894990b-03aa-40d3-a16e-89492ed568ec",
+        "https://jobs.lever.co/collate/ddb57f92-0391-43a6-bd90-10fc2abd23fb",
+        "https://jobs.lever.co/collate/bc4a840c-71f1-4190-8826-6b42d236e375",
+        "https://jobs.lever.co/collate/6e60404a-4cd5-486d-ad73-eeb6d52d7a6a",
+        "https://jobs.lever.co/collate/edb7132a-cc8d-4944-8ded-3c8a597c516e",
+        "https://jobs.lever.co/collate/086f1a83-f745-4d20-80f6-cabcab06973a",
+        "https://jobs.lever.co/collate/a54539d9-dbc9-4870-8a3f-c12a4731ca20"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 376,
+      "band": "P3",
+      "id": "parabola",
+      "name": "Parabola",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/parabola-io/e9a24262-275d-48a2-b8e3-83a8226e7e3e",
+        "https://jobs.ashbyhq.com/parabola-io/ef9beafe-fdf0-44b9-83bd-b5a5cab636f2",
+        "https://jobs.ashbyhq.com/parabola-io/75141699-0666-4baa-b03f-1f12d5708e05",
+        "https://jobs.ashbyhq.com/parabola-io/487aa834-883f-4c65-8919-617f1a5b582e",
+        "https://jobs.ashbyhq.com/parabola-io/caee246f-bdee-4706-a3eb-1391e884d177",
+        "https://jobs.ashbyhq.com/parabola-io/881f7a72-e377-412f-81c6-d5fa6ff19a97",
+        "https://jobs.ashbyhq.com/parabola-io/676eeafe-0d85-459d-b9af-ca20af377e90"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 378,
+      "band": "P3",
+      "id": "until-labs",
+      "name": "Until Labs",
+      "atsHints": [
+        "https://jobs.lever.co/until"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 379,
+      "band": "P3",
+      "id": "stackai",
+      "name": "StackAI",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/stack-ai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 381,
+      "band": "P3",
+      "id": "roboflow",
+      "name": "Roboflow",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/roboflow",
+        "https://jobs.ashbyhq.com/roboflow/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 382,
+      "band": "P3",
+      "id": "osmind",
+      "name": "Osmind",
+      "atsHints": [
+        "https://jobs.lever.co/Osmind"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 386,
+      "band": "P3",
+      "id": "11x",
+      "name": "11x",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/11x/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 387,
+      "band": "P3",
+      "id": "recall-ai",
+      "name": "Recall.ai",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/Recall",
+        "https://jobs.ashbyhq.com/Recall/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 394,
+      "band": "P3",
+      "id": "medallion",
+      "name": "Medallion",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=medallionakafirstlayerai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 395,
+      "band": "P3",
+      "id": "interaxon",
+      "name": "InteraXon",
+      "atsHints": [
+        "https://jobs.lever.co/interaxon/ec2f4beb-9a81-4a7a-85eb-ad543497aa22"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 398,
+      "band": "P3",
+      "id": "invert-bio",
+      "name": "Invert",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/invert/076e2062-287a-4192-ac08-a77848746596",
+        "https://jobs.ashbyhq.com/invert/b0925da7-6bc9-42d1-8034-4b94008f9344",
+        "https://jobs.ashbyhq.com/invert/f1a979f9-1e04-4983-90e8-cbc389cb4c14",
+        "https://jobs.ashbyhq.com/invert/e3f34982-3479-4d3c-9bbc-59baa1bbcc23"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 400,
+      "band": "P3",
+      "id": "222",
+      "name": "222",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://careers.222.place/"
+      ]
+    },
+    {
+      "rank": 401,
+      "band": "P3",
+      "id": "arcade-ai",
+      "name": "Arcade AI",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/arcade-ai"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 404,
+      "band": "P3",
+      "id": "polycam",
+      "name": "Polycam",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/polycamcareers/jobs/4638806007",
+        "https://job-boards.greenhouse.io/polycamcareers/jobs/4652216007"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 435,
+      "band": "P3",
+      "id": "flow-engineering",
+      "name": "Flow",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/flowengineering/cea876ca-ce18-476b-8e43-6e70148e16c6",
+        "https://jobs.ashbyhq.com/flowengineering/6ed592d7-0314-455c-856c-20876910d74e",
+        "https://jobs.ashbyhq.com/flowengineering/c7094e00-ad41-432f-bf53-3f13d3ca4001",
+        "https://jobs.ashbyhq.com/flowengineering/f1cb1247-bbd8-49b2-b380-57f195022c7b",
+        "https://jobs.ashbyhq.com/flowengineering/790f1dfd-d408-49ff-9a65-0e5b73414263",
+        "https://jobs.ashbyhq.com/flowengineering/3710c990-5fd6-4d3f-be4d-0ca474329f15",
+        "https://jobs.ashbyhq.com/flowengineering/d7d6a318-542e-409a-8258-90c737de595e",
+        "https://jobs.ashbyhq.com/flowengineering/78a32a94-f09b-4005-91cd-21f7d0f517cf",
+        "https://jobs.ashbyhq.com/flowengineering/f21d9cac-4069-455a-9444-6d56fe5c1332",
+        "https://jobs.ashbyhq.com/flowengineering/a32abffc-0611-4d92-ae9b-da99ea3fed43"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 436,
+      "band": "P3",
+      "id": "mastra",
+      "name": "Mastra",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://mastra.ai/careers"
+      ]
+    },
+    {
+      "rank": 437,
+      "band": "P3",
+      "id": "axiom",
+      "name": "Axiom",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://axiom.co/company"
+      ]
+    },
+    {
+      "rank": 438,
+      "band": "P3",
+      "id": "greenlite",
+      "name": "Greenlite",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/brettonai",
+        "https://jobs.ashbyhq.com/brettonai/embed?version=2"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 446,
+      "band": "P3",
+      "id": "prime-intellect",
+      "name": "Prime Intellect",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/PrimeIntellect"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 476,
+      "band": "P3",
+      "id": "nowadays",
+      "name": "Nowadays",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.nowadays.ai/careers"
+      ]
+    },
+    {
+      "rank": 486,
+      "band": "P3",
+      "id": "column",
+      "name": "Column",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/column/8ad3cf7b-7ea3-47f6-86c4-c83a9d78ff50",
+        "https://jobs.ashbyhq.com/column/ba34e9e2-f86a-4d02-864e-7370bdc6339e",
+        "https://jobs.ashbyhq.com/column/f8ca4b12-0bea-4d56-96ca-8afbc4b9b791",
+        "https://jobs.ashbyhq.com/column/899c09dc-1e92-4063-bb90-fc3ebe26965e",
+        "https://jobs.ashbyhq.com/column/e306f9c1-5165-496a-91c3-ecb25cfe295e",
+        "https://jobs.ashbyhq.com/column/99401d8e-8859-4540-9812-b2f18b87a732",
+        "https://jobs.ashbyhq.com/column/f1f3a6f9-a8a7-4aad-892c-d7a74c6f6e3b",
+        "https://jobs.ashbyhq.com/column/b6815d09-2ed1-4db0-a041-30bd1a753e31",
+        "https://jobs.ashbyhq.com/column/6295e43d-95e3-4aff-ad39-d1cf75717342",
+        "https://jobs.ashbyhq.com/column/c7aadd46-0d2e-4afb-96f3-9479bc1a3eed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 489,
+      "band": "P3",
+      "id": "partnerstack",
+      "name": "PartnerStack",
+      "atsHints": [
+        "http://job-boards.greenhouse.io/partnerstack",
+        "https://job-boards.greenhouse.io/partnerstack"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 497,
+      "band": "P3",
+      "id": "langbase",
+      "name": "Langbase",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://langbase.com/careers"
+      ]
+    },
+    {
+      "rank": 509,
+      "band": "P3",
+      "id": "tealbook",
+      "name": "TealBook",
+      "atsHints": [
+        "https://jobs.lever.co/tealbook"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 510,
+      "band": "P3",
+      "id": "certn",
+      "name": "Certn",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/certn",
+        "https://jobs.ashbyhq.com/certn/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 512,
+      "band": "P3",
+      "id": "crowdriff",
+      "name": "CrowdRiff",
+      "atsHints": [
+        "https://jobs.lever.co/crowdriff",
+        "https://jobs.lever.co/crowdriff/61413f5d-7df0-496a-8f61-8f897c642646",
+        "https://jobs.lever.co/crowdriff/9857bc38-4653-48e6-a0da-f9223fd1c2d5",
+        "https://jobs.lever.co/crowdriff/a033a591-8f9f-4565-8851-a0bd0c5ee428"
+      ],
+      "designSignalUrls": [
+        "https://jobs.lever.co/crowdriff"
+      ]
+    },
+    {
+      "rank": 513,
+      "band": "P3",
+      "id": "interaction",
+      "name": "InteraXon",
+      "atsHints": [
+        "https://jobs.lever.co/interaxon/ec2f4beb-9a81-4a7a-85eb-ad543497aa22"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 515,
+      "band": "P3",
+      "id": "unbounce",
+      "name": "Unbounce",
+      "atsHints": [
+        "https://boards.greenhouse.io/embed/job_board/js?for=unbounce"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 523,
+      "band": "P3",
+      "id": "orchids",
+      "name": "Orchids",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.orchids.app/careers"
+      ]
+    },
+    {
+      "rank": 524,
+      "band": "P3",
+      "id": "tempo",
+      "name": "Tempo",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/tempo-xyz"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 525,
+      "band": "P3",
+      "id": "numeral",
+      "name": "Numeral",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/numeral/embed"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 527,
+      "band": "P3",
+      "id": "eventual",
+      "name": "Eventual",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/eventualcomputing/b358f161-6af7-4a6f-8ba2-2366efb342ba",
+        "https://jobs.ashbyhq.com/eventualcomputing/becb5675-3480-4d2b-b126-2acad40fd088",
+        "https://jobs.ashbyhq.com/eventualcomputing/9aa3763a-f267-4f19-bbd4-e6f38ab1c71e",
+        "https://jobs.ashbyhq.com/eventualcomputing/20e2b01d-969b-454b-98f6-bdce0af5b32c",
+        "https://jobs.ashbyhq.com/eventualcomputing/b358f161-6af7-4a6f-8ba2-2366efb342ba/application",
+        "https://jobs.ashbyhq.com/eventualcomputing/becb5675-3480-4d2b-b126-2acad40fd088/application",
+        "https://jobs.ashbyhq.com/eventualcomputing/9aa3763a-f267-4f19-bbd4-e6f38ab1c71e/application",
+        "https://jobs.ashbyhq.com/eventualcomputing/20e2b01d-969b-454b-98f6-bdce0af5b32c/application"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 528,
+      "band": "P3",
+      "id": "pulley",
+      "name": "Pulley",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/pulley"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 529,
+      "band": "P3",
+      "id": "quo",
+      "name": "Quo",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.quo.com/careers"
+      ]
+    },
+    {
+      "rank": 531,
+      "band": "P3",
+      "id": "cocoon",
+      "name": "Cocoon",
+      "atsHints": [
+        "https://job-boards.greenhouse.io/cocoon/jobs/5821001004",
+        "https://job-boards.greenhouse.io/cocoon/jobs/5641063004"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 532,
+      "band": "P3",
+      "id": "impulse-labs",
+      "name": "Impulse Labs",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/impulse"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 536,
+      "band": "P3",
+      "id": "gigs",
+      "name": "Gigs",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://gigs.com/careers"
+      ]
+    },
+    {
+      "rank": 542,
+      "band": "P3",
+      "id": "contra",
+      "name": "Contra",
+      "atsHints": [
+        "https://jobs.ashbyhq.com/contra/b1622bb8-0433-4d49-8832-d437d1c8fffc",
+        "https://jobs.ashbyhq.com/contra/57a401a4-2af2-4d83-b064-cfcd51b8d6ae"
+      ],
+      "designSignalUrls": []
+    },
+    {
+      "rank": 543,
+      "band": "P3",
+      "id": "catalyx-space",
+      "name": "Catalyx Space",
+      "atsHints": [],
+      "designSignalUrls": [
+        "https://www.catalyx.space/careers"
+      ]
+    },
+    {
+      "rank": 568,
+      "band": "P3",
+      "id": "finix",
+      "name": "Finix",
+      "atsHints": [
+        "https://jobs.lever.co/finix",
+        "https://jobs.lever.co/finix/7c1bbb05-af2e-4766-ad03-f6c474f05aba",
+        "https://jobs.lever.co/finix/37f01087-8ea0-4bc2-a699-a0023bffaa21",
+        "https://jobs.lever.co/finix/b4900851-6c13-4af2-ba84-3903a034424b",
+        "https://jobs.lever.co/finix/22796cd2-135b-433e-8992-b5053376e2f9",
+        "https://jobs.lever.co/finix/8ba57388-d720-4439-850a-c400909980c9",
+        "https://jobs.lever.co/finix/d6544849-9fa4-4a52-93df-4e1cb1c5f071",
+        "https://jobs.lever.co/finix/4f4d783e-8c00-4802-bdc3-6cb642eac0e5",
+        "https://jobs.lever.co/finix/30027475-e24b-4e03-a8b7-b8224fe643bd"
+      ],
+      "designSignalUrls": [
+        "https://finix.com/careers"
+      ]
+    }
+  ],
+  "manualReview": [
+    {
+      "rank": 10,
+      "band": "P0",
+      "id": "reevo",
+      "name": "Reevo",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Builder - Product Designer",
+        "ashby design roles: Builder - Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Builder - Product Designer",
+          "url": "https://jobs.ashbyhq.com/reevo/903989a4-8f84-4cfb-99e7-4f15a7f01376",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "band": "P0",
+      "id": "comfy-ui",
+      "name": "Comfy",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Senior Product Designer; Senior Product Designer - Craft; Staff Product Designer - Systems",
+        "ashby design roles: Senior Product Designer; Senior Product Designer - Craft; Staff Product Designer - Systems"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product Designer",
+          "url": "https://jobs.ashbyhq.com/comfy-org/b2e864c6-4754-4e04-8f46-1022baa103c3",
+          "roleFamily": "product-design"
+        },
+        {
+          "title": "Senior Product Designer - Craft",
+          "url": "https://jobs.ashbyhq.com/comfy-org/a32c6769-b791-41f4-9225-50bbd8a1cf0f",
+          "roleFamily": "product-design"
+        },
+        {
+          "title": "Staff Product Designer - Systems",
+          "url": "https://jobs.ashbyhq.com/comfy-org/0bc8356b-615e-4f40-b632-fd3b2691be34",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "band": "P0",
+      "id": "openart",
+      "name": "OpenArt",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Senior Product UI/UX Designer",
+        "ashby design roles: Senior Product UI/UX Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Senior Product UI/UX Designer",
+          "url": "https://jobs.ashbyhq.com/openart/4cc44d51-f824-4d54-bbfa-25a1937bec2d",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "band": "P0",
+      "id": "further-ai",
+      "name": "FurtherAI",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/furtherai/21b369d5-801a-4f2e-8ad8-9b20d494648c",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 39,
+      "band": "P1",
+      "id": "chai-discovery",
+      "name": "Chai Discovery",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Product Designer",
+        "ashby design roles: Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 43,
+      "band": "P1",
+      "id": "anything-ai",
+      "name": "Anything AI",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: UX/UI Designer",
+        "ashby design roles: UX/UI Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "UX/UI Designer",
+          "url": "https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c",
+          "roleFamily": "other-design"
+        }
+      ]
+    },
+    {
+      "rank": 50,
+      "band": "P1",
+      "id": "hockeystack",
+      "name": "HockeyStack",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/hockeystack/ece59ab1-bf38-480f-80f6-96db5def25b6",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 54,
+      "band": "P1",
+      "id": "simple-ai",
+      "name": "Simple AI",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/simple-ai/bf145877-af7d-4d16-8feb-5f3b62b3abc7",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 60,
+      "band": "P1",
+      "id": "capy",
+      "name": "Capy",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Design Engineer",
+        "ashby design roles: Founding Design Engineer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Design Engineer",
+          "url": "https://jobs.ashbyhq.com/capy/114446f0-1545-45a3-94ee-acd6da9c4f74",
+          "roleFamily": "design-engineering"
+        }
+      ]
+    },
+    {
+      "rank": 62,
+      "band": "P1",
+      "id": "fabrion",
+      "name": "Fabrion",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Designer",
+        "ashby design roles: Founding Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Designer",
+          "url": "https://jobs.ashbyhq.com/fabrion/dad50bef-5190-46a3-aa2d-2dc7af5cfa9a",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 63,
+      "band": "P1",
+      "id": "genmo",
+      "name": "Genmo",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/genmo/1eec9a21-b686-498c-8ca5-27fe9c44e2b6",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 68,
+      "band": "P1",
+      "id": "scout",
+      "name": "Scout",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Design Engineer",
+        "ashby design roles: Founding Design Engineer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Design Engineer",
+          "url": "https://jobs.ashbyhq.com/capy/114446f0-1545-45a3-94ee-acd6da9c4f74",
+          "roleFamily": "design-engineering"
+        }
+      ]
+    },
+    {
+      "rank": 69,
+      "band": "P1",
+      "id": "sentra",
+      "name": "Sentra",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/sentra/9717d4c7-7500-47af-a5f5-964ae51c1258",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 70,
+      "band": "P1",
+      "id": "tomo-ai",
+      "name": "Tomo",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Product Designer",
+        "ashby design roles: Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/tomo.ai/f77a861f-acdc-4ae4-b88e-bde4e33ebc12",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 71,
+      "band": "P1",
+      "id": "typesafe-ai",
+      "name": "TypeSafe AI",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/typesafe-ai/5b6c4a51-c4c7-4598-9e74-8cb45b17044e",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 166,
+      "band": "P2",
+      "id": "jasper",
+      "name": "Jasper",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Staff Product Designer",
+        "ashby design roles: Staff Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Staff Product Designer",
+          "url": "https://jobs.ashbyhq.com/Jasper%20AI/a1347de0-541f-4ab1-a8ad-80b21ec339bc",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 281,
+      "band": "P3",
+      "id": "comulate",
+      "name": "Comulate",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Product Designer",
+        "ashby design roles: Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Product Designer",
+          "url": "https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17",
+          "roleFamily": "product-design"
+        }
+      ]
+    },
+    {
+      "rank": 303,
+      "band": "P3",
+      "id": "conversion",
+      "name": "Conversion",
+      "status": "ashby-current-design-roles",
+      "notes": [
+        "current roles: Founding Product Designer",
+        "ashby design roles: Founding Product Designer"
+      ],
+      "ashbyDesignPostings": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://jobs.ashbyhq.com/conversion/e8cfbab1-d619-44fe-a2de-0d6d888daa1b",
+          "roleFamily": "product-design"
+        }
+      ]
+    }
+  ]
+}

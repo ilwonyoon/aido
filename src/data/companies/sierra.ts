@@ -216,17 +216,17 @@ export const sierra: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Product Designer',
-          url: 'https://jobs.ashbyhq.com/sierra',
-          location: 'San Francisco, CA',
-          type: 'full-time',
-        },
-    {
-          title: 'Agent Experience Designer, Voice (Multilingual)',
-          url: 'https://jobs.ashbyhq.com/sierra',
-          location: 'San Francisco, CA',
-          type: 'full-time',
-        }
+      title: "Product Designer",
+      url: "https://jobs.ashbyhq.com/sierra/ba780c1d-ebd7-45b8-8c99-12666af5bfa3",
+      location: "San Francisco, CA",
+      type: "full-time",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
   ],
 
   // Culture Insights
@@ -250,7 +250,7 @@ export const sierra: Company = {
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 8,
     whyJoin: [
       'Level A AI-native with $100M ARR in 21 months — proven product-market fit',
@@ -269,13 +269,13 @@ export const sierra: Company = {
     nextActions: [
       'Try Sierra product demo or customer case studies',
       'Research design team leads on LinkedIn',
-      'Apply to Product Designer role if interested',
+      'Track application response and recruiter follow-up',
       'Monitor for Design leadership hires (Head of Design, Design Director)',
     ],
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-05-08',
   sources: [
     { title: 'Sierra Official Website', url: 'https://sierra.ai/' },
     { title: 'Sierra Blog — $100M ARR Milestone', url: 'https://sierra.ai/blog/100m-arr' },

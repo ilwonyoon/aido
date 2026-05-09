@@ -187,7 +187,20 @@ export const resolveAi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Resolve%20AI/e5d71d91-c69a-4894-ad42-b1009a97f4f4",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],

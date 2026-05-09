@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-05-04T16:02:10.790440",
+  "batch": "discovery-2026-05-04",
+  "count": 3,
+  "p0": 1,
+  "p1": 2,
+  "p2": 0,
+  "items": [
+    {
+      "name": "Prezent",
+      "source": "TechCrunch Funding",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "Prezent raises $30 million to acquire AI services firms — starting with founder’s other company",
+      "batch": "discovery-2026-05-04",
+      "order": 1,
+      "discoveryUrl": "https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/",
+      "resultCompanyId": "prezent"
+    },
+    {
+      "name": "Converge Bio",
+      "source": "TechCrunch Funding",
+      "priority": "P1",
+      "status": "completed",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "Converge Bio raises $25M, backed by Bessemer and execs from Meta, OpenAI, Wiz",
+      "batch": "discovery-2026-05-04",
+      "order": 2,
+      "discoveryUrl": "https://techcrunch.com/2026/01/13/ai-drug-discovery-startup-converge-bio-pulls-in-25m-from-bessemer-and-execs-from-meta-openai-and-wiz/",
+      "resultCompanyId": "converge-bio"
+    },
+    {
+      "name": "Terminal Use",
+      "source": "YC W26",
+      "priority": "P0",
+      "status": "completed",
+      "resultCompanyId": "terminal-use",
+      "dedupeCheckedAgainstRepo": true,
+      "notes": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+      "batch": "discovery-2026-05-04",
+      "order": 3,
+      "discoveryUrl": "https://news.ycombinator.com/item?id=47311657"
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "generatedAt": "2026-05-06T00:00:00-07:00",
+  "scope": "SF Bay Area founding product/design opportunities at AI-native or AI-core startups.",
+  "methodology": [
+    "Searched YC, Ashby, Greenhouse, Lever, BuiltIn, Wellfound, and indexed company career pages for Founding Product Designer, Founding Designer, first design hire, and adjacent AI design roles.",
+    "Prioritized specific role URLs over generic careers pages.",
+    "Separated confirmed primary-source live roles from stale-search or conflicting-check roles.",
+    "Excluded design-engineering roles from strict product-design, but retained them as adjacent opportunities."
+  ],
+  "addedToAido": [
+    {
+      "companyName": "Simple AI",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "TypeSafe AI",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "arnata",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "HockeyStack",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Genmo",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Conversion",
+      "status": "existing_company_role_updated",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Onyx",
+      "status": "existing_company_role_updated",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Fabrion",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Sentra",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Scout",
+      "status": "new_company_added_adjacent",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Jinba.io",
+      "status": "new_company_added_first_design_hire",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Claren / WilsonAI",
+      "status": "new_company_added_design_engineering_adjacent",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Anything",
+      "status": "existing_company_role_updated_adjacent",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Agave",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Comulate",
+      "status": "existing_company_role_updated",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Blueberry",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Arkham Technologies",
+      "status": "new_company_added_needs_review_source",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Tomo",
+      "status": "new_company_added",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Delve",
+      "status": "existing_company_stale_role_removed",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Mage Legal",
+      "status": "new_company_added_first_design_hire_adjacent",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "FurtherAI",
+      "status": "existing_company_role_reverified",
+      "date": "2026-05-06"
+    },
+    {
+      "companyName": "Nowadays",
+      "status": "existing_company_role_reverified",
+      "date": "2026-05-06"
+    }
+  ],
+  "strictProductDesignCandidates": [
+    {
+      "companyName": "Simple AI",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/simple-ai/bf145877-af7d-4d16-8feb-5f3b62b3abc7",
+      "whyRelevant": "Voice AI agents for enterprise; role owns future product experience and agent-driven workflows."
+    },
+    {
+      "companyName": "TypeSafe AI",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco Office",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/5b6c4a51-c4c7-4598-9e74-8cb45b17044e",
+      "whyRelevant": "Frontier model lab; designer shapes developer workflows, evaluations, debugging, and observability for AI systems."
+    },
+    {
+      "companyName": "arnata",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/arnata/jobs/WHv3neF-founding-product-designer",
+      "compensation": "$100K-$200K + 0.10%-0.75%",
+      "whyRelevant": "AI operating system for logistics; in-office founding product design ownership."
+    },
+    {
+      "companyName": "Conversion",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco Office",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/conversion/e8cfbab1-d619-44fe-a2de-0d6d888daa1b",
+      "compensation": "$150K-$300K + equity",
+      "whyRelevant": "AI-native marketing automation platform; role owns GTM workflow UX and product-led marketing surfaces."
+    },
+    {
+      "companyName": "HockeyStack",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/hockeystack/ece59ab1-bf38-480f-80f6-96db5def25b6/",
+      "compensation": "$150K-$200K",
+      "whyRelevant": "Agent infrastructure for enterprise revenue; complex AI workflow and data-heavy product design."
+    },
+    {
+      "companyName": "Genmo",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco HQ",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/genmo/1eec9a21-b686-498c-8ca5-27fe9c44e2b6",
+      "whyRelevant": "AI video generation research lab; founding senior product design ownership for next-generation creation tools."
+    },
+    {
+      "companyName": "Kindroid",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco Bay Area",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/Pear-VC/5b5af3c2-865e-4aa5-8f1f-538119ddf723",
+      "whyRelevant": "AI companion product; first dedicated design hire across product, UX, growth, and design system.",
+      "note": "Rechecked with Playwright on 2026-05-06; Ashby rendered Job not found. Not added to AIDO as an active opportunity."
+    },
+    {
+      "companyName": "Pivotal Health",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/pivotal-health/8884c8a7-b140-4fd9-9334-0610cb38c9a2",
+      "compensation": "$150K-$185K + equity",
+      "whyRelevant": "AI-driven healthcare reimbursement platform; founding designer owns product design systems and complex workflow clarity.",
+      "note": "Rechecked with Playwright on 2026-05-06; Ashby rendered Job not found. Not added to AIDO as an active opportunity."
+    },
+    {
+      "companyName": "Fabrion",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco Bay Area",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/fabrion/dad50bef-5190-46a3-aa2d-2dc7af5cfa9a",
+      "whyRelevant": "AI-powered industrial enterprise workflow product; founding design role with product-heavy systems ownership."
+    },
+    {
+      "companyName": "Sentra",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco / Bay Area",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/sentra/9717d4c7-7500-47af-a5f5-964ae51c1258",
+      "compensation": "$150K-$200K + 0.2%-0.4%",
+      "whyRelevant": "AI teammate for company memory and alignment; product design across multi-surface AI outputs and workflows."
+    },
+    {
+      "companyName": "FurtherAI",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/furtherai/21b369d5-801a-4f2e-8ad8-9b20d494648c",
+      "compensation": "$150K-$220K",
+      "whyRelevant": "Insurance AI agents for document-heavy back-office workflows; Ashby role is live and explicitly founding product design."
+    },
+    {
+      "companyName": "Quest",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/new-quest-ai/d81679f5-7f6f-4e19-b637-c91aed21d285",
+      "compensation": "$200K-$250K + equity",
+      "whyRelevant": "AI mentor product; founding designer owns product, brand, motion, and visual identity.",
+      "note": "Rechecked with Playwright on 2026-05-06; Ashby rendered Page not found and new.quest/jobs says no open positions. Not added to AIDO as an active opportunity."
+    },
+    {
+      "companyName": "Multiply",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/kalos/764df726-0ee9-43bb-8b0a-7209c3bdfd1d",
+      "whyRelevant": "AI agent for performance marketing; first designer owns product UX, agent UX, dashboards, onboarding, and design culture.",
+      "note": "Rechecked with Playwright on 2026-05-06; Ashby rendered Page not found. Not added to AIDO as an active opportunity."
+    },
+    {
+      "companyName": "Onyx",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/onyx/35d0ed7f-2c6a-46d6-9e6e-b4ce4a1b2650",
+      "compensation": "$186,763-$196,101 + equity",
+      "whyRelevant": "AI enterprise search / knowledge product; founding design role covers UI/UX, design systems, brand, and web surfaces."
+    },
+    {
+      "companyName": "Scout",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/cpgscout/jobs/HfKMZye-founding-designer",
+      "compensation": "$100K-$150K + 0.10%-1.00%",
+      "whyRelevant": "AI analytics for consumer products; title is brand/graphic design on YC but role includes product screens, UI/UX, brand, and marketing."
+    },
+    {
+      "companyName": "Onton",
+      "roleTitle": "Founding Product Designer (SF)",
+      "location": "San Francisco, CA",
+      "sourceType": "company",
+      "verificationStatus": "needs_review",
+      "url": "https://careers.onton.com/",
+      "whyRelevant": "AI e-commerce/search product; company careers page lists Founding Product Designer (SF), but needs specific role-detail URL before company profile update."
+    },
+    {
+      "companyName": "Agave",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/agave/jobs/Wr9IXT8-founding-product-designer",
+      "compensation": "$125K-$170K + 0.05%-0.20%",
+      "whyRelevant": "AI financial operations for construction; title is Founding Product Designer and listing says first design hire."
+    },
+    {
+      "companyName": "Comulate",
+      "roleTitle": "Product Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/comulate/7686253a-3728-4d95-8417-3b206e669c17",
+      "compensation": "$160K-$210K + equity",
+      "whyRelevant": "AI insurance back-office platform; listing title is Product Designer but role body explicitly says founding Product Designer scope."
+    },
+    {
+      "companyName": "Blueberry",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/pear-vc/be379450-38d0-44c1-928e-d8603c6923f7/",
+      "compensation": "$150K-$200K + equity",
+      "whyRelevant": "AI marketing platform for consumer brands; listing says this is a founding product designer / one of the first hires in Blueberry history."
+    },
+    {
+      "companyName": "Arkham Technologies",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco",
+      "sourceType": "other",
+      "verificationStatus": "needs_review",
+      "url": "https://www.builtinsf.com/job/founding-product-designer/8314100",
+      "whyRelevant": "Data and AI platform for enterprise operations; BuiltIn and LinkedIn listings are live, but an official ATS source was not found yet."
+    },
+    {
+      "companyName": "Tomo",
+      "roleTitle": "Product Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/tomo.ai/f77a861f-acdc-4ae4-b88e-bde4e33ebc12",
+      "whyRelevant": "Consumer AI personal agent; Ashby listing title is Product Designer but body says apply for the Founding Product Designer role and focuses on real-time generative interfaces."
+    },
+    {
+      "companyName": "Nowadays",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/nowadays/jobs/hrkGPy8-founding-product-designer",
+      "compensation": "$100K-$150K + 0.25%-1.25%",
+      "whyRelevant": "AI co-pilot for corporate event planning; YC role is live and owns product design system, enterprise UX, and brand foundations."
+    },
+    {
+      "companyName": "Mage Legal",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "confirmed",
+      "url": "https://www.ycombinator.com/companies/mage-legal/jobs/HQwuocB-founding-designer",
+      "compensation": "$80K-$130K + 1.50%",
+      "whyRelevant": "AI-native legal diligence; not pure core-product design, but a live SF first-design-hire role across UX, product-adjacent workflows, demos, onboarding, and trust-heavy legal AI surfaces."
+    }
+  ],
+  "conflictingOrNeedsManualVerification": [
+    {
+      "companyName": "Bland AI",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://www.ycombinator.com/companies/bland-ai/jobs/Do85ri6-founding-product-designer",
+      "note": "Web index still shows role text, but direct YC fetch returned 404 again on 2026-05-06. Existing AIDO Bland profile remains without openRoles."
+    },
+    {
+      "companyName": "Infisical",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco / Remote US-CA",
+      "sourceType": "yc",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://www.ycombinator.com/companies/infisical/jobs/Nr4sGL8-founding-product-designer-us-canada",
+      "note": "Web index showed an alternate YC URL, but both candidate URLs returned 404 on 2026-05-06. Existing AIDO Infisical profile remains without openRoles."
+    },
+    {
+      "companyName": "Juicebox",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "yc",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://www.ycombinator.com/companies/juicebox/jobs/eLWJZLr-founding-product-designer",
+      "note": "Direct YC founding role URL returned 404 on 2026-05-06. Juicebox remains in AIDO with its current non-founding Product Designer role."
+    },
+    {
+      "companyName": "daydream",
+      "roleTitle": "Founding Product Designer",
+      "location": "San Francisco, CA",
+      "sourceType": "ashby",
+      "verificationStatus": "closed_on_recheck",
+      "url": "https://jobs.ashbyhq.com/withdaydream",
+      "note": "Ashby board returned posting:null on 2026-05-06. Not added as an active founding/first-design-hire opportunity."
+    },
+    {
+      "companyName": "Pocket",
+      "roleTitle": "Founding Designer",
+      "location": "San Francisco preferred / remote possible",
+      "sourceType": "other",
+      "verificationStatus": "needs_review",
+      "url": "https://nicedesignjobs.com/roles/founding-designer",
+      "note": "Interesting hardware + AI role, but source is an aggregator. Need company/ATS source before adding."
+    }
+  ],
+  "nonFoundingButRelevant": [
+    {
+      "companyName": "Jinba.io",
+      "roleTitle": "Product Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/carnot-ai/38a7a3ff-eea9-473a-8ad3-cc3581c20715",
+      "note": "Not titled founding, but listing says this is the first design hire at an AI workflow automation company. Added to AIDO with roleSignal first-design-hire."
+    },
+    {
+      "companyName": "Loam",
+      "roleTitle": "Product Designer",
+      "location": "Remote",
+      "sourceType": "company",
+      "verificationStatus": "needs_review",
+      "url": "https://www.hireloam.com/",
+      "note": "AI hiring workspace by founders/small teams; relevant to Juicebox/Wrangle recruiting-tool cluster, but not SF strict and not founding."
+    },
+    {
+      "companyName": "Anything",
+      "roleTitle": "UX/UI Designer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/anything/1be1954f-4415-4597-a34a-08b7f851404c",
+      "note": "AI app builder; not titled founding, but early design work with Founding Team department. Added to AIDO as adjacent with roleSignal standard."
+    },
+    {
+      "companyName": "Reducto",
+      "roleTitle": "Product Designer",
+      "location": "San Francisco",
+      "sourceType": "company",
+      "verificationStatus": "needs_review",
+      "url": "https://reducto.ai/careers",
+      "note": "Not founding; current listing appears to be second Product Designer. Still relevant AI document parsing company."
+    }
+  ],
+  "designEngineeringAdjacent": [
+    {
+      "companyName": "Jinba.io",
+      "roleTitle": "Founding Design Engineer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/carnot-ai/f8e9170f-e276-47e8-b7b8-a74e906f0ed3",
+      "note": "Design engineer role; keep behind Include design engineering filter. Added to AIDO."
+    },
+    {
+      "companyName": "WilsonAI",
+      "roleTitle": "Founding Designer / Founding Design Engineer",
+      "location": "San Francisco",
+      "sourceType": "ashby",
+      "verificationStatus": "confirmed",
+      "url": "https://jobs.ashbyhq.com/wilson/4e880709-64ff-45f4-b09d-74eaf8b0d9bd",
+      "note": "Listing asks for outstanding frontend engineering skills; classify as design-engineering adjacent. Added to AIDO under Claren because WilsonAI rebranded to Claren."
+    }
+  ],
+  "excludedOrStale": [
+    {
+      "companyName": "Latent",
+      "roleTitle": "Founding Product Designer",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=4609907008",
+      "reason": "Search index showed role, but direct Greenhouse URL returned 404 on 2026-05-06."
+    },
+    {
+      "companyName": "HireGlide",
+      "roleTitle": "Founding Designer",
+      "url": "https://www.ycombinator.com/companies/hireglide/jobs/6v68Xhj-founding-designer",
+      "reason": "Direct YC URL redirected to tryprism and returned 404 on 2026-05-06."
+    },
+    {
+      "companyName": "Circleback",
+      "roleTitle": "Founding Designer",
+      "url": "https://www.ycombinator.com/companies/circleback/jobs/Ocx8Os2-founding-designer",
+      "reason": "Direct YC URL returned 404 on 2026-05-06."
+    },
+    {
+      "companyName": "Pickle",
+      "roleTitle": "Founding Designer",
+      "url": "https://www.ycombinator.com/companies/pickle-2/jobs/sONNnzY-founding-designer",
+      "reason": "Direct YC URL returned 404 on 2026-05-06."
+    },
+    {
+      "companyName": "TierZero",
+      "roleTitle": "Founding Product Designer",
+      "url": "https://jobs.ashbyhq.com/tierzero/4c46f735-e467-4d75-b022-c4767c11bba8",
+      "reason": "Search index showed role, but Playwright rendered Ashby Job not found on 2026-05-06."
+    },
+    {
+      "companyName": "Reducto",
+      "roleTitle": "Product Designer (2nd)",
+      "url": "https://reducto.ai/careers/c51f3507-6b11-41f9-8013-528ecff865c9",
+      "reason": "Search index showed role, but official role URL returned 404 and current careers page did not include Product Designer on 2026-05-06."
+    },
+    {
+      "companyName": "Keeper",
+      "roleTitle": "Senior Product Designer",
+      "url": "https://www.ycombinator.com/companies/keeper-2/jobs/lNB2zsC-senior-product-designer",
+      "reason": "Search index showed first-design-hire language, but direct YC URL returned 404 on 2026-05-06."
+    },
+    {
+      "companyName": "Cluely",
+      "roleTitle": "Founding Designer",
+      "url": "https://jobs.ashbyhq.com/cluely/80353b68-4012-4792-a37f-3037d773f919",
+      "reason": "Search index showed role, but Playwright rendered Ashby Job not found on 2026-05-06."
+    },
+    {
+      "companyName": "Vooma",
+      "roleTitle": "Founding Designer",
+      "url": "https://jobs.ashbyhq.com/vooma/ab886c62-338a-43a0-95f8-12c0aac2742d",
+      "reason": "Search index showed role, but Playwright rendered Ashby Job not found on 2026-05-06."
+    },
+    {
+      "companyName": "Delve",
+      "roleTitle": "Founding Product Designer",
+      "url": "https://jobs.ashbyhq.com/delve/15637a6e-cef3-405f-a7f4-bf26c8350160",
+      "reason": "AIDO previously had this role, but direct Ashby fetch returned posting:null on 2026-05-06. Removed from openRoles."
+    },
+    {
+      "companyName": "Sapiom",
+      "roleTitle": "Product Designer",
+      "url": "https://jobs.ashbyhq.com/sapiom/0be3119e-0314-4c56-91f4-af83e31769e3",
+      "reason": "Search index showed Founding Product Designer language, but direct Ashby fetch returned posting:null on 2026-05-06."
+    },
+    {
+      "companyName": "Crustdata",
+      "roleTitle": "Product Designer",
+      "url": "https://www.ycombinator.com/companies/crustdata/jobs/dlKRboN-product-designer-full-time",
+      "reason": "YC listing is live and first-designer language is confirmed, but the current role is Remote LATAM / contract, not an SF Bay Area opportunity."
+    }
+  ]
+}

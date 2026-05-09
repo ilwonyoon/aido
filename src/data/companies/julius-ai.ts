@@ -137,24 +137,7 @@ export const juliusAi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [
-    {
-          title: 'Product Designer',
-          location: 'San Francisco, CA',
-          type: 'full-time',
-          url: 'https://www.ycombinator.com/companies/julius/jobs/KqL43wN-product-designer',
-          compensation: '$150K-$190K',
-          aboutRole:
-            'Own and shape the design direction for Julius, translating AI capabilities into intuitive workflows for knowledge workers.',
-          responsibilities: [
-            'Design UI used by millions of knowledge workers to get insights from data',
-            'Translate AI capabilities into user-friendly product experiences',
-            'Define the product’s visual identity and interaction patterns',
-          ],
-          requirements: ['3+ years of product design experience', 'Strong UI/UX portfolio', 'Comfortable using Figma'],
-          whyInteresting: 'High-impact design role at an AI analytics company with rapid user growth.',
-        }
-  ],
+  openRoles: [],
 
   // Culture Insights
   cultureInsights: [],
@@ -169,7 +152,7 @@ export const juliusAi: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-04-14',
   sources: [
     { title: 'Julius AI - Official Website', url: 'https://julius.ai' },
     { title: 'Julius YC Company Profile', url: 'https://www.ycombinator.com/companies/julius' },

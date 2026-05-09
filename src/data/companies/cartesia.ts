@@ -149,7 +149,20 @@ export const cartesia: Company = {
   designerLinks: [],
 
   // Open Roles (Product Design only)
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Design Engineer",
+      location: "*HQ - San Francisco, CA",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/cartesia/30dd64e9-178e-43d8-afaa-13bb97baf45d",
+      roleFamily: "design-engineering",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],

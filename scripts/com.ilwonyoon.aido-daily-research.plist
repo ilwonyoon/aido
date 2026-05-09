@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  AIDO Daily Research Pipeline — launchd plist
+  =============================================
+  설치:
+    cp scripts/com.ilwonyoon.aido-daily-research.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.ilwonyoon.aido-daily-research.plist
+
+  확인:
+    launchctl list | grep aido
+
+  수동 실행:
+    launchctl start com.ilwonyoon.aido-daily-research
+
+  제거:
+    launchctl unload ~/Library/LaunchAgents/com.ilwonyoon.aido-daily-research.plist
+    rm ~/Library/LaunchAgents/com.ilwonyoon.aido-daily-research.plist
+
+  스케줄: 매일 오전 9:00 (Mac이 켜져 있을 때)
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.ilwonyoon.aido-daily-research</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/ilwonyoon/Documents/aido/aido/scripts/daily-research.sh</string>
+  </array>
+
+  <!-- 매일 오전 9:00 -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- Mac이 자고 있다가 깨어난 후 실행 누락 시 바로 실행 -->
+  <key>StartInterval</key>
+  <integer>86400</integer>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/ilwonyoon/Documents/aido/aido</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ilwonyoon/.local/bin</string>
+    <key>HOME</key>
+    <string>/Users/ilwonyoon</string>
+    <key>LANG</key>
+    <string>en_US.UTF-8</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/ilwonyoon/Documents/aido/aido/scripts/launchd-daily.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/ilwonyoon/Documents/aido/aido/scripts/launchd-daily-error.log</string>
+
+  <!-- 실패 시 재시도 안 함 (다음날 다시) -->
+  <key>ThrottleInterval</key>
+  <integer>3600</integer>
+</dict>
+</plist>

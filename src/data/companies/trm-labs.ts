@@ -181,7 +181,20 @@ export const trmLabs: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Senior Product Designer",
+      location: "North America",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/trm-labs/16660699-5a97-42da-a8b7-9b91f81cf199",
+      roleFamily: "product-design",
+      roleSignal: "senior",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [

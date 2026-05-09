@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-04-14T18:20:29.293Z",
+  "sourceAuditReport": "src/data/research/open-role-audit-2026-04-14.json",
+  "changedCompanies": 8,
+  "removedRoles": 8,
+  "changes": [
+    {
+      "companyId": "delve",
+      "companyFile": "src/data/companies/delve.ts",
+      "removed": [
+        {
+          "title": "Founding Product Designer",
+          "url": "https://www.ycombinator.com/companies/delve/jobs",
+          "reason": "broken"
+        }
+      ],
+      "before": 2,
+      "after": 1
+    },
+    {
+      "companyId": "harvey",
+      "companyFile": "src/data/companies/harvey.ts",
+      "removed": [
+        {
+          "title": "Head of UX Research",
+          "url": "https://jobs.ashbyhq.com/harvey",
+          "reason": "out-of-scope"
+        }
+      ],
+      "before": 2,
+      "after": 1
+    },
+    {
+      "companyId": "openai",
+      "companyFile": "src/data/companies/openai.ts",
+      "removed": [
+        {
+          "title": "Product Designer, Platform & Tools",
+          "url": "https://openai.com/careers/product-designer-platform-and-tools-san-francisco/",
+          "reason": "broken"
+        }
+      ],
+      "before": 2,
+      "after": 1
+    },
+    {
+      "companyId": "shopify",
+      "companyFile": "src/data/companies/shopify.ts",
+      "removed": [
+        {
+          "title": "Design Apprentice, Product Design",
+          "url": "https://www.shopify.com/careers",
+          "reason": "out-of-scope"
+        }
+      ],
+      "before": 2,
+      "after": 1
+    },
+    {
+      "companyId": "sierra",
+      "companyFile": "src/data/companies/sierra.ts",
+      "removed": [
+        {
+          "title": "Agent Experience Designer, Voice (Multilingual)",
+          "url": "https://jobs.ashbyhq.com/sierra",
+          "reason": "out-of-scope"
+        }
+      ],
+      "before": 2,
+      "after": 1
+    },
+    {
+      "companyId": "codeium",
+      "companyFile": "src/data/companies/codeium.ts",
+      "removed": [
+        {
+          "title": "Product Designer",
+          "url": "https://codeium.com/careers",
+          "reason": "redirect"
+        }
+      ],
+      "before": 1,
+      "after": 0
+    },
+    {
+      "companyId": "julius-ai",
+      "companyFile": "src/data/companies/julius-ai.ts",
+      "removed": [
+        {
+          "title": "Product Designer",
+          "url": "https://www.ycombinator.com/companies/julius/jobs/KqL43wN-product-designer",
+          "reason": "broken"
+        }
+      ],
+      "before": 1,
+      "after": 0
+    },
+    {
+      "companyId": "lighthouse",
+      "companyFile": "src/data/companies/lighthouse.ts",
+      "removed": [
+        {
+          "title": "Product Designer",
+          "url": "https://careers.lighthousehq.com/product-designer.html",
+          "reason": "broken"
+        }
+      ],
+      "before": 1,
+      "after": 0
+    }
+  ]
+}

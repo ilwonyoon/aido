@@ -97,7 +97,22 @@ export const e2b: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Founding Designer',
+      location: 'San Francisco, CA',
+      type: 'full-time',
+      roleFamily: 'product-design',
+      roleSignal: 'founding',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-05',
+      url: 'https://jobs.ashbyhq.com/e2b/e5f9f727-b02c-40cc-95b5-d036b38e7088',
+      compensation: '$170K-$250K + equity',
+      aboutRole: 'Shape the product experience for E2B’s open-source cloud infrastructure for AI agents.',
+      whyInteresting: 'Founding design opportunity in a deeply technical AI agent infrastructure company.',
+    },
+  ],
 
   cultureInsights: [],
 
@@ -129,6 +144,7 @@ export const e2b: Company = {
   lastUpdated: '2026-02-01T13:05:00',
   sources: [
     { title: 'Source', url: 'https://e2b.dev' },
-    { title: 'Source', url: 'https://startups.gallery/companies/e2b' }
+    { title: 'Source', url: 'https://startups.gallery/companies/e2b' },
+    { title: 'Founding Designer at E2B', url: 'https://jobs.ashbyhq.com/e2b/e5f9f727-b02c-40cc-95b5-d036b38e7088' }
   ],
 };

@@ -20,6 +20,74 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   'vertical-saas': 'Vertical SaaS',
 };
 
+export type CategorySubcategory =
+  | 'insurance'
+  | 'healthcare'
+  | 'legal'
+  | 'fintech'
+  | 'security'
+  | 'infrastructure'
+  | 'developer-tools'
+  | 'creative-media'
+  | 'productivity'
+  | 'sales-marketing'
+  | 'education'
+  | 'consumer-ai'
+  | 'govtech'
+  | 'public-safety'
+  | 'real-estate'
+  | 'voice-ai'
+  | 'life-sciences'
+  | 'regulatory'
+  | 'other-vertical';
+
+export const CATEGORY_SUBCATEGORY_LABELS: Record<CategorySubcategory, string> = {
+  insurance: 'Insurance',
+  healthcare: 'Healthcare',
+  legal: 'Legal',
+  fintech: 'Fintech',
+  security: 'Security',
+  infrastructure: 'Infrastructure',
+  'developer-tools': 'Developer Tools',
+  'creative-media': 'Creative & Media',
+  productivity: 'Productivity',
+  'sales-marketing': 'Sales & Marketing',
+  education: 'Education',
+  'consumer-ai': 'Consumer AI',
+  govtech: 'Govtech',
+  'public-safety': 'Public Safety',
+  'real-estate': 'Real Estate',
+  'voice-ai': 'Voice AI',
+  'life-sciences': 'Life Sciences',
+  regulatory: 'Regulatory',
+  'other-vertical': 'Other Vertical',
+};
+
+export const CATEGORY_TREE: Record<Category, CategorySubcategory[]> = {
+  'ai-models': ['infrastructure'],
+  'developer-tools': ['developer-tools', 'infrastructure'],
+  'creative-media': ['creative-media'],
+  productivity: ['productivity'],
+  'sales-marketing': ['sales-marketing'],
+  'enterprise-ops': ['productivity', 'fintech', 'security', 'infrastructure'],
+  'vertical-saas': [
+    'insurance',
+    'healthcare',
+    'legal',
+    'fintech',
+    'security',
+    'education',
+    'consumer-ai',
+    'govtech',
+    'public-safety',
+    'real-estate',
+    'voice-ai',
+    'life-sciences',
+    'regulatory',
+    'other-vertical',
+  ],
+};
+
 // Multi-dimensional tagging system (legacy, kept for data compatibility)
 export type AIType =
   | 'foundation-model'    // Anthropic, OpenAI, Mistral (LLM 직접 개발)
@@ -170,6 +238,11 @@ export interface OpenRole {
   title: string;
   location: string;
   url: string;
+  roleFamily?: 'product-design' | 'design-engineering' | 'brand-design' | 'other-design';
+  roleSignal?: 'founding' | 'first-design-hire' | 'senior' | 'staff' | 'lead' | 'head' | 'standard';
+  verificationStatus?: 'confirmed' | 'needs_review' | 'closed';
+  sourceType?: 'yc' | 'ashby' | 'lever' | 'greenhouse' | 'company' | 'other';
+  lastVerifiedAt?: string;
   // Enhanced job description fields
   team?: string; // e.g., "Claude Code Team", "Growth Team"
   level?: string; // e.g., "Senior", "Staff", "Lead"
@@ -185,7 +258,7 @@ export interface OpenRole {
 }
 
 export interface CultureInsight {
-  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi' | 'careers' | 'inc.com' | 'ycombinator' | 'techcrunch';
+  source: 'blind' | 'glassdoor' | 'linkedin' | 'twitter' | 'threads' | 'levels.fyi' | 'careers' | 'company' | 'inc.com' | 'ycombinator' | 'techcrunch';
   sentiment: 'positive' | 'neutral' | 'negative';
   rating?: number; // e.g., 4.2 out of 5
   content: string;
@@ -209,6 +282,7 @@ export interface Company {
 
   // Category
   category: Category;
+  subcategories?: CategorySubcategory[];
 
   // Multi-dimensional Tags (legacy)
   aiTypes: AIType[];
@@ -242,7 +316,7 @@ export interface Company {
     headwinds: string[]; // ["GitHub Copilot competition", "Commoditization risk"]
 
     // Competitive moat
-    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'platform-ecosystem' | 'vertical-specialization' | 'none';
+    moatType?: 'network-effects' | 'data-flywheel' | 'switching-costs' | 'brand' | 'technology' | 'platform-ecosystem' | 'vertical-specialization' | 'product-experience' | 'none';
     moatStrength?: string; // "Strong: 10M+ users generate training data"
   };
 
@@ -266,6 +340,8 @@ export interface Company {
     name: string;
     role: string;
     background: string;
+    whyBuilding?: string;
+    beliefs?: string[];
   }[];
   whyBuilding: string;
   beliefs: string[];
@@ -312,4 +388,20 @@ export interface Company {
   // Meta
   lastUpdated: string; // ISO format: "2025-01-25T14:30:00" for minute precision
   sources: { title: string; url: string }[];
+}
+
+export function getCompanySubcategories(
+  company: Pick<Company, 'category' | 'industries' | 'subcategories'>
+): CategorySubcategory[] {
+  const subcategories = new Set<CategorySubcategory>(company.subcategories ?? []);
+
+  company.industries.forEach((industry) => {
+    if (industry === 'other') {
+      if (company.category === 'vertical-saas') subcategories.add('other-vertical');
+      return;
+    }
+    subcategories.add(industry);
+  });
+
+  return Array.from(subcategories);
 }

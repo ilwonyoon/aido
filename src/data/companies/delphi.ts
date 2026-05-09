@@ -142,22 +142,48 @@ export const delphi: Company = {
   designerLinks: [],
 
   // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: "Design Engineer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Delphi/81a220c3-1338-426f-ba34-5d77753add24",
+      roleFamily: "design-engineering",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    },
+    {
+      title: "Product Designer",
+      location: "San Francisco",
+      type: "full-time",
+      url: "https://jobs.ashbyhq.com/Delphi/9e2040f8-ecbf-4192-85b9-02e08a20675f",
+      roleFamily: "product-design",
+      roleSignal: "standard",
+      verificationStatus: "confirmed",
+      sourceType: "ashby",
+      lastVerifiedAt: "2026-05-07",
+      whyInteresting: "Current design role verified on Ashby.",
+    }
+  ],
 
   // Culture Insights
   cultureInsights: [],
 
   // My Tracking
   tracking: {
-    status: 'researching',
+    status: 'applied',
     fitScore: 7,
     whyJoin: ['Creator-focused AI product', 'Sequoia-backed Series A with strong momentum'],
     whyNot: ['Authenticity risks in AI persona space', 'Competitive consumer AI market'],
-    nextActions: ['Monitor product releases and creator partnerships'],
+    nextActions: ['Track application response and recruiter follow-up', 'Monitor product releases and creator partnerships'],
+    notes: 'Applied to Product Designer role on 2026-05-09.',
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-05-09',
   sources: [
     { title: 'Delphi - Official Website', url: 'https://www.delphi.ai' },
     { title: 'Delphi About', url: 'https://www.delphi.ai/about' },

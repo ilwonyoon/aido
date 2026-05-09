@@ -13,6 +13,25 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
+    // Private application board - owner only, restricted to Ilwon accounts
+    match /users/{userId}/applications/{applicationId} {
+      allow read, write: if request.auth != null
+        && request.auth.uid == userId
+        && (
+          request.auth.token.email == 'ilwonyoon@gmail.com'
+          || request.auth.token.email.matches('.*@ilwonyoon[.]com$')
+        );
+
+      match /events/{eventId} {
+        allow read, write: if request.auth != null
+          && request.auth.uid == userId
+          && (
+            request.auth.token.email == 'ilwonyoon@gmail.com'
+            || request.auth.token.email.matches('.*@ilwonyoon[.]com$')
+          );
+      }
+    }
+
     // Macro events - public read, admin write
     match /macroEvents/{eventId} {
       allow read: if true;

@@ -161,19 +161,7 @@ export const tavus: Company = {
         description: 'Product updates and demos',
       },
     ],
-    openRoles: [
-      {
-        title: 'Product Designer',
-        location: 'San Francisco, CA',
-        type: 'full-time',
-        url: 'https://jobs.ashbyhq.com/tavus',
-        requirements: [
-          '3+ years product design experience',
-          'Experience with developer tools or API products',
-          'Understanding of AI/ML product design',
-        ],
-      },
-    ],
+    openRoles: [],
 
     cultureInsights: [
       {
@@ -255,7 +243,7 @@ export const tavus: Company = {
       ],
     },
 
-    lastUpdated: '2025-01-26',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://www.crunchbase.com/organization/tavus' },
     { title: 'Source', url: 'https://tavus.io' }

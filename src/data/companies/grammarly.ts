@@ -90,9 +90,7 @@ export const grammarly: Company = {
     ],
 
     designerLinks: [],
-    openRoles: [
-      { title: 'Product Designer', location: 'San Francisco, CA (Hybrid)', url: 'https://www.grammarly.com/careers', type: 'full-time' }
-    ],
+    openRoles: [],
     cultureInsights: [],
     tracking: {
       status: 'watching',
@@ -101,7 +99,7 @@ export const grammarly: Company = {
       whyNot: ['Hybrid work policy', 'Unknown design culture'],
       nextActions: ['Try Grammarly product', 'Research founders'],
     },
-    lastUpdated: '2026-02-18',
+    lastUpdated: '2026-04-14',
     sources: [
     { title: 'Source', url: 'https://www.techi.com/grammarly-1b-funding-ai-platform-expansion/' },
     { title: 'Source', url: 'https://fueler.io/blog/grammarly-usage-revenue-valuation-growth-statistics' }

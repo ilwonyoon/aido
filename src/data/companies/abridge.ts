@@ -205,7 +205,32 @@ export const abridge: Company = {
     ],
 
     // Open Roles
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Senior Product Designer",
+        location: "SF Office",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/Abridge/6aab826b-a60a-434e-889d-e4648f289305",
+        roleFamily: "product-design",
+        roleSignal: "senior",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Staff Product Designer",
+        location: "SF Office",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/Abridge/d48553c1-a360-4509-a1e0-9df6d8b480f6",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      }
+    ],
 
     // Culture Insights
     cultureInsights: [

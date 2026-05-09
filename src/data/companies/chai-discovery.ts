@@ -183,12 +183,12 @@ export const chaiDiscovery: Company = {
   // Open Roles
   openRoles: [
     {
-          title: 'Product Designer',
-          location: 'San Francisco, CA (In-person)',
-          url: 'https://jobs.ashbyhq.com/chaidiscovery',
-          type: 'full-time',
-          aboutRole: 'Design product experiences for AI-first drug discovery teams.',
-        }
+              title: 'Product Designer',
+              location: 'San Francisco, CA (In-person)',
+              url: 'https://jobs.ashbyhq.com/chaidiscovery/bc51bebe-108a-4392-8b1d-91e460e6786c',
+              type: 'full-time',
+              aboutRole: 'Design product experiences for AI-first drug discovery teams.',
+            }
   ],
 
   // Culture Insights
@@ -213,7 +213,7 @@ export const chaiDiscovery: Company = {
   },
 
   // Meta
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-04-14',
   sources: [
     { title: 'Source', url: 'https://www.chaidiscovery.com/' },
     { title: 'Source', url: 'https://techcrunch.com/2025/12/15/openai-backed-biotech-firm-chai-discovery-raises-130m-series-b-at-1-3b-valuation/' },

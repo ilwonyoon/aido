@@ -20,8 +20,22 @@ import { writerDeepDiveEnterpriseAiPlatformDesign } from './content/writer-deep-
 import { huggingFaceDeepDiveGithubOfMlDesign } from './content/hugging-face-deep-dive-github-of-ml-design';
 import { gtmAiBeforeAndAfter } from './content/gtm-ai-before-and-after';
 import { sierraDeepDiveAiCustomerExperienceDesign } from './content/sierra-deep-dive-ai-customer-experience-design';
+import { insuranceAi101NotOneMarket } from './content/insurance-ai-101-not-one-market';
+import { insuranceAiUnderwritingWorkbench } from './content/insurance-ai-underwriting-workbench';
+import { insuranceAiClaimsDeepDive } from './content/insurance-ai-claims-deep-dive';
+import { insuranceAiPricingReservingDeepDive } from './content/insurance-ai-pricing-reserving-deep-dive';
+import { insuranceAiRiskDataPropertyIntelligence } from './content/insurance-ai-risk-data-property-intelligence';
+import { insuranceAiNewCarrierModels } from './content/insurance-ai-new-carrier-models';
+import { insuranceAiProductDesignerFieldGuide } from './content/insurance-ai-product-designer-field-guide';
 
 export const articles: Article[] = [
+  insuranceAiProductDesignerFieldGuide,
+  insuranceAiNewCarrierModels,
+  insuranceAiRiskDataPropertyIntelligence,
+  insuranceAiPricingReservingDeepDive,
+  insuranceAiClaimsDeepDive,
+  insuranceAiUnderwritingWorkbench,
+  insuranceAi101NotOneMarket,
   sierraDeepDiveAiCustomerExperienceDesign,
   gtmAiBeforeAndAfter,
   huggingFaceDeepDiveGithubOfMlDesign,

@@ -247,7 +247,32 @@ export const linear: Company = {
         description: 'Official methodology and design process documentation',
       },
     ],
-    openRoles: [],
+    openRoles: [
+      {
+        title: "Senior / Staff Product Designer",
+        location: "North America",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/Linear/a264869e-f058-487c-ab7f-9b77dffa427c",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      },
+      {
+        title: "Senior / Staff Product Designer",
+        location: "Europe",
+        type: "full-time",
+        url: "https://jobs.ashbyhq.com/Linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
+        roleFamily: "product-design",
+        roleSignal: "staff",
+        verificationStatus: "confirmed",
+        sourceType: "ashby",
+        lastVerifiedAt: "2026-05-07",
+        whyInteresting: "Current design role verified on Ashby.",
+      }
+    ],
 
     cultureInsights: [
       {
