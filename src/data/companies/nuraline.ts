@@ -8,6 +8,7 @@ export const nuraline: Company = {
   website: 'https://www.nuraline.ai/',
     screenshot: '/screenshots/nuraline-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const nuraline: Company = {
 
   // Business
   stage: 'Unknown',
+  normalizedStage: 'other' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

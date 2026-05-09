@@ -7,6 +7,7 @@ export const vizcom: Company = {
   website: 'https://www.vizcom.com',
   screenshot: '/screenshots/vizcom-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const vizcom: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not disclosed',
   totalFunding: '$52M',
   fundingHistory: [

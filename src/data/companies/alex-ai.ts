@@ -6,6 +6,7 @@ export const alexAi: Company = {
   description: 'AI recruiter focused on sourcing and outbound hiring workflows.',
   website: 'https://www.alex.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const alexAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [

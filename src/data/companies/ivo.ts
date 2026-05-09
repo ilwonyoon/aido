@@ -8,6 +8,7 @@ export const ivo: Company = {
   website: 'https://www.ivo.ai',
     screenshot: '/screenshots/ivo-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const ivo: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$71M+',
   fundingHistory: [

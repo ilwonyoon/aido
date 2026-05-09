@@ -6,6 +6,7 @@ export const nudge: Company = {
   description: 'Whole-brain interfaces for everyday life.',
   website: 'https://nudge.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const nudge: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$100M',
   revenue: 'Unknown',

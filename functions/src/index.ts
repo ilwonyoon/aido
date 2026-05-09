@@ -74,3 +74,5 @@ export const sendWelcomeEmail = onDocumentWritten(
     }
   }
 );
+
+export { search } from './search';

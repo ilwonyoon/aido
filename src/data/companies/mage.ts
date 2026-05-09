@@ -6,6 +6,7 @@ export const mage: Company = {
   description: 'Open-source data pipeline tool.',
   website: 'https://www.mage.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mage: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6.3M',
   revenue: 'Unknown',

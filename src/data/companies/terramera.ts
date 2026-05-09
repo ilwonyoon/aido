@@ -7,6 +7,7 @@ export const terramera: Company = {
     'Agtech company using AI-driven crop protection and plant science to deliver sustainable agricultural products.',
   website: 'https://www.terramera.com',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const terramera: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$82M+',
   revenue: 'Not publicly disclosed',

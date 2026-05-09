@@ -6,6 +6,7 @@ export const ando: Company = {
   description: 'Work messaging reimagined for modern teams.',
   website: 'https://ando.so',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const ando: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],

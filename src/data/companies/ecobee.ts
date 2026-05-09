@@ -7,6 +7,7 @@ export const ecobee: Company = {
     'Smart home company that builds connected thermostats, sensors, and related devices focused on energy efficiency and comfort.',
   website: 'https://www.ecobee.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const ecobee: Company = {
 
   // Business
   stage: 'Acquired (Generac)',
+  normalizedStage: 'other' as const,
   valuation: '$770M (Nov 2021 acquisition)',
   totalFunding: '$146M',
   fundingHistory: [

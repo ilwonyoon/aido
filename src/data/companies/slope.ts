@@ -6,6 +6,7 @@ export const slope: Company = {
   description: 'AI-powered B2B payments and embedded financing platform that enables merchants and marketplaces to offer net terms, BNPL, and order-to-cash automation to business buyers.',
   website: 'https://www.slopepay.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/slope-og.webp',
   category: 'vertical-saas' as const,
@@ -13,6 +14,7 @@ export const slope: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['fintech'],
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   totalFunding: '~$252M ($77M equity + $175M debt)',
   fundingHistory: [
     {

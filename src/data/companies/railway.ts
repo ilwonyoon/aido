@@ -8,6 +8,7 @@ export const railway: Company = {
   website: 'https://railway.com/',
     screenshot: '/screenshots/railway-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const railway: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$100M',
   fundingHistory: [

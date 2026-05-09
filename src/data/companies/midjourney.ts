@@ -7,6 +7,7 @@ export const midjourney: Company = {
     website: 'https://www.midjourney.com/',
     screenshot: '/screenshots/midjourney-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const midjourney: Company = {
 
     // Business
     stage: 'Bootstrapped',
+    normalizedStage: 'growth' as const,
     valuation: '~$10B (estimated, based on $500M revenue at 20x multiple)',
     totalFunding: 'Self-funded (bootstrapped, no VC funding)',
     fundingHistory: [],
@@ -185,4 +187,4 @@ export const midjourney: Company = {
     { title: 'Source', url: 'https://www.midjourney.com/careers' },
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Midjourney' }
   ],
-  };
+};

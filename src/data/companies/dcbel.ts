@@ -7,6 +7,7 @@ export const dcbel: Company = {
     'Home energy platform that combines bidirectional EV charging, solar, and battery management with AI-powered energy optimization.',
   website: 'https://www.dcbel.energy',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const dcbel: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$50M+',
   revenue: 'Not publicly disclosed',

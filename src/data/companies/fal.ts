@@ -8,6 +8,7 @@ export const fal: Company = {
   website: 'https://fal.ai/',
     screenshot: '/screenshots/fal-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const fal: Company = {
 
   // Business
   stage: 'Series D',
+  normalizedStage: 'series-d-plus' as const,
   valuation: 'Unknown',
   totalFunding: '$140M',
   fundingHistory: [

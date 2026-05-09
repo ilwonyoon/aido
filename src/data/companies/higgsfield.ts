@@ -7,6 +7,7 @@ export const higgsfield: Company = {
     website: 'https://higgsfield.ai',
     screenshot: '/screenshots/higgsfield-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const higgsfield: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: '$1.3B+ (Jan 2026)',
     totalFunding: '$130M',
     fundingHistory: [
@@ -158,4 +160,4 @@ export const higgsfield: Company = {
     { title: 'Source', url: 'https://runwayml.com/' },
     { title: 'Source', url: 'https://www.synthesia.io/' }
   ],
-  };
+};

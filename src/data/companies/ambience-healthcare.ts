@@ -6,6 +6,7 @@ export const ambienceHealthcare: Company = {
     description: 'AI platform for clinical documentation, coding, and workflow automation for health systems.',
     website: 'https://www.ambiencehealthcare.com',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const ambienceHealthcare: Company = {
 
     // Business
     stage: 'Series C',
+    normalizedStage: 'series-c' as const,
     valuation: '$1B (Jul 2025, estimated)',
     totalFunding: '$373M (estimated)',
     fundingHistory: [
@@ -224,4 +226,4 @@ export const ambienceHealthcare: Company = {
     { title: 'Source', url: 'https://sacra.com/c/ambience-healthcare/' },
     { title: 'Source', url: 'https://www.precedenceresearch.com/clinical-documentation-improvement-market' }
   ],
-  };
+};

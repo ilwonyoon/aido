@@ -6,6 +6,7 @@ export const arc: Company = {
   description: 'Intelligent cash management.',
   website: 'https://arc.tech',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const arc: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   revenue: 'Unknown',

@@ -8,6 +8,7 @@ export const openrouter: Company = {
   website: 'https://openrouter.ai/',
     screenshot: '/screenshots/openrouter-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const openrouter: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$28M',
   fundingHistory: [

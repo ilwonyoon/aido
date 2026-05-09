@@ -7,6 +7,7 @@ export const inferenceNet: Company = {
   website: 'https://www.inference.net',
     screenshot: '/screenshots/inference-net-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const inferenceNet: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$11.8M',
   revenue: 'Unknown',

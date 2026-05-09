@@ -7,6 +7,7 @@ export const nooks: Company = {
   website: 'https://www.nooks.ai',
     screenshot: '/screenshots/nooks-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const nooks: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$70M',
   fundingHistory: [

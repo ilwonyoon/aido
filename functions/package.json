@@ -3,16 +3,18 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node -e \"const fs=require('fs');const src='../src/data/search-index.json';if(fs.existsSync(src)){fs.mkdirSync('./data',{recursive:true});fs.copyFileSync(src,'./data/search-index.json');}\" && tsc",
     "build:watch": "tsc --watch"
   },
   "engines": {
     "node": "20"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.56.0",
     "firebase-admin": "^13.6.1",
     "firebase-functions": "^6.3.0",
     "resend": "^6.9.2",
+    "zod": "^3.22.0",
     "@react-email/components": "^1.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

@@ -6,6 +6,7 @@ export const blazeAi: Company = {
   description: 'AI marketing platform that helps teams create and automate content.',
   website: 'https://www.withblaze.app',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const blazeAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$34M',
   fundingHistory: [],

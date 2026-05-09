@@ -6,6 +6,7 @@ export const oxideComputer: Company = {
   description: 'Designs and manufactures integrated rack-scale cloud computers for on-premises data centers, combining custom hardware and open-source software.',
   website: 'https://oxide.computer',
   headquarters: 'Emeryville, CA',
+  region: 'other-us' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/oxide-computer-og.webp',
 
@@ -16,6 +17,8 @@ export const oxideComputer: Company = {
   industries: ['infrastructure'],
 
   stage: 'Series C',
+
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '~$370M',
   fundingHistory: [

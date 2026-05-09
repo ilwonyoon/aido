@@ -6,6 +6,7 @@ export const leen: Company = {
   description: 'Unified data API for cybersecurity — the "Plaid for security data" that aggregates, de-duplicates, and standardizes data from 200+ security tools.',
   website: 'https://www.leen.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -17,6 +18,8 @@ export const leen: Company = {
   industries: ['security'],
 
   stage: 'Pre-seed',
+
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2.8M',
   fundingHistory: [

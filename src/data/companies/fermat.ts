@@ -6,6 +6,7 @@ export const fermat: Company = {
   description: 'Tailor every touchpoint.',
   website: 'https://www.fermat.xyz',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const fermat: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$45M',
   revenue: 'Unknown',

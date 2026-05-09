@@ -6,6 +6,7 @@ export const liquidAi: Company = {
   description: 'MIT CSAIL spinoff building Liquid Foundation Models (LFMs) — a novel AI architecture inspired by the C. elegans worm nervous system, delivering maximum intelligence at minimum compute.',
   website: 'https://www.liquid.ai',
   headquarters: 'Cambridge, MA',
+  region: 'boston' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -19,6 +20,7 @@ export const liquidAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '$2B+ (Dec 2024)',
   totalFunding: '$297M',
   fundingHistory: [

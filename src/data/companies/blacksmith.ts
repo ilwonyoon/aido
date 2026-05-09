@@ -7,6 +7,7 @@ export const blacksmith: Company = {
     'High-performance CI cloud that makes GitHub Actions runs faster and cheaper with a purpose-built hardware-software stack.',
   website: 'https://www.blacksmith.sh/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const blacksmith: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$10M',
   fundingHistory: [

@@ -8,6 +8,7 @@ export const loop: Company = {
   website: 'https://loop.com/',
     screenshot: '/screenshots/loop-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const loop: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$35M (Series B reported)',
   fundingHistory: [],

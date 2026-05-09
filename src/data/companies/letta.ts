@@ -7,6 +7,7 @@ export const letta: Company = {
     website: 'https://www.letta.com',
     screenshot: '/screenshots/letta-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const letta: Company = {
 
     // Business
     stage: 'Seed',
+    normalizedStage: 'seed' as const,
     valuation: 'Unknown',
     totalFunding: '$10M',
     fundingHistory: [

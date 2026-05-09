@@ -7,6 +7,7 @@ export const naborly: Company = {
     'Tenant screening and rental decisioning platform that uses AI-driven verification to help landlords approve tenants faster.',
   website: 'https://www.naborly.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const naborly: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$7.5M',
   revenue: 'Not publicly disclosed',

@@ -7,6 +7,7 @@ export const anythingAi: Company = {
     'AI-powered software builder that helps teams create and ship custom products faster.',
   website: 'https://createanything.com/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const anythingAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$11M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const polycam: Company = {
   description: 'Truly cross-platform 3D capture.',
   website: 'https://poly.cam',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const polycam: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$18M',
   revenue: 'Unknown',

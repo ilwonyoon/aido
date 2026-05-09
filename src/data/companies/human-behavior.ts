@@ -6,6 +6,7 @@ export const humanBehavior: Company = {
   description: 'Behavior Behavioral analytics platform.',
   website: 'https://humanbehavior.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const humanBehavior: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5M',
   revenue: 'Unknown',

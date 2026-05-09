@@ -7,6 +7,7 @@ export const scribe: Company = {
   website: 'https://scribehow.com',
     screenshot: '/screenshots/scribe-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const scribe: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$55M',
   fundingHistory: [

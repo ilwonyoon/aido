@@ -8,6 +8,7 @@ export const vapi: Company = {
   website: 'https://vapi.ai/',
   screenshot: '/screenshots/vapi-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const vapi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [

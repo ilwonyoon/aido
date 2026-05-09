@@ -6,6 +6,7 @@ export const blossom: Company = {
     description: 'AI copilots for psychiatry and behavioral health clinics, combining care delivery and technology.',
     website: 'https://www.joinblossomhealth.com',
     headquarters: 'New York, NY',
+    region: 'nyc' as const,
     remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const blossom: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: 'Unknown',
     totalFunding: '$20M+ (estimated)',
     fundingHistory: [

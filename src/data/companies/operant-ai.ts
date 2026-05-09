@@ -6,6 +6,7 @@ export const operantAi: Company = {
   description: 'Runtime AI application security platform that protects cloud and AI workloads from attacks.',
   website: 'https://www.operant.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const operantAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$13.5M',
   revenue: 'Not publicly disclosed',

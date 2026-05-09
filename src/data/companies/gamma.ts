@@ -9,6 +9,7 @@ export const gamma: Company = {
 
     // Location
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -24,6 +25,7 @@ export const gamma: Company = {
 
     // Business
     stage: 'Series B',
+    normalizedStage: 'series-b' as const,
     valuation: '$2.1B',
     totalFunding: '$87M',
     fundingHistory: [
@@ -285,4 +287,4 @@ export const gamma: Company = {
     { title: 'Baseten: Gamma AI infrastructure', url: 'https://www.baseten.co/resources/customers/how-gamma-makes-building-presentations-criminally-fun/' },
     { title: 'Sequoia: Jon Noronha on scaling Gamma', url: 'https://sequoiacap.com/podcast/training-data-jon-noronha/' },
   ],
-  };
+};

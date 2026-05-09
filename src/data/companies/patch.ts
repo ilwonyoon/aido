@@ -6,6 +6,7 @@ export const patch: Company = {
   description: 'Rebalance the planet.',
   website: 'https://www.patch.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const patch: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$55M',
   revenue: 'Unknown',

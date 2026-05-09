@@ -7,6 +7,7 @@ export const suno: Company = {
     website: 'https://suno.com',
   screenshot: '/screenshots/suno-screenshot.png',
     headquarters: 'Cambridge, MA',
+    region: 'boston' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const suno: Company = {
 
     // Business
     stage: 'Series C',
+    normalizedStage: 'series-c' as const,
     valuation: '$2.45B (Nov 2025)',
     totalFunding: '$250M',
     fundingHistory: [
@@ -221,4 +223,4 @@ export const suno: Company = {
     { title: 'Source', url: 'https://boomy.com' },
     { title: 'Source', url: 'https://soundraw.io' }
   ],
-  };
+};

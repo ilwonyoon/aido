@@ -6,6 +6,7 @@ export const voiceflow: Company = {
   description: 'Collaborative platform for building AI agents and conversational voice/chat experiences without heavy coding.',
   website: 'https://www.voiceflow.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const voiceflow: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$28.2M',
   revenue: 'Not publicly disclosed',

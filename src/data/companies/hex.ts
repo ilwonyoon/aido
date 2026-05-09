@@ -6,6 +6,7 @@ export const hex: Company = {
   description: 'AI-powered data workspace unifying SQL, Python, R, and no-code tools for collaborative analytics, data science, and interactive data apps.',
   website: 'https://hex.tech',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -19,6 +20,7 @@ export const hex: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$500M–$1B',
   totalFunding: '$172M',
   fundingHistory: [

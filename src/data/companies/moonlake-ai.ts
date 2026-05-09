@@ -6,6 +6,7 @@ export const moonlakeAi: Company = {
   description: 'Vibe coding interactive worlds.',
   website: 'https://startups.gallery/companies/moonlake-ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const moonlakeAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$28M',
   revenue: 'Unknown',

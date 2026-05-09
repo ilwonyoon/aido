@@ -8,6 +8,7 @@ export const extropic: Company = {
   website: 'https://extropic.ai',
     screenshot: '/screenshots/extropic-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const extropic: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$14.1M',
   revenue: 'Unknown',

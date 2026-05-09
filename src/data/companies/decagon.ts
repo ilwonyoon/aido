@@ -6,6 +6,7 @@ export const decagon: Company = {
   description: 'Enterprise AI agents that autonomously resolve customer support tickets end-to-end across chat, email, voice, and SMS using Agent Operating Procedures (AOPs).',
   website: 'https://decagon.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/decagon-og.webp',
 
@@ -15,6 +16,8 @@ export const decagon: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Series D',
+
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$4.5B (Jan 2026)',
   totalFunding: '~$481M',
   fundingHistory: [

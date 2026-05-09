@@ -9,6 +9,7 @@ export const sourcegraph: Company = {
 
     // Location
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -24,6 +25,7 @@ export const sourcegraph: Company = {
 
     // Business
     stage: 'Series D',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$2.6B',
     totalFunding: '$223M',
     fundingHistory: [
@@ -249,4 +251,4 @@ export const sourcegraph: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/' },
     { title: 'Source', url: 'https://boards.greenhouse.io/sourcegraph91/jobs/5198247004' }
   ],
-  };
+};

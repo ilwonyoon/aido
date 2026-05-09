@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Company, InterestStatus, Category, CATEGORY_LABELS, FundingStageCategory, FUNDING_STAGE_LABELS, normalizeFundingStage } from '@/data/types';
 import { useAuth } from '@/contexts/AuthContext';
-import { getAllUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
+import { getAllUserTracking, setUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 import { getAiLevelConfig, type AiLevel } from '@/design/tokens';
 import { CompanyCard, CompanyListRow, GridIcon, ListIcon } from '@/components/CompanyCardLayouts';
@@ -160,7 +160,7 @@ function DropdownFilter({
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
 
   useEffect(() => {
     if (isOpen && buttonRef.current) {
@@ -168,6 +168,7 @@ function DropdownFilter({
       setDropdownStyle({
         top: rect.bottom + 4,
         left: rect.left,
+        width: buttonRef.current.offsetWidth,
       });
 
       const handleScroll = () => setIsOpen(false);
@@ -203,7 +204,7 @@ function DropdownFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
@@ -211,7 +212,7 @@ function DropdownFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${buttonRef.current.offsetWidth}px`,
+              minWidth: `${dropdownStyle.width}px`,
               maxWidth: 'calc(100vw - 2rem)'
             }}
           >
@@ -254,7 +255,7 @@ function MultiSelectFilter({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
   const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
 
   useEffect(() => {
@@ -269,6 +270,7 @@ function MultiSelectFilter({
       setDropdownStyle({
         top: rect.bottom + 4,
         left: Math.max(16, left), // Ensure at least 16px from left edge
+        width: Math.max(buttonRef.current.offsetWidth, 200),
       });
 
       const handleScroll = () => setIsOpen(false);
@@ -302,7 +304,7 @@ function MultiSelectFilter({
         </svg>
       </button>
 
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
@@ -310,7 +312,7 @@ function MultiSelectFilter({
             style={{
               top: `${dropdownStyle.top}px`,
               left: `${dropdownStyle.left}px`,
-              minWidth: `${Math.max(buttonRef.current.offsetWidth, 200)}px`,
+              minWidth: `${dropdownStyle.width}px`,
               maxWidth: 'calc(100vw - 2rem)',
               maxHeight: '320px'
             }}
@@ -497,8 +499,9 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
       if (!isActive) return;
       const statuses: Record<string, InterestStatus> = {};
       tracking.forEach((item) => {
-        if (item.status === 'tier_0' || item.status === 'tier_1' || item.status === 'not_interested') {
-          statuses[item.companyId] = item.status;
+        const status = item.interestStatus ?? item.status;
+        if (status === 'tier_0' || status === 'tier_1' || status === 'not_interested') {
+          statuses[item.companyId] = status;
         }
       });
       setInterestStatuses(statuses);
@@ -590,9 +593,15 @@ export function CompanyFilters({ companies, onCompanyClick }: CompanyFiltersProp
 
     // Persist to Firestore
     if (newStatus) {
-      await setUserTracking(user.uid, companyId, { status: newStatus });
+      await setUserTracking(user.uid, companyId, {
+        interestStatus: newStatus,
+        status: newStatus,
+      });
     } else {
-      await deleteUserTracking(user.uid, companyId);
+      await setUserTracking(user.uid, companyId, {
+        interestStatus: null,
+        status: null,
+      });
     }
 
     void trackEvent('interest_toggle', {

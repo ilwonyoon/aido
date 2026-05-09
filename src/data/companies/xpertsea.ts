@@ -6,6 +6,7 @@ export const xpertsea: Company = {
   description: 'AI and analytics platform for aquaculture operations and seafood supply chains.',
   website: 'https://xpertsea.com',
   headquarters: 'Quebec, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const xpertsea: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$31.3M',
   revenue: 'Not publicly disclosed',

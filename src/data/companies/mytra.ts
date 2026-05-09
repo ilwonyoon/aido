@@ -8,6 +8,7 @@ export const mytra: Company = {
   website: 'https://mytra.ai/',
     screenshot: '/screenshots/mytra-screenshot.png',
   headquarters: 'Brisbane, CA',
+  region: 'other-us' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const mytra: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$200M+',
   fundingHistory: [

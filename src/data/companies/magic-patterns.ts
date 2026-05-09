@@ -7,6 +7,7 @@ export const magicPatterns: Company = {
   website: 'https://magicpatterns.com',
   screenshot: '/screenshots/magic-patterns-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // OG Image
@@ -20,6 +21,7 @@ export const magicPatterns: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$6.5M',
   fundingHistory: [

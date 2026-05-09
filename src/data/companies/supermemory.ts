@@ -6,6 +6,7 @@ export const supermemory: Company = {
   description: 'Universal memory API for AI apps.',
   website: 'https://supermemory.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const supermemory: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$3M',
   revenue: 'Unknown',

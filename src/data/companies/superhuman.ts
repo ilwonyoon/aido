@@ -9,6 +9,7 @@ export const superhuman: Company = {
 
     // Location
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -24,6 +25,7 @@ export const superhuman: Company = {
 
     // Business
     stage: 'Acquired (Grammarly, 2025)',
+    normalizedStage: 'other' as const,
     valuation: '$825M (last known, Aug 2021)',
     totalFunding: '$118M',
     fundingHistory: [
@@ -255,4 +257,4 @@ export const superhuman: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/07/01/grammarly-acquires-ai-email-client-superhuman/' },
     { title: 'Source', url: 'https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra' }
   ],
-  };
+};

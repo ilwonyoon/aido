@@ -8,6 +8,7 @@ export const arcadeDev: Company = {
   website: 'https://www.arcade.dev/',
   screenshot: 'https://iad.microlink.io/VN4BiqMKtJnifXk3H8AORrp-FvRsXpX-F8UbZnhE9QdXhulVfT4HuYtIPJm0Y8Paeo5ieXV6GWt6RuuNsVg1lA.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/arcade-dev-og.webp',
 
@@ -19,6 +20,7 @@ export const arcadeDev: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$12M',
   fundingHistory: [

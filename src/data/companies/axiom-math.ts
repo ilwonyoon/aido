@@ -7,6 +7,7 @@ export const axiomMath: Company = {
     'Building a self-improving superintelligent reasoner, starting with an AI mathematician.',
   website: 'https://axiommath.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const axiomMath: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$64M',
   fundingHistory: [

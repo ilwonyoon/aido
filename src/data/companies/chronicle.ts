@@ -6,6 +6,7 @@ export const chronicle: Company = {
   description: 'Cursor for slides.',
   website: 'https://chroniclehq.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const chronicle: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$7.5M',
   revenue: 'Unknown',

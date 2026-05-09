@@ -7,6 +7,7 @@ export const gong: Company = {
     website: 'https://gong.io',
     screenshot: '/screenshots/gong-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const gong: Company = {
   industries: ['infrastructure', 'sales-marketing'],
 
     stage: 'Series E',
+
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$7.25B (2021)',
     totalFunding: '$583M',
     revenue: '$332M ARR (2024)',
@@ -96,4 +99,4 @@ export const gong: Company = {
     { title: 'Source', url: 'https://www.gong.io/press/gong-surpasses-300m-arr-amid-increased-demand-for-ai-powered-revenue-solutions' },
     { title: 'Source', url: 'https://www.gong.io/press/gong-raises-250-million-in-series-e-funding-at-7-25-billion-valuation' }
   ],
-  };
+};

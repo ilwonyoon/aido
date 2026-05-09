@@ -6,6 +6,7 @@ export const mem: Company = {
   description: 'Your AI knowledge assistant.',
   website: 'https://mem.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mem: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$23.5M',
   revenue: 'Unknown',

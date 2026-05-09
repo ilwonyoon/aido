@@ -7,6 +7,7 @@ export const grammarly: Company = {
     website: 'https://www.grammarly.com',
     screenshot: '/screenshots/grammarly-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const grammarly: Company = {
   industries: ['other'],
 
     stage: 'Private',
+
+    normalizedStage: 'growth' as const,
     valuation: '$13B (2021)',
     totalFunding: '$1.2B (non-dilutive)',
     revenue: '$700M+ ARR (2026)',
@@ -103,4 +106,4 @@ export const grammarly: Company = {
     { title: 'Source', url: 'https://www.techi.com/grammarly-1b-funding-ai-platform-expansion/' },
     { title: 'Source', url: 'https://fueler.io/blog/grammarly-usage-revenue-valuation-growth-statistics' }
   ],
-  };
+};

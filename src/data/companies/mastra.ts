@@ -6,6 +6,7 @@ export const mastra: Company = {
   description: 'The Typescript agent framework.',
   website: 'https://mastra.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mastra: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$13M',
   revenue: 'Unknown',

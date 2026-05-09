@@ -7,6 +7,7 @@ export const figma: Company = {
     website: 'https://figma.com',
     screenshot: '/screenshots/figma-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const figma: Company = {
   industries: ['infrastructure', 'creative-media'],
 
     stage: 'Public (NYSE: FIG)',
+
+    normalizedStage: 'growth' as const,
     valuation: '$57B market cap (July 2025 IPO)',
     totalFunding: '$615M pre-IPO',
     fundingHistory: [
@@ -259,4 +262,4 @@ export const figma: Company = {
     { title: 'Source', url: 'https://www.cnbc.com/2024/05/16/figma-tender-offer-values-company-at-12point5-billion.html' },
     { title: 'Source', url: 'https://getlatka.com/blog/figma-revenue/' }
   ],
-  };
+};

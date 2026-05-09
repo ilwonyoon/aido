@@ -6,6 +6,7 @@ export const unstructured: Company = {
   description: 'Automated ETL platform for preparing data for LLMs.',
   website: 'https://unstructured.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   category: 'developer-tools' as const,
@@ -17,6 +18,7 @@ export const unstructured: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not disclosed',
   totalFunding: '$65M',
   fundingHistory: [

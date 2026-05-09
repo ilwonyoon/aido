@@ -6,6 +6,7 @@ export const fortunaAi: Company = {
   description: 'AI company delivering financial services solutions for organizations with data-driven insights.',
   website: 'https://fortuna.ai',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const fortunaAi: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$160.0K',
   revenue: 'Not publicly disclosed',

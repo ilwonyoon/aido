@@ -6,6 +6,7 @@ export const martian: Company = {
   description: 'AI interpretability tooling.',
   website: 'https://startups.gallery/companies/martian',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const martian: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$9M',
   revenue: 'Unknown',

@@ -8,6 +8,7 @@ export const truemed: Company = {
   website: 'https://www.truemed.com/',
   screenshot: '/screenshots/truemed-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const truemed: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$34M',
   fundingHistory: [

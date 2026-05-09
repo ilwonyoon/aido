@@ -6,6 +6,7 @@ export const vantageAnalytics: Company = {
   description: 'Predictive analytics platform helping retail and growth teams optimize revenue decisions.',
   website: 'https://vantageanalytics.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   aiTypes: ['data-analysis'],
@@ -14,6 +15,8 @@ export const vantageAnalytics: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Private',
+
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$1.1M',
   revenue: 'Not publicly disclosed',

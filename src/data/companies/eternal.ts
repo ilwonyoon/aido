@@ -7,6 +7,7 @@ export const eternal: Company = {
     'Longevity care provider for athletes that combines diagnostics, medical care, and personalized performance programs.',
   website: 'https://www.eternal.co',
   headquarters: 'San Francisco, CA, USA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const eternal: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$13.25M',
   fundingHistory: [

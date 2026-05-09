@@ -8,6 +8,7 @@ export const conductor: Company = {
   website: 'https://www.conductor.build/',
     screenshot: '/screenshots/conductor-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const conductor: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

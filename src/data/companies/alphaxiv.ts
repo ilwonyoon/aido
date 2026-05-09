@@ -6,6 +6,7 @@ export const alphaXiv: Company = {
   description: 'AI copilot that helps researchers understand papers in minutes.',
   website: 'https://alphaxiv.org',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const alphaXiv: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$7M',
   fundingHistory: [

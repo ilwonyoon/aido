@@ -6,6 +6,7 @@ export const pocus: Company = {
   description: 'AI-powered revenue data platform that helps GTM teams prioritize leads and automate sales workflows using product usage signals.',
   website: 'https://www.pocus.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   ogImage: '/og-images/pocus-og.webp',
@@ -16,6 +17,8 @@ export const pocus: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Series B',
+
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$43M',
   fundingHistory: [

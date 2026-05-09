@@ -7,6 +7,7 @@ export const warmer: Company = {
   website: 'https://warmer.com',
   screenshot: '/screenshots/warmer-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const warmer: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$10.4M',
   revenue: 'Unknown',

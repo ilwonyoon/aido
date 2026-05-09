@@ -6,6 +6,7 @@ export const cartesia: Company = {
   description: 'Ultra-realistic, low-latency voice AI platform for real-time applications.',
   website: 'https://cartesia.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   category: 'ai-models' as const,
@@ -17,6 +18,7 @@ export const cartesia: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not disclosed',
   totalFunding: '$186M+',
   fundingHistory: [

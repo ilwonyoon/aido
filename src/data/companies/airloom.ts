@@ -6,6 +6,7 @@ export const airloom: Company = {
   description: 'Next-generation wind power technology.',
   website: 'https://www.airloom.energy',
   headquarters: 'Laramie, WY',
+  region: 'other-us' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const airloom: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$13.75M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const h2oAi: Company = {
   description: 'Open-source machine learning and AI platform company focused on enterprise AI applications.',
   website: 'https://h2o.ai',
   headquarters: 'Mountain View, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const h2oAi: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$251.1M',
   revenue: 'Not publicly disclosed',

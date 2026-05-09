@@ -6,6 +6,7 @@ export const upwind: Company = {
   description: 'Cloud security happens at runtime.',
   website: 'https://www.upwind.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const upwind: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$250M',
   revenue: 'Unknown',

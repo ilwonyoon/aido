@@ -6,6 +6,7 @@ export const endeavor: Company = {
   description: 'AI platform for manufacturing and distribution that automates sales, operations, and supply chain processes using agentic AI.',
   website: 'https://www.endeavor.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/endeavor-og.webp',
   aiTypes: ['automation', 'data-analysis'],
@@ -13,6 +14,7 @@ export const endeavor: Company = {
   category: 'enterprise-ops' as const,
   industries: ['other'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$7M',
   fundingHistory: [

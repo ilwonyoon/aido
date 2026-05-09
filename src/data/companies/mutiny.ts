@@ -8,6 +8,7 @@ export const mutiny: Company = {
   website: 'https://www.mutinyhq.com/',
     screenshot: '/screenshots/mutiny-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const mutiny: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   fundingHistory: [],

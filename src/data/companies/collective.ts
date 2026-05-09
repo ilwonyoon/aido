@@ -8,6 +8,7 @@ export const collective: Company = {
   website: 'https://www.collective.com/',
     screenshot: '/screenshots/collective-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const collective: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$50M (announced)',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const langbase: Company = {
   description: 'Serverless AI developer platform.',
   website: 'https://langbase.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const langbase: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Pre-revenue',

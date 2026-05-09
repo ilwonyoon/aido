@@ -6,6 +6,7 @@ export const resolver: Company = {
   description: 'Risk intelligence and GRC platform for enterprise risk, compliance, and incident management.',
   website: 'https://www.resolver.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const resolver: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$20.0M',
   revenue: 'Not publicly disclosed',

@@ -6,6 +6,7 @@ export const freed: Company = {
   description: 'AI Scribe for happier clinicians.',
   website: 'https://www.getfreed.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const freed: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   revenue: 'Unknown',

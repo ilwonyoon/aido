@@ -6,6 +6,7 @@ export const stytch: Company = {
   description: 'Authentication infrastructure for developers.',
   website: 'https://stytch.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const stytch: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$90M',
   revenue: 'Unknown',

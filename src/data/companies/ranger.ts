@@ -6,6 +6,7 @@ export const ranger: Company = {
   description: 'Fast, reliable QA testing.',
   website: 'https://www.ranger.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const ranger: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$8.9M',
   revenue: 'Unknown',

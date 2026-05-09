@@ -7,6 +7,7 @@ export const miter: Company = {
   website: 'https://miter.co',
     screenshot: '/screenshots/miter-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const miter: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$23M',
   fundingHistory: [

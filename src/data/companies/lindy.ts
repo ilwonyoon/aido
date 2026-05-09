@@ -6,6 +6,7 @@ export const lindy: Company = {
   description: 'No-code AI agent platform that lets anyone build custom AI employees to automate business workflows across 5,000+ integrations.',
   website: 'https://www.lindy.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/lindy-og.webp',
 
@@ -15,6 +16,8 @@ export const lindy: Company = {
   industries: ['productivity'],
 
   stage: 'Series B',
+
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '~$50M',
   fundingHistory: [

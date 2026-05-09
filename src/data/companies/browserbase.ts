@@ -6,6 +6,7 @@ export const browserbase: Company = {
   description: 'A web browser for your AI.',
   website: 'https://www.browserbase.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const browserbase: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

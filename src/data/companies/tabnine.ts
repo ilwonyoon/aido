@@ -7,6 +7,7 @@ export const tabnine: Company = {
     website: 'https://www.tabnine.com',
   screenshot: '/screenshots/tabnine-screenshot.png',
     headquarters: 'Tel Aviv, Israel',
+    region: 'other-intl' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const tabnine: Company = {
   industries: ['developer-tools'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: 'Not disclosed ($67M total funding)',
     totalFunding: '$67M',
     revenue: '~$27M ARR (2024 est)',
@@ -97,4 +100,4 @@ export const tabnine: Company = {
     { title: 'Source', url: 'https://www.cbinsights.com/company/tabnine/financials' },
     { title: 'Source', url: 'https://www.tabnine.com/careers' }
   ],
-  };
+};

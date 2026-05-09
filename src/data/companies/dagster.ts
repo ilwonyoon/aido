@@ -6,6 +6,7 @@ export const dagster: Company = {
   description: 'Ship data pipelines with extraordinary velocity.',
   website: 'https://dagster.io',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const dagster: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$33M',
   revenue: 'Unknown',

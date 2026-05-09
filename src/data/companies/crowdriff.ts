@@ -7,6 +7,7 @@ export const crowdriff: Company = {
     'Travel and tourism marketing platform that helps destinations discover, manage, and publish visual content at scale.',
   website: 'https://crowdriff.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const crowdriff: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$9M',
   revenue: 'Not publicly disclosed',

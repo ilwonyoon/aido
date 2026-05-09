@@ -6,6 +6,7 @@ export const newlimit: Company = {
   description: 'Extending human healthspan.',
   website: 'https://newlimit.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const newlimit: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$130M',
   revenue: 'Unknown',

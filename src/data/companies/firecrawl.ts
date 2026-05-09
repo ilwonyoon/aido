@@ -8,6 +8,7 @@ export const firecrawl: Company = {
   website: 'https://www.firecrawl.dev/',
     screenshot: '/screenshots/firecrawl-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -23,6 +24,7 @@ export const firecrawl: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$14.5M',
   fundingHistory: [

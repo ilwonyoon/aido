@@ -6,6 +6,7 @@ export const pylon: Company = {
   description: 'The support platform built for B2B.',
   website: 'https://usepylon.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const pylon: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$31M',
   revenue: 'Unknown',

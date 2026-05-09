@@ -7,6 +7,7 @@ export const mistral: Company = {
     website: 'https://mistral.ai',
     screenshot: '/screenshots/mistral-screenshot.png',
     headquarters: 'Paris, France',
+    region: 'other-intl' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const mistral: Company = {
   industries: ['infrastructure'],
 
     stage: 'Series C',
+
+    normalizedStage: 'series-c' as const,
     valuation: '€11.7B (~$13.8B) (Sep 2025)',
     totalFunding: '€2.79B+ (~$3.0B+)',
     fundingHistory: [
@@ -248,4 +251,4 @@ export const mistral: Company = {
     { title: 'Bloomberg - Mistral set for €12B ($14B) valuation (reporting context)', url: 'https://www.bloomberg.com/news/articles/2025-09-03/mistral-set-for-14-billion-valuation-with-new-funding-round' },
     { title: 'Crunchbase - Mistral AI company financials', url: 'https://www.crunchbase.com/organization/mistral-ai/company_financials' }
   ],
-  };
+};

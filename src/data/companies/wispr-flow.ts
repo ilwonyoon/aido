@@ -7,6 +7,7 @@ export const wisprFlow: Company = {
   website: 'https://www.wispr.ai',
   screenshot: '/screenshots/wispr-flow-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const wisprFlow: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const sortspoke: Company = {
   description: 'AI-powered intelligent document processing platform that automates data extraction from complex, unstructured PDFs for insurance underwriting and claims.',
   website: 'https://sortspoke.com',
   headquarters: 'Toronto, ON',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
     // OG Image
@@ -17,6 +18,8 @@ export const sortspoke: Company = {
   industries: ['fintech'],
 
   stage: 'Series A',
+
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$4.6M',
   fundingHistory: [

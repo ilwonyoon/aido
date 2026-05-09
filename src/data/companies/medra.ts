@@ -8,6 +8,7 @@ export const medra: Company = {
   website: 'https://www.medra.ai/',
     screenshot: '/screenshots/medra-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const medra: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$52M',
   fundingHistory: [

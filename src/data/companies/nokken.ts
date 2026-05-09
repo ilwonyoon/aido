@@ -8,6 +8,7 @@ export const nokken: Company = {
   website: 'https://the-nokken.com/',
     screenshot: '/screenshots/nokken-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const nokken: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [],

@@ -6,6 +6,7 @@ export const dayAi: Company = {
   description: 'AI-native CRM that autonomously captures relationship context from emails, Slack, and meetings — eliminating manual data entry and replacing legacy CRMs with an intelligent context graph.',
   website: 'https://day.ai',
   headquarters: 'Boston, MA',
+  region: 'boston' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -17,6 +18,8 @@ export const dayAi: Company = {
   industries: ['sales-marketing'],
 
   stage: 'Series A',
+
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$24M',
   fundingHistory: [

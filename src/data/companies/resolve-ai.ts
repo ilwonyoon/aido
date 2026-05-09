@@ -8,6 +8,7 @@ export const resolveAi: Company = {
   website: 'https://resolve.ai',
     screenshot: '/screenshots/resolve-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const resolveAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '$1B headline (Dec 2025; blended valuation lower)',
   totalFunding: '$35M',
   fundingHistory: [

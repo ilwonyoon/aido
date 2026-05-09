@@ -6,6 +6,7 @@ export const osmind: Company = {
   description: 'Tech for breakthrough mental health research.',
   website: 'https://www.osmind.org',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const osmind: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

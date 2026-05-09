@@ -7,6 +7,7 @@ export const teraAi: Company = {
   website: 'https://tera-ai.com',
   screenshot: '/screenshots/tera-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const teraAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$7.8M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const orchids: Company = {
   description: 'AI-powered full-stack app builder that generates complete applications from natural language prompts, ranking #1 on UI-Bench and DesignArena.',
   website: 'https://orchids.app',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   ogImage: '/og-images/orchids-og.webp',
@@ -18,6 +19,7 @@ export const orchids: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: '$2M',
   fundingHistory: [
     {

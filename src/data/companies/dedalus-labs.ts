@@ -7,6 +7,7 @@ export const dedalusLabs: Company = {
   website: 'https://dedaluslabs.ai',
     screenshot: '/screenshots/dedalus-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const dedalusLabs: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$11M',
   fundingHistory: [

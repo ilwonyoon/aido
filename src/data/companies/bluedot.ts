@@ -6,6 +6,7 @@ export const bluedot: Company = {
   description: 'AI-powered disease intelligence platform that detects and tracks infectious disease risks.',
   website: 'https://bluedot.global',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const bluedot: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$7.0M',
   revenue: 'Not publicly disclosed',

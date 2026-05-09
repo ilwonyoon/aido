@@ -6,6 +6,7 @@ export const backflipAi: Company = {
   description: 'AI-powered 3D generative design platform that turns text, photos, and sketches into 3D-printable models for physical products.',
   website: 'https://www.backflip.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: '/og-images/backflip-ai-og.webp',
   category: 'creative-media' as const,
@@ -13,6 +14,7 @@ export const backflipAi: Company = {
   markets: ['prosumer', 'b2b'],
   industries: ['creative-media'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   totalFunding: '$38M',
   fundingHistory: [
     {

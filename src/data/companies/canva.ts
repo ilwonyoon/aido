@@ -6,6 +6,7 @@ export const canva: Company = {
     description: 'AI-powered design platform. Create designs, presentations, videos with AI assistance.',
     website: 'https://www.canva.com',
     headquarters: 'Sydney, Australia',
+    region: 'other-intl' as const,
     remote: 'Hybrid',
 
   // Visual Assets
@@ -22,6 +23,8 @@ export const canva: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Private',
+
+    normalizedStage: 'growth' as const,
     valuation: '$42B (2024)',
     totalFunding: '$572M',
     revenue: '$3.5B ARR (2025)',
@@ -105,4 +108,4 @@ export const canva: Company = {
     { title: 'Source', url: 'https://techcrunch.com/2025/10/30/canva-launches-its-own-design-model-adds-new-ai-features-to-the-platform/' },
     { title: 'Source', url: 'https://www.inc.com/jennifer-conrad/how-ai-is-powering-canva-to-a-42-billion-valuation-and-a-future-ipo/91267864' }
   ],
-  };
+};

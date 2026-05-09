@@ -6,6 +6,7 @@ export const huggingFace: Company = {
   description: 'Open-source AI platform democratizing machine learning by hosting models, datasets, and collaborative tools for the global ML community — the "GitHub of machine learning."',
   website: 'https://huggingface.co',
   headquarters: 'New York, NY',
+  region: 'nyc' as const,
   remote: 'Yes',
 
     // OG Image
@@ -21,6 +22,7 @@ export const huggingFace: Company = {
 
   // Business
   stage: 'Series D',
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$4.5B (Aug 2023)',
   totalFunding: '$395M',
   fundingHistory: [

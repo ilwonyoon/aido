@@ -7,6 +7,7 @@ export const eventual: Company = {
   website: 'https://www.eventual.ai',
     screenshot: '/screenshots/eventual-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const eventual: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$27.5M',
   fundingHistory: [

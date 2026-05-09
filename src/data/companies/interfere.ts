@@ -6,6 +6,7 @@ export const interfere: Company = {
   description: 'Build software that can fix itself.',
   website: 'https://www.interfere.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const interfere: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: '$1.7M',
   revenue: 'Unknown',

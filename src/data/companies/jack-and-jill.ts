@@ -6,6 +6,7 @@ export const jackAndJill: Company = {
   description: 'AI-powered two-sided recruitment platform with conversational AI agents — Jack for job seekers and Jill for hiring teams — that replaces traditional recruiters with voice-based matching.',
   website: 'https://jackandjill.ai',
   headquarters: 'London, UK',
+  region: 'london' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,7 @@ export const jackAndJill: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [

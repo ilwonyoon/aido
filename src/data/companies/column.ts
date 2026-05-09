@@ -6,6 +6,7 @@ export const column: Company = {
   description: 'The developer infrastructure bank.',
   website: 'https://column.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const column: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

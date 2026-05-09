@@ -6,6 +6,7 @@ export const recallAi: Company = {
   description: 'Universal API for real-time meeting data.',
   website: 'https://www.recall.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const recallAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$38M',
   revenue: 'Unknown',

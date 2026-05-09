@@ -7,6 +7,7 @@ export const lighthouse: Company = {
   website: 'https://www.lighthousehq.com',
     screenshot: '/screenshots/lighthouse-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const lighthouse: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

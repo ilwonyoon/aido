@@ -6,6 +6,7 @@ export const seso: Company = {
   description: 'Employee management built for ag.',
   website: 'https://www.sesolabor.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const seso: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$26M',
   revenue: 'Unknown',

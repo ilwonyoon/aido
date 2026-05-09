@@ -8,6 +8,7 @@ export const solidroad: Company = {
   website: 'https://solidroad.com/',
     screenshot: '/screenshots/solidroad-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const solidroad: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$6.5M',
   fundingHistory: [

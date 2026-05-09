@@ -7,6 +7,7 @@ export const weavAir: Company = {
     'AI-powered digital twin platform that measures and predicts emissions, energy efficiency, and building performance using multi-sensor IoT data.',
   website: 'https://weavair.com',
   headquarters: 'Warsaw, Poland',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const weavAir: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '€0.5M–€1M',
   revenue: 'Not publicly disclosed',

@@ -6,6 +6,7 @@ export const xanadu: Company = {
   description: 'Quantum computing company building photonic quantum hardware and software for AI and optimization workloads.',
   website: 'https://xanadu.ai',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const xanadu: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$137.1M',
   revenue: 'Not publicly disclosed',

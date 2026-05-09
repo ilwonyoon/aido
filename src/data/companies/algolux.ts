@@ -6,6 +6,7 @@ export const algolux: Company = {
   description: 'Computer vision company developing perception software for autonomous and imaging systems.',
   website: 'https://algolux.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const algolux: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$38.3M',
   revenue: 'Not publicly disclosed',

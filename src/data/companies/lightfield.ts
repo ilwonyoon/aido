@@ -7,6 +7,7 @@ export const lightfield: Company = {
   website: 'https://lightfield.app',
     screenshot: '/screenshots/lightfield-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const lightfield: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$43M',
   fundingHistory: [

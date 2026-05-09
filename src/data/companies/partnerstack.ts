@@ -6,6 +6,7 @@ export const partnerstack: Company = {
   description: 'Partner and affiliate management platform helping B2B companies scale partnerships.',
   website: 'https://partnerstack.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const partnerstack: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$36.4M',
   revenue: 'Not publicly disclosed',

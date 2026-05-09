@@ -6,6 +6,7 @@ export const farel: Company = {
   description: 'Airline on autopilot.',
   website: 'https://farel.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const farel: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.5M',
   revenue: 'Unknown',

@@ -7,6 +7,7 @@ export const tome: Company = {
     website: 'https://tome.app',
   screenshot: '/screenshots/tome-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const tome: Company = {
   industries: ['infrastructure'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: '$300M',
     totalFunding: '$81M',
     revenue: 'Not disclosed',
@@ -97,4 +100,4 @@ export const tome: Company = {
     { title: 'Source', url: 'https://iblnews.org/ai-startup-tome-which-uses-language-models-to-create-powerpoint-style-presentations-valued-at-300m/' },
     { title: 'Source', url: 'https://startups.gallery/companies/tome' }
   ],
-  };
+};

@@ -7,6 +7,7 @@ export const quo: Company = {
   website: 'https://quo.com',
     screenshot: '/screenshots/quo-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const quo: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$105M',
   fundingHistory: [

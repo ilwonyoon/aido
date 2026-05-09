@@ -8,6 +8,7 @@ export const overlapAi: Company = {
   website: 'https://overlap.ai/',
     screenshot: '/screenshots/overlap-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const overlapAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$1.9M',
   fundingHistory: [

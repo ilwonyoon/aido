@@ -7,6 +7,7 @@ export const skyhive: Company = {
     'Workforce intelligence platform that uses AI to map skills, analyze labor markets, and support strategic workforce planning.',
   website: 'https://www.skyhive.ai',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Yes',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const skyhive: Company = {
 
   // Business
   stage: 'Acquired (Cornerstone, 2024)',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$48M',
   fundingHistory: [

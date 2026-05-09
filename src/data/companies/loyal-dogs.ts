@@ -6,6 +6,7 @@ export const loyalDogs: Company = {
   description: 'Extending the lifespan of dogs.',
   website: 'https://loyal.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const loyalDogs: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$22M',
   revenue: 'Unknown',

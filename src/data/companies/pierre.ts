@@ -6,6 +6,7 @@ export const pierre: Company = {
   description: 'Joyful code review.',
   website: 'https://heypierre.app',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const pierre: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

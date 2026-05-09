@@ -6,6 +6,7 @@ export const shepherd: Company = {
   description: 'AI-powered construction insurance platform combining underwriting with risk management software to help contractors reduce premiums.',
   website: 'https://shepherdinsurance.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -15,6 +16,7 @@ export const shepherd: Company = {
   markets: ['b2b', 'enterprise'],
   industries: ['fintech'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$19.7M',
   fundingHistory: [

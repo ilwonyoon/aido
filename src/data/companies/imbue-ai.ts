@@ -6,6 +6,7 @@ export const imbueAi: Company = {
   description: 'Rekindling the dream of personal computing.',
   website: 'https://imbue.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const imbueAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$200M',
   revenue: 'Unknown',

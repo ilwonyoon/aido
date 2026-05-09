@@ -6,6 +6,7 @@ export const oway: Company = {
   description: 'Uber for freight.',
   website: 'https://www.oway.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const oway: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4M',
   revenue: 'Unknown',

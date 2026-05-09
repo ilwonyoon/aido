@@ -7,6 +7,7 @@ export const highscore: Company = {
   website: 'https://highscore.com',
     screenshot: '/screenshots/highscore-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const highscore: Company = {
 
   // Business
   stage: 'Not publicly disclosed',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [],

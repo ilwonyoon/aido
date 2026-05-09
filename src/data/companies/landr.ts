@@ -7,6 +7,7 @@ export const landr: Company = {
     'AI-powered music creation platform offering mastering, distribution, plugins, collaboration, and sample libraries for musicians.',
   website: 'https://www.landr.com',
   headquarters: 'Montreal, QC, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const landr: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$32.2M',
   fundingHistory: [

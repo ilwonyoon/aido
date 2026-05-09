@@ -8,6 +8,7 @@ export const rox: Company = {
   website: 'https://rox.com/',
     screenshot: '/screenshots/rox-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const rox: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   fundingHistory: [

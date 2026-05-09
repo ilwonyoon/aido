@@ -8,6 +8,7 @@ export const micro1: Company = {
   website: 'https://micro1.ai/',
     screenshot: '/screenshots/micro1-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const micro1: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$35M',
   fundingHistory: [

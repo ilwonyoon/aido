@@ -7,6 +7,7 @@ export const baseten: Company = {
     'Model inference platform that helps teams deploy and scale AI models with production-grade latency and reliability.',
   website: 'https://www.baseten.co/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const baseten: Company = {
 
   // Business
   stage: 'Series E',
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$5B (Jan 2026)',
   totalFunding: '$300M',
   fundingHistory: [

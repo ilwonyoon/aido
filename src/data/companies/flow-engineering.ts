@@ -6,6 +6,7 @@ export const flowEngineering: Company = {
   description: 'The Agile Requirements Management Platform.',
   website: 'https://flowengineering.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const flowEngineering: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$23M',
   revenue: 'Unknown',

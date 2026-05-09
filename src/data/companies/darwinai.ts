@@ -7,6 +7,7 @@ export const darwinai: Company = {
     'AI-powered visual quality inspection platform that helps manufacturers detect defects and optimize production with explainable computer vision.',
   website: 'https://www.darwinai.com',
   headquarters: 'Waterloo, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const darwinai: Company = {
 
   // Business
   stage: 'Acquired (Apple, 2024)',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   fundingHistory: [

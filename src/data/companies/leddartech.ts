@@ -6,6 +6,7 @@ export const leddartech: Company = {
   description: 'Automotive sensing and perception software company focused on ADAS and autonomous mobility.',
   website: 'https://leddartech.com',
   headquarters: 'Quebec, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const leddartech: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$344.0M',
   revenue: 'Not publicly disclosed',

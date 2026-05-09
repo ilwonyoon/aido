@@ -8,6 +8,7 @@ export const truffleSecurity: Company = {
   website: 'https://trufflesecurity.com/',
   screenshot: '/screenshots/truffle-security-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const truffleSecurity: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

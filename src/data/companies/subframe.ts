@@ -6,6 +6,7 @@ export const subframe: Company = {
   description: 'The UI design tool for the AI era.',
   website: 'https://subframe.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const subframe: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Pre-revenue',

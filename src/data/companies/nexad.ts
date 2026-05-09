@@ -6,6 +6,7 @@ export const nexad: Company = {
   description: 'AI-native advertising platform that generates context-aware, real-time native ads within AI chatbots, search engines, and other AI applications.',
   website: 'https://nex.ad',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Unknown',
   ogImage: '/og-images/nexad-og.webp',
 
@@ -19,6 +20,7 @@ export const nexad: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6M',
   fundingHistory: [

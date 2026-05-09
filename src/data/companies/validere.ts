@@ -6,6 +6,7 @@ export const validere: Company = {
   description: 'AI platform for energy commodity data, emissions tracking, and quality verification.',
   website: 'https://validere.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const validere: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$65.0M',
   revenue: 'Not publicly disclosed',

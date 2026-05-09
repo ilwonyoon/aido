@@ -7,6 +7,7 @@ export const shopify: Company = {
     website: 'https://www.shopify.com',
     screenshot: '/screenshots/shopify-screenshot.png',
     headquarters: 'Ottawa, Canada',
+    region: 'other-intl' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const shopify: Company = {
   industries: ['infrastructure', 'developer-tools'],
 
     stage: 'Public (IPO 2015)',
+
+    normalizedStage: 'growth' as const,
     valuation: '$218B market cap',
     totalFunding: '$122M (pre-IPO)',
     fundingHistory: [
@@ -276,4 +279,4 @@ export const shopify: Company = {
     { title: 'Source', url: 'https://www.inc.com/ben-sherry/shopify-ceo-to-employees-use-ai-now/91173063' },
     { title: 'Source', url: 'https://www.shopify.com/careers' }
   ],
-  };
+};

@@ -6,6 +6,7 @@ export const composio: Company = {
   description: 'AI agent integration and learning infrastructure platform connecting agents to 10,000+ business tools via unified action layer.',
   website: 'https://composio.dev',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -15,6 +16,7 @@ export const composio: Company = {
   category: 'developer-tools' as const,
   industries: ['developer-tools'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$29M',
   fundingHistory: [

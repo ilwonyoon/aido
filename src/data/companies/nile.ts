@@ -6,6 +6,7 @@ export const nile: Company = {
   description: 'Serverless Postgres re-engineered for multi-tenant B2B SaaS applications with built-in tenant virtualization, vector embeddings, and per-tenant isolation.',
   website: 'https://www.thenile.dev',
   headquarters: 'Seattle, WA',
+  region: 'seattle' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,7 @@ export const nile: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$11.6M',
   fundingHistory: [

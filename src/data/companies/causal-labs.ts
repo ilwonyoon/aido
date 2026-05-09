@@ -7,6 +7,7 @@ export const causalLabs: Company = {
   website: 'https://www.getcausal.ai',
     screenshot: '/screenshots/causal-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const causalLabs: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$6M',
   revenue: 'Unknown',

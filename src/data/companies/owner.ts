@@ -6,6 +6,7 @@ export const owner: Company = {
   description: 'Online ordering and restaurant marketing system.',
   website: 'https://owner.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const owner: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$120M',
   revenue: 'Unknown',

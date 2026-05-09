@@ -8,6 +8,7 @@ export const happyrobot: Company = {
   website: 'https://www.happyrobot.ai/',
     screenshot: '/screenshots/happyrobot-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const happyrobot: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$44M',
   fundingHistory: [

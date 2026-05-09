@@ -6,6 +6,7 @@ export const tealbook: Company = {
   description: 'Supplier data platform for procurement teams with AI-powered supplier discovery and data enrichment.',
   website: 'https://www.tealbook.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const tealbook: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$64.5M',
   revenue: 'Not publicly disclosed',

@@ -6,6 +6,7 @@ export const atob: Company = {
   description: 'Fintech platform modernizing payments infrastructure for the trucking and transportation industry with zero-fee fleet fuel cards, payroll, and vendor payments.',
   website: 'https://www.atob.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -17,6 +18,8 @@ export const atob: Company = {
   industries: ['fintech'],
 
   stage: 'Series C',
+
+  normalizedStage: 'series-c' as const,
   valuation: '$700M',
   totalFunding: '$305M',
   fundingHistory: [
@@ -161,7 +164,15 @@ export const atob: Company = {
   ],
 
   designerLinks: [],
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Senior Product Designer',
+      location: 'San Francisco Bay Area',
+      url: 'https://jobs.ashbyhq.com/atob/3c3b6f41-dff7-4787-b529-82fe1fe7f57e',
+      type: 'full-time',
+      level: 'Senior',
+    },
+  ],
   cultureInsights: [
     {
       source: 'glassdoor',
@@ -221,12 +232,13 @@ export const atob: Company = {
     ],
   },
 
-  lastUpdated: '2026-02-18',
+  lastUpdated: '2026-02-19',
   sources: [
     { title: 'AtoB Official Website', url: 'https://www.atob.com' },
     { title: 'AtoB Series C Announcement — BusinessWire', url: 'https://www.businesswire.com/news/home/20240919045000/en/AtoB-Announces-New-Funding-and-Growth-Milestones' },
     { title: 'AtoB Series B Announcement — BusinessWire', url: 'https://www.businesswire.com/news/home/20220815005724/en/AtoB-the-First-Fintech-Payments-Platform-to-Modernize-Americas-Trucking-Industry-Announces-155M-Series-B-Fundraise-Round' },
     { title: 'AtoB Glassdoor Reviews', url: 'https://www.glassdoor.com/Reviews/AtoB-Reviews-E5140146.htm' },
     { title: 'AtoB Product Designer — Built In', url: 'https://builtin.com/job/product-designer/2882762' },
+    { title: 'AtoB Senior Product Designer Role', url: 'https://jobs.ashbyhq.com/atob/3c3b6f41-dff7-4787-b529-82fe1fe7f57e' },
   ],
 };

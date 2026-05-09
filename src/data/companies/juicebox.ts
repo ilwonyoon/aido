@@ -6,6 +6,7 @@ export const juicebox: Company = {
   description: 'AI-powered recruiting platform.',
   website: 'https://www.juicebox.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const juicebox: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   revenue: 'Unknown',

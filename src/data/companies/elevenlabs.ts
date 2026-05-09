@@ -8,6 +8,7 @@ export const elevenlabs: Company = {
   website: 'https://elevenlabs.io',
   screenshot: '/screenshots/elevenlabs-screenshot.png',
   headquarters: 'New York, NY',
+  region: 'nyc' as const,
   remote: 'Yes',
 
   // OG Image
@@ -21,6 +22,8 @@ export const elevenlabs: Company = {
   industries: ['creative-media'],
 
   stage: 'Series D',
+
+  normalizedStage: 'series-d-plus' as const,
   valuation: '$11B (Feb 2026)',
   totalFunding: '$781M',
   fundingHistory: [

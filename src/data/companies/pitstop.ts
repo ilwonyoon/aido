@@ -7,6 +7,7 @@ export const pitstop: Company = {
     'AI-powered fleet maintenance platform that uses vehicle data to predict failures and reduce downtime for commercial fleets.',
   website: 'https://www.pitstopconnect.com',
   headquarters: 'Kitchener, ON, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const pitstop: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$5.47M',
   fundingHistory: [

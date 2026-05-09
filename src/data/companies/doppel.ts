@@ -7,6 +7,7 @@ export const doppel: Company = {
   website: 'https://www.doppel.com',
     screenshot: '/screenshots/doppel-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -22,6 +23,7 @@ export const doppel: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$70M',
   fundingHistory: [

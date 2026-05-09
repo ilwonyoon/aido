@@ -7,6 +7,7 @@ export const harmonic: Company = {
     website: 'https://harmonic.fun',
     screenshot: '/screenshots/harmonic-screenshot.png',
     headquarters: 'Palo Alto, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -22,6 +23,7 @@ export const harmonic: Company = {
 
     // Business
     stage: 'Series C',
+    normalizedStage: 'series-c' as const,
     valuation: '$1.45B (Nov 2025)',
     totalFunding: '$295M',
     fundingHistory: [
@@ -210,4 +212,4 @@ export const harmonic: Company = {
     { title: 'Source', url: 'https://www.crunchbase.com/organization/harmonic-ai-f3d1' },
     { title: 'Source', url: 'https://www.prnewswire.com/news-releases/testing-software-market-overview-estimated-market-size-forecast-growth-rate-and-major-drivers--by-the-business-research-company-301950731.html' }
   ],
-  };
+};

@@ -7,6 +7,7 @@ export const notion: Company = {
     website: 'https://notion.so',
     screenshot: '/screenshots/notion-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const notion: Company = {
   industries: ['productivity'],
 
     stage: 'Series D (IPO potential)',
+
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$10B (2021) → $11B tender (2024)',
     totalFunding: '$352.7M',
     fundingHistory: [
@@ -239,4 +242,4 @@ export const notion: Company = {
     { title: 'Source', url: 'https://www.saastr.com/notion-and-growing-into-your-10b-valuation-a-masterclass-in-patience/' },
     { title: 'Source', url: 'https://sacra.com/c/notion/' }
   ],
-  };
+};

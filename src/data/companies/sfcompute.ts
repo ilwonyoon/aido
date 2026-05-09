@@ -6,6 +6,7 @@ export const sfcompute: Company = {
   description: 'Francisco Compute Company Rentable, large, low-cost pre-training clusters.',
   website: 'https://www.sfcompute.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const sfcompute: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$12M',
   revenue: 'Unknown',

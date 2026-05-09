@@ -6,6 +6,7 @@ export const sightlineInnovation: Company = {
   description: 'Canadian ML/AI cloud services company specializing in data trust technology and enterprise MLaaS, positioning as an AI-operated corporation.',
   website: 'https://www.sightlineinnovation.com',
   headquarters: 'Winnipeg, MB, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
   ogImage: '/og-images/sightline-innovation-og.webp',
 
@@ -17,6 +18,7 @@ export const sightlineInnovation: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: 'CAD $4.5M (~$3.3M)',
   fundingHistory: [
     {

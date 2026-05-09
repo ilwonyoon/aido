@@ -6,6 +6,7 @@ export const aetherflux: Company = {
   description: 'Space solar power.',
   website: 'https://aetherflux.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const aetherflux: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

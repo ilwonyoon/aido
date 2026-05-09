@@ -8,6 +8,8 @@ export const fieldAi: Company = {
   screenshot: '',
 
   headquarters: 'Irvine, CA',
+
+  region: 'other-us' as const,
   remote: 'No',
 
   aiTypes: ['foundation-model', 'automation'],
@@ -16,6 +18,8 @@ export const fieldAi: Company = {
   industries: ['infrastructure'],
 
   stage: 'Series A-1',
+
+  normalizedStage: 'series-a' as const,
   valuation: '$2B (Aug 2025)',
   totalFunding: '$405M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const swiftMedical: Company = {
   description: 'Digital wound care platform that uses AI and imaging to improve clinical assessments and outcomes.',
   website: 'https://swiftmedical.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const swiftMedical: Company = {
 
   // Business
   stage: 'Series Unknown',
+  normalizedStage: 'other' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Not publicly disclosed',

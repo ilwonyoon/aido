@@ -8,6 +8,7 @@ export const twoTwoTwo: Company = {
   website: 'https://222.place/',
     screenshot: '/screenshots/222-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const twoTwoTwo: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$10.1M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const mural: Company = {
   description: 'FigJam for enterprises.',
   website: 'https://www.mural.co',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mural: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

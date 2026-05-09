@@ -6,6 +6,7 @@ export const anthropic: Company = {
     description: 'AI safety company building Claude, a helpful, harmless, and honest AI assistant.',
     website: 'https://anthropic.com',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const anthropic: Company = {
 
     // Business
     stage: 'Series F',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$183B (Sept 2025)',
     totalFunding: '$27B+',
     fundingHistory: [
@@ -308,4 +310,4 @@ export const anthropic: Company = {
         url: 'https://www.inc.com/ben-sherry/anthropic-ceo-dario-amodei-says-he-left-openai-over-a-difference-in-vision/91018229',
       },
     ],
-  };
+};

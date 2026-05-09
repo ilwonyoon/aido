@@ -6,6 +6,7 @@ export const nextai: Company = {
   description: 'Customer intelligence platform that helps teams collect, structure, and activate qualitative user feedback for faster product and GTM decisions.',
   website: 'https://nextapp.co',
   headquarters: 'Amsterdam, Netherlands',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
     // OG Image
@@ -17,6 +18,8 @@ export const nextai: Company = {
   industries: ['other'],
 
   stage: 'Seed',
+
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   fundingHistory: [

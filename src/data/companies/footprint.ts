@@ -6,6 +6,7 @@ export const footprint: Company = {
   description: 'Frictionless KYC + KYB.',
   website: 'https://footprint.us',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const footprint: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$13M',
   revenue: 'Unknown',

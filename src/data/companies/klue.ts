@@ -6,6 +6,7 @@ export const klue: Company = {
   description: 'AI-powered competitive enablement platform for sales and product teams.',
   website: 'https://klue.com',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const klue: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$83.0M',
   revenue: 'Not publicly disclosed',

@@ -7,6 +7,7 @@ export const granola: Company = {
     website: 'https://granola.ai',
     screenshot: '/screenshots/granola-screenshot.png',
     headquarters: 'London, UK',
+    region: 'london' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -21,6 +22,8 @@ export const granola: Company = {
   industries: ['productivity'],
 
     stage: 'Series B',
+
+    normalizedStage: 'series-b' as const,
     valuation: '$250M (May 2025)',
     totalFunding: '$67M',
     fundingHistory: [
@@ -245,4 +248,4 @@ export const granola: Company = {
     { title: 'Business Wire - Granola launches team workspace and raises $43M Series B', url: 'https://www.businesswire.com/news/home/20250514342646/en/Granola-Launches-AI-Workspace-for-Teams-and-Raises-%2443M-Series-B' },
     { title: 'Crunchbase - Granola company financials', url: 'https://www.crunchbase.com/organization/granola/company_financials' }
   ],
-  };
+};

@@ -6,6 +6,7 @@ export const privateAi: Company = {
   description: 'Privacy-preserving AI platform that detects and redacts sensitive data in unstructured text for regulated industries.',
   website: 'https://www.private-ai.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const privateAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$11.15M',
   revenue: 'Not publicly disclosed',

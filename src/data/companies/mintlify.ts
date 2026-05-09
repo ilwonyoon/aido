@@ -6,6 +6,7 @@ export const mintlify: Company = {
   description: 'The documentation platform of tomorrow.',
   website: 'https://mintlify.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const mintlify: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$18.5M',
   revenue: 'Unknown',

@@ -7,6 +7,7 @@ export const paraform: Company = {
     'Recruiting platform and marketplace that combines AI workflows with a network of vetted recruiters to help companies hire faster.',
   website: 'https://www.paraform.com',
   headquarters: 'San Francisco, CA, USA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Multi-dimensional Tags
@@ -17,6 +18,7 @@ export const paraform: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$25M',
   fundingHistory: [

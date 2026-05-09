@@ -6,6 +6,7 @@ export const medallion: Company = {
   description: 'Provider operations platform.',
   website: 'https://www.medallion.co',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const medallion: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$43M',
   revenue: 'Unknown',

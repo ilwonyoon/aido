@@ -8,6 +8,7 @@ export const casca: Company = {
   website: 'https://www.cascading.ai/',
     screenshot: '/screenshots/casca-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const casca: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$29M',
   fundingHistory: [

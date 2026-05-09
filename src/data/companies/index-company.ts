@@ -9,6 +9,7 @@ export const indexCompany: Company = {
     screenshot: '/screenshots/index-screenshot.png',
     ogImage: '/screenshots/index-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
 
@@ -20,6 +21,7 @@ export const indexCompany: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$2.6M',
   fundingHistory: [

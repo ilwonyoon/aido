@@ -8,6 +8,7 @@ export const perleAi: Company = {
   website: 'https://perle.ai/',
     screenshot: '/screenshots/perle-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const perleAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5.6M (seed)',
   fundingHistory: [

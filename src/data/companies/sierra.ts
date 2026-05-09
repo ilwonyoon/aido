@@ -8,6 +8,7 @@ export const sierra: Company = {
   website: 'https://www.sierra.ai/',
   screenshot: '/screenshots/sierra-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // OG Image
@@ -21,6 +22,7 @@ export const sierra: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$10B (Sep 2025)',
   totalFunding: '$810M+',
   fundingHistory: [

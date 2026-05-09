@@ -6,6 +6,7 @@ export const betterAuth: Company = {
   description: 'Open-source authentication framework for TypeScript — self-hosted alternative to Auth0, Clerk, and Firebase Auth.',
   website: 'https://better-auth.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   ogImage: '/og-images/better-auth-og.webp',
   aiTypes: ['ai-infrastructure'],
@@ -13,6 +14,7 @@ export const betterAuth: Company = {
   category: 'developer-tools' as const,
   industries: ['developer-tools'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$5M',
   fundingHistory: [

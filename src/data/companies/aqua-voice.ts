@@ -6,6 +6,7 @@ export const aquaVoice: Company = {
   description: 'Voice Talk into any text box.',
   website: 'https://www.aquavoice.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const aquaVoice: Company = {
 
   // Business
   stage: 'Pre-seed',
+  normalizedStage: 'pre-seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

@@ -6,6 +6,7 @@ export const swae: Company = {
   description: 'Idea meritocracy and innovation platform that helps organizations surface and evaluate ideas with AI support.',
   website: 'https://swae.io',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const swae: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$1.1M',
   revenue: 'Not publicly disclosed',

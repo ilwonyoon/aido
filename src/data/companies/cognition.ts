@@ -7,6 +7,7 @@ export const cognition: Company = {
     website: 'https://cognition.ai',
     screenshot: '/screenshots/cognition-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'No',
 
     // OG Image
@@ -21,6 +22,8 @@ export const cognition: Company = {
   industries: ['developer-tools'],
 
     stage: 'Series A',
+
+    normalizedStage: 'series-a' as const,
     valuation: '$2B → $10B (2025)',
     totalFunding: '$400M+',
     fundingHistory: [
@@ -248,4 +251,4 @@ export const cognition: Company = {
     { title: 'Source', url: 'https://research.contrary.com/company/cognition' },
     { title: 'Source', url: 'https://cognition.ai/blog/introducing-devin' }
   ],
-  };
+};

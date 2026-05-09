@@ -8,6 +8,7 @@ export const livekit: Company = {
   website: 'https://livekit.io/',
     screenshot: '/screenshots/livekit-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const livekit: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: '$1B (Jan 2026)',
   totalFunding: '$174M+',
   fundingHistory: [

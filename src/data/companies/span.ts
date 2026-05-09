@@ -7,6 +7,7 @@ export const span: Company = {
   website: 'https://span.app',
     screenshot: '/screenshots/span-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const span: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

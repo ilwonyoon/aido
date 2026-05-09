@@ -8,6 +8,7 @@ export const nexus: Company = {
   website: 'https://nexus.xyz/',
     screenshot: '/screenshots/nexus-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const nexus: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

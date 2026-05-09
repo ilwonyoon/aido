@@ -7,6 +7,7 @@ export const mem0: Company = {
     website: 'https://mem0.ai',
     screenshot: '/screenshots/mem0-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const mem0: Company = {
 
     // Business
     stage: 'Series A',
+    normalizedStage: 'series-a' as const,
     valuation: 'Unknown',
     totalFunding: '$24M',
     fundingHistory: [
@@ -160,4 +162,4 @@ export const mem0: Company = {
     { title: 'Source', url: 'https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-the-memory-layer-for-ai-302466162.html' },
     { title: 'Source', url: 'https://mem0.ai/careers' }
   ],
-  };
+};

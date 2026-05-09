@@ -6,6 +6,7 @@ export const replicate: Company = {
   description: 'Model hosting and APIs for running machine learning models in production.',
   website: 'https://replicate.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
 
@@ -18,6 +19,7 @@ export const replicate: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: '$350M (Dec 2023)',
   totalFunding: '$57.8M',
   fundingHistory: [

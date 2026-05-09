@@ -7,6 +7,7 @@ export const writer: Company = {
   website: 'https://writer.com',
   screenshot: '/screenshots/writer-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
   // OG Image
@@ -20,6 +21,8 @@ export const writer: Company = {
   industries: ['infrastructure', 'productivity'],
 
   stage: 'Series C',
+
+  normalizedStage: 'series-c' as const,
   valuation: '$1.9B (2024)',
   totalFunding: '$326M',
   fundingHistory: [

@@ -6,6 +6,7 @@ export const davidAi: Company = {
   description: 'AI The data layer for audio AI.',
   website: 'https://www.withdavid.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const davidAi: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$50M',
   revenue: 'Unknown',

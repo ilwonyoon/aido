@@ -6,6 +6,7 @@ export const resend: Company = {
   description: 'Developer-first email API platform for building, testing, and sending transactional and marketing emails at scale.',
   website: 'https://resend.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
   ogImage: '/og-images/resend-og.webp',
   aiTypes: ['automation'],
@@ -13,6 +14,7 @@ export const resend: Company = {
   category: 'developer-tools' as const,
   industries: ['developer-tools'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$21M',
   fundingHistory: [

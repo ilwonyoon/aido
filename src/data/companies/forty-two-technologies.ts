@@ -6,6 +6,7 @@ export const fortyTwoTechnologies: Company = {
   description: 'AI-powered retail analytics platform helping merchants optimize merchandising and demand forecasting.',
   website: 'https://42technologies.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const fortyTwoTechnologies: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Not publicly disclosed',

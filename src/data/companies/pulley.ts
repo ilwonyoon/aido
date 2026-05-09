@@ -7,6 +7,7 @@ export const pulley: Company = {
   website: 'https://pulley.com',
     screenshot: '/screenshots/pulley-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const pulley: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   revenue: 'Unknown',

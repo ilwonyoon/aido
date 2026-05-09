@@ -6,6 +6,7 @@ export const palmstreet: Company = {
   description: 'Live shopping platform for rare plants, handmade crafts, and unique goods. Originally a plant identification app, now a community-driven live commerce marketplace.',
   website: 'https://palmstreet.app',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Hybrid',
 
     // OG Image
@@ -15,6 +16,7 @@ export const palmstreet: Company = {
   category: 'creative-media' as const,
   industries: ['other'],
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$25M',
   fundingHistory: [

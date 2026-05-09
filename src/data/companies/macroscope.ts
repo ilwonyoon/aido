@@ -8,6 +8,7 @@ export const macroscope: Company = {
   website: 'https://macroscope.com/',
     screenshot: '/screenshots/macroscope-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const macroscope: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   fundingHistory: [

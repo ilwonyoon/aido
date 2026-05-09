@@ -6,6 +6,7 @@ export const datacurve: Company = {
   description: 'Frontier code data for foundation models.',
   website: 'https://datacurve.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const datacurve: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   revenue: 'Unknown',

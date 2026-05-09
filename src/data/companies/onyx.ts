@@ -6,6 +6,7 @@ export const onyx: Company = {
   description: 'Open source AI connected to your work.',
   website: 'https://www.onyx.app',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const onyx: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$10M',
   revenue: 'Unknown',

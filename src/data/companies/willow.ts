@@ -6,6 +6,7 @@ export const willow: Company = {
   description: 'Write 4X faster with voice dictation.',
   website: 'https://willow.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const willow: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.2M',
   revenue: 'Unknown',

@@ -7,6 +7,7 @@ export const infisical: Company = {
   website: 'https://infisical.com',
     screenshot: '/screenshots/infisical-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -22,6 +23,7 @@ export const infisical: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$19M',
   fundingHistory: [

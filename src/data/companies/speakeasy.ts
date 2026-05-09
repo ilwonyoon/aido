@@ -7,6 +7,7 @@ export const speakeasy: Company = {
   website: 'https://www.speakeasy.com',
   screenshot: '/screenshots/speakeasy-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const speakeasy: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$15M',
   fundingHistory: [

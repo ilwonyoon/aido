@@ -6,6 +6,7 @@ export const tandem: Company = {
   description: 'Accelerate access to medicine.',
   website: 'https://tandemhealth.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const tandem: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: 'Not publicly disclosed',
   revenue: 'Unknown',

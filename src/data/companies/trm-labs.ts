@@ -8,6 +8,7 @@ export const trmLabs: Company = {
   website: 'https://www.trmlabs.com/',
   screenshot: '/screenshots/trm-labs-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const trmLabs: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$130M',
   fundingHistory: [

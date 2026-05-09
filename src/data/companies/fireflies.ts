@@ -6,6 +6,7 @@ export const fireflies: Company = {
   description: 'AI meeting assistant that transcribes, summarizes, and automates action items from meetings across video conferencing platforms.',
   website: 'https://fireflies.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes' as const,
   ogImage: '/og-images/fireflies-og.webp',
 
@@ -15,6 +16,8 @@ export const fireflies: Company = {
   industries: ['productivity'],
 
   stage: 'Unicorn (Tender Offer)',
+
+  normalizedStage: 'other' as const,
   valuation: '$1B+ (Jun 2025)',
   totalFunding: '$19M',
   fundingHistory: [

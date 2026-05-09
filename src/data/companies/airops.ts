@@ -6,6 +6,7 @@ export const airops: Company = {
   description: 'Platform for brands to win AI search with content and workflows.',
   website: 'https://www.airops.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -24,6 +25,7 @@ export const airops: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$40M',
   fundingHistory: [

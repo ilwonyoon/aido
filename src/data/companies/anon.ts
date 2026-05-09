@@ -6,6 +6,7 @@ export const anon: Company = {
   description: 'The integration platform for the AI internet.',
   website: 'https://anon.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const anon: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$8.3M',
   revenue: 'Unknown',

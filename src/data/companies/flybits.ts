@@ -6,6 +6,7 @@ export const flybits: Company = {
   description: 'AI context platform for financial institutions to deliver personalized customer experiences.',
   website: 'https://flybits.com',
   headquarters: 'Toronto, ON, Canada',
+  region: 'toronto' as const,
   remote: 'Unknown',
 
   // Multi-dimensional Tags
@@ -16,6 +17,7 @@ export const flybits: Company = {
 
   // Business
   stage: 'Private',
+  normalizedStage: 'growth' as const,
   valuation: 'Not publicly disclosed',
   totalFunding: '$41.5M',
   revenue: 'Not publicly disclosed',

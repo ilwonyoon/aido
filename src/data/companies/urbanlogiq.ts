@@ -6,6 +6,7 @@ export const urbanlogiq: Company = {
   description: 'AI-powered data analytics platform helping government agencies make data-driven decisions through unified data management and predictive analytics.',
   website: 'https://urbanlogiq.com',
   headquarters: 'Vancouver, BC, Canada',
+  region: 'other-intl' as const,
   remote: 'Hybrid',
   ogImage: '/og-images/urbanlogiq-og.webp',
   aiTypes: ['data-analysis'],
@@ -13,6 +14,7 @@ export const urbanlogiq: Company = {
   category: 'vertical-saas' as const,
   industries: ['other'],
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   totalFunding: '$210K',
   fundingHistory: [
     {

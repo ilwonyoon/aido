@@ -7,6 +7,7 @@ export const anrok: Company = {
     'Automated tax compliance platform for SaaS companies to manage sales tax and indirect taxes.',
   website: 'https://www.anrok.com/',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -25,6 +26,7 @@ export const anrok: Company = {
 
   // Business
   stage: 'Series C',
+  normalizedStage: 'series-c' as const,
   valuation: 'Unknown',
   totalFunding: '$55M',
   fundingHistory: [

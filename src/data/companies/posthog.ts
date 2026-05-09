@@ -6,6 +6,7 @@ export const posthog: Company = {
   description: 'How developers build successful products.',
   website: 'https://posthog.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const posthog: Company = {
 
   // Business
   stage: 'Series E',
+  normalizedStage: 'series-d-plus' as const,
   valuation: 'Unknown',
   totalFunding: '$75M',
   revenue: 'Unknown',

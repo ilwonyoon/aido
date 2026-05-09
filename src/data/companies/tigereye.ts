@@ -8,6 +8,7 @@ export const tigereye: Company = {
   website: 'https://tigereye.com/',
   screenshot: '/screenshots/tigereye-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
     // OG Image
@@ -23,6 +24,7 @@ export const tigereye: Company = {
 
   // Business
   stage: 'Acquired',
+  normalizedStage: 'other' as const,
   valuation: 'Unknown',
   totalFunding: '$35M',
   fundingHistory: [

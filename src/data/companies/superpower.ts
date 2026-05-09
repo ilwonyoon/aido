@@ -7,6 +7,7 @@ export const superpower: Company = {
   website: 'https://www.superpower.com',
   screenshot: '/screenshots/superpower-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
   ogImage: 'https://cdn.prod.website-files.com/63792ff4f3d6aa3d62071b61/68a46596a7cc1743771ce6f3_image%20(10).avif',
 
@@ -18,6 +19,7 @@ export const superpower: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: '~$300M (post-money, 2025)',
   totalFunding: '$34M',
   fundingHistory: [

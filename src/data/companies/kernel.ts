@@ -6,6 +6,7 @@ export const kernel: Company = {
   description: 'Browser infrastructure for web agents and automations.',
   website: 'https://kernel.sh',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const kernel: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$22M',
   revenue: 'Unknown',

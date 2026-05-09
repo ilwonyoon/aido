@@ -7,6 +7,7 @@ export const deepgram: Company = {
     website: 'https://deepgram.com',
     screenshot: '/screenshots/deepgram-screenshot.png',
     headquarters: 'San Francisco, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Yes',
 
     // OG Image
@@ -22,6 +23,7 @@ export const deepgram: Company = {
 
     // Business
     stage: 'Series C',
+    normalizedStage: 'series-c' as const,
     valuation: 'Unknown',
     totalFunding: '$130M',
     fundingHistory: [
@@ -165,4 +167,4 @@ export const deepgram: Company = {
     { title: 'Source', url: 'https://deepgram.com/careers' },
     { title: 'Source', url: 'https://jobs.ashbyhq.com/Deepgram' }
   ],
-  };
+};

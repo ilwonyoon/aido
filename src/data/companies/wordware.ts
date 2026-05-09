@@ -6,6 +6,7 @@ export const wordware: Company = {
   description: 'AI Agent orchestration platform.',
   website: 'https://www.wordware.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const wordware: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$30M',
   revenue: 'Unknown',

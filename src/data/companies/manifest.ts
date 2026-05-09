@@ -6,6 +6,7 @@ export const manifest: Company = {
   description: 'How small business dreams big.',
   website: 'https://manifest.com',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const manifest: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$4.3M',
   revenue: 'Unknown',

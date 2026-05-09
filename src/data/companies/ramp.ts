@@ -9,6 +9,7 @@ export const ramp: Company = {
 
     // Location
     headquarters: 'New York, NY',
+    region: 'nyc' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -24,6 +25,7 @@ export const ramp: Company = {
 
     // Business
     stage: 'Series D+',
+    normalizedStage: 'series-d-plus' as const,
     valuation: '$32B',
     totalFunding: '$750M+',
     fundingHistory: [
@@ -236,4 +238,4 @@ export const ramp: Company = {
     { title: 'Source', url: 'https://techstartups.com/2025/11/17/ramp-hits-32b-valuation-with-new-300m-funding-round-as-investors-double-down-on-autonomous-finance/' },
     { title: 'Source', url: 'https://www.saastr.com/the-first-100000000-arr-at-ramp-how-ceo-eric-glyman-and-cto-karim-atiyah-built-a-finance-platform-through-asymmetric-bets/' }
   ],
-  };
+};

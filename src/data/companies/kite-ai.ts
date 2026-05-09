@@ -6,6 +6,7 @@ export const kiteAi: Company = {
   description: 'The base layer for the agentic web.',
   website: 'https://kite.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const kiteAi: Company = {
 
   // Business
   stage: 'Series A',
+  normalizedStage: 'series-a' as const,
   valuation: 'Unknown',
   totalFunding: '$18M',
   revenue: 'Unknown',

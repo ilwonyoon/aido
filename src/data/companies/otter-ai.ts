@@ -7,6 +7,7 @@ export const otterAi: Company = {
     website: 'https://otter.ai',
     screenshot: '/screenshots/otter-ai-screenshot.png',
     headquarters: 'Mountain View, CA',
+    region: 'sf-bay-area' as const,
     remote: 'Hybrid',
 
     // OG Image
@@ -20,6 +21,8 @@ export const otterAi: Company = {
   industries: ['other'],
 
     stage: 'Series B+',
+
+    normalizedStage: 'series-b' as const,
     valuation: 'Not disclosed ($73M total funding)',
     totalFunding: '$73M',
     revenue: '$100M+ ARR',
@@ -98,4 +101,4 @@ export const otterAi: Company = {
     { title: 'Source', url: 'https://en.wikipedia.org/wiki/Otter.ai' },
     { title: 'Source', url: 'https://otter.ai/careers' }
   ],
-  };
+};

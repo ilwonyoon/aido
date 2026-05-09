@@ -8,6 +8,7 @@ export const comulate: Company = {
     screenshot: '/screenshots/comulate-screenshot.png',
     ogImage: '/screenshots/comulate-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
 
@@ -20,6 +21,7 @@ export const comulate: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$20M',
   fundingHistory: [

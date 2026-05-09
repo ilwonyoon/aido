@@ -6,6 +6,7 @@ export const adalineAi: Company = {
   description: 'Iterate, evaluate, deploy, and monitor LLMs.',
   website: 'https://adaline.ai',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const adalineAi: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: 'Unknown',
   revenue: 'Unknown',

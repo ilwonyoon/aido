@@ -8,6 +8,7 @@ export const unlimitedIndustries: Company = {
   website: 'https://unlimitedindustries.com/',
   screenshot: '/screenshots/unlimited-industries-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'No',
 
     // OG Image
@@ -23,6 +24,7 @@ export const unlimitedIndustries: Company = {
 
   // Business
   stage: 'Seed',
+  normalizedStage: 'seed' as const,
   valuation: 'Unknown',
   totalFunding: '$12M',
   fundingHistory: [

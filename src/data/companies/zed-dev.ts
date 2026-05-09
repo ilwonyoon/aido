@@ -7,6 +7,7 @@ export const zedDev: Company = {
   website: 'https://zed.dev',
   screenshot: '/screenshots/zed-dev-screenshot.png',
   headquarters: 'San Francisco, CA',
+  region: 'sf-bay-area' as const,
   remote: 'Yes',
 
   // Visual Assets
@@ -21,6 +22,7 @@ export const zedDev: Company = {
 
   // Business
   stage: 'Series B',
+  normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
   totalFunding: '$32M',
   revenue: 'Unknown',
