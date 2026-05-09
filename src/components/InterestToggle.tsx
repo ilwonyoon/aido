@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
-import { getUserTracking, setUserTracking, deleteUserTracking } from '@/lib/firebase/tracking';
+import { getUserTracking, setUserTracking } from '@/lib/firebase/tracking';
 import { trackEvent } from '@/lib/firebase/analytics';
 import { trackFirestoreEvent } from '@/lib/firebase/events';
 import { InterestStatus } from '@/data/types';
@@ -37,8 +37,10 @@ export function useInterestStatus(companyId: string) {
   useEffect(() => {
     if (loading) return;
     if (!user) {
-      setStatus(null);
-      setLoaded(true);
+      queueMicrotask(() => {
+        setStatus(null);
+        setLoaded(true);
+      });
       return;
     }
 
@@ -46,8 +48,9 @@ export function useInterestStatus(companyId: string) {
     const load = async () => {
       const tracking = await getUserTracking(user.uid, companyId);
       if (!isActive) return;
-      if (tracking?.status === 'tier_0' || tracking?.status === 'tier_1' || tracking?.status === 'not_interested') {
-        setStatus(tracking.status);
+      const trackingStatus = tracking?.interestStatus ?? tracking?.status;
+      if (trackingStatus === 'tier_0' || trackingStatus === 'tier_1' || trackingStatus === 'not_interested') {
+        setStatus(trackingStatus);
       } else {
         setStatus(null);
       }
@@ -75,9 +78,15 @@ export function useInterestStatus(companyId: string) {
     setIsSyncing(true);
 
     if (newStatus) {
-      await setUserTracking(user.uid, companyId, { status: newStatus });
+      await setUserTracking(user.uid, companyId, {
+        interestStatus: newStatus,
+        status: newStatus,
+      });
     } else {
-      await deleteUserTracking(user.uid, companyId);
+      await setUserTracking(user.uid, companyId, {
+        interestStatus: null,
+        status: null,
+      });
     }
 
     void trackEvent('interest_toggle', {

@@ -8,6 +8,27 @@ import { getAiLevelConfig } from '@/design/tokens';
 import { CompanyLogo } from '@/components/CompanyLogo';
 import { Badge } from '@/components/ui/Badge';
 import { DesignFocus } from '@/components/DesignFocus';
+import { useAuth } from '@/contexts/AuthContext';
+import { getAllUserTracking, setUserTracking } from '@/lib/firebase/tracking';
+import type { ApplicationStatus } from '@/lib/tracking/types';
+
+type ApplicationStatusFilter = '' | 'not_applied' | ApplicationStatus;
+
+const APPLICATION_STATUS_LABELS: Record<ApplicationStatus, string> = {
+  applied: 'Applied',
+  interviewing: 'Interviewing',
+  offer: 'Offer',
+  rejected: 'Rejected',
+  withdrawn: 'Withdrawn',
+};
+
+const APPLICATION_STATUS_STYLES: Record<ApplicationStatus, string> = {
+  applied: 'border-sky-500/35 bg-sky-500/10 text-sky-300',
+  interviewing: 'border-amber-500/35 bg-amber-500/10 text-amber-300',
+  offer: 'border-[var(--success)] bg-[var(--card-hover)] text-[var(--success)]',
+  rejected: 'border-red-500/35 bg-red-500/10 text-red-300',
+  withdrawn: 'border-[var(--muted)] bg-[var(--card-hover)] text-[var(--muted)]',
+};
 
 // ────────────────────────────────────────────────────────────────────────────
 // Filter Components
@@ -27,12 +48,12 @@ function DropdownFilter({
   const [isOpen, setIsOpen] = useState(false);
   const selectedOption = options.find(opt => opt.value === value);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
 
   useEffect(() => {
     if (isOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
-      setDropdownStyle({ top: rect.bottom + 4, left: rect.left });
+      setDropdownStyle({ top: rect.bottom + 4, left: rect.left, width: buttonRef.current.offsetWidth });
     }
   }, [isOpen]);
 
@@ -52,12 +73,12 @@ function DropdownFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-hidden"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, minWidth: `${buttonRef.current.offsetWidth}px`, maxWidth: 'calc(100vw - 2rem)' }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, minWidth: `${dropdownStyle.width}px`, maxWidth: 'calc(100vw - 2rem)' }}
           >
             <button
               onClick={() => { onChange(''); setIsOpen(false); }}
@@ -94,7 +115,7 @@ function MultiSelectFilter({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number } | null>(null);
+  const [dropdownStyle, setDropdownStyle] = useState<{ top: number; left: number; width: number } | null>(null);
   const displayLabel = values.length === 0 ? label : `${label} (${values.length})`;
 
   useEffect(() => {
@@ -103,7 +124,7 @@ function MultiSelectFilter({
       const dropdownWidth = Math.max(buttonRef.current.offsetWidth, 180);
       const spaceOnRight = window.innerWidth - rect.left;
       const left = spaceOnRight < dropdownWidth ? rect.right - dropdownWidth : rect.left;
-      setDropdownStyle({ top: rect.bottom + 4, left: Math.max(16, left) });
+      setDropdownStyle({ top: rect.bottom + 4, left: Math.max(16, left), width: dropdownWidth });
     }
   }, [isOpen]);
 
@@ -131,12 +152,12 @@ function MultiSelectFilter({
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </button>
-      {isOpen && dropdownStyle && buttonRef.current && (
+      {isOpen && dropdownStyle && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className="fixed bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg z-50 py-1 overflow-y-auto"
-            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, width: `${Math.max(buttonRef.current.offsetWidth, 180)}px`, maxWidth: 'calc(100vw - 2rem)', maxHeight: '320px' }}
+            style={{ top: `${dropdownStyle.top}px`, left: `${dropdownStyle.left}px`, width: `${dropdownStyle.width}px`, maxWidth: 'calc(100vw - 2rem)', maxHeight: '320px' }}
           >
             {values.length > 0 && (
               <button
@@ -172,6 +193,38 @@ function MultiSelectFilter({
   );
 }
 
+function ApplicationStatusBadge({ status }: { status: ApplicationStatus }) {
+  return (
+    <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${APPLICATION_STATUS_STYLES[status]}`}>
+      {APPLICATION_STATUS_LABELS[status]}
+    </span>
+  );
+}
+
+function ApplicationStatusSelect({
+  status,
+  onChange,
+}: {
+  status: ApplicationStatus | null;
+  onChange: (status: ApplicationStatus | null) => void;
+}) {
+  return (
+    <select
+      value={status ?? ''}
+      onChange={(e) => onChange((e.target.value || null) as ApplicationStatus | null)}
+      className="bg-[var(--card)] border border-[var(--border)] rounded-full px-2.5 py-1 text-xs text-[var(--muted)] hover:border-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
+      aria-label="Application status"
+    >
+      <option value="">Not applied</option>
+      <option value="applied">Applied</option>
+      <option value="interviewing">Interviewing</option>
+      <option value="offer">Offer</option>
+      <option value="rejected">Rejected</option>
+      <option value="withdrawn">Withdrawn</option>
+    </select>
+  );
+}
+
 // ────────────────────────────────────────────────────────────────────────────
 // View Toggle Icons
 // ────────────────────────────────────────────────────────────────────────────
@@ -201,7 +254,15 @@ function ListIcon({ active }: { active: boolean }) {
 // Company List Row (full-width, all data)
 // ────────────────────────────────────────────────────────────────────────────
 
-function CompanyListRow({ company }: { company: Company }) {
+function CompanyListRow({
+  company,
+  applicationStatus,
+  onApplicationStatusChange,
+}: {
+  company: Company;
+  applicationStatus: ApplicationStatus | null;
+  onApplicationStatusChange?: (status: ApplicationStatus | null) => void;
+}) {
   const config = getAiLevelConfig(company.aiNativeLevel);
   const roles = company.openRoles;
 
@@ -217,6 +278,7 @@ function CompanyListRow({ company }: { company: Company }) {
               <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
               </Badge>
+              {applicationStatus && <ApplicationStatusBadge status={applicationStatus} />}
               <span className="text-xs text-[var(--muted)]">
                 {company.headquarters} &middot; {company.stage}
                 {company.totalFunding && <> &middot; {company.totalFunding}</>}
@@ -225,12 +287,20 @@ function CompanyListRow({ company }: { company: Company }) {
             </div>
           </div>
         </div>
-        <Link
-          href={`/company/${company.id}`}
-          className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)] transition-colors flex-shrink-0"
-        >
-          Full profile &rarr;
-        </Link>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {onApplicationStatusChange && (
+            <ApplicationStatusSelect
+              status={applicationStatus}
+              onChange={onApplicationStatusChange}
+            />
+          )}
+          <Link
+            href={`/company/${company.id}`}
+            className="text-xs text-[var(--muted)] hover:text-[var(--accent-light)] transition-colors"
+          >
+            Full profile &rarr;
+          </Link>
+        </div>
       </div>
 
       {/* Description */}
@@ -300,7 +370,15 @@ function CompanyListRow({ company }: { company: Company }) {
 // Company Card (grid view)
 // ────────────────────────────────────────────────────────────────────────────
 
-function CompanyCard({ company }: { company: Company }) {
+function CompanyCard({
+  company,
+  applicationStatus,
+  onApplicationStatusChange,
+}: {
+  company: Company;
+  applicationStatus: ApplicationStatus | null;
+  onApplicationStatusChange?: (status: ApplicationStatus | null) => void;
+}) {
   const config = getAiLevelConfig(company.aiNativeLevel);
   const whyJoin = company.tracking.whyJoin.slice(0, 3);
   const topWhyNot = company.tracking.whyNot[0];
@@ -318,12 +396,21 @@ function CompanyCard({ company }: { company: Company }) {
               <Badge variant={config.badgeVariant} className="flex-shrink-0" style={{ fontSize: '10px', padding: '1px 6px' }}>
                 {company.aiNativeLevel}
               </Badge>
+              {applicationStatus && <ApplicationStatusBadge status={applicationStatus} />}
             </div>
           </div>
         </div>
         <div className="text-xs text-[var(--muted)] text-right flex-shrink-0 leading-relaxed">
           <div>{company.headquarters.split(',')[0]}</div>
           <div>{company.stage}{company.totalFunding && <> &middot; {company.totalFunding}</>}</div>
+          {onApplicationStatusChange && (
+            <div className="mt-1">
+              <ApplicationStatusSelect
+                status={applicationStatus}
+                onChange={onApplicationStatusChange}
+              />
+            </div>
+          )}
         </div>
       </div>
 
@@ -412,10 +499,68 @@ function isSFBayArea(hq: string): boolean {
 // ────────────────────────────────────────────────────────────────────────────
 
 export default function JobsPage() {
+  const { user, loading } = useAuth();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
   const [aiLevelFilter, setAiLevelFilter] = useState('');
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [designFocusFilter, setDesignFocusFilter] = useState('');
+  const [applicationStatusFilter, setApplicationStatusFilter] = useState<ApplicationStatusFilter>('');
+  const [applicationStatuses, setApplicationStatuses] = useState<Record<string, ApplicationStatus | null>>({});
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user) {
+      queueMicrotask(() => {
+        setApplicationStatuses({});
+        setApplicationStatusFilter('');
+      });
+      return;
+    }
+
+    let isActive = true;
+    const load = async () => {
+      const tracking = await getAllUserTracking(user.uid);
+      if (!isActive) return;
+      const statuses: Record<string, ApplicationStatus | null> = {};
+      tracking.forEach((item) => {
+        if (item.applicationStatus) {
+          statuses[item.companyId] = item.applicationStatus;
+        }
+      });
+      setApplicationStatuses(statuses);
+    };
+
+    load();
+
+    let lastLoadTime = Date.now();
+    const handleVisibilityChange = () => {
+      if (!document.hidden && Date.now() - lastLoadTime > 5000) {
+        lastLoadTime = Date.now();
+        load();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      isActive = false;
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [user, loading]);
+
+  const updateApplicationStatus = async (
+    companyId: string,
+    status: ApplicationStatus | null
+  ) => {
+    if (!user) return;
+
+    setApplicationStatuses((prev) => ({
+      ...prev,
+      [companyId]: status,
+    }));
+
+    await setUserTracking(user.uid, companyId, { applicationStatus: status });
+  };
 
   const companiesWithRoles = useMemo(() => {
     const levelOrder: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
@@ -450,19 +595,26 @@ export default function JobsPage() {
         if (designFocusFilter === 'interface' && dwt.interface.level !== 'high') return false;
       }
 
+      if (applicationStatusFilter) {
+        const status = applicationStatuses[company.id] ?? null;
+        if (applicationStatusFilter === 'not_applied' && status !== null) return false;
+        if (applicationStatusFilter !== 'not_applied' && status !== applicationStatusFilter) return false;
+      }
+
       return true;
     });
-  }, [companiesWithRoles, aiLevelFilter, locationFilter, designFocusFilter]);
+  }, [companiesWithRoles, aiLevelFilter, locationFilter, designFocusFilter, applicationStatusFilter, applicationStatuses]);
 
   const totalCompanies = companiesWithRoles.length;
   const totalRoles = companiesWithRoles.reduce((sum, c) => sum + c.openRoles.length, 0);
   const filteredRoles = filtered.reduce((sum, c) => sum + c.openRoles.length, 0);
-  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '';
+  const hasActiveFilters = aiLevelFilter !== '' || locationFilter.length > 0 || designFocusFilter !== '' || applicationStatusFilter !== '';
 
   const clearFilters = () => {
     setAiLevelFilter('');
     setLocationFilter([]);
     setDesignFocusFilter('');
+    setApplicationStatusFilter('');
   };
 
   return (
@@ -510,6 +662,21 @@ export default function JobsPage() {
             ]}
             onChange={setDesignFocusFilter}
           />
+          {user && (
+            <DropdownFilter
+              label="Application Status"
+              value={applicationStatusFilter}
+              options={[
+                { value: 'not_applied', label: 'Not Applied' },
+                { value: 'applied', label: 'Applied' },
+                { value: 'interviewing', label: 'Interviewing' },
+                { value: 'offer', label: 'Offer' },
+                { value: 'rejected', label: 'Rejected' },
+                { value: 'withdrawn', label: 'Withdrawn' },
+              ]}
+              onChange={(value) => setApplicationStatusFilter(value as ApplicationStatusFilter)}
+            />
+          )}
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
@@ -561,16 +728,39 @@ export default function JobsPage() {
       ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {filtered.map(company => (
-            <CompanyCard key={company.id} company={company} />
+            <CompanyCard
+              key={company.id}
+              company={company}
+              applicationStatus={applicationStatuses[company.id] ?? null}
+              onApplicationStatusChange={
+                user
+                  ? (status) => updateApplicationStatus(company.id, status)
+                  : undefined
+              }
+            />
           ))}
         </div>
       ) : (
         <div className="border border-[var(--border)] rounded-lg bg-[var(--card)] divide-y divide-[var(--border)]">
-          {filtered.map(company => (
-            <div key={company.id} className="px-5">
-              <CompanyListRow company={company} />
-            </div>
-          ))}
+          {filtered.map(company => {
+            const applicationStatus = applicationStatuses[company.id] ?? null;
+            return (
+              <div
+                key={company.id}
+                className={`px-5 ${applicationStatus ? 'bg-[var(--card-hover)]' : ''}`}
+              >
+                <CompanyListRow
+                  company={company}
+                  applicationStatus={applicationStatus}
+                  onApplicationStatusChange={
+                    user
+                      ? (status) => updateApplicationStatus(company.id, status)
+                      : undefined
+                  }
+                />
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
