@@ -315,10 +315,10 @@
   },
   "arcade-ai": {
     "id": "arcade-ai",
-    "name": "Arcade AI",
-    "desc": "AI product creation platform.",
-    "level": "D",
-    "cat": "enterprise-ops",
+    "name": "Arcade",
+    "desc": "AI product creation platform enabling anyone to design, purc",
+    "level": "B",
+    "cat": "creative-media",
     "stage": "series-a",
     "region": "sf-bay-area",
     "remote": "No",
@@ -1842,6 +1842,16 @@
     "remote": "Yes",
     "roles": 0
   },
+  "fauna-robotics": {
+    "id": "fauna-robotics",
+    "name": "Fauna Robotics",
+    "desc": "Robotics company building Sprout, a safe and lightweight hum",
+    "level": "B",
+    "cat": "developer-tools",
+    "region": "nyc",
+    "remote": "No",
+    "roles": 0
+  },
   "fermat": {
     "id": "fermat",
     "name": "Fermat",
@@ -2025,12 +2035,11 @@
   "further-ai": {
     "id": "further-ai",
     "name": "FurtherAI",
-    "desc": "AI agents that automate insurance operations across intake, ",
+    "desc": "Insurance-native AI workspace that automates submissions int",
     "level": "B",
     "cat": "vertical-saas",
-    "stage": "series-a",
     "region": "sf-bay-area",
-    "remote": "Hybrid",
+    "remote": "No",
     "roles": 1,
     "titles": [
       "Founding Product Designer"
