@@ -2,26 +2,22 @@ import { Company } from '../types';
 
 export const sesameAi: Company = {
   id: 'sesame-ai',
-  name: 'Sesame AI',
-  description: 'Voice assistant platform focused on high-quality natural speech and conversation.',
+  name: 'Sesame',
+  description: 'AI voice and companion computing company building lifelike voice agents and new voice-first hardware/software experiences.',
   website: 'https://www.sesame.com',
-    screenshot: '/screenshots/sesame-ai-screenshot.png',
   headquarters: 'San Francisco, CA',
   region: 'sf-bay-area' as const,
   remote: 'No',
 
-  // Visual Assets
   ogImage: 'https://www.datocms-assets.com/143763/1730375369-sesame-og.png?auto=format&amp;fit=max&amp;w=1200',
+  screenshot: '/screenshots/sesame-ai-screenshot.png',
 
-
-  // Multi-dimensional Tags
-  aiTypes: ['conversation-ai', 'audio-generation'],
-  markets: ['b2c'],
+  aiTypes: ['conversation-ai', 'audio-generation', 'foundation-model'],
+  markets: ['b2c', 'prosumer'],
   category: 'creative-media' as const,
+  subcategories: ['voice-ai', 'consumer-ai'],
+  industries: ['creative-media'],
 
-  industries: ['other'],
-
-  // Business
   stage: 'Series B',
   normalizedStage: 'series-b' as const,
   valuation: 'Unknown',
@@ -35,133 +31,141 @@ export const sesameAi: Company = {
   ],
   revenue: 'Unknown',
   growth: 'Unknown',
-  runway: 'Unknown',
-  customers: 'Consumer voice assistant users',
+  runway: 'Strong after $250M Series B',
+  customers: 'Consumer voice assistant users and early adopters of lifelike AI companions.',
 
-  // Competition
   competitors: [
-    {
-      name: 'OpenAI',
-      description: 'Voice-enabled assistants and realtime AI experiences.',
-      whyTheyWin: 'Large model ecosystem and distribution.',
-    },
-    {
-      name: 'Google Assistant',
-      description: 'Voice assistant integrated into Android and Google services.',
-      whyTheyWin: 'Massive consumer distribution.',
-    },
-    {
-      name: 'Amazon Alexa',
-      description: 'Voice assistant and smart home ecosystem.',
-      whyTheyWin: 'Hardware ecosystem and large user base.',
-    },
+    { name: 'OpenAI', description: 'Voice-enabled assistants and realtime AI experiences.', whyTheyWin: 'Large model ecosystem and distribution.' },
+    { name: 'Google', description: 'Gemini and voice assistant products across Android and devices.', whyTheyWin: 'Consumer distribution and platform integration.' },
+    { name: 'Amazon Alexa', description: 'Voice assistant and smart-home ecosystem.', whyTheyWin: 'Hardware ecosystem and installed base.' },
   ],
-  marketPosition: 'Consumer voice assistant focused on natural conversational experience.',
+  marketPosition: 'Consumer voice AI company focused on natural, low-latency, emotionally fluid conversation.',
   moat: [
-    'Focus on natural voice experience quality',
-    'Consumer-first conversational design',
-    'Large funding round supporting model development',
+    'Team background in Oculus, Ubiquity6, Meta, Google, and Apple',
+    'Focus on lifelike conversational voice and companion hardware/software',
+    'Large funding base for model and product development',
   ],
-  vsGiants: 'Competes on voice quality and user experience against platform incumbents.',
+  vsGiants: 'Sesame competes on voice quality, conversational feel, and dedicated product experience rather than broad platform distribution.',
 
-  // AI-native analysis
   aiNativeLevel: 'A',
-  aiNativeLevelDescription: 'AI speech and conversation are the product.',
+  aiNativeLevelDescription: 'Voice AI is the core product and interaction model.',
   aiDesignChallenges: [
-    'Designing trustworthy conversational behavior',
-    'Managing latency and turn-taking in voice UX',
-    'Building user trust with natural-sounding responses',
+    'Designing natural turn-taking and latency-sensitive voice interactions',
+    'Creating trust and boundaries for lifelike AI agents',
+    'Bridging hardware, software, and voice-first interaction patterns',
+    'Evaluating emotional tone, personality, and conversational quality',
   ],
 
-  // Founders & Vision
   founders: [
-    { name: 'Brendan Iribe', role: 'Co-Founder & CEO', background: 'Former CEO and co-founder of Oculus. Founded Sesame in June 2023.' },
+    { name: 'Brendan Iribe', role: 'Co-Founder & CEO', background: 'Former Oculus co-founder and CEO.' },
     { name: 'Ankit Kumar', role: 'Co-Founder & CTO', background: 'Former CTO of Ubiquity6.' },
-    { name: 'Ryan Brown', role: 'Co-Founder', background: 'Former Oculus engineer manager and Reality Labs engineering director.' },
+    { name: 'Ryan Brown', role: 'Co-Founder', background: 'Former Oculus and Reality Labs engineering leader.' },
   ],
-  whyBuilding: 'Voice assistants need more natural, human-like conversation quality.',
+  whyBuilding: 'Sesame is pursuing a future where computers can see, hear, and collaborate with people in ways that feel natural and human.',
   beliefs: [
-    'Voice UX should feel natural and fluid',
-    'Latency and quality are critical to adoption',
-    'AI assistants should earn user trust through tone and clarity',
+    'Voice agents should feel natural enough for daily collaboration',
+    'Hardware and software should be designed together for conversational AI',
+    'Latency, tone, and trust are product fundamentals in voice AI',
   ],
   greenFlags: [
-    'Large Series B round announced',
-    'Clear product focus on voice quality',
+    'Product Designer role with $175K-$280K base range',
+    'Frontier voice UX and AI companion design surface',
+    'Strong founder/product pedigree from Oculus and spatial computing',
   ],
   redFlags: [
-    'Competing with platform incumbents',
-    'High compute and model costs',
+    'On-site San Francisco expectation',
+    'Consumer AI and hardware-adjacent bets can be volatile',
+    'Competes against platform giants with distribution advantages',
   ],
 
-  // Design Opportunity
   designTeam: {
-    teamSize: '51-200 employees (startups.gallery)',
+    teamSize: 'Design team hiring Product Designer; role collaborates with product managers, engineers, and cross-functional stakeholders.',
   },
   designWorkType: {
-    logicBehavior: {
-      level: 'high',
-      tasks: ['Conversational flow design', 'Safety and escalation rules'],
-    },
-    evaluation: {
-      level: 'high',
-      tasks: ['Voice quality evaluation', 'User feedback loops'],
-    },
-    interface: {
-      level: 'medium',
-      tasks: ['Voice interaction UI', 'Settings and personalization'],
-    },
+    logicBehavior: { level: 'high', tasks: ['Voice interaction logic', 'Agent behavior and boundaries', 'Personalization'] },
+    evaluation: { level: 'high', tasks: ['Voice quality evaluation', 'Usability testing', 'Conversation feedback loops'] },
+    interface: { level: 'medium', tasks: ['Voice product UI', 'Settings', 'Hardware/software companion surfaces'] },
   },
   productStage: '1→10',
 
-  // User Context
   targetAudiences: {
-    primary: 'Consumers using voice assistants for daily tasks',
-    secondary: 'Early adopters of AI-first assistants',
+    primary: 'Consumers using lifelike voice AI for everyday collaboration and assistance',
+    secondary: 'Early adopters of AI companion devices and voice-first computing',
   },
   userProblems: [
-    'Existing voice assistants feel robotic',
-    'Latency breaks conversational flow',
-    'Users struggle to trust AI responses',
+    'Existing voice assistants feel robotic and limited',
+    'Conversational latency breaks natural flow',
+    'Users need clear boundaries and trust cues with lifelike AI',
   ],
 
-  // Open Roles
-  openRoles: [],
+  openRoles: [
+    {
+      title: 'Product Designer',
+      location: 'San Francisco, CA (On-site)',
+      type: 'full-time',
+      url: 'https://jobs.ashbyhq.com/sesame/430ccfb7-2358-4ce9-9e00-fd84d4e28332',
+      roleFamily: 'product-design',
+      roleSignal: 'standard',
+      verificationStatus: 'confirmed',
+      sourceType: 'ashby',
+      lastVerifiedAt: '2026-05-13',
+      compensation: '$175K-$280K + equity',
+      team: 'Product',
+      aboutRole: 'Lead product design projects for lifelike voice agents and user-centered AI product experiences.',
+      responsibilities: [
+        'Lead design from concept through implementation',
+        'Create wireframes, prototypes, user flows, and detailed UI specifications',
+        'Conduct user research and usability testing',
+      ],
+      requirements: [
+        '5+ years of full-time technical or product environment experience',
+        'Strong product design craft and portfolio',
+        'Willingness to work from the office',
+      ],
+      whyInteresting: 'Strong cash band and a rare chance to define voice-first AI interaction patterns.',
+    },
+  ],
 
-  // Designer Links
   designerLinks: [],
-
-  // Culture Insights
   cultureInsights: [],
 
-  // My Tracking
   tracking: {
     status: 'researching',
-    fitScore: 6,
-    whyJoin: ['Voice UX frontier', 'High-impact AI product'],
-    whyNot: ['Expensive model development', 'Intense competition'],
-    nextActions: ['Monitor for product design openings'],
+    fitScore: 8,
+    whyJoin: [
+      'High base range',
+      'Frontier AI voice interaction design',
+      'Strong overlap with embodied/immersive product instincts',
+    ],
+    whyNot: [
+      'On-site requirement',
+      'Less developer-tool adjacent than Conductor',
+      'Consumer AI risk and unclear business model',
+    ],
+    nextActions: [
+      'Consider applying if voice/companion AI feels strategically interesting',
+      'Frame around interaction model, trust, and multimodal/immersive experience design',
+    ],
   },
 
-  // Growth Metrics
   growthMetrics: {
     stage: 'high-growth',
     revenueGrowth: 'Unknown',
     userGrowth: 'Unknown',
-    signals: ['Series B funding announced'],
-    tam: 'Unknown',
+    signals: ['$250M Series B', 'Product Designer hiring with high cash range'],
+    tam: 'Consumer voice AI, AI companions, and voice-first computing',
     marketShare: 'Unknown',
-    ceiling: 'Voice assistants remain a large consumer market opportunity.',
-    tailwinds: ['Consumer adoption of voice AI', 'Improved speech models'],
-    headwinds: ['Platform lock-in', 'High compute costs'],
+    ceiling: 'Large if voice-first AI becomes a daily computing interface.',
+    tailwinds: ['Realtime voice models improving', 'Consumer interest in AI companions'],
+    headwinds: ['Platform distribution', 'Hardware risk', 'Trust and safety constraints'],
     moatType: 'technology',
-    moatStrength: 'Focus on voice quality and naturalness.',
+    moatStrength: 'Potentially strong if voice quality and product experience materially outperform incumbents.',
   },
 
-  // Meta
-  lastUpdated: '2026-01-28T17:10:00',
+  lastUpdated: '2026-05-13T12:00:00',
   sources: [
-    { title: 'Source', url: 'https://startups.gallery/companies/sesameai' },
-    { title: 'Source', url: 'https://techcrunch.com/2025/10/03/former-openai-researchers-launch-sesame-an-ai-powered-voice-assistant/' }
+    { title: 'Sesame website', url: 'https://www.sesame.com' },
+    { title: 'Product Designer at Sesame', url: 'https://jobs.ashbyhq.com/sesame/430ccfb7-2358-4ce9-9e00-fd84d4e28332' },
+    { title: 'TechCrunch on Sesame launch/funding', url: 'https://techcrunch.com/2025/10/03/former-openai-researchers-launch-sesame-an-ai-powered-voice-assistant/' },
   ],
 };

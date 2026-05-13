@@ -208,7 +208,7 @@ export const conductor: Company = {
 
   // My Tracking
   tracking: {
-    status: 'watching',
+    status: 'applied',
     fitScore: 6,
     whyJoin: [
       'Strong local AI tailwinds and developer focus',
@@ -219,13 +219,14 @@ export const conductor: Company = {
       'Unclear long-term differentiation',
     ],
     nextActions: [
-      'Track product adoption and community growth',
-      'Monitor design hiring signals',
+      'Track response for Founding Product Designer application',
+      'Prepare AI coding-agent workflow and design systems examples',
     ],
+    notes: 'Applied to Founding Product Designer role on 2026-05-12.',
   },
 
   // Meta
-  lastUpdated: '2026-01-27T20:05:00',
+  lastUpdated: '2026-05-12',
   sources: [
     { title: 'Source', url: 'https://www.conductor.build/' },
     { title: 'Source', url: 'https://startups.gallery/companies/conductor' },

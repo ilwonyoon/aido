@@ -20,11 +20,13 @@ type BatchCompanyInput = {
   fitScore?: number;
   whyJoin?: string[];
   whyNot?: string[];
+  tracking?: Partial<Company['tracking']>;
   sources?: Company['sources'];
 };
 
 function makeCompany(input: BatchCompanyInput): Company {
   const roleSignal = input.role.roleSignal === 'first-design-hire' ? 'first design hire' : 'founding design';
+  const verifiedAt = input.role.lastVerifiedAt ?? '2026-05-06';
   return {
     id: input.id,
     name: input.name,
@@ -41,7 +43,7 @@ function makeCompany(input: BatchCompanyInput): Company {
     valuation: 'Unknown',
     totalFunding: input.totalFunding ?? 'Not publicly disclosed',
     revenue: 'Unknown',
-    growth: `Live ${roleSignal} role verified on 2026-05-06.`,
+    growth: `Live ${roleSignal} role verified on ${verifiedAt}.`,
     runway: 'Unknown',
     customers: input.customers ?? 'Unknown',
     competitors: [
@@ -129,34 +131,35 @@ function makeCompany(input: BatchCompanyInput): Company {
       {
         source: input.role.sourceType === 'yc' ? 'ycombinator' : 'careers',
         sentiment: 'neutral',
-        content: `${input.role.title} role verified as live on 2026-05-06.`,
+        content: `${input.role.title} role verified as live on ${verifiedAt}.`,
         url: input.role.url,
       },
     ],
     tracking: {
-      status: 'researching',
+      status: input.tracking?.status ?? 'researching',
       fitScore: input.fitScore ?? 7,
-      whyJoin: input.whyJoin ?? [
+      whyJoin: input.tracking?.whyJoin ?? input.whyJoin ?? [
         'Live founding or first-design-hire opportunity',
         'AI-native product design problems',
         'Direct early ownership over product experience',
       ],
-      whyNot: input.whyNot ?? [
+      whyNot: input.tracking?.whyNot ?? input.whyNot ?? [
         'Early-stage risk and limited public data',
         'Design mentorship and team support need diligence',
         'Role scope may include brand, GTM, and product work together',
       ],
-      nextActions: [
+      nextActions: input.tracking?.nextActions ?? [
         'Confirm how much of the role is core product vs. GTM or brand',
         'Review product demo and current UX quality',
         'Prepare AI workflow, trust, and systems-thinking portfolio examples',
       ],
+      notes: input.tracking?.notes,
     },
     growthMetrics: {
       stage: 'early-growth',
       revenueGrowth: 'Unknown',
       userGrowth: 'Unknown',
-      signals: ['Live role verified on 2026-05-06'],
+      signals: [`Live role verified on ${verifiedAt}`],
       tam: 'AI-native workflow software',
       marketShare: 'Early',
       ceiling: 'High if the company owns a durable AI-native workflow wedge.',
@@ -165,7 +168,7 @@ function makeCompany(input: BatchCompanyInput): Company {
       moatType: 'vertical-specialization',
       moatStrength: 'Early; depends on workflow depth and customer adoption.',
     },
-    lastUpdated: '2026-05-06',
+    lastUpdated: verifiedAt,
     sources: input.sources ?? [{ title: `${input.role.title} at ${input.name}`, url: input.role.url }],
   };
 }
@@ -473,6 +476,56 @@ export const foundingDesignBatch: Company[] = [
       sourceType: 'company',
       roleSignal: 'founding',
     },
+  }),
+  makeCompany({
+    id: 'greylock-founding-product-designer-multiple-opportunities',
+    name: 'Greylock Partners - Multiple Opportunities',
+    description: 'Pooled Greylock portfolio application for multiple founding product designer opportunities.',
+    website: 'https://www.greylock.com/',
+    category: 'developer-tools',
+    industries: ['developer-tools', 'other'],
+    subcategories: ['developer-tools', 'other-vertical'],
+    markets: ['b2b', 'enterprise'],
+    role: {
+      title: 'Founding Product Designer - Multiple Opportunities',
+      location: 'United States',
+      url: 'https://www.linkedin.com/jobs/view/founding-product-designer-multiple-opportunities-at-greylock-partners-4402043746/',
+      sourceType: 'other',
+      roleSignal: 'founding',
+      verificationStatus: 'needs_review',
+      lastVerifiedAt: '2026-05-12',
+      aboutRole:
+        'Greylock portfolio pooled application for multiple founding product designer roles; target company and exact role are not yet identified.',
+      whyInteresting:
+        'Tracks a broad Greylock-backed founding designer application while the specific startup match is still unknown.',
+    },
+    fitScore: 7,
+    tracking: {
+      status: 'applied',
+      whyJoin: [
+        'Single application can surface multiple Greylock-backed founding product designer opportunities',
+        'Likely early-stage roles with high ownership over product direction',
+        'Good fit for AI-native tools and workflow product design focus',
+      ],
+      whyNot: [
+        'Specific company, product surface, compensation, and reporting line are not yet known',
+        'LinkedIn pooled application may be less targeted than a direct company application',
+        'Needs follow-up diligence before treating any matched role as high priority',
+      ],
+      nextActions: [
+        'Track whether Greylock or a portfolio company responds',
+        'Ask which specific company and role the application is being routed to',
+        'Confirm cash compensation range early if a matched opportunity moves forward',
+      ],
+      notes:
+        'Applied via LinkedIn on 2026-05-12 to Greylock Partners Founding Product Designer - Multiple Opportunities pooled posting.',
+    },
+    sources: [
+      {
+        title: 'LinkedIn - Founding Product Designer, Multiple Opportunities at Greylock Partners',
+        url: 'https://www.linkedin.com/jobs/view/founding-product-designer-multiple-opportunities-at-greylock-partners-4402043746/',
+      },
+    ],
   }),
   makeCompany({
     id: 'capy',

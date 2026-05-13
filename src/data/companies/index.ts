@@ -122,6 +122,7 @@ import { commonKnowledge } from './common-knowledge';
 import { composite } from './composite';
 import { comulate } from './comulate';
 import { conductor } from './conductor';
+import { conductorAi } from './conductorai';
 import { constellationSpace } from './constellation-space';
 import { consioAi } from './consio-ai';
 import { console } from './console';
@@ -132,6 +133,7 @@ import { conversion } from './conversion';
 import { convokeBio } from './convoke-bio';
 import { copyAi } from './copy-ai';
 import { corgi } from './corgi';
+import { cresta } from './cresta';
 import { crowdriff } from './crowdriff';
 import { cryptonumerics } from './cryptonumerics';
 import { cube } from './cube';
@@ -171,6 +173,7 @@ import { elevenX } from './11x';
 import { elevenlabs } from './elevenlabs';
 import { eternal } from './eternal';
 import { eventual } from './eventual';
+import { eve } from './eve';
 import { evolutioniq } from './evolutioniq';
 import { exa } from './exa';
 import { extropic } from './extropic';
@@ -214,6 +217,7 @@ import { gradientAi } from './gradient-ai';
 import { grammarly } from './grammarly';
 import { granify } from './granify';
 import { granola } from './granola';
+import { graphite } from './graphite';
 import { greenlite } from './greenlite';
 import { greptile } from './greptile';
 import { h2oAi } from './h2o-ai';
@@ -297,6 +301,7 @@ import { lighthouse } from './lighthouse';
 import { lightpage } from './lightpage';
 import { lightsource } from './lightsource';
 import { lindy } from './lindy';
+import { linktree } from './linktree';
 import { linear } from './linear';
 import { liquidAi } from './liquid-ai';
 import { listenLabs } from './listen-labs';
@@ -342,7 +347,9 @@ import { momentum } from './momentum';
 import { moonlakeAi } from './moonlake-ai';
 import { mosey } from './mosey';
 import { motif } from './motif';
+import { mrbeast } from './mrbeast';
 import { mural } from './mural';
+import { multiply } from './multiply';
 import { mutiny } from './mutiny';
 import { mytra } from './mytra';
 import { naborly } from './naborly';
@@ -455,6 +462,7 @@ import { runware } from './runware';
 import { safetykit } from './safetykit';
 import { salient } from './salient';
 import { sanity } from './sanity';
+import { sanas } from './sanas';
 import { sauronSystems } from './sauron-systems';
 import { scenario } from './scenario';
 import { scaleAi } from './scale-ai';
@@ -484,6 +492,7 @@ import { slash } from './slash';
 import { snaptravel } from './snaptravel';
 import { solaSecurity } from './sola-security';
 import { slope } from './slope';
+import { socketDev } from './socket-dev';
 import { solidroad } from './solidroad';
 import { sonarly } from './sonarly';
 import { sonatic } from './sonatic';
@@ -497,9 +506,11 @@ import { spiralDb } from './spiral-db';
 import { sproutAi } from './sprout-ai';
 import { stabilityAi } from './stability-ai';
 import { stackai } from './stackai';
+import { stainless } from './stainless';
 import { strada } from './strada';
 import { strideHealth } from './stride-health';
 import { stytch } from './stytch';
+import { stuut } from './stuut';
 import { subbyx } from './subbyx';
 import { subframe } from './subframe';
 import { subtleComputing } from './subtle-computing';
@@ -548,6 +559,7 @@ import { trmLabs } from './trm-labs';
 import { truemed } from './truemed';
 import { truffleSecurity } from './truffle-security';
 import { trunk } from './trunk';
+import { twelvelabs } from './twelvelabs';
 import { twoDots } from './two-dots';
 import { twoTwoTwo } from './two-two-two';
 import { typeface } from './typeface';
@@ -716,6 +728,7 @@ export const companies: Company[] = [
   composite,
   comulate,
   conductor,
+  conductorAi,
   constellationSpace,
   consioAi,
   console,
@@ -726,6 +739,7 @@ export const companies: Company[] = [
   convokeBio,
   copyAi,
   corgi,
+  cresta,
   crowdriff,
   cryptonumerics,
   cube,
@@ -764,6 +778,7 @@ export const companies: Company[] = [
   elevenlabs,
   eternal,
   eventual,
+  eve,
   evolutioniq,
   exa,
   extropic,
@@ -807,6 +822,7 @@ export const companies: Company[] = [
   grammarly,
   granify,
   granola,
+  graphite,
   greenlite,
   greptile,
   h2oAi,
@@ -890,6 +906,7 @@ export const companies: Company[] = [
   lightpage,
   lightsource,
   lindy,
+  linktree,
   linear,
   liquidAi,
   listenLabs,
@@ -935,7 +952,9 @@ export const companies: Company[] = [
   moonlakeAi,
   mosey,
   motif,
+  mrbeast,
   mural,
+  multiply,
   mutiny,
   mytra,
   naborly,
@@ -1047,6 +1066,7 @@ export const companies: Company[] = [
   safetykit,
   salient,
   sanity,
+  sanas,
   sauronSystems,
   scenario,
   scaleAi,
@@ -1076,6 +1096,7 @@ export const companies: Company[] = [
   snaptravel,
   solaSecurity,
   slope,
+  socketDev,
   solidroad,
   sonarly,
   sonatic,
@@ -1089,9 +1110,11 @@ export const companies: Company[] = [
   sproutAi,
   stabilityAi,
   stackai,
+  stainless,
   strada,
   strideHealth,
   stytch,
+  stuut,
   subbyx,
   subframe,
   subtleComputing,
@@ -1140,6 +1163,7 @@ export const companies: Company[] = [
   truemed,
   truffleSecurity,
   trunk,
+  twelvelabs,
   twoDots,
   twoTwoTwo,
   typeface,
